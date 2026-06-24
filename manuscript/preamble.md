@@ -1,0 +1,13 @@
+```latex
+\usepackage[margin=0.5in]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{booktabs}
+\usepackage{etoolbox}
+\AtEndEnvironment{titlepage}{%
+\vspace*{-0.7cm}
+\noindent\makebox[\textwidth][c]{%
+\includegraphics[width=1.14\textwidth,height=0.69\textheight,keepaspectratio]{../figures/graphical_abstract_cover.png}%
+}\par
+}
+```

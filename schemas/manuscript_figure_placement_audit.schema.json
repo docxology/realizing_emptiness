@@ -1,0 +1,48 @@
+{
+  "$id": "realizing_emptiness.manuscript_figure_placement_audit.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Realizing Emptiness Manuscript Figure Placement Audit",
+  "type": "object",
+  "required": ["schema", "technical_quantum_figure_count", "governance_figure_count", "controls", "ok", "claim_boundary"],
+  "properties": {
+    "schema": {"const": "realizing_emptiness.manuscript_figure_placement_audit.v1"},
+    "technical_quantum_figure_count": {"type": "integer", "minimum": 10},
+    "technical_quantum_figures_in_main": {"type": "array", "maxItems": 0},
+    "technical_quantum_figures_missing_from_supplement": {"type": "array", "maxItems": 0},
+    "governance_figure_count": {"const": 4},
+    "governance_figures_in_main": {"type": "array", "maxItems": 0},
+    "governance_figures_missing_from_supplement": {"type": "array", "maxItems": 0},
+    "governance_figures_repeated_in_supplement": {"type": "array", "maxItems": 0},
+    "controls": {
+      "type": "object",
+      "required": [
+        "compact_quantum_summary_in_main",
+        "compact_quantum_summary_not_in_supplement",
+        "technical_quantum_figures_absent_from_main",
+        "technical_quantum_figures_present_in_supplement",
+        "governance_figures_absent_from_main",
+        "governance_figures_present_once_in_supplement",
+        "qrf_lead_figures_present_in_main",
+        "qrf_lead_figures_ordered",
+        "qrf_figures_precede_quantum_summary",
+        "retired_qrf_composite_absent"
+      ],
+      "properties": {
+        "compact_quantum_summary_in_main": {"const": true},
+        "compact_quantum_summary_not_in_supplement": {"const": true},
+        "technical_quantum_figures_absent_from_main": {"const": true},
+        "technical_quantum_figures_present_in_supplement": {"const": true},
+        "governance_figures_absent_from_main": {"const": true},
+        "governance_figures_present_once_in_supplement": {"const": true},
+        "qrf_lead_figures_present_in_main": {"const": true},
+        "qrf_lead_figures_ordered": {"const": true},
+        "qrf_figures_precede_quantum_summary": {"const": true},
+        "retired_qrf_composite_absent": {"const": true}
+      },
+      "additionalProperties": true
+    },
+    "ok": {"const": true},
+    "claim_boundary": {"type": "string", "pattern": "not empirical|figure-placement"}
+  },
+  "additionalProperties": true
+}

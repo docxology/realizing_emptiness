@@ -1,0 +1,13 @@
+{
+  "$id": "realizing_emptiness.equation_audit.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Realizing Emptiness Equation Audit",
+  "type": "object",
+  "required": ["schema", "equation_count", "all_equations_mapped"],
+  "properties": {
+    "schema": {"const": "realizing_emptiness.equation_audit.v1"},
+    "equation_count": {"type": "integer", "minimum": 14},
+    "all_equations_mapped": {"const": true}
+  },
+  "additionalProperties": true
+}

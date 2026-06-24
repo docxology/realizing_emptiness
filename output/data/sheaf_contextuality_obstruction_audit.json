@@ -1,0 +1,358 @@
+{
+  "all_controls_pass": true,
+  "claim_boundary": "finite deterministic roadmap-engine simulation; not empirical evidence, not a physical qFEP realization, and not evidence for clinical, contemplative, or neural outcomes",
+  "controls": {
+    "all_models_no_disturbing": true,
+    "negative_control_returns_feasible": true,
+    "noncontextual_control_has_global_section": true,
+    "obstruction_has_positive_residual": true,
+    "parity_obstruction_has_no_global_section": true
+  },
+  "outcome_alphabet": [
+    -1,
+    1
+  ],
+  "probability_rows": [
+    {
+      "assignment": [
+        -1,
+        -1
+      ],
+      "context": "AB",
+      "context_measurements": [
+        "A",
+        "B"
+      ],
+      "probability": 0.5,
+      "scenario": "noncontextual_triangle_control"
+    },
+    {
+      "assignment": [
+        -1,
+        1
+      ],
+      "context": "AB",
+      "context_measurements": [
+        "A",
+        "B"
+      ],
+      "probability": 0.0,
+      "scenario": "noncontextual_triangle_control"
+    },
+    {
+      "assignment": [
+        1,
+        -1
+      ],
+      "context": "AB",
+      "context_measurements": [
+        "A",
+        "B"
+      ],
+      "probability": 0.0,
+      "scenario": "noncontextual_triangle_control"
+    },
+    {
+      "assignment": [
+        1,
+        1
+      ],
+      "context": "AB",
+      "context_measurements": [
+        "A",
+        "B"
+      ],
+      "probability": 0.5,
+      "scenario": "noncontextual_triangle_control"
+    },
+    {
+      "assignment": [
+        -1,
+        -1
+      ],
+      "context": "BC",
+      "context_measurements": [
+        "B",
+        "C"
+      ],
+      "probability": 0.5,
+      "scenario": "noncontextual_triangle_control"
+    },
+    {
+      "assignment": [
+        -1,
+        1
+      ],
+      "context": "BC",
+      "context_measurements": [
+        "B",
+        "C"
+      ],
+      "probability": 0.0,
+      "scenario": "noncontextual_triangle_control"
+    },
+    {
+      "assignment": [
+        1,
+        -1
+      ],
+      "context": "BC",
+      "context_measurements": [
+        "B",
+        "C"
+      ],
+      "probability": 0.0,
+      "scenario": "noncontextual_triangle_control"
+    },
+    {
+      "assignment": [
+        1,
+        1
+      ],
+      "context": "BC",
+      "context_measurements": [
+        "B",
+        "C"
+      ],
+      "probability": 0.5,
+      "scenario": "noncontextual_triangle_control"
+    },
+    {
+      "assignment": [
+        -1,
+        -1
+      ],
+      "context": "AC",
+      "context_measurements": [
+        "A",
+        "C"
+      ],
+      "probability": 0.5,
+      "scenario": "noncontextual_triangle_control"
+    },
+    {
+      "assignment": [
+        -1,
+        1
+      ],
+      "context": "AC",
+      "context_measurements": [
+        "A",
+        "C"
+      ],
+      "probability": 0.0,
+      "scenario": "noncontextual_triangle_control"
+    },
+    {
+      "assignment": [
+        1,
+        -1
+      ],
+      "context": "AC",
+      "context_measurements": [
+        "A",
+        "C"
+      ],
+      "probability": 0.0,
+      "scenario": "noncontextual_triangle_control"
+    },
+    {
+      "assignment": [
+        1,
+        1
+      ],
+      "context": "AC",
+      "context_measurements": [
+        "A",
+        "C"
+      ],
+      "probability": 0.5,
+      "scenario": "noncontextual_triangle_control"
+    },
+    {
+      "assignment": [
+        -1,
+        -1
+      ],
+      "context": "AB",
+      "context_measurements": [
+        "A",
+        "B"
+      ],
+      "probability": 0.5,
+      "scenario": "parity_obstruction"
+    },
+    {
+      "assignment": [
+        -1,
+        1
+      ],
+      "context": "AB",
+      "context_measurements": [
+        "A",
+        "B"
+      ],
+      "probability": 0.0,
+      "scenario": "parity_obstruction"
+    },
+    {
+      "assignment": [
+        1,
+        -1
+      ],
+      "context": "AB",
+      "context_measurements": [
+        "A",
+        "B"
+      ],
+      "probability": 0.0,
+      "scenario": "parity_obstruction"
+    },
+    {
+      "assignment": [
+        1,
+        1
+      ],
+      "context": "AB",
+      "context_measurements": [
+        "A",
+        "B"
+      ],
+      "probability": 0.5,
+      "scenario": "parity_obstruction"
+    },
+    {
+      "assignment": [
+        -1,
+        -1
+      ],
+      "context": "BC",
+      "context_measurements": [
+        "B",
+        "C"
+      ],
+      "probability": 0.5,
+      "scenario": "parity_obstruction"
+    },
+    {
+      "assignment": [
+        -1,
+        1
+      ],
+      "context": "BC",
+      "context_measurements": [
+        "B",
+        "C"
+      ],
+      "probability": 0.0,
+      "scenario": "parity_obstruction"
+    },
+    {
+      "assignment": [
+        1,
+        -1
+      ],
+      "context": "BC",
+      "context_measurements": [
+        "B",
+        "C"
+      ],
+      "probability": 0.0,
+      "scenario": "parity_obstruction"
+    },
+    {
+      "assignment": [
+        1,
+        1
+      ],
+      "context": "BC",
+      "context_measurements": [
+        "B",
+        "C"
+      ],
+      "probability": 0.5,
+      "scenario": "parity_obstruction"
+    },
+    {
+      "assignment": [
+        -1,
+        -1
+      ],
+      "context": "AC",
+      "context_measurements": [
+        "A",
+        "C"
+      ],
+      "probability": 0.0,
+      "scenario": "parity_obstruction"
+    },
+    {
+      "assignment": [
+        -1,
+        1
+      ],
+      "context": "AC",
+      "context_measurements": [
+        "A",
+        "C"
+      ],
+      "probability": 0.5,
+      "scenario": "parity_obstruction"
+    },
+    {
+      "assignment": [
+        1,
+        -1
+      ],
+      "context": "AC",
+      "context_measurements": [
+        "A",
+        "C"
+      ],
+      "probability": 0.5,
+      "scenario": "parity_obstruction"
+    },
+    {
+      "assignment": [
+        1,
+        1
+      ],
+      "context": "AC",
+      "context_measurements": [
+        "A",
+        "C"
+      ],
+      "probability": 0.0,
+      "scenario": "parity_obstruction"
+    }
+  ],
+  "row_count": 2,
+  "rows": [
+    {
+      "active_assignment_count": 2,
+      "assignment_count": 8,
+      "context_count": 3,
+      "expected_feasible": true,
+      "global_section_feasible": true,
+      "id": "noncontextual_triangle_control",
+      "max_abs_residual": 0.0,
+      "measurement_count": 3,
+      "min_l1_residual": 0.0,
+      "no_disturbance_max_error": 0.0
+    },
+    {
+      "active_assignment_count": 2,
+      "assignment_count": 8,
+      "context_count": 3,
+      "expected_feasible": false,
+      "global_section_feasible": false,
+      "id": "parity_obstruction",
+      "max_abs_residual": 0.5,
+      "measurement_count": 3,
+      "min_l1_residual": 2.0,
+      "no_disturbance_max_error": 0.0
+    }
+  ],
+  "scenario_count": 2,
+  "schema": "realizing_emptiness.sheaf_contextuality_obstruction_audit.v1"
+}

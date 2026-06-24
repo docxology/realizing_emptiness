@@ -1,0 +1,64 @@
+{
+  "all_controls_pass": true,
+  "blanket_given_external": [
+    [
+      0.8,
+      0.1,
+      0.1
+    ],
+    [
+      0.1,
+      0.8,
+      0.1
+    ],
+    [
+      0.1,
+      0.1,
+      0.8
+    ]
+  ],
+  "claim_boundary": "finite deterministic classical Shannon data-processing computation over a fixed external-blanket-interior Markov chain; the sufficiency-saturation / lossy-drop ordering is a software information-theory result, not empirical evidence and not a neural, developmental, clinical, practice-efficacy, or physical qFEP claim",
+  "controls": {
+    "constant_readout_reaches_zero_information": true,
+    "data_processing_inequality_holds_for_every_readout": true,
+    "lossy_readout_strictly_loses_information": true,
+    "sufficient_readout_saturates_bound": true
+  },
+  "external_prior": [
+    0.3333333333333333,
+    0.3333333333333333,
+    0.3333333333333333
+  ],
+  "row_count": 4,
+  "rows": [
+    {
+      "blanket_external_information_bits": 0.6630344058,
+      "data_processing_inequality_respected": true,
+      "information_gap_bits": 0.0,
+      "interior_external_information_bits": 0.6630344058,
+      "readout": "sufficient_identity"
+    },
+    {
+      "blanket_external_information_bits": 0.6630344058,
+      "data_processing_inequality_respected": true,
+      "information_gap_bits": 0.2980449991,
+      "interior_external_information_bits": 0.3649894067,
+      "readout": "lossy_merge"
+    },
+    {
+      "blanket_external_information_bits": 0.6630344058,
+      "data_processing_inequality_respected": true,
+      "information_gap_bits": 0.5031460745,
+      "interior_external_information_bits": 0.1598883314,
+      "readout": "lossy_partial"
+    },
+    {
+      "blanket_external_information_bits": 0.6630344058,
+      "data_processing_inequality_respected": true,
+      "information_gap_bits": 0.6630344058,
+      "interior_external_information_bits": 0.0,
+      "readout": "constant_erasure"
+    }
+  ],
+  "schema": "realizing_emptiness.classical_data_processing_audit.v1"
+}

@@ -1,0 +1,24 @@
+# Runtime profile for the active-inference comparison layer.
+
+required_version: "1.0.3"
+random_seed: 7
+steps: 24
+channels: 6
+
+stochastic:
+  runs_per_profile: 128
+  steps: 48
+
+profiles:
+  - id: separation_constrained
+    label: Separation-constrained agent
+    prior_precision: 4.0
+    metacognitive_access: 0.0
+  - id: opacified
+    label: Opacified structural prior
+    prior_precision: 2.0
+    metacognitive_access: 0.55
+  - id: post_dual
+    label: Post-dual policy over sectorisations
+    prior_precision: 0.2
+    metacognitive_access: 1.0

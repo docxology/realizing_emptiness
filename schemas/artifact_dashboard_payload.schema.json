@@ -1,0 +1,32 @@
+{
+  "$id": "realizing_emptiness.artifact_dashboard_payload.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Realizing Emptiness Artifact Dashboard Payload",
+  "type": "object",
+  "required": ["schema", "roadmap", "readiness", "todo_audit", "figures", "dependency_graph", "pymdp_runtime", "stochastic_engines", "statistical_robustness", "visual_quality", "method_governance", "source_fit", "claim_context", "claim_redteam", "contract_registry", "review_hardening", "manuscript_audits", "claim_ceiling_rows", "manifest_coverage", "validation_report", "claim_boundary"],
+  "properties": {
+    "schema": {"const": "realizing_emptiness.artifact_dashboard_payload.v1"},
+    "roadmap": {"type": "object", "required": ["implemented_count", "future_count", "implemented_ids", "future_ids", "blocked_task_ids"], "additionalProperties": true},
+    "readiness": {"type": "object", "required": ["all_controls_pass", "future_blocked", "future_ids", "forged_completed_future_row_rejected"], "additionalProperties": true},
+    "todo_audit": {"type": "object", "required": ["all_controls_pass", "stale_future_rows", "historical_backlog_rows", "blocked_external_class_violations"], "additionalProperties": true},
+    "figures": {"type": "object", "required": ["figure_count", "figure_ids"], "additionalProperties": true},
+    "argument_arc": {"type": "array", "items": {"type": "object", "required": ["stage", "description", "figure_id", "figure_present"], "properties": {"stage": {"type": "string"}, "description": {"type": "string"}, "figure_id": {"type": "string"}, "figure_present": {"type": "boolean"}}, "additionalProperties": false}},
+    "dependency_graph": {"type": "object", "required": ["node_count", "edge_count", "all_controls_pass"], "additionalProperties": true},
+    "pymdp_runtime": {"type": "object", "required": ["all_controls_pass", "trace_row_count", "model_profile_count", "replay_equal", "max_policy_posterior_norm_residual", "max_weighted_expected_free_energy_residual", "claim_boundary"], "additionalProperties": true},
+    "stochastic_engines": {"type": "object", "required": ["active_inference_ensemble_ok", "criticality_ensemble_ok", "quantum_trajectory_ok", "claim_boundary"], "additionalProperties": true},
+    "statistical_robustness": {"type": "object", "required": ["all_controls_pass", "stochastic_effects_pass", "bmr_resampling_pass", "trajectory_convergence_pass", "claim_boundary"], "additionalProperties": true},
+    "visual_quality": {"type": "object", "required": ["style_ok", "legibility_ok", "missing_roles", "undersized"], "additionalProperties": true},
+    "method_governance": {"type": "object", "required": ["method_count", "control_count", "all_methods_have_controls", "all_methods_have_hard_constraints", "claim_boundary"], "additionalProperties": true},
+    "source_fit": {"type": "object", "required": ["all_controls_pass", "theme_count", "qrf_bmr_opacification_not_quantum_only", "claim_boundary"], "additionalProperties": true},
+    "claim_context": {"type": "object", "required": ["all_controls_pass", "claim_count", "role_compatibility_failures", "proxy_overclaiming_reader_claims", "missing_future_evidence", "claim_boundary"], "additionalProperties": true},
+    "claim_redteam": {"type": "object", "required": ["all_controls_pass", "claim_count", "unresolved_sections", "unresolved_figure_bindings", "missing_boundaries", "reader_overclaims", "risky_claim_sentences", "claim_boundary"], "additionalProperties": true},
+    "contract_registry": {"type": "object", "required": ["contract_count", "all_controls_pass", "missing_schema_paths", "duplicate_ids"], "additionalProperties": true},
+    "review_hardening": {"type": "object", "required": ["artifact_release_ok", "release_scope", "public_publication_performed", "review_response_ok", "public_reproduction_status", "figure_parameter_ledger_ok", "qrf_label_ablation_ok", "quantum_crosscheck_ok", "bmr_alternative_ok", "claim_boundary"], "additionalProperties": true},
+    "manuscript_audits": {"type": "object", "required": ["references_ok", "figure_reuse_ok", "figure_placement_ok", "cover_graphic_ok", "claim_intensity_ok", "unresolved_references", "duplicate_supplement_paths", "technical_quantum_figures_in_main", "governance_figures_in_main", "governance_figures_missing_from_supplement", "governance_figures_repeated_in_supplement", "risky_claim_sentences"], "additionalProperties": true},
+    "claim_ceiling_rows": {"type": "array", "items": {"type": "object"}},
+    "manifest_coverage": {"type": "object", "required": ["unmanifested_generated_paths", "missing_manifest_paths"], "additionalProperties": true},
+    "validation_report": {"type": "object", "required": ["all_passed", "passed", "total"], "additionalProperties": true},
+    "claim_boundary": {"type": "string", "pattern": "not empirical"}
+  },
+  "additionalProperties": false
+}

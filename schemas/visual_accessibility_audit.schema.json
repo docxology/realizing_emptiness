@@ -1,0 +1,58 @@
+{
+  "$id": "realizing_emptiness.visual_accessibility_audit.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Realizing Emptiness Visual Accessibility Audit",
+  "type": "object",
+  "required": [
+    "schema",
+    "figure_count",
+    "row_count",
+    "rows",
+    "missing_alt_text",
+    "missing_data_table_alternative",
+    "missing_non_color_encoding",
+    "missing_units_or_axes",
+    "missing_legend_or_colorbar",
+    "ok"
+  ],
+  "properties": {
+    "schema": {"const": "realizing_emptiness.visual_accessibility_audit.v1"},
+    "figure_count": {"type": "integer", "minimum": 1},
+    "row_count": {"type": "integer", "minimum": 1},
+    "rows": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "alt_text_length",
+          "has_alt_text",
+          "has_data_table_alternative",
+          "has_non_color_encoding",
+          "has_units_or_axes",
+          "has_legend_or_colorbar",
+          "ok"
+        ],
+        "properties": {
+          "id": {"type": "string", "pattern": "^[a-z0-9_]+$"},
+          "alt_text_length": {"type": "integer", "minimum": 80},
+          "has_alt_text": {"const": true},
+          "has_data_table_alternative": {"const": true},
+          "has_non_color_encoding": {"const": true},
+          "has_units_or_axes": {"const": true},
+          "has_legend_or_colorbar": {"const": true},
+          "ok": {"const": true}
+        },
+        "additionalProperties": false
+      }
+    },
+    "missing_alt_text": {"type": "array", "maxItems": 0},
+    "missing_data_table_alternative": {"type": "array", "maxItems": 0},
+    "missing_non_color_encoding": {"type": "array", "maxItems": 0},
+    "missing_units_or_axes": {"type": "array", "maxItems": 0},
+    "missing_legend_or_colorbar": {"type": "array", "maxItems": 0},
+    "ok": {"const": true}
+  },
+  "additionalProperties": false
+}

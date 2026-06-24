@@ -1,0 +1,117 @@
+{
+  "all_methods_have_controls": true,
+  "claim_boundary": "method governance ledger for finite software artifacts; not empirical, clinical, neural, practice-efficacy, awakening, or physical qFEP evidence",
+  "control_count": 18,
+  "method_count": 8,
+  "rows": [
+    {
+      "artifact": "output/data/qrf_boundary_indistinguishability.json",
+      "evidence_ceiling": "finite QRF label-invariance audit only",
+      "method_id": "finite_qrf_boundary_screen",
+      "negative_control": "perturbed label/mass negative control fails"
+    },
+    {
+      "artifact": "output/data/bmr_sweep.json",
+      "evidence_ceiling": "finite model comparison only",
+      "method_id": "bmr_separation_prior_sweep",
+      "negative_control": "edge cases test keep/prune sign"
+    },
+    {
+      "artifact": "output/data/bmr_sweep.json",
+      "evidence_ceiling": "finite model comparison only",
+      "method_id": "bmr_separation_prior_sweep",
+      "negative_control": "sensitivity grid tests observation-noise robustness"
+    },
+    {
+      "artifact": "output/data/pymdp_policy_trace.json",
+      "evidence_ceiling": "discrete active-inference surrogate only",
+      "method_id": "pymdp_active_inference_profiles",
+      "negative_control": "runtime dependency check"
+    },
+    {
+      "artifact": "output/data/pymdp_policy_trace.json",
+      "evidence_ceiling": "discrete active-inference surrogate only",
+      "method_id": "pymdp_active_inference_profiles",
+      "negative_control": "posterior normalization"
+    },
+    {
+      "artifact": "output/data/pymdp_policy_trace.json",
+      "evidence_ceiling": "discrete active-inference surrogate only",
+      "method_id": "pymdp_active_inference_profiles",
+      "negative_control": "expected-free-energy recomputation"
+    },
+    {
+      "artifact": "output/data/pymdp_policy_trace.json",
+      "evidence_ceiling": "discrete active-inference surrogate only",
+      "method_id": "pymdp_active_inference_profiles",
+      "negative_control": "profile-specific action differences"
+    },
+    {
+      "artifact": "output/data/stochastic_policy_ensemble.json",
+      "evidence_ceiling": "seeded simulation ensemble only",
+      "method_id": "seeded_stochastic_policy_ensemble",
+      "negative_control": "same-seed replay"
+    },
+    {
+      "artifact": "output/data/stochastic_policy_ensemble.json",
+      "evidence_ceiling": "seeded simulation ensemble only",
+      "method_id": "seeded_stochastic_policy_ensemble",
+      "negative_control": "different seed changes sampled rows"
+    },
+    {
+      "artifact": "output/data/stochastic_policy_ensemble.json",
+      "evidence_ceiling": "seeded simulation ensemble only",
+      "method_id": "seeded_stochastic_policy_ensemble",
+      "negative_control": "null-control contrasts"
+    },
+    {
+      "artifact": "output/data/quantum_trajectory_unraveling.json",
+      "evidence_ceiling": "finite stochastic quantum surrogate only",
+      "method_id": "quantum_trajectory_unraveling",
+      "negative_control": "exact-Lindblad residual tolerance"
+    },
+    {
+      "artifact": "output/data/quantum_trajectory_unraveling.json",
+      "evidence_ceiling": "finite stochastic quantum surrogate only",
+      "method_id": "quantum_trajectory_unraveling",
+      "negative_control": "invalid operator/rate rejection"
+    },
+    {
+      "artifact": "output/data/quantum_trajectory_unraveling.json",
+      "evidence_ceiling": "finite stochastic quantum surrogate only",
+      "method_id": "quantum_trajectory_unraveling",
+      "negative_control": "trajectory-count convergence"
+    },
+    {
+      "artifact": "output/data/general_measurement_cover_polytope_audit.json",
+      "evidence_ceiling": "finite contextuality software audit only",
+      "method_id": "contextuality_and_measurement_cover_engines",
+      "negative_control": "feasible triangle/product controls"
+    },
+    {
+      "artifact": "output/data/general_measurement_cover_polytope_audit.json",
+      "evidence_ceiling": "finite contextuality software audit only",
+      "method_id": "contextuality_and_measurement_cover_engines",
+      "negative_control": "parity and Bell obstruction cases"
+    },
+    {
+      "artifact": "output/data/practice_protocol_map.json",
+      "evidence_ceiling": "protocol specification only",
+      "method_id": "practice_protocol_adapter",
+      "negative_control": "claim language blocks therapeutic, awakening, clinical, and neural claims"
+    },
+    {
+      "artifact": "output/data/figure_source_map.json",
+      "evidence_ceiling": "documentation and visualization QA only",
+      "method_id": "visual_and_claim_governance",
+      "negative_control": "caption/accessibility/style/legibility audits"
+    },
+    {
+      "artifact": "output/data/figure_source_map.json",
+      "evidence_ceiling": "documentation and visualization QA only",
+      "method_id": "visual_and_claim_governance",
+      "negative_control": "supplement figure reuse audit"
+    }
+  ],
+  "schema": "realizing_emptiness.method_negative_control_inventory.v1"
+}

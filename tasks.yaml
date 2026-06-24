@@ -1,0 +1,81 @@
+project:
+  name: Realizing Emptiness
+tasks:
+- id: re-3
+  title: Physical qFEP realization evidence gate
+  status: blocked
+  progress: 0
+  start: '2026-06-15'
+  end: ''
+  milestone: false
+  deps: []
+  tags:
+  - external
+  - evidence
+  - quantum
+  notes: >-
+    Physical qFEP realization remains blocked until reviewed Hamiltonians,
+    thermodynamic accounting, and independent quantum-information replication
+    exist.
+- id: re-4
+  title: Human-subject validation evidence gate
+  status: blocked
+  progress: 0
+  start: '2026-06-15'
+  end: ''
+  milestone: false
+  deps: []
+  tags:
+  - external
+  - evidence
+  - ethics
+  notes: >-
+    Human-subject validation remains blocked until ethics review,
+    preregistered outcomes, sourced data, preprocessing provenance, null
+    models, and safety review exist.
+- id: re-13
+  title: Clinical awakening compassion and neural-measurement evidence gate
+  status: blocked
+  progress: 0
+  start: '2026-06-15'
+  end: ''
+  milestone: false
+  deps: []
+  tags:
+  - external
+  - evidence
+  - claim-boundary
+  notes: >-
+    Clinical, awakening, compassion-efficacy, and neural-measurement claims
+    remain blocked and must not be inferred from finite software simulations.
+- id: re-14
+  title: User-facing practice application safety review
+  status: blocked
+  progress: 0
+  start: '2026-06-15'
+  end: ''
+  milestone: false
+  deps: []
+  tags:
+  - external
+  - safety
+  - practice
+  notes: >-
+    User-facing practice applications require human review, safety wording, and
+    explicit non-efficacy language before release.
+- id: re-15
+  title: Public archive and independent reproduction gate
+  status: blocked
+  progress: 0
+  start: '2026-06-21'
+  end: ''
+  milestone: false
+  deps: []
+  tags:
+  - external
+  - release
+  - reproducibility
+  notes: >-
+    Public archive release and independent or blinded reproduction remain
+    blocked until explicit publication approval, public deposition, and
+    external reproduction of the artifact bundle exist.

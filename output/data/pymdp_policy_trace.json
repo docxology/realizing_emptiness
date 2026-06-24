@@ -1,0 +1,4027 @@
+{
+  "action_labels": [
+    "stabilize_dual",
+    "inspect_boundary",
+    "release_prior"
+  ],
+  "all_posteriors_normalized": true,
+  "channels": 6,
+  "claim_boundary": "pymdp discrete active-inference loop; deterministic surrogate, not empirical or quantum-dynamical evidence",
+  "observation_labels": [
+    "self_env_cue",
+    "opacity_cue",
+    "contextual_cue"
+  ],
+  "profile_summaries": [
+    {
+      "action_counts": {
+        "inspect_boundary": 16,
+        "release_prior": 0,
+        "stabilize_dual": 8
+      },
+      "deployment": {
+        "flexibility": 0.16666666666666666,
+        "is_dual": true,
+        "metacognitive_access": 0.0,
+        "name": "separation_constrained",
+        "prior_precision": 4.0,
+        "sector_labels": [
+          "self",
+          "self",
+          "env",
+          "env",
+          "env",
+          "self"
+        ]
+      },
+      "final_policy_posterior": [
+        0.33041352,
+        0.33569959,
+        0.33388686
+      ],
+      "final_state_posterior": [
+        0.97938627,
+        0.0167609,
+        0.00385279
+      ],
+      "mean_vfe": 0.731322642415762,
+      "mean_weighted_expected_free_energy": -1.063868745599984,
+      "posterior_normalized_all_steps": true,
+      "profile": "separation_constrained",
+      "profile_energy": -0.7919811631131639
+    },
+    {
+      "action_counts": {
+        "inspect_boundary": 7,
+        "release_prior": 17,
+        "stabilize_dual": 0
+      },
+      "deployment": {
+        "flexibility": 0.6916666666666667,
+        "is_dual": false,
+        "metacognitive_access": 0.55,
+        "name": "opacified",
+        "prior_precision": 2.0,
+        "sector_labels": [
+          "self",
+          "action",
+          "env",
+          "env",
+          "other",
+          "care"
+        ]
+      },
+      "final_policy_posterior": [
+        0.33755744,
+        0.34328017,
+        0.31916246
+      ],
+      "final_state_posterior": [
+        0.0465846,
+        0.19287878,
+        0.76053661
+      ],
+      "mean_vfe": 0.860562801361084,
+      "mean_weighted_expected_free_energy": -0.952844884742824,
+      "posterior_normalized_all_steps": true,
+      "profile": "opacified",
+      "profile_energy": -0.9406224270092021
+    },
+    {
+      "action_counts": {
+        "inspect_boundary": 0,
+        "release_prior": 24,
+        "stabilize_dual": 0
+      },
+      "deployment": {
+        "flexibility": 0.9166666666666667,
+        "is_dual": false,
+        "metacognitive_access": 1.0,
+        "name": "post_dual",
+        "prior_precision": 0.2,
+        "sector_labels": [
+          "body",
+          "action",
+          "world",
+          "world",
+          "other",
+          "care"
+        ]
+      },
+      "final_policy_posterior": [
+        0.33058092,
+        0.3308984,
+        0.33852065
+      ],
+      "final_state_posterior": [
+        0.00641217,
+        0.03195938,
+        0.96162844
+      ],
+      "mean_vfe": 0.6986371800303459,
+      "mean_weighted_expected_free_energy": -1.1054900906397973,
+      "posterior_normalized_all_steps": true,
+      "profile": "post_dual",
+      "profile_energy": -1.3440257792810062
+    }
+  ],
+  "row_count": 72,
+  "rows": [
+    {
+      "efe_terms": [
+        {
+          "action": "stabilize_dual",
+          "ambiguity_proxy": 0.5020040749139154,
+          "efe_proxy": -0.04527712877215817,
+          "risk_proxy": -0.5472812036860736
+        },
+        {
+          "action": "inspect_boundary",
+          "ambiguity_proxy": 0.5020040749139154,
+          "efe_proxy": 0.102922673728224,
+          "risk_proxy": -0.3990814011856914
+        },
+        {
+          "action": "release_prior",
+          "ambiguity_proxy": 0.5020040749139154,
+          "efe_proxy": 0.18252476533461748,
+          "risk_proxy": -0.31947930957929793
+        }
+      ],
+      "expected_free_energy": [
+        -1.03889513,
+        -0.90523094,
+        -0.87745905
+      ],
+      "negative_expected_free_energy": [
+        1.03889513,
+        0.90523094,
+        0.87745905
+      ],
+      "observation": 1,
+      "observation_label": "opacity_cue",
+      "perturbed_observation": true,
+      "policy_posterior": [
+        0.36686411,
+        0.3209635,
+        0.31217235
+      ],
+      "policy_posterior_sum": 0.9999999701976776,
+      "profile": "separation_constrained",
+      "selected_action": "stabilize_dual",
+      "selected_action_index": 0,
+      "state_posterior": [
+        0.30450925,
+        0.68435013,
+        0.01114058
+      ],
+      "state_posterior_sum": 0.999999969266355,
+      "step": 0,
+      "true_state": "contracted_dual",
+      "vfe": 1.6686573028564453,
+      "weighted_expected_free_energy": -0.9455978911569858
+    },
+    {
+      "efe_terms": [
+        {
+          "action": "stabilize_dual",
+          "ambiguity_proxy": 0.5020040781866095,
+          "efe_proxy": -0.3227715590390481,
+          "risk_proxy": -0.8247756372256576
+        },
+        {
+          "action": "inspect_boundary",
+          "ambiguity_proxy": 0.5020040781866096,
+          "efe_proxy": -0.12222456526651149,
+          "risk_proxy": -0.6242286434531211
+        },
+        {
+          "action": "release_prior",
+          "ambiguity_proxy": 0.5020040781866095,
+          "efe_proxy": -0.06775047559877989,
+          "risk_proxy": -0.5697545537853894
+        }
+      ],
+      "expected_free_energy": [
+        -1.1048708,
+        -1.1007601,
+        -1.09295952
+      ],
+      "negative_expected_free_energy": [
+        1.1048708,
+        1.1007601,
+        1.09295952
+      ],
+      "observation": 0,
+      "observation_label": "self_env_cue",
+      "perturbed_observation": false,
+      "policy_posterior": [
+        0.33511421,
+        0.33373952,
+        0.33114624
+      ],
+      "policy_posterior_sum": 0.9999999701976776,
+      "profile": "separation_constrained",
+      "selected_action": "stabilize_dual",
+      "selected_action_index": 0,
+      "state_posterior": [
+        0.9196229,
+        0.06777091,
+        0.01260616
+      ],
+      "state_posterior_sum": 0.9999999757856131,
+      "step": 1,
+      "true_state": "contracted_dual",
+      "vfe": 0.7964133024215698,
+      "weighted_expected_free_energy": -1.0995544889887015
+    },
+    {
+      "efe_terms": [
+        {
+          "action": "stabilize_dual",
+          "ambiguity_proxy": 0.5020040742126237,
+          "efe_proxy": -0.3538135509477799,
+          "risk_proxy": -0.8558176251604036
+        },
+        {
+          "action": "inspect_boundary",
+          "ambiguity_proxy": 0.5020040742126239,
+          "efe_proxy": -0.14710513358070143,
+          "risk_proxy": -0.6491092077933254
+        },
+        {
+          "action": "release_prior",
+          "ambiguity_proxy": 0.5020040742126238,
+          "efe_proxy": -0.09507370592456188,
+          "risk_proxy": -0.5970777801371857
+        }
+      ],
+      "expected_free_energy": [
+        -1.09180117,
+        -1.10851705,
+        -1.10321939
+      ],
+      "negative_expected_free_energy": [
+        1.09180117,
+        1.10851705,
+        1.10321939
+      ],
+      "observation": 0,
+      "observation_label": "self_env_cue",
+      "perturbed_observation": false,
+      "policy_posterior": [
+        0.3302139,
+        0.33578011,
+        0.33400598
+      ],
+      "policy_posterior_sum": 1.0,
+      "profile": "separation_constrained",
+      "selected_action": "inspect_boundary",
+      "selected_action_index": 1,
+      "state_posterior": [
+        0.98174953,
+        0.01503733,
+        0.00321311
+      ],
+      "state_posterior_sum": 0.9999999678693712,
+      "step": 2,
+      "true_state": "contracted_dual",
+      "vfe": 0.3381063640117645,
+      "weighted_expected_free_energy": -1.1012277829480155
+    },
+    {
+      "efe_terms": [
+        {
+          "action": "stabilize_dual",
+          "ambiguity_proxy": 0.5020040529401115,
+          "efe_proxy": -0.33756858689476943,
+          "risk_proxy": -0.839572639834881
+        },
+        {
+          "action": "inspect_boundary",
+          "ambiguity_proxy": 0.5020040529401115,
+          "efe_proxy": -0.1341587618144342,
+          "risk_proxy": -0.6361628147545457
+        },
+        {
+          "action": "release_prior",
+          "ambiguity_proxy": 0.5020040529401115,
+          "efe_proxy": -0.08093843330451922,
+          "risk_proxy": -0.5829424862446307
+        }
+      ],
+      "expected_free_energy": [
+        -1.09923089,
+        -1.10521913,
+        -1.09846294
+      ],
+      "negative_expected_free_energy": [
+        1.09923089,
+        1.10521913,
+        1.09846294
+      ],
+      "observation": 0,
+      "observation_label": "self_env_cue",
+      "perturbed_observation": false,
+      "policy_posterior": [
+        0.33275229,
+        0.33475089,
+        0.33249685
+      ],
+      "policy_posterior_sum": 1.0000000298023224,
+      "profile": "separation_constrained",
+      "selected_action": "inspect_boundary",
+      "selected_action_index": 1,
+      "state_posterior": [
+        0.95085949,
+        0.03869198,
+        0.01044846
+      ],
+      "state_posterior_sum": 0.999999925494194,
+      "step": 3,
+      "true_state": "contracted_dual",
+      "vfe": 0.5920313596725464,
+      "weighted_expected_free_energy": -1.1009801473120824
+    },
+    {
+      "efe_terms": [
+        {
+          "action": "stabilize_dual",
+          "ambiguity_proxy": 0.502004102498052,
+          "efe_proxy": -0.3359891786606036,
+          "risk_proxy": -0.8379932811586557
+        },
+        {
+          "action": "inspect_boundary",
+          "ambiguity_proxy": 0.5020041024980522,
+          "efe_proxy": -0.13290592501396192,
+          "risk_proxy": -0.6349100275120141
+        },
+        {
+          "action": "release_prior",
+          "ambiguity_proxy": 0.5020041024980522,
+          "efe_proxy": -0.07957708626941062,
+          "risk_proxy": -0.5815811887674628
+        }
+      ],
+      "expected_free_energy": [
+        -1.09990454,
+        -1.10491097,
+        -1.09799647
+      ],
+      "negative_expected_free_energy": [
+        1.09990454,
+        1.10491097,
+        1.09799647
+      ],
+      "observation": 0,
+      "observation_label": "self_env_cue",
+      "perturbed_observation": false,
+      "policy_posterior": [
+        0.33298784,
+        0.3346591,
+        0.33235309
+      ],
+      "policy_posterior_sum": 1.0000000298023224,
+      "profile": "separation_constrained",
+      "selected_action": "inspect_boundary",
+      "selected_action_index": 1,
+      "state_posterior": [
+        0.94798487,
+        0.04067928,
+        0.01133587
+      ],
+      "state_posterior_sum": 1.000000024214387,
+      "step": 4,
+      "true_state": "contracted_dual",
+      "vfe": 0.612686038017273,
+      "weighted_expected_free_energy": -1.100945867264052
+    },
+    {
+      "efe_terms": [
+        {
+          "action": "stabilize_dual",
+          "ambiguity_proxy": 0.5020040978227747,
+          "efe_proxy": -0.33583270045233826,
+          "risk_proxy": -0.8378367982751129
+        },
+        {
+          "action": "inspect_boundary",
+          "ambiguity_proxy": 0.5020040978227749,
+          "efe_proxy": -0.1327821127226757,
+          "risk_proxy": -0.6347862105454506
+        },
+        {
+          "action": "release_prior",
+          "ambiguity_proxy": 0.5020040978227747,
+          "efe_proxy": -0.07944289686912176,
+          "risk_proxy": -0.5814469946918964
+        }
+      ],
+      "expected_free_energy": [
+        -1.09997106,
+        -1.10488224,
+        -1.09795141
+      ],
+      "negative_expected_free_energy": [
+        1.09997106,
+        1.10488224,
+        1.09795141
+      ],
+      "observation": 0,
+      "observation_label": "self_env_cue",
+      "perturbed_observation": false,
+      "policy_posterior": [
+        0.33301079,
+        0.33465031,
+        0.3323389
+      ],
+      "policy_posterior_sum": 1.0,
+      "profile": "separation_constrained",
+      "selected_action": "inspect_boundary",
+      "selected_action_index": 1,
+      "state_posterior": [
+        0.94770682,
+        0.04085976,
+        0.01143343
+      ],
+      "state_posterior_sum": 1.0000000149011612,
+      "step": 5,
+      "true_state": "contracted_dual",
+      "vfe": 0.6146613359451294,
+      "weighted_expected_free_energy": -1.1009433791341081
+    },
+    {
+      "efe_terms": [
+        {
+          "action": "stabilize_dual",
+          "ambiguity_proxy": 0.5020041076408572,
+          "efe_proxy": -0.33581719918524233,
+          "risk_proxy": -0.8378213068260996
+        },
+        {
+          "action": "inspect_boundary",
+          "ambiguity_proxy": 0.5020041076408575,
+          "efe_proxy": -0.13276986111102018,
+          "risk_proxy": -0.6347739687518776
+        },
+        {
+          "action": "release_prior",
+          "ambiguity_proxy": 0.5020041076408572,
+          "efe_proxy": -0.0794296354583941,
+          "risk_proxy": -0.5814337430992513
+        }
+      ],
+      "expected_free_energy": [
+        -1.09997749,
+        -1.10487962,
+        -1.09794688
+      ],
+      "negative_expected_free_energy": [
+        1.09997749,
+        1.10487962,
+        1.09794688
+      ],
+      "observation": 0,
+      "observation_label": "self_env_cue",
+      "perturbed_observation": false,
+      "policy_posterior": [
+        0.333013,
+        0.3346495,
+        0.33233747
+      ],
+      "policy_posterior_sum": 0.9999999701976776,
+      "profile": "separation_constrained",
+      "selected_action": "inspect_boundary",
+      "selected_action_index": 1,
+      "state_posterior": [
+        0.94767964,
+        0.04087678,
+        0.01144362
+      ],
+      "state_posterior_sum": 1.0000000344589353,
+      "step": 6,
+      "true_state": "contracted_dual",
+      "vfe": 0.6148544549942017,
+      "weighted_expected_free_energy": -1.1009431058684456
+    },
+    {
+      "efe_terms": [
+        {
+          "action": "stabilize_dual",
+          "ambiguity_proxy": 0.5020040950176083,
+          "efe_proxy": 0.03592690500542156,
+          "risk_proxy": -0.4660771900121868
+        },
+        {
+          "action": "inspect_boundary",
+          "ambiguity_proxy": 0.5020040950176083,
+          "efe_proxy": 0.16853129716068144,
+          "risk_proxy": -0.3334727978569269
+        },
+        {
+          "action": "release_prior",
+          "ambiguity_proxy": 0.5020040950176083,
+          "efe_proxy": 0.25515296474638216,
+          "risk_proxy": -0.24685113027122615
+        }
+      ],
+      "expected_free_energy": [
+        -0.96831036,
+        -0.81364703,
+        -0.77496278
+      ],
+      "negative_expected_free_energy": [
+        0.96831036,
+        0.81364703,
+        0.77496278
+      ],
+      "observation": 1,
+      "observation_label": "opacity_cue",
+      "perturbed_observation": true,
+      "policy_posterior": [
+        0.3730092,
+        0.31955832,
+        0.3074325
+      ],
+      "policy_posterior_sum": 1.0000000298023224,
+      "profile": "separation_constrained",
+      "selected_action": "stabilize_dual",
+      "selected_action_index": 0,
+      "state_posterior": [
+        0.13056242,
+        0.85006618,
+        0.0193714
+      ],
+      "state_posterior_sum": 1.0000000093132257,
+      "step": 7,
+      "true_state": "contracted_dual",
+      "vfe": 1.1411482095718384,
+      "weighted_expected_free_energy": -0.8594451042179578
+    },
+    {
+      "efe_terms": [
+        {
+          "action": "stabilize_dual",
+          "ambiguity_proxy": 0.5020040950176082,
+          "efe_proxy": -0.3055507320196964,
+          "risk_proxy": -0.8075548270373046
+        },
+        {
+          "action": "inspect_boundary",
+          "ambiguity_proxy": 0.5020040950176083,
+          "efe_proxy": -0.10844378495633966,
+          "risk_proxy": -0.610447879973948
+        },
+        {
+          "action": "release_prior",
+          "ambiguity_proxy": 0.5020040950176082,
+          "efe_proxy": -0.052641051426217556,
+          "risk_proxy": -0.5546451464438258
+        }
+      ],
+      "expected_free_energy": [
+        -1.11048317,
+        -1.09575462,
+        -1.08644414
+      ],
+      "negative_expected_free_energy": [
+        1.11048317,
+        1.09575462,
+        1.08644414
+      ],
+      "observation": 0,
+      "observation_label": "self_env_cue",
+      "perturbed_observation": false,
+      "policy_posterior": [
+        0.33765224,
+        0.33271557,
+        0.32963219
+      ],
+      "policy_posterior_sum": 1.0,
+      "profile": "separation_constrained",
+      "selected_action": "stabilize_dual",
+      "selected_action_index": 0,
+      "state_posterior": [
+        0.88563752,
+        0.09585913,
+        0.01850335
+      ],
+      "state_posterior_sum": 1.0000000093132257,
+      "step": 8,
+      "true_state": "contracted_dual",
+      "vfe": 0.9796639084815979,
+      "weighted_expected_free_energy": -1.0976587147192802
+    },
+    {
+      "efe_terms": [
+        {
+          "action": "stabilize_dual",
+          "ambiguity_proxy": 0.5020040673165896,
+          "efe_proxy": -0.3525435018630383,
+          "risk_proxy": -0.8545475691796279
+        },
+        {
+          "action": "inspect_boundary",
+          "ambiguity_proxy": 0.5020040673165896,
+          "efe_proxy": -0.14609534003256486,
+          "risk_proxy": -0.6480994073491545
+        },
+        {
+          "action": "release_prior",
+          "ambiguity_proxy": 0.5020040673165895,
+          "efe_proxy": -0.09397381573811014,
+          "risk_proxy": -0.5959778830546997
+        }
+      ],
+      "expected_free_energy": [
+        -1.09242201,
+        -1.10829377,
+        -1.10287929
+      ],
+      "negative_expected_free_energy": [
+        1.09242201,
+        1.10829377,
+        1.10287929
+      ],
+      "observation": 0,
+      "observation_label": "self_env_cue",
+      "perturbed_observation": false,
+      "policy_posterior": [
+        0.33041352,
+        0.33569959,
+        0.33388686
+      ],
+      "policy_posterior_sum": 0.9999999701976776,
+      "profile": "separation_constrained",
+      "selected_action": "inspect_boundary",
+      "selected_action_index": 1,
+      "state_posterior": [
+        0.97938627,
+        0.0167609,
+        0.00385278
+      ],
+      "state_posterior_sum": 0.9999999541323632,
+      "step": 9,
+      "true_state": "contracted_dual",
+      "vfe": 0.3599811792373657,
+      "weighted_expected_free_energy": -1.1012416678355876
+    },
+    {
+      "efe_terms": [
+        {
+          "action": "stabilize_dual",
+          "ambiguity_proxy": 0.5020040730438045,
+          "efe_proxy": -0.3374476527977327,
+          "risk_proxy": -0.8394517258415372
+        },
+        {
+          "action": "inspect_boundary",
+          "ambiguity_proxy": 0.5020040730438045,
+          "efe_proxy": -0.13406295025448878,
+          "risk_proxy": -0.6360670232982932
+        },
+        {
+          "action": "release_prior",
+          "ambiguity_proxy": 0.5020040730438045,
+          "efe_proxy": -0.08083445720298676,
+          "risk_proxy": -0.5828385302467912
+        }
+      ],
+      "expected_free_energy": [
+        -1.0992831,
+        -1.10519671,
+        -1.09842801
+      ],
+      "negative_expected_free_energy": [
+        1.0992831,
+        1.10519671,
+        1.09842801
+      ],
+      "observation": 0,
+      "observation_label": "self_env_cue",
+      "perturbed_observation": false,
+      "policy_posterior": [
+        0.33277023,
+        0.33474395,
+        0.3324858
+      ],
+      "policy_posterior_sum": 0.9999999701976776,
+      "profile": "separation_constrained",
+      "selected_action": "inspect_boundary",
+      "selected_action_index": 1,
+      "state_posterior": [
+        0.95064205,
+        0.0388377,
+        0.01052022
+      ],
+      "state_posterior_sum": 0.9999999655410647,
+      "step": 10,
+      "true_state": "contracted_dual",
+      "vfe": 0.5936089754104614,
+      "weighted_expected_free_energy": -1.1009783086228353
+    },
+    {
+      "efe_terms": [
+        {
+          "action": "stabilize_dual",
+          "ambiguity_proxy": 0.50200410296558,
+          "efe_proxy": -0.3359772256437824,
+          "risk_proxy": -0.8379813286093624
+        },
+        {
+          "action": "inspect_boundary",
+          "ambiguity_proxy": 0.50200410296558,
+          "efe_proxy": -0.1328964734295145,
+          "risk_proxy": -0.6349005763950945
+        },
+        {
+          "action": "release_prior",
+          "ambiguity_proxy": 0.50200410296558,
+          "efe_proxy": -0.07956684955999693,
+          "risk_proxy": -0.5815709525255769
+        }
+      ],
+      "expected_free_energy": [
+        -1.09990954,
+        -1.10490882,
+        -1.09799314
+      ],
+      "negative_expected_free_energy": [
+        1.09990954,
+        1.10490882,
+        1.09799314
+      ],
+      "observation": 0,
+      "observation_label": "self_env_cue",
+      "perturbed_observation": false,
+      "policy_posterior": [
+        0.33298954,
+        0.33465841,
+        0.33235201
+      ],
+      "policy_posterior_sum": 0.9999999701976776,
+      "profile": "separation_constrained",
+      "selected_action": "inspect_boundary",
+      "selected_action_index": 1,
+      "state_posterior": [
+        0.94796377,
+        0.04069273,
+        0.01134352
+      ],
+      "state_posterior_sum": 1.0000000251457095,
+      "step": 11,
+      "true_state": "contracted_dual",
+      "vfe": 0.6128361225128174,
+      "weighted_expected_free_energy": -1.100945640085282
+    },
+    {
+      "efe_terms": [
+        {
+          "action": "stabilize_dual",
+          "ambiguity_proxy": 0.5020041183939953,
+          "efe_proxy": -0.33583153031047397,
+          "risk_proxy": -0.8378356487044692
+        },
+        {
+          "action": "inspect_boundary",
+          "ambiguity_proxy": 0.5020041183939955,
+          "efe_proxy": -0.13278118315171394,
+          "risk_proxy": -0.6347853015457094
+        },
+        {
+          "action": "release_prior",
+          "ambiguity_proxy": 0.5020041183939954,
+          "efe_proxy": -0.07944188870695623,
+          "risk_proxy": -0.5814460071009516
+        }
+      ],
+      "expected_free_energy": [
+        -1.09997153,
+        -1.104882,
+        -1.09795094
+      ],
+      "negative_expected_free_energy": [
+        1.09997153,
+        1.104882,
+        1.09795094
+      ],
+      "observation": 0,
+      "observation_label": "self_env_cue",
+      "perturbed_observation": false,
+      "policy_posterior": [
+        0.33301097,
+        0.33465025,
+        0.33233878
+      ],
+      "policy_posterior_sum": 1.0,
+      "profile": "separation_constrained",
+      "selected_action": "inspect_boundary",
+      "selected_action_index": 1,
+      "state_posterior": [
+        0.94770479,
+        0.04086104,
+        0.01143423
+      ],
+      "state_posterior_sum": 1.0000000558793545,
+      "step": 12,
+      "true_state": "contracted_dual",
+      "vfe": 0.6146761775016785,
+      "weighted_expected_free_energy": -1.1009432996158282
+    },
+    {
+      "efe_terms": [
+        {
+          "action": "stabilize_dual",
+          "ambiguity_proxy": 0.5020040234858638,
+          "efe_proxy": -0.3358170277462802,
+          "risk_proxy": -0.837821051232144
+        },
+        {
+          "action": "inspect_boundary",
+          "ambiguity_proxy": 0.5020040234858638,
+          "efe_proxy": -0.13276974801368058,
+          "risk_proxy": -0.6347737714995444
+        },
+        {
+          "action": "release_prior",
+          "ambiguity_proxy": 0.5020040234858638,
+          "efe_proxy": -0.0794295239884043,
+          "risk_proxy": -0.5814335474742681
+        }
+      ],
+      "expected_free_energy": [
+        -1.09997773,
+        -1.10487938,
+        -1.097947
+      ],
+      "negative_expected_free_energy": [
+        1.09997773,
+        1.10487938,
+        1.097947
+      ],
+      "observation": 0,
+      "observation_label": "self_env_cue",
+      "perturbed_observation": false,
+      "policy_posterior": [
+        0.33301309,
+        0.33464941,
+        0.33233753
+      ],
+      "policy_posterior_sum": 1.0000000298023224,
+      "profile": "separation_constrained",
+      "selected_action": "inspect_boundary",
+      "selected_action_index": 1,
+      "state_posterior": [
+        0.94767928,
+        0.04087689,
+        0.01144369
+      ],
+      "state_posterior_sum": 0.9999998668208718,
+      "step": 13,
+      "true_state": "contracted_dual",
+      "vfe": 0.6148555874824524,
+      "weighted_expected_free_energy": -1.1009432101004855
+    },
+    {
+      "efe_terms": [
+        {
+          "action": "stabilize_dual",
+          "ambiguity_proxy": 0.5020041305497167,
+          "efe_proxy": 0.035926930314439276,
+          "risk_proxy": -0.46607720023527743
+        },
+        {
+          "action": "inspect_boundary",
+          "ambiguity_proxy": 0.5020041305497167,
+          "efe_proxy": 0.16853132771997426,
+          "risk_proxy": -0.33347280282974245
+        },
+        {
+          "action": "release_prior",
+          "ambiguity_proxy": 0.5020041305497167,
+          "efe_proxy": 0.2551530036901054,
+          "risk_proxy": -0.24685112685961128
+        }
+      ],
+      "expected_free_energy": [
+        -0.96831048,
+        -0.81364691,
+        -0.77496272
+      ],
+      "negative_expected_free_energy": [
+        0.96831048,
+        0.81364691,
+        0.77496272
+      ],
+      "observation": 1,
+      "observation_label": "opacity_cue",
+      "perturbed_observation": true,
+      "policy_posterior": [
+        0.37300926,
+        0.31955826,
+        0.30743247
+      ],
+      "policy_posterior_sum": 1.0,
+      "profile": "separation_constrained",
+      "selected_action": "stabilize_dual",
+      "selected_action_index": 0,
+      "state_posterior": [
+        0.13056238,
+        0.8500663,
+        0.0193714
+      ],
+      "state_posterior_sum": 1.0000000800937414,
+      "step": 14,
+      "true_state": "contracted_dual",
+      "vfe": 1.1411482095718384,
+      "weighted_expected_free_energy": -0.8594450783883723
+    },
+    {
+      "efe_terms": [
+        {
+          "action": "stabilize_dual",
+          "ambiguity_proxy": 0.5020040417194457,
+          "efe_proxy": -0.30555068816839737,
+          "risk_proxy": -0.807554729887843
+        },
+        {
+          "action": "inspect_boundary",
+          "ambiguity_proxy": 0.5020040417194458,
+          "efe_proxy": -0.10844376418977064,
+          "risk_proxy": -0.6104478059092164
+        },
+        {
+          "action": "release_prior",
+          "ambiguity_proxy": 0.5020040417194458,
+          "efe_proxy": -0.05264103555723698,
+          "risk_proxy": -0.5546450772766828
+        }
+      ],
+      "expected_free_energy": [
+        -1.11048305,
+        -1.09575462,
+        -1.08644402
+      ],
+      "negative_expected_free_energy": [
+        1.11048305,
+        1.09575462,
+        1.08644402
+      ],
+      "observation": 0,
+      "observation_label": "self_env_cue",
+      "perturbed_observation": false,
+      "policy_posterior": [
+        0.33765224,
+        0.3327156,
+        0.32963219
+      ],
+      "policy_posterior_sum": 1.0000000298023224,
+      "profile": "separation_constrained",
+      "selected_action": "stabilize_dual",
+      "selected_action_index": 0,
+      "state_posterior": [
+        0.8856374,
+        0.09585915,
+        0.01850335
+      ],
+      "state_posterior_sum": 0.9999999031424522,
+      "step": 15,
+      "true_state": "contracted_dual",
+      "vfe": 0.9796637296676636,
+      "weighted_expected_free_energy": -1.09765866782881
+    },
+    {
+      "efe_terms": [
+        {
+          "action": "stabilize_dual",
+          "ambiguity_proxy": 0.502004068251645,
+          "efe_proxy": -0.3525435011090322,
+          "risk_proxy": -0.8545475693606772
+        },
+        {
+          "action": "inspect_boundary",
+          "ambiguity_proxy": 0.5020040682516451,
+          "efe_proxy": -0.14609533921969886,
+          "risk_proxy": -0.648099407471344
+        },
+        {
+          "action": "release_prior",
+          "ambiguity_proxy": 0.502004068251645,
+          "efe_proxy": -0.09397381477220934,
+          "risk_proxy": -0.5959778830238543
+        }
+      ],
+      "expected_free_energy": [
+        -1.09242201,
+        -1.10829377,
+        -1.10287929
+      ],
+      "negative_expected_free_energy": [
+        1.09242201,
+        1.10829377,
+        1.10287929
+      ],
+      "observation": 0,
+      "observation_label": "self_env_cue",
+      "perturbed_observation": false,
+      "policy_posterior": [
+        0.33041352,
+        0.33569959,
+        0.33388686
+      ],
+      "policy_posterior_sum": 0.9999999701976776,
+      "profile": "separation_constrained",
+      "selected_action": "inspect_boundary",
+      "selected_action_index": 1,
+      "state_posterior": [
+        0.97938627,
+        0.0167609,
+        0.00385279
+      ],
+      "state_posterior_sum": 0.9999999559950083,
+      "step": 16,
+      "true_state": "contracted_dual",
+      "vfe": 0.3599811792373657,
+      "weighted_expected_free_energy": -1.1012416678355876
+    },
+    {
+      "efe_terms": [
+        {
+          "action": "stabilize_dual",
+          "ambiguity_proxy": 0.5020040730438045,
+          "efe_proxy": -0.3374476527977327,
+          "risk_proxy": -0.8394517258415372
+        },
+        {
+          "action": "inspect_boundary",
+          "ambiguity_proxy": 0.5020040730438045,
+          "efe_proxy": -0.13406295025448878,
+          "risk_proxy": -0.6360670232982932
+        },
+        {
+          "action": "release_prior",
+          "ambiguity_proxy": 0.5020040730438045,
+          "efe_proxy": -0.08083445720298676,
+          "risk_proxy": -0.5828385302467912
+        }
+      ],
+      "expected_free_energy": [
+        -1.0992831,
+        -1.10519671,
+        -1.09842801
+      ],
+      "negative_expected_free_energy": [
+        1.0992831,
+        1.10519671,
+        1.09842801
+      ],
+      "observation": 0,
+      "observation_label": "self_env_cue",
+      "perturbed_observation": false,
+      "policy_posterior": [
+        0.33277023,
+        0.33474395,
+        0.3324858
+      ],
+      "policy_posterior_sum": 0.9999999701976776,
+      "profile": "separation_constrained",
+      "selected_action": "inspect_boundary",
+      "selected_action_index": 1,
+      "state_posterior": [
+        0.95064205,
+        0.0388377,
+        0.01052022
+      ],
+      "state_posterior_sum": 0.9999999655410647,
+      "step": 17,
+      "true_state": "contracted_dual",
+      "vfe": 0.5936089754104614,
+      "weighted_expected_free_energy": -1.1009783086228353
+    },
+    {
+      "efe_terms": [
+        {
+          "action": "stabilize_dual",
+          "ambiguity_proxy": 0.50200410296558,
+          "efe_proxy": -0.3359772256437824,
+          "risk_proxy": -0.8379813286093624
+        },
+        {
+          "action": "inspect_boundary",
+          "ambiguity_proxy": 0.50200410296558,
+          "efe_proxy": -0.1328964734295145,
+          "risk_proxy": -0.6349005763950945
+        },
+        {
+          "action": "release_prior",
+          "ambiguity_proxy": 0.50200410296558,
+          "efe_proxy": -0.07956684955999693,
+          "risk_proxy": -0.5815709525255769
+        }
+      ],
+      "expected_free_energy": [
+        -1.09990954,
+        -1.10490882,
+        -1.09799314
+      ],
+      "negative_expected_free_energy": [
+        1.09990954,
+        1.10490882,
+        1.09799314
+      ],
+      "observation": 0,
+      "observation_label": "self_env_cue",
+      "perturbed_observation": false,
+      "policy_posterior": [
+        0.33298954,
+        0.33465841,
+        0.33235201
+      ],
+      "policy_posterior_sum": 0.9999999701976776,
+      "profile": "separation_constrained",
+      "selected_action": "inspect_boundary",
+      "selected_action_index": 1,
+      "state_posterior": [
+        0.94796377,
+        0.04069273,
+        0.01134352
+      ],
+      "state_posterior_sum": 1.0000000251457095,
+      "step": 18,
+      "true_state": "contracted_dual",
+      "vfe": 0.6128361225128174,
+      "weighted_expected_free_energy": -1.100945640085282
+    },
+    {
+      "efe_terms": [
+        {
+          "action": "stabilize_dual",
+          "ambiguity_proxy": 0.5020041183939953,
+          "efe_proxy": -0.33583153031047397,
+          "risk_proxy": -0.8378356487044692
+        },
+        {
+          "action": "inspect_boundary",
+          "ambiguity_proxy": 0.5020041183939955,
+          "efe_proxy": -0.13278118315171394,
+          "risk_proxy": -0.6347853015457094
+        },
+        {
+          "action": "release_prior",
+          "ambiguity_proxy": 0.5020041183939954,
+          "efe_proxy": -0.07944188870695623,
+          "risk_proxy": -0.5814460071009516
+        }
+      ],
+      "expected_free_energy": [
+        -1.09997153,
+        -1.104882,
+        -1.09795094
+      ],
+      "negative_expected_free_energy": [
+        1.09997153,
+        1.104882,
+        1.09795094
+      ],
+      "observation": 0,
+      "observation_label": "self_env_cue",
+      "perturbed_observation": false,
+      "policy_posterior": [
+        0.33301097,
+        0.33465025,
+        0.33233878
+      ],
+      "policy_posterior_sum": 1.0,
+      "profile": "separation_constrained",
+      "selected_action": "inspect_boundary",
+      "selected_action_index": 1,
+      "state_posterior": [
+        0.94770479,
+        0.04086104,
+        0.01143423
+      ],
+      "state_posterior_sum": 1.0000000558793545,
+      "step": 19,
+      "true_state": "contracted_dual",
+      "vfe": 0.6146761775016785,
+      "weighted_expected_free_energy": -1.1009432996158282
+    },
+    {
+      "efe_terms": [
+        {
+          "action": "stabilize_dual",
+          "ambiguity_proxy": 0.5020040234858638,
+          "efe_proxy": -0.3358170277462802,
+          "risk_proxy": -0.837821051232144
+        },
+        {
+          "action": "inspect_boundary",
+          "ambiguity_proxy": 0.5020040234858638,
+          "efe_proxy": -0.13276974801368058,
+          "risk_proxy": -0.6347737714995444
+        },
+        {
+          "action": "release_prior",
+          "ambiguity_proxy": 0.5020040234858638,
+          "efe_proxy": -0.0794295239884043,
+          "risk_proxy": -0.5814335474742681
+        }
+      ],
+      "expected_free_energy": [
+        -1.09997773,
+        -1.10487938,
+        -1.097947
+      ],
+      "negative_expected_free_energy": [
+        1.09997773,
+        1.10487938,
+        1.097947
+      ],
+      "observation": 0,
+      "observation_label": "self_env_cue",
+      "perturbed_observation": false,
+      "policy_posterior": [
+        0.33301309,
+        0.33464941,
+        0.33233753
+      ],
+      "policy_posterior_sum": 1.0000000298023224,
+      "profile": "separation_constrained",
+      "selected_action": "inspect_boundary",
+      "selected_action_index": 1,
+      "state_posterior": [
+        0.94767928,
+        0.04087689,
+        0.01144369
+      ],
+      "state_posterior_sum": 0.9999998668208718,
+      "step": 20,
+      "true_state": "contracted_dual",
+      "vfe": 0.6148555874824524,
+      "weighted_expected_free_energy": -1.1009432101004855
+    },
+    {
+      "efe_terms": [
+        {
+          "action": "stabilize_dual",
+          "ambiguity_proxy": 0.5020041305497167,
+          "efe_proxy": 0.035926930314439276,
+          "risk_proxy": -0.46607720023527743
+        },
+        {
+          "action": "inspect_boundary",
+          "ambiguity_proxy": 0.5020041305497167,
+          "efe_proxy": 0.16853132771997426,
+          "risk_proxy": -0.33347280282974245
+        },
+        {
+          "action": "release_prior",
+          "ambiguity_proxy": 0.5020041305497167,
+          "efe_proxy": 0.2551530036901054,
+          "risk_proxy": -0.24685112685961128
+        }
+      ],
+      "expected_free_energy": [
+        -0.96831048,
+        -0.81364691,
+        -0.77496272
+      ],
+      "negative_expected_free_energy": [
+        0.96831048,
+        0.81364691,
+        0.77496272
+      ],
+      "observation": 1,
+      "observation_label": "opacity_cue",
+      "perturbed_observation": true,
+      "policy_posterior": [
+        0.37300926,
+        0.31955826,
+        0.30743247
+      ],
+      "policy_posterior_sum": 1.0,
+      "profile": "separation_constrained",
+      "selected_action": "stabilize_dual",
+      "selected_action_index": 0,
+      "state_posterior": [
+        0.13056238,
+        0.8500663,
+        0.0193714
+      ],
+      "state_posterior_sum": 1.0000000800937414,
+      "step": 21,
+      "true_state": "contracted_dual",
+      "vfe": 1.1411482095718384,
+      "weighted_expected_free_energy": -0.8594450783883723
+    },
+    {
+      "efe_terms": [
+        {
+          "action": "stabilize_dual",
+          "ambiguity_proxy": 0.5020040417194457,
+          "efe_proxy": -0.30555068816839737,
+          "risk_proxy": -0.807554729887843
+        },
+        {
+          "action": "inspect_boundary",
+          "ambiguity_proxy": 0.5020040417194458,
+          "efe_proxy": -0.10844376418977064,
+          "risk_proxy": -0.6104478059092164
+        },
+        {
+          "action": "release_prior",
+          "ambiguity_proxy": 0.5020040417194458,
+          "efe_proxy": -0.05264103555723698,
+          "risk_proxy": -0.5546450772766828
+        }
+      ],
+      "expected_free_energy": [
+        -1.11048305,
+        -1.09575462,
+        -1.08644402
+      ],
+      "negative_expected_free_energy": [
+        1.11048305,
+        1.09575462,
+        1.08644402
+      ],
+      "observation": 0,
+      "observation_label": "self_env_cue",
+      "perturbed_observation": false,
+      "policy_posterior": [
+        0.33765224,
+        0.3327156,
+        0.32963219
+      ],
+      "policy_posterior_sum": 1.0000000298023224,
+      "profile": "separation_constrained",
+      "selected_action": "stabilize_dual",
+      "selected_action_index": 0,
+      "state_posterior": [
+        0.8856374,
+        0.09585915,
+        0.01850335
+      ],
+      "state_posterior_sum": 0.9999999031424522,
+      "step": 22,
+      "true_state": "contracted_dual",
+      "vfe": 0.9796637296676636,
+      "weighted_expected_free_energy": -1.09765866782881
+    },
+    {
+      "efe_terms": [
+        {
+          "action": "stabilize_dual",
+          "ambiguity_proxy": 0.502004068251645,
+          "efe_proxy": -0.3525435011090322,
+          "risk_proxy": -0.8545475693606772
+        },
+        {
+          "action": "inspect_boundary",
+          "ambiguity_proxy": 0.5020040682516451,
+          "efe_proxy": -0.14609533921969886,
+          "risk_proxy": -0.648099407471344
+        },
+        {
+          "action": "release_prior",
+          "ambiguity_proxy": 0.502004068251645,
+          "efe_proxy": -0.09397381477220934,
+          "risk_proxy": -0.5959778830238543
+        }
+      ],
+      "expected_free_energy": [
+        -1.09242201,
+        -1.10829377,
+        -1.10287929
+      ],
+      "negative_expected_free_energy": [
+        1.09242201,
+        1.10829377,
+        1.10287929
+      ],
+      "observation": 0,
+      "observation_label": "self_env_cue",
+      "perturbed_observation": false,
+      "policy_posterior": [
+        0.33041352,
+        0.33569959,
+        0.33388686
+      ],
+      "policy_posterior_sum": 0.9999999701976776,
+      "profile": "separation_constrained",
+      "selected_action": "inspect_boundary",
+      "selected_action_index": 1,
+      "state_posterior": [
+        0.97938627,
+        0.0167609,
+        0.00385279
+      ],
+      "state_posterior_sum": 0.9999999559950083,
+      "step": 23,
+      "true_state": "contracted_dual",
+      "vfe": 0.3599811792373657,
+      "weighted_expected_free_energy": -1.1012416678355876
+    },
+    {
+      "efe_terms": [
+        {
+          "action": "stabilize_dual",
+          "ambiguity_proxy": 0.7555080835000455,
+          "efe_proxy": 0.13286591698521288,
+          "risk_proxy": -0.6226421665148326
+        },
+        {
+          "action": "inspect_boundary",
+          "ambiguity_proxy": 0.7558823167215516,
+          "efe_proxy": 0.06334877302259467,
+          "risk_proxy": -0.6925335436989569
+        },
+        {
+          "action": "release_prior",
+          "ambiguity_proxy": 0.7546963666161145,
+          "efe_proxy": 0.07955388610905367,
+          "risk_proxy": -0.6751424805070608
+        }
+      ],
+      "expected_free_energy": [
+        -0.91869164,
+        -0.96545118,
+        -0.97880715
+      ],
+      "negative_expected_free_energy": [
+        0.91869164,
+        0.96545118,
+        0.97880715
+      ],
+      "observation": 1,
+      "observation_label": "opacity_cue",
+      "perturbed_observation": false,
+      "policy_posterior": [
+        0.32156107,
+        0.33695421,
+        0.34148473
+      ],
+      "policy_posterior_sum": 1.0,
+      "profile": "opacified",
+      "selected_action": "release_prior",
+      "selected_action_index": 2,
+      "state_posterior": [
+        0.07008988,
+        0.8742789,
+        0.05563131
+      ],
+      "state_posterior_sum": 1.0000000894069672,
+      "step": 0,
+      "true_state": "opacified_boundary",
+      "vfe": 0.7685384154319763,
+      "weighted_expected_free_energy": -0.9549759913130043
+    },
+    {
+      "efe_terms": [
+        {
+          "action": "stabilize_dual",
+          "ambiguity_proxy": 0.7554288164698922,
+          "efe_proxy": 0.12619334998045106,
+          "risk_proxy": -0.6292354664894412
+        },
+        {
+          "action": "inspect_boundary",
+          "ambiguity_proxy": 0.7557871753810935,
+          "efe_proxy": 0.060005900452730576,
+          "risk_proxy": -0.695781274928363
+        },
+        {
+          "action": "release_prior",
+          "ambiguity_proxy": 0.7545788296855878,
+          "efe_proxy": 0.07770430501599745,
+          "risk_proxy": -0.6768745246695903
+        }
+      ],
+      "expected_free_energy": [
+        -0.93155271,
+        -0.97130156,
+        -0.97751725
+      ],
+      "negative_expected_free_energy": [
+        0.93155271,
+        0.97130156,
+        0.97751725
+      ],
+      "observation": 1,
+      "observation_label": "opacity_cue",
+      "perturbed_observation": false,
+      "policy_posterior": [
+        0.32387754,
+        0.33701056,
+        0.33911186
+      ],
+      "policy_posterior_sum": 0.9999999701976776,
+      "profile": "opacified",
+      "selected_action": "release_prior",
+      "selected_action_index": 2,
+      "state_posterior": [
+        0.04198063,
+        0.86098856,
+        0.09703084
+      ],
+      "state_posterior_sum": 1.0000000298023224,
+      "step": 1,
+      "true_state": "opacified_boundary",
+      "vfe": 0.8079640865325928,
+      "weighted_expected_free_energy": -0.9605355823744031
+    },
+    {
+      "efe_terms": [
+        {
+          "action": "stabilize_dual",
+          "ambiguity_proxy": 0.7532465078282228,
+          "efe_proxy": 0.14964283246598087,
+          "risk_proxy": -0.6036036753622419
+        },
+        {
+          "action": "inspect_boundary",
+          "ambiguity_proxy": 0.7535019789533988,
+          "efe_proxy": 0.11318079063038711,
+          "risk_proxy": -0.6403211883230117
+        },
+        {
+          "action": "release_prior",
+          "ambiguity_proxy": 0.7523529059500675,
+          "efe_proxy": 0.13404417092517162,
+          "risk_proxy": -0.6183087350248959
+        }
+      ],
+      "expected_free_energy": [
+        -0.92618692,
+        -0.94319499,
+        -0.87082225
+      ],
+      "negative_expected_free_energy": [
+        0.92618692,
+        0.94319499,
+        0.87082225
+      ],
+      "observation": 2,
+      "observation_label": "contextual_cue",
+      "perturbed_observation": true,
+      "policy_posterior": [
+        0.33746237,
+        0.34325102,
+        0.31928664
+      ],
+      "policy_posterior_sum": 1.0000000298023224,
+      "profile": "opacified",
+      "selected_action": "inspect_boundary",
+      "selected_action_index": 1,
+      "state_posterior": [
+        0.0479179,
+        0.19525804,
+        0.75682408
+      ],
+      "state_posterior_sum": 1.0000000149011612,
+      "step": 2,
+      "true_state": "opacified_boundary",
+      "vfe": 1.0479767322540283,
+      "weighted_expected_free_energy": -0.9143477836884415
+    },
+    {
+      "efe_terms": [
+        {
+          "action": "stabilize_dual",
+          "ambiguity_proxy": 0.7551800218812315,
+          "efe_proxy": 0.12937133936985612,
+          "risk_proxy": -0.6258086825113753
+        },
+        {
+          "action": "inspect_boundary",
+          "ambiguity_proxy": 0.7555274669574688,
+          "efe_proxy": 0.06642134218132112,
+          "risk_proxy": -0.6891061247761476
+        },
+        {
+          "action": "release_prior",
+          "ambiguity_proxy": 0.7543275253308697,
+          "efe_proxy": 0.0843880276075657,
+          "risk_proxy": -0.669939497723304
+        }
+      ],
+      "expected_free_energy": [
+        -0.94039184,
+        -0.97621763,
+        -0.97220337
+      ],
+      "negative_expected_free_energy": [
+        0.94039184,
+        0.97621763,
+        0.97220337
+      ],
+      "observation": 1,
+      "observation_label": "opacity_cue",
+      "perturbed_observation": false,
+      "policy_posterior": [
+        0.32586047,
+        0.33774632,
+        0.33639324
+      ],
+      "policy_posterior_sum": 1.0000000298023224,
+      "profile": "opacified",
+      "selected_action": "inspect_boundary",
+      "selected_action_index": 1,
+      "state_posterior": [
+        0.04455829,
+        0.78437001,
+        0.17107169
+      ],
+      "state_posterior_sum": 0.9999999925494194,
+      "step": 3,
+      "true_state": "opacified_boundary",
+      "vfe": 1.0054991245269775,
+      "weighted_expected_free_energy": -0.9631930803977422
+    },
+    {
+      "efe_terms": [
+        {
+          "action": "stabilize_dual",
+          "ambiguity_proxy": 0.7555507324122572,
+          "efe_proxy": 0.12655319442332535,
+          "risk_proxy": -0.6289975379889319
+        },
+        {
+          "action": "inspect_boundary",
+          "ambiguity_proxy": 0.7559175341989686,
+          "efe_proxy": 0.058205413214883484,
+          "risk_proxy": -0.6977121209840851
+        },
+        {
+          "action": "release_prior",
+          "ambiguity_proxy": 0.7547113254497448,
+          "efe_proxy": 0.0754210371114582,
+          "risk_proxy": -0.6792902883382866
+        }
+      ],
+      "expected_free_energy": [
+        -0.92383122,
+        -0.9671101,
+        -0.97949529
+      ],
+      "negative_expected_free_energy": [
+        0.92383122,
+        0.9671101,
+        0.97949529
+      ],
+      "observation": 1,
+      "observation_label": "opacity_cue",
+      "perturbed_observation": false,
+      "policy_posterior": [
+        0.3224276,
+        0.33668825,
+        0.34088415
+      ],
+      "policy_posterior_sum": 1.0,
+      "profile": "opacified",
+      "selected_action": "release_prior",
+      "selected_action_index": 2,
+      "state_posterior": [
+        0.0479359,
+        0.8957693,
+        0.05629482
+      ],
+      "state_posterior_sum": 1.0000000149011612,
+      "step": 4,
+      "true_state": "opacified_boundary",
+      "vfe": 0.7033435106277466,
+      "weighted_expected_free_energy": -0.9573777090351516
+    },
+    {
+      "efe_terms": [
+        {
+          "action": "stabilize_dual",
+          "ambiguity_proxy": 0.7554337422999884,
+          "efe_proxy": 0.12536660206331596,
+          "risk_proxy": -0.6300671402366724
+        },
+        {
+          "action": "inspect_boundary",
+          "ambiguity_proxy": 0.7557910869270108,
+          "efe_proxy": 0.05934300866587239,
+          "risk_proxy": -0.6964480782611384
+        },
+        {
+          "action": "release_prior",
+          "ambiguity_proxy": 0.7545800830781786,
+          "efe_proxy": 0.07717592865904299,
+          "risk_proxy": -0.6774041544191356
+        }
+      ],
+      "expected_free_energy": [
+        -0.93222225,
+        -0.97151333,
+        -0.97756863
+      ],
+      "negative_expected_free_energy": [
+        0.93222225,
+        0.97151333,
+        0.97756863
+      ],
+      "observation": 1,
+      "observation_label": "opacity_cue",
+      "perturbed_observation": false,
+      "policy_posterior": [
+        0.32399544,
+        0.33697894,
+        0.33902565
+      ],
+      "policy_posterior_sum": 1.0000000298023224,
+      "profile": "opacified",
+      "selected_action": "release_prior",
+      "selected_action_index": 2,
+      "state_posterior": [
+        0.03905524,
+        0.86361885,
+        0.0973259
+      ],
+      "state_posterior_sum": 0.9999999888241291,
+      "step": 5,
+      "true_state": "opacified_boundary",
+      "vfe": 0.8005157709121704,
+      "weighted_expected_free_energy": -0.9608361283149858
+    },
+    {
+      "efe_terms": [
+        {
+          "action": "stabilize_dual",
+          "ambiguity_proxy": 0.7554124771739714,
+          "efe_proxy": 0.12521943982411443,
+          "risk_proxy": -0.630193037349857
+        },
+        {
+          "action": "inspect_boundary",
+          "ambiguity_proxy": 0.7557682120287658,
+          "efe_proxy": 0.059598157298205834,
+          "risk_proxy": -0.6961700547305599
+        },
+        {
+          "action": "release_prior",
+          "ambiguity_proxy": 0.7545565599404095,
+          "efe_proxy": 0.07753079969734455,
+          "risk_proxy": -0.6770257602430649
+        }
+      ],
+      "expected_free_energy": [
+        -0.93356168,
+        -0.97220206,
+        -0.97715634
+      ],
+      "negative_expected_free_energy": [
+        0.93356168,
+        0.97220206,
+        0.97715634
+      ],
+      "observation": 1,
+      "observation_label": "opacity_cue",
+      "perturbed_observation": false,
+      "policy_posterior": [
+        0.32425889,
+        0.3370336,
+        0.33870751
+      ],
+      "policy_posterior_sum": 1.0,
+      "profile": "opacified",
+      "selected_action": "release_prior",
+      "selected_action_index": 2,
+      "state_posterior": [
+        0.0376982,
+        0.85766995,
+        0.10463186
+      ],
+      "state_posterior_sum": 1.000000011175871,
+      "step": 6,
+      "true_state": "opacified_boundary",
+      "vfe": 0.8174972534179688,
+      "weighted_expected_free_energy": -0.9613506270728962
+    },
+    {
+      "efe_terms": [
+        {
+          "action": "stabilize_dual",
+          "ambiguity_proxy": 0.7554085572002709,
+          "efe_proxy": 0.12520119257855744,
+          "risk_proxy": -0.6302073646217135
+        },
+        {
+          "action": "inspect_boundary",
+          "ambiguity_proxy": 0.7557640096597781,
+          "efe_proxy": 0.05965140990002171,
+          "risk_proxy": -0.6961125997597564
+        },
+        {
+          "action": "release_prior",
+          "ambiguity_proxy": 0.7545522670524192,
+          "efe_proxy": 0.07760080698378957,
+          "risk_proxy": -0.6769514600686296
+        }
+      ],
+      "expected_free_energy": [
+        -0.93379515,
+        -0.9723227,
+        -0.9770788
+      ],
+      "negative_expected_free_energy": [
+        0.93379515,
+        0.9723227,
+        0.9770788
+      ],
+      "observation": 1,
+      "observation_label": "opacity_cue",
+      "perturbed_observation": false,
+      "policy_posterior": [
+        0.32430539,
+        0.33704388,
+        0.33865073
+      ],
+      "policy_posterior_sum": 1.0,
+      "profile": "opacified",
+      "selected_action": "release_prior",
+      "selected_action_index": 2,
+      "state_posterior": [
+        0.03748149,
+        0.85656059,
+        0.10595794
+      ],
+      "state_posterior_sum": 1.0000000149011612,
+      "step": 7,
+      "true_state": "opacified_boundary",
+      "vfe": 0.8206312656402588,
+      "weighted_expected_free_energy": -0.961438665395816
+    },
+    {
+      "efe_terms": [
+        {
+          "action": "stabilize_dual",
+          "ambiguity_proxy": 0.755407804084588,
+          "efe_proxy": 0.12519898463264367,
+          "risk_proxy": -0.6302088194519443
+        },
+        {
+          "action": "inspect_boundary",
+          "ambiguity_proxy": 0.7557632064080009,
+          "efe_proxy": 0.059662021419731315,
+          "risk_proxy": -0.6961011849882696
+        },
+        {
+          "action": "release_prior",
+          "ambiguity_proxy": 0.7545514509602846,
+          "efe_proxy": 0.07761429031622369,
+          "risk_proxy": -0.676937160644061
+        }
+      ],
+      "expected_free_energy": [
+        -0.9338367,
+        -0.97234428,
+        -0.97706449
+      ],
+      "negative_expected_free_energy": [
+        0.9338367,
+        0.97234428,
+        0.97706449
+      ],
+      "observation": 1,
+      "observation_label": "opacity_cue",
+      "perturbed_observation": false,
+      "policy_posterior": [
+        0.3243137,
+        0.33704582,
+        0.33864051
+      ],
+      "policy_posterior_sum": 1.0000000298023224,
+      "profile": "opacified",
+      "selected_action": "release_prior",
+      "selected_action_index": 2,
+      "state_posterior": [
+        0.03744594,
+        0.85635465,
+        0.10619938
+      ],
+      "state_posterior_sum": 0.9999999739229679,
+      "step": 8,
+      "true_state": "opacified_boundary",
+      "vfe": 0.8212116360664368,
+      "weighted_expected_free_energy": -0.961454226941374
+    },
+    {
+      "efe_terms": [
+        {
+          "action": "stabilize_dual",
+          "ambiguity_proxy": 0.75323699480965,
+          "efe_proxy": 0.14938398894794014,
+          "risk_proxy": -0.6038530058617099
+        },
+        {
+          "action": "inspect_boundary",
+          "ambiguity_proxy": 0.7534914350545261,
+          "efe_proxy": 0.11315948287460398,
+          "risk_proxy": -0.6403319521799221
+        },
+        {
+          "action": "release_prior",
+          "ambiguity_proxy": 0.752341442444896,
+          "efe_proxy": 0.1341027985553962,
+          "risk_proxy": -0.6182386438894998
+        }
+      ],
+      "expected_free_energy": [
+        -0.92589349,
+        -0.94270474,
+        -0.86985809
+      ],
+      "negative_expected_free_energy": [
+        0.92589349,
+        0.94270474,
+        0.86985809
+      ],
+      "observation": 2,
+      "observation_label": "contextual_cue",
+      "perturbed_observation": true,
+      "policy_posterior": [
+        0.33755744,
+        0.34328017,
+        0.31916246
+      ],
+      "policy_posterior_sum": 1.0000000596046448,
+      "profile": "opacified",
+      "selected_action": "inspect_boundary",
+      "selected_action_index": 1,
+      "state_posterior": [
+        0.0465846,
+        0.1928788,
+        0.76053661
+      ],
+      "state_posterior_sum": 1.000000011175871,
+      "step": 9,
+      "true_state": "opacified_boundary",
+      "vfe": 1.0398495197296143,
+      "weighted_expected_free_energy": -0.9137801141644637
+    },
+    {
+      "efe_terms": [
+        {
+          "action": "stabilize_dual",
+          "ambiguity_proxy": 0.7551777778647321,
+          "efe_proxy": 0.1293201404577501,
+          "risk_proxy": -0.625857637406982
+        },
+        {
+          "action": "inspect_boundary",
+          "ambiguity_proxy": 0.7555249927382932,
+          "efe_proxy": 0.06642399360591211,
+          "risk_proxy": -0.6891009991323811
+        },
+        {
+          "action": "release_prior",
+          "ambiguity_proxy": 0.7543248658954304,
+          "efe_proxy": 0.08440788730190074,
+          "risk_proxy": -0.6699169785935296
+        }
+      ],
+      "expected_free_energy": [
+        -0.94054407,
+        -0.97628188,
+        -0.97213739
+      ],
+      "negative_expected_free_energy": [
+        0.94054407,
+        0.97628188,
+        0.97213739
+      ],
+      "observation": 1,
+      "observation_label": "opacity_cue",
+      "perturbed_observation": false,
+      "policy_posterior": [
+        0.32589406,
+        0.33775142,
+        0.33635452
+      ],
+      "policy_posterior_sum": 1.0,
+      "profile": "opacified",
+      "selected_action": "inspect_boundary",
+      "selected_action_index": 1,
+      "state_posterior": [
+        0.04427915,
+        0.78378135,
+        0.17193955
+      ],
+      "state_posterior_sum": 1.0000000521540642,
+      "step": 10,
+      "true_state": "opacified_boundary",
+      "vfe": 1.0068821907043457,
+      "weighted_expected_free_energy": -0.9632411227136632
+    },
+    {
+      "efe_terms": [
+        {
+          "action": "stabilize_dual",
+          "ambiguity_proxy": 0.7555504775676707,
+          "efe_proxy": 0.1265449820869612,
+          "risk_proxy": -0.6290054954807095
+        },
+        {
+          "action": "inspect_boundary",
+          "ambiguity_proxy": 0.7559172456913671,
+          "efe_proxy": 0.05820498782170713,
+          "risk_proxy": -0.69771225786966
+        },
+        {
+          "action": "release_prior",
+          "ambiguity_proxy": 0.7547110075141337,
+          "efe_proxy": 0.07542320255386215,
+          "risk_proxy": -0.6792878049602715
+        }
+      ],
+      "expected_free_energy": [
+        -0.92386162,
+        -0.96712554,
+        -0.97949088
+      ],
+      "negative_expected_free_energy": [
+        0.92386162,
+        0.96712554,
+        0.97949088
+      ],
+      "observation": 1,
+      "observation_label": "opacity_cue",
+      "perturbed_observation": false,
+      "policy_posterior": [
+        0.32243305,
+        0.33668894,
+        0.34087804
+      ],
+      "policy_posterior_sum": 1.0000000298023224,
+      "profile": "opacified",
+      "selected_action": "release_prior",
+      "selected_action_index": 2,
+      "state_posterior": [
+        0.04789299,
+        0.89568955,
+        0.05641756
+      ],
+      "state_posterior_sum": 1.0000000968575478,
+      "step": 11,
+      "true_state": "opacified_boundary",
+      "vfe": 0.7035976648330688,
+      "weighted_expected_free_energy": -0.9573909217382273
+    },
+    {
+      "efe_terms": [
+        {
+          "action": "stabilize_dual",
+          "ambiguity_proxy": 0.7554336723750477,
+          "efe_proxy": 0.12536556155930478,
+          "risk_proxy": -0.6300681108157429
+        },
+        {
+          "action": "inspect_boundary",
+          "ambiguity_proxy": 0.7557910115378447,
+          "efe_proxy": 0.05934326753240948,
+          "risk_proxy": -0.6964477440054352
+        },
+        {
+          "action": "release_prior",
+          "ambiguity_proxy": 0.7545800038550681,
+          "efe_proxy": 0.07717657812187984,
+          "risk_proxy": -0.6774034257331882
+        }
+      ],
+      "expected_free_energy": [
+        -0.93222666,
+        -0.97151548,
+        -0.97756743
+      ],
+      "negative_expected_free_energy": [
+        0.93222666,
+        0.97151548,
+        0.97756743
+      ],
+      "observation": 1,
+      "observation_label": "opacity_cue",
+      "perturbed_observation": false,
+      "policy_posterior": [
+        0.32399628,
+        0.33697909,
+        0.33902463
+      ],
+      "policy_posterior_sum": 1.0,
+      "profile": "opacified",
+      "selected_action": "release_prior",
+      "selected_action_index": 2,
+      "state_posterior": [
+        0.03904912,
+        0.86360335,
+        0.09734751
+      ],
+      "state_posterior_sum": 0.9999999739229679,
+      "step": 12,
+      "true_state": "opacified_boundary",
+      "vfe": 0.8005603551864624,
+      "weighted_expected_free_energy": -0.9608378084332578
+    },
+    {
+      "efe_terms": [
+        {
+          "action": "stabilize_dual",
+          "ambiguity_proxy": 0.755412468983982,
+          "efe_proxy": 0.12521930019062666,
+          "risk_proxy": -0.6301931687933553
+        },
+        {
+          "action": "inspect_boundary",
+          "ambiguity_proxy": 0.7557682029044748,
+          "efe_proxy": 0.059598244586916094,
+          "risk_proxy": -0.6961699583175587
+        },
+        {
+          "action": "release_prior",
+          "ambiguity_proxy": 0.7545565502676096,
+          "efe_proxy": 0.07753095034159208,
+          "risk_proxy": -0.6770255999260175
+        }
+      ],
+      "expected_free_energy": [
+        -0.93356234,
+        -0.97220248,
+        -0.97715604
+      ],
+      "negative_expected_free_energy": [
+        0.93356234,
+        0.97220248,
+        0.97715604
+      ],
+      "observation": 1,
+      "observation_label": "opacity_cue",
+      "perturbed_observation": false,
+      "policy_posterior": [
+        0.32425901,
+        0.33703363,
+        0.3387073
+      ],
+      "policy_posterior_sum": 0.9999999403953552,
+      "profile": "opacified",
+      "selected_action": "release_prior",
+      "selected_action_index": 2,
+      "state_posterior": [
+        0.03769726,
+        0.85766697,
+        0.10463579
+      ],
+      "state_posterior_sum": 1.0000000149011612,
+      "step": 13,
+      "true_state": "opacified_boundary",
+      "vfe": 0.8175055980682373,
+      "weighted_expected_free_energy": -0.9613508157648258
+    },
+    {
+      "efe_terms": [
+        {
+          "action": "stabilize_dual",
+          "ambiguity_proxy": 0.7554085326333244,
+          "efe_proxy": 0.12520117212823667,
+          "risk_proxy": -0.6302073605050877
+        },
+        {
+          "action": "inspect_boundary",
+          "ambiguity_proxy": 0.7557639849228129,
+          "efe_proxy": 0.05965143098457426,
+          "risk_proxy": -0.6961125539382387
+        },
+        {
+          "action": "release_prior",
+          "ambiguity_proxy": 0.754552242280798,
+          "efe_proxy": 0.07760083761885572,
+          "risk_proxy": -0.6769514046619423
+        }
+      ],
+      "expected_free_energy": [
+        -0.93379527,
+        -0.97232276,
+        -0.9770788
+      ],
+      "negative_expected_free_energy": [
+        0.93379527,
+        0.97232276,
+        0.9770788
+      ],
+      "observation": 1,
+      "observation_label": "opacity_cue",
+      "perturbed_observation": false,
+      "policy_posterior": [
+        0.32430539,
+        0.33704388,
+        0.3386507
+      ],
+      "policy_posterior_sum": 0.9999999701976776,
+      "profile": "opacified",
+      "selected_action": "release_prior",
+      "selected_action_index": 2,
+      "state_posterior": [
+        0.03748135,
+        0.85655999,
+        0.10595865
+      ],
+      "state_posterior_sum": 0.9999999850988388,
+      "step": 14,
+      "true_state": "opacified_boundary",
+      "vfe": 0.8206326961517334,
+      "weighted_expected_free_energy": -0.9614386950261942
+    },
+    {
+      "efe_terms": [
+        {
+          "action": "stabilize_dual",
+          "ambiguity_proxy": 0.7554078234702856,
+          "efe_proxy": 0.12519898187029666,
+          "risk_proxy": -0.6302088415999889
+        },
+        {
+          "action": "inspect_boundary",
+          "ambiguity_proxy": 0.7557632257730523,
+          "efe_proxy": 0.05966202402237597,
+          "risk_proxy": -0.6961012017506764
+        },
+        {
+          "action": "release_prior",
+          "ambiguity_proxy": 0.7545514702716003,
+          "efe_proxy": 0.07761429556165345,
+          "risk_proxy": -0.6769371747099469
+        }
+      ],
+      "expected_free_energy": [
+        -0.93383664,
+        -0.9723444,
+        -0.97706449
+      ],
+      "negative_expected_free_energy": [
+        0.93383664,
+        0.9723444,
+        0.97706449
+      ],
+      "observation": 1,
+      "observation_label": "opacity_cue",
+      "perturbed_observation": false,
+      "policy_posterior": [
+        0.32431367,
+        0.33704582,
+        0.33864048
+      ],
+      "policy_posterior_sum": 0.9999999701976776,
+      "profile": "opacified",
+      "selected_action": "release_prior",
+      "selected_action_index": 2,
+      "state_posterior": [
+        0.03744591,
+        0.85635459,
+        0.1061995
+      ],
+      "state_posterior_sum": 1.0,
+      "step": 15,
+      "true_state": "opacified_boundary",
+      "vfe": 0.8212120532989502,
+      "weighted_expected_free_energy": -0.9614541908404721
+    },
+    {
+      "efe_terms": [
+        {
+          "action": "stabilize_dual",
+          "ambiguity_proxy": 0.7532369835468604,
+          "efe_proxy": 0.149383987294049,
+          "risk_proxy": -0.6038529962528114
+        },
+        {
+          "action": "inspect_boundary",
+          "ambiguity_proxy": 0.7534914237863737,
+          "efe_proxy": 0.11315948224062577,
+          "risk_proxy": -0.6403319415457479
+        },
+        {
+          "action": "release_prior",
+          "ambiguity_proxy": 0.7523414311954408,
+          "efe_proxy": 0.13410279763678212,
+          "risk_proxy": -0.6182386335586587
+        }
+      ],
+      "expected_free_energy": [
+        -0.92589349,
+        -0.94270474,
+        -0.86985809
+      ],
+      "negative_expected_free_energy": [
+        0.92589349,
+        0.94270474,
+        0.86985809
+      ],
+      "observation": 2,
+      "observation_label": "contextual_cue",
+      "perturbed_observation": true,
+      "policy_posterior": [
+        0.33755744,
+        0.34328017,
+        0.31916246
+      ],
+      "policy_posterior_sum": 1.0000000596046448,
+      "profile": "opacified",
+      "selected_action": "inspect_boundary",
+      "selected_action_index": 1,
+      "state_posterior": [
+        0.0465846,
+        0.19287878,
+        0.76053661
+      ],
+      "state_posterior_sum": 0.9999999962747097,
+      "step": 16,
+      "true_state": "opacified_boundary",
+      "vfe": 1.0398494005203247,
+      "weighted_expected_free_energy": -0.9137801141644637
+    },
+    {
+      "efe_terms": [
+        {
+          "action": "stabilize_dual",
+          "ambiguity_proxy": 0.7551777610158359,
+          "efe_proxy": 0.12932013158577793,
+          "risk_proxy": -0.625857629430058
+        },
+        {
+          "action": "inspect_boundary",
+          "ambiguity_proxy": 0.7555249758739613,
+          "efe_proxy": 0.06642398741313571,
+          "risk_proxy": -0.6891009884608256
+        },
+        {
+          "action": "release_prior",
+          "ambiguity_proxy": 0.7543248490386505,
+          "efe_proxy": 0.08440788169821856,
+          "risk_proxy": -0.6699169673404319
+        }
+      ],
+      "expected_free_energy": [
+        -0.94054407,
+        -0.97628176,
+        -0.97213739
+      ],
+      "negative_expected_free_energy": [
+        0.94054407,
+        0.97628176,
+        0.97213739
+      ],
+      "observation": 1,
+      "observation_label": "opacity_cue",
+      "perturbed_observation": false,
+      "policy_posterior": [
+        0.32589409,
+        0.33775142,
+        0.33635452
+      ],
+      "policy_posterior_sum": 1.0000000298023224,
+      "profile": "opacified",
+      "selected_action": "inspect_boundary",
+      "selected_action_index": 1,
+      "state_posterior": [
+        0.04427913,
+        0.78378135,
+        0.17193955
+      ],
+      "state_posterior_sum": 1.0000000298023224,
+      "step": 17,
+      "true_state": "opacified_boundary",
+      "vfe": 1.0068821907043457,
+      "weighted_expected_free_energy": -0.9632411104809542
+    },
+    {
+      "efe_terms": [
+        {
+          "action": "stabilize_dual",
+          "ambiguity_proxy": 0.7555504775676707,
+          "efe_proxy": 0.1265449820869612,
+          "risk_proxy": -0.6290054954807095
+        },
+        {
+          "action": "inspect_boundary",
+          "ambiguity_proxy": 0.7559172456913671,
+          "efe_proxy": 0.05820498782170713,
+          "risk_proxy": -0.69771225786966
+        },
+        {
+          "action": "release_prior",
+          "ambiguity_proxy": 0.7547110075141337,
+          "efe_proxy": 0.07542320255386215,
+          "risk_proxy": -0.6792878049602715
+        }
+      ],
+      "expected_free_energy": [
+        -0.92386162,
+        -0.96712554,
+        -0.97949088
+      ],
+      "negative_expected_free_energy": [
+        0.92386162,
+        0.96712554,
+        0.97949088
+      ],
+      "observation": 1,
+      "observation_label": "opacity_cue",
+      "perturbed_observation": false,
+      "policy_posterior": [
+        0.32243305,
+        0.33668894,
+        0.34087804
+      ],
+      "policy_posterior_sum": 1.0000000298023224,
+      "profile": "opacified",
+      "selected_action": "release_prior",
+      "selected_action_index": 2,
+      "state_posterior": [
+        0.04789299,
+        0.89568955,
+        0.05641756
+      ],
+      "state_posterior_sum": 1.0000000968575478,
+      "step": 18,
+      "true_state": "opacified_boundary",
+      "vfe": 0.7035976648330688,
+      "weighted_expected_free_energy": -0.9573909217382273
+    },
+    {
+      "efe_terms": [
+        {
+          "action": "stabilize_dual",
+          "ambiguity_proxy": 0.7554336723750477,
+          "efe_proxy": 0.12536556155930478,
+          "risk_proxy": -0.6300681108157429
+        },
+        {
+          "action": "inspect_boundary",
+          "ambiguity_proxy": 0.7557910115378447,
+          "efe_proxy": 0.05934326753240948,
+          "risk_proxy": -0.6964477440054352
+        },
+        {
+          "action": "release_prior",
+          "ambiguity_proxy": 0.7545800038550681,
+          "efe_proxy": 0.07717657812187984,
+          "risk_proxy": -0.6774034257331882
+        }
+      ],
+      "expected_free_energy": [
+        -0.93222666,
+        -0.97151548,
+        -0.97756743
+      ],
+      "negative_expected_free_energy": [
+        0.93222666,
+        0.97151548,
+        0.97756743
+      ],
+      "observation": 1,
+      "observation_label": "opacity_cue",
+      "perturbed_observation": false,
+      "policy_posterior": [
+        0.32399628,
+        0.33697909,
+        0.33902463
+      ],
+      "policy_posterior_sum": 1.0,
+      "profile": "opacified",
+      "selected_action": "release_prior",
+      "selected_action_index": 2,
+      "state_posterior": [
+        0.03904912,
+        0.86360335,
+        0.09734751
+      ],
+      "state_posterior_sum": 0.9999999739229679,
+      "step": 19,
+      "true_state": "opacified_boundary",
+      "vfe": 0.8005603551864624,
+      "weighted_expected_free_energy": -0.9608378084332578
+    },
+    {
+      "efe_terms": [
+        {
+          "action": "stabilize_dual",
+          "ambiguity_proxy": 0.755412468983982,
+          "efe_proxy": 0.12521930019062666,
+          "risk_proxy": -0.6301931687933553
+        },
+        {
+          "action": "inspect_boundary",
+          "ambiguity_proxy": 0.7557682029044748,
+          "efe_proxy": 0.059598244586916094,
+          "risk_proxy": -0.6961699583175587
+        },
+        {
+          "action": "release_prior",
+          "ambiguity_proxy": 0.7545565502676096,
+          "efe_proxy": 0.07753095034159208,
+          "risk_proxy": -0.6770255999260175
+        }
+      ],
+      "expected_free_energy": [
+        -0.93356234,
+        -0.97220248,
+        -0.97715604
+      ],
+      "negative_expected_free_energy": [
+        0.93356234,
+        0.97220248,
+        0.97715604
+      ],
+      "observation": 1,
+      "observation_label": "opacity_cue",
+      "perturbed_observation": false,
+      "policy_posterior": [
+        0.32425901,
+        0.33703363,
+        0.3387073
+      ],
+      "policy_posterior_sum": 0.9999999403953552,
+      "profile": "opacified",
+      "selected_action": "release_prior",
+      "selected_action_index": 2,
+      "state_posterior": [
+        0.03769726,
+        0.85766697,
+        0.10463579
+      ],
+      "state_posterior_sum": 1.0000000149011612,
+      "step": 20,
+      "true_state": "opacified_boundary",
+      "vfe": 0.8175055980682373,
+      "weighted_expected_free_energy": -0.9613508157648258
+    },
+    {
+      "efe_terms": [
+        {
+          "action": "stabilize_dual",
+          "ambiguity_proxy": 0.7554085326333244,
+          "efe_proxy": 0.12520117212823667,
+          "risk_proxy": -0.6302073605050877
+        },
+        {
+          "action": "inspect_boundary",
+          "ambiguity_proxy": 0.7557639849228129,
+          "efe_proxy": 0.05965143098457426,
+          "risk_proxy": -0.6961125539382387
+        },
+        {
+          "action": "release_prior",
+          "ambiguity_proxy": 0.754552242280798,
+          "efe_proxy": 0.07760083761885572,
+          "risk_proxy": -0.6769514046619423
+        }
+      ],
+      "expected_free_energy": [
+        -0.93379527,
+        -0.97232276,
+        -0.9770788
+      ],
+      "negative_expected_free_energy": [
+        0.93379527,
+        0.97232276,
+        0.9770788
+      ],
+      "observation": 1,
+      "observation_label": "opacity_cue",
+      "perturbed_observation": false,
+      "policy_posterior": [
+        0.32430539,
+        0.33704388,
+        0.3386507
+      ],
+      "policy_posterior_sum": 0.9999999701976776,
+      "profile": "opacified",
+      "selected_action": "release_prior",
+      "selected_action_index": 2,
+      "state_posterior": [
+        0.03748135,
+        0.85655999,
+        0.10595865
+      ],
+      "state_posterior_sum": 0.9999999850988388,
+      "step": 21,
+      "true_state": "opacified_boundary",
+      "vfe": 0.8206326961517334,
+      "weighted_expected_free_energy": -0.9614386950261942
+    },
+    {
+      "efe_terms": [
+        {
+          "action": "stabilize_dual",
+          "ambiguity_proxy": 0.7554078234702856,
+          "efe_proxy": 0.12519898187029666,
+          "risk_proxy": -0.6302088415999889
+        },
+        {
+          "action": "inspect_boundary",
+          "ambiguity_proxy": 0.7557632257730523,
+          "efe_proxy": 0.05966202402237597,
+          "risk_proxy": -0.6961012017506764
+        },
+        {
+          "action": "release_prior",
+          "ambiguity_proxy": 0.7545514702716003,
+          "efe_proxy": 0.07761429556165345,
+          "risk_proxy": -0.6769371747099469
+        }
+      ],
+      "expected_free_energy": [
+        -0.93383664,
+        -0.9723444,
+        -0.97706449
+      ],
+      "negative_expected_free_energy": [
+        0.93383664,
+        0.9723444,
+        0.97706449
+      ],
+      "observation": 1,
+      "observation_label": "opacity_cue",
+      "perturbed_observation": false,
+      "policy_posterior": [
+        0.32431367,
+        0.33704582,
+        0.33864048
+      ],
+      "policy_posterior_sum": 0.9999999701976776,
+      "profile": "opacified",
+      "selected_action": "release_prior",
+      "selected_action_index": 2,
+      "state_posterior": [
+        0.03744591,
+        0.85635459,
+        0.1061995
+      ],
+      "state_posterior_sum": 1.0,
+      "step": 22,
+      "true_state": "opacified_boundary",
+      "vfe": 0.8212120532989502,
+      "weighted_expected_free_energy": -0.9614541908404721
+    },
+    {
+      "efe_terms": [
+        {
+          "action": "stabilize_dual",
+          "ambiguity_proxy": 0.7532369835468604,
+          "efe_proxy": 0.149383987294049,
+          "risk_proxy": -0.6038529962528114
+        },
+        {
+          "action": "inspect_boundary",
+          "ambiguity_proxy": 0.7534914237863737,
+          "efe_proxy": 0.11315948224062577,
+          "risk_proxy": -0.6403319415457479
+        },
+        {
+          "action": "release_prior",
+          "ambiguity_proxy": 0.7523414311954408,
+          "efe_proxy": 0.13410279763678212,
+          "risk_proxy": -0.6182386335586587
+        }
+      ],
+      "expected_free_energy": [
+        -0.92589349,
+        -0.94270474,
+        -0.86985809
+      ],
+      "negative_expected_free_energy": [
+        0.92589349,
+        0.94270474,
+        0.86985809
+      ],
+      "observation": 2,
+      "observation_label": "contextual_cue",
+      "perturbed_observation": true,
+      "policy_posterior": [
+        0.33755744,
+        0.34328017,
+        0.31916246
+      ],
+      "policy_posterior_sum": 1.0000000596046448,
+      "profile": "opacified",
+      "selected_action": "inspect_boundary",
+      "selected_action_index": 1,
+      "state_posterior": [
+        0.0465846,
+        0.19287878,
+        0.76053661
+      ],
+      "state_posterior_sum": 0.9999999962747097,
+      "step": 23,
+      "true_state": "opacified_boundary",
+      "vfe": 1.0398494005203247,
+      "weighted_expected_free_energy": -0.9137801141644637
+    },
+    {
+      "efe_terms": [
+        {
+          "action": "stabilize_dual",
+          "ambiguity_proxy": 0.5965633007513464,
+          "efe_proxy": -0.09320636116065861,
+          "risk_proxy": -0.6897696619120051
+        },
+        {
+          "action": "inspect_boundary",
+          "ambiguity_proxy": 0.5971071860440563,
+          "efe_proxy": -0.11611503289973546,
+          "risk_proxy": -0.7132222189437918
+        },
+        {
+          "action": "release_prior",
+          "ambiguity_proxy": 0.5946628379148295,
+          "efe_proxy": -0.24474477088194213,
+          "risk_proxy": -0.8394076087967717
+        }
+      ],
+      "expected_free_energy": [
+        -1.11067176,
+        -1.11233342,
+        -1.13649726
+      ],
+      "negative_expected_free_energy": [
+        1.11067176,
+        1.11233342,
+        1.13649726
+      ],
+      "observation": 2,
+      "observation_label": "contextual_cue",
+      "perturbed_observation": false,
+      "policy_posterior": [
+        0.33027008,
+        0.33081934,
+        0.33891058
+      ],
+      "policy_posterior_sum": 1.0,
+      "profile": "post_dual",
+      "selected_action": "release_prior",
+      "selected_action_index": 2,
+      "state_posterior": [
+        0.0119162,
+        0.0351381,
+        0.95294577
+      ],
+      "state_posterior_sum": 1.00000006146729,
+      "step": 0,
+      "true_state": "contextual_post_dual",
+      "vfe": 0.5038174390792847,
+      "weighted_expected_free_energy": -1.1199740026882132
+    },
+    {
+      "efe_terms": [
+        {
+          "action": "stabilize_dual",
+          "ambiguity_proxy": 0.5965383712702306,
+          "efe_proxy": -0.09815986845109892,
+          "risk_proxy": -0.6946982397213295
+        },
+        {
+          "action": "inspect_boundary",
+          "ambiguity_proxy": 0.59707343141981,
+          "efe_proxy": -0.12017985771727002,
+          "risk_proxy": -0.71725328913708
+        },
+        {
+          "action": "release_prior",
+          "ambiguity_proxy": 0.5946235442729294,
+          "efe_proxy": -0.24844838740842656,
+          "risk_proxy": -0.843071931681356
+        }
+      ],
+      "expected_free_energy": [
+        -1.11239862,
+        -1.11341071,
+        -1.13631177
+      ],
+      "negative_expected_free_energy": [
+        1.11239862,
+        1.11341071,
+        1.13631177
+      ],
+      "observation": 2,
+      "observation_label": "contextual_cue",
+      "perturbed_observation": false,
+      "policy_posterior": [
+        0.33055514,
+        0.33088985,
+        0.33855501
+      ],
+      "policy_posterior_sum": 1.0,
+      "profile": "post_dual",
+      "selected_action": "release_prior",
+      "selected_action_index": 2,
+      "state_posterior": [
+        0.00681632,
+        0.03234877,
+        0.96083498
+      ],
+      "state_posterior_sum": 1.000000069849193,
+      "step": 1,
+      "true_state": "contextual_post_dual",
+      "vfe": 0.45682305097579956,
+      "weighted_expected_free_energy": -1.1208294287160925
+    },
+    {
+      "efe_terms": [
+        {
+          "action": "stabilize_dual",
+          "ambiguity_proxy": 0.5965354978259169,
+          "efe_proxy": -0.09858640934222951,
+          "risk_proxy": -0.6951219071681464
+        },
+        {
+          "action": "inspect_boundary",
+          "ambiguity_proxy": 0.597069832185527,
+          "efe_proxy": -0.12053037567173808,
+          "risk_proxy": -0.7176002078572651
+        },
+        {
+          "action": "release_prior",
+          "ambiguity_proxy": 0.5946196775651105,
+          "efe_proxy": -0.2487646232607439,
+          "risk_proxy": -0.8433843008258544
+        }
+      ],
+      "expected_free_energy": [
+        -1.11254585,
+        -1.11350965,
+        -1.13629436
+      ],
+      "negative_expected_free_energy": [
+        1.11254585,
+        1.11350965,
+        1.13629436
+      ],
+      "observation": 2,
+      "observation_label": "contextual_cue",
+      "perturbed_observation": false,
+      "policy_posterior": [
+        0.33057883,
+        0.3308976,
+        0.33852354
+      ],
+      "policy_posterior_sum": 0.9999999701976776,
+      "profile": "post_dual",
+      "selected_action": "release_prior",
+      "selected_action_index": 2,
+      "state_posterior": [
+        0.00644285,
+        0.03199603,
+        0.96156108
+      ],
+      "state_posterior_sum": 0.9999999674037099,
+      "step": 2,
+      "true_state": "contextual_post_dual",
+      "vfe": 0.4524296820163727,
+      "weighted_expected_free_energy": -1.1209041681778267
+    },
+    {
+      "efe_terms": [
+        {
+          "action": "stabilize_dual",
+          "ambiguity_proxy": 0.5965352734068321,
+          "efe_proxy": -0.09862304022650314,
+          "risk_proxy": -0.6951583136333352
+        },
+        {
+          "action": "inspect_boundary",
+          "ambiguity_proxy": 0.5970695469183728,
+          "efe_proxy": -0.12056050209022373,
+          "risk_proxy": -0.7176300490085965
+        },
+        {
+          "action": "release_prior",
+          "ambiguity_proxy": 0.594619377833401,
+          "efe_proxy": -0.24879168529421847,
+          "risk_proxy": -0.8434110631276195
+        }
+      ],
+      "expected_free_energy": [
+        -1.11255848,
+        -1.11351848,
+        -1.1362927
+      ],
+      "negative_expected_free_energy": [
+        1.11255848,
+        1.11351848,
+        1.1362927
+      ],
+      "observation": 2,
+      "observation_label": "contextual_cue",
+      "perturbed_observation": false,
+      "policy_posterior": [
+        0.33058086,
+        0.33089837,
+        0.3385208
+      ],
+      "policy_posterior_sum": 1.0000000298023224,
+      "profile": "post_dual",
+      "selected_action": "release_prior",
+      "selected_action_index": 2,
+      "state_posterior": [
+        0.00641352,
+        0.03196106,
+        0.96162546
+      ],
+      "state_posterior_sum": 1.0000000423751771,
+      "step": 3,
+      "true_state": "contextual_post_dual",
+      "vfe": 0.45204174518585205,
+      "weighted_expected_free_energy": -1.1209107014526616
+    },
+    {
+      "efe_terms": [
+        {
+          "action": "stabilize_dual",
+          "ambiguity_proxy": 0.597722758948083,
+          "efe_proxy": 0.1735578071866138,
+          "risk_proxy": -0.42416495176146923
+        },
+        {
+          "action": "inspect_boundary",
+          "ambiguity_proxy": 0.5987513372747247,
+          "efe_proxy": 0.10265131220063889,
+          "risk_proxy": -0.49610002507408585
+        },
+        {
+          "action": "release_prior",
+          "ambiguity_proxy": 0.5966629505670378,
+          "efe_proxy": -0.04455861774749348,
+          "risk_proxy": -0.6412215683145313
+        }
+      ],
+      "expected_free_energy": [
+        -0.92059082,
+        -0.98909605,
+        -1.0897243
+      ],
+      "negative_expected_free_energy": [
+        0.92059082,
+        0.98909605,
+        1.0897243
+      ],
+      "observation": 0,
+      "observation_label": "self_env_cue",
+      "perturbed_observation": true,
+      "policy_posterior": [
+        0.30720225,
+        0.3289848,
+        0.36381292
+      ],
+      "policy_posterior_sum": 0.9999999701976776,
+      "profile": "post_dual",
+      "selected_action": "release_prior",
+      "selected_action_index": 2,
+      "state_posterior": [
+        0.30466536,
+        0.15433775,
+        0.54099691
+      ],
+      "state_posterior_sum": 1.0000000149011612,
+      "step": 4,
+      "true_state": "contextual_post_dual",
+      "vfe": 2.103693962097168,
+      "weighted_expected_free_energy": -1.0046609162732363
+    },
+    {
+      "efe_terms": [
+        {
+          "action": "stabilize_dual",
+          "ambiguity_proxy": 0.5967267872869191,
+          "efe_proxy": -0.06805817970310934,
+          "risk_proxy": -0.6647849669900284
+        },
+        {
+          "action": "inspect_boundary",
+          "ambiguity_proxy": 0.5973135766891802,
+          "efe_proxy": -0.09545052819581556,
+          "risk_proxy": -0.6927641048849957
+        },
+        {
+          "action": "release_prior",
+          "ambiguity_proxy": 0.594885728481809,
+          "efe_proxy": -0.2260898301923947,
+          "risk_proxy": -0.8209755586742037
+        }
+      ],
+      "expected_free_energy": [
+        -1.10075223,
+        -1.10567689,
+        -1.13679671
+      ],
+      "negative_expected_free_energy": [
+        1.10075223,
+        1.10567689,
+        1.13679671
+      ],
+      "observation": 2,
+      "observation_label": "contextual_cue",
+      "perturbed_observation": false,
+      "policy_posterior": [
+        0.32877013,
+        0.3303932,
+        0.34083664
+      ],
+      "policy_posterior_sum": 0.9999999701976776,
+      "profile": "post_dual",
+      "selected_action": "release_prior",
+      "selected_action_index": 2,
+      "state_posterior": [
+        0.03415942,
+        0.05554937,
+        0.91029119
+      ],
+      "state_posterior_sum": 0.9999999850988388,
+      "step": 5,
+      "true_state": "contextual_post_dual",
+      "vfe": 0.7235902547836304,
+      "weighted_expected_free_energy": -1.1146645532058308
+    },
+    {
+      "efe_terms": [
+        {
+          "action": "stabilize_dual",
+          "ambiguity_proxy": 0.5965546524407765,
+          "efe_proxy": -0.09592976306796985,
+          "risk_proxy": -0.6924844155087464
+        },
+        {
+          "action": "inspect_boundary",
+          "ambiguity_proxy": 0.5970934256544469,
+          "efe_proxy": -0.11834600716996069,
+          "risk_proxy": -0.7154394328244076
+        },
+        {
+          "action": "release_prior",
+          "ambiguity_proxy": 0.5946444412770704,
+          "efe_proxy": -0.24680121906565045,
+          "risk_proxy": -0.8414456603427208
+        }
+      ],
+      "expected_free_energy": [
+        -1.11161613,
+        -1.11286831,
+        -1.1363976
+      ],
+      "negative_expected_free_energy": [
+        1.11161613,
+        1.11286831,
+        1.1363976
+      ],
+      "observation": 2,
+      "observation_label": "contextual_cue",
+      "perturbed_observation": false,
+      "policy_posterior": [
+        0.3304317,
+        0.33084571,
+        0.33872259
+      ],
+      "policy_posterior_sum": 1.0,
+      "profile": "post_dual",
+      "selected_action": "release_prior",
+      "selected_action_index": 2,
+      "state_posterior": [
+        0.0086129,
+        0.03446023,
+        0.95692694
+      ],
+      "state_posterior_sum": 1.0000000661239028,
+      "step": 6,
+      "true_state": "contextual_post_dual",
+      "vfe": 0.4800402820110321,
+      "weighted_expected_free_energy": -1.120424453274012
+    },
+    {
+      "efe_terms": [
+        {
+          "action": "stabilize_dual",
+          "ambiguity_proxy": 0.5965369603618615,
+          "efe_proxy": -0.09839432568856066,
+          "risk_proxy": -0.6949312860504222
+        },
+        {
+          "action": "inspect_boundary",
+          "ambiguity_proxy": 0.5970716106744514,
+          "efe_proxy": -0.12037236461246525,
+          "risk_proxy": -0.7174439752869166
+        },
+        {
+          "action": "release_prior",
+          "ambiguity_proxy": 0.5946215103560254,
+          "efe_proxy": -0.24862304386772627,
+          "risk_proxy": -0.8432445542237517
+        }
+      ],
+      "expected_free_energy": [
+        -1.11247897,
+        -1.11346245,
+        -1.13630223
+      ],
+      "negative_expected_free_energy": [
+        1.11247897,
+        1.11346245,
+        1.13630223
+      ],
+      "observation": 2,
+      "observation_label": "contextual_cue",
+      "perturbed_observation": false,
+      "policy_posterior": [
+        0.33056831,
+        0.33089358,
+        0.33853808
+      ],
+      "policy_posterior_sum": 0.9999999701976776,
+      "profile": "post_dual",
+      "selected_action": "release_prior",
+      "selected_action_index": 2,
+      "state_posterior": [
+        0.00659021,
+        0.03219054,
+        0.96121919
+      ],
+      "state_posterior_sum": 0.9999999427236617,
+      "step": 7,
+      "true_state": "contextual_post_dual",
+      "vfe": 0.4544866979122162,
+      "weighted_expected_free_energy": -1.1208694455663775
+    },
+    {
+      "efe_terms": [
+        {
+          "action": "stabilize_dual",
+          "ambiguity_proxy": 0.5965353912703679,
+          "efe_proxy": -0.09860652822225346,
+          "risk_proxy": -0.6951419194926214
+        },
+        {
+          "action": "inspect_boundary",
+          "ambiguity_proxy": 0.5970696917692693,
+          "efe_proxy": -0.12054691596956912,
+          "risk_proxy": -0.7176166077388384
+        },
+        {
+          "action": "release_prior",
+          "ambiguity_proxy": 0.5946195264181401,
+          "efe_proxy": -0.2487795239730618,
+          "risk_proxy": -0.8433990503912019
+        }
+      ],
+      "expected_free_energy": [
+        -1.11255288,
+        -1.11351442,
+        -1.13629353
+      ],
+      "negative_expected_free_energy": [
+        1.11255288,
+        1.11351442,
+        1.13629353
+      ],
+      "observation": 2,
+      "observation_label": "contextual_cue",
+      "perturbed_observation": false,
+      "policy_posterior": [
+        0.33057997,
+        0.33089799,
+        0.33852205
+      ],
+      "policy_posterior_sum": 1.0,
+      "profile": "post_dual",
+      "selected_action": "release_prior",
+      "selected_action_index": 2,
+      "state_posterior": [
+        0.00642588,
+        0.03197831,
+        0.96159583
+      ],
+      "state_posterior_sum": 1.0000000218860805,
+      "step": 8,
+      "true_state": "contextual_post_dual",
+      "vfe": 0.4522198736667633,
+      "weighted_expected_free_energy": -1.1209077867633574
+    },
+    {
+      "efe_terms": [
+        {
+          "action": "stabilize_dual",
+          "ambiguity_proxy": 0.5965352266440579,
+          "efe_proxy": -0.09862475348452504,
+          "risk_proxy": -0.6951599801285829
+        },
+        {
+          "action": "inspect_boundary",
+          "ambiguity_proxy": 0.5970694972799833,
+          "efe_proxy": -0.1205619089319705,
+          "risk_proxy": -0.7176314062119538
+        },
+        {
+          "action": "release_prior",
+          "ambiguity_proxy": 0.5946193277399167,
+          "efe_proxy": -0.24879293942931002,
+          "risk_proxy": -0.8434122671692267
+        }
+      ],
+      "expected_free_energy": [
+        -1.11255908,
+        -1.11351895,
+        -1.1362927
+      ],
+      "negative_expected_free_energy": [
+        1.11255908,
+        1.11351895,
+        1.1362927
+      ],
+      "observation": 2,
+      "observation_label": "contextual_cue",
+      "perturbed_observation": false,
+      "policy_posterior": [
+        0.33058092,
+        0.3308984,
+        0.33852065
+      ],
+      "policy_posterior_sum": 0.9999999701976776,
+      "profile": "post_dual",
+      "selected_action": "release_prior",
+      "selected_action_index": 2,
+      "state_posterior": [
+        0.00641217,
+        0.03195938,
+        0.96162844
+      ],
+      "state_posterior_sum": 0.9999999855645001,
+      "step": 9,
+      "true_state": "contextual_post_dual",
+      "vfe": 0.4520232677459717,
+      "weighted_expected_free_energy": -1.120910986457183
+    },
+    {
+      "efe_terms": [
+        {
+          "action": "stabilize_dual",
+          "ambiguity_proxy": 0.596535237215878,
+          "efe_proxy": -0.09862632785879122,
+          "risk_proxy": -0.6951615650746692
+        },
+        {
+          "action": "inspect_boundary",
+          "ambiguity_proxy": 0.597069505309781,
+          "efe_proxy": -0.12056320586073077,
+          "risk_proxy": -0.7176327111705118
+        },
+        {
+          "action": "release_prior",
+          "ambiguity_proxy": 0.5946193353590017,
+          "efe_proxy": -0.2487941050054917,
+          "risk_proxy": -0.8434134403644934
+        }
+      ],
+      "expected_free_energy": [
+        -1.11255968,
+        -1.11351919,
+        -1.1362927
+      ],
+      "negative_expected_free_energy": [
+        1.11255968,
+        1.11351919,
+        1.1362927
+      ],
+      "observation": 2,
+      "observation_label": "contextual_cue",
+      "perturbed_observation": false,
+      "policy_posterior": [
+        0.33058104,
+        0.3308984,
+        0.33852056
+      ],
+      "policy_posterior_sum": 1.0,
+      "profile": "post_dual",
+      "selected_action": "release_prior",
+      "selected_action_index": 2,
+      "state_posterior": [
+        0.006411,
+        0.03195772,
+        0.9616313
+      ],
+      "state_posterior_sum": 1.000000024214387,
+      "step": 10,
+      "true_state": "contextual_post_dual",
+      "vfe": 0.45200636982917786,
+      "weighted_expected_free_energy": -1.120911293426058
+    },
+    {
+      "efe_terms": [
+        {
+          "action": "stabilize_dual",
+          "ambiguity_proxy": 0.5977227435611929,
+          "efe_proxy": 0.17355301549903512,
+          "risk_proxy": -0.4241697280621578
+        },
+        {
+          "action": "inspect_boundary",
+          "ambiguity_proxy": 0.5987513124338488,
+          "efe_proxy": 0.10264739412812807,
+          "risk_proxy": -0.49610391830572076
+        },
+        {
+          "action": "release_prior",
+          "ambiguity_proxy": 0.596662914857492,
+          "efe_proxy": -0.04456226827023768,
+          "risk_proxy": -0.6412251831277297
+        }
+      ],
+      "expected_free_energy": [
+        -0.92059588,
+        -0.98909932,
+        -1.08972609
+      ],
+      "negative_expected_free_energy": [
+        0.92059588,
+        0.98909932,
+        1.08972609
+      ],
+      "observation": 0,
+      "observation_label": "self_env_cue",
+      "perturbed_observation": true,
+      "policy_posterior": [
+        0.30720282,
+        0.3289848,
+        0.36381239
+      ],
+      "policy_posterior_sum": 1.0,
+      "profile": "post_dual",
+      "selected_action": "release_prior",
+      "selected_action_index": 2,
+      "state_posterior": [
+        0.30465868,
+        0.15433803,
+        0.54100329
+      ],
+      "state_posterior_sum": 1.0,
+      "step": 11,
+      "true_state": "contextual_post_dual",
+      "vfe": 2.1037020683288574,
+      "weighted_expected_free_energy": -1.0046641384329114
+    },
+    {
+      "efe_terms": [
+        {
+          "action": "stabilize_dual",
+          "ambiguity_proxy": 0.5967267925816439,
+          "efe_proxy": -0.06805887981591197,
+          "risk_proxy": -0.6647856723975558
+        },
+        {
+          "action": "inspect_boundary",
+          "ambiguity_proxy": 0.5973135807511556,
+          "efe_proxy": -0.09545110335444174,
+          "risk_proxy": -0.6927646841055973
+        },
+        {
+          "action": "release_prior",
+          "ambiguity_proxy": 0.5948857317504568,
+          "efe_proxy": -0.22609035594768412,
+          "risk_proxy": -0.8209760876981409
+        }
+      ],
+      "expected_free_energy": [
+        -1.10075247,
+        -1.10567725,
+        -1.13679659
+      ],
+      "negative_expected_free_energy": [
+        1.10075247,
+        1.10567725,
+        1.13679659
+      ],
+      "observation": 2,
+      "observation_label": "contextual_cue",
+      "perturbed_observation": false,
+      "policy_posterior": [
+        0.32877019,
+        0.33039328,
+        0.34083655
+      ],
+      "policy_posterior_sum": 1.0000000298023224,
+      "profile": "post_dual",
+      "selected_action": "release_prior",
+      "selected_action_index": 2,
+      "state_posterior": [
+        0.03415871,
+        0.05554896,
+        0.91029233
+      ],
+      "state_posterior_sum": 1.0,
+      "step": 12,
+      "true_state": "contextual_post_dual",
+      "vfe": 0.7235850095748901,
+      "weighted_expected_free_energy": -1.114664771945332
+    },
+    {
+      "efe_terms": [
+        {
+          "action": "stabilize_dual",
+          "ambiguity_proxy": 0.5965546186328663,
+          "efe_proxy": -0.09592982213940315,
+          "risk_proxy": -0.6924844407722694
+        },
+        {
+          "action": "inspect_boundary",
+          "ambiguity_proxy": 0.5970933917092744,
+          "efe_proxy": -0.11834605354203398,
+          "risk_proxy": -0.7154394452513084
+        },
+        {
+          "action": "release_prior",
+          "ambiguity_proxy": 0.5946444074434074,
+          "efe_proxy": -0.24680125285486076,
+          "risk_proxy": -0.8414456602982682
+        }
+      ],
+      "expected_free_energy": [
+        -1.11161613,
+        -1.11286831,
+        -1.1363976
+      ],
+      "negative_expected_free_energy": [
+        1.11161613,
+        1.11286831,
+        1.1363976
+      ],
+      "observation": 2,
+      "observation_label": "contextual_cue",
+      "perturbed_observation": false,
+      "policy_posterior": [
+        0.3304317,
+        0.33084571,
+        0.33872259
+      ],
+      "policy_posterior_sum": 1.0,
+      "profile": "post_dual",
+      "selected_action": "release_prior",
+      "selected_action_index": 2,
+      "state_posterior": [
+        0.00861284,
+        0.03446016,
+        0.956927
+      ],
+      "state_posterior_sum": 1.0000000102445483,
+      "step": 13,
+      "true_state": "contextual_post_dual",
+      "vfe": 0.4800395965576172,
+      "weighted_expected_free_energy": -1.120424453274012
+    },
+    {
+      "efe_terms": [
+        {
+          "action": "stabilize_dual",
+          "ambiguity_proxy": 0.5965370278106101,
+          "efe_proxy": -0.09839434225189181,
+          "risk_proxy": -0.6949313700625019
+        },
+        {
+          "action": "inspect_boundary",
+          "ambiguity_proxy": 0.5970716781753358,
+          "efe_proxy": -0.12037238270799366,
+          "risk_proxy": -0.7174440608833295
+        },
+        {
+          "action": "release_prior",
+          "ambiguity_proxy": 0.59462157758161,
+          "efe_proxy": -0.24862307595841504,
+          "risk_proxy": -0.8432446535400251
+        }
+      ],
+      "expected_free_energy": [
+        -1.11247897,
+        -1.11346257,
+        -1.13630199
+      ],
+      "negative_expected_free_energy": [
+        1.11247897,
+        1.11346257,
+        1.13630199
+      ],
+      "observation": 2,
+      "observation_label": "contextual_cue",
+      "perturbed_observation": false,
+      "policy_posterior": [
+        0.33056834,
+        0.33089364,
+        0.33853802
+      ],
+      "policy_posterior_sum": 1.0,
+      "profile": "post_dual",
+      "selected_action": "release_prior",
+      "selected_action_index": 2,
+      "state_posterior": [
+        0.00659021,
+        0.03219054,
+        0.96121931
+      ],
+      "state_posterior_sum": 1.0000000558793545,
+      "step": 14,
+      "true_state": "contextual_post_dual",
+      "vfe": 0.4544868469238281,
+      "weighted_expected_free_energy": -1.1208694360913185
+    },
+    {
+      "efe_terms": [
+        {
+          "action": "stabilize_dual",
+          "ambiguity_proxy": 0.5965353912703679,
+          "efe_proxy": -0.09860652822225346,
+          "risk_proxy": -0.6951419194926214
+        },
+        {
+          "action": "inspect_boundary",
+          "ambiguity_proxy": 0.5970696917692693,
+          "efe_proxy": -0.12054691596956912,
+          "risk_proxy": -0.7176166077388384
+        },
+        {
+          "action": "release_prior",
+          "ambiguity_proxy": 0.5946195264181401,
+          "efe_proxy": -0.2487795239730618,
+          "risk_proxy": -0.8433990503912019
+        }
+      ],
+      "expected_free_energy": [
+        -1.11255288,
+        -1.11351442,
+        -1.13629353
+      ],
+      "negative_expected_free_energy": [
+        1.11255288,
+        1.11351442,
+        1.13629353
+      ],
+      "observation": 2,
+      "observation_label": "contextual_cue",
+      "perturbed_observation": false,
+      "policy_posterior": [
+        0.33057997,
+        0.33089799,
+        0.33852205
+      ],
+      "policy_posterior_sum": 1.0,
+      "profile": "post_dual",
+      "selected_action": "release_prior",
+      "selected_action_index": 2,
+      "state_posterior": [
+        0.00642588,
+        0.03197831,
+        0.96159583
+      ],
+      "state_posterior_sum": 1.0000000218860805,
+      "step": 15,
+      "true_state": "contextual_post_dual",
+      "vfe": 0.4522198736667633,
+      "weighted_expected_free_energy": -1.1209077867633574
+    },
+    {
+      "efe_terms": [
+        {
+          "action": "stabilize_dual",
+          "ambiguity_proxy": 0.5965352266440579,
+          "efe_proxy": -0.09862475348452504,
+          "risk_proxy": -0.6951599801285829
+        },
+        {
+          "action": "inspect_boundary",
+          "ambiguity_proxy": 0.5970694972799833,
+          "efe_proxy": -0.1205619089319705,
+          "risk_proxy": -0.7176314062119538
+        },
+        {
+          "action": "release_prior",
+          "ambiguity_proxy": 0.5946193277399167,
+          "efe_proxy": -0.24879293942931002,
+          "risk_proxy": -0.8434122671692267
+        }
+      ],
+      "expected_free_energy": [
+        -1.11255908,
+        -1.11351895,
+        -1.1362927
+      ],
+      "negative_expected_free_energy": [
+        1.11255908,
+        1.11351895,
+        1.1362927
+      ],
+      "observation": 2,
+      "observation_label": "contextual_cue",
+      "perturbed_observation": false,
+      "policy_posterior": [
+        0.33058092,
+        0.3308984,
+        0.33852065
+      ],
+      "policy_posterior_sum": 0.9999999701976776,
+      "profile": "post_dual",
+      "selected_action": "release_prior",
+      "selected_action_index": 2,
+      "state_posterior": [
+        0.00641217,
+        0.03195938,
+        0.96162844
+      ],
+      "state_posterior_sum": 0.9999999855645001,
+      "step": 16,
+      "true_state": "contextual_post_dual",
+      "vfe": 0.4520232677459717,
+      "weighted_expected_free_energy": -1.120910986457183
+    },
+    {
+      "efe_terms": [
+        {
+          "action": "stabilize_dual",
+          "ambiguity_proxy": 0.596535237215878,
+          "efe_proxy": -0.09862632785879122,
+          "risk_proxy": -0.6951615650746692
+        },
+        {
+          "action": "inspect_boundary",
+          "ambiguity_proxy": 0.597069505309781,
+          "efe_proxy": -0.12056320586073077,
+          "risk_proxy": -0.7176327111705118
+        },
+        {
+          "action": "release_prior",
+          "ambiguity_proxy": 0.5946193353590017,
+          "efe_proxy": -0.2487941050054917,
+          "risk_proxy": -0.8434134403644934
+        }
+      ],
+      "expected_free_energy": [
+        -1.11255968,
+        -1.11351919,
+        -1.1362927
+      ],
+      "negative_expected_free_energy": [
+        1.11255968,
+        1.11351919,
+        1.1362927
+      ],
+      "observation": 2,
+      "observation_label": "contextual_cue",
+      "perturbed_observation": false,
+      "policy_posterior": [
+        0.33058104,
+        0.3308984,
+        0.33852056
+      ],
+      "policy_posterior_sum": 1.0,
+      "profile": "post_dual",
+      "selected_action": "release_prior",
+      "selected_action_index": 2,
+      "state_posterior": [
+        0.006411,
+        0.03195772,
+        0.9616313
+      ],
+      "state_posterior_sum": 1.000000024214387,
+      "step": 17,
+      "true_state": "contextual_post_dual",
+      "vfe": 0.45200636982917786,
+      "weighted_expected_free_energy": -1.120911293426058
+    },
+    {
+      "efe_terms": [
+        {
+          "action": "stabilize_dual",
+          "ambiguity_proxy": 0.5977227435611929,
+          "efe_proxy": 0.17355301549903512,
+          "risk_proxy": -0.4241697280621578
+        },
+        {
+          "action": "inspect_boundary",
+          "ambiguity_proxy": 0.5987513124338488,
+          "efe_proxy": 0.10264739412812807,
+          "risk_proxy": -0.49610391830572076
+        },
+        {
+          "action": "release_prior",
+          "ambiguity_proxy": 0.596662914857492,
+          "efe_proxy": -0.04456226827023768,
+          "risk_proxy": -0.6412251831277297
+        }
+      ],
+      "expected_free_energy": [
+        -0.92059588,
+        -0.98909932,
+        -1.08972609
+      ],
+      "negative_expected_free_energy": [
+        0.92059588,
+        0.98909932,
+        1.08972609
+      ],
+      "observation": 0,
+      "observation_label": "self_env_cue",
+      "perturbed_observation": true,
+      "policy_posterior": [
+        0.30720282,
+        0.3289848,
+        0.36381239
+      ],
+      "policy_posterior_sum": 1.0,
+      "profile": "post_dual",
+      "selected_action": "release_prior",
+      "selected_action_index": 2,
+      "state_posterior": [
+        0.30465868,
+        0.15433803,
+        0.54100329
+      ],
+      "state_posterior_sum": 1.0,
+      "step": 18,
+      "true_state": "contextual_post_dual",
+      "vfe": 2.1037020683288574,
+      "weighted_expected_free_energy": -1.0046641384329114
+    },
+    {
+      "efe_terms": [
+        {
+          "action": "stabilize_dual",
+          "ambiguity_proxy": 0.5967267925816439,
+          "efe_proxy": -0.06805887981591197,
+          "risk_proxy": -0.6647856723975558
+        },
+        {
+          "action": "inspect_boundary",
+          "ambiguity_proxy": 0.5973135807511556,
+          "efe_proxy": -0.09545110335444174,
+          "risk_proxy": -0.6927646841055973
+        },
+        {
+          "action": "release_prior",
+          "ambiguity_proxy": 0.5948857317504568,
+          "efe_proxy": -0.22609035594768412,
+          "risk_proxy": -0.8209760876981409
+        }
+      ],
+      "expected_free_energy": [
+        -1.10075247,
+        -1.10567725,
+        -1.13679659
+      ],
+      "negative_expected_free_energy": [
+        1.10075247,
+        1.10567725,
+        1.13679659
+      ],
+      "observation": 2,
+      "observation_label": "contextual_cue",
+      "perturbed_observation": false,
+      "policy_posterior": [
+        0.32877019,
+        0.33039328,
+        0.34083655
+      ],
+      "policy_posterior_sum": 1.0000000298023224,
+      "profile": "post_dual",
+      "selected_action": "release_prior",
+      "selected_action_index": 2,
+      "state_posterior": [
+        0.03415871,
+        0.05554896,
+        0.91029233
+      ],
+      "state_posterior_sum": 1.0,
+      "step": 19,
+      "true_state": "contextual_post_dual",
+      "vfe": 0.7235850095748901,
+      "weighted_expected_free_energy": -1.114664771945332
+    },
+    {
+      "efe_terms": [
+        {
+          "action": "stabilize_dual",
+          "ambiguity_proxy": 0.5965546186328663,
+          "efe_proxy": -0.09592982213940315,
+          "risk_proxy": -0.6924844407722694
+        },
+        {
+          "action": "inspect_boundary",
+          "ambiguity_proxy": 0.5970933917092744,
+          "efe_proxy": -0.11834605354203398,
+          "risk_proxy": -0.7154394452513084
+        },
+        {
+          "action": "release_prior",
+          "ambiguity_proxy": 0.5946444074434074,
+          "efe_proxy": -0.24680125285486076,
+          "risk_proxy": -0.8414456602982682
+        }
+      ],
+      "expected_free_energy": [
+        -1.11161613,
+        -1.11286831,
+        -1.1363976
+      ],
+      "negative_expected_free_energy": [
+        1.11161613,
+        1.11286831,
+        1.1363976
+      ],
+      "observation": 2,
+      "observation_label": "contextual_cue",
+      "perturbed_observation": false,
+      "policy_posterior": [
+        0.3304317,
+        0.33084571,
+        0.33872259
+      ],
+      "policy_posterior_sum": 1.0,
+      "profile": "post_dual",
+      "selected_action": "release_prior",
+      "selected_action_index": 2,
+      "state_posterior": [
+        0.00861284,
+        0.03446016,
+        0.956927
+      ],
+      "state_posterior_sum": 1.0000000102445483,
+      "step": 20,
+      "true_state": "contextual_post_dual",
+      "vfe": 0.4800395965576172,
+      "weighted_expected_free_energy": -1.120424453274012
+    },
+    {
+      "efe_terms": [
+        {
+          "action": "stabilize_dual",
+          "ambiguity_proxy": 0.5965370278106101,
+          "efe_proxy": -0.09839434225189181,
+          "risk_proxy": -0.6949313700625019
+        },
+        {
+          "action": "inspect_boundary",
+          "ambiguity_proxy": 0.5970716781753358,
+          "efe_proxy": -0.12037238270799366,
+          "risk_proxy": -0.7174440608833295
+        },
+        {
+          "action": "release_prior",
+          "ambiguity_proxy": 0.59462157758161,
+          "efe_proxy": -0.24862307595841504,
+          "risk_proxy": -0.8432446535400251
+        }
+      ],
+      "expected_free_energy": [
+        -1.11247897,
+        -1.11346257,
+        -1.13630199
+      ],
+      "negative_expected_free_energy": [
+        1.11247897,
+        1.11346257,
+        1.13630199
+      ],
+      "observation": 2,
+      "observation_label": "contextual_cue",
+      "perturbed_observation": false,
+      "policy_posterior": [
+        0.33056834,
+        0.33089364,
+        0.33853802
+      ],
+      "policy_posterior_sum": 1.0,
+      "profile": "post_dual",
+      "selected_action": "release_prior",
+      "selected_action_index": 2,
+      "state_posterior": [
+        0.00659021,
+        0.03219054,
+        0.96121931
+      ],
+      "state_posterior_sum": 1.0000000558793545,
+      "step": 21,
+      "true_state": "contextual_post_dual",
+      "vfe": 0.4544868469238281,
+      "weighted_expected_free_energy": -1.1208694360913185
+    },
+    {
+      "efe_terms": [
+        {
+          "action": "stabilize_dual",
+          "ambiguity_proxy": 0.5965353912703679,
+          "efe_proxy": -0.09860652822225346,
+          "risk_proxy": -0.6951419194926214
+        },
+        {
+          "action": "inspect_boundary",
+          "ambiguity_proxy": 0.5970696917692693,
+          "efe_proxy": -0.12054691596956912,
+          "risk_proxy": -0.7176166077388384
+        },
+        {
+          "action": "release_prior",
+          "ambiguity_proxy": 0.5946195264181401,
+          "efe_proxy": -0.2487795239730618,
+          "risk_proxy": -0.8433990503912019
+        }
+      ],
+      "expected_free_energy": [
+        -1.11255288,
+        -1.11351442,
+        -1.13629353
+      ],
+      "negative_expected_free_energy": [
+        1.11255288,
+        1.11351442,
+        1.13629353
+      ],
+      "observation": 2,
+      "observation_label": "contextual_cue",
+      "perturbed_observation": false,
+      "policy_posterior": [
+        0.33057997,
+        0.33089799,
+        0.33852205
+      ],
+      "policy_posterior_sum": 1.0,
+      "profile": "post_dual",
+      "selected_action": "release_prior",
+      "selected_action_index": 2,
+      "state_posterior": [
+        0.00642588,
+        0.03197831,
+        0.96159583
+      ],
+      "state_posterior_sum": 1.0000000218860805,
+      "step": 22,
+      "true_state": "contextual_post_dual",
+      "vfe": 0.4522198736667633,
+      "weighted_expected_free_energy": -1.1209077867633574
+    },
+    {
+      "efe_terms": [
+        {
+          "action": "stabilize_dual",
+          "ambiguity_proxy": 0.5965352266440579,
+          "efe_proxy": -0.09862475348452504,
+          "risk_proxy": -0.6951599801285829
+        },
+        {
+          "action": "inspect_boundary",
+          "ambiguity_proxy": 0.5970694972799833,
+          "efe_proxy": -0.1205619089319705,
+          "risk_proxy": -0.7176314062119538
+        },
+        {
+          "action": "release_prior",
+          "ambiguity_proxy": 0.5946193277399167,
+          "efe_proxy": -0.24879293942931002,
+          "risk_proxy": -0.8434122671692267
+        }
+      ],
+      "expected_free_energy": [
+        -1.11255908,
+        -1.11351895,
+        -1.1362927
+      ],
+      "negative_expected_free_energy": [
+        1.11255908,
+        1.11351895,
+        1.1362927
+      ],
+      "observation": 2,
+      "observation_label": "contextual_cue",
+      "perturbed_observation": false,
+      "policy_posterior": [
+        0.33058092,
+        0.3308984,
+        0.33852065
+      ],
+      "policy_posterior_sum": 0.9999999701976776,
+      "profile": "post_dual",
+      "selected_action": "release_prior",
+      "selected_action_index": 2,
+      "state_posterior": [
+        0.00641217,
+        0.03195938,
+        0.96162844
+      ],
+      "state_posterior_sum": 0.9999999855645001,
+      "step": 23,
+      "true_state": "contextual_post_dual",
+      "vfe": 0.4520232677459717,
+      "weighted_expected_free_energy": -1.120910986457183
+    }
+  ],
+  "schema": "realizing_emptiness.pymdp_policy_trace.v1",
+  "seed": 7,
+  "state_labels": [
+    "contracted_dual",
+    "opacified_boundary",
+    "contextual_post_dual"
+  ],
+  "steps": 24
+}

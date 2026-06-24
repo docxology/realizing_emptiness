@@ -1,0 +1,15 @@
+{
+  "$id": "realizing_emptiness.qrf_boundary_indistinguishability.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Realizing Emptiness QRF Boundary Indistinguishability",
+  "type": "object",
+  "required": ["schema", "deployment_count", "all_admissible_distributions_equal", "negative_control_fails", "claim_boundary"],
+  "properties": {
+    "schema": {"const": "realizing_emptiness.qrf_boundary_indistinguishability.v1"},
+    "deployment_count": {"type": "integer", "minimum": 3},
+    "all_admissible_distributions_equal": {"const": true},
+    "negative_control_fails": {"const": true},
+    "claim_boundary": {"type": "string", "pattern": "not empirical|finite"}
+  },
+  "additionalProperties": true
+}

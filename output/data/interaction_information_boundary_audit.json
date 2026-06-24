@@ -1,0 +1,36 @@
+{
+  "all_controls_pass": true,
+  "claim_boundary": "finite deterministic Shannon interaction-information computation over fixed categorical distributions; the synergy/redundancy sign is a software information-theory result, not empirical evidence and not a neural, developmental, clinical, practice-efficacy, or physical qFEP claim",
+  "controls": {
+    "interaction_information_sign_discriminates_regimes": true,
+    "null_distribution_has_no_interaction": true,
+    "redundant_interaction_information_is_negative": true,
+    "redundant_screen_is_conditionally_independent": true,
+    "synergistic_boundary_conditional_is_a_full_bit": true,
+    "synergistic_boundary_marginal_is_exactly_zero": true,
+    "synergistic_interaction_information_is_positive": true
+  },
+  "fixture_count": 3,
+  "row_count": 3,
+  "rows": [
+    {
+      "conditional_mutual_information_bits": 1.0,
+      "fixture": "synergistic_xor",
+      "interaction_information_bits": 1.0,
+      "marginal_mutual_information_bits": 0.0
+    },
+    {
+      "conditional_mutual_information_bits": 0.0,
+      "fixture": "redundant_screen",
+      "interaction_information_bits": -0.1312787537,
+      "marginal_mutual_information_bits": 0.1312787537
+    },
+    {
+      "conditional_mutual_information_bits": 0.0,
+      "fixture": "independent_null",
+      "interaction_information_bits": 0.0,
+      "marginal_mutual_information_bits": 0.0
+    }
+  ],
+  "schema": "realizing_emptiness.interaction_information_boundary_audit.v1"
+}

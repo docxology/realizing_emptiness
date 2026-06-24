@@ -1,0 +1,150 @@
+{
+  "ablated_rows": [
+    {
+      "deployment": "separation_constrained",
+      "mean_non_self_channel_concern": 1.119219219508343,
+      "mean_self_channel_concern": 1.6165866752418765,
+      "non_self_channel_count": 3,
+      "non_self_concern_share": 0.4091003757452347,
+      "prior_ablated": true,
+      "scope_asymmetry": -0.18179924850953044,
+      "self_channel_count": 3,
+      "self_concern_share": 0.5908996242547652
+    },
+    {
+      "deployment": "opacified",
+      "mean_non_self_channel_concern": 1.2903508293915291,
+      "mean_self_channel_concern": 1.7556635372930134,
+      "non_self_channel_count": 5,
+      "non_self_concern_share": 0.42361941673834624,
+      "prior_ablated": true,
+      "scope_asymmetry": -0.1527611665233074,
+      "self_channel_count": 1,
+      "self_concern_share": 0.5763805832616536
+    },
+    {
+      "deployment": "post_dual",
+      "mean_non_self_channel_concern": 1.2903508293915291,
+      "mean_self_channel_concern": 1.7556635372930134,
+      "non_self_channel_count": 5,
+      "non_self_concern_share": 0.42361941673834624,
+      "prior_ablated": true,
+      "scope_asymmetry": -0.1527611665233074,
+      "self_channel_count": 1,
+      "self_concern_share": 0.5763805832616536
+    }
+  ],
+  "ablated_scope_asymmetries": [
+    -0.18179924850953044,
+    -0.1527611665233074,
+    -0.1527611665233074
+  ],
+  "ablated_spread": 0.02903808198622304,
+  "ablation_lift": 0.5749491409859495,
+  "all_controls_pass": true,
+  "channel_controllability": [
+    0.95,
+    0.9,
+    0.1,
+    0.35,
+    0.55,
+    0.75
+  ],
+  "channel_influence": [
+    0.7556635372930133,
+    0.5421799195689044,
+    0.007625453351600901,
+    0.05347868826258372,
+    0.29655351691084464,
+    0.5519165688637115
+  ],
+  "claim_boundary": "finite policy-scope-of-modelling surrogate; not a measure of compassion, well-being, practice efficacy, or any affective, moral, or clinical outcome",
+  "constrained_profile": "separation_constrained",
+  "controls": {
+    "action_influence_active": true,
+    "action_shuffle_collapses_influence": true,
+    "dose_response_deepens_self_concentration": true,
+    "influence_shapes_scope": true,
+    "influence_tracks_controllability": true,
+    "prior_precision_drives_self_scoping": true,
+    "real_widening_monotone": true,
+    "widening_amplified_by_prior": true,
+    "zero_controllability_gives_zero_influence": true
+  },
+  "deployment_count": 3,
+  "dose_response_ablated_asymmetries": [
+    -0.18179924850953044,
+    -0.18179924850953044,
+    -0.18179924850953044,
+    -0.18179924850953044,
+    -0.18179924850953044
+  ],
+  "dose_response_asymmetries": [
+    -0.18179924850953044,
+    -0.485699324447484,
+    -0.6249880679675669,
+    -0.75674838949548,
+    -0.8571376622207691
+  ],
+  "dose_response_precisions": [
+    0.0,
+    1.0,
+    2.0,
+    4.0,
+    8.0
+  ],
+  "influence_free_scope_asymmetries": [
+    -0.6666666666666667,
+    -0.31034482758620685,
+    0.0
+  ],
+  "influence_free_spread": 0.6666666666666667,
+  "influence_scope_shift": 0.1527611665233074,
+  "label": "finite_policy_scope_surrogate_not_compassion_measure",
+  "mean_action_influence": 0.3679029473751097,
+  "mean_action_shuffled_influence": 0.010529503116055352,
+  "null_stream_mean_influence": 0.006866406136922665,
+  "real_scope_asymmetries": [
+    -0.75674838949548,
+    -0.44214452445605895,
+    -0.1527611665233074
+  ],
+  "real_spread": 0.6039872229721726,
+  "real_widening_monotone": true,
+  "rows": [
+    {
+      "deployment": "separation_constrained",
+      "mean_non_self_channel_concern": 1.119219219508343,
+      "mean_self_channel_concern": 8.082933376209382,
+      "non_self_channel_count": 3,
+      "non_self_concern_share": 0.12162580525226001,
+      "prior_ablated": false,
+      "scope_asymmetry": -0.75674838949548,
+      "self_channel_count": 3,
+      "self_concern_share": 0.8783741947477399
+    },
+    {
+      "deployment": "opacified",
+      "mean_non_self_channel_concern": 1.2903508293915291,
+      "mean_self_channel_concern": 3.3357607208567255,
+      "non_self_channel_count": 5,
+      "non_self_concern_share": 0.2789277377719705,
+      "prior_ablated": false,
+      "scope_asymmetry": -0.44214452445605895,
+      "self_channel_count": 1,
+      "self_concern_share": 0.7210722622280294
+    },
+    {
+      "deployment": "post_dual",
+      "mean_non_self_channel_concern": 1.2903508293915291,
+      "mean_self_channel_concern": 1.7556635372930134,
+      "non_self_channel_count": 5,
+      "non_self_concern_share": 0.42361941673834624,
+      "prior_ablated": false,
+      "scope_asymmetry": -0.1527611665233074,
+      "self_channel_count": 1,
+      "self_concern_share": 0.5763805832616536
+    }
+  ],
+  "schema": "realizing_emptiness.compassion_scope_audit.v1"
+}

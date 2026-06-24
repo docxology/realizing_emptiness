@@ -1,0 +1,45 @@
+{
+  "$id": "realizing_emptiness.sheaf_contextuality_obstruction_audit.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Realizing Emptiness Sheaf Contextuality Obstruction Audit",
+  "type": "object",
+  "required": [
+    "schema",
+    "scenario_count",
+    "row_count",
+    "outcome_alphabet",
+    "rows",
+    "probability_rows",
+    "controls",
+    "all_controls_pass",
+    "claim_boundary"
+  ],
+  "properties": {
+    "schema": {"const": "realizing_emptiness.sheaf_contextuality_obstruction_audit.v1"},
+    "scenario_count": {"type": "integer", "minimum": 2},
+    "row_count": {"type": "integer", "minimum": 2},
+    "outcome_alphabet": {"type": "array", "minItems": 2, "items": {"type": "integer"}},
+    "rows": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "measurement_count",
+          "context_count",
+          "global_section_feasible",
+          "expected_feasible",
+          "min_l1_residual",
+          "no_disturbance_max_error"
+        ],
+        "additionalProperties": true
+      }
+    },
+    "probability_rows": {"type": "array", "minItems": 1, "items": {"type": "object"}},
+    "controls": {"type": "object", "additionalProperties": {"const": true}},
+    "all_controls_pass": {"const": true},
+    "claim_boundary": {"type": "string", "pattern": "not empirical"}
+  },
+  "additionalProperties": false
+}

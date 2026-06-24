@@ -1,0 +1,30 @@
+schema: realizing_emptiness.sheaf_manifest.v1
+sections:
+  - id: abstract
+    output: 00_abstract.md
+    title: Abstract
+    tracks: [paper_source, qfep, qrf, bmr, pymdp, limitations]
+  - id: introduction
+    output: 01_introduction.md
+    title: Introduction
+    tracks: [paper_source, limitations]
+  - id: methods
+    output: 02_methods.md
+    title: Methods
+    tracks: [qfep, qrf, separation_prior, bmr, pymdp]
+  - id: results
+    output: 03_results.md
+    title: Results
+    tracks: [qrf, qfep, bmr, pymdp]
+  - id: discussion
+    output: 04_discussion.md
+    title: Discussion
+    tracks: [paper_source, scholarship, practice_protocols, criticality, compassion_proxy, evidence_ceiling, limitations]
+  - id: conclusion
+    output: 05_conclusion.md
+    title: Conclusion
+    tracks: [paper_source, qfep, evidence_ceiling, limitations]
+  - id: supplement
+    output: 06_supplement.md
+    title: Supplementary Audits and Reproducibility
+    tracks: [symbol_glossary, qfep, criticality, compassion_proxy, scholarship, practice_protocols, contemplative_inquiry, validation]

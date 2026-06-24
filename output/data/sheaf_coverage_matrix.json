@@ -1,0 +1,80 @@
+{
+  "missing_count": 0,
+  "ok": true,
+  "rows": [
+    {
+      "section": "abstract",
+      "tracks": {
+        "bmr": true,
+        "limitations": true,
+        "paper_source": true,
+        "pymdp": true,
+        "qfep": true,
+        "qrf": true
+      }
+    },
+    {
+      "section": "introduction",
+      "tracks": {
+        "limitations": true,
+        "paper_source": true
+      }
+    },
+    {
+      "section": "methods",
+      "tracks": {
+        "bmr": true,
+        "pymdp": true,
+        "qfep": true,
+        "qrf": true,
+        "separation_prior": true
+      }
+    },
+    {
+      "section": "results",
+      "tracks": {
+        "bmr": true,
+        "pymdp": true,
+        "qfep": true,
+        "qrf": true
+      }
+    },
+    {
+      "section": "discussion",
+      "tracks": {
+        "compassion_proxy": true,
+        "criticality": true,
+        "evidence_ceiling": true,
+        "limitations": true,
+        "paper_source": true,
+        "practice_protocols": true,
+        "scholarship": true
+      }
+    },
+    {
+      "section": "conclusion",
+      "tracks": {
+        "evidence_ceiling": true,
+        "limitations": true,
+        "paper_source": true,
+        "qfep": true
+      }
+    },
+    {
+      "section": "supplement",
+      "tracks": {
+        "compassion_proxy": true,
+        "contemplative_inquiry": true,
+        "criticality": true,
+        "practice_protocols": true,
+        "qfep": true,
+        "scholarship": true,
+        "symbol_glossary": true,
+        "validation": true
+      }
+    }
+  ],
+  "schema": "realizing_emptiness.sheaf_coverage_matrix.v1",
+  "section_count": 7,
+  "track_count": 16
+}

@@ -1,0 +1,37 @@
+{
+  "$id": "realizing_emptiness.source_manifest.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Realizing Emptiness Source Manifest",
+  "type": "object",
+  "required": ["schema", "primary_source"],
+  "properties": {
+    "schema": {
+      "const": "realizing_emptiness.source_manifest.v1"
+    },
+    "primary_source": {
+      "type": "object",
+      "required": ["title", "local_pdf", "sha256", "osf_url", "citation_key"],
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "local_pdf": {
+          "type": "string"
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "osf_url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "citation_key": {
+          "const": "sandvedsmith2026noself"
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}

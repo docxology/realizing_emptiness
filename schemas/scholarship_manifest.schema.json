@@ -1,0 +1,67 @@
+{
+  "$id": "realizing_emptiness.scholarship_manifest.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Realizing Emptiness Scholarship Manifest",
+  "type": "object",
+  "required": ["schema", "policy", "entries"],
+  "properties": {
+    "schema": {
+      "const": "realizing_emptiness.scholarship_manifest.v1"
+    },
+    "policy": {
+      "type": "object"
+    },
+    "entries": {
+      "type": "array",
+      "minItems": 12,
+      "items": {
+        "type": "object",
+        "required": ["id", "citation_key", "title", "source_type", "role", "evidence_status", "tracks", "supports_claims"],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9_]+$"
+          },
+          "citation_key": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9_:-]+$"
+          },
+          "title": {
+            "type": "string"
+          },
+          "source_type": {
+            "enum": ["primary_preprint", "peer_reviewed_article", "monograph", "preprint"]
+          },
+          "role": {
+            "type": "string"
+          },
+          "evidence_status": {
+            "type": "string"
+          },
+          "doi": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          },
+          "tracks": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string"
+            }
+          },
+          "supports_claims": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

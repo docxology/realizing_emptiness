@@ -1,0 +1,57 @@
+{
+  "$id": "realizing_emptiness.artifact_contract_registry.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Realizing Emptiness Artifact Contract Registry",
+  "type": "object",
+  "required": [
+    "schema",
+    "contract_count",
+    "rows",
+    "controls",
+    "all_controls_pass",
+    "claim_boundary"
+  ],
+  "properties": {
+    "schema": {
+      "const": "realizing_emptiness.artifact_contract_registry.v1"
+    },
+    "contract_count": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "rows": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object"
+      }
+    },
+    "duplicate_ids": {
+      "type": "array"
+    },
+    "missing_schema_paths": {
+      "type": "array",
+      "maxItems": 0
+    },
+    "controls": {
+      "type": "object",
+      "additionalProperties": {
+        "const": true
+      }
+    },
+    "all_controls_pass": {
+      "const": true
+    },
+    "claim_boundary": {
+      "type": "string",
+      "pattern": "not empirical"
+    },
+    "schemaless_json_artifacts": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": false
+}

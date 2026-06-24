@@ -1,0 +1,52 @@
+{
+  "$id": "realizing_emptiness.many_body_boundary_screen_sweep.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Realizing Emptiness Many-Body Boundary Screen Sweep",
+  "type": "object",
+  "required": [
+    "schema",
+    "qubit_count",
+    "cut_count",
+    "state_count",
+    "row_count",
+    "cuts",
+    "rows",
+    "controls",
+    "max_boundary_entropy_bits",
+    "separable_control_max_entropy_bits",
+    "all_controls_pass",
+    "claim_boundary"
+  ],
+  "properties": {
+    "schema": {"const": "realizing_emptiness.many_body_boundary_screen_sweep.v1"},
+    "qubit_count": {"type": "integer", "minimum": 4},
+    "cut_count": {"type": "integer", "minimum": 3},
+    "state_count": {"type": "integer", "minimum": 2},
+    "row_count": {"type": "integer", "minimum": 6},
+    "cuts": {"type": "array", "minItems": 3, "items": {"type": "object"}},
+    "rows": {
+      "type": "array",
+      "minItems": 6,
+      "items": {
+        "type": "object",
+        "required": [
+          "state_label",
+          "cut_id",
+          "cut_class",
+          "qubits",
+          "subsystem_size",
+          "reduced_entropy_bits",
+          "mutual_information_bits",
+          "observer_boundary_candidate"
+        ],
+        "additionalProperties": true
+      }
+    },
+    "controls": {"type": "object", "additionalProperties": {"const": true}},
+    "max_boundary_entropy_bits": {"type": "number", "minimum": 1},
+    "separable_control_max_entropy_bits": {"type": "number", "minimum": 0, "maximum": 0.000001},
+    "all_controls_pass": {"const": true},
+    "claim_boundary": {"type": "string", "pattern": "not empirical"}
+  },
+  "additionalProperties": false
+}

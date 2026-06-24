@@ -1,0 +1,529 @@
+schema: realizing_emptiness.artifact_manifest.v1
+project: realizing_emptiness
+artifacts:
+  - id: formalism_registry
+    path: output/data/formalism_registry.json
+    kind: data
+    schema: realizing_emptiness.formalism_registry.v1
+  - id: equation_audit
+    path: output/data/equation_audit.json
+    kind: data
+    schema: realizing_emptiness.equation_audit.v1
+  - id: source_claim_crosswalk
+    path: output/data/source_claim_crosswalk.json
+    kind: data
+    schema: realizing_emptiness.source_claim_crosswalk.v1
+  - id: source_argument_coverage_audit
+    path: output/data/source_argument_coverage_audit.json
+    kind: data
+    schema: realizing_emptiness.source_argument_coverage_audit.v1
+  - id: qrf_boundary_indistinguishability
+    path: output/data/qrf_boundary_indistinguishability.json
+    kind: data
+    schema: realizing_emptiness.qrf_boundary_indistinguishability.v1
+  - id: qrf_boundary_channel_ledger
+    path: output/data/qrf_boundary_channel_ledger.json
+    kind: data
+    schema: realizing_emptiness.qrf_boundary_channel_ledger.v1
+  - id: bmr_sweep
+    path: output/data/bmr_sweep.json
+    kind: data
+    schema: realizing_emptiness.bmr_sweep.v1
+  - id: bmr_sweep_csv
+    path: output/data/bmr_sweep.csv
+    kind: data
+  - id: simulation_sensitivity_grid
+    path: output/data/simulation_sensitivity_grid.json
+    kind: data
+    schema: realizing_emptiness.simulation_sensitivity_grid.v1
+  - id: simulation_sensitivity_grid_csv
+    path: output/data/simulation_sensitivity_grid.csv
+    kind: data
+  - id: quantum_boundary_entropy
+    path: output/data/quantum_boundary_entropy.json
+    kind: data
+    schema: realizing_emptiness.quantum_boundary_entropy.v1
+  - id: quantum_open_system_dynamics
+    path: output/data/quantum_open_system_dynamics.json
+    kind: data
+    schema: realizing_emptiness.quantum_open_system_dynamics.v1
+  - id: quantum_measurement_contextuality
+    path: output/data/quantum_measurement_contextuality.json
+    kind: data
+    schema: realizing_emptiness.quantum_measurement_contextuality.v1
+  - id: qfep_boundary_hamiltonian_dynamics
+    path: output/data/qfep_boundary_hamiltonian_dynamics.json
+    kind: data
+    schema: realizing_emptiness.qfep_boundary_hamiltonian_dynamics.v1
+  - id: quantum_trajectory_unraveling
+    path: output/data/quantum_trajectory_unraveling.json
+    kind: data
+    schema: realizing_emptiness.quantum_trajectory_unraveling.v1
+  - id: many_body_boundary_screen_sweep
+    path: output/data/many_body_boundary_screen_sweep.json
+    kind: data
+    schema: realizing_emptiness.many_body_boundary_screen_sweep.v1
+  - id: sheaf_contextuality_obstruction_audit
+    path: output/data/sheaf_contextuality_obstruction_audit.json
+    kind: data
+    schema: realizing_emptiness.sheaf_contextuality_obstruction_audit.v1
+  - id: qrf_transformation_covariance_audit
+    path: output/data/qrf_transformation_covariance_audit.json
+    kind: data
+    schema: realizing_emptiness.qrf_transformation_covariance_audit.v1
+  - id: empirical_adapter_provenance_audit
+    path: output/data/empirical_adapter_provenance_audit.json
+    kind: data
+    schema: realizing_emptiness.empirical_adapter_provenance_audit.v1
+  - id: arbitrary_two_qubit_entanglement_audit
+    path: output/data/arbitrary_two_qubit_entanglement_audit.json
+    kind: data
+    schema: realizing_emptiness.arbitrary_two_qubit_entanglement_audit.v1
+  - id: general_measurement_cover_polytope_audit
+    path: output/data/general_measurement_cover_polytope_audit.json
+    kind: data
+    schema: realizing_emptiness.general_measurement_cover_polytope_audit.v1
+  - id: thermodynamic_channel_cost_audit
+    path: output/data/thermodynamic_channel_cost_audit.json
+    kind: data
+    schema: realizing_emptiness.thermodynamic_channel_cost_audit.v1
+  - id: sparse_boundary_screen_scaling_audit
+    path: output/data/sparse_boundary_screen_scaling_audit.json
+    kind: data
+    schema: realizing_emptiness.sparse_boundary_screen_scaling_audit.v1
+  - id: qrf_frame_covariance_toy_audit
+    path: output/data/qrf_frame_covariance_toy_audit.json
+    kind: data
+    schema: realizing_emptiness.qrf_frame_covariance_toy_audit.v1
+  - id: quantum_extension_roadmap
+    path: output/data/quantum_extension_roadmap.json
+    kind: data
+    schema: realizing_emptiness.quantum_extension_roadmap.v1
+  - id: quantum_roadmap_readiness_matrix
+    path: output/data/quantum_roadmap_readiness_matrix.json
+    kind: data
+    schema: realizing_emptiness.quantum_roadmap_readiness_matrix.v1
+  - id: roadmap_todo_audit
+    path: output/data/roadmap_todo_audit.json
+    kind: data
+    schema: realizing_emptiness.roadmap_todo_audit.v1
+  - id: validation_dependency_graph
+    path: output/data/validation_dependency_graph.json
+    kind: data
+    schema: realizing_emptiness.validation_dependency_graph.v1
+  - id: artifact_contract_registry
+    path: output/data/artifact_contract_registry.json
+    kind: data
+    schema: realizing_emptiness.artifact_contract_registry.v1
+  - id: artifact_release_manifest
+    path: output/data/artifact_release_manifest.json
+    kind: data
+    schema: realizing_emptiness.artifact_release_manifest.v1
+  - id: external_review_response_audit
+    path: output/data/external_review_response_audit.json
+    kind: data
+    schema: realizing_emptiness.external_review_response_audit.v1
+  - id: figure_parameter_ledger
+    path: output/data/figure_parameter_ledger.json
+    kind: data
+    schema: realizing_emptiness.figure_parameter_ledger.v1
+  - id: qrf_label_ablation_audit
+    path: output/data/qrf_label_ablation_audit.json
+    kind: data
+    schema: realizing_emptiness.qrf_label_ablation_audit.v1
+  - id: quantum_independent_crosscheck_audit
+    path: output/data/quantum_independent_crosscheck_audit.json
+    kind: data
+    schema: realizing_emptiness.quantum_independent_crosscheck_audit.v1
+  - id: bmr_alternative_prior_audit
+    path: output/data/bmr_alternative_prior_audit.json
+    kind: data
+    schema: realizing_emptiness.bmr_alternative_prior_audit.v1
+  - id: sheaf_coverage_matrix
+    path: output/data/sheaf_coverage_matrix.json
+    kind: data
+    schema: realizing_emptiness.sheaf_coverage_matrix.v1
+  - id: method_assumption_ledger
+    path: output/data/method_assumption_ledger.json
+    kind: data
+    schema: realizing_emptiness.method_assumption_ledger.v1
+  - id: method_negative_control_inventory
+    path: output/data/method_negative_control_inventory.json
+    kind: data
+    schema: realizing_emptiness.method_negative_control_inventory.v1
+  - id: scholarship_source_matrix
+    path: output/data/scholarship_source_matrix.json
+    kind: data
+    schema: realizing_emptiness.scholarship_source_matrix.v1
+  - id: claim_support_audit
+    path: output/data/claim_support_audit.json
+    kind: data
+    schema: realizing_emptiness.claim_support_audit.v1
+  - id: manuscript_claim_audit
+    path: output/data/manuscript_claim_audit.json
+    kind: data
+    schema: realizing_emptiness.manuscript_claim_audit.v1
+  - id: manuscript_claim_intensity_audit
+    path: output/data/manuscript_claim_intensity_audit.json
+    kind: data
+    schema: realizing_emptiness.manuscript_claim_intensity_audit.v1
+  - id: evidence_ceiling_audit
+    path: output/data/evidence_ceiling_audit.json
+    kind: data
+    schema: realizing_emptiness.evidence_ceiling_audit.v1
+  - id: claim_context_ledger
+    path: output/data/claim_context_ledger.json
+    kind: data
+    schema: realizing_emptiness.claim_context_ledger.v1
+  - id: claim_redteam_audit
+    path: output/data/claim_redteam_audit.json
+    kind: data
+    schema: realizing_emptiness.claim_redteam_audit.v1
+  - id: pymdp_profile_comparison
+    path: output/data/pymdp_profile_comparison.json
+    kind: data
+    schema: realizing_emptiness.pymdp_profile_comparison.v2
+  - id: pymdp_policy_trace
+    path: output/data/pymdp_policy_trace.json
+    kind: data
+    schema: realizing_emptiness.pymdp_policy_trace.v1
+  - id: pymdp_generative_model_audit
+    path: output/data/pymdp_generative_model_audit.json
+    kind: data
+    schema: realizing_emptiness.pymdp_generative_model_audit.v1
+  - id: pymdp_runtime_diagnostics_log
+    path: output/data/pymdp_runtime_diagnostics_log.json
+    kind: data
+    schema: realizing_emptiness.pymdp_runtime_diagnostics_log.v1
+  - id: stochastic_policy_ensemble
+    path: output/data/stochastic_policy_ensemble.json
+    kind: data
+    schema: realizing_emptiness.stochastic_policy_ensemble.v1
+  - id: criticality_stochastic_ensemble
+    path: output/data/criticality_stochastic_ensemble.json
+    kind: data
+    schema: realizing_emptiness.criticality_stochastic_ensemble.v1
+  - id: stochastic_effect_size_audit
+    path: output/data/stochastic_effect_size_audit.json
+    kind: data
+    schema: realizing_emptiness.stochastic_effect_size_audit.v1
+  - id: bmr_robustness_resampling_audit
+    path: output/data/bmr_robustness_resampling_audit.json
+    kind: data
+    schema: realizing_emptiness.bmr_robustness_resampling_audit.v1
+  - id: quantum_trajectory_convergence_audit
+    path: output/data/quantum_trajectory_convergence_audit.json
+    kind: data
+    schema: realizing_emptiness.quantum_trajectory_convergence_audit.v1
+  - id: effect_size_calibration_audit
+    path: output/data/effect_size_calibration_audit.json
+    kind: data
+    schema: realizing_emptiness.effect_size_calibration_audit.v1
+  - id: statistical_robustness_audit
+    path: output/data/statistical_robustness_audit.json
+    kind: data
+    schema: realizing_emptiness.statistical_robustness_audit.v1
+  - id: compassion_scope_audit
+    path: output/data/compassion_scope_audit.json
+    kind: data
+    schema: realizing_emptiness.compassion_scope_audit.v1
+  - id: separation_prior_emergence_audit
+    path: output/data/separation_prior_emergence_audit.json
+    kind: data
+    schema: realizing_emptiness.separation_prior_emergence_audit.v1
+  - id: internal_cut_unmeasurability_audit
+    path: output/data/internal_cut_unmeasurability_audit.json
+    kind: data
+    schema: realizing_emptiness.internal_cut_unmeasurability_audit.v1
+  - id: sigma_contextuality_suppression_audit
+    path: output/data/sigma_contextuality_suppression_audit.json
+    kind: data
+    schema: realizing_emptiness.sigma_contextuality_suppression_audit.v1
+  - id: ongoing_revision_audit
+    path: output/data/ongoing_revision_audit.json
+    kind: data
+    schema: realizing_emptiness.ongoing_revision_audit.v1
+  - id: multipartite_witness_suite_audit
+    path: output/data/multipartite_witness_suite_audit.json
+    kind: data
+    schema: realizing_emptiness.multipartite_witness_suite_audit.v1
+  - id: tensor_network_benchmark_audit
+    path: output/data/tensor_network_benchmark_audit.json
+    kind: data
+    schema: realizing_emptiness.tensor_network_benchmark_audit.v1
+  - id: collision_model_thermalization_audit
+    path: output/data/collision_model_thermalization_audit.json
+    kind: data
+    schema: realizing_emptiness.collision_model_thermalization_audit.v1
+  - id: no_signaling_scenario_library_audit
+    path: output/data/no_signaling_scenario_library_audit.json
+    kind: data
+    schema: realizing_emptiness.no_signaling_scenario_library_audit.v1
+  - id: n_cycle_contextuality_library_audit
+    path: output/data/n_cycle_contextuality_library_audit.json
+    kind: data
+    schema: realizing_emptiness.n_cycle_contextuality_library_audit.v1
+  - id: data_processing_monotonicity_audit
+    path: output/data/data_processing_monotonicity_audit.json
+    kind: data
+    schema: realizing_emptiness.data_processing_monotonicity_audit.v1
+  - id: markov_blanket_discovery_audit
+    path: output/data/markov_blanket_discovery_audit.json
+    kind: data
+    schema: realizing_emptiness.markov_blanket_discovery_audit.v1
+  - id: quantum_cramer_rao_estimation_audit
+    path: output/data/quantum_cramer_rao_estimation_audit.json
+    kind: data
+    schema: realizing_emptiness.quantum_cramer_rao_estimation_audit.v1
+  - id: interaction_information_boundary_audit
+    path: output/data/interaction_information_boundary_audit.json
+    kind: data
+    schema: realizing_emptiness.interaction_information_boundary_audit.v1
+  - id: blackwell_bayes_risk_audit
+    path: output/data/blackwell_bayes_risk_audit.json
+    kind: data
+    schema: realizing_emptiness.blackwell_bayes_risk_audit.v1
+  - id: classical_data_processing_audit
+    path: output/data/classical_data_processing_audit.json
+    kind: data
+    schema: realizing_emptiness.classical_data_processing_audit.v1
+  - id: practice_protocol_map
+    path: output/data/practice_protocol_map.json
+    kind: data
+    schema: realizing_emptiness.practice_protocol_map.v1
+  - id: figure_integrity_audit
+    path: output/data/figure_integrity_audit.json
+    kind: data
+    schema: realizing_emptiness.figure_integrity_audit.v1
+  - id: visual_caption_audit
+    path: output/data/visual_caption_audit.json
+    kind: data
+    schema: realizing_emptiness.visual_caption_audit.v1
+  - id: rendered_figure_caption_audit
+    path: output/data/rendered_figure_caption_audit.json
+    kind: data
+    schema: realizing_emptiness.rendered_figure_caption_audit.v1
+  - id: visual_accessibility_audit
+    path: output/data/visual_accessibility_audit.json
+    kind: data
+    schema: realizing_emptiness.visual_accessibility_audit.v1
+  - id: visual_style_audit
+    path: output/data/visual_style_audit.json
+    kind: data
+    schema: realizing_emptiness.visual_style_audit.v1
+  - id: figure_legibility_audit
+    path: output/data/figure_legibility_audit.json
+    kind: data
+    schema: realizing_emptiness.figure_legibility_audit.v1
+  - id: manuscript_reference_audit
+    path: output/data/manuscript_reference_audit.json
+    kind: data
+    schema: realizing_emptiness.manuscript_reference_audit.v1
+  - id: figure_reuse_audit
+    path: output/data/figure_reuse_audit.json
+    kind: data
+    schema: realizing_emptiness.figure_reuse_audit.v1
+  - id: manuscript_figure_placement_audit
+    path: output/data/manuscript_figure_placement_audit.json
+    kind: data
+    schema: realizing_emptiness.manuscript_figure_placement_audit.v1
+  - id: cover_graphical_abstract_audit
+    path: output/data/cover_graphical_abstract_audit.json
+    kind: data
+    schema: realizing_emptiness.cover_graphical_abstract_audit.v1
+  - id: figure_source_map
+    path: output/data/figure_source_map.json
+    kind: data
+    schema: realizing_emptiness.figure_source_map.v1
+  - id: manuscript_variables
+    path: output/data/manuscript_variables.json
+    kind: data
+    schema: realizing_emptiness.manuscript_variables.v1
+  - id: artifact_dashboard_payload
+    path: output/data/artifact_dashboard_payload.json
+    kind: data
+    schema: realizing_emptiness.artifact_dashboard_payload.v1
+  - id: criticality_proxy_report
+    path: output/reports/criticality_proxy_report.json
+    kind: report
+    schema: realizing_emptiness.criticality_proxy_report.v1
+  - id: graphical_abstract_cover
+    path: output/figures/graphical_abstract_cover.png
+    kind: figure
+  - id: qrf_boundary_screen_geometry
+    path: output/figures/qrf_boundary_screen_geometry.png
+    kind: figure
+  - id: qrf_channel_relabeling_ledger
+    path: output/figures/qrf_channel_relabeling_ledger.png
+    kind: figure
+  - id: qrf_invariance_policy_flow
+    path: output/figures/qrf_invariance_policy_flow.png
+    kind: figure
+  - id: qrf_sectorisation_map
+    path: output/figures/qrf_sectorisation_map.png
+    kind: figure
+  - id: boundary_indistinguishability
+    path: output/figures/boundary_indistinguishability.png
+    kind: figure
+  - id: qrf_reference_frame_geometry
+    path: output/figures/qrf_reference_frame_geometry.png
+    kind: figure
+  - id: bmr_free_energy_decomposition
+    path: output/figures/bmr_free_energy_decomposition.png
+    kind: figure
+  - id: bmr_pruning_phase_diagram
+    path: output/figures/bmr_pruning_phase_diagram.png
+    kind: figure
+  - id: simulation_sensitivity_heatmap
+    path: output/figures/simulation_sensitivity_heatmap.png
+    kind: figure
+  - id: finite_quantum_scope_summary
+    path: output/figures/finite_quantum_scope_summary.png
+    kind: figure
+  - id: quantum_boundary_entropy_landscape
+    path: output/figures/quantum_boundary_entropy_landscape.png
+    kind: figure
+  - id: quantum_contextuality_witness
+    path: output/figures/quantum_contextuality_witness.png
+    kind: figure
+  - id: quantum_measurement_contextuality_table
+    path: output/figures/quantum_measurement_contextuality_table.png
+    kind: figure
+  - id: quantum_local_polytope_audit
+    path: output/figures/quantum_local_polytope_audit.png
+    kind: figure
+  - id: quantum_open_system_dynamics_figure
+    path: output/figures/quantum_open_system_dynamics.png
+    kind: figure
+  - id: qfep_boundary_hamiltonian_dynamics_figure
+    path: output/figures/qfep_boundary_hamiltonian_dynamics.png
+    kind: figure
+  - id: quantum_trajectory_unraveling_figure
+    path: output/figures/quantum_trajectory_unraveling.png
+    kind: figure
+  - id: many_body_boundary_screen_sweep_figure
+    path: output/figures/many_body_boundary_screen_sweep.png
+    kind: figure
+  - id: sheaf_contextuality_obstruction_audit_figure
+    path: output/figures/sheaf_contextuality_obstruction_audit.png
+    kind: figure
+  - id: qrf_transformation_covariance_audit_figure
+    path: output/figures/qrf_transformation_covariance_audit.png
+    kind: figure
+  - id: empirical_adapter_provenance_audit_figure
+    path: output/figures/empirical_adapter_provenance_audit.png
+    kind: figure
+  - id: arbitrary_two_qubit_entanglement_audit_figure
+    path: output/figures/arbitrary_two_qubit_entanglement_audit.png
+    kind: figure
+  - id: general_measurement_cover_polytope_audit_figure
+    path: output/figures/general_measurement_cover_polytope_audit.png
+    kind: figure
+  - id: thermodynamic_channel_cost_audit_figure
+    path: output/figures/thermodynamic_channel_cost_audit.png
+    kind: figure
+  - id: sparse_boundary_screen_scaling_audit_figure
+    path: output/figures/sparse_boundary_screen_scaling_audit.png
+    kind: figure
+  - id: qrf_frame_covariance_toy_audit_figure
+    path: output/figures/qrf_frame_covariance_toy_audit.png
+    kind: figure
+  - id: quantum_roadmap_readiness_matrix_figure
+    path: output/figures/quantum_roadmap_readiness_matrix.png
+    kind: figure
+  - id: pymdp_profile_comparison_figure
+    path: output/figures/pymdp_profile_comparison.png
+    kind: figure
+  - id: posterior_trajectory
+    path: output/figures/posterior_trajectory.png
+    kind: figure
+  - id: pymdp_runtime_validation_dashboard
+    path: output/figures/pymdp_runtime_validation_dashboard.png
+    kind: figure
+  - id: criticality_proxy_panels
+    path: output/figures/criticality_proxy_panels.png
+    kind: figure
+  - id: criticality_stochastic_ensemble_figure
+    path: output/figures/criticality_stochastic_ensemble.png
+    kind: figure
+  - id: criticality_signatures
+    path: output/figures/criticality_signatures.png
+    kind: figure
+  - id: compassion_scope_widening
+    path: output/figures/compassion_scope_widening.png
+    kind: figure
+  - id: separation_prior_emergence
+    path: output/figures/separation_prior_emergence.png
+    kind: figure
+  - id: internal_cut_unmeasurability
+    path: output/figures/internal_cut_unmeasurability.png
+    kind: figure
+  - id: practice_policy_scope_map
+    path: output/figures/practice_policy_scope_map.png
+    kind: figure
+  - id: stochastic_effect_size_forest
+    path: output/figures/stochastic_effect_size_forest.png
+    kind: figure
+  - id: bmr_robustness_resampling
+    path: output/figures/bmr_robustness_resampling.png
+    kind: figure
+  - id: quantum_trajectory_convergence_figure
+    path: output/figures/quantum_trajectory_convergence.png
+    kind: figure
+  - id: visual_semantic_palette_ledger
+    path: output/figures/visual_semantic_palette_ledger.png
+    kind: figure
+  - id: method_assumption_failure_map
+    path: output/figures/method_assumption_failure_map.png
+    kind: figure
+  - id: claim_source_validation_graph
+    path: output/figures/claim_source_validation_graph.png
+    kind: figure
+  - id: scholarship_coverage_matrix
+    path: output/figures/scholarship_coverage_matrix.png
+    kind: figure
+  - id: claim_support_matrix
+    path: output/figures/claim_support_matrix.png
+    kind: figure
+  - id: manuscript_claim_audit_figure
+    path: output/figures/manuscript_claim_audit.png
+    kind: figure
+  - id: evidence_ceiling_stress_matrix
+    path: output/figures/evidence_ceiling_stress_matrix.png
+    kind: figure
+  - id: claim_context_evidence_ladder
+    path: output/figures/claim_context_evidence_ladder.png
+    kind: figure
+  - id: formalism_operation_map
+    path: output/figures/formalism_operation_map.png
+    kind: figure
+  - id: qrf_sector_situation
+    path: output/figures/qrf_sector_situation.png
+    kind: figure
+  - id: boundary_use_vs_ontology
+    path: output/figures/boundary_use_vs_ontology.png
+    kind: figure
+  - id: separation_prior_net_value
+    path: output/figures/separation_prior_net_value.png
+    kind: figure
+  - id: multipartite_witness_negativity
+    path: output/figures/multipartite_witness_negativity.png
+    kind: figure
+  - id: tensor_network_scaling
+    path: output/figures/tensor_network_scaling.png
+    kind: figure
+  - id: collision_model_relaxation
+    path: output/figures/collision_model_relaxation.png
+    kind: figure
+  - id: n_cycle_contextuality_panel
+    path: output/figures/n_cycle_contextuality_panel.png
+    kind: figure
+  - id: data_processing_monotonicity
+    path: output/figures/data_processing_monotonicity.png
+    kind: figure
+  - id: markov_blanket_discovery
+    path: output/figures/markov_blanket_discovery.png
+    kind: figure
+  - id: artifact_dashboard
+    path: output/dashboard/index.html
+    kind: web

@@ -1,0 +1,15 @@
+{
+  "$id": "realizing_emptiness.practice_protocol_map.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Realizing Emptiness Practice Protocol Map",
+  "type": "object",
+  "required": ["schema", "protocol_count", "protocols", "allow_user_facing_claims", "all_have_safety_boundaries"],
+  "properties": {
+    "schema": {"const": "realizing_emptiness.practice_protocol_map.v1"},
+    "protocol_count": {"type": "integer", "minimum": 1},
+    "protocols": {"type": "array", "minItems": 1, "items": {"type": "object"}},
+    "allow_user_facing_claims": {"const": false},
+    "all_have_safety_boundaries": {"const": true}
+  },
+  "additionalProperties": true
+}

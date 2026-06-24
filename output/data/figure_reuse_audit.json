@@ -1,0 +1,289 @@
+{
+  "duplicate_supplement_paths": [],
+  "image_reference_count": 56,
+  "ok": true,
+  "rows": [
+    {
+      "file": "manuscript/00_abstract.md",
+      "path": "../output/figures/graphical_abstract_cover.png",
+      "section_class": "cover_or_main"
+    },
+    {
+      "file": "manuscript/01_introduction.md",
+      "path": "../output/figures/qrf_sector_situation.png",
+      "section_class": "cover_or_main"
+    },
+    {
+      "file": "manuscript/01_introduction.md",
+      "path": "../output/figures/qrf_boundary_screen_geometry.png",
+      "section_class": "cover_or_main"
+    },
+    {
+      "file": "manuscript/01_introduction.md",
+      "path": "../output/figures/boundary_use_vs_ontology.png",
+      "section_class": "cover_or_main"
+    },
+    {
+      "file": "manuscript/03_results.md",
+      "path": "../output/figures/qrf_channel_relabeling_ledger.png",
+      "section_class": "cover_or_main"
+    },
+    {
+      "file": "manuscript/03_results.md",
+      "path": "../output/figures/qrf_invariance_policy_flow.png",
+      "section_class": "cover_or_main"
+    },
+    {
+      "file": "manuscript/03_results.md",
+      "path": "../output/figures/finite_quantum_scope_summary.png",
+      "section_class": "cover_or_main"
+    },
+    {
+      "file": "manuscript/03_results.md",
+      "path": "../output/figures/separation_prior_emergence.png",
+      "section_class": "cover_or_main"
+    },
+    {
+      "file": "manuscript/03_results.md",
+      "path": "../output/figures/separation_prior_net_value.png",
+      "section_class": "cover_or_main"
+    },
+    {
+      "file": "manuscript/03_results.md",
+      "path": "../output/figures/bmr_free_energy_decomposition.png",
+      "section_class": "cover_or_main"
+    },
+    {
+      "file": "manuscript/03_results.md",
+      "path": "../output/figures/bmr_pruning_phase_diagram.png",
+      "section_class": "cover_or_main"
+    },
+    {
+      "file": "manuscript/03_results.md",
+      "path": "../output/figures/simulation_sensitivity_heatmap.png",
+      "section_class": "cover_or_main"
+    },
+    {
+      "file": "manuscript/03_results.md",
+      "path": "../output/figures/bmr_robustness_resampling.png",
+      "section_class": "cover_or_main"
+    },
+    {
+      "file": "manuscript/03_results.md",
+      "path": "../output/figures/pymdp_profile_comparison.png",
+      "section_class": "cover_or_main"
+    },
+    {
+      "file": "manuscript/03_results.md",
+      "path": "../output/figures/posterior_trajectory.png",
+      "section_class": "cover_or_main"
+    },
+    {
+      "file": "manuscript/04_discussion.md",
+      "path": "../output/figures/practice_policy_scope_map.png",
+      "section_class": "cover_or_main"
+    },
+    {
+      "file": "manuscript/06_supplement.md",
+      "path": "../output/figures/internal_cut_unmeasurability.png",
+      "section_class": "supplement"
+    },
+    {
+      "file": "manuscript/06_supplement.md",
+      "path": "../output/figures/markov_blanket_discovery.png",
+      "section_class": "supplement"
+    },
+    {
+      "file": "manuscript/06_supplement.md",
+      "path": "../output/figures/quantum_boundary_entropy_landscape.png",
+      "section_class": "supplement"
+    },
+    {
+      "file": "manuscript/06_supplement.md",
+      "path": "../output/figures/arbitrary_two_qubit_entanglement_audit.png",
+      "section_class": "supplement"
+    },
+    {
+      "file": "manuscript/06_supplement.md",
+      "path": "../output/figures/multipartite_witness_negativity.png",
+      "section_class": "supplement"
+    },
+    {
+      "file": "manuscript/06_supplement.md",
+      "path": "../output/figures/tensor_network_scaling.png",
+      "section_class": "supplement"
+    },
+    {
+      "file": "manuscript/06_supplement.md",
+      "path": "../output/figures/collision_model_relaxation.png",
+      "section_class": "supplement"
+    },
+    {
+      "file": "manuscript/06_supplement.md",
+      "path": "../output/figures/data_processing_monotonicity.png",
+      "section_class": "supplement"
+    },
+    {
+      "file": "manuscript/06_supplement.md",
+      "path": "../output/figures/n_cycle_contextuality_panel.png",
+      "section_class": "supplement"
+    },
+    {
+      "file": "manuscript/06_supplement.md",
+      "path": "../output/figures/quantum_contextuality_witness.png",
+      "section_class": "supplement"
+    },
+    {
+      "file": "manuscript/06_supplement.md",
+      "path": "../output/figures/quantum_measurement_contextuality_table.png",
+      "section_class": "supplement"
+    },
+    {
+      "file": "manuscript/06_supplement.md",
+      "path": "../output/figures/quantum_local_polytope_audit.png",
+      "section_class": "supplement"
+    },
+    {
+      "file": "manuscript/06_supplement.md",
+      "path": "../output/figures/general_measurement_cover_polytope_audit.png",
+      "section_class": "supplement"
+    },
+    {
+      "file": "manuscript/06_supplement.md",
+      "path": "../output/figures/quantum_open_system_dynamics.png",
+      "section_class": "supplement"
+    },
+    {
+      "file": "manuscript/06_supplement.md",
+      "path": "../output/figures/quantum_trajectory_unraveling.png",
+      "section_class": "supplement"
+    },
+    {
+      "file": "manuscript/06_supplement.md",
+      "path": "../output/figures/quantum_trajectory_convergence.png",
+      "section_class": "supplement"
+    },
+    {
+      "file": "manuscript/06_supplement.md",
+      "path": "../output/figures/thermodynamic_channel_cost_audit.png",
+      "section_class": "supplement"
+    },
+    {
+      "file": "manuscript/06_supplement.md",
+      "path": "../output/figures/qfep_boundary_hamiltonian_dynamics.png",
+      "section_class": "supplement"
+    },
+    {
+      "file": "manuscript/06_supplement.md",
+      "path": "../output/figures/many_body_boundary_screen_sweep.png",
+      "section_class": "supplement"
+    },
+    {
+      "file": "manuscript/06_supplement.md",
+      "path": "../output/figures/sparse_boundary_screen_scaling_audit.png",
+      "section_class": "supplement"
+    },
+    {
+      "file": "manuscript/06_supplement.md",
+      "path": "../output/figures/sheaf_contextuality_obstruction_audit.png",
+      "section_class": "supplement"
+    },
+    {
+      "file": "manuscript/06_supplement.md",
+      "path": "../output/figures/qrf_transformation_covariance_audit.png",
+      "section_class": "supplement"
+    },
+    {
+      "file": "manuscript/06_supplement.md",
+      "path": "../output/figures/qrf_frame_covariance_toy_audit.png",
+      "section_class": "supplement"
+    },
+    {
+      "file": "manuscript/06_supplement.md",
+      "path": "../output/figures/empirical_adapter_provenance_audit.png",
+      "section_class": "supplement"
+    },
+    {
+      "file": "manuscript/06_supplement.md",
+      "path": "../output/figures/quantum_roadmap_readiness_matrix.png",
+      "section_class": "supplement"
+    },
+    {
+      "file": "manuscript/06_supplement.md",
+      "path": "../output/figures/criticality_signatures.png",
+      "section_class": "supplement"
+    },
+    {
+      "file": "manuscript/06_supplement.md",
+      "path": "../output/figures/criticality_stochastic_ensemble.png",
+      "section_class": "supplement"
+    },
+    {
+      "file": "manuscript/06_supplement.md",
+      "path": "../output/figures/criticality_proxy_panels.png",
+      "section_class": "supplement"
+    },
+    {
+      "file": "manuscript/06_supplement.md",
+      "path": "../output/figures/stochastic_effect_size_forest.png",
+      "section_class": "supplement"
+    },
+    {
+      "file": "manuscript/06_supplement.md",
+      "path": "../output/figures/compassion_scope_widening.png",
+      "section_class": "supplement"
+    },
+    {
+      "file": "manuscript/06_supplement.md",
+      "path": "../output/figures/manuscript_claim_audit.png",
+      "section_class": "supplement"
+    },
+    {
+      "file": "manuscript/06_supplement.md",
+      "path": "../output/figures/claim_context_evidence_ladder.png",
+      "section_class": "supplement"
+    },
+    {
+      "file": "manuscript/06_supplement.md",
+      "path": "../output/figures/evidence_ceiling_stress_matrix.png",
+      "section_class": "supplement"
+    },
+    {
+      "file": "manuscript/06_supplement.md",
+      "path": "../output/figures/pymdp_runtime_validation_dashboard.png",
+      "section_class": "supplement"
+    },
+    {
+      "file": "manuscript/06_supplement.md",
+      "path": "../output/figures/scholarship_coverage_matrix.png",
+      "section_class": "supplement"
+    },
+    {
+      "file": "manuscript/06_supplement.md",
+      "path": "../output/figures/claim_support_matrix.png",
+      "section_class": "supplement"
+    },
+    {
+      "file": "manuscript/06_supplement.md",
+      "path": "../output/figures/claim_source_validation_graph.png",
+      "section_class": "supplement"
+    },
+    {
+      "file": "manuscript/06_supplement.md",
+      "path": "../output/figures/visual_semantic_palette_ledger.png",
+      "section_class": "supplement"
+    },
+    {
+      "file": "manuscript/06_supplement.md",
+      "path": "../output/figures/method_assumption_failure_map.png",
+      "section_class": "supplement"
+    },
+    {
+      "file": "manuscript/06_supplement.md",
+      "path": "../output/figures/formalism_operation_map.png",
+      "section_class": "supplement"
+    }
+  ],
+  "schema": "realizing_emptiness.figure_reuse_audit.v1",
+  "unique_image_path_count": 56
+}

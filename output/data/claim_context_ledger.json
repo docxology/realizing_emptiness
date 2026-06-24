@@ -1,0 +1,1509 @@
+{
+  "all_controls_pass": true,
+  "claim_boundary": "claim-context ledger for source-role explanation; not empirical evidence, not a physical qFEP realization, and not a clinical, neural, awakening, or practice-efficacy claim",
+  "claim_count": 15,
+  "controls": {
+    "all_allowed_interpretations_present": true,
+    "all_artifacts_exist": true,
+    "all_figure_bindings_present": true,
+    "all_future_evidence_boundaries_present": true,
+    "all_gates_declared": true,
+    "all_manuscript_sections_present": true,
+    "all_prohibited_interpretations_present": true,
+    "all_public_claims_represented": true,
+    "all_reader_claims_present": true,
+    "all_role_compatibility_rules_pass": true,
+    "all_source_keys_resolve": true,
+    "all_source_roles_present": true,
+    "no_proxy_or_safety_reader_overclaims": true
+  },
+  "missing_allowed_interpretations": [],
+  "missing_artifacts": [],
+  "missing_figure_bindings": [],
+  "missing_future_evidence": [],
+  "missing_gates": [],
+  "missing_manuscript_sections": [],
+  "missing_prohibited_interpretations": [],
+  "missing_reader_claims": [],
+  "missing_source_roles": [],
+  "proxy_overclaiming_reader_claims": [],
+  "role_compatibility_failures": [],
+  "rows": [
+    {
+      "allowed_interpretation": "Allowed only as local private artifact package only, not public independent reproduction: The local artifact bundle is hashed, schema-registered, and command-accounted for private release-readiness review.",
+      "artifact": "output/data/artifact_release_manifest.json",
+      "artifact_exists": true,
+      "claim_id": "artifact_release_readiness",
+      "evidence_ceiling": "local private artifact package only, not public independent reproduction",
+      "evidence_class": "implementation_boundary",
+      "figure_bindings": [
+        "claim_context_evidence_ladder"
+      ],
+      "future_evidence_required": "Explicit publication approval, public archive deposition, independent or blinded reproduction, and external reviewer execution before any public-release or independent-reproduction claim.",
+      "manuscript_sections": [
+        "sec:discussion-source-role-boundaries",
+        "sec:supplement-reproducibility-gates"
+      ],
+      "paper_locator": "Software artifact release package",
+      "prohibited_inference": "Do not read local hashes, manifests, or validation commands as a public archive release, independent reproduction, empirical validation, or publication.",
+      "reader_claim": "The local artifact bundle is hashed, schema-registered, and command-accounted for private release-readiness review.",
+      "role_compatibility": {
+        "ok": true,
+        "rationale": "Local release-readiness claims need artifact, reproducibility, workflow, or validation support.",
+        "rule": "release_readiness_requires_artifact_or_workflow_source"
+      },
+      "source_keys": [
+        "gelman2020bayesianworkflow",
+        "pineau2020reproducibility",
+        "talts2018sbc"
+      ],
+      "source_role_count": 3,
+      "source_roles": [
+        {
+          "citation_key": "gelman2020bayesianworkflow",
+          "evidence_status": "methodological_background",
+          "role": "Bayesian workflow, model checking, and validation boundary background",
+          "source_id": "gelman_bayesian_workflow"
+        },
+        {
+          "citation_key": "pineau2020reproducibility",
+          "evidence_status": "methodological_background",
+          "role": "artifact release and reproducibility checklist practice background",
+          "source_id": "pineau_reproducibility_checklist"
+        },
+        {
+          "citation_key": "talts2018sbc",
+          "evidence_status": "methodological_background",
+          "role": "Bayesian workflow validation and simulation-based calibration background",
+          "source_id": "talts_simulation_based_calibration"
+        }
+      ],
+      "stressors": [
+        "empirical_gap",
+        "source_role_boundary"
+      ],
+      "support_count": 3,
+      "validation_gate": "artifact_release_manifest_ok"
+    },
+    {
+      "allowed_interpretation": "Allowed only as deterministic parameter sweep, not empirical practice evidence: When accuracy no longer depends on the separation prior, BMR favors the reduced model.",
+      "artifact": "output/data/bmr_sweep.json",
+      "artifact_exists": true,
+      "claim_id": "bmr_prunes_sigma",
+      "evidence_ceiling": "deterministic parameter sweep, not empirical practice evidence",
+      "evidence_class": "finite_sweep",
+      "figure_bindings": [
+        "bmr_pruning_phase_diagram",
+        "evidence_ceiling_stress_matrix",
+        "claim_context_evidence_ladder"
+      ],
+      "future_evidence_required": "Pre-registered empirical or agent-benchmark evidence linking reduced complexity to task performance and subjective reports.",
+      "manuscript_sections": [
+        "sec:discussion-evidence-ceilings",
+        "sec:methods-bmr-separation-prior",
+        "sec:results-bmr-sensitivity"
+      ],
+      "paper_locator": "Equation 12 and Section 4.3",
+      "prohibited_inference": "Do not read pruning in the sweep as evidence that meditation or realization removes self-models in people.",
+      "reader_claim": "When accuracy no longer depends on the separation prior, BMR favors the reduced model.",
+      "role_compatibility": {
+        "ok": true,
+        "rationale": "Finite model claims need formal, active-inference, or BMR support.",
+        "rule": "model_claim_requires_formal_or_active_inference_source"
+      },
+      "source_keys": [
+        "efron1979bootstrap",
+        "friston2011posthoc",
+        "friston2018bmr",
+        "gelman2020bayesianworkflow",
+        "parr2022active",
+        "sandvedsmith2026noself",
+        "talts2018sbc"
+      ],
+      "source_role_count": 7,
+      "source_roles": [
+        {
+          "citation_key": "efron1979bootstrap",
+          "evidence_status": "methodological_background",
+          "role": "bootstrap interval background for finite simulation robustness audits",
+          "source_id": "bootstrap_uncertainty"
+        },
+        {
+          "citation_key": "friston2011posthoc",
+          "evidence_status": "methodological_background",
+          "role": "Bayesian model-reduction background",
+          "source_id": "bmr_posthoc_selection"
+        },
+        {
+          "citation_key": "friston2018bmr",
+          "evidence_status": "methodological_background",
+          "role": "Bayesian model reduction free-energy comparison foundation",
+          "source_id": "friston_bayesian_model_reduction"
+        },
+        {
+          "citation_key": "gelman2020bayesianworkflow",
+          "evidence_status": "methodological_background",
+          "role": "Bayesian workflow, model checking, and validation boundary background",
+          "source_id": "gelman_bayesian_workflow"
+        },
+        {
+          "citation_key": "parr2022active",
+          "evidence_status": "theoretical_background",
+          "role": "active-inference notation and free-energy decomposition",
+          "source_id": "active_inference_book"
+        },
+        {
+          "citation_key": "sandvedsmith2026noself",
+          "evidence_status": "source_anchor",
+          "role": "primary formal target",
+          "source_id": "no_self_evidence_preprint"
+        },
+        {
+          "citation_key": "talts2018sbc",
+          "evidence_status": "methodological_background",
+          "role": "Bayesian workflow validation and simulation-based calibration background",
+          "source_id": "talts_simulation_based_calibration"
+        }
+      ],
+      "stressors": [
+        "empirical_gap",
+        "surrogate_scope"
+      ],
+      "support_count": 7,
+      "validation_gate": "bmr_pruning_edges"
+    },
+    {
+      "allowed_interpretation": "Allowed only as model-scope proxy only: The compassion proxy is a modeled widening of policy scope, not a moral, clinical, or contemplative attainment metric.",
+      "artifact": "output/data/practice_protocol_map.json",
+      "artifact_exists": true,
+      "claim_id": "compassion_proxy_boundary",
+      "evidence_ceiling": "model-scope proxy only",
+      "evidence_class": "proxy_boundary",
+      "figure_bindings": [
+        "evidence_ceiling_stress_matrix",
+        "claim_context_evidence_ladder"
+      ],
+      "future_evidence_required": "Independent human-subject measures and normative review before any compassion or wellbeing claim.",
+      "manuscript_sections": [
+        "sec:discussion-compassion-boundary",
+        "sec:supplement-bounded-practice-protocols",
+        "sec:supplement-compassion-policy-scope"
+      ],
+      "paper_locator": "Section 6.2",
+      "prohibited_inference": "Do not read broadened model scope as moral virtue, compassion, clinical improvement, or contemplative attainment.",
+      "reader_claim": "The compassion proxy is a modeled widening of policy scope, not a moral, clinical, or contemplative attainment metric.",
+      "role_compatibility": {
+        "ok": true,
+        "rationale": "Proxy and practice claims need boundary, caution, or domain-interface sources.",
+        "rule": "proxy_or_practice_claim_requires_boundary_or_caution_source"
+      },
+      "source_keys": [
+        "doctor2022care",
+        "singer2014empathy_compassion",
+        "strauss2016compassion_measurement"
+      ],
+      "source_role_count": 3,
+      "source_roles": [
+        {
+          "citation_key": "doctor2022care",
+          "evidence_status": "conceptual_background",
+          "role": "care and compassion context",
+          "source_id": "care_driver_intelligence"
+        },
+        {
+          "citation_key": "singer2014empathy_compassion",
+          "evidence_status": "conceptual_background",
+          "role": "empathy and compassion distinction for proxy boundary",
+          "source_id": "empathy_compassion_distinction"
+        },
+        {
+          "citation_key": "strauss2016compassion_measurement",
+          "evidence_status": "conceptual_background",
+          "role": "compassion definition and measurement boundary",
+          "source_id": "compassion_definitions_measurement"
+        }
+      ],
+      "stressors": [
+        "normative_boundary",
+        "practice_boundary"
+      ],
+      "support_count": 3,
+      "validation_gate": "practice_boundaries"
+    },
+    {
+      "allowed_interpretation": "Allowed only as seeded stochastic simulation ensemble only: Criticality-style outputs are seeded stochastic trajectory summaries with null controls that structure future empirical work but are not neural measurements.",
+      "artifact": "output/data/criticality_stochastic_ensemble.json",
+      "artifact_exists": true,
+      "claim_id": "criticality_proxy_boundary",
+      "evidence_ceiling": "seeded stochastic simulation ensemble only",
+      "evidence_class": "proxy_boundary",
+      "figure_bindings": [
+        "criticality_stochastic_ensemble",
+        "claim_context_evidence_ladder"
+      ],
+      "future_evidence_required": "Neural data provenance, preprocessing records, null models, and negative controls before any neural-criticality claim.",
+      "manuscript_sections": [
+        "sec:discussion-criticality-proxy-boundary",
+        "sec:supplement-criticality-proxies",
+        "sec:supplement-meta-manuscript-record"
+      ],
+      "paper_locator": "Section 6.3",
+      "prohibited_inference": "Do not read the simulated ensemble as a measured neural criticality regime or a biomarker of realization.",
+      "reader_claim": "Criticality-style outputs are seeded stochastic trajectory summaries with null controls that structure future empirical work but are not neural measurements.",
+      "role_compatibility": {
+        "ok": true,
+        "rationale": "Proxy and practice claims need boundary, caution, or domain-interface sources.",
+        "rule": "proxy_or_practice_claim_requires_boundary_or_caution_source"
+      },
+      "source_keys": [
+        "beggs2003neuronal",
+        "cliff1993dominance",
+        "cocchi2017criticality",
+        "destexhe2021criticality_evidence",
+        "efron1979bootstrap",
+        "hipolito2021markov",
+        "holm1979sequential",
+        "nosek2018preregistration",
+        "shew2013criticality",
+        "touboul2017power_law_absence_criticality",
+        "westfall1993resampling",
+        "wilkinson2016fair",
+        "wilting2019criticality"
+      ],
+      "source_role_count": 13,
+      "source_roles": [
+        {
+          "citation_key": "beggs2003neuronal",
+          "evidence_status": "theoretical_background",
+          "role": "founding empirical source for neuronal avalanches and branching ratio sigma=1 criticality signature",
+          "source_id": "neuronal_avalanches_branching"
+        },
+        {
+          "citation_key": "cliff1993dominance",
+          "evidence_status": "methodological_background",
+          "role": "dominance-effect-size background for stochastic profile versus null comparisons",
+          "source_id": "cliffs_delta_effect_size"
+        },
+        {
+          "citation_key": "cocchi2017criticality",
+          "evidence_status": "future_empirical_context",
+          "role": "criticality background and cautionary empirical context",
+          "source_id": "criticality_synthesis"
+        },
+        {
+          "citation_key": "destexhe2021criticality_evidence",
+          "evidence_status": "theoretical_background",
+          "role": "criticality false-positive and evidential sufficiency caution",
+          "source_id": "sufficient_evidence_criticality_caution"
+        },
+        {
+          "citation_key": "efron1979bootstrap",
+          "evidence_status": "methodological_background",
+          "role": "bootstrap interval background for finite simulation robustness audits",
+          "source_id": "bootstrap_uncertainty"
+        },
+        {
+          "citation_key": "hipolito2021markov",
+          "evidence_status": "future_empirical_context",
+          "role": "Markov-blanket partition and neural-boundary caution",
+          "source_id": "markov_blankets_brain"
+        },
+        {
+          "citation_key": "holm1979sequential",
+          "evidence_status": "methodological_background",
+          "role": "family-wise multiplicity correction for finite stochastic effect-size audits",
+          "source_id": "holm_multiple_testing"
+        },
+        {
+          "citation_key": "nosek2018preregistration",
+          "evidence_status": "methodological_background",
+          "role": "preregistration and empirical-claim governance context",
+          "source_id": "preregistration_revolution"
+        },
+        {
+          "citation_key": "shew2013criticality",
+          "evidence_status": "future_empirical_context",
+          "role": "criticality metric background",
+          "source_id": "criticality_benefits"
+        },
+        {
+          "citation_key": "touboul2017power_law_absence_criticality",
+          "evidence_status": "theoretical_background",
+          "role": "criticality proxy caveat and false-positive boundary",
+          "source_id": "power_laws_without_criticality"
+        },
+        {
+          "citation_key": "westfall1993resampling",
+          "evidence_status": "methodological_background",
+          "role": "methodological foundation for resampling-based p-values with step-down (Holm) multiple-comparison correction",
+          "source_id": "resampling_multiple_testing"
+        },
+        {
+          "citation_key": "wilkinson2016fair",
+          "evidence_status": "methodological_background",
+          "role": "empirical adapter provenance and data stewardship boundary",
+          "source_id": "fair_data_principles"
+        },
+        {
+          "citation_key": "wilting2019criticality",
+          "evidence_status": "theoretical_background",
+          "role": "review acknowledging criticality as a disputed proxy vocabulary in neuroscience",
+          "source_id": "criticality_neuroscience_review"
+        }
+      ],
+      "stressors": [
+        "empirical_gap",
+        "neural_measurement_boundary"
+      ],
+      "support_count": 13,
+      "validation_gate": "criticality_stochastic_ensemble_ok"
+    },
+    {
+      "allowed_interpretation": "Allowed only as parameterized sensitivity surrogate only: Metacognitive access is modeled as a sweep parameter controlling when the separation prior becomes dispensable.",
+      "artifact": "output/data/simulation_sensitivity_grid.json",
+      "artifact_exists": true,
+      "claim_id": "metacognitive_access_model",
+      "evidence_ceiling": "parameterized sensitivity surrogate only",
+      "evidence_class": "implementation_boundary",
+      "figure_bindings": [
+        "simulation_sensitivity_heatmap",
+        "claim_context_evidence_ladder"
+      ],
+      "future_evidence_required": "Validated operational measures and task data if metacognitive access is tied to people or empirical agents.",
+      "manuscript_sections": [
+        "sec:discussion-practice-interface-boundaries",
+        "sec:methods-bmr-separation-prior",
+        "sec:methods-pymdp-generative-models",
+        "sec:methods-separation-prior-subspace",
+        "sec:results-bmr-sensitivity",
+        "sec:results-pymdp-policy-trace"
+      ],
+      "paper_locator": "Sections 4.2-4.3",
+      "prohibited_inference": "Do not read the sweep parameter as a measured metacognitive trait or training outcome.",
+      "reader_claim": "Metacognitive access is modeled as a sweep parameter controlling when the separation prior becomes dispensable.",
+      "role_compatibility": {
+        "ok": true,
+        "rationale": "Finite model claims need formal, active-inference, or BMR support.",
+        "rule": "model_claim_requires_formal_or_active_inference_source"
+      },
+      "source_keys": [
+        "dacosta2020discrete",
+        "prest2026lettinggo",
+        "prest2026selfingwithoutself",
+        "sandvedsmith2021mentalaction",
+        "sandvedsmith2024metacognitive",
+        "tal2026advancedmeditation"
+      ],
+      "source_role_count": 6,
+      "source_roles": [
+        {
+          "citation_key": "dacosta2020discrete",
+          "evidence_status": "methodological_background",
+          "role": "discrete active-inference A/B/C/D implementation background",
+          "source_id": "discrete_active_inference_synthesis"
+        },
+        {
+          "citation_key": "prest2026lettinggo",
+          "evidence_status": "conceptual_background",
+          "role": "letting-go and defabrication model context for precision reweighting",
+          "source_id": "meditative_deconstruction_letting_go"
+        },
+        {
+          "citation_key": "prest2026selfingwithoutself",
+          "evidence_status": "conceptual_background",
+          "role": "organismic self versus identified-with self distinction; preprint context only",
+          "source_id": "selfing_without_self_preprint"
+        },
+        {
+          "citation_key": "sandvedsmith2021mentalaction",
+          "evidence_status": "methodological_background",
+          "role": "meta-awareness and attentional-control implementation boundary",
+          "source_id": "computational_phenomenology_mental_action"
+        },
+        {
+          "citation_key": "sandvedsmith2024metacognitive",
+          "evidence_status": "theoretical_background",
+          "role": "metacognitive access and mental-action model foundation",
+          "source_id": "sandvedsmith_metacognitive_particles"
+        },
+        {
+          "citation_key": "tal2026advancedmeditation",
+          "evidence_status": "conceptual_background",
+          "role": "advanced-meditation computational-phenomenology review and precision-weighting boundary",
+          "source_id": "active_inference_advanced_meditation_review"
+        }
+      ],
+      "stressors": [
+        "empirical_gap",
+        "surrogate_scope"
+      ],
+      "support_count": 6,
+      "validation_gate": "simulation_sensitivity_grid_ok"
+    },
+    {
+      "allowed_interpretation": "Allowed only as protocol specification only: Practice-facing language is represented as model interventions, not evidence for realization or treatment.",
+      "artifact": "output/data/practice_protocol_map.json",
+      "artifact_exists": true,
+      "claim_id": "practice_protocol_boundary",
+      "evidence_ceiling": "protocol specification only",
+      "evidence_class": "safety_boundary",
+      "figure_bindings": [
+        "evidence_ceiling_stress_matrix",
+        "claim_context_evidence_ladder"
+      ],
+      "future_evidence_required": "Human review, ethics constraints, safety language, and outcome-independent usability validation before user-facing deployment.",
+      "manuscript_sections": [
+        "sec:discussion-compassion-boundary",
+        "sec:discussion-practice-interface-boundaries",
+        "sec:methods-pymdp-generative-models",
+        "sec:results-pymdp-policy-trace",
+        "sec:supplement-bounded-practice-protocols",
+        "sec:supplement-compassion-policy-scope"
+      ],
+      "paper_locator": "Sections 4.2 and 6.2",
+      "prohibited_inference": "Do not read protocol mappings as instructions, therapy, or evidence that a practice induces realization.",
+      "reader_claim": "Practice-facing language is represented as model interventions, not evidence for realization or treatment.",
+      "role_compatibility": {
+        "ok": true,
+        "rationale": "Proxy and practice claims need boundary, caution, or domain-interface sources.",
+        "rule": "proxy_or_practice_claim_requires_boundary_or_caution_source"
+      },
+      "source_keys": [
+        "dahl2015self",
+        "laukkonen2021many",
+        "laukkonen2025contemplativeai",
+        "limanowski2018seeing",
+        "lutz2008attention",
+        "lutz2015matrix",
+        "nosek2018preregistration",
+        "prest2026lettinggo",
+        "prest2026selfingwithoutself",
+        "sandvedsmith2021mentalaction",
+        "sandvedsmith2026noself",
+        "siderits2013middle",
+        "tal2026advancedmeditation",
+        "varela1991embodied",
+        "wilkinson2016fair"
+      ],
+      "source_role_count": 15,
+      "source_roles": [
+        {
+          "citation_key": "dahl2015self",
+          "evidence_status": "conceptual_background",
+          "role": "attentional, constructive, and deconstructive practice taxonomy",
+          "source_id": "meditation_self_mechanisms"
+        },
+        {
+          "citation_key": "laukkonen2021many",
+          "evidence_status": "conceptual_background",
+          "role": "deconstructive meditation and predictive processing context",
+          "source_id": "meditation_predictive_mind"
+        },
+        {
+          "citation_key": "laukkonen2025contemplativeai",
+          "evidence_status": "conceptual_background",
+          "role": "contemplative-AI practice-interface background and boundary caution",
+          "source_id": "contemplative_artificial_intelligence"
+        },
+        {
+          "citation_key": "limanowski2018seeing",
+          "evidence_status": "theoretical_background",
+          "role": "transparency, opacity, and precision framing",
+          "source_id": "opacity_precision"
+        },
+        {
+          "citation_key": "lutz2008attention",
+          "evidence_status": "conceptual_background",
+          "role": "focused-attention / open-monitoring / non-dual practice-style taxonomy",
+          "source_id": "lutz_attention_meditation_taxonomy"
+        },
+        {
+          "citation_key": "lutz2015matrix",
+          "evidence_status": "conceptual_background",
+          "role": "practice taxonomy and phenomenological-dimension boundary",
+          "source_id": "mindfulness_phenomenology_matrix"
+        },
+        {
+          "citation_key": "nosek2018preregistration",
+          "evidence_status": "methodological_background",
+          "role": "preregistration and empirical-claim governance context",
+          "source_id": "preregistration_revolution"
+        },
+        {
+          "citation_key": "prest2026lettinggo",
+          "evidence_status": "conceptual_background",
+          "role": "letting-go and defabrication model context for precision reweighting",
+          "source_id": "meditative_deconstruction_letting_go"
+        },
+        {
+          "citation_key": "prest2026selfingwithoutself",
+          "evidence_status": "conceptual_background",
+          "role": "organismic self versus identified-with self distinction; preprint context only",
+          "source_id": "selfing_without_self_preprint"
+        },
+        {
+          "citation_key": "sandvedsmith2021mentalaction",
+          "evidence_status": "methodological_background",
+          "role": "meta-awareness and attentional-control implementation boundary",
+          "source_id": "computational_phenomenology_mental_action"
+        },
+        {
+          "citation_key": "sandvedsmith2026noself",
+          "evidence_status": "source_anchor",
+          "role": "primary formal target",
+          "source_id": "no_self_evidence_preprint"
+        },
+        {
+          "citation_key": "siderits2013middle",
+          "evidence_status": "philosophical_background",
+          "role": "Buddhist emptiness terminology boundary",
+          "source_id": "madhyamaka_translation"
+        },
+        {
+          "citation_key": "tal2026advancedmeditation",
+          "evidence_status": "conceptual_background",
+          "role": "advanced-meditation computational-phenomenology review and precision-weighting boundary",
+          "source_id": "active_inference_advanced_meditation_review"
+        },
+        {
+          "citation_key": "varela1991embodied",
+          "evidence_status": "philosophical_background",
+          "role": "enactive and neurophenomenological background for boundary-as-interface vocabulary",
+          "source_id": "embodied_mind_enaction"
+        },
+        {
+          "citation_key": "wilkinson2016fair",
+          "evidence_status": "methodological_background",
+          "role": "empirical adapter provenance and data stewardship boundary",
+          "source_id": "fair_data_principles"
+        }
+      ],
+      "stressors": [
+        "practice_boundary",
+        "source_role_boundary"
+      ],
+      "support_count": 15,
+      "validation_gate": "practice_boundaries"
+    },
+    {
+      "allowed_interpretation": "Allowed only as package import, agent construction, state inference, and policy-posterior normalization diagnostics: The active-inference runtime dependency check uses the pinned pymdp package and records a normalized policy posterior.",
+      "artifact": "output/data/pymdp_profile_comparison.json",
+      "artifact_exists": true,
+      "claim_id": "pymdp_runtime_canary",
+      "evidence_ceiling": "package import, agent construction, state inference, and policy-posterior normalization diagnostics",
+      "evidence_class": "runtime_canary",
+      "figure_bindings": [
+        "pymdp_profile_comparison",
+        "claim_context_evidence_ladder"
+      ],
+      "future_evidence_required": "Version-pinned benchmark suites and comparison agents if performance or optimality claims are introduced.",
+      "manuscript_sections": [
+        "sec:discussion-no-self-evidence-boundary",
+        "sec:methods-pymdp-generative-models",
+        "sec:results-pymdp-policy-trace"
+      ],
+      "paper_locator": "Software implementation layer",
+      "prohibited_inference": "Do not read the runtime dependency check as a benchmark of active-inference optimality or scientific validity.",
+      "reader_claim": "The active-inference runtime dependency check uses the pinned pymdp package and records a normalized policy posterior.",
+      "role_compatibility": {
+        "ok": true,
+        "rationale": "Runtime claims need implementation or discrete active-inference support.",
+        "rule": "runtime_claim_requires_implementation_source"
+      },
+      "source_keys": [
+        "dacosta2020discrete",
+        "friston2015epistemic",
+        "heins2022pymdp"
+      ],
+      "source_role_count": 3,
+      "source_roles": [
+        {
+          "citation_key": "dacosta2020discrete",
+          "evidence_status": "methodological_background",
+          "role": "discrete active-inference A/B/C/D implementation background",
+          "source_id": "discrete_active_inference_synthesis"
+        },
+        {
+          "citation_key": "friston2015epistemic",
+          "evidence_status": "theoretical_background",
+          "role": "expected free energy and policy-selection background",
+          "source_id": "epistemic_value_policy_selection"
+        },
+        {
+          "citation_key": "heins2022pymdp",
+          "evidence_status": "implementation_anchor",
+          "role": "runtime and implementation anchor",
+          "source_id": "pymdp_joss"
+        }
+      ],
+      "stressors": [
+        "runtime_dependency"
+      ],
+      "support_count": 3,
+      "validation_gate": "pymdp_canary"
+    },
+    {
+      "allowed_interpretation": "Allowed only as finite equation registry plus two-qubit quantum-information witnesses, mixed-state entanglement checks, measurement-cover/local-polytope controls, channel-cost accounting, dephasing controls, stochastic quantum-trajectory checks, and implemented extension-engine audits: The qFEP is represented here by finite operational surrogates, source mappings, direct two-qubit tests for separability entropy, mixed-state PPT/negativity controls, CHSH contextuality, generic measurement-cover polytope checks, finite CPTP channel-cost accounting, dephasing controls, seeded quantum-trajectory unraveling, and implemented extension engines for boundary-Hamiltonian Lindblad dynamics, sparse many-body cuts, sheaf obstruction, QRF relabeling and frame covariance, and fail-closed empirical provenance.",
+      "artifact": "output/data/quantum_extension_roadmap.json",
+      "artifact_exists": true,
+      "claim_id": "qfep_surrogate_scope",
+      "evidence_ceiling": "finite equation registry plus two-qubit quantum-information witnesses, mixed-state entanglement checks, measurement-cover/local-polytope controls, channel-cost accounting, dephasing controls, stochastic quantum-trajectory checks, and implemented extension-engine audits",
+      "evidence_class": "formal_boundary",
+      "figure_bindings": [
+        "finite_quantum_scope_summary",
+        "claim_context_evidence_ladder"
+      ],
+      "future_evidence_required": "A separately reviewed physical qFEP implementation, independent quantum-information replication, or ethics-reviewed human/practice dataset depending on the stronger claim.",
+      "manuscript_sections": [
+        "sec:methods-roadmap-quantum-engines",
+        "sec:results-finite-quantum-scope"
+      ],
+      "paper_locator": "Section 2",
+      "prohibited_inference": "Do not read finite entropy, mixed-state entanglement, CHSH, measurement-cover/local-polytope, channel-cost, dephasing, Lindblad, many-body, sheaf, QRF-covariance, or provenance controls as physical qFEP realization, empirical practice evidence, or neural measurement.",
+      "reader_claim": "The qFEP is represented here by finite operational surrogates, source mappings, direct two-qubit tests for separability entropy, mixed-state PPT/negativity controls, CHSH contextuality, generic measurement-cover polytope checks, finite CPTP channel-cost accounting, dephasing controls, seeded quantum-trajectory unraveling, and implemented extension engines for boundary-Hamiltonian Lindblad dynamics, sparse many-body cuts, sheaf obstruction, QRF relabeling and frame covariance, and fail-closed empirical provenance.",
+      "role_compatibility": {
+        "ok": true,
+        "rationale": "Finite quantum/qFEP claims need quantum, contextuality, or open-system method sources.",
+        "rule": "quantum_or_qfep_claim_requires_quantum_method_source"
+      },
+      "source_keys": [
+        "dalibard1992wavefunction",
+        "fields2022qfep",
+        "gorini1976completelypositive",
+        "horodecki1996separability",
+        "kraus1983states",
+        "lindblad1976generators",
+        "molmer1993montecarlo",
+        "nielsen2010quantum",
+        "orus2014tensor",
+        "peres1996separability",
+        "spekkens2005contextuality",
+        "vanrietvelde2020perspective",
+        "vedral2002relative",
+        "werner1989quantum",
+        "wiseman2010quantum",
+        "zurek2003decoherence"
+      ],
+      "source_role_count": 16,
+      "source_roles": [
+        {
+          "citation_key": "dalibard1992wavefunction",
+          "evidence_status": "methodological_background",
+          "role": "quantum-jump and wave-function unraveling method background",
+          "source_id": "monte_carlo_wavefunction_prl"
+        },
+        {
+          "citation_key": "fields2022qfep",
+          "evidence_status": "formal_background",
+          "role": "qFEP foundation",
+          "source_id": "qfep_generic_quantum_systems"
+        },
+        {
+          "citation_key": "gorini1976completelypositive",
+          "evidence_status": "methodological_background",
+          "role": "GKSL positivity and trace-preserving dynamics background",
+          "source_id": "gks_quantum_dynamical_semigroups"
+        },
+        {
+          "citation_key": "horodecki1996separability",
+          "evidence_status": "methodological_background",
+          "role": "separability theorem context for finite two-qubit PPT/negativity audits",
+          "source_id": "horodecki_separability"
+        },
+        {
+          "citation_key": "kraus1983states",
+          "evidence_status": "methodological_background",
+          "role": "quantum operation and CPTP-channel background for channel-cost audits",
+          "source_id": "kraus_operations"
+        },
+        {
+          "citation_key": "lindblad1976generators",
+          "evidence_status": "methodological_background",
+          "role": "Lindblad open-system generator background for finite boundary-Hamiltonian audits",
+          "source_id": "lindblad_quantum_semigroups"
+        },
+        {
+          "citation_key": "molmer1993montecarlo",
+          "evidence_status": "methodological_background",
+          "role": "Monte Carlo wave-function trajectory and master-equation equivalence background",
+          "source_id": "monte_carlo_wavefunction_josab"
+        },
+        {
+          "citation_key": "nielsen2010quantum",
+          "evidence_status": "methodological_background",
+          "role": "quantum state, density-matrix, and partial-trace notation",
+          "source_id": "quantum_information_textbook"
+        },
+        {
+          "citation_key": "orus2014tensor",
+          "evidence_status": "methodological_background",
+          "role": "many-body and tensor-network scaling context for boundary-screen roadmap engines",
+          "source_id": "tensor_network_introduction"
+        },
+        {
+          "citation_key": "peres1996separability",
+          "evidence_status": "methodological_background",
+          "role": "PPT criterion background for mixed two-qubit entanglement controls",
+          "source_id": "peres_ppt_separability"
+        },
+        {
+          "citation_key": "spekkens2005contextuality",
+          "evidence_status": "theoretical_background",
+          "role": "operational contextuality boundary",
+          "source_id": "operational_contextuality"
+        },
+        {
+          "citation_key": "vanrietvelde2020perspective",
+          "evidence_status": "theoretical_background",
+          "role": "perspective-neutral QRF transformation background",
+          "source_id": "perspective_neutral_qrf"
+        },
+        {
+          "citation_key": "vedral2002relative",
+          "evidence_status": "theoretical_background",
+          "role": "quantum entropy and information-theoretic boundary background",
+          "source_id": "quantum_relative_entropy"
+        },
+        {
+          "citation_key": "werner1989quantum",
+          "evidence_status": "methodological_background",
+          "role": "Werner-family mixed-state controls for entanglement and locality boundaries",
+          "source_id": "werner_state_controls"
+        },
+        {
+          "citation_key": "wiseman2010quantum",
+          "evidence_status": "methodological_background",
+          "role": "quantum measurement, trajectory, and open-system control background",
+          "source_id": "quantum_measurement_control"
+        },
+        {
+          "citation_key": "zurek2003decoherence",
+          "evidence_status": "theoretical_background",
+          "role": "finite dephasing-channel and classical-boundary roadmap context",
+          "source_id": "decoherence_einselection"
+        }
+      ],
+      "stressors": [
+        "quantum_gap",
+        "surrogate_scope"
+      ],
+      "support_count": 16,
+      "validation_gate": "quantum_extension_roadmap_ok"
+    },
+    {
+      "allowed_interpretation": "Allowed only as CHSH witness over a finite two-qubit family: Quantum contextuality is operationalized as a finite CHSH witness over the same two-qubit family, with product-state and Tsirelson-bound controls.",
+      "artifact": "output/data/quantum_boundary_entropy.json",
+      "artifact_exists": true,
+      "claim_id": "quantum_contextuality_witness",
+      "evidence_ceiling": "CHSH witness over a finite two-qubit family",
+      "evidence_class": "finite_quantum_simulation",
+      "figure_bindings": [
+        "finite_quantum_scope_summary",
+        "claim_context_evidence_ladder"
+      ],
+      "future_evidence_required": "General sheaf-obstruction checks, noncontextual polytope comparisons, and explicit QRF transformation tests.",
+      "manuscript_sections": [
+        "sec:discussion-finite-engine-limits",
+        "sec:results-finite-quantum-scope",
+        "sec:supplement-finite-quantum-contextuality-audits"
+      ],
+      "paper_locator": "QRF/contextuality background for Sections 2-3",
+      "prohibited_inference": "Do not read the CHSH witness as a general contextuality proof for all QRF deployments or as empirical evidence.",
+      "reader_claim": "Quantum contextuality is operationalized as a finite CHSH witness over the same two-qubit family, with product-state and Tsirelson-bound controls.",
+      "role_compatibility": {
+        "ok": true,
+        "rationale": "Finite quantum/qFEP claims need quantum, contextuality, or open-system method sources.",
+        "rule": "quantum_or_qfep_claim_requires_quantum_method_source"
+      },
+      "source_keys": [
+        "abramsky2011sheaf",
+        "bell1964epr",
+        "cirelson1980quantum",
+        "clauser1969chsh",
+        "spekkens2005contextuality",
+        "werner1989quantum"
+      ],
+      "source_role_count": 6,
+      "source_roles": [
+        {
+          "citation_key": "abramsky2011sheaf",
+          "evidence_status": "methodological_background",
+          "role": "finite CHSH measurement-cover and future sheaf-contextuality roadmap",
+          "source_id": "sheaf_contextuality"
+        },
+        {
+          "citation_key": "bell1964epr",
+          "evidence_status": "theoretical_background",
+          "role": "Bell nonlocality and contextuality witness background",
+          "source_id": "bell_epr_paradox"
+        },
+        {
+          "citation_key": "cirelson1980quantum",
+          "evidence_status": "formal_background",
+          "role": "Tsirelson-bound quantum correlation ceiling",
+          "source_id": "tsirelson_bound"
+        },
+        {
+          "citation_key": "clauser1969chsh",
+          "evidence_status": "methodological_background",
+          "role": "CHSH bound and finite contextuality-witness background",
+          "source_id": "chsh_test"
+        },
+        {
+          "citation_key": "spekkens2005contextuality",
+          "evidence_status": "theoretical_background",
+          "role": "operational contextuality boundary",
+          "source_id": "operational_contextuality"
+        },
+        {
+          "citation_key": "werner1989quantum",
+          "evidence_status": "methodological_background",
+          "role": "Werner-family mixed-state controls for entanglement and locality boundaries",
+          "source_id": "werner_state_controls"
+        }
+      ],
+      "stressors": [
+        "quantum_gap",
+        "source_role_boundary",
+        "surrogate_scope"
+      ],
+      "support_count": 6,
+      "validation_gate": "quantum_contextuality_witness_ok"
+    },
+    {
+      "allowed_interpretation": "Allowed only as finite CHSH measurement-cover probability table plus local-polytope LP audit: The CHSH contextuality extension is also represented as a finite measurement-cover empirical model with normalized joint probabilities, no-signaling controls, a product negative control, a Tsirelson-bound check, and a local-hidden-variable polytope feasibility audit over 16 deterministic assignments.",
+      "artifact": "output/data/quantum_measurement_contextuality.json",
+      "artifact_exists": true,
+      "claim_id": "quantum_measurement_contextuality",
+      "evidence_ceiling": "finite CHSH measurement-cover probability table plus local-polytope LP audit",
+      "evidence_class": "finite_quantum_simulation",
+      "figure_bindings": [
+        "finite_quantum_scope_summary",
+        "claim_context_evidence_ladder"
+      ],
+      "future_evidence_required": "A general measurement-scenario engine with compatibility hypergraphs, obstruction or noncontextual-polytope witnesses, and QRF transformation tests.",
+      "manuscript_sections": [
+        "sec:discussion-finite-engine-limits",
+        "sec:results-finite-quantum-scope",
+        "sec:supplement-finite-quantum-contextuality-audits"
+      ],
+      "paper_locator": "QRF/contextuality background for Sections 2-3",
+      "prohibited_inference": "Do not read the CHSH table or local-polytope infeasibility as a full sheaf obstruction proof, a many-body QRF transformation, a qFEP dynamics simulation, or empirical evidence.",
+      "reader_claim": "The CHSH contextuality extension is also represented as a finite measurement-cover empirical model with normalized joint probabilities, no-signaling controls, a product negative control, a Tsirelson-bound check, and a local-hidden-variable polytope feasibility audit over 16 deterministic assignments.",
+      "role_compatibility": {
+        "ok": true,
+        "rationale": "Finite quantum/qFEP claims need quantum, contextuality, or open-system method sources.",
+        "rule": "quantum_or_qfep_claim_requires_quantum_method_source"
+      },
+      "source_keys": [
+        "abramsky2011sheaf",
+        "araujo2013ncycle",
+        "bell1964epr",
+        "clauser1969chsh",
+        "fine1982hidden",
+        "kochen1967problem",
+        "nielsen2010quantum",
+        "spekkens2005contextuality",
+        "spekkens2016quasi"
+      ],
+      "source_role_count": 9,
+      "source_roles": [
+        {
+          "citation_key": "abramsky2011sheaf",
+          "evidence_status": "methodological_background",
+          "role": "finite CHSH measurement-cover and future sheaf-contextuality roadmap",
+          "source_id": "sheaf_contextuality"
+        },
+        {
+          "citation_key": "araujo2013ncycle",
+          "evidence_status": "formal_background",
+          "role": "n-cycle noncontextuality scenario characterization",
+          "source_id": "ncycle_noncontextuality_inequalities"
+        },
+        {
+          "citation_key": "bell1964epr",
+          "evidence_status": "theoretical_background",
+          "role": "Bell nonlocality and contextuality witness background",
+          "source_id": "bell_epr_paradox"
+        },
+        {
+          "citation_key": "clauser1969chsh",
+          "evidence_status": "methodological_background",
+          "role": "CHSH bound and finite contextuality-witness background",
+          "source_id": "chsh_test"
+        },
+        {
+          "citation_key": "fine1982hidden",
+          "evidence_status": "methodological_background",
+          "role": "CHSH local-polytope and joint-probability interpretation background",
+          "source_id": "fine_hidden_variables"
+        },
+        {
+          "citation_key": "kochen1967problem",
+          "evidence_status": "formal_background",
+          "role": "measurement contextuality / no-go foundation",
+          "source_id": "kochen_specker_contextuality"
+        },
+        {
+          "citation_key": "nielsen2010quantum",
+          "evidence_status": "methodological_background",
+          "role": "quantum state, density-matrix, and partial-trace notation",
+          "source_id": "quantum_information_textbook"
+        },
+        {
+          "citation_key": "spekkens2005contextuality",
+          "evidence_status": "theoretical_background",
+          "role": "operational contextuality boundary",
+          "source_id": "operational_contextuality"
+        },
+        {
+          "citation_key": "spekkens2016quasi",
+          "evidence_status": "theoretical_background",
+          "role": "epistemic restriction reproduces quantum-like contextuality",
+          "source_id": "spekkens_quasi_quantization"
+        }
+      ],
+      "stressors": [
+        "quantum_gap",
+        "source_role_boundary",
+        "surrogate_scope"
+      ],
+      "support_count": 9,
+      "validation_gate": "quantum_measurement_contextuality_ok"
+    },
+    {
+      "allowed_interpretation": "Allowed only as finite trace-preserving two-qubit dephasing-channel simulation: Open-system quantum behavior is simulated as a finite two-qubit dephasing channel with trace, positivity, entropy, mutual-information, and CHSH-decay controls.",
+      "artifact": "output/data/quantum_open_system_dynamics.json",
+      "artifact_exists": true,
+      "claim_id": "quantum_open_system_dephasing",
+      "evidence_ceiling": "finite trace-preserving two-qubit dephasing-channel simulation",
+      "evidence_class": "finite_quantum_simulation",
+      "figure_bindings": [
+        "finite_quantum_scope_summary",
+        "claim_context_evidence_ladder"
+      ],
+      "future_evidence_required": "Boundary-Hamiltonian-linked Lindblad or collision-model dynamics, many-body subsystem cuts, and explicit QRF transformations.",
+      "manuscript_sections": [
+        "sec:results-finite-quantum-scope",
+        "sec:supplement-finite-quantum-contextuality-audits"
+      ],
+      "paper_locator": "Section 2.1 and open-system qFEP background",
+      "prohibited_inference": "Do not read the dephasing channel as the paper's full qFEP dynamics, a many-body observer boundary, or empirical quantum evidence.",
+      "reader_claim": "Open-system quantum behavior is simulated as a finite two-qubit dephasing channel with trace, positivity, entropy, mutual-information, and CHSH-decay controls.",
+      "role_compatibility": {
+        "ok": true,
+        "rationale": "Finite quantum/qFEP claims need quantum, contextuality, or open-system method sources.",
+        "rule": "quantum_or_qfep_claim_requires_quantum_method_source"
+      },
+      "source_keys": [
+        "dalibard1992wavefunction",
+        "gorini1976completelypositive",
+        "kraus1983states",
+        "lindblad1976generators",
+        "manzano2020lindblad",
+        "molmer1993montecarlo",
+        "nielsen2010quantum",
+        "plenio1998quantumjump",
+        "vedral2002relative",
+        "wiseman2010quantum",
+        "zurek2003decoherence"
+      ],
+      "source_role_count": 11,
+      "source_roles": [
+        {
+          "citation_key": "dalibard1992wavefunction",
+          "evidence_status": "methodological_background",
+          "role": "quantum-jump and wave-function unraveling method background",
+          "source_id": "monte_carlo_wavefunction_prl"
+        },
+        {
+          "citation_key": "gorini1976completelypositive",
+          "evidence_status": "methodological_background",
+          "role": "GKSL positivity and trace-preserving dynamics background",
+          "source_id": "gks_quantum_dynamical_semigroups"
+        },
+        {
+          "citation_key": "kraus1983states",
+          "evidence_status": "methodological_background",
+          "role": "quantum operation and CPTP-channel background for channel-cost audits",
+          "source_id": "kraus_operations"
+        },
+        {
+          "citation_key": "lindblad1976generators",
+          "evidence_status": "methodological_background",
+          "role": "Lindblad open-system generator background for finite boundary-Hamiltonian audits",
+          "source_id": "lindblad_quantum_semigroups"
+        },
+        {
+          "citation_key": "manzano2020lindblad",
+          "evidence_status": "methodological_background",
+          "role": "GKSL/Lindblad master-equation pedagogical anchor",
+          "source_id": "manzano_lindblad_master_equation"
+        },
+        {
+          "citation_key": "molmer1993montecarlo",
+          "evidence_status": "methodological_background",
+          "role": "Monte Carlo wave-function trajectory and master-equation equivalence background",
+          "source_id": "monte_carlo_wavefunction_josab"
+        },
+        {
+          "citation_key": "nielsen2010quantum",
+          "evidence_status": "methodological_background",
+          "role": "quantum state, density-matrix, and partial-trace notation",
+          "source_id": "quantum_information_textbook"
+        },
+        {
+          "citation_key": "plenio1998quantumjump",
+          "evidence_status": "methodological_background",
+          "role": "Monte Carlo wave-function unraveling / ensemble convergence to the master equation",
+          "source_id": "plenio_quantum_jump_dissipative"
+        },
+        {
+          "citation_key": "vedral2002relative",
+          "evidence_status": "theoretical_background",
+          "role": "quantum entropy and information-theoretic boundary background",
+          "source_id": "quantum_relative_entropy"
+        },
+        {
+          "citation_key": "wiseman2010quantum",
+          "evidence_status": "methodological_background",
+          "role": "quantum measurement, trajectory, and open-system control background",
+          "source_id": "quantum_measurement_control"
+        },
+        {
+          "citation_key": "zurek2003decoherence",
+          "evidence_status": "theoretical_background",
+          "role": "finite dephasing-channel and classical-boundary roadmap context",
+          "source_id": "decoherence_einselection"
+        }
+      ],
+      "stressors": [
+        "quantum_gap",
+        "source_role_boundary",
+        "surrogate_scope"
+      ],
+      "support_count": 11,
+      "validation_gate": "quantum_open_system_dynamics_ok"
+    },
+    {
+      "allowed_interpretation": "Allowed only as finite two-qubit pure-state entropy witness: The separability-entropy premise is directly simulated for a finite two-qubit Schmidt-family sweep using reduced density matrices and von Neumann entropy.",
+      "artifact": "output/data/quantum_boundary_entropy.json",
+      "artifact_exists": true,
+      "claim_id": "quantum_separability_entropy",
+      "evidence_ceiling": "finite two-qubit pure-state entropy witness",
+      "evidence_class": "finite_quantum_simulation",
+      "figure_bindings": [
+        "finite_quantum_scope_summary",
+        "claim_context_evidence_ladder"
+      ],
+      "future_evidence_required": "Higher-dimensional, multipartite, externally reviewed many-body, and physical open-system extensions with independent benchmarks and negative controls.",
+      "manuscript_sections": [
+        "sec:results-finite-quantum-scope",
+        "sec:supplement-finite-quantum-contextuality-audits"
+      ],
+      "paper_locator": "Equation 2 and Section 2.1",
+      "prohibited_inference": "Do not read this finite witness as a simulation of a universe-agent boundary or mixed open-system qFEP dynamics.",
+      "reader_claim": "The separability-entropy premise is directly simulated for a finite two-qubit Schmidt-family sweep using reduced density matrices and von Neumann entropy.",
+      "role_compatibility": {
+        "ok": true,
+        "rationale": "Finite quantum/qFEP claims need quantum, contextuality, or open-system method sources.",
+        "rule": "quantum_or_qfep_claim_requires_quantum_method_source"
+      },
+      "source_keys": [
+        "eisert2010area",
+        "greenberger1989going",
+        "horodecki1996separability",
+        "landauer1961irreversibility",
+        "nielsen2010quantum",
+        "orus2014tensor",
+        "peres1996separability",
+        "vedral2002relative",
+        "werner1989quantum"
+      ],
+      "source_role_count": 9,
+      "source_roles": [
+        {
+          "citation_key": "eisert2010area",
+          "evidence_status": "formal_background",
+          "role": "area-law / tensor-network entanglement scaling foundation",
+          "source_id": "area_law_entanglement_entropy"
+        },
+        {
+          "citation_key": "greenberger1989going",
+          "evidence_status": "formal_background",
+          "role": "multipartite (GHZ) entanglement foundation",
+          "source_id": "ghz_multipartite_state"
+        },
+        {
+          "citation_key": "horodecki1996separability",
+          "evidence_status": "methodological_background",
+          "role": "separability theorem context for finite two-qubit PPT/negativity audits",
+          "source_id": "horodecki_separability"
+        },
+        {
+          "citation_key": "landauer1961irreversibility",
+          "evidence_status": "theoretical_background",
+          "role": "information-erasure lower-bound background",
+          "source_id": "landauer_irreversibility"
+        },
+        {
+          "citation_key": "nielsen2010quantum",
+          "evidence_status": "methodological_background",
+          "role": "quantum state, density-matrix, and partial-trace notation",
+          "source_id": "quantum_information_textbook"
+        },
+        {
+          "citation_key": "orus2014tensor",
+          "evidence_status": "methodological_background",
+          "role": "many-body and tensor-network scaling context for boundary-screen roadmap engines",
+          "source_id": "tensor_network_introduction"
+        },
+        {
+          "citation_key": "peres1996separability",
+          "evidence_status": "methodological_background",
+          "role": "PPT criterion background for mixed two-qubit entanglement controls",
+          "source_id": "peres_ppt_separability"
+        },
+        {
+          "citation_key": "vedral2002relative",
+          "evidence_status": "theoretical_background",
+          "role": "quantum entropy and information-theoretic boundary background",
+          "source_id": "quantum_relative_entropy"
+        },
+        {
+          "citation_key": "werner1989quantum",
+          "evidence_status": "methodological_background",
+          "role": "Werner-family mixed-state controls for entanglement and locality boundaries",
+          "source_id": "werner_state_controls"
+        }
+      ],
+      "stressors": [
+        "quantum_gap",
+        "surrogate_scope"
+      ],
+      "support_count": 9,
+      "validation_gate": "quantum_boundary_entropy_ok"
+    },
+    {
+      "allowed_interpretation": "Allowed only as source-role binding only: Self-evidencing is treated as the background contrast class for no-self-evidence, not as an empirical result produced by this simulation.",
+      "artifact": "output/data/source_claim_crosswalk.json",
+      "artifact_exists": true,
+      "claim_id": "self_evidencing_boundary",
+      "evidence_ceiling": "source-role binding only",
+      "evidence_class": "background_boundary",
+      "figure_bindings": [
+        "claim_context_evidence_ladder"
+      ],
+      "future_evidence_required": "A separate empirical or formal target with its own source ledger if self-evidencing is tested directly.",
+      "manuscript_sections": [
+        "sec:discussion-no-self-evidence-boundary",
+        "sec:introduction-paper-source"
+      ],
+      "paper_locator": "Introduction and Section 1",
+      "prohibited_inference": "Do not read background self-evidencing scholarship as a new empirical result produced by this repository.",
+      "reader_claim": "Self-evidencing is treated as the background contrast class for no-self-evidence, not as an empirical result produced by this simulation.",
+      "role_compatibility": {
+        "ok": true,
+        "rationale": "Background claims need background or primary-source support.",
+        "rule": "background_claim_requires_background_source"
+      },
+      "source_keys": [
+        "aguilera2021particular",
+        "beck2025dynamicmarkovblanket",
+        "biehl2021technical_fep",
+        "bruineberg2022emperor",
+        "friston2023fep_simpler",
+        "heins2022sparse_coupling",
+        "hohwy2016self",
+        "hohwy2026selfevidencingagent",
+        "kirchhoff2018blankets",
+        "possati2025markovblanketdensity",
+        "prest2026selfingwithoutself",
+        "sethbayne2022theories"
+      ],
+      "source_role_count": 12,
+      "source_roles": [
+        {
+          "citation_key": "aguilera2021particular",
+          "evidence_status": "theoretical_background",
+          "role": "conservative Markov-blanket and boundary framing critique",
+          "source_id": "aguilera_particular_physics_fep"
+        },
+        {
+          "citation_key": "beck2025dynamicmarkovblanket",
+          "evidence_status": "theoretical_background",
+          "role": "dynamic Markov-blanket detection background and boundary-identification caution",
+          "source_id": "dynamic_markov_blanket_detection"
+        },
+        {
+          "citation_key": "biehl2021technical_fep",
+          "evidence_status": "theoretical_background",
+          "role": "technical critique of unqualified FEP and Markov-blanket inference",
+          "source_id": "biehl_technical_critique_fep"
+        },
+        {
+          "citation_key": "bruineberg2022emperor",
+          "evidence_status": "theoretical_background",
+          "role": "Pearl-blanket versus Friston-blanket critique of ontological boundary inference",
+          "source_id": "emperor_new_markov_blankets"
+        },
+        {
+          "citation_key": "friston2023fep_simpler",
+          "evidence_status": "theoretical_background",
+          "role": "contemporary FEP and Markov-blanket framing with bounded interpretation",
+          "source_id": "free_energy_principle_simpler"
+        },
+        {
+          "citation_key": "heins2022sparse_coupling",
+          "evidence_status": "theoretical_background",
+          "role": "qualified response specifying conditions under which sparse coupling supports Markov blankets",
+          "source_id": "heins_sparse_coupling_blankets"
+        },
+        {
+          "citation_key": "hohwy2016self",
+          "evidence_status": "theoretical_background",
+          "role": "self-evidencing and evidentiary-boundary background",
+          "source_id": "self_evidencing_brain"
+        },
+        {
+          "citation_key": "hohwy2026selfevidencingagent",
+          "evidence_status": "theoretical_background",
+          "role": "self-evidencing agent background and organismic-function boundary",
+          "source_id": "self_evidencing_agent_monograph"
+        },
+        {
+          "citation_key": "kirchhoff2018blankets",
+          "evidence_status": "theoretical_background",
+          "role": "Markov-blanket autonomy and boundary background",
+          "source_id": "markov_blankets_life"
+        },
+        {
+          "citation_key": "possati2025markovblanketdensity",
+          "evidence_status": "theoretical_background",
+          "role": "Markov-blanket density and FEP boundary background",
+          "source_id": "markov_blanket_density_fep"
+        },
+        {
+          "citation_key": "prest2026selfingwithoutself",
+          "evidence_status": "conceptual_background",
+          "role": "organismic self versus identified-with self distinction; preprint context only",
+          "source_id": "selfing_without_self_preprint"
+        },
+        {
+          "citation_key": "sethbayne2022theories",
+          "evidence_status": "theoretical_background",
+          "role": "predictive self-model and self-evidencing context",
+          "source_id": "seth_bayne_theories_consciousness"
+        }
+      ],
+      "stressors": [
+        "empirical_gap",
+        "source_role_boundary"
+      ],
+      "support_count": 12,
+      "validation_gate": "claim_support_audit_ok"
+    },
+    {
+      "allowed_interpretation": "Allowed only as implemented finite data model: The separation prior restricts QRF deployments to a self/environment-preserving subspace.",
+      "artifact": "output/data/formalism_registry.json",
+      "artifact_exists": true,
+      "claim_id": "separation_prior_sigma",
+      "evidence_ceiling": "implemented finite data model",
+      "evidence_class": "implemented_model",
+      "figure_bindings": [
+        "qrf_channel_relabeling_ledger",
+        "qrf_invariance_policy_flow",
+        "claim_context_evidence_ladder"
+      ],
+      "future_evidence_required": "Task-linked data or formal proof showing when the modeled separation prior corresponds to an empirical or physical boundary.",
+      "manuscript_sections": [
+        "sec:methods-bmr-separation-prior",
+        "sec:methods-finite-qrf-boundary-screen",
+        "sec:methods-separation-prior-subspace",
+        "sec:results-bmr-sensitivity",
+        "sec:results-qrf-boundary-geometry"
+      ],
+      "paper_locator": "Equation 10",
+      "prohibited_inference": "Do not read this as evidence that human subject-object boundaries have been reduced.",
+      "reader_claim": "The separation prior restricts QRF deployments to a self/environment-preserving subspace.",
+      "role_compatibility": {
+        "ok": true,
+        "rationale": "A single primary-preprint row is sufficient because sigma is a source-paper formal claim.",
+        "rule": "primary_source_formal_target_allowed"
+      },
+      "source_keys": [
+        "klyubin2005empowerment",
+        "sandvedsmith2026noself"
+      ],
+      "source_role_count": 2,
+      "source_roles": [
+        {
+          "citation_key": "klyubin2005empowerment",
+          "evidence_status": "methodological_background",
+          "role": "empowerment information-theoretic measure of control foundation",
+          "source_id": "klyubin_empowerment_control"
+        },
+        {
+          "citation_key": "sandvedsmith2026noself",
+          "evidence_status": "source_anchor",
+          "role": "primary formal target",
+          "source_id": "no_self_evidence_preprint"
+        }
+      ],
+      "stressors": [
+        "surrogate_scope"
+      ],
+      "support_count": 2,
+      "validation_gate": "equation_count_14"
+    },
+    {
+      "allowed_interpretation": "Allowed only as finite label-invariance audit only: The agent can model observations through a boundary but cannot evidence the boundary as ontologically separable.",
+      "artifact": "output/data/qrf_boundary_indistinguishability.json",
+      "artifact_exists": true,
+      "claim_id": "source_boundary_unevidenceable",
+      "evidence_ceiling": "finite label-invariance audit only",
+      "evidence_class": "operational_surrogate",
+      "figure_bindings": [
+        "qrf_boundary_screen_geometry",
+        "qrf_channel_relabeling_ledger",
+        "qrf_invariance_policy_flow",
+        "claim_context_evidence_ladder"
+      ],
+      "future_evidence_required": "A full qFEP quantum-information implementation or empirical operationalization with source identity and negative controls.",
+      "manuscript_sections": [
+        "sec:discussion-no-self-evidence-boundary",
+        "sec:methods-finite-qrf-boundary-screen",
+        "sec:methods-pymdp-generative-models",
+        "sec:methods-separation-prior-subspace",
+        "sec:results-pymdp-policy-trace",
+        "sec:results-qrf-boundary-geometry"
+      ],
+      "paper_locator": "Sections 3.1-3.2",
+      "prohibited_inference": "Do not read this as proof that real agents lack selves or that a quantum boundary was simulated.",
+      "reader_claim": "The agent can model observations through a boundary but cannot evidence the boundary as ontologically separable.",
+      "role_compatibility": {
+        "ok": true,
+        "rationale": "Fallback rule requires at least one scoped source row.",
+        "rule": "declared_support_present"
+      },
+      "source_keys": [
+        "beck2025dynamicmarkovblanket",
+        "biehl2021technical_fep",
+        "bruineberg2022emperor",
+        "dennett1991realpatterns",
+        "fields2023quantumframe",
+        "garfield1995fundamental",
+        "heins2022sparse_coupling",
+        "hipolito2021markov",
+        "kirchhoff2018blankets",
+        "munafo2017manifesto",
+        "rovelli1996relational",
+        "sandvedsmith2026noself",
+        "varela1991embodied",
+        "westerhoff2009madhyamaka",
+        "zahavi2005subjectivity_selfhood"
+      ],
+      "source_role_count": 15,
+      "source_roles": [
+        {
+          "citation_key": "beck2025dynamicmarkovblanket",
+          "evidence_status": "theoretical_background",
+          "role": "dynamic Markov-blanket detection background and boundary-identification caution",
+          "source_id": "dynamic_markov_blanket_detection"
+        },
+        {
+          "citation_key": "biehl2021technical_fep",
+          "evidence_status": "theoretical_background",
+          "role": "technical critique of unqualified FEP and Markov-blanket inference",
+          "source_id": "biehl_technical_critique_fep"
+        },
+        {
+          "citation_key": "bruineberg2022emperor",
+          "evidence_status": "theoretical_background",
+          "role": "Pearl-blanket versus Friston-blanket critique of ontological boundary inference",
+          "source_id": "emperor_new_markov_blankets"
+        },
+        {
+          "citation_key": "dennett1991realpatterns",
+          "evidence_status": "philosophical_background",
+          "role": "use-vs-ontology distinction (patterns real and useful without ontological commitment)",
+          "source_id": "dennett_real_patterns"
+        },
+        {
+          "citation_key": "fields2023quantumframe",
+          "evidence_status": "formal_background",
+          "role": "separability and contextuality boundary",
+          "source_id": "quantum_frame_problem"
+        },
+        {
+          "citation_key": "garfield1995fundamental",
+          "evidence_status": "philosophical_background",
+          "role": "epistemic (non-eliminativist) reading of emptiness terminology",
+          "source_id": "garfield_fundamental_middle_way"
+        },
+        {
+          "citation_key": "heins2022sparse_coupling",
+          "evidence_status": "theoretical_background",
+          "role": "qualified response specifying conditions under which sparse coupling supports Markov blankets",
+          "source_id": "heins_sparse_coupling_blankets"
+        },
+        {
+          "citation_key": "hipolito2021markov",
+          "evidence_status": "future_empirical_context",
+          "role": "Markov-blanket partition and neural-boundary caution",
+          "source_id": "markov_blankets_brain"
+        },
+        {
+          "citation_key": "kirchhoff2018blankets",
+          "evidence_status": "theoretical_background",
+          "role": "Markov-blanket autonomy and boundary background",
+          "source_id": "markov_blankets_life"
+        },
+        {
+          "citation_key": "munafo2017manifesto",
+          "evidence_status": "methodological_background",
+          "role": "reproducibility and provenance governance background",
+          "source_id": "manifesto_reproducible_science"
+        },
+        {
+          "citation_key": "rovelli1996relational",
+          "evidence_status": "theoretical_background",
+          "role": "relational quantum-mechanics background for observer-relative state language",
+          "source_id": "relational_quantum_mechanics"
+        },
+        {
+          "citation_key": "sandvedsmith2026noself",
+          "evidence_status": "source_anchor",
+          "role": "primary formal target",
+          "source_id": "no_self_evidence_preprint"
+        },
+        {
+          "citation_key": "varela1991embodied",
+          "evidence_status": "philosophical_background",
+          "role": "enactive and neurophenomenological background for boundary-as-interface vocabulary",
+          "source_id": "embodied_mind_enaction"
+        },
+        {
+          "citation_key": "westerhoff2009madhyamaka",
+          "evidence_status": "philosophical_background",
+          "role": "Madhyamaka anti-essentialism and emptiness terminology boundary",
+          "source_id": "nagarjuna_madhyamaka_introduction"
+        },
+        {
+          "citation_key": "zahavi2005subjectivity_selfhood",
+          "evidence_status": "philosophical_background",
+          "role": "minimal and prereflective selfhood counterpoint",
+          "source_id": "phenomenological_selfhood_counterpoint"
+        }
+      ],
+      "stressors": [
+        "source_role_boundary",
+        "surrogate_scope"
+      ],
+      "support_count": 15,
+      "validation_gate": "qrf_indistinguishable"
+    }
+  ],
+  "schema": "realizing_emptiness.claim_context_ledger.v1",
+  "unresolved_source_keys": []
+}

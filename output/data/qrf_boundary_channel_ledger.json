@@ -1,0 +1,187 @@
+{
+  "all_controls_pass": true,
+  "channel_count": 6,
+  "claim_boundary": "finite QRF boundary-channel ledger for b0-b5 relabeling; not empirical, not ontological boundary evidence, not biological sensor mapping, and not physical qFEP evidence",
+  "controls": {
+    "all_channels_relabel_across_profiles": true,
+    "all_evidence_objects_invariant": true,
+    "all_profiles_have_sector_labels": true,
+    "channel_ids_exact_b0_to_b5": true,
+    "negative_control_fails": true,
+    "source_equations_7_to_10_declared": true
+  },
+  "profile_count": 3,
+  "profiles": [
+    "separation_constrained",
+    "opacified",
+    "post_dual"
+  ],
+  "rows": [
+    {
+      "channel_id": "b0",
+      "channel_index": 0,
+      "claim_boundary": "finite QRF boundary-channel ledger for b0-b5 relabeling; not empirical, not ontological boundary evidence, not biological sensor mapping, and not physical qFEP evidence",
+      "evidence_object_invariant": true,
+      "finite_surrogate_role": "body-controllability cue",
+      "invariant_evidence_object": "binary boundary bit b0",
+      "label_changes_across_profiles": true,
+      "observation_symbol": "o_0 in {0,1}",
+      "role_description": "finite cue for action-contingent body-like changes",
+      "sector_labels_by_profile": {
+        "opacified": "self",
+        "post_dual": "body",
+        "separation_constrained": "self"
+      },
+      "source_equation_links": [
+        "eq:7",
+        "eq:8",
+        "eq:9",
+        "eq:10"
+      ],
+      "source_locator": "Sandved-Smith et al. Sections 3.2-4.3, equations 7-10"
+    },
+    {
+      "channel_id": "b1",
+      "channel_index": 1,
+      "claim_boundary": "finite QRF boundary-channel ledger for b0-b5 relabeling; not empirical, not ontological boundary evidence, not biological sensor mapping, and not physical qFEP evidence",
+      "evidence_object_invariant": true,
+      "finite_surrogate_role": "action-contingency cue",
+      "invariant_evidence_object": "binary boundary bit b1",
+      "label_changes_across_profiles": true,
+      "observation_symbol": "o_1 in {0,1}",
+      "role_description": "finite cue for boundary changes coupled to selected action",
+      "sector_labels_by_profile": {
+        "opacified": "action",
+        "post_dual": "action",
+        "separation_constrained": "self"
+      },
+      "source_equation_links": [
+        "eq:7",
+        "eq:8",
+        "eq:9",
+        "eq:10"
+      ],
+      "source_locator": "Sandved-Smith et al. Sections 3.2-4.3, equations 7-10"
+    },
+    {
+      "channel_id": "b2",
+      "channel_index": 2,
+      "claim_boundary": "finite QRF boundary-channel ledger for b0-b5 relabeling; not empirical, not ontological boundary evidence, not biological sensor mapping, and not physical qFEP evidence",
+      "evidence_object_invariant": true,
+      "finite_surrogate_role": "distal-world cue",
+      "invariant_evidence_object": "binary boundary bit b2",
+      "label_changes_across_profiles": true,
+      "observation_symbol": "o_2 in {0,1}",
+      "role_description": "finite cue for changes modeled as less action-contingent",
+      "sector_labels_by_profile": {
+        "opacified": "env",
+        "post_dual": "world",
+        "separation_constrained": "env"
+      },
+      "source_equation_links": [
+        "eq:7",
+        "eq:8",
+        "eq:9",
+        "eq:10"
+      ],
+      "source_locator": "Sandved-Smith et al. Sections 3.2-4.3, equations 7-10"
+    },
+    {
+      "channel_id": "b3",
+      "channel_index": 3,
+      "claim_boundary": "finite QRF boundary-channel ledger for b0-b5 relabeling; not empirical, not ontological boundary evidence, not biological sensor mapping, and not physical qFEP evidence",
+      "evidence_object_invariant": true,
+      "finite_surrogate_role": "contextual-world cue",
+      "invariant_evidence_object": "binary boundary bit b3",
+      "label_changes_across_profiles": true,
+      "observation_symbol": "o_3 in {0,1}",
+      "role_description": "finite cue for contextual changes in the same bitstream",
+      "sector_labels_by_profile": {
+        "opacified": "env",
+        "post_dual": "world",
+        "separation_constrained": "env"
+      },
+      "source_equation_links": [
+        "eq:7",
+        "eq:8",
+        "eq:9",
+        "eq:10"
+      ],
+      "source_locator": "Sandved-Smith et al. Sections 3.2-4.3, equations 7-10"
+    },
+    {
+      "channel_id": "b4",
+      "channel_index": 4,
+      "claim_boundary": "finite QRF boundary-channel ledger for b0-b5 relabeling; not empirical, not ontological boundary evidence, not biological sensor mapping, and not physical qFEP evidence",
+      "evidence_object_invariant": true,
+      "finite_surrogate_role": "other-agent cue",
+      "invariant_evidence_object": "binary boundary bit b4",
+      "label_changes_across_profiles": true,
+      "observation_symbol": "o_4 in {0,1}",
+      "role_description": "finite cue for non-self sector attribution in richer QRF vocabularies",
+      "sector_labels_by_profile": {
+        "opacified": "other",
+        "post_dual": "other",
+        "separation_constrained": "env"
+      },
+      "source_equation_links": [
+        "eq:7",
+        "eq:8",
+        "eq:9",
+        "eq:10"
+      ],
+      "source_locator": "Sandved-Smith et al. Sections 3.2-4.3, equations 7-10"
+    },
+    {
+      "channel_id": "b5",
+      "channel_index": 5,
+      "claim_boundary": "finite QRF boundary-channel ledger for b0-b5 relabeling; not empirical, not ontological boundary evidence, not biological sensor mapping, and not physical qFEP evidence",
+      "evidence_object_invariant": true,
+      "finite_surrogate_role": "care-salience cue",
+      "invariant_evidence_object": "binary boundary bit b5",
+      "label_changes_across_profiles": true,
+      "observation_symbol": "o_5 in {0,1}",
+      "role_description": "finite cue used by the practice-interface proxy without efficacy claims",
+      "sector_labels_by_profile": {
+        "opacified": "care",
+        "post_dual": "care",
+        "separation_constrained": "self"
+      },
+      "source_equation_links": [
+        "eq:7",
+        "eq:8",
+        "eq:9",
+        "eq:10"
+      ],
+      "source_locator": "Sandved-Smith et al. Sections 3.2-4.3, equations 7-10"
+    }
+  ],
+  "schema": "realizing_emptiness.qrf_boundary_channel_ledger.v1",
+  "sector_labels_by_profile": {
+    "opacified": [
+      "self",
+      "action",
+      "env",
+      "env",
+      "other",
+      "care"
+    ],
+    "post_dual": [
+      "body",
+      "action",
+      "world",
+      "world",
+      "other",
+      "care"
+    ],
+    "separation_constrained": [
+      "self",
+      "self",
+      "env",
+      "env",
+      "env",
+      "self"
+    ]
+  },
+  "source_locator": "Sandved-Smith et al. Section 3.2 equations 7-10"
+}

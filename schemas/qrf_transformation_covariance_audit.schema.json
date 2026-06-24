@@ -1,0 +1,48 @@
+{
+  "$id": "realizing_emptiness.qrf_transformation_covariance_audit.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Realizing Emptiness QRF Transformation Covariance Audit",
+  "type": "object",
+  "required": [
+    "schema",
+    "sector_labels",
+    "base_probability",
+    "base_observable",
+    "base_expectation",
+    "row_count",
+    "rows",
+    "controls",
+    "all_controls_pass",
+    "claim_boundary"
+  ],
+  "properties": {
+    "schema": {"const": "realizing_emptiness.qrf_transformation_covariance_audit.v1"},
+    "sector_labels": {"type": "array", "minItems": 2, "items": {"type": "string"}},
+    "base_probability": {"type": "array", "minItems": 2, "items": {"type": "number"}},
+    "base_observable": {"type": "array", "minItems": 2, "items": {"type": "number"}},
+    "base_expectation": {"type": "number"},
+    "row_count": {"type": "integer", "minimum": 3},
+    "rows": {
+      "type": "array",
+      "minItems": 3,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "admissible",
+          "column_stochastic",
+          "nonnegative",
+          "probability_mass",
+          "mass_error",
+          "expectation_covariance_error",
+          "accepted"
+        ],
+        "additionalProperties": true
+      }
+    },
+    "controls": {"type": "object", "additionalProperties": {"const": true}},
+    "all_controls_pass": {"const": true},
+    "claim_boundary": {"type": "string", "pattern": "not empirical"}
+  },
+  "additionalProperties": false
+}

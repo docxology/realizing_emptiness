@@ -1,0 +1,89 @@
+{
+  "all_controls_pass": true,
+  "base_density_validity": {
+    "hermitian_error": 0.0,
+    "min_eigenvalue": 0.0,
+    "trace_error": 0.0,
+    "trace_imag_abs": 0.0,
+    "trace_real": 1.0,
+    "valid_density_matrix": true
+  },
+  "base_probability": [
+    0.12,
+    0.38,
+    0.18,
+    0.32
+  ],
+  "claim_boundary": "finite deterministic roadmap-engine simulation; not empirical evidence, not a physical qFEP realization, and not evidence for clinical, contemplative, or neural outcomes",
+  "controls": {
+    "admissible_probability_vectors_covariant": true,
+    "admissible_reduced_entropies_covariant": true,
+    "admissible_spectra_invariant": true,
+    "admissible_unitaries_accepted": true,
+    "nonunitary_and_trace_breaking_controls_rejected": true
+  },
+  "row_count": 5,
+  "rows": [
+    {
+      "accepted": true,
+      "admissible": true,
+      "id": "identity_unitary",
+      "min_eigenvalue": 0.0,
+      "probability_mass_error": 0.0,
+      "probability_spectrum_drift": 0.0,
+      "reduced_entropy_multiset_drift_bits": 0.0,
+      "spectrum_drift": 0.0,
+      "trace_real": 1.0,
+      "unitary_error": 0.0
+    },
+    {
+      "accepted": true,
+      "admissible": true,
+      "id": "swap_unitary",
+      "min_eigenvalue": 0.0,
+      "probability_mass_error": 0.0,
+      "probability_spectrum_drift": 0.0,
+      "reduced_entropy_multiset_drift_bits": 0.0,
+      "spectrum_drift": 0.0,
+      "trace_real": 1.0,
+      "unitary_error": 0.0
+    },
+    {
+      "accepted": true,
+      "admissible": true,
+      "id": "local_x_self_unitary",
+      "min_eigenvalue": 0.0,
+      "probability_mass_error": 0.0,
+      "probability_spectrum_drift": 0.0,
+      "reduced_entropy_multiset_drift_bits": 0.0,
+      "spectrum_drift": 0.0,
+      "trace_real": 1.0,
+      "unitary_error": 0.0
+    },
+    {
+      "accepted": false,
+      "admissible": false,
+      "id": "nonunitary_scale_control",
+      "min_eigenvalue": -0.0,
+      "probability_mass_error": 0.21,
+      "probability_spectrum_drift": 0.0798,
+      "reduced_entropy_multiset_drift_bits": 0.192265202113,
+      "spectrum_drift": 0.147,
+      "trace_real": 1.21,
+      "unitary_error": 0.21
+    },
+    {
+      "accepted": false,
+      "admissible": false,
+      "id": "trace_breaking_projection_control",
+      "min_eigenvalue": 0.0,
+      "probability_mass_error": 0.32,
+      "probability_spectrum_drift": 0.14,
+      "reduced_entropy_multiset_drift_bits": 0.440050305245,
+      "spectrum_drift": 0.175,
+      "trace_real": 0.825,
+      "unitary_error": 1.0
+    }
+  ],
+  "schema": "realizing_emptiness.qrf_frame_covariance_toy_audit.v1"
+}

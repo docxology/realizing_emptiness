@@ -1,0 +1,110 @@
+{
+  "$id": "realizing_emptiness.quantum_boundary_entropy.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Realizing Emptiness Quantum Boundary Entropy",
+  "type": "object",
+  "required": [
+    "schema",
+    "theta_grid",
+    "rotation_grid",
+    "row_count",
+    "basis_invariance_row_count",
+    "rows",
+    "basis_invariance_rows",
+    "controls",
+    "local_chsh_bound",
+    "tsirelson_bound",
+    "max_observed_chsh",
+    "max_contextual_fraction",
+    "max_basis_entropy_drift_bits",
+    "all_controls_pass",
+    "claim_boundary"
+  ],
+  "properties": {
+    "schema": {"const": "realizing_emptiness.quantum_boundary_entropy.v1"},
+    "theta_grid": {"type": "array", "minItems": 3, "items": {"type": "number"}},
+    "rotation_grid": {"type": "array", "minItems": 3, "items": {"type": "number"}},
+    "row_count": {"type": "integer", "minimum": 3},
+    "basis_invariance_row_count": {"type": "integer", "minimum": 9},
+    "rows": {
+      "type": "array",
+      "minItems": 3,
+      "items": {
+        "type": "object",
+        "required": [
+          "theta_index",
+          "theta",
+          "state_label",
+          "reduced_entropy_bits",
+          "mutual_information_bits",
+          "single_qubit_purity",
+          "concurrence",
+          "chsh_s_max",
+          "contextual_fraction",
+          "computational_boundary_entropy_bits",
+          "landauer_lower_bound_kbt",
+          "separable_predicate",
+          "bell_violation_predicate"
+        ],
+        "properties": {
+          "theta_index": {"type": "integer", "minimum": 0},
+          "theta": {"type": "number"},
+          "state_label": {"enum": ["product", "partially_entangled", "maximally_entangled"]},
+          "reduced_entropy_bits": {"type": "number", "minimum": 0},
+          "mutual_information_bits": {"type": "number", "minimum": 0},
+          "single_qubit_purity": {"type": "number", "minimum": 0, "maximum": 1},
+          "concurrence": {"type": "number", "minimum": 0, "maximum": 1},
+          "chsh_s_max": {"type": "number", "minimum": 2},
+          "contextual_fraction": {"type": "number", "minimum": 0, "maximum": 1},
+          "computational_boundary_entropy_bits": {"type": "number", "minimum": 0},
+          "landauer_lower_bound_kbt": {"type": "number", "minimum": 0},
+          "separable_predicate": {"type": "boolean"},
+          "bell_violation_predicate": {"type": "boolean"}
+        },
+        "additionalProperties": false
+      }
+    },
+    "basis_invariance_rows": {
+      "type": "array",
+      "minItems": 9,
+      "items": {
+        "type": "object",
+        "required": [
+          "theta",
+          "rotation_angle",
+          "reduced_entropy_bits",
+          "entropy_drift_bits",
+          "rotated_measurement_entropy_bits"
+        ],
+        "properties": {
+          "theta": {"type": "number"},
+          "rotation_angle": {"type": "number"},
+          "reduced_entropy_bits": {"type": "number", "minimum": 0},
+          "entropy_drift_bits": {"type": "number", "minimum": 0},
+          "rotated_measurement_entropy_bits": {"type": "number", "minimum": 0}
+        },
+        "additionalProperties": false
+      }
+    },
+    "controls": {
+      "type": "object",
+      "required": [
+        "product_entropy_zero",
+        "product_chsh_local",
+        "bell_entropy_one",
+        "bell_chsh_toward_tsirelson",
+        "basis_entropy_invariant",
+        "measurement_entropy_changes_under_basis"
+      ],
+      "additionalProperties": {"type": "boolean"}
+    },
+    "local_chsh_bound": {"const": 2.0},
+    "tsirelson_bound": {"type": "number", "minimum": 2.8, "maximum": 2.9},
+    "max_observed_chsh": {"type": "number", "minimum": 2.0, "maximum": 2.9},
+    "max_contextual_fraction": {"type": "number", "minimum": 0, "maximum": 1},
+    "max_basis_entropy_drift_bits": {"type": "number", "minimum": 0},
+    "all_controls_pass": {"const": true},
+    "claim_boundary": {"type": "string", "pattern": "not empirical"}
+  },
+  "additionalProperties": false
+}

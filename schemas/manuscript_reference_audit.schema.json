@@ -1,0 +1,21 @@
+{
+  "$id": "realizing_emptiness.manuscript_reference_audit.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Realizing Emptiness Manuscript Reference Audit",
+  "type": "object",
+  "required": ["schema", "file_count", "anchor_count", "reference_count", "duplicate_anchors", "unresolved_references", "hardcoded_figure_numbers", "ok"],
+  "properties": {
+    "schema": {"const": "realizing_emptiness.manuscript_reference_audit.v1"},
+    "file_count": {"type": "integer", "minimum": 1},
+    "anchor_count": {"type": "integer", "minimum": 1},
+    "reference_count": {"type": "integer", "minimum": 1},
+    "section_reference_count": {"type": "integer", "minimum": 1},
+    "figure_reference_count": {"type": "integer", "minimum": 1},
+    "equation_reference_count": {"type": "integer", "minimum": 0},
+    "duplicate_anchors": {"type": "array", "maxItems": 0},
+    "unresolved_references": {"type": "array", "maxItems": 0},
+    "hardcoded_figure_numbers": {"type": "array", "maxItems": 0},
+    "ok": {"const": true}
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,63 @@
+{
+  "$id": "realizing_emptiness.pymdp_generative_model_audit.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Realizing Emptiness pymdp Generative Model Audit",
+  "type": "object",
+  "required": [
+    "schema",
+    "profile_count",
+    "state_labels",
+    "observation_labels",
+    "action_labels",
+    "rows",
+    "all_models_normalized",
+    "claim_boundary"
+  ],
+  "properties": {
+    "schema": {"const": "realizing_emptiness.pymdp_generative_model_audit.v1"},
+    "profile_count": {"const": 3},
+    "state_labels": {"type": "array", "minItems": 3},
+    "observation_labels": {"type": "array", "minItems": 3},
+    "action_labels": {"type": "array", "minItems": 3},
+    "rows": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "required": [
+          "profile",
+          "deployment",
+          "A",
+          "B",
+          "C",
+          "D",
+          "A_column_sums",
+          "B_column_sums_by_action",
+          "D_sum",
+          "A_normalized",
+          "B_normalized",
+          "D_normalized"
+        ],
+        "properties": {
+          "profile": {"type": "string"},
+          "deployment": {"type": "object"},
+          "A": {"type": "object"},
+          "B": {"type": "object"},
+          "C": {"type": "object"},
+          "D": {"type": "object"},
+          "A_column_sums": {"type": "array"},
+          "B_column_sums_by_action": {"type": "array"},
+          "D_sum": {"type": "number", "minimum": 0.999, "maximum": 1.001},
+          "A_normalized": {"const": true},
+          "B_normalized": {"const": true},
+          "D_normalized": {"const": true}
+        },
+        "additionalProperties": false
+      }
+    },
+    "all_models_normalized": {"const": true},
+    "claim_boundary": {"type": "string", "pattern": "not empirical"}
+  },
+  "additionalProperties": false
+}

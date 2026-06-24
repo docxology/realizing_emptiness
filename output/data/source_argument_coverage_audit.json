@@ -1,0 +1,297 @@
+{
+  "all_controls_pass": true,
+  "claim_boundary": "source-argument coverage audit for manuscript relevance; not empirical, clinical, neural, practice-efficacy, awakening, or physical qFEP evidence",
+  "controls": {
+    "all_core_themes_mapped": true,
+    "all_local_sections_resolve": true,
+    "all_rows_have_artifacts": true,
+    "all_rows_have_evidence_ceiling_claims": true,
+    "all_rows_have_sections": true,
+    "all_rows_have_validation_gates": true,
+    "qrf_bmr_opacification_not_quantum_only": true
+  },
+  "rows": [
+    {
+      "artifact_paths": [
+        "output/data/source_claim_crosswalk.json",
+        "output/data/qrf_boundary_indistinguishability.json",
+        "output/data/qrf_boundary_channel_ledger.json"
+      ],
+      "artifact_paths_exist": true,
+      "claim_boundary": "source-argument coverage audit for manuscript relevance; not empirical, clinical, neural, practice-efficacy, awakening, or physical qFEP evidence",
+      "evidence_ceiling_claims": [
+        "source_boundary_unevidenceable"
+      ],
+      "has_evidence_ceiling_claim": true,
+      "local_sections": [
+        "sec:methods-finite-qrf-boundary-screen",
+        "sec:results-qrf-boundary-geometry",
+        "sec:discussion-no-self-evidence-boundary"
+      ],
+      "local_sections_resolve": true,
+      "not_quantum_only_for_core_argument": true,
+      "primary_coverage_class": "qrf_boundary_argument",
+      "source_equations": [],
+      "source_locator": "Sections 3.1-3.2",
+      "theme_id": "no_self_evidence_boundary",
+      "unresolved_local_sections": [],
+      "validation_gates": [
+        "claim_support_audit_ok",
+        "qrf_indistinguishable",
+        "qrf_boundary_channel_ledger_ok"
+      ]
+    },
+    {
+      "artifact_paths": [
+        "output/data/formalism_registry.json",
+        "output/data/equation_audit.json",
+        "output/data/qrf_boundary_channel_ledger.json"
+      ],
+      "artifact_paths_exist": true,
+      "claim_boundary": "source-argument coverage audit for manuscript relevance; not empirical, clinical, neural, practice-efficacy, awakening, or physical qFEP evidence",
+      "evidence_ceiling_claims": [
+        "source_boundary_unevidenceable",
+        "separation_prior_sigma"
+      ],
+      "has_evidence_ceiling_claim": true,
+      "local_sections": [
+        "sec:methods-finite-qrf-boundary-screen",
+        "sec:methods-separation-prior-subspace",
+        "sec:results-qrf-boundary-geometry"
+      ],
+      "local_sections_resolve": true,
+      "not_quantum_only_for_core_argument": true,
+      "primary_coverage_class": "qrf_boundary_argument",
+      "source_equations": [
+        7,
+        8,
+        9,
+        10
+      ],
+      "source_locator": "Section 3.2, equations 7-10",
+      "theme_id": "qrf_sectorisation_equations_7_to_10",
+      "unresolved_local_sections": [],
+      "validation_gates": [
+        "equation_count_14",
+        "qrf_boundary_channel_ledger_ok"
+      ]
+    },
+    {
+      "artifact_paths": [
+        "output/data/formalism_registry.json",
+        "output/data/bmr_sweep.json",
+        "output/data/simulation_sensitivity_grid.json"
+      ],
+      "artifact_paths_exist": true,
+      "claim_boundary": "source-argument coverage audit for manuscript relevance; not empirical, clinical, neural, practice-efficacy, awakening, or physical qFEP evidence",
+      "evidence_ceiling_claims": [
+        "separation_prior_sigma",
+        "metacognitive_access_model"
+      ],
+      "has_evidence_ceiling_claim": true,
+      "local_sections": [
+        "sec:methods-separation-prior-subspace",
+        "sec:methods-bmr-separation-prior",
+        "sec:results-bmr-sensitivity"
+      ],
+      "local_sections_resolve": true,
+      "not_quantum_only_for_core_argument": true,
+      "primary_coverage_class": "active_inference_bmr_argument",
+      "source_equations": [
+        10
+      ],
+      "source_locator": "Equation 10 and Section 4.1",
+      "theme_id": "separation_prior_sigma",
+      "unresolved_local_sections": [],
+      "validation_gates": [
+        "equation_count_14",
+        "bmr_pruning_edges",
+        "simulation_sensitivity_grid_ok"
+      ]
+    },
+    {
+      "artifact_paths": [
+        "output/data/pymdp_profile_comparison.json",
+        "output/data/stochastic_policy_ensemble.json",
+        "output/data/simulation_sensitivity_grid.json"
+      ],
+      "artifact_paths_exist": true,
+      "claim_boundary": "source-argument coverage audit for manuscript relevance; not empirical, clinical, neural, practice-efficacy, awakening, or physical qFEP evidence",
+      "evidence_ceiling_claims": [
+        "metacognitive_access_model",
+        "practice_protocol_boundary"
+      ],
+      "has_evidence_ceiling_claim": true,
+      "local_sections": [
+        "sec:methods-pymdp-generative-models",
+        "sec:results-pymdp-policy-trace",
+        "sec:discussion-practice-interface-boundaries"
+      ],
+      "local_sections_resolve": true,
+      "not_quantum_only_for_core_argument": true,
+      "primary_coverage_class": "active_inference_bmr_argument",
+      "source_equations": [],
+      "source_locator": "Section 4.2",
+      "theme_id": "opacification_and_metacognitive_access",
+      "unresolved_local_sections": [],
+      "validation_gates": [
+        "pymdp_profiles",
+        "stochastic_policy_ensemble_ok",
+        "simulation_sensitivity_grid_ok"
+      ]
+    },
+    {
+      "artifact_paths": [
+        "output/data/bmr_sweep.json",
+        "output/data/bmr_robustness_resampling_audit.json"
+      ],
+      "artifact_paths_exist": true,
+      "claim_boundary": "source-argument coverage audit for manuscript relevance; not empirical, clinical, neural, practice-efficacy, awakening, or physical qFEP evidence",
+      "evidence_ceiling_claims": [
+        "bmr_prunes_sigma"
+      ],
+      "has_evidence_ceiling_claim": true,
+      "local_sections": [
+        "sec:methods-bmr-separation-prior",
+        "sec:results-bmr-sensitivity",
+        "sec:discussion-evidence-ceilings"
+      ],
+      "local_sections_resolve": true,
+      "not_quantum_only_for_core_argument": true,
+      "primary_coverage_class": "active_inference_bmr_argument",
+      "source_equations": [
+        11,
+        12
+      ],
+      "source_locator": "Section 4.3, equations 11-12",
+      "theme_id": "bmr_pruning_of_sigma",
+      "unresolved_local_sections": [],
+      "validation_gates": [
+        "bmr_pruning_edges",
+        "bmr_robustness_resampling_audit_ok"
+      ]
+    },
+    {
+      "artifact_paths": [
+        "output/data/pymdp_profile_comparison.json",
+        "output/data/pymdp_policy_trace.json",
+        "output/data/qrf_boundary_channel_ledger.json"
+      ],
+      "artifact_paths_exist": true,
+      "claim_boundary": "source-argument coverage audit for manuscript relevance; not empirical, clinical, neural, practice-efficacy, awakening, or physical qFEP evidence",
+      "evidence_ceiling_claims": [
+        "source_boundary_unevidenceable",
+        "pymdp_runtime_canary"
+      ],
+      "has_evidence_ceiling_claim": true,
+      "local_sections": [
+        "sec:methods-pymdp-generative-models",
+        "sec:results-pymdp-policy-trace",
+        "sec:discussion-no-self-evidence-boundary"
+      ],
+      "local_sections_resolve": true,
+      "not_quantum_only_for_core_argument": true,
+      "primary_coverage_class": "active_inference_bmr_argument",
+      "source_equations": [
+        13,
+        14
+      ],
+      "source_locator": "Section 5.1, equations 13-14",
+      "theme_id": "post_dual_unconstrained_qrf_space",
+      "unresolved_local_sections": [],
+      "validation_gates": [
+        "pymdp_profiles",
+        "pymdp_policy_trace_ok",
+        "qrf_boundary_channel_ledger_ok"
+      ]
+    },
+    {
+      "artifact_paths": [
+        "output/data/quantum_measurement_contextuality.json",
+        "output/data/sheaf_contextuality_obstruction_audit.json",
+        "output/data/general_measurement_cover_polytope_audit.json"
+      ],
+      "artifact_paths_exist": true,
+      "claim_boundary": "source-argument coverage audit for manuscript relevance; not empirical, clinical, neural, practice-efficacy, awakening, or physical qFEP evidence",
+      "evidence_ceiling_claims": [
+        "quantum_contextuality_witness",
+        "quantum_measurement_contextuality"
+      ],
+      "has_evidence_ceiling_claim": true,
+      "local_sections": [
+        "sec:results-finite-quantum-scope",
+        "sec:supplement-finite-quantum-contextuality-audits",
+        "sec:discussion-finite-engine-limits"
+      ],
+      "local_sections_resolve": true,
+      "not_quantum_only_for_core_argument": true,
+      "primary_coverage_class": "supplemental_quantum_contextuality_support",
+      "source_equations": [],
+      "source_locator": "Section 6.1",
+      "theme_id": "contextuality_of_boundary",
+      "unresolved_local_sections": [],
+      "validation_gates": [
+        "quantum_measurement_contextuality_ok",
+        "sheaf_contextuality_obstruction_audit_ok",
+        "general_measurement_cover_polytope_audit_ok"
+      ]
+    },
+    {
+      "artifact_paths": [
+        "output/data/practice_protocol_map.json"
+      ],
+      "artifact_paths_exist": true,
+      "claim_boundary": "source-argument coverage audit for manuscript relevance; not empirical, clinical, neural, practice-efficacy, awakening, or physical qFEP evidence",
+      "evidence_ceiling_claims": [
+        "compassion_proxy_boundary",
+        "practice_protocol_boundary"
+      ],
+      "has_evidence_ceiling_claim": true,
+      "local_sections": [
+        "sec:supplement-bounded-practice-protocols",
+        "sec:supplement-compassion-policy-scope",
+        "sec:discussion-compassion-boundary"
+      ],
+      "local_sections_resolve": true,
+      "not_quantum_only_for_core_argument": true,
+      "primary_coverage_class": "bounded_proxy_argument",
+      "source_equations": [],
+      "source_locator": "Section 6.2",
+      "theme_id": "compassion_as_policy_scope",
+      "unresolved_local_sections": [],
+      "validation_gates": [
+        "practice_boundaries"
+      ]
+    },
+    {
+      "artifact_paths": [
+        "output/data/criticality_stochastic_ensemble.json",
+        "output/data/stochastic_effect_size_audit.json"
+      ],
+      "artifact_paths_exist": true,
+      "claim_boundary": "source-argument coverage audit for manuscript relevance; not empirical, clinical, neural, practice-efficacy, awakening, or physical qFEP evidence",
+      "evidence_ceiling_claims": [
+        "criticality_proxy_boundary"
+      ],
+      "has_evidence_ceiling_claim": true,
+      "local_sections": [
+        "sec:supplement-criticality-proxies",
+        "sec:discussion-criticality-proxy-boundary",
+        "sec:supplement-meta-manuscript-record"
+      ],
+      "local_sections_resolve": true,
+      "not_quantum_only_for_core_argument": true,
+      "primary_coverage_class": "bounded_proxy_argument",
+      "source_equations": [],
+      "source_locator": "Section 6.3",
+      "theme_id": "criticality_prediction_boundary",
+      "unresolved_local_sections": [],
+      "validation_gates": [
+        "criticality_stochastic_ensemble_ok",
+        "stochastic_effect_size_audit_ok"
+      ]
+    }
+  ],
+  "schema": "realizing_emptiness.source_argument_coverage_audit.v1",
+  "theme_count": 9
+}

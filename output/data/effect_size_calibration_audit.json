@@ -1,0 +1,37 @@
+{
+  "all_controls_pass": true,
+  "alpha": 0.05,
+  "claim_boundary": "internal calibration of finite seeded-stochastic null tests on synthetic data; not empirical statistical power over real meditators, brains, or behavioural data",
+  "controls": {
+    "cliffs_delta_sign_matches_injection": true,
+    "null_not_rejected": true,
+    "positive_effect_magnitude_recovered": true,
+    "positive_effect_rejected": true
+  },
+  "null_arm": {
+    "cliffs_delta": -0.0823974609375,
+    "injected_shift": 0.0,
+    "mean_difference": -0.1133771023460049,
+    "mean_difference_ci95_high": 0.14076435478552,
+    "mean_difference_ci95_low": -0.3512144529421109,
+    "permutation_p": 0.35024390243902437
+  },
+  "positive_arm": {
+    "cliffs_delta": 0.51123046875,
+    "injected_shift": 1.0,
+    "mean_difference": 1.084674125731645,
+    "mean_difference_ci95_high": 1.3693485845523252,
+    "mean_difference_ci95_low": 0.8130265054387844,
+    "permutation_p": 0.000975609756097561
+  },
+  "positive_shift": 1.0,
+  "schema": "realizing_emptiness.effect_size_calibration_audit.v1",
+  "sign_flip_arm": {
+    "cliffs_delta": -0.572265625,
+    "injected_shift": -1.0,
+    "mean_difference": -1.10383365914752,
+    "mean_difference_ci95_high": -0.8440932602281827,
+    "mean_difference_ci95_low": -1.358885099799698,
+    "permutation_p": 0.000975609756097561
+  }
+}

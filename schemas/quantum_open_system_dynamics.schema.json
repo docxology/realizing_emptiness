@@ -1,0 +1,89 @@
+{
+  "$id": "realizing_emptiness.quantum_open_system_dynamics.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Realizing Emptiness Quantum Open System Dynamics",
+  "type": "object",
+  "required": [
+    "schema",
+    "time_grid",
+    "decoherence_rate_grid",
+    "row_count",
+    "rows",
+    "controls",
+    "max_trace_error",
+    "min_eigenvalue",
+    "max_global_entropy_bits",
+    "max_observed_chsh",
+    "min_observed_chsh",
+    "all_controls_pass",
+    "claim_boundary"
+  ],
+  "properties": {
+    "schema": {"const": "realizing_emptiness.quantum_open_system_dynamics.v1"},
+    "time_grid": {"type": "array", "minItems": 3, "items": {"type": "number"}},
+    "decoherence_rate_grid": {"type": "array", "minItems": 2, "items": {"type": "number"}},
+    "row_count": {"type": "integer", "minimum": 6},
+    "rows": {
+      "type": "array",
+      "minItems": 6,
+      "items": {
+        "type": "object",
+        "required": [
+          "state_label",
+          "time",
+          "decoherence_rate",
+          "coherence",
+          "trace_real",
+          "trace_imag_abs",
+          "min_eigenvalue",
+          "global_entropy_bits",
+          "reduced_entropy_a_bits",
+          "reduced_entropy_b_bits",
+          "mutual_information_bits",
+          "purity",
+          "concurrence",
+          "chsh_s_max",
+          "contextual_fraction"
+        ],
+        "properties": {
+          "state_label": {"enum": ["bell_dephased", "product_control"]},
+          "time": {"type": "number", "minimum": 0},
+          "decoherence_rate": {"type": "number", "minimum": 0},
+          "coherence": {"type": "number", "minimum": 0, "maximum": 1},
+          "trace_real": {"type": "number", "minimum": 0.999999, "maximum": 1.000001},
+          "trace_imag_abs": {"type": "number", "minimum": 0, "maximum": 0.000001},
+          "min_eigenvalue": {"type": "number"},
+          "global_entropy_bits": {"type": "number", "minimum": 0},
+          "reduced_entropy_a_bits": {"type": "number", "minimum": 0},
+          "reduced_entropy_b_bits": {"type": "number", "minimum": 0},
+          "mutual_information_bits": {"type": "number", "minimum": 0},
+          "purity": {"type": "number", "minimum": 0, "maximum": 1},
+          "concurrence": {"type": "number", "minimum": 0, "maximum": 1},
+          "chsh_s_max": {"type": "number", "minimum": 2, "maximum": 2.9},
+          "contextual_fraction": {"type": "number", "minimum": 0, "maximum": 1}
+        },
+        "additionalProperties": false
+      }
+    },
+    "controls": {
+      "type": "object",
+      "required": [
+        "trace_preserved",
+        "positive_semidefinite",
+        "product_control_stable",
+        "bell_entropy_non_decreasing_under_dephasing",
+        "bell_chsh_decays_under_dephasing",
+        "bell_mutual_information_non_increasing"
+      ],
+      "additionalProperties": {"type": "boolean"}
+    },
+    "max_trace_error": {"type": "number", "minimum": 0, "maximum": 0.000001},
+    "min_eigenvalue": {"type": "number", "minimum": -0.000001},
+    "max_global_entropy_bits": {"type": "number", "minimum": 0, "maximum": 1.01},
+    "max_observed_chsh": {"type": "number", "minimum": 2.8, "maximum": 2.9},
+    "min_observed_chsh": {"type": "number", "minimum": 2.0, "maximum": 2.1},
+    "all_controls_pass": {"const": true},
+    "claim_boundary": {"type": "string", "pattern": "not empirical"}
+  },
+  "additionalProperties": false
+}

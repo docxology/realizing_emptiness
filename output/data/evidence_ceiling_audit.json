@@ -1,0 +1,345 @@
+{
+  "claim_count": 15,
+  "claims_without_support": [],
+  "invalid_stressors": [],
+  "missing_boundary_fields": [],
+  "ok": true,
+  "rows": [
+    {
+      "artifact": "output/data/artifact_release_manifest.json",
+      "claim_id": "artifact_release_readiness",
+      "claim_status": "implementation_boundary",
+      "evidence_ceiling": "local private artifact package only, not public independent reproduction",
+      "future_evidence_required": "Explicit publication approval, public archive deposition, independent or blinded reproduction, and external reviewer execution before any public-release or independent-reproduction claim.",
+      "gate": "artifact_release_manifest_ok",
+      "prohibited_inference": "Do not read local hashes, manifests, or validation commands as a public archive release, independent reproduction, empirical validation, or publication.",
+      "stressors": {
+        "empirical_gap": true,
+        "neural_measurement_boundary": false,
+        "normative_boundary": false,
+        "practice_boundary": false,
+        "quantum_gap": false,
+        "runtime_dependency": false,
+        "source_role_boundary": true,
+        "surrogate_scope": false
+      },
+      "support_count": 3
+    },
+    {
+      "artifact": "output/data/bmr_sweep.json",
+      "claim_id": "bmr_prunes_sigma",
+      "claim_status": "finite_sweep",
+      "evidence_ceiling": "deterministic parameter sweep, not empirical practice evidence",
+      "future_evidence_required": "Pre-registered empirical or agent-benchmark evidence linking reduced complexity to task performance and subjective reports.",
+      "gate": "bmr_pruning_edges",
+      "prohibited_inference": "Do not read pruning in the sweep as evidence that meditation or realization removes self-models in people.",
+      "stressors": {
+        "empirical_gap": true,
+        "neural_measurement_boundary": false,
+        "normative_boundary": false,
+        "practice_boundary": false,
+        "quantum_gap": false,
+        "runtime_dependency": false,
+        "source_role_boundary": false,
+        "surrogate_scope": true
+      },
+      "support_count": 7
+    },
+    {
+      "artifact": "output/data/practice_protocol_map.json",
+      "claim_id": "compassion_proxy_boundary",
+      "claim_status": "proxy_boundary",
+      "evidence_ceiling": "model-scope proxy only",
+      "future_evidence_required": "Independent human-subject measures and normative review before any compassion or wellbeing claim.",
+      "gate": "practice_boundaries",
+      "prohibited_inference": "Do not read broadened model scope as moral virtue, compassion, clinical improvement, or contemplative attainment.",
+      "stressors": {
+        "empirical_gap": false,
+        "neural_measurement_boundary": false,
+        "normative_boundary": true,
+        "practice_boundary": true,
+        "quantum_gap": false,
+        "runtime_dependency": false,
+        "source_role_boundary": false,
+        "surrogate_scope": false
+      },
+      "support_count": 3
+    },
+    {
+      "artifact": "output/data/criticality_stochastic_ensemble.json",
+      "claim_id": "criticality_proxy_boundary",
+      "claim_status": "proxy_boundary",
+      "evidence_ceiling": "seeded stochastic simulation ensemble only",
+      "future_evidence_required": "Neural data provenance, preprocessing records, null models, and negative controls before any neural-criticality claim.",
+      "gate": "criticality_stochastic_ensemble_ok",
+      "prohibited_inference": "Do not read the simulated ensemble as a measured neural criticality regime or a biomarker of realization.",
+      "stressors": {
+        "empirical_gap": true,
+        "neural_measurement_boundary": true,
+        "normative_boundary": false,
+        "practice_boundary": false,
+        "quantum_gap": false,
+        "runtime_dependency": false,
+        "source_role_boundary": false,
+        "surrogate_scope": false
+      },
+      "support_count": 13
+    },
+    {
+      "artifact": "output/data/simulation_sensitivity_grid.json",
+      "claim_id": "metacognitive_access_model",
+      "claim_status": "implementation_boundary",
+      "evidence_ceiling": "parameterized sensitivity surrogate only",
+      "future_evidence_required": "Validated operational measures and task data if metacognitive access is tied to people or empirical agents.",
+      "gate": "simulation_sensitivity_grid_ok",
+      "prohibited_inference": "Do not read the sweep parameter as a measured metacognitive trait or training outcome.",
+      "stressors": {
+        "empirical_gap": true,
+        "neural_measurement_boundary": false,
+        "normative_boundary": false,
+        "practice_boundary": false,
+        "quantum_gap": false,
+        "runtime_dependency": false,
+        "source_role_boundary": false,
+        "surrogate_scope": true
+      },
+      "support_count": 6
+    },
+    {
+      "artifact": "output/data/practice_protocol_map.json",
+      "claim_id": "practice_protocol_boundary",
+      "claim_status": "safety_boundary",
+      "evidence_ceiling": "protocol specification only",
+      "future_evidence_required": "Human review, ethics constraints, safety language, and outcome-independent usability validation before user-facing deployment.",
+      "gate": "practice_boundaries",
+      "prohibited_inference": "Do not read protocol mappings as instructions, therapy, or evidence that a practice induces realization.",
+      "stressors": {
+        "empirical_gap": false,
+        "neural_measurement_boundary": false,
+        "normative_boundary": false,
+        "practice_boundary": true,
+        "quantum_gap": false,
+        "runtime_dependency": false,
+        "source_role_boundary": true,
+        "surrogate_scope": false
+      },
+      "support_count": 15
+    },
+    {
+      "artifact": "output/data/pymdp_profile_comparison.json",
+      "claim_id": "pymdp_runtime_canary",
+      "claim_status": "runtime_canary",
+      "evidence_ceiling": "package import, agent construction, state inference, and policy-posterior normalization diagnostics",
+      "future_evidence_required": "Version-pinned benchmark suites and comparison agents if performance or optimality claims are introduced.",
+      "gate": "pymdp_canary",
+      "prohibited_inference": "Do not read the runtime dependency check as a benchmark of active-inference optimality or scientific validity.",
+      "stressors": {
+        "empirical_gap": false,
+        "neural_measurement_boundary": false,
+        "normative_boundary": false,
+        "practice_boundary": false,
+        "quantum_gap": false,
+        "runtime_dependency": true,
+        "source_role_boundary": false,
+        "surrogate_scope": false
+      },
+      "support_count": 3
+    },
+    {
+      "artifact": "output/data/quantum_extension_roadmap.json",
+      "claim_id": "qfep_surrogate_scope",
+      "claim_status": "formal_boundary",
+      "evidence_ceiling": "finite equation registry plus two-qubit quantum-information witnesses, mixed-state entanglement checks, measurement-cover/local-polytope controls, channel-cost accounting, dephasing controls, stochastic quantum-trajectory checks, and implemented extension-engine audits",
+      "future_evidence_required": "A separately reviewed physical qFEP implementation, independent quantum-information replication, or ethics-reviewed human/practice dataset depending on the stronger claim.",
+      "gate": "quantum_extension_roadmap_ok",
+      "prohibited_inference": "Do not read finite entropy, mixed-state entanglement, CHSH, measurement-cover/local-polytope, channel-cost, dephasing, Lindblad, many-body, sheaf, QRF-covariance, or provenance controls as physical qFEP realization, empirical practice evidence, or neural measurement.",
+      "stressors": {
+        "empirical_gap": false,
+        "neural_measurement_boundary": false,
+        "normative_boundary": false,
+        "practice_boundary": false,
+        "quantum_gap": true,
+        "runtime_dependency": false,
+        "source_role_boundary": false,
+        "surrogate_scope": true
+      },
+      "support_count": 16
+    },
+    {
+      "artifact": "output/data/quantum_boundary_entropy.json",
+      "claim_id": "quantum_contextuality_witness",
+      "claim_status": "finite_quantum_simulation",
+      "evidence_ceiling": "CHSH witness over a finite two-qubit family",
+      "future_evidence_required": "General sheaf-obstruction checks, noncontextual polytope comparisons, and explicit QRF transformation tests.",
+      "gate": "quantum_contextuality_witness_ok",
+      "prohibited_inference": "Do not read the CHSH witness as a general contextuality proof for all QRF deployments or as empirical evidence.",
+      "stressors": {
+        "empirical_gap": false,
+        "neural_measurement_boundary": false,
+        "normative_boundary": false,
+        "practice_boundary": false,
+        "quantum_gap": true,
+        "runtime_dependency": false,
+        "source_role_boundary": true,
+        "surrogate_scope": true
+      },
+      "support_count": 6
+    },
+    {
+      "artifact": "output/data/quantum_measurement_contextuality.json",
+      "claim_id": "quantum_measurement_contextuality",
+      "claim_status": "finite_quantum_simulation",
+      "evidence_ceiling": "finite CHSH measurement-cover probability table plus local-polytope LP audit",
+      "future_evidence_required": "A general measurement-scenario engine with compatibility hypergraphs, obstruction or noncontextual-polytope witnesses, and QRF transformation tests.",
+      "gate": "quantum_measurement_contextuality_ok",
+      "prohibited_inference": "Do not read the CHSH table or local-polytope infeasibility as a full sheaf obstruction proof, a many-body QRF transformation, a qFEP dynamics simulation, or empirical evidence.",
+      "stressors": {
+        "empirical_gap": false,
+        "neural_measurement_boundary": false,
+        "normative_boundary": false,
+        "practice_boundary": false,
+        "quantum_gap": true,
+        "runtime_dependency": false,
+        "source_role_boundary": true,
+        "surrogate_scope": true
+      },
+      "support_count": 9
+    },
+    {
+      "artifact": "output/data/quantum_open_system_dynamics.json",
+      "claim_id": "quantum_open_system_dephasing",
+      "claim_status": "finite_quantum_simulation",
+      "evidence_ceiling": "finite trace-preserving two-qubit dephasing-channel simulation",
+      "future_evidence_required": "Boundary-Hamiltonian-linked Lindblad or collision-model dynamics, many-body subsystem cuts, and explicit QRF transformations.",
+      "gate": "quantum_open_system_dynamics_ok",
+      "prohibited_inference": "Do not read the dephasing channel as the paper's full qFEP dynamics, a many-body observer boundary, or empirical quantum evidence.",
+      "stressors": {
+        "empirical_gap": false,
+        "neural_measurement_boundary": false,
+        "normative_boundary": false,
+        "practice_boundary": false,
+        "quantum_gap": true,
+        "runtime_dependency": false,
+        "source_role_boundary": true,
+        "surrogate_scope": true
+      },
+      "support_count": 11
+    },
+    {
+      "artifact": "output/data/quantum_boundary_entropy.json",
+      "claim_id": "quantum_separability_entropy",
+      "claim_status": "finite_quantum_simulation",
+      "evidence_ceiling": "finite two-qubit pure-state entropy witness",
+      "future_evidence_required": "Higher-dimensional, multipartite, externally reviewed many-body, and physical open-system extensions with independent benchmarks and negative controls.",
+      "gate": "quantum_boundary_entropy_ok",
+      "prohibited_inference": "Do not read this finite witness as a simulation of a universe-agent boundary or mixed open-system qFEP dynamics.",
+      "stressors": {
+        "empirical_gap": false,
+        "neural_measurement_boundary": false,
+        "normative_boundary": false,
+        "practice_boundary": false,
+        "quantum_gap": true,
+        "runtime_dependency": false,
+        "source_role_boundary": false,
+        "surrogate_scope": true
+      },
+      "support_count": 9
+    },
+    {
+      "artifact": "output/data/source_claim_crosswalk.json",
+      "claim_id": "self_evidencing_boundary",
+      "claim_status": "background_boundary",
+      "evidence_ceiling": "source-role binding only",
+      "future_evidence_required": "A separate empirical or formal target with its own source ledger if self-evidencing is tested directly.",
+      "gate": "claim_support_audit_ok",
+      "prohibited_inference": "Do not read background self-evidencing scholarship as a new empirical result produced by this repository.",
+      "stressors": {
+        "empirical_gap": true,
+        "neural_measurement_boundary": false,
+        "normative_boundary": false,
+        "practice_boundary": false,
+        "quantum_gap": false,
+        "runtime_dependency": false,
+        "source_role_boundary": true,
+        "surrogate_scope": false
+      },
+      "support_count": 12
+    },
+    {
+      "artifact": "output/data/formalism_registry.json",
+      "claim_id": "separation_prior_sigma",
+      "claim_status": "implemented_model",
+      "evidence_ceiling": "implemented finite data model",
+      "future_evidence_required": "Task-linked data or formal proof showing when the modeled separation prior corresponds to an empirical or physical boundary.",
+      "gate": "equation_count_14",
+      "prohibited_inference": "Do not read this as evidence that human subject-object boundaries have been reduced.",
+      "stressors": {
+        "empirical_gap": false,
+        "neural_measurement_boundary": false,
+        "normative_boundary": false,
+        "practice_boundary": false,
+        "quantum_gap": false,
+        "runtime_dependency": false,
+        "source_role_boundary": false,
+        "surrogate_scope": true
+      },
+      "support_count": 2
+    },
+    {
+      "artifact": "output/data/qrf_boundary_indistinguishability.json",
+      "claim_id": "source_boundary_unevidenceable",
+      "claim_status": "operational_surrogate",
+      "evidence_ceiling": "finite label-invariance audit only",
+      "future_evidence_required": "A full qFEP quantum-information implementation or empirical operationalization with source identity and negative controls.",
+      "gate": "qrf_indistinguishable",
+      "prohibited_inference": "Do not read this as proof that real agents lack selves or that a quantum boundary was simulated.",
+      "stressors": {
+        "empirical_gap": false,
+        "neural_measurement_boundary": false,
+        "normative_boundary": false,
+        "practice_boundary": false,
+        "quantum_gap": false,
+        "runtime_dependency": false,
+        "source_role_boundary": true,
+        "surrogate_scope": true
+      },
+      "support_count": 15
+    }
+  ],
+  "schema": "realizing_emptiness.evidence_ceiling_audit.v1",
+  "status_mismatches": [],
+  "stressors": [
+    {
+      "description": "Requires empirical data before empirical claims are permitted.",
+      "id": "empirical_gap"
+    },
+    {
+      "description": "Prevents toy criticality proxies from becoming neural-measurement claims.",
+      "id": "neural_measurement_boundary"
+    },
+    {
+      "description": "Prevents model-scope quantities from becoming moral or compassion claims.",
+      "id": "normative_boundary"
+    },
+    {
+      "description": "Prevents protocol mappings from becoming practice efficacy claims.",
+      "id": "practice_boundary"
+    },
+    {
+      "description": "Prevents finite surrogates from becoming direct quantum-dynamics simulations.",
+      "id": "quantum_gap"
+    },
+    {
+      "description": "Requires pinned runtime diagnostics before software claims are trusted.",
+      "id": "runtime_dependency"
+    },
+    {
+      "description": "Keeps background or terminology sources from supporting stronger claims.",
+      "id": "source_role_boundary"
+    },
+    {
+      "description": "Keeps finite toy calculations inside their operational-surrogate scope.",
+      "id": "surrogate_scope"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "all_controls_pass": true,
+  "claim_boundary": "finite no-signaling / no-disturbance audit over a software scenario library; not empirical evidence, not a contextuality proof, and not a physical qFEP, neural, or clinical claim",
+  "controls": {
+    "all_contexts_normalized": true,
+    "disturbing_control_signals": true,
+    "no_signaling_matches_expectation": true,
+    "quantum_and_product_satisfy_no_signaling": true
+  },
+  "row_count": 3,
+  "rows": [
+    {
+      "all_contexts_normalized": true,
+      "expected_no_signaling": true,
+      "family": "quantum",
+      "id": "quantum_chsh_bell",
+      "max_marginal_drift": 0.0,
+      "no_signaling": true
+    },
+    {
+      "all_contexts_normalized": true,
+      "expected_no_signaling": true,
+      "family": "product",
+      "id": "product_local",
+      "max_marginal_drift": 0.0,
+      "no_signaling": true
+    },
+    {
+      "all_contexts_normalized": true,
+      "expected_no_signaling": false,
+      "family": "disturbing_control",
+      "id": "disturbing_control",
+      "max_marginal_drift": 0.1,
+      "no_signaling": false
+    }
+  ],
+  "scenario_count": 3,
+  "schema": "realizing_emptiness.no_signaling_scenario_library_audit.v1"
+}

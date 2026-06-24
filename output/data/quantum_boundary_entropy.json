@@ -1,0 +1,6356 @@
+{
+  "all_controls_pass": true,
+  "basis_invariance_row_count": 825,
+  "basis_invariance_rows": [
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": -0.0,
+      "rotated_measurement_entropy_bits": -0.0,
+      "rotation_angle": 0.0,
+      "theta": 0.0
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": -0.0,
+      "rotated_measurement_entropy_bits": 0.0519252884,
+      "rotation_angle": 0.06544985,
+      "theta": 0.0
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.0,
+      "rotated_measurement_entropy_bits": 0.1642828245,
+      "rotation_angle": 0.13089969,
+      "theta": 0.0
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": -0.0,
+      "rotated_measurement_entropy_bits": 0.3115054311,
+      "rotation_angle": 0.19634954,
+      "theta": 0.0
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": -0.0,
+      "rotated_measurement_entropy_bits": 0.4790435537,
+      "rotation_angle": 0.26179939,
+      "theta": 0.0
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": -0.0,
+      "rotated_measurement_entropy_bits": 0.6561479429,
+      "rotation_angle": 0.32724923,
+      "theta": 0.0
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": -0.0,
+      "rotated_measurement_entropy_bits": 0.8342026653,
+      "rotation_angle": 0.39269908,
+      "theta": 0.0
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": -0.0,
+      "rotated_measurement_entropy_bits": 1.0060820392,
+      "rotation_angle": 0.45814893,
+      "theta": 0.0
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": -0.0,
+      "rotated_measurement_entropy_bits": 1.1658570271,
+      "rotation_angle": 0.52359878,
+      "theta": 0.0
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.0,
+      "rotated_measurement_entropy_bits": 1.3086509875,
+      "rotation_angle": 0.58904862,
+      "theta": 0.0
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": -0.0,
+      "rotated_measurement_entropy_bits": 1.4305670339,
+      "rotation_angle": 0.65449847,
+      "theta": 0.0
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": -0.0,
+      "rotated_measurement_entropy_bits": 1.5286515571,
+      "rotation_angle": 0.71994832,
+      "theta": 0.0
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.0,
+      "rotated_measurement_entropy_bits": 1.6008760367,
+      "rotation_angle": 0.78539816,
+      "theta": 0.0
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": -0.0,
+      "rotated_measurement_entropy_bits": 1.6461276841,
+      "rotation_angle": 0.85084801,
+      "theta": 0.0
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": -0.0,
+      "rotated_measurement_entropy_bits": 1.664204065,
+      "rotation_angle": 0.91629786,
+      "theta": 0.0
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": -0.0,
+      "rotated_measurement_entropy_bits": 1.6558098444,
+      "rotation_angle": 0.9817477,
+      "theta": 0.0
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": -0.0,
+      "rotated_measurement_entropy_bits": 1.6225562489,
+      "rotation_angle": 1.04719755,
+      "theta": 0.0
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": -0.0,
+      "rotated_measurement_entropy_bits": 1.5669665374,
+      "rotation_angle": 1.1126474,
+      "theta": 0.0
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": -0.0,
+      "rotated_measurement_entropy_bits": 1.4924946386,
+      "rotation_angle": 1.17809725,
+      "theta": 0.0
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.0,
+      "rotated_measurement_entropy_bits": 1.4035709402,
+      "rotation_angle": 1.24354709,
+      "theta": 0.0
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.0,
+      "rotated_measurement_entropy_bits": 1.3057033009,
+      "rotation_angle": 1.30899694,
+      "theta": 0.0
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": -0.0,
+      "rotated_measurement_entropy_bits": 1.2056951116,
+      "rotation_angle": 1.37444679,
+      "theta": 0.0
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": -0.0,
+      "rotated_measurement_entropy_bits": 1.112139854,
+      "rotation_angle": 1.43989663,
+      "theta": 0.0
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": -0.0,
+      "rotated_measurement_entropy_bits": 1.0367303558,
+      "rotation_angle": 1.50534648,
+      "theta": 0.0
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": -0.0,
+      "rotated_measurement_entropy_bits": 1.0,
+      "rotation_angle": 1.57079633,
+      "theta": 0.0
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.0073113146,
+      "rotated_measurement_entropy_bits": 0.0073113146,
+      "rotation_angle": 0.0,
+      "theta": 0.02454369
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.0073113146,
+      "rotated_measurement_entropy_bits": 0.0584034092,
+      "rotation_angle": 0.06544985,
+      "theta": 0.02454369
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.0073113146,
+      "rotated_measurement_entropy_bits": 0.1696094634,
+      "rotation_angle": 0.13089969,
+      "theta": 0.02454369
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.0073113146,
+      "rotated_measurement_entropy_bits": 0.3157690861,
+      "rotation_angle": 0.19634954,
+      "theta": 0.02454369
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.0073113146,
+      "rotated_measurement_entropy_bits": 0.4823747203,
+      "rotation_angle": 0.26179939,
+      "theta": 0.02454369
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.0073113146,
+      "rotated_measurement_entropy_bits": 0.6586663712,
+      "rotation_angle": 0.32724923,
+      "theta": 0.02454369
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.0073113146,
+      "rotated_measurement_entropy_bits": 0.8360130837,
+      "rotation_angle": 0.39269908,
+      "theta": 0.02454369
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.0073113146,
+      "rotated_measurement_entropy_bits": 1.0072778959,
+      "rotation_angle": 0.45814893,
+      "theta": 0.02454369
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.0073113146,
+      "rotated_measurement_entropy_bits": 1.1665243891,
+      "rotation_angle": 0.52359878,
+      "theta": 0.02454369
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.0073113146,
+      "rotated_measurement_entropy_bits": 1.3088713564,
+      "rotation_angle": 0.58904862,
+      "theta": 0.02454369
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.0073113146,
+      "rotated_measurement_entropy_bits": 1.4304191645,
+      "rotation_angle": 0.65449847,
+      "theta": 0.02454369
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.0073113146,
+      "rotated_measurement_entropy_bits": 1.5282125546,
+      "rotation_angle": 0.71994832,
+      "theta": 0.02454369
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.0073113146,
+      "rotated_measurement_entropy_bits": 1.6002219799,
+      "rotation_angle": 0.78539816,
+      "theta": 0.02454369
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.0073113146,
+      "rotated_measurement_entropy_bits": 1.6453339673,
+      "rotation_angle": 0.85084801,
+      "theta": 0.02454369
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.0073113146,
+      "rotated_measurement_entropy_bits": 1.6633456184,
+      "rotation_angle": 0.91629786,
+      "theta": 0.02454369
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.0073113146,
+      "rotated_measurement_entropy_bits": 1.654961386,
+      "rotation_angle": 0.9817477,
+      "theta": 0.02454369
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.0073113146,
+      "rotated_measurement_entropy_bits": 1.6217927482,
+      "rotation_angle": 1.04719755,
+      "theta": 0.02454369
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.0073113146,
+      "rotated_measurement_entropy_bits": 1.5663641547,
+      "rotation_angle": 1.1126474,
+      "theta": 0.02454369
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.0073113146,
+      "rotated_measurement_entropy_bits": 1.4921326028,
+      "rotation_angle": 1.17809725,
+      "theta": 0.02454369
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.0073113146,
+      "rotated_measurement_entropy_bits": 1.4035353056,
+      "rotation_angle": 1.24354709,
+      "theta": 0.02454369
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.0073113146,
+      "rotated_measurement_entropy_bits": 1.3060947875,
+      "rotation_angle": 1.30899694,
+      "theta": 0.02454369
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.0073113146,
+      "rotated_measurement_entropy_bits": 1.2066471768,
+      "rotation_angle": 1.37444679,
+      "theta": 0.02454369
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.0073113146,
+      "rotated_measurement_entropy_bits": 1.1138690519,
+      "rotation_angle": 1.43989663,
+      "theta": 0.02454369
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.0073113146,
+      "rotated_measurement_entropy_bits": 1.0397456864,
+      "rotation_angle": 1.50534648,
+      "theta": 0.02454369
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.0073113146,
+      "rotated_measurement_entropy_bits": 1.0073113146,
+      "rotation_angle": 1.57079633,
+      "theta": 0.02454369
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.0244113255,
+      "rotated_measurement_entropy_bits": 0.0244113255,
+      "rotation_angle": 0.0,
+      "theta": 0.04908739
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.0244113255,
+      "rotated_measurement_entropy_bits": 0.0742343555,
+      "rotation_angle": 0.06544985,
+      "theta": 0.04908739
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.0244113255,
+      "rotated_measurement_entropy_bits": 0.1832460525,
+      "rotation_angle": 0.13089969,
+      "theta": 0.04908739
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.0244113255,
+      "rotated_measurement_entropy_bits": 0.3270449696,
+      "rotation_angle": 0.19634954,
+      "theta": 0.04908739
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.0244113255,
+      "rotated_measurement_entropy_bits": 0.4913714523,
+      "rotation_angle": 0.26179939,
+      "theta": 0.04908739
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.0244113255,
+      "rotated_measurement_entropy_bits": 0.6655545574,
+      "rotation_angle": 0.32724923,
+      "theta": 0.04908739
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.0244113255,
+      "rotated_measurement_entropy_bits": 0.8409940764,
+      "rotation_angle": 0.39269908,
+      "theta": 0.04908739
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.0244113255,
+      "rotated_measurement_entropy_bits": 1.0105630581,
+      "rotation_angle": 0.45814893,
+      "theta": 0.04908739
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.0244113255,
+      "rotated_measurement_entropy_bits": 1.1683283185,
+      "rotation_angle": 0.52359878,
+      "theta": 0.04908739
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.0244113255,
+      "rotated_measurement_entropy_bits": 1.3094100087,
+      "rotation_angle": 0.58904862,
+      "theta": 0.04908739
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.0244113255,
+      "rotated_measurement_entropy_bits": 1.4299094731,
+      "rotation_angle": 0.65449847,
+      "theta": 0.04908739
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.0244113255,
+      "rotated_measurement_entropy_bits": 1.5268723381,
+      "rotation_angle": 0.71994832,
+      "theta": 0.04908739
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.0244113255,
+      "rotated_measurement_entropy_bits": 1.5982697871,
+      "rotation_angle": 0.78539816,
+      "theta": 0.04908739
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.0244113255,
+      "rotated_measurement_entropy_bits": 1.6429888575,
+      "rotation_angle": 0.85084801,
+      "theta": 0.04908739
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.0244113255,
+      "rotated_measurement_entropy_bits": 1.6608270384,
+      "rotation_angle": 0.91629786,
+      "theta": 0.04908739
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.0244113255,
+      "rotated_measurement_entropy_bits": 1.6524894238,
+      "rotation_angle": 0.9817477,
+      "theta": 0.04908739
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.0244113255,
+      "rotated_measurement_entropy_bits": 1.6195892086,
+      "rotation_angle": 1.04719755,
+      "theta": 0.04908739
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.0244113255,
+      "rotated_measurement_entropy_bits": 1.5646552024,
+      "rotation_angle": 1.1126474,
+      "theta": 0.04908739
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.0244113255,
+      "rotated_measurement_entropy_bits": 1.4911543616,
+      "rotation_angle": 1.17809725,
+      "theta": 0.04908739
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.0244113255,
+      "rotated_measurement_entropy_bits": 1.4035453236,
+      "rotation_angle": 1.24354709,
+      "theta": 0.04908739
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.0244113255,
+      "rotated_measurement_entropy_bits": 1.307396329,
+      "rotation_angle": 1.30899694,
+      "theta": 0.04908739
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.0244113255,
+      "rotated_measurement_entropy_bits": 1.2096462782,
+      "rotation_angle": 1.37444679,
+      "theta": 0.04908739
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.0244113255,
+      "rotated_measurement_entropy_bits": 1.1192398026,
+      "rotation_angle": 1.43989663,
+      "theta": 0.04908739
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.0244113255,
+      "rotated_measurement_entropy_bits": 1.0492271148,
+      "rotation_angle": 1.50534648,
+      "theta": 0.04908739
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.0244113255,
+      "rotated_measurement_entropy_bits": 1.0244113255,
+      "rotation_angle": 1.57079633,
+      "theta": 0.04908739
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.048535098,
+      "rotated_measurement_entropy_bits": 0.048535098,
+      "rotation_angle": 0.0,
+      "theta": 0.07363108
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.048535098,
+      "rotated_measurement_entropy_bits": 0.0968930262,
+      "rotation_angle": 0.06544985,
+      "theta": 0.07363108
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.048535098,
+      "rotated_measurement_entropy_bits": 0.2031607399,
+      "rotation_angle": 0.13089969,
+      "theta": 0.07363108
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.048535098,
+      "rotated_measurement_entropy_bits": 0.3437999829,
+      "rotation_angle": 0.19634954,
+      "theta": 0.07363108
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.048535098,
+      "rotated_measurement_entropy_bits": 0.5049125232,
+      "rotation_angle": 0.26179939,
+      "theta": 0.07363108
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.048535098,
+      "rotated_measurement_entropy_bits": 0.6760068429,
+      "rotation_angle": 0.32724923,
+      "theta": 0.07363108
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.048535098,
+      "rotated_measurement_entropy_bits": 0.8485760644,
+      "rotation_angle": 0.39269908,
+      "theta": 0.07363108
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.048535098,
+      "rotated_measurement_entropy_bits": 1.0155443511,
+      "rotation_angle": 0.45814893,
+      "theta": 0.07363108
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.048535098,
+      "rotated_measurement_entropy_bits": 1.1710086116,
+      "rotation_angle": 0.52359878,
+      "theta": 0.07363108
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.048535098,
+      "rotated_measurement_entropy_bits": 1.3101082384,
+      "rotation_angle": 0.58904862,
+      "theta": 0.07363108
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.048535098,
+      "rotated_measurement_entropy_bits": 1.4289577683,
+      "rotation_angle": 0.65449847,
+      "theta": 0.07363108
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.048535098,
+      "rotated_measurement_entropy_bits": 1.5246122286,
+      "rotation_angle": 0.71994832,
+      "theta": 0.07363108
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.048535098,
+      "rotated_measurement_entropy_bits": 1.5950495309,
+      "rotation_angle": 0.78539816,
+      "theta": 0.07363108
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.048535098,
+      "rotated_measurement_entropy_bits": 1.6391614739,
+      "rotation_angle": 0.85084801,
+      "theta": 0.07363108
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.048535098,
+      "rotated_measurement_entropy_bits": 1.6567490416,
+      "rotation_angle": 0.91629786,
+      "theta": 0.07363108
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.048535098,
+      "rotated_measurement_entropy_bits": 1.6485205596,
+      "rotation_angle": 0.9817477,
+      "theta": 0.07363108
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.048535098,
+      "rotated_measurement_entropy_bits": 1.6160938431,
+      "rotation_angle": 1.04719755,
+      "theta": 0.07363108
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.048535098,
+      "rotated_measurement_entropy_bits": 1.5620065898,
+      "rotation_angle": 1.1126474,
+      "theta": 0.07363108
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.048535098,
+      "rotated_measurement_entropy_bits": 1.4897442105,
+      "rotation_angle": 1.17809725,
+      "theta": 0.07363108
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.048535098,
+      "rotated_measurement_entropy_bits": 1.4038038951,
+      "rotation_angle": 1.24354709,
+      "theta": 0.07363108
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.048535098,
+      "rotated_measurement_entropy_bits": 1.3098360733,
+      "rotation_angle": 1.30899694,
+      "theta": 0.07363108
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.048535098,
+      "rotated_measurement_entropy_bits": 1.2149684331,
+      "rotation_angle": 1.37444679,
+      "theta": 0.07363108
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.048535098,
+      "rotated_measurement_entropy_bits": 1.1286728652,
+      "rotation_angle": 1.43989663,
+      "theta": 0.07363108
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.048535098,
+      "rotated_measurement_entropy_bits": 1.0672260708,
+      "rotation_angle": 1.50534648,
+      "theta": 0.07363108
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.048535098,
+      "rotated_measurement_entropy_bits": 1.048535098,
+      "rotation_angle": 1.57079633,
+      "theta": 0.07363108
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.0781788024,
+      "rotated_measurement_entropy_bits": 0.0781788024,
+      "rotation_angle": 0.0,
+      "theta": 0.09817477
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.0781788024,
+      "rotated_measurement_entropy_bits": 0.1249413446,
+      "rotation_angle": 0.06544985,
+      "theta": 0.09817477
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.0781788024,
+      "rotated_measurement_entropy_bits": 0.2280841759,
+      "rotation_angle": 0.13089969,
+      "theta": 0.09817477
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.0781788024,
+      "rotated_measurement_entropy_bits": 0.3649822317,
+      "rotation_angle": 0.19634954,
+      "theta": 0.09817477
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.0781788024,
+      "rotated_measurement_entropy_bits": 0.5221662171,
+      "rotation_angle": 0.26179939,
+      "theta": 0.09817477
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.0781788024,
+      "rotated_measurement_entropy_bits": 0.6893894032,
+      "rotation_angle": 0.32724923,
+      "theta": 0.09817477
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.0781788024,
+      "rotated_measurement_entropy_bits": 0.8582925084,
+      "rotation_angle": 0.39269908,
+      "theta": 0.09817477
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.0781788024,
+      "rotated_measurement_entropy_bits": 1.0218924513,
+      "rotation_angle": 0.45814893,
+      "theta": 0.09817477
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.0781788024,
+      "rotated_measurement_entropy_bits": 1.174347054,
+      "rotation_angle": 0.52359878,
+      "theta": 0.09817477
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.0781788024,
+      "rotated_measurement_entropy_bits": 1.3108374857,
+      "rotation_angle": 0.58904862,
+      "theta": 0.09817477
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.0781788024,
+      "rotated_measurement_entropy_bits": 1.4275079388,
+      "rotation_angle": 0.65449847,
+      "theta": 0.09817477
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.0781788024,
+      "rotated_measurement_entropy_bits": 1.5214348905,
+      "rotation_angle": 0.71994832,
+      "theta": 0.09817477
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.0781788024,
+      "rotated_measurement_entropy_bits": 1.5906118141,
+      "rotation_angle": 0.78539816,
+      "theta": 0.09817477
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.0781788024,
+      "rotated_measurement_entropy_bits": 1.6339417802,
+      "rotation_angle": 0.85084801,
+      "theta": 0.09817477
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.0781788024,
+      "rotated_measurement_entropy_bits": 1.6512342162,
+      "rotation_angle": 0.91629786,
+      "theta": 0.09817477
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.0781788024,
+      "rotated_measurement_entropy_bits": 1.6432048508,
+      "rotation_angle": 0.9817477,
+      "theta": 0.09817477
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.0781788024,
+      "rotated_measurement_entropy_bits": 1.6114805332,
+      "rotation_angle": 1.04719755,
+      "theta": 0.09817477
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.0781788024,
+      "rotated_measurement_entropy_bits": 1.5586140973,
+      "rotation_angle": 1.1126474,
+      "theta": 0.09817477
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.0781788024,
+      "rotated_measurement_entropy_bits": 1.4881203733,
+      "rotation_angle": 1.17809725,
+      "theta": 0.09817477
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.0781788024,
+      "rotated_measurement_entropy_bits": 1.4045568208,
+      "rotation_angle": 1.24354709,
+      "theta": 0.09817477
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.0781788024,
+      "rotated_measurement_entropy_bits": 1.3137035753,
+      "rotation_angle": 1.30899694,
+      "theta": 0.09817477
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.0781788024,
+      "rotated_measurement_entropy_bits": 1.2229996475,
+      "rotation_angle": 1.37444679,
+      "theta": 0.09817477
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.0781788024,
+      "rotated_measurement_entropy_bits": 1.1429261349,
+      "rotation_angle": 1.43989663,
+      "theta": 0.09817477
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.0781788024,
+      "rotated_measurement_entropy_bits": 1.0933875987,
+      "rotation_angle": 1.50534648,
+      "theta": 0.09817477
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.0781788024,
+      "rotated_measurement_entropy_bits": 1.0781788024,
+      "rotation_angle": 1.57079633,
+      "theta": 0.09817477
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.112266359,
+      "rotated_measurement_entropy_bits": 0.112266359,
+      "rotation_angle": 0.0,
+      "theta": 0.12271846
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.112266359,
+      "rotated_measurement_entropy_bits": 0.1573393918,
+      "rotation_angle": 0.06544985,
+      "theta": 0.12271846
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.112266359,
+      "rotated_measurement_entropy_bits": 0.2570722356,
+      "rotation_angle": 0.13089969,
+      "theta": 0.12271846
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.112266359,
+      "rotated_measurement_entropy_bits": 0.3897801041,
+      "rotation_angle": 0.19634954,
+      "theta": 0.12271846
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.112266359,
+      "rotated_measurement_entropy_bits": 0.542466969,
+      "rotation_angle": 0.26179939,
+      "theta": 0.12271846
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.112266359,
+      "rotated_measurement_entropy_bits": 0.7051793183,
+      "rotation_angle": 0.32724923,
+      "theta": 0.12271846
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.112266359,
+      "rotated_measurement_entropy_bits": 0.8697503528,
+      "rotation_angle": 0.39269908,
+      "theta": 0.12271846
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.112266359,
+      "rotated_measurement_entropy_bits": 1.029327756,
+      "rotation_angle": 0.45814893,
+      "theta": 0.12271846
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.112266359,
+      "rotated_measurement_entropy_bits": 1.1781608487,
+      "rotation_angle": 0.52359878,
+      "theta": 0.12271846
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.112266359,
+      "rotated_measurement_entropy_bits": 1.3114965101,
+      "rotation_angle": 0.58904862,
+      "theta": 0.12271846
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.112266359,
+      "rotated_measurement_entropy_bits": 1.4255270358,
+      "rotation_angle": 0.65449847,
+      "theta": 0.12271846
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.112266359,
+      "rotated_measurement_entropy_bits": 1.5173644545,
+      "rotation_angle": 0.71994832,
+      "theta": 0.12271846
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.112266359,
+      "rotated_measurement_entropy_bits": 1.5850285384,
+      "rotation_angle": 0.78539816,
+      "theta": 0.12271846
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.112266359,
+      "rotated_measurement_entropy_bits": 1.6274418543,
+      "rotation_angle": 0.85084801,
+      "theta": 0.12271846
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.112266359,
+      "rotated_measurement_entropy_bits": 1.6444287879,
+      "rotation_angle": 0.91629786,
+      "theta": 0.12271846
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.112266359,
+      "rotated_measurement_entropy_bits": 1.6367181793,
+      "rotation_angle": 0.9817477,
+      "theta": 0.12271846
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.112266359,
+      "rotated_measurement_entropy_bits": 1.6059520395,
+      "rotation_angle": 1.04719755,
+      "theta": 0.12271846
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.112266359,
+      "rotated_measurement_entropy_bits": 1.554706886,
+      "rotation_angle": 1.1126474,
+      "theta": 0.12271846
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.112266359,
+      "rotated_measurement_entropy_bits": 1.4865417618,
+      "rotation_angle": 1.17809725,
+      "theta": 0.12271846
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.112266359,
+      "rotated_measurement_entropy_bits": 1.4061040793,
+      "rotation_angle": 1.24354709,
+      "theta": 0.12271846
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.112266359,
+      "rotated_measurement_entropy_bits": 1.3193725409,
+      "rotation_angle": 1.30899694,
+      "theta": 0.12271846
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.112266359,
+      "rotated_measurement_entropy_bits": 1.2343040658,
+      "rotation_angle": 1.37444679,
+      "theta": 0.12271846
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.112266359,
+      "rotated_measurement_entropy_bits": 1.1640292537,
+      "rotation_angle": 1.43989663,
+      "theta": 0.12271846
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.112266359,
+      "rotated_measurement_entropy_bits": 1.1249584061,
+      "rotation_angle": 1.50534648,
+      "theta": 0.12271846
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.112266359,
+      "rotated_measurement_entropy_bits": 1.112266359,
+      "rotation_angle": 1.57079633,
+      "theta": 0.12271846
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.1499460444,
+      "rotated_measurement_entropy_bits": 0.1499460444,
+      "rotation_angle": 0.0,
+      "theta": 0.14726216
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.1499460444,
+      "rotated_measurement_entropy_bits": 0.1932602349,
+      "rotation_angle": 0.06544985,
+      "theta": 0.14726216
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.1499460444,
+      "rotated_measurement_entropy_bits": 0.2893641478,
+      "rotation_angle": 0.13089969,
+      "theta": 0.14726216
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.1499460444,
+      "rotated_measurement_entropy_bits": 0.4175274553,
+      "rotation_angle": 0.19634954,
+      "theta": 0.14726216
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.1499460444,
+      "rotated_measurement_entropy_bits": 0.565257907,
+      "rotation_angle": 0.26179939,
+      "theta": 0.14726216
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.1499460444,
+      "rotated_measurement_entropy_bits": 0.7229320228,
+      "rotation_angle": 0.32724923,
+      "theta": 0.14726216
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.1499460444,
+      "rotated_measurement_entropy_bits": 0.8826124702,
+      "rotation_angle": 0.39269908,
+      "theta": 0.14726216
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.1499460444,
+      "rotated_measurement_entropy_bits": 1.0376113372,
+      "rotation_angle": 0.45814893,
+      "theta": 0.14726216
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.1499460444,
+      "rotated_measurement_entropy_bits": 1.182298258,
+      "rotation_angle": 0.52359878,
+      "theta": 0.14726216
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.1499460444,
+      "rotated_measurement_entropy_bits": 1.3120096002,
+      "rotation_angle": 0.58904862,
+      "theta": 0.14726216
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.1499460444,
+      "rotated_measurement_entropy_bits": 1.423004931,
+      "rotation_angle": 0.65449847,
+      "theta": 0.14726216
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.1499460444,
+      "rotated_measurement_entropy_bits": 1.5124470605,
+      "rotation_angle": 0.71994832,
+      "theta": 0.14726216
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.1499460444,
+      "rotated_measurement_entropy_bits": 1.5783940849,
+      "rotation_angle": 0.78539816,
+      "theta": 0.14726216
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.1499460444,
+      "rotated_measurement_entropy_bits": 1.6197976408,
+      "rotation_angle": 0.85084801,
+      "theta": 0.14726216
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.1499460444,
+      "rotated_measurement_entropy_bits": 1.6365050129,
+      "rotation_angle": 0.91629786,
+      "theta": 0.14726216
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.1499460444,
+      "rotated_measurement_entropy_bits": 1.6292654839,
+      "rotation_angle": 0.9817477,
+      "theta": 0.14726216
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.1499460444,
+      "rotated_measurement_entropy_bits": 1.5997444664,
+      "rotation_angle": 1.04719755,
+      "theta": 0.14726216
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.1499460444,
+      "rotated_measurement_entropy_bits": 1.5505539745,
+      "rotation_angle": 1.1126474,
+      "theta": 0.14726216
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.1499460444,
+      "rotated_measurement_entropy_bits": 1.485318167,
+      "rotation_angle": 1.17809725,
+      "theta": 0.14726216
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.1499460444,
+      "rotated_measurement_entropy_bits": 1.4088182252,
+      "rotation_angle": 1.24354709,
+      "theta": 0.14726216
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.1499460444,
+      "rotated_measurement_entropy_bits": 1.3273437929,
+      "rotation_angle": 1.30899694,
+      "theta": 0.14726216
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.1499460444,
+      "rotated_measurement_entropy_bits": 1.2498133666,
+      "rotation_angle": 1.37444679,
+      "theta": 0.14726216
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.1499460444,
+      "rotated_measurement_entropy_bits": 1.1929609017,
+      "rotation_angle": 1.43989663,
+      "theta": 0.14726216
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.1499460444,
+      "rotated_measurement_entropy_bits": 1.1606583565,
+      "rotation_angle": 1.50534648,
+      "theta": 0.14726216
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.1499460444,
+      "rotated_measurement_entropy_bits": 1.1499460444,
+      "rotation_angle": 1.57079633,
+      "theta": 0.14726216
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.1905052535,
+      "rotated_measurement_entropy_bits": 0.1905052535,
+      "rotation_angle": 0.0,
+      "theta": 0.17180585
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.1905052535,
+      "rotated_measurement_entropy_bits": 0.2320104344,
+      "rotation_angle": 0.06544985,
+      "theta": 0.17180585
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.1905052535,
+      "rotated_measurement_entropy_bits": 0.3243175794,
+      "rotation_angle": 0.13089969,
+      "theta": 0.17180585
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.1905052535,
+      "rotated_measurement_entropy_bits": 0.4476563657,
+      "rotation_angle": 0.19634954,
+      "theta": 0.17180585
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.1905052535,
+      "rotated_measurement_entropy_bits": 0.5900595489,
+      "rotation_angle": 0.26179939,
+      "theta": 0.17180585
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.1905052535,
+      "rotated_measurement_entropy_bits": 0.7422620643,
+      "rotation_angle": 0.32724923,
+      "theta": 0.17180585
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.1905052535,
+      "rotated_measurement_entropy_bits": 0.8965865761,
+      "rotation_angle": 0.39269908,
+      "theta": 0.17180585
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.1905052535,
+      "rotated_measurement_entropy_bits": 1.0465389927,
+      "rotation_angle": 0.45814893,
+      "theta": 0.17180585
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.1905052535,
+      "rotated_measurement_entropy_bits": 1.1866357645,
+      "rotation_angle": 0.52359878,
+      "theta": 0.17180585
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.1905052535,
+      "rotated_measurement_entropy_bits": 1.312325609,
+      "rotation_angle": 0.58904862,
+      "theta": 0.17180585
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.1905052535,
+      "rotated_measurement_entropy_bits": 1.4199545264,
+      "rotation_angle": 0.65449847,
+      "theta": 0.17180585
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.1905052535,
+      "rotated_measurement_entropy_bits": 1.5067518881,
+      "rotation_angle": 0.71994832,
+      "theta": 0.17180585
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.1905052535,
+      "rotated_measurement_entropy_bits": 1.5708270316,
+      "rotation_angle": 0.78539816,
+      "theta": 0.17180585
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.1905052535,
+      "rotated_measurement_entropy_bits": 1.6111713788,
+      "rotation_angle": 0.85084801,
+      "theta": 0.17180585
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.1905052535,
+      "rotated_measurement_entropy_bits": 1.6276644786,
+      "rotation_angle": 0.91629786,
+      "theta": 0.17180585
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.1905052535,
+      "rotated_measurement_entropy_bits": 1.6210852808,
+      "rotation_angle": 0.9817477,
+      "theta": 0.17180585
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.1905052535,
+      "rotated_measurement_entropy_bits": 1.5931336744,
+      "rotation_angle": 1.04719755,
+      "theta": 0.17180585
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.1905052535,
+      "rotated_measurement_entropy_bits": 1.5464739223,
+      "rotation_angle": 1.1126474,
+      "theta": 0.17180585
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.1905052535,
+      "rotated_measurement_entropy_bits": 1.4848264872,
+      "rotation_angle": 1.17809725,
+      "theta": 0.17180585
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.1905052535,
+      "rotated_measurement_entropy_bits": 1.4131770522,
+      "rotation_angle": 1.24354709,
+      "theta": 0.17180585
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.1905052535,
+      "rotated_measurement_entropy_bits": 1.3383414321,
+      "rotation_angle": 1.30899694,
+      "theta": 0.17180585
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.1905052535,
+      "rotated_measurement_entropy_bits": 1.2719341492,
+      "rotation_angle": 1.37444679,
+      "theta": 0.17180585
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.1905052535,
+      "rotated_measurement_entropy_bits": 1.2266882198,
+      "rotation_angle": 1.43989663,
+      "theta": 0.17180585
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.1905052535,
+      "rotated_measurement_entropy_bits": 1.1995866139,
+      "rotation_angle": 1.50534648,
+      "theta": 0.17180585
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.1905052535,
+      "rotated_measurement_entropy_bits": 1.1905052535,
+      "rotation_angle": 1.57079633,
+      "theta": 0.17180585
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.2333266287,
+      "rotated_measurement_entropy_bits": 0.2333266287,
+      "rotation_angle": 0.0,
+      "theta": 0.19634954
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.2333266287,
+      "rotated_measurement_entropy_bits": 0.2729886075,
+      "rotation_angle": 0.06544985,
+      "theta": 0.19634954
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.2333266287,
+      "rotated_measurement_entropy_bits": 0.3613735931,
+      "rotation_angle": 0.13089969,
+      "theta": 0.19634954
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.2333266287,
+      "rotated_measurement_entropy_bits": 0.4796703468,
+      "rotation_angle": 0.19634954,
+      "theta": 0.19634954
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.2333266287,
+      "rotated_measurement_entropy_bits": 0.6164510508,
+      "rotation_angle": 0.26179939,
+      "theta": 0.19634954
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.2333266287,
+      "rotated_measurement_entropy_bits": 0.7628309766,
+      "rotation_angle": 0.32724923,
+      "theta": 0.19634954
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.2333266287,
+      "rotated_measurement_entropy_bits": 0.9114179803,
+      "rotation_angle": 0.39269908,
+      "theta": 0.19634954
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.2333266287,
+      "rotated_measurement_entropy_bits": 1.05593734,
+      "rotation_angle": 0.45814893,
+      "theta": 0.19634954
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.2333266287,
+      "rotated_measurement_entropy_bits": 1.1910763739,
+      "rotation_angle": 0.52359878,
+      "theta": 0.19634954
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.2333266287,
+      "rotated_measurement_entropy_bits": 1.3124177221,
+      "rotation_angle": 0.58904862,
+      "theta": 0.19634954
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.2333266287,
+      "rotated_measurement_entropy_bits": 1.4164125605,
+      "rotation_angle": 0.65449847,
+      "theta": 0.19634954
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.2333266287,
+      "rotated_measurement_entropy_bits": 1.5003728036,
+      "rotation_angle": 0.71994832,
+      "theta": 0.19634954
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.2333266287,
+      "rotated_measurement_entropy_bits": 1.5624726153,
+      "rotation_angle": 0.78539816,
+      "theta": 0.19634954
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.2333266287,
+      "rotated_measurement_entropy_bits": 1.6017550086,
+      "rotation_angle": 0.85084801,
+      "theta": 0.19634954
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.2333266287,
+      "rotated_measurement_entropy_bits": 1.6181427689,
+      "rotation_angle": 0.91629786,
+      "theta": 0.19634954
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.2333266287,
+      "rotated_measurement_entropy_bits": 1.6124561942,
+      "rotation_angle": 0.9817477,
+      "theta": 0.19634954
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.2333266287,
+      "rotated_measurement_entropy_bits": 1.58644487,
+      "rotation_angle": 1.04719755,
+      "theta": 0.19634954
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.2333266287,
+      "rotated_measurement_entropy_bits": 1.5428501067,
+      "rotation_angle": 1.1126474,
+      "theta": 0.19634954
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.2333266287,
+      "rotated_measurement_entropy_bits": 1.4855386707,
+      "rotation_angle": 1.17809725,
+      "theta": 0.19634954
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.2333266287,
+      "rotated_measurement_entropy_bits": 1.4198299615,
+      "rotation_angle": 1.24354709,
+      "theta": 0.19634954
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.2333266287,
+      "rotated_measurement_entropy_bits": 1.3536260431,
+      "rotation_angle": 1.30899694,
+      "theta": 0.19634954
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.2333266287,
+      "rotated_measurement_entropy_bits": 1.3011691653,
+      "rotation_angle": 1.37444679,
+      "theta": 0.19634954
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.2333266287,
+      "rotated_measurement_entropy_bits": 1.263845263,
+      "rotation_angle": 1.43989663,
+      "theta": 0.19634954
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.2333266287,
+      "rotated_measurement_entropy_bits": 1.2410234358,
+      "rotation_angle": 1.50534648,
+      "theta": 0.19634954
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.2333266287,
+      "rotated_measurement_entropy_bits": 1.2333266287,
+      "rotation_angle": 1.57079633,
+      "theta": 0.19634954
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.2778626461,
+      "rotated_measurement_entropy_bits": 0.2778626461,
+      "rotation_angle": 0.0,
+      "theta": 0.22089323
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.2778626461,
+      "rotated_measurement_entropy_bits": 0.3156612348,
+      "rotation_angle": 0.06544985,
+      "theta": 0.22089323
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.2778626461,
+      "rotated_measurement_entropy_bits": 0.4000357384,
+      "rotation_angle": 0.13089969,
+      "theta": 0.22089323
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.2778626461,
+      "rotated_measurement_entropy_bits": 0.5131278497,
+      "rotation_angle": 0.19634954,
+      "theta": 0.22089323
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.2778626461,
+      "rotated_measurement_entropy_bits": 0.6440582706,
+      "rotation_angle": 0.26179939,
+      "theta": 0.22089323
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.2778626461,
+      "rotated_measurement_entropy_bits": 0.7843393429,
+      "rotation_angle": 0.32724923,
+      "theta": 0.22089323
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.2778626461,
+      "rotated_measurement_entropy_bits": 0.9268848117,
+      "rotation_angle": 0.39269908,
+      "theta": 0.22089323
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.2778626461,
+      "rotated_measurement_entropy_bits": 1.0656613806,
+      "rotation_angle": 0.45814893,
+      "theta": 0.22089323
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.2778626461,
+      "rotated_measurement_entropy_bits": 1.1955488692,
+      "rotation_angle": 0.52359878,
+      "theta": 0.22089323
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.2778626461,
+      "rotated_measurement_entropy_bits": 1.3122839685,
+      "rotation_angle": 0.58904862,
+      "theta": 0.22089323
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.2778626461,
+      "rotated_measurement_entropy_bits": 1.4124411378,
+      "rotation_angle": 0.65449847,
+      "theta": 0.22089323
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.2778626461,
+      "rotated_measurement_entropy_bits": 1.4934308454,
+      "rotation_angle": 0.71994832,
+      "theta": 0.22089323
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.2778626461,
+      "rotated_measurement_entropy_bits": 1.5535062768,
+      "rotation_angle": 0.78539816,
+      "theta": 0.22089323
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.2778626461,
+      "rotated_measurement_entropy_bits": 1.5917750668,
+      "rotation_angle": 0.85084801,
+      "theta": 0.22089323
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.2778626461,
+      "rotated_measurement_entropy_bits": 1.6082162806,
+      "rotation_angle": 0.91629786,
+      "theta": 0.22089323
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.2778626461,
+      "rotated_measurement_entropy_bits": 1.6037067927,
+      "rotation_angle": 0.9817477,
+      "theta": 0.22089323
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.2778626461,
+      "rotated_measurement_entropy_bits": 1.5800677499,
+      "rotation_angle": 1.04719755,
+      "theta": 0.22089323
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.2778626461,
+      "rotated_measurement_entropy_bits": 1.540156715,
+      "rotation_angle": 1.1126474,
+      "theta": 0.22089323
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.2778626461,
+      "rotated_measurement_entropy_bits": 1.4880759107,
+      "rotation_angle": 1.17809725,
+      "theta": 0.22089323
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.2778626461,
+      "rotated_measurement_entropy_bits": 1.4297710969,
+      "rotation_angle": 1.24354709,
+      "theta": 0.22089323
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.2778626461,
+      "rotated_measurement_entropy_bits": 1.3762611181,
+      "rotation_angle": 1.30899694,
+      "theta": 0.22089323
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.2778626461,
+      "rotated_measurement_entropy_bits": 1.3345171894,
+      "rotation_angle": 1.37444679,
+      "theta": 0.22089323
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.2778626461,
+      "rotated_measurement_entropy_bits": 1.3035331511,
+      "rotation_angle": 1.43989663,
+      "theta": 0.22089323
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.2778626461,
+      "rotated_measurement_entropy_bits": 1.2843590184,
+      "rotation_angle": 1.50534648,
+      "theta": 0.22089323
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.2778626461,
+      "rotated_measurement_entropy_bits": 1.2778626461,
+      "rotation_angle": 1.57079633,
+      "theta": 0.22089323
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.3236197063,
+      "rotated_measurement_entropy_bits": 0.3236197063,
+      "rotation_angle": 0.0,
+      "theta": 0.24543693
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.3236197063,
+      "rotated_measurement_entropy_bits": 0.3595474394,
+      "rotation_angle": 0.06544985,
+      "theta": 0.24543693
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.3236197063,
+      "rotated_measurement_entropy_bits": 0.4398567176,
+      "rotation_angle": 0.13089969,
+      "theta": 0.24543693
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.3236197063,
+      "rotated_measurement_entropy_bits": 0.5476315544,
+      "rotation_angle": 0.19634954,
+      "theta": 0.24543693
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.3236197063,
+      "rotated_measurement_entropy_bits": 0.6725458839,
+      "rotation_angle": 0.26179939,
+      "theta": 0.24543693
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.3236197063,
+      "rotated_measurement_entropy_bits": 0.8065215392,
+      "rotation_angle": 0.32724923,
+      "theta": 0.24543693
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.3236197063,
+      "rotated_measurement_entropy_bits": 0.9427949793,
+      "rotation_angle": 0.39269908,
+      "theta": 0.24543693
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.3236197063,
+      "rotated_measurement_entropy_bits": 1.0755932426,
+      "rotation_angle": 0.45814893,
+      "theta": 0.24543693
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.3236197063,
+      "rotated_measurement_entropy_bits": 1.2000079783,
+      "rotation_angle": 0.52359878,
+      "theta": 0.24543693
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.3236197063,
+      "rotated_measurement_entropy_bits": 1.3119485877,
+      "rotation_angle": 0.58904862,
+      "theta": 0.24543693
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.3236197063,
+      "rotated_measurement_entropy_bits": 1.4081302242,
+      "rotation_angle": 0.65449847,
+      "theta": 0.24543693
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.3236197063,
+      "rotated_measurement_entropy_bits": 1.4860779362,
+      "rotation_angle": 0.71994832,
+      "theta": 0.24543693
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.3236197063,
+      "rotated_measurement_entropy_bits": 1.5441388707,
+      "rotation_angle": 0.78539816,
+      "theta": 0.24543693
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.3236197063,
+      "rotated_measurement_entropy_bits": 1.5814999586,
+      "rotation_angle": 0.85084801,
+      "theta": 0.24543693
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.3236197063,
+      "rotated_measurement_entropy_bits": 1.5982126281,
+      "rotation_angle": 0.91629786,
+      "theta": 0.24543693
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.3236197063,
+      "rotated_measurement_entropy_bits": 1.5952312661,
+      "rotation_angle": 0.9817477,
+      "theta": 0.24543693
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.3236197063,
+      "rotated_measurement_entropy_bits": 1.5744823012,
+      "rotation_angle": 1.04719755,
+      "theta": 0.24543693
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.3236197063,
+      "rotated_measurement_entropy_bits": 1.5390082518,
+      "rotation_angle": 1.1126474,
+      "theta": 0.24543693
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.3236197063,
+      "rotated_measurement_entropy_bits": 1.4933377901,
+      "rotation_angle": 1.17809725,
+      "theta": 0.24543693
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.3236197063,
+      "rotated_measurement_entropy_bits": 1.4453231629,
+      "rotation_angle": 1.24354709,
+      "theta": 0.24543693
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.3236197063,
+      "rotated_measurement_entropy_bits": 1.4045396404,
+      "rotation_angle": 1.30899694,
+      "theta": 0.24543693
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.3236197063,
+      "rotated_measurement_entropy_bits": 1.3706763098,
+      "rotation_angle": 1.37444679,
+      "theta": 0.24543693
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.3236197063,
+      "rotated_measurement_entropy_bits": 1.3450542935,
+      "rotation_angle": 1.43989663,
+      "theta": 0.24543693
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.3236197063,
+      "rotated_measurement_entropy_bits": 1.3290590626,
+      "rotation_angle": 1.50534648,
+      "theta": 0.24543693
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.3236197063,
+      "rotated_measurement_entropy_bits": 1.3236197063,
+      "rotation_angle": 1.57079633,
+      "theta": 0.24543693
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.370147621,
+      "rotated_measurement_entropy_bits": 0.370147621,
+      "rotation_angle": 0.0,
+      "theta": 0.26998062
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.370147621,
+      "rotated_measurement_entropy_bits": 0.4042089014,
+      "rotation_angle": 0.06544985,
+      "theta": 0.26998062
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.370147621,
+      "rotated_measurement_entropy_bits": 0.4804294907,
+      "rotation_angle": 0.13089969,
+      "theta": 0.26998062
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.370147621,
+      "rotated_measurement_entropy_bits": 0.5828211776,
+      "rotation_angle": 0.19634954,
+      "theta": 0.26998062
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.370147621,
+      "rotated_measurement_entropy_bits": 0.7016121102,
+      "rotation_angle": 0.26179939,
+      "theta": 0.26998062
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.370147621,
+      "rotated_measurement_entropy_bits": 0.8291423432,
+      "rotation_angle": 0.32724923,
+      "theta": 0.26998062
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.370147621,
+      "rotated_measurement_entropy_bits": 0.9589844924,
+      "rotation_angle": 0.39269908,
+      "theta": 0.26998062
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.370147621,
+      "rotated_measurement_entropy_bits": 1.0856420077,
+      "rotation_angle": 0.45814893,
+      "theta": 0.26998062
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.370147621,
+      "rotated_measurement_entropy_bits": 1.2044355577,
+      "rotation_angle": 0.52359878,
+      "theta": 0.26998062
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.370147621,
+      "rotated_measurement_entropy_bits": 1.3114645272,
+      "rotation_angle": 0.58904862,
+      "theta": 0.26998062
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.370147621,
+      "rotated_measurement_entropy_bits": 1.4036015577,
+      "rotation_angle": 0.65449847,
+      "theta": 0.26998062
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.370147621,
+      "rotated_measurement_entropy_bits": 1.4785025042,
+      "rotation_angle": 0.71994832,
+      "theta": 0.26998062
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.370147621,
+      "rotated_measurement_entropy_bits": 1.5346245878,
+      "rotation_angle": 0.78539816,
+      "theta": 0.26998062
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.370147621,
+      "rotated_measurement_entropy_bits": 1.5712512839,
+      "rotation_angle": 0.85084801,
+      "theta": 0.26998062
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.370147621,
+      "rotated_measurement_entropy_bits": 1.5885275159,
+      "rotation_angle": 0.91629786,
+      "theta": 0.26998062
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.370147621,
+      "rotated_measurement_entropy_bits": 1.5875164792,
+      "rotation_angle": 0.9817477,
+      "theta": 0.26998062
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.370147621,
+      "rotated_measurement_entropy_bits": 1.5703080484,
+      "rotation_angle": 1.04719755,
+      "theta": 0.26998062
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.370147621,
+      "rotated_measurement_entropy_bits": 1.5402736427,
+      "rotation_angle": 1.1126474,
+      "theta": 0.26998062
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.370147621,
+      "rotated_measurement_entropy_bits": 1.5030302762,
+      "rotation_angle": 1.17809725,
+      "theta": 0.26998062
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.370147621,
+      "rotated_measurement_entropy_bits": 1.4679820728,
+      "rotation_angle": 1.24354709,
+      "theta": 0.26998062
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.370147621,
+      "rotated_measurement_entropy_bits": 1.4360896585,
+      "rotation_angle": 1.30899694,
+      "theta": 0.26998062
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.370147621,
+      "rotated_measurement_entropy_bits": 1.4087845015,
+      "rotation_angle": 1.37444679,
+      "theta": 0.26998062
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.370147621,
+      "rotated_measurement_entropy_bits": 1.3878275121,
+      "rotation_angle": 1.43989663,
+      "theta": 0.26998062
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.370147621,
+      "rotated_measurement_entropy_bits": 1.374645407,
+      "rotation_angle": 1.50534648,
+      "theta": 0.26998062
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.370147621,
+      "rotated_measurement_entropy_bits": 1.370147621,
+      "rotation_angle": 1.57079633,
+      "theta": 0.26998062
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.4170323856,
+      "rotated_measurement_entropy_bits": 0.4170323856,
+      "rotation_angle": 0.0,
+      "theta": 0.29452431
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.4170323856,
+      "rotated_measurement_entropy_bits": 0.4492429214,
+      "rotation_angle": 0.06544985,
+      "theta": 0.29452431
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.4170323856,
+      "rotated_measurement_entropy_bits": 0.5213811662,
+      "rotation_angle": 0.13089969,
+      "theta": 0.29452431
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.4170323856,
+      "rotated_measurement_entropy_bits": 0.6183685857,
+      "rotation_angle": 0.19634954,
+      "theta": 0.29452431
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.4170323856,
+      "rotated_measurement_entropy_bits": 0.7309852644,
+      "rotation_angle": 0.26179939,
+      "theta": 0.29452431
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.4170323856,
+      "rotated_measurement_entropy_bits": 0.8519949934,
+      "rotation_angle": 0.32724923,
+      "theta": 0.29452431
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.4170323856,
+      "rotated_measurement_entropy_bits": 0.9753170097,
+      "rotation_angle": 0.39269908,
+      "theta": 0.29452431
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.4170323856,
+      "rotated_measurement_entropy_bits": 1.0957447246,
+      "rotation_angle": 0.45814893,
+      "theta": 0.29452431
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.4170323856,
+      "rotated_measurement_entropy_bits": 1.2088431026,
+      "rotation_angle": 0.52359878,
+      "theta": 0.29452431
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.4170323856,
+      "rotated_measurement_entropy_bits": 1.3109176019,
+      "rotation_angle": 0.58904862,
+      "theta": 0.29452431
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.4170323856,
+      "rotated_measurement_entropy_bits": 1.3990148076,
+      "rotation_angle": 0.65449847,
+      "theta": 0.29452431
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.4170323856,
+      "rotated_measurement_entropy_bits": 1.4709383024,
+      "rotation_angle": 0.71994832,
+      "theta": 0.29452431
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.4170323856,
+      "rotated_measurement_entropy_bits": 1.5252736427,
+      "rotation_angle": 0.78539816,
+      "theta": 0.29452431
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.4170323856,
+      "rotated_measurement_entropy_bits": 1.5614226918,
+      "rotation_angle": 0.85084801,
+      "theta": 0.29452431
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.4170323856,
+      "rotated_measurement_entropy_bits": 1.579654575,
+      "rotation_angle": 0.91629786,
+      "theta": 0.29452431
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.4170323856,
+      "rotated_measurement_entropy_bits": 1.5811946451,
+      "rotation_angle": 0.9817477,
+      "theta": 0.29452431
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.4170323856,
+      "rotated_measurement_entropy_bits": 1.5684179859,
+      "rotation_angle": 1.04719755,
+      "theta": 0.29452431
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.4170323856,
+      "rotated_measurement_entropy_bits": 1.5454870714,
+      "rotation_angle": 1.1126474,
+      "theta": 0.29452431
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.4170323856,
+      "rotated_measurement_entropy_bits": 1.5201866794,
+      "rotation_angle": 1.17809725,
+      "theta": 0.29452431
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.4170323856,
+      "rotated_measurement_entropy_bits": 1.4944692419,
+      "rotation_angle": 1.24354709,
+      "theta": 0.29452431
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.4170323856,
+      "rotated_measurement_entropy_bits": 1.4698047406,
+      "rotation_angle": 1.30899694,
+      "theta": 0.29452431
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.4170323856,
+      "rotated_measurement_entropy_bits": 1.4481760436,
+      "rotation_angle": 1.37444679,
+      "theta": 0.29452431
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.4170323856,
+      "rotated_measurement_entropy_bits": 1.4313493135,
+      "rotation_angle": 1.43989663,
+      "theta": 0.29452431
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.4170323856,
+      "rotated_measurement_entropy_bits": 1.4206840869,
+      "rotation_angle": 1.50534648,
+      "theta": 0.29452431
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.4170323856,
+      "rotated_measurement_entropy_bits": 1.4170323856,
+      "rotation_angle": 1.57079633,
+      "theta": 0.29452431
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.4638910627,
+      "rotated_measurement_entropy_bits": 0.4638910627,
+      "rotation_angle": 0.0,
+      "theta": 0.319068
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.4638910627,
+      "rotated_measurement_entropy_bits": 0.4942775288,
+      "rotation_angle": 0.06544985,
+      "theta": 0.319068
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.4638910627,
+      "rotated_measurement_entropy_bits": 0.5623687569,
+      "rotation_angle": 0.13089969,
+      "theta": 0.319068
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.4638910627,
+      "rotated_measurement_entropy_bits": 0.6539745412,
+      "rotation_angle": 0.19634954,
+      "theta": 0.319068
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.4638910627,
+      "rotated_measurement_entropy_bits": 0.7604217369,
+      "rotation_angle": 0.26179939,
+      "theta": 0.319068
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.4638910627,
+      "rotated_measurement_entropy_bits": 0.8749005626,
+      "rotation_angle": 0.32724923,
+      "theta": 0.319068
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.4638910627,
+      "rotated_measurement_entropy_bits": 0.9916847319,
+      "rotation_angle": 0.39269908,
+      "theta": 0.319068
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.4638910627,
+      "rotated_measurement_entropy_bits": 1.1058689733,
+      "rotation_angle": 0.45814893,
+      "theta": 0.319068
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.4638910627,
+      "rotated_measurement_entropy_bits": 1.2132762399,
+      "rotation_angle": 0.52359878,
+      "theta": 0.319068
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.4638910627,
+      "rotated_measurement_entropy_bits": 1.3104333723,
+      "rotation_angle": 0.58904862,
+      "theta": 0.319068
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.4638910627,
+      "rotated_measurement_entropy_bits": 1.3945776353,
+      "rotation_angle": 0.65449847,
+      "theta": 0.319068
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.4638910627,
+      "rotated_measurement_entropy_bits": 1.4636790722,
+      "rotation_angle": 0.71994832,
+      "theta": 0.319068
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.4638910627,
+      "rotated_measurement_entropy_bits": 1.5164741966,
+      "rotation_angle": 0.78539816,
+      "theta": 0.319068
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.4638910627,
+      "rotated_measurement_entropy_bits": 1.5525145178,
+      "rotation_angle": 0.85084801,
+      "theta": 0.319068
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.4638910627,
+      "rotated_measurement_entropy_bits": 1.5722457587,
+      "rotation_angle": 0.91629786,
+      "theta": 0.319068
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.4638910627,
+      "rotated_measurement_entropy_bits": 1.5771697701,
+      "rotation_angle": 0.9817477,
+      "theta": 0.319068
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.4638910627,
+      "rotated_measurement_entropy_bits": 1.5703538806,
+      "rotation_angle": 1.04719755,
+      "theta": 0.319068
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.4638910627,
+      "rotated_measurement_entropy_bits": 1.5579007909,
+      "rotation_angle": 1.1126474,
+      "theta": 0.319068
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.4638910627,
+      "rotated_measurement_entropy_bits": 1.5417055219,
+      "rotation_angle": 1.17809725,
+      "theta": 0.319068
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.4638910627,
+      "rotated_measurement_entropy_bits": 1.5233579365,
+      "rotation_angle": 1.24354709,
+      "theta": 0.319068
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.4638910627,
+      "rotated_measurement_entropy_bits": 1.5049105357,
+      "rotation_angle": 1.30899694,
+      "theta": 0.319068
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.4638910627,
+      "rotated_measurement_entropy_bits": 1.4883000378,
+      "rotation_angle": 1.37444679,
+      "theta": 0.319068
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.4638910627,
+      "rotated_measurement_entropy_bits": 1.4751729648,
+      "rotation_angle": 1.43989663,
+      "theta": 0.319068
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.4638910627,
+      "rotated_measurement_entropy_bits": 1.4667775054,
+      "rotation_angle": 1.50534648,
+      "theta": 0.319068
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.4638910627,
+      "rotated_measurement_entropy_bits": 1.4638910627,
+      "rotation_angle": 1.57079633,
+      "theta": 0.319068
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.5103680801,
+      "rotated_measurement_entropy_bits": 0.5103680801,
+      "rotation_angle": 0.0,
+      "theta": 0.3436117
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.5103680801,
+      "rotated_measurement_entropy_bits": 0.5389679808,
+      "rotation_angle": 0.06544985,
+      "theta": 0.3436117
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.5103680801,
+      "rotated_measurement_entropy_bits": 0.6030762742,
+      "rotation_angle": 0.13089969,
+      "theta": 0.3436117
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.5103680801,
+      "rotated_measurement_entropy_bits": 0.6893667464,
+      "rotation_angle": 0.19634954,
+      "theta": 0.3436117
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.5103680801,
+      "rotated_measurement_entropy_bits": 0.7897052948,
+      "rotation_angle": 0.26179939,
+      "theta": 0.3436117
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.5103680801,
+      "rotated_measurement_entropy_bits": 0.8977088021,
+      "rotation_angle": 0.32724923,
+      "theta": 0.3436117
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.5103680801,
+      "rotated_measurement_entropy_bits": 1.0080111004,
+      "rotation_angle": 0.39269908,
+      "theta": 0.3436117
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.5103680801,
+      "rotated_measurement_entropy_bits": 1.1160178371,
+      "rotation_angle": 0.45814893,
+      "theta": 0.3436117
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.5103680801,
+      "rotated_measurement_entropy_bits": 1.2178226112,
+      "rotation_angle": 0.52359878,
+      "theta": 0.3436117
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.5103680801,
+      "rotated_measurement_entropy_bits": 1.3101889822,
+      "rotation_angle": 0.58904862,
+      "theta": 0.3436117
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.5103680801,
+      "rotated_measurement_entropy_bits": 1.3905632936,
+      "rotation_angle": 0.65449847,
+      "theta": 0.3436117
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.5103680801,
+      "rotated_measurement_entropy_bits": 1.4571052439,
+      "rotation_angle": 0.71994832,
+      "theta": 0.3436117
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.5103680801,
+      "rotated_measurement_entropy_bits": 1.5087349703,
+      "rotation_angle": 0.78539816,
+      "theta": 0.3436117
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.5103680801,
+      "rotated_measurement_entropy_bits": 1.5452084919,
+      "rotation_angle": 0.85084801,
+      "theta": 0.3436117
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.5103680801,
+      "rotated_measurement_entropy_bits": 1.5672678968,
+      "rotation_angle": 0.91629786,
+      "theta": 0.3436117
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.5103680801,
+      "rotated_measurement_entropy_bits": 1.5771544632,
+      "rotation_angle": 0.9817477,
+      "theta": 0.3436117
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.5103680801,
+      "rotated_measurement_entropy_bits": 1.5793204107,
+      "rotation_angle": 1.04719755,
+      "theta": 0.3436117
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.5103680801,
+      "rotated_measurement_entropy_bits": 1.5749777078,
+      "rotation_angle": 1.1126474,
+      "theta": 0.3436117
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.5103680801,
+      "rotated_measurement_entropy_bits": 1.5658009887,
+      "rotation_angle": 1.17809725,
+      "theta": 0.3436117
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.5103680801,
+      "rotated_measurement_entropy_bits": 1.5537607737,
+      "rotation_angle": 1.24354709,
+      "theta": 0.3436117
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.5103680801,
+      "rotated_measurement_entropy_bits": 1.5407990815,
+      "rotation_angle": 1.30899694,
+      "theta": 0.3436117
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.5103680801,
+      "rotated_measurement_entropy_bits": 1.5286826529,
+      "rotation_angle": 1.37444679,
+      "theta": 0.3436117
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.5103680801,
+      "rotated_measurement_entropy_bits": 1.518895977,
+      "rotation_angle": 1.43989663,
+      "theta": 0.3436117
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.5103680801,
+      "rotated_measurement_entropy_bits": 1.5125590769,
+      "rotation_angle": 1.50534648,
+      "theta": 0.3436117
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.5103680801,
+      "rotated_measurement_entropy_bits": 1.5103680801,
+      "rotation_angle": 1.57079633,
+      "theta": 0.3436117
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.5561325087,
+      "rotated_measurement_entropy_bits": 0.5561325087,
+      "rotation_angle": 0.0,
+      "theta": 0.36815539
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.5561325087,
+      "rotated_measurement_entropy_bits": 0.5829942622,
+      "rotation_angle": 0.06544985,
+      "theta": 0.36815539
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.5561325087,
+      "rotated_measurement_entropy_bits": 0.6432128969,
+      "rotation_angle": 0.13089969,
+      "theta": 0.36815539
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.5561325087,
+      "rotated_measurement_entropy_bits": 0.7242991262,
+      "rotation_angle": 0.19634954,
+      "theta": 0.36815539
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.5561325087,
+      "rotated_measurement_entropy_bits": 0.8186479358,
+      "rotation_angle": 0.26179939,
+      "theta": 0.36815539
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.5561325087,
+      "rotated_measurement_entropy_bits": 0.9203010804,
+      "rotation_angle": 0.32724923,
+      "theta": 0.36815539
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.5561325087,
+      "rotated_measurement_entropy_bits": 1.0242564773,
+      "rotation_angle": 0.39269908,
+      "theta": 0.36815539
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.5561325087,
+      "rotated_measurement_entropy_bits": 1.1262392643,
+      "rotation_angle": 0.45814893,
+      "theta": 0.36815539
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.5561325087,
+      "rotated_measurement_entropy_bits": 1.2226263946,
+      "rotation_angle": 0.52359878,
+      "theta": 0.36815539
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.5561325087,
+      "rotated_measurement_entropy_bits": 1.3104353573,
+      "rotation_angle": 0.58904862,
+      "theta": 0.36815539
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.5561325087,
+      "rotated_measurement_entropy_bits": 1.3873451521,
+      "rotation_angle": 0.65449847,
+      "theta": 0.36815539
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.5561325087,
+      "rotated_measurement_entropy_bits": 1.4517403783,
+      "rotation_angle": 0.71994832,
+      "theta": 0.36815539
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.5561325087,
+      "rotated_measurement_entropy_bits": 1.5027869371,
+      "rotation_angle": 0.78539816,
+      "theta": 0.36815539
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.5561325087,
+      "rotated_measurement_entropy_bits": 1.540590795,
+      "rotation_angle": 0.85084801,
+      "theta": 0.36815539
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.5561325087,
+      "rotated_measurement_entropy_bits": 1.5668838028,
+      "rotation_angle": 0.91629786,
+      "theta": 0.36815539
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.5561325087,
+      "rotated_measurement_entropy_bits": 1.5839993965,
+      "rotation_angle": 0.9817477,
+      "theta": 0.36815539
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.5561325087,
+      "rotated_measurement_entropy_bits": 1.5927585411,
+      "rotation_angle": 1.04719755,
+      "theta": 0.36815539
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.5561325087,
+      "rotated_measurement_entropy_bits": 1.5946770388,
+      "rotation_angle": 1.1126474,
+      "theta": 0.36815539
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.5561325087,
+      "rotated_measurement_entropy_bits": 1.5914974779,
+      "rotation_angle": 1.17809725,
+      "theta": 0.36815539
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.5561325087,
+      "rotated_measurement_entropy_bits": 1.5850165093,
+      "rotation_angle": 1.24354709,
+      "theta": 0.36815539
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.5561325087,
+      "rotated_measurement_entropy_bits": 1.5769649594,
+      "rotation_angle": 1.30899694,
+      "theta": 0.36815539
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.5561325087,
+      "rotated_measurement_entropy_bits": 1.5689065895,
+      "rotation_angle": 1.37444679,
+      "theta": 0.36815539
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.5561325087,
+      "rotated_measurement_entropy_bits": 1.5621520911,
+      "rotation_angle": 1.43989663,
+      "theta": 0.36815539
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.5561325087,
+      "rotated_measurement_entropy_bits": 1.5576894458,
+      "rotation_angle": 1.50534648,
+      "theta": 0.36815539
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.5561325087,
+      "rotated_measurement_entropy_bits": 1.5561325087,
+      "rotation_angle": 1.57079633,
+      "theta": 0.36815539
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.6008760367,
+      "rotated_measurement_entropy_bits": 0.6008760367,
+      "rotation_angle": 0.0,
+      "theta": 0.39269908
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.6008760367,
+      "rotated_measurement_entropy_bits": 0.6260593668,
+      "rotation_angle": 0.06544985,
+      "theta": 0.39269908
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.6008760367,
+      "rotated_measurement_entropy_bits": 0.6825121947,
+      "rotation_angle": 0.13089969,
+      "theta": 0.39269908
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.6008760367,
+      "rotated_measurement_entropy_bits": 0.7585526834,
+      "rotation_angle": 0.19634954,
+      "theta": 0.39269908
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.6008760367,
+      "rotated_measurement_entropy_bits": 0.8470931799,
+      "rotation_angle": 0.26179939,
+      "theta": 0.39269908
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.6008760367,
+      "rotated_measurement_entropy_bits": 0.9425971456,
+      "rotation_angle": 0.32724923,
+      "theta": 0.39269908
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.6008760367,
+      "rotated_measurement_entropy_bits": 1.0404298468,
+      "rotation_angle": 0.39269908,
+      "theta": 0.39269908
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.6008760367,
+      "rotated_measurement_entropy_bits": 1.136645004,
+      "rotation_angle": 0.45814893,
+      "theta": 0.39269908
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.6008760367,
+      "rotated_measurement_entropy_bits": 1.2279184087,
+      "rotation_angle": 0.52359878,
+      "theta": 0.39269908
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.6008760367,
+      "rotated_measurement_entropy_bits": 1.3115459055,
+      "rotation_angle": 0.58904862,
+      "theta": 0.39269908
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.6008760367,
+      "rotated_measurement_entropy_bits": 1.3854799878,
+      "rotation_angle": 0.65449847,
+      "theta": 0.39269908
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.6008760367,
+      "rotated_measurement_entropy_bits": 1.4484112913,
+      "rotation_angle": 0.71994832,
+      "theta": 0.39269908
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.6008760367,
+      "rotated_measurement_entropy_bits": 1.5,
+      "rotation_angle": 0.78539816,
+      "theta": 0.39269908
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.6008760367,
+      "rotated_measurement_entropy_bits": 1.5413099386,
+      "rotation_angle": 0.85084801,
+      "theta": 0.39269908
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.6008760367,
+      "rotated_measurement_entropy_bits": 1.5726373138,
+      "rotation_angle": 0.91629786,
+      "theta": 0.39269908
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.6008760367,
+      "rotated_measurement_entropy_bits": 1.594719149,
+      "rotation_angle": 0.9817477,
+      "theta": 0.39269908
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.6008760367,
+      "rotated_measurement_entropy_bits": 1.6087056767,
+      "rotation_angle": 1.04719755,
+      "theta": 0.39269908
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.6008760367,
+      "rotated_measurement_entropy_bits": 1.6159899231,
+      "rotation_angle": 1.1126474,
+      "theta": 0.39269908
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.6008760367,
+      "rotated_measurement_entropy_bits": 1.6180986806,
+      "rotation_angle": 1.17809725,
+      "theta": 0.39269908
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.6008760367,
+      "rotated_measurement_entropy_bits": 1.6165927956,
+      "rotation_angle": 1.24354709,
+      "theta": 0.39269908
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.6008760367,
+      "rotated_measurement_entropy_bits": 1.6129738062,
+      "rotation_angle": 1.30899694,
+      "theta": 0.39269908
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.6008760367,
+      "rotated_measurement_entropy_bits": 1.608598762,
+      "rotation_angle": 1.37444679,
+      "theta": 0.39269908
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.6008760367,
+      "rotated_measurement_entropy_bits": 1.6046058959,
+      "rotation_angle": 1.43989663,
+      "theta": 0.39269908
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.6008760367,
+      "rotated_measurement_entropy_bits": 1.6018537578,
+      "rotation_angle": 1.50534648,
+      "theta": 0.39269908
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.6008760367,
+      "rotated_measurement_entropy_bits": 1.6008760367,
+      "rotation_angle": 1.57079633,
+      "theta": 0.39269908
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.6443114512,
+      "rotated_measurement_entropy_bits": 0.6443114512,
+      "rotation_angle": 0.0,
+      "theta": 0.41724277
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.6443114512,
+      "rotated_measurement_entropy_bits": 0.667888318,
+      "rotation_angle": 0.06544985,
+      "theta": 0.41724277
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.6443114512,
+      "rotated_measurement_entropy_bits": 0.7207328329,
+      "rotation_angle": 0.13089969,
+      "theta": 0.41724277
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.6443114512,
+      "rotated_measurement_entropy_bits": 0.7919392315,
+      "rotation_angle": 0.19634954,
+      "theta": 0.41724277
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.6443114512,
+      "rotated_measurement_entropy_bits": 0.8749245858,
+      "rotation_angle": 0.26179939,
+      "theta": 0.41724277
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.6443114512,
+      "rotated_measurement_entropy_bits": 0.964570972,
+      "rotation_angle": 0.32724923,
+      "theta": 0.41724277
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.6443114512,
+      "rotated_measurement_entropy_bits": 1.0566160914,
+      "rotation_angle": 0.39269908,
+      "theta": 0.41724277
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.6443114512,
+      "rotated_measurement_entropy_bits": 1.1474566412,
+      "rotation_angle": 0.45814893,
+      "theta": 0.41724277
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.6443114512,
+      "rotated_measurement_entropy_bits": 1.2340957599,
+      "rotation_angle": 0.52359878,
+      "theta": 0.41724277
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.6443114512,
+      "rotated_measurement_entropy_bits": 1.3141660184,
+      "rotation_angle": 0.58904862,
+      "theta": 0.41724277
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.6443114512,
+      "rotated_measurement_entropy_bits": 1.3860656036,
+      "rotation_angle": 0.65449847,
+      "theta": 0.41724277
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.6443114512,
+      "rotated_measurement_entropy_bits": 1.4491572678,
+      "rotation_angle": 0.71994832,
+      "theta": 0.41724277
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.6443114512,
+      "rotated_measurement_entropy_bits": 1.5027869371,
+      "rotation_angle": 0.78539816,
+      "theta": 0.41724277
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.6443114512,
+      "rotated_measurement_entropy_bits": 1.5468142897,
+      "rotation_angle": 0.85084801,
+      "theta": 0.41724277
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.6443114512,
+      "rotated_measurement_entropy_bits": 1.5815556321,
+      "rotation_angle": 0.91629786,
+      "theta": 0.41724277
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.6443114512,
+      "rotated_measurement_entropy_bits": 1.6076916788,
+      "rotation_angle": 0.9817477,
+      "theta": 0.41724277
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.6443114512,
+      "rotated_measurement_entropy_bits": 1.6261883072,
+      "rotation_angle": 1.04719755,
+      "theta": 0.41724277
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.6443114512,
+      "rotated_measurement_entropy_bits": 1.6382145252,
+      "rotation_angle": 1.1126474,
+      "theta": 0.41724277
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.6443114512,
+      "rotated_measurement_entropy_bits": 1.6450582492,
+      "rotation_angle": 1.17809725,
+      "theta": 0.41724277
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.6443114512,
+      "rotated_measurement_entropy_bits": 1.6480424357,
+      "rotation_angle": 1.24354709,
+      "theta": 0.41724277
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.6443114512,
+      "rotated_measurement_entropy_bits": 1.648444554,
+      "rotation_angle": 1.30899694,
+      "theta": 0.41724277
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.6443114512,
+      "rotated_measurement_entropy_bits": 1.6474224021,
+      "rotation_angle": 1.37444679,
+      "theta": 0.41724277
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.6443114512,
+      "rotated_measurement_entropy_bits": 1.645949087,
+      "rotation_angle": 1.43989663,
+      "theta": 0.41724277
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.6443114512,
+      "rotated_measurement_entropy_bits": 1.6447596586,
+      "rotation_angle": 1.50534648,
+      "theta": 0.41724277
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.6443114512,
+      "rotated_measurement_entropy_bits": 1.6443114512,
+      "rotation_angle": 1.57079633,
+      "theta": 0.41724277
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.6861714941,
+      "rotated_measurement_entropy_bits": 0.6861714941,
+      "rotation_angle": 0.0,
+      "theta": 0.44178647
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.6861714941,
+      "rotated_measurement_entropy_bits": 0.7082282943,
+      "rotation_angle": 0.06544985,
+      "theta": 0.44178647
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.6861714941,
+      "rotated_measurement_entropy_bits": 0.7576627576,
+      "rotation_angle": 0.13089969,
+      "theta": 0.44178647
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.6861714941,
+      "rotated_measurement_entropy_bits": 0.8243132846,
+      "rotation_angle": 0.19634954,
+      "theta": 0.44178647
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.6861714941,
+      "rotated_measurement_entropy_bits": 0.9020908969,
+      "rotation_angle": 0.26179939,
+      "theta": 0.44178647
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.6861714941,
+      "rotated_measurement_entropy_bits": 0.9862989192,
+      "rotation_angle": 0.32724923,
+      "theta": 0.44178647
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.6861714941,
+      "rotated_measurement_entropy_bits": 1.0730673528,
+      "rotation_angle": 0.39269908,
+      "theta": 0.44178647
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.6861714941,
+      "rotated_measurement_entropy_bits": 1.1591968119,
+      "rotation_angle": 0.45814893,
+      "theta": 0.44178647
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.6861714941,
+      "rotated_measurement_entropy_bits": 1.2421796057,
+      "rotation_angle": 0.52359878,
+      "theta": 0.44178647
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.6861714941,
+      "rotated_measurement_entropy_bits": 1.3199441074,
+      "rotation_angle": 0.58904862,
+      "theta": 0.44178647
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.6861714941,
+      "rotated_measurement_entropy_bits": 1.3909260106,
+      "rotation_angle": 0.65449847,
+      "theta": 0.44178647
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.6861714941,
+      "rotated_measurement_entropy_bits": 1.4540579862,
+      "rotation_angle": 0.71994832,
+      "theta": 0.44178647
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.6861714941,
+      "rotated_measurement_entropy_bits": 1.5087349703,
+      "rotation_angle": 0.78539816,
+      "theta": 0.44178647
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.6861714941,
+      "rotated_measurement_entropy_bits": 1.5547751384,
+      "rotation_angle": 0.85084801,
+      "theta": 0.44178647
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.6861714941,
+      "rotated_measurement_entropy_bits": 1.5923717083,
+      "rotation_angle": 0.91629786,
+      "theta": 0.44178647
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.6861714941,
+      "rotated_measurement_entropy_bits": 1.6220358493,
+      "rotation_angle": 0.9817477,
+      "theta": 0.44178647
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.6861714941,
+      "rotated_measurement_entropy_bits": 1.6445321804,
+      "rotation_angle": 1.04719755,
+      "theta": 0.44178647
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.6861714941,
+      "rotated_measurement_entropy_bits": 1.6608089813,
+      "rotation_angle": 1.1126474,
+      "theta": 0.44178647
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.6861714941,
+      "rotated_measurement_entropy_bits": 1.6719256312,
+      "rotation_angle": 1.17809725,
+      "theta": 0.44178647
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.6861714941,
+      "rotated_measurement_entropy_bits": 1.6789799932,
+      "rotation_angle": 1.24354709,
+      "theta": 0.44178647
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.6861714941,
+      "rotated_measurement_entropy_bits": 1.683038517,
+      "rotation_angle": 1.30899694,
+      "theta": 0.44178647
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.6861714941,
+      "rotated_measurement_entropy_bits": 1.6850717561,
+      "rotation_angle": 1.37444679,
+      "theta": 0.44178647
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.6861714941,
+      "rotated_measurement_entropy_bits": 1.6858977991,
+      "rotation_angle": 1.43989663,
+      "theta": 0.44178647
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.6861714941,
+      "rotated_measurement_entropy_bits": 1.686135811,
+      "rotation_angle": 1.50534648,
+      "theta": 0.44178647
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.6861714941,
+      "rotated_measurement_entropy_bits": 1.6861714941,
+      "rotation_angle": 1.57079633,
+      "theta": 0.44178647
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.7262079992,
+      "rotated_measurement_entropy_bits": 0.7262079992,
+      "rotation_angle": 0.0,
+      "theta": 0.46633016
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.7262079992,
+      "rotated_measurement_entropy_bits": 0.7468539337,
+      "rotation_angle": 0.06544985,
+      "theta": 0.46633016
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.7262079992,
+      "rotated_measurement_entropy_bits": 0.7931458824,
+      "rotation_angle": 0.13089969,
+      "theta": 0.46633016
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.7262079992,
+      "rotated_measurement_entropy_bits": 0.8556436764,
+      "rotation_angle": 0.19634954,
+      "theta": 0.46633016
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.7262079992,
+      "rotated_measurement_entropy_bits": 0.928756474,
+      "rotation_angle": 0.26179939,
+      "theta": 0.46633016
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.7262079992,
+      "rotated_measurement_entropy_bits": 1.0082214335,
+      "rotation_angle": 0.32724923,
+      "theta": 0.46633016
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.7262079992,
+      "rotated_measurement_entropy_bits": 1.0905550601,
+      "rotation_angle": 0.39269908,
+      "theta": 0.46633016
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.7262079992,
+      "rotated_measurement_entropy_bits": 1.1728606658,
+      "rotation_angle": 0.45814893,
+      "theta": 0.46633016
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.7262079992,
+      "rotated_measurement_entropy_bits": 1.2527502542,
+      "rotation_angle": 0.52359878,
+      "theta": 0.46633016
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.7262079992,
+      "rotated_measurement_entropy_bits": 1.3283085658,
+      "rotation_angle": 0.58904862,
+      "theta": 0.46633016
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.7262079992,
+      "rotated_measurement_entropy_bits": 1.398071049,
+      "rotation_angle": 0.65449847,
+      "theta": 0.46633016
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.7262079992,
+      "rotated_measurement_entropy_bits": 1.4610030477,
+      "rotation_angle": 0.71994832,
+      "theta": 0.46633016
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.7262079992,
+      "rotated_measurement_entropy_bits": 1.5164741966,
+      "rotation_angle": 0.78539816,
+      "theta": 0.46633016
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.7262079992,
+      "rotated_measurement_entropy_bits": 1.564225386,
+      "rotation_angle": 0.85084801,
+      "theta": 0.46633016
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.7262079992,
+      "rotated_measurement_entropy_bits": 1.6043275772,
+      "rotation_angle": 0.91629786,
+      "theta": 0.46633016
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.7262079992,
+      "rotated_measurement_entropy_bits": 1.6371329511,
+      "rotation_angle": 0.9817477,
+      "theta": 0.46633016
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.7262079992,
+      "rotated_measurement_entropy_bits": 1.6632196645,
+      "rotation_angle": 1.04719755,
+      "theta": 0.46633016
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.7262079992,
+      "rotated_measurement_entropy_bits": 1.6833320212,
+      "rotation_angle": 1.1126474,
+      "theta": 0.46633016
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.7262079992,
+      "rotated_measurement_entropy_bits": 1.6983182056,
+      "rotation_angle": 1.17809725,
+      "theta": 0.46633016
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.7262079992,
+      "rotated_measurement_entropy_bits": 1.7090679143,
+      "rotation_angle": 1.24354709,
+      "theta": 0.46633016
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.7262079992,
+      "rotated_measurement_entropy_bits": 1.7164522773,
+      "rotation_angle": 1.30899694,
+      "theta": 0.46633016
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.7262079992,
+      "rotated_measurement_entropy_bits": 1.7212683971,
+      "rotation_angle": 1.37444679,
+      "theta": 0.46633016
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.7262079992,
+      "rotated_measurement_entropy_bits": 1.7241906689,
+      "rotation_angle": 1.43989663,
+      "theta": 0.46633016
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.7262079992,
+      "rotated_measurement_entropy_bits": 1.7257307865,
+      "rotation_angle": 1.50534648,
+      "theta": 0.46633016
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.7262079992,
+      "rotated_measurement_entropy_bits": 1.7262079992,
+      "rotation_angle": 1.57079633,
+      "theta": 0.46633016
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.7641912426,
+      "rotated_measurement_entropy_bits": 0.7641912426,
+      "rotation_angle": 0.0,
+      "theta": 0.49087385
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.7641912426,
+      "rotated_measurement_entropy_bits": 0.7835619149,
+      "rotation_angle": 0.06544985,
+      "theta": 0.49087385
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.7641912426,
+      "rotated_measurement_entropy_bits": 0.8270446261,
+      "rotation_angle": 0.13089969,
+      "theta": 0.49087385
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.7641912426,
+      "rotated_measurement_entropy_bits": 0.8858602763,
+      "rotation_angle": 0.19634954,
+      "theta": 0.49087385
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.7641912426,
+      "rotated_measurement_entropy_bits": 0.9548535244,
+      "rotation_angle": 0.26179939,
+      "theta": 0.49087385
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.7641912426,
+      "rotated_measurement_entropy_bits": 1.0301175027,
+      "rotation_angle": 0.32724923,
+      "theta": 0.49087385
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.7641912426,
+      "rotated_measurement_entropy_bits": 1.1084691827,
+      "rotation_angle": 0.39269908,
+      "theta": 0.49087385
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.7641912426,
+      "rotated_measurement_entropy_bits": 1.1872607269,
+      "rotation_angle": 0.45814893,
+      "theta": 0.49087385
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.7641912426,
+      "rotated_measurement_entropy_bits": 1.2643002464,
+      "rotation_angle": 0.52359878,
+      "theta": 0.49087385
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.7641912426,
+      "rotated_measurement_entropy_bits": 1.3378140923,
+      "rotation_angle": 0.58904862,
+      "theta": 0.49087385
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.7641912426,
+      "rotated_measurement_entropy_bits": 1.4064240492,
+      "rotation_angle": 0.65449847,
+      "theta": 0.49087385
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.7641912426,
+      "rotated_measurement_entropy_bits": 1.4691273429,
+      "rotation_angle": 0.71994832,
+      "theta": 0.49087385
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.7641912426,
+      "rotated_measurement_entropy_bits": 1.5252736427,
+      "rotation_angle": 0.78539816,
+      "theta": 0.49087385
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.7641912426,
+      "rotated_measurement_entropy_bits": 1.5745363951,
+      "rotation_angle": 0.85084801,
+      "theta": 0.49087385
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.7641912426,
+      "rotated_measurement_entropy_bits": 1.6168776119,
+      "rotation_angle": 0.91629786,
+      "theta": 0.49087385
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.7641912426,
+      "rotated_measurement_entropy_bits": 1.6525063547,
+      "rotation_angle": 0.9817477,
+      "theta": 0.49087385
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.7641912426,
+      "rotated_measurement_entropy_bits": 1.6818318908,
+      "rotation_angle": 1.04719755,
+      "theta": 0.49087385
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.7641912426,
+      "rotated_measurement_entropy_bits": 1.7054129896,
+      "rotation_angle": 1.1126474,
+      "theta": 0.49087385
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.7641912426,
+      "rotated_measurement_entropy_bits": 1.7239051462,
+      "rotation_angle": 1.17809725,
+      "theta": 0.49087385
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.7641912426,
+      "rotated_measurement_entropy_bits": 1.738007696,
+      "rotation_angle": 1.24354709,
+      "theta": 0.49087385
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.7641912426,
+      "rotated_measurement_entropy_bits": 1.7484128449,
+      "rotation_angle": 1.30899694,
+      "theta": 0.49087385
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.7641912426,
+      "rotated_measurement_entropy_bits": 1.7557585952,
+      "rotation_angle": 1.37444679,
+      "theta": 0.49087385
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.7641912426,
+      "rotated_measurement_entropy_bits": 1.7605874091,
+      "rotation_angle": 1.43989663,
+      "theta": 0.49087385
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.7641912426,
+      "rotated_measurement_entropy_bits": 1.7633122364,
+      "rotation_angle": 1.50534648,
+      "theta": 0.49087385
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.7641912426,
+      "rotated_measurement_entropy_bits": 1.7641912426,
+      "rotation_angle": 1.57079633,
+      "theta": 0.49087385
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.7999094558,
+      "rotated_measurement_entropy_bits": 0.7999094558,
+      "rotation_angle": 0.0,
+      "theta": 0.51541754
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.7999094558,
+      "rotated_measurement_entropy_bits": 0.8181179549,
+      "rotation_angle": 0.06544985,
+      "theta": 0.51541754
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.7999094558,
+      "rotated_measurement_entropy_bits": 0.8590549461,
+      "rotation_angle": 0.13089969,
+      "theta": 0.51541754
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.7999094558,
+      "rotated_measurement_entropy_bits": 0.9145457489,
+      "rotation_angle": 0.19634954,
+      "theta": 0.51541754
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.7999094558,
+      "rotated_measurement_entropy_bits": 0.9798266476,
+      "rotation_angle": 0.26179939,
+      "theta": 0.51541754
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.7999094558,
+      "rotated_measurement_entropy_bits": 1.0513080932,
+      "rotation_angle": 0.32724923,
+      "theta": 0.51541754
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.7999094558,
+      "rotated_measurement_entropy_bits": 1.1260743135,
+      "rotation_angle": 0.39269908,
+      "theta": 0.51541754
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.7999094558,
+      "rotated_measurement_entropy_bits": 1.2016992989,
+      "rotation_angle": 0.45814893,
+      "theta": 0.51541754
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.7999094558,
+      "rotated_measurement_entropy_bits": 1.2761668472,
+      "rotation_angle": 0.52359878,
+      "theta": 0.51541754
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.7999094558,
+      "rotated_measurement_entropy_bits": 1.3478311308,
+      "rotation_angle": 0.58904862,
+      "theta": 0.51541754
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.7999094558,
+      "rotated_measurement_entropy_bits": 1.4153928414,
+      "rotation_angle": 0.65449847,
+      "theta": 0.51541754
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.7999094558,
+      "rotated_measurement_entropy_bits": 1.4778795304,
+      "rotation_angle": 0.71994832,
+      "theta": 0.51541754
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.7999094558,
+      "rotated_measurement_entropy_bits": 1.5346245878,
+      "rotation_angle": 0.78539816,
+      "theta": 0.51541754
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.7999094558,
+      "rotated_measurement_entropy_bits": 1.5852422096,
+      "rotation_angle": 0.85084801,
+      "theta": 0.51541754
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.7999094558,
+      "rotated_measurement_entropy_bits": 1.6295973579,
+      "rotation_angle": 0.91629786,
+      "theta": 0.51541754
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.7999094558,
+      "rotated_measurement_entropy_bits": 1.6677707349,
+      "rotation_angle": 0.9817477,
+      "theta": 0.51541754
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.7999094558,
+      "rotated_measurement_entropy_bits": 1.7000194718,
+      "rotation_angle": 1.04719755,
+      "theta": 0.51541754
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.7999094558,
+      "rotated_measurement_entropy_bits": 1.7267346819,
+      "rotation_angle": 1.1126474,
+      "theta": 0.51541754
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.7999094558,
+      "rotated_measurement_entropy_bits": 1.7483973226,
+      "rotation_angle": 1.17809725,
+      "theta": 0.51541754
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.7999094558,
+      "rotated_measurement_entropy_bits": 1.7655339809,
+      "rotation_angle": 1.24354709,
+      "theta": 0.51541754
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.7999094558,
+      "rotated_measurement_entropy_bits": 1.7786742581,
+      "rotation_angle": 1.30899694,
+      "theta": 0.51541754
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.7999094558,
+      "rotated_measurement_entropy_bits": 1.7883114053,
+      "rotation_angle": 1.37444679,
+      "theta": 0.51541754
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.7999094558,
+      "rotated_measurement_entropy_bits": 1.7948677492,
+      "rotation_angle": 1.43989663,
+      "theta": 0.51541754
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.7999094558,
+      "rotated_measurement_entropy_bits": 1.7986662701,
+      "rotation_angle": 1.50534648,
+      "theta": 0.51541754
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.7999094558,
+      "rotated_measurement_entropy_bits": 1.7999094558,
+      "rotation_angle": 1.57079633,
+      "theta": 0.51541754
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.8331684636,
+      "rotated_measurement_entropy_bits": 0.8331684636,
+      "rotation_angle": 0.0,
+      "theta": 0.53996124
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.8331684636,
+      "rotated_measurement_entropy_bits": 0.850319535,
+      "rotation_angle": 0.06544985,
+      "theta": 0.53996124
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.8331684636,
+      "rotated_measurement_entropy_bits": 0.8889495153,
+      "rotation_angle": 0.13089969,
+      "theta": 0.53996124
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.8331684636,
+      "rotated_measurement_entropy_bits": 0.9414363539,
+      "rotation_angle": 0.19634954,
+      "theta": 0.53996124
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.8331684636,
+      "rotated_measurement_entropy_bits": 1.0033708839,
+      "rotation_angle": 0.26179939,
+      "theta": 0.53996124
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.8331684636,
+      "rotated_measurement_entropy_bits": 1.0714485568,
+      "rotation_angle": 0.32724923,
+      "theta": 0.53996124
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.8331684636,
+      "rotated_measurement_entropy_bits": 1.142992356,
+      "rotation_angle": 0.39269908,
+      "theta": 0.53996124
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.8331684636,
+      "rotated_measurement_entropy_bits": 1.2157738644,
+      "rotation_angle": 0.45814893,
+      "theta": 0.53996124
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.8331684636,
+      "rotated_measurement_entropy_bits": 1.2879332207,
+      "rotation_angle": 0.52359878,
+      "theta": 0.53996124
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.8331684636,
+      "rotated_measurement_entropy_bits": 1.3579384083,
+      "rotation_angle": 0.58904862,
+      "theta": 0.53996124
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.8331684636,
+      "rotated_measurement_entropy_bits": 1.4245605188,
+      "rotation_angle": 0.65449847,
+      "theta": 0.53996124
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.8331684636,
+      "rotated_measurement_entropy_bits": 1.4868543213,
+      "rotation_angle": 0.71994832,
+      "theta": 0.53996124
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.8331684636,
+      "rotated_measurement_entropy_bits": 1.5441388707,
+      "rotation_angle": 0.78539816,
+      "theta": 0.53996124
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.8331684636,
+      "rotated_measurement_entropy_bits": 1.5959755777,
+      "rotation_angle": 0.85084801,
+      "theta": 0.53996124
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.8331684636,
+      "rotated_measurement_entropy_bits": 1.6421426623,
+      "rotation_angle": 0.91629786,
+      "theta": 0.53996124
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.8331684636,
+      "rotated_measurement_entropy_bits": 1.6826058417,
+      "rotation_angle": 0.9817477,
+      "theta": 0.53996124
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.8331684636,
+      "rotated_measurement_entropy_bits": 1.7174857111,
+      "rotation_angle": 1.04719755,
+      "theta": 0.53996124
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.8331684636,
+      "rotated_measurement_entropy_bits": 1.7470226841,
+      "rotation_angle": 1.1126474,
+      "theta": 0.53996124
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.8331684636,
+      "rotated_measurement_entropy_bits": 1.7715406244,
+      "rotation_angle": 1.17809725,
+      "theta": 0.53996124
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.8331684636,
+      "rotated_measurement_entropy_bits": 1.7914104601,
+      "rotation_angle": 1.24354709,
+      "theta": 0.53996124
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.8331684636,
+      "rotated_measurement_entropy_bits": 1.8070151379,
+      "rotation_angle": 1.30899694,
+      "theta": 0.53996124
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.8331684636,
+      "rotated_measurement_entropy_bits": 1.8187172567,
+      "rotation_angle": 1.37444679,
+      "theta": 0.53996124
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.8331684636,
+      "rotated_measurement_entropy_bits": 1.8268306444,
+      "rotation_angle": 1.43989663,
+      "theta": 0.53996124
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.8331684636,
+      "rotated_measurement_entropy_bits": 1.831596991,
+      "rotation_angle": 1.50534648,
+      "theta": 0.53996124
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.8331684636,
+      "rotated_measurement_entropy_bits": 1.8331684636,
+      "rotation_angle": 1.57079633,
+      "theta": 0.53996124
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.8637914171,
+      "rotated_measurement_entropy_bits": 0.8637914171,
+      "rotation_angle": 0.0,
+      "theta": 0.56450493
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.8637914171,
+      "rotated_measurement_entropy_bits": 0.8799867003,
+      "rotation_angle": 0.06544985,
+      "theta": 0.56450493
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.8637914171,
+      "rotated_measurement_entropy_bits": 0.9165377555,
+      "rotation_angle": 0.13089969,
+      "theta": 0.56450493
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.8637914171,
+      "rotated_measurement_entropy_bits": 0.9663242096,
+      "rotation_angle": 0.19634954,
+      "theta": 0.56450493
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.8637914171,
+      "rotated_measurement_entropy_bits": 1.0252566195,
+      "rotation_angle": 0.26179939,
+      "theta": 0.56450493
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.8637914171,
+      "rotated_measurement_entropy_bits": 1.0902858987,
+      "rotation_angle": 0.32724923,
+      "theta": 0.56450493
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.8637914171,
+      "rotated_measurement_entropy_bits": 1.1589479928,
+      "rotation_angle": 0.39269908,
+      "theta": 0.56450493
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.8637914171,
+      "rotated_measurement_entropy_bits": 1.2291900678,
+      "rotation_angle": 0.45814893,
+      "theta": 0.56450493
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.8637914171,
+      "rotated_measurement_entropy_bits": 1.2992907931,
+      "rotation_angle": 0.52359878,
+      "theta": 0.56450493
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.8637914171,
+      "rotated_measurement_entropy_bits": 1.3678187542,
+      "rotation_angle": 0.58904862,
+      "theta": 0.56450493
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.8637914171,
+      "rotated_measurement_entropy_bits": 1.4336070816,
+      "rotation_angle": 0.65449847,
+      "theta": 0.56450493
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.8637914171,
+      "rotated_measurement_entropy_bits": 1.495734279,
+      "rotation_angle": 0.71994832,
+      "theta": 0.56450493
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.8637914171,
+      "rotated_measurement_entropy_bits": 1.5535062768,
+      "rotation_angle": 0.78539816,
+      "theta": 0.56450493
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.8637914171,
+      "rotated_measurement_entropy_bits": 1.6064372186,
+      "rotation_angle": 0.85084801,
+      "theta": 0.56450493
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.8637914171,
+      "rotated_measurement_entropy_bits": 1.6542278566,
+      "rotation_angle": 0.91629786,
+      "theta": 0.56450493
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.8637914171,
+      "rotated_measurement_entropy_bits": 1.6967412703,
+      "rotation_angle": 0.9817477,
+      "theta": 0.56450493
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.8637914171,
+      "rotated_measurement_entropy_bits": 1.7339761644,
+      "rotation_angle": 1.04719755,
+      "theta": 0.56450493
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.8637914171,
+      "rotated_measurement_entropy_bits": 1.7660383647,
+      "rotation_angle": 1.1126474,
+      "theta": 0.56450493
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.8637914171,
+      "rotated_measurement_entropy_bits": 1.7931113688,
+      "rotation_angle": 1.17809725,
+      "theta": 0.56450493
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.8637914171,
+      "rotated_measurement_entropy_bits": 1.8154269525,
+      "rotation_angle": 1.24354709,
+      "theta": 0.56450493
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.8637914171,
+      "rotated_measurement_entropy_bits": 1.8332368973,
+      "rotation_angle": 1.30899694,
+      "theta": 0.56450493
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.8637914171,
+      "rotated_measurement_entropy_bits": 1.8467869022,
+      "rotation_angle": 1.37444679,
+      "theta": 0.56450493
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.8637914171,
+      "rotated_measurement_entropy_bits": 1.856293683,
+      "rotation_angle": 1.43989663,
+      "theta": 0.56450493
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.8637914171,
+      "rotated_measurement_entropy_bits": 1.8619261521,
+      "rotation_angle": 1.50534648,
+      "theta": 0.56450493
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.8637914171,
+      "rotated_measurement_entropy_bits": 1.8637914171,
+      "rotation_angle": 1.57079633,
+      "theta": 0.56450493
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.8916186019,
+      "rotated_measurement_entropy_bits": 0.8916186019,
+      "rotation_angle": 0.0,
+      "theta": 0.58904862
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.8916186019,
+      "rotated_measurement_entropy_bits": 0.906958436,
+      "rotation_angle": 0.06544985,
+      "theta": 0.58904862
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.8916186019,
+      "rotated_measurement_entropy_bits": 0.9416532516,
+      "rotation_angle": 0.13089969,
+      "theta": 0.58904862
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.8916186019,
+      "rotated_measurement_entropy_bits": 0.989033329,
+      "rotation_angle": 0.19634954,
+      "theta": 0.58904862
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.8916186019,
+      "rotated_measurement_entropy_bits": 1.0452950527,
+      "rotation_angle": 0.26179939,
+      "theta": 0.58904862
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.8916186019,
+      "rotated_measurement_entropy_bits": 1.1076166607,
+      "rotation_angle": 0.32724923,
+      "theta": 0.58904862
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.8916186019,
+      "rotated_measurement_entropy_bits": 1.1737228235,
+      "rotation_angle": 0.39269908,
+      "theta": 0.58904862
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.8916186019,
+      "rotated_measurement_entropy_bits": 1.2417157477,
+      "rotation_angle": 0.45814893,
+      "theta": 0.58904862
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.8916186019,
+      "rotated_measurement_entropy_bits": 1.309996023,
+      "rotation_angle": 0.52359878,
+      "theta": 0.58904862
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.8916186019,
+      "rotated_measurement_entropy_bits": 1.3772204664,
+      "rotation_angle": 0.58904862,
+      "theta": 0.58904862
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.8916186019,
+      "rotated_measurement_entropy_bits": 1.4422763313,
+      "rotation_angle": 0.65449847,
+      "theta": 0.58904862
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.8916186019,
+      "rotated_measurement_entropy_bits": 1.5042624518,
+      "rotation_angle": 0.71994832,
+      "theta": 0.58904862
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.8916186019,
+      "rotated_measurement_entropy_bits": 1.5624726153,
+      "rotation_angle": 0.78539816,
+      "theta": 0.58904862
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.8916186019,
+      "rotated_measurement_entropy_bits": 1.6163787565,
+      "rotation_angle": 0.85084801,
+      "theta": 0.58904862
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.8916186019,
+      "rotated_measurement_entropy_bits": 1.6656128224,
+      "rotation_angle": 0.91629786,
+      "theta": 0.58904862
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.8916186019,
+      "rotated_measurement_entropy_bits": 1.7099469113,
+      "rotation_angle": 0.9817477,
+      "theta": 0.58904862
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.8916186019,
+      "rotated_measurement_entropy_bits": 1.7492717726,
+      "rotation_angle": 1.04719755,
+      "theta": 0.58904862
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.8916186019,
+      "rotated_measurement_entropy_bits": 1.783574073,
+      "rotation_angle": 1.1126474,
+      "theta": 0.58904862
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.8916186019,
+      "rotated_measurement_entropy_bits": 1.8129130472,
+      "rotation_angle": 1.17809725,
+      "theta": 0.58904862
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.8916186019,
+      "rotated_measurement_entropy_bits": 1.8373972775,
+      "rotation_angle": 1.24354709,
+      "theta": 0.58904862
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.8916186019,
+      "rotated_measurement_entropy_bits": 1.8571624112,
+      "rotation_angle": 1.30899694,
+      "theta": 0.58904862
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.8916186019,
+      "rotated_measurement_entropy_bits": 1.8723506295,
+      "rotation_angle": 1.37444679,
+      "theta": 0.58904862
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.8916186019,
+      "rotated_measurement_entropy_bits": 1.8830926429,
+      "rotation_angle": 1.43989663,
+      "theta": 0.58904862
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.8916186019,
+      "rotated_measurement_entropy_bits": 1.8894929024,
+      "rotation_angle": 1.50534648,
+      "theta": 0.58904862
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.8916186019,
+      "rotated_measurement_entropy_bits": 1.8916186019,
+      "rotation_angle": 1.57079633,
+      "theta": 0.58904862
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9165073001,
+      "rotated_measurement_entropy_bits": 0.9165073001,
+      "rotation_angle": 0.0,
+      "theta": 0.61359232
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9165073001,
+      "rotated_measurement_entropy_bits": 0.931091576,
+      "rotation_angle": 0.06544985,
+      "theta": 0.61359232
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9165073001,
+      "rotated_measurement_entropy_bits": 0.9641500246,
+      "rotation_angle": 0.13089969,
+      "theta": 0.61359232
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9165073001,
+      "rotated_measurement_entropy_bits": 1.0094121668,
+      "rotation_angle": 0.19634954,
+      "theta": 0.61359232
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9165073001,
+      "rotated_measurement_entropy_bits": 1.0633266944,
+      "rotation_angle": 0.26179939,
+      "theta": 0.61359232
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9165073001,
+      "rotated_measurement_entropy_bits": 1.1232717879,
+      "rotation_angle": 0.32724923,
+      "theta": 0.61359232
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9165073001,
+      "rotated_measurement_entropy_bits": 1.187137548,
+      "rotation_angle": 0.39269908,
+      "theta": 0.61359232
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9165073001,
+      "rotated_measurement_entropy_bits": 1.253161651,
+      "rotation_angle": 0.45814893,
+      "theta": 0.61359232
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9165073001,
+      "rotated_measurement_entropy_bits": 1.3198508775,
+      "rotation_angle": 0.52359878,
+      "theta": 0.61359232
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9165073001,
+      "rotated_measurement_entropy_bits": 1.3859386069,
+      "rotation_angle": 0.58904862,
+      "theta": 0.61359232
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9165073001,
+      "rotated_measurement_entropy_bits": 1.4503587742,
+      "rotation_angle": 0.65449847,
+      "theta": 0.61359232
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9165073001,
+      "rotated_measurement_entropy_bits": 1.5122273726,
+      "rotation_angle": 0.71994832,
+      "theta": 0.61359232
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9165073001,
+      "rotated_measurement_entropy_bits": 1.5708270316,
+      "rotation_angle": 0.78539816,
+      "theta": 0.61359232
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9165073001,
+      "rotated_measurement_entropy_bits": 1.6255923438,
+      "rotation_angle": 0.85084801,
+      "theta": 0.61359232
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9165073001,
+      "rotated_measurement_entropy_bits": 1.6760947699,
+      "rotation_angle": 0.91629786,
+      "theta": 0.61359232
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9165073001,
+      "rotated_measurement_entropy_bits": 1.7220266346,
+      "rotation_angle": 0.9817477,
+      "theta": 0.61359232
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9165073001,
+      "rotated_measurement_entropy_bits": 1.7631841584,
+      "rotation_angle": 1.04719755,
+      "theta": 0.61359232
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9165073001,
+      "rotated_measurement_entropy_bits": 1.7994497496,
+      "rotation_angle": 1.1126474,
+      "theta": 0.61359232
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9165073001,
+      "rotated_measurement_entropy_bits": 1.8307739676,
+      "rotation_angle": 1.17809725,
+      "theta": 0.61359232
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9165073001,
+      "rotated_measurement_entropy_bits": 1.8571576832,
+      "rotation_angle": 1.24354709,
+      "theta": 0.61359232
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9165073001,
+      "rotated_measurement_entropy_bits": 1.8786350187,
+      "rotation_angle": 1.30899694,
+      "theta": 0.61359232
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9165073001,
+      "rotated_measurement_entropy_bits": 1.8952576668,
+      "rotation_angle": 1.37444679,
+      "theta": 0.61359232
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9165073001,
+      "rotated_measurement_entropy_bits": 1.9070811597,
+      "rotation_angle": 1.43989663,
+      "theta": 0.61359232
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9165073001,
+      "rotated_measurement_entropy_bits": 1.9141536023,
+      "rotation_angle": 1.50534648,
+      "theta": 0.61359232
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9165073001,
+      "rotated_measurement_entropy_bits": 1.9165073001,
+      "rotation_angle": 1.57079633,
+      "theta": 0.61359232
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9383316969,
+      "rotated_measurement_entropy_bits": 0.9383316969,
+      "rotation_angle": 0.0,
+      "theta": 0.63813601
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9383316969,
+      "rotated_measurement_entropy_bits": 0.9522602959,
+      "rotation_angle": 0.06544985,
+      "theta": 0.63813601
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9383316969,
+      "rotated_measurement_entropy_bits": 0.9839008638,
+      "rotation_angle": 0.13089969,
+      "theta": 0.63813601
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9383316969,
+      "rotated_measurement_entropy_bits": 1.0273302511,
+      "rotation_angle": 0.19634954,
+      "theta": 0.63813601
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9383316969,
+      "rotated_measurement_entropy_bits": 1.0792160464,
+      "rotation_angle": 0.26179939,
+      "theta": 0.63813601
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9383316969,
+      "rotated_measurement_entropy_bits": 1.1371094053,
+      "rotation_angle": 0.32724923,
+      "theta": 0.63813601
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9383316969,
+      "rotated_measurement_entropy_bits": 1.1990431513,
+      "rotation_angle": 0.39269908,
+      "theta": 0.63813601
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9383316969,
+      "rotated_measurement_entropy_bits": 1.2633715169,
+      "rotation_angle": 0.45814893,
+      "theta": 0.63813601
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9383316969,
+      "rotated_measurement_entropy_bits": 1.3286923847,
+      "rotation_angle": 0.52359878,
+      "theta": 0.63813601
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9383316969,
+      "rotated_measurement_entropy_bits": 1.3938045841,
+      "rotation_angle": 0.58904862,
+      "theta": 0.63813601
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9383316969,
+      "rotated_measurement_entropy_bits": 1.4576817153,
+      "rotation_angle": 0.65449847,
+      "theta": 0.63813601
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9383316969,
+      "rotated_measurement_entropy_bits": 1.5194540279,
+      "rotation_angle": 0.71994832,
+      "theta": 0.63813601
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9383316969,
+      "rotated_measurement_entropy_bits": 1.5783940849,
+      "rotation_angle": 0.78539816,
+      "theta": 0.63813601
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9383316969,
+      "rotated_measurement_entropy_bits": 1.6339039556,
+      "rotation_angle": 0.85084801,
+      "theta": 0.63813601
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9383316969,
+      "rotated_measurement_entropy_bits": 1.6855027524,
+      "rotation_angle": 0.91629786,
+      "theta": 0.63813601
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9383316969,
+      "rotated_measurement_entropy_bits": 1.7328139497,
+      "rotation_angle": 0.9817477,
+      "theta": 0.63813601
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9383316969,
+      "rotated_measurement_entropy_bits": 1.7755523081,
+      "rotation_angle": 1.04719755,
+      "theta": 0.63813601
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9383316969,
+      "rotated_measurement_entropy_bits": 1.8135104782,
+      "rotation_angle": 1.1126474,
+      "theta": 0.63813601
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9383316969,
+      "rotated_measurement_entropy_bits": 1.8465455191,
+      "rotation_angle": 1.17809725,
+      "theta": 0.63813601
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9383316969,
+      "rotated_measurement_entropy_bits": 1.8745656708,
+      "rotation_angle": 1.24354709,
+      "theta": 0.63813601
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9383316969,
+      "rotated_measurement_entropy_bits": 1.8975177717,
+      "rotation_angle": 1.30899694,
+      "theta": 0.63813601
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9383316969,
+      "rotated_measurement_entropy_bits": 1.9153757344,
+      "rotation_angle": 1.37444679,
+      "theta": 0.63813601
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9383316969,
+      "rotated_measurement_entropy_bits": 1.92813048,
+      "rotation_angle": 1.43989663,
+      "theta": 0.63813601
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9383316969,
+      "rotated_measurement_entropy_bits": 1.9357816924,
+      "rotation_angle": 1.50534648,
+      "theta": 0.63813601
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9383316969,
+      "rotated_measurement_entropy_bits": 1.9383316969,
+      "rotation_angle": 1.57079633,
+      "theta": 0.63813601
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9569828165,
+      "rotated_measurement_entropy_bits": 0.9569828165,
+      "rotation_angle": 0.0,
+      "theta": 0.6626797
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9569828165,
+      "rotated_measurement_entropy_bits": 0.9703558336,
+      "rotation_angle": 0.06544985,
+      "theta": 0.6626797
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9569828165,
+      "rotated_measurement_entropy_bits": 1.000796436,
+      "rotation_angle": 0.13089969,
+      "theta": 0.6626797
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9569828165,
+      "rotated_measurement_entropy_bits": 1.0426763798,
+      "rotation_angle": 0.19634954,
+      "theta": 0.6626797
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9569828165,
+      "rotated_measurement_entropy_bits": 1.0928487165,
+      "rotation_angle": 0.26179939,
+      "theta": 0.6626797
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9569828165,
+      "rotated_measurement_entropy_bits": 1.1490108322,
+      "rotation_angle": 0.32724923,
+      "theta": 0.6626797
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9569828165,
+      "rotated_measurement_entropy_bits": 1.2093159374,
+      "rotation_angle": 0.39269908,
+      "theta": 0.6626797
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9569828165,
+      "rotated_measurement_entropy_bits": 1.272216357,
+      "rotation_angle": 0.45814893,
+      "theta": 0.6626797
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9569828165,
+      "rotated_measurement_entropy_bits": 1.336386453,
+      "rotation_angle": 0.52359878,
+      "theta": 0.6626797
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9569828165,
+      "rotated_measurement_entropy_bits": 1.4006798238,
+      "rotation_angle": 0.58904862,
+      "theta": 0.6626797
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9569828165,
+      "rotated_measurement_entropy_bits": 1.4641030767,
+      "rotation_angle": 0.65449847,
+      "theta": 0.6626797
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9569828165,
+      "rotated_measurement_entropy_bits": 1.5257980717,
+      "rotation_angle": 0.71994832,
+      "theta": 0.6626797
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9569828165,
+      "rotated_measurement_entropy_bits": 1.5850285384,
+      "rotation_angle": 0.78539816,
+      "theta": 0.6626797
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9569828165,
+      "rotated_measurement_entropy_bits": 1.6411688675,
+      "rotation_angle": 0.85084801,
+      "theta": 0.6626797
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9569828165,
+      "rotated_measurement_entropy_bits": 1.6936938788,
+      "rotation_angle": 0.91629786,
+      "theta": 0.6626797
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9569828165,
+      "rotated_measurement_entropy_bits": 1.7421689435,
+      "rotation_angle": 0.9817477,
+      "theta": 0.6626797
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9569828165,
+      "rotated_measurement_entropy_bits": 1.7862401826,
+      "rotation_angle": 1.04719755,
+      "theta": 0.6626797
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9569828165,
+      "rotated_measurement_entropy_bits": 1.8256246918,
+      "rotation_angle": 1.1126474,
+      "theta": 0.6626797
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9569828165,
+      "rotated_measurement_entropy_bits": 1.8601008808,
+      "rotation_angle": 1.17809725,
+      "theta": 0.6626797
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9569828165,
+      "rotated_measurement_entropy_bits": 1.889499111,
+      "rotation_angle": 1.24354709,
+      "theta": 0.6626797
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9569828165,
+      "rotated_measurement_entropy_bits": 1.9136928652,
+      "rotation_angle": 1.30899694,
+      "theta": 0.6626797
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9569828165,
+      "rotated_measurement_entropy_bits": 1.9325907061,
+      "rotation_angle": 1.37444679,
+      "theta": 0.6626797
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9569828165,
+      "rotated_measurement_entropy_bits": 1.94612928,
+      "rotation_angle": 1.43989663,
+      "theta": 0.6626797
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9569828165,
+      "rotated_measurement_entropy_bits": 1.9542676012,
+      "rotation_angle": 1.50534648,
+      "theta": 0.6626797
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9569828165,
+      "rotated_measurement_entropy_bits": 1.9569828165,
+      "rotation_angle": 1.57079633,
+      "theta": 0.6626797
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9723684829,
+      "rotated_measurement_entropy_bits": 0.9723684829,
+      "rotation_angle": 0.0,
+      "theta": 0.68722339
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9723684829,
+      "rotated_measurement_entropy_bits": 0.9852863236,
+      "rotation_angle": 0.06544985,
+      "theta": 0.68722339
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9723684829,
+      "rotated_measurement_entropy_bits": 1.0147447622,
+      "rotation_angle": 0.13089969,
+      "theta": 0.68722339
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9723684829,
+      "rotated_measurement_entropy_bits": 1.0553575566,
+      "rotation_angle": 0.19634954,
+      "theta": 0.68722339
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9723684829,
+      "rotated_measurement_entropy_bits": 1.1041297034,
+      "rotation_angle": 0.26179939,
+      "theta": 0.68722339
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9723684829,
+      "rotated_measurement_entropy_bits": 1.1588781853,
+      "rotation_angle": 0.32724923,
+      "theta": 0.68722339
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9723684829,
+      "rotated_measurement_entropy_bits": 1.2178544997,
+      "rotation_angle": 0.39269908,
+      "theta": 0.68722339
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9723684829,
+      "rotated_measurement_entropy_bits": 1.2795909092,
+      "rotation_angle": 0.45814893,
+      "theta": 0.68722339
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9723684829,
+      "rotated_measurement_entropy_bits": 1.3428239715,
+      "rotation_angle": 0.52359878,
+      "theta": 0.68722339
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9723684829,
+      "rotated_measurement_entropy_bits": 1.4064517034,
+      "rotation_angle": 0.58904862,
+      "theta": 0.68722339
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9723684829,
+      "rotated_measurement_entropy_bits": 1.4695073504,
+      "rotation_angle": 0.65449847,
+      "theta": 0.68722339
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9723684829,
+      "rotated_measurement_entropy_bits": 1.5311419623,
+      "rotation_angle": 0.71994832,
+      "theta": 0.68722339
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9723684829,
+      "rotated_measurement_entropy_bits": 1.5906118141,
+      "rotation_angle": 0.78539816,
+      "theta": 0.68722339
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9723684829,
+      "rotated_measurement_entropy_bits": 1.6472685213,
+      "rotation_angle": 0.85084801,
+      "theta": 0.68722339
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9723684829,
+      "rotated_measurement_entropy_bits": 1.7005506402,
+      "rotation_angle": 0.91629786,
+      "theta": 0.68722339
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9723684829,
+      "rotated_measurement_entropy_bits": 1.7499760808,
+      "rotation_angle": 0.9817477,
+      "theta": 0.68722339
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9723684829,
+      "rotated_measurement_entropy_bits": 1.7951349752,
+      "rotation_angle": 1.04719755,
+      "theta": 0.68722339
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9723684829,
+      "rotated_measurement_entropy_bits": 1.8356828471,
+      "rotation_angle": 1.1126474,
+      "theta": 0.68722339
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9723684829,
+      "rotated_measurement_entropy_bits": 1.871334057,
+      "rotation_angle": 1.17809725,
+      "theta": 0.68722339
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9723684829,
+      "rotated_measurement_entropy_bits": 1.9018555776,
+      "rotation_angle": 1.24354709,
+      "theta": 0.68722339
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9723684829,
+      "rotated_measurement_entropy_bits": 1.9270612079,
+      "rotation_angle": 1.30899694,
+      "theta": 0.68722339
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9723684829,
+      "rotated_measurement_entropy_bits": 1.9468063559,
+      "rotation_angle": 1.37444679,
+      "theta": 0.68722339
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9723684829,
+      "rotated_measurement_entropy_bits": 1.9609835314,
+      "rotation_angle": 1.43989663,
+      "theta": 0.68722339
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9723684829,
+      "rotated_measurement_entropy_bits": 1.9695186815,
+      "rotation_angle": 1.50534648,
+      "theta": 0.68722339
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9723684829,
+      "rotated_measurement_entropy_bits": 1.9723684829,
+      "rotation_angle": 1.57079633,
+      "theta": 0.68722339
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9844132953,
+      "rotated_measurement_entropy_bits": 0.9844132953,
+      "rotation_angle": 0.0,
+      "theta": 0.71176709
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9844132953,
+      "rotated_measurement_entropy_bits": 0.9969766945,
+      "rotation_angle": 0.06544985,
+      "theta": 0.71176709
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9844132953,
+      "rotated_measurement_entropy_bits": 1.0256708923,
+      "rotation_angle": 0.13089969,
+      "theta": 0.71176709
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9844132953,
+      "rotated_measurement_entropy_bits": 1.065298327,
+      "rotation_angle": 0.19634954,
+      "theta": 0.71176709
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9844132953,
+      "rotated_measurement_entropy_bits": 1.1129823177,
+      "rotation_angle": 0.26179939,
+      "theta": 0.71176709
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9844132953,
+      "rotated_measurement_entropy_bits": 1.1666328573,
+      "rotation_angle": 0.32724923,
+      "theta": 0.71176709
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9844132953,
+      "rotated_measurement_entropy_bits": 1.2245777782,
+      "rotation_angle": 0.39269908,
+      "theta": 0.71176709
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9844132953,
+      "rotated_measurement_entropy_bits": 1.2854113379,
+      "rotation_angle": 0.45814893,
+      "theta": 0.71176709
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9844132953,
+      "rotated_measurement_entropy_bits": 1.3479182496,
+      "rotation_angle": 0.52359878,
+      "theta": 0.71176709
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9844132953,
+      "rotated_measurement_entropy_bits": 1.4110308454,
+      "rotation_angle": 0.58904862,
+      "theta": 0.71176709
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9844132953,
+      "rotated_measurement_entropy_bits": 1.4738028665,
+      "rotation_angle": 0.65449847,
+      "theta": 0.71176709
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9844132953,
+      "rotated_measurement_entropy_bits": 1.535392318,
+      "rotation_angle": 0.71994832,
+      "theta": 0.71176709
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9844132953,
+      "rotated_measurement_entropy_bits": 1.5950495309,
+      "rotation_angle": 0.78539816,
+      "theta": 0.71176709
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9844132953,
+      "rotated_measurement_entropy_bits": 1.6521083172,
+      "rotation_angle": 0.85084801,
+      "theta": 0.71176709
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9844132953,
+      "rotated_measurement_entropy_bits": 1.7059790014,
+      "rotation_angle": 0.91629786,
+      "theta": 0.71176709
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9844132953,
+      "rotated_measurement_entropy_bits": 1.7561426152,
+      "rotation_angle": 0.9817477,
+      "theta": 0.71176709
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9844132953,
+      "rotated_measurement_entropy_bits": 1.802145837,
+      "rotation_angle": 1.04719755,
+      "theta": 0.71176709
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9844132953,
+      "rotated_measurement_entropy_bits": 1.8435964438,
+      "rotation_angle": 1.1126474,
+      "theta": 0.71176709
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9844132953,
+      "rotated_measurement_entropy_bits": 1.8801591578,
+      "rotation_angle": 1.17809725,
+      "theta": 0.71176709
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9844132953,
+      "rotated_measurement_entropy_bits": 1.9115518488,
+      "rotation_angle": 1.24354709,
+      "theta": 0.71176709
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9844132953,
+      "rotated_measurement_entropy_bits": 1.9375420994,
+      "rotation_angle": 1.30899694,
+      "theta": 0.71176709
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9844132953,
+      "rotated_measurement_entropy_bits": 1.9579441687,
+      "rotation_angle": 1.37444679,
+      "theta": 0.71176709
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9844132953,
+      "rotated_measurement_entropy_bits": 1.972616406,
+      "rotation_angle": 1.43989663,
+      "theta": 0.71176709
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9844132953,
+      "rotated_measurement_entropy_bits": 1.981459169,
+      "rotation_angle": 1.50534648,
+      "theta": 0.71176709
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9844132953,
+      "rotated_measurement_entropy_bits": 1.9844132953,
+      "rotation_angle": 1.57079633,
+      "theta": 0.71176709
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9930586151,
+      "rotated_measurement_entropy_bits": 0.9930586151,
+      "rotation_angle": 0.0,
+      "theta": 0.73631078
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9930586151,
+      "rotated_measurement_entropy_bits": 1.0053686052,
+      "rotation_angle": 0.06544985,
+      "theta": 0.73631078
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9930586151,
+      "rotated_measurement_entropy_bits": 1.0335166973,
+      "rotation_angle": 0.13089969,
+      "theta": 0.73631078
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9930586151,
+      "rotated_measurement_entropy_bits": 1.0724403502,
+      "rotation_angle": 0.19634954,
+      "theta": 0.73631078
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9930586151,
+      "rotated_measurement_entropy_bits": 1.1193474818,
+      "rotation_angle": 0.26179939,
+      "theta": 0.73631078
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9930586151,
+      "rotated_measurement_entropy_bits": 1.172214524,
+      "rotation_angle": 0.32724923,
+      "theta": 0.73631078
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9930586151,
+      "rotated_measurement_entropy_bits": 1.2294237828,
+      "rotation_angle": 0.39269908,
+      "theta": 0.73631078
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9930586151,
+      "rotated_measurement_entropy_bits": 1.2896137097,
+      "rotation_angle": 0.45814893,
+      "theta": 0.73631078
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9930586151,
+      "rotated_measurement_entropy_bits": 1.3516033038,
+      "rotation_angle": 0.52359878,
+      "theta": 0.73631078
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9930586151,
+      "rotated_measurement_entropy_bits": 1.4143492882,
+      "rotation_angle": 0.58904862,
+      "theta": 0.73631078
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9930586151,
+      "rotated_measurement_entropy_bits": 1.4769199275,
+      "rotation_angle": 0.65449847,
+      "theta": 0.73631078
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9930586151,
+      "rotated_measurement_entropy_bits": 1.5384780921,
+      "rotation_angle": 0.71994832,
+      "theta": 0.73631078
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9930586151,
+      "rotated_measurement_entropy_bits": 1.5982697871,
+      "rotation_angle": 0.78539816,
+      "theta": 0.73631078
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9930586151,
+      "rotated_measurement_entropy_bits": 1.6556160566,
+      "rotation_angle": 0.85084801,
+      "theta": 0.73631078
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9930586151,
+      "rotated_measurement_entropy_bits": 1.7099070409,
+      "rotation_angle": 0.91629786,
+      "theta": 0.73631078
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9930586151,
+      "rotated_measurement_entropy_bits": 1.760597444,
+      "rotation_angle": 0.9817477,
+      "theta": 0.73631078
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9930586151,
+      "rotated_measurement_entropy_bits": 1.8072029516,
+      "rotation_angle": 1.04719755,
+      "theta": 0.73631078
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9930586151,
+      "rotated_measurement_entropy_bits": 1.8492973072,
+      "rotation_angle": 1.1126474,
+      "theta": 0.73631078
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9930586151,
+      "rotated_measurement_entropy_bits": 1.8865098693,
+      "rotation_angle": 1.17809725,
+      "theta": 0.73631078
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9930586151,
+      "rotated_measurement_entropy_bits": 1.9185235383,
+      "rotation_angle": 1.24354709,
+      "theta": 0.73631078
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9930586151,
+      "rotated_measurement_entropy_bits": 1.9450729929,
+      "rotation_angle": 1.30899694,
+      "theta": 0.73631078
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9930586151,
+      "rotated_measurement_entropy_bits": 1.9659432029,
+      "rotation_angle": 1.37444679,
+      "theta": 0.73631078
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9930586151,
+      "rotated_measurement_entropy_bits": 1.9809682075,
+      "rotation_angle": 1.43989663,
+      "theta": 0.73631078
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9930586151,
+      "rotated_measurement_entropy_bits": 1.9900301555,
+      "rotation_angle": 1.50534648,
+      "theta": 0.73631078
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9930586151,
+      "rotated_measurement_entropy_bits": 1.9930586151,
+      "rotation_angle": 1.57079633,
+      "theta": 0.73631078
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9982625597,
+      "rotated_measurement_entropy_bits": 0.9982625597,
+      "rotation_angle": 0.0,
+      "theta": 0.76085447
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9982625597,
+      "rotated_measurement_entropy_bits": 1.010420406,
+      "rotation_angle": 0.06544985,
+      "theta": 0.76085447
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9982625597,
+      "rotated_measurement_entropy_bits": 1.038240736,
+      "rotation_angle": 0.13089969,
+      "theta": 0.76085447
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9982625597,
+      "rotated_measurement_entropy_bits": 1.0767421219,
+      "rotation_angle": 0.19634954,
+      "theta": 0.76085447
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9982625597,
+      "rotated_measurement_entropy_bits": 1.1231832756,
+      "rotation_angle": 0.26179939,
+      "theta": 0.76085447
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9982625597,
+      "rotated_measurement_entropy_bits": 1.1755804954,
+      "rotation_angle": 0.32724923,
+      "theta": 0.76085447
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9982625597,
+      "rotated_measurement_entropy_bits": 1.2323487533,
+      "rotation_angle": 0.39269908,
+      "theta": 0.76085447
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9982625597,
+      "rotated_measurement_entropy_bits": 1.2921529838,
+      "rotation_angle": 0.45814893,
+      "theta": 0.76085447
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9982625597,
+      "rotated_measurement_entropy_bits": 1.3538327153,
+      "rotation_angle": 0.52359878,
+      "theta": 0.76085447
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9982625597,
+      "rotated_measurement_entropy_bits": 1.4163592588,
+      "rotation_angle": 0.58904862,
+      "theta": 0.76085447
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9982625597,
+      "rotated_measurement_entropy_bits": 1.4788095468,
+      "rotation_angle": 0.65449847,
+      "theta": 0.76085447
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9982625597,
+      "rotated_measurement_entropy_bits": 1.5403493282,
+      "rotation_angle": 0.71994832,
+      "theta": 0.76085447
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9982625597,
+      "rotated_measurement_entropy_bits": 1.6002219799,
+      "rotation_angle": 0.78539816,
+      "theta": 0.76085447
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9982625597,
+      "rotated_measurement_entropy_bits": 1.6577408642,
+      "rotation_angle": 0.85084801,
+      "theta": 0.76085447
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9982625597,
+      "rotated_measurement_entropy_bits": 1.7122840018,
+      "rotation_angle": 0.91629786,
+      "theta": 0.76085447
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9982625597,
+      "rotated_measurement_entropy_bits": 1.7632903049,
+      "rotation_angle": 0.9817477,
+      "theta": 0.76085447
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9982625597,
+      "rotated_measurement_entropy_bits": 1.8102568799,
+      "rotation_angle": 1.04719755,
+      "theta": 0.76085447
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9982625597,
+      "rotated_measurement_entropy_bits": 1.852737078,
+      "rotation_angle": 1.1126474,
+      "theta": 0.76085447
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9982625597,
+      "rotated_measurement_entropy_bits": 1.8903390749,
+      "rotation_angle": 1.17809725,
+      "theta": 0.76085447
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9982625597,
+      "rotated_measurement_entropy_bits": 1.9227248306,
+      "rotation_angle": 1.24354709,
+      "theta": 0.76085447
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9982625597,
+      "rotated_measurement_entropy_bits": 1.9496093241,
+      "rotation_angle": 1.30899694,
+      "theta": 0.76085447
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9982625597,
+      "rotated_measurement_entropy_bits": 1.9707599927,
+      "rotation_angle": 1.37444679,
+      "theta": 0.76085447
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9982625597,
+      "rotated_measurement_entropy_bits": 1.9859963249,
+      "rotation_angle": 1.43989663,
+      "theta": 0.76085447
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9982625597,
+      "rotated_measurement_entropy_bits": 1.9951895726,
+      "rotation_angle": 1.50534648,
+      "theta": 0.76085447
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 0.9982625597,
+      "rotated_measurement_entropy_bits": 1.9982625597,
+      "rotation_angle": 1.57079633,
+      "theta": 0.76085447
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 1.0,
+      "rotated_measurement_entropy_bits": 1.0,
+      "rotation_angle": 0.0,
+      "theta": 0.78539816
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 1.0,
+      "rotated_measurement_entropy_bits": 1.012107115,
+      "rotation_angle": 0.06544985,
+      "theta": 0.78539816
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 1.0,
+      "rotated_measurement_entropy_bits": 1.0398181735,
+      "rotation_angle": 0.13089969,
+      "theta": 0.78539816
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 1.0,
+      "rotated_measurement_entropy_bits": 1.0781788024,
+      "rotation_angle": 0.19634954,
+      "theta": 0.78539816
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 1.0,
+      "rotated_measurement_entropy_bits": 1.1244646511,
+      "rotation_angle": 0.26179939,
+      "theta": 0.78539816
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 1.0,
+      "rotated_measurement_entropy_bits": 1.1767053072,
+      "rotation_angle": 0.32724923,
+      "theta": 0.78539816
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 1.0,
+      "rotated_measurement_entropy_bits": 1.2333266287,
+      "rotation_angle": 0.39269908,
+      "theta": 0.78539816
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 1.0,
+      "rotated_measurement_entropy_bits": 1.2930023723,
+      "rotation_angle": 0.45814893,
+      "theta": 0.78539816
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 1.0,
+      "rotated_measurement_entropy_bits": 1.3545789027,
+      "rotation_angle": 0.52359878,
+      "theta": 0.78539816
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 1.0,
+      "rotated_measurement_entropy_bits": 1.4170323856,
+      "rotation_angle": 0.58904862,
+      "theta": 0.78539816
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 1.0,
+      "rotated_measurement_entropy_bits": 1.4794426357,
+      "rotation_angle": 0.65449847,
+      "theta": 0.78539816
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 1.0,
+      "rotated_measurement_entropy_bits": 1.5409763541,
+      "rotation_angle": 0.71994832,
+      "theta": 0.78539816
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 1.0,
+      "rotated_measurement_entropy_bits": 1.6008760367,
+      "rotation_angle": 0.78539816,
+      "theta": 0.78539816
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 1.0,
+      "rotated_measurement_entropy_bits": 1.6584524811,
+      "rotation_angle": 0.85084801,
+      "theta": 0.78539816
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 1.0,
+      "rotated_measurement_entropy_bits": 1.7130796668,
+      "rotation_angle": 0.91629786,
+      "theta": 0.78539816
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 1.0,
+      "rotated_measurement_entropy_bits": 1.7641912426,
+      "rotation_angle": 0.9817477,
+      "theta": 0.78539816
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 1.0,
+      "rotated_measurement_entropy_bits": 1.8112781245,
+      "rotation_angle": 1.04719755,
+      "theta": 0.78539816
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 1.0,
+      "rotated_measurement_entropy_bits": 1.8538868706,
+      "rotation_angle": 1.1126474,
+      "theta": 0.78539816
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 1.0,
+      "rotated_measurement_entropy_bits": 1.8916186019,
+      "rotation_angle": 1.17809725,
+      "theta": 0.78539816
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 1.0,
+      "rotated_measurement_entropy_bits": 1.9241283045,
+      "rotation_angle": 1.24354709,
+      "theta": 0.78539816
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 1.0,
+      "rotated_measurement_entropy_bits": 1.9511243982,
+      "rotation_angle": 1.30899694,
+      "theta": 0.78539816
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 1.0,
+      "rotated_measurement_entropy_bits": 1.9723684829,
+      "rotation_angle": 1.37444679,
+      "theta": 0.78539816
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 1.0,
+      "rotated_measurement_entropy_bits": 1.987675203,
+      "rotation_angle": 1.43989663,
+      "theta": 0.78539816
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 1.0,
+      "rotated_measurement_entropy_bits": 1.9969121824,
+      "rotation_angle": 1.50534648,
+      "theta": 0.78539816
+    },
+    {
+      "entropy_drift_bits": 0.0,
+      "reduced_entropy_bits": 1.0,
+      "rotated_measurement_entropy_bits": 2.0,
+      "rotation_angle": 1.57079633,
+      "theta": 0.78539816
+    }
+  ],
+  "claim_boundary": "finite two-qubit quantum-information simulation; not empirical evidence and not a full qFEP, many-body QRF, or physical quantum-boundary simulation",
+  "controls": {
+    "basis_entropy_invariant": true,
+    "bell_chsh_toward_tsirelson": true,
+    "bell_entropy_one": true,
+    "measurement_entropy_changes_under_basis": true,
+    "product_chsh_local": true,
+    "product_entropy_zero": true
+  },
+  "local_chsh_bound": 2.0,
+  "max_basis_entropy_drift_bits": 0.0,
+  "max_contextual_fraction": 1.0,
+  "max_observed_chsh": 2.8284271247,
+  "rotation_grid": [
+    0.0,
+    0.06544985,
+    0.13089969,
+    0.19634954,
+    0.26179939,
+    0.32724923,
+    0.39269908,
+    0.45814893,
+    0.52359878,
+    0.58904862,
+    0.65449847,
+    0.71994832,
+    0.78539816,
+    0.85084801,
+    0.91629786,
+    0.9817477,
+    1.04719755,
+    1.1126474,
+    1.17809725,
+    1.24354709,
+    1.30899694,
+    1.37444679,
+    1.43989663,
+    1.50534648,
+    1.57079633
+  ],
+  "row_count": 33,
+  "rows": [
+    {
+      "bell_violation_predicate": false,
+      "chsh_s_max": 2.0,
+      "computational_boundary_entropy_bits": -0.0,
+      "concurrence": 0.0,
+      "contextual_fraction": 0.0,
+      "landauer_lower_bound_kbt": -0.0,
+      "mutual_information_bits": -0.0,
+      "reduced_entropy_bits": -0.0,
+      "separable_predicate": true,
+      "single_qubit_purity": 1.0,
+      "state_label": "product",
+      "theta": 0.0,
+      "theta_index": 0
+    },
+    {
+      "bell_violation_predicate": true,
+      "chsh_s_max": 2.0024061892,
+      "computational_boundary_entropy_bits": 0.0073113146,
+      "concurrence": 0.0490676743,
+      "contextual_fraction": 0.0029045273,
+      "landauer_lower_bound_kbt": 0.0050678171,
+      "mutual_information_bits": 0.0146226292,
+      "reduced_entropy_bits": 0.0073113146,
+      "separable_predicate": false,
+      "single_qubit_purity": 0.9987961817,
+      "state_label": "partially_entangled",
+      "theta": 0.02454369,
+      "theta_index": 1
+    },
+    {
+      "bell_violation_predicate": true,
+      "chsh_s_max": 2.0095843946,
+      "computational_boundary_entropy_bits": 0.0244113255,
+      "concurrence": 0.0980171403,
+      "contextual_fraction": 0.0115693878,
+      "landauer_lower_bound_kbt": 0.0169206414,
+      "mutual_information_bits": 0.0488226509,
+      "reduced_entropy_bits": 0.0244113255,
+      "separable_predicate": false,
+      "single_qubit_purity": 0.9951963201,
+      "state_label": "partially_entangled",
+      "theta": 0.04908739,
+      "theta_index": 2
+    },
+    {
+      "bell_violation_predicate": true,
+      "chsh_s_max": 2.0214151797,
+      "computational_boundary_entropy_bits": 0.048535098,
+      "concurrence": 0.1467304745,
+      "contextual_fraction": 0.0258504086,
+      "landauer_lower_bound_kbt": 0.0336419663,
+      "mutual_information_bits": 0.097070196,
+      "reduced_entropy_bits": 0.048535098,
+      "separable_predicate": false,
+      "single_qubit_purity": 0.9892350839,
+      "state_label": "partially_entangled",
+      "theta": 0.07363108,
+      "theta_index": 3
+    },
+    {
+      "bell_violation_predicate": true,
+      "chsh_s_max": 2.0377048204,
+      "computational_boundary_entropy_bits": 0.0781788024,
+      "concurrence": 0.195090322,
+      "contextual_fraction": 0.0455137444,
+      "landauer_lower_bound_kbt": 0.0541894165,
+      "mutual_information_bits": 0.1563576049,
+      "reduced_entropy_bits": 0.0781788024,
+      "separable_predicate": false,
+      "single_qubit_purity": 0.9809698831,
+      "state_label": "partially_entangled",
+      "theta": 0.09817477,
+      "theta_index": 4
+    },
+    {
+      "bell_violation_predicate": true,
+      "chsh_s_max": 2.0581927683,
+      "computational_boundary_entropy_bits": 0.112266359,
+      "concurrence": 0.2429801799,
+      "contextual_fraction": 0.0702448852,
+      "landauer_lower_bound_kbt": 0.0778171102,
+      "mutual_information_bits": 0.224532718,
+      "reduced_entropy_bits": 0.112266359,
+      "separable_predicate": false,
+      "single_qubit_purity": 0.9704803161,
+      "state_label": "partially_entangled",
+      "theta": 0.12271846,
+      "theta_index": 5
+    },
+    {
+      "bell_violation_predicate": true,
+      "chsh_s_max": 2.0825611096,
+      "computational_boundary_entropy_bits": 0.1499460444,
+      "concurrence": 0.2902846773,
+      "contextual_fraction": 0.0996600753,
+      "landauer_lower_bound_kbt": 0.1039346779,
+      "mutual_information_bits": 0.2998920889,
+      "reduced_entropy_bits": 0.1499460444,
+      "separable_predicate": false,
+      "single_qubit_purity": 0.9578674031,
+      "state_label": "partially_entangled",
+      "theta": 0.14726216,
+      "theta_index": 6
+    },
+    {
+      "bell_violation_predicate": true,
+      "chsh_s_max": 2.1104452358,
+      "computational_boundary_entropy_bits": 0.1905052535,
+      "concurrence": 0.3368898534,
+      "contextual_fraction": 0.1333191931,
+      "landauer_lower_bound_kbt": 0.1320481793,
+      "mutual_information_bits": 0.3810105069,
+      "reduced_entropy_bits": 0.1905052535,
+      "separable_predicate": false,
+      "single_qubit_purity": 0.9432526133,
+      "state_label": "partially_entangled",
+      "theta": 0.17180585,
+      "theta_index": 7
+    },
+    {
+      "bell_violation_predicate": true,
+      "chsh_s_max": 2.1414449415,
+      "computational_boundary_entropy_bits": 0.2333266287,
+      "concurrence": 0.3826834324,
+      "contextual_fraction": 0.1707391481,
+      "landauer_lower_bound_kbt": 0.1617296948,
+      "mutual_information_bits": 0.4666532573,
+      "reduced_entropy_bits": 0.2333266287,
+      "separable_predicate": false,
+      "single_qubit_purity": 0.9267766953,
+      "state_label": "partially_entangled",
+      "theta": 0.19634954,
+      "theta_index": 8
+    },
+    {
+      "bell_violation_predicate": true,
+      "chsh_s_max": 2.1751352674,
+      "computational_boundary_entropy_bits": 0.2778626461,
+      "concurrence": 0.4275550934,
+      "contextual_fraction": 0.211406969,
+      "landauer_lower_bound_kbt": 0.1925997097,
+      "mutual_information_bits": 0.5557252921,
+      "reduced_entropy_bits": 0.2778626461,
+      "separable_predicate": false,
+      "single_qubit_purity": 0.908598321,
+      "state_label": "partially_entangled",
+      "theta": 0.22089323,
+      "theta_index": 9
+    },
+    {
+      "bell_violation_predicate": true,
+      "chsh_s_max": 2.2110765554,
+      "computational_boundary_entropy_bits": 0.3236197063,
+      "concurrence": 0.4713967368,
+      "contextual_fraction": 0.2547919414,
+      "landauer_lower_bound_kbt": 0.224316087,
+      "mutual_information_bits": 0.6472394125,
+      "reduced_entropy_bits": 0.3236197063,
+      "separable_predicate": false,
+      "single_qubit_purity": 0.8888925583,
+      "state_label": "partially_entangled",
+      "theta": 0.24543693,
+      "theta_index": 10
+    },
+    {
+      "bell_violation_predicate": true,
+      "chsh_s_max": 2.2488233649,
+      "computational_boundary_entropy_bits": 0.370147621,
+      "concurrence": 0.5141027442,
+      "contextual_fraction": 0.300356371,
+      "landauer_lower_bound_kbt": 0.2565667799,
+      "mutual_information_bits": 0.740295242,
+      "reduced_entropy_bits": 0.370147621,
+      "separable_predicate": false,
+      "single_qubit_purity": 0.8678491842,
+      "state_label": "partially_entangled",
+      "theta": 0.26998062,
+      "theta_index": 11
+    },
+    {
+      "bell_violation_predicate": true,
+      "chsh_s_max": 2.2879320653,
+      "computational_boundary_entropy_bits": 0.4170323856,
+      "concurrence": 0.555570233,
+      "contextual_fraction": 0.3475647485,
+      "landauer_lower_bound_kbt": 0.2890648223,
+      "mutual_information_bits": 0.8340647712,
+      "reduced_entropy_bits": 0.4170323856,
+      "separable_predicate": false,
+      "single_qubit_purity": 0.8456708581,
+      "state_label": "partially_entangled",
+      "theta": 0.29452431,
+      "theta_index": 12
+    },
+    {
+      "bell_violation_predicate": true,
+      "chsh_s_max": 2.3279670628,
+      "computational_boundary_entropy_bits": 0.4638910627,
+      "concurrence": 0.5956993045,
+      "contextual_fraction": 0.3958912655,
+      "landauer_lower_bound_kbt": 0.3215447822,
+      "mutual_information_bits": 0.9277821254,
+      "reduced_entropy_bits": 0.4638910627,
+      "separable_predicate": false,
+      "single_qubit_purity": 0.8225711693,
+      "state_label": "partially_entangled",
+      "theta": 0.319068,
+      "theta_index": 13
+    },
+    {
+      "bell_violation_predicate": true,
+      "chsh_s_max": 2.3685057222,
+      "computational_boundary_entropy_bits": 0.5103680801,
+      "concurrence": 0.6343932842,
+      "contextual_fraction": 0.4448257561,
+      "landauer_lower_bound_kbt": 0.3537601958,
+      "mutual_information_bits": 1.0207361602,
+      "reduced_entropy_bits": 0.5103680801,
+      "separable_predicate": false,
+      "single_qubit_purity": 0.7987725805,
+      "state_label": "partially_entangled",
+      "theta": 0.3436117,
+      "theta_index": 14
+    },
+    {
+      "bell_violation_predicate": true,
+      "chsh_s_max": 2.4091421127,
+      "computational_boundary_entropy_bits": 0.5561325087,
+      "concurrence": 0.6715589548,
+      "contextual_fraction": 0.4938782187,
+      "landauer_lower_bound_kbt": 0.3854816804,
+      "mutual_information_bits": 1.1122650173,
+      "reduced_entropy_bits": 0.5561325087,
+      "separable_predicate": false,
+      "single_qubit_purity": 0.7745042851,
+      "state_label": "partially_entangled",
+      "theta": 0.36815539,
+      "theta_index": 15
+    },
+    {
+      "bell_violation_predicate": true,
+      "chsh_s_max": 2.4494897428,
+      "computational_boundary_entropy_bits": 0.6008760367,
+      "concurrence": 0.7071067812,
+      "contextual_fraction": 0.5425821166,
+      "landauer_lower_bound_kbt": 0.4164955307,
+      "mutual_information_bits": 1.2017520734,
+      "reduced_entropy_bits": 0.6008760367,
+      "separable_predicate": false,
+      "single_qubit_purity": 0.75,
+      "state_label": "partially_entangled",
+      "theta": 0.39269908,
+      "theta_index": 16
+    },
+    {
+      "bell_violation_predicate": true,
+      "chsh_s_max": 2.4891834566,
+      "computational_boundary_entropy_bits": 0.6443114512,
+      "concurrence": 0.7409511254,
+      "contextual_fraction": 0.5904966677,
+      "landauer_lower_bound_kbt": 0.4466026658,
+      "mutual_information_bits": 1.2886229025,
+      "reduced_entropy_bits": 0.6443114512,
+      "separable_predicate": false,
+      "single_qubit_purity": 0.7254957149,
+      "state_label": "partially_entangled",
+      "theta": 0.41724277,
+      "theta_index": 17
+    },
+    {
+      "bell_violation_predicate": true,
+      "chsh_s_max": 2.5278806625,
+      "computational_boundary_entropy_bits": 0.6861714941,
+      "concurrence": 0.7730104534,
+      "contextual_fraction": 0.6372083274,
+      "landauer_lower_bound_kbt": 0.4756178365,
+      "mutual_information_bits": 1.3723429882,
+      "reduced_entropy_bits": 0.6861714941,
+      "separable_predicate": false,
+      "single_qubit_purity": 0.7012274195,
+      "state_label": "partially_entangled",
+      "theta": 0.44178647,
+      "theta_index": 18
+    },
+    {
+      "bell_violation_predicate": true,
+      "chsh_s_max": 2.565262044,
+      "computational_boundary_entropy_bits": 0.7262079992,
+      "concurrence": 0.8032075315,
+      "contextual_fraction": 0.6823316465,
+      "landauer_lower_bound_kbt": 0.5033690271,
+      "mutual_information_bits": 1.4524159984,
+      "reduced_entropy_bits": 0.7262079992,
+      "separable_predicate": false,
+      "single_qubit_purity": 0.6774288307,
+      "state_label": "partially_entangled",
+      "theta": 0.46633016,
+      "theta_index": 19
+    },
+    {
+      "bell_violation_predicate": true,
+      "chsh_s_max": 2.6010318846,
+      "computational_boundary_entropy_bits": 0.7641912426,
+      "concurrence": 0.8314696123,
+      "contextual_fraction": 0.7255096636,
+      "landauer_lower_bound_kbt": 0.5296970052,
+      "mutual_information_bits": 1.5283824852,
+      "reduced_entropy_bits": 0.7641912426,
+      "separable_predicate": false,
+      "single_qubit_purity": 0.6543291419,
+      "state_label": "partially_entangled",
+      "theta": 0.49087385,
+      "theta_index": 20
+    },
+    {
+      "bell_violation_predicate": true,
+      "chsh_s_max": 2.6349181152,
+      "computational_boundary_entropy_bits": 0.7999094558,
+      "concurrence": 0.85772861,
+      "contextual_fraction": 0.7664139623,
+      "landauer_lower_bound_kbt": 0.554454984,
+      "mutual_information_bits": 1.5998189117,
+      "reduced_entropy_bits": 0.7999094558,
+      "separable_predicate": false,
+      "single_qubit_purity": 0.6321508158,
+      "state_label": "partially_entangled",
+      "theta": 0.51541754,
+      "theta_index": 21
+    },
+    {
+      "bell_violation_predicate": true,
+      "chsh_s_max": 2.6666721707,
+      "computational_boundary_entropy_bits": 0.8331684636,
+      "concurrence": 0.8819212643,
+      "contextual_fraction": 0.8047444981,
+      "landauer_lower_bound_kbt": 0.5775083714,
+      "mutual_information_bits": 1.6663369271,
+      "reduced_entropy_bits": 0.8331684636,
+      "separable_predicate": false,
+      "single_qubit_purity": 0.6111074417,
+      "state_label": "partially_entangled",
+      "theta": 0.53996124,
+      "theta_index": 22
+    },
+    {
+      "bell_violation_predicate": true,
+      "chsh_s_max": 2.6960687247,
+      "computational_boundary_entropy_bits": 0.8637914171,
+      "concurrence": 0.9039892931,
+      "contextual_fraction": 0.8402292778,
+      "landauer_lower_bound_kbt": 0.5987345854,
+      "mutual_information_bits": 1.7275828342,
+      "reduced_entropy_bits": 0.8637914171,
+      "separable_predicate": false,
+      "single_qubit_purity": 0.591401679,
+      "state_label": "partially_entangled",
+      "theta": 0.56450493,
+      "theta_index": 23
+    },
+    {
+      "bell_violation_predicate": true,
+      "chsh_s_max": 2.7229053532,
+      "computational_boundary_entropy_bits": 0.8916186019,
+      "concurrence": 0.9238795325,
+      "contextual_fraction": 0.872623954,
+      "landauer_lower_bound_kbt": 0.61802292,
+      "mutual_information_bits": 1.7832372037,
+      "reduced_entropy_bits": 0.8916186019,
+      "separable_predicate": false,
+      "single_qubit_purity": 0.5732233047,
+      "state_label": "partially_entangled",
+      "theta": 0.58904862,
+      "theta_index": 24
+    },
+    {
+      "bell_violation_predicate": true,
+      "chsh_s_max": 2.7470021672,
+      "computational_boundary_entropy_bits": 0.9165073001,
+      "concurrence": 0.9415440652,
+      "contextual_fraction": 0.9017113816,
+      "landauer_lower_bound_kbt": 0.635274451,
+      "mutual_information_bits": 1.8330146003,
+      "reduced_entropy_bits": 0.9165073001,
+      "separable_predicate": false,
+      "single_qubit_purity": 0.5567473867,
+      "state_label": "partially_entangled",
+      "theta": 0.61359232,
+      "theta_index": 25
+    },
+    {
+      "bell_violation_predicate": true,
+      "chsh_s_max": 2.7682014422,
+      "computational_boundary_entropy_bits": 0.9383316969,
+      "concurrence": 0.9569403357,
+      "contextual_fraction": 0.9273011702,
+      "landauer_lower_bound_kbt": 0.6504019701,
+      "mutual_information_bits": 1.8766633937,
+      "reduced_entropy_bits": 0.9383316969,
+      "separable_predicate": false,
+      "single_qubit_purity": 0.5421325969,
+      "state_label": "partially_entangled",
+      "theta": 0.63813601,
+      "theta_index": 26
+    },
+    {
+      "bell_violation_predicate": true,
+      "chsh_s_max": 2.7863672638,
+      "computational_boundary_entropy_bits": 0.9569828165,
+      "concurrence": 0.9700312532,
+      "contextual_fraction": 0.9492292566,
+      "landauer_lower_bound_kbt": 0.6633299411,
+      "mutual_information_bits": 1.9139656331,
+      "reduced_entropy_bits": 0.9569828165,
+      "separable_predicate": false,
+      "single_qubit_purity": 0.5295196839,
+      "state_label": "partially_entangled",
+      "theta": 0.6626797,
+      "theta_index": 27
+    },
+    {
+      "bell_violation_predicate": true,
+      "chsh_s_max": 2.8013852047,
+      "computational_boundary_entropy_bits": 0.9723684829,
+      "concurrence": 0.9807852804,
+      "contextual_fraction": 0.9673575149,
+      "landauer_lower_bound_kbt": 0.6739944724,
+      "mutual_information_bits": 1.9447369659,
+      "reduced_entropy_bits": 0.9723684829,
+      "separable_predicate": false,
+      "single_qubit_purity": 0.5190301169,
+      "state_label": "partially_entangled",
+      "theta": 0.68722339,
+      "theta_index": 28
+    },
+    {
+      "bell_violation_predicate": true,
+      "chsh_s_max": 2.8131620415,
+      "computational_boundary_entropy_bits": 0.9844132953,
+      "concurrence": 0.98917651,
+      "contextual_fraction": 0.9815734144,
+      "landauer_lower_bound_kbt": 0.6823433001,
+      "mutual_information_bits": 1.9688265906,
+      "reduced_entropy_bits": 0.9844132953,
+      "separable_predicate": false,
+      "single_qubit_purity": 0.5107649161,
+      "state_label": "partially_entangled",
+      "theta": 0.71176709,
+      "theta_index": 29
+    },
+    {
+      "bell_violation_predicate": true,
+      "chsh_s_max": 2.8216255175,
+      "computational_boundary_entropy_bits": 0.9930586151,
+      "concurrence": 0.9951847267,
+      "contextual_fraction": 0.9917897337,
+      "landauer_lower_bound_kbt": 0.6883357792,
+      "mutual_information_bits": 1.9861172301,
+      "reduced_entropy_bits": 0.9930586151,
+      "separable_predicate": false,
+      "single_qubit_purity": 0.5048036799,
+      "state_label": "partially_entangled",
+      "theta": 0.73631078,
+      "theta_index": 30
+    },
+    {
+      "bell_violation_predicate": true,
+      "chsh_s_max": 2.8267241559,
+      "computational_boundary_entropy_bits": 0.9982625597,
+      "concurrence": 0.9987954562,
+      "contextual_fraction": 0.9979443347,
+      "landauer_lower_bound_kbt": 0.6919428787,
+      "mutual_information_bits": 1.9965251194,
+      "reduced_entropy_bits": 0.9982625597,
+      "separable_predicate": false,
+      "single_qubit_purity": 0.5012038183,
+      "state_label": "partially_entangled",
+      "theta": 0.76085447,
+      "theta_index": 31
+    },
+    {
+      "bell_violation_predicate": true,
+      "chsh_s_max": 2.8284271247,
+      "computational_boundary_entropy_bits": 1.0,
+      "concurrence": 1.0,
+      "contextual_fraction": 1.0,
+      "landauer_lower_bound_kbt": 0.6931471806,
+      "mutual_information_bits": 2.0,
+      "reduced_entropy_bits": 1.0,
+      "separable_predicate": false,
+      "single_qubit_purity": 0.5,
+      "state_label": "maximally_entangled",
+      "theta": 0.78539816,
+      "theta_index": 32
+    }
+  ],
+  "schema": "realizing_emptiness.quantum_boundary_entropy.v1",
+  "theta_grid": [
+    0.0,
+    0.02454369,
+    0.04908739,
+    0.07363108,
+    0.09817477,
+    0.12271846,
+    0.14726216,
+    0.17180585,
+    0.19634954,
+    0.22089323,
+    0.24543693,
+    0.26998062,
+    0.29452431,
+    0.319068,
+    0.3436117,
+    0.36815539,
+    0.39269908,
+    0.41724277,
+    0.44178647,
+    0.46633016,
+    0.49087385,
+    0.51541754,
+    0.53996124,
+    0.56450493,
+    0.58904862,
+    0.61359232,
+    0.63813601,
+    0.6626797,
+    0.68722339,
+    0.71176709,
+    0.73631078,
+    0.76085447,
+    0.78539816
+  ],
+  "tsirelson_bound": 2.8284271247461903
+}

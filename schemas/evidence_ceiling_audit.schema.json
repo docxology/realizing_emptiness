@@ -1,0 +1,54 @@
+{
+  "$id": "realizing_emptiness.evidence_ceiling_audit.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Realizing Emptiness Evidence Ceiling Audit",
+  "type": "object",
+  "required": [
+    "schema",
+    "claim_count",
+    "stressors",
+    "rows",
+    "missing_boundary_fields",
+    "invalid_stressors",
+    "status_mismatches",
+    "claims_without_support",
+    "ok"
+  ],
+  "properties": {
+    "schema": {
+      "const": "realizing_emptiness.evidence_ceiling_audit.v1"
+    },
+    "claim_count": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "stressors": {
+      "type": "array",
+      "minItems": 1
+    },
+    "rows": {
+      "type": "array",
+      "minItems": 1
+    },
+    "missing_boundary_fields": {
+      "type": "array",
+      "maxItems": 0
+    },
+    "invalid_stressors": {
+      "type": "array",
+      "maxItems": 0
+    },
+    "status_mismatches": {
+      "type": "array",
+      "maxItems": 0
+    },
+    "claims_without_support": {
+      "type": "array",
+      "maxItems": 0
+    },
+    "ok": {
+      "const": true
+    }
+  },
+  "additionalProperties": false
+}

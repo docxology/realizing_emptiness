@@ -1,0 +1,12 @@
+{
+  "$id": "realizing_emptiness.manuscript_variables.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Realizing Emptiness Manuscript Variables",
+  "type": "object",
+  "required": ["VALIDATION_PASS_COUNT", "VALIDATION_TOTAL_COUNT"],
+  "properties": {
+    "VALIDATION_PASS_COUNT": {"type": "integer", "minimum": 0},
+    "VALIDATION_TOTAL_COUNT": {"type": "integer", "minimum": 1}
+  },
+  "additionalProperties": true
+}

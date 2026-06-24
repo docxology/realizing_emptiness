@@ -1,0 +1,74 @@
+{
+  "all_controls_pass": true,
+  "claim_boundary": "finite toy non-stationary boundary stream modeling revision-vs-rigidity dynamics; not a claim of realized awakening, attainment, impermanence insight, a zero-person perspective, or any empirical outcome",
+  "controls": {
+    "nonstationary_jump_exceeds_stationary": true,
+    "post_dual_outperforms_after_regime_change": true,
+    "revision_gain_concentrated_at_regime_change": true,
+    "stationary_stream_shows_no_revision_jump": true
+  },
+  "label": "finite_non_stationary_revision_vs_rigidity_not_empirical",
+  "nonstationary_stream": {
+    "post_regime_advantage": 0.23437500000000003,
+    "pre_regime_advantage": 0.020833333333333343,
+    "regime_change": true,
+    "revision_jump": 0.21354166666666669,
+    "windows": [
+      {
+        "post_dual_advantage": 0.020833333333333343,
+        "post_dual_error": 0.21875,
+        "post_dual_self_set": [
+          0,
+          1,
+          2,
+          4
+        ],
+        "rigid_error": 0.23958333333333334,
+        "window": "pre_regime"
+      },
+      {
+        "post_dual_advantage": 0.23437500000000003,
+        "post_dual_error": 0.18229166666666666,
+        "post_dual_self_set": [
+          3,
+          4,
+          5
+        ],
+        "rigid_error": 0.4166666666666667,
+        "window": "post_regime"
+      }
+    ]
+  },
+  "schema": "realizing_emptiness.ongoing_revision_audit.v1",
+  "stationary_stream": {
+    "post_regime_advantage": 0.0,
+    "pre_regime_advantage": 0.020833333333333343,
+    "regime_change": false,
+    "revision_jump": -0.020833333333333343,
+    "windows": [
+      {
+        "post_dual_advantage": 0.020833333333333343,
+        "post_dual_error": 0.21875,
+        "post_dual_self_set": [
+          0,
+          1,
+          2,
+          4
+        ],
+        "rigid_error": 0.23958333333333334,
+        "window": "pre_regime"
+      },
+      {
+        "post_dual_advantage": 0.0,
+        "post_dual_error": 0.18229166666666666,
+        "post_dual_self_set": [
+          0,
+          1,
+          2
+        ],
+        "rigid_error": 0.18229166666666666,
+        "window": "post_regime"
+      }
+    ]
+  }
+}

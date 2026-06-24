@@ -1,0 +1,731 @@
+\begin{thebibliography}{98}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Abramsky and Brandenburger(2011)]{abramsky2011sheaf}
+Samson Abramsky and Adam Brandenburger.
+\newblock The sheaf-theoretic structure of non-locality and contextuality.
+\newblock \emph{New Journal of Physics}, 13:\penalty0 113036, 2011.
+\newblock \doi{10.1088/1367-2630/13/11/113036}.
+
+\bibitem[Aguilera et~al.(2022)Aguilera, Millidge, Tschantz, and
+  Buckley]{aguilera2021particular}
+Miguel Aguilera, Beren Millidge, Alexander Tschantz, and Christopher~L.
+  Buckley.
+\newblock How particular is the physics of the free energy principle?
+\newblock \emph{Physics of Life Reviews}, 40:\penalty0 24--50, 2022.
+\newblock \doi{10.1016/j.plrev.2021.11.001}.
+
+\bibitem[Ara{\'u}jo et~al.(2013)Ara{\'u}jo, Quintino, Budroni, Cunha, and
+  Cabello]{araujo2013ncycle}
+Mateus Ara{\'u}jo, Marco~T{\'u}lio Quintino, Costantino Budroni, Marcelo~Terra
+  Cunha, and Ad{\'a}n Cabello.
+\newblock All noncontextuality inequalities for the n-cycle scenario.
+\newblock \emph{Physical Review A}, 88\penalty0 (2):\penalty0 022118, 2013.
+\newblock \doi{10.1103/PhysRevA.88.022118}.
+
+\bibitem[Bartlett et~al.(2007)Bartlett, Rudolph, and
+  Spekkens]{bartlett2007reference}
+Stephen~D. Bartlett, Terry Rudolph, and Robert~W. Spekkens.
+\newblock Reference frames, superselection rules, and quantum information.
+\newblock \emph{Reviews of Modern Physics}, 79\penalty0 (2):\penalty0 555--609,
+  2007.
+\newblock \doi{10.1103/RevModPhys.79.555}.
+
+\bibitem[Beck and Ramstead(2025)]{beck2025dynamicmarkovblanket}
+Jeff Beck and Maxwell J.~D. Ramstead.
+\newblock Dynamic markov blanket detection for macroscopic physics discovery,
+  2025.
+
+\bibitem[Beggs and Plenz(2003)]{beggs2003neuronal}
+John~M. Beggs and Dietmar Plenz.
+\newblock Neuronal avalanches in neocortical circuits.
+\newblock \emph{The Journal of Neuroscience}, 23\penalty0 (35):\penalty0
+  11167--11177, 2003.
+\newblock \doi{10.1523/JNEUROSCI.23-35-11167.2003}.
+
+\bibitem[Bell(1964)]{bell1964epr}
+J.~S. Bell.
+\newblock On the einstein podolsky rosen paradox.
+\newblock \emph{Physics Physique Fizika}, 1\penalty0 (3):\penalty0 195--200,
+  1964.
+\newblock \doi{10.1103/PhysicsPhysiqueFizika.1.195}.
+
+\bibitem[Biehl et~al.(2021)Biehl, Pollock, and Kanai]{biehl2021technical_fep}
+Martin Biehl, Felix~A. Pollock, and Ryota Kanai.
+\newblock A technical critique of some parts of the free energy principle.
+\newblock \emph{Entropy}, 23\penalty0 (3):\penalty0 293, 2021.
+\newblock \doi{10.3390/e23030293}.
+
+\bibitem[Blackwell(1953)]{blackwell1953equivalent}
+David Blackwell.
+\newblock Equivalent comparisons of experiments.
+\newblock \emph{The Annals of Mathematical Statistics}, 24\penalty0
+  (2):\penalty0 265--272, 1953.
+\newblock \doi{10.1214/aoms/1177729032}.
+
+\bibitem[Braunstein and Caves(1994)]{braunstein1994statistical}
+Samuel~L. Braunstein and Carlton~M. Caves.
+\newblock Statistical distance and the geometry of quantum states.
+\newblock \emph{Physical Review Letters}, 72\penalty0 (22):\penalty0
+  3439--3443, 1994.
+\newblock \doi{10.1103/PhysRevLett.72.3439}.
+
+\bibitem[Bruineberg et~al.(2022)Bruineberg, Dolega, Dewhurst, and
+  Baltieri]{bruineberg2022emperor}
+Jelle Bruineberg, Krzysztof Dolega, Joe Dewhurst, and Manuel Baltieri.
+\newblock The emperor's new markov blankets.
+\newblock \emph{Behavioral and Brain Sciences}, 45:\penalty0 e183, 2022.
+\newblock \doi{10.1017/S0140525X21002351}.
+
+\bibitem[Chen and Giacomini(2026)]{chen2026quantumreferencefields}
+Lin-Qing Chen and Flaminia Giacomini.
+\newblock Quantum reference fields transformations in linearized quantum
+  gravity, 2026.
+
+\bibitem[Cirel'son(1980)]{cirelson1980quantum}
+Boris~S. Cirel'son.
+\newblock Quantum generalizations of bell's inequality.
+\newblock \emph{Letters in Mathematical Physics}, 4\penalty0 (2):\penalty0
+  93--100, 1980.
+\newblock \doi{10.1007/BF00417500}.
+
+\bibitem[Clauser et~al.(1969)Clauser, Horne, Shimony, and
+  Holt]{clauser1969chsh}
+John~F. Clauser, Michael~A. Horne, Abner Shimony, and Richard~A. Holt.
+\newblock Proposed experiment to test local hidden-variable theories.
+\newblock \emph{Physical Review Letters}, 23\penalty0 (15):\penalty0 880--884,
+  1969.
+\newblock \doi{10.1103/PhysRevLett.23.880}.
+
+\bibitem[Cliff(1993)]{cliff1993dominance}
+Norman Cliff.
+\newblock Dominance statistics: Ordinal analyses to answer ordinal questions.
+\newblock \emph{Psychological Bulletin}, 114\penalty0 (3):\penalty0 494--509,
+  1993.
+\newblock \doi{10.1037/0033-2909.114.3.494}.
+
+\bibitem[Cocchi et~al.(2017)Cocchi, Gollo, Zalesky, and
+  Breakspear]{cocchi2017criticality}
+Luca Cocchi, Leonardo~L. Gollo, Andrew Zalesky, and Michael Breakspear.
+\newblock Criticality in the brain: A synthesis of neurobiology, models and
+  cognition.
+\newblock \emph{Progress in Neurobiology}, 158:\penalty0 132--152, 2017.
+\newblock \doi{10.1016/j.pneurobio.2017.07.002}.
+
+\bibitem[Cover and Thomas(2006)]{cover2006elements}
+Thomas~M. Cover and Joy~A. Thomas.
+\newblock \emph{Elements of Information Theory}.
+\newblock Wiley-Interscience, Hoboken, NJ, 2nd edition, 2006.
+
+\bibitem[Da~Costa et~al.(2020)Da~Costa, Parr, Sajid, Veselic, Neacsu, and
+  Friston]{dacosta2020discrete}
+Lancelot Da~Costa, Thomas Parr, Noor Sajid, Sebastijan Veselic, Victorita
+  Neacsu, and Karl Friston.
+\newblock Active inference on discrete state-spaces: A synthesis.
+\newblock \emph{Journal of Mathematical Psychology}, 99:\penalty0 102447, 2020.
+\newblock \doi{10.1016/j.jmp.2020.102447}.
+
+\bibitem[Dahl et~al.(2015)Dahl, Lutz, and Davidson]{dahl2015self}
+Cortland~J. Dahl, Antoine Lutz, and Richard~J. Davidson.
+\newblock Reconstructing and deconstructing the self: Cognitive mechanisms in
+  meditation practice.
+\newblock \emph{Trends in Cognitive Sciences}, 19\penalty0 (9):\penalty0
+  515--523, 2015.
+\newblock \doi{10.1016/j.tics.2015.07.001}.
+
+\bibitem[Dalibard et~al.(1992)Dalibard, Castin, and
+  M{\o}lmer]{dalibard1992wavefunction}
+Jean Dalibard, Yvan Castin, and Klaus M{\o}lmer.
+\newblock Wave-function approach to dissipative processes in quantum optics.
+\newblock \emph{Physical Review Letters}, 68\penalty0 (5):\penalty0 580--583,
+  1992.
+\newblock \doi{10.1103/PhysRevLett.68.580}.
+
+\bibitem[Dennett(1991)]{dennett1991realpatterns}
+Daniel~C. Dennett.
+\newblock Real patterns.
+\newblock \emph{The Journal of Philosophy}, 88\penalty0 (1):\penalty0 27--51,
+  1991.
+\newblock \doi{10.2307/2027085}.
+
+\bibitem[Destexhe and Touboul(2021)]{destexhe2021criticality_evidence}
+Alain Destexhe and Jonathan~D. Touboul.
+\newblock Is there sufficient evidence for criticality in cortical systems?
+\newblock \emph{eNeuro}, 8\penalty0 (2):\penalty0 ENEURO.0551--20.2021, 2021.
+\newblock \doi{10.1523/ENEURO.0551-20.2021}.
+
+\bibitem[Doctor et~al.(2022)Doctor, Witkowski, Solomonova, Duane, and
+  Levin]{doctor2022care}
+Thomas Doctor, Olaf Witkowski, Elizaveta Solomonova, Bill Duane, and Michael
+  Levin.
+\newblock Biology, buddhism, and ai: Care as the driver of intelligence.
+\newblock \emph{Entropy}, 24\penalty0 (5):\penalty0 710, 2022.
+\newblock \doi{10.3390/e24050710}.
+
+\bibitem[Efron(1979)]{efron1979bootstrap}
+Bradley Efron.
+\newblock Bootstrap methods: Another look at the jackknife.
+\newblock \emph{The Annals of Statistics}, 7\penalty0 (1):\penalty0 1--26,
+  1979.
+\newblock \doi{10.1214/aos/1176344552}.
+
+\bibitem[Eisert et~al.(2010)Eisert, Cramer, and Plenio]{eisert2010area}
+Jens Eisert, Marcus Cramer, and Martin~B. Plenio.
+\newblock Colloquium: Area laws for the entanglement entropy.
+\newblock \emph{Reviews of Modern Physics}, 82\penalty0 (1):\penalty0 277--306,
+  2010.
+\newblock \doi{10.1103/RevModPhys.82.277}.
+
+\bibitem[Fields and Glazebrook(2023)]{fields2023quantumframe}
+Chris Fields and James~F. Glazebrook.
+\newblock Separability, contextuality, and the quantum frame problem.
+\newblock \emph{International Journal of Theoretical Physics}, 62:\penalty0
+  159, 2023.
+\newblock \doi{10.1007/s10773-023-05406-9}.
+
+\bibitem[Fields et~al.(2022)Fields, Friston, Glazebrook, and
+  Levin]{fields2022qfep}
+Chris Fields, Karl Friston, James~F. Glazebrook, and Michael Levin.
+\newblock A free energy principle for generic quantum systems.
+\newblock \emph{Progress in Biophysics and Molecular Biology}, 173:\penalty0
+  36--59, 2022.
+\newblock \doi{10.1016/j.pbiomolbio.2022.05.006}.
+
+\bibitem[Fine(1982)]{fine1982hidden}
+Arthur Fine.
+\newblock Hidden variables, joint probability, and the bell inequalities.
+\newblock \emph{Physical Review Letters}, 48\penalty0 (5):\penalty0 291--295,
+  1982.
+\newblock \doi{10.1103/PhysRevLett.48.291}.
+
+\bibitem[Friston(2010)]{friston2010free}
+Karl Friston.
+\newblock The free-energy principle: a unified brain theory?
+\newblock \emph{Nature Reviews Neuroscience}, 11\penalty0 (2):\penalty0
+  127--138, 2010.
+\newblock \doi{10.1038/nrn2787}.
+
+\bibitem[Friston and Penny(2011)]{friston2011posthoc}
+Karl Friston and Will Penny.
+\newblock Post hoc bayesian model selection.
+\newblock \emph{NeuroImage}, 56\penalty0 (4):\penalty0 2089--2099, 2011.
+\newblock \doi{10.1016/j.neuroimage.2011.03.062}.
+
+\bibitem[Friston et~al.(2015)Friston, Rigoli, Ognibene, Mathys, FitzGerald, and
+  Pezzulo]{friston2015epistemic}
+Karl Friston, Francesco Rigoli, Dimitri Ognibene, Christoph Mathys, Thomas
+  FitzGerald, and Giovanni Pezzulo.
+\newblock Active inference and epistemic value.
+\newblock \emph{Cognitive Neuroscience}, 6\penalty0 (4):\penalty0 187--214,
+  2015.
+\newblock \doi{10.1080/17588928.2015.1020053}.
+
+\bibitem[Friston et~al.(2016)Friston, FitzGerald, Rigoli, Schwartenbeck,
+  O'Doherty, and Pezzulo]{friston2016active}
+Karl Friston, Thomas FitzGerald, Francesco Rigoli, Philipp Schwartenbeck, John
+  O'Doherty, and Giovanni Pezzulo.
+\newblock Active inference and learning.
+\newblock \emph{Neuroscience and Biobehavioral Reviews}, 68:\penalty0 862--879,
+  2016.
+\newblock \doi{10.1016/j.neubiorev.2016.06.022}.
+
+\bibitem[Friston et~al.(2018)Friston, Parr, and Zeidman]{friston2018bmr}
+Karl Friston, Thomas Parr, and Peter Zeidman.
+\newblock Bayesian model reduction, 2018.
+
+\bibitem[Friston et~al.(2023)Friston, Da~Costa, Sajid, Heins, Ueltzh{\"o}ffer,
+  Pavliotis, and Parr]{friston2023fep_simpler}
+Karl Friston, Lancelot Da~Costa, Noor Sajid, Conor Heins, Kai Ueltzh{\"o}ffer,
+  Grigorios~A. Pavliotis, and Thomas Parr.
+\newblock The free energy principle made simpler but not too simple.
+\newblock \emph{Physics Reports}, 1024:\penalty0 1--29, 2023.
+\newblock \doi{10.1016/j.physrep.2023.07.001}.
+
+\bibitem[Garfield(1995)]{garfield1995fundamental}
+Jay~L. Garfield.
+\newblock \emph{The Fundamental Wisdom of the Middle Way: Nagarjuna's
+  Mulamadhyamakakarika}.
+\newblock Oxford University Press, New York, 1995.
+\newblock ISBN 9780195093360.
+
+\bibitem[Gelman et~al.(2020)Gelman, Vehtari, Simpson, Margossian, Carpenter,
+  Yao, Kennedy, Gabry, Buerkner, and Modrak]{gelman2020bayesianworkflow}
+Andrew Gelman, Aki Vehtari, Daniel Simpson, Charles~C. Margossian, Bob
+  Carpenter, Yuling Yao, Lauren Kennedy, Jonah Gabry, Paul-Christian Buerkner,
+  and Martin Modrak.
+\newblock Bayesian workflow, 2020.
+
+\bibitem[Giacomini et~al.(2019)Giacomini, Castro-Ruiz, and
+  Brukner]{giacomini2019qrf}
+Flaminia Giacomini, Esteban Castro-Ruiz, and Caslav Brukner.
+\newblock Quantum mechanics and the covariance of physical laws in quantum
+  reference frames.
+\newblock \emph{Nature Communications}, 10:\penalty0 494, 2019.
+\newblock \doi{10.1038/s41467-018-08155-0}.
+
+\bibitem[Gorini et~al.(1976)Gorini, Kossakowski, and
+  Sudarshan]{gorini1976completelypositive}
+Vittorio Gorini, Andrzej Kossakowski, and E.~C.~G. Sudarshan.
+\newblock Completely positive dynamical semigroups of n-level systems.
+\newblock \emph{Journal of Mathematical Physics}, 17\penalty0 (5):\penalty0
+  821--825, 1976.
+\newblock \doi{10.1063/1.522979}.
+
+\bibitem[Greenberger et~al.(1989)Greenberger, Horne, and
+  Zeilinger]{greenberger1989going}
+Daniel~M. Greenberger, Michael~A. Horne, and Anton Zeilinger.
+\newblock Going beyond bell's theorem.
+\newblock In Menas Kafatos, editor, \emph{Bell's Theorem, Quantum Theory and
+  Conceptions of the Universe}, pages 69--72. Kluwer Academic, Dordrecht, 1989.
+\newblock \doi{10.1007/978-94-017-0849-4_10}.
+
+\bibitem[Heins and Da~Costa(2022)]{heins2022sparse_coupling}
+Conor Heins and Lancelot Da~Costa.
+\newblock Sparse coupling and markov blankets: A comment on ``how particular is
+  the physics of the free energy principle?'' by aguilera, millidge, tschantz
+  and buckley.
+\newblock \emph{Physics of Life Reviews}, 42:\penalty0 33--39, 2022.
+\newblock \doi{10.1016/j.plrev.2022.06.001}.
+
+\bibitem[Heins et~al.(2022)Heins, Millidge, Demekas, Klein, Friston, Couzin,
+  and Tschantz]{heins2022pymdp}
+Conor Heins, Beren Millidge, Daphne Demekas, Brennan Klein, Karl Friston,
+  Iain~D. Couzin, and Alexander Tschantz.
+\newblock pymdp: A python library for active inference in discrete state
+  spaces.
+\newblock \emph{Journal of Open Source Software}, 7\penalty0 (73):\penalty0
+  4098, 2022.
+\newblock \doi{10.21105/joss.04098}.
+
+\bibitem[Hipolito et~al.(2021)Hipolito, Ramstead, Convertino, Bhat, Friston,
+  and Parr]{hipolito2021markov}
+Ines Hipolito, Maxwell J.~D. Ramstead, Lancelot Convertino, Adeel Bhat, Karl
+  Friston, and Thomas Parr.
+\newblock Markov blankets in the brain.
+\newblock \emph{Neuroscience and Biobehavioral Reviews}, 125:\penalty0 88--97,
+  2021.
+\newblock \doi{10.1016/j.neubiorev.2021.02.003}.
+
+\bibitem[H{\"o}hn et~al.(2021)H{\"o}hn, Smith, and Lock]{hoehn2021trinity}
+Philipp~A. H{\"o}hn, Alexander R.~H. Smith, and Maximilian P.~E. Lock.
+\newblock Trinity of relational quantum dynamics.
+\newblock \emph{Physical Review D}, 104\penalty0 (6):\penalty0 066001, 2021.
+\newblock \doi{10.1103/PhysRevD.104.066001}.
+
+\bibitem[Hohwy(2016)]{hohwy2016self}
+Jakob Hohwy.
+\newblock The self-evidencing brain.
+\newblock \emph{No{\^u}s}, 50\penalty0 (2):\penalty0 259--285, 2016.
+\newblock \doi{10.1111/nous.12062}.
+
+\bibitem[Hohwy(2026)]{hohwy2026selfevidencingagent}
+Jakob Hohwy.
+\newblock \emph{The Self-Evidencing Agent: Mind, Existence, and Predictive
+  Processing}.
+\newblock MIT Press, Cambridge, MA, 2026.
+\newblock ISBN 9780262553896.
+\newblock URL
+  \url{https://mitpress.mit.edu/9780262553896/the-self-evidencing-agent/}.
+
+\bibitem[Holm(1979)]{holm1979sequential}
+Sture Holm.
+\newblock A simple sequentially rejective multiple test procedure.
+\newblock \emph{Scandinavian Journal of Statistics}, 6\penalty0 (2):\penalty0
+  65--70, 1979.
+
+\bibitem[Horodecki et~al.(1996)Horodecki, Horodecki, and
+  Horodecki]{horodecki1996separability}
+Michal Horodecki, Pawel Horodecki, and Ryszard Horodecki.
+\newblock Separability of mixed states: Necessary and sufficient conditions.
+\newblock \emph{Physics Letters A}, 223\penalty0 (1-2):\penalty0 1--8, 1996.
+\newblock \doi{10.1016/S0375-9601(96)00706-2}.
+
+\bibitem[Kirchhoff et~al.(2018)Kirchhoff, Parr, Palacios, Friston, and
+  Kiverstein]{kirchhoff2018blankets}
+Michael~D. Kirchhoff, Thomas Parr, Ensor Palacios, Karl Friston, and Julian
+  Kiverstein.
+\newblock The markov blankets of life: autonomy, active inference and the free
+  energy principle.
+\newblock \emph{Journal of the Royal Society Interface}, 15\penalty0
+  (138):\penalty0 20170792, 2018.
+\newblock \doi{10.1098/rsif.2017.0792}.
+
+\bibitem[Klyubin et~al.(2005)Klyubin, Polani, and
+  Nehaniv]{klyubin2005empowerment}
+Alexander~S. Klyubin, Daniel Polani, and Chrystopher~L. Nehaniv.
+\newblock Empowerment: A universal agent-centric measure of control.
+\newblock In \emph{Proceedings of the 2005 IEEE Congress on Evolutionary
+  Computation}, volume~1, pages 128--135, 2005.
+\newblock \doi{10.1109/CEC.2005.1554676}.
+
+\bibitem[Kochen and Specker(1967)]{kochen1967problem}
+Simon Kochen and Ernst~P. Specker.
+\newblock The problem of hidden variables in quantum mechanics.
+\newblock \emph{Journal of Mathematics and Mechanics}, 17\penalty0
+  (1):\penalty0 59--87, 1967.
+\newblock \doi{10.1512/iumj.1968.17.17004}.
+
+\bibitem[Kraus(1983)]{kraus1983states}
+Karl Kraus.
+\newblock \emph{States, Effects, and Operations: Fundamental Notions of Quantum
+  Theory}.
+\newblock Springer, Berlin, 1983.
+
+\bibitem[Landauer(1961)]{landauer1961irreversibility}
+R.~Landauer.
+\newblock Irreversibility and heat generation in the computing process.
+\newblock \emph{IBM Journal of Research and Development}, 5\penalty0
+  (3):\penalty0 183--191, 1961.
+\newblock \doi{10.1147/rd.53.0183}.
+
+\bibitem[Laukkonen et~al.(2025)Laukkonen, Inglis, Chandaria, Sandved-Smith,
+  Lopez-Sola, Hohwy, Gold, and Elwood]{laukkonen2025contemplativeai}
+Ruben Laukkonen, Fionn Inglis, Shamil Chandaria, Lars Sandved-Smith, Edmundo
+  Lopez-Sola, Jakob Hohwy, Jonathan Gold, and Adam Elwood.
+\newblock Contemplative artificial intelligence, 2025.
+
+\bibitem[Laukkonen and Slagter(2021)]{laukkonen2021many}
+Ruben~E. Laukkonen and Heleen~A. Slagter.
+\newblock From many to (n)one: Meditation and the plasticity of the predictive
+  mind.
+\newblock \emph{Neuroscience and Biobehavioral Reviews}, 128:\penalty0 1--14,
+  2021.
+\newblock \doi{10.1016/j.neubiorev.2021.06.021}.
+
+\bibitem[Limanowski and Friston(2018)]{limanowski2018seeing}
+Jakub Limanowski and Karl Friston.
+\newblock Seeing the dark: Grounding phenomenal transparency and opacity in
+  precision estimation for active inference.
+\newblock \emph{Frontiers in Psychology}, 9:\penalty0 643, 2018.
+\newblock \doi{10.3389/fpsyg.2018.00643}.
+
+\bibitem[Lindblad(1976)]{lindblad1976generators}
+Goran Lindblad.
+\newblock On the generators of quantum dynamical semigroups.
+\newblock \emph{Communications in Mathematical Physics}, 48\penalty0
+  (2):\penalty0 119--130, 1976.
+\newblock \doi{10.1007/BF01608499}.
+
+\bibitem[Lutz et~al.(2008)Lutz, Slagter, Dunne, and
+  Davidson]{lutz2008attention}
+Antoine Lutz, Heleen~A. Slagter, John~D. Dunne, and Richard~J. Davidson.
+\newblock Attention regulation and monitoring in meditation.
+\newblock \emph{Trends in Cognitive Sciences}, 12\penalty0 (4):\penalty0
+  163--169, 2008.
+\newblock \doi{10.1016/j.tics.2008.01.005}.
+
+\bibitem[Lutz et~al.(2015)Lutz, Jha, Dunne, and Saron]{lutz2015matrix}
+Antoine Lutz, Amishi~P. Jha, John~D. Dunne, and Clifford~D. Saron.
+\newblock Investigating the phenomenological matrix of mindfulness-related
+  practices from a neurocognitive perspective.
+\newblock \emph{American Psychologist}, 70\penalty0 (7):\penalty0 632--658,
+  2015.
+\newblock \doi{10.1037/a0039585}.
+
+\bibitem[Manzano(2020)]{manzano2020lindblad}
+Daniel Manzano.
+\newblock A short introduction to the lindblad master equation.
+\newblock \emph{AIP Advances}, 10\penalty0 (2):\penalty0 025106, 2020.
+\newblock \doi{10.1063/1.5115323}.
+
+\bibitem[McGill(1954)]{mcgill1954multivariate}
+William~J. McGill.
+\newblock Multivariate information transmission.
+\newblock \emph{Psychometrika}, 19\penalty0 (2):\penalty0 97--116, 1954.
+\newblock \doi{10.1007/BF02289159}.
+
+\bibitem[M{\o}lmer et~al.(1993)M{\o}lmer, Castin, and
+  Dalibard]{molmer1993montecarlo}
+Klaus M{\o}lmer, Yvan Castin, and Jean Dalibard.
+\newblock Monte carlo wave-function method in quantum optics.
+\newblock \emph{Journal of the Optical Society of America B}, 10\penalty0
+  (3):\penalty0 524--538, 1993.
+\newblock \doi{10.1364/JOSAB.10.000524}.
+
+\bibitem[Munaf{\`o} et~al.(2017)Munaf{\`o}, Nosek, Bishop, Button, Chambers,
+  Percie~du Sert, Simonsohn, Wagenmakers, Ware, and
+  Ioannidis]{munafo2017manifesto}
+Marcus~R. Munaf{\`o}, Brian~A. Nosek, Dorothy V.~M. Bishop, Katherine~S.
+  Button, Christopher~D. Chambers, Nathalie Percie~du Sert, Uri Simonsohn,
+  Eric-Jan Wagenmakers, Jennifer~J. Ware, and John P.~A. Ioannidis.
+\newblock A manifesto for reproducible science.
+\newblock \emph{Nature Human Behaviour}, 1\penalty0 (1):\penalty0 0021, 2017.
+\newblock \doi{10.1038/s41562-016-0021}.
+
+\bibitem[Nielsen and Chuang(2010)]{nielsen2010quantum}
+Michael~A. Nielsen and Isaac~L. Chuang.
+\newblock \emph{Quantum Computation and Quantum Information}.
+\newblock Cambridge University Press, Cambridge, 10th anniversary edition,
+  2010.
+
+\bibitem[Nosek et~al.(2018)Nosek, Ebersole, DeHaven, and
+  Mellor]{nosek2018preregistration}
+Brian~A. Nosek, Charles~R. Ebersole, Alexander~C. DeHaven, and David~T. Mellor.
+\newblock The preregistration revolution.
+\newblock \emph{Proceedings of the National Academy of Sciences}, 115\penalty0
+  (11):\penalty0 2600--2606, 2018.
+\newblock \doi{10.1073/pnas.1708274114}.
+
+\bibitem[Orus(2014)]{orus2014tensor}
+Roman Orus.
+\newblock A practical introduction to tensor networks: Matrix product states
+  and projected entangled pair states.
+\newblock \emph{Annals of Physics}, 349:\penalty0 117--158, 2014.
+\newblock \doi{10.1016/j.aop.2014.06.013}.
+
+\bibitem[Paris(2009)]{paris2009quantum}
+Matteo G.~A. Paris.
+\newblock Quantum estimation for quantum technology.
+\newblock \emph{International Journal of Quantum Information}, 7\penalty0
+  (supp01):\penalty0 125--137, 2009.
+\newblock \doi{10.1142/S0219749909004839}.
+
+\bibitem[Parr et~al.(2022)Parr, Pezzulo, and Friston]{parr2022active}
+Thomas Parr, Giovanni Pezzulo, and Karl~J. Friston.
+\newblock \emph{Active Inference: The Free Energy Principle in Mind, Brain, and
+  Behavior}.
+\newblock MIT Press, Cambridge, MA, 2022.
+
+\bibitem[Peres(1996)]{peres1996separability}
+Asher Peres.
+\newblock Separability criterion for density matrices.
+\newblock \emph{Physical Review Letters}, 77\penalty0 (8):\penalty0 1413--1415,
+  1996.
+\newblock \doi{10.1103/PhysRevLett.77.1413}.
+
+\bibitem[Pineau et~al.(2020)Pineau, Vincent-Lamarre, Sinha, Lariviere,
+  Beygelzimer, d'Alche Buc, Fox, and Larochelle]{pineau2020reproducibility}
+Joelle Pineau, Philippe Vincent-Lamarre, Koustuv Sinha, Vincent Lariviere,
+  Alina Beygelzimer, Florence d'Alche Buc, Emily Fox, and Hugo Larochelle.
+\newblock Improving reproducibility in machine learning research, 2020.
+
+\bibitem[Plenio and Knight(1998)]{plenio1998quantumjump}
+M.~B. Plenio and P.~L. Knight.
+\newblock The quantum-jump approach to dissipative dynamics in quantum optics.
+\newblock \emph{Reviews of Modern Physics}, 70\penalty0 (1):\penalty0 101--144,
+  1998.
+\newblock \doi{10.1103/RevModPhys.70.101}.
+
+\bibitem[Possati(2025)]{possati2025markovblanketdensity}
+Luca~M. Possati.
+\newblock Markov blanket density and free energy minimization, 2025.
+
+\bibitem[Prest(2026)]{prest2026lettinggo}
+Shawn Prest.
+\newblock Toward a computational phenomenology of meditative deconstruction:
+  {``Letting Go''} and the deconstruction of experience with active inference.
+\newblock \emph{Neural Computation}, 38\penalty0 (7):\penalty0 1261--1298,
+  2026.
+\newblock \doi{10.1162/NECO.a.1534}.
+
+\bibitem[Prest et~al.(2026)Prest, Berkovich-Ohana, Dor-Ziderman, Laukkonen,
+  Sacchet, and Berryman]{prest2026selfingwithoutself}
+Shawn Prest, Aviva Berkovich-Ohana, Yair Dor-Ziderman, Ruben~Eero Laukkonen,
+  Matthew~D. Sacchet, and Kevin Berryman.
+\newblock Selfing without a self: The missing dimension of identification in
+  computational accounts of selfhood.
+\newblock PsyArXiv preprint, 2026.
+\newblock URL \url{https://osf.io/preprints/psyarxiv/ysqf4_v1}.
+
+\bibitem[Rovelli(1996)]{rovelli1996relational}
+Carlo Rovelli.
+\newblock Relational quantum mechanics.
+\newblock \emph{International Journal of Theoretical Physics}, 35\penalty0
+  (8):\penalty0 1637--1678, 1996.
+\newblock \doi{10.1007/BF02302261}.
+
+\bibitem[Sandved-Smith and Da~Costa(2024)]{sandvedsmith2024metacognitive}
+Lars Sandved-Smith and Lancelot Da~Costa.
+\newblock Metacognitive particles, mental action and the sense of agency, 2024.
+
+\bibitem[Sandved-Smith et~al.(2021)Sandved-Smith, Hesp, Mattout, Friston, Lutz,
+  and Ramstead]{sandvedsmith2021mentalaction}
+Lars Sandved-Smith, Casper Hesp, Jeremie Mattout, Karl~J. Friston, Antoine
+  Lutz, and Maxwell James~D. Ramstead.
+\newblock Towards a computational phenomenology of mental action: modelling
+  meta-awareness and attentional control with deep parametric active inference.
+\newblock \emph{Neuroscience of Consciousness}, 2021\penalty0 (1):\penalty0
+  niab018, 2021.
+\newblock \doi{10.1093/nc/niab018}.
+
+\bibitem[Sandved-Smith et~al.(2026)Sandved-Smith, Fields, Doctor, Laukkonen,
+  and Hohwy]{sandvedsmith2026noself}
+Lars Sandved-Smith, Chris Fields, Thomas Doctor, Ruben Laukkonen, and Jakob
+  Hohwy.
+\newblock There is no self-evidence: A physics of emptiness realisation.
+\newblock PsyArXiv preprint, 2026.
+\newblock URL \url{https://osf.io/preprints/psyarxiv/m78z2_v1}.
+
+\bibitem[Seth and Bayne(2022)]{sethbayne2022theories}
+Anil~K. Seth and Tim Bayne.
+\newblock Theories of consciousness.
+\newblock \emph{Nature Reviews Neuroscience}, 23\penalty0 (7):\penalty0
+  439--452, 2022.
+\newblock \doi{10.1038/s41583-022-00587-4}.
+
+\bibitem[Shew and Plenz(2013)]{shew2013criticality}
+Woodrow~L. Shew and Dietmar Plenz.
+\newblock The functional benefits of criticality in the cortex.
+\newblock \emph{The Neuroscientist}, 19\penalty0 (1):\penalty0 88--100, 2013.
+\newblock \doi{10.1177/1073858412445487}.
+
+\bibitem[Siderits and Katsura(2013)]{siderits2013middle}
+Mark Siderits and Shoryu Katsura.
+\newblock \emph{Nagarjuna's Middle Way: Mulamadhyamakakarika}.
+\newblock Wisdom Publications, Boston, MA, 2013.
+
+\bibitem[Singer and Klimecki(2014)]{singer2014empathy_compassion}
+Tania Singer and Olga~M. Klimecki.
+\newblock Empathy and compassion.
+\newblock \emph{Current Biology}, 24\penalty0 (18):\penalty0 R875--R878, 2014.
+\newblock \doi{10.1016/j.cub.2014.06.054}.
+
+\bibitem[Spekkens(2005)]{spekkens2005contextuality}
+Robert~W. Spekkens.
+\newblock Contextuality for preparations, transformations, and unsharp
+  measurements.
+\newblock \emph{Physical Review A}, 71\penalty0 (5):\penalty0 052108, 2005.
+\newblock \doi{10.1103/PhysRevA.71.052108}.
+
+\bibitem[Spekkens(2016)]{spekkens2016quasi}
+Robert~W. Spekkens.
+\newblock Quasi-quantization: Classical statistical theories with an epistemic
+  restriction.
+\newblock In Giulio Chiribella and Robert~W. Spekkens, editors, \emph{Quantum
+  Theory: Informational Foundations and Foils}, volume 181 of \emph{Fundamental
+  Theories of Physics}, pages 83--135. Springer, Dordrecht, 2016.
+\newblock \doi{10.1007/978-94-017-7303-4_4}.
+
+\bibitem[Strauss et~al.(2016)Strauss, Taylor, Gu, Kuyken, Baer, Jones, and
+  Cavanagh]{strauss2016compassion_measurement}
+Clara Strauss, Billie~Lever Taylor, Jenny Gu, Willem Kuyken, Ruth Baer, Fergal
+  Jones, and Kate Cavanagh.
+\newblock What is compassion and how can we measure it? a review of definitions
+  and measures.
+\newblock \emph{Clinical Psychology Review}, 47:\penalty0 15--27, 2016.
+\newblock \doi{10.1016/j.cpr.2016.05.004}.
+
+\bibitem[Tal et~al.(2026)Tal, Wright, Prest, Sandved-Smith, and
+  Sacchet]{tal2026advancedmeditation}
+Hagar Tal, Malcolm Wright, Shawn Prest, Lars Sandved-Smith, and Matthew~D.
+  Sacchet.
+\newblock Active inference, computational phenomenology, and advanced
+  meditation: Toward the formalization of the experience of meditation.
+\newblock \emph{Neuroscience and Biobehavioral Reviews}, 182:\penalty0 106539,
+  2026.
+\newblock \doi{10.1016/j.neubiorev.2025.106539}.
+
+\bibitem[Talts et~al.(2018)Talts, Betancourt, Simpson, Vehtari, and
+  Gelman]{talts2018sbc}
+Sean Talts, Michael Betancourt, Daniel Simpson, Aki Vehtari, and Andrew Gelman.
+\newblock Validating bayesian inference algorithms with simulation-based
+  calibration, 2018.
+
+\bibitem[Touboul and Destexhe(2017)]{touboul2017power_law_absence_criticality}
+Jonathan Touboul and Alain Destexhe.
+\newblock Power-law statistics and universal scaling in the absence of
+  criticality.
+\newblock \emph{Physical Review E}, 95\penalty0 (1):\penalty0 012413, 2017.
+\newblock \doi{10.1103/PhysRevE.95.012413}.
+
+\bibitem[Vanrietvelde et~al.(2020)Vanrietvelde, H{\"o}hn, Giacomini, and
+  Castro-Ruiz]{vanrietvelde2020perspective}
+Augustin Vanrietvelde, Philipp~A. H{\"o}hn, Flaminia Giacomini, and Esteban
+  Castro-Ruiz.
+\newblock A change of perspective: switching quantum reference frames via a
+  perspective-neutral framework.
+\newblock \emph{Quantum}, 4:\penalty0 225--260, 2020.
+\newblock \doi{10.22331/q-2020-01-27-225}.
+
+\bibitem[Varela et~al.(1991)Varela, Thompson, and Rosch]{varela1991embodied}
+Francisco~J. Varela, Evan Thompson, and Eleanor Rosch.
+\newblock \emph{The Embodied Mind: Cognitive Science and Human Experience}.
+\newblock MIT Press, Cambridge, MA, 1991.
+\newblock ISBN 9780262220422.
+\newblock \doi{10.7551/mitpress/6730.001.0001}.
+
+\bibitem[Vedral(2002)]{vedral2002relative}
+Vlatko Vedral.
+\newblock The role of relative entropy in quantum information theory.
+\newblock \emph{Reviews of Modern Physics}, 74\penalty0 (1):\penalty0 197--234,
+  2002.
+\newblock \doi{10.1103/RevModPhys.74.197}.
+
+\bibitem[Werner(1989)]{werner1989quantum}
+Reinhard~F. Werner.
+\newblock Quantum states with einstein-podolsky-rosen correlations admitting a
+  hidden-variable model.
+\newblock \emph{Physical Review A}, 40\penalty0 (8):\penalty0 4277--4281, 1989.
+\newblock \doi{10.1103/PhysRevA.40.4277}.
+
+\bibitem[Westerhoff(2009)]{westerhoff2009madhyamaka}
+Jan Westerhoff.
+\newblock \emph{Nagarjuna's Madhyamaka: A Philosophical Introduction}.
+\newblock Oxford University Press, Oxford, 2009.
+\newblock ISBN 9780199705115.
+
+\bibitem[Westfall and Young(1993)]{westfall1993resampling}
+Peter~H. Westfall and S.~Stanley Young.
+\newblock \emph{Resampling-Based Multiple Testing: Examples and Methods for
+  p-Value Adjustment}.
+\newblock Wiley, New York, 1993.
+\newblock ISBN 0-471-55761-7.
+
+\bibitem[Wilkinson et~al.(2016)Wilkinson, Dumontier, Aalbersberg, Appleton,
+  Axton, Baak, Blomberg, Boiten, da~Silva~Santos, Bourne, Bouwman, Brookes,
+  Clark, Crosas, Dillo, Dumon, Edmunds, Evelo, Finkers, Gonzalez-Beltran, Gray,
+  Groth, Goble, Grethe, Heringa, 't~Hoen, Hooft, Kuhn, Kok, Kok, Lusher,
+  Martone, Mons, Packer, Persson, Rocca-Serra, Roos, van Schaik, Sansone,
+  Schultes, Sengstag, Slater, Strawn, Swertz, Thompson, van~der Lei, van
+  Mulligen, Velterop, Waagmeester, Wittenburg, Wolstencroft, Zhao, and
+  Mons]{wilkinson2016fair}
+Mark~D. Wilkinson, Michel Dumontier, IJsbrand~Jan Aalbersberg, Gabrielle
+  Appleton, Myles Axton, Arie Baak, Niklas Blomberg, Jan-Willem Boiten,
+  Luiz~Bonino da~Silva~Santos, Philip~E. Bourne, Jildau Bouwman, Anthony~J.
+  Brookes, Tim Clark, Merc{\`e} Crosas, Ingrid Dillo, Olivier Dumon, Scott
+  Edmunds, Chris~T. Evelo, Richard Finkers, Alejandra Gonzalez-Beltran,
+  Alasdair J.~G. Gray, Paul Groth, Carole Goble, Jeffrey~S. Grethe, Jaap
+  Heringa, Peter A.~C. 't~Hoen, Rob Hooft, Tobias Kuhn, Ruben Kok, Joost Kok,
+  Scott~J. Lusher, Maryann~E. Martone, Albert Mons, Abel~L. Packer, Bengt
+  Persson, Philippe Rocca-Serra, Marco Roos, Rene van Schaik, Susanna-Assunta
+  Sansone, Erik Schultes, Thierry Sengstag, Ted Slater, George Strawn,
+  Morris~A. Swertz, Mark Thompson, Johan van~der Lei, Erik van Mulligen, Jan
+  Velterop, Andra Waagmeester, Peter Wittenburg, Katherine Wolstencroft, Jun
+  Zhao, and Barend Mons.
+\newblock The fair guiding principles for scientific data management and
+  stewardship.
+\newblock \emph{Scientific Data}, 3:\penalty0 160018, 2016.
+\newblock \doi{10.1038/sdata.2016.18}.
+
+\bibitem[Wilting and Priesemann(2019)]{wilting2019criticality}
+Jens Wilting and Viola Priesemann.
+\newblock 25 years of criticality in neuroscience -- established results, open
+  controversies, novel concepts.
+\newblock \emph{Current Opinion in Neurobiology}, 58:\penalty0 105--111, 2019.
+\newblock \doi{10.1016/j.conb.2019.08.002}.
+
+\bibitem[Wiseman and Milburn(2010)]{wiseman2010quantum}
+Howard~M. Wiseman and Gerard~J. Milburn.
+\newblock \emph{Quantum Measurement and Control}.
+\newblock Cambridge University Press, Cambridge, 2010.
+\newblock \doi{10.1017/CBO9780511813948}.
+
+\bibitem[Zahavi(2005)]{zahavi2005subjectivity_selfhood}
+Dan Zahavi.
+\newblock \emph{Subjectivity and Selfhood: Investigating the First-Person
+  Perspective}.
+\newblock MIT Press, Cambridge, MA, 2005.
+\newblock ISBN 9780262240505.
+
+\bibitem[Zurek(2003)]{zurek2003decoherence}
+Wojciech~H. Zurek.
+\newblock Decoherence, einselection, and the quantum origins of the classical.
+\newblock \emph{Reviews of Modern Physics}, 75\penalty0 (3):\penalty0 715--775,
+  2003.
+\newblock \doi{10.1103/RevModPhys.75.715}.
+
+\end{thebibliography}

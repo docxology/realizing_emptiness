@@ -1,0 +1,796 @@
+{
+  "action_labels": [
+    "stabilize_dual",
+    "inspect_boundary",
+    "release_prior"
+  ],
+  "best_profile": "post_dual",
+  "channels": 6,
+  "claim_boundary": "pymdp discrete active-inference loop; deterministic surrogate, not empirical or quantum-dynamical evidence",
+  "generative_model_summary": {
+    "all_models_normalized": true,
+    "profile_count": 3
+  },
+  "observation_labels": [
+    "self_env_cue",
+    "opacity_cue",
+    "contextual_cue"
+  ],
+  "policy_trace_all_posteriors_normalized": true,
+  "policy_trace_summary": [
+    {
+      "action_counts": {
+        "inspect_boundary": 16,
+        "release_prior": 0,
+        "stabilize_dual": 8
+      },
+      "deployment": {
+        "flexibility": 0.16666666666666666,
+        "is_dual": true,
+        "metacognitive_access": 0.0,
+        "name": "separation_constrained",
+        "prior_precision": 4.0,
+        "sector_labels": [
+          "self",
+          "self",
+          "env",
+          "env",
+          "env",
+          "self"
+        ]
+      },
+      "final_policy_posterior": [
+        0.33041352,
+        0.33569959,
+        0.33388686
+      ],
+      "final_state_posterior": [
+        0.97938627,
+        0.0167609,
+        0.00385279
+      ],
+      "mean_vfe": 0.731322642415762,
+      "mean_weighted_expected_free_energy": -1.063868745599984,
+      "posterior_normalized_all_steps": true,
+      "profile": "separation_constrained",
+      "profile_energy": -0.7919811631131639
+    },
+    {
+      "action_counts": {
+        "inspect_boundary": 7,
+        "release_prior": 17,
+        "stabilize_dual": 0
+      },
+      "deployment": {
+        "flexibility": 0.6916666666666667,
+        "is_dual": false,
+        "metacognitive_access": 0.55,
+        "name": "opacified",
+        "prior_precision": 2.0,
+        "sector_labels": [
+          "self",
+          "action",
+          "env",
+          "env",
+          "other",
+          "care"
+        ]
+      },
+      "final_policy_posterior": [
+        0.33755744,
+        0.34328017,
+        0.31916246
+      ],
+      "final_state_posterior": [
+        0.0465846,
+        0.19287878,
+        0.76053661
+      ],
+      "mean_vfe": 0.860562801361084,
+      "mean_weighted_expected_free_energy": -0.952844884742824,
+      "posterior_normalized_all_steps": true,
+      "profile": "opacified",
+      "profile_energy": -0.9406224270092021
+    },
+    {
+      "action_counts": {
+        "inspect_boundary": 0,
+        "release_prior": 24,
+        "stabilize_dual": 0
+      },
+      "deployment": {
+        "flexibility": 0.9166666666666667,
+        "is_dual": false,
+        "metacognitive_access": 1.0,
+        "name": "post_dual",
+        "prior_precision": 0.2,
+        "sector_labels": [
+          "body",
+          "action",
+          "world",
+          "world",
+          "other",
+          "care"
+        ]
+      },
+      "final_policy_posterior": [
+        0.33058092,
+        0.3308984,
+        0.33852065
+      ],
+      "final_state_posterior": [
+        0.00641217,
+        0.03195938,
+        0.96162844
+      ],
+      "mean_vfe": 0.6986371800303459,
+      "mean_weighted_expected_free_energy": -1.1054900906397973,
+      "posterior_normalized_all_steps": true,
+      "profile": "post_dual",
+      "profile_energy": -1.3440257792810062
+    }
+  ],
+  "posterior_normalized": true,
+  "posterior_sum": 1.0,
+  "pymdp_canary": {
+    "agent_class": "Agent",
+    "neg_efe_shape": [
+      1,
+      2
+    ],
+    "ok": true,
+    "policy_posterior_normalized": true,
+    "policy_posterior_sum": 1.0,
+    "required_version": "1.0.3",
+    "schema": "realizing_emptiness.pymdp_canary.v1",
+    "state_factor_count": 2,
+    "version": "1.0.3",
+    "version_ok": true,
+    "vfe_available": true,
+    "warnings": [
+      "A JAX array is being set as static! This can result in unexpected behavior and is usually a mistake to do."
+    ]
+  },
+  "rows": [
+    {
+      "accuracy": 1.063868745599984,
+      "action_counts": {
+        "inspect_boundary": 16,
+        "release_prior": 0,
+        "stabilize_dual": 8
+      },
+      "compassion_scope": 0.5,
+      "complexity": 0.3218875824868201,
+      "deployment": {
+        "flexibility": 0.16666666666666666,
+        "is_dual": true,
+        "metacognitive_access": 0.0,
+        "name": "separation_constrained",
+        "prior_precision": 4.0,
+        "sector_labels": [
+          "self",
+          "self",
+          "env",
+          "env",
+          "env",
+          "self"
+        ]
+      },
+      "final_policy_posterior": [
+        0.33041352,
+        0.33569959,
+        0.33388686
+      ],
+      "final_state_posterior": [
+        0.97938627,
+        0.0167609,
+        0.00385279
+      ],
+      "flexibility": 0.16666666666666666,
+      "free_energy": -0.7919811631131639,
+      "mean_vfe": 0.731322642415762,
+      "mean_weighted_expected_free_energy": -1.063868745599984,
+      "posterior_mass": 0.2566038825313631,
+      "posterior_normalized_all_steps": true,
+      "prediction_error": 0.731322642415762
+    },
+    {
+      "accuracy": 0.952844884742824,
+      "action_counts": {
+        "inspect_boundary": 7,
+        "release_prior": 17,
+        "stabilize_dual": 0
+      },
+      "compassion_scope": 0.8,
+      "complexity": 0.21972245773362198,
+      "deployment": {
+        "flexibility": 0.6916666666666667,
+        "is_dual": false,
+        "metacognitive_access": 0.55,
+        "name": "opacified",
+        "prior_precision": 2.0,
+        "sector_labels": [
+          "self",
+          "action",
+          "env",
+          "env",
+          "other",
+          "care"
+        ]
+      },
+      "final_policy_posterior": [
+        0.33755744,
+        0.34328017,
+        0.31916246
+      ],
+      "final_state_posterior": [
+        0.0465846,
+        0.19287878,
+        0.76053661
+      ],
+      "flexibility": 0.6916666666666667,
+      "free_energy": -0.9406224270092021,
+      "mean_vfe": 0.860562801361084,
+      "mean_weighted_expected_free_energy": -0.952844884742824,
+      "posterior_mass": 0.29772637102221566,
+      "posterior_normalized_all_steps": true,
+      "prediction_error": 0.860562801361084
+    },
+    {
+      "accuracy": 1.1054900906397973,
+      "action_counts": {
+        "inspect_boundary": 0,
+        "release_prior": 24,
+        "stabilize_dual": 0
+      },
+      "compassion_scope": 1.0,
+      "complexity": 0.036464311358790934,
+      "deployment": {
+        "flexibility": 0.9166666666666667,
+        "is_dual": false,
+        "metacognitive_access": 1.0,
+        "name": "post_dual",
+        "prior_precision": 0.2,
+        "sector_labels": [
+          "body",
+          "action",
+          "world",
+          "world",
+          "other",
+          "care"
+        ]
+      },
+      "final_policy_posterior": [
+        0.33058092,
+        0.3308984,
+        0.33852065
+      ],
+      "final_state_posterior": [
+        0.00641217,
+        0.03195938,
+        0.96162844
+      ],
+      "flexibility": 0.9166666666666667,
+      "free_energy": -1.3440257792810062,
+      "mean_vfe": 0.6986371800303459,
+      "mean_weighted_expected_free_energy": -1.1054900906397973,
+      "posterior_mass": 0.44566974644642116,
+      "posterior_normalized_all_steps": true,
+      "prediction_error": 0.6986371800303459
+    }
+  ],
+  "schema": "realizing_emptiness.pymdp_profile_comparison.v2",
+  "seed": 7,
+  "state_labels": [
+    "contracted_dual",
+    "opacified_boundary",
+    "contextual_post_dual"
+  ],
+  "steps": 24,
+  "trajectory": [
+    {
+      "action": 1,
+      "drift": true,
+      "hidden_context": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "observation": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "step": 0
+    },
+    {
+      "action": 0,
+      "drift": false,
+      "hidden_context": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "observation": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "step": 1
+    },
+    {
+      "action": 1,
+      "drift": false,
+      "hidden_context": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "observation": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "step": 2
+    },
+    {
+      "action": 0,
+      "drift": true,
+      "hidden_context": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "observation": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "step": 3
+    },
+    {
+      "action": 1,
+      "drift": false,
+      "hidden_context": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "observation": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "step": 4
+    },
+    {
+      "action": 0,
+      "drift": false,
+      "hidden_context": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "observation": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "step": 5
+    },
+    {
+      "action": 1,
+      "drift": true,
+      "hidden_context": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "observation": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "step": 6
+    },
+    {
+      "action": 0,
+      "drift": false,
+      "hidden_context": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "observation": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "step": 7
+    },
+    {
+      "action": 1,
+      "drift": false,
+      "hidden_context": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "observation": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "step": 8
+    },
+    {
+      "action": 0,
+      "drift": true,
+      "hidden_context": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "observation": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "step": 9
+    },
+    {
+      "action": 1,
+      "drift": false,
+      "hidden_context": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "observation": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "step": 10
+    },
+    {
+      "action": 0,
+      "drift": false,
+      "hidden_context": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "observation": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "step": 11
+    },
+    {
+      "action": 1,
+      "drift": true,
+      "hidden_context": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "observation": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "step": 12
+    },
+    {
+      "action": 0,
+      "drift": false,
+      "hidden_context": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "observation": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "step": 13
+    },
+    {
+      "action": 1,
+      "drift": false,
+      "hidden_context": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "observation": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "step": 14
+    },
+    {
+      "action": 0,
+      "drift": true,
+      "hidden_context": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "observation": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "step": 15
+    },
+    {
+      "action": 1,
+      "drift": false,
+      "hidden_context": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "observation": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "step": 16
+    },
+    {
+      "action": 0,
+      "drift": false,
+      "hidden_context": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "observation": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "step": 17
+    },
+    {
+      "action": 1,
+      "drift": true,
+      "hidden_context": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "observation": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "step": 18
+    },
+    {
+      "action": 0,
+      "drift": false,
+      "hidden_context": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "observation": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "step": 19
+    },
+    {
+      "action": 1,
+      "drift": false,
+      "hidden_context": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "observation": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "step": 20
+    },
+    {
+      "action": 0,
+      "drift": true,
+      "hidden_context": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "observation": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "step": 21
+    },
+    {
+      "action": 1,
+      "drift": false,
+      "hidden_context": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "observation": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "step": 22
+    },
+    {
+      "action": 0,
+      "drift": false,
+      "hidden_context": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "observation": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "step": 23
+    }
+  ]
+}

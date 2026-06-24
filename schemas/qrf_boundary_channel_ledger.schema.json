@@ -1,0 +1,65 @@
+{
+  "$id": "realizing_emptiness.qrf_boundary_channel_ledger.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Realizing Emptiness QRF Boundary Channel Ledger",
+  "type": "object",
+  "required": ["schema", "channel_count", "profile_count", "rows", "controls", "all_controls_pass", "claim_boundary"],
+  "properties": {
+    "schema": {"const": "realizing_emptiness.qrf_boundary_channel_ledger.v1"},
+    "channel_count": {"const": 6},
+    "profile_count": {"const": 3},
+    "rows": {
+      "type": "array",
+      "minItems": 6,
+      "maxItems": 6,
+      "items": {
+        "type": "object",
+        "required": ["channel_id", "channel_index", "observation_symbol", "finite_surrogate_role", "invariant_evidence_object", "evidence_object_invariant", "sector_labels_by_profile", "label_changes_across_profiles", "source_equation_links", "source_locator", "claim_boundary"],
+        "properties": {
+          "channel_id": {"type": "string", "pattern": "^b[0-5]$"},
+          "channel_index": {"type": "integer", "minimum": 0, "maximum": 5},
+          "observation_symbol": {"type": "string"},
+          "finite_surrogate_role": {"type": "string"},
+          "invariant_evidence_object": {"type": "string", "pattern": "b[0-5]"},
+          "evidence_object_invariant": {"const": true},
+          "sector_labels_by_profile": {
+            "type": "object",
+            "required": ["separation_constrained", "opacified", "post_dual"],
+            "additionalProperties": {"type": "string"}
+          },
+          "label_changes_across_profiles": {"const": true},
+          "source_equation_links": {
+            "type": "array",
+            "prefixItems": [
+              {"const": "eq:7"},
+              {"const": "eq:8"},
+              {"const": "eq:9"},
+              {"const": "eq:10"}
+            ],
+            "minItems": 4,
+            "maxItems": 4
+          },
+          "source_locator": {"type": "string"},
+          "claim_boundary": {"type": "string", "pattern": "not empirical|not ontological"}
+        },
+        "additionalProperties": true
+      }
+    },
+    "controls": {
+      "type": "object",
+      "required": ["channel_ids_exact_b0_to_b5", "all_profiles_have_sector_labels", "all_evidence_objects_invariant", "all_channels_relabel_across_profiles", "source_equations_7_to_10_declared", "negative_control_fails"],
+      "properties": {
+        "channel_ids_exact_b0_to_b5": {"const": true},
+        "all_profiles_have_sector_labels": {"const": true},
+        "all_evidence_objects_invariant": {"const": true},
+        "all_channels_relabel_across_profiles": {"const": true},
+        "source_equations_7_to_10_declared": {"const": true},
+        "negative_control_fails": {"const": true}
+      },
+      "additionalProperties": true
+    },
+    "all_controls_pass": {"const": true},
+    "claim_boundary": {"type": "string", "pattern": "not empirical|not ontological"}
+  },
+  "additionalProperties": true
+}

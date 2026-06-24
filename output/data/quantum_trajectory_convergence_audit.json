@@ -1,0 +1,74 @@
+{
+  "all_controls_pass": true,
+  "claim_boundary": "statistical robustness over finite seeded software simulations; not empirical data, not neural measurement, not clinical evidence, and not a physical qFEP realization",
+  "controls": {
+    "largest_count_better_than_first": true,
+    "largest_count_within_tolerance": true,
+    "log_log_slope_negative": true,
+    "residuals_finite": true,
+    "too_few_trajectory_control_fails": true
+  },
+  "log_log_residual_slope": -0.37294123261875695,
+  "row_count": 7,
+  "rows": [
+    {
+      "all_controls_pass": true,
+      "max_trace_distance_to_exact": 0.1460131917,
+      "reconstructs_exact_lindblad_within_tolerance": true,
+      "trajectory_count": 16
+    },
+    {
+      "all_controls_pass": true,
+      "max_trace_distance_to_exact": 0.1026228779,
+      "reconstructs_exact_lindblad_within_tolerance": true,
+      "trajectory_count": 64
+    },
+    {
+      "all_controls_pass": true,
+      "max_trace_distance_to_exact": 0.0854164357,
+      "reconstructs_exact_lindblad_within_tolerance": true,
+      "trajectory_count": 128
+    },
+    {
+      "all_controls_pass": true,
+      "max_trace_distance_to_exact": 0.038180148,
+      "reconstructs_exact_lindblad_within_tolerance": true,
+      "trajectory_count": 256
+    },
+    {
+      "all_controls_pass": true,
+      "max_trace_distance_to_exact": 0.0575330095,
+      "reconstructs_exact_lindblad_within_tolerance": true,
+      "trajectory_count": 512
+    },
+    {
+      "all_controls_pass": true,
+      "max_trace_distance_to_exact": 0.0313670121,
+      "reconstructs_exact_lindblad_within_tolerance": true,
+      "trajectory_count": 1024
+    },
+    {
+      "all_controls_pass": true,
+      "max_trace_distance_to_exact": 0.0247864432,
+      "reconstructs_exact_lindblad_within_tolerance": true,
+      "trajectory_count": 2048
+    }
+  ],
+  "schema": "realizing_emptiness.quantum_trajectory_convergence_audit.v1",
+  "seed": 29,
+  "too_few_count": 8,
+  "too_few_trajectory_control": {
+    "all_controls_pass": false,
+    "max_trace_distance_to_exact": 0.2189983038,
+    "trajectory_count": 8
+  },
+  "trajectory_counts": [
+    16,
+    64,
+    128,
+    256,
+    512,
+    1024,
+    2048
+  ]
+}

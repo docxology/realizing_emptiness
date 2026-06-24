@@ -1,0 +1,81 @@
+{
+  "$id": "realizing_emptiness.criticality_stochastic_ensemble.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Realizing Emptiness Criticality Stochastic Ensemble",
+  "type": "object",
+  "required": [
+    "schema",
+    "label",
+    "metric_rows",
+    "summary_rows",
+    "null_contrasts",
+    "controls",
+    "all_controls_pass",
+    "claim_boundary"
+  ],
+  "properties": {
+    "schema": {
+      "const": "realizing_emptiness.criticality_stochastic_ensemble.v1"
+    },
+    "label": {
+      "const": "seeded_stochastic_simulation_not_empirical_neural_measure"
+    },
+    "seed": {
+      "type": "integer"
+    },
+    "runs_per_profile": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "steps": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "metric_row_count": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "summary_row_count": {
+      "type": "integer",
+      "minimum": 6
+    },
+    "metric_rows": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object"
+      }
+    },
+    "summary_rows": {
+      "type": "array",
+      "minItems": 6,
+      "items": {
+        "type": "object"
+      }
+    },
+    "null_contrasts": {
+      "type": "array",
+      "minItems": 3,
+      "items": {
+        "type": "object"
+      }
+    },
+    "controls": {
+      "type": "object",
+      "additionalProperties": {
+        "const": true
+      }
+    },
+    "all_controls_pass": {
+      "const": true
+    },
+    "claim_boundary": {
+      "type": "string",
+      "pattern": "not empirical"
+    },
+    "branching_estimator_calibration": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": false
+}

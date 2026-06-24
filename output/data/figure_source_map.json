@@ -1,0 +1,1546 @@
+{
+  "figure_count": 59,
+  "figures": [
+    {
+      "alt_text": "Near-square cover schematic with a central finite boundary bitstream surrounded by source paper, formal registry, stochastic and quantum simulation engines, and claim gates; colored nodes and ribbons show that QRF sector labels change while the evidenced bitstream stays the same.",
+      "caption": "Graphical abstract for the source-bounded software chain. Labeled zones map the source paper, finite equation registry, QRF boundary screen, simulation engines, and claim gates; the central screen shows relabelings over one bitstream without turning them into empirical, clinical, neural, practice-efficacy, or physical qFEP evidence.",
+      "cropped_text_count": 0,
+      "id": "graphical_abstract_cover",
+      "layout_ok": true,
+      "legend_axis_overlap_count": 0,
+      "path": "output/figures/graphical_abstract_cover.png",
+      "render_contract": {
+        "colorbar_count": 0,
+        "legend_count": 1,
+        "min_font_pt": 12.0,
+        "panel_count": 1,
+        "roles": [
+          "source",
+          "finite",
+          "stochastic",
+          "blocked",
+          "boundary"
+        ]
+      },
+      "source_artifacts": [
+        "output/data/source_claim_crosswalk.json",
+        "output/data/equation_audit.json",
+        "output/data/qrf_boundary_indistinguishability.json",
+        "output/data/stochastic_policy_ensemble.json",
+        "output/data/quantum_trajectory_unraveling.json"
+      ],
+      "text_overlap_count": 0,
+      "title_overlap_count": 0,
+      "visual_encoding": "Near-square cover schematic; large box border colors encode source, finite software, stochastic simulation, and blocked stronger claims; directed arrows encode source-to-artifact-to-claim-gate flow; the dashed circle encodes the finite boundary screen; colored nodes and relabeling ribbons encode QRF sector labels."
+    },
+    {
+      "alt_text": "Schematic of six labeled boundary channels arranged around a dashed finite screen, with an orange action arrow entering the screen and a blue observation arrow leaving it; role labels identify the software channel semantics without treating them as empirical boundary evidence.",
+      "caption": "Finite QRF boundary-screen geometry for the lead boundary result. Dashed screen, node labels, action edge, observation edge, and channel-role text show how b0-b5 function as software observation channels while preserving the boundary claim that no node or edge is empirical, biological, ontological self/world, or physical qFEP evidence.",
+      "cropped_text_count": 0,
+      "id": "qrf_boundary_screen_geometry",
+      "layout_ok": true,
+      "legend_axis_overlap_count": 0,
+      "path": "output/figures/qrf_boundary_screen_geometry.png",
+      "render_contract": {
+        "colorbar_count": 0,
+        "legend_count": 1,
+        "min_font_pt": 12.0,
+        "panel_count": 1,
+        "roles": [
+          "boundary",
+          "qrf_sector",
+          "finite"
+        ]
+      },
+      "source_artifacts": [
+        "output/data/pymdp_profile_comparison.json",
+        "output/data/qrf_boundary_indistinguishability.json",
+        "output/data/qrf_boundary_channel_ledger.json"
+      ],
+      "text_overlap_count": 0,
+      "title_overlap_count": 0,
+      "visual_encoding": "Standalone schematic; dashed circle encodes the finite boundary screen, labeled nodes encode b0-b5 channels, orange and blue directed edges encode action and observation flow, role text labels encode channel semantics, and the legend explains boundary, channel, action, and observation marks."
+    },
+    {
+      "alt_text": "Matrix with b0 through b5 columns showing the same evidenced bit in each column, followed by separation-constrained, opacified, and post-dual rows that assign different QRF sector labels to the unchanged channels.",
+      "caption": "b0-b5 QRF channel relabeling ledger for equations 7-10. The invariant same-bit row marks each evidenced boundary bit, while profile rows relabel those unchanged channels as self, env, action, body, world, other, or care; colors and text encode software sectors only and are not evidence for an ontological self/world boundary.",
+      "channel_labels": [
+        "b0",
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5"
+      ],
+      "cropped_text_count": 0,
+      "id": "qrf_channel_relabeling_ledger",
+      "layout_ok": true,
+      "legend_axis_overlap_count": 0,
+      "path": "output/figures/qrf_channel_relabeling_ledger.png",
+      "render_contract": {
+        "colorbar_count": 0,
+        "legend_count": 1,
+        "min_font_pt": 12.0,
+        "panel_count": 1,
+        "roles": [
+          "boundary",
+          "qrf_sector",
+          "pass"
+        ]
+      },
+      "source_artifacts": [
+        "output/data/qrf_boundary_channel_ledger.json",
+        "output/data/qrf_boundary_indistinguishability.json"
+      ],
+      "text_overlap_count": 0,
+      "title_overlap_count": 0,
+      "visual_encoding": "Matrix-style ledger; columns are b0-b5 channels, rows are channel roles, invariant same-bit evidence, and three QRF profiles; sector colors plus cell text encode relabeling, the equation callout anchors equations 7-10, and the legend maps each color to a sector label."
+    },
+    {
+      "alt_text": "Two-panel QRF audit figure where the left panel shows all admissible QRF deployments at probability mass one plus a failing negative-control marker, and the right panel shows selected action counts by profile through horizontal stacked bars.",
+      "caption": "QRF invariance and policy-flow audit over the same finite screen. Panel A shows admissible deployments at normalized probability mass with a separate failing perturbation-control marker; Panel B shows profile-specific selected actions from the pymdp trace. The figure supports finite software validation only, not empirical, biological, ontological, or physical qFEP evidence.",
+      "cropped_text_count": 0,
+      "id": "qrf_invariance_policy_flow",
+      "layout_ok": true,
+      "legend_axis_overlap_count": 0,
+      "path": "output/figures/qrf_invariance_policy_flow.png",
+      "render_contract": {
+        "colorbar_count": 0,
+        "legend_count": 2,
+        "min_font_pt": 12.0,
+        "panel_count": 2,
+        "roles": [
+          "boundary",
+          "pass",
+          "fail",
+          "qrf_sector"
+        ]
+      },
+      "source_artifacts": [
+        "output/data/pymdp_profile_comparison.json",
+        "output/data/qrf_boundary_indistinguishability.json"
+      ],
+      "text_overlap_count": 0,
+      "title_overlap_count": 0,
+      "visual_encoding": "Two-panel chart; Panel A uses bars for admissible probability mass, a dashed line for the normalized target, and an x marker for the failing control, while Panel B uses horizontal stacked bars and an external legend to encode selected actions by profile."
+    },
+    {
+      "alt_text": "Matrix of QRF profiles by boundary channel showing that the same six channels receive different sector labels under separation-constrained, opacified, and post-dual software profiles.",
+      "caption": "Boundary-channel sector labels for the separation-constrained, opacified, and post-dual QRF profiles. The color legend maps each sector label to a categorical color, making the finite relabeling surrogate visible without treating sector color as physical quantum-boundary evidence.",
+      "cropped_text_count": 0,
+      "id": "qrf_sectorisation_map",
+      "layout_ok": true,
+      "legend_axis_overlap_count": 0,
+      "path": "output/figures/qrf_sectorisation_map.png",
+      "render_contract": {
+        "colorbar_count": 0,
+        "legend_count": 1,
+        "min_font_pt": 12.0,
+        "panel_count": 1,
+        "roles": [
+          "qrf_sector"
+        ]
+      },
+      "source_artifacts": [
+        "output/data/pymdp_profile_comparison.json"
+      ],
+      "text_overlap_count": 0,
+      "title_overlap_count": 0,
+      "visual_encoding": "Categorical color legend maps sector labels to matrix cells; rows are QRF profiles and columns are boundary channels."
+    },
+    {
+      "alt_text": "Bar chart where all admissible QRF deployments sum to normalized probability mass and the dashed reference line marks the finite target distribution.",
+      "caption": "Probability mass remains normalized and label-invariant across admissible QRF sectorisations, while a deliberately perturbed negative control fails the audit. The bar color legend and dashed reference line support only the finite boundary-indistinguishability claim recorded in the source crosswalk.",
+      "cropped_text_count": 0,
+      "id": "boundary_indistinguishability",
+      "layout_ok": true,
+      "legend_axis_overlap_count": 0,
+      "path": "output/figures/boundary_indistinguishability.png",
+      "render_contract": {
+        "colorbar_count": 0,
+        "legend_count": 1,
+        "min_font_pt": 12.0,
+        "panel_count": 1,
+        "roles": [
+          "pass",
+          "boundary"
+        ]
+      },
+      "source_artifacts": [
+        "output/data/qrf_boundary_indistinguishability.json"
+      ],
+      "text_overlap_count": 0,
+      "title_overlap_count": 0,
+      "visual_encoding": "Blue bars encode profile probability mass; dashed teal line encodes the normalized probability target and legend identifies both."
+    },
+    {
+      "alt_text": "Diagram of six boundary-channel nodes around a finite screen with action and observation arrows plus relabeling rows for QRF sector assignments.",
+      "caption": "QRF reference-frame geometry over the finite boundary screen. Node colors identify sector labels, dashed circle marks the boundary screen, and action/observation edge colors show the active-inference loop; the figure is a finite surrogate map, not empirical or quantum-dynamical evidence.",
+      "cropped_text_count": 0,
+      "id": "qrf_reference_frame_geometry",
+      "layout_ok": true,
+      "legend_axis_overlap_count": 0,
+      "path": "output/figures/qrf_reference_frame_geometry.png",
+      "render_contract": {
+        "colorbar_count": 0,
+        "legend_count": 1,
+        "min_font_pt": 12.0,
+        "panel_count": 1,
+        "roles": [
+          "boundary",
+          "qrf_sector"
+        ]
+      },
+      "source_artifacts": [
+        "output/data/pymdp_profile_comparison.json",
+        "output/data/qrf_boundary_indistinguishability.json"
+      ],
+      "text_overlap_count": 0,
+      "title_overlap_count": 0,
+      "visual_encoding": "Node color legend maps sectors; dashed boundary circle marks the screen; orange and blue arrows encode action and observation edges."
+    },
+    {
+      "alt_text": "Three-line BMR plot where Delta F, Delta complexity, and Delta accuracy vary with metacognitive access; a dashed zero line marks the keep/prune decision boundary.",
+      "caption": "BMR free-energy components at high separation-prior precision. The lines show reduced-minus-full Delta F, Delta complexity, and Delta accuracy over metacognitive access; the dashed zero line is the keep/prune boundary, so the panel explains the finite model-comparison sign convention without making a human self-model claim.",
+      "cropped_text_count": 0,
+      "id": "bmr_free_energy_decomposition",
+      "layout_ok": true,
+      "legend_axis_overlap_count": 0,
+      "path": "output/figures/bmr_free_energy_decomposition.png",
+      "render_contract": {
+        "colorbar_count": 0,
+        "legend_count": 1,
+        "min_font_pt": 12.0,
+        "panel_count": 1,
+        "roles": [
+          "keep",
+          "prune"
+        ]
+      },
+      "source_artifacts": [
+        "output/data/bmr_sweep.json"
+      ],
+      "text_overlap_count": 0,
+      "title_overlap_count": 0,
+      "visual_encoding": "Line chart; color and marker legend encodes Delta F, Delta complexity, and Delta accuracy, while the dashed horizontal threshold marks Delta F = 0 as the keep/prune boundary."
+    },
+    {
+      "alt_text": "Heatmap of BMR Delta F values across prior precision and metacognitive access, with each cell labeled KEEP prior or PRUNE prior and the colorbar centered on the zero decision boundary.",
+      "caption": "BMR decision grid over prior precision and metacognitive access. KEEP prior means the full model's separation prior still pays for its complexity; PRUNE prior means the reduced model wins because removing that prior lowers free energy. Cell color encodes Delta F = F_reduced - F_full and cell text gives the decision plus numeric Delta F inside this finite model-comparison surrogate only.",
+      "cropped_text_count": 0,
+      "id": "bmr_pruning_phase_diagram",
+      "layout_ok": true,
+      "legend_axis_overlap_count": 0,
+      "path": "output/figures/bmr_pruning_phase_diagram.png",
+      "render_contract": {
+        "colorbar_count": 1,
+        "legend_count": 1,
+        "min_font_pt": 12.0,
+        "panel_count": 1,
+        "roles": [
+          "keep",
+          "prune"
+        ]
+      },
+      "source_artifacts": [
+        "output/data/bmr_sweep.json"
+      ],
+      "text_overlap_count": 0,
+      "title_overlap_count": 0,
+      "visual_encoding": "Zero-centered diverging colorbar encodes Delta F; grid cell text labels KEEP prior or PRUNE prior with the numeric value; the external legend defines the model-comparison meaning of each decision."
+    },
+    {
+      "alt_text": "Sensitivity heatmap showing mean Delta F by prior precision and metacognitive access, with each cell labeled by how many observation-noise rows favor pruning the separation prior.",
+      "caption": "Sensitivity grid after averaging over observation-noise rows. Cell labels count how many noise rows favor PRUNE prior; PRUNE means the reduced model has lower free energy after removing the separation prior. Color encodes mean Delta F, and the denominator is a finite software robustness grid, not empirical sample size or practice-outcome evidence.",
+      "cropped_text_count": 0,
+      "id": "simulation_sensitivity_heatmap",
+      "layout_ok": true,
+      "legend_axis_overlap_count": 0,
+      "path": "output/figures/simulation_sensitivity_heatmap.png",
+      "render_contract": {
+        "colorbar_count": 1,
+        "legend_count": 0,
+        "min_font_pt": 12.0,
+        "panel_count": 1,
+        "roles": [
+          "keep",
+          "prune"
+        ]
+      },
+      "source_artifacts": [
+        "output/data/simulation_sensitivity_grid.json"
+      ],
+      "text_overlap_count": 0,
+      "title_overlap_count": 0,
+      "visual_encoding": "Zero-centered diverging heatmap encodes mean Delta F; contrast-aware cell text reports how many observation-noise rows favor PRUNE, and gridlines preserve row and column separation."
+    },
+    {
+      "alt_text": "Matrix summarizing finite quantum engine families, their negative controls, the limited finite-surrogate main claim, and stronger empirical or physical qFEP claims that remain blocked and moved to supplement details.",
+      "caption": "Finite-quantum scope summary for the main Results. Matrix cell text lists validated finite engines and controls; the hatched blocked column names empirical, observer-boundary, all-QRF-context, and physical qFEP claims that remain outside the evidence boundary.",
+      "cropped_text_count": 0,
+      "id": "finite_quantum_scope_summary",
+      "layout_ok": true,
+      "legend_axis_overlap_count": 0,
+      "path": "output/figures/finite_quantum_scope_summary.png",
+      "render_contract": {
+        "colorbar_count": 0,
+        "legend_count": 1,
+        "min_font_pt": 12.0,
+        "panel_count": 1,
+        "roles": [
+          "quantum",
+          "finite",
+          "blocked"
+        ]
+      },
+      "source_artifacts": [
+        "output/data/quantum_roadmap_readiness_matrix.json"
+      ],
+      "text_overlap_count": 0,
+      "title_overlap_count": 0,
+      "visual_encoding": "Matrix figure; row labels group quantum engine families, column labels distinguish finite implementation, negative controls, main-text claim scope, and blocked stronger claims, while fill color and the legend encode finite-validated cells versus hatched blocked-claim cells."
+    },
+    {
+      "alt_text": "Four panels show reduced entropy and mutual information rising with entanglement, CHSH approaching the Tsirelson bound, contextual fraction rising, and Landauer lower bound increasing.",
+      "caption": "Finite two-qubit boundary-entropy landscape for the direct quantum-information extension. Legends identify reduced entropy, mutual information, CHSH bounds, contextual-fraction proxy, and Landauer-scaled erasure lower bound; the panels support only a finite simulation claim, not empirical evidence or a full qFEP quantum-dynamical realization.",
+      "cropped_text_count": 0,
+      "id": "quantum_boundary_entropy_landscape",
+      "layout_ok": true,
+      "legend_axis_overlap_count": 0,
+      "path": "output/figures/quantum_boundary_entropy_landscape.png",
+      "render_contract": {
+        "colorbar_count": 0,
+        "legend_count": 4,
+        "min_font_pt": 12.0,
+        "panel_count": 4,
+        "roles": [
+          "quantum",
+          "finite"
+        ]
+      },
+      "source_artifacts": [
+        "output/data/quantum_boundary_entropy.json"
+      ],
+      "text_overlap_count": 0,
+      "title_overlap_count": 0,
+      "visual_encoding": "Four-panel line plot; legends map line colors and markers to entropy, CHSH, contextual-fraction, and Landauer quantities, while dashed and dotted horizontal lines mark local and Tsirelson bounds."
+    },
+    {
+      "alt_text": "Scatter plot and heatmap showing CHSH witness strength increasing with reduced entropy while local basis rotations change measurement entropy but preserve reduced entropy.",
+      "caption": "CHSH contextuality witness and basis-sweep audit for the same finite two-qubit family. The scatter colorbar encodes contextual fraction, bound lines mark local and Tsirelson thresholds, and the heatmap colorbar shows rotated measurement entropy while the contour marks reduced-entropy invariance; this does not claim empirical or full QRF dynamics.",
+      "cropped_text_count": 0,
+      "id": "quantum_contextuality_witness",
+      "layout_ok": true,
+      "legend_axis_overlap_count": 0,
+      "path": "output/figures/quantum_contextuality_witness.png",
+      "render_contract": {
+        "colorbar_count": 2,
+        "legend_count": 2,
+        "min_font_pt": 12.0,
+        "panel_count": 2,
+        "roles": [
+          "quantum",
+          "finite"
+        ]
+      },
+      "source_artifacts": [
+        "output/data/quantum_boundary_entropy.json"
+      ],
+      "text_overlap_count": 0,
+      "title_overlap_count": 0,
+      "visual_encoding": "Left panel uses scatter colorbar for contextual fraction with line legends for bounds; right panel uses heatmap colorbar for rotated measurement entropy and a contour legend for reduced-entropy drift."
+    },
+    {
+      "alt_text": "Two-panel CHSH measurement-cover figure showing four context rows and four outcome columns of Bell joint probabilities, plus hatched bars where the product control stays within the local bound and the Bell cover reaches the Tsirelson bound.",
+      "caption": "Finite CHSH measurement-cover empirical model for the Bell-state contextuality extension. The heatmap colorbar and printed cell values encode joint probabilities by context and outcome, while the hatched bar legend compares the product negative control with the Bell cover against local and Tsirelson bounds; the figure supports only a finite no-signaling CHSH table, not a full sheaf-obstruction proof or empirical QRF result.",
+      "cropped_text_count": 0,
+      "id": "quantum_measurement_contextuality_table",
+      "layout_ok": true,
+      "legend_axis_overlap_count": 0,
+      "path": "output/figures/quantum_measurement_contextuality_table.png",
+      "render_contract": {
+        "colorbar_count": 1,
+        "legend_count": 1,
+        "min_font_pt": 12.0,
+        "panel_count": 2,
+        "roles": [
+          "quantum",
+          "null"
+        ]
+      },
+      "source_artifacts": [
+        "output/data/quantum_measurement_contextuality.json"
+      ],
+      "text_overlap_count": 0,
+      "title_overlap_count": 0,
+      "visual_encoding": "Heatmap colorbar plus cell labels encode joint probabilities; bar colors and hatches encode product control versus Bell cover; dashed and dotted lines encode local and Tsirelson bounds."
+    },
+    {
+      "alt_text": "Two-panel local-polytope audit showing near-zero residual and explicit deterministic assignment weights for the product control, while the Bell cover is infeasible with a positive residual against the local-hidden-variable polytope.",
+      "caption": "Local-polytope audit for the same CHSH measurement-cover artifact. The hatched residual bars show that the product control has an exact deterministic-assignment mixture while the Bell cover has a positive minimum L1 residual against the 16-assignment local polytope; the horizontal-bar legend lists the product-control mixture weights. This is a finite noncontextuality-polytope audit, not a general sheaf-obstruction engine or empirical quantum result.",
+      "cropped_text_count": 0,
+      "id": "quantum_local_polytope_audit",
+      "layout_ok": true,
+      "legend_axis_overlap_count": 0,
+      "path": "output/figures/quantum_local_polytope_audit.png",
+      "render_contract": {
+        "colorbar_count": 0,
+        "legend_count": 2,
+        "min_font_pt": 12.0,
+        "panel_count": 2,
+        "roles": [
+          "quantum",
+          "null"
+        ]
+      },
+      "source_artifacts": [
+        "output/data/quantum_measurement_contextuality.json"
+      ],
+      "text_overlap_count": 0,
+      "title_overlap_count": 0,
+      "visual_encoding": "Bar colors and hatches distinguish product control from Bell cover; dashed line marks zero residual; horizontal bars encode deterministic-assignment mixture weights with text labels."
+    },
+    {
+      "alt_text": "Three panels show higher dephasing rates driving faster CHSH decay, higher global entropy, and lower mutual information in a finite two-qubit Bell-state simulation.",
+      "caption": "Finite open-system dephasing controls for a two-qubit Bell state and product negative control. Line legends map dephasing rates across CHSH decay, global entropy increase, and mutual-information contraction; the figure supports only a trace-preserving finite dephasing-channel claim, not empirical evidence or full qFEP dynamics.",
+      "cropped_text_count": 0,
+      "id": "quantum_open_system_dynamics",
+      "layout_ok": true,
+      "legend_axis_overlap_count": 0,
+      "path": "output/figures/quantum_open_system_dynamics.png",
+      "render_contract": {
+        "colorbar_count": 0,
+        "legend_count": 3,
+        "min_font_pt": 12.0,
+        "panel_count": 3,
+        "roles": [
+          "quantum"
+        ]
+      },
+      "source_artifacts": [
+        "output/data/quantum_open_system_dynamics.json"
+      ],
+      "text_overlap_count": 0,
+      "title_overlap_count": 0,
+      "visual_encoding": "Three-panel line plot; legends map line colors and markers to dephasing rates, the dashed line marks the local CHSH bound, and axes encode time against CHSH, entropy, and mutual information."
+    },
+    {
+      "alt_text": "Three panels show a finite boundary Hamiltonian Lindblad audit where entropy rises, mutual information contracts, and positivity residuals remain at zero across dephasing rates.",
+      "caption": "Boundary-Hamiltonian qFEP extension engine using finite two-qubit Lindblad dynamics. Line legends map Lindblad rates across entropy production, mutual-information contraction, and positivity residual panels; the figure validates a deterministic software surrogate with negative controls, not empirical evidence or a physical qFEP realization.",
+      "cropped_text_count": 0,
+      "id": "qfep_boundary_hamiltonian_dynamics",
+      "layout_ok": true,
+      "legend_axis_overlap_count": 0,
+      "path": "output/figures/qfep_boundary_hamiltonian_dynamics.png",
+      "render_contract": {
+        "colorbar_count": 0,
+        "legend_count": 3,
+        "min_font_pt": 12.0,
+        "panel_count": 3,
+        "roles": [
+          "quantum",
+          "finite"
+        ]
+      },
+      "source_artifacts": [
+        "output/data/qfep_boundary_hamiltonian_dynamics.json"
+      ],
+      "text_overlap_count": 0,
+      "title_overlap_count": 0,
+      "visual_encoding": "Three-panel line plot with rate legends; x-axes encode time, y-axes encode entropy bits, mutual information bits, and negative-eigenvalue residuals."
+    },
+    {
+      "alt_text": "Three panels show stochastic quantum trajectories reconstructing exact Lindblad entropy, trace-distance residuals by dephasing rate, and jump-count intervals with zero jumps for the gamma-zero control.",
+      "caption": "Seeded quantum-trajectory unraveling of the finite two-qubit Lindblad surrogate. Line legends compare Monte Carlo ensemble entropy with the exact Lindblad density, rate-colored lines show trace-distance residuals, and jump-count bars with intervals expose the gamma-zero negative control; this validates a stochastic software surrogate, not physical qFEP realization or empirical quantum-boundary evidence.",
+      "cropped_text_count": 0,
+      "id": "quantum_trajectory_unraveling",
+      "layout_ok": true,
+      "legend_axis_overlap_count": 0,
+      "path": "output/figures/quantum_trajectory_unraveling.png",
+      "render_contract": {
+        "colorbar_count": 0,
+        "legend_count": 3,
+        "min_font_pt": 12.0,
+        "panel_count": 3,
+        "roles": [
+          "quantum",
+          "stochastic",
+          "blocked"
+        ]
+      },
+      "source_artifacts": [
+        "output/data/quantum_trajectory_unraveling.json"
+      ],
+      "text_overlap_count": 0,
+      "title_overlap_count": 0,
+      "visual_encoding": "Three-panel figure; solid and dashed lines encode ensemble versus exact entropy, colored lines encode dephasing rates and trace distance, and bar error intervals encode jump counts by rate."
+    },
+    {
+      "alt_text": "Heatmap of reduced entropy by six-qubit state and subsystem cut, showing high entropy for the candidate boundary cut, lower structured controls, a random-cut control, and zero separable-control entropy.",
+      "caption": "Many-body boundary-screen sweep over exact six-qubit state vectors and subsystem cuts. The entropy colorbar and cell text separate candidate observer-boundary cuts, structured controls, random-cut negative controls, and separable controls; the figure supports only finite cut-sensitivity validation, not empirical or many-body observer-boundary proof.",
+      "cropped_text_count": 0,
+      "id": "many_body_boundary_screen_sweep",
+      "layout_ok": true,
+      "legend_axis_overlap_count": 0,
+      "path": "output/figures/many_body_boundary_screen_sweep.png",
+      "render_contract": {
+        "colorbar_count": 1,
+        "legend_count": 1,
+        "min_font_pt": 12.0,
+        "panel_count": 1,
+        "roles": [
+          "quantum",
+          "finite"
+        ]
+      },
+      "source_artifacts": [
+        "output/data/many_body_boundary_screen_sweep.json"
+      ],
+      "text_overlap_count": 0,
+      "title_overlap_count": 0,
+      "visual_encoding": "Heatmap colorbar encodes reduced entropy in bits; rows are finite states, columns are subsystem cuts, and cell text labels entropy plus observer/control status."
+    },
+    {
+      "alt_text": "Two-panel sheaf audit showing a noncontextual triangle control with zero residual and a parity obstruction with positive residual, plus a matrix of global-section and no-disturbance checks.",
+      "caption": "General measurement-cover sheaf obstruction audit beyond the CHSH-only table. Hatched residual bars distinguish the noncontextual triangle negative control from the parity obstruction, while the binary matrix colorbar reports global-section and no-disturbance checks; the figure is a finite LP audit, not empirical evidence or a full proof for the source paper.",
+      "cropped_text_count": 0,
+      "id": "sheaf_contextuality_obstruction_audit",
+      "layout_ok": true,
+      "legend_axis_overlap_count": 0,
+      "path": "output/figures/sheaf_contextuality_obstruction_audit.png",
+      "render_contract": {
+        "colorbar_count": 1,
+        "legend_count": 1,
+        "min_font_pt": 12.0,
+        "panel_count": 2,
+        "roles": [
+          "pass",
+          "fail"
+        ]
+      },
+      "source_artifacts": [
+        "output/data/sheaf_contextuality_obstruction_audit.json"
+      ],
+      "text_overlap_count": 0,
+      "title_overlap_count": 0,
+      "visual_encoding": "Bar colors and hatches distinguish feasible and obstructed scenarios; dashed line marks zero residual; binary matrix colorbar and Y/N cell text encode audit criteria."
+    },
+    {
+      "alt_text": "Two-panel QRF transformation audit showing admissible identity, swap, and cycle maps accepted with near-zero errors while mass-gain and negative-entry controls are rejected.",
+      "caption": "QRF transformation covariance audit for finite probability-preserving relabelings. The binary matrix colorbar marks stochasticity, nonnegativity, and acceptance criteria, while grouped bars show probability-mass and expectation-covariance errors for admissible maps; the figure supports only finite relabeling covariance, not full quantum-reference-frame dynamics.",
+      "cropped_text_count": 0,
+      "id": "qrf_transformation_covariance_audit",
+      "layout_ok": true,
+      "legend_axis_overlap_count": 0,
+      "path": "output/figures/qrf_transformation_covariance_audit.png",
+      "render_contract": {
+        "colorbar_count": 1,
+        "legend_count": 0,
+        "min_font_pt": 12.0,
+        "panel_count": 2,
+        "roles": [
+          "qrf_sector",
+          "pass",
+          "fail"
+        ]
+      },
+      "source_artifacts": [
+        "output/data/qrf_transformation_covariance_audit.json"
+      ],
+      "text_overlap_count": 0,
+      "title_overlap_count": 0,
+      "visual_encoding": "Binary heatmap colorbar and Y/N cell text encode transformation criteria; grouped bars and legend encode mass error versus covariance error."
+    },
+    {
+      "alt_text": "Provenance heatmap showing unsourced human data blocked, synthetic demo data allowed only as software demo, and preregistered placeholder data blocked until preprocessing provenance exists.",
+      "caption": "Empirical adapter provenance audit showing that the human-evidence interface remains fail-closed. The colorbar and Y/N cell text encode source identity, ethics basis, preprocessing hash, null model, and empirical-claim permission; synthetic fixtures can be demos only, and unsourced human or practice data remain blocked rather than becoming evidence.",
+      "cropped_text_count": 0,
+      "id": "empirical_adapter_provenance_audit",
+      "layout_ok": true,
+      "legend_axis_overlap_count": 0,
+      "path": "output/figures/empirical_adapter_provenance_audit.png",
+      "render_contract": {
+        "colorbar_count": 1,
+        "legend_count": 1,
+        "min_font_pt": 12.0,
+        "panel_count": 1,
+        "roles": [
+          "blocked",
+          "pass"
+        ]
+      },
+      "source_artifacts": [
+        "output/data/empirical_adapter_provenance_audit.json"
+      ],
+      "text_overlap_count": 0,
+      "title_overlap_count": 0,
+      "visual_encoding": "Binary heatmap colorbar maps criterion absent/present; rows are adapter records, columns are provenance criteria, and right-side text gives blocked or demo-only decisions."
+    },
+    {
+      "alt_text": "Two-panel entanglement audit showing Werner-state negativity turns positive above the PPT threshold, separable controls stay at zero, the Bell state has positive negativity, and invalid density matrices are rejected.",
+      "caption": "Mixed-state two-qubit entanglement audit for Bell, separable, and Werner-family cases. The line legend maps negativity, PPT minimum eigenvalue, and the Werner threshold, while the bar legend separates separable controls from the Bell control and notes invalid-density rejections; the figure validates a finite PPT/negativity software surrogate, not empirical or many-body boundary evidence.",
+      "cropped_text_count": 0,
+      "id": "arbitrary_two_qubit_entanglement_audit",
+      "layout_ok": true,
+      "legend_axis_overlap_count": 0,
+      "path": "output/figures/arbitrary_two_qubit_entanglement_audit.png",
+      "render_contract": {
+        "colorbar_count": 0,
+        "legend_count": 2,
+        "min_font_pt": 12.0,
+        "panel_count": 2,
+        "roles": [
+          "quantum",
+          "null"
+        ]
+      },
+      "source_artifacts": [
+        "output/data/arbitrary_two_qubit_entanglement_audit.json"
+      ],
+      "text_overlap_count": 0,
+      "title_overlap_count": 0,
+      "visual_encoding": "Line colors and markers encode negativity and PPT eigenvalue across Werner p; dotted vertical line encodes the PPT threshold, E/S labels mark entangled or separable rows, and bar colors encode separable versus Bell controls."
+    },
+    {
+      "alt_text": "Two-panel measurement-cover audit showing triangle and CHSH product controls feasible, parity and Bell scenarios obstructed with positive residuals, and no-disturbance checks passing.",
+      "caption": "General measurement-cover polytope audit for triangle, parity, CHSH-product, and CHSH-Bell scenarios. Hatched residual bars distinguish feasible controls from obstruction cases, and the binary colorbar reports parser, feasibility, and no-disturbance checks; the figure is a finite deterministic-assignment LP audit, not empirical contextuality evidence or a full source-paper proof.",
+      "cropped_text_count": 0,
+      "id": "general_measurement_cover_polytope_audit",
+      "layout_ok": true,
+      "legend_axis_overlap_count": 0,
+      "path": "output/figures/general_measurement_cover_polytope_audit.png",
+      "render_contract": {
+        "colorbar_count": 1,
+        "legend_count": 1,
+        "min_font_pt": 12.0,
+        "panel_count": 2,
+        "roles": [
+          "pass",
+          "fail"
+        ]
+      },
+      "source_artifacts": [
+        "output/data/general_measurement_cover_polytope_audit.json"
+      ],
+      "text_overlap_count": 0,
+      "title_overlap_count": 0,
+      "visual_encoding": "Bar colors and hatches distinguish feasible controls from infeasible obstructions; dashed line marks zero residual; binary matrix colorbar and Y/N cell text encode feasibility, expected status, and no-disturbance criteria."
+    },
+    {
+      "alt_text": "Heatmap and control bars showing erasure-to-zero has positive Landauer lower-bound cost for mixed inputs, identity has zero cost, declared channels are CPTP, and non-CPTP controls are rejected.",
+      "caption": "Thermodynamic channel-cost audit over finite CPTP maps and input states. The heatmap colorbar encodes Landauer lower bounds in kBT units, cell text gives numeric costs, and the hatched log-scale bars show non-CPTP controls rejected; the figure is finite entropy accounting, not measured heat or physical qFEP thermodynamics.",
+      "cropped_text_count": 0,
+      "id": "thermodynamic_channel_cost_audit",
+      "layout_ok": true,
+      "legend_axis_overlap_count": 0,
+      "path": "output/figures/thermodynamic_channel_cost_audit.png",
+      "render_contract": {
+        "colorbar_count": 1,
+        "legend_count": 1,
+        "min_font_pt": 12.0,
+        "panel_count": 2,
+        "roles": [
+          "quantum",
+          "blocked"
+        ]
+      },
+      "source_artifacts": [
+        "output/data/thermodynamic_channel_cost_audit.json"
+      ],
+      "text_overlap_count": 0,
+      "title_overlap_count": 0,
+      "visual_encoding": "Sequential heatmap colorbar encodes Landauer lower-bound cost; cell text provides values, hatched bars encode invalid-channel CPTP residuals, and dashed line marks the rejection threshold."
+    },
+    {
+      "alt_text": "Two-panel sparse boundary-screen audit showing observer cut entropy increases with qubit count, random and structured cuts remain controls, separable controls stay zero in the source data, and amplitude density decreases.",
+      "caption": "Sparse exact boundary-screen scaling audit across six, eight, and ten qubits. The entropy colorbar and cell text encode reduced entropy and observer/control labels, while the line legend contrasts observer-cut entropy with nonzero amplitude density; this validates finite sparse software scaling only, not empirical or full many-body QRF evidence.",
+      "cropped_text_count": 0,
+      "id": "sparse_boundary_screen_scaling_audit",
+      "layout_ok": true,
+      "legend_axis_overlap_count": 0,
+      "path": "output/figures/sparse_boundary_screen_scaling_audit.png",
+      "render_contract": {
+        "colorbar_count": 1,
+        "legend_count": 1,
+        "min_font_pt": 12.0,
+        "panel_count": 2,
+        "roles": [
+          "quantum",
+          "finite"
+        ]
+      },
+      "source_artifacts": [
+        "output/data/sparse_boundary_screen_scaling_audit.json"
+      ],
+      "text_overlap_count": 0,
+      "title_overlap_count": 0,
+      "visual_encoding": "Heatmap colorbar encodes reduced entropy in bits by qubit count and cut; cell text labels observer versus control, and dual-axis line legend encodes entropy growth and amplitude-density decay."
+    },
+    {
+      "alt_text": "Two-panel QRF frame audit showing identity, swap, and local-X unitary transforms accepted with near-zero spectrum, entropy, and probability residuals, while nonunitary and trace-breaking controls fail.",
+      "caption": "QRF frame-covariance toy audit over finite density matrices and probability vectors. The binary colorbar marks transform acceptance and drift flags, while the grouped-bar legend separates spectrum, reduced-entropy, and probability residuals for admissible unitary/permutation maps with a disclosed display floor for exact-zero residuals; the figure supports only finite covariance checks, not full quantum-reference-frame physics.",
+      "cropped_text_count": 0,
+      "id": "qrf_frame_covariance_toy_audit",
+      "layout_ok": true,
+      "legend_axis_overlap_count": 0,
+      "path": "output/figures/qrf_frame_covariance_toy_audit.png",
+      "render_contract": {
+        "colorbar_count": 1,
+        "legend_count": 1,
+        "min_font_pt": 12.0,
+        "panel_count": 2,
+        "roles": [
+          "qrf_sector",
+          "pass",
+          "fail"
+        ]
+      },
+      "source_artifacts": [
+        "output/data/qrf_frame_covariance_toy_audit.json"
+      ],
+      "text_overlap_count": 0,
+      "title_overlap_count": 0,
+      "visual_encoding": "Binary heatmap colorbar and Y/N cell text encode accepted transforms and drift flags; grouped bar colors and hatches encode spectrum, reduced-entropy, and probability residuals, with a dotted floor line marking zero-residual display."
+    },
+    {
+      "alt_text": "Matrix showing implemented quantum roadmap items with artifact, schema, validator, negative control, and allowed claim criteria satisfied, while future qFEP, many-body, sheaf, QRF, and empirical adapter rows remain blocked.",
+      "caption": "Quantum roadmap readiness matrix separating validated finite simulations from blocked future evidence classes. The binary colorbar and Y/N cell text encode whether each roadmap item has an artifact, schema, validator, negative control, and allowed manuscript claim; future rows remain blocked, so the figure is a roadmap governance audit, not evidence that the full qFEP or empirical adapters are implemented.",
+      "cropped_text_count": 0,
+      "id": "quantum_roadmap_readiness_matrix",
+      "layout_ok": true,
+      "legend_axis_overlap_count": 0,
+      "path": "output/figures/quantum_roadmap_readiness_matrix.png",
+      "render_contract": {
+        "colorbar_count": 1,
+        "legend_count": 1,
+        "min_font_pt": 12.0,
+        "panel_count": 1,
+        "roles": [
+          "finite",
+          "blocked"
+        ]
+      },
+      "source_artifacts": [
+        "output/data/quantum_roadmap_readiness_matrix.json"
+      ],
+      "text_overlap_count": 0,
+      "title_overlap_count": 0,
+      "visual_encoding": "Binary heatmap colorbar maps absent versus present readiness criteria; cell text shows Y or N, and right-side row labels distinguish finite validated rows from blocked roadmap rows."
+    },
+    {
+      "alt_text": "Three-panel profile comparison with short profile labels and legends, showing free energy, posterior mass, and selected action counts for separation-constrained, opacified, and post-dual pymdp profiles.",
+      "caption": "Active-inference profile comparison for separation-constrained, opacified, and post-dual QRF deployments. Short labels are resolved in the profile legend, colored bars encode profile free energy and posterior mass, the sign annotation states that lower free energy ranks higher under the finite software posterior, and the external action legend maps stacked counts to explicit actions from profile-specific A, B, C, and D arrays; this is not empirical evidence for any ontology or practice outcome.",
+      "cropped_text_count": 0,
+      "id": "pymdp_profile_comparison",
+      "layout_ok": true,
+      "legend_axis_overlap_count": 0,
+      "path": "output/figures/pymdp_profile_comparison.png",
+      "render_contract": {
+        "colorbar_count": 0,
+        "legend_count": 3,
+        "min_font_pt": 12.0,
+        "panel_count": 3,
+        "roles": [
+          "finite",
+          "qrf_sector"
+        ]
+      },
+      "source_artifacts": [
+        "output/data/pymdp_profile_comparison.json",
+        "output/data/pymdp_policy_trace.json",
+        "output/data/pymdp_runtime_diagnostics_log.json"
+      ],
+      "text_overlap_count": 0,
+      "title_overlap_count": 0,
+      "visual_encoding": "Three panels use profile colors for free energy and posterior mass, an on-figure sign annotation for the lower-free-energy convention, and stacked action bars with an external action legend."
+    },
+    {
+      "alt_text": "Line chart showing P(contextual post-dual state) over simulation steps for three QRF profiles, with profile colors and hollow square markers where observations were perturbed.",
+      "caption": "Deterministic pymdp posterior trajectory over P(contextual_post_dual state) for each QRF profile. The external line legend maps short profile labels to full deployment names, hollow square markers identify perturbation steps, and the axes show a replayed finite trace rather than an empirical time series or evidence for an ontological sector.",
+      "cropped_text_count": 0,
+      "id": "posterior_trajectory",
+      "layout_ok": true,
+      "legend_axis_overlap_count": 0,
+      "path": "output/figures/posterior_trajectory.png",
+      "render_contract": {
+        "colorbar_count": 0,
+        "legend_count": 1,
+        "min_font_pt": 12.0,
+        "panel_count": 1,
+        "roles": [
+          "finite"
+        ]
+      },
+      "source_artifacts": [
+        "output/data/pymdp_profile_comparison.json",
+        "output/data/pymdp_policy_trace.json",
+        "output/data/pymdp_runtime_diagnostics_log.json"
+      ],
+      "text_overlap_count": 0,
+      "title_overlap_count": 0,
+      "visual_encoding": "Line color and marker legend maps profiles; hollow square markers encode perturbation steps; x-axis encodes simulation step and y-axis encodes P(contextual_post_dual state)."
+    },
+    {
+      "alt_text": "Supplemental dashboard with four panels showing near-zero model normalization residuals, near-zero runtime recomputation residuals, pass status for runtime dependency checks, replay labels and perturbation controls, and largest profile-null effect-size contrasts from seeded stochastic simulations.",
+      "caption": "Supplemental pymdp runtime validation dashboard for the structured event log. Panels report model normalization, runtime recomputation residuals, replay controls, and the largest seeded profile-null contrasts; colors, legends, and tolerance lines mark QA status only, not empirical, clinical, neural, practice-efficacy, awakening, or physical qFEP evidence.",
+      "cropped_text_count": 0,
+      "id": "pymdp_runtime_validation_dashboard",
+      "layout_ok": true,
+      "legend_axis_overlap_count": 0,
+      "path": "output/figures/pymdp_runtime_validation_dashboard.png",
+      "render_contract": {
+        "colorbar_count": 0,
+        "legend_count": 4,
+        "min_font_pt": 12.0,
+        "panel_count": 4,
+        "roles": [
+          "finite",
+          "pass",
+          "fail",
+          "stochastic",
+          "null"
+        ]
+      },
+      "source_artifacts": [
+        "output/data/pymdp_runtime_diagnostics_log.json",
+        "output/data/pymdp_generative_model_audit.json",
+        "output/data/pymdp_policy_trace.json",
+        "output/data/stochastic_effect_size_audit.json"
+      ],
+      "text_overlap_count": 0,
+      "title_overlap_count": 0,
+      "visual_encoding": "Four-panel dashboard; bar colors encode pass/fail, finite residual, stochastic profile-higher, and null-higher roles; dashed or dotted lines encode tolerances and zero effects; legends explain control status and profile-null effect direction."
+    },
+    {
+      "alt_text": "Bar chart of one simulated criticality diagnostic trace showing entropy, switching, variance, and near-critical score from boundary-channel trajectories.",
+      "caption": "Single-trace entropy, switching, variance, and near-criticality diagnostics from a simulated boundary-channel trajectory. The bar legend marks values as one simulated trace, and the stochastic ensemble figure carries the interval/null-control result; neither figure is empirical evidence for neural criticality or contemplative realization.",
+      "cropped_text_count": 0,
+      "id": "criticality_proxy_panels",
+      "layout_ok": true,
+      "legend_axis_overlap_count": 0,
+      "path": "output/figures/criticality_proxy_panels.png",
+      "render_contract": {
+        "colorbar_count": 0,
+        "legend_count": 1,
+        "min_font_pt": 12.0,
+        "panel_count": 1,
+        "roles": [
+          "finite"
+        ]
+      },
+      "source_artifacts": [
+        "output/reports/criticality_proxy_report.json"
+      ],
+      "text_overlap_count": 0,
+      "title_overlap_count": 0,
+      "visual_encoding": "Single bar color legend encodes one simulated trajectory diagnostic across entropy, switching, variance, and near-critical labels."
+    },
+    {
+      "alt_text": "Two grouped-bar panels using short profile labels and one shared legend, showing near-critical score and switch-rate intervals for profile simulations compared with null controls across seeded stochastic active-inference runs.",
+      "caption": "Seeded stochastic active-inference ensemble for criticality-style indicators. Shared short profile labels, a single external legend, violet profile bars, hatched gray null-control bars, direction annotations, and 95 percent intervals over replayable seeds show simulated trajectory variability only; the figure is not empirical evidence, not neural measurement, not clinical outcome evidence, and not practice-efficacy evidence.",
+      "cropped_text_count": 0,
+      "id": "criticality_stochastic_ensemble",
+      "layout_ok": true,
+      "legend_axis_overlap_count": 0,
+      "path": "output/figures/criticality_stochastic_ensemble.png",
+      "render_contract": {
+        "colorbar_count": 0,
+        "legend_count": 2,
+        "min_font_pt": 12.0,
+        "panel_count": 2,
+        "roles": [
+          "stochastic",
+          "null"
+        ]
+      },
+      "source_artifacts": [
+        "output/data/criticality_stochastic_ensemble.json"
+      ],
+      "text_overlap_count": 0,
+      "title_overlap_count": 0,
+      "visual_encoding": "Two-panel grouped bar chart; shared legend explains profile versus null color and hatch, text annotations encode profile-vs-null direction, and error bars encode 95 percent intervals across seeded runs."
+    },
+    {
+      "alt_text": "Two panels using short profile labels; the left grouped-bar panel compares measured branching ratios of profile ensembles with hatched null controls around a dashed balance line, and the right histogram shows the distribution of single-trace avalanche sizes.",
+      "caption": "Measured criticality signatures for the seeded boundary-channel trajectories. Panel A bars encode the measured branching ratio per profile against hatched null controls with a dashed sigma-equals-one balance line, and Panel B is a histogram of single-trace avalanche sizes; the colored bars and dashed reference line are seeded software trajectory diagnostics only, and the figure is not evidence of neural avalanches, branching, or empirical criticality.",
+      "cropped_text_count": 0,
+      "id": "criticality_signatures",
+      "layout_ok": true,
+      "legend_axis_overlap_count": 0,
+      "path": "output/figures/criticality_signatures.png",
+      "render_contract": {
+        "colorbar_count": 0,
+        "legend_count": 2,
+        "min_font_pt": 12.0,
+        "panel_count": 2,
+        "roles": [
+          "stochastic",
+          "null",
+          "finite"
+        ]
+      },
+      "source_artifacts": [
+        "output/data/criticality_stochastic_ensemble.json",
+        "output/reports/criticality_proxy_report.json"
+      ],
+      "text_overlap_count": 0,
+      "title_overlap_count": 0,
+      "visual_encoding": "Two panels; Panel A grouped bars with a legend encode measured branching ratio for profile versus hatched null plus a dashed balance line, and Panel B is a histogram whose bar heights encode avalanche-size counts."
+    },
+    {
+      "alt_text": "A grouped-bar panel using short profile labels showing scope asymmetry rising from negative to positive across profiles with the separation prior active, compared with a hatched precision-ablation control, around a dashed balance line.",
+      "caption": "Finite scope-of-concern surrogate across QRF profiles. Panel C compares active separation-prior asymmetry with a hatched precision-ablation control; Panel D shows per-channel action influence against an action-shuffled mean. The figure is a finite policy-scope surrogate only, not a measure of compassion, well-being, practice efficacy, or affective outcome.",
+      "cropped_text_count": 0,
+      "id": "compassion_scope_widening",
+      "layout_ok": true,
+      "legend_axis_overlap_count": 0,
+      "path": "output/figures/compassion_scope_widening.png",
+      "render_contract": {
+        "colorbar_count": 0,
+        "legend_count": 2,
+        "min_font_pt": 12.0,
+        "panel_count": 2,
+        "roles": [
+          "finite",
+          "null"
+        ]
+      },
+      "source_artifacts": [
+        "output/data/compassion_scope_audit.json"
+      ],
+      "text_overlap_count": 0,
+      "title_overlap_count": 0,
+      "visual_encoding": "Two-panel figure; Panel C is a grouped bar chart whose bar heights encode scope asymmetry with a legend distinguishing separation-prior-active bars from the hatched precision-ablation control and a dashed self/non-self balance line, and Panel D is a bar chart whose heights encode per-channel action-influence for b0-b5 with a dashed line at the action-shuffled mean."
+    },
+    {
+      "alt_text": "A line panel showing unfactored model error roughly flat while factored model error falls and the factored advantage rises from zero as the empowerment fraction increases, with a zero reference line and a legend.",
+      "caption": "Separation-prior emergence across the empowerment grid. Lines encode the measured factored (self/env) and unfactored model prediction error and their dashed advantage curve as the fraction of action-contingent channels rises; the factored model buys accuracy only when agency is present, and the advantage's rise with empowerment is expected by construction, making this a correctness check rather than a discriminating null. It is a finite deterministic predictor comparison and not a developmental, neural, or empirical empowerment claim.",
+      "cropped_text_count": 0,
+      "id": "separation_prior_emergence",
+      "layout_ok": true,
+      "legend_axis_overlap_count": 0,
+      "path": "output/figures/separation_prior_emergence.png",
+      "render_contract": {
+        "colorbar_count": 0,
+        "legend_count": 1,
+        "min_font_pt": 12.0,
+        "panel_count": 1,
+        "roles": [
+          "finite",
+          "keep",
+          "blocked"
+        ]
+      },
+      "source_artifacts": [
+        "output/data/separation_prior_emergence_audit.json"
+      ],
+      "text_overlap_count": 0,
+      "title_overlap_count": 0,
+      "visual_encoding": "Single-panel line chart whose lines encode factored versus unfactored prediction error and a dashed line encodes the measured factored advantage across the empowerment axis, with a legend and a zero reference line."
+    },
+    {
+      "alt_text": "A grouped-bar panel across environment bipartitions showing near-zero entropy for separable internal cuts and one-bit entropy for entangled internal cuts, with markers showing the agent's accessible marginal drift sitting near zero for every bipartition.",
+      "caption": "Generalisation of no-self-evidence to arbitrary internal boundaries. Grouped bars encode the god's-eye entanglement entropy across each environment internal bipartition for a separable versus an entangled environment, while the overlaid markers encode the agent's accessible marginal drift, which stays near zero; the agent cannot adjudicate the internal cut from its marginal, and this is a finite pure-state linear-algebra audit, not a physical or observer-boundary measurement.",
+      "cropped_text_count": 0,
+      "id": "internal_cut_unmeasurability",
+      "layout_ok": true,
+      "legend_axis_overlap_count": 0,
+      "path": "output/figures/internal_cut_unmeasurability.png",
+      "render_contract": {
+        "colorbar_count": 0,
+        "legend_count": 1,
+        "min_font_pt": 12.0,
+        "panel_count": 1,
+        "roles": [
+          "finite",
+          "quantum",
+          "boundary"
+        ]
+      },
+      "source_artifacts": [
+        "output/data/internal_cut_unmeasurability_audit.json"
+      ],
+      "text_overlap_count": 0,
+      "title_overlap_count": 0,
+      "visual_encoding": "Single-panel grouped bar chart whose bar heights encode the internal-cut entanglement entropy for separable versus entangled environments, with overlaid markers encoding the near-zero accessible marginal drift and a legend."
+    },
+    {
+      "alt_text": "A horizontal bar panel listing each practice protocol's model-intervention deltas, colored by whether the delta increases or decreases a software parameter, around a dashed no-intervention line, with the safety boundary text shown beneath.",
+      "caption": "Practice protocols rendered as bounded model-intervention deltas. Horizontal bars encode each protocol's metacognitive-access, prior-precision, sector-revisability, compassion-scope, and self-privilege deltas, color encodes increase versus decrease, a dashed line marks no intervention, and each protocol's safety boundary is printed on the figure; these are finite software-interface specifications only and are not therapeutic advice, a claim of realization, a moral prescription, or a clinical protocol.",
+      "cropped_text_count": 0,
+      "id": "practice_policy_scope_map",
+      "layout_ok": true,
+      "legend_axis_overlap_count": 0,
+      "path": "output/figures/practice_policy_scope_map.png",
+      "render_contract": {
+        "colorbar_count": 0,
+        "legend_count": 1,
+        "min_font_pt": 12.0,
+        "panel_count": 1,
+        "roles": [
+          "finite",
+          "blocked"
+        ]
+      },
+      "source_artifacts": [
+        "output/data/practice_protocol_map.json"
+      ],
+      "text_overlap_count": 0,
+      "title_overlap_count": 0,
+      "visual_encoding": "Single-panel horizontal bar chart whose bar lengths encode model-intervention deltas, color encodes the sign of each delta with a legend, and a dashed line encodes the no-intervention baseline."
+    },
+    {
+      "alt_text": "Horizontal effect-size plot grouped by profile, comparing profile simulations with null controls for switch rate, surprise, and expected-free-energy metrics with adjusted p-values, bootstrap interval labels, and a zero-effect reference line.",
+      "caption": "Seeded stochastic profile-null effect-size audit for active-inference ensembles. Grouped short-profile rows use horizontal Cliff's-delta bars, hatches identify Holm-adjusted nonsignificant contrasts, right-side labels give profile-vs-null direction, adjusted p-values, and pooled bootstrap intervals, and the zero reference line separates profile-higher from null-higher effects; this is a finite simulation robustness audit, not empirical, neural, clinical, or practice-efficacy evidence.",
+      "cropped_text_count": 0,
+      "id": "stochastic_effect_size_forest",
+      "layout_ok": true,
+      "legend_axis_overlap_count": 0,
+      "path": "output/figures/stochastic_effect_size_forest.png",
+      "render_contract": {
+        "colorbar_count": 0,
+        "legend_count": 1,
+        "min_font_pt": 12.0,
+        "panel_count": 1,
+        "roles": [
+          "stochastic",
+          "null"
+        ]
+      },
+      "source_artifacts": [
+        "output/data/stochastic_effect_size_audit.json"
+      ],
+      "text_overlap_count": 0,
+      "title_overlap_count": 0,
+      "visual_encoding": "Horizontal forest plot; grouped y-axis rows use short profile labels, bar color encodes effect direction, hatches encode Holm p-values above threshold, text labels give adjusted p-values and bootstrap intervals, and the dashed vertical line marks zero effect."
+    },
+    {
+      "alt_text": "Two-panel BMR robustness figure showing pruning-rate percentages and Delta-F sign stability across prior precision and metacognitive access after resampling observation-noise rows.",
+      "caption": "BMR robustness resampling over the prior-precision/access grid. The left panel shows bootstrap pruning rates over noise rows and the right panel shows Delta-F sign stability with compact confidence intervals; both panels report finite software robustness only, not human self-model or practice-efficacy claims.",
+      "cropped_text_count": 0,
+      "id": "bmr_robustness_resampling",
+      "layout_ok": true,
+      "legend_axis_overlap_count": 0,
+      "path": "output/figures/bmr_robustness_resampling.png",
+      "render_contract": {
+        "colorbar_count": 2,
+        "legend_count": 1,
+        "min_font_pt": 12.0,
+        "panel_count": 2,
+        "roles": [
+          "keep",
+          "prune"
+        ]
+      },
+      "source_artifacts": [
+        "output/data/bmr_robustness_resampling_audit.json"
+      ],
+      "text_overlap_count": 0,
+      "title_overlap_count": 0,
+      "visual_encoding": "Two-panel heatmap; sequential colorbar encodes bootstrap pruning rate, binary colorbar encodes Delta-F sign stability, compact cell text provides decision and interval labels, and the external legend distinguishes keep from prune semantics."
+    },
+    {
+      "alt_text": "Line and bar figure showing quantum trajectory residuals decreasing with more trajectories, a tolerance line, and a too-few-trajectories control that fails before interpretation.",
+      "caption": "Quantum-trajectory convergence audit for the finite Lindblad surrogate. The line plot shows max trace-distance residual across trajectory counts on a log-scaled axis, while the bar panel contrasts a too-few-trajectories negative control with the largest ensemble against the validation threshold; this checks stochastic software convergence, not physical qFEP realization or empirical quantum evidence.",
+      "cropped_text_count": 0,
+      "id": "quantum_trajectory_convergence",
+      "layout_ok": true,
+      "legend_axis_overlap_count": 0,
+      "path": "output/figures/quantum_trajectory_convergence.png",
+      "render_contract": {
+        "colorbar_count": 0,
+        "legend_count": 2,
+        "min_font_pt": 12.0,
+        "panel_count": 2,
+        "roles": [
+          "quantum",
+          "stochastic",
+          "blocked"
+        ]
+      },
+      "source_artifacts": [
+        "output/data/quantum_trajectory_convergence_audit.json"
+      ],
+      "text_overlap_count": 0,
+      "title_overlap_count": 0,
+      "visual_encoding": "Two-panel figure; line color encodes trace-distance residual over trajectory count, dotted and dashed thresholds mark tolerance, bar color and hatch distinguish the failing negative control from the passing largest ensemble."
+    },
+    {
+      "alt_text": "Palette ledger showing stable colors and hatches for pass, fail, keep, prune, finite, blocked, stochastic, null, quantum, and boundary roles used across figures.",
+      "caption": "Shared visual semantic palette ledger for the publication figures. Color swatches and hatch marks bind pass, fail, keep, prune, finite, blocked, stochastic, null-control, quantum, and boundary roles to stable encodings so figure colors cannot silently change meaning; this is a visualization QA artifact, not a source of empirical evidence.",
+      "cropped_text_count": 0,
+      "id": "visual_semantic_palette_ledger",
+      "layout_ok": true,
+      "legend_axis_overlap_count": 0,
+      "path": "output/figures/visual_semantic_palette_ledger.png",
+      "render_contract": {
+        "colorbar_count": 0,
+        "legend_count": 1,
+        "min_font_pt": 12.0,
+        "panel_count": 1,
+        "roles": [
+          "pass",
+          "fail",
+          "keep",
+          "prune",
+          "finite",
+          "blocked",
+          "stochastic",
+          "quantum"
+        ]
+      },
+      "source_artifacts": [
+        "figures.yaml"
+      ],
+      "text_overlap_count": 0,
+      "title_overlap_count": 0,
+      "visual_encoding": "Swatch ledger; filled rectangles encode semantic colors, hatches encode null or blocked roles, text labels provide role names and color values, and the legend states cross-figure reuse."
+    },
+    {
+      "alt_text": "Matrix of method contracts showing hard constraints, modeling choices, assumptions, evidence ceilings, and negative-control counts for QRF, BMR, pymdp, stochastic, quantum, contextuality, practice, and visualization methods.",
+      "caption": "Method assumption and falsification map for the finite software chain. The binary colorbar and cell text show whether each method declares hard constraints, modeling choices, assumptions, evidence ceilings, and negative controls, making verifier-first governance visible without treating the method ledger as empirical or physical qFEP evidence.",
+      "cropped_text_count": 0,
+      "id": "method_assumption_failure_map",
+      "layout_ok": true,
+      "legend_axis_overlap_count": 0,
+      "path": "output/figures/method_assumption_failure_map.png",
+      "render_contract": {
+        "colorbar_count": 1,
+        "legend_count": 1,
+        "min_font_pt": 12.0,
+        "panel_count": 1,
+        "roles": [
+          "finite",
+          "blocked",
+          "pass"
+        ]
+      },
+      "source_artifacts": [
+        "output/data/method_assumption_ledger.json",
+        "output/data/method_negative_control_inventory.json"
+      ],
+      "text_overlap_count": 0,
+      "title_overlap_count": 0,
+      "visual_encoding": "Binary matrix colorbar maps contract absent/present; rows are method IDs, columns are governance fields, and cell text gives Y/N or the number of negative controls."
+    },
+    {
+      "alt_text": "Three-column graph linking each public claim to its source support and validation gate, with every row showing a claim-source-gate binding.",
+      "caption": "Claim-source-validation graph linking each public claim to its source role and validation gate. The node and edge legend identifies claim, source, gate, and binding colors so the figure remains an audit map for claim governance, not an additional evidence source.",
+      "cropped_text_count": 0,
+      "id": "claim_source_validation_graph",
+      "layout_ok": true,
+      "legend_axis_overlap_count": 0,
+      "path": "output/figures/claim_source_validation_graph.png",
+      "render_contract": {
+        "colorbar_count": 0,
+        "legend_count": 1,
+        "min_font_pt": 12.0,
+        "panel_count": 1,
+        "roles": [
+          "source",
+          "pass"
+        ]
+      },
+      "source_artifacts": [
+        "output/data/source_claim_crosswalk.json"
+      ],
+      "text_overlap_count": 0,
+      "title_overlap_count": 0,
+      "visual_encoding": "Node color legend maps claim/source/gate nodes; gray lines encode validated bindings across the three columns."
+    },
+    {
+      "alt_text": "Binary matrix showing which bibliography keys support each manuscript or model track in the scholarship manifest.",
+      "caption": "Scholarship coverage by source role and manuscript track. The binary colorbar encodes whether a source supports a track, separating primary recapitulation, implementation anchors, background theory, proxy context, and limitations so citation density cannot launder unsupported claims.",
+      "cropped_text_count": 0,
+      "id": "scholarship_coverage_matrix",
+      "layout_ok": true,
+      "legend_axis_overlap_count": 0,
+      "path": "output/figures/scholarship_coverage_matrix.png",
+      "render_contract": {
+        "colorbar_count": 1,
+        "legend_count": 0,
+        "min_font_pt": 12.0,
+        "panel_count": 1,
+        "roles": [
+          "source"
+        ]
+      },
+      "source_artifacts": [
+        "output/data/scholarship_source_matrix.json"
+      ],
+      "text_overlap_count": 0,
+      "title_overlap_count": 0,
+      "visual_encoding": "Binary matrix colorbar maps absent/present track support; rows are citation keys and columns are model tracks."
+    },
+    {
+      "alt_text": "Binary matrix showing which citation keys support each public claim ID in the source claim crosswalk, grouped by evidence class so support density is distinct from claim strength.",
+      "caption": "Public claim support by citation key, restricted to claims that appear in the source crosswalk and grouped by evidence class. The binary colorbar marks scoped support links while row separators expose formal, finite-simulation, runtime, proxy, and boundary claims; a support link licenses vocabulary or method scope only and does not upgrade an evidence ceiling.",
+      "cropped_text_count": 0,
+      "id": "claim_support_matrix",
+      "layout_ok": true,
+      "legend_axis_overlap_count": 0,
+      "path": "output/figures/claim_support_matrix.png",
+      "render_contract": {
+        "colorbar_count": 1,
+        "legend_count": 0,
+        "min_font_pt": 12.0,
+        "panel_count": 1,
+        "roles": [
+          "source",
+          "pass"
+        ]
+      },
+      "source_artifacts": [
+        "output/data/claim_support_audit.json"
+      ],
+      "text_overlap_count": 0,
+      "title_overlap_count": 0,
+      "visual_encoding": "Binary matrix colorbar maps absent/present claim support; rows are public claims grouped by evidence class, columns are citation keys, and separator lines mark claim-class boundaries."
+    },
+    {
+      "alt_text": "Three-bar audit showing pass status for citation resolution, public claim ID mentions, and absence of forbidden positive efficacy language.",
+      "caption": "Manuscript claim audit for citation resolution, public claim-ID visibility, and forbidden positive-efficacy language. The pass/fail color legend makes the local language gate visible while preserving the boundary that passing bars do not certify empirical truth.",
+      "cropped_text_count": 0,
+      "id": "manuscript_claim_audit",
+      "layout_ok": true,
+      "legend_axis_overlap_count": 0,
+      "path": "output/figures/manuscript_claim_audit.png",
+      "render_contract": {
+        "colorbar_count": 0,
+        "legend_count": 1,
+        "min_font_pt": 12.0,
+        "panel_count": 1,
+        "roles": [
+          "pass",
+          "fail"
+        ]
+      },
+      "source_artifacts": [
+        "output/data/manuscript_claim_audit.json"
+      ],
+      "text_overlap_count": 0,
+      "title_overlap_count": 0,
+      "visual_encoding": "Bar color legend maps teal to pass and amber to fail; bars encode manuscript language-gate checks."
+    },
+    {
+      "alt_text": "Binary matrix showing which evidence-ceiling stressors apply to each public claim ID, grouped by evidence class to distinguish finite validation from blocked stronger readings.",
+      "caption": "Evidence-ceiling stress matrix showing which public claims are bounded by surrogate, empirical, practice, source-role, runtime, quantum, neural, or normative constraints. Rows are grouped by claim class and the binary colorbar marks active stressors, making clear that support, simulation, and validation gates keep prohibited inferences explicit rather than converting finite software checks into empirical, neural, clinical, practice-efficacy, awakening, or physical qFEP evidence.",
+      "cropped_text_count": 0,
+      "id": "evidence_ceiling_stress_matrix",
+      "layout_ok": true,
+      "legend_axis_overlap_count": 0,
+      "path": "output/figures/evidence_ceiling_stress_matrix.png",
+      "render_contract": {
+        "colorbar_count": 1,
+        "legend_count": 0,
+        "min_font_pt": 12.0,
+        "panel_count": 1,
+        "roles": [
+          "blocked"
+        ]
+      },
+      "source_artifacts": [
+        "output/data/evidence_ceiling_audit.json"
+      ],
+      "text_overlap_count": 0,
+      "title_overlap_count": 0,
+      "visual_encoding": "Binary matrix colorbar maps absent/present boundary stressors; rows are public claims grouped by evidence class, columns are stressor types, and separator lines mark claim-class boundaries."
+    },
+    {
+      "alt_text": "Claim-context ladder showing all public claim IDs grouped by evidence class, with source-role counts, validation-gate markers, and blocked stronger-reading markers for prohibited empirical or physical interpretations.",
+      "caption": "Claim-context evidence ladder grouping every public claim by evidence class, scoped source-role count, resolved validation gate, and blocked stronger reading. Horizontal bars encode source-role count, circular markers encode gate presence, and hatched amber blocks encode prohibited empirical, neural, clinical, practice-efficacy, awakening, or physical qFEP inferences, so the figure explains how to read claims without adding evidence beyond the ledger.",
+      "cropped_text_count": 0,
+      "id": "claim_context_evidence_ladder",
+      "layout_ok": true,
+      "legend_axis_overlap_count": 0,
+      "path": "output/figures/claim_context_evidence_ladder.png",
+      "render_contract": {
+        "colorbar_count": 0,
+        "legend_count": 1,
+        "min_font_pt": 12.0,
+        "panel_count": 1,
+        "roles": [
+          "source",
+          "pass",
+          "blocked",
+          "finite"
+        ]
+      },
+      "source_artifacts": [
+        "output/data/claim_context_ledger.json",
+        "output/data/claim_support_audit.json",
+        "output/data/evidence_ceiling_audit.json"
+      ],
+      "text_overlap_count": 0,
+      "title_overlap_count": 0,
+      "visual_encoding": "Horizontal ladder chart; y-axis rows are public claim IDs grouped by evidence class, bar length encodes scoped source-role count, circular pass markers encode resolved validation gates, and hatched blocked markers encode disallowed stronger interpretations."
+    },
+    {
+      "alt_text": "Binary matrix showing operational status for equations 1 through 14, including source mapping, finite computation, surrogate boundary, and value binding columns.",
+      "caption": "Operational status map for paper equations 1-14, distinguishing source mapping, finite computation, surrogate boundaries, and validation value bindings. The binary colorbar shows which statuses apply, including finite two-qubit quantum controls where implemented and roadmap boundaries where open-system qFEP claims are not yet simulated.",
+      "cropped_text_count": 0,
+      "id": "formalism_operation_map",
+      "layout_ok": true,
+      "legend_axis_overlap_count": 0,
+      "path": "output/figures/formalism_operation_map.png",
+      "render_contract": {
+        "colorbar_count": 1,
+        "legend_count": 0,
+        "min_font_pt": 12.0,
+        "panel_count": 1,
+        "roles": [
+          "finite",
+          "blocked"
+        ]
+      },
+      "source_artifacts": [
+        "output/data/equation_audit.json"
+      ],
+      "text_overlap_count": 0,
+      "title_overlap_count": 0,
+      "visual_encoding": "Binary matrix colorbar maps absent/present operational statuses; rows are equations and columns are software-status categories."
+    },
+    {
+      "alt_text": "Layered diagram with a top row of six boundary channel cells labeled b0 through b5 and their observation symbols, dotted vertical lines tying each channel down to three sector lens rows that assign different sector labels to the same channels, with a sector count beside each lens.",
+      "caption": "The QRF sector situation for early reading, showing one shared boundary screen of channels b0-b5 read through three sector lenses. A top row of cells carries the evidenced observation symbols, dotted vertical lines tie each bit to the separation-constrained, opacified, and post-dual lens rows below, a legend maps each lens color to a sector label, and a per-lens sector count records how finely each lens carves the screen, so the figure shows that the partitioning changes while the evidenced bitstream and its claim boundary stay finite software surrogates rather than empirical, neural, ontological, or physical qFEP evidence.",
+      "cropped_text_count": 0,
+      "id": "qrf_sector_situation",
+      "layout_ok": true,
+      "legend_axis_overlap_count": 0,
+      "path": "output/figures/qrf_sector_situation.png",
+      "render_contract": {
+        "colorbar_count": 0,
+        "legend_count": 1,
+        "min_font_pt": 12.0,
+        "panel_count": 1,
+        "roles": [
+          "boundary",
+          "qrf_sector",
+          "pass"
+        ]
+      },
+      "source_artifacts": [
+        "output/data/qrf_boundary_channel_ledger.json",
+        "output/data/qrf_boundary_indistinguishability.json"
+      ],
+      "text_overlap_count": 0,
+      "title_overlap_count": 0,
+      "visual_encoding": "Layered schematic; top boundary cells encode the shared channels and their observation symbols, dotted vertical lines encode the same evidenced bit reaching every lens, colored lens cells and text encode QRF sector labels, the right-hand text encodes the sector count per lens, and the legend maps each color to a sector label."
+    },
+    {
+      "alt_text": "Stepwise permission diagram with a top shared finite boundary screen of b0 through b5 bits feeding a left licensed-use lane and a right blocked-ontology lane, each labeled with the audit control that supports or blocks the reading.",
+      "caption": "Boundary use versus boundary ontology rendered as a stepwise permission diagram for the no-self-evidence claim. Step 1 shows the shared finite b0-b5 bitstream as the only evidenced object; Step 2 licenses reading those same bits through admissible QRF sector labels for prediction, policy selection, and model comparison when the equal-distribution audit passes; Step 3 blocks treating any chosen sector frame as a real self/world boundary because the perturbation control fails. Color encodes the licensed and blocked lanes, while the legend names the two verdicts, keeping the figure a finite software audit and not empirical, neural, clinical, practice-efficacy, or physical qFEP evidence.",
+      "cropped_text_count": 0,
+      "id": "boundary_use_vs_ontology",
+      "layout_ok": true,
+      "legend_axis_overlap_count": 0,
+      "path": "output/figures/boundary_use_vs_ontology.png",
+      "render_contract": {
+        "colorbar_count": 0,
+        "legend_count": 1,
+        "min_font_pt": 12.0,
+        "panel_count": 1,
+        "roles": [
+          "pass",
+          "blocked",
+          "boundary"
+        ]
+      },
+      "source_artifacts": [
+        "output/data/qrf_boundary_indistinguishability.json"
+      ],
+      "text_overlap_count": 0,
+      "title_overlap_count": 0,
+      "visual_encoding": "Stepwise schematic; a top source box and b0-b5 bit cells encode the shared finite boundary screen, arrows encode the two possible readings, numbered badges and large rounded boxes encode licensed use versus blocked ontology, teal and amber borders encode pass and blocked verdicts, italic audit strips encode the bound validator flags, and the legend maps each verdict color."
+    },
+    {
+      "alt_text": "Line chart with metacognitive access on the horizontal axis and the separation prior's net value as delta free energy on the vertical axis; one line is drawn per prior precision, the bolded weakest-precision line begins in the keep band and falls into the prune band at a dashed crossing marker, and the stronger precision lines stay in the prune band throughout.",
+      "caption": "Life-cycle of the separation prior's net value, the change in free energy when the prior is removed, against metacognitive access, drawn as one line per prior precision rather than a mean. The bolded arc is the precision whose net value actually crosses keep to prune (the weakest admissible precision for the current sweep); it starts positive in the shaded keep region and falls into the shaded prune region as access rises, while the fainter stronger-precision lines stay in the prune region throughout. The dashed marker locates the useful-to-dispensable crossing, and the figure is a finite software sweep, not a developmental, neural, contemplative, or clinical claim.",
+      "cropped_text_count": 0,
+      "id": "separation_prior_net_value",
+      "layout_ok": true,
+      "legend_axis_overlap_count": 0,
+      "path": "output/figures/separation_prior_net_value.png",
+      "render_contract": {
+        "colorbar_count": 0,
+        "legend_count": 1,
+        "min_font_pt": 12.0,
+        "panel_count": 1,
+        "roles": [
+          "keep",
+          "prune",
+          "finite"
+        ]
+      },
+      "source_artifacts": [
+        "output/data/bmr_sweep.json",
+        "output/data/separation_prior_emergence_audit.json"
+      ],
+      "text_overlap_count": 0,
+      "title_overlap_count": 0,
+      "visual_encoding": "Single-panel line chart; one line per prior precision encodes delta free energy versus metacognitive access on the axes, the bolded line marks the precision whose net value crosses zero, shaded keep and prune bands encode the sign of net value, a dashed vertical line marks the crossing access, and the legend names each precision line."
+    },
+    {
+      "alt_text": "Bar chart of minimum bipartition negativity for each entanglement fixture, where the GHZ, W, and qutrit bars rise above zero while the separable product control bars sit at zero negativity along the value axis.",
+      "caption": "Minimum bipartition negativity per fixture for the multipartite and higher-dimensional entanglement witness suite. Bars encode the smallest single-subsystem-versus-rest negativity for each GHZ, W, and qutrit fixture, colored to separate entangled fixtures that are detected on every cut from the separable product false-positive controls that must stay at zero negativity; the legend maps the two colors and the figure is a finite PPT/negativity witness over fixed states, not a genuine-multipartite-entanglement certificate and not empirical, neural, or physical qFEP evidence.",
+      "cropped_text_count": 0,
+      "id": "multipartite_witness_negativity",
+      "layout_ok": true,
+      "legend_axis_overlap_count": 0,
+      "path": "output/figures/multipartite_witness_negativity.png",
+      "render_contract": {
+        "colorbar_count": 0,
+        "legend_count": 1,
+        "min_font_pt": 12.0,
+        "panel_count": 1,
+        "roles": [
+          "pass",
+          "fail",
+          "boundary"
+        ]
+      },
+      "source_artifacts": [
+        "output/data/multipartite_witness_suite_audit.json"
+      ],
+      "text_overlap_count": 0,
+      "title_overlap_count": 0,
+      "visual_encoding": "Single-panel bar chart; the bar height encodes minimum bipartition negativity per fixture, teal versus amber bar color encodes entangled fixtures versus separable false-positive controls, a zero reference line marks the control level, and the legend maps each color to a fixture class."
+    },
+    {
+      "alt_text": "Two-panel bar chart where the left panel axis shows maximum bond dimension per fixture (entangled at two, product at one) and the right panel axis shows bond-one truncation error that is positive for entangled fixtures and zero for product fixtures.",
+      "caption": "Tensor-network matrix-product-state benchmark shown as two panels. Panel A bars encode the maximum bond dimension per fixture, with entangled GHZ and W states staying at bond two and product states at bond one as the screen grows, demonstrating tractability beyond exact state-vector enumeration; Panel B bars encode the bond-one truncation error, which is positive on entangled fixtures and zero on products, the discriminating control. The figure is a finite exact-MPS benchmark over toy states, not a large-scale many-body simulation and not empirical evidence.",
+      "cropped_text_count": 0,
+      "id": "tensor_network_scaling",
+      "layout_ok": true,
+      "legend_axis_overlap_count": 0,
+      "path": "output/figures/tensor_network_scaling.png",
+      "render_contract": {
+        "colorbar_count": 0,
+        "legend_count": 2,
+        "min_font_pt": 12.0,
+        "panel_count": 2,
+        "roles": [
+          "finite",
+          "keep",
+          "fail",
+          "pass"
+        ]
+      },
+      "source_artifacts": [
+        "output/data/tensor_network_benchmark_audit.json"
+      ],
+      "text_overlap_count": 0,
+      "title_overlap_count": 0,
+      "visual_encoding": "Two-panel bar chart; Panel A bar height encodes maximum bond dimension with color separating entangled and product fixtures, Panel B bar height encodes bond-one truncation error with color separating lossy entangled bars from lossless product bars, and each panel legend maps the colors to fixture classes."
+    },
+    {
+      "alt_text": "Grouped bar chart with one pair of bars per coupling strength, where the final trace-distance bar drops far below the initial bar for the weak and strong couplings but equals the initial bar for the zero-coupling control along the distance axis.",
+      "caption": "Collision-model thermalization surrogate shown as grouped bars of the trace distance from the system qubit to the fixed ancilla, initial versus final, for each coupling strength. The weak and strong partial-SWAP couplings collapse the final distance toward zero while the zero-coupling control leaves the final distance equal to the initial value, the discriminating control; the legend maps the initial and final bars. The figure is a finite deterministic collision surrogate, not a physical heat bath or thermodynamic measurement and not empirical evidence.",
+      "cropped_text_count": 0,
+      "id": "collision_model_relaxation",
+      "layout_ok": true,
+      "legend_axis_overlap_count": 0,
+      "path": "output/figures/collision_model_relaxation.png",
+      "render_contract": {
+        "colorbar_count": 0,
+        "legend_count": 1,
+        "min_font_pt": 12.0,
+        "panel_count": 1,
+        "roles": [
+          "keep",
+          "prune",
+          "boundary"
+        ]
+      },
+      "source_artifacts": [
+        "output/data/collision_model_thermalization_audit.json"
+      ],
+      "text_overlap_count": 0,
+      "title_overlap_count": 0,
+      "visual_encoding": "Single-panel grouped bar chart; paired bar heights encode the initial and final trace distance to the ancilla per coupling on the value axis, color separates the initial from the final bar, and the legend names both."
+    },
+    {
+      "alt_text": "Matrix with one row per cycle length and one column per behavior, where cells are colored and labeled feasible or infeasible, showing odd-cycle rows infeasible at the anti-correlation and quantum columns while even-cycle rows and the uncorrelated column stay feasible.",
+      "caption": "n-cycle contextuality scenario library shown as a feasibility matrix. Rows are cycle lengths labeled odd or even and two-colorable or frustrated, columns are the perfect anti-correlation, quantum, and uncorrelated behaviors, and each colored cell encodes whether the noncontextual-polytope linear program is feasible (a noncontextual model exists) or infeasible (contextual). Odd cycles including the five-cycle pentagon are contextual while even cycles are not, cross-checked against graph two-colorability; the matrix records measured LP feasibility, not an asserted optimal violation, and is not empirical evidence.",
+      "cropped_text_count": 0,
+      "id": "n_cycle_contextuality_panel",
+      "layout_ok": true,
+      "legend_axis_overlap_count": 0,
+      "path": "output/figures/n_cycle_contextuality_panel.png",
+      "render_contract": {
+        "colorbar_count": 0,
+        "legend_count": 1,
+        "min_font_pt": 12.0,
+        "panel_count": 1,
+        "roles": [
+          "pass",
+          "fail"
+        ]
+      },
+      "source_artifacts": [
+        "output/data/n_cycle_contextuality_library_audit.json"
+      ],
+      "text_overlap_count": 0,
+      "title_overlap_count": 0,
+      "visual_encoding": "Single-panel categorical matrix; rows encode cycle length and parity, columns encode the three behaviors, two-color cell fill and cell text encode feasible versus infeasible LP verdicts, and the legend maps the colors to noncontextual versus contextual."
+    },
+    {
+      "alt_text": "Three panels where the left scatter shows all after-channel distances at or below the diagonal, the middle bar panel shows non-negative Choi eigenvalues for the three channels and a bar at minus one for the transpose control, and the right grouped bars show the post-selection distance rising above the before-distance toward one for each filter angle.",
+      "caption": "Data-processing monotonicity surrogate for opacification as forgetting. Panel A shows trace distance never rising after CPTP channels; Panel B shows the transpose control failing complete positivity; Panel C shows selective post-selection can raise distinguishability when the record is kept. The figure is a finite qubit-channel surrogate, not empirical evidence or a physical qFEP, neural, clinical, or contemplative claim.",
+      "cropped_text_count": 0,
+      "id": "data_processing_monotonicity",
+      "layout_ok": true,
+      "legend_axis_overlap_count": 0,
+      "path": "output/figures/data_processing_monotonicity.png",
+      "render_contract": {
+        "colorbar_count": 0,
+        "legend_count": 3,
+        "min_font_pt": 12.0,
+        "panel_count": 3,
+        "roles": [
+          "finite",
+          "stochastic",
+          "null",
+          "pass",
+          "fail",
+          "keep",
+          "prune",
+          "boundary"
+        ]
+      },
+      "source_artifacts": [
+        "output/data/data_processing_monotonicity_audit.json"
+      ],
+      "text_overlap_count": 0,
+      "title_overlap_count": 0,
+      "visual_encoding": "Three-panel figure; Panel A uses a scatter whose point color encodes the channel family and a dashed diagonal reference line encoding no change, Panel B uses bars whose height encodes the Choi minimum eigenvalue and whose color and legend encode completely-positive versus not-completely-positive maps, and Panel C uses grouped bars whose paired heights and color encode the trace distance before versus after selective post-selection."
+    },
+    {
+      "alt_text": "Three panels where the left precision heatmap is sparse with empty internal-external blocks, the middle marginal-correlation heatmap is dense with those blocks filled in, and the right bar panel shows F1 of one for the precision support and partial-correlation threshold but well below one for the marginal-correlation threshold.",
+      "caption": "Markov-blanket discovery as a conditional-independence surrogate. Precision support reveals the planted internal/blanket/external split, marginal correlation hides it, and Panel C shows recovery succeeds from precision or partial correlation but not from the marginal threshold. The figure is finite linear algebra, not empirical, neural, developmental, clinical, or physical qFEP evidence.",
+      "cropped_text_count": 0,
+      "id": "markov_blanket_discovery",
+      "layout_ok": true,
+      "legend_axis_overlap_count": 0,
+      "path": "output/figures/markov_blanket_discovery.png",
+      "render_contract": {
+        "colorbar_count": 2,
+        "legend_count": 1,
+        "min_font_pt": 12.0,
+        "panel_count": 3,
+        "roles": [
+          "pass",
+          "fail",
+          "boundary"
+        ]
+      },
+      "source_artifacts": [
+        "output/data/markov_blanket_discovery_audit.json"
+      ],
+      "text_overlap_count": 0,
+      "title_overlap_count": 0,
+      "visual_encoding": "Three-panel figure; Panel A and Panel B use heatmaps whose colorbar encodes the magnitude of precision and marginal-correlation entries respectively over the internal, blanket, and external node axes, and Panel C uses bars whose height and color encode the blanket-recovery F1 per reading with a dashed reference line and legend marking exact recovery."
+    }
+  ],
+  "schema": "realizing_emptiness.figure_source_map.v1"
+}

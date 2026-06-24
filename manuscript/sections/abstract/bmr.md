@@ -1,0 +1,1 @@
+Bayesian model reduction is implemented as a sweep over prior precision and metacognitive access, extended with a sensitivity grid over observation noise. The separation prior is pruned only when removing it lowers the model's free energy, and kept when its remaining contribution to accuracy still offsets its complexity cost.

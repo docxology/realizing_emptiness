@@ -1,0 +1,50 @@
+{
+  "$id": "realizing_emptiness.thermodynamic_channel_cost_audit.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Realizing Emptiness Thermodynamic Channel Cost Audit",
+  "type": "object",
+  "required": ["schema", "channel_count", "state_count", "row_count", "rows", "invalid_channel_controls", "controls", "all_controls_pass", "claim_boundary"],
+  "properties": {
+    "schema": {"const": "realizing_emptiness.thermodynamic_channel_cost_audit.v1"},
+    "channel_count": {"type": "integer", "minimum": 3},
+    "state_count": {"type": "integer", "minimum": 3},
+    "row_count": {"type": "integer", "minimum": 9},
+    "rows": {
+      "type": "array",
+      "minItems": 9,
+      "items": {
+        "type": "object",
+        "required": ["channel_id", "state_id", "cptp_error", "trace_out", "entropy_in_bits", "entropy_out_bits", "landauer_lower_bound_kbt"],
+        "properties": {
+          "channel_id": {"type": "string"},
+          "state_id": {"type": "string"},
+          "cptp_error": {"type": "number", "minimum": 0},
+          "trace_out": {"type": "number"},
+          "entropy_in_bits": {"type": "number", "minimum": 0},
+          "entropy_out_bits": {"type": "number", "minimum": 0},
+          "landauer_lower_bound_kbt": {"type": "number", "minimum": 0}
+        },
+        "additionalProperties": true
+      }
+    },
+    "invalid_channel_controls": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "required": ["id", "cptp_error", "passes", "reason"],
+        "properties": {
+          "id": {"type": "string"},
+          "cptp_error": {"type": "number", "exclusiveMinimum": 0},
+          "passes": {"const": true},
+          "reason": {"type": "string", "minLength": 20}
+        },
+        "additionalProperties": false
+      }
+    },
+    "controls": {"type": "object", "additionalProperties": {"const": true}},
+    "all_controls_pass": {"const": true},
+    "claim_boundary": {"type": "string", "pattern": "not empirical"}
+  },
+  "additionalProperties": false
+}

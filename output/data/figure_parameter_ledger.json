@@ -1,0 +1,3092 @@
+{
+  "all_controls_pass": true,
+  "claim_boundary": "review-response accounting for finite deterministic or seeded software validation only; not empirical, not public independent reproduction, not clinical, not neural, not practice-efficacy, not contemplative-attainment, and not physical qFEP evidence",
+  "controls": {
+    "all_rows_have_claim_boundary": true,
+    "all_rows_have_source_artifacts": true,
+    "all_source_artifacts_exist": true,
+    "one_row_per_manifest_figure": true,
+    "parameters_or_controls_present_where_available": true
+  },
+  "figure_count": 59,
+  "missing_rows": [],
+  "missing_source_artifacts": [],
+  "row_count": 59,
+  "rows": [
+    {
+      "claim_boundary": "review-response accounting for finite deterministic or seeded software validation only; not empirical, not public independent reproduction, not clinical, not neural, not practice-efficacy, not contemplative-attainment, and not physical qFEP evidence",
+      "control_fields": [
+        "output/data/qrf_boundary_indistinguishability.json::negative_control_fails",
+        "output/data/quantum_trajectory_unraveling.json::all_controls_pass",
+        "output/data/quantum_trajectory_unraveling.json::ensemble_positive_semidefinite",
+        "output/data/quantum_trajectory_unraveling.json::ensemble_trace_preserved",
+        "output/data/quantum_trajectory_unraveling.json::gamma_zero_has_no_jumps",
+        "output/data/quantum_trajectory_unraveling.json::invalid_controls_fail_safely",
+        "output/data/quantum_trajectory_unraveling.json::norm_preserved",
+        "output/data/quantum_trajectory_unraveling.json::reconstructs_exact_lindblad_within_tolerance",
+        "output/data/stochastic_policy_ensemble.json::all_controls_pass",
+        "output/data/stochastic_policy_ensemble.json::all_intervals_finite",
+        "output/data/stochastic_policy_ensemble.json::all_posteriors_normalized",
+        "output/data/stochastic_policy_ensemble.json::profiles_differ_from_null_controls",
+        "output/data/stochastic_policy_ensemble.json::seeded_replay_declared"
+      ],
+      "figure_id": "graphical_abstract_cover",
+      "parameter_fields": [
+        "output/data/quantum_trajectory_unraveling.json::decoherence_rate_grid",
+        "output/data/quantum_trajectory_unraveling.json::seed",
+        "output/data/quantum_trajectory_unraveling.json::time_grid",
+        "output/data/quantum_trajectory_unraveling.json::trajectory_count",
+        "output/data/stochastic_policy_ensemble.json::runs_per_profile",
+        "output/data/stochastic_policy_ensemble.json::seed"
+      ],
+      "path": "output/figures/graphical_abstract_cover.png",
+      "result_counts": {
+        "output/data/equation_audit.json": {
+          "equation_count": 14,
+          "implemented_count": 13,
+          "values.eq10_constrained_deployment_count": 1,
+          "values.eq4_binary_channel_count": 6
+        },
+        "output/data/qrf_boundary_indistinguishability.json": {
+          "channel_count": 6,
+          "deployment_count": 3
+        },
+        "output/data/quantum_trajectory_unraveling.json": {
+          "jump_count_row_count": 4096,
+          "row_count": 124,
+          "step_count": 30,
+          "trajectory_count": 1024
+        },
+        "output/data/source_claim_crosswalk.json": {
+          "claim_count": 15
+        },
+        "output/data/stochastic_policy_ensemble.json": {
+          "profile_count": 3,
+          "row_count": 36864,
+          "run_summary_count": 768
+        }
+      },
+      "source_artifact_count": 5,
+      "source_artifacts": [
+        "output/data/source_claim_crosswalk.json",
+        "output/data/equation_audit.json",
+        "output/data/qrf_boundary_indistinguishability.json",
+        "output/data/stochastic_policy_ensemble.json",
+        "output/data/quantum_trajectory_unraveling.json"
+      ],
+      "source_metadata": [
+        {
+          "control_fields": [],
+          "exists": true,
+          "parameter_fields": [],
+          "result_counts": {
+            "claim_count": 15
+          },
+          "source_artifact": "output/data/source_claim_crosswalk.json"
+        },
+        {
+          "control_fields": [],
+          "exists": true,
+          "parameter_fields": [],
+          "result_counts": {
+            "equation_count": 14,
+            "implemented_count": 13,
+            "values.eq10_constrained_deployment_count": 1,
+            "values.eq4_binary_channel_count": 6
+          },
+          "source_artifact": "output/data/equation_audit.json"
+        },
+        {
+          "control_fields": [
+            "negative_control_fails"
+          ],
+          "exists": true,
+          "parameter_fields": [],
+          "result_counts": {
+            "channel_count": 6,
+            "deployment_count": 3
+          },
+          "source_artifact": "output/data/qrf_boundary_indistinguishability.json"
+        },
+        {
+          "control_fields": [
+            "all_controls_pass",
+            "all_intervals_finite",
+            "all_posteriors_normalized",
+            "profiles_differ_from_null_controls",
+            "seeded_replay_declared"
+          ],
+          "exists": true,
+          "parameter_fields": [
+            "runs_per_profile",
+            "seed"
+          ],
+          "result_counts": {
+            "profile_count": 3,
+            "row_count": 36864,
+            "run_summary_count": 768
+          },
+          "source_artifact": "output/data/stochastic_policy_ensemble.json"
+        },
+        {
+          "control_fields": [
+            "all_controls_pass",
+            "ensemble_positive_semidefinite",
+            "ensemble_trace_preserved",
+            "gamma_zero_has_no_jumps",
+            "invalid_controls_fail_safely",
+            "norm_preserved",
+            "reconstructs_exact_lindblad_within_tolerance"
+          ],
+          "exists": true,
+          "parameter_fields": [
+            "decoherence_rate_grid",
+            "seed",
+            "time_grid",
+            "trajectory_count"
+          ],
+          "result_counts": {
+            "jump_count_row_count": 4096,
+            "row_count": 124,
+            "step_count": 30,
+            "trajectory_count": 1024
+          },
+          "source_artifact": "output/data/quantum_trajectory_unraveling.json"
+        }
+      ],
+      "traceable": true
+    },
+    {
+      "claim_boundary": "review-response accounting for finite deterministic or seeded software validation only; not empirical, not public independent reproduction, not clinical, not neural, not practice-efficacy, not contemplative-attainment, and not physical qFEP evidence",
+      "control_fields": [
+        "output/data/qrf_boundary_channel_ledger.json::all_channels_relabel_across_profiles",
+        "output/data/qrf_boundary_channel_ledger.json::all_controls_pass",
+        "output/data/qrf_boundary_channel_ledger.json::all_evidence_objects_invariant",
+        "output/data/qrf_boundary_channel_ledger.json::all_profiles_have_sector_labels",
+        "output/data/qrf_boundary_channel_ledger.json::channel_ids_exact_b0_to_b5",
+        "output/data/qrf_boundary_channel_ledger.json::negative_control_fails",
+        "output/data/qrf_boundary_channel_ledger.json::source_equations_7_to_10_declared",
+        "output/data/qrf_boundary_indistinguishability.json::negative_control_fails"
+      ],
+      "figure_id": "qrf_boundary_screen_geometry",
+      "parameter_fields": [
+        "output/data/pymdp_profile_comparison.json::seed"
+      ],
+      "path": "output/figures/qrf_boundary_screen_geometry.png",
+      "result_counts": {
+        "output/data/pymdp_profile_comparison.json": {
+          "generative_model_summary.profile_count": 3,
+          "pymdp_canary.state_factor_count": 2
+        },
+        "output/data/qrf_boundary_channel_ledger.json": {
+          "channel_count": 6,
+          "profile_count": 3
+        },
+        "output/data/qrf_boundary_indistinguishability.json": {
+          "channel_count": 6,
+          "deployment_count": 3
+        }
+      },
+      "source_artifact_count": 3,
+      "source_artifacts": [
+        "output/data/pymdp_profile_comparison.json",
+        "output/data/qrf_boundary_indistinguishability.json",
+        "output/data/qrf_boundary_channel_ledger.json"
+      ],
+      "source_metadata": [
+        {
+          "control_fields": [],
+          "exists": true,
+          "parameter_fields": [
+            "seed"
+          ],
+          "result_counts": {
+            "generative_model_summary.profile_count": 3,
+            "pymdp_canary.state_factor_count": 2
+          },
+          "source_artifact": "output/data/pymdp_profile_comparison.json"
+        },
+        {
+          "control_fields": [
+            "negative_control_fails"
+          ],
+          "exists": true,
+          "parameter_fields": [],
+          "result_counts": {
+            "channel_count": 6,
+            "deployment_count": 3
+          },
+          "source_artifact": "output/data/qrf_boundary_indistinguishability.json"
+        },
+        {
+          "control_fields": [
+            "all_channels_relabel_across_profiles",
+            "all_controls_pass",
+            "all_evidence_objects_invariant",
+            "all_profiles_have_sector_labels",
+            "channel_ids_exact_b0_to_b5",
+            "negative_control_fails",
+            "source_equations_7_to_10_declared"
+          ],
+          "exists": true,
+          "parameter_fields": [],
+          "result_counts": {
+            "channel_count": 6,
+            "profile_count": 3
+          },
+          "source_artifact": "output/data/qrf_boundary_channel_ledger.json"
+        }
+      ],
+      "traceable": true
+    },
+    {
+      "claim_boundary": "review-response accounting for finite deterministic or seeded software validation only; not empirical, not public independent reproduction, not clinical, not neural, not practice-efficacy, not contemplative-attainment, and not physical qFEP evidence",
+      "control_fields": [
+        "output/data/qrf_boundary_channel_ledger.json::all_channels_relabel_across_profiles",
+        "output/data/qrf_boundary_channel_ledger.json::all_controls_pass",
+        "output/data/qrf_boundary_channel_ledger.json::all_evidence_objects_invariant",
+        "output/data/qrf_boundary_channel_ledger.json::all_profiles_have_sector_labels",
+        "output/data/qrf_boundary_channel_ledger.json::channel_ids_exact_b0_to_b5",
+        "output/data/qrf_boundary_channel_ledger.json::negative_control_fails",
+        "output/data/qrf_boundary_channel_ledger.json::source_equations_7_to_10_declared",
+        "output/data/qrf_boundary_indistinguishability.json::negative_control_fails"
+      ],
+      "figure_id": "qrf_channel_relabeling_ledger",
+      "parameter_fields": [],
+      "path": "output/figures/qrf_channel_relabeling_ledger.png",
+      "result_counts": {
+        "output/data/qrf_boundary_channel_ledger.json": {
+          "channel_count": 6,
+          "profile_count": 3
+        },
+        "output/data/qrf_boundary_indistinguishability.json": {
+          "channel_count": 6,
+          "deployment_count": 3
+        }
+      },
+      "source_artifact_count": 2,
+      "source_artifacts": [
+        "output/data/qrf_boundary_channel_ledger.json",
+        "output/data/qrf_boundary_indistinguishability.json"
+      ],
+      "source_metadata": [
+        {
+          "control_fields": [
+            "all_channels_relabel_across_profiles",
+            "all_controls_pass",
+            "all_evidence_objects_invariant",
+            "all_profiles_have_sector_labels",
+            "channel_ids_exact_b0_to_b5",
+            "negative_control_fails",
+            "source_equations_7_to_10_declared"
+          ],
+          "exists": true,
+          "parameter_fields": [],
+          "result_counts": {
+            "channel_count": 6,
+            "profile_count": 3
+          },
+          "source_artifact": "output/data/qrf_boundary_channel_ledger.json"
+        },
+        {
+          "control_fields": [
+            "negative_control_fails"
+          ],
+          "exists": true,
+          "parameter_fields": [],
+          "result_counts": {
+            "channel_count": 6,
+            "deployment_count": 3
+          },
+          "source_artifact": "output/data/qrf_boundary_indistinguishability.json"
+        }
+      ],
+      "traceable": true
+    },
+    {
+      "claim_boundary": "review-response accounting for finite deterministic or seeded software validation only; not empirical, not public independent reproduction, not clinical, not neural, not practice-efficacy, not contemplative-attainment, and not physical qFEP evidence",
+      "control_fields": [
+        "output/data/qrf_boundary_indistinguishability.json::negative_control_fails"
+      ],
+      "figure_id": "qrf_invariance_policy_flow",
+      "parameter_fields": [
+        "output/data/pymdp_profile_comparison.json::seed"
+      ],
+      "path": "output/figures/qrf_invariance_policy_flow.png",
+      "result_counts": {
+        "output/data/pymdp_profile_comparison.json": {
+          "generative_model_summary.profile_count": 3,
+          "pymdp_canary.state_factor_count": 2
+        },
+        "output/data/qrf_boundary_indistinguishability.json": {
+          "channel_count": 6,
+          "deployment_count": 3
+        }
+      },
+      "source_artifact_count": 2,
+      "source_artifacts": [
+        "output/data/pymdp_profile_comparison.json",
+        "output/data/qrf_boundary_indistinguishability.json"
+      ],
+      "source_metadata": [
+        {
+          "control_fields": [],
+          "exists": true,
+          "parameter_fields": [
+            "seed"
+          ],
+          "result_counts": {
+            "generative_model_summary.profile_count": 3,
+            "pymdp_canary.state_factor_count": 2
+          },
+          "source_artifact": "output/data/pymdp_profile_comparison.json"
+        },
+        {
+          "control_fields": [
+            "negative_control_fails"
+          ],
+          "exists": true,
+          "parameter_fields": [],
+          "result_counts": {
+            "channel_count": 6,
+            "deployment_count": 3
+          },
+          "source_artifact": "output/data/qrf_boundary_indistinguishability.json"
+        }
+      ],
+      "traceable": true
+    },
+    {
+      "claim_boundary": "review-response accounting for finite deterministic or seeded software validation only; not empirical, not public independent reproduction, not clinical, not neural, not practice-efficacy, not contemplative-attainment, and not physical qFEP evidence",
+      "control_fields": [],
+      "figure_id": "qrf_sectorisation_map",
+      "parameter_fields": [
+        "output/data/pymdp_profile_comparison.json::seed"
+      ],
+      "path": "output/figures/qrf_sectorisation_map.png",
+      "result_counts": {
+        "output/data/pymdp_profile_comparison.json": {
+          "generative_model_summary.profile_count": 3,
+          "pymdp_canary.state_factor_count": 2
+        }
+      },
+      "source_artifact_count": 1,
+      "source_artifacts": [
+        "output/data/pymdp_profile_comparison.json"
+      ],
+      "source_metadata": [
+        {
+          "control_fields": [],
+          "exists": true,
+          "parameter_fields": [
+            "seed"
+          ],
+          "result_counts": {
+            "generative_model_summary.profile_count": 3,
+            "pymdp_canary.state_factor_count": 2
+          },
+          "source_artifact": "output/data/pymdp_profile_comparison.json"
+        }
+      ],
+      "traceable": true
+    },
+    {
+      "claim_boundary": "review-response accounting for finite deterministic or seeded software validation only; not empirical, not public independent reproduction, not clinical, not neural, not practice-efficacy, not contemplative-attainment, and not physical qFEP evidence",
+      "control_fields": [
+        "output/data/qrf_boundary_indistinguishability.json::negative_control_fails"
+      ],
+      "figure_id": "boundary_indistinguishability",
+      "parameter_fields": [],
+      "path": "output/figures/boundary_indistinguishability.png",
+      "result_counts": {
+        "output/data/qrf_boundary_indistinguishability.json": {
+          "channel_count": 6,
+          "deployment_count": 3
+        }
+      },
+      "source_artifact_count": 1,
+      "source_artifacts": [
+        "output/data/qrf_boundary_indistinguishability.json"
+      ],
+      "source_metadata": [
+        {
+          "control_fields": [
+            "negative_control_fails"
+          ],
+          "exists": true,
+          "parameter_fields": [],
+          "result_counts": {
+            "channel_count": 6,
+            "deployment_count": 3
+          },
+          "source_artifact": "output/data/qrf_boundary_indistinguishability.json"
+        }
+      ],
+      "traceable": true
+    },
+    {
+      "claim_boundary": "review-response accounting for finite deterministic or seeded software validation only; not empirical, not public independent reproduction, not clinical, not neural, not practice-efficacy, not contemplative-attainment, and not physical qFEP evidence",
+      "control_fields": [
+        "output/data/qrf_boundary_indistinguishability.json::negative_control_fails"
+      ],
+      "figure_id": "qrf_reference_frame_geometry",
+      "parameter_fields": [
+        "output/data/pymdp_profile_comparison.json::seed"
+      ],
+      "path": "output/figures/qrf_reference_frame_geometry.png",
+      "result_counts": {
+        "output/data/pymdp_profile_comparison.json": {
+          "generative_model_summary.profile_count": 3,
+          "pymdp_canary.state_factor_count": 2
+        },
+        "output/data/qrf_boundary_indistinguishability.json": {
+          "channel_count": 6,
+          "deployment_count": 3
+        }
+      },
+      "source_artifact_count": 2,
+      "source_artifacts": [
+        "output/data/pymdp_profile_comparison.json",
+        "output/data/qrf_boundary_indistinguishability.json"
+      ],
+      "source_metadata": [
+        {
+          "control_fields": [],
+          "exists": true,
+          "parameter_fields": [
+            "seed"
+          ],
+          "result_counts": {
+            "generative_model_summary.profile_count": 3,
+            "pymdp_canary.state_factor_count": 2
+          },
+          "source_artifact": "output/data/pymdp_profile_comparison.json"
+        },
+        {
+          "control_fields": [
+            "negative_control_fails"
+          ],
+          "exists": true,
+          "parameter_fields": [],
+          "result_counts": {
+            "channel_count": 6,
+            "deployment_count": 3
+          },
+          "source_artifact": "output/data/qrf_boundary_indistinguishability.json"
+        }
+      ],
+      "traceable": true
+    },
+    {
+      "claim_boundary": "review-response accounting for finite deterministic or seeded software validation only; not empirical, not public independent reproduction, not clinical, not neural, not practice-efficacy, not contemplative-attainment, and not physical qFEP evidence",
+      "control_fields": [
+        "output/data/bmr_sweep.json::high_access_prunes"
+      ],
+      "figure_id": "bmr_free_energy_decomposition",
+      "parameter_fields": [],
+      "path": "output/figures/bmr_free_energy_decomposition.png",
+      "result_counts": {
+        "output/data/bmr_sweep.json": {
+          "row_count": 45
+        }
+      },
+      "source_artifact_count": 1,
+      "source_artifacts": [
+        "output/data/bmr_sweep.json"
+      ],
+      "source_metadata": [
+        {
+          "control_fields": [
+            "high_access_prunes"
+          ],
+          "exists": true,
+          "parameter_fields": [],
+          "result_counts": {
+            "row_count": 45
+          },
+          "source_artifact": "output/data/bmr_sweep.json"
+        }
+      ],
+      "traceable": true
+    },
+    {
+      "claim_boundary": "review-response accounting for finite deterministic or seeded software validation only; not empirical, not public independent reproduction, not clinical, not neural, not practice-efficacy, not contemplative-attainment, and not physical qFEP evidence",
+      "control_fields": [
+        "output/data/bmr_sweep.json::high_access_prunes"
+      ],
+      "figure_id": "bmr_pruning_phase_diagram",
+      "parameter_fields": [],
+      "path": "output/figures/bmr_pruning_phase_diagram.png",
+      "result_counts": {
+        "output/data/bmr_sweep.json": {
+          "row_count": 45
+        }
+      },
+      "source_artifact_count": 1,
+      "source_artifacts": [
+        "output/data/bmr_sweep.json"
+      ],
+      "source_metadata": [
+        {
+          "control_fields": [
+            "high_access_prunes"
+          ],
+          "exists": true,
+          "parameter_fields": [],
+          "result_counts": {
+            "row_count": 45
+          },
+          "source_artifact": "output/data/bmr_sweep.json"
+        }
+      ],
+      "traceable": true
+    },
+    {
+      "claim_boundary": "review-response accounting for finite deterministic or seeded software validation only; not empirical, not public independent reproduction, not clinical, not neural, not practice-efficacy, not contemplative-attainment, and not physical qFEP evidence",
+      "control_fields": [],
+      "figure_id": "simulation_sensitivity_heatmap",
+      "parameter_fields": [
+        "output/data/simulation_sensitivity_grid.json::access_grid",
+        "output/data/simulation_sensitivity_grid.json::noise_grid",
+        "output/data/simulation_sensitivity_grid.json::precision_grid"
+      ],
+      "path": "output/figures/simulation_sensitivity_heatmap.png",
+      "result_counts": {
+        "output/data/simulation_sensitivity_grid.json": {
+          "row_count": 315
+        }
+      },
+      "source_artifact_count": 1,
+      "source_artifacts": [
+        "output/data/simulation_sensitivity_grid.json"
+      ],
+      "source_metadata": [
+        {
+          "control_fields": [],
+          "exists": true,
+          "parameter_fields": [
+            "access_grid",
+            "noise_grid",
+            "precision_grid"
+          ],
+          "result_counts": {
+            "row_count": 315
+          },
+          "source_artifact": "output/data/simulation_sensitivity_grid.json"
+        }
+      ],
+      "traceable": true
+    },
+    {
+      "claim_boundary": "review-response accounting for finite deterministic or seeded software validation only; not empirical, not public independent reproduction, not clinical, not neural, not practice-efficacy, not contemplative-attainment, and not physical qFEP evidence",
+      "control_fields": [
+        "output/data/quantum_roadmap_readiness_matrix.json::all_controls_pass",
+        "output/data/quantum_roadmap_readiness_matrix.json::all_future_blocked",
+        "output/data/quantum_roadmap_readiness_matrix.json::all_implemented_validated",
+        "output/data/quantum_roadmap_readiness_matrix.json::every_future_has_next_gate",
+        "output/data/quantum_roadmap_readiness_matrix.json::every_row_has_boundary",
+        "output/data/quantum_roadmap_readiness_matrix.json::every_row_has_negative_control",
+        "output/data/quantum_roadmap_readiness_matrix.json::forged_completed_future_row_rejected"
+      ],
+      "figure_id": "finite_quantum_scope_summary",
+      "parameter_fields": [],
+      "path": "output/figures/finite_quantum_scope_summary.png",
+      "result_counts": {
+        "output/data/quantum_roadmap_readiness_matrix.json": {
+          "future_count": 5,
+          "implemented_count": 17,
+          "row_count": 22
+        }
+      },
+      "source_artifact_count": 1,
+      "source_artifacts": [
+        "output/data/quantum_roadmap_readiness_matrix.json"
+      ],
+      "source_metadata": [
+        {
+          "control_fields": [
+            "all_controls_pass",
+            "all_future_blocked",
+            "all_implemented_validated",
+            "every_future_has_next_gate",
+            "every_row_has_boundary",
+            "every_row_has_negative_control",
+            "forged_completed_future_row_rejected"
+          ],
+          "exists": true,
+          "parameter_fields": [],
+          "result_counts": {
+            "future_count": 5,
+            "implemented_count": 17,
+            "row_count": 22
+          },
+          "source_artifact": "output/data/quantum_roadmap_readiness_matrix.json"
+        }
+      ],
+      "traceable": true
+    },
+    {
+      "claim_boundary": "review-response accounting for finite deterministic or seeded software validation only; not empirical, not public independent reproduction, not clinical, not neural, not practice-efficacy, not contemplative-attainment, and not physical qFEP evidence",
+      "control_fields": [
+        "output/data/quantum_boundary_entropy.json::all_controls_pass",
+        "output/data/quantum_boundary_entropy.json::basis_entropy_invariant",
+        "output/data/quantum_boundary_entropy.json::bell_chsh_toward_tsirelson",
+        "output/data/quantum_boundary_entropy.json::bell_entropy_one",
+        "output/data/quantum_boundary_entropy.json::measurement_entropy_changes_under_basis",
+        "output/data/quantum_boundary_entropy.json::product_chsh_local",
+        "output/data/quantum_boundary_entropy.json::product_entropy_zero"
+      ],
+      "figure_id": "quantum_boundary_entropy_landscape",
+      "parameter_fields": [
+        "output/data/quantum_boundary_entropy.json::rotation_grid",
+        "output/data/quantum_boundary_entropy.json::theta_grid"
+      ],
+      "path": "output/figures/quantum_boundary_entropy_landscape.png",
+      "result_counts": {
+        "output/data/quantum_boundary_entropy.json": {
+          "basis_invariance_row_count": 825,
+          "row_count": 33
+        }
+      },
+      "source_artifact_count": 1,
+      "source_artifacts": [
+        "output/data/quantum_boundary_entropy.json"
+      ],
+      "source_metadata": [
+        {
+          "control_fields": [
+            "all_controls_pass",
+            "basis_entropy_invariant",
+            "bell_chsh_toward_tsirelson",
+            "bell_entropy_one",
+            "measurement_entropy_changes_under_basis",
+            "product_chsh_local",
+            "product_entropy_zero"
+          ],
+          "exists": true,
+          "parameter_fields": [
+            "rotation_grid",
+            "theta_grid"
+          ],
+          "result_counts": {
+            "basis_invariance_row_count": 825,
+            "row_count": 33
+          },
+          "source_artifact": "output/data/quantum_boundary_entropy.json"
+        }
+      ],
+      "traceable": true
+    },
+    {
+      "claim_boundary": "review-response accounting for finite deterministic or seeded software validation only; not empirical, not public independent reproduction, not clinical, not neural, not practice-efficacy, not contemplative-attainment, and not physical qFEP evidence",
+      "control_fields": [
+        "output/data/quantum_boundary_entropy.json::all_controls_pass",
+        "output/data/quantum_boundary_entropy.json::basis_entropy_invariant",
+        "output/data/quantum_boundary_entropy.json::bell_chsh_toward_tsirelson",
+        "output/data/quantum_boundary_entropy.json::bell_entropy_one",
+        "output/data/quantum_boundary_entropy.json::measurement_entropy_changes_under_basis",
+        "output/data/quantum_boundary_entropy.json::product_chsh_local",
+        "output/data/quantum_boundary_entropy.json::product_entropy_zero"
+      ],
+      "figure_id": "quantum_contextuality_witness",
+      "parameter_fields": [
+        "output/data/quantum_boundary_entropy.json::rotation_grid",
+        "output/data/quantum_boundary_entropy.json::theta_grid"
+      ],
+      "path": "output/figures/quantum_contextuality_witness.png",
+      "result_counts": {
+        "output/data/quantum_boundary_entropy.json": {
+          "basis_invariance_row_count": 825,
+          "row_count": 33
+        }
+      },
+      "source_artifact_count": 1,
+      "source_artifacts": [
+        "output/data/quantum_boundary_entropy.json"
+      ],
+      "source_metadata": [
+        {
+          "control_fields": [
+            "all_controls_pass",
+            "basis_entropy_invariant",
+            "bell_chsh_toward_tsirelson",
+            "bell_entropy_one",
+            "measurement_entropy_changes_under_basis",
+            "product_chsh_local",
+            "product_entropy_zero"
+          ],
+          "exists": true,
+          "parameter_fields": [
+            "rotation_grid",
+            "theta_grid"
+          ],
+          "result_counts": {
+            "basis_invariance_row_count": 825,
+            "row_count": 33
+          },
+          "source_artifact": "output/data/quantum_boundary_entropy.json"
+        }
+      ],
+      "traceable": true
+    },
+    {
+      "claim_boundary": "review-response accounting for finite deterministic or seeded software validation only; not empirical, not public independent reproduction, not clinical, not neural, not practice-efficacy, not contemplative-attainment, and not physical qFEP evidence",
+      "control_fields": [
+        "output/data/quantum_measurement_contextuality.json::all_controls_pass",
+        "output/data/quantum_measurement_contextuality.json::bell_chsh_exceeds_local_bound",
+        "output/data/quantum_measurement_contextuality.json::bell_chsh_reaches_tsirelson",
+        "output/data/quantum_measurement_contextuality.json::bell_model_local_polytope_infeasible",
+        "output/data/quantum_measurement_contextuality.json::bell_model_positive_polytope_residual",
+        "output/data/quantum_measurement_contextuality.json::contextual_fraction_unit_at_tsirelson",
+        "output/data/quantum_measurement_contextuality.json::joint_probabilities_nonnegative",
+        "output/data/quantum_measurement_contextuality.json::joint_probabilities_normalized",
+        "output/data/quantum_measurement_contextuality.json::no_signaling_marginals_match",
+        "output/data/quantum_measurement_contextuality.json::product_control_local_polytope_feasible",
+        "output/data/quantum_measurement_contextuality.json::product_control_respects_local_bound"
+      ],
+      "figure_id": "quantum_measurement_contextuality_table",
+      "parameter_fields": [],
+      "path": "output/figures/quantum_measurement_contextuality_table.png",
+      "result_counts": {
+        "output/data/quantum_measurement_contextuality.json": {
+          "context_count": 4,
+          "local_polytope.assignment_count": 16,
+          "model_count": 2,
+          "row_count": 32
+        }
+      },
+      "source_artifact_count": 1,
+      "source_artifacts": [
+        "output/data/quantum_measurement_contextuality.json"
+      ],
+      "source_metadata": [
+        {
+          "control_fields": [
+            "all_controls_pass",
+            "bell_chsh_exceeds_local_bound",
+            "bell_chsh_reaches_tsirelson",
+            "bell_model_local_polytope_infeasible",
+            "bell_model_positive_polytope_residual",
+            "contextual_fraction_unit_at_tsirelson",
+            "joint_probabilities_nonnegative",
+            "joint_probabilities_normalized",
+            "no_signaling_marginals_match",
+            "product_control_local_polytope_feasible",
+            "product_control_respects_local_bound"
+          ],
+          "exists": true,
+          "parameter_fields": [],
+          "result_counts": {
+            "context_count": 4,
+            "local_polytope.assignment_count": 16,
+            "model_count": 2,
+            "row_count": 32
+          },
+          "source_artifact": "output/data/quantum_measurement_contextuality.json"
+        }
+      ],
+      "traceable": true
+    },
+    {
+      "claim_boundary": "review-response accounting for finite deterministic or seeded software validation only; not empirical, not public independent reproduction, not clinical, not neural, not practice-efficacy, not contemplative-attainment, and not physical qFEP evidence",
+      "control_fields": [
+        "output/data/quantum_measurement_contextuality.json::all_controls_pass",
+        "output/data/quantum_measurement_contextuality.json::bell_chsh_exceeds_local_bound",
+        "output/data/quantum_measurement_contextuality.json::bell_chsh_reaches_tsirelson",
+        "output/data/quantum_measurement_contextuality.json::bell_model_local_polytope_infeasible",
+        "output/data/quantum_measurement_contextuality.json::bell_model_positive_polytope_residual",
+        "output/data/quantum_measurement_contextuality.json::contextual_fraction_unit_at_tsirelson",
+        "output/data/quantum_measurement_contextuality.json::joint_probabilities_nonnegative",
+        "output/data/quantum_measurement_contextuality.json::joint_probabilities_normalized",
+        "output/data/quantum_measurement_contextuality.json::no_signaling_marginals_match",
+        "output/data/quantum_measurement_contextuality.json::product_control_local_polytope_feasible",
+        "output/data/quantum_measurement_contextuality.json::product_control_respects_local_bound"
+      ],
+      "figure_id": "quantum_local_polytope_audit",
+      "parameter_fields": [],
+      "path": "output/figures/quantum_local_polytope_audit.png",
+      "result_counts": {
+        "output/data/quantum_measurement_contextuality.json": {
+          "context_count": 4,
+          "local_polytope.assignment_count": 16,
+          "model_count": 2,
+          "row_count": 32
+        }
+      },
+      "source_artifact_count": 1,
+      "source_artifacts": [
+        "output/data/quantum_measurement_contextuality.json"
+      ],
+      "source_metadata": [
+        {
+          "control_fields": [
+            "all_controls_pass",
+            "bell_chsh_exceeds_local_bound",
+            "bell_chsh_reaches_tsirelson",
+            "bell_model_local_polytope_infeasible",
+            "bell_model_positive_polytope_residual",
+            "contextual_fraction_unit_at_tsirelson",
+            "joint_probabilities_nonnegative",
+            "joint_probabilities_normalized",
+            "no_signaling_marginals_match",
+            "product_control_local_polytope_feasible",
+            "product_control_respects_local_bound"
+          ],
+          "exists": true,
+          "parameter_fields": [],
+          "result_counts": {
+            "context_count": 4,
+            "local_polytope.assignment_count": 16,
+            "model_count": 2,
+            "row_count": 32
+          },
+          "source_artifact": "output/data/quantum_measurement_contextuality.json"
+        }
+      ],
+      "traceable": true
+    },
+    {
+      "claim_boundary": "review-response accounting for finite deterministic or seeded software validation only; not empirical, not public independent reproduction, not clinical, not neural, not practice-efficacy, not contemplative-attainment, and not physical qFEP evidence",
+      "control_fields": [
+        "output/data/quantum_open_system_dynamics.json::all_controls_pass",
+        "output/data/quantum_open_system_dynamics.json::bell_chsh_decays_under_dephasing",
+        "output/data/quantum_open_system_dynamics.json::bell_entropy_non_decreasing_under_dephasing",
+        "output/data/quantum_open_system_dynamics.json::bell_mutual_information_non_increasing",
+        "output/data/quantum_open_system_dynamics.json::positive_semidefinite",
+        "output/data/quantum_open_system_dynamics.json::product_control_stable",
+        "output/data/quantum_open_system_dynamics.json::trace_preserved"
+      ],
+      "figure_id": "quantum_open_system_dynamics",
+      "parameter_fields": [
+        "output/data/quantum_open_system_dynamics.json::decoherence_rate_grid",
+        "output/data/quantum_open_system_dynamics.json::time_grid"
+      ],
+      "path": "output/figures/quantum_open_system_dynamics.png",
+      "result_counts": {
+        "output/data/quantum_open_system_dynamics.json": {
+          "row_count": 168
+        }
+      },
+      "source_artifact_count": 1,
+      "source_artifacts": [
+        "output/data/quantum_open_system_dynamics.json"
+      ],
+      "source_metadata": [
+        {
+          "control_fields": [
+            "all_controls_pass",
+            "bell_chsh_decays_under_dephasing",
+            "bell_entropy_non_decreasing_under_dephasing",
+            "bell_mutual_information_non_increasing",
+            "positive_semidefinite",
+            "product_control_stable",
+            "trace_preserved"
+          ],
+          "exists": true,
+          "parameter_fields": [
+            "decoherence_rate_grid",
+            "time_grid"
+          ],
+          "result_counts": {
+            "row_count": 168
+          },
+          "source_artifact": "output/data/quantum_open_system_dynamics.json"
+        }
+      ],
+      "traceable": true
+    },
+    {
+      "claim_boundary": "review-response accounting for finite deterministic or seeded software validation only; not empirical, not public independent reproduction, not clinical, not neural, not practice-efficacy, not contemplative-attainment, and not physical qFEP evidence",
+      "control_fields": [
+        "output/data/qfep_boundary_hamiltonian_dynamics.json::all_controls_pass",
+        "output/data/qfep_boundary_hamiltonian_dynamics.json::all_negative_controls_fail_safely",
+        "output/data/qfep_boundary_hamiltonian_dynamics.json::entropy_production_nonnegative",
+        "output/data/qfep_boundary_hamiltonian_dynamics.json::hamiltonian_hermitian",
+        "output/data/qfep_boundary_hamiltonian_dynamics.json::positive_semidefinite",
+        "output/data/qfep_boundary_hamiltonian_dynamics.json::strongest_rate_entropy_non_decreasing",
+        "output/data/qfep_boundary_hamiltonian_dynamics.json::strongest_rate_mutual_information_contracts",
+        "output/data/qfep_boundary_hamiltonian_dynamics.json::trace_preserved"
+      ],
+      "figure_id": "qfep_boundary_hamiltonian_dynamics",
+      "parameter_fields": [
+        "output/data/qfep_boundary_hamiltonian_dynamics.json::decoherence_rate_grid",
+        "output/data/qfep_boundary_hamiltonian_dynamics.json::time_grid"
+      ],
+      "path": "output/figures/qfep_boundary_hamiltonian_dynamics.png",
+      "result_counts": {
+        "output/data/qfep_boundary_hamiltonian_dynamics.json": {
+          "row_count": 84
+        }
+      },
+      "source_artifact_count": 1,
+      "source_artifacts": [
+        "output/data/qfep_boundary_hamiltonian_dynamics.json"
+      ],
+      "source_metadata": [
+        {
+          "control_fields": [
+            "all_controls_pass",
+            "all_negative_controls_fail_safely",
+            "entropy_production_nonnegative",
+            "hamiltonian_hermitian",
+            "positive_semidefinite",
+            "strongest_rate_entropy_non_decreasing",
+            "strongest_rate_mutual_information_contracts",
+            "trace_preserved"
+          ],
+          "exists": true,
+          "parameter_fields": [
+            "decoherence_rate_grid",
+            "time_grid"
+          ],
+          "result_counts": {
+            "row_count": 84
+          },
+          "source_artifact": "output/data/qfep_boundary_hamiltonian_dynamics.json"
+        }
+      ],
+      "traceable": true
+    },
+    {
+      "claim_boundary": "review-response accounting for finite deterministic or seeded software validation only; not empirical, not public independent reproduction, not clinical, not neural, not practice-efficacy, not contemplative-attainment, and not physical qFEP evidence",
+      "control_fields": [
+        "output/data/quantum_trajectory_unraveling.json::all_controls_pass",
+        "output/data/quantum_trajectory_unraveling.json::ensemble_positive_semidefinite",
+        "output/data/quantum_trajectory_unraveling.json::ensemble_trace_preserved",
+        "output/data/quantum_trajectory_unraveling.json::gamma_zero_has_no_jumps",
+        "output/data/quantum_trajectory_unraveling.json::invalid_controls_fail_safely",
+        "output/data/quantum_trajectory_unraveling.json::norm_preserved",
+        "output/data/quantum_trajectory_unraveling.json::reconstructs_exact_lindblad_within_tolerance"
+      ],
+      "figure_id": "quantum_trajectory_unraveling",
+      "parameter_fields": [
+        "output/data/quantum_trajectory_unraveling.json::decoherence_rate_grid",
+        "output/data/quantum_trajectory_unraveling.json::seed",
+        "output/data/quantum_trajectory_unraveling.json::time_grid",
+        "output/data/quantum_trajectory_unraveling.json::trajectory_count"
+      ],
+      "path": "output/figures/quantum_trajectory_unraveling.png",
+      "result_counts": {
+        "output/data/quantum_trajectory_unraveling.json": {
+          "jump_count_row_count": 4096,
+          "row_count": 124,
+          "step_count": 30,
+          "trajectory_count": 1024
+        }
+      },
+      "source_artifact_count": 1,
+      "source_artifacts": [
+        "output/data/quantum_trajectory_unraveling.json"
+      ],
+      "source_metadata": [
+        {
+          "control_fields": [
+            "all_controls_pass",
+            "ensemble_positive_semidefinite",
+            "ensemble_trace_preserved",
+            "gamma_zero_has_no_jumps",
+            "invalid_controls_fail_safely",
+            "norm_preserved",
+            "reconstructs_exact_lindblad_within_tolerance"
+          ],
+          "exists": true,
+          "parameter_fields": [
+            "decoherence_rate_grid",
+            "seed",
+            "time_grid",
+            "trajectory_count"
+          ],
+          "result_counts": {
+            "jump_count_row_count": 4096,
+            "row_count": 124,
+            "step_count": 30,
+            "trajectory_count": 1024
+          },
+          "source_artifact": "output/data/quantum_trajectory_unraveling.json"
+        }
+      ],
+      "traceable": true
+    },
+    {
+      "claim_boundary": "review-response accounting for finite deterministic or seeded software validation only; not empirical, not public independent reproduction, not clinical, not neural, not practice-efficacy, not contemplative-attainment, and not physical qFEP evidence",
+      "control_fields": [
+        "output/data/many_body_boundary_screen_sweep.json::all_controls_pass",
+        "output/data/many_body_boundary_screen_sweep.json::observer_cut_has_max_entropy",
+        "output/data/many_body_boundary_screen_sweep.json::partition_sensitivity_present",
+        "output/data/many_body_boundary_screen_sweep.json::random_cut_not_labeled_observer_evidence",
+        "output/data/many_body_boundary_screen_sweep.json::separable_controls_zero_entropy"
+      ],
+      "figure_id": "many_body_boundary_screen_sweep",
+      "parameter_fields": [],
+      "path": "output/figures/many_body_boundary_screen_sweep.png",
+      "result_counts": {
+        "output/data/many_body_boundary_screen_sweep.json": {
+          "cut_count": 4,
+          "qubit_count": 6,
+          "row_count": 8,
+          "state_count": 2
+        }
+      },
+      "source_artifact_count": 1,
+      "source_artifacts": [
+        "output/data/many_body_boundary_screen_sweep.json"
+      ],
+      "source_metadata": [
+        {
+          "control_fields": [
+            "all_controls_pass",
+            "observer_cut_has_max_entropy",
+            "partition_sensitivity_present",
+            "random_cut_not_labeled_observer_evidence",
+            "separable_controls_zero_entropy"
+          ],
+          "exists": true,
+          "parameter_fields": [],
+          "result_counts": {
+            "cut_count": 4,
+            "qubit_count": 6,
+            "row_count": 8,
+            "state_count": 2
+          },
+          "source_artifact": "output/data/many_body_boundary_screen_sweep.json"
+        }
+      ],
+      "traceable": true
+    },
+    {
+      "claim_boundary": "review-response accounting for finite deterministic or seeded software validation only; not empirical, not public independent reproduction, not clinical, not neural, not practice-efficacy, not contemplative-attainment, and not physical qFEP evidence",
+      "control_fields": [
+        "output/data/sheaf_contextuality_obstruction_audit.json::all_controls_pass",
+        "output/data/sheaf_contextuality_obstruction_audit.json::all_models_no_disturbing",
+        "output/data/sheaf_contextuality_obstruction_audit.json::negative_control_returns_feasible",
+        "output/data/sheaf_contextuality_obstruction_audit.json::noncontextual_control_has_global_section",
+        "output/data/sheaf_contextuality_obstruction_audit.json::obstruction_has_positive_residual",
+        "output/data/sheaf_contextuality_obstruction_audit.json::parity_obstruction_has_no_global_section"
+      ],
+      "figure_id": "sheaf_contextuality_obstruction_audit",
+      "parameter_fields": [],
+      "path": "output/figures/sheaf_contextuality_obstruction_audit.png",
+      "result_counts": {
+        "output/data/sheaf_contextuality_obstruction_audit.json": {
+          "row_count": 2,
+          "scenario_count": 2
+        }
+      },
+      "source_artifact_count": 1,
+      "source_artifacts": [
+        "output/data/sheaf_contextuality_obstruction_audit.json"
+      ],
+      "source_metadata": [
+        {
+          "control_fields": [
+            "all_controls_pass",
+            "all_models_no_disturbing",
+            "negative_control_returns_feasible",
+            "noncontextual_control_has_global_section",
+            "obstruction_has_positive_residual",
+            "parity_obstruction_has_no_global_section"
+          ],
+          "exists": true,
+          "parameter_fields": [],
+          "result_counts": {
+            "row_count": 2,
+            "scenario_count": 2
+          },
+          "source_artifact": "output/data/sheaf_contextuality_obstruction_audit.json"
+        }
+      ],
+      "traceable": true
+    },
+    {
+      "claim_boundary": "review-response accounting for finite deterministic or seeded software validation only; not empirical, not public independent reproduction, not clinical, not neural, not practice-efficacy, not contemplative-attainment, and not physical qFEP evidence",
+      "control_fields": [
+        "output/data/qrf_transformation_covariance_audit.json::all_admissible_covariant",
+        "output/data/qrf_transformation_covariance_audit.json::all_admissible_probability_preserving",
+        "output/data/qrf_transformation_covariance_audit.json::all_controls_pass",
+        "output/data/qrf_transformation_covariance_audit.json::negative_controls_include_mass_and_sign_failures",
+        "output/data/qrf_transformation_covariance_audit.json::nonadmissible_maps_rejected"
+      ],
+      "figure_id": "qrf_transformation_covariance_audit",
+      "parameter_fields": [],
+      "path": "output/figures/qrf_transformation_covariance_audit.png",
+      "result_counts": {
+        "output/data/qrf_transformation_covariance_audit.json": {
+          "row_count": 5
+        }
+      },
+      "source_artifact_count": 1,
+      "source_artifacts": [
+        "output/data/qrf_transformation_covariance_audit.json"
+      ],
+      "source_metadata": [
+        {
+          "control_fields": [
+            "all_admissible_covariant",
+            "all_admissible_probability_preserving",
+            "all_controls_pass",
+            "negative_controls_include_mass_and_sign_failures",
+            "nonadmissible_maps_rejected"
+          ],
+          "exists": true,
+          "parameter_fields": [],
+          "result_counts": {
+            "row_count": 5
+          },
+          "source_artifact": "output/data/qrf_transformation_covariance_audit.json"
+        }
+      ],
+      "traceable": true
+    },
+    {
+      "claim_boundary": "review-response accounting for finite deterministic or seeded software validation only; not empirical, not public independent reproduction, not clinical, not neural, not practice-efficacy, not contemplative-attainment, and not physical qFEP evidence",
+      "control_fields": [
+        "output/data/empirical_adapter_provenance_audit.json::all_controls_pass",
+        "output/data/empirical_adapter_provenance_audit.json::every_record_has_decision",
+        "output/data/empirical_adapter_provenance_audit.json::forged_self_asserted_reviewed_dataset_blocked",
+        "output/data/empirical_adapter_provenance_audit.json::no_empirical_claims_allowed",
+        "output/data/empirical_adapter_provenance_audit.json::placeholder_without_preprocessing_blocked",
+        "output/data/empirical_adapter_provenance_audit.json::synthetic_demo_not_empirical_claim",
+        "output/data/empirical_adapter_provenance_audit.json::unsourced_human_data_blocked"
+      ],
+      "figure_id": "empirical_adapter_provenance_audit",
+      "parameter_fields": [],
+      "path": "output/figures/empirical_adapter_provenance_audit.png",
+      "result_counts": {
+        "output/data/empirical_adapter_provenance_audit.json": {
+          "row_count": 4
+        }
+      },
+      "source_artifact_count": 1,
+      "source_artifacts": [
+        "output/data/empirical_adapter_provenance_audit.json"
+      ],
+      "source_metadata": [
+        {
+          "control_fields": [
+            "all_controls_pass",
+            "every_record_has_decision",
+            "forged_self_asserted_reviewed_dataset_blocked",
+            "no_empirical_claims_allowed",
+            "placeholder_without_preprocessing_blocked",
+            "synthetic_demo_not_empirical_claim",
+            "unsourced_human_data_blocked"
+          ],
+          "exists": true,
+          "parameter_fields": [],
+          "result_counts": {
+            "row_count": 4
+          },
+          "source_artifact": "output/data/empirical_adapter_provenance_audit.json"
+        }
+      ],
+      "traceable": true
+    },
+    {
+      "claim_boundary": "review-response accounting for finite deterministic or seeded software validation only; not empirical, not public independent reproduction, not clinical, not neural, not practice-efficacy, not contemplative-attainment, and not physical qFEP evidence",
+      "control_fields": [
+        "output/data/arbitrary_two_qubit_entanglement_audit.json::all_controls_pass",
+        "output/data/arbitrary_two_qubit_entanglement_audit.json::all_valid_cases_are_density_matrices",
+        "output/data/arbitrary_two_qubit_entanglement_audit.json::bell_state_has_positive_negativity",
+        "output/data/arbitrary_two_qubit_entanglement_audit.json::invalid_density_controls_rejected",
+        "output/data/arbitrary_two_qubit_entanglement_audit.json::separable_controls_have_zero_negativity",
+        "output/data/arbitrary_two_qubit_entanglement_audit.json::werner_threshold_matches_ppt"
+      ],
+      "figure_id": "arbitrary_two_qubit_entanglement_audit",
+      "parameter_fields": [],
+      "path": "output/figures/arbitrary_two_qubit_entanglement_audit.png",
+      "result_counts": {
+        "output/data/arbitrary_two_qubit_entanglement_audit.json": {
+          "case_count": 9,
+          "row_count": 9
+        }
+      },
+      "source_artifact_count": 1,
+      "source_artifacts": [
+        "output/data/arbitrary_two_qubit_entanglement_audit.json"
+      ],
+      "source_metadata": [
+        {
+          "control_fields": [
+            "all_controls_pass",
+            "all_valid_cases_are_density_matrices",
+            "bell_state_has_positive_negativity",
+            "invalid_density_controls_rejected",
+            "separable_controls_have_zero_negativity",
+            "werner_threshold_matches_ppt"
+          ],
+          "exists": true,
+          "parameter_fields": [],
+          "result_counts": {
+            "case_count": 9,
+            "row_count": 9
+          },
+          "source_artifact": "output/data/arbitrary_two_qubit_entanglement_audit.json"
+        }
+      ],
+      "traceable": true
+    },
+    {
+      "claim_boundary": "review-response accounting for finite deterministic or seeded software validation only; not empirical, not public independent reproduction, not clinical, not neural, not practice-efficacy, not contemplative-attainment, and not physical qFEP evidence",
+      "control_fields": [
+        "output/data/general_measurement_cover_polytope_audit.json::all_controls_pass",
+        "output/data/general_measurement_cover_polytope_audit.json::all_rows_no_disturbing",
+        "output/data/general_measurement_cover_polytope_audit.json::chsh_bell_infeasible",
+        "output/data/general_measurement_cover_polytope_audit.json::chsh_product_feasible",
+        "output/data/general_measurement_cover_polytope_audit.json::obstructions_have_positive_residual",
+        "output/data/general_measurement_cover_polytope_audit.json::triangle_control_feasible",
+        "output/data/general_measurement_cover_polytope_audit.json::triangle_parity_infeasible"
+      ],
+      "figure_id": "general_measurement_cover_polytope_audit",
+      "parameter_fields": [],
+      "path": "output/figures/general_measurement_cover_polytope_audit.png",
+      "result_counts": {
+        "output/data/general_measurement_cover_polytope_audit.json": {
+          "probability_row_count": 56,
+          "row_count": 4,
+          "scenario_count": 4
+        }
+      },
+      "source_artifact_count": 1,
+      "source_artifacts": [
+        "output/data/general_measurement_cover_polytope_audit.json"
+      ],
+      "source_metadata": [
+        {
+          "control_fields": [
+            "all_controls_pass",
+            "all_rows_no_disturbing",
+            "chsh_bell_infeasible",
+            "chsh_product_feasible",
+            "obstructions_have_positive_residual",
+            "triangle_control_feasible",
+            "triangle_parity_infeasible"
+          ],
+          "exists": true,
+          "parameter_fields": [],
+          "result_counts": {
+            "probability_row_count": 56,
+            "row_count": 4,
+            "scenario_count": 4
+          },
+          "source_artifact": "output/data/general_measurement_cover_polytope_audit.json"
+        }
+      ],
+      "traceable": true
+    },
+    {
+      "claim_boundary": "review-response accounting for finite deterministic or seeded software validation only; not empirical, not public independent reproduction, not clinical, not neural, not practice-efficacy, not contemplative-attainment, and not physical qFEP evidence",
+      "control_fields": [
+        "output/data/thermodynamic_channel_cost_audit.json::all_controls_pass",
+        "output/data/thermodynamic_channel_cost_audit.json::all_declared_channels_cptp",
+        "output/data/thermodynamic_channel_cost_audit.json::erasure_has_positive_cost_for_mixed_inputs",
+        "output/data/thermodynamic_channel_cost_audit.json::identity_has_zero_landauer_cost",
+        "output/data/thermodynamic_channel_cost_audit.json::non_cptp_controls_rejected",
+        "output/data/thermodynamic_channel_cost_audit.json::output_density_matrices_valid"
+      ],
+      "figure_id": "thermodynamic_channel_cost_audit",
+      "parameter_fields": [],
+      "path": "output/figures/thermodynamic_channel_cost_audit.png",
+      "result_counts": {
+        "output/data/thermodynamic_channel_cost_audit.json": {
+          "channel_count": 4,
+          "row_count": 12,
+          "state_count": 3
+        }
+      },
+      "source_artifact_count": 1,
+      "source_artifacts": [
+        "output/data/thermodynamic_channel_cost_audit.json"
+      ],
+      "source_metadata": [
+        {
+          "control_fields": [
+            "all_controls_pass",
+            "all_declared_channels_cptp",
+            "erasure_has_positive_cost_for_mixed_inputs",
+            "identity_has_zero_landauer_cost",
+            "non_cptp_controls_rejected",
+            "output_density_matrices_valid"
+          ],
+          "exists": true,
+          "parameter_fields": [],
+          "result_counts": {
+            "channel_count": 4,
+            "row_count": 12,
+            "state_count": 3
+          },
+          "source_artifact": "output/data/thermodynamic_channel_cost_audit.json"
+        }
+      ],
+      "traceable": true
+    },
+    {
+      "claim_boundary": "review-response accounting for finite deterministic or seeded software validation only; not empirical, not public independent reproduction, not clinical, not neural, not practice-efficacy, not contemplative-attainment, and not physical qFEP evidence",
+      "control_fields": [
+        "output/data/sparse_boundary_screen_scaling_audit.json::all_controls_pass",
+        "output/data/sparse_boundary_screen_scaling_audit.json::extends_beyond_six_qubits",
+        "output/data/sparse_boundary_screen_scaling_audit.json::observer_entropy_scales_with_qubit_count",
+        "output/data/sparse_boundary_screen_scaling_audit.json::random_cuts_not_labeled_observer_evidence",
+        "output/data/sparse_boundary_screen_scaling_audit.json::separable_controls_zero_entropy",
+        "output/data/sparse_boundary_screen_scaling_audit.json::sparse_density_decreases_with_size"
+      ],
+      "figure_id": "sparse_boundary_screen_scaling_audit",
+      "parameter_fields": [],
+      "path": "output/figures/sparse_boundary_screen_scaling_audit.png",
+      "result_counts": {
+        "output/data/sparse_boundary_screen_scaling_audit.json": {
+          "row_count": 24
+        }
+      },
+      "source_artifact_count": 1,
+      "source_artifacts": [
+        "output/data/sparse_boundary_screen_scaling_audit.json"
+      ],
+      "source_metadata": [
+        {
+          "control_fields": [
+            "all_controls_pass",
+            "extends_beyond_six_qubits",
+            "observer_entropy_scales_with_qubit_count",
+            "random_cuts_not_labeled_observer_evidence",
+            "separable_controls_zero_entropy",
+            "sparse_density_decreases_with_size"
+          ],
+          "exists": true,
+          "parameter_fields": [],
+          "result_counts": {
+            "row_count": 24
+          },
+          "source_artifact": "output/data/sparse_boundary_screen_scaling_audit.json"
+        }
+      ],
+      "traceable": true
+    },
+    {
+      "claim_boundary": "review-response accounting for finite deterministic or seeded software validation only; not empirical, not public independent reproduction, not clinical, not neural, not practice-efficacy, not contemplative-attainment, and not physical qFEP evidence",
+      "control_fields": [
+        "output/data/qrf_frame_covariance_toy_audit.json::admissible_probability_vectors_covariant",
+        "output/data/qrf_frame_covariance_toy_audit.json::admissible_reduced_entropies_covariant",
+        "output/data/qrf_frame_covariance_toy_audit.json::admissible_spectra_invariant",
+        "output/data/qrf_frame_covariance_toy_audit.json::admissible_unitaries_accepted",
+        "output/data/qrf_frame_covariance_toy_audit.json::all_controls_pass",
+        "output/data/qrf_frame_covariance_toy_audit.json::nonunitary_and_trace_breaking_controls_rejected"
+      ],
+      "figure_id": "qrf_frame_covariance_toy_audit",
+      "parameter_fields": [],
+      "path": "output/figures/qrf_frame_covariance_toy_audit.png",
+      "result_counts": {
+        "output/data/qrf_frame_covariance_toy_audit.json": {
+          "row_count": 5
+        }
+      },
+      "source_artifact_count": 1,
+      "source_artifacts": [
+        "output/data/qrf_frame_covariance_toy_audit.json"
+      ],
+      "source_metadata": [
+        {
+          "control_fields": [
+            "admissible_probability_vectors_covariant",
+            "admissible_reduced_entropies_covariant",
+            "admissible_spectra_invariant",
+            "admissible_unitaries_accepted",
+            "all_controls_pass",
+            "nonunitary_and_trace_breaking_controls_rejected"
+          ],
+          "exists": true,
+          "parameter_fields": [],
+          "result_counts": {
+            "row_count": 5
+          },
+          "source_artifact": "output/data/qrf_frame_covariance_toy_audit.json"
+        }
+      ],
+      "traceable": true
+    },
+    {
+      "claim_boundary": "review-response accounting for finite deterministic or seeded software validation only; not empirical, not public independent reproduction, not clinical, not neural, not practice-efficacy, not contemplative-attainment, and not physical qFEP evidence",
+      "control_fields": [
+        "output/data/quantum_roadmap_readiness_matrix.json::all_controls_pass",
+        "output/data/quantum_roadmap_readiness_matrix.json::all_future_blocked",
+        "output/data/quantum_roadmap_readiness_matrix.json::all_implemented_validated",
+        "output/data/quantum_roadmap_readiness_matrix.json::every_future_has_next_gate",
+        "output/data/quantum_roadmap_readiness_matrix.json::every_row_has_boundary",
+        "output/data/quantum_roadmap_readiness_matrix.json::every_row_has_negative_control",
+        "output/data/quantum_roadmap_readiness_matrix.json::forged_completed_future_row_rejected"
+      ],
+      "figure_id": "quantum_roadmap_readiness_matrix",
+      "parameter_fields": [],
+      "path": "output/figures/quantum_roadmap_readiness_matrix.png",
+      "result_counts": {
+        "output/data/quantum_roadmap_readiness_matrix.json": {
+          "future_count": 5,
+          "implemented_count": 17,
+          "row_count": 22
+        }
+      },
+      "source_artifact_count": 1,
+      "source_artifacts": [
+        "output/data/quantum_roadmap_readiness_matrix.json"
+      ],
+      "source_metadata": [
+        {
+          "control_fields": [
+            "all_controls_pass",
+            "all_future_blocked",
+            "all_implemented_validated",
+            "every_future_has_next_gate",
+            "every_row_has_boundary",
+            "every_row_has_negative_control",
+            "forged_completed_future_row_rejected"
+          ],
+          "exists": true,
+          "parameter_fields": [],
+          "result_counts": {
+            "future_count": 5,
+            "implemented_count": 17,
+            "row_count": 22
+          },
+          "source_artifact": "output/data/quantum_roadmap_readiness_matrix.json"
+        }
+      ],
+      "traceable": true
+    },
+    {
+      "claim_boundary": "review-response accounting for finite deterministic or seeded software validation only; not empirical, not public independent reproduction, not clinical, not neural, not practice-efficacy, not contemplative-attainment, and not physical qFEP evidence",
+      "control_fields": [
+        "output/data/pymdp_runtime_diagnostics_log.json::all_controls_pass",
+        "output/data/pymdp_runtime_diagnostics_log.json::all_entropies_in_bounds",
+        "output/data/pymdp_runtime_diagnostics_log.json::all_model_hashes_present",
+        "output/data/pymdp_runtime_diagnostics_log.json::all_models_normalized",
+        "output/data/pymdp_runtime_diagnostics_log.json::all_numeric_fields_finite",
+        "output/data/pymdp_runtime_diagnostics_log.json::all_policy_posteriors_normalized",
+        "output/data/pymdp_runtime_diagnostics_log.json::all_selected_action_indices_match",
+        "output/data/pymdp_runtime_diagnostics_log.json::all_state_posteriors_normalized",
+        "output/data/pymdp_runtime_diagnostics_log.json::all_trace_labels_resolve",
+        "output/data/pymdp_runtime_diagnostics_log.json::all_vfe_finite",
+        "output/data/pymdp_runtime_diagnostics_log.json::canary_ok",
+        "output/data/pymdp_runtime_diagnostics_log.json::canary_warnings_captured",
+        "output/data/pymdp_runtime_diagnostics_log.json::deterministic_replay_equal",
+        "output/data/pymdp_runtime_diagnostics_log.json::efe_terms_rederived",
+        "output/data/pymdp_runtime_diagnostics_log.json::empirical_prior_matches_library",
+        "output/data/pymdp_runtime_diagnostics_log.json::perturbation_flags_present",
+        "output/data/pymdp_runtime_diagnostics_log.json::weighted_expected_free_energy_recomputed"
+      ],
+      "figure_id": "pymdp_profile_comparison",
+      "parameter_fields": [
+        "output/data/pymdp_policy_trace.json::seed",
+        "output/data/pymdp_profile_comparison.json::seed",
+        "output/data/pymdp_runtime_diagnostics_log.json::seed"
+      ],
+      "path": "output/figures/pymdp_profile_comparison.png",
+      "result_counts": {
+        "output/data/pymdp_policy_trace.json": {
+          "row_count": 72
+        },
+        "output/data/pymdp_profile_comparison.json": {
+          "generative_model_summary.profile_count": 3,
+          "pymdp_canary.state_factor_count": 2
+        },
+        "output/data/pymdp_runtime_diagnostics_log.json": {
+          "canary.state_factor_count": 2,
+          "model_profile_count": 3,
+          "profile_count": 3,
+          "replay.row_count": 72,
+          "summary.perturbed_step_count": 11,
+          "trace_row_count": 72
+        }
+      },
+      "source_artifact_count": 3,
+      "source_artifacts": [
+        "output/data/pymdp_profile_comparison.json",
+        "output/data/pymdp_policy_trace.json",
+        "output/data/pymdp_runtime_diagnostics_log.json"
+      ],
+      "source_metadata": [
+        {
+          "control_fields": [],
+          "exists": true,
+          "parameter_fields": [
+            "seed"
+          ],
+          "result_counts": {
+            "generative_model_summary.profile_count": 3,
+            "pymdp_canary.state_factor_count": 2
+          },
+          "source_artifact": "output/data/pymdp_profile_comparison.json"
+        },
+        {
+          "control_fields": [],
+          "exists": true,
+          "parameter_fields": [
+            "seed"
+          ],
+          "result_counts": {
+            "row_count": 72
+          },
+          "source_artifact": "output/data/pymdp_policy_trace.json"
+        },
+        {
+          "control_fields": [
+            "all_controls_pass",
+            "all_entropies_in_bounds",
+            "all_model_hashes_present",
+            "all_models_normalized",
+            "all_numeric_fields_finite",
+            "all_policy_posteriors_normalized",
+            "all_selected_action_indices_match",
+            "all_state_posteriors_normalized",
+            "all_trace_labels_resolve",
+            "all_vfe_finite",
+            "canary_ok",
+            "canary_warnings_captured",
+            "deterministic_replay_equal",
+            "efe_terms_rederived",
+            "empirical_prior_matches_library",
+            "perturbation_flags_present",
+            "weighted_expected_free_energy_recomputed"
+          ],
+          "exists": true,
+          "parameter_fields": [
+            "seed"
+          ],
+          "result_counts": {
+            "canary.state_factor_count": 2,
+            "model_profile_count": 3,
+            "profile_count": 3,
+            "replay.row_count": 72,
+            "summary.perturbed_step_count": 11,
+            "trace_row_count": 72
+          },
+          "source_artifact": "output/data/pymdp_runtime_diagnostics_log.json"
+        }
+      ],
+      "traceable": true
+    },
+    {
+      "claim_boundary": "review-response accounting for finite deterministic or seeded software validation only; not empirical, not public independent reproduction, not clinical, not neural, not practice-efficacy, not contemplative-attainment, and not physical qFEP evidence",
+      "control_fields": [
+        "output/data/pymdp_runtime_diagnostics_log.json::all_controls_pass",
+        "output/data/pymdp_runtime_diagnostics_log.json::all_entropies_in_bounds",
+        "output/data/pymdp_runtime_diagnostics_log.json::all_model_hashes_present",
+        "output/data/pymdp_runtime_diagnostics_log.json::all_models_normalized",
+        "output/data/pymdp_runtime_diagnostics_log.json::all_numeric_fields_finite",
+        "output/data/pymdp_runtime_diagnostics_log.json::all_policy_posteriors_normalized",
+        "output/data/pymdp_runtime_diagnostics_log.json::all_selected_action_indices_match",
+        "output/data/pymdp_runtime_diagnostics_log.json::all_state_posteriors_normalized",
+        "output/data/pymdp_runtime_diagnostics_log.json::all_trace_labels_resolve",
+        "output/data/pymdp_runtime_diagnostics_log.json::all_vfe_finite",
+        "output/data/pymdp_runtime_diagnostics_log.json::canary_ok",
+        "output/data/pymdp_runtime_diagnostics_log.json::canary_warnings_captured",
+        "output/data/pymdp_runtime_diagnostics_log.json::deterministic_replay_equal",
+        "output/data/pymdp_runtime_diagnostics_log.json::efe_terms_rederived",
+        "output/data/pymdp_runtime_diagnostics_log.json::empirical_prior_matches_library",
+        "output/data/pymdp_runtime_diagnostics_log.json::perturbation_flags_present",
+        "output/data/pymdp_runtime_diagnostics_log.json::weighted_expected_free_energy_recomputed"
+      ],
+      "figure_id": "posterior_trajectory",
+      "parameter_fields": [
+        "output/data/pymdp_policy_trace.json::seed",
+        "output/data/pymdp_profile_comparison.json::seed",
+        "output/data/pymdp_runtime_diagnostics_log.json::seed"
+      ],
+      "path": "output/figures/posterior_trajectory.png",
+      "result_counts": {
+        "output/data/pymdp_policy_trace.json": {
+          "row_count": 72
+        },
+        "output/data/pymdp_profile_comparison.json": {
+          "generative_model_summary.profile_count": 3,
+          "pymdp_canary.state_factor_count": 2
+        },
+        "output/data/pymdp_runtime_diagnostics_log.json": {
+          "canary.state_factor_count": 2,
+          "model_profile_count": 3,
+          "profile_count": 3,
+          "replay.row_count": 72,
+          "summary.perturbed_step_count": 11,
+          "trace_row_count": 72
+        }
+      },
+      "source_artifact_count": 3,
+      "source_artifacts": [
+        "output/data/pymdp_profile_comparison.json",
+        "output/data/pymdp_policy_trace.json",
+        "output/data/pymdp_runtime_diagnostics_log.json"
+      ],
+      "source_metadata": [
+        {
+          "control_fields": [],
+          "exists": true,
+          "parameter_fields": [
+            "seed"
+          ],
+          "result_counts": {
+            "generative_model_summary.profile_count": 3,
+            "pymdp_canary.state_factor_count": 2
+          },
+          "source_artifact": "output/data/pymdp_profile_comparison.json"
+        },
+        {
+          "control_fields": [],
+          "exists": true,
+          "parameter_fields": [
+            "seed"
+          ],
+          "result_counts": {
+            "row_count": 72
+          },
+          "source_artifact": "output/data/pymdp_policy_trace.json"
+        },
+        {
+          "control_fields": [
+            "all_controls_pass",
+            "all_entropies_in_bounds",
+            "all_model_hashes_present",
+            "all_models_normalized",
+            "all_numeric_fields_finite",
+            "all_policy_posteriors_normalized",
+            "all_selected_action_indices_match",
+            "all_state_posteriors_normalized",
+            "all_trace_labels_resolve",
+            "all_vfe_finite",
+            "canary_ok",
+            "canary_warnings_captured",
+            "deterministic_replay_equal",
+            "efe_terms_rederived",
+            "empirical_prior_matches_library",
+            "perturbation_flags_present",
+            "weighted_expected_free_energy_recomputed"
+          ],
+          "exists": true,
+          "parameter_fields": [
+            "seed"
+          ],
+          "result_counts": {
+            "canary.state_factor_count": 2,
+            "model_profile_count": 3,
+            "profile_count": 3,
+            "replay.row_count": 72,
+            "summary.perturbed_step_count": 11,
+            "trace_row_count": 72
+          },
+          "source_artifact": "output/data/pymdp_runtime_diagnostics_log.json"
+        }
+      ],
+      "traceable": true
+    },
+    {
+      "claim_boundary": "review-response accounting for finite deterministic or seeded software validation only; not empirical, not public independent reproduction, not clinical, not neural, not practice-efficacy, not contemplative-attainment, and not physical qFEP evidence",
+      "control_fields": [
+        "output/data/pymdp_runtime_diagnostics_log.json::all_controls_pass",
+        "output/data/pymdp_runtime_diagnostics_log.json::all_entropies_in_bounds",
+        "output/data/pymdp_runtime_diagnostics_log.json::all_model_hashes_present",
+        "output/data/pymdp_runtime_diagnostics_log.json::all_models_normalized",
+        "output/data/pymdp_runtime_diagnostics_log.json::all_numeric_fields_finite",
+        "output/data/pymdp_runtime_diagnostics_log.json::all_policy_posteriors_normalized",
+        "output/data/pymdp_runtime_diagnostics_log.json::all_selected_action_indices_match",
+        "output/data/pymdp_runtime_diagnostics_log.json::all_state_posteriors_normalized",
+        "output/data/pymdp_runtime_diagnostics_log.json::all_trace_labels_resolve",
+        "output/data/pymdp_runtime_diagnostics_log.json::all_vfe_finite",
+        "output/data/pymdp_runtime_diagnostics_log.json::canary_ok",
+        "output/data/pymdp_runtime_diagnostics_log.json::canary_warnings_captured",
+        "output/data/pymdp_runtime_diagnostics_log.json::deterministic_replay_equal",
+        "output/data/pymdp_runtime_diagnostics_log.json::efe_terms_rederived",
+        "output/data/pymdp_runtime_diagnostics_log.json::empirical_prior_matches_library",
+        "output/data/pymdp_runtime_diagnostics_log.json::perturbation_flags_present",
+        "output/data/pymdp_runtime_diagnostics_log.json::weighted_expected_free_energy_recomputed",
+        "output/data/stochastic_effect_size_audit.json::all_controls_pass",
+        "output/data/stochastic_effect_size_audit.json::all_intervals_finite",
+        "output/data/stochastic_effect_size_audit.json::all_p_values_bounded",
+        "output/data/stochastic_effect_size_audit.json::has_nonzero_effects",
+        "output/data/stochastic_effect_size_audit.json::seeded_resampling_declared"
+      ],
+      "figure_id": "pymdp_runtime_validation_dashboard",
+      "parameter_fields": [
+        "output/data/pymdp_policy_trace.json::seed",
+        "output/data/pymdp_runtime_diagnostics_log.json::seed"
+      ],
+      "path": "output/figures/pymdp_runtime_validation_dashboard.png",
+      "result_counts": {
+        "output/data/pymdp_generative_model_audit.json": {
+          "profile_count": 3
+        },
+        "output/data/pymdp_policy_trace.json": {
+          "row_count": 72
+        },
+        "output/data/pymdp_runtime_diagnostics_log.json": {
+          "canary.state_factor_count": 2,
+          "model_profile_count": 3,
+          "profile_count": 3,
+          "replay.row_count": 72,
+          "summary.perturbed_step_count": 11,
+          "trace_row_count": 72
+        },
+        "output/data/stochastic_effect_size_audit.json": {
+          "metric_count": 6,
+          "row_count": 18
+        }
+      },
+      "source_artifact_count": 4,
+      "source_artifacts": [
+        "output/data/pymdp_runtime_diagnostics_log.json",
+        "output/data/pymdp_generative_model_audit.json",
+        "output/data/pymdp_policy_trace.json",
+        "output/data/stochastic_effect_size_audit.json"
+      ],
+      "source_metadata": [
+        {
+          "control_fields": [
+            "all_controls_pass",
+            "all_entropies_in_bounds",
+            "all_model_hashes_present",
+            "all_models_normalized",
+            "all_numeric_fields_finite",
+            "all_policy_posteriors_normalized",
+            "all_selected_action_indices_match",
+            "all_state_posteriors_normalized",
+            "all_trace_labels_resolve",
+            "all_vfe_finite",
+            "canary_ok",
+            "canary_warnings_captured",
+            "deterministic_replay_equal",
+            "efe_terms_rederived",
+            "empirical_prior_matches_library",
+            "perturbation_flags_present",
+            "weighted_expected_free_energy_recomputed"
+          ],
+          "exists": true,
+          "parameter_fields": [
+            "seed"
+          ],
+          "result_counts": {
+            "canary.state_factor_count": 2,
+            "model_profile_count": 3,
+            "profile_count": 3,
+            "replay.row_count": 72,
+            "summary.perturbed_step_count": 11,
+            "trace_row_count": 72
+          },
+          "source_artifact": "output/data/pymdp_runtime_diagnostics_log.json"
+        },
+        {
+          "control_fields": [],
+          "exists": true,
+          "parameter_fields": [],
+          "result_counts": {
+            "profile_count": 3
+          },
+          "source_artifact": "output/data/pymdp_generative_model_audit.json"
+        },
+        {
+          "control_fields": [],
+          "exists": true,
+          "parameter_fields": [
+            "seed"
+          ],
+          "result_counts": {
+            "row_count": 72
+          },
+          "source_artifact": "output/data/pymdp_policy_trace.json"
+        },
+        {
+          "control_fields": [
+            "all_controls_pass",
+            "all_intervals_finite",
+            "all_p_values_bounded",
+            "has_nonzero_effects",
+            "seeded_resampling_declared"
+          ],
+          "exists": true,
+          "parameter_fields": [],
+          "result_counts": {
+            "metric_count": 6,
+            "row_count": 18
+          },
+          "source_artifact": "output/data/stochastic_effect_size_audit.json"
+        }
+      ],
+      "traceable": true
+    },
+    {
+      "claim_boundary": "review-response accounting for finite deterministic or seeded software validation only; not empirical, not public independent reproduction, not clinical, not neural, not practice-efficacy, not contemplative-attainment, and not physical qFEP evidence",
+      "control_fields": [],
+      "figure_id": "criticality_proxy_panels",
+      "parameter_fields": [],
+      "path": "output/figures/criticality_proxy_panels.png",
+      "result_counts": {
+        "output/reports/criticality_proxy_report.json": {
+          "avalanche_size_distribution.avalanche_count": 1,
+          "branching_ratio": 1.0085470085470085,
+          "criticality_index": 0.008547008547008517,
+          "entropy_nats": 0.6931471805599453,
+          "near_critical_score": 0.05626998707219166,
+          "switch_rate": 0.8913043478260869,
+          "variance": 0.25
+        }
+      },
+      "source_artifact_count": 1,
+      "source_artifacts": [
+        "output/reports/criticality_proxy_report.json"
+      ],
+      "source_metadata": [
+        {
+          "control_fields": [],
+          "exists": true,
+          "parameter_fields": [],
+          "result_counts": {
+            "avalanche_size_distribution.avalanche_count": 1,
+            "branching_ratio": 1.0085470085470085,
+            "criticality_index": 0.008547008547008517,
+            "entropy_nats": 0.6931471805599453,
+            "near_critical_score": 0.05626998707219166,
+            "switch_rate": 0.8913043478260869,
+            "variance": 0.25
+          },
+          "source_artifact": "output/reports/criticality_proxy_report.json"
+        }
+      ],
+      "traceable": true
+    },
+    {
+      "claim_boundary": "review-response accounting for finite deterministic or seeded software validation only; not empirical, not public independent reproduction, not clinical, not neural, not practice-efficacy, not contemplative-attainment, and not physical qFEP evidence",
+      "control_fields": [
+        "output/data/criticality_stochastic_ensemble.json::all_controls_pass",
+        "output/data/criticality_stochastic_ensemble.json::all_intervals_finite",
+        "output/data/criticality_stochastic_ensemble.json::branching_estimator_recovers_planted_sigma",
+        "output/data/criticality_stochastic_ensemble.json::majority_of_profiles_ci_separate_from_null",
+        "output/data/criticality_stochastic_ensemble.json::measured_branching_separates_from_null",
+        "output/data/criticality_stochastic_ensemble.json::null_controls_present",
+        "output/data/criticality_stochastic_ensemble.json::profiles_differ_from_null_controls",
+        "output/data/criticality_stochastic_ensemble.json::seeded_policy_source"
+      ],
+      "figure_id": "criticality_stochastic_ensemble",
+      "parameter_fields": [
+        "output/data/criticality_stochastic_ensemble.json::runs_per_profile",
+        "output/data/criticality_stochastic_ensemble.json::seed"
+      ],
+      "path": "output/figures/criticality_stochastic_ensemble.png",
+      "result_counts": {
+        "output/data/criticality_stochastic_ensemble.json": {
+          "metric_row_count": 768,
+          "summary_row_count": 6
+        }
+      },
+      "source_artifact_count": 1,
+      "source_artifacts": [
+        "output/data/criticality_stochastic_ensemble.json"
+      ],
+      "source_metadata": [
+        {
+          "control_fields": [
+            "all_controls_pass",
+            "all_intervals_finite",
+            "branching_estimator_recovers_planted_sigma",
+            "majority_of_profiles_ci_separate_from_null",
+            "measured_branching_separates_from_null",
+            "null_controls_present",
+            "profiles_differ_from_null_controls",
+            "seeded_policy_source"
+          ],
+          "exists": true,
+          "parameter_fields": [
+            "runs_per_profile",
+            "seed"
+          ],
+          "result_counts": {
+            "metric_row_count": 768,
+            "summary_row_count": 6
+          },
+          "source_artifact": "output/data/criticality_stochastic_ensemble.json"
+        }
+      ],
+      "traceable": true
+    },
+    {
+      "claim_boundary": "review-response accounting for finite deterministic or seeded software validation only; not empirical, not public independent reproduction, not clinical, not neural, not practice-efficacy, not contemplative-attainment, and not physical qFEP evidence",
+      "control_fields": [
+        "output/data/criticality_stochastic_ensemble.json::all_controls_pass",
+        "output/data/criticality_stochastic_ensemble.json::all_intervals_finite",
+        "output/data/criticality_stochastic_ensemble.json::branching_estimator_recovers_planted_sigma",
+        "output/data/criticality_stochastic_ensemble.json::majority_of_profiles_ci_separate_from_null",
+        "output/data/criticality_stochastic_ensemble.json::measured_branching_separates_from_null",
+        "output/data/criticality_stochastic_ensemble.json::null_controls_present",
+        "output/data/criticality_stochastic_ensemble.json::profiles_differ_from_null_controls",
+        "output/data/criticality_stochastic_ensemble.json::seeded_policy_source"
+      ],
+      "figure_id": "criticality_signatures",
+      "parameter_fields": [
+        "output/data/criticality_stochastic_ensemble.json::runs_per_profile",
+        "output/data/criticality_stochastic_ensemble.json::seed"
+      ],
+      "path": "output/figures/criticality_signatures.png",
+      "result_counts": {
+        "output/data/criticality_stochastic_ensemble.json": {
+          "metric_row_count": 768,
+          "summary_row_count": 6
+        },
+        "output/reports/criticality_proxy_report.json": {
+          "avalanche_size_distribution.avalanche_count": 1,
+          "branching_ratio": 1.0085470085470085,
+          "criticality_index": 0.008547008547008517,
+          "entropy_nats": 0.6931471805599453,
+          "near_critical_score": 0.05626998707219166,
+          "switch_rate": 0.8913043478260869,
+          "variance": 0.25
+        }
+      },
+      "source_artifact_count": 2,
+      "source_artifacts": [
+        "output/data/criticality_stochastic_ensemble.json",
+        "output/reports/criticality_proxy_report.json"
+      ],
+      "source_metadata": [
+        {
+          "control_fields": [
+            "all_controls_pass",
+            "all_intervals_finite",
+            "branching_estimator_recovers_planted_sigma",
+            "majority_of_profiles_ci_separate_from_null",
+            "measured_branching_separates_from_null",
+            "null_controls_present",
+            "profiles_differ_from_null_controls",
+            "seeded_policy_source"
+          ],
+          "exists": true,
+          "parameter_fields": [
+            "runs_per_profile",
+            "seed"
+          ],
+          "result_counts": {
+            "metric_row_count": 768,
+            "summary_row_count": 6
+          },
+          "source_artifact": "output/data/criticality_stochastic_ensemble.json"
+        },
+        {
+          "control_fields": [],
+          "exists": true,
+          "parameter_fields": [],
+          "result_counts": {
+            "avalanche_size_distribution.avalanche_count": 1,
+            "branching_ratio": 1.0085470085470085,
+            "criticality_index": 0.008547008547008517,
+            "entropy_nats": 0.6931471805599453,
+            "near_critical_score": 0.05626998707219166,
+            "switch_rate": 0.8913043478260869,
+            "variance": 0.25
+          },
+          "source_artifact": "output/reports/criticality_proxy_report.json"
+        }
+      ],
+      "traceable": true
+    },
+    {
+      "claim_boundary": "review-response accounting for finite deterministic or seeded software validation only; not empirical, not public independent reproduction, not clinical, not neural, not practice-efficacy, not contemplative-attainment, and not physical qFEP evidence",
+      "control_fields": [
+        "output/data/compassion_scope_audit.json::action_influence_active",
+        "output/data/compassion_scope_audit.json::action_shuffle_collapses_influence",
+        "output/data/compassion_scope_audit.json::all_controls_pass",
+        "output/data/compassion_scope_audit.json::dose_response_deepens_self_concentration",
+        "output/data/compassion_scope_audit.json::influence_shapes_scope",
+        "output/data/compassion_scope_audit.json::influence_tracks_controllability",
+        "output/data/compassion_scope_audit.json::prior_precision_drives_self_scoping",
+        "output/data/compassion_scope_audit.json::real_widening_monotone",
+        "output/data/compassion_scope_audit.json::widening_amplified_by_prior",
+        "output/data/compassion_scope_audit.json::zero_controllability_gives_zero_influence"
+      ],
+      "figure_id": "compassion_scope_widening",
+      "parameter_fields": [],
+      "path": "output/figures/compassion_scope_widening.png",
+      "result_counts": {
+        "output/data/compassion_scope_audit.json": {
+          "deployment_count": 3
+        }
+      },
+      "source_artifact_count": 1,
+      "source_artifacts": [
+        "output/data/compassion_scope_audit.json"
+      ],
+      "source_metadata": [
+        {
+          "control_fields": [
+            "action_influence_active",
+            "action_shuffle_collapses_influence",
+            "all_controls_pass",
+            "dose_response_deepens_self_concentration",
+            "influence_shapes_scope",
+            "influence_tracks_controllability",
+            "prior_precision_drives_self_scoping",
+            "real_widening_monotone",
+            "widening_amplified_by_prior",
+            "zero_controllability_gives_zero_influence"
+          ],
+          "exists": true,
+          "parameter_fields": [],
+          "result_counts": {
+            "deployment_count": 3
+          },
+          "source_artifact": "output/data/compassion_scope_audit.json"
+        }
+      ],
+      "traceable": true
+    },
+    {
+      "claim_boundary": "review-response accounting for finite deterministic or seeded software validation only; not empirical, not public independent reproduction, not clinical, not neural, not practice-efficacy, not contemplative-attainment, and not physical qFEP evidence",
+      "control_fields": [
+        "output/data/separation_prior_emergence_audit.json::accuracy_gain_monotone_in_empowerment",
+        "output/data/separation_prior_emergence_audit.json::action_shuffle_collapses_factored_advantage",
+        "output/data/separation_prior_emergence_audit.json::all_controls_pass",
+        "output/data/separation_prior_emergence_audit.json::factored_beats_unfactored_at_high_empowerment",
+        "output/data/separation_prior_emergence_audit.json::factored_does_not_beat_unfactored_at_zero_empowerment",
+        "output/data/separation_prior_emergence_audit.json::planted_full_contingency_detected"
+      ],
+      "figure_id": "separation_prior_emergence",
+      "parameter_fields": [],
+      "path": "output/figures/separation_prior_emergence.png",
+      "result_counts": {
+        "output/data/separation_prior_emergence_audit.json": {
+          "row_count": 5
+        }
+      },
+      "source_artifact_count": 1,
+      "source_artifacts": [
+        "output/data/separation_prior_emergence_audit.json"
+      ],
+      "source_metadata": [
+        {
+          "control_fields": [
+            "accuracy_gain_monotone_in_empowerment",
+            "action_shuffle_collapses_factored_advantage",
+            "all_controls_pass",
+            "factored_beats_unfactored_at_high_empowerment",
+            "factored_does_not_beat_unfactored_at_zero_empowerment",
+            "planted_full_contingency_detected"
+          ],
+          "exists": true,
+          "parameter_fields": [],
+          "result_counts": {
+            "row_count": 5
+          },
+          "source_artifact": "output/data/separation_prior_emergence_audit.json"
+        }
+      ],
+      "traceable": true
+    },
+    {
+      "claim_boundary": "review-response accounting for finite deterministic or seeded software validation only; not empirical, not public independent reproduction, not clinical, not neural, not practice-efficacy, not contemplative-attainment, and not physical qFEP evidence",
+      "control_fields": [
+        "output/data/internal_cut_unmeasurability_audit.json::accessible_marginal_invariant_across_internal_cuts",
+        "output/data/internal_cut_unmeasurability_audit.json::all_bipartitions_audited",
+        "output/data/internal_cut_unmeasurability_audit.json::all_controls_pass",
+        "output/data/internal_cut_unmeasurability_audit.json::god_eye_entropy_actually_differs",
+        "output/data/internal_cut_unmeasurability_audit.json::separability_unrecoverable_from_marginal"
+      ],
+      "figure_id": "internal_cut_unmeasurability",
+      "parameter_fields": [],
+      "path": "output/figures/internal_cut_unmeasurability.png",
+      "result_counts": {
+        "output/data/internal_cut_unmeasurability_audit.json": {
+          "bipartition_count": 6
+        }
+      },
+      "source_artifact_count": 1,
+      "source_artifacts": [
+        "output/data/internal_cut_unmeasurability_audit.json"
+      ],
+      "source_metadata": [
+        {
+          "control_fields": [
+            "accessible_marginal_invariant_across_internal_cuts",
+            "all_bipartitions_audited",
+            "all_controls_pass",
+            "god_eye_entropy_actually_differs",
+            "separability_unrecoverable_from_marginal"
+          ],
+          "exists": true,
+          "parameter_fields": [],
+          "result_counts": {
+            "bipartition_count": 6
+          },
+          "source_artifact": "output/data/internal_cut_unmeasurability_audit.json"
+        }
+      ],
+      "traceable": true
+    },
+    {
+      "claim_boundary": "review-response accounting for finite deterministic or seeded software validation only; not empirical, not public independent reproduction, not clinical, not neural, not practice-efficacy, not contemplative-attainment, and not physical qFEP evidence",
+      "control_fields": [],
+      "figure_id": "practice_policy_scope_map",
+      "parameter_fields": [],
+      "path": "output/figures/practice_policy_scope_map.png",
+      "result_counts": {
+        "output/data/practice_protocol_map.json": {
+          "protocol_count": 3
+        }
+      },
+      "source_artifact_count": 1,
+      "source_artifacts": [
+        "output/data/practice_protocol_map.json"
+      ],
+      "source_metadata": [
+        {
+          "control_fields": [],
+          "exists": true,
+          "parameter_fields": [],
+          "result_counts": {
+            "protocol_count": 3
+          },
+          "source_artifact": "output/data/practice_protocol_map.json"
+        }
+      ],
+      "traceable": true
+    },
+    {
+      "claim_boundary": "review-response accounting for finite deterministic or seeded software validation only; not empirical, not public independent reproduction, not clinical, not neural, not practice-efficacy, not contemplative-attainment, and not physical qFEP evidence",
+      "control_fields": [
+        "output/data/stochastic_effect_size_audit.json::all_controls_pass",
+        "output/data/stochastic_effect_size_audit.json::all_intervals_finite",
+        "output/data/stochastic_effect_size_audit.json::all_p_values_bounded",
+        "output/data/stochastic_effect_size_audit.json::has_nonzero_effects",
+        "output/data/stochastic_effect_size_audit.json::seeded_resampling_declared"
+      ],
+      "figure_id": "stochastic_effect_size_forest",
+      "parameter_fields": [],
+      "path": "output/figures/stochastic_effect_size_forest.png",
+      "result_counts": {
+        "output/data/stochastic_effect_size_audit.json": {
+          "metric_count": 6,
+          "row_count": 18
+        }
+      },
+      "source_artifact_count": 1,
+      "source_artifacts": [
+        "output/data/stochastic_effect_size_audit.json"
+      ],
+      "source_metadata": [
+        {
+          "control_fields": [
+            "all_controls_pass",
+            "all_intervals_finite",
+            "all_p_values_bounded",
+            "has_nonzero_effects",
+            "seeded_resampling_declared"
+          ],
+          "exists": true,
+          "parameter_fields": [],
+          "result_counts": {
+            "metric_count": 6,
+            "row_count": 18
+          },
+          "source_artifact": "output/data/stochastic_effect_size_audit.json"
+        }
+      ],
+      "traceable": true
+    },
+    {
+      "claim_boundary": "review-response accounting for finite deterministic or seeded software validation only; not empirical, not public independent reproduction, not clinical, not neural, not practice-efficacy, not contemplative-attainment, and not physical qFEP evidence",
+      "control_fields": [
+        "output/data/bmr_robustness_resampling_audit.json::all_controls_pass",
+        "output/data/bmr_robustness_resampling_audit.json::all_intervals_finite",
+        "output/data/bmr_robustness_resampling_audit.json::all_pruning_rates_bounded",
+        "output/data/bmr_robustness_resampling_audit.json::has_stable_sign_cells",
+        "output/data/bmr_robustness_resampling_audit.json::high_access_not_lower_than_low_access"
+      ],
+      "figure_id": "bmr_robustness_resampling",
+      "parameter_fields": [],
+      "path": "output/figures/bmr_robustness_resampling.png",
+      "result_counts": {
+        "output/data/bmr_robustness_resampling_audit.json": {
+          "row_count": 45
+        }
+      },
+      "source_artifact_count": 1,
+      "source_artifacts": [
+        "output/data/bmr_robustness_resampling_audit.json"
+      ],
+      "source_metadata": [
+        {
+          "control_fields": [
+            "all_controls_pass",
+            "all_intervals_finite",
+            "all_pruning_rates_bounded",
+            "has_stable_sign_cells",
+            "high_access_not_lower_than_low_access"
+          ],
+          "exists": true,
+          "parameter_fields": [],
+          "result_counts": {
+            "row_count": 45
+          },
+          "source_artifact": "output/data/bmr_robustness_resampling_audit.json"
+        }
+      ],
+      "traceable": true
+    },
+    {
+      "claim_boundary": "review-response accounting for finite deterministic or seeded software validation only; not empirical, not public independent reproduction, not clinical, not neural, not practice-efficacy, not contemplative-attainment, and not physical qFEP evidence",
+      "control_fields": [
+        "output/data/quantum_trajectory_convergence_audit.json::all_controls_pass",
+        "output/data/quantum_trajectory_convergence_audit.json::largest_count_better_than_first",
+        "output/data/quantum_trajectory_convergence_audit.json::largest_count_within_tolerance",
+        "output/data/quantum_trajectory_convergence_audit.json::log_log_slope_negative",
+        "output/data/quantum_trajectory_convergence_audit.json::residuals_finite",
+        "output/data/quantum_trajectory_convergence_audit.json::too_few_trajectory_control_fails"
+      ],
+      "figure_id": "quantum_trajectory_convergence",
+      "parameter_fields": [
+        "output/data/quantum_trajectory_convergence_audit.json::seed"
+      ],
+      "path": "output/figures/quantum_trajectory_convergence.png",
+      "result_counts": {
+        "output/data/quantum_trajectory_convergence_audit.json": {
+          "row_count": 7,
+          "too_few_count": 8,
+          "too_few_trajectory_control.trajectory_count": 8
+        }
+      },
+      "source_artifact_count": 1,
+      "source_artifacts": [
+        "output/data/quantum_trajectory_convergence_audit.json"
+      ],
+      "source_metadata": [
+        {
+          "control_fields": [
+            "all_controls_pass",
+            "largest_count_better_than_first",
+            "largest_count_within_tolerance",
+            "log_log_slope_negative",
+            "residuals_finite",
+            "too_few_trajectory_control_fails"
+          ],
+          "exists": true,
+          "parameter_fields": [
+            "seed"
+          ],
+          "result_counts": {
+            "row_count": 7,
+            "too_few_count": 8,
+            "too_few_trajectory_control.trajectory_count": 8
+          },
+          "source_artifact": "output/data/quantum_trajectory_convergence_audit.json"
+        }
+      ],
+      "traceable": true
+    },
+    {
+      "claim_boundary": "review-response accounting for finite deterministic or seeded software validation only; not empirical, not public independent reproduction, not clinical, not neural, not practice-efficacy, not contemplative-attainment, and not physical qFEP evidence",
+      "control_fields": [
+        "figures.yaml::alt_text_metadata",
+        "figures.yaml::figure_caption_metadata",
+        "figures.yaml::visual_encoding_metadata"
+      ],
+      "figure_id": "visual_semantic_palette_ledger",
+      "parameter_fields": [
+        "figures.yaml::dpi",
+        "figures.yaml::font_scale",
+        "figures.yaml::palette"
+      ],
+      "path": "output/figures/visual_semantic_palette_ledger.png",
+      "result_counts": {
+        "figures.yaml": {
+          "figure_config_count": 59,
+          "palette_role_count": 6
+        }
+      },
+      "source_artifact_count": 1,
+      "source_artifacts": [
+        "figures.yaml"
+      ],
+      "source_metadata": [
+        {
+          "control_fields": [
+            "figure_caption_metadata",
+            "visual_encoding_metadata",
+            "alt_text_metadata"
+          ],
+          "exists": true,
+          "parameter_fields": [
+            "dpi",
+            "font_scale",
+            "palette"
+          ],
+          "result_counts": {
+            "figure_config_count": 59,
+            "palette_role_count": 6
+          },
+          "source_artifact": "figures.yaml"
+        }
+      ],
+      "traceable": true
+    },
+    {
+      "claim_boundary": "review-response accounting for finite deterministic or seeded software validation only; not empirical, not public independent reproduction, not clinical, not neural, not practice-efficacy, not contemplative-attainment, and not physical qFEP evidence",
+      "control_fields": [],
+      "figure_id": "method_assumption_failure_map",
+      "parameter_fields": [],
+      "path": "output/figures/method_assumption_failure_map.png",
+      "result_counts": {
+        "output/data/method_assumption_ledger.json": {
+          "method_count": 8
+        },
+        "output/data/method_negative_control_inventory.json": {
+          "control_count": 18,
+          "method_count": 8
+        }
+      },
+      "source_artifact_count": 2,
+      "source_artifacts": [
+        "output/data/method_assumption_ledger.json",
+        "output/data/method_negative_control_inventory.json"
+      ],
+      "source_metadata": [
+        {
+          "control_fields": [],
+          "exists": true,
+          "parameter_fields": [],
+          "result_counts": {
+            "method_count": 8
+          },
+          "source_artifact": "output/data/method_assumption_ledger.json"
+        },
+        {
+          "control_fields": [],
+          "exists": true,
+          "parameter_fields": [],
+          "result_counts": {
+            "control_count": 18,
+            "method_count": 8
+          },
+          "source_artifact": "output/data/method_negative_control_inventory.json"
+        }
+      ],
+      "traceable": true
+    },
+    {
+      "claim_boundary": "review-response accounting for finite deterministic or seeded software validation only; not empirical, not public independent reproduction, not clinical, not neural, not practice-efficacy, not contemplative-attainment, and not physical qFEP evidence",
+      "control_fields": [],
+      "figure_id": "claim_source_validation_graph",
+      "parameter_fields": [],
+      "path": "output/figures/claim_source_validation_graph.png",
+      "result_counts": {
+        "output/data/source_claim_crosswalk.json": {
+          "claim_count": 15
+        }
+      },
+      "source_artifact_count": 1,
+      "source_artifacts": [
+        "output/data/source_claim_crosswalk.json"
+      ],
+      "source_metadata": [
+        {
+          "control_fields": [],
+          "exists": true,
+          "parameter_fields": [],
+          "result_counts": {
+            "claim_count": 15
+          },
+          "source_artifact": "output/data/source_claim_crosswalk.json"
+        }
+      ],
+      "traceable": true
+    },
+    {
+      "claim_boundary": "review-response accounting for finite deterministic or seeded software validation only; not empirical, not public independent reproduction, not clinical, not neural, not practice-efficacy, not contemplative-attainment, and not physical qFEP evidence",
+      "control_fields": [],
+      "figure_id": "scholarship_coverage_matrix",
+      "parameter_fields": [],
+      "path": "output/figures/scholarship_coverage_matrix.png",
+      "result_counts": {
+        "output/data/scholarship_source_matrix.json": {
+          "source_count": 93,
+          "track_count": 14,
+          "validation.entry_count": 93
+        }
+      },
+      "source_artifact_count": 1,
+      "source_artifacts": [
+        "output/data/scholarship_source_matrix.json"
+      ],
+      "source_metadata": [
+        {
+          "control_fields": [],
+          "exists": true,
+          "parameter_fields": [],
+          "result_counts": {
+            "source_count": 93,
+            "track_count": 14,
+            "validation.entry_count": 93
+          },
+          "source_artifact": "output/data/scholarship_source_matrix.json"
+        }
+      ],
+      "traceable": true
+    },
+    {
+      "claim_boundary": "review-response accounting for finite deterministic or seeded software validation only; not empirical, not public independent reproduction, not clinical, not neural, not practice-efficacy, not contemplative-attainment, and not physical qFEP evidence",
+      "control_fields": [
+        "output/data/claim_support_audit.json::ok"
+      ],
+      "figure_id": "claim_support_matrix",
+      "parameter_fields": [],
+      "path": "output/figures/claim_support_matrix.png",
+      "result_counts": {
+        "output/data/claim_support_audit.json": {
+          "public_claim_count": 15,
+          "registered_claim_count": 18,
+          "support_row_count": 140
+        }
+      },
+      "source_artifact_count": 1,
+      "source_artifacts": [
+        "output/data/claim_support_audit.json"
+      ],
+      "source_metadata": [
+        {
+          "control_fields": [
+            "ok"
+          ],
+          "exists": true,
+          "parameter_fields": [],
+          "result_counts": {
+            "public_claim_count": 15,
+            "registered_claim_count": 18,
+            "support_row_count": 140
+          },
+          "source_artifact": "output/data/claim_support_audit.json"
+        }
+      ],
+      "traceable": true
+    },
+    {
+      "claim_boundary": "review-response accounting for finite deterministic or seeded software validation only; not empirical, not public independent reproduction, not clinical, not neural, not practice-efficacy, not contemplative-attainment, and not physical qFEP evidence",
+      "control_fields": [
+        "output/data/manuscript_claim_audit.json::ok"
+      ],
+      "figure_id": "manuscript_claim_audit",
+      "parameter_fields": [],
+      "path": "output/figures/manuscript_claim_audit.png",
+      "result_counts": {
+        "output/data/manuscript_claim_audit.json": {
+          "declared_bibliography_count": 98,
+          "fragment_count": 56,
+          "public_claim_count": 15,
+          "used_citation_count": 98
+        }
+      },
+      "source_artifact_count": 1,
+      "source_artifacts": [
+        "output/data/manuscript_claim_audit.json"
+      ],
+      "source_metadata": [
+        {
+          "control_fields": [
+            "ok"
+          ],
+          "exists": true,
+          "parameter_fields": [],
+          "result_counts": {
+            "declared_bibliography_count": 98,
+            "fragment_count": 56,
+            "public_claim_count": 15,
+            "used_citation_count": 98
+          },
+          "source_artifact": "output/data/manuscript_claim_audit.json"
+        }
+      ],
+      "traceable": true
+    },
+    {
+      "claim_boundary": "review-response accounting for finite deterministic or seeded software validation only; not empirical, not public independent reproduction, not clinical, not neural, not practice-efficacy, not contemplative-attainment, and not physical qFEP evidence",
+      "control_fields": [
+        "output/data/evidence_ceiling_audit.json::ok"
+      ],
+      "figure_id": "evidence_ceiling_stress_matrix",
+      "parameter_fields": [],
+      "path": "output/figures/evidence_ceiling_stress_matrix.png",
+      "result_counts": {
+        "output/data/evidence_ceiling_audit.json": {
+          "claim_count": 15
+        }
+      },
+      "source_artifact_count": 1,
+      "source_artifacts": [
+        "output/data/evidence_ceiling_audit.json"
+      ],
+      "source_metadata": [
+        {
+          "control_fields": [
+            "ok"
+          ],
+          "exists": true,
+          "parameter_fields": [],
+          "result_counts": {
+            "claim_count": 15
+          },
+          "source_artifact": "output/data/evidence_ceiling_audit.json"
+        }
+      ],
+      "traceable": true
+    },
+    {
+      "claim_boundary": "review-response accounting for finite deterministic or seeded software validation only; not empirical, not public independent reproduction, not clinical, not neural, not practice-efficacy, not contemplative-attainment, and not physical qFEP evidence",
+      "control_fields": [
+        "output/data/claim_context_ledger.json::all_allowed_interpretations_present",
+        "output/data/claim_context_ledger.json::all_artifacts_exist",
+        "output/data/claim_context_ledger.json::all_controls_pass",
+        "output/data/claim_context_ledger.json::all_figure_bindings_present",
+        "output/data/claim_context_ledger.json::all_future_evidence_boundaries_present",
+        "output/data/claim_context_ledger.json::all_gates_declared",
+        "output/data/claim_context_ledger.json::all_manuscript_sections_present",
+        "output/data/claim_context_ledger.json::all_prohibited_interpretations_present",
+        "output/data/claim_context_ledger.json::all_public_claims_represented",
+        "output/data/claim_context_ledger.json::all_reader_claims_present",
+        "output/data/claim_context_ledger.json::all_role_compatibility_rules_pass",
+        "output/data/claim_context_ledger.json::all_source_keys_resolve",
+        "output/data/claim_context_ledger.json::all_source_roles_present",
+        "output/data/claim_context_ledger.json::no_proxy_or_safety_reader_overclaims",
+        "output/data/claim_support_audit.json::ok",
+        "output/data/evidence_ceiling_audit.json::ok"
+      ],
+      "figure_id": "claim_context_evidence_ladder",
+      "parameter_fields": [],
+      "path": "output/figures/claim_context_evidence_ladder.png",
+      "result_counts": {
+        "output/data/claim_context_ledger.json": {
+          "claim_count": 15
+        },
+        "output/data/claim_support_audit.json": {
+          "public_claim_count": 15,
+          "registered_claim_count": 18,
+          "support_row_count": 140
+        },
+        "output/data/evidence_ceiling_audit.json": {
+          "claim_count": 15
+        }
+      },
+      "source_artifact_count": 3,
+      "source_artifacts": [
+        "output/data/claim_context_ledger.json",
+        "output/data/claim_support_audit.json",
+        "output/data/evidence_ceiling_audit.json"
+      ],
+      "source_metadata": [
+        {
+          "control_fields": [
+            "all_allowed_interpretations_present",
+            "all_artifacts_exist",
+            "all_controls_pass",
+            "all_figure_bindings_present",
+            "all_future_evidence_boundaries_present",
+            "all_gates_declared",
+            "all_manuscript_sections_present",
+            "all_prohibited_interpretations_present",
+            "all_public_claims_represented",
+            "all_reader_claims_present",
+            "all_role_compatibility_rules_pass",
+            "all_source_keys_resolve",
+            "all_source_roles_present",
+            "no_proxy_or_safety_reader_overclaims"
+          ],
+          "exists": true,
+          "parameter_fields": [],
+          "result_counts": {
+            "claim_count": 15
+          },
+          "source_artifact": "output/data/claim_context_ledger.json"
+        },
+        {
+          "control_fields": [
+            "ok"
+          ],
+          "exists": true,
+          "parameter_fields": [],
+          "result_counts": {
+            "public_claim_count": 15,
+            "registered_claim_count": 18,
+            "support_row_count": 140
+          },
+          "source_artifact": "output/data/claim_support_audit.json"
+        },
+        {
+          "control_fields": [
+            "ok"
+          ],
+          "exists": true,
+          "parameter_fields": [],
+          "result_counts": {
+            "claim_count": 15
+          },
+          "source_artifact": "output/data/evidence_ceiling_audit.json"
+        }
+      ],
+      "traceable": true
+    },
+    {
+      "claim_boundary": "review-response accounting for finite deterministic or seeded software validation only; not empirical, not public independent reproduction, not clinical, not neural, not practice-efficacy, not contemplative-attainment, and not physical qFEP evidence",
+      "control_fields": [],
+      "figure_id": "formalism_operation_map",
+      "parameter_fields": [],
+      "path": "output/figures/formalism_operation_map.png",
+      "result_counts": {
+        "output/data/equation_audit.json": {
+          "equation_count": 14,
+          "implemented_count": 13,
+          "values.eq10_constrained_deployment_count": 1,
+          "values.eq4_binary_channel_count": 6
+        }
+      },
+      "source_artifact_count": 1,
+      "source_artifacts": [
+        "output/data/equation_audit.json"
+      ],
+      "source_metadata": [
+        {
+          "control_fields": [],
+          "exists": true,
+          "parameter_fields": [],
+          "result_counts": {
+            "equation_count": 14,
+            "implemented_count": 13,
+            "values.eq10_constrained_deployment_count": 1,
+            "values.eq4_binary_channel_count": 6
+          },
+          "source_artifact": "output/data/equation_audit.json"
+        }
+      ],
+      "traceable": true
+    },
+    {
+      "claim_boundary": "review-response accounting for finite deterministic or seeded software validation only; not empirical, not public independent reproduction, not clinical, not neural, not practice-efficacy, not contemplative-attainment, and not physical qFEP evidence",
+      "control_fields": [
+        "output/data/qrf_boundary_channel_ledger.json::all_channels_relabel_across_profiles",
+        "output/data/qrf_boundary_channel_ledger.json::all_controls_pass",
+        "output/data/qrf_boundary_channel_ledger.json::all_evidence_objects_invariant",
+        "output/data/qrf_boundary_channel_ledger.json::all_profiles_have_sector_labels",
+        "output/data/qrf_boundary_channel_ledger.json::channel_ids_exact_b0_to_b5",
+        "output/data/qrf_boundary_channel_ledger.json::negative_control_fails",
+        "output/data/qrf_boundary_channel_ledger.json::source_equations_7_to_10_declared",
+        "output/data/qrf_boundary_indistinguishability.json::negative_control_fails"
+      ],
+      "figure_id": "qrf_sector_situation",
+      "parameter_fields": [],
+      "path": "output/figures/qrf_sector_situation.png",
+      "result_counts": {
+        "output/data/qrf_boundary_channel_ledger.json": {
+          "channel_count": 6,
+          "profile_count": 3
+        },
+        "output/data/qrf_boundary_indistinguishability.json": {
+          "channel_count": 6,
+          "deployment_count": 3
+        }
+      },
+      "source_artifact_count": 2,
+      "source_artifacts": [
+        "output/data/qrf_boundary_channel_ledger.json",
+        "output/data/qrf_boundary_indistinguishability.json"
+      ],
+      "source_metadata": [
+        {
+          "control_fields": [
+            "all_channels_relabel_across_profiles",
+            "all_controls_pass",
+            "all_evidence_objects_invariant",
+            "all_profiles_have_sector_labels",
+            "channel_ids_exact_b0_to_b5",
+            "negative_control_fails",
+            "source_equations_7_to_10_declared"
+          ],
+          "exists": true,
+          "parameter_fields": [],
+          "result_counts": {
+            "channel_count": 6,
+            "profile_count": 3
+          },
+          "source_artifact": "output/data/qrf_boundary_channel_ledger.json"
+        },
+        {
+          "control_fields": [
+            "negative_control_fails"
+          ],
+          "exists": true,
+          "parameter_fields": [],
+          "result_counts": {
+            "channel_count": 6,
+            "deployment_count": 3
+          },
+          "source_artifact": "output/data/qrf_boundary_indistinguishability.json"
+        }
+      ],
+      "traceable": true
+    },
+    {
+      "claim_boundary": "review-response accounting for finite deterministic or seeded software validation only; not empirical, not public independent reproduction, not clinical, not neural, not practice-efficacy, not contemplative-attainment, and not physical qFEP evidence",
+      "control_fields": [
+        "output/data/qrf_boundary_indistinguishability.json::negative_control_fails"
+      ],
+      "figure_id": "boundary_use_vs_ontology",
+      "parameter_fields": [],
+      "path": "output/figures/boundary_use_vs_ontology.png",
+      "result_counts": {
+        "output/data/qrf_boundary_indistinguishability.json": {
+          "channel_count": 6,
+          "deployment_count": 3
+        }
+      },
+      "source_artifact_count": 1,
+      "source_artifacts": [
+        "output/data/qrf_boundary_indistinguishability.json"
+      ],
+      "source_metadata": [
+        {
+          "control_fields": [
+            "negative_control_fails"
+          ],
+          "exists": true,
+          "parameter_fields": [],
+          "result_counts": {
+            "channel_count": 6,
+            "deployment_count": 3
+          },
+          "source_artifact": "output/data/qrf_boundary_indistinguishability.json"
+        }
+      ],
+      "traceable": true
+    },
+    {
+      "claim_boundary": "review-response accounting for finite deterministic or seeded software validation only; not empirical, not public independent reproduction, not clinical, not neural, not practice-efficacy, not contemplative-attainment, and not physical qFEP evidence",
+      "control_fields": [
+        "output/data/bmr_sweep.json::high_access_prunes",
+        "output/data/separation_prior_emergence_audit.json::accuracy_gain_monotone_in_empowerment",
+        "output/data/separation_prior_emergence_audit.json::action_shuffle_collapses_factored_advantage",
+        "output/data/separation_prior_emergence_audit.json::all_controls_pass",
+        "output/data/separation_prior_emergence_audit.json::factored_beats_unfactored_at_high_empowerment",
+        "output/data/separation_prior_emergence_audit.json::factored_does_not_beat_unfactored_at_zero_empowerment",
+        "output/data/separation_prior_emergence_audit.json::planted_full_contingency_detected"
+      ],
+      "figure_id": "separation_prior_net_value",
+      "parameter_fields": [],
+      "path": "output/figures/separation_prior_net_value.png",
+      "result_counts": {
+        "output/data/bmr_sweep.json": {
+          "row_count": 45
+        },
+        "output/data/separation_prior_emergence_audit.json": {
+          "row_count": 5
+        }
+      },
+      "source_artifact_count": 2,
+      "source_artifacts": [
+        "output/data/bmr_sweep.json",
+        "output/data/separation_prior_emergence_audit.json"
+      ],
+      "source_metadata": [
+        {
+          "control_fields": [
+            "high_access_prunes"
+          ],
+          "exists": true,
+          "parameter_fields": [],
+          "result_counts": {
+            "row_count": 45
+          },
+          "source_artifact": "output/data/bmr_sweep.json"
+        },
+        {
+          "control_fields": [
+            "accuracy_gain_monotone_in_empowerment",
+            "action_shuffle_collapses_factored_advantage",
+            "all_controls_pass",
+            "factored_beats_unfactored_at_high_empowerment",
+            "factored_does_not_beat_unfactored_at_zero_empowerment",
+            "planted_full_contingency_detected"
+          ],
+          "exists": true,
+          "parameter_fields": [],
+          "result_counts": {
+            "row_count": 5
+          },
+          "source_artifact": "output/data/separation_prior_emergence_audit.json"
+        }
+      ],
+      "traceable": true
+    },
+    {
+      "claim_boundary": "review-response accounting for finite deterministic or seeded software validation only; not empirical, not public independent reproduction, not clinical, not neural, not practice-efficacy, not contemplative-attainment, and not physical qFEP evidence",
+      "control_fields": [
+        "output/data/multipartite_witness_suite_audit.json::all_controls_pass",
+        "output/data/multipartite_witness_suite_audit.json::all_fixtures_valid_density",
+        "output/data/multipartite_witness_suite_audit.json::asymmetric_cuts_match_expected_pattern",
+        "output/data/multipartite_witness_suite_audit.json::detection_matches_expectation",
+        "output/data/multipartite_witness_suite_audit.json::ghz_entangled_across_every_bipartition",
+        "output/data/multipartite_witness_suite_audit.json::qudit_entangled_detected",
+        "output/data/multipartite_witness_suite_audit.json::separable_controls_not_detected",
+        "output/data/multipartite_witness_suite_audit.json::w_state_entangled_across_every_bipartition"
+      ],
+      "figure_id": "multipartite_witness_negativity",
+      "parameter_fields": [],
+      "path": "output/figures/multipartite_witness_negativity.png",
+      "result_counts": {
+        "output/data/multipartite_witness_suite_audit.json": {
+          "fixture_count": 10,
+          "row_count": 10
+        }
+      },
+      "source_artifact_count": 1,
+      "source_artifacts": [
+        "output/data/multipartite_witness_suite_audit.json"
+      ],
+      "source_metadata": [
+        {
+          "control_fields": [
+            "all_controls_pass",
+            "all_fixtures_valid_density",
+            "asymmetric_cuts_match_expected_pattern",
+            "detection_matches_expectation",
+            "ghz_entangled_across_every_bipartition",
+            "qudit_entangled_detected",
+            "separable_controls_not_detected",
+            "w_state_entangled_across_every_bipartition"
+          ],
+          "exists": true,
+          "parameter_fields": [],
+          "result_counts": {
+            "fixture_count": 10,
+            "row_count": 10
+          },
+          "source_artifact": "output/data/multipartite_witness_suite_audit.json"
+        }
+      ],
+      "traceable": true
+    },
+    {
+      "claim_boundary": "review-response accounting for finite deterministic or seeded software validation only; not empirical, not public independent reproduction, not clinical, not neural, not practice-efficacy, not contemplative-attainment, and not physical qFEP evidence",
+      "control_fields": [
+        "output/data/tensor_network_benchmark_audit.json::all_controls_pass",
+        "output/data/tensor_network_benchmark_audit.json::exact_mps_reconstructs_every_state",
+        "output/data/tensor_network_benchmark_audit.json::ghz_bond_dimension_stays_two_with_scaling",
+        "output/data/tensor_network_benchmark_audit.json::max_bond_matches_expected",
+        "output/data/tensor_network_benchmark_audit.json::truncation_to_one_hurts_entangled",
+        "output/data/tensor_network_benchmark_audit.json::truncation_to_one_lossless_for_product"
+      ],
+      "figure_id": "tensor_network_scaling",
+      "parameter_fields": [],
+      "path": "output/figures/tensor_network_scaling.png",
+      "result_counts": {
+        "output/data/tensor_network_benchmark_audit.json": {
+          "fixture_count": 6,
+          "row_count": 6
+        }
+      },
+      "source_artifact_count": 1,
+      "source_artifacts": [
+        "output/data/tensor_network_benchmark_audit.json"
+      ],
+      "source_metadata": [
+        {
+          "control_fields": [
+            "all_controls_pass",
+            "exact_mps_reconstructs_every_state",
+            "ghz_bond_dimension_stays_two_with_scaling",
+            "max_bond_matches_expected",
+            "truncation_to_one_hurts_entangled",
+            "truncation_to_one_lossless_for_product"
+          ],
+          "exists": true,
+          "parameter_fields": [],
+          "result_counts": {
+            "fixture_count": 6,
+            "row_count": 6
+          },
+          "source_artifact": "output/data/tensor_network_benchmark_audit.json"
+        }
+      ],
+      "traceable": true
+    },
+    {
+      "claim_boundary": "review-response accounting for finite deterministic or seeded software validation only; not empirical, not public independent reproduction, not clinical, not neural, not practice-efficacy, not contemplative-attainment, and not physical qFEP evidence",
+      "control_fields": [
+        "output/data/collision_model_thermalization_audit.json::all_controls_pass",
+        "output/data/collision_model_thermalization_audit.json::all_steps_positive_semidefinite",
+        "output/data/collision_model_thermalization_audit.json::all_steps_trace_preserving",
+        "output/data/collision_model_thermalization_audit.json::coupled_collisions_relax_toward_ancilla",
+        "output/data/collision_model_thermalization_audit.json::distance_monotone_nonincreasing",
+        "output/data/collision_model_thermalization_audit.json::zero_coupling_leaves_system_unchanged"
+      ],
+      "figure_id": "collision_model_relaxation",
+      "parameter_fields": [],
+      "path": "output/figures/collision_model_relaxation.png",
+      "result_counts": {
+        "output/data/collision_model_thermalization_audit.json": {
+          "row_count": 3,
+          "step_count": 30
+        }
+      },
+      "source_artifact_count": 1,
+      "source_artifacts": [
+        "output/data/collision_model_thermalization_audit.json"
+      ],
+      "source_metadata": [
+        {
+          "control_fields": [
+            "all_controls_pass",
+            "all_steps_positive_semidefinite",
+            "all_steps_trace_preserving",
+            "coupled_collisions_relax_toward_ancilla",
+            "distance_monotone_nonincreasing",
+            "zero_coupling_leaves_system_unchanged"
+          ],
+          "exists": true,
+          "parameter_fields": [],
+          "result_counts": {
+            "row_count": 3,
+            "step_count": 30
+          },
+          "source_artifact": "output/data/collision_model_thermalization_audit.json"
+        }
+      ],
+      "traceable": true
+    },
+    {
+      "claim_boundary": "review-response accounting for finite deterministic or seeded software validation only; not empirical, not public independent reproduction, not clinical, not neural, not practice-efficacy, not contemplative-attainment, and not physical qFEP evidence",
+      "control_fields": [
+        "output/data/n_cycle_contextuality_library_audit.json::all_controls_pass",
+        "output/data/n_cycle_contextuality_library_audit.json::even_cycles_noncontextual_at_quantum_correlation",
+        "output/data/n_cycle_contextuality_library_audit.json::odd_cycles_contextual_at_quantum_correlation",
+        "output/data/n_cycle_contextuality_library_audit.json::perfect_anticorrelation_matches_two_colorability",
+        "output/data/n_cycle_contextuality_library_audit.json::uncorrelated_always_noncontextual"
+      ],
+      "figure_id": "n_cycle_contextuality_panel",
+      "parameter_fields": [],
+      "path": "output/figures/n_cycle_contextuality_panel.png",
+      "result_counts": {
+        "output/data/n_cycle_contextuality_library_audit.json": {
+          "cycle_count": 5,
+          "row_count": 5
+        }
+      },
+      "source_artifact_count": 1,
+      "source_artifacts": [
+        "output/data/n_cycle_contextuality_library_audit.json"
+      ],
+      "source_metadata": [
+        {
+          "control_fields": [
+            "all_controls_pass",
+            "even_cycles_noncontextual_at_quantum_correlation",
+            "odd_cycles_contextual_at_quantum_correlation",
+            "perfect_anticorrelation_matches_two_colorability",
+            "uncorrelated_always_noncontextual"
+          ],
+          "exists": true,
+          "parameter_fields": [],
+          "result_counts": {
+            "cycle_count": 5,
+            "row_count": 5
+          },
+          "source_artifact": "output/data/n_cycle_contextuality_library_audit.json"
+        }
+      ],
+      "traceable": true
+    },
+    {
+      "claim_boundary": "review-response accounting for finite deterministic or seeded software validation only; not empirical, not public independent reproduction, not clinical, not neural, not practice-efficacy, not contemplative-attainment, and not physical qFEP evidence",
+      "control_fields": [
+        "output/data/data_processing_monotonicity_audit.json::all_controls_pass",
+        "output/data/data_processing_monotonicity_audit.json::cptp_channels_are_completely_positive",
+        "output/data/data_processing_monotonicity_audit.json::cptp_channels_are_trace_preserving",
+        "output/data/data_processing_monotonicity_audit.json::cptp_channels_do_not_increase_relative_entropy",
+        "output/data/data_processing_monotonicity_audit.json::cptp_channels_do_not_increase_trace_distance",
+        "output/data/data_processing_monotonicity_audit.json::selective_postselection_can_increase_trace_distance",
+        "output/data/data_processing_monotonicity_audit.json::transpose_map_is_not_completely_positive"
+      ],
+      "figure_id": "data_processing_monotonicity",
+      "parameter_fields": [],
+      "path": "output/figures/data_processing_monotonicity.png",
+      "result_counts": {
+        "output/data/data_processing_monotonicity_audit.json": {
+          "channel_row_count": 27,
+          "row_count": 27
+        }
+      },
+      "source_artifact_count": 1,
+      "source_artifacts": [
+        "output/data/data_processing_monotonicity_audit.json"
+      ],
+      "source_metadata": [
+        {
+          "control_fields": [
+            "all_controls_pass",
+            "cptp_channels_are_completely_positive",
+            "cptp_channels_are_trace_preserving",
+            "cptp_channels_do_not_increase_relative_entropy",
+            "cptp_channels_do_not_increase_trace_distance",
+            "selective_postselection_can_increase_trace_distance",
+            "transpose_map_is_not_completely_positive"
+          ],
+          "exists": true,
+          "parameter_fields": [],
+          "result_counts": {
+            "channel_row_count": 27,
+            "row_count": 27
+          },
+          "source_artifact": "output/data/data_processing_monotonicity_audit.json"
+        }
+      ],
+      "traceable": true
+    },
+    {
+      "claim_boundary": "review-response accounting for finite deterministic or seeded software validation only; not empirical, not public independent reproduction, not clinical, not neural, not practice-efficacy, not contemplative-attainment, and not physical qFEP evidence",
+      "control_fields": [
+        "output/data/markov_blanket_discovery_audit.json::all_controls_pass",
+        "output/data/markov_blanket_discovery_audit.json::dense_precision_has_no_nontrivial_blanket",
+        "output/data/markov_blanket_discovery_audit.json::epsilon_coupling_breaks_exact_separation",
+        "output/data/markov_blanket_discovery_audit.json::internal_external_conditionally_independent",
+        "output/data/markov_blanket_discovery_audit.json::marginal_covariance_threshold_cannot_recover_blanket",
+        "output/data/markov_blanket_discovery_audit.json::partial_correlation_threshold_also_recovers_blanket",
+        "output/data/markov_blanket_discovery_audit.json::precision_recovers_more_reliably_than_marginal_in_ensemble",
+        "output/data/markov_blanket_discovery_audit.json::precision_support_recovers_blanket"
+      ],
+      "figure_id": "markov_blanket_discovery",
+      "parameter_fields": [],
+      "path": "output/figures/markov_blanket_discovery.png",
+      "result_counts": {
+        "output/data/markov_blanket_discovery_audit.json": {
+          "perturbation_ensemble.positive_definite_count": 200,
+          "perturbation_ensemble.sample_count": 200,
+          "variable_count": 6
+        }
+      },
+      "source_artifact_count": 1,
+      "source_artifacts": [
+        "output/data/markov_blanket_discovery_audit.json"
+      ],
+      "source_metadata": [
+        {
+          "control_fields": [
+            "all_controls_pass",
+            "dense_precision_has_no_nontrivial_blanket",
+            "epsilon_coupling_breaks_exact_separation",
+            "internal_external_conditionally_independent",
+            "marginal_covariance_threshold_cannot_recover_blanket",
+            "partial_correlation_threshold_also_recovers_blanket",
+            "precision_recovers_more_reliably_than_marginal_in_ensemble",
+            "precision_support_recovers_blanket"
+          ],
+          "exists": true,
+          "parameter_fields": [],
+          "result_counts": {
+            "perturbation_ensemble.positive_definite_count": 200,
+            "perturbation_ensemble.sample_count": 200,
+            "variable_count": 6
+          },
+          "source_artifact": "output/data/markov_blanket_discovery_audit.json"
+        }
+      ],
+      "traceable": true
+    }
+  ],
+  "rows_without_sources": [],
+  "schema": "realizing_emptiness.figure_parameter_ledger.v1"
+}

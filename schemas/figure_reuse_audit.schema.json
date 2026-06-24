@@ -1,0 +1,16 @@
+{
+  "$id": "realizing_emptiness.figure_reuse_audit.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Realizing Emptiness Figure Reuse Audit",
+  "type": "object",
+  "required": ["schema", "image_reference_count", "unique_image_path_count", "rows", "duplicate_supplement_paths", "ok"],
+  "properties": {
+    "schema": {"const": "realizing_emptiness.figure_reuse_audit.v1"},
+    "image_reference_count": {"type": "integer", "minimum": 1},
+    "unique_image_path_count": {"type": "integer", "minimum": 1},
+    "rows": {"type": "array", "items": {"type": "object"}},
+    "duplicate_supplement_paths": {"type": "array", "maxItems": 0},
+    "ok": {"const": true}
+  },
+  "additionalProperties": false
+}

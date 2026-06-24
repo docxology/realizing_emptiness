@@ -1,0 +1,16 @@
+{
+  "$id": "realizing_emptiness.bmr_sweep.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Realizing Emptiness BMR Sweep",
+  "type": "object",
+  "required": ["schema", "row_count", "rows", "any_pruning", "claim_boundary"],
+  "properties": {
+    "schema": {"const": "realizing_emptiness.bmr_sweep.v1"},
+    "row_count": {"type": "integer", "minimum": 1},
+    "rows": {"type": "array", "minItems": 1, "items": {"type": "object"}},
+    "any_pruning": {"type": "boolean"},
+    "high_access_prunes": {"type": "boolean"},
+    "claim_boundary": {"type": "string", "pattern": "not empirical|simulation"}
+  },
+  "additionalProperties": true
+}

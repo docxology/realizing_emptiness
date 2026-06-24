@@ -1,0 +1,19 @@
+{
+  "$id": "realizing_emptiness.validation_dependency_graph.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Realizing Emptiness Validation Dependency Graph",
+  "type": "object",
+  "required": ["schema", "node_count", "edge_count", "nodes", "edges", "required_quantum_nodes", "controls", "all_controls_pass", "claim_boundary"],
+  "properties": {
+    "schema": {"const": "realizing_emptiness.validation_dependency_graph.v1"},
+    "node_count": {"type": "integer", "minimum": 20},
+    "edge_count": {"type": "integer", "minimum": 20},
+    "nodes": {"type": "array", "minItems": 20, "items": {"type": "string"}},
+    "edges": {"type": "array", "minItems": 20, "items": {"type": "array", "minItems": 2, "maxItems": 2, "items": {"type": "string"}}},
+    "required_quantum_nodes": {"type": "array", "minItems": 10, "items": {"type": "string"}},
+    "controls": {"type": "object", "additionalProperties": {"const": true}},
+    "all_controls_pass": {"const": true},
+    "claim_boundary": {"type": "string", "pattern": "not empirical"}
+  },
+  "additionalProperties": false
+}

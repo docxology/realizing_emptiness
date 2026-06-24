@@ -1,0 +1,13 @@
+{
+  "$id": "realizing_emptiness.criticality_proxy_report.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Realizing Emptiness Criticality Proxy Report",
+  "type": "object",
+  "required": ["schema", "label", "claim_boundary"],
+  "properties": {
+    "schema": {"const": "realizing_emptiness.criticality_proxy_report.v1"},
+    "label": {"const": "single_trace_diagnostic_not_empirical_neural_measure"},
+    "claim_boundary": {"type": "string", "pattern": "not evidence|not empirical"}
+  },
+  "additionalProperties": true
+}

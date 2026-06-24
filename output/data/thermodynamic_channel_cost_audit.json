@@ -1,0 +1,175 @@
+{
+  "all_controls_pass": true,
+  "channel_count": 4,
+  "claim_boundary": "finite deterministic roadmap-engine simulation; not empirical evidence, not a physical qFEP realization, and not evidence for clinical, contemplative, or neural outcomes",
+  "controls": {
+    "all_declared_channels_cptp": true,
+    "erasure_has_positive_cost_for_mixed_inputs": true,
+    "identity_has_zero_landauer_cost": true,
+    "non_cptp_controls_rejected": true,
+    "output_density_matrices_valid": true
+  },
+  "invalid_channel_controls": [
+    {
+      "cptp_error": 0.2,
+      "id": "scaled_identity_non_cptp",
+      "passes": true,
+      "reason": "Non-CPTP channel is rejected before entropy-cost interpretation."
+    },
+    {
+      "cptp_error": 1.0,
+      "id": "incomplete_projection_non_cptp",
+      "passes": true,
+      "reason": "Non-CPTP channel is rejected before entropy-cost interpretation."
+    }
+  ],
+  "row_count": 12,
+  "rows": [
+    {
+      "channel_id": "identity_control",
+      "cptp_error": 0.0,
+      "entropy_change_bits": 0.0,
+      "entropy_in_bits": 1.0,
+      "entropy_out_bits": 1.0,
+      "erased_entropy_bits": 0.0,
+      "landauer_lower_bound_kbt": 0.0,
+      "min_output_eigenvalue": 0.5,
+      "state_id": "maximally_mixed",
+      "trace_out": 1.0
+    },
+    {
+      "channel_id": "identity_control",
+      "cptp_error": 0.0,
+      "entropy_change_bits": 0.0,
+      "entropy_in_bits": 0.7219280949,
+      "entropy_out_bits": 0.7219280949,
+      "erased_entropy_bits": 0.0,
+      "landauer_lower_bound_kbt": 0.0,
+      "min_output_eigenvalue": 0.2,
+      "state_id": "biased_mixed",
+      "trace_out": 1.0
+    },
+    {
+      "channel_id": "identity_control",
+      "cptp_error": 0.0,
+      "entropy_change_bits": 0.0,
+      "entropy_in_bits": -0.0,
+      "entropy_out_bits": -0.0,
+      "erased_entropy_bits": 0.0,
+      "landauer_lower_bound_kbt": 0.0,
+      "min_output_eigenvalue": 0.0,
+      "state_id": "pure_zero",
+      "trace_out": 1.0
+    },
+    {
+      "channel_id": "erasure_to_zero",
+      "cptp_error": 0.0,
+      "entropy_change_bits": -1.0,
+      "entropy_in_bits": 1.0,
+      "entropy_out_bits": -0.0,
+      "erased_entropy_bits": 1.0,
+      "landauer_lower_bound_kbt": 0.6931471806,
+      "min_output_eigenvalue": 0.0,
+      "state_id": "maximally_mixed",
+      "trace_out": 1.0
+    },
+    {
+      "channel_id": "erasure_to_zero",
+      "cptp_error": 0.0,
+      "entropy_change_bits": -0.7219280949,
+      "entropy_in_bits": 0.7219280949,
+      "entropy_out_bits": -0.0,
+      "erased_entropy_bits": 0.7219280949,
+      "landauer_lower_bound_kbt": 0.5004024235,
+      "min_output_eigenvalue": 0.0,
+      "state_id": "biased_mixed",
+      "trace_out": 1.0
+    },
+    {
+      "channel_id": "erasure_to_zero",
+      "cptp_error": 0.0,
+      "entropy_change_bits": 0.0,
+      "entropy_in_bits": -0.0,
+      "entropy_out_bits": -0.0,
+      "erased_entropy_bits": 0.0,
+      "landauer_lower_bound_kbt": 0.0,
+      "min_output_eigenvalue": 0.0,
+      "state_id": "pure_zero",
+      "trace_out": 1.0
+    },
+    {
+      "channel_id": "half_dephasing",
+      "cptp_error": 0.0,
+      "entropy_change_bits": 0.0,
+      "entropy_in_bits": 1.0,
+      "entropy_out_bits": 1.0,
+      "erased_entropy_bits": 0.0,
+      "landauer_lower_bound_kbt": 0.0,
+      "min_output_eigenvalue": 0.5,
+      "state_id": "maximally_mixed",
+      "trace_out": 1.0
+    },
+    {
+      "channel_id": "half_dephasing",
+      "cptp_error": 0.0,
+      "entropy_change_bits": 0.0,
+      "entropy_in_bits": 0.7219280949,
+      "entropy_out_bits": 0.7219280949,
+      "erased_entropy_bits": 0.0,
+      "landauer_lower_bound_kbt": 0.0,
+      "min_output_eigenvalue": 0.2,
+      "state_id": "biased_mixed",
+      "trace_out": 1.0
+    },
+    {
+      "channel_id": "half_dephasing",
+      "cptp_error": 0.0,
+      "entropy_change_bits": 0.0,
+      "entropy_in_bits": -0.0,
+      "entropy_out_bits": 0.0,
+      "erased_entropy_bits": 0.0,
+      "landauer_lower_bound_kbt": 0.0,
+      "min_output_eigenvalue": 0.0,
+      "state_id": "pure_zero",
+      "trace_out": 1.0
+    },
+    {
+      "channel_id": "bit_flip_noise",
+      "cptp_error": 0.0,
+      "entropy_change_bits": 0.0,
+      "entropy_in_bits": 1.0,
+      "entropy_out_bits": 1.0,
+      "erased_entropy_bits": 0.0,
+      "landauer_lower_bound_kbt": 0.0,
+      "min_output_eigenvalue": 0.5,
+      "state_id": "maximally_mixed",
+      "trace_out": 1.0
+    },
+    {
+      "channel_id": "bit_flip_noise",
+      "cptp_error": 0.0,
+      "entropy_change_bits": 0.1467931515,
+      "entropy_in_bits": 0.7219280949,
+      "entropy_out_bits": 0.8687212463,
+      "erased_entropy_bits": 0.0,
+      "landauer_lower_bound_kbt": 0.0,
+      "min_output_eigenvalue": 0.29,
+      "state_id": "biased_mixed",
+      "trace_out": 1.0
+    },
+    {
+      "channel_id": "bit_flip_noise",
+      "cptp_error": 0.0,
+      "entropy_change_bits": 0.6098403047,
+      "entropy_in_bits": -0.0,
+      "entropy_out_bits": 0.6098403047,
+      "erased_entropy_bits": 0.0,
+      "landauer_lower_bound_kbt": 0.0,
+      "min_output_eigenvalue": 0.15,
+      "state_id": "pure_zero",
+      "trace_out": 1.0
+    }
+  ],
+  "schema": "realizing_emptiness.thermodynamic_channel_cost_audit.v1",
+  "state_count": 3
+}

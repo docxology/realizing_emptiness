@@ -1,0 +1,36 @@
+{
+  "$id": "realizing_emptiness.qrf_frame_covariance_toy_audit.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Realizing Emptiness QRF Frame Covariance Toy Audit",
+  "type": "object",
+  "required": ["schema", "row_count", "base_probability", "base_density_validity", "rows", "controls", "all_controls_pass", "claim_boundary"],
+  "properties": {
+    "schema": {"const": "realizing_emptiness.qrf_frame_covariance_toy_audit.v1"},
+    "row_count": {"type": "integer", "minimum": 5},
+    "base_probability": {"type": "array", "minItems": 4, "maxItems": 4, "items": {"type": "number", "minimum": 0}},
+    "base_density_validity": {"type": "object", "required": ["valid_density_matrix"], "properties": {"valid_density_matrix": {"const": true}}, "additionalProperties": true},
+    "rows": {
+      "type": "array",
+      "minItems": 5,
+      "items": {
+        "type": "object",
+        "required": ["id", "admissible", "unitary_error", "spectrum_drift", "reduced_entropy_multiset_drift_bits", "probability_mass_error", "probability_spectrum_drift", "accepted"],
+        "properties": {
+          "id": {"type": "string"},
+          "admissible": {"type": "boolean"},
+          "unitary_error": {"type": "number", "minimum": 0},
+          "spectrum_drift": {"type": "number", "minimum": 0},
+          "reduced_entropy_multiset_drift_bits": {"type": "number", "minimum": 0},
+          "probability_mass_error": {"type": "number", "minimum": 0},
+          "probability_spectrum_drift": {"type": "number", "minimum": 0},
+          "accepted": {"type": "boolean"}
+        },
+        "additionalProperties": true
+      }
+    },
+    "controls": {"type": "object", "additionalProperties": {"const": true}},
+    "all_controls_pass": {"const": true},
+    "claim_boundary": {"type": "string", "pattern": "not empirical"}
+  },
+  "additionalProperties": false
+}

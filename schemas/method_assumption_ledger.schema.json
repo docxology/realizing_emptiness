@@ -1,0 +1,17 @@
+{
+  "$id": "realizing_emptiness.method_assumption_ledger.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Realizing Emptiness Method Assumption Ledger",
+  "type": "object",
+  "required": ["schema", "method_count", "rows", "all_methods_have_hard_constraints", "all_methods_have_assumptions", "all_methods_have_evidence_ceiling", "claim_boundary"],
+  "properties": {
+    "schema": {"const": "realizing_emptiness.method_assumption_ledger.v1"},
+    "method_count": {"type": "integer", "minimum": 1},
+    "rows": {"type": "array", "minItems": 1, "items": {"type": "object"}},
+    "all_methods_have_hard_constraints": {"const": true},
+    "all_methods_have_assumptions": {"const": true},
+    "all_methods_have_evidence_ceiling": {"const": true},
+    "claim_boundary": {"type": "string", "pattern": "not empirical"}
+  },
+  "additionalProperties": false
+}

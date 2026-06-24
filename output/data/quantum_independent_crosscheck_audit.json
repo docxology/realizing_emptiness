@@ -1,0 +1,65 @@
+{
+  "all_controls_pass": true,
+  "claim_boundary": "review-response accounting for finite deterministic or seeded software validation only; not empirical, not public independent reproduction, not clinical, not neural, not practice-efficacy, not contemplative-attainment, and not physical qFEP evidence",
+  "computed": {
+    "bell_chsh": 2.828427124752,
+    "local_chsh_bound": 2.0,
+    "product_control_chsh": 1.414213562376,
+    "tsirelson_bound": 2.828427124746
+  },
+  "controls": {
+    "bell_polytope_infeasible_independent": true,
+    "bell_tsirelson_crosscheck": true,
+    "claim_boundary_declared": true,
+    "independent_assignment_count_16": true,
+    "perturbed_expected_value_control_fails": true,
+    "product_local_crosscheck": true,
+    "product_polytope_feasible_independent": true
+  },
+  "method": "closed-form CHSH expectation sums plus independent local-polytope linear programs over deterministic assignments",
+  "rows": [
+    {
+      "check": "product_locality",
+      "computed": 1.414213562376,
+      "expected_boundary": "<= 2.0",
+      "passes": true
+    },
+    {
+      "check": "bell_tsirelson",
+      "computed": 2.828427124752,
+      "expected_boundary": "2*sqrt(2)",
+      "passes": true
+    },
+    {
+      "check": "product_local_polytope",
+      "computed": {
+        "assignment_count": 16,
+        "feasible": true,
+        "max_abs_residual": 0.0,
+        "min_l1_residual": 0.0,
+        "model": "product_control"
+      },
+      "expected_boundary": "feasible",
+      "passes": true
+    },
+    {
+      "check": "bell_local_polytope",
+      "computed": {
+        "assignment_count": 16,
+        "feasible": false,
+        "max_abs_residual": 0.207106781188,
+        "min_l1_residual": 0.828427124752,
+        "model": "bell_measurement_cover"
+      },
+      "expected_boundary": "infeasible",
+      "passes": true
+    },
+    {
+      "check": "perturbed_expected_value_control",
+      "computed": 2.953427124746,
+      "expected_boundary": "<= 2*sqrt(2)",
+      "passes": false
+    }
+  ],
+  "schema": "realizing_emptiness.quantum_independent_crosscheck_audit.v1"
+}

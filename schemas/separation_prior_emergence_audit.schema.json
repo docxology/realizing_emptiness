@@ -1,0 +1,31 @@
+{
+  "$id": "realizing_emptiness.separation_prior_emergence_audit.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Separation Prior Emergence Audit",
+  "type": "object",
+  "required": [
+    "schema",
+    "controls",
+    "all_controls_pass",
+    "claim_boundary"
+  ],
+  "properties": {
+    "schema": {
+      "const": "realizing_emptiness.separation_prior_emergence_audit.v1"
+    },
+    "controls": {
+      "type": "object",
+      "additionalProperties": {
+        "const": true
+      }
+    },
+    "all_controls_pass": {
+      "const": true
+    },
+    "claim_boundary": {
+      "type": "string",
+      "pattern": "not a developmental"
+    }
+  },
+  "additionalProperties": true
+}

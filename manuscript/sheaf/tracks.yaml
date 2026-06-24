@@ -1,0 +1,119 @@
+schema: realizing_emptiness.sheaf_tracks.v1
+tracks:
+  - id: paper_source
+    label: Paper source
+    order: 1
+  - id: qfep
+    label: qFEP formalism
+    order: 2
+  - id: scholarship
+    label: Scholarship source matrix
+    order: 3
+  - id: qrf
+    label: QRF deployment
+    order: 4
+  - id: separation_prior
+    label: Separation prior
+    order: 5
+  - id: bmr
+    label: Bayesian model reduction
+    order: 6
+  - id: pymdp
+    label: pymdp active inference
+    order: 7
+  - id: criticality
+    label: Seeded criticality indicators
+    order: 8
+  - id: compassion_proxy
+    label: Compassion proxy
+    order: 9
+  - id: practice_protocols
+    label: Practice protocols
+    order: 10
+  - id: visualization
+    label: Visual evidence
+    order: 11
+  - id: validation
+    label: Reproducibility, gates, and meta-manuscript record
+    order: 17
+  - id: evidence_ceiling
+    label: Evidence ceilings
+    order: 13
+  - id: limitations
+    label: Limitations
+    order: 14
+  - id: contemplative_inquiry
+    label: Contemplative inquiry
+    order: 15
+  - id: symbol_glossary
+    label: Symbol glossary
+    order: 16
+section_titles:
+  introduction:
+    paper_source: "No-Self-Evidence as a Finite Boundary-Screen Problem"
+    limitations: "Finite Surrogates over Literal Quantum Simulation"
+  methods:
+    qfep: "Equation Registry and Finite qFEP Engines"
+    qrf: "Finite QRF Boundary Screen and Relabeling Rules"
+    separation_prior: "Separation Prior as a Restricted QRF Subspace"
+    bmr: "Bayesian Model Reduction over the Separation Prior"
+    pymdp: "Profile-Specific pymdp Generative Models"
+  results:
+    qrf: "Boundary Geometry and QRF Indistinguishability"
+    qfep: "Finite Quantum Scope and Blocked Claims"
+    bmr: "BMR Pruning and Sensitivity Behavior"
+    pymdp: "pymdp Profiles and Policy Trace"
+  discussion:
+    paper_source: "What the Software Boundary Establishes"
+    scholarship: "Source Roles Prevent Claim Inflation"
+    practice_protocols: "Practice Interfaces Remain Outcome-Independent"
+    criticality: "Criticality Remains a Proxy Vocabulary"
+    compassion_proxy: "Care and Compassion Stay Normatively Bounded"
+    evidence_ceiling: "Evidence Required for Stronger Claims"
+    limitations: "Finite Engines Do Not Collapse the Evidence Boundary"
+  conclusion:
+    paper_source: "What the Finite Surrogates Establish"
+    qfep: "Validated Finite Software Contributions"
+    evidence_ceiling: "The Evidence Boundary Left Uncrossed"
+    limitations: "Source-Faithful Platform for Future Evidence"
+  supplement:
+    symbol_glossary: "Symbol and Variable Glossary"
+    qfep: "Supplemental Finite Quantum and Contextuality Audits"
+    criticality: "Criticality Signatures with Null Controls"
+    compassion_proxy: "Compassion Scope as a Precision-Weighted Policy Proxy"
+    practice_protocols: "Embodied-Practice Protocols as Bounded Model Interventions"
+    contemplative_inquiry: "Contemplative Inquiry as Progressive Opacification"
+    validation: "Reproducibility Gates and Meta-Manuscript Record"
+section_anchors:
+  methods:
+    qfep: "sec:methods-roadmap-quantum-engines"
+    qrf: "sec:methods-finite-qrf-boundary-screen"
+    separation_prior: "sec:methods-separation-prior-subspace"
+    bmr: "sec:methods-bmr-separation-prior"
+    pymdp: "sec:methods-pymdp-generative-models"
+  results:
+    qrf: "sec:results-qrf-boundary-geometry"
+    qfep: "sec:results-finite-quantum-scope"
+    bmr: "sec:results-bmr-sensitivity"
+    pymdp: "sec:results-pymdp-policy-trace"
+  discussion:
+    paper_source: "sec:discussion-no-self-evidence-boundary"
+    scholarship: "sec:discussion-source-role-boundaries"
+    practice_protocols: "sec:discussion-practice-interface-boundaries"
+    criticality: "sec:discussion-criticality-proxy-boundary"
+    compassion_proxy: "sec:discussion-compassion-boundary"
+    evidence_ceiling: "sec:discussion-evidence-ceilings"
+    limitations: "sec:discussion-finite-engine-limits"
+  conclusion:
+    paper_source: "sec:conclusion-finite-surrogates-establish"
+    qfep: "sec:conclusion-validated-contributions"
+    evidence_ceiling: "sec:conclusion-evidence-boundary"
+    limitations: "sec:conclusion-source-faithful-platform"
+  supplement:
+    symbol_glossary: "sec:supplement-symbol-glossary"
+    qfep: "sec:supplement-finite-quantum-contextuality-audits"
+    criticality: "sec:supplement-criticality-indicators"
+    compassion_proxy: "sec:supplement-compassion-scope"
+    practice_protocols: "sec:supplement-bounded-practice-protocols"
+    contemplative_inquiry: "sec:supplement-contemplative-inquiry"
+    validation: "sec:supplement-meta-manuscript-record"

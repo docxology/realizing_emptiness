@@ -1,0 +1,548 @@
+{
+  "all_controls_pass": true,
+  "claim_boundary": "claim red-team audit over public claim locations, figure bindings, gates, and language intensity; not empirical evidence, not a physical qFEP realization, and not a clinical, neural, awakening, or practice-efficacy claim",
+  "claim_count": 15,
+  "controls": {
+    "all_claim_boundaries_complete": true,
+    "all_claims_have_artifacts_and_gates": true,
+    "all_claims_have_figure_bindings": true,
+    "all_claims_have_reader_locations": true,
+    "all_claims_have_source_roles": true,
+    "all_figure_bindings_resolve": true,
+    "all_public_claims_joined": true,
+    "all_section_anchors_resolve": true,
+    "claim_context_controls_pass": true,
+    "claim_count_matches_crosswalk": true,
+    "claim_support_audit_pass": true,
+    "evidence_ceiling_controls_pass": true,
+    "manuscript_claim_audit_pass": true,
+    "manuscript_claim_intensity_pass": true,
+    "no_reader_overclaims": true,
+    "source_argument_coverage_pass": true
+  },
+  "missing_artifacts_or_gates": [],
+  "missing_boundaries": [],
+  "missing_figure_bindings": [],
+  "missing_sections": [],
+  "missing_source_roles": [],
+  "reader_overclaims": [],
+  "risky_claim_sentences": [],
+  "rows": [
+    {
+      "allowed_interpretation": "Allowed only as local private artifact package only, not public independent reproduction: The local artifact bundle is hashed, schema-registered, and command-accounted for private release-readiness review.",
+      "artifact": "output/data/artifact_release_manifest.json",
+      "artifact_exists": true,
+      "claim_id": "artifact_release_readiness",
+      "evidence_ceiling": "local private artifact package only, not public independent reproduction",
+      "evidence_class": "implementation_boundary",
+      "failure_reasons": [],
+      "figure_bindings": [
+        "claim_context_evidence_ladder"
+      ],
+      "figure_bindings_resolve": true,
+      "future_evidence_required": "Explicit publication approval, public archive deposition, independent or blinded reproduction, and external reviewer execution before any public-release or independent-reproduction claim.",
+      "manuscript_sections": [
+        "sec:discussion-source-role-boundaries",
+        "sec:supplement-reproducibility-gates"
+      ],
+      "prohibited_inference": "Do not read local hashes, manifests, or validation commands as a public archive release, independent reproduction, empirical validation, or publication.",
+      "reader_overclaim_phrases": [],
+      "redteam_note": "Reader locations, figure bindings, source role, artifact, gate, prohibited inference, and future-evidence boundary are all present for this finite-software claim.",
+      "row_controls_pass": true,
+      "section_anchors_resolve": true,
+      "section_count": 2,
+      "source_role_count": 3,
+      "source_themes": [],
+      "support_count": 3,
+      "unresolved_figure_bindings": [],
+      "unresolved_sections": [],
+      "validation_gate": "artifact_release_manifest_ok"
+    },
+    {
+      "allowed_interpretation": "Allowed only as deterministic parameter sweep, not empirical practice evidence: When accuracy no longer depends on the separation prior, BMR favors the reduced model.",
+      "artifact": "output/data/bmr_sweep.json",
+      "artifact_exists": true,
+      "claim_id": "bmr_prunes_sigma",
+      "evidence_ceiling": "deterministic parameter sweep, not empirical practice evidence",
+      "evidence_class": "finite_sweep",
+      "failure_reasons": [],
+      "figure_bindings": [
+        "bmr_pruning_phase_diagram",
+        "evidence_ceiling_stress_matrix",
+        "claim_context_evidence_ladder"
+      ],
+      "figure_bindings_resolve": true,
+      "future_evidence_required": "Pre-registered empirical or agent-benchmark evidence linking reduced complexity to task performance and subjective reports.",
+      "manuscript_sections": [
+        "sec:discussion-evidence-ceilings",
+        "sec:methods-bmr-separation-prior",
+        "sec:results-bmr-sensitivity"
+      ],
+      "prohibited_inference": "Do not read pruning in the sweep as evidence that meditation or realization removes self-models in people.",
+      "reader_overclaim_phrases": [],
+      "redteam_note": "Reader locations, figure bindings, source role, artifact, gate, prohibited inference, and future-evidence boundary are all present for this finite-software claim.",
+      "row_controls_pass": true,
+      "section_anchors_resolve": true,
+      "section_count": 3,
+      "source_role_count": 7,
+      "source_themes": [
+        "bmr_pruning_of_sigma"
+      ],
+      "support_count": 7,
+      "unresolved_figure_bindings": [],
+      "unresolved_sections": [],
+      "validation_gate": "bmr_pruning_edges"
+    },
+    {
+      "allowed_interpretation": "Allowed only as model-scope proxy only: The compassion proxy is a modeled widening of policy scope, not a moral, clinical, or contemplative attainment metric.",
+      "artifact": "output/data/practice_protocol_map.json",
+      "artifact_exists": true,
+      "claim_id": "compassion_proxy_boundary",
+      "evidence_ceiling": "model-scope proxy only",
+      "evidence_class": "proxy_boundary",
+      "failure_reasons": [],
+      "figure_bindings": [
+        "evidence_ceiling_stress_matrix",
+        "claim_context_evidence_ladder"
+      ],
+      "figure_bindings_resolve": true,
+      "future_evidence_required": "Independent human-subject measures and normative review before any compassion or wellbeing claim.",
+      "manuscript_sections": [
+        "sec:discussion-compassion-boundary",
+        "sec:supplement-bounded-practice-protocols",
+        "sec:supplement-compassion-policy-scope"
+      ],
+      "prohibited_inference": "Do not read broadened model scope as moral virtue, compassion, clinical improvement, or contemplative attainment.",
+      "reader_overclaim_phrases": [],
+      "redteam_note": "Reader locations, figure bindings, source role, artifact, gate, prohibited inference, and future-evidence boundary are all present for this finite-software claim.",
+      "row_controls_pass": true,
+      "section_anchors_resolve": true,
+      "section_count": 3,
+      "source_role_count": 3,
+      "source_themes": [
+        "compassion_as_policy_scope"
+      ],
+      "support_count": 3,
+      "unresolved_figure_bindings": [],
+      "unresolved_sections": [],
+      "validation_gate": "practice_boundaries"
+    },
+    {
+      "allowed_interpretation": "Allowed only as seeded stochastic simulation ensemble only: Criticality-style outputs are seeded stochastic trajectory summaries with null controls that structure future empirical work but are not neural measurements.",
+      "artifact": "output/data/criticality_stochastic_ensemble.json",
+      "artifact_exists": true,
+      "claim_id": "criticality_proxy_boundary",
+      "evidence_ceiling": "seeded stochastic simulation ensemble only",
+      "evidence_class": "proxy_boundary",
+      "failure_reasons": [],
+      "figure_bindings": [
+        "criticality_stochastic_ensemble",
+        "claim_context_evidence_ladder"
+      ],
+      "figure_bindings_resolve": true,
+      "future_evidence_required": "Neural data provenance, preprocessing records, null models, and negative controls before any neural-criticality claim.",
+      "manuscript_sections": [
+        "sec:discussion-criticality-proxy-boundary",
+        "sec:supplement-criticality-proxies",
+        "sec:supplement-meta-manuscript-record"
+      ],
+      "prohibited_inference": "Do not read the simulated ensemble as a measured neural criticality regime or a biomarker of realization.",
+      "reader_overclaim_phrases": [],
+      "redteam_note": "Reader locations, figure bindings, source role, artifact, gate, prohibited inference, and future-evidence boundary are all present for this finite-software claim.",
+      "row_controls_pass": true,
+      "section_anchors_resolve": true,
+      "section_count": 3,
+      "source_role_count": 13,
+      "source_themes": [
+        "criticality_prediction_boundary"
+      ],
+      "support_count": 13,
+      "unresolved_figure_bindings": [],
+      "unresolved_sections": [],
+      "validation_gate": "criticality_stochastic_ensemble_ok"
+    },
+    {
+      "allowed_interpretation": "Allowed only as parameterized sensitivity surrogate only: Metacognitive access is modeled as a sweep parameter controlling when the separation prior becomes dispensable.",
+      "artifact": "output/data/simulation_sensitivity_grid.json",
+      "artifact_exists": true,
+      "claim_id": "metacognitive_access_model",
+      "evidence_ceiling": "parameterized sensitivity surrogate only",
+      "evidence_class": "implementation_boundary",
+      "failure_reasons": [],
+      "figure_bindings": [
+        "simulation_sensitivity_heatmap",
+        "claim_context_evidence_ladder"
+      ],
+      "figure_bindings_resolve": true,
+      "future_evidence_required": "Validated operational measures and task data if metacognitive access is tied to people or empirical agents.",
+      "manuscript_sections": [
+        "sec:discussion-practice-interface-boundaries",
+        "sec:methods-bmr-separation-prior",
+        "sec:methods-pymdp-generative-models",
+        "sec:methods-separation-prior-subspace",
+        "sec:results-bmr-sensitivity",
+        "sec:results-pymdp-policy-trace"
+      ],
+      "prohibited_inference": "Do not read the sweep parameter as a measured metacognitive trait or training outcome.",
+      "reader_overclaim_phrases": [],
+      "redteam_note": "Reader locations, figure bindings, source role, artifact, gate, prohibited inference, and future-evidence boundary are all present for this finite-software claim.",
+      "row_controls_pass": true,
+      "section_anchors_resolve": true,
+      "section_count": 6,
+      "source_role_count": 6,
+      "source_themes": [
+        "opacification_and_metacognitive_access",
+        "separation_prior_sigma"
+      ],
+      "support_count": 6,
+      "unresolved_figure_bindings": [],
+      "unresolved_sections": [],
+      "validation_gate": "simulation_sensitivity_grid_ok"
+    },
+    {
+      "allowed_interpretation": "Allowed only as protocol specification only: Practice-facing language is represented as model interventions, not evidence for realization or treatment.",
+      "artifact": "output/data/practice_protocol_map.json",
+      "artifact_exists": true,
+      "claim_id": "practice_protocol_boundary",
+      "evidence_ceiling": "protocol specification only",
+      "evidence_class": "safety_boundary",
+      "failure_reasons": [],
+      "figure_bindings": [
+        "evidence_ceiling_stress_matrix",
+        "claim_context_evidence_ladder"
+      ],
+      "figure_bindings_resolve": true,
+      "future_evidence_required": "Human review, ethics constraints, safety language, and outcome-independent usability validation before user-facing deployment.",
+      "manuscript_sections": [
+        "sec:discussion-compassion-boundary",
+        "sec:discussion-practice-interface-boundaries",
+        "sec:methods-pymdp-generative-models",
+        "sec:results-pymdp-policy-trace",
+        "sec:supplement-bounded-practice-protocols",
+        "sec:supplement-compassion-policy-scope"
+      ],
+      "prohibited_inference": "Do not read protocol mappings as instructions, therapy, or evidence that a practice induces realization.",
+      "reader_overclaim_phrases": [],
+      "redteam_note": "Reader locations, figure bindings, source role, artifact, gate, prohibited inference, and future-evidence boundary are all present for this finite-software claim.",
+      "row_controls_pass": true,
+      "section_anchors_resolve": true,
+      "section_count": 6,
+      "source_role_count": 15,
+      "source_themes": [
+        "compassion_as_policy_scope",
+        "opacification_and_metacognitive_access"
+      ],
+      "support_count": 15,
+      "unresolved_figure_bindings": [],
+      "unresolved_sections": [],
+      "validation_gate": "practice_boundaries"
+    },
+    {
+      "allowed_interpretation": "Allowed only as package import, agent construction, state inference, and policy-posterior normalization diagnostics: The active-inference runtime dependency check uses the pinned pymdp package and records a normalized policy posterior.",
+      "artifact": "output/data/pymdp_profile_comparison.json",
+      "artifact_exists": true,
+      "claim_id": "pymdp_runtime_canary",
+      "evidence_ceiling": "package import, agent construction, state inference, and policy-posterior normalization diagnostics",
+      "evidence_class": "runtime_canary",
+      "failure_reasons": [],
+      "figure_bindings": [
+        "pymdp_profile_comparison",
+        "claim_context_evidence_ladder"
+      ],
+      "figure_bindings_resolve": true,
+      "future_evidence_required": "Version-pinned benchmark suites and comparison agents if performance or optimality claims are introduced.",
+      "manuscript_sections": [
+        "sec:discussion-no-self-evidence-boundary",
+        "sec:methods-pymdp-generative-models",
+        "sec:results-pymdp-policy-trace"
+      ],
+      "prohibited_inference": "Do not read the runtime dependency check as a benchmark of active-inference optimality or scientific validity.",
+      "reader_overclaim_phrases": [],
+      "redteam_note": "Reader locations, figure bindings, source role, artifact, gate, prohibited inference, and future-evidence boundary are all present for this finite-software claim.",
+      "row_controls_pass": true,
+      "section_anchors_resolve": true,
+      "section_count": 3,
+      "source_role_count": 3,
+      "source_themes": [
+        "post_dual_unconstrained_qrf_space"
+      ],
+      "support_count": 3,
+      "unresolved_figure_bindings": [],
+      "unresolved_sections": [],
+      "validation_gate": "pymdp_canary"
+    },
+    {
+      "allowed_interpretation": "Allowed only as finite equation registry plus two-qubit quantum-information witnesses, mixed-state entanglement checks, measurement-cover/local-polytope controls, channel-cost accounting, dephasing controls, stochastic quantum-trajectory checks, and implemented extension-engine audits: The qFEP is represented here by finite operational surrogates, source mappings, direct two-qubit tests for separability entropy, mixed-state PPT/negativity controls, CHSH contextuality, generic measurement-cover polytope checks, finite CPTP channel-cost accounting, dephasing controls, seeded quantum-trajectory unraveling, and implemented extension engines for boundary-Hamiltonian Lindblad dynamics, sparse many-body cuts, sheaf obstruction, QRF relabeling and frame covariance, and fail-closed empirical provenance.",
+      "artifact": "output/data/quantum_extension_roadmap.json",
+      "artifact_exists": true,
+      "claim_id": "qfep_surrogate_scope",
+      "evidence_ceiling": "finite equation registry plus two-qubit quantum-information witnesses, mixed-state entanglement checks, measurement-cover/local-polytope controls, channel-cost accounting, dephasing controls, stochastic quantum-trajectory checks, and implemented extension-engine audits",
+      "evidence_class": "formal_boundary",
+      "failure_reasons": [],
+      "figure_bindings": [
+        "finite_quantum_scope_summary",
+        "claim_context_evidence_ladder"
+      ],
+      "figure_bindings_resolve": true,
+      "future_evidence_required": "A separately reviewed physical qFEP implementation, independent quantum-information replication, or ethics-reviewed human/practice dataset depending on the stronger claim.",
+      "manuscript_sections": [
+        "sec:methods-roadmap-quantum-engines",
+        "sec:results-finite-quantum-scope"
+      ],
+      "prohibited_inference": "Do not read finite entropy, mixed-state entanglement, CHSH, measurement-cover/local-polytope, channel-cost, dephasing, Lindblad, many-body, sheaf, QRF-covariance, or provenance controls as physical qFEP realization, empirical practice evidence, or neural measurement.",
+      "reader_overclaim_phrases": [],
+      "redteam_note": "Reader locations, figure bindings, source role, artifact, gate, prohibited inference, and future-evidence boundary are all present for this finite-software claim.",
+      "row_controls_pass": true,
+      "section_anchors_resolve": true,
+      "section_count": 2,
+      "source_role_count": 16,
+      "source_themes": [],
+      "support_count": 16,
+      "unresolved_figure_bindings": [],
+      "unresolved_sections": [],
+      "validation_gate": "quantum_extension_roadmap_ok"
+    },
+    {
+      "allowed_interpretation": "Allowed only as CHSH witness over a finite two-qubit family: Quantum contextuality is operationalized as a finite CHSH witness over the same two-qubit family, with product-state and Tsirelson-bound controls.",
+      "artifact": "output/data/quantum_boundary_entropy.json",
+      "artifact_exists": true,
+      "claim_id": "quantum_contextuality_witness",
+      "evidence_ceiling": "CHSH witness over a finite two-qubit family",
+      "evidence_class": "finite_quantum_simulation",
+      "failure_reasons": [],
+      "figure_bindings": [
+        "finite_quantum_scope_summary",
+        "claim_context_evidence_ladder"
+      ],
+      "figure_bindings_resolve": true,
+      "future_evidence_required": "General sheaf-obstruction checks, noncontextual polytope comparisons, and explicit QRF transformation tests.",
+      "manuscript_sections": [
+        "sec:discussion-finite-engine-limits",
+        "sec:results-finite-quantum-scope",
+        "sec:supplement-finite-quantum-contextuality-audits"
+      ],
+      "prohibited_inference": "Do not read the CHSH witness as a general contextuality proof for all QRF deployments or as empirical evidence.",
+      "reader_overclaim_phrases": [],
+      "redteam_note": "Reader locations, figure bindings, source role, artifact, gate, prohibited inference, and future-evidence boundary are all present for this finite-software claim.",
+      "row_controls_pass": true,
+      "section_anchors_resolve": true,
+      "section_count": 3,
+      "source_role_count": 6,
+      "source_themes": [
+        "contextuality_of_boundary"
+      ],
+      "support_count": 6,
+      "unresolved_figure_bindings": [],
+      "unresolved_sections": [],
+      "validation_gate": "quantum_contextuality_witness_ok"
+    },
+    {
+      "allowed_interpretation": "Allowed only as finite CHSH measurement-cover probability table plus local-polytope LP audit: The CHSH contextuality extension is also represented as a finite measurement-cover empirical model with normalized joint probabilities, no-signaling controls, a product negative control, a Tsirelson-bound check, and a local-hidden-variable polytope feasibility audit over 16 deterministic assignments.",
+      "artifact": "output/data/quantum_measurement_contextuality.json",
+      "artifact_exists": true,
+      "claim_id": "quantum_measurement_contextuality",
+      "evidence_ceiling": "finite CHSH measurement-cover probability table plus local-polytope LP audit",
+      "evidence_class": "finite_quantum_simulation",
+      "failure_reasons": [],
+      "figure_bindings": [
+        "finite_quantum_scope_summary",
+        "claim_context_evidence_ladder"
+      ],
+      "figure_bindings_resolve": true,
+      "future_evidence_required": "A general measurement-scenario engine with compatibility hypergraphs, obstruction or noncontextual-polytope witnesses, and QRF transformation tests.",
+      "manuscript_sections": [
+        "sec:discussion-finite-engine-limits",
+        "sec:results-finite-quantum-scope",
+        "sec:supplement-finite-quantum-contextuality-audits"
+      ],
+      "prohibited_inference": "Do not read the CHSH table or local-polytope infeasibility as a full sheaf obstruction proof, a many-body QRF transformation, a qFEP dynamics simulation, or empirical evidence.",
+      "reader_overclaim_phrases": [],
+      "redteam_note": "Reader locations, figure bindings, source role, artifact, gate, prohibited inference, and future-evidence boundary are all present for this finite-software claim.",
+      "row_controls_pass": true,
+      "section_anchors_resolve": true,
+      "section_count": 3,
+      "source_role_count": 9,
+      "source_themes": [
+        "contextuality_of_boundary"
+      ],
+      "support_count": 9,
+      "unresolved_figure_bindings": [],
+      "unresolved_sections": [],
+      "validation_gate": "quantum_measurement_contextuality_ok"
+    },
+    {
+      "allowed_interpretation": "Allowed only as finite trace-preserving two-qubit dephasing-channel simulation: Open-system quantum behavior is simulated as a finite two-qubit dephasing channel with trace, positivity, entropy, mutual-information, and CHSH-decay controls.",
+      "artifact": "output/data/quantum_open_system_dynamics.json",
+      "artifact_exists": true,
+      "claim_id": "quantum_open_system_dephasing",
+      "evidence_ceiling": "finite trace-preserving two-qubit dephasing-channel simulation",
+      "evidence_class": "finite_quantum_simulation",
+      "failure_reasons": [],
+      "figure_bindings": [
+        "finite_quantum_scope_summary",
+        "claim_context_evidence_ladder"
+      ],
+      "figure_bindings_resolve": true,
+      "future_evidence_required": "Boundary-Hamiltonian-linked Lindblad or collision-model dynamics, many-body subsystem cuts, and explicit QRF transformations.",
+      "manuscript_sections": [
+        "sec:results-finite-quantum-scope",
+        "sec:supplement-finite-quantum-contextuality-audits"
+      ],
+      "prohibited_inference": "Do not read the dephasing channel as the paper's full qFEP dynamics, a many-body observer boundary, or empirical quantum evidence.",
+      "reader_overclaim_phrases": [],
+      "redteam_note": "Reader locations, figure bindings, source role, artifact, gate, prohibited inference, and future-evidence boundary are all present for this finite-software claim.",
+      "row_controls_pass": true,
+      "section_anchors_resolve": true,
+      "section_count": 2,
+      "source_role_count": 11,
+      "source_themes": [],
+      "support_count": 11,
+      "unresolved_figure_bindings": [],
+      "unresolved_sections": [],
+      "validation_gate": "quantum_open_system_dynamics_ok"
+    },
+    {
+      "allowed_interpretation": "Allowed only as finite two-qubit pure-state entropy witness: The separability-entropy premise is directly simulated for a finite two-qubit Schmidt-family sweep using reduced density matrices and von Neumann entropy.",
+      "artifact": "output/data/quantum_boundary_entropy.json",
+      "artifact_exists": true,
+      "claim_id": "quantum_separability_entropy",
+      "evidence_ceiling": "finite two-qubit pure-state entropy witness",
+      "evidence_class": "finite_quantum_simulation",
+      "failure_reasons": [],
+      "figure_bindings": [
+        "finite_quantum_scope_summary",
+        "claim_context_evidence_ladder"
+      ],
+      "figure_bindings_resolve": true,
+      "future_evidence_required": "Higher-dimensional, multipartite, externally reviewed many-body, and physical open-system extensions with independent benchmarks and negative controls.",
+      "manuscript_sections": [
+        "sec:results-finite-quantum-scope",
+        "sec:supplement-finite-quantum-contextuality-audits"
+      ],
+      "prohibited_inference": "Do not read this finite witness as a simulation of a universe-agent boundary or mixed open-system qFEP dynamics.",
+      "reader_overclaim_phrases": [],
+      "redteam_note": "Reader locations, figure bindings, source role, artifact, gate, prohibited inference, and future-evidence boundary are all present for this finite-software claim.",
+      "row_controls_pass": true,
+      "section_anchors_resolve": true,
+      "section_count": 2,
+      "source_role_count": 9,
+      "source_themes": [],
+      "support_count": 9,
+      "unresolved_figure_bindings": [],
+      "unresolved_sections": [],
+      "validation_gate": "quantum_boundary_entropy_ok"
+    },
+    {
+      "allowed_interpretation": "Allowed only as source-role binding only: Self-evidencing is treated as the background contrast class for no-self-evidence, not as an empirical result produced by this simulation.",
+      "artifact": "output/data/source_claim_crosswalk.json",
+      "artifact_exists": true,
+      "claim_id": "self_evidencing_boundary",
+      "evidence_ceiling": "source-role binding only",
+      "evidence_class": "background_boundary",
+      "failure_reasons": [],
+      "figure_bindings": [
+        "claim_context_evidence_ladder"
+      ],
+      "figure_bindings_resolve": true,
+      "future_evidence_required": "A separate empirical or formal target with its own source ledger if self-evidencing is tested directly.",
+      "manuscript_sections": [
+        "sec:discussion-no-self-evidence-boundary",
+        "sec:introduction-paper-source"
+      ],
+      "prohibited_inference": "Do not read background self-evidencing scholarship as a new empirical result produced by this repository.",
+      "reader_overclaim_phrases": [],
+      "redteam_note": "Reader locations, figure bindings, source role, artifact, gate, prohibited inference, and future-evidence boundary are all present for this finite-software claim.",
+      "row_controls_pass": true,
+      "section_anchors_resolve": true,
+      "section_count": 2,
+      "source_role_count": 12,
+      "source_themes": [],
+      "support_count": 12,
+      "unresolved_figure_bindings": [],
+      "unresolved_sections": [],
+      "validation_gate": "claim_support_audit_ok"
+    },
+    {
+      "allowed_interpretation": "Allowed only as implemented finite data model: The separation prior restricts QRF deployments to a self/environment-preserving subspace.",
+      "artifact": "output/data/formalism_registry.json",
+      "artifact_exists": true,
+      "claim_id": "separation_prior_sigma",
+      "evidence_ceiling": "implemented finite data model",
+      "evidence_class": "implemented_model",
+      "failure_reasons": [],
+      "figure_bindings": [
+        "qrf_channel_relabeling_ledger",
+        "qrf_invariance_policy_flow",
+        "claim_context_evidence_ladder"
+      ],
+      "figure_bindings_resolve": true,
+      "future_evidence_required": "Task-linked data or formal proof showing when the modeled separation prior corresponds to an empirical or physical boundary.",
+      "manuscript_sections": [
+        "sec:methods-bmr-separation-prior",
+        "sec:methods-finite-qrf-boundary-screen",
+        "sec:methods-separation-prior-subspace",
+        "sec:results-bmr-sensitivity",
+        "sec:results-qrf-boundary-geometry"
+      ],
+      "prohibited_inference": "Do not read this as evidence that human subject-object boundaries have been reduced.",
+      "reader_overclaim_phrases": [],
+      "redteam_note": "Reader locations, figure bindings, source role, artifact, gate, prohibited inference, and future-evidence boundary are all present for this finite-software claim.",
+      "row_controls_pass": true,
+      "section_anchors_resolve": true,
+      "section_count": 5,
+      "source_role_count": 2,
+      "source_themes": [
+        "qrf_sectorisation_equations_7_to_10",
+        "separation_prior_sigma"
+      ],
+      "support_count": 2,
+      "unresolved_figure_bindings": [],
+      "unresolved_sections": [],
+      "validation_gate": "equation_count_14"
+    },
+    {
+      "allowed_interpretation": "Allowed only as finite label-invariance audit only: The agent can model observations through a boundary but cannot evidence the boundary as ontologically separable.",
+      "artifact": "output/data/qrf_boundary_indistinguishability.json",
+      "artifact_exists": true,
+      "claim_id": "source_boundary_unevidenceable",
+      "evidence_ceiling": "finite label-invariance audit only",
+      "evidence_class": "operational_surrogate",
+      "failure_reasons": [],
+      "figure_bindings": [
+        "qrf_boundary_screen_geometry",
+        "qrf_channel_relabeling_ledger",
+        "qrf_invariance_policy_flow",
+        "claim_context_evidence_ladder"
+      ],
+      "figure_bindings_resolve": true,
+      "future_evidence_required": "A full qFEP quantum-information implementation or empirical operationalization with source identity and negative controls.",
+      "manuscript_sections": [
+        "sec:discussion-no-self-evidence-boundary",
+        "sec:methods-finite-qrf-boundary-screen",
+        "sec:methods-pymdp-generative-models",
+        "sec:methods-separation-prior-subspace",
+        "sec:results-pymdp-policy-trace",
+        "sec:results-qrf-boundary-geometry"
+      ],
+      "prohibited_inference": "Do not read this as proof that real agents lack selves or that a quantum boundary was simulated.",
+      "reader_overclaim_phrases": [],
+      "redteam_note": "Reader locations, figure bindings, source role, artifact, gate, prohibited inference, and future-evidence boundary are all present for this finite-software claim.",
+      "row_controls_pass": true,
+      "section_anchors_resolve": true,
+      "section_count": 6,
+      "source_role_count": 15,
+      "source_themes": [
+        "no_self_evidence_boundary",
+        "post_dual_unconstrained_qrf_space",
+        "qrf_sectorisation_equations_7_to_10"
+      ],
+      "support_count": 15,
+      "unresolved_figure_bindings": [],
+      "unresolved_sections": [],
+      "validation_gate": "qrf_indistinguishable"
+    }
+  ],
+  "schema": "realizing_emptiness.claim_redteam_audit.v1",
+  "unresolved_figure_bindings": [],
+  "unresolved_sections": []
+}

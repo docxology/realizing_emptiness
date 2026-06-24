@@ -1,0 +1,52 @@
+{
+  "$id": "realizing_emptiness.compassion_scope_audit.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Realizing Emptiness Compassion Scope Audit",
+  "type": "object",
+  "required": [
+    "schema",
+    "label",
+    "deployment_count",
+    "rows",
+    "real_scope_asymmetries",
+    "controls",
+    "all_controls_pass",
+    "claim_boundary"
+  ],
+  "properties": {
+    "schema": {
+      "const": "realizing_emptiness.compassion_scope_audit.v1"
+    },
+    "deployment_count": {
+      "type": "integer",
+      "minimum": 2
+    },
+    "rows": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "required": [
+          "deployment",
+          "self_concern_share",
+          "non_self_concern_share",
+          "scope_asymmetry"
+        ]
+      }
+    },
+    "controls": {
+      "type": "object",
+      "additionalProperties": {
+        "const": true
+      }
+    },
+    "all_controls_pass": {
+      "const": true
+    },
+    "claim_boundary": {
+      "type": "string",
+      "pattern": "not a measure of compassion"
+    }
+  },
+  "additionalProperties": true
+}

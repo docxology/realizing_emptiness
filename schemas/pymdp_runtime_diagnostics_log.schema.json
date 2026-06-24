@@ -1,0 +1,172 @@
+{
+  "$id": "realizing_emptiness.pymdp_runtime_diagnostics_log.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Realizing Emptiness pymdp Runtime Diagnostics Log",
+  "type": "object",
+  "required": [
+    "schema",
+    "seed",
+    "steps",
+    "channels",
+    "runtime_versions",
+    "canary",
+    "model_hashes",
+    "trace_row_count",
+    "profile_count",
+    "state_labels",
+    "observation_labels",
+    "action_labels",
+    "rows",
+    "summary",
+    "replay",
+    "controls",
+    "all_controls_pass",
+    "empirical_prior_binding",
+    "claim_boundary"
+  ],
+  "properties": {
+    "schema": {"const": "realizing_emptiness.pymdp_runtime_diagnostics_log.v1"},
+    "seed": {"type": "integer"},
+    "steps": {"type": "integer", "minimum": 1},
+    "channels": {"type": "integer", "minimum": 1},
+    "runtime_versions": {
+      "type": "object",
+      "required": ["python", "inferactively_pymdp", "jax", "jaxlib", "numpy", "scipy"],
+      "properties": {
+        "python": {"type": "string"},
+        "inferactively_pymdp": {"const": "1.0.3"},
+        "jax": {"type": "string"},
+        "jaxlib": {"type": "string"},
+        "numpy": {"type": "string"},
+        "scipy": {"type": "string"}
+      },
+      "additionalProperties": false
+    },
+    "canary": {
+      "type": "object",
+      "required": ["ok", "version", "warnings"],
+      "properties": {
+        "ok": {"const": true},
+        "version": {"const": "1.0.3"},
+        "warnings": {"type": "array", "minItems": 1, "items": {"type": "string"}}
+      },
+      "additionalProperties": true
+    },
+    "model_hashes": {
+      "type": "array",
+      "minItems": 3,
+      "items": {
+        "type": "object",
+        "required": ["profile", "sha256", "array_shapes"],
+        "properties": {
+          "profile": {"type": "string"},
+          "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+          "array_shapes": {"type": "object"}
+        },
+        "additionalProperties": false
+      }
+    },
+    "model_profile_count": {"const": 3},
+    "trace_row_count": {"type": "integer", "minimum": 3},
+    "profile_count": {"const": 3},
+    "state_labels": {"type": "array", "minItems": 3},
+    "observation_labels": {"type": "array", "minItems": 3},
+    "action_labels": {"type": "array", "minItems": 3},
+    "rows": {
+      "type": "array",
+      "minItems": 3,
+      "items": {
+        "type": "object",
+        "required": [
+          "profile",
+          "step",
+          "true_state",
+          "observation_label",
+          "selected_action",
+          "selected_action_index",
+          "perturbed_observation",
+          "state_posterior_norm_residual",
+          "policy_posterior_norm_residual",
+          "weighted_expected_free_energy_recomputed",
+          "weighted_expected_free_energy_residual",
+          "efe_term_residuals",
+          "max_efe_term_residual",
+          "trace_labels_resolve",
+          "selected_action_index_matches",
+          "posteriors_finite",
+          "expected_free_energy_finite",
+          "vfe",
+          "vfe_finite",
+          "state_posterior_entropy",
+          "policy_posterior_entropy",
+          "entropies_in_bounds"
+        ],
+        "properties": {
+          "profile": {"type": "string"},
+          "step": {"type": "integer", "minimum": 0},
+          "true_state": {"type": "string"},
+          "observation_label": {"type": "string"},
+          "selected_action": {"type": "string"},
+          "selected_action_index": {"type": "integer", "minimum": 0},
+          "perturbed_observation": {"type": "boolean"},
+          "state_posterior_norm_residual": {"type": "number", "minimum": 0, "maximum": 0.00001},
+          "policy_posterior_norm_residual": {"type": "number", "minimum": 0, "maximum": 0.00001},
+          "weighted_expected_free_energy_recomputed": {"type": "number"},
+          "weighted_expected_free_energy_residual": {"type": "number", "minimum": 0, "maximum": 0.000001},
+          "efe_term_residuals": {"type": "object"},
+          "max_efe_term_residual": {"type": "number", "minimum": 0, "maximum": 0.000001},
+          "trace_labels_resolve": {"const": true},
+          "selected_action_index_matches": {"const": true},
+          "posteriors_finite": {"const": true},
+          "expected_free_energy_finite": {"const": true},
+          "vfe": {"type": "number"},
+          "vfe_finite": {"const": true},
+          "state_posterior_entropy": {"type": "number", "minimum": -1e-9},
+          "policy_posterior_entropy": {"type": "number", "minimum": -1e-9},
+          "entropies_in_bounds": {"const": true}
+        },
+        "additionalProperties": false
+      }
+    },
+    "empirical_prior_binding": {
+      "type": "array",
+      "minItems": 3,
+      "items": {
+        "type": "object",
+        "required": ["profile", "action_index", "manual_vs_library_prior_residual"],
+        "properties": {
+          "profile": {"type": "string"},
+          "action_index": {"type": "integer", "minimum": 0},
+          "manual_vs_library_prior_residual": {"type": "number", "minimum": 0, "maximum": 0.00001}
+        },
+        "additionalProperties": false
+      }
+    },
+    "summary": {"type": "object"},
+    "replay": {
+      "type": "object",
+      "required": ["trace_rows_equal", "profile_summaries_equal"],
+      "properties": {
+        "same_seed": {"type": "integer"},
+        "row_count": {"type": "integer"},
+        "trace_rows_equal": {"const": true},
+        "profile_summaries_equal": {"const": true}
+      },
+      "additionalProperties": false
+    },
+    "controls": {
+      "type": "object",
+      "required": [
+        "canary_ok", "canary_warnings_captured", "all_model_hashes_present", "all_models_normalized",
+        "deterministic_replay_equal", "all_state_posteriors_normalized", "all_policy_posteriors_normalized",
+        "weighted_expected_free_energy_recomputed", "efe_terms_rederived", "all_trace_labels_resolve",
+        "all_selected_action_indices_match", "all_numeric_fields_finite", "perturbation_flags_present",
+        "all_vfe_finite", "all_entropies_in_bounds", "empirical_prior_matches_library"
+      ],
+      "additionalProperties": {"const": true}
+    },
+    "all_controls_pass": {"const": true},
+    "claim_boundary": {"type": "string", "pattern": "not empirical"}
+  },
+  "additionalProperties": false
+}

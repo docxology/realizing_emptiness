@@ -1,0 +1,705 @@
+{
+  "all_controls_pass": true,
+  "bell_chsh": 2.828427124748,
+  "claim_boundary": "finite CHSH measurement-cover empirical model; not empirical evidence and not a full sheaf-obstruction proof, many-body QRF transformation, or physical qFEP simulation",
+  "context_count": 4,
+  "context_rows": [
+    {
+      "a_angle": 0.0,
+      "a_setting": "A0",
+      "b_angle": 0.785398163397,
+      "b_setting": "B0",
+      "chsh_contribution": 0.707106781187,
+      "chsh_sign": 1.0,
+      "context": "A0B0",
+      "correlation": 0.707106781187,
+      "model": "bell_measurement_cover"
+    },
+    {
+      "a_angle": 0.0,
+      "a_setting": "A0",
+      "b_angle": -0.785398163397,
+      "b_setting": "B1",
+      "chsh_contribution": 0.707106781187,
+      "chsh_sign": 1.0,
+      "context": "A0B1",
+      "correlation": 0.707106781187,
+      "model": "bell_measurement_cover"
+    },
+    {
+      "a_angle": 1.570796326795,
+      "a_setting": "A1",
+      "b_angle": 0.785398163397,
+      "b_setting": "B0",
+      "chsh_contribution": 0.707106781187,
+      "chsh_sign": 1.0,
+      "context": "A1B0",
+      "correlation": 0.707106781187,
+      "model": "bell_measurement_cover"
+    },
+    {
+      "a_angle": 1.570796326795,
+      "a_setting": "A1",
+      "b_angle": -0.785398163397,
+      "b_setting": "B1",
+      "chsh_contribution": 0.707106781187,
+      "chsh_sign": -1.0,
+      "context": "A1B1",
+      "correlation": -0.707106781187,
+      "model": "bell_measurement_cover"
+    },
+    {
+      "a_angle": 0.0,
+      "a_setting": "A0",
+      "b_angle": 0.785398163397,
+      "b_setting": "B0",
+      "chsh_contribution": 0.707106781187,
+      "chsh_sign": 1.0,
+      "context": "A0B0",
+      "correlation": 0.707106781187,
+      "model": "product_control"
+    },
+    {
+      "a_angle": 0.0,
+      "a_setting": "A0",
+      "b_angle": -0.785398163397,
+      "b_setting": "B1",
+      "chsh_contribution": 0.707106781187,
+      "chsh_sign": 1.0,
+      "context": "A0B1",
+      "correlation": 0.707106781187,
+      "model": "product_control"
+    },
+    {
+      "a_angle": 1.570796326795,
+      "a_setting": "A1",
+      "b_angle": 0.785398163397,
+      "b_setting": "B0",
+      "chsh_contribution": 0.0,
+      "chsh_sign": 1.0,
+      "context": "A1B0",
+      "correlation": 0.0,
+      "model": "product_control"
+    },
+    {
+      "a_angle": 1.570796326795,
+      "a_setting": "A1",
+      "b_angle": -0.785398163397,
+      "b_setting": "B1",
+      "chsh_contribution": -0.0,
+      "chsh_sign": -1.0,
+      "context": "A1B1",
+      "correlation": 0.0,
+      "model": "product_control"
+    }
+  ],
+  "contextual_fraction": 1.0000000000021845,
+  "controls": {
+    "bell_chsh_exceeds_local_bound": true,
+    "bell_chsh_reaches_tsirelson": true,
+    "bell_model_local_polytope_infeasible": true,
+    "bell_model_positive_polytope_residual": true,
+    "contextual_fraction_unit_at_tsirelson": true,
+    "joint_probabilities_nonnegative": true,
+    "joint_probabilities_normalized": true,
+    "no_signaling_marginals_match": true,
+    "product_control_local_polytope_feasible": true,
+    "product_control_respects_local_bound": true
+  },
+  "local_chsh_bound": 2.0,
+  "local_polytope": {
+    "assignment_count": 16,
+    "fits": [
+      {
+        "active_assignment_count": 8,
+        "assignment_rows": [
+          {
+            "A0": -1,
+            "A1": -1,
+            "B0": -1,
+            "B1": -1,
+            "assignment_index": 0,
+            "weight": 0.25
+          },
+          {
+            "A0": -1,
+            "A1": 1,
+            "B0": -1,
+            "B1": -1,
+            "assignment_index": 4,
+            "weight": 0.103553390594
+          },
+          {
+            "A0": -1,
+            "A1": 1,
+            "B0": -1,
+            "B1": 1,
+            "assignment_index": 5,
+            "weight": 0.073223304703
+          },
+          {
+            "A0": -1,
+            "A1": 1,
+            "B0": 1,
+            "B1": -1,
+            "assignment_index": 6,
+            "weight": 0.073223304703
+          },
+          {
+            "A0": 1,
+            "A1": -1,
+            "B0": 1,
+            "B1": 1,
+            "assignment_index": 11,
+            "weight": 0.25
+          },
+          {
+            "A0": 1,
+            "A1": 1,
+            "B0": -1,
+            "B1": 1,
+            "assignment_index": 13,
+            "weight": 0.073223304703
+          },
+          {
+            "A0": 1,
+            "A1": 1,
+            "B0": 1,
+            "B1": -1,
+            "assignment_index": 14,
+            "weight": 0.073223304703
+          },
+          {
+            "A0": 1,
+            "A1": 1,
+            "B0": 1,
+            "B1": 1,
+            "assignment_index": 15,
+            "weight": 0.103553390594
+          }
+        ],
+        "feasible": true,
+        "linprog_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "linprog_status": 0,
+        "max_abs_residual": 1.3877787807814457e-17,
+        "min_l1_residual": 4.163336342344337e-17,
+        "model": "product_control"
+      },
+      {
+        "active_assignment_count": 8,
+        "assignment_rows": [
+          {
+            "A0": -1,
+            "A1": -1,
+            "B0": -1,
+            "B1": -1,
+            "assignment_index": 0,
+            "weight": 0.280330085891
+          },
+          {
+            "A0": -1,
+            "A1": -1,
+            "B0": -1,
+            "B1": 1,
+            "assignment_index": 1,
+            "weight": 0.073223304703
+          },
+          {
+            "A0": -1,
+            "A1": 1,
+            "B0": -1,
+            "B1": -1,
+            "assignment_index": 4,
+            "weight": 0.073223304703
+          },
+          {
+            "A0": -1,
+            "A1": 1,
+            "B0": 1,
+            "B1": -1,
+            "assignment_index": 6,
+            "weight": 0.073223304703
+          },
+          {
+            "A0": 1,
+            "A1": -1,
+            "B0": -1,
+            "B1": 1,
+            "assignment_index": 9,
+            "weight": 0.073223304703
+          },
+          {
+            "A0": 1,
+            "A1": -1,
+            "B0": 1,
+            "B1": 1,
+            "assignment_index": 11,
+            "weight": 0.073223304703
+          },
+          {
+            "A0": 1,
+            "A1": 1,
+            "B0": 1,
+            "B1": -1,
+            "assignment_index": 14,
+            "weight": 0.073223304703
+          },
+          {
+            "A0": 1,
+            "A1": 1,
+            "B0": 1,
+            "B1": 1,
+            "assignment_index": 15,
+            "weight": 0.280330085891
+          }
+        ],
+        "feasible": false,
+        "linprog_message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "linprog_status": 2,
+        "max_abs_residual": 0.20710678118800008,
+        "min_l1_residual": 0.8284271247520003,
+        "model": "bell_measurement_cover"
+      }
+    ]
+  },
+  "max_no_signaling_error": 0.0,
+  "max_normalization_error": 0.0,
+  "measurement_cover": {
+    "contexts": [
+      "A0B0",
+      "A0B1",
+      "A1B0",
+      "A1B1"
+    ],
+    "description": "finite CHSH empirical-model table with four compatible measurement contexts",
+    "outcomes": [
+      "++",
+      "+-",
+      "-+",
+      "--"
+    ],
+    "parties": [
+      "A",
+      "B"
+    ]
+  },
+  "model_count": 2,
+  "no_signaling_errors": [
+    {
+      "absolute_error": 0.0,
+      "first_context": "A0B0",
+      "model": "bell_measurement_cover",
+      "p_plus_first": 0.5,
+      "p_plus_second": 0.5,
+      "second_context": "A0B1",
+      "setting": "A0",
+      "side": "A"
+    },
+    {
+      "absolute_error": 0.0,
+      "first_context": "A1B0",
+      "model": "bell_measurement_cover",
+      "p_plus_first": 0.5,
+      "p_plus_second": 0.5,
+      "second_context": "A1B1",
+      "setting": "A1",
+      "side": "A"
+    },
+    {
+      "absolute_error": 0.0,
+      "first_context": "A0B0",
+      "model": "bell_measurement_cover",
+      "p_plus_first": 0.5,
+      "p_plus_second": 0.5,
+      "second_context": "A1B0",
+      "setting": "B0",
+      "side": "B"
+    },
+    {
+      "absolute_error": 0.0,
+      "first_context": "A0B1",
+      "model": "bell_measurement_cover",
+      "p_plus_first": 0.5,
+      "p_plus_second": 0.5,
+      "second_context": "A1B1",
+      "setting": "B1",
+      "side": "B"
+    },
+    {
+      "absolute_error": 0.0,
+      "first_context": "A0B0",
+      "model": "product_control",
+      "p_plus_first": 0.5,
+      "p_plus_second": 0.5,
+      "second_context": "A0B1",
+      "setting": "A0",
+      "side": "A"
+    },
+    {
+      "absolute_error": 0.0,
+      "first_context": "A1B0",
+      "model": "product_control",
+      "p_plus_first": 0.5,
+      "p_plus_second": 0.5,
+      "second_context": "A1B1",
+      "setting": "A1",
+      "side": "A"
+    },
+    {
+      "absolute_error": 0.0,
+      "first_context": "A0B0",
+      "model": "product_control",
+      "p_plus_first": 0.5,
+      "p_plus_second": 0.5,
+      "second_context": "A1B0",
+      "setting": "B0",
+      "side": "B"
+    },
+    {
+      "absolute_error": 0.0,
+      "first_context": "A0B1",
+      "model": "product_control",
+      "p_plus_first": 0.5,
+      "p_plus_second": 0.5,
+      "second_context": "A1B1",
+      "setting": "B1",
+      "side": "B"
+    }
+  ],
+  "normalization_errors": {
+    "bell_measurement_cover:A0B0": 0.0,
+    "bell_measurement_cover:A0B1": 0.0,
+    "bell_measurement_cover:A1B0": 0.0,
+    "bell_measurement_cover:A1B1": 0.0,
+    "product_control:A0B0": 0.0,
+    "product_control:A0B1": 0.0,
+    "product_control:A1B0": 0.0,
+    "product_control:A1B1": 0.0
+  },
+  "probability_rows": [
+    {
+      "a_outcome": 1,
+      "a_setting": "A0",
+      "b_outcome": 1,
+      "b_setting": "B0",
+      "context": "A0B0",
+      "model": "bell_measurement_cover",
+      "outcome": "++",
+      "probability": 0.426776695297
+    },
+    {
+      "a_outcome": 1,
+      "a_setting": "A0",
+      "b_outcome": -1,
+      "b_setting": "B0",
+      "context": "A0B0",
+      "model": "bell_measurement_cover",
+      "outcome": "+-",
+      "probability": 0.073223304703
+    },
+    {
+      "a_outcome": -1,
+      "a_setting": "A0",
+      "b_outcome": 1,
+      "b_setting": "B0",
+      "context": "A0B0",
+      "model": "bell_measurement_cover",
+      "outcome": "-+",
+      "probability": 0.073223304703
+    },
+    {
+      "a_outcome": -1,
+      "a_setting": "A0",
+      "b_outcome": -1,
+      "b_setting": "B0",
+      "context": "A0B0",
+      "model": "bell_measurement_cover",
+      "outcome": "--",
+      "probability": 0.426776695297
+    },
+    {
+      "a_outcome": 1,
+      "a_setting": "A0",
+      "b_outcome": 1,
+      "b_setting": "B1",
+      "context": "A0B1",
+      "model": "bell_measurement_cover",
+      "outcome": "++",
+      "probability": 0.426776695297
+    },
+    {
+      "a_outcome": 1,
+      "a_setting": "A0",
+      "b_outcome": -1,
+      "b_setting": "B1",
+      "context": "A0B1",
+      "model": "bell_measurement_cover",
+      "outcome": "+-",
+      "probability": 0.073223304703
+    },
+    {
+      "a_outcome": -1,
+      "a_setting": "A0",
+      "b_outcome": 1,
+      "b_setting": "B1",
+      "context": "A0B1",
+      "model": "bell_measurement_cover",
+      "outcome": "-+",
+      "probability": 0.073223304703
+    },
+    {
+      "a_outcome": -1,
+      "a_setting": "A0",
+      "b_outcome": -1,
+      "b_setting": "B1",
+      "context": "A0B1",
+      "model": "bell_measurement_cover",
+      "outcome": "--",
+      "probability": 0.426776695297
+    },
+    {
+      "a_outcome": 1,
+      "a_setting": "A1",
+      "b_outcome": 1,
+      "b_setting": "B0",
+      "context": "A1B0",
+      "model": "bell_measurement_cover",
+      "outcome": "++",
+      "probability": 0.426776695297
+    },
+    {
+      "a_outcome": 1,
+      "a_setting": "A1",
+      "b_outcome": -1,
+      "b_setting": "B0",
+      "context": "A1B0",
+      "model": "bell_measurement_cover",
+      "outcome": "+-",
+      "probability": 0.073223304703
+    },
+    {
+      "a_outcome": -1,
+      "a_setting": "A1",
+      "b_outcome": 1,
+      "b_setting": "B0",
+      "context": "A1B0",
+      "model": "bell_measurement_cover",
+      "outcome": "-+",
+      "probability": 0.073223304703
+    },
+    {
+      "a_outcome": -1,
+      "a_setting": "A1",
+      "b_outcome": -1,
+      "b_setting": "B0",
+      "context": "A1B0",
+      "model": "bell_measurement_cover",
+      "outcome": "--",
+      "probability": 0.426776695297
+    },
+    {
+      "a_outcome": 1,
+      "a_setting": "A1",
+      "b_outcome": 1,
+      "b_setting": "B1",
+      "context": "A1B1",
+      "model": "bell_measurement_cover",
+      "outcome": "++",
+      "probability": 0.073223304703
+    },
+    {
+      "a_outcome": 1,
+      "a_setting": "A1",
+      "b_outcome": -1,
+      "b_setting": "B1",
+      "context": "A1B1",
+      "model": "bell_measurement_cover",
+      "outcome": "+-",
+      "probability": 0.426776695297
+    },
+    {
+      "a_outcome": -1,
+      "a_setting": "A1",
+      "b_outcome": 1,
+      "b_setting": "B1",
+      "context": "A1B1",
+      "model": "bell_measurement_cover",
+      "outcome": "-+",
+      "probability": 0.426776695297
+    },
+    {
+      "a_outcome": -1,
+      "a_setting": "A1",
+      "b_outcome": -1,
+      "b_setting": "B1",
+      "context": "A1B1",
+      "model": "bell_measurement_cover",
+      "outcome": "--",
+      "probability": 0.073223304703
+    },
+    {
+      "a_outcome": 1,
+      "a_setting": "A0",
+      "b_outcome": 1,
+      "b_setting": "B0",
+      "context": "A0B0",
+      "model": "product_control",
+      "outcome": "++",
+      "probability": 0.426776695297
+    },
+    {
+      "a_outcome": 1,
+      "a_setting": "A0",
+      "b_outcome": -1,
+      "b_setting": "B0",
+      "context": "A0B0",
+      "model": "product_control",
+      "outcome": "+-",
+      "probability": 0.073223304703
+    },
+    {
+      "a_outcome": -1,
+      "a_setting": "A0",
+      "b_outcome": 1,
+      "b_setting": "B0",
+      "context": "A0B0",
+      "model": "product_control",
+      "outcome": "-+",
+      "probability": 0.073223304703
+    },
+    {
+      "a_outcome": -1,
+      "a_setting": "A0",
+      "b_outcome": -1,
+      "b_setting": "B0",
+      "context": "A0B0",
+      "model": "product_control",
+      "outcome": "--",
+      "probability": 0.426776695297
+    },
+    {
+      "a_outcome": 1,
+      "a_setting": "A0",
+      "b_outcome": 1,
+      "b_setting": "B1",
+      "context": "A0B1",
+      "model": "product_control",
+      "outcome": "++",
+      "probability": 0.426776695297
+    },
+    {
+      "a_outcome": 1,
+      "a_setting": "A0",
+      "b_outcome": -1,
+      "b_setting": "B1",
+      "context": "A0B1",
+      "model": "product_control",
+      "outcome": "+-",
+      "probability": 0.073223304703
+    },
+    {
+      "a_outcome": -1,
+      "a_setting": "A0",
+      "b_outcome": 1,
+      "b_setting": "B1",
+      "context": "A0B1",
+      "model": "product_control",
+      "outcome": "-+",
+      "probability": 0.073223304703
+    },
+    {
+      "a_outcome": -1,
+      "a_setting": "A0",
+      "b_outcome": -1,
+      "b_setting": "B1",
+      "context": "A0B1",
+      "model": "product_control",
+      "outcome": "--",
+      "probability": 0.426776695297
+    },
+    {
+      "a_outcome": 1,
+      "a_setting": "A1",
+      "b_outcome": 1,
+      "b_setting": "B0",
+      "context": "A1B0",
+      "model": "product_control",
+      "outcome": "++",
+      "probability": 0.25
+    },
+    {
+      "a_outcome": 1,
+      "a_setting": "A1",
+      "b_outcome": -1,
+      "b_setting": "B0",
+      "context": "A1B0",
+      "model": "product_control",
+      "outcome": "+-",
+      "probability": 0.25
+    },
+    {
+      "a_outcome": -1,
+      "a_setting": "A1",
+      "b_outcome": 1,
+      "b_setting": "B0",
+      "context": "A1B0",
+      "model": "product_control",
+      "outcome": "-+",
+      "probability": 0.25
+    },
+    {
+      "a_outcome": -1,
+      "a_setting": "A1",
+      "b_outcome": -1,
+      "b_setting": "B0",
+      "context": "A1B0",
+      "model": "product_control",
+      "outcome": "--",
+      "probability": 0.25
+    },
+    {
+      "a_outcome": 1,
+      "a_setting": "A1",
+      "b_outcome": 1,
+      "b_setting": "B1",
+      "context": "A1B1",
+      "model": "product_control",
+      "outcome": "++",
+      "probability": 0.25
+    },
+    {
+      "a_outcome": 1,
+      "a_setting": "A1",
+      "b_outcome": -1,
+      "b_setting": "B1",
+      "context": "A1B1",
+      "model": "product_control",
+      "outcome": "+-",
+      "probability": 0.25
+    },
+    {
+      "a_outcome": -1,
+      "a_setting": "A1",
+      "b_outcome": 1,
+      "b_setting": "B1",
+      "context": "A1B1",
+      "model": "product_control",
+      "outcome": "-+",
+      "probability": 0.25
+    },
+    {
+      "a_outcome": -1,
+      "a_setting": "A1",
+      "b_outcome": -1,
+      "b_setting": "B1",
+      "context": "A1B1",
+      "model": "product_control",
+      "outcome": "--",
+      "probability": 0.25
+    }
+  ],
+  "product_control_chsh": 1.414213562374,
+  "row_count": 32,
+  "schema": "realizing_emptiness.quantum_measurement_contextuality.v1",
+  "tsirelson_bound": 2.8284271247461903
+}

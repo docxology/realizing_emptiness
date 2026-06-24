@@ -1,0 +1,40 @@
+
+OUTPUT STATISTICS REPORT
+============================================================
+
+Output Directory: output
+
+Total Files: 131
+Total Size: 19.04 MB
+
+Files by Category:
+  • pdf: 10 files (5.56 MB)
+  • web: 10 files (0.33 MB)
+  • figures: 45 files (5.22 MB)
+  • data: 62 files (7.90 MB)
+  • reports: 4 files (0.03 MB)
+
+Largest Files:
+  • stochastic_policy_ensemble.json: 6.24 MB (data)
+  • realizing_emptiness_combined.pdf: 5.23 MB (pdf)
+  • quantum_trajectory_unraveling.json: 0.51 MB (data)
+  • claim_support_matrix.png: 0.25 MB (figures)
+  • graphical_abstract_cover.png: 0.23 MB (figures)
+
+Missing Expected Files:
+  ⚠  slides/ directory
+  ⚠  simulations/ directory
+  ⚠  llm/ directory
+  ⚠  logs/ directory
+
+File Types:
+  • .json: 63 file(s)
+  • .png: 45 file(s)
+  • .html: 9 file(s)
+  • .md: 2 file(s)
+  • .log: 2 file(s)
+  • .csv: 2 file(s)
+  • .pdf: 1 file(s)
+  • .aux: 1 file(s)
+  • .blg: 1 file(s)
+  • .bib: 1 file(s)

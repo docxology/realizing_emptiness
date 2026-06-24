@@ -1,0 +1,30 @@
+{
+  "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+  "@type": "SoftwareSourceCode",
+  "identifier": "https://doi.org/10.5281/zenodo.20834847",
+  "author": [
+    {
+      "@id": "https://orcid.org/0000-0001-6232-9096",
+      "@type": "Person",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Active Inference Institute"
+      },
+      "familyName": "Friedman",
+      "givenName": "Daniel Ari"
+    }
+  ],
+  "codeRepository": "https://github.com/docxology/realizing_emptiness",
+  "dateModified": "2026-06-24",
+  "keywords": [
+    "active inference",
+    "emptiness",
+    "quantum reference frames",
+    "Bayesian model reduction",
+    "pymdp"
+  ],
+  "license": "https://spdx.org/licenses/MIT",
+  "name": "Realizing Emptiness",
+  "version": "1.0.0"
+}
+

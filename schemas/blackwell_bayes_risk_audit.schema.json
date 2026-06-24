@@ -1,0 +1,14 @@
+{
+  "$id": "realizing_emptiness.blackwell_bayes_risk_audit.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "blackwell_bayes_risk audit",
+  "type": "object",
+  "required": ["schema", "controls", "all_controls_pass", "claim_boundary"],
+  "properties": {
+    "schema": { "const": "realizing_emptiness.blackwell_bayes_risk_audit.v1" },
+    "controls": { "type": "object", "additionalProperties": { "const": true } },
+    "all_controls_pass": { "const": true },
+    "claim_boundary": { "type": "string", "pattern": "not empirical" }
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,96 @@
+{
+  "$id": "realizing_emptiness.source_claim_crosswalk.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Realizing Emptiness Source Claim Crosswalk",
+  "type": "object",
+  "required": ["schema", "claims", "claim_count", "all_claims_have_gates"],
+  "properties": {
+    "schema": {
+      "const": "realizing_emptiness.source_claim_crosswalk.v1"
+    },
+    "claim_count": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "all_claims_have_gates": {
+      "const": true
+    },
+    "claims": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "paper_locator",
+          "paraphrase",
+          "artifact",
+          "gate",
+          "claim_status",
+          "evidence_ceiling",
+          "prohibited_inference",
+          "future_evidence_required",
+          "stressors"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9_]+$"
+          },
+          "paper_locator": {
+            "type": "string",
+            "minLength": 3
+          },
+          "paraphrase": {
+            "type": "string",
+            "minLength": 20
+          },
+          "artifact": {
+            "type": "string",
+            "minLength": 3
+          },
+          "gate": {
+            "type": "string",
+            "minLength": 3
+          },
+          "claim_status": {
+            "type": "string",
+            "minLength": 3
+          },
+          "evidence_ceiling": {
+            "type": "string",
+            "minLength": 10
+          },
+          "prohibited_inference": {
+            "type": "string",
+            "minLength": 20
+          },
+          "future_evidence_required": {
+            "type": "string",
+            "minLength": 20
+          },
+          "stressors": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "enum": [
+                "empirical_gap",
+                "neural_measurement_boundary",
+                "normative_boundary",
+                "practice_boundary",
+                "quantum_gap",
+                "runtime_dependency",
+                "source_role_boundary",
+                "surrogate_scope"
+              ]
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

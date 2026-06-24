@@ -1,0 +1,45 @@
+sheaf:
+  registry: manuscript/sheaf/tracks.yaml
+  manifest: manuscript/sheaf/manifest.yaml
+  composer: scripts/compose_manuscript.py
+tracks:
+  - id: paper_source
+    label: Source provenance
+    paths: [data/sources/source_manifest.yaml, output/data/source_claim_crosswalk.json, output/data/claim_support_audit.json, output/data/manuscript_claim_audit.json, output/data/evidence_ceiling_audit.json]
+    gate: validate_outputs
+    required: true
+  - id: scholarship
+    label: Scholarship source-role and claim-support matrix
+    paths: [data/sources/scholarship_manifest.yaml, output/data/scholarship_source_matrix.json, output/figures/claim_support_matrix.png, output/figures/evidence_ceiling_stress_matrix.png]
+    gate: validate_outputs
+    required: true
+  - id: visualization
+    label: Figure source maps and integrity audit
+    paths: [output/data/figure_source_map.json, output/data/figure_integrity_audit.json, output/figures]
+    gate: validate_outputs
+    required: true
+  - id: qfep
+    label: Quantum FEP formalism
+    paths: [src/formalism/equations.py, output/data/equation_audit.json]
+    gate: validate_outputs
+    required: true
+  - id: qrf
+    label: QRF deployment surrogate
+    paths: [src/formalism/models.py, src/simulation/qrf_env.py]
+    gate: validate_outputs
+    required: true
+  - id: bmr
+    label: Bayesian model reduction
+    paths: [src/simulation/bmr.py, output/data/bmr_sweep.json]
+    gate: validate_outputs
+    required: true
+  - id: pymdp
+    label: pymdp active-inference profiles and stochastic ensembles
+    paths: [src/simulation/pymdp_profiles.py, src/simulation/stochastic.py, output/data/pymdp_profile_comparison.json, output/data/stochastic_policy_ensemble.json]
+    gate: validate_outputs
+    required: true
+  - id: practice_protocols
+    label: Embodied-practice protocol mappings
+    paths: [src/practice/protocols.py, output/data/practice_protocol_map.json]
+    gate: validate_outputs
+    required: true

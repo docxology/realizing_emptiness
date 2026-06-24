@@ -1,0 +1,840 @@
+schema: realizing_emptiness.scholarship_manifest.v1
+policy:
+  citation_boundary: "Sources support scoped scholarly context, not empirical proof of realization, clinical benefit, or neural effects."
+  source_types:
+    - primary_preprint
+    - peer_reviewed_article
+    - monograph
+    - preprint
+entries:
+  - id: no_self_evidence_preprint
+    citation_key: sandvedsmith2026noself
+    title: "There is no self-evidence: A physics of emptiness realisation"
+    source_type: primary_preprint
+    role: primary formal target
+    evidence_status: source_anchor
+    url: "https://osf.io/preprints/psyarxiv/m78z2_v1"
+    tracks: [paper_source, qfep, qrf, separation_prior, bmr, criticality, compassion_proxy, practice_protocols]
+    supports_claims: [source_boundary_unevidenceable, separation_prior_sigma, bmr_prunes_sigma, practice_protocol_boundary]
+  - id: qfep_generic_quantum_systems
+    citation_key: fields2022qfep
+    title: "A free energy principle for generic quantum systems"
+    source_type: peer_reviewed_article
+    role: qFEP foundation
+    evidence_status: formal_background
+    doi: "10.1016/j.pbiomolbio.2022.05.006"
+    tracks: [qfep, qrf, validation]
+    supports_claims: [qfep_surrogate_scope]
+  - id: quantum_frame_problem
+    citation_key: fields2023quantumframe
+    title: "Separability, contextuality, and the quantum frame problem"
+    source_type: peer_reviewed_article
+    role: separability and contextuality boundary
+    evidence_status: formal_background
+    doi: "10.1007/s10773-023-05406-9"
+    tracks: [paper_source, qrf, separation_prior, limitations]
+    supports_claims: [source_boundary_unevidenceable]
+  - id: free_energy_principle
+    citation_key: friston2010free
+    title: "The free-energy principle: a unified brain theory?"
+    source_type: peer_reviewed_article
+    role: classical FEP background
+    evidence_status: theoretical_background
+    doi: "10.1038/nrn2787"
+    tracks: [qfep, bmr, limitations]
+    supports_claims: [fep_background]
+  - id: free_energy_principle_simpler
+    citation_key: friston2023fep_simpler
+    title: "The free energy principle made simpler but not too simple"
+    source_type: peer_reviewed_article
+    role: contemporary FEP and Markov-blanket framing with bounded interpretation
+    evidence_status: theoretical_background
+    doi: "10.1016/j.physrep.2023.07.001"
+    tracks: [paper_source, qfep, bmr, limitations]
+    supports_claims: [self_evidencing_boundary, fep_background]
+  - id: markov_blanket_density_fep
+    citation_key: possati2025markovblanketdensity
+    title: "Markov Blanket Density and Free Energy Minimization"
+    source_type: preprint
+    role: "Markov-blanket density and FEP boundary background"
+    evidence_status: theoretical_background
+    doi: "10.48550/arXiv.2506.05794"
+    tracks: [paper_source, qfep, limitations]
+    supports_claims: [fep_background, self_evidencing_boundary]
+  - id: dynamic_markov_blanket_detection
+    citation_key: beck2025dynamicmarkovblanket
+    title: "Dynamic Markov Blanket Detection for Macroscopic Physics Discovery"
+    source_type: preprint
+    role: "dynamic Markov-blanket detection background and boundary-identification caution"
+    evidence_status: theoretical_background
+    doi: "10.48550/arXiv.2502.21217"
+    tracks: [paper_source, limitations, validation]
+    supports_claims: [self_evidencing_boundary, source_boundary_unevidenceable]
+  - id: self_evidencing_brain
+    citation_key: hohwy2016self
+    title: "The Self-Evidencing Brain"
+    source_type: peer_reviewed_article
+    role: self-evidencing and evidentiary-boundary background
+    evidence_status: theoretical_background
+    doi: "10.1111/nous.12062"
+    tracks: [paper_source, separation_prior, limitations]
+    supports_claims: [self_evidencing_boundary]
+  - id: self_evidencing_agent_monograph
+    citation_key: hohwy2026selfevidencingagent
+    title: "The Self-Evidencing Agent: Mind, Existence, and Predictive Processing"
+    source_type: monograph
+    role: "self-evidencing agent background and organismic-function boundary"
+    evidence_status: theoretical_background
+    url: "https://mitpress.mit.edu/9780262553896/the-self-evidencing-agent/"
+    tracks: [paper_source, separation_prior, contemplative_inquiry, limitations]
+    supports_claims: [self_evidencing_boundary]
+  - id: active_inference_learning
+    citation_key: friston2016active
+    title: "Active inference and learning"
+    source_type: peer_reviewed_article
+    role: habit formation and policy-precision background
+    evidence_status: methodological_background
+    doi: "10.1016/j.neubiorev.2016.06.022"
+    tracks: [bmr, pymdp, separation_prior, limitations]
+    supports_claims: [habit_policy_precision]
+  - id: active_inference_book
+    citation_key: parr2022active
+    title: "Active Inference: The Free Energy Principle in Mind, Brain, and Behavior"
+    source_type: monograph
+    role: active-inference notation and free-energy decomposition
+    evidence_status: theoretical_background
+    tracks: [qfep, bmr, pymdp]
+    supports_claims: [bmr_prunes_sigma]
+  - id: discrete_active_inference_synthesis
+    citation_key: dacosta2020discrete
+    title: "Active inference on discrete state-spaces: A synthesis"
+    source_type: peer_reviewed_article
+    role: discrete active-inference A/B/C/D implementation background
+    evidence_status: methodological_background
+    doi: "10.1016/j.jmp.2020.102447"
+    tracks: [pymdp, bmr, validation]
+    supports_claims: [pymdp_runtime_canary, metacognitive_access_model]
+  - id: epistemic_value_policy_selection
+    citation_key: friston2015epistemic
+    title: "Active inference and epistemic value"
+    source_type: peer_reviewed_article
+    role: expected free energy and policy-selection background
+    evidence_status: theoretical_background
+    doi: "10.1080/17588928.2015.1020053"
+    tracks: [pymdp, bmr, qfep]
+    supports_claims: [pymdp_runtime_canary]
+  - id: pymdp_joss
+    citation_key: heins2022pymdp
+    title: "pymdp: A Python library for active inference in discrete state spaces"
+    source_type: peer_reviewed_article
+    role: runtime and implementation anchor
+    evidence_status: implementation_anchor
+    doi: "10.21105/joss.04098"
+    tracks: [pymdp, validation]
+    supports_claims: [pymdp_runtime_canary]
+  - id: quantum_reference_frames
+    citation_key: giacomini2019qrf
+    title: "Quantum mechanics and the covariance of physical laws in quantum reference frames"
+    source_type: peer_reviewed_article
+    role: quantum reference-frame background
+    evidence_status: theoretical_background
+    doi: "10.1038/s41467-018-08155-0"
+    tracks: [qrf, limitations]
+    supports_claims: [qrf_background_only]
+  - id: quantum_reference_fields_linearized_gravity
+    citation_key: chen2026quantumreferencefields
+    title: "Quantum Reference Fields Transformations in Linearized Quantum Gravity"
+    source_type: preprint
+    role: "recent QRF/reference-field transformation background; physical QRF context only"
+    evidence_status: theoretical_background
+    doi: "10.48550/arXiv.2606.09344"
+    tracks: [qrf, qfep, limitations]
+    supports_claims: [qrf_background_only]
+  - id: relational_quantum_mechanics
+    citation_key: rovelli1996relational
+    title: "Relational quantum mechanics"
+    source_type: peer_reviewed_article
+    role: "relational quantum-mechanics background for observer-relative state language"
+    evidence_status: theoretical_background
+    doi: "10.1007/BF02302261"
+    tracks: [qrf, qfep, limitations]
+    supports_claims: [qrf_background_only, source_boundary_unevidenceable]
+  - id: quantum_information_textbook
+    citation_key: nielsen2010quantum
+    title: "Quantum Computation and Quantum Information"
+    source_type: monograph
+    role: quantum state, density-matrix, and partial-trace notation
+    evidence_status: methodological_background
+    tracks: [qfep, qrf, validation, limitations]
+    supports_claims: [quantum_separability_entropy, quantum_open_system_dephasing, quantum_measurement_contextuality, qfep_surrogate_scope]
+  - id: quantum_relative_entropy
+    citation_key: vedral2002relative
+    title: "The role of relative entropy in quantum information theory"
+    source_type: peer_reviewed_article
+    role: quantum entropy and information-theoretic boundary background
+    evidence_status: theoretical_background
+    doi: "10.1103/RevModPhys.74.197"
+    tracks: [qfep, qrf, validation]
+    supports_claims: [quantum_separability_entropy, quantum_open_system_dephasing, qfep_surrogate_scope]
+  - id: bell_epr_paradox
+    citation_key: bell1964epr
+    title: "On the Einstein Podolsky Rosen paradox"
+    source_type: peer_reviewed_article
+    role: Bell nonlocality and contextuality witness background
+    evidence_status: theoretical_background
+    doi: "10.1103/PhysicsPhysiqueFizika.1.195"
+    tracks: [qfep, qrf, validation, limitations]
+    supports_claims: [quantum_contextuality_witness, quantum_measurement_contextuality]
+  - id: chsh_test
+    citation_key: clauser1969chsh
+    title: "Proposed experiment to test local hidden-variable theories"
+    source_type: peer_reviewed_article
+    role: CHSH bound and finite contextuality-witness background
+    evidence_status: methodological_background
+    doi: "10.1103/PhysRevLett.23.880"
+    tracks: [qfep, qrf, validation]
+    supports_claims: [quantum_contextuality_witness, quantum_measurement_contextuality]
+  - id: operational_contextuality
+    citation_key: spekkens2005contextuality
+    title: "Contextuality for preparations, transformations, and unsharp measurements"
+    source_type: peer_reviewed_article
+    role: operational contextuality boundary
+    evidence_status: theoretical_background
+    doi: "10.1103/PhysRevA.71.052108"
+    tracks: [qfep, qrf, limitations]
+    supports_claims: [quantum_contextuality_witness, quantum_measurement_contextuality, qfep_surrogate_scope]
+  - id: sheaf_contextuality
+    citation_key: abramsky2011sheaf
+    title: "The sheaf-theoretic structure of non-locality and contextuality"
+    source_type: peer_reviewed_article
+    role: finite CHSH measurement-cover and future sheaf-contextuality roadmap
+    evidence_status: methodological_background
+    doi: "10.1088/1367-2630/13/11/113036"
+    tracks: [qfep, qrf, validation, limitations]
+    supports_claims: [quantum_contextuality_witness, quantum_measurement_contextuality]
+  - id: decoherence_einselection
+    citation_key: zurek2003decoherence
+    title: "Decoherence, einselection, and the quantum origins of the classical"
+    source_type: peer_reviewed_article
+    role: finite dephasing-channel and classical-boundary roadmap context
+    evidence_status: theoretical_background
+    doi: "10.1103/RevModPhys.75.715"
+    tracks: [qfep, qrf, limitations]
+    supports_claims: [quantum_open_system_dephasing, qfep_surrogate_scope]
+  - id: landauer_irreversibility
+    citation_key: landauer1961irreversibility
+    title: "Irreversibility and heat generation in the computing process"
+    source_type: peer_reviewed_article
+    role: information-erasure lower-bound background
+    evidence_status: theoretical_background
+    doi: "10.1147/rd.53.0183"
+    tracks: [qfep, qrf, validation]
+    supports_claims: [quantum_separability_entropy]
+  - id: markov_blankets_life
+    citation_key: kirchhoff2018blankets
+    title: "The Markov blankets of life: autonomy, active inference and the free energy principle"
+    source_type: peer_reviewed_article
+    role: Markov-blanket autonomy and boundary background
+    evidence_status: theoretical_background
+    doi: "10.1098/rsif.2017.0792"
+    tracks: [paper_source, qrf, separation_prior, limitations]
+    supports_claims: [self_evidencing_boundary, source_boundary_unevidenceable]
+  - id: markov_blankets_brain
+    citation_key: hipolito2021markov
+    title: "Markov blankets in the brain"
+    source_type: peer_reviewed_article
+    role: Markov-blanket partition and neural-boundary caution
+    evidence_status: future_empirical_context
+    doi: "10.1016/j.neubiorev.2021.02.003"
+    tracks: [qrf, criticality, limitations]
+    supports_claims: [criticality_proxy_boundary, source_boundary_unevidenceable]
+  - id: bmr_posthoc_selection
+    citation_key: friston2011posthoc
+    title: "Post hoc Bayesian model selection"
+    source_type: peer_reviewed_article
+    role: Bayesian model-reduction background
+    evidence_status: methodological_background
+    doi: "10.1016/j.neuroimage.2011.03.062"
+    tracks: [bmr, validation]
+    supports_claims: [bmr_prunes_sigma]
+  - id: opacity_precision
+    citation_key: limanowski2018seeing
+    title: "Seeing the Dark: Grounding phenomenal transparency and opacity in precision estimation for active inference"
+    source_type: peer_reviewed_article
+    role: transparency, opacity, and precision framing
+    evidence_status: theoretical_background
+    doi: "10.3389/fpsyg.2018.00643"
+    tracks: [practice_protocols, separation_prior, limitations]
+    supports_claims: [practice_protocol_boundary]
+  - id: computational_phenomenology_mental_action
+    citation_key: sandvedsmith2021mentalaction
+    title: "Towards a computational phenomenology of mental action: modelling meta-awareness and attentional control with deep parametric active inference"
+    source_type: peer_reviewed_article
+    role: meta-awareness and attentional-control implementation boundary
+    evidence_status: methodological_background
+    doi: "10.1093/nc/niab018"
+    tracks: [practice_protocols, separation_prior, pymdp, limitations]
+    supports_claims: [metacognitive_access_model, practice_protocol_boundary]
+  - id: mindfulness_phenomenology_matrix
+    citation_key: lutz2015matrix
+    title: "Investigating the phenomenological matrix of mindfulness-related practices from a neurocognitive perspective"
+    source_type: peer_reviewed_article
+    role: practice taxonomy and phenomenological-dimension boundary
+    evidence_status: conceptual_background
+    doi: "10.1037/a0039585"
+    tracks: [practice_protocols, limitations]
+    supports_claims: [practice_protocol_boundary]
+  - id: meditation_predictive_mind
+    citation_key: laukkonen2021many
+    title: "From many to (n)one: Meditation and the plasticity of the predictive mind"
+    source_type: peer_reviewed_article
+    role: deconstructive meditation and predictive processing context
+    evidence_status: conceptual_background
+    doi: "10.1016/j.neubiorev.2021.06.021"
+    tracks: [practice_protocols, limitations]
+    supports_claims: [practice_protocol_boundary]
+  - id: contemplative_artificial_intelligence
+    citation_key: laukkonen2025contemplativeai
+    title: "Contemplative Artificial Intelligence"
+    source_type: preprint
+    role: "contemplative-AI practice-interface background and boundary caution"
+    evidence_status: conceptual_background
+    doi: "10.48550/arXiv.2504.15125"
+    tracks: [practice_protocols, contemplative_inquiry, limitations]
+    supports_claims: [practice_protocol_boundary]
+  - id: meditation_self_mechanisms
+    citation_key: dahl2015self
+    title: "Reconstructing and deconstructing the self: Cognitive mechanisms in meditation practice"
+    source_type: peer_reviewed_article
+    role: attentional, constructive, and deconstructive practice taxonomy
+    evidence_status: conceptual_background
+    doi: "10.1016/j.tics.2015.07.001"
+    tracks: [practice_protocols, limitations]
+    supports_claims: [practice_protocol_boundary]
+  - id: active_inference_advanced_meditation_review
+    citation_key: tal2026advancedmeditation
+    title: "Active Inference, computational phenomenology, and advanced meditation: Toward the formalization of the experience of meditation"
+    source_type: peer_reviewed_article
+    role: "advanced-meditation computational-phenomenology review and precision-weighting boundary"
+    evidence_status: conceptual_background
+    doi: "10.1016/j.neubiorev.2025.106539"
+    tracks: [practice_protocols, contemplative_inquiry, limitations]
+    supports_claims: [metacognitive_access_model, practice_protocol_boundary]
+  - id: meditative_deconstruction_letting_go
+    citation_key: prest2026lettinggo
+    title: "Toward a Computational Phenomenology of Meditative Deconstruction: Letting Go and the Deconstruction of Experience With Active Inference"
+    source_type: peer_reviewed_article
+    role: "letting-go and defabrication model context for precision reweighting"
+    evidence_status: conceptual_background
+    doi: "10.1162/NECO.a.1534"
+    tracks: [practice_protocols, contemplative_inquiry, limitations]
+    supports_claims: [metacognitive_access_model, practice_protocol_boundary]
+  - id: selfing_without_self_preprint
+    citation_key: prest2026selfingwithoutself
+    title: "Selfing without a self: The missing dimension of identification in computational accounts of selfhood"
+    source_type: preprint
+    role: "organismic self versus identified-with self distinction; preprint context only"
+    evidence_status: conceptual_background
+    doi: "10.31234/osf.io/ysqf4_v1"
+    url: "https://osf.io/preprints/psyarxiv/ysqf4_v1"
+    tracks: [practice_protocols, contemplative_inquiry, limitations]
+    supports_claims: [self_evidencing_boundary, metacognitive_access_model, practice_protocol_boundary]
+  - id: criticality_synthesis
+    citation_key: cocchi2017criticality
+    title: "Criticality in the brain: A synthesis of neurobiology, models and cognition"
+    source_type: peer_reviewed_article
+    role: criticality background and cautionary empirical context
+    evidence_status: future_empirical_context
+    doi: "10.1016/j.pneurobio.2017.07.002"
+    tracks: [criticality, limitations]
+    supports_claims: [criticality_proxy_boundary]
+  - id: criticality_benefits
+    citation_key: shew2013criticality
+    title: "The functional benefits of criticality in the cortex"
+    source_type: peer_reviewed_article
+    role: criticality metric background
+    evidence_status: future_empirical_context
+    doi: "10.1177/1073858412445487"
+    tracks: [criticality, limitations]
+    supports_claims: [criticality_proxy_boundary]
+  - id: power_laws_without_criticality
+    citation_key: touboul2017power_law_absence_criticality
+    title: "Power-law statistics and universal scaling in the absence of criticality"
+    source_type: peer_reviewed_article
+    role: criticality proxy caveat and false-positive boundary
+    evidence_status: theoretical_background
+    doi: "10.1103/PhysRevE.95.012413"
+    tracks: [criticality, limitations]
+    supports_claims: [criticality_proxy_boundary]
+  - id: care_driver_intelligence
+    citation_key: doctor2022care
+    title: "Biology, Buddhism, and AI: Care as the driver of intelligence"
+    source_type: peer_reviewed_article
+    role: care and compassion context
+    evidence_status: conceptual_background
+    doi: "10.3390/e24050710"
+    tracks: [compassion_proxy, practice_protocols, limitations]
+    supports_claims: [compassion_proxy_boundary]
+  - id: compassion_definitions_measurement
+    citation_key: strauss2016compassion_measurement
+    title: "What is compassion and how can we measure it? A review of definitions and measures"
+    source_type: peer_reviewed_article
+    role: compassion definition and measurement boundary
+    evidence_status: conceptual_background
+    doi: "10.1016/j.cpr.2016.05.004"
+    tracks: [compassion_proxy, limitations]
+    supports_claims: [compassion_proxy_boundary]
+  - id: empathy_compassion_distinction
+    citation_key: singer2014empathy_compassion
+    title: "Empathy and compassion"
+    source_type: peer_reviewed_article
+    role: empathy and compassion distinction for proxy boundary
+    evidence_status: conceptual_background
+    doi: "10.1016/j.cub.2014.06.054"
+    tracks: [compassion_proxy, limitations]
+    supports_claims: [compassion_proxy_boundary]
+  - id: madhyamaka_translation
+    citation_key: siderits2013middle
+    title: "Nagarjuna's Middle Way: Mulamadhyamakakarika"
+    source_type: monograph
+    role: Buddhist emptiness terminology boundary
+    evidence_status: philosophical_background
+    tracks: [paper_source, practice_protocols, limitations]
+    supports_claims: [practice_protocol_boundary]
+  - id: nagarjuna_madhyamaka_introduction
+    citation_key: westerhoff2009madhyamaka
+    title: "Nagarjuna's Madhyamaka: A Philosophical Introduction"
+    source_type: monograph
+    role: Madhyamaka anti-essentialism and emptiness terminology boundary
+    evidence_status: philosophical_background
+    tracks: [paper_source, limitations]
+    supports_claims: [source_boundary_unevidenceable]
+  - id: phenomenological_selfhood_counterpoint
+    citation_key: zahavi2005subjectivity_selfhood
+    title: "Subjectivity and Selfhood: Investigating the First-Person Perspective"
+    source_type: monograph
+    role: minimal and prereflective selfhood counterpoint
+    evidence_status: philosophical_background
+    tracks: [paper_source, limitations]
+    supports_claims: [source_boundary_unevidenceable]
+  - id: lindblad_quantum_semigroups
+    citation_key: lindblad1976generators
+    title: "On the generators of quantum dynamical semigroups"
+    source_type: peer_reviewed_article
+    role: Lindblad open-system generator background for finite boundary-Hamiltonian audits
+    evidence_status: methodological_background
+    doi: "10.1007/BF01608499"
+    tracks: [qfep, validation, limitations]
+    supports_claims: [qfep_surrogate_scope, quantum_open_system_dephasing]
+  - id: gks_quantum_dynamical_semigroups
+    citation_key: gorini1976completelypositive
+    title: "Completely positive dynamical semigroups of N-level systems"
+    source_type: peer_reviewed_article
+    role: GKSL positivity and trace-preserving dynamics background
+    evidence_status: methodological_background
+    doi: "10.1063/1.522979"
+    tracks: [qfep, validation, limitations]
+    supports_claims: [qfep_surrogate_scope, quantum_open_system_dephasing]
+  - id: tensor_network_introduction
+    citation_key: orus2014tensor
+    title: "A practical introduction to tensor networks: Matrix product states and projected entangled pair states"
+    source_type: peer_reviewed_article
+    role: many-body and tensor-network scaling context for boundary-screen roadmap engines
+    evidence_status: methodological_background
+    doi: "10.1016/j.aop.2014.06.013"
+    tracks: [qfep, qrf, validation, limitations]
+    supports_claims: [qfep_surrogate_scope, quantum_separability_entropy]
+  - id: fair_data_principles
+    citation_key: wilkinson2016fair
+    title: "The FAIR Guiding Principles for scientific data management and stewardship"
+    source_type: peer_reviewed_article
+    role: empirical adapter provenance and data stewardship boundary
+    evidence_status: methodological_background
+    doi: "10.1038/sdata.2016.18"
+    tracks: [validation, criticality, practice_protocols, limitations]
+    supports_claims: [practice_protocol_boundary, criticality_proxy_boundary]
+  - id: preregistration_revolution
+    citation_key: nosek2018preregistration
+    title: "The preregistration revolution"
+    source_type: peer_reviewed_article
+    role: preregistration and empirical-claim governance context
+    evidence_status: methodological_background
+    doi: "10.1073/pnas.1708274114"
+    tracks: [validation, criticality, practice_protocols, limitations]
+    supports_claims: [practice_protocol_boundary, criticality_proxy_boundary]
+  - id: peres_ppt_separability
+    citation_key: peres1996separability
+    title: "Separability criterion for density matrices"
+    source_type: peer_reviewed_article
+    role: PPT criterion background for mixed two-qubit entanglement controls
+    evidence_status: methodological_background
+    doi: "10.1103/PhysRevLett.77.1413"
+    tracks: [qfep, qrf, validation, limitations]
+    supports_claims: [qfep_surrogate_scope, quantum_separability_entropy]
+  - id: horodecki_separability
+    citation_key: horodecki1996separability
+    title: "Separability of mixed states: Necessary and sufficient conditions"
+    source_type: peer_reviewed_article
+    role: separability theorem context for finite two-qubit PPT/negativity audits
+    evidence_status: methodological_background
+    doi: "10.1016/S0375-9601(96)00706-2"
+    tracks: [qfep, qrf, validation, limitations]
+    supports_claims: [qfep_surrogate_scope, quantum_separability_entropy]
+  - id: werner_state_controls
+    citation_key: werner1989quantum
+    title: "Quantum states with Einstein-Podolsky-Rosen correlations admitting a hidden-variable model"
+    source_type: peer_reviewed_article
+    role: Werner-family mixed-state controls for entanglement and locality boundaries
+    evidence_status: methodological_background
+    doi: "10.1103/PhysRevA.40.4277"
+    tracks: [qfep, qrf, validation, limitations]
+    supports_claims: [qfep_surrogate_scope, quantum_separability_entropy, quantum_contextuality_witness]
+  - id: kraus_operations
+    citation_key: kraus1983states
+    title: "States, Effects, and Operations: Fundamental Notions of Quantum Theory"
+    source_type: monograph
+    role: quantum operation and CPTP-channel background for channel-cost audits
+    evidence_status: methodological_background
+    tracks: [qfep, validation, limitations]
+    supports_claims: [qfep_surrogate_scope, quantum_open_system_dephasing]
+  - id: monte_carlo_wavefunction_prl
+    citation_key: dalibard1992wavefunction
+    title: "Wave-function approach to dissipative processes in quantum optics"
+    source_type: peer_reviewed_article
+    role: quantum-jump and wave-function unraveling method background
+    evidence_status: methodological_background
+    doi: "10.1103/PhysRevLett.68.580"
+    tracks: [qfep, validation, limitations]
+    supports_claims: [qfep_surrogate_scope, quantum_open_system_dephasing]
+  - id: monte_carlo_wavefunction_josab
+    citation_key: molmer1993montecarlo
+    title: "Monte Carlo wave-function method in quantum optics"
+    source_type: peer_reviewed_article
+    role: Monte Carlo wave-function trajectory and master-equation equivalence background
+    evidence_status: methodological_background
+    doi: "10.1364/JOSAB.10.000524"
+    tracks: [qfep, validation, limitations]
+    supports_claims: [qfep_surrogate_scope, quantum_open_system_dephasing]
+  - id: quantum_measurement_control
+    citation_key: wiseman2010quantum
+    title: "Quantum Measurement and Control"
+    source_type: monograph
+    role: quantum measurement, trajectory, and open-system control background
+    evidence_status: methodological_background
+    doi: "10.1017/CBO9780511813948"
+    tracks: [qfep, validation, limitations]
+    supports_claims: [qfep_surrogate_scope, quantum_open_system_dephasing]
+  - id: perspective_neutral_qrf
+    citation_key: vanrietvelde2020perspective
+    title: "A change of perspective: switching quantum reference frames via a perspective-neutral framework"
+    source_type: peer_reviewed_article
+    role: perspective-neutral QRF transformation background
+    evidence_status: theoretical_background
+    doi: "10.22331/q-2020-01-27-225"
+    tracks: [qrf, qfep, validation, limitations]
+    supports_claims: [qrf_background_only, qfep_surrogate_scope]
+  - id: bootstrap_uncertainty
+    citation_key: efron1979bootstrap
+    title: "Bootstrap Methods: Another Look at the Jackknife"
+    source_type: peer_reviewed_article
+    role: bootstrap interval background for finite simulation robustness audits
+    evidence_status: methodological_background
+    doi: "10.1214/aos/1176344552"
+    tracks: [validation, bmr, criticality, limitations]
+    supports_claims: [bmr_prunes_sigma, criticality_proxy_boundary]
+  - id: holm_multiple_testing
+    citation_key: holm1979sequential
+    title: "A Simple Sequentially Rejective Multiple Test Procedure"
+    source_type: peer_reviewed_article
+    role: family-wise multiplicity correction for finite stochastic effect-size audits
+    evidence_status: methodological_background
+    tracks: [validation, criticality, limitations]
+    supports_claims: [criticality_proxy_boundary]
+  - id: cliffs_delta_effect_size
+    citation_key: cliff1993dominance
+    title: "Dominance Statistics: Ordinal Analyses to Answer Ordinal Questions"
+    source_type: peer_reviewed_article
+    role: dominance-effect-size background for stochastic profile versus null comparisons
+    evidence_status: methodological_background
+    doi: "10.1037/0033-2909.114.3.494"
+    tracks: [validation, criticality, limitations]
+    supports_claims: [criticality_proxy_boundary]
+  - id: ghz_multipartite_state
+    citation_key: greenberger1989going
+    title: "Going Beyond Bell's Theorem"
+    source_type: peer_reviewed_article
+    role: "multipartite (GHZ) entanglement foundation"
+    evidence_status: formal_background
+    doi: "10.1007/978-94-017-0849-4_10"
+    tracks: [qfep]
+    supports_claims: [quantum_separability_entropy]
+  - id: tsirelson_bound
+    citation_key: cirelson1980quantum
+    title: "Quantum Generalizations of Bell's Inequality"
+    source_type: peer_reviewed_article
+    role: "Tsirelson-bound quantum correlation ceiling"
+    evidence_status: formal_background
+    doi: "10.1007/BF00417500"
+    tracks: [qfep]
+    supports_claims: [quantum_contextuality_witness]
+  - id: kochen_specker_contextuality
+    citation_key: kochen1967problem
+    title: "The Problem of Hidden Variables in Quantum Mechanics"
+    source_type: peer_reviewed_article
+    role: "measurement contextuality / no-go foundation"
+    evidence_status: formal_background
+    doi: "10.1512/iumj.1968.17.17004"
+    tracks: [qfep]
+    supports_claims: [quantum_measurement_contextuality]
+  - id: ncycle_noncontextuality_inequalities
+    citation_key: araujo2013ncycle
+    title: "All Noncontextuality Inequalities for the n-Cycle Scenario"
+    source_type: peer_reviewed_article
+    role: "n-cycle noncontextuality scenario characterization"
+    evidence_status: formal_background
+    doi: "10.1103/PhysRevA.88.022118"
+    tracks: [qfep]
+    supports_claims: [quantum_measurement_contextuality]
+  - id: area_law_entanglement_entropy
+    citation_key: eisert2010area
+    title: "Colloquium: Area Laws for the Entanglement Entropy"
+    source_type: peer_reviewed_article
+    role: "area-law / tensor-network entanglement scaling foundation"
+    evidence_status: formal_background
+    doi: "10.1103/RevModPhys.82.277"
+    tracks: [qfep]
+    supports_claims: [quantum_separability_entropy]
+  - id: plenio_quantum_jump_dissipative
+    citation_key: plenio1998quantumjump
+    title: "The quantum-jump approach to dissipative dynamics in quantum optics"
+    source_type: peer_reviewed_article
+    role: "Monte Carlo wave-function unraveling / ensemble convergence to the master equation"
+    evidence_status: methodological_background
+    doi: "10.1103/RevModPhys.70.101"
+    tracks: [qfep]
+    supports_claims: [quantum_open_system_dephasing]
+  - id: hoehn_trinity_relational_quantum_dynamics
+    citation_key: hoehn2021trinity
+    title: "Trinity of relational quantum dynamics"
+    source_type: peer_reviewed_article
+    role: "relational quantum dynamics / probability-preserving frame relabeling background"
+    evidence_status: theoretical_background
+    doi: "10.1103/PhysRevD.104.066001"
+    tracks: [qrf, qfep]
+    supports_claims: [qrf_background_only]
+  - id: bartlett_reference_frames_superselection
+    citation_key: bartlett2007reference
+    title: "Reference frames, superselection rules, and quantum information"
+    source_type: peer_reviewed_article
+    role: "reference frames and superselection rules in quantum information"
+    evidence_status: theoretical_background
+    doi: "10.1103/RevModPhys.79.555"
+    tracks: [qrf]
+    supports_claims: [qrf_background_only]
+  - id: manzano_lindblad_master_equation
+    citation_key: manzano2020lindblad
+    title: "A short introduction to the Lindblad master equation"
+    source_type: peer_reviewed_article
+    role: "GKSL/Lindblad master-equation pedagogical anchor"
+    evidence_status: methodological_background
+    doi: "10.1063/1.5115323"
+    tracks: [qfep]
+    supports_claims: [quantum_open_system_dephasing]
+  - id: friston_bayesian_model_reduction
+    citation_key: friston2018bmr
+    title: "Bayesian model reduction"
+    source_type: preprint
+    role: "Bayesian model reduction free-energy comparison foundation"
+    evidence_status: methodological_background
+    doi: "10.48550/arXiv.1805.07092"
+    tracks: [bmr]
+    supports_claims: [bmr_prunes_sigma]
+  - id: sandvedsmith_metacognitive_particles
+    citation_key: sandvedsmith2024metacognitive
+    title: "Metacognitive particles, mental action and the sense of agency"
+    source_type: preprint
+    role: "metacognitive access and mental-action model foundation"
+    evidence_status: theoretical_background
+    doi: "10.48550/arXiv.2405.12941"
+    tracks: [pymdp, practice_protocols]
+    supports_claims: [metacognitive_access_model]
+  - id: aguilera_particular_physics_fep
+    citation_key: aguilera2021particular
+    title: "How particular is the physics of the free energy principle?"
+    source_type: peer_reviewed_article
+    role: "conservative Markov-blanket and boundary framing critique"
+    evidence_status: theoretical_background
+    doi: "10.1016/j.plrev.2021.11.001"
+    tracks: [limitations]
+    supports_claims: [self_evidencing_boundary]
+  - id: biehl_technical_critique_fep
+    citation_key: biehl2021technical_fep
+    title: "A technical critique of some parts of the free energy principle"
+    source_type: peer_reviewed_article
+    role: "technical critique of unqualified FEP and Markov-blanket inference"
+    evidence_status: theoretical_background
+    doi: "10.3390/e23030293"
+    tracks: [paper_source, limitations]
+    supports_claims: [self_evidencing_boundary, source_boundary_unevidenceable]
+  - id: heins_sparse_coupling_blankets
+    citation_key: heins2022sparse_coupling
+    title: "Sparse coupling and Markov blankets: A comment on How particular is the physics of the Free Energy Principle?"
+    source_type: peer_reviewed_article
+    role: "qualified response specifying conditions under which sparse coupling supports Markov blankets"
+    evidence_status: theoretical_background
+    doi: "10.1016/j.plrev.2022.06.001"
+    tracks: [paper_source, limitations]
+    supports_claims: [self_evidencing_boundary, source_boundary_unevidenceable]
+  - id: emperor_new_markov_blankets
+    citation_key: bruineberg2022emperor
+    title: "The Emperor's New Markov Blankets"
+    source_type: peer_reviewed_article
+    role: "Pearl-blanket versus Friston-blanket critique of ontological boundary inference"
+    evidence_status: theoretical_background
+    doi: "10.1017/S0140525X21002351"
+    tracks: [paper_source, scholarship, limitations]
+    supports_claims: [self_evidencing_boundary, source_boundary_unevidenceable]
+  - id: klyubin_empowerment_control
+    citation_key: klyubin2005empowerment
+    title: "Empowerment: A universal agent-centric measure of control"
+    source_type: peer_reviewed_article
+    role: "empowerment information-theoretic measure of control foundation"
+    evidence_status: methodological_background
+    doi: "10.1109/CEC.2005.1554676"
+    tracks: [separation_prior]
+    supports_claims: [separation_prior_sigma]
+  - id: neuronal_avalanches_branching
+    citation_key: beggs2003neuronal
+    title: "Neuronal Avalanches in Neocortical Circuits"
+    source_type: peer_reviewed_article
+    role: "founding empirical source for neuronal avalanches and branching ratio sigma=1 criticality signature"
+    evidence_status: theoretical_background
+    doi: "10.1523/JNEUROSCI.23-35-11167.2003"
+    tracks: [criticality]
+    supports_claims: [criticality_proxy_boundary]
+  - id: criticality_neuroscience_review
+    citation_key: wilting2019criticality
+    title: "25 Years of Criticality in Neuroscience -- Established Results, Open Controversies, Novel Concepts"
+    source_type: peer_reviewed_article
+    role: "review acknowledging criticality as a disputed proxy vocabulary in neuroscience"
+    evidence_status: theoretical_background
+    doi: "10.1016/j.conb.2019.08.002"
+    tracks: [criticality]
+    supports_claims: [criticality_proxy_boundary]
+  - id: sufficient_evidence_criticality_caution
+    citation_key: destexhe2021criticality_evidence
+    title: "Is there sufficient evidence for criticality in cortical systems?"
+    source_type: peer_reviewed_article
+    role: "criticality false-positive and evidential sufficiency caution"
+    evidence_status: theoretical_background
+    doi: "10.1523/ENEURO.0551-20.2021"
+    tracks: [criticality, limitations]
+    supports_claims: [criticality_proxy_boundary]
+  - id: resampling_multiple_testing
+    citation_key: westfall1993resampling
+    title: "Resampling-Based Multiple Testing: Examples and Methods for p-Value Adjustment"
+    source_type: monograph
+    role: "methodological foundation for resampling-based p-values with step-down (Holm) multiple-comparison correction"
+    evidence_status: methodological_background
+    url: "https://books.google.com/books/about/Resampling_Based_Multiple_Testing.html?id=nuQXORVGI1QC"
+    tracks: [criticality]
+    supports_claims: [criticality_proxy_boundary]
+  - id: manifesto_reproducible_science
+    citation_key: munafo2017manifesto
+    title: "A manifesto for reproducible science"
+    source_type: peer_reviewed_article
+    role: "reproducibility and provenance governance background"
+    evidence_status: methodological_background
+    doi: "10.1038/s41562-016-0021"
+    tracks: [scholarship, evidence_ceiling]
+    supports_claims: [source_boundary_unevidenceable]
+  - id: fine_hidden_variables
+    citation_key: fine1982hidden
+    title: "Hidden variables, joint probability, and the Bell inequalities"
+    source_type: peer_reviewed_article
+    role: "CHSH local-polytope and joint-probability interpretation background"
+    evidence_status: methodological_background
+    doi: "10.1103/PhysRevLett.48.291"
+    tracks: [qfep, qrf, validation]
+    supports_claims: [quantum_measurement_contextuality]
+  - id: talts_simulation_based_calibration
+    citation_key: talts2018sbc
+    title: "Validating Bayesian inference algorithms with simulation-based calibration"
+    source_type: preprint
+    role: "Bayesian workflow validation and simulation-based calibration background"
+    evidence_status: methodological_background
+    doi: "10.48550/arXiv.1804.06788"
+    tracks: [validation, bmr, scholarship]
+    supports_claims: [bmr_prunes_sigma, artifact_release_readiness]
+  - id: gelman_bayesian_workflow
+    citation_key: gelman2020bayesianworkflow
+    title: "Bayesian workflow"
+    source_type: preprint
+    role: "Bayesian workflow, model checking, and validation boundary background"
+    evidence_status: methodological_background
+    doi: "10.48550/arXiv.2011.01808"
+    tracks: [validation, bmr, scholarship]
+    supports_claims: [bmr_prunes_sigma, artifact_release_readiness]
+  - id: pineau_reproducibility_checklist
+    citation_key: pineau2020reproducibility
+    title: "Improving reproducibility in machine learning research"
+    source_type: preprint
+    role: "artifact release and reproducibility checklist practice background"
+    evidence_status: methodological_background
+    doi: "10.48550/arXiv.2003.12206"
+    tracks: [validation, scholarship, evidence_ceiling]
+    supports_claims: [artifact_release_readiness]
+  - id: lutz_attention_meditation_taxonomy
+    citation_key: lutz2008attention
+    title: "Attention regulation and monitoring in meditation"
+    source_type: peer_reviewed_article
+    role: "focused-attention / open-monitoring / non-dual practice-style taxonomy"
+    evidence_status: conceptual_background
+    doi: "10.1016/j.tics.2008.01.005"
+    tracks: [practice_protocols, contemplative_inquiry]
+    supports_claims: [practice_protocol_boundary]
+  - id: garfield_fundamental_middle_way
+    citation_key: garfield1995fundamental
+    title: "The Fundamental Wisdom of the Middle Way: Nagarjuna's Mulamadhyamakakarika"
+    source_type: monograph
+    role: "epistemic (non-eliminativist) reading of emptiness terminology"
+    evidence_status: philosophical_background
+    url: "https://global.oup.com/academic/product/the-fundamental-wisdom-of-the-middle-way-9780195093360"
+    tracks: [paper_source, scholarship]
+    supports_claims: [source_boundary_unevidenceable]
+  - id: embodied_mind_enaction
+    citation_key: varela1991embodied
+    title: "The Embodied Mind: Cognitive Science and Human Experience"
+    source_type: monograph
+    role: "enactive and neurophenomenological background for boundary-as-interface vocabulary"
+    evidence_status: philosophical_background
+    doi: "10.7551/mitpress/6730.001.0001"
+    tracks: [paper_source, scholarship, contemplative_inquiry, limitations]
+    supports_claims: [source_boundary_unevidenceable, practice_protocol_boundary]
+  - id: dennett_real_patterns
+    citation_key: dennett1991realpatterns
+    title: "Real Patterns"
+    source_type: peer_reviewed_article
+    role: "use-vs-ontology distinction (patterns real and useful without ontological commitment)"
+    evidence_status: philosophical_background
+    doi: "10.2307/2027085"
+    tracks: [paper_source]
+    supports_claims: [source_boundary_unevidenceable]
+  - id: seth_bayne_theories_consciousness
+    citation_key: sethbayne2022theories
+    title: "Theories of consciousness"
+    source_type: peer_reviewed_article
+    role: "predictive self-model and self-evidencing context"
+    evidence_status: theoretical_background
+    doi: "10.1038/s41583-022-00587-4"
+    tracks: [paper_source, limitations]
+    supports_claims: [self_evidencing_boundary]
+  - id: spekkens_quasi_quantization
+    citation_key: spekkens2016quasi
+    title: "Quasi-Quantization: Classical Statistical Theories with an Epistemic Restriction"
+    source_type: peer_reviewed_article
+    role: "epistemic restriction reproduces quantum-like contextuality"
+    evidence_status: theoretical_background
+    doi: "10.1007/978-94-017-7303-4_4"
+    tracks: [qfep]
+    supports_claims: [quantum_measurement_contextuality]

@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: If you use this software, please cite it using the metadata from this file.
+title: Realizing Emptiness
+type: software
+version: 1.0.0
+date-released: '2026-06-24'
+license: MIT
+repository-code: https://github.com/docxology/realizing_emptiness
+url: https://github.com/docxology/realizing_emptiness
+doi: 10.5281/zenodo.20834847
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.20834846
+    description: Concept DOI (all versions)
+authors:
+  - given-names: Daniel Ari
+    family-names: Friedman
+    affiliation: Active Inference Institute
+    orcid: 0000-0001-6232-9096
+keywords:
+  - active inference
+  - emptiness
+  - quantum reference frames
+  - Bayesian model reduction
+  - pymdp
+

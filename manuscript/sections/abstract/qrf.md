@@ -1,0 +1,1 @@
+The software represents QRF deployments as policies over boundary-channel sectorisations, using the same finite bitstream under self/environment/contextual relabelings so that QRF labels can organize prediction, action selection, and transformation covariance while failing to become evidence for an ontological self/world boundary.

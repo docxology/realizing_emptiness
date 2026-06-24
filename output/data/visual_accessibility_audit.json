@@ -1,0 +1,603 @@
+{
+  "figure_count": 59,
+  "missing_alt_text": [],
+  "missing_data_table_alternative": [],
+  "missing_legend_or_colorbar": [],
+  "missing_non_color_encoding": [],
+  "missing_units_or_axes": [],
+  "ok": true,
+  "row_count": 59,
+  "rows": [
+    {
+      "alt_text_length": 280,
+      "has_alt_text": true,
+      "has_data_table_alternative": true,
+      "has_legend_or_colorbar": true,
+      "has_non_color_encoding": true,
+      "has_units_or_axes": true,
+      "id": "graphical_abstract_cover",
+      "ok": true
+    },
+    {
+      "alt_text_length": 277,
+      "has_alt_text": true,
+      "has_data_table_alternative": true,
+      "has_legend_or_colorbar": true,
+      "has_non_color_encoding": true,
+      "has_units_or_axes": true,
+      "id": "qrf_boundary_screen_geometry",
+      "ok": true
+    },
+    {
+      "alt_text_length": 213,
+      "has_alt_text": true,
+      "has_data_table_alternative": true,
+      "has_legend_or_colorbar": true,
+      "has_non_color_encoding": true,
+      "has_units_or_axes": true,
+      "id": "qrf_channel_relabeling_ledger",
+      "ok": true
+    },
+    {
+      "alt_text_length": 241,
+      "has_alt_text": true,
+      "has_data_table_alternative": true,
+      "has_legend_or_colorbar": true,
+      "has_non_color_encoding": true,
+      "has_units_or_axes": true,
+      "id": "qrf_invariance_policy_flow",
+      "ok": true
+    },
+    {
+      "alt_text_length": 183,
+      "has_alt_text": true,
+      "has_data_table_alternative": true,
+      "has_legend_or_colorbar": true,
+      "has_non_color_encoding": true,
+      "has_units_or_axes": true,
+      "id": "qrf_sectorisation_map",
+      "ok": true
+    },
+    {
+      "alt_text_length": 149,
+      "has_alt_text": true,
+      "has_data_table_alternative": true,
+      "has_legend_or_colorbar": true,
+      "has_non_color_encoding": true,
+      "has_units_or_axes": true,
+      "id": "boundary_indistinguishability",
+      "ok": true
+    },
+    {
+      "alt_text_length": 144,
+      "has_alt_text": true,
+      "has_data_table_alternative": true,
+      "has_legend_or_colorbar": true,
+      "has_non_color_encoding": true,
+      "has_units_or_axes": true,
+      "id": "qrf_reference_frame_geometry",
+      "ok": true
+    },
+    {
+      "alt_text_length": 162,
+      "has_alt_text": true,
+      "has_data_table_alternative": true,
+      "has_legend_or_colorbar": true,
+      "has_non_color_encoding": true,
+      "has_units_or_axes": true,
+      "id": "bmr_free_energy_decomposition",
+      "ok": true
+    },
+    {
+      "alt_text_length": 184,
+      "has_alt_text": true,
+      "has_data_table_alternative": true,
+      "has_legend_or_colorbar": true,
+      "has_non_color_encoding": true,
+      "has_units_or_axes": true,
+      "id": "bmr_pruning_phase_diagram",
+      "ok": true
+    },
+    {
+      "alt_text_length": 179,
+      "has_alt_text": true,
+      "has_data_table_alternative": true,
+      "has_legend_or_colorbar": true,
+      "has_non_color_encoding": true,
+      "has_units_or_axes": true,
+      "id": "simulation_sensitivity_heatmap",
+      "ok": true
+    },
+    {
+      "alt_text_length": 216,
+      "has_alt_text": true,
+      "has_data_table_alternative": true,
+      "has_legend_or_colorbar": true,
+      "has_non_color_encoding": true,
+      "has_units_or_axes": true,
+      "id": "finite_quantum_scope_summary",
+      "ok": true
+    },
+    {
+      "alt_text_length": 184,
+      "has_alt_text": true,
+      "has_data_table_alternative": true,
+      "has_legend_or_colorbar": true,
+      "has_non_color_encoding": true,
+      "has_units_or_axes": true,
+      "id": "quantum_boundary_entropy_landscape",
+      "ok": true
+    },
+    {
+      "alt_text_length": 171,
+      "has_alt_text": true,
+      "has_data_table_alternative": true,
+      "has_legend_or_colorbar": true,
+      "has_non_color_encoding": true,
+      "has_units_or_axes": true,
+      "id": "quantum_contextuality_witness",
+      "ok": true
+    },
+    {
+      "alt_text_length": 240,
+      "has_alt_text": true,
+      "has_data_table_alternative": true,
+      "has_legend_or_colorbar": true,
+      "has_non_color_encoding": true,
+      "has_units_or_axes": true,
+      "id": "quantum_measurement_contextuality_table",
+      "ok": true
+    },
+    {
+      "alt_text_length": 232,
+      "has_alt_text": true,
+      "has_data_table_alternative": true,
+      "has_legend_or_colorbar": true,
+      "has_non_color_encoding": true,
+      "has_units_or_axes": true,
+      "id": "quantum_local_polytope_audit",
+      "ok": true
+    },
+    {
+      "alt_text_length": 164,
+      "has_alt_text": true,
+      "has_data_table_alternative": true,
+      "has_legend_or_colorbar": true,
+      "has_non_color_encoding": true,
+      "has_units_or_axes": true,
+      "id": "quantum_open_system_dynamics",
+      "ok": true
+    },
+    {
+      "alt_text_length": 177,
+      "has_alt_text": true,
+      "has_data_table_alternative": true,
+      "has_legend_or_colorbar": true,
+      "has_non_color_encoding": true,
+      "has_units_or_axes": true,
+      "id": "qfep_boundary_hamiltonian_dynamics",
+      "ok": true
+    },
+    {
+      "alt_text_length": 201,
+      "has_alt_text": true,
+      "has_data_table_alternative": true,
+      "has_legend_or_colorbar": true,
+      "has_non_color_encoding": true,
+      "has_units_or_axes": true,
+      "id": "quantum_trajectory_unraveling",
+      "ok": true
+    },
+    {
+      "alt_text_length": 202,
+      "has_alt_text": true,
+      "has_data_table_alternative": true,
+      "has_legend_or_colorbar": true,
+      "has_non_color_encoding": true,
+      "has_units_or_axes": true,
+      "id": "many_body_boundary_screen_sweep",
+      "ok": true
+    },
+    {
+      "alt_text_length": 189,
+      "has_alt_text": true,
+      "has_data_table_alternative": true,
+      "has_legend_or_colorbar": true,
+      "has_non_color_encoding": true,
+      "has_units_or_axes": true,
+      "id": "sheaf_contextuality_obstruction_audit",
+      "ok": true
+    },
+    {
+      "alt_text_length": 173,
+      "has_alt_text": true,
+      "has_data_table_alternative": true,
+      "has_legend_or_colorbar": true,
+      "has_non_color_encoding": true,
+      "has_units_or_axes": true,
+      "id": "qrf_transformation_covariance_audit",
+      "ok": true
+    },
+    {
+      "alt_text_length": 189,
+      "has_alt_text": true,
+      "has_data_table_alternative": true,
+      "has_legend_or_colorbar": true,
+      "has_non_color_encoding": true,
+      "has_units_or_axes": true,
+      "id": "empirical_adapter_provenance_audit",
+      "ok": true
+    },
+    {
+      "alt_text_length": 216,
+      "has_alt_text": true,
+      "has_data_table_alternative": true,
+      "has_legend_or_colorbar": true,
+      "has_non_color_encoding": true,
+      "has_units_or_axes": true,
+      "id": "arbitrary_two_qubit_entanglement_audit",
+      "ok": true
+    },
+    {
+      "alt_text_length": 183,
+      "has_alt_text": true,
+      "has_data_table_alternative": true,
+      "has_legend_or_colorbar": true,
+      "has_non_color_encoding": true,
+      "has_units_or_axes": true,
+      "id": "general_measurement_cover_polytope_audit",
+      "ok": true
+    },
+    {
+      "alt_text_length": 193,
+      "has_alt_text": true,
+      "has_data_table_alternative": true,
+      "has_legend_or_colorbar": true,
+      "has_non_color_encoding": true,
+      "has_units_or_axes": true,
+      "id": "thermodynamic_channel_cost_audit",
+      "ok": true
+    },
+    {
+      "alt_text_length": 221,
+      "has_alt_text": true,
+      "has_data_table_alternative": true,
+      "has_legend_or_colorbar": true,
+      "has_non_color_encoding": true,
+      "has_units_or_axes": true,
+      "id": "sparse_boundary_screen_scaling_audit",
+      "ok": true
+    },
+    {
+      "alt_text_length": 201,
+      "has_alt_text": true,
+      "has_data_table_alternative": true,
+      "has_legend_or_colorbar": true,
+      "has_non_color_encoding": true,
+      "has_units_or_axes": true,
+      "id": "qrf_frame_covariance_toy_audit",
+      "ok": true
+    },
+    {
+      "alt_text_length": 223,
+      "has_alt_text": true,
+      "has_data_table_alternative": true,
+      "has_legend_or_colorbar": true,
+      "has_non_color_encoding": true,
+      "has_units_or_axes": true,
+      "id": "quantum_roadmap_readiness_matrix",
+      "ok": true
+    },
+    {
+      "alt_text_length": 202,
+      "has_alt_text": true,
+      "has_data_table_alternative": true,
+      "has_legend_or_colorbar": true,
+      "has_non_color_encoding": true,
+      "has_units_or_axes": true,
+      "id": "pymdp_profile_comparison",
+      "ok": true
+    },
+    {
+      "alt_text_length": 175,
+      "has_alt_text": true,
+      "has_data_table_alternative": true,
+      "has_legend_or_colorbar": true,
+      "has_non_color_encoding": true,
+      "has_units_or_axes": true,
+      "id": "posterior_trajectory",
+      "ok": true
+    },
+    {
+      "alt_text_length": 298,
+      "has_alt_text": true,
+      "has_data_table_alternative": true,
+      "has_legend_or_colorbar": true,
+      "has_non_color_encoding": true,
+      "has_units_or_axes": true,
+      "id": "pymdp_runtime_validation_dashboard",
+      "ok": true
+    },
+    {
+      "alt_text_length": 153,
+      "has_alt_text": true,
+      "has_data_table_alternative": true,
+      "has_legend_or_colorbar": true,
+      "has_non_color_encoding": true,
+      "has_units_or_axes": true,
+      "id": "criticality_proxy_panels",
+      "ok": true
+    },
+    {
+      "alt_text_length": 226,
+      "has_alt_text": true,
+      "has_data_table_alternative": true,
+      "has_legend_or_colorbar": true,
+      "has_non_color_encoding": true,
+      "has_units_or_axes": true,
+      "id": "criticality_stochastic_ensemble",
+      "ok": true
+    },
+    {
+      "alt_text_length": 258,
+      "has_alt_text": true,
+      "has_data_table_alternative": true,
+      "has_legend_or_colorbar": true,
+      "has_non_color_encoding": true,
+      "has_units_or_axes": true,
+      "id": "criticality_signatures",
+      "ok": true
+    },
+    {
+      "alt_text_length": 235,
+      "has_alt_text": true,
+      "has_data_table_alternative": true,
+      "has_legend_or_colorbar": true,
+      "has_non_color_encoding": true,
+      "has_units_or_axes": true,
+      "id": "compassion_scope_widening",
+      "ok": true
+    },
+    {
+      "alt_text_length": 212,
+      "has_alt_text": true,
+      "has_data_table_alternative": true,
+      "has_legend_or_colorbar": true,
+      "has_non_color_encoding": true,
+      "has_units_or_axes": true,
+      "id": "separation_prior_emergence",
+      "ok": true
+    },
+    {
+      "alt_text_length": 254,
+      "has_alt_text": true,
+      "has_data_table_alternative": true,
+      "has_legend_or_colorbar": true,
+      "has_non_color_encoding": true,
+      "has_units_or_axes": true,
+      "id": "internal_cut_unmeasurability",
+      "ok": true
+    },
+    {
+      "alt_text_length": 239,
+      "has_alt_text": true,
+      "has_data_table_alternative": true,
+      "has_legend_or_colorbar": true,
+      "has_non_color_encoding": true,
+      "has_units_or_axes": true,
+      "id": "practice_policy_scope_map",
+      "ok": true
+    },
+    {
+      "alt_text_length": 241,
+      "has_alt_text": true,
+      "has_data_table_alternative": true,
+      "has_legend_or_colorbar": true,
+      "has_non_color_encoding": true,
+      "has_units_or_axes": true,
+      "id": "stochastic_effect_size_forest",
+      "ok": true
+    },
+    {
+      "alt_text_length": 180,
+      "has_alt_text": true,
+      "has_data_table_alternative": true,
+      "has_legend_or_colorbar": true,
+      "has_non_color_encoding": true,
+      "has_units_or_axes": true,
+      "id": "bmr_robustness_resampling",
+      "ok": true
+    },
+    {
+      "alt_text_length": 178,
+      "has_alt_text": true,
+      "has_data_table_alternative": true,
+      "has_legend_or_colorbar": true,
+      "has_non_color_encoding": true,
+      "has_units_or_axes": true,
+      "id": "quantum_trajectory_convergence",
+      "ok": true
+    },
+    {
+      "alt_text_length": 161,
+      "has_alt_text": true,
+      "has_data_table_alternative": true,
+      "has_legend_or_colorbar": true,
+      "has_non_color_encoding": true,
+      "has_units_or_axes": true,
+      "id": "visual_semantic_palette_ledger",
+      "ok": true
+    },
+    {
+      "alt_text_length": 224,
+      "has_alt_text": true,
+      "has_data_table_alternative": true,
+      "has_legend_or_colorbar": true,
+      "has_non_color_encoding": true,
+      "has_units_or_axes": true,
+      "id": "method_assumption_failure_map",
+      "ok": true
+    },
+    {
+      "alt_text_length": 139,
+      "has_alt_text": true,
+      "has_data_table_alternative": true,
+      "has_legend_or_colorbar": true,
+      "has_non_color_encoding": true,
+      "has_units_or_axes": true,
+      "id": "claim_source_validation_graph",
+      "ok": true
+    },
+    {
+      "alt_text_length": 113,
+      "has_alt_text": true,
+      "has_data_table_alternative": true,
+      "has_legend_or_colorbar": true,
+      "has_non_color_encoding": true,
+      "has_units_or_axes": true,
+      "id": "scholarship_coverage_matrix",
+      "ok": true
+    },
+    {
+      "alt_text_length": 179,
+      "has_alt_text": true,
+      "has_data_table_alternative": true,
+      "has_legend_or_colorbar": true,
+      "has_non_color_encoding": true,
+      "has_units_or_axes": true,
+      "id": "claim_support_matrix",
+      "ok": true
+    },
+    {
+      "alt_text_length": 139,
+      "has_alt_text": true,
+      "has_data_table_alternative": true,
+      "has_legend_or_colorbar": true,
+      "has_non_color_encoding": true,
+      "has_units_or_axes": true,
+      "id": "manuscript_claim_audit",
+      "ok": true
+    },
+    {
+      "alt_text_length": 176,
+      "has_alt_text": true,
+      "has_data_table_alternative": true,
+      "has_legend_or_colorbar": true,
+      "has_non_color_encoding": true,
+      "has_units_or_axes": true,
+      "id": "evidence_ceiling_stress_matrix",
+      "ok": true
+    },
+    {
+      "alt_text_length": 217,
+      "has_alt_text": true,
+      "has_data_table_alternative": true,
+      "has_legend_or_colorbar": true,
+      "has_non_color_encoding": true,
+      "has_units_or_axes": true,
+      "id": "claim_context_evidence_ladder",
+      "ok": true
+    },
+    {
+      "alt_text_length": 161,
+      "has_alt_text": true,
+      "has_data_table_alternative": true,
+      "has_legend_or_colorbar": true,
+      "has_non_color_encoding": true,
+      "has_units_or_axes": true,
+      "id": "formalism_operation_map",
+      "ok": true
+    },
+    {
+      "alt_text_length": 281,
+      "has_alt_text": true,
+      "has_data_table_alternative": true,
+      "has_legend_or_colorbar": true,
+      "has_non_color_encoding": true,
+      "has_units_or_axes": true,
+      "id": "qrf_sector_situation",
+      "ok": true
+    },
+    {
+      "alt_text_length": 231,
+      "has_alt_text": true,
+      "has_data_table_alternative": true,
+      "has_legend_or_colorbar": true,
+      "has_non_color_encoding": true,
+      "has_units_or_axes": true,
+      "id": "boundary_use_vs_ontology",
+      "ok": true
+    },
+    {
+      "alt_text_length": 363,
+      "has_alt_text": true,
+      "has_data_table_alternative": true,
+      "has_legend_or_colorbar": true,
+      "has_non_color_encoding": true,
+      "has_units_or_axes": true,
+      "id": "separation_prior_net_value",
+      "ok": true
+    },
+    {
+      "alt_text_length": 210,
+      "has_alt_text": true,
+      "has_data_table_alternative": true,
+      "has_legend_or_colorbar": true,
+      "has_non_color_encoding": true,
+      "has_units_or_axes": true,
+      "id": "multipartite_witness_negativity",
+      "ok": true
+    },
+    {
+      "alt_text_length": 249,
+      "has_alt_text": true,
+      "has_data_table_alternative": true,
+      "has_legend_or_colorbar": true,
+      "has_non_color_encoding": true,
+      "has_units_or_axes": true,
+      "id": "tensor_network_scaling",
+      "ok": true
+    },
+    {
+      "alt_text_length": 245,
+      "has_alt_text": true,
+      "has_data_table_alternative": true,
+      "has_legend_or_colorbar": true,
+      "has_non_color_encoding": true,
+      "has_units_or_axes": true,
+      "id": "collision_model_relaxation",
+      "ok": true
+    },
+    {
+      "alt_text_length": 268,
+      "has_alt_text": true,
+      "has_data_table_alternative": true,
+      "has_legend_or_colorbar": true,
+      "has_non_color_encoding": true,
+      "has_units_or_axes": true,
+      "id": "n_cycle_contextuality_panel",
+      "ok": true
+    },
+    {
+      "alt_text_length": 352,
+      "has_alt_text": true,
+      "has_data_table_alternative": true,
+      "has_legend_or_colorbar": true,
+      "has_non_color_encoding": true,
+      "has_units_or_axes": true,
+      "id": "data_processing_monotonicity",
+      "ok": true
+    },
+    {
+      "alt_text_length": 329,
+      "has_alt_text": true,
+      "has_data_table_alternative": true,
+      "has_legend_or_colorbar": true,
+      "has_non_color_encoding": true,
+      "has_units_or_axes": true,
+      "id": "markov_blanket_discovery",
+      "ok": true
+    }
+  ],
+  "schema": "realizing_emptiness.visual_accessibility_audit.v1"
+}

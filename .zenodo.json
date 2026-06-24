@@ -1,0 +1,35 @@
+{
+  "title": "Realizing Emptiness",
+  "version": "1.0.0",
+  "description": "Software foundation for source-faithful operationalization of the formalisms in 'There is no self-evidence: A physics of emptiness realisation' (Sandved-Smith, Fields, Doctor, Laukkonen, and Hohwy, 2026). Finite operational surrogates for paper equations 1-14, active-inference QRF profiles, Bayesian model reduction sweeps, finite quantum-information simulations, and an adversarial claim-governance layer with explicit evidence ceilings.",
+  "creators": [
+    {
+      "name": "Friedman, Daniel Ari",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "keywords": [
+    "active inference",
+    "Bayesian model reduction",
+    "quantum reference frames",
+    "emptiness",
+    "formal methods",
+    "pymdp"
+  ],
+  "license": "MIT",
+  "upload_type": "software",
+  "access_right": "open",
+  "related_identifiers": [
+    {
+      "identifier": "https://osf.io/preprints/psyarxiv/m78z2_v1",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://github.com/docxology/realizing_emptiness",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "$id": "realizing_emptiness.statistical_robustness_audit.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Realizing Emptiness Statistical Robustness Audit",
+  "type": "object",
+  "required": ["schema", "audits", "controls", "all_controls_pass", "claim_boundary"],
+  "properties": {
+    "schema": {"const": "realizing_emptiness.statistical_robustness_audit.v1"},
+    "audits": {"type": "array", "minItems": 3},
+    "controls": {"type": "object", "additionalProperties": {"const": true}},
+    "all_controls_pass": {"const": true},
+    "claim_boundary": {"type": "string", "pattern": "not empirical"}
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,36 @@
+paper:
+  title: "Realizing Emptiness"
+  subtitle: "Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction"
+  version: "1.0.0"
+  date: ""  # empty -> title page renders \today (current date at render time)
+authors:
+  - name: "Daniel Ari Friedman"
+    orcid: "0000-0001-6232-9096"
+    email: "daniel@activeinference.institute"
+    affiliation: "Active Inference Institute"
+    corresponding: true
+publication:
+  github_repository: "docxology/realizing_emptiness"
+  doi: "10.5281/zenodo.20834847"
+  concept_doi: "10.5281/zenodo.20834846"
+  doi_status: "published"
+keywords:
+  - active inference
+  - emptiness
+  - quantum reference frames
+  - Bayesian model reduction
+  - pymdp
+metadata:
+  license: "MIT"
+  language: "en"
+render:
+  formats:
+    pdf: true
+    html: true
+    slides: false
+    docx: false
+    epub: false
+testing:
+  max_test_failures: 0
+  max_infra_test_failures: 0
+  max_project_test_failures: 0

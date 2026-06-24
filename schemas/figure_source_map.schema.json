@@ -1,0 +1,52 @@
+{
+  "$id": "realizing_emptiness.figure_source_map.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Realizing Emptiness Figure Source Map",
+  "type": "object",
+  "required": ["schema", "figure_count", "figures"],
+  "properties": {
+    "schema": {"const": "realizing_emptiness.figure_source_map.v1"},
+    "figure_count": {"type": "integer", "minimum": 1},
+    "figures": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "path", "source_artifacts", "caption", "visual_encoding", "alt_text", "render_contract", "text_overlap_count", "title_overlap_count", "cropped_text_count", "legend_axis_overlap_count", "layout_ok"],
+        "properties": {
+          "id": {"type": "string"},
+          "path": {"type": "string"},
+          "source_artifacts": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+          "caption": {"type": "string", "minLength": 40},
+          "visual_encoding": {"type": "string", "minLength": 20},
+          "alt_text": {"type": "string", "minLength": 40},
+          "text_overlap_count": {"type": "integer", "minimum": 0},
+          "title_overlap_count": {"type": "integer", "minimum": 0},
+          "cropped_text_count": {"type": "integer", "minimum": 0},
+          "legend_axis_overlap_count": {"type": "integer", "minimum": 0},
+          "layout_ok": {"type": "boolean"},
+          "channel_labels": {
+            "type": "array",
+            "minItems": 6,
+            "maxItems": 6,
+            "items": {"type": "string", "pattern": "^b[0-5]$"}
+          },
+          "render_contract": {
+            "type": "object",
+            "required": ["roles", "panel_count", "legend_count", "colorbar_count", "min_font_pt"],
+            "properties": {
+              "roles": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+              "panel_count": {"type": "integer", "minimum": 1},
+              "legend_count": {"type": "integer", "minimum": 0},
+              "colorbar_count": {"type": "integer", "minimum": 0},
+              "min_font_pt": {"type": "number", "minimum": 12}
+            },
+            "additionalProperties": false
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

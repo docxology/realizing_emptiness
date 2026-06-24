@@ -1,0 +1,52 @@
+{
+  "$id": "realizing_emptiness.effect_size_calibration_audit.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Realizing Emptiness Effect-Size Test Calibration Audit",
+  "type": "object",
+  "required": [
+    "schema",
+    "alpha",
+    "null_arm",
+    "positive_arm",
+    "sign_flip_arm",
+    "controls",
+    "all_controls_pass",
+    "claim_boundary"
+  ],
+  "properties": {
+    "schema": {
+      "const": "realizing_emptiness.effect_size_calibration_audit.v1"
+    },
+    "alpha": {
+      "type": "number",
+      "exclusiveMinimum": 0,
+      "maximum": 0.5
+    },
+    "null_arm": {
+      "type": "object",
+      "required": ["permutation_p", "cliffs_delta"]
+    },
+    "positive_arm": {
+      "type": "object",
+      "required": ["permutation_p", "cliffs_delta", "mean_difference_ci95_low", "mean_difference_ci95_high"]
+    },
+    "sign_flip_arm": {
+      "type": "object",
+      "required": ["cliffs_delta"]
+    },
+    "controls": {
+      "type": "object",
+      "additionalProperties": {
+        "const": true
+      }
+    },
+    "all_controls_pass": {
+      "const": true
+    },
+    "claim_boundary": {
+      "type": "string",
+      "pattern": "not empirical statistical power"
+    }
+  },
+  "additionalProperties": true
+}

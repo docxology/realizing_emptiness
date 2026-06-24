@@ -1,0 +1,41 @@
+{
+  "$id": "realizing_emptiness.artifact_manifest.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Realizing Emptiness Artifact Manifest",
+  "type": "object",
+  "required": ["schema", "project", "artifacts"],
+  "properties": {
+    "schema": {
+      "const": "realizing_emptiness.artifact_manifest.v1"
+    },
+    "project": {
+      "const": "realizing_emptiness"
+    },
+    "artifacts": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "path", "kind"],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9_]+$"
+          },
+          "path": {
+            "type": "string"
+          },
+          "kind": {
+            "enum": ["data", "figure", "report", "web"]
+          },
+          "schema": {
+            "type": "string",
+            "pattern": "^realizing_emptiness\\."
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

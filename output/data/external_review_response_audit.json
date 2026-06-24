@@ -1,0 +1,92 @@
+{
+  "all_controls_pass": true,
+  "claim_boundary": "review-response accounting for finite deterministic or seeded software validation only; not empirical, not public independent reproduction, not clinical, not neural, not practice-efficacy, not contemplative-attainment, and not physical qFEP evidence",
+  "controls": {
+    "all_boundaries_declared": true,
+    "all_local_delta_rows_have_evidence": true,
+    "all_rows_have_gates": true,
+    "public_reproduction_blocked_not_completed": true,
+    "required_local_deltas_present": true
+  },
+  "missing_evidence": [],
+  "row_count": 7,
+  "rows": [
+    {
+      "boundary": "local private artifact package only, not public independent reproduction; not empirical, clinical, neural, practice-efficacy, contemplative-attainment, or physical qFEP evidence",
+      "evidence_paths": [
+        "output/data/artifact_release_manifest.json",
+        "artifact_manifest.yaml"
+      ],
+      "gate": "artifact_release_manifest_ok",
+      "recommendation_id": "local_artifact_release_manifest",
+      "response_status": "implemented_local_delta",
+      "reviewer_concern": "Account for release-readiness without implying public publication."
+    },
+    {
+      "boundary": "review-response accounting for finite deterministic or seeded software validation only; not empirical, not public independent reproduction, not clinical, not neural, not practice-efficacy, not contemplative-attainment, and not physical qFEP evidence",
+      "evidence_paths": [
+        "output/data/figure_parameter_ledger.json",
+        "output/data/figure_source_map.json"
+      ],
+      "gate": "figure_parameter_ledger_ok",
+      "recommendation_id": "parameter_result_traceability",
+      "response_status": "implemented_local_delta",
+      "reviewer_concern": "Make figure parameters, result counts, controls, and source artifacts explicit."
+    },
+    {
+      "boundary": "review-response accounting for finite deterministic or seeded software validation only; not empirical, not public independent reproduction, not clinical, not neural, not practice-efficacy, not contemplative-attainment, and not physical qFEP evidence",
+      "evidence_paths": [
+        "output/data/qrf_label_ablation_audit.json",
+        "output/data/qrf_boundary_channel_ledger.json"
+      ],
+      "gate": "qrf_label_ablation_audit_ok",
+      "recommendation_id": "neutral_qrf_label_ablation",
+      "response_status": "implemented_local_delta",
+      "reviewer_concern": "Show that loaded labels do not carry the QRF result."
+    },
+    {
+      "boundary": "review-response accounting for finite deterministic or seeded software validation only; not empirical, not public independent reproduction, not clinical, not neural, not practice-efficacy, not contemplative-attainment, and not physical qFEP evidence",
+      "evidence_paths": [
+        "output/data/quantum_independent_crosscheck_audit.json"
+      ],
+      "gate": "quantum_independent_crosscheck_audit_ok",
+      "recommendation_id": "independent_quantum_crosscheck",
+      "response_status": "implemented_local_delta",
+      "reviewer_concern": "Recompute CHSH, Tsirelson, product locality, and local-polytope status independently."
+    },
+    {
+      "boundary": "review-response accounting for finite deterministic or seeded software validation only; not empirical, not public independent reproduction, not clinical, not neural, not practice-efficacy, not contemplative-attainment, and not physical qFEP evidence",
+      "evidence_paths": [
+        "output/data/bmr_alternative_prior_audit.json"
+      ],
+      "gate": "bmr_alternative_prior_audit_ok",
+      "recommendation_id": "bmr_alternative_prior_families",
+      "response_status": "implemented_local_delta",
+      "reviewer_concern": "Check the BMR pruning result against comparator prior families."
+    },
+    {
+      "boundary": "review-response accounting for finite deterministic or seeded software validation only; not empirical, not public independent reproduction, not clinical, not neural, not practice-efficacy, not contemplative-attainment, and not physical qFEP evidence",
+      "evidence_paths": [
+        "data/sources/scholarship_manifest.yaml",
+        "manuscript/references.bib",
+        "manuscript/sections/supplement/scholarship.md"
+      ],
+      "gate": "scholarship_manifest_ok",
+      "recommendation_id": "bibliography_additions",
+      "response_status": "implemented_local_delta",
+      "reviewer_concern": "Add CHSH/local-polytope, Bayesian workflow, SBC, artifact-release, FEP critique/response, and criticality-caution sources."
+    },
+    {
+      "boundary": "future public archive and blinded or independent reproduction require explicit publication approval; not empirical and not completed locally",
+      "evidence_paths": [
+        "TODO.md",
+        "tasks.yaml"
+      ],
+      "gate": "future_public_archive_and_independent_reproduction_blocked",
+      "recommendation_id": "public_independent_reproduction",
+      "response_status": "blocked_external_publication",
+      "reviewer_concern": "Do not represent local private readiness as public independent reproduction."
+    }
+  ],
+  "schema": "realizing_emptiness.external_review_response_audit.v1"
+}

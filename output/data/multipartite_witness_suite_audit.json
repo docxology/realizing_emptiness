@@ -1,0 +1,380 @@
+{
+  "all_controls_pass": true,
+  "claim_boundary": "finite PPT/negativity entanglement witness over multipartite qubit and higher-dimensional qudit fixtures; not empirical evidence, not a genuine-multipartite-entanglement certificate, and not a physical qFEP, neural, clinical, or contemplative claim",
+  "controls": {
+    "all_fixtures_valid_density": true,
+    "asymmetric_cuts_match_expected_pattern": true,
+    "detection_matches_expectation": true,
+    "ghz_entangled_across_every_bipartition": true,
+    "qudit_entangled_detected": true,
+    "separable_controls_not_detected": true,
+    "w_state_entangled_across_every_bipartition": true
+  },
+  "fixture_count": 10,
+  "row_count": 10,
+  "rows": [
+    {
+      "bipartitions": [
+        {
+          "entangled_by_ppt": true,
+          "negativity": 0.5,
+          "subsystem": 0
+        },
+        {
+          "entangled_by_ppt": true,
+          "negativity": 0.5,
+          "subsystem": 1
+        }
+      ],
+      "dims": [
+        2,
+        2
+      ],
+      "entangled_detected_all_cuts": true,
+      "entangled_detected_any_cut": true,
+      "expected_cut_detection": null,
+      "expected_entangled": true,
+      "family": "ghz",
+      "hermitian": true,
+      "id": "ghz_2_qubit",
+      "max_bipartition_negativity": 0.5,
+      "min_bipartition_negativity": 0.5,
+      "positive_semidefinite": true,
+      "subsystem_count": 2,
+      "trace_one": true,
+      "valid_density_matrix": true
+    },
+    {
+      "bipartitions": [
+        {
+          "entangled_by_ppt": false,
+          "negativity": -0.0,
+          "subsystem": 0
+        },
+        {
+          "entangled_by_ppt": false,
+          "negativity": -0.0,
+          "subsystem": 1
+        }
+      ],
+      "dims": [
+        2,
+        2
+      ],
+      "entangled_detected_all_cuts": false,
+      "entangled_detected_any_cut": false,
+      "expected_cut_detection": null,
+      "expected_entangled": false,
+      "family": "separable_control",
+      "hermitian": true,
+      "id": "product_2_qubit_control",
+      "max_bipartition_negativity": -0.0,
+      "min_bipartition_negativity": -0.0,
+      "positive_semidefinite": true,
+      "subsystem_count": 2,
+      "trace_one": true,
+      "valid_density_matrix": true
+    },
+    {
+      "bipartitions": [
+        {
+          "entangled_by_ppt": true,
+          "negativity": 0.5,
+          "subsystem": 0
+        },
+        {
+          "entangled_by_ppt": true,
+          "negativity": 0.5,
+          "subsystem": 1
+        },
+        {
+          "entangled_by_ppt": true,
+          "negativity": 0.5,
+          "subsystem": 2
+        }
+      ],
+      "dims": [
+        2,
+        2,
+        2
+      ],
+      "entangled_detected_all_cuts": true,
+      "entangled_detected_any_cut": true,
+      "expected_cut_detection": null,
+      "expected_entangled": true,
+      "family": "ghz",
+      "hermitian": true,
+      "id": "ghz_3_qubit",
+      "max_bipartition_negativity": 0.5,
+      "min_bipartition_negativity": 0.5,
+      "positive_semidefinite": true,
+      "subsystem_count": 3,
+      "trace_one": true,
+      "valid_density_matrix": true
+    },
+    {
+      "bipartitions": [
+        {
+          "entangled_by_ppt": false,
+          "negativity": -0.0,
+          "subsystem": 0
+        },
+        {
+          "entangled_by_ppt": false,
+          "negativity": -0.0,
+          "subsystem": 1
+        },
+        {
+          "entangled_by_ppt": false,
+          "negativity": -0.0,
+          "subsystem": 2
+        }
+      ],
+      "dims": [
+        2,
+        2,
+        2
+      ],
+      "entangled_detected_all_cuts": false,
+      "entangled_detected_any_cut": false,
+      "expected_cut_detection": null,
+      "expected_entangled": false,
+      "family": "separable_control",
+      "hermitian": true,
+      "id": "product_3_qubit_control",
+      "max_bipartition_negativity": -0.0,
+      "min_bipartition_negativity": -0.0,
+      "positive_semidefinite": true,
+      "subsystem_count": 3,
+      "trace_one": true,
+      "valid_density_matrix": true
+    },
+    {
+      "bipartitions": [
+        {
+          "entangled_by_ppt": true,
+          "negativity": 0.5,
+          "subsystem": 0
+        },
+        {
+          "entangled_by_ppt": true,
+          "negativity": 0.5,
+          "subsystem": 1
+        },
+        {
+          "entangled_by_ppt": true,
+          "negativity": 0.5,
+          "subsystem": 2
+        },
+        {
+          "entangled_by_ppt": true,
+          "negativity": 0.5,
+          "subsystem": 3
+        }
+      ],
+      "dims": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "entangled_detected_all_cuts": true,
+      "entangled_detected_any_cut": true,
+      "expected_cut_detection": null,
+      "expected_entangled": true,
+      "family": "ghz",
+      "hermitian": true,
+      "id": "ghz_4_qubit",
+      "max_bipartition_negativity": 0.5,
+      "min_bipartition_negativity": 0.5,
+      "positive_semidefinite": true,
+      "subsystem_count": 4,
+      "trace_one": true,
+      "valid_density_matrix": true
+    },
+    {
+      "bipartitions": [
+        {
+          "entangled_by_ppt": false,
+          "negativity": -0.0,
+          "subsystem": 0
+        },
+        {
+          "entangled_by_ppt": false,
+          "negativity": -0.0,
+          "subsystem": 1
+        },
+        {
+          "entangled_by_ppt": false,
+          "negativity": -0.0,
+          "subsystem": 2
+        },
+        {
+          "entangled_by_ppt": false,
+          "negativity": -0.0,
+          "subsystem": 3
+        }
+      ],
+      "dims": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "entangled_detected_all_cuts": false,
+      "entangled_detected_any_cut": false,
+      "expected_cut_detection": null,
+      "expected_entangled": false,
+      "family": "separable_control",
+      "hermitian": true,
+      "id": "product_4_qubit_control",
+      "max_bipartition_negativity": -0.0,
+      "min_bipartition_negativity": -0.0,
+      "positive_semidefinite": true,
+      "subsystem_count": 4,
+      "trace_one": true,
+      "valid_density_matrix": true
+    },
+    {
+      "bipartitions": [
+        {
+          "entangled_by_ppt": true,
+          "negativity": 0.471404520791,
+          "subsystem": 0
+        },
+        {
+          "entangled_by_ppt": true,
+          "negativity": 0.471404520791,
+          "subsystem": 1
+        },
+        {
+          "entangled_by_ppt": true,
+          "negativity": 0.471404520791,
+          "subsystem": 2
+        }
+      ],
+      "dims": [
+        2,
+        2,
+        2
+      ],
+      "entangled_detected_all_cuts": true,
+      "entangled_detected_any_cut": true,
+      "expected_cut_detection": null,
+      "expected_entangled": true,
+      "family": "w",
+      "hermitian": true,
+      "id": "w_3_qubit",
+      "max_bipartition_negativity": 0.471404520791,
+      "min_bipartition_negativity": 0.471404520791,
+      "positive_semidefinite": true,
+      "subsystem_count": 3,
+      "trace_one": true,
+      "valid_density_matrix": true
+    },
+    {
+      "bipartitions": [
+        {
+          "entangled_by_ppt": true,
+          "negativity": 0.5,
+          "subsystem": 0
+        },
+        {
+          "entangled_by_ppt": true,
+          "negativity": 0.5,
+          "subsystem": 1
+        },
+        {
+          "entangled_by_ppt": false,
+          "negativity": -0.0,
+          "subsystem": 2
+        }
+      ],
+      "dims": [
+        2,
+        2,
+        2
+      ],
+      "entangled_detected_all_cuts": false,
+      "entangled_detected_any_cut": true,
+      "expected_cut_detection": [
+        true,
+        true,
+        false
+      ],
+      "expected_entangled": true,
+      "family": "asymmetric",
+      "hermitian": true,
+      "id": "bell_pair_plus_ground_3_qubit",
+      "max_bipartition_negativity": 0.5,
+      "min_bipartition_negativity": -0.0,
+      "positive_semidefinite": true,
+      "subsystem_count": 3,
+      "trace_one": true,
+      "valid_density_matrix": true
+    },
+    {
+      "bipartitions": [
+        {
+          "entangled_by_ppt": true,
+          "negativity": 1.0,
+          "subsystem": 0
+        },
+        {
+          "entangled_by_ppt": true,
+          "negativity": 1.0,
+          "subsystem": 1
+        }
+      ],
+      "dims": [
+        3,
+        3
+      ],
+      "entangled_detected_all_cuts": true,
+      "entangled_detected_any_cut": true,
+      "expected_cut_detection": null,
+      "expected_entangled": true,
+      "family": "qudit",
+      "hermitian": true,
+      "id": "qutrit_pair_max_entangled",
+      "max_bipartition_negativity": 1.0,
+      "min_bipartition_negativity": 1.0,
+      "positive_semidefinite": true,
+      "subsystem_count": 2,
+      "trace_one": true,
+      "valid_density_matrix": true
+    },
+    {
+      "bipartitions": [
+        {
+          "entangled_by_ppt": false,
+          "negativity": -0.0,
+          "subsystem": 0
+        },
+        {
+          "entangled_by_ppt": false,
+          "negativity": -0.0,
+          "subsystem": 1
+        }
+      ],
+      "dims": [
+        3,
+        3
+      ],
+      "entangled_detected_all_cuts": false,
+      "entangled_detected_any_cut": false,
+      "expected_cut_detection": null,
+      "expected_entangled": false,
+      "family": "separable_control",
+      "hermitian": true,
+      "id": "qutrit_pair_product_control",
+      "max_bipartition_negativity": -0.0,
+      "min_bipartition_negativity": -0.0,
+      "positive_semidefinite": true,
+      "subsystem_count": 2,
+      "trace_one": true,
+      "valid_density_matrix": true
+    }
+  ],
+  "schema": "realizing_emptiness.multipartite_witness_suite_audit.v1"
+}

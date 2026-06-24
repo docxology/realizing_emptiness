@@ -1,0 +1,213 @@
+{
+  "$id": "realizing_emptiness.quantum_measurement_contextuality.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Realizing Emptiness Quantum Measurement Contextuality",
+  "type": "object",
+  "required": [
+    "schema",
+    "measurement_cover",
+    "context_rows",
+    "probability_rows",
+    "row_count",
+    "context_count",
+    "model_count",
+    "local_chsh_bound",
+    "tsirelson_bound",
+    "bell_chsh",
+    "product_control_chsh",
+    "contextual_fraction",
+    "normalization_errors",
+    "no_signaling_errors",
+    "local_polytope",
+    "max_normalization_error",
+    "max_no_signaling_error",
+    "controls",
+    "all_controls_pass",
+    "claim_boundary"
+  ],
+  "properties": {
+    "schema": {"const": "realizing_emptiness.quantum_measurement_contextuality.v1"},
+    "measurement_cover": {
+      "type": "object",
+      "required": ["parties", "contexts", "outcomes", "description"],
+      "properties": {
+        "parties": {"type": "array", "items": {"enum": ["A", "B"]}, "minItems": 2, "maxItems": 2},
+        "contexts": {"type": "array", "items": {"enum": ["A0B0", "A0B1", "A1B0", "A1B1"]}, "minItems": 4, "maxItems": 4},
+        "outcomes": {"type": "array", "items": {"enum": ["++", "+-", "-+", "--"]}, "minItems": 4, "maxItems": 4},
+        "description": {"type": "string", "minLength": 20}
+      },
+      "additionalProperties": false
+    },
+    "context_rows": {
+      "type": "array",
+      "minItems": 8,
+      "items": {
+        "type": "object",
+        "required": [
+          "model",
+          "context",
+          "a_setting",
+          "b_setting",
+          "a_angle",
+          "b_angle",
+          "correlation",
+          "chsh_sign",
+          "chsh_contribution"
+        ],
+        "properties": {
+          "model": {"enum": ["bell_measurement_cover", "product_control"]},
+          "context": {"enum": ["A0B0", "A0B1", "A1B0", "A1B1"]},
+          "a_setting": {"enum": ["A0", "A1"]},
+          "b_setting": {"enum": ["B0", "B1"]},
+          "a_angle": {"type": "number"},
+          "b_angle": {"type": "number"},
+          "correlation": {"type": "number", "minimum": -1, "maximum": 1},
+          "chsh_sign": {"enum": [1.0, -1.0]},
+          "chsh_contribution": {"type": "number", "minimum": -1, "maximum": 1}
+        },
+        "additionalProperties": false
+      }
+    },
+    "probability_rows": {
+      "type": "array",
+      "minItems": 32,
+      "items": {
+        "type": "object",
+        "required": [
+          "model",
+          "context",
+          "a_setting",
+          "b_setting",
+          "a_outcome",
+          "b_outcome",
+          "outcome",
+          "probability"
+        ],
+        "properties": {
+          "model": {"enum": ["bell_measurement_cover", "product_control"]},
+          "context": {"enum": ["A0B0", "A0B1", "A1B0", "A1B1"]},
+          "a_setting": {"enum": ["A0", "A1"]},
+          "b_setting": {"enum": ["B0", "B1"]},
+          "a_outcome": {"enum": [1, -1]},
+          "b_outcome": {"enum": [1, -1]},
+          "outcome": {"enum": ["++", "+-", "-+", "--"]},
+          "probability": {"type": "number", "minimum": 0, "maximum": 1}
+        },
+        "additionalProperties": false
+      }
+    },
+    "row_count": {"type": "integer", "const": 32},
+    "context_count": {"type": "integer", "const": 4},
+    "model_count": {"type": "integer", "const": 2},
+    "local_chsh_bound": {"const": 2.0},
+    "tsirelson_bound": {"type": "number", "minimum": 2.8, "maximum": 2.9},
+    "bell_chsh": {"type": "number", "minimum": 2.8, "maximum": 2.9},
+    "product_control_chsh": {"type": "number", "minimum": 1.0, "maximum": 2.0},
+    "contextual_fraction": {"type": "number", "minimum": 0.99, "maximum": 1.01},
+    "normalization_errors": {
+      "type": "object",
+      "additionalProperties": {"type": "number", "minimum": 0, "maximum": 0.000001}
+    },
+    "no_signaling_errors": {
+      "type": "array",
+      "minItems": 8,
+      "items": {
+        "type": "object",
+        "required": [
+          "model",
+          "side",
+          "setting",
+          "first_context",
+          "second_context",
+          "p_plus_first",
+          "p_plus_second",
+          "absolute_error"
+        ],
+        "properties": {
+          "model": {"enum": ["bell_measurement_cover", "product_control"]},
+          "side": {"enum": ["A", "B"]},
+          "setting": {"enum": ["A0", "A1", "B0", "B1"]},
+          "first_context": {"enum": ["A0B0", "A0B1", "A1B0", "A1B1"]},
+          "second_context": {"enum": ["A0B0", "A0B1", "A1B0", "A1B1"]},
+          "p_plus_first": {"type": "number", "minimum": 0, "maximum": 1},
+          "p_plus_second": {"type": "number", "minimum": 0, "maximum": 1},
+          "absolute_error": {"type": "number", "minimum": 0, "maximum": 0.000001}
+        },
+        "additionalProperties": false
+      }
+    },
+    "local_polytope": {
+      "type": "object",
+      "required": ["assignment_count", "fits"],
+      "properties": {
+        "assignment_count": {"const": 16},
+        "fits": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2,
+          "items": {
+            "type": "object",
+            "required": [
+              "model",
+              "feasible",
+              "linprog_status",
+              "linprog_message",
+              "min_l1_residual",
+              "max_abs_residual",
+              "active_assignment_count",
+              "assignment_rows"
+            ],
+            "properties": {
+              "model": {"enum": ["bell_measurement_cover", "product_control"]},
+              "feasible": {"type": "boolean"},
+              "linprog_status": {"type": "integer"},
+              "linprog_message": {"type": "string"},
+              "min_l1_residual": {"type": "number", "minimum": 0},
+              "max_abs_residual": {"type": "number", "minimum": 0},
+              "active_assignment_count": {"type": "integer", "minimum": 0, "maximum": 16},
+              "assignment_rows": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": ["assignment_index", "A0", "A1", "B0", "B1", "weight"],
+                  "properties": {
+                    "assignment_index": {"type": "integer", "minimum": 0, "maximum": 15},
+                    "A0": {"enum": [1, -1]},
+                    "A1": {"enum": [1, -1]},
+                    "B0": {"enum": [1, -1]},
+                    "B1": {"enum": [1, -1]},
+                    "weight": {"type": "number", "minimum": 0, "maximum": 1}
+                  },
+                  "additionalProperties": false
+                }
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "max_normalization_error": {"type": "number", "minimum": 0, "maximum": 0.000001},
+    "max_no_signaling_error": {"type": "number", "minimum": 0, "maximum": 0.000001},
+    "controls": {
+      "type": "object",
+      "required": [
+        "joint_probabilities_normalized",
+        "joint_probabilities_nonnegative",
+        "no_signaling_marginals_match",
+        "bell_chsh_exceeds_local_bound",
+        "bell_chsh_reaches_tsirelson",
+        "product_control_respects_local_bound",
+        "contextual_fraction_unit_at_tsirelson",
+        "product_control_local_polytope_feasible",
+        "bell_model_local_polytope_infeasible",
+        "bell_model_positive_polytope_residual"
+      ],
+      "additionalProperties": {"type": "boolean"}
+    },
+    "all_controls_pass": {"const": true},
+    "claim_boundary": {"type": "string", "pattern": "not empirical"}
+  },
+  "additionalProperties": false
+}

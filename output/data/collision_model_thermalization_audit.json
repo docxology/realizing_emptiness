@@ -1,0 +1,43 @@
+{
+  "all_controls_pass": true,
+  "claim_boundary": "finite deterministic collision-model relaxation surrogate (repeated partial-SWAP interactions with fresh ancillas); not empirical evidence, not a physical heat bath or thermodynamic measurement, and not a clinical, neural, or contemplative claim",
+  "controls": {
+    "all_steps_positive_semidefinite": true,
+    "all_steps_trace_preserving": true,
+    "coupled_collisions_relax_toward_ancilla": true,
+    "distance_monotone_nonincreasing": true,
+    "zero_coupling_leaves_system_unchanged": true
+  },
+  "row_count": 3,
+  "rows": [
+    {
+      "distance_monotone_nonincreasing": true,
+      "final_distance": 0.019342081658,
+      "id": "weak_coupling",
+      "initial_distance": 0.3,
+      "positive_semidefinite": true,
+      "theta": 0.3,
+      "trace_preserving": true
+    },
+    {
+      "distance_monotone_nonincreasing": true,
+      "final_distance": 1.15e-10,
+      "id": "strong_coupling",
+      "initial_distance": 0.3,
+      "positive_semidefinite": true,
+      "theta": 0.8,
+      "trace_preserving": true
+    },
+    {
+      "distance_monotone_nonincreasing": true,
+      "final_distance": 0.3,
+      "id": "zero_coupling_control",
+      "initial_distance": 0.3,
+      "positive_semidefinite": true,
+      "theta": 0.0,
+      "trace_preserving": true
+    }
+  ],
+  "schema": "realizing_emptiness.collision_model_thermalization_audit.v1",
+  "step_count": 30
+}

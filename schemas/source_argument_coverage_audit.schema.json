@@ -1,0 +1,52 @@
+{
+  "$id": "realizing_emptiness.source_argument_coverage_audit.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Realizing Emptiness Source Argument Coverage Audit",
+  "type": "object",
+  "required": ["schema", "theme_count", "rows", "controls", "all_controls_pass", "claim_boundary"],
+  "properties": {
+    "schema": {"const": "realizing_emptiness.source_argument_coverage_audit.v1"},
+    "theme_count": {"type": "integer", "minimum": 9},
+    "rows": {
+      "type": "array",
+      "minItems": 9,
+      "items": {
+        "type": "object",
+        "required": ["theme_id", "source_locator", "local_sections", "artifact_paths", "validation_gates", "evidence_ceiling_claims", "primary_coverage_class", "artifact_paths_exist", "local_sections_resolve", "unresolved_local_sections", "not_quantum_only_for_core_argument", "claim_boundary"],
+        "properties": {
+          "theme_id": {"type": "string"},
+          "source_locator": {"type": "string"},
+          "source_equations": {"type": "array", "items": {"type": "integer"}},
+          "local_sections": {"type": "array", "minItems": 1, "items": {"type": "string", "pattern": "^sec:"}},
+          "artifact_paths": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+          "validation_gates": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+          "evidence_ceiling_claims": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+          "primary_coverage_class": {"type": "string"},
+          "artifact_paths_exist": {"const": true},
+          "local_sections_resolve": {"const": true},
+          "unresolved_local_sections": {"type": "array", "maxItems": 0},
+          "not_quantum_only_for_core_argument": {"const": true},
+          "claim_boundary": {"type": "string", "pattern": "not empirical|source"}
+        },
+        "additionalProperties": true
+      }
+    },
+    "controls": {
+      "type": "object",
+      "required": ["all_core_themes_mapped", "all_rows_have_artifacts", "all_rows_have_sections", "all_local_sections_resolve", "all_rows_have_validation_gates", "all_rows_have_evidence_ceiling_claims", "qrf_bmr_opacification_not_quantum_only"],
+      "properties": {
+        "all_core_themes_mapped": {"const": true},
+        "all_rows_have_artifacts": {"const": true},
+        "all_rows_have_sections": {"const": true},
+        "all_local_sections_resolve": {"const": true},
+        "all_rows_have_validation_gates": {"const": true},
+        "all_rows_have_evidence_ceiling_claims": {"const": true},
+        "qrf_bmr_opacification_not_quantum_only": {"const": true}
+      },
+      "additionalProperties": true
+    },
+    "all_controls_pass": {"const": true},
+    "claim_boundary": {"type": "string", "pattern": "not empirical|source"}
+  },
+  "additionalProperties": true
+}

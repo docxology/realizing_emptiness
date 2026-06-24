@@ -1,0 +1,205 @@
+{
+  "all_implemented_have_artifacts": true,
+  "claim_boundary": "finite two-qubit quantum-information simulation; not empirical evidence and not a full qFEP, many-body QRF, or physical quantum-boundary simulation",
+  "future": [
+    {
+      "blocked_task_id": "re-3",
+      "boundary": "physical qFEP realization remains roadmap only; not implemented, not empirical, and not a full qFEP result",
+      "id": "re-3",
+      "minimum_next_test": "reviewed physical Hamiltonians, thermodynamic accounting, and independent quantum-information replication",
+      "required_negative_control": "finite Lindblad and many-body software surrogates must not be accepted as physical qFEP realization evidence",
+      "required_next_artifact": "output/data/physical_qfep_realization_audit.json",
+      "required_next_gate": "physical_qfep_realization_audit_ok",
+      "status": "roadmap_requires_external_physics_review"
+    },
+    {
+      "blocked_task_id": "re-4",
+      "boundary": "human-subject validation remains roadmap only; not implemented, not empirical, and not practice evidence",
+      "id": "re-4",
+      "minimum_next_test": "ethics-reviewed human data, preregistered outcomes, source identity, preprocessing provenance, null models, and safety review",
+      "required_negative_control": "synthetic, unsourced, or ethics-incomplete human data must fail empirical-claim permission",
+      "required_next_artifact": "output/data/human_subject_validation_audit.json",
+      "required_next_gate": "human_subject_validation_audit_ok",
+      "status": "roadmap_requires_data_and_ethics"
+    },
+    {
+      "blocked_task_id": "re-13",
+      "boundary": "clinical, awakening, compassion-efficacy, and neural-measurement claims remain roadmap only; not implemented and not empirical",
+      "id": "re-13",
+      "minimum_next_test": "reviewed clinical, awakening, compassion-efficacy, and neural-measurement evidence with independent controls",
+      "required_negative_control": "finite software compassion, criticality, or practice surrogates must not certify clinical, awakening, compassion-efficacy, or neural-measurement claims",
+      "required_next_artifact": "output/data/clinical_awakening_compassion_neural_audit.json",
+      "required_next_gate": "clinical_awakening_compassion_neural_audit_ok",
+      "status": "roadmap_requires_clinical_neural_and_efficacy_evidence"
+    },
+    {
+      "blocked_task_id": "re-14",
+      "boundary": "user-facing practice applications remain roadmap only; not implemented, not empirical, and not efficacy guidance",
+      "id": "re-14",
+      "minimum_next_test": "human review, safety wording, explicit non-efficacy language, and release governance for any user-facing practice application",
+      "required_negative_control": "practice protocol maps must not become user-facing instructions or efficacy claims without human safety review",
+      "required_next_artifact": "output/data/user_facing_practice_safety_audit.json",
+      "required_next_gate": "user_facing_practice_safety_audit_ok",
+      "status": "roadmap_requires_practice_safety_review"
+    },
+    {
+      "blocked_task_id": "re-15",
+      "boundary": "public archive and independent or blinded reproduction remain roadmap only; not implemented, not empirical, and not public-release evidence",
+      "id": "re-15",
+      "minimum_next_test": "explicit publication approval, public archive deposition, and independent or blinded reproduction of the artifact bundle",
+      "required_negative_control": "local private hashes, manifests, and validation commands must not certify public release or independent reproduction",
+      "required_next_artifact": "output/data/public_archive_independent_reproduction_audit.json",
+      "required_next_gate": "public_archive_independent_reproduction_audit_ok",
+      "status": "roadmap_requires_public_archive_and_independent_reproduction"
+    }
+  ],
+  "future_count": 5,
+  "implemented": [
+    {
+      "artifact": "output/data/quantum_boundary_entropy.json",
+      "boundary": "direct finite quantum-information calculation, not a universe-agent boundary simulation",
+      "id": "two_qubit_separability_entropy",
+      "next_extension": "extend mixed-state entanglement witnesses beyond two-qubit PPT/negativity controls",
+      "status": "implemented_finite_simulation",
+      "validation_gate": "quantum_boundary_entropy_ok"
+    },
+    {
+      "artifact": "output/data/arbitrary_two_qubit_entanglement_audit.json",
+      "boundary": "finite mixed-state two-qubit PPT and negativity audit only, not a many-body boundary realization",
+      "id": "arbitrary_two_qubit_entanglement_audit",
+      "next_extension": "extend PPT/negativity controls to higher-dimensional or multipartite entanglement witnesses with reviewed examples",
+      "status": "implemented_finite_simulation",
+      "validation_gate": "arbitrary_two_qubit_entanglement_audit_ok"
+    },
+    {
+      "artifact": "output/data/quantum_boundary_entropy.json",
+      "boundary": "CHSH witness only; not a general proof of contextuality for the paper's full QRF setting",
+      "id": "chsh_contextuality_witness",
+      "next_extension": "compare additional contextuality inequalities and disturbance-aware scenarios with explicit claim ceilings",
+      "status": "implemented_finite_simulation",
+      "validation_gate": "quantum_contextuality_witness_ok"
+    },
+    {
+      "artifact": "output/data/quantum_measurement_contextuality.json",
+      "boundary": "finite CHSH measurement-cover empirical model and local-polytope LP only; not a full sheaf-contextuality engine or QRF transformation library",
+      "id": "chsh_measurement_cover_table",
+      "next_extension": "stress-test the generic measurement-cover parser with larger reviewed scenarios and disturbance-aware controls",
+      "status": "implemented_finite_simulation",
+      "validation_gate": "quantum_measurement_contextuality_ok"
+    },
+    {
+      "artifact": "output/data/general_measurement_cover_polytope_audit.json",
+      "boundary": "finite deterministic-assignment LP audit over parsed covers only, not empirical contextuality evidence",
+      "id": "general_measurement_cover_polytope_audit",
+      "next_extension": "add reviewed contextuality scenario libraries and disturbance-explicit empirical-model variants",
+      "status": "implemented_finite_simulation",
+      "validation_gate": "general_measurement_cover_polytope_audit_ok"
+    },
+    {
+      "artifact": "output/data/quantum_boundary_entropy.json",
+      "boundary": "local-basis entropy invariance only; not relativistic or quantum-reference-frame covariance",
+      "id": "qrf_basis_invariance_toy",
+      "next_extension": "extend toy frame covariance to reviewed QRF transformation examples over explicit partitions",
+      "status": "implemented_finite_simulation",
+      "validation_gate": "quantum_boundary_entropy_ok"
+    },
+    {
+      "artifact": "output/data/quantum_boundary_entropy.json",
+      "boundary": "information-erasure lower bound in kBT units, not a measured heat dissipation experiment",
+      "id": "boundary_landauer_entropy",
+      "next_extension": "couple finite channel costs to physical thermodynamic accounting only after externally reviewed models exist",
+      "status": "implemented_finite_simulation",
+      "validation_gate": "quantum_boundary_entropy_ok"
+    },
+    {
+      "artifact": "output/data/thermodynamic_channel_cost_audit.json",
+      "boundary": "finite CPTP-channel entropy-cost audit only, not measured heat or physical qFEP thermodynamics",
+      "id": "thermodynamic_channel_cost_audit",
+      "next_extension": "replace finite channel lower-bound accounting with reviewed physical heat-bath or collision-model simulations",
+      "status": "implemented_finite_simulation",
+      "validation_gate": "thermodynamic_channel_cost_audit_ok"
+    },
+    {
+      "artifact": "output/data/quantum_open_system_dynamics.json",
+      "boundary": "trace-preserving two-qubit dephasing channel only, not the source paper's full qFEP dynamics",
+      "id": "two_qubit_dephasing_channel",
+      "next_extension": "compare finite Lindblad families with reviewed physical Hamiltonians before stronger qFEP claims",
+      "status": "implemented_finite_simulation",
+      "validation_gate": "quantum_open_system_dynamics_ok"
+    },
+    {
+      "artifact": "output/data/qfep_boundary_hamiltonian_dynamics.json",
+      "boundary": "finite two-qubit boundary-Hamiltonian Lindblad audit only, not a physical qFEP realization",
+      "id": "full_open_system_qfep_dynamics",
+      "next_extension": "replace the finite two-qubit Lindblad audit with reviewed physical qFEP Hamiltonians and collision-model comparisons",
+      "status": "implemented_finite_simulation",
+      "validation_gate": "qfep_boundary_hamiltonian_dynamics_ok"
+    },
+    {
+      "artifact": "output/data/quantum_trajectory_unraveling.json",
+      "boundary": "finite Monte Carlo wave-function unraveling of the local Lindblad surrogate only, not physical qFEP realization",
+      "id": "quantum_trajectory_unraveling",
+      "next_extension": "compare seeded trajectory unravelings with reviewed open-system models and independent stochastic solvers",
+      "status": "implemented_finite_simulation",
+      "validation_gate": "quantum_trajectory_unraveling_ok"
+    },
+    {
+      "artifact": "output/data/many_body_boundary_screen_sweep.json",
+      "boundary": "finite six-qubit boundary-screen cut sweep only, not a many-body observer-boundary proof",
+      "id": "many_body_boundary_screens",
+      "next_extension": "extend sparse scaling to tensor-network methods and reviewed many-body benchmark states",
+      "status": "implemented_finite_simulation",
+      "validation_gate": "many_body_boundary_screen_sweep_ok"
+    },
+    {
+      "artifact": "output/data/sparse_boundary_screen_scaling_audit.json",
+      "boundary": "finite sparse exact boundary-screen scaling only, not empirical or full many-body QRF evidence",
+      "id": "sparse_boundary_screen_scaling_audit",
+      "next_extension": "replace exact sparse state-vector screens with tensor-network scaling and independent benchmark fixtures",
+      "status": "implemented_finite_simulation",
+      "validation_gate": "sparse_boundary_screen_scaling_audit_ok"
+    },
+    {
+      "artifact": "output/data/sheaf_contextuality_obstruction_audit.json",
+      "boundary": "finite measurement-cover global-section LP only, not a full sheaf-theoretic proof for the source paper",
+      "id": "general_sheaf_contextuality_engine",
+      "next_extension": "extend the finite measurement-cover LP engine to parsed arbitrary scenarios and reviewed sheaf-theoretic obstruction reports",
+      "status": "implemented_finite_simulation",
+      "validation_gate": "sheaf_contextuality_obstruction_audit_ok"
+    },
+    {
+      "artifact": "output/data/qrf_transformation_covariance_audit.json",
+      "boundary": "finite probability-preserving relabeling covariance audit only, not full quantum-reference-frame covariance",
+      "id": "qrf_transformation_library",
+      "next_extension": "extend toy density/probability covariance to reviewed quantum-reference-frame transformation cases",
+      "status": "implemented_finite_simulation",
+      "validation_gate": "qrf_transformation_covariance_audit_ok"
+    },
+    {
+      "artifact": "output/data/qrf_frame_covariance_toy_audit.json",
+      "boundary": "finite density-matrix and probability-vector covariance toy audit only, not full QRF physics",
+      "id": "qrf_frame_covariance_toy_audit",
+      "next_extension": "replace finite unitary/permutation frame checks with reviewed QRF transformation models over explicit Hilbert partitions",
+      "status": "implemented_finite_simulation",
+      "validation_gate": "qrf_frame_covariance_toy_audit_ok"
+    },
+    {
+      "artifact": "output/data/empirical_adapter_provenance_audit.json",
+      "boundary": "fail-closed provenance adapter and synthetic-demo gate only, not empirical human or practice evidence",
+      "id": "empirical_adapter",
+      "next_extension": "attach reviewed datasets only after source identity, ethics basis, preprocessing provenance, null models, and safety review pass",
+      "status": "implemented_finite_simulation",
+      "validation_gate": "empirical_adapter_provenance_audit_ok"
+    }
+  ],
+  "implemented_count": 17,
+  "schema": "realizing_emptiness.quantum_extension_roadmap.v1",
+  "success_criteria": [
+    "finite quantum-information controls pass before manuscript claims direct entropy or contextuality simulation",
+    "finite CHSH local-polytope checks pass before manuscript claims a direct noncontextuality audit",
+    "finite open-system dephasing controls pass before manuscript claims any direct open-system quantum simulation",
+    "finite Lindblad, stochastic quantum-trajectory, mixed-state entanglement, channel-cost, sparse many-body, sheaf, QRF-transformation, and provenance engines pass before roadmap rows become finite software claims",
+    "physical qFEP, human-subject, clinical/neural/awakening, and user-facing practice claims remain blocked until their separate external evidence classes are present",
+    "empirical or practice-facing claims remain blocked until sourced data, ethics constraints, safety review, and negative controls exist"
+  ]
+}

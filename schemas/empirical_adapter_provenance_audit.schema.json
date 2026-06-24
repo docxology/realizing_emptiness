@@ -1,0 +1,45 @@
+{
+  "$id": "realizing_emptiness.empirical_adapter_provenance_audit.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Realizing Emptiness Empirical Adapter Provenance Audit",
+  "type": "object",
+  "required": [
+    "schema",
+    "row_count",
+    "criteria",
+    "rows",
+    "controls",
+    "all_controls_pass",
+    "claim_boundary"
+  ],
+  "properties": {
+    "schema": {"const": "realizing_emptiness.empirical_adapter_provenance_audit.v1"},
+    "row_count": {"type": "integer", "minimum": 3},
+    "criteria": {"type": "array", "minItems": 5, "items": {"type": "string"}},
+    "rows": {
+      "type": "array",
+      "minItems": 3,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "record_type",
+          "has_source_identity",
+          "has_ethics_basis",
+          "has_preprocessing_hash",
+          "has_null_model",
+          "synthetic",
+          "provenance_complete",
+          "allowed_for_empirical_claim",
+          "allowed_for_software_demo",
+          "decision"
+        ],
+        "additionalProperties": true
+      }
+    },
+    "controls": {"type": "object", "additionalProperties": {"const": true}},
+    "all_controls_pass": {"const": true},
+    "claim_boundary": {"type": "string", "pattern": "not empirical"}
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,19 @@
+schema: realizing_emptiness.source_manifest.v1
+primary_source:
+  title: "There is no self-evidence: A physics of emptiness realisation"
+  authors:
+    - Lars Sandved-Smith
+    - Chris Fields
+    - Thomas Doctor
+    - Ruben Laukkonen
+    - Jakob Hohwy
+  date: "2026-05-23"
+  osf_url: "https://osf.io/preprints/psyarxiv/m78z2_v1"
+  local_pdf: "docs/There_is_no_self_evidence_Sandved-Smith_2026.pdf"
+  sha256: "94e2335c3a4a37b8d49039b11b45ccda25bad65d4b80aa15428b84abfba699ac"
+  pages: 25
+  citation_key: sandvedsmith2026noself
+integrity_rules:
+  quote_policy: "Use paraphrased locators and short excerpts only."
+  claim_scope: "Software artifacts validate finite operational surrogates, not empirical awakening or clinical outcomes."
+

@@ -1,0 +1,17 @@
+{
+  "$id": "realizing_emptiness.external_review_response_audit.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Realizing Emptiness External Review Response Audit",
+  "type": "object",
+  "required": ["schema", "row_count", "rows", "missing_evidence", "controls", "all_controls_pass", "claim_boundary"],
+  "properties": {
+    "schema": {"const": "realizing_emptiness.external_review_response_audit.v1"},
+    "row_count": {"type": "integer", "minimum": 1},
+    "rows": {"type": "array", "minItems": 1, "items": {"type": "object", "required": ["recommendation_id", "reviewer_concern", "response_status", "evidence_paths", "gate", "boundary"], "properties": {"response_status": {"enum": ["already_satisfied", "implemented_local_delta", "blocked_external_publication"]}}, "additionalProperties": true}},
+    "missing_evidence": {"type": "array", "items": {"type": "object"}},
+    "controls": {"type": "object", "required": ["all_local_delta_rows_have_evidence", "required_local_deltas_present", "public_reproduction_blocked_not_completed", "all_rows_have_gates", "all_boundaries_declared"], "additionalProperties": {"type": "boolean"}},
+    "all_controls_pass": {"const": true},
+    "claim_boundary": {"type": "string", "pattern": "not empirical"}
+  },
+  "additionalProperties": false
+}

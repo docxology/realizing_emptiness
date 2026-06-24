@@ -1,0 +1,76 @@
+{
+  "$id": "realizing_emptiness.pymdp_policy_trace.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Realizing Emptiness pymdp Policy Trace",
+  "type": "object",
+  "required": [
+    "schema",
+    "seed",
+    "steps",
+    "channels",
+    "state_labels",
+    "observation_labels",
+    "action_labels",
+    "rows",
+    "profile_summaries",
+    "row_count",
+    "all_posteriors_normalized",
+    "claim_boundary"
+  ],
+  "properties": {
+    "schema": {"const": "realizing_emptiness.pymdp_policy_trace.v1"},
+    "seed": {"type": "integer"},
+    "steps": {"type": "integer", "minimum": 1},
+    "channels": {"type": "integer", "minimum": 1},
+    "state_labels": {"type": "array", "minItems": 3},
+    "observation_labels": {"type": "array", "minItems": 3},
+    "action_labels": {"type": "array", "minItems": 3},
+    "rows": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "profile",
+          "step",
+          "true_state",
+          "observation_label",
+          "state_posterior",
+          "state_posterior_sum",
+          "policy_posterior",
+          "policy_posterior_sum",
+          "negative_expected_free_energy",
+          "expected_free_energy",
+          "weighted_expected_free_energy",
+          "selected_action",
+          "efe_terms"
+        ],
+        "properties": {
+          "profile": {"type": "string"},
+          "step": {"type": "integer", "minimum": 0},
+          "true_state": {"type": "string"},
+          "observation": {"type": "integer", "minimum": 0},
+          "observation_label": {"type": "string"},
+          "perturbed_observation": {"type": "boolean"},
+          "state_posterior": {"type": "array", "minItems": 3, "maxItems": 3, "items": {"type": "number"}},
+          "state_posterior_sum": {"type": "number", "minimum": 0.999, "maximum": 1.001},
+          "policy_posterior": {"type": "array", "minItems": 3, "maxItems": 3, "items": {"type": "number"}},
+          "policy_posterior_sum": {"type": "number", "minimum": 0.999, "maximum": 1.001},
+          "negative_expected_free_energy": {"type": "array", "minItems": 3},
+          "expected_free_energy": {"type": "array", "minItems": 3},
+          "weighted_expected_free_energy": {"type": "number"},
+          "vfe": {"type": "number"},
+          "selected_action": {"type": "string"},
+          "selected_action_index": {"type": "integer", "minimum": 0},
+          "efe_terms": {"type": "array", "minItems": 3}
+        },
+        "additionalProperties": false
+      }
+    },
+    "profile_summaries": {"type": "array", "minItems": 3},
+    "row_count": {"type": "integer", "minimum": 3},
+    "all_posteriors_normalized": {"const": true},
+    "claim_boundary": {"type": "string", "pattern": "not empirical"}
+  },
+  "additionalProperties": false
+}

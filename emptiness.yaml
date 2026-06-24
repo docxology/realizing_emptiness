@@ -1,0 +1,39 @@
+source:
+  manifest: data/sources/source_manifest.yaml
+  claim_crosswalk: output/data/source_claim_crosswalk.json
+  claim_support_audit: output/data/claim_support_audit.json
+  manuscript_claim_audit: output/data/manuscript_claim_audit.json
+  evidence_ceiling_audit: output/data/evidence_ceiling_audit.json
+formalism:
+  equation_count: 14
+  operational_surrogate_label: finite_boundary_qrf_surrogate_v1
+simulation:
+  channels: 6
+  steps: 24
+  seeds: [7]
+stochastic:
+  runs_per_profile: 128
+  steps: 48
+bmr:
+  metacognitive_access_grid: [0.0, 0.125, 0.25, 0.375, 0.5, 0.625, 0.75, 0.875, 1.0]
+  prior_precision_grid: [0.2, 0.5, 1.0, 2.0, 4.0]
+sensitivity:
+  observation_noise_grid: [0.0, 0.05, 0.1, 0.2, 0.25, 0.35, 0.4]
+  claim_boundary: deterministic sensitivity surrogate only
+quantum:
+  theta_count: 33
+  rotation_count: 25
+  dephasing_time_count: 21
+  dephasing_rate_count: 4
+  implemented_scope: finite_entropy_chsh_mixed_entanglement_measurement_cover_polytope_channel_cost_dephasing_lindblad_sparse_sheaf_qrf_covariance_provenance_controls
+  roadmap_scope: physical_qfep_realization_and_human_practice_empirical_validation_remain_blocked
+  claim_boundary: finite quantum-information simulation only; not empirical and not full qFEP dynamics
+visualization:
+  require_alt_text: true
+  require_source_data_alternative: true
+  require_non_color_encoding: true
+dashboard:
+  path: output/dashboard/index.html
+  claim_boundary: static artifact dashboard only; not empirical evidence
+practice:
+  allow_user_facing_claims: false

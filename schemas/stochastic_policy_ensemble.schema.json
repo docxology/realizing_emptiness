@@ -1,0 +1,29 @@
+{
+  "$id": "realizing_emptiness.stochastic_policy_ensemble.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Realizing Emptiness Stochastic Policy Ensemble",
+  "type": "object",
+  "required": ["schema", "seed", "runs_per_profile", "steps", "rows", "run_summaries", "profile_summaries", "null_summaries", "controls", "all_controls_pass", "claim_boundary"],
+  "properties": {
+    "schema": {"const": "realizing_emptiness.stochastic_policy_ensemble.v1"},
+    "seed": {"type": "integer"},
+    "runs_per_profile": {"type": "integer", "minimum": 1},
+    "steps": {"type": "integer", "minimum": 1},
+    "channels": {"type": "integer", "minimum": 1},
+    "profile_count": {"type": "integer", "minimum": 3},
+    "row_count": {"type": "integer", "minimum": 1},
+    "run_summary_count": {"type": "integer", "minimum": 1},
+    "state_labels": {"type": "array", "minItems": 3},
+    "observation_labels": {"type": "array", "minItems": 3},
+    "action_labels": {"type": "array", "minItems": 3},
+    "rows": {"type": "array", "minItems": 1, "items": {"type": "object"}},
+    "run_summaries": {"type": "array", "minItems": 1, "items": {"type": "object"}},
+    "profile_summaries": {"type": "array", "minItems": 3, "items": {"type": "object"}},
+    "null_summaries": {"type": "array", "minItems": 3, "items": {"type": "object"}},
+    "profile_null_separation": {"type": "array", "minItems": 3, "items": {"type": "object"}},
+    "controls": {"type": "object", "additionalProperties": {"const": true}},
+    "all_controls_pass": {"const": true},
+    "claim_boundary": {"type": "string", "pattern": "not empirical"}
+  },
+  "additionalProperties": false
+}

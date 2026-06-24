@@ -1,0 +1,21 @@
+{
+  "$id": "realizing_emptiness.quantum_trajectory_convergence_audit.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Realizing Emptiness Quantum Trajectory Convergence Audit",
+  "type": "object",
+  "required": ["schema", "seed", "trajectory_counts", "too_few_count", "row_count", "rows", "too_few_trajectory_control", "controls", "all_controls_pass", "claim_boundary"],
+  "properties": {
+    "schema": {"const": "realizing_emptiness.quantum_trajectory_convergence_audit.v1"},
+    "seed": {"type": "integer"},
+    "trajectory_counts": {"type": "array", "minItems": 2},
+    "too_few_count": {"type": "integer", "minimum": 1},
+    "row_count": {"type": "integer", "minimum": 2},
+    "rows": {"type": "array", "minItems": 2, "items": {"type": "object"}},
+    "log_log_residual_slope": {"type": "number", "exclusiveMaximum": 0},
+    "too_few_trajectory_control": {"type": "object"},
+    "controls": {"type": "object", "additionalProperties": {"const": true}},
+    "all_controls_pass": {"const": true},
+    "claim_boundary": {"type": "string", "pattern": "not empirical"}
+  },
+  "additionalProperties": false
+}

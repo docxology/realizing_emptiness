@@ -1,0 +1,152 @@
+{
+  "$id": "realizing_emptiness.simulation_sensitivity_grid.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Realizing Emptiness Simulation Sensitivity Grid",
+  "type": "object",
+  "required": [
+    "schema",
+    "row_count",
+    "access_grid",
+    "precision_grid",
+    "noise_grid",
+    "rows",
+    "pruning_rate",
+    "high_access_pruning_rate",
+    "low_access_pruning_rate",
+    "all_rows_boundary_safe",
+    "claim_boundary"
+  ],
+  "properties": {
+    "schema": {
+      "const": "realizing_emptiness.simulation_sensitivity_grid.v1"
+    },
+    "row_count": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "access_grid": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "number",
+        "minimum": 0,
+        "maximum": 1
+      }
+    },
+    "precision_grid": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "number",
+        "minimum": 0
+      }
+    },
+    "noise_grid": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "number",
+        "minimum": 0,
+        "maximum": 0.5
+      }
+    },
+    "rows": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "prior_precision",
+          "metacognitive_access",
+          "observation_noise",
+          "delta_complexity",
+          "delta_accuracy",
+          "delta_free_energy",
+          "prunes_prior",
+          "boundary_entropy_nats",
+          "separation_index",
+          "post_dual_advantage",
+          "qrf_indistinguishability_holds",
+          "claim_boundary"
+        ],
+        "properties": {
+          "prior_precision": {
+            "type": "number",
+            "minimum": 0
+          },
+          "metacognitive_access": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "observation_noise": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 0.5
+          },
+          "full_model": {
+            "type": "object"
+          },
+          "reduced_model": {
+            "type": "object"
+          },
+          "delta_complexity": {
+            "type": "number"
+          },
+          "delta_accuracy": {
+            "type": "number"
+          },
+          "delta_free_energy": {
+            "type": "number"
+          },
+          "prunes_prior": {
+            "type": "boolean"
+          },
+          "boundary_entropy_nats": {
+            "type": "number",
+            "minimum": 0
+          },
+          "separation_index": {
+            "type": "number",
+            "minimum": 0
+          },
+          "post_dual_advantage": {
+            "type": "number",
+            "minimum": 0
+          },
+          "qrf_indistinguishability_holds": {
+            "const": true
+          },
+          "claim_boundary": {
+            "type": "string",
+            "pattern": "not empirical"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "pruning_rate": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "high_access_pruning_rate": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "low_access_pruning_rate": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "all_rows_boundary_safe": {
+      "const": true
+    },
+    "claim_boundary": {
+      "type": "string",
+      "pattern": "not empirical"
+    }
+  },
+  "additionalProperties": false
+}

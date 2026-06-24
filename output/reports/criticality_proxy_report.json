@@ -1,0 +1,21 @@
+{
+  "autocorrelation_lag1": 0.5524256651017214,
+  "avalanche_size_distribution": {
+    "avalanche_count": 1,
+    "max_size": 123.0,
+    "mean_size": 123.0,
+    "power_law_vs_exponential_llr": 0.0,
+    "sizes": [
+      123.0
+    ]
+  },
+  "branching_ratio": 1.0085470085470085,
+  "claim_boundary": "seeded software trajectory diagnostics, not evidence of neural avalanches, branching ratio, or empirical criticality; not empirical, and no claim about brains, meditators, or practice efficacy",
+  "criticality_index": 0.008547008547008517,
+  "entropy_nats": 0.6931471805599453,
+  "label": "single_trace_diagnostic_not_empirical_neural_measure",
+  "near_critical_score": 0.05626998707219166,
+  "schema": "realizing_emptiness.criticality_proxy_report.v1",
+  "switch_rate": 0.8913043478260869,
+  "variance": 0.25
+}

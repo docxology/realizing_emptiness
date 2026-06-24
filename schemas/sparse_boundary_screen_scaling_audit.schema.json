@@ -1,0 +1,36 @@
+{
+  "$id": "realizing_emptiness.sparse_boundary_screen_scaling_audit.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Realizing Emptiness Sparse Boundary Screen Scaling Audit",
+  "type": "object",
+  "required": ["schema", "qubit_counts", "row_count", "cut_count_per_size", "rows", "controls", "all_controls_pass", "claim_boundary"],
+  "properties": {
+    "schema": {"const": "realizing_emptiness.sparse_boundary_screen_scaling_audit.v1"},
+    "qubit_counts": {"type": "array", "minItems": 3, "items": {"type": "integer", "minimum": 2}},
+    "row_count": {"type": "integer", "minimum": 18},
+    "cut_count_per_size": {"type": "object"},
+    "rows": {
+      "type": "array",
+      "minItems": 18,
+      "items": {
+        "type": "object",
+        "required": ["qubit_count", "hilbert_dimension", "state_label", "cut_id", "cut_class", "amplitude_density", "reduced_entropy_bits", "observer_boundary_candidate"],
+        "properties": {
+          "qubit_count": {"type": "integer"},
+          "hilbert_dimension": {"type": "integer", "minimum": 64},
+          "state_label": {"type": "string"},
+          "cut_id": {"type": "string"},
+          "cut_class": {"type": "string"},
+          "amplitude_density": {"type": "number", "minimum": 0, "maximum": 1},
+          "reduced_entropy_bits": {"type": "number", "minimum": 0},
+          "observer_boundary_candidate": {"type": "boolean"}
+        },
+        "additionalProperties": true
+      }
+    },
+    "controls": {"type": "object", "additionalProperties": {"const": true}},
+    "all_controls_pass": {"const": true},
+    "claim_boundary": {"type": "string", "pattern": "not empirical"}
+  },
+  "additionalProperties": false
+}

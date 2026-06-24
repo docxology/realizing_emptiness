@@ -1,0 +1,64 @@
+{
+  "$id": "realizing_emptiness.rendered_figure_caption_audit.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Realizing Emptiness Rendered Figure Caption Audit",
+  "type": "object",
+  "required": [
+    "schema",
+    "manuscript_count",
+    "figure_reference_count",
+    "unique_figure_count",
+    "rows",
+    "missing_or_weak_captions",
+    "missing_source_artifacts",
+    "missing_interpretive_boundaries",
+    "missing_visual_encoding_language",
+    "ok"
+  ],
+  "properties": {
+    "schema": {"const": "realizing_emptiness.rendered_figure_caption_audit.v1"},
+    "manuscript_count": {"type": "integer", "minimum": 1},
+    "figure_reference_count": {"type": "integer", "minimum": 1},
+    "unique_figure_count": {"type": "integer", "minimum": 1},
+    "rows": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "manuscript",
+          "figure_id",
+          "figure_path",
+          "caption_length",
+          "source_artifact_count",
+          "has_source_artifact",
+          "has_interpretive_boundary",
+          "has_visual_encoding_language",
+          "source_map_caption_length",
+          "visual_encoding",
+          "ok"
+        ],
+        "properties": {
+          "manuscript": {"type": "string", "pattern": "^[0-9]{2}_[A-Za-z0-9_]+\\.md$"},
+          "figure_id": {"type": "string", "pattern": "^[a-z0-9_]+$"},
+          "figure_path": {"type": "string", "pattern": "^\\.\\./output/figures/[a-z0-9_]+\\.png$"},
+          "caption_length": {"type": "integer", "minimum": 120},
+          "source_artifact_count": {"type": "integer", "minimum": 1},
+          "has_source_artifact": {"const": true},
+          "has_interpretive_boundary": {"const": true},
+          "has_visual_encoding_language": {"const": true},
+          "source_map_caption_length": {"type": "integer", "minimum": 120},
+          "visual_encoding": {"type": "string", "minLength": 20},
+          "ok": {"const": true}
+        },
+        "additionalProperties": false
+      }
+    },
+    "missing_or_weak_captions": {"type": "array", "maxItems": 0},
+    "missing_source_artifacts": {"type": "array", "maxItems": 0},
+    "missing_interpretive_boundaries": {"type": "array", "maxItems": 0},
+    "missing_visual_encoding_language": {"type": "array", "maxItems": 0},
+    "ok": {"const": true}
+  },
+  "additionalProperties": false
+}

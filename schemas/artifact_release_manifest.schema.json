@@ -1,0 +1,24 @@
+{
+  "$id": "realizing_emptiness.artifact_release_manifest.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Realizing Emptiness Artifact Release Manifest",
+  "type": "object",
+  "required": ["schema", "release_scope", "public_publication_performed", "artifact_count", "file_count", "files", "required_commands", "controls", "all_controls_pass", "claim_boundary"],
+  "properties": {
+    "schema": {"const": "realizing_emptiness.artifact_release_manifest.v1"},
+    "release_scope": {"const": "local_private_artifact_bundle_not_public_release"},
+    "public_publication_performed": {"const": false},
+    "public_release_targets_excluded": {"type": "array", "items": {"type": "string"}},
+    "artifact_count": {"type": "integer", "minimum": 1},
+    "file_count": {"type": "integer", "minimum": 1},
+    "files": {"type": "array", "minItems": 1, "items": {"type": "object", "required": ["path", "kind", "exists"], "additionalProperties": true}},
+    "missing_paths": {"type": "array", "items": {"type": "string"}},
+    "duplicate_paths": {"type": "array", "items": {"type": "string"}},
+    "excluded_self_from_hashes": {"type": "array", "contains": {"const": "output/data/artifact_release_manifest.json"}},
+    "required_commands": {"type": "array", "minItems": 7, "items": {"type": "string"}},
+    "controls": {"type": "object", "required": ["all_paths_relative", "all_files_exist", "all_hashes_present", "paths_unique", "uv_lock_included", "source_manifests_included", "source_tree_included", "schemas_included", "tests_included", "manuscript_sources_included", "docs_included", "rerun_scripts_included", "validation_commands_declared", "public_publication_not_claimed", "self_manifest_excluded_from_hashes", "claim_boundary_declared"], "additionalProperties": {"type": "boolean"}},
+    "all_controls_pass": {"const": true},
+    "claim_boundary": {"type": "string", "pattern": "not public independent reproduction"}
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,15 @@
+.venv/
+.DS_Store
+.omo/
+.codegraph
+.mypy_cache/
+.ruff_cache/
+.benchmarks/
+.pytest_cache/
+.coverage*
+htmlcov/
+*.egg-info/
+__pycache__/
+lean/.lake/
+lean/lake-packages/
+lean/build/

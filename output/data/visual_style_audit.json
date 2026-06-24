@@ -1,0 +1,865 @@
+{
+  "claim_boundary": "visual style audit only; not empirical evidence",
+  "figure_count": 59,
+  "hatches": {
+    "blocked": "..",
+    "control": "//",
+    "finite": "",
+    "null": "//",
+    "obstruction": ".."
+  },
+  "low_contrast_roles": [],
+  "minimum_non_text_contrast_ratio": 3.0,
+  "minimum_text_contrast_ratio": 4.5,
+  "missing_legend_or_colorbar": [],
+  "missing_roles": [],
+  "ok": true,
+  "palette": {
+    "blocked": "#92400e",
+    "boundary": "#111827",
+    "fail": "#92400e",
+    "finite": "#2563eb",
+    "keep": "#6b7280",
+    "null": "#475569",
+    "pass": "#0f766e",
+    "prune": "#0f766e",
+    "qrf_sector": "#2563eb",
+    "quantum": "#2563eb",
+    "source": "#111827",
+    "stochastic": "#7c3aed"
+  },
+  "palette_contrast": [
+    {
+      "color": "#111827",
+      "contrast_against_white": 17.74,
+      "passes_non_text_contrast": true,
+      "passes_text_contrast": true,
+      "role": "boundary"
+    },
+    {
+      "color": "#2563eb",
+      "contrast_against_white": 5.169,
+      "passes_non_text_contrast": true,
+      "passes_text_contrast": true,
+      "role": "qrf_sector"
+    },
+    {
+      "color": "#0f766e",
+      "contrast_against_white": 5.473,
+      "passes_non_text_contrast": true,
+      "passes_text_contrast": true,
+      "role": "pass"
+    },
+    {
+      "color": "#92400e",
+      "contrast_against_white": 7.09,
+      "passes_non_text_contrast": true,
+      "passes_text_contrast": true,
+      "role": "fail"
+    },
+    {
+      "color": "#6b7280",
+      "contrast_against_white": 4.834,
+      "passes_non_text_contrast": true,
+      "passes_text_contrast": true,
+      "role": "keep"
+    },
+    {
+      "color": "#0f766e",
+      "contrast_against_white": 5.473,
+      "passes_non_text_contrast": true,
+      "passes_text_contrast": true,
+      "role": "prune"
+    },
+    {
+      "color": "#2563eb",
+      "contrast_against_white": 5.169,
+      "passes_non_text_contrast": true,
+      "passes_text_contrast": true,
+      "role": "finite"
+    },
+    {
+      "color": "#92400e",
+      "contrast_against_white": 7.09,
+      "passes_non_text_contrast": true,
+      "passes_text_contrast": true,
+      "role": "blocked"
+    },
+    {
+      "color": "#7c3aed",
+      "contrast_against_white": 5.699,
+      "passes_non_text_contrast": true,
+      "passes_text_contrast": true,
+      "role": "stochastic"
+    },
+    {
+      "color": "#475569",
+      "contrast_against_white": 7.578,
+      "passes_non_text_contrast": true,
+      "passes_text_contrast": true,
+      "role": "null"
+    },
+    {
+      "color": "#2563eb",
+      "contrast_against_white": 5.169,
+      "passes_non_text_contrast": true,
+      "passes_text_contrast": true,
+      "role": "quantum"
+    },
+    {
+      "color": "#111827",
+      "contrast_against_white": 17.74,
+      "passes_non_text_contrast": true,
+      "passes_text_contrast": true,
+      "role": "source"
+    }
+  ],
+  "row_count": 59,
+  "rows": [
+    {
+      "colorbar_count": 0,
+      "has_legend_or_colorbar": true,
+      "id": "graphical_abstract_cover",
+      "legend_count": 1,
+      "missing_roles": [],
+      "ok": true,
+      "roles": [
+        "source",
+        "finite",
+        "stochastic",
+        "blocked",
+        "boundary"
+      ]
+    },
+    {
+      "colorbar_count": 0,
+      "has_legend_or_colorbar": true,
+      "id": "qrf_boundary_screen_geometry",
+      "legend_count": 1,
+      "missing_roles": [],
+      "ok": true,
+      "roles": [
+        "boundary",
+        "qrf_sector",
+        "finite"
+      ]
+    },
+    {
+      "colorbar_count": 0,
+      "has_legend_or_colorbar": true,
+      "id": "qrf_channel_relabeling_ledger",
+      "legend_count": 1,
+      "missing_roles": [],
+      "ok": true,
+      "roles": [
+        "boundary",
+        "qrf_sector",
+        "pass"
+      ]
+    },
+    {
+      "colorbar_count": 0,
+      "has_legend_or_colorbar": true,
+      "id": "qrf_invariance_policy_flow",
+      "legend_count": 2,
+      "missing_roles": [],
+      "ok": true,
+      "roles": [
+        "boundary",
+        "pass",
+        "fail",
+        "qrf_sector"
+      ]
+    },
+    {
+      "colorbar_count": 0,
+      "has_legend_or_colorbar": true,
+      "id": "qrf_sectorisation_map",
+      "legend_count": 1,
+      "missing_roles": [],
+      "ok": true,
+      "roles": [
+        "qrf_sector"
+      ]
+    },
+    {
+      "colorbar_count": 0,
+      "has_legend_or_colorbar": true,
+      "id": "boundary_indistinguishability",
+      "legend_count": 1,
+      "missing_roles": [],
+      "ok": true,
+      "roles": [
+        "pass",
+        "boundary"
+      ]
+    },
+    {
+      "colorbar_count": 0,
+      "has_legend_or_colorbar": true,
+      "id": "qrf_reference_frame_geometry",
+      "legend_count": 1,
+      "missing_roles": [],
+      "ok": true,
+      "roles": [
+        "boundary",
+        "qrf_sector"
+      ]
+    },
+    {
+      "colorbar_count": 0,
+      "has_legend_or_colorbar": true,
+      "id": "bmr_free_energy_decomposition",
+      "legend_count": 1,
+      "missing_roles": [],
+      "ok": true,
+      "roles": [
+        "keep",
+        "prune"
+      ]
+    },
+    {
+      "colorbar_count": 1,
+      "has_legend_or_colorbar": true,
+      "id": "bmr_pruning_phase_diagram",
+      "legend_count": 1,
+      "missing_roles": [],
+      "ok": true,
+      "roles": [
+        "keep",
+        "prune"
+      ]
+    },
+    {
+      "colorbar_count": 1,
+      "has_legend_or_colorbar": true,
+      "id": "simulation_sensitivity_heatmap",
+      "legend_count": 0,
+      "missing_roles": [],
+      "ok": true,
+      "roles": [
+        "keep",
+        "prune"
+      ]
+    },
+    {
+      "colorbar_count": 0,
+      "has_legend_or_colorbar": true,
+      "id": "finite_quantum_scope_summary",
+      "legend_count": 1,
+      "missing_roles": [],
+      "ok": true,
+      "roles": [
+        "quantum",
+        "finite",
+        "blocked"
+      ]
+    },
+    {
+      "colorbar_count": 0,
+      "has_legend_or_colorbar": true,
+      "id": "quantum_boundary_entropy_landscape",
+      "legend_count": 4,
+      "missing_roles": [],
+      "ok": true,
+      "roles": [
+        "quantum",
+        "finite"
+      ]
+    },
+    {
+      "colorbar_count": 2,
+      "has_legend_or_colorbar": true,
+      "id": "quantum_contextuality_witness",
+      "legend_count": 2,
+      "missing_roles": [],
+      "ok": true,
+      "roles": [
+        "quantum",
+        "finite"
+      ]
+    },
+    {
+      "colorbar_count": 1,
+      "has_legend_or_colorbar": true,
+      "id": "quantum_measurement_contextuality_table",
+      "legend_count": 1,
+      "missing_roles": [],
+      "ok": true,
+      "roles": [
+        "quantum",
+        "null"
+      ]
+    },
+    {
+      "colorbar_count": 0,
+      "has_legend_or_colorbar": true,
+      "id": "quantum_local_polytope_audit",
+      "legend_count": 2,
+      "missing_roles": [],
+      "ok": true,
+      "roles": [
+        "quantum",
+        "null"
+      ]
+    },
+    {
+      "colorbar_count": 0,
+      "has_legend_or_colorbar": true,
+      "id": "quantum_open_system_dynamics",
+      "legend_count": 3,
+      "missing_roles": [],
+      "ok": true,
+      "roles": [
+        "quantum"
+      ]
+    },
+    {
+      "colorbar_count": 0,
+      "has_legend_or_colorbar": true,
+      "id": "qfep_boundary_hamiltonian_dynamics",
+      "legend_count": 3,
+      "missing_roles": [],
+      "ok": true,
+      "roles": [
+        "quantum",
+        "finite"
+      ]
+    },
+    {
+      "colorbar_count": 0,
+      "has_legend_or_colorbar": true,
+      "id": "quantum_trajectory_unraveling",
+      "legend_count": 3,
+      "missing_roles": [],
+      "ok": true,
+      "roles": [
+        "quantum",
+        "stochastic",
+        "blocked"
+      ]
+    },
+    {
+      "colorbar_count": 1,
+      "has_legend_or_colorbar": true,
+      "id": "many_body_boundary_screen_sweep",
+      "legend_count": 1,
+      "missing_roles": [],
+      "ok": true,
+      "roles": [
+        "quantum",
+        "finite"
+      ]
+    },
+    {
+      "colorbar_count": 1,
+      "has_legend_or_colorbar": true,
+      "id": "sheaf_contextuality_obstruction_audit",
+      "legend_count": 1,
+      "missing_roles": [],
+      "ok": true,
+      "roles": [
+        "pass",
+        "fail"
+      ]
+    },
+    {
+      "colorbar_count": 1,
+      "has_legend_or_colorbar": true,
+      "id": "qrf_transformation_covariance_audit",
+      "legend_count": 0,
+      "missing_roles": [],
+      "ok": true,
+      "roles": [
+        "qrf_sector",
+        "pass",
+        "fail"
+      ]
+    },
+    {
+      "colorbar_count": 1,
+      "has_legend_or_colorbar": true,
+      "id": "empirical_adapter_provenance_audit",
+      "legend_count": 1,
+      "missing_roles": [],
+      "ok": true,
+      "roles": [
+        "blocked",
+        "pass"
+      ]
+    },
+    {
+      "colorbar_count": 0,
+      "has_legend_or_colorbar": true,
+      "id": "arbitrary_two_qubit_entanglement_audit",
+      "legend_count": 2,
+      "missing_roles": [],
+      "ok": true,
+      "roles": [
+        "quantum",
+        "null"
+      ]
+    },
+    {
+      "colorbar_count": 1,
+      "has_legend_or_colorbar": true,
+      "id": "general_measurement_cover_polytope_audit",
+      "legend_count": 1,
+      "missing_roles": [],
+      "ok": true,
+      "roles": [
+        "pass",
+        "fail"
+      ]
+    },
+    {
+      "colorbar_count": 1,
+      "has_legend_or_colorbar": true,
+      "id": "thermodynamic_channel_cost_audit",
+      "legend_count": 1,
+      "missing_roles": [],
+      "ok": true,
+      "roles": [
+        "quantum",
+        "blocked"
+      ]
+    },
+    {
+      "colorbar_count": 1,
+      "has_legend_or_colorbar": true,
+      "id": "sparse_boundary_screen_scaling_audit",
+      "legend_count": 1,
+      "missing_roles": [],
+      "ok": true,
+      "roles": [
+        "quantum",
+        "finite"
+      ]
+    },
+    {
+      "colorbar_count": 1,
+      "has_legend_or_colorbar": true,
+      "id": "qrf_frame_covariance_toy_audit",
+      "legend_count": 1,
+      "missing_roles": [],
+      "ok": true,
+      "roles": [
+        "qrf_sector",
+        "pass",
+        "fail"
+      ]
+    },
+    {
+      "colorbar_count": 1,
+      "has_legend_or_colorbar": true,
+      "id": "quantum_roadmap_readiness_matrix",
+      "legend_count": 1,
+      "missing_roles": [],
+      "ok": true,
+      "roles": [
+        "finite",
+        "blocked"
+      ]
+    },
+    {
+      "colorbar_count": 0,
+      "has_legend_or_colorbar": true,
+      "id": "pymdp_profile_comparison",
+      "legend_count": 3,
+      "missing_roles": [],
+      "ok": true,
+      "roles": [
+        "finite",
+        "qrf_sector"
+      ]
+    },
+    {
+      "colorbar_count": 0,
+      "has_legend_or_colorbar": true,
+      "id": "posterior_trajectory",
+      "legend_count": 1,
+      "missing_roles": [],
+      "ok": true,
+      "roles": [
+        "finite"
+      ]
+    },
+    {
+      "colorbar_count": 0,
+      "has_legend_or_colorbar": true,
+      "id": "pymdp_runtime_validation_dashboard",
+      "legend_count": 4,
+      "missing_roles": [],
+      "ok": true,
+      "roles": [
+        "finite",
+        "pass",
+        "fail",
+        "stochastic",
+        "null"
+      ]
+    },
+    {
+      "colorbar_count": 0,
+      "has_legend_or_colorbar": true,
+      "id": "criticality_proxy_panels",
+      "legend_count": 1,
+      "missing_roles": [],
+      "ok": true,
+      "roles": [
+        "finite"
+      ]
+    },
+    {
+      "colorbar_count": 0,
+      "has_legend_or_colorbar": true,
+      "id": "criticality_stochastic_ensemble",
+      "legend_count": 2,
+      "missing_roles": [],
+      "ok": true,
+      "roles": [
+        "stochastic",
+        "null"
+      ]
+    },
+    {
+      "colorbar_count": 0,
+      "has_legend_or_colorbar": true,
+      "id": "criticality_signatures",
+      "legend_count": 2,
+      "missing_roles": [],
+      "ok": true,
+      "roles": [
+        "stochastic",
+        "null",
+        "finite"
+      ]
+    },
+    {
+      "colorbar_count": 0,
+      "has_legend_or_colorbar": true,
+      "id": "compassion_scope_widening",
+      "legend_count": 2,
+      "missing_roles": [],
+      "ok": true,
+      "roles": [
+        "finite",
+        "null"
+      ]
+    },
+    {
+      "colorbar_count": 0,
+      "has_legend_or_colorbar": true,
+      "id": "separation_prior_emergence",
+      "legend_count": 1,
+      "missing_roles": [],
+      "ok": true,
+      "roles": [
+        "finite",
+        "keep",
+        "blocked"
+      ]
+    },
+    {
+      "colorbar_count": 0,
+      "has_legend_or_colorbar": true,
+      "id": "internal_cut_unmeasurability",
+      "legend_count": 1,
+      "missing_roles": [],
+      "ok": true,
+      "roles": [
+        "finite",
+        "quantum",
+        "boundary"
+      ]
+    },
+    {
+      "colorbar_count": 0,
+      "has_legend_or_colorbar": true,
+      "id": "practice_policy_scope_map",
+      "legend_count": 1,
+      "missing_roles": [],
+      "ok": true,
+      "roles": [
+        "finite",
+        "blocked"
+      ]
+    },
+    {
+      "colorbar_count": 0,
+      "has_legend_or_colorbar": true,
+      "id": "stochastic_effect_size_forest",
+      "legend_count": 1,
+      "missing_roles": [],
+      "ok": true,
+      "roles": [
+        "stochastic",
+        "null"
+      ]
+    },
+    {
+      "colorbar_count": 2,
+      "has_legend_or_colorbar": true,
+      "id": "bmr_robustness_resampling",
+      "legend_count": 1,
+      "missing_roles": [],
+      "ok": true,
+      "roles": [
+        "keep",
+        "prune"
+      ]
+    },
+    {
+      "colorbar_count": 0,
+      "has_legend_or_colorbar": true,
+      "id": "quantum_trajectory_convergence",
+      "legend_count": 2,
+      "missing_roles": [],
+      "ok": true,
+      "roles": [
+        "quantum",
+        "stochastic",
+        "blocked"
+      ]
+    },
+    {
+      "colorbar_count": 0,
+      "has_legend_or_colorbar": true,
+      "id": "visual_semantic_palette_ledger",
+      "legend_count": 1,
+      "missing_roles": [],
+      "ok": true,
+      "roles": [
+        "pass",
+        "fail",
+        "keep",
+        "prune",
+        "finite",
+        "blocked",
+        "stochastic",
+        "quantum"
+      ]
+    },
+    {
+      "colorbar_count": 1,
+      "has_legend_or_colorbar": true,
+      "id": "method_assumption_failure_map",
+      "legend_count": 1,
+      "missing_roles": [],
+      "ok": true,
+      "roles": [
+        "finite",
+        "blocked",
+        "pass"
+      ]
+    },
+    {
+      "colorbar_count": 0,
+      "has_legend_or_colorbar": true,
+      "id": "claim_source_validation_graph",
+      "legend_count": 1,
+      "missing_roles": [],
+      "ok": true,
+      "roles": [
+        "source",
+        "pass"
+      ]
+    },
+    {
+      "colorbar_count": 1,
+      "has_legend_or_colorbar": true,
+      "id": "scholarship_coverage_matrix",
+      "legend_count": 0,
+      "missing_roles": [],
+      "ok": true,
+      "roles": [
+        "source"
+      ]
+    },
+    {
+      "colorbar_count": 1,
+      "has_legend_or_colorbar": true,
+      "id": "claim_support_matrix",
+      "legend_count": 0,
+      "missing_roles": [],
+      "ok": true,
+      "roles": [
+        "source",
+        "pass"
+      ]
+    },
+    {
+      "colorbar_count": 0,
+      "has_legend_or_colorbar": true,
+      "id": "manuscript_claim_audit",
+      "legend_count": 1,
+      "missing_roles": [],
+      "ok": true,
+      "roles": [
+        "pass",
+        "fail"
+      ]
+    },
+    {
+      "colorbar_count": 1,
+      "has_legend_or_colorbar": true,
+      "id": "evidence_ceiling_stress_matrix",
+      "legend_count": 0,
+      "missing_roles": [],
+      "ok": true,
+      "roles": [
+        "blocked"
+      ]
+    },
+    {
+      "colorbar_count": 0,
+      "has_legend_or_colorbar": true,
+      "id": "claim_context_evidence_ladder",
+      "legend_count": 1,
+      "missing_roles": [],
+      "ok": true,
+      "roles": [
+        "source",
+        "pass",
+        "blocked",
+        "finite"
+      ]
+    },
+    {
+      "colorbar_count": 1,
+      "has_legend_or_colorbar": true,
+      "id": "formalism_operation_map",
+      "legend_count": 0,
+      "missing_roles": [],
+      "ok": true,
+      "roles": [
+        "finite",
+        "blocked"
+      ]
+    },
+    {
+      "colorbar_count": 0,
+      "has_legend_or_colorbar": true,
+      "id": "qrf_sector_situation",
+      "legend_count": 1,
+      "missing_roles": [],
+      "ok": true,
+      "roles": [
+        "boundary",
+        "qrf_sector",
+        "pass"
+      ]
+    },
+    {
+      "colorbar_count": 0,
+      "has_legend_or_colorbar": true,
+      "id": "boundary_use_vs_ontology",
+      "legend_count": 1,
+      "missing_roles": [],
+      "ok": true,
+      "roles": [
+        "pass",
+        "blocked",
+        "boundary"
+      ]
+    },
+    {
+      "colorbar_count": 0,
+      "has_legend_or_colorbar": true,
+      "id": "separation_prior_net_value",
+      "legend_count": 1,
+      "missing_roles": [],
+      "ok": true,
+      "roles": [
+        "keep",
+        "prune",
+        "finite"
+      ]
+    },
+    {
+      "colorbar_count": 0,
+      "has_legend_or_colorbar": true,
+      "id": "multipartite_witness_negativity",
+      "legend_count": 1,
+      "missing_roles": [],
+      "ok": true,
+      "roles": [
+        "pass",
+        "fail",
+        "boundary"
+      ]
+    },
+    {
+      "colorbar_count": 0,
+      "has_legend_or_colorbar": true,
+      "id": "tensor_network_scaling",
+      "legend_count": 2,
+      "missing_roles": [],
+      "ok": true,
+      "roles": [
+        "finite",
+        "keep",
+        "fail",
+        "pass"
+      ]
+    },
+    {
+      "colorbar_count": 0,
+      "has_legend_or_colorbar": true,
+      "id": "collision_model_relaxation",
+      "legend_count": 1,
+      "missing_roles": [],
+      "ok": true,
+      "roles": [
+        "keep",
+        "prune",
+        "boundary"
+      ]
+    },
+    {
+      "colorbar_count": 0,
+      "has_legend_or_colorbar": true,
+      "id": "n_cycle_contextuality_panel",
+      "legend_count": 1,
+      "missing_roles": [],
+      "ok": true,
+      "roles": [
+        "pass",
+        "fail"
+      ]
+    },
+    {
+      "colorbar_count": 0,
+      "has_legend_or_colorbar": true,
+      "id": "data_processing_monotonicity",
+      "legend_count": 3,
+      "missing_roles": [],
+      "ok": true,
+      "roles": [
+        "finite",
+        "stochastic",
+        "null",
+        "pass",
+        "fail",
+        "keep",
+        "prune",
+        "boundary"
+      ]
+    },
+    {
+      "colorbar_count": 2,
+      "has_legend_or_colorbar": true,
+      "id": "markov_blanket_discovery",
+      "legend_count": 1,
+      "missing_roles": [],
+      "ok": true,
+      "roles": [
+        "pass",
+        "fail",
+        "boundary"
+      ]
+    }
+  ],
+  "schema": "realizing_emptiness.visual_style_audit.v1",
+  "semantic_role_count": 12
+}

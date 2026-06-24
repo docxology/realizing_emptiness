@@ -1,0 +1,48 @@
+project: realizing_emptiness
+title: Realizing Emptiness
+experiments:
+  - id: formalism_registry
+    description: Build executable and explicitly bounded surrogates for paper equations 1-14.
+    command: uv run python scripts/generate_formalisms.py
+    outputs:
+      - output/data/formalism_registry.json
+      - output/data/equation_audit.json
+      - output/data/source_claim_crosswalk.json
+      - output/data/evidence_ceiling_audit.json
+  - id: boundary_agents
+    description: Simulate separation-constrained, opacified, and post-dual boundary-channel agents with pymdp diagnostics.
+    command: uv run python scripts/simulate_boundary_agents.py
+    outputs:
+      - output/data/qrf_boundary_indistinguishability.json
+      - output/data/pymdp_profile_comparison.json
+  - id: quantum_surrogates
+    description: Simulate finite two-qubit separability entropy, CHSH contextuality witnesses, measurement-cover contextuality tables, local-polytope feasibility audits, basis-invariance controls, dephasing-channel dynamics, and the quantum-extension roadmap.
+    command: uv run python scripts/generate_quantum_surrogates.py
+    outputs:
+      - output/data/quantum_boundary_entropy.json
+      - output/data/quantum_measurement_contextuality.json
+      - output/data/quantum_open_system_dynamics.json
+      - output/data/quantum_extension_roadmap.json
+      - output/data/quantum_roadmap_readiness_matrix.json
+  - id: bmr_sweep
+    description: Decompose finite free-energy changes into complexity and accuracy terms across separation-prior strengths.
+    command: uv run python scripts/run_bmr_sweep.py
+    outputs:
+      - output/data/bmr_sweep.json
+      - output/data/bmr_sweep.csv
+  - id: criticality_proxy
+    description: Produce labeled toy criticality proxies from simulated trajectories.
+    command: uv run python scripts/simulate_boundary_agents.py
+    outputs:
+      - output/data/criticality_proxy_report.json
+  - id: figures_and_manuscript
+    description: Regenerate source-mapped figures and compose the sheaf manuscript.
+    command: uv run python scripts/run_full_chain.py
+    outputs:
+      - output/figures
+      - output/data/figure_integrity_audit.json
+      - output/data/visual_accessibility_audit.json
+      - output/manuscript/manuscript.md
+validation:
+  command: uv run python scripts/validate_outputs.py
+  required_claim_boundary: deterministic software validation only

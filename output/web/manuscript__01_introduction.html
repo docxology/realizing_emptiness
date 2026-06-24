@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc 3.10" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>01_introduction.md.web</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      white-space: pre-wrap;
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+<h1 id="sec:introduction">Introduction</h1>
+<h2 id="sec:introduction-paper-source">No-Self-Evidence as a Finite
+Boundary-Screen Problem</h2>
+<p>Sandved-Smith et al. [sandvedsmith2026noself] argue that a finite
+agent can self-evidence through its generative model while never
+obtaining evidence for the ontological reality of its own boundary. This
+no-self-evidence problem is the formal target operationalized here. The
+software turns the argument into an executable boundary discipline by
+holding three operations apart that prose usually runs together: using a
+boundary channel for prediction, labeling that channel with a quantum
+reference frame (QRF) sector, and treating the label as though it had
+ontological support. The first operation is licensed, the second is a
+model-indexing choice, and the third is the move the bitstream cannot
+underwrite.</p>
+<p>A quantum reference frame (QRF), as used here, is a frame-dependent
+sector labeling over the same finite boundary bitstream. It is a
+bookkeeping choice that says how a model reads the screen, not a claim
+that the software has implemented a physical quantum reference frame or
+discovered a physical observer boundary. Physical QRF work concerns
+transformations between quantum reference systems; this manuscript uses
+that literature only as a boundary for what the finite relabeling
+surrogate is not claiming [giacomini2019qrf;
+vanrietvelde2020perspective; bartlett2007reference]. The finite boundary
+screen is written as <code>B = {b0, b1, b2, b3, b4, b5}</code>. Each
+<code>b_i</code> is a software observation channel that can carry a
+bitstream, not a discovered biological sensor, physical boundary qubit,
+or ontological sector.</p>
+<p>Three terms therefore need to be read in the narrow model-theoretic
+sense used throughout the manuscript. Agency means action-contingency
+inside the finite model: selected actions make some boundary channels
+easier to predict by lowering prediction error under the declared
+generative model. Care means the <code>b5</code> care-salience cue and
+the later policy-scope proxy input; it is not moral compassion, a
+validated affective measure, or evidence of contemplative concern. The
+three modes are QRF deployments, not psychological stages or realized
+states: <code>separation_constrained</code>, <code>opacified</code>, and
+<code>post_dual</code>. What changes across them is the sector label
+assigned to each channel, the metacognitive-access parameter, the
+separation-prior precision, the generative-model priors and preferences,
+and therefore the frequencies of selected actions. What does not change
+is the evidenced object: the same observed b0-b5 bitstream remains the
+boundary data each deployment has to organize.</p>
+<p>The six-channel screen is the smallest current surrogate that can
+carry the six distinct interface cues needed by the three profile
+relabelings: <code>b0</code> is a body-controllability cue,
+<code>b1</code> an action-contingency cue, <code>b2</code> a
+distal-world cue, <code>b3</code> a contextual-world cue,
+<code>b4</code> an other-agent cue, and <code>b5</code> a care-salience
+cue. These six cues make the model readable while keeping the evidenced
+object fixed: the bit carried by each channel. They are not six
+ontological sectors, and their names add no evidence that any channel
+belongs to a real self, a real environment, or a real interpersonal
+field.</p>
+<p>The sector labels are deliberately operational. Self marks channels
+treated as belonging to the modeled agent under a given QRF deployment.
+Action marks a channel whose changes are conditioned by selected policy.
+Body marks controllability without making a biological-body claim.
+Environment or env marks the residual non-self field in the dual
+profile. World marks contextual non-self structure after the
+self/environment cut is no longer privileged. Other marks a non-self
+agent-like cue. Care marks a salience cue used by the bounded
+compassion-scope proxy. Each label is a model-indexing variable: it
+changes how the finite model organizes prediction, not what the
+bitstream proves about reality.</p>
+<p>The figures use the same restricted vocabulary. An
+analytical/a-priori map defines a permission, label space, or equation
+binding. A deterministic finite audit reports a fixed software
+computation with controls. A pymdp profile simulation is reserved for
+the later active-inference <code>A</code>, <code>B</code>,
+<code>C</code>, and <code>D</code> arrays, policy traces, and posterior
+summaries. A seeded stochastic robustness figure adds replayable
+sampling, null controls, or intervals around a finite simulator. A
+governance/practice boundary artifact audits claims, sources, protocols,
+or validation without adding outcome evidence. These roles are method
+labels, not evidence-class upgrades.</p>
+<p>The central QRF move is to partition the same six channels in more
+than one way. As laid out in <span class="citation"
+data-cites="fig:qrf_sector_situation">@fig:qrf_sector_situation</span>,
+the separation-constrained profile sends
+<code>b0,b1,b5 -&gt; self</code> and <code>b2,b3,b4 -&gt; env</code>, so
+sigma imposes a dual self/environment reading on the screen. The
+opacified profile sends <code>b0 -&gt; self</code>,
+<code>b1 -&gt; action</code>, <code>b2,b3 -&gt; env</code>,
+<code>b4 -&gt; other</code>, and <code>b5 -&gt; care</code>, so some
+channels stay dual while others become inspectable as action, other, and
+care labels. The post-dual profile sends <code>b0 -&gt; body</code>,
+<code>b1 -&gt; action</code>, <code>b2,b3 -&gt; world</code>,
+<code>b4 -&gt; other</code>, and <code>b5 -&gt; care</code>, organizing
+the same bitstream with no privileged self/environment cut. These are
+three carvings of one interface, not three competing measurements of
+what the interface ultimately is.</p>
+<figure id="fig:qrf_sector_situation">
+<img src="../figures/qrf_sector_situation.png" style="width:98.0%"
+alt="The QRF sector situation for early reading, showing one shared boundary screen of channels b0-b5 read through three sector lenses. A top row of cells carries the evidenced observation symbols, dotted vertical lines tie each bit to the separation-constrained, opacified, and post-dual lens rows below, a legend maps each lens color to a sector label, and a per-lens sector count records how finely each lens carves the screen, so the figure shows that the partitioning changes while the evidenced bitstream and its claim boundary stay finite software surrogates rather than empirical, neural, ontological, or physical qFEP evidence." />
+<figcaption aria-hidden="true">The QRF sector situation for early
+reading, showing one shared boundary screen of channels b0-b5 read
+through three sector lenses. A top row of cells carries the evidenced
+observation symbols, dotted vertical lines tie each bit to the
+separation-constrained, opacified, and post-dual lens rows below, a
+legend maps each lens color to a sector label, and a per-lens sector
+count records how finely each lens carves the screen, so the figure
+shows that the partitioning changes while the evidenced bitstream and
+its claim boundary stay finite software surrogates rather than
+empirical, neural, ontological, or physical qFEP evidence.</figcaption>
+</figure>
+<p>The same six channels are shown geometrically in <span
+class="citation"
+data-cites="fig:qrf_boundary_screen_geometry">@fig:qrf_boundary_screen_geometry</span>
+before the results section audits their behavior. The figure should be
+read as the object the rest of the manuscript manipulates: action enters
+a finite boundary screen, observations leave it as b0-b5 bits, and the
+surrounding role labels make the software channels legible without
+turning them into empirical sensors or ontological parts.</p>
+<figure id="fig:qrf_boundary_screen_geometry">
+<img src="../figures/qrf_boundary_screen_geometry.png"
+style="width:98.0%"
+alt="Finite QRF boundary-screen geometry for the lead boundary result. Dashed screen, node labels, action edge, observation edge, and channel-role text show how b0-b5 function as software observation channels while preserving the boundary claim that no node or edge is empirical, biological, ontological self/world, or physical qFEP evidence." />
+<figcaption aria-hidden="true">Finite QRF boundary-screen geometry for
+the lead boundary result. Dashed screen, node labels, action edge,
+observation edge, and channel-role text show how b0-b5 function as
+software observation channels while preserving the boundary claim that
+no node or edge is empirical, biological, ontological self/world, or
+physical qFEP evidence.</figcaption>
+</figure>
+<p>That distinction is the whole argument, and <span class="citation"
+data-cites="fig:boundary_use_vs_ontology">@fig:boundary_use_vs_ontology</span>
+states it as a permission rule. A partition changes the model’s
+organization: which priors are admissible, which transitions count as
+action-contingent, which observations are preferred, and which policies
+become cheap or costly under expected free energy. So a frame is
+unambiguously useful. But if two admissible partitions are defined over
+the same bitstream, the bitstream cannot by itself certify an
+ontological self/world boundary or decide which partition is real.
+Boundary use and boundary ontology are different evidential objects: the
+project therefore treats QRF sector labels as model-indexing variables
+and treats Bayesian model reduction as a comparison over useful priors,
+not as a metaphysical removal of a self.</p>
+<figure id="fig:boundary_use_vs_ontology">
+<img src="../figures/boundary_use_vs_ontology.png" style="width:98.0%"
+alt="Boundary use versus boundary ontology rendered as a stepwise permission diagram for the no-self-evidence claim. Step 1 shows the shared finite b0-b5 bitstream as the only evidenced object; Step 2 licenses reading those same bits through admissible QRF sector labels for prediction, policy selection, and model comparison when the equal-distribution audit passes; Step 3 blocks treating any chosen sector frame as a real self/world boundary because the perturbation control fails. Color encodes the licensed and blocked lanes, while the legend names the two verdicts, keeping the figure a finite software audit and not empirical, neural, clinical, practice-efficacy, or physical qFEP evidence." />
+<figcaption aria-hidden="true">Boundary use versus boundary ontology
+rendered as a stepwise permission diagram for the no-self-evidence
+claim. Step 1 shows the shared finite b0-b5 bitstream as the only
+evidenced object; Step 2 licenses reading those same bits through
+admissible QRF sector labels for prediction, policy selection, and model
+comparison when the equal-distribution audit passes; Step 3 blocks
+treating any chosen sector frame as a real self/world boundary because
+the perturbation control fails. Color encodes the licensed and blocked
+lanes, while the legend names the two verdicts, keeping the figure a
+finite software audit and not empirical, neural, clinical,
+practice-efficacy, or physical qFEP evidence.</figcaption>
+</figure>
+<p>The manuscript therefore reads the paper as a formal specification
+for finite tests rather than as a vocabulary to be illustrated. Source
+provenance anchors what is being recapitulated, the equation registry
+records which expressions are computable surrogates, and the simulation
+layer asks how separation priors, QRF relabelings, Bayesian model
+reduction, replayed active-inference traces, seeded stochastic
+ensembles, and finite open-system quantum surrogates behave under
+explicit arrays. The finite QRF boundary screen is defined in <span
+class="citation"
+data-cites="sec:methods-finite-qrf-boundary-screen">@sec:methods-finite-qrf-boundary-screen</span>,
+its lead audits appear in <span class="citation"
+data-cites="sec:results-qrf-boundary-geometry">@sec:results-qrf-boundary-geometry</span>,
+and the implemented finite quantum extension engines that extend it
+without changing the evidence class are defined in <span
+class="citation"
+data-cites="sec:methods-roadmap-quantum-engines">@sec:methods-roadmap-quantum-engines</span>.</p>
+<p>This framing also fixes the role of scholarship. Active-inference and
+Markov-blanket sources make the generative-model and boundary vocabulary
+precise, including the critique and response literature that warns
+against unqualified moves from sparse coupling or FEP formalisms to
+real-world boundary ontology [friston2023fep_simpler;
+aguilera2021particular; biehl2021technical_fep;
+heins2022sparse_coupling]. Quantum-information, QRF, contextuality, and
+quantum-trajectory sources make the finite simulations mathematically
+legible; contemplative and Buddhist sources constrain terminology at the
+interface to practice. None of those source roles is allowed to
+substitute for the missing evidence class that would be required to
+claim realization, clinical benefit, neural measurement, or physical
+quantum free-energy principle (qFEP) confirmation.</p>
+<p>The mapping from the source paper to this software is a
+recapitulation scope rather than a reproduction of the physics. The
+paper’s qFEP section and its equations 1-6 map to the equation registry
+and the finite quantum and contextuality engines; the no-self-evidence
+section maps to the QRF boundary-screen indistinguishability audit; the
+separation-to-emptiness section maps to the separation prior sigma and
+the Bayesian model reduction sweep; the post-dual agent section maps to
+the post-dual <code>pymdp</code> profile and the finite solution-set
+containment over equations 13 and 14; and the discussion themes of
+contextuality, compassion, and criticality map to the finite
+contextuality engines, the policy-scope-of-concern surrogate, and the
+measured branching and avalanche signatures. Each mapped row is a finite
+software surrogate with a declared evidence ceiling, never a claim that
+the underlying physical or contemplative phenomenon has been realized. A
+generated row-by-row map from paper equations 1-14 to artifacts and
+gates is maintained in the equation crosswalk reference document.</p>
+<h2 id="sec:introduction-limitations">Finite Surrogates over Literal
+Quantum Simulation</h2>
+<p>The implementation does not attempt a literal quantum simulation of
+the universe-agent boundary. Instead, it builds finite surrogates that
+preserve the paper’s inferential roles: boundary screens, QRF
+deployments, separation priors, model reduction, and post-dual policy
+flexibility. This lets the software clarify the evidential boundary
+without strengthening it: a useful simulated partition is still not
+evidence for a real self/world partition.</p>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "$id": "realizing_emptiness.pymdp_profile_comparison.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Realizing Emptiness pymdp Profile Comparison",
+  "type": "object",
+  "required": ["schema", "rows", "posterior_normalized", "pymdp_canary", "claim_boundary"],
+  "properties": {
+    "schema": {"const": "realizing_emptiness.pymdp_profile_comparison.v2"},
+    "rows": {"type": "array", "minItems": 3, "items": {"type": "object"}},
+    "posterior_normalized": {"const": true},
+    "policy_trace_all_posteriors_normalized": {"type": "boolean"},
+    "pymdp_canary": {"type": "object", "required": ["ok", "version"], "properties": {"ok": {"const": true}, "version": {"const": "1.0.3"}}, "additionalProperties": true},
+    "claim_boundary": {"type": "string", "pattern": "not empirical"}
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,175 @@
+{
+  "all_methods_have_assumptions": true,
+  "all_methods_have_evidence_ceiling": true,
+  "all_methods_have_hard_constraints": true,
+  "claim_boundary": "method governance ledger for finite software artifacts; not empirical, clinical, neural, practice-efficacy, awakening, or physical qFEP evidence",
+  "method_count": 8,
+  "rows": [
+    {
+      "artifact": "output/data/qrf_boundary_indistinguishability.json",
+      "assumptions": [
+        "finite channel screen is an inspectable surrogate for the source paper's boundary role"
+      ],
+      "evidence_ceiling": "finite QRF label-invariance audit only",
+      "falsification_controls": [
+        "perturbed label/mass negative control fails"
+      ],
+      "hard_constraints": [
+        "probability mass must normalize",
+        "admissible relabelings must preserve the observed bitstream"
+      ],
+      "method_id": "finite_qrf_boundary_screen",
+      "modeling_choices": [
+        "six-channel finite screen",
+        "sector labels treated as semantic relabelings"
+      ]
+    },
+    {
+      "artifact": "output/data/bmr_sweep.json",
+      "assumptions": [
+        "grid parameters are software surrogates, not measured traits"
+      ],
+      "evidence_ceiling": "finite model comparison only",
+      "falsification_controls": [
+        "edge cases test keep/prune sign",
+        "sensitivity grid tests observation-noise robustness"
+      ],
+      "hard_constraints": [
+        "Delta F sign convention must be fixed",
+        "prune means F_reduced - F_full < 0"
+      ],
+      "method_id": "bmr_separation_prior_sweep",
+      "modeling_choices": [
+        "prior precision and metacognitive access grid",
+        "accuracy and complexity decomposed finitely"
+      ]
+    },
+    {
+      "artifact": "output/data/pymdp_policy_trace.json",
+      "assumptions": [
+        "profile differences are software hypotheses about QRF deployments",
+        "the runtime dependency check does not certify active-inference optimality, human behavior, or scientific validity"
+      ],
+      "evidence_ceiling": "discrete active-inference surrogate only",
+      "falsification_controls": [
+        "runtime dependency check",
+        "posterior normalization",
+        "expected-free-energy recomputation",
+        "profile-specific action differences"
+      ],
+      "hard_constraints": [
+        "A/B/C/D arrays must normalize",
+        "state and policy posteriors must normalize at every step",
+        "runtime dependency check is limited to pinned package, import, agent construction, state inference, and policy-posterior normalization"
+      ],
+      "method_id": "pymdp_active_inference_profiles",
+      "modeling_choices": [
+        "three-state QRF profile model",
+        "finite expected-free-energy proxy terms",
+        "profile-specific priors, preferences, and transition relaxation drive action differences"
+      ]
+    },
+    {
+      "artifact": "output/data/stochastic_policy_ensemble.json",
+      "assumptions": [
+        "stochastic variability tests software robustness, not human variability"
+      ],
+      "evidence_ceiling": "seeded simulation ensemble only",
+      "falsification_controls": [
+        "same-seed replay",
+        "different seed changes sampled rows",
+        "null-control contrasts"
+      ],
+      "hard_constraints": [
+        "random draws must sample normalized distributions",
+        "replay with same seed must reproduce rows"
+      ],
+      "method_id": "seeded_stochastic_policy_ensemble",
+      "modeling_choices": [
+        "64 runs per profile",
+        "null-control action and observation sampling"
+      ]
+    },
+    {
+      "artifact": "output/data/quantum_trajectory_unraveling.json",
+      "assumptions": [
+        "two-qubit open-system dynamics are a finite method witness, not physical qFEP"
+      ],
+      "evidence_ceiling": "finite stochastic quantum surrogate only",
+      "falsification_controls": [
+        "exact-Lindblad residual tolerance",
+        "invalid operator/rate rejection",
+        "trajectory-count convergence"
+      ],
+      "hard_constraints": [
+        "state vectors preserve norm",
+        "ensemble density preserves trace and PSD",
+        "gamma-zero has no jumps"
+      ],
+      "method_id": "quantum_trajectory_unraveling",
+      "modeling_choices": [
+        "finite two-qubit Lindblad surrogate",
+        "Monte Carlo wave-function jump/no-jump paths"
+      ]
+    },
+    {
+      "artifact": "output/data/general_measurement_cover_polytope_audit.json",
+      "assumptions": [
+        "finite obstruction cases do not prove the source paper's full QRF contextuality"
+      ],
+      "evidence_ceiling": "finite contextuality software audit only",
+      "falsification_controls": [
+        "feasible triangle/product controls",
+        "parity and Bell obstruction cases"
+      ],
+      "hard_constraints": [
+        "context distributions must normalize",
+        "global-section LP feasibility must match controls"
+      ],
+      "method_id": "contextuality_and_measurement_cover_engines",
+      "modeling_choices": [
+        "finite compatibility scenarios",
+        "deterministic-assignment linear programs"
+      ]
+    },
+    {
+      "artifact": "output/data/practice_protocol_map.json",
+      "assumptions": [
+        "practice vocabulary can guide future UI without implying outcomes"
+      ],
+      "evidence_ceiling": "protocol specification only",
+      "falsification_controls": [
+        "claim language blocks therapeutic, awakening, clinical, and neural claims"
+      ],
+      "hard_constraints": [
+        "no user-facing efficacy claims",
+        "protocols must map to model interventions only"
+      ],
+      "method_id": "practice_protocol_adapter",
+      "modeling_choices": [
+        "practice language represented as bounded interface specs"
+      ]
+    },
+    {
+      "artifact": "output/data/figure_source_map.json",
+      "assumptions": [
+        "metadata plus render checks reduce false certification but do not prove reader comprehension"
+      ],
+      "evidence_ceiling": "documentation and visualization QA only",
+      "falsification_controls": [
+        "caption/accessibility/style/legibility audits",
+        "supplement figure reuse audit"
+      ],
+      "hard_constraints": [
+        "figures need source artifacts",
+        "claim-bearing captions need boundary language"
+      ],
+      "method_id": "visual_and_claim_governance",
+      "modeling_choices": [
+        "static publication figures",
+        "machine-readable source maps and visual contracts"
+      ]
+    }
+  ],
+  "schema": "realizing_emptiness.method_assumption_ledger.v1"
+}

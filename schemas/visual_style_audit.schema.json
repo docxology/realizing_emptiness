@@ -1,0 +1,25 @@
+{
+  "$id": "realizing_emptiness.visual_style_audit.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Realizing Emptiness Visual Style Audit",
+  "type": "object",
+  "required": ["schema", "semantic_role_count", "figure_count", "row_count", "palette", "hatches", "minimum_non_text_contrast_ratio", "minimum_text_contrast_ratio", "palette_contrast", "low_contrast_roles", "rows", "missing_roles", "missing_legend_or_colorbar", "ok", "claim_boundary"],
+  "properties": {
+    "schema": {"const": "realizing_emptiness.visual_style_audit.v1"},
+    "semantic_role_count": {"type": "integer", "minimum": 1},
+    "figure_count": {"type": "integer", "minimum": 1},
+    "row_count": {"type": "integer", "minimum": 1},
+    "palette": {"type": "object"},
+    "hatches": {"type": "object"},
+    "minimum_non_text_contrast_ratio": {"const": 3.0},
+    "minimum_text_contrast_ratio": {"const": 4.5},
+    "palette_contrast": {"type": "array", "minItems": 1, "items": {"type": "object"}},
+    "low_contrast_roles": {"type": "array", "maxItems": 0},
+    "rows": {"type": "array", "minItems": 1, "items": {"type": "object"}},
+    "missing_roles": {"type": "array", "maxItems": 0},
+    "missing_legend_or_colorbar": {"type": "array", "maxItems": 0},
+    "ok": {"const": true},
+    "claim_boundary": {"type": "string", "pattern": "not empirical"}
+  },
+  "additionalProperties": false
+}

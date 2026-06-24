@@ -1,0 +1,184 @@
+{
+  "alias_map": {
+    "action": "sector_a",
+    "body": "sector_b",
+    "care": "sector_c",
+    "env": "sector_e",
+    "environment": "sector_e",
+    "other": "sector_o",
+    "self": "sector_s",
+    "world": "sector_w"
+  },
+  "all_controls_pass": true,
+  "channel_count": 6,
+  "claim_boundary": "review-response accounting for finite deterministic or seeded software validation only; not empirical, not public independent reproduction, not clinical, not neural, not practice-efficacy, not contemplative-attainment, and not physical qFEP evidence",
+  "controls": {
+    "all_profile_labels_aliased": true,
+    "channel_order_preserved": true,
+    "claim_boundary_declared": true,
+    "evidence_objects_preserved": true,
+    "neutral_alias_map_declared": true,
+    "neutral_renaming_preserves_structure": true,
+    "structure_changing_control_fails": true
+  },
+  "neutral_sector_labels_by_profile": {
+    "opacified": [
+      "sector_s",
+      "sector_a",
+      "sector_e",
+      "sector_e",
+      "sector_o",
+      "sector_c"
+    ],
+    "post_dual": [
+      "sector_b",
+      "sector_a",
+      "sector_w",
+      "sector_w",
+      "sector_o",
+      "sector_c"
+    ],
+    "separation_constrained": [
+      "sector_s",
+      "sector_s",
+      "sector_e",
+      "sector_e",
+      "sector_e",
+      "sector_s"
+    ]
+  },
+  "profile_count": 3,
+  "rows": [
+    {
+      "channel_id": "b0",
+      "invariant_evidence_object": "binary boundary bit b0",
+      "neutral_sector_labels_by_profile": {
+        "opacified": "sector_s",
+        "post_dual": "sector_b",
+        "separation_constrained": "sector_s"
+      },
+      "original_sector_labels_by_profile": {
+        "opacified": "self",
+        "post_dual": "body",
+        "separation_constrained": "self"
+      },
+      "source_equation_links": [
+        "eq:7",
+        "eq:8",
+        "eq:9",
+        "eq:10"
+      ],
+      "structure_preserved": true
+    },
+    {
+      "channel_id": "b1",
+      "invariant_evidence_object": "binary boundary bit b1",
+      "neutral_sector_labels_by_profile": {
+        "opacified": "sector_a",
+        "post_dual": "sector_a",
+        "separation_constrained": "sector_s"
+      },
+      "original_sector_labels_by_profile": {
+        "opacified": "action",
+        "post_dual": "action",
+        "separation_constrained": "self"
+      },
+      "source_equation_links": [
+        "eq:7",
+        "eq:8",
+        "eq:9",
+        "eq:10"
+      ],
+      "structure_preserved": true
+    },
+    {
+      "channel_id": "b2",
+      "invariant_evidence_object": "binary boundary bit b2",
+      "neutral_sector_labels_by_profile": {
+        "opacified": "sector_e",
+        "post_dual": "sector_w",
+        "separation_constrained": "sector_e"
+      },
+      "original_sector_labels_by_profile": {
+        "opacified": "env",
+        "post_dual": "world",
+        "separation_constrained": "env"
+      },
+      "source_equation_links": [
+        "eq:7",
+        "eq:8",
+        "eq:9",
+        "eq:10"
+      ],
+      "structure_preserved": true
+    },
+    {
+      "channel_id": "b3",
+      "invariant_evidence_object": "binary boundary bit b3",
+      "neutral_sector_labels_by_profile": {
+        "opacified": "sector_e",
+        "post_dual": "sector_w",
+        "separation_constrained": "sector_e"
+      },
+      "original_sector_labels_by_profile": {
+        "opacified": "env",
+        "post_dual": "world",
+        "separation_constrained": "env"
+      },
+      "source_equation_links": [
+        "eq:7",
+        "eq:8",
+        "eq:9",
+        "eq:10"
+      ],
+      "structure_preserved": true
+    },
+    {
+      "channel_id": "b4",
+      "invariant_evidence_object": "binary boundary bit b4",
+      "neutral_sector_labels_by_profile": {
+        "opacified": "sector_o",
+        "post_dual": "sector_o",
+        "separation_constrained": "sector_e"
+      },
+      "original_sector_labels_by_profile": {
+        "opacified": "other",
+        "post_dual": "other",
+        "separation_constrained": "env"
+      },
+      "source_equation_links": [
+        "eq:7",
+        "eq:8",
+        "eq:9",
+        "eq:10"
+      ],
+      "structure_preserved": true
+    },
+    {
+      "channel_id": "b5",
+      "invariant_evidence_object": "binary boundary bit b5",
+      "neutral_sector_labels_by_profile": {
+        "opacified": "sector_c",
+        "post_dual": "sector_c",
+        "separation_constrained": "sector_s"
+      },
+      "original_sector_labels_by_profile": {
+        "opacified": "care",
+        "post_dual": "care",
+        "separation_constrained": "self"
+      },
+      "source_equation_links": [
+        "eq:7",
+        "eq:8",
+        "eq:9",
+        "eq:10"
+      ],
+      "structure_preserved": true
+    }
+  ],
+  "schema": "realizing_emptiness.qrf_label_ablation_audit.v1",
+  "structure_changing_control": {
+    "description": "Collapse self/env labels and remove one channel from the order; this changes structure and must fail.",
+    "preserved": false
+  }
+}

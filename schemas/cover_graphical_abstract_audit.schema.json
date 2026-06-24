@@ -1,0 +1,27 @@
+{
+  "$id": "realizing_emptiness.cover_graphical_abstract_audit.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Realizing Emptiness Cover Graphical Abstract Audit",
+  "type": "object",
+  "required": ["schema", "figure_path", "figure_exists", "figure_byte_size", "width", "height", "aspect_ratio", "aspect_ratio_ok", "dimensions_ok", "referenced_in_abstract", "referenced_in_title_preamble", "numbered_as_figure", "source_mapped", "caption_length", "alt_text_length", "cover_style", "ok"],
+  "properties": {
+    "schema": {"const": "realizing_emptiness.cover_graphical_abstract_audit.v1"},
+    "figure_path": {"const": "output/figures/graphical_abstract_cover.png"},
+    "figure_exists": {"const": true},
+    "figure_byte_size": {"type": "integer", "minimum": 10000},
+    "width": {"type": "integer", "minimum": 1500},
+    "height": {"type": "integer", "minimum": 1200},
+    "aspect_ratio": {"type": "number", "minimum": 1.15, "maximum": 1.25},
+    "aspect_ratio_ok": {"const": true},
+    "dimensions_ok": {"const": true},
+    "referenced_in_abstract": {"const": true},
+    "referenced_in_title_preamble": {"const": true},
+    "numbered_as_figure": {"const": false},
+    "source_mapped": {"const": true},
+    "caption_length": {"type": "integer", "minimum": 220},
+    "alt_text_length": {"type": "integer", "minimum": 140},
+    "cover_style": {"const": "hybrid_symbolic_near_square_large_type"},
+    "ok": {"const": true}
+  },
+  "additionalProperties": false
+}

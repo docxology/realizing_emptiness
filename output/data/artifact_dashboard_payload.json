@@ -1,0 +1,552 @@
+{
+  "argument_arc": [
+    {
+      "description": "Six software channels b0-b5 carry the evidenced bitstream.",
+      "figure_id": "qrf_sector_situation",
+      "figure_present": true,
+      "stage": "Boundary screen"
+    },
+    {
+      "description": "The same bits read under separation-constrained, opacified, and post-dual QRF lenses.",
+      "figure_id": "qrf_channel_relabeling_ledger",
+      "figure_present": true,
+      "stage": "Three sector frames"
+    },
+    {
+      "description": "Boundary use is licensed; boundary ontology is not, with a failing perturbation control.",
+      "figure_id": "boundary_use_vs_ontology",
+      "figure_present": true,
+      "stage": "Indistinguishability / permission"
+    },
+    {
+      "description": "The prior earns accuracy only when boundary channels are action-contingent.",
+      "figure_id": "separation_prior_emergence",
+      "figure_present": true,
+      "stage": "Separation-prior emergence"
+    },
+    {
+      "description": "Useful then dispensable: pruned at high metacognitive access at the weakest precision.",
+      "figure_id": "separation_prior_net_value",
+      "figure_present": true,
+      "stage": "BMR lifecycle"
+    },
+    {
+      "description": "Each frame is run as an explicit profile-specific pymdp generative model.",
+      "figure_id": "pymdp_profile_comparison",
+      "figure_present": true,
+      "stage": "Active-inference profile execution"
+    },
+    {
+      "description": "Implemented extension engines stay finite-software, with blocked external classes.",
+      "figure_id": "finite_quantum_scope_summary",
+      "figure_present": true,
+      "stage": "Finite quantum scope"
+    }
+  ],
+  "claim_boundary": "static artifact dashboard; not empirical evidence, not a physical qFEP realization, and not a clinical, neural, awakening, or practice-efficacy claim",
+  "claim_ceiling_rows": [
+    {
+      "claim_id": "artifact_release_readiness",
+      "status": "",
+      "stressors": {
+        "empirical_gap": true,
+        "neural_measurement_boundary": false,
+        "normative_boundary": false,
+        "practice_boundary": false,
+        "quantum_gap": false,
+        "runtime_dependency": false,
+        "source_role_boundary": true,
+        "surrogate_scope": false
+      },
+      "support_count": 3
+    },
+    {
+      "claim_id": "bmr_prunes_sigma",
+      "status": "",
+      "stressors": {
+        "empirical_gap": true,
+        "neural_measurement_boundary": false,
+        "normative_boundary": false,
+        "practice_boundary": false,
+        "quantum_gap": false,
+        "runtime_dependency": false,
+        "source_role_boundary": false,
+        "surrogate_scope": true
+      },
+      "support_count": 7
+    },
+    {
+      "claim_id": "compassion_proxy_boundary",
+      "status": "",
+      "stressors": {
+        "empirical_gap": false,
+        "neural_measurement_boundary": false,
+        "normative_boundary": true,
+        "practice_boundary": true,
+        "quantum_gap": false,
+        "runtime_dependency": false,
+        "source_role_boundary": false,
+        "surrogate_scope": false
+      },
+      "support_count": 3
+    },
+    {
+      "claim_id": "criticality_proxy_boundary",
+      "status": "",
+      "stressors": {
+        "empirical_gap": true,
+        "neural_measurement_boundary": true,
+        "normative_boundary": false,
+        "practice_boundary": false,
+        "quantum_gap": false,
+        "runtime_dependency": false,
+        "source_role_boundary": false,
+        "surrogate_scope": false
+      },
+      "support_count": 13
+    },
+    {
+      "claim_id": "metacognitive_access_model",
+      "status": "",
+      "stressors": {
+        "empirical_gap": true,
+        "neural_measurement_boundary": false,
+        "normative_boundary": false,
+        "practice_boundary": false,
+        "quantum_gap": false,
+        "runtime_dependency": false,
+        "source_role_boundary": false,
+        "surrogate_scope": true
+      },
+      "support_count": 6
+    },
+    {
+      "claim_id": "practice_protocol_boundary",
+      "status": "",
+      "stressors": {
+        "empirical_gap": false,
+        "neural_measurement_boundary": false,
+        "normative_boundary": false,
+        "practice_boundary": true,
+        "quantum_gap": false,
+        "runtime_dependency": false,
+        "source_role_boundary": true,
+        "surrogate_scope": false
+      },
+      "support_count": 15
+    },
+    {
+      "claim_id": "pymdp_runtime_canary",
+      "status": "",
+      "stressors": {
+        "empirical_gap": false,
+        "neural_measurement_boundary": false,
+        "normative_boundary": false,
+        "practice_boundary": false,
+        "quantum_gap": false,
+        "runtime_dependency": true,
+        "source_role_boundary": false,
+        "surrogate_scope": false
+      },
+      "support_count": 3
+    },
+    {
+      "claim_id": "qfep_surrogate_scope",
+      "status": "",
+      "stressors": {
+        "empirical_gap": false,
+        "neural_measurement_boundary": false,
+        "normative_boundary": false,
+        "practice_boundary": false,
+        "quantum_gap": true,
+        "runtime_dependency": false,
+        "source_role_boundary": false,
+        "surrogate_scope": true
+      },
+      "support_count": 16
+    },
+    {
+      "claim_id": "quantum_contextuality_witness",
+      "status": "",
+      "stressors": {
+        "empirical_gap": false,
+        "neural_measurement_boundary": false,
+        "normative_boundary": false,
+        "practice_boundary": false,
+        "quantum_gap": true,
+        "runtime_dependency": false,
+        "source_role_boundary": true,
+        "surrogate_scope": true
+      },
+      "support_count": 6
+    },
+    {
+      "claim_id": "quantum_measurement_contextuality",
+      "status": "",
+      "stressors": {
+        "empirical_gap": false,
+        "neural_measurement_boundary": false,
+        "normative_boundary": false,
+        "practice_boundary": false,
+        "quantum_gap": true,
+        "runtime_dependency": false,
+        "source_role_boundary": true,
+        "surrogate_scope": true
+      },
+      "support_count": 9
+    },
+    {
+      "claim_id": "quantum_open_system_dephasing",
+      "status": "",
+      "stressors": {
+        "empirical_gap": false,
+        "neural_measurement_boundary": false,
+        "normative_boundary": false,
+        "practice_boundary": false,
+        "quantum_gap": true,
+        "runtime_dependency": false,
+        "source_role_boundary": true,
+        "surrogate_scope": true
+      },
+      "support_count": 11
+    },
+    {
+      "claim_id": "quantum_separability_entropy",
+      "status": "",
+      "stressors": {
+        "empirical_gap": false,
+        "neural_measurement_boundary": false,
+        "normative_boundary": false,
+        "practice_boundary": false,
+        "quantum_gap": true,
+        "runtime_dependency": false,
+        "source_role_boundary": false,
+        "surrogate_scope": true
+      },
+      "support_count": 9
+    },
+    {
+      "claim_id": "self_evidencing_boundary",
+      "status": "",
+      "stressors": {
+        "empirical_gap": true,
+        "neural_measurement_boundary": false,
+        "normative_boundary": false,
+        "practice_boundary": false,
+        "quantum_gap": false,
+        "runtime_dependency": false,
+        "source_role_boundary": true,
+        "surrogate_scope": false
+      },
+      "support_count": 12
+    },
+    {
+      "claim_id": "separation_prior_sigma",
+      "status": "",
+      "stressors": {
+        "empirical_gap": false,
+        "neural_measurement_boundary": false,
+        "normative_boundary": false,
+        "practice_boundary": false,
+        "quantum_gap": false,
+        "runtime_dependency": false,
+        "source_role_boundary": false,
+        "surrogate_scope": true
+      },
+      "support_count": 2
+    },
+    {
+      "claim_id": "source_boundary_unevidenceable",
+      "status": "",
+      "stressors": {
+        "empirical_gap": false,
+        "neural_measurement_boundary": false,
+        "normative_boundary": false,
+        "practice_boundary": false,
+        "quantum_gap": false,
+        "runtime_dependency": false,
+        "source_role_boundary": true,
+        "surrogate_scope": true
+      },
+      "support_count": 15
+    }
+  ],
+  "claim_context": {
+    "all_controls_pass": true,
+    "claim_boundary": "claim-context ledger for source-role explanation; not empirical evidence, not a physical qFEP realization, and not a clinical, neural, awakening, or practice-efficacy claim",
+    "claim_count": 15,
+    "missing_figure_bindings": [],
+    "missing_future_evidence": [],
+    "missing_manuscript_sections": [],
+    "proxy_overclaiming_reader_claims": [],
+    "role_compatibility_failures": []
+  },
+  "claim_redteam": {
+    "all_controls_pass": true,
+    "claim_boundary": "claim red-team audit over public claim locations, figure bindings, gates, and language intensity; not empirical evidence, not a physical qFEP realization, and not a clinical, neural, awakening, or practice-efficacy claim",
+    "claim_count": 15,
+    "missing_boundaries": [],
+    "reader_overclaims": [],
+    "risky_claim_sentences": [],
+    "unresolved_figure_bindings": [],
+    "unresolved_sections": []
+  },
+  "contract_registry": {
+    "all_controls_pass": true,
+    "contract_count": 147,
+    "duplicate_ids": [],
+    "missing_schema_paths": []
+  },
+  "dependency_graph": {
+    "all_controls_pass": true,
+    "edge_count": 184,
+    "node_count": 83,
+    "required_quantum_nodes": [
+      "quantum_boundary_entropy",
+      "quantum_open_system_dynamics",
+      "quantum_measurement_contextuality",
+      "qfep_boundary_hamiltonian_dynamics",
+      "quantum_trajectory_unraveling",
+      "many_body_boundary_screen_sweep",
+      "sheaf_contextuality_obstruction_audit",
+      "qrf_transformation_covariance_audit",
+      "empirical_adapter_provenance_audit",
+      "arbitrary_two_qubit_entanglement_audit",
+      "general_measurement_cover_polytope_audit",
+      "thermodynamic_channel_cost_audit",
+      "sparse_boundary_screen_scaling_audit",
+      "qrf_frame_covariance_toy_audit",
+      "multipartite_witness_suite_audit",
+      "tensor_network_benchmark_audit",
+      "collision_model_thermalization_audit",
+      "no_signaling_scenario_library_audit",
+      "n_cycle_contextuality_library_audit"
+    ]
+  },
+  "figures": {
+    "figure_count": 59,
+    "figure_ids": [
+      "graphical_abstract_cover",
+      "qrf_boundary_screen_geometry",
+      "qrf_channel_relabeling_ledger",
+      "qrf_invariance_policy_flow",
+      "qrf_sectorisation_map",
+      "boundary_indistinguishability",
+      "qrf_reference_frame_geometry",
+      "bmr_free_energy_decomposition",
+      "bmr_pruning_phase_diagram",
+      "simulation_sensitivity_heatmap",
+      "finite_quantum_scope_summary",
+      "quantum_boundary_entropy_landscape",
+      "quantum_contextuality_witness",
+      "quantum_measurement_contextuality_table",
+      "quantum_local_polytope_audit",
+      "quantum_open_system_dynamics",
+      "qfep_boundary_hamiltonian_dynamics",
+      "quantum_trajectory_unraveling",
+      "many_body_boundary_screen_sweep",
+      "sheaf_contextuality_obstruction_audit",
+      "qrf_transformation_covariance_audit",
+      "empirical_adapter_provenance_audit",
+      "arbitrary_two_qubit_entanglement_audit",
+      "general_measurement_cover_polytope_audit",
+      "thermodynamic_channel_cost_audit",
+      "sparse_boundary_screen_scaling_audit",
+      "qrf_frame_covariance_toy_audit",
+      "quantum_roadmap_readiness_matrix",
+      "pymdp_profile_comparison",
+      "posterior_trajectory",
+      "pymdp_runtime_validation_dashboard",
+      "criticality_proxy_panels",
+      "criticality_stochastic_ensemble",
+      "criticality_signatures",
+      "compassion_scope_widening",
+      "separation_prior_emergence",
+      "internal_cut_unmeasurability",
+      "practice_policy_scope_map",
+      "stochastic_effect_size_forest",
+      "bmr_robustness_resampling",
+      "quantum_trajectory_convergence",
+      "visual_semantic_palette_ledger",
+      "method_assumption_failure_map",
+      "claim_source_validation_graph",
+      "scholarship_coverage_matrix",
+      "claim_support_matrix",
+      "manuscript_claim_audit",
+      "evidence_ceiling_stress_matrix",
+      "claim_context_evidence_ladder",
+      "formalism_operation_map",
+      "qrf_sector_situation",
+      "boundary_use_vs_ontology",
+      "separation_prior_net_value",
+      "multipartite_witness_negativity",
+      "tensor_network_scaling",
+      "collision_model_relaxation",
+      "n_cycle_contextuality_panel",
+      "data_processing_monotonicity",
+      "markov_blanket_discovery"
+    ]
+  },
+  "manifest_coverage": {
+    "generated_count": 146,
+    "manifest_count": 147,
+    "missing_manifest_paths": [],
+    "unmanifested_generated_paths": []
+  },
+  "manuscript_audits": {
+    "claim_intensity_ok": true,
+    "cover_graphic_ok": true,
+    "duplicate_supplement_paths": [],
+    "figure_placement_ok": true,
+    "figure_reuse_ok": true,
+    "governance_figures_in_main": [],
+    "governance_figures_missing_from_supplement": [],
+    "governance_figures_repeated_in_supplement": [],
+    "references_ok": true,
+    "risky_claim_sentences": [],
+    "technical_quantum_figures_in_main": [],
+    "unresolved_references": []
+  },
+  "method_governance": {
+    "all_methods_have_controls": true,
+    "all_methods_have_hard_constraints": true,
+    "claim_boundary": "method governance ledger for finite software artifacts; not empirical, clinical, neural, practice-efficacy, awakening, or physical qFEP evidence",
+    "control_count": 18,
+    "method_count": 8
+  },
+  "pymdp_runtime": {
+    "all_controls_pass": true,
+    "canary_warning_count": 1,
+    "claim_boundary": "structured pymdp runtime diagnostics over finite software traces; not empirical data, not a neural measurement, not practice-efficacy evidence, and not quantum-dynamical evidence",
+    "max_policy_posterior_norm_residual": 5.960464477539063e-08,
+    "max_weighted_expected_free_energy_residual": 1.3294909173566793e-08,
+    "model_profile_count": 3,
+    "replay_equal": true,
+    "trace_row_count": 72
+  },
+  "readiness": {
+    "all_controls_pass": true,
+    "forged_completed_future_row_rejected": true,
+    "future_blocked": true,
+    "future_ids": [
+      "re-3",
+      "re-4",
+      "re-13",
+      "re-14",
+      "re-15"
+    ],
+    "row_count": 22
+  },
+  "review_hardening": {
+    "artifact_release_ok": true,
+    "bmr_alternative_ok": true,
+    "claim_boundary": "local private artifact package only, not public independent reproduction; not empirical, clinical, neural, practice-efficacy, contemplative-attainment, or physical qFEP evidence",
+    "figure_parameter_ledger_ok": true,
+    "figure_parameter_rows": 59,
+    "public_publication_performed": false,
+    "public_reproduction_status": "blocked_external_publication",
+    "qrf_label_ablation_ok": true,
+    "quantum_crosscheck_ok": true,
+    "release_file_count": 441,
+    "release_scope": "local_private_artifact_bundle_not_public_release",
+    "review_response_ok": true,
+    "review_response_rows": 7
+  },
+  "roadmap": {
+    "blocked_task_ids": [
+      "re-3",
+      "re-4",
+      "re-13",
+      "re-14",
+      "re-15"
+    ],
+    "future_count": 5,
+    "future_ids": [
+      "re-3",
+      "re-4",
+      "re-13",
+      "re-14",
+      "re-15"
+    ],
+    "implemented_count": 17,
+    "implemented_ids": [
+      "two_qubit_separability_entropy",
+      "arbitrary_two_qubit_entanglement_audit",
+      "chsh_contextuality_witness",
+      "chsh_measurement_cover_table",
+      "general_measurement_cover_polytope_audit",
+      "qrf_basis_invariance_toy",
+      "boundary_landauer_entropy",
+      "thermodynamic_channel_cost_audit",
+      "two_qubit_dephasing_channel",
+      "full_open_system_qfep_dynamics",
+      "quantum_trajectory_unraveling",
+      "many_body_boundary_screens",
+      "sparse_boundary_screen_scaling_audit",
+      "general_sheaf_contextuality_engine",
+      "qrf_transformation_library",
+      "qrf_frame_covariance_toy_audit",
+      "empirical_adapter"
+    ]
+  },
+  "schema": "realizing_emptiness.artifact_dashboard_payload.v1",
+  "source_fit": {
+    "all_controls_pass": true,
+    "claim_boundary": "source-argument coverage audit for manuscript relevance; not empirical, clinical, neural, practice-efficacy, awakening, or physical qFEP evidence",
+    "qrf_bmr_opacification_not_quantum_only": true,
+    "theme_count": 9
+  },
+  "statistical_robustness": {
+    "all_controls_pass": true,
+    "bmr_resampling_pass": true,
+    "bmr_resampling_rows": 45,
+    "claim_boundary": "finite seeded simulation robustness only; not empirical inference",
+    "effect_size_rows": 18,
+    "stochastic_effects_pass": true,
+    "trajectory_convergence_pass": true,
+    "trajectory_counts": [
+      16,
+      64,
+      128,
+      256,
+      512,
+      1024,
+      2048
+    ]
+  },
+  "stochastic_engines": {
+    "active_inference_ensemble_ok": true,
+    "claim_boundary": "seeded stochastic simulations only; not empirical, neural, clinical, practice-efficacy, or physical qFEP evidence",
+    "criticality_ensemble_ok": true,
+    "quantum_trajectory_ok": true,
+    "runs_per_profile": 128,
+    "trajectory_count": 1024
+  },
+  "todo_audit": {
+    "all_controls_pass": true,
+    "blocked_external_class_violations": [],
+    "historical_backlog_rows": [],
+    "stale_future_rows": []
+  },
+  "validation_report": {
+    "all_passed": true,
+    "passed": 428,
+    "total": 428
+  },
+  "visual_quality": {
+    "cropped_text": [],
+    "layout_failures": [],
+    "legend_axis_overlaps": [],
+    "legibility_ok": true,
+    "legibility_row_count": 59,
+    "low_contrast_roles": [],
+    "missing_legend_or_colorbar": [],
+    "missing_roles": [],
+    "overlapping_text": [],
+    "overlapping_titles": [],
+    "style_ok": true,
+    "style_row_count": 59,
+    "undersized": [],
+    "undersized_text": []
+  }
+}

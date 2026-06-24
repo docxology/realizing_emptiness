@@ -1,0 +1,20 @@
+{
+  "$id": "realizing_emptiness.qrf_label_ablation_audit.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Realizing Emptiness QRF Label Ablation Audit",
+  "type": "object",
+  "required": ["schema", "alias_map", "profile_count", "channel_count", "rows", "neutral_sector_labels_by_profile", "structure_changing_control", "controls", "all_controls_pass", "claim_boundary"],
+  "properties": {
+    "schema": {"const": "realizing_emptiness.qrf_label_ablation_audit.v1"},
+    "alias_map": {"type": "object", "required": ["self", "env", "body", "world", "other", "care"]},
+    "profile_count": {"type": "integer", "minimum": 1},
+    "channel_count": {"const": 6},
+    "rows": {"type": "array", "minItems": 6, "items": {"type": "object", "required": ["channel_id", "invariant_evidence_object", "original_sector_labels_by_profile", "neutral_sector_labels_by_profile", "structure_preserved"], "additionalProperties": true}},
+    "neutral_sector_labels_by_profile": {"type": "object"},
+    "structure_changing_control": {"type": "object", "required": ["description", "preserved"]},
+    "controls": {"type": "object", "required": ["neutral_alias_map_declared", "all_profile_labels_aliased", "channel_order_preserved", "evidence_objects_preserved", "neutral_renaming_preserves_structure", "structure_changing_control_fails", "claim_boundary_declared"], "additionalProperties": {"type": "boolean"}},
+    "all_controls_pass": {"const": true},
+    "claim_boundary": {"type": "string", "pattern": "not empirical"}
+  },
+  "additionalProperties": false
+}

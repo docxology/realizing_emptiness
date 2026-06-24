@@ -1,0 +1,23 @@
+{
+  "$id": "realizing_emptiness.roadmap_todo_audit.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Realizing Emptiness Roadmap TODO Audit",
+  "type": "object",
+  "required": ["schema", "todo_row_count", "implemented_roadmap_count", "future_roadmap_count", "stale_future_rows", "historical_backlog_rows", "blocked_external_class_rows", "blocked_external_class_violations", "controls", "all_controls_pass", "claim_boundary"],
+  "properties": {
+    "schema": {"const": "realizing_emptiness.roadmap_todo_audit.v1"},
+    "todo_row_count": {"type": "integer", "minimum": 1},
+    "implemented_roadmap_count": {"type": "integer", "minimum": 1},
+    "future_roadmap_count": {"type": "integer", "minimum": 1},
+    "stale_future_rows": {"type": "array", "maxItems": 0},
+    "historical_backlog_rows": {"type": "array", "maxItems": 0},
+    "blocked_external_class_rows": {"type": "array"},
+    "blocked_external_class_violations": {"type": "array", "maxItems": 0},
+    "blocked_task_ids": {"type": "array", "items": {"type": "string"}},
+    "missing_blocked_task_ids": {"type": "array", "maxItems": 0},
+    "controls": {"type": "object", "additionalProperties": {"const": true}},
+    "all_controls_pass": {"const": true},
+    "claim_boundary": {"type": "string", "pattern": "not empirical"}
+  },
+  "additionalProperties": false
+}

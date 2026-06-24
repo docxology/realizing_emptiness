@@ -1,0 +1,16 @@
+{
+  "$id": "realizing_emptiness.method_negative_control_inventory.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Realizing Emptiness Method Negative Control Inventory",
+  "type": "object",
+  "required": ["schema", "method_count", "control_count", "rows", "all_methods_have_controls", "claim_boundary"],
+  "properties": {
+    "schema": {"const": "realizing_emptiness.method_negative_control_inventory.v1"},
+    "method_count": {"type": "integer", "minimum": 1},
+    "control_count": {"type": "integer", "minimum": 1},
+    "rows": {"type": "array", "minItems": 1, "items": {"type": "object"}},
+    "all_methods_have_controls": {"const": true},
+    "claim_boundary": {"type": "string", "pattern": "not empirical"}
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,136 @@
+{
+  "$id": "realizing_emptiness.figure_integrity_audit.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Realizing Emptiness Figure Integrity Audit",
+  "type": "object",
+  "required": [
+    "schema",
+    "source_map_path",
+    "source_map_sha256",
+    "figure_count",
+    "source_map_figure_count",
+    "rows",
+    "missing_figures",
+    "blank_figures",
+    "undersized_figures",
+    "missing_sources",
+    "all_figures_nonblank",
+    "all_sources_hashed",
+    "ok"
+  ],
+  "properties": {
+    "schema": {
+      "const": "realizing_emptiness.figure_integrity_audit.v1"
+    },
+    "source_map_path": {
+      "const": "output/data/figure_source_map.json"
+    },
+    "source_map_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "figure_count": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "source_map_figure_count": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "rows": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "path",
+          "exists",
+          "sha256",
+          "byte_size",
+          "caption",
+          "source_artifacts",
+          "width",
+          "height",
+          "channels",
+          "pixel_variance",
+          "nonblank"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9_]+$"
+          },
+          "path": {
+            "type": "string"
+          },
+          "exists": {
+            "const": true
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "byte_size": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "caption": {
+            "type": "string",
+            "minLength": 5
+          },
+          "source_artifacts": {
+            "type": "array",
+            "minItems": 1
+          },
+          "width": {
+            "type": "integer",
+            "minimum": 200
+          },
+          "height": {
+            "type": "integer",
+            "minimum": 150
+          },
+          "channels": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "pixel_variance": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "nonblank": {
+            "const": true
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "missing_figures": {
+      "type": "array",
+      "maxItems": 0
+    },
+    "blank_figures": {
+      "type": "array",
+      "maxItems": 0
+    },
+    "undersized_figures": {
+      "type": "array",
+      "maxItems": 0
+    },
+    "missing_sources": {
+      "type": "array",
+      "maxItems": 0
+    },
+    "all_figures_nonblank": {
+      "const": true
+    },
+    "all_sources_hashed": {
+      "const": true
+    },
+    "ok": {
+      "const": true
+    }
+  },
+  "additionalProperties": false
+}

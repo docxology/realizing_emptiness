@@ -1,0 +1,381 @@
+{
+  "all_controls_pass": true,
+  "blanket_nodes": [
+    2,
+    3
+  ],
+  "claim_boundary": "finite deterministic Gaussian-graphical-model conditional-independence computation over fixed precision matrices; the internal/blanket/external separation is a software linear-algebra result, not empirical evidence and not a neural, developmental, clinical, practice-efficacy, or physical qFEP claim",
+  "controls": {
+    "dense_precision_has_no_nontrivial_blanket": true,
+    "epsilon_coupling_breaks_exact_separation": true,
+    "internal_external_conditionally_independent": true,
+    "marginal_covariance_threshold_cannot_recover_blanket": true,
+    "partial_correlation_threshold_also_recovers_blanket": true,
+    "precision_recovers_more_reliably_than_marginal_in_ensemble": true,
+    "precision_support_recovers_blanket": true
+  },
+  "dense_precision_external_set": [],
+  "epsilon_internal_external_edges_detected": 4,
+  "external_nodes": [
+    4,
+    5
+  ],
+  "internal_nodes": [
+    0,
+    1
+  ],
+  "marginal_correlation_best_f1": 0.8,
+  "marginal_correlation_best_threshold": 0.03,
+  "marginal_correlation_matrix": [
+    [
+      1.0,
+      -0.004644,
+      -0.208176,
+      0.029716,
+      0.048332,
+      0.028091
+    ],
+    [
+      -0.004644,
+      1.0,
+      -0.09477,
+      -0.036741,
+      0.021847,
+      0.019083
+    ],
+    [
+      -0.208176,
+      -0.09477,
+      1.0,
+      -0.13687,
+      -0.232152,
+      -0.135673
+    ],
+    [
+      0.029716,
+      -0.036741,
+      -0.13687,
+      1.0,
+      0.034814,
+      -0.104301
+    ],
+    [
+      0.048332,
+      0.021847,
+      -0.232152,
+      0.034814,
+      1.0,
+      0.007214
+    ],
+    [
+      0.028091,
+      0.019083,
+      -0.135673,
+      -0.104301,
+      0.007214,
+      1.0
+    ]
+  ],
+  "marginal_threshold_rows": [
+    {
+      "f1": 0.666667,
+      "recovered": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "threshold": 0.0
+    },
+    {
+      "f1": 0.666667,
+      "recovered": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "threshold": 0.024
+    },
+    {
+      "f1": 0.5,
+      "recovered": [
+        2,
+        4
+      ],
+      "threshold": 0.048
+    },
+    {
+      "f1": 0.666667,
+      "recovered": [
+        2
+      ],
+      "threshold": 0.072
+    },
+    {
+      "f1": 0.666667,
+      "recovered": [
+        2
+      ],
+      "threshold": 0.096
+    },
+    {
+      "f1": 0.666667,
+      "recovered": [
+        2
+      ],
+      "threshold": 0.12
+    },
+    {
+      "f1": 0.666667,
+      "recovered": [
+        2
+      ],
+      "threshold": 0.144
+    },
+    {
+      "f1": 0.666667,
+      "recovered": [
+        2
+      ],
+      "threshold": 0.168
+    },
+    {
+      "f1": 0.666667,
+      "recovered": [
+        2
+      ],
+      "threshold": 0.192
+    },
+    {
+      "f1": 0.0,
+      "recovered": [],
+      "threshold": 0.216
+    },
+    {
+      "f1": 0.0,
+      "recovered": [],
+      "threshold": 0.24
+    },
+    {
+      "f1": 0.0,
+      "recovered": [],
+      "threshold": 0.264
+    },
+    {
+      "f1": 0.0,
+      "recovered": [],
+      "threshold": 0.288
+    },
+    {
+      "f1": 0.0,
+      "recovered": [],
+      "threshold": 0.312
+    },
+    {
+      "f1": 0.0,
+      "recovered": [],
+      "threshold": 0.336
+    },
+    {
+      "f1": 0.0,
+      "recovered": [],
+      "threshold": 0.36
+    },
+    {
+      "f1": 0.0,
+      "recovered": [],
+      "threshold": 0.384
+    },
+    {
+      "f1": 0.0,
+      "recovered": [],
+      "threshold": 0.408
+    },
+    {
+      "f1": 0.0,
+      "recovered": [],
+      "threshold": 0.432
+    },
+    {
+      "f1": 0.0,
+      "recovered": [],
+      "threshold": 0.456
+    },
+    {
+      "f1": 0.0,
+      "recovered": [],
+      "threshold": 0.48
+    },
+    {
+      "f1": 0.0,
+      "recovered": [],
+      "threshold": 0.504
+    },
+    {
+      "f1": 0.0,
+      "recovered": [],
+      "threshold": 0.528
+    },
+    {
+      "f1": 0.0,
+      "recovered": [],
+      "threshold": 0.552
+    },
+    {
+      "f1": 0.0,
+      "recovered": [],
+      "threshold": 0.576
+    },
+    {
+      "f1": 0.0,
+      "recovered": [],
+      "threshold": 0.6
+    },
+    {
+      "f1": 0.0,
+      "recovered": [],
+      "threshold": 0.624
+    },
+    {
+      "f1": 0.0,
+      "recovered": [],
+      "threshold": 0.648
+    },
+    {
+      "f1": 0.0,
+      "recovered": [],
+      "threshold": 0.672
+    },
+    {
+      "f1": 0.0,
+      "recovered": [],
+      "threshold": 0.696
+    },
+    {
+      "f1": 0.0,
+      "recovered": [],
+      "threshold": 0.72
+    },
+    {
+      "f1": 0.0,
+      "recovered": [],
+      "threshold": 0.744
+    },
+    {
+      "f1": 0.0,
+      "recovered": [],
+      "threshold": 0.768
+    },
+    {
+      "f1": 0.0,
+      "recovered": [],
+      "threshold": 0.792
+    },
+    {
+      "f1": 0.0,
+      "recovered": [],
+      "threshold": 0.816
+    },
+    {
+      "f1": 0.0,
+      "recovered": [],
+      "threshold": 0.84
+    },
+    {
+      "f1": 0.0,
+      "recovered": [],
+      "threshold": 0.864
+    },
+    {
+      "f1": 0.0,
+      "recovered": [],
+      "threshold": 0.888
+    },
+    {
+      "f1": 0.0,
+      "recovered": [],
+      "threshold": 0.912
+    },
+    {
+      "f1": 0.0,
+      "recovered": [],
+      "threshold": 0.936
+    },
+    {
+      "f1": 0.0,
+      "recovered": [],
+      "threshold": 0.96
+    },
+    {
+      "f1": 0.0,
+      "recovered": [],
+      "threshold": 0.984
+    }
+  ],
+  "partial_correlation_best_f1": 1.0,
+  "partial_correlation_best_threshold": 0.0,
+  "perturbation_ensemble": {
+    "marginal_recovery_fraction": 0.31,
+    "positive_definite_count": 200,
+    "precision_recovery_fraction": 1.0,
+    "sample_count": 200
+  },
+  "precision_matrix": [
+    [
+      2.0,
+      0.05,
+      0.4,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.05,
+      2.0,
+      0.2,
+      0.1,
+      0.0,
+      0.0
+    ],
+    [
+      0.4,
+      0.2,
+      2.0,
+      0.3,
+      0.45,
+      0.3
+    ],
+    [
+      0.0,
+      0.1,
+      0.3,
+      2.0,
+      0.0,
+      0.25
+    ],
+    [
+      0.0,
+      0.0,
+      0.45,
+      0.0,
+      2.0,
+      0.05
+    ],
+    [
+      0.0,
+      0.0,
+      0.3,
+      0.25,
+      0.05,
+      2.0
+    ]
+  ],
+  "precision_support_f1": 1.0,
+  "precision_support_recovered_blanket": [
+    2,
+    3
+  ],
+  "schema": "realizing_emptiness.markov_blanket_discovery_audit.v1",
+  "variable_count": 6
+}

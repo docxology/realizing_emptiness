@@ -1,0 +1,16 @@
+{
+  "$id": "realizing_emptiness.bmr_robustness_resampling_audit.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Realizing Emptiness BMR Robustness Resampling Audit",
+  "type": "object",
+  "required": ["schema", "row_count", "rows", "controls", "all_controls_pass", "claim_boundary"],
+  "properties": {
+    "schema": {"const": "realizing_emptiness.bmr_robustness_resampling_audit.v1"},
+    "row_count": {"type": "integer", "minimum": 1},
+    "rows": {"type": "array", "minItems": 1, "items": {"type": "object"}},
+    "controls": {"type": "object", "additionalProperties": {"const": true}},
+    "all_controls_pass": {"const": true},
+    "claim_boundary": {"type": "string", "pattern": "not empirical"}
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,65 @@
+{
+  "all_controls_pass": true,
+  "claim_boundary": "finite noncontextual-polytope linear-program feasibility over n-cycle compatibility graphs; the odd-cycle frustration is the contextuality signature and is cross-checked against graph two-colorability, not asserted as an optimal quantum violation; not empirical evidence and not a physical qFEP, neural, clinical, or contemplative claim",
+  "controls": {
+    "even_cycles_noncontextual_at_quantum_correlation": true,
+    "odd_cycles_contextual_at_quantum_correlation": true,
+    "perfect_anticorrelation_matches_two_colorability": true,
+    "uncorrelated_always_noncontextual": true
+  },
+  "cycle_count": 5,
+  "row_count": 5,
+  "rows": [
+    {
+      "is_odd_cycle": true,
+      "n": 3,
+      "perfect_anticorrelation_feasible": false,
+      "perfect_anticorrelation_residual": 2.0,
+      "quantum_correlation": -0.5,
+      "quantum_correlation_feasible": false,
+      "two_colorable": false,
+      "uncorrelated_feasible": true
+    },
+    {
+      "is_odd_cycle": false,
+      "n": 4,
+      "perfect_anticorrelation_feasible": true,
+      "perfect_anticorrelation_residual": 0.0,
+      "quantum_correlation": -0.707106781187,
+      "quantum_correlation_feasible": true,
+      "two_colorable": true,
+      "uncorrelated_feasible": true
+    },
+    {
+      "is_odd_cycle": true,
+      "n": 5,
+      "perfect_anticorrelation_feasible": false,
+      "perfect_anticorrelation_residual": 2.0,
+      "quantum_correlation": -0.809016994375,
+      "quantum_correlation_feasible": false,
+      "two_colorable": false,
+      "uncorrelated_feasible": true
+    },
+    {
+      "is_odd_cycle": false,
+      "n": 6,
+      "perfect_anticorrelation_feasible": true,
+      "perfect_anticorrelation_residual": 0.0,
+      "quantum_correlation": -0.866025403784,
+      "quantum_correlation_feasible": true,
+      "two_colorable": true,
+      "uncorrelated_feasible": true
+    },
+    {
+      "is_odd_cycle": true,
+      "n": 7,
+      "perfect_anticorrelation_feasible": false,
+      "perfect_anticorrelation_residual": 2.0,
+      "quantum_correlation": -0.900968867902,
+      "quantum_correlation_feasible": false,
+      "two_colorable": false,
+      "uncorrelated_feasible": true
+    }
+  ],
+  "schema": "realizing_emptiness.n_cycle_contextuality_library_audit.v1"
+}

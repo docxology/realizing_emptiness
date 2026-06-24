@@ -1,0 +1,33 @@
+{
+  "all_controls_pass": true,
+  "claim_boundary": "finite deterministic roadmap-engine simulation; not empirical evidence, not a physical qFEP realization, and not evidence for clinical, contemplative, or neural outcomes",
+  "controls": {
+    "constrained_always_feasible": true,
+    "noncontextual_control_no_suppression": true,
+    "sigma_suppresses_contextuality": true,
+    "unconstrained_exhibits_contextuality": true
+  },
+  "label": "finite_lp_obstruction_contrast_not_empirical",
+  "rows": [
+    {
+      "constrained_feasible": true,
+      "constrained_residual": 0.0,
+      "contextual": true,
+      "id": "parity_obstruction",
+      "suppression_delta": 2.0,
+      "unconstrained_feasible": false,
+      "unconstrained_residual": 2.0
+    },
+    {
+      "constrained_feasible": true,
+      "constrained_residual": 0.0,
+      "contextual": false,
+      "id": "noncontextual_triangle_control",
+      "suppression_delta": 0.0,
+      "unconstrained_feasible": true,
+      "unconstrained_residual": 0.0
+    }
+  ],
+  "scenario_count": 2,
+  "schema": "realizing_emptiness.sigma_contextuality_suppression_audit.v1"
+}

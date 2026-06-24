@@ -1,0 +1,79 @@
+{
+  "$id": "realizing_emptiness.formalism_registry.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Realizing Emptiness Formalism Registry",
+  "type": "object",
+  "required": ["schema", "equation_count", "equations"],
+  "properties": {
+    "schema": {
+      "const": "realizing_emptiness.formalism_registry.v1"
+    },
+    "equation_count": {
+      "const": 14
+    },
+    "equations": {
+      "type": "array",
+      "minItems": 14,
+      "maxItems": 14,
+      "items": {
+        "type": "object",
+        "required": [
+          "number",
+          "label",
+          "paper_section",
+          "expression",
+          "computable",
+          "implementation",
+          "surrogate_note",
+          "operational_status",
+          "paper_to_software_bridge",
+          "validation_artifact",
+          "interpretive_boundary"
+        ],
+        "properties": {
+          "number": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 14
+          },
+          "label": {
+            "type": "string"
+          },
+          "paper_section": {
+            "type": "string"
+          },
+          "expression": {
+            "type": "string"
+          },
+          "computable": {
+            "type": "boolean"
+          },
+          "implementation": {
+            "type": "string"
+          },
+          "surrogate_note": {
+            "type": "string",
+            "minLength": 10
+          },
+          "operational_status": {
+            "type": "string",
+            "enum": ["finite_computation", "source_mapped_noncomputable"]
+          },
+          "paper_to_software_bridge": {
+            "type": "string",
+            "minLength": 20
+          },
+          "validation_artifact": {
+            "const": "output/data/equation_audit.json"
+          },
+          "interpretive_boundary": {
+            "type": "string",
+            "pattern": "Finite operational surrogate"
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}

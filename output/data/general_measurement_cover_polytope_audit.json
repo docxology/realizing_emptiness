@@ -1,0 +1,822 @@
+{
+  "all_controls_pass": true,
+  "claim_boundary": "finite deterministic roadmap-engine simulation; not empirical evidence, not a physical qFEP realization, and not evidence for clinical, contemplative, or neural outcomes",
+  "controls": {
+    "all_rows_no_disturbing": true,
+    "chsh_bell_infeasible": true,
+    "chsh_product_feasible": true,
+    "obstructions_have_positive_residual": true,
+    "triangle_control_feasible": true,
+    "triangle_parity_infeasible": true
+  },
+  "outcome_alphabet": [
+    -1,
+    1
+  ],
+  "probability_row_count": 56,
+  "probability_rows": [
+    {
+      "assignment": [
+        -1,
+        -1
+      ],
+      "context": "AB",
+      "context_measurements": [
+        "A",
+        "B"
+      ],
+      "probability": 0.5,
+      "scenario": "triangle_feasible_control"
+    },
+    {
+      "assignment": [
+        -1,
+        1
+      ],
+      "context": "AB",
+      "context_measurements": [
+        "A",
+        "B"
+      ],
+      "probability": 0.0,
+      "scenario": "triangle_feasible_control"
+    },
+    {
+      "assignment": [
+        1,
+        -1
+      ],
+      "context": "AB",
+      "context_measurements": [
+        "A",
+        "B"
+      ],
+      "probability": 0.0,
+      "scenario": "triangle_feasible_control"
+    },
+    {
+      "assignment": [
+        1,
+        1
+      ],
+      "context": "AB",
+      "context_measurements": [
+        "A",
+        "B"
+      ],
+      "probability": 0.5,
+      "scenario": "triangle_feasible_control"
+    },
+    {
+      "assignment": [
+        -1,
+        -1
+      ],
+      "context": "BC",
+      "context_measurements": [
+        "B",
+        "C"
+      ],
+      "probability": 0.5,
+      "scenario": "triangle_feasible_control"
+    },
+    {
+      "assignment": [
+        -1,
+        1
+      ],
+      "context": "BC",
+      "context_measurements": [
+        "B",
+        "C"
+      ],
+      "probability": 0.0,
+      "scenario": "triangle_feasible_control"
+    },
+    {
+      "assignment": [
+        1,
+        -1
+      ],
+      "context": "BC",
+      "context_measurements": [
+        "B",
+        "C"
+      ],
+      "probability": 0.0,
+      "scenario": "triangle_feasible_control"
+    },
+    {
+      "assignment": [
+        1,
+        1
+      ],
+      "context": "BC",
+      "context_measurements": [
+        "B",
+        "C"
+      ],
+      "probability": 0.5,
+      "scenario": "triangle_feasible_control"
+    },
+    {
+      "assignment": [
+        -1,
+        -1
+      ],
+      "context": "AC",
+      "context_measurements": [
+        "A",
+        "C"
+      ],
+      "probability": 0.5,
+      "scenario": "triangle_feasible_control"
+    },
+    {
+      "assignment": [
+        -1,
+        1
+      ],
+      "context": "AC",
+      "context_measurements": [
+        "A",
+        "C"
+      ],
+      "probability": 0.0,
+      "scenario": "triangle_feasible_control"
+    },
+    {
+      "assignment": [
+        1,
+        -1
+      ],
+      "context": "AC",
+      "context_measurements": [
+        "A",
+        "C"
+      ],
+      "probability": 0.0,
+      "scenario": "triangle_feasible_control"
+    },
+    {
+      "assignment": [
+        1,
+        1
+      ],
+      "context": "AC",
+      "context_measurements": [
+        "A",
+        "C"
+      ],
+      "probability": 0.5,
+      "scenario": "triangle_feasible_control"
+    },
+    {
+      "assignment": [
+        -1,
+        -1
+      ],
+      "context": "AB",
+      "context_measurements": [
+        "A",
+        "B"
+      ],
+      "probability": 0.5,
+      "scenario": "triangle_parity_obstruction"
+    },
+    {
+      "assignment": [
+        -1,
+        1
+      ],
+      "context": "AB",
+      "context_measurements": [
+        "A",
+        "B"
+      ],
+      "probability": 0.0,
+      "scenario": "triangle_parity_obstruction"
+    },
+    {
+      "assignment": [
+        1,
+        -1
+      ],
+      "context": "AB",
+      "context_measurements": [
+        "A",
+        "B"
+      ],
+      "probability": 0.0,
+      "scenario": "triangle_parity_obstruction"
+    },
+    {
+      "assignment": [
+        1,
+        1
+      ],
+      "context": "AB",
+      "context_measurements": [
+        "A",
+        "B"
+      ],
+      "probability": 0.5,
+      "scenario": "triangle_parity_obstruction"
+    },
+    {
+      "assignment": [
+        -1,
+        -1
+      ],
+      "context": "BC",
+      "context_measurements": [
+        "B",
+        "C"
+      ],
+      "probability": 0.5,
+      "scenario": "triangle_parity_obstruction"
+    },
+    {
+      "assignment": [
+        -1,
+        1
+      ],
+      "context": "BC",
+      "context_measurements": [
+        "B",
+        "C"
+      ],
+      "probability": 0.0,
+      "scenario": "triangle_parity_obstruction"
+    },
+    {
+      "assignment": [
+        1,
+        -1
+      ],
+      "context": "BC",
+      "context_measurements": [
+        "B",
+        "C"
+      ],
+      "probability": 0.0,
+      "scenario": "triangle_parity_obstruction"
+    },
+    {
+      "assignment": [
+        1,
+        1
+      ],
+      "context": "BC",
+      "context_measurements": [
+        "B",
+        "C"
+      ],
+      "probability": 0.5,
+      "scenario": "triangle_parity_obstruction"
+    },
+    {
+      "assignment": [
+        -1,
+        -1
+      ],
+      "context": "AC",
+      "context_measurements": [
+        "A",
+        "C"
+      ],
+      "probability": 0.0,
+      "scenario": "triangle_parity_obstruction"
+    },
+    {
+      "assignment": [
+        -1,
+        1
+      ],
+      "context": "AC",
+      "context_measurements": [
+        "A",
+        "C"
+      ],
+      "probability": 0.5,
+      "scenario": "triangle_parity_obstruction"
+    },
+    {
+      "assignment": [
+        1,
+        -1
+      ],
+      "context": "AC",
+      "context_measurements": [
+        "A",
+        "C"
+      ],
+      "probability": 0.5,
+      "scenario": "triangle_parity_obstruction"
+    },
+    {
+      "assignment": [
+        1,
+        1
+      ],
+      "context": "AC",
+      "context_measurements": [
+        "A",
+        "C"
+      ],
+      "probability": 0.0,
+      "scenario": "triangle_parity_obstruction"
+    },
+    {
+      "assignment": [
+        -1,
+        -1
+      ],
+      "context": "A0B0",
+      "context_measurements": [
+        "A0",
+        "B0"
+      ],
+      "probability": 0.426776695297,
+      "scenario": "chsh_product_control"
+    },
+    {
+      "assignment": [
+        -1,
+        1
+      ],
+      "context": "A0B0",
+      "context_measurements": [
+        "A0",
+        "B0"
+      ],
+      "probability": 0.073223304703,
+      "scenario": "chsh_product_control"
+    },
+    {
+      "assignment": [
+        1,
+        -1
+      ],
+      "context": "A0B0",
+      "context_measurements": [
+        "A0",
+        "B0"
+      ],
+      "probability": 0.073223304703,
+      "scenario": "chsh_product_control"
+    },
+    {
+      "assignment": [
+        1,
+        1
+      ],
+      "context": "A0B0",
+      "context_measurements": [
+        "A0",
+        "B0"
+      ],
+      "probability": 0.426776695297,
+      "scenario": "chsh_product_control"
+    },
+    {
+      "assignment": [
+        -1,
+        -1
+      ],
+      "context": "A0B1",
+      "context_measurements": [
+        "A0",
+        "B1"
+      ],
+      "probability": 0.426776695297,
+      "scenario": "chsh_product_control"
+    },
+    {
+      "assignment": [
+        -1,
+        1
+      ],
+      "context": "A0B1",
+      "context_measurements": [
+        "A0",
+        "B1"
+      ],
+      "probability": 0.073223304703,
+      "scenario": "chsh_product_control"
+    },
+    {
+      "assignment": [
+        1,
+        -1
+      ],
+      "context": "A0B1",
+      "context_measurements": [
+        "A0",
+        "B1"
+      ],
+      "probability": 0.073223304703,
+      "scenario": "chsh_product_control"
+    },
+    {
+      "assignment": [
+        1,
+        1
+      ],
+      "context": "A0B1",
+      "context_measurements": [
+        "A0",
+        "B1"
+      ],
+      "probability": 0.426776695297,
+      "scenario": "chsh_product_control"
+    },
+    {
+      "assignment": [
+        -1,
+        -1
+      ],
+      "context": "A1B0",
+      "context_measurements": [
+        "A1",
+        "B0"
+      ],
+      "probability": 0.25,
+      "scenario": "chsh_product_control"
+    },
+    {
+      "assignment": [
+        -1,
+        1
+      ],
+      "context": "A1B0",
+      "context_measurements": [
+        "A1",
+        "B0"
+      ],
+      "probability": 0.25,
+      "scenario": "chsh_product_control"
+    },
+    {
+      "assignment": [
+        1,
+        -1
+      ],
+      "context": "A1B0",
+      "context_measurements": [
+        "A1",
+        "B0"
+      ],
+      "probability": 0.25,
+      "scenario": "chsh_product_control"
+    },
+    {
+      "assignment": [
+        1,
+        1
+      ],
+      "context": "A1B0",
+      "context_measurements": [
+        "A1",
+        "B0"
+      ],
+      "probability": 0.25,
+      "scenario": "chsh_product_control"
+    },
+    {
+      "assignment": [
+        -1,
+        -1
+      ],
+      "context": "A1B1",
+      "context_measurements": [
+        "A1",
+        "B1"
+      ],
+      "probability": 0.25,
+      "scenario": "chsh_product_control"
+    },
+    {
+      "assignment": [
+        -1,
+        1
+      ],
+      "context": "A1B1",
+      "context_measurements": [
+        "A1",
+        "B1"
+      ],
+      "probability": 0.25,
+      "scenario": "chsh_product_control"
+    },
+    {
+      "assignment": [
+        1,
+        -1
+      ],
+      "context": "A1B1",
+      "context_measurements": [
+        "A1",
+        "B1"
+      ],
+      "probability": 0.25,
+      "scenario": "chsh_product_control"
+    },
+    {
+      "assignment": [
+        1,
+        1
+      ],
+      "context": "A1B1",
+      "context_measurements": [
+        "A1",
+        "B1"
+      ],
+      "probability": 0.25,
+      "scenario": "chsh_product_control"
+    },
+    {
+      "assignment": [
+        -1,
+        -1
+      ],
+      "context": "A0B0",
+      "context_measurements": [
+        "A0",
+        "B0"
+      ],
+      "probability": 0.426776695297,
+      "scenario": "chsh_bell_obstruction"
+    },
+    {
+      "assignment": [
+        -1,
+        1
+      ],
+      "context": "A0B0",
+      "context_measurements": [
+        "A0",
+        "B0"
+      ],
+      "probability": 0.073223304703,
+      "scenario": "chsh_bell_obstruction"
+    },
+    {
+      "assignment": [
+        1,
+        -1
+      ],
+      "context": "A0B0",
+      "context_measurements": [
+        "A0",
+        "B0"
+      ],
+      "probability": 0.073223304703,
+      "scenario": "chsh_bell_obstruction"
+    },
+    {
+      "assignment": [
+        1,
+        1
+      ],
+      "context": "A0B0",
+      "context_measurements": [
+        "A0",
+        "B0"
+      ],
+      "probability": 0.426776695297,
+      "scenario": "chsh_bell_obstruction"
+    },
+    {
+      "assignment": [
+        -1,
+        -1
+      ],
+      "context": "A0B1",
+      "context_measurements": [
+        "A0",
+        "B1"
+      ],
+      "probability": 0.426776695297,
+      "scenario": "chsh_bell_obstruction"
+    },
+    {
+      "assignment": [
+        -1,
+        1
+      ],
+      "context": "A0B1",
+      "context_measurements": [
+        "A0",
+        "B1"
+      ],
+      "probability": 0.073223304703,
+      "scenario": "chsh_bell_obstruction"
+    },
+    {
+      "assignment": [
+        1,
+        -1
+      ],
+      "context": "A0B1",
+      "context_measurements": [
+        "A0",
+        "B1"
+      ],
+      "probability": 0.073223304703,
+      "scenario": "chsh_bell_obstruction"
+    },
+    {
+      "assignment": [
+        1,
+        1
+      ],
+      "context": "A0B1",
+      "context_measurements": [
+        "A0",
+        "B1"
+      ],
+      "probability": 0.426776695297,
+      "scenario": "chsh_bell_obstruction"
+    },
+    {
+      "assignment": [
+        -1,
+        -1
+      ],
+      "context": "A1B0",
+      "context_measurements": [
+        "A1",
+        "B0"
+      ],
+      "probability": 0.426776695297,
+      "scenario": "chsh_bell_obstruction"
+    },
+    {
+      "assignment": [
+        -1,
+        1
+      ],
+      "context": "A1B0",
+      "context_measurements": [
+        "A1",
+        "B0"
+      ],
+      "probability": 0.073223304703,
+      "scenario": "chsh_bell_obstruction"
+    },
+    {
+      "assignment": [
+        1,
+        -1
+      ],
+      "context": "A1B0",
+      "context_measurements": [
+        "A1",
+        "B0"
+      ],
+      "probability": 0.073223304703,
+      "scenario": "chsh_bell_obstruction"
+    },
+    {
+      "assignment": [
+        1,
+        1
+      ],
+      "context": "A1B0",
+      "context_measurements": [
+        "A1",
+        "B0"
+      ],
+      "probability": 0.426776695297,
+      "scenario": "chsh_bell_obstruction"
+    },
+    {
+      "assignment": [
+        -1,
+        -1
+      ],
+      "context": "A1B1",
+      "context_measurements": [
+        "A1",
+        "B1"
+      ],
+      "probability": 0.073223304703,
+      "scenario": "chsh_bell_obstruction"
+    },
+    {
+      "assignment": [
+        -1,
+        1
+      ],
+      "context": "A1B1",
+      "context_measurements": [
+        "A1",
+        "B1"
+      ],
+      "probability": 0.426776695297,
+      "scenario": "chsh_bell_obstruction"
+    },
+    {
+      "assignment": [
+        1,
+        -1
+      ],
+      "context": "A1B1",
+      "context_measurements": [
+        "A1",
+        "B1"
+      ],
+      "probability": 0.426776695297,
+      "scenario": "chsh_bell_obstruction"
+    },
+    {
+      "assignment": [
+        1,
+        1
+      ],
+      "context": "A1B1",
+      "context_measurements": [
+        "A1",
+        "B1"
+      ],
+      "probability": 0.073223304703,
+      "scenario": "chsh_bell_obstruction"
+    }
+  ],
+  "row_count": 4,
+  "rows": [
+    {
+      "assignment_count": 8,
+      "context_count": 3,
+      "expected_feasible": true,
+      "global_section_feasible": true,
+      "id": "triangle_feasible_control",
+      "max_abs_residual": 0.0,
+      "measurement_count": 3,
+      "min_l1_residual": 0.0,
+      "no_disturbance_max_error": 0.0,
+      "parser_roundtrip_contexts": [
+        "AB",
+        "AC",
+        "BC"
+      ],
+      "probability_row_count": 12
+    },
+    {
+      "assignment_count": 8,
+      "context_count": 3,
+      "expected_feasible": false,
+      "global_section_feasible": false,
+      "id": "triangle_parity_obstruction",
+      "max_abs_residual": 0.5,
+      "measurement_count": 3,
+      "min_l1_residual": 2.0,
+      "no_disturbance_max_error": 0.0,
+      "parser_roundtrip_contexts": [
+        "AB",
+        "AC",
+        "BC"
+      ],
+      "probability_row_count": 12
+    },
+    {
+      "assignment_count": 16,
+      "context_count": 4,
+      "expected_feasible": true,
+      "global_section_feasible": true,
+      "id": "chsh_product_control",
+      "max_abs_residual": 0.0,
+      "measurement_count": 4,
+      "min_l1_residual": 0.0,
+      "no_disturbance_max_error": 0.0,
+      "parser_roundtrip_contexts": [
+        "A0B0",
+        "A0B1",
+        "A1B0",
+        "A1B1"
+      ],
+      "probability_row_count": 16
+    },
+    {
+      "assignment_count": 16,
+      "context_count": 4,
+      "expected_feasible": false,
+      "global_section_feasible": false,
+      "id": "chsh_bell_obstruction",
+      "max_abs_residual": 0.207106781188,
+      "measurement_count": 4,
+      "min_l1_residual": 0.828427124752,
+      "no_disturbance_max_error": 0.0,
+      "parser_roundtrip_contexts": [
+        "A0B0",
+        "A0B1",
+        "A1B0",
+        "A1B1"
+      ],
+      "probability_row_count": 16
+    }
+  ],
+  "scenario_count": 4,
+  "schema": "realizing_emptiness.general_measurement_cover_polytope_audit.v1"
+}

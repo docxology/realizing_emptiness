@@ -1,0 +1,18 @@
+{
+  "all_controls_pass": true,
+  "audits": [
+    "stochastic_effect_size_audit",
+    "bmr_robustness_resampling_audit",
+    "quantum_trajectory_convergence_audit",
+    "effect_size_calibration_audit"
+  ],
+  "claim_boundary": "statistical robustness over finite seeded software simulations; not empirical data, not neural measurement, not clinical evidence, and not a physical qFEP realization",
+  "controls": {
+    "bmr_resampling_pass": true,
+    "claim_boundary_declared": true,
+    "effect_size_calibration_pass": true,
+    "stochastic_effects_pass": true,
+    "trajectory_convergence_pass": true
+  },
+  "schema": "realizing_emptiness.statistical_robustness_audit.v1"
+}

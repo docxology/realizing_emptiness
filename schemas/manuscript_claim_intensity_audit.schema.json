@@ -1,0 +1,18 @@
+{
+  "$id": "realizing_emptiness.manuscript_claim_intensity_audit.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Realizing Emptiness Manuscript Claim Intensity Audit",
+  "type": "object",
+  "required": ["schema", "sentence_count", "row_count", "rows", "risky_rows", "strong_verb_count", "ok", "claim_boundary"],
+  "properties": {
+    "schema": {"const": "realizing_emptiness.manuscript_claim_intensity_audit.v1"},
+    "sentence_count": {"type": "integer", "minimum": 1},
+    "row_count": {"type": "integer", "minimum": 0},
+    "rows": {"type": "array", "items": {"type": "object"}},
+    "risky_rows": {"type": "array", "maxItems": 0},
+    "strong_verb_count": {"type": "integer", "minimum": 0},
+    "ok": {"const": true},
+    "claim_boundary": {"type": "string", "pattern": "not empirical"}
+  },
+  "additionalProperties": false
+}

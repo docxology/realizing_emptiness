@@ -1,0 +1,106 @@
+{
+  "all_controls_pass": true,
+  "bipartition_count": 6,
+  "claim_boundary": "finite-dimensional pure-state linear-algebra audit over environment bipartitions; not empirical, not a physical or observer-boundary measurement, and not a full qFEP realization",
+  "controls": {
+    "accessible_marginal_invariant_across_internal_cuts": true,
+    "all_bipartitions_audited": true,
+    "god_eye_entropy_actually_differs": true,
+    "separability_unrecoverable_from_marginal": true
+  },
+  "env_qubits": 4,
+  "label": "finite_pure_state_internal_cut_audit_not_empirical",
+  "rows": [
+    {
+      "accessible_marginal_drift": 1.1102230246251565e-16,
+      "accessible_marginal_invariant": true,
+      "b1": [
+        0,
+        1
+      ],
+      "b2": [
+        2,
+        3
+      ],
+      "entangled_cut_entropy_bits": 1.0,
+      "god_eye_distinguishes_cut": true,
+      "separable_cut_entropy_bits": -0.0
+    },
+    {
+      "accessible_marginal_drift": 1.1102230246251565e-16,
+      "accessible_marginal_invariant": true,
+      "b1": [
+        0,
+        2
+      ],
+      "b2": [
+        1,
+        3
+      ],
+      "entangled_cut_entropy_bits": 1.0,
+      "god_eye_distinguishes_cut": true,
+      "separable_cut_entropy_bits": -0.0
+    },
+    {
+      "accessible_marginal_drift": 1.1102230246251565e-16,
+      "accessible_marginal_invariant": true,
+      "b1": [
+        0,
+        1,
+        2
+      ],
+      "b2": [
+        3
+      ],
+      "entangled_cut_entropy_bits": 1.0,
+      "god_eye_distinguishes_cut": true,
+      "separable_cut_entropy_bits": -0.0
+    },
+    {
+      "accessible_marginal_drift": 1.1102230246251565e-16,
+      "accessible_marginal_invariant": true,
+      "b1": [
+        0,
+        3
+      ],
+      "b2": [
+        1,
+        2
+      ],
+      "entangled_cut_entropy_bits": 1.0,
+      "god_eye_distinguishes_cut": true,
+      "separable_cut_entropy_bits": -0.0
+    },
+    {
+      "accessible_marginal_drift": 1.1102230246251565e-16,
+      "accessible_marginal_invariant": true,
+      "b1": [
+        0,
+        1,
+        3
+      ],
+      "b2": [
+        2
+      ],
+      "entangled_cut_entropy_bits": 1.0,
+      "god_eye_distinguishes_cut": true,
+      "separable_cut_entropy_bits": -0.0
+    },
+    {
+      "accessible_marginal_drift": 1.1102230246251565e-16,
+      "accessible_marginal_invariant": true,
+      "b1": [
+        0,
+        2,
+        3
+      ],
+      "b2": [
+        1
+      ],
+      "entangled_cut_entropy_bits": 1.0,
+      "god_eye_distinguishes_cut": true,
+      "separable_cut_entropy_bits": -0.0
+    }
+  ],
+  "schema": "realizing_emptiness.internal_cut_unmeasurability_audit.v1"
+}

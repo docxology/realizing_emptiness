@@ -1,0 +1,1387 @@
+{
+  "all_figures_nonblank": true,
+  "all_sources_hashed": true,
+  "blank_figures": [],
+  "figure_count": 59,
+  "missing_figures": [],
+  "missing_sources": [],
+  "ok": true,
+  "rows": [
+    {
+      "byte_size": 380445,
+      "caption": "Graphical abstract for the source-bounded software chain. Labeled zones map the source paper, finite equation registry, QRF boundary screen, simulation engines, and claim gates; the central screen shows relabelings over one bitstream without turning them into empirical, clinical, neural, practice-efficacy, or physical qFEP evidence.",
+      "channels": 4,
+      "exists": true,
+      "height": 2520,
+      "id": "graphical_abstract_cover",
+      "nonblank": true,
+      "path": "output/figures/graphical_abstract_cover.png",
+      "pixel_variance": 0.02375528997930658,
+      "sha256": "61b0f917e2119959376c878e297216db5b93e9e667a6fbf51c9e7d3e1df1db68",
+      "source_artifacts": [
+        {
+          "byte_size": 14311,
+          "exists": true,
+          "path": "output/data/source_claim_crosswalk.json",
+          "sha256": "4ebc652cbe6ace887a1bbdd7d1794750a0a6cb844d69624f7051fd7eb0c0d856"
+        },
+        {
+          "byte_size": 13199,
+          "exists": true,
+          "path": "output/data/equation_audit.json",
+          "sha256": "f99b7eb0de64586758f2c0f81dada4c3eccce16e89740455e933afcae9021f65"
+        },
+        {
+          "byte_size": 14191,
+          "exists": true,
+          "path": "output/data/qrf_boundary_indistinguishability.json",
+          "sha256": "65ada862f5314bc039e73be6686d9e7b104c79ae7c252e9bd9d26757ce63f2c4"
+        },
+        {
+          "byte_size": 25772856,
+          "exists": true,
+          "path": "output/data/stochastic_policy_ensemble.json",
+          "sha256": "d03d06c643a4f23527dbf3bd575169e0c356368fbbf363a9107778e6d26f3767"
+        },
+        {
+          "byte_size": 533307,
+          "exists": true,
+          "path": "output/data/quantum_trajectory_unraveling.json",
+          "sha256": "2c5e6b1ffb1bcd1e74fab9b8faf3c7fafac1904c8c7efbd5d40ddb9fe0cb03bb"
+        }
+      ],
+      "width": 3024
+    },
+    {
+      "byte_size": 267129,
+      "caption": "Finite QRF boundary-screen geometry for the lead boundary result. Dashed screen, node labels, action edge, observation edge, and channel-role text show how b0-b5 function as software observation channels while preserving the boundary claim that no node or edge is empirical, biological, ontological self/world, or physical qFEP evidence.",
+      "channels": 4,
+      "exists": true,
+      "height": 1447,
+      "id": "qrf_boundary_screen_geometry",
+      "nonblank": true,
+      "path": "output/figures/qrf_boundary_screen_geometry.png",
+      "pixel_variance": 0.01856000191898226,
+      "sha256": "fda1bafe737282c853387b0f85daab8641455700ed2c69a8f2337317e8d78266",
+      "source_artifacts": [
+        {
+          "byte_size": 13834,
+          "exists": true,
+          "path": "output/data/pymdp_profile_comparison.json",
+          "sha256": "00392acb38a284213150acce154e1e0b88b8494c636adfc0af0ae47956b6578b"
+        },
+        {
+          "byte_size": 14191,
+          "exists": true,
+          "path": "output/data/qrf_boundary_indistinguishability.json",
+          "sha256": "65ada862f5314bc039e73be6686d9e7b104c79ae7c252e9bd9d26757ce63f2c4"
+        },
+        {
+          "byte_size": 6724,
+          "exists": true,
+          "path": "output/data/qrf_boundary_channel_ledger.json",
+          "sha256": "891aba4a29743399f347c4f9df0257b59f4af218c92ff7bcb104174dc59dc29a"
+        }
+      ],
+      "width": 2486
+    },
+    {
+      "byte_size": 205057,
+      "caption": "b0-b5 QRF channel relabeling ledger for equations 7-10. The invariant same-bit row marks each evidenced boundary bit, while profile rows relabel those unchanged channels as self, env, action, body, world, other, or care; colors and text encode software sectors only and are not evidence for an ontological self/world boundary.",
+      "channels": 4,
+      "exists": true,
+      "height": 1305,
+      "id": "qrf_channel_relabeling_ledger",
+      "nonblank": true,
+      "path": "output/figures/qrf_channel_relabeling_ledger.png",
+      "pixel_variance": 0.068933077555597,
+      "sha256": "f02d28e10361a6f5756c54ec000ac13eb445db619641153dd2eb1119ba2fca7e",
+      "source_artifacts": [
+        {
+          "byte_size": 6724,
+          "exists": true,
+          "path": "output/data/qrf_boundary_channel_ledger.json",
+          "sha256": "891aba4a29743399f347c4f9df0257b59f4af218c92ff7bcb104174dc59dc29a"
+        },
+        {
+          "byte_size": 14191,
+          "exists": true,
+          "path": "output/data/qrf_boundary_indistinguishability.json",
+          "sha256": "65ada862f5314bc039e73be6686d9e7b104c79ae7c252e9bd9d26757ce63f2c4"
+        }
+      ],
+      "width": 3133
+    },
+    {
+      "byte_size": 214804,
+      "caption": "QRF invariance and policy-flow audit over the same finite screen. Panel A shows admissible deployments at normalized probability mass with a separate failing perturbation-control marker; Panel B shows profile-specific selected actions from the pymdp trace. The figure supports finite software validation only, not empirical, biological, ontological, or physical qFEP evidence.",
+      "channels": 4,
+      "exists": true,
+      "height": 1264,
+      "id": "qrf_invariance_policy_flow",
+      "nonblank": true,
+      "path": "output/figures/qrf_invariance_policy_flow.png",
+      "pixel_variance": 0.09013003505033867,
+      "sha256": "14dd444bd152f4baff5912030f3a4db2b7246193845e52b200cdb2d35e079923",
+      "source_artifacts": [
+        {
+          "byte_size": 13834,
+          "exists": true,
+          "path": "output/data/pymdp_profile_comparison.json",
+          "sha256": "00392acb38a284213150acce154e1e0b88b8494c636adfc0af0ae47956b6578b"
+        },
+        {
+          "byte_size": 14191,
+          "exists": true,
+          "path": "output/data/qrf_boundary_indistinguishability.json",
+          "sha256": "65ada862f5314bc039e73be6686d9e7b104c79ae7c252e9bd9d26757ce63f2c4"
+        }
+      ],
+      "width": 3373
+    },
+    {
+      "byte_size": 77466,
+      "caption": "Boundary-channel sector labels for the separation-constrained, opacified, and post-dual QRF profiles. The color legend maps each sector label to a categorical color, making the finite relabeling surrogate visible without treating sector color as physical quantum-boundary evidence.",
+      "channels": 4,
+      "exists": true,
+      "height": 639,
+      "id": "qrf_sectorisation_map",
+      "nonblank": true,
+      "path": "output/figures/qrf_sectorisation_map.png",
+      "pixel_variance": 0.05570698898382234,
+      "sha256": "4de2ef7450899b3b1aebbf14ff90f1e5fd8c0768763abb48155a833511959c0e",
+      "source_artifacts": [
+        {
+          "byte_size": 13834,
+          "exists": true,
+          "path": "output/data/pymdp_profile_comparison.json",
+          "sha256": "00392acb38a284213150acce154e1e0b88b8494c636adfc0af0ae47956b6578b"
+        }
+      ],
+      "width": 1879
+    },
+    {
+      "byte_size": 86316,
+      "caption": "Probability mass remains normalized and label-invariant across admissible QRF sectorisations, while a deliberately perturbed negative control fails the audit. The bar color legend and dashed reference line support only the finite boundary-indistinguishability claim recorded in the source crosswalk.",
+      "channels": 4,
+      "exists": true,
+      "height": 880,
+      "id": "boundary_indistinguishability",
+      "nonblank": true,
+      "path": "output/figures/boundary_indistinguishability.png",
+      "pixel_variance": 0.09915646759606055,
+      "sha256": "b4a6ade71964a9e1b44bbed08394c7caf5969060ae114e29bc30d587e0e09142",
+      "source_artifacts": [
+        {
+          "byte_size": 14191,
+          "exists": true,
+          "path": "output/data/qrf_boundary_indistinguishability.json",
+          "sha256": "65ada862f5314bc039e73be6686d9e7b104c79ae7c252e9bd9d26757ce63f2c4"
+        }
+      ],
+      "width": 1982
+    },
+    {
+      "byte_size": 307014,
+      "caption": "QRF reference-frame geometry over the finite boundary screen. Node colors identify sector labels, dashed circle marks the boundary screen, and action/observation edge colors show the active-inference loop; the figure is a finite surrogate map, not empirical or quantum-dynamical evidence.",
+      "channels": 4,
+      "exists": true,
+      "height": 1455,
+      "id": "qrf_reference_frame_geometry",
+      "nonblank": true,
+      "path": "output/figures/qrf_reference_frame_geometry.png",
+      "pixel_variance": 0.021238155354964657,
+      "sha256": "ceb1ff49a14d4fde273a10998bc265033cfa59324fbcc85e4bdb19ef37659619",
+      "source_artifacts": [
+        {
+          "byte_size": 13834,
+          "exists": true,
+          "path": "output/data/pymdp_profile_comparison.json",
+          "sha256": "00392acb38a284213150acce154e1e0b88b8494c636adfc0af0ae47956b6578b"
+        },
+        {
+          "byte_size": 14191,
+          "exists": true,
+          "path": "output/data/qrf_boundary_indistinguishability.json",
+          "sha256": "65ada862f5314bc039e73be6686d9e7b104c79ae7c252e9bd9d26757ce63f2c4"
+        }
+      ],
+      "width": 2654
+    },
+    {
+      "byte_size": 147772,
+      "caption": "BMR free-energy components at high separation-prior precision. The lines show reduced-minus-full Delta F, Delta complexity, and Delta accuracy over metacognitive access; the dashed zero line is the keep/prune boundary, so the panel explains the finite model-comparison sign convention without making a human self-model claim.",
+      "channels": 4,
+      "exists": true,
+      "height": 1216,
+      "id": "bmr_free_energy_decomposition",
+      "nonblank": true,
+      "path": "output/figures/bmr_free_energy_decomposition.png",
+      "pixel_variance": 0.02467346827236963,
+      "sha256": "2badadc393b2e0f79a4b5a61ba5a5d9e04f7592d726893d5ad24236da489574b",
+      "source_artifacts": [
+        {
+          "byte_size": 24401,
+          "exists": true,
+          "path": "output/data/bmr_sweep.json",
+          "sha256": "940b1f040f06b6695468a5f24d527e368b75eee1959e56d538a28549bfe8adeb"
+        }
+      ],
+      "width": 2221
+    },
+    {
+      "byte_size": 378356,
+      "caption": "BMR decision grid over prior precision and metacognitive access. KEEP prior means the full model's separation prior still pays for its complexity; PRUNE prior means the reduced model wins because removing that prior lowers free energy. Cell color encodes Delta F = F_reduced - F_full and cell text gives the decision plus numeric Delta F inside this finite model-comparison surrogate only.",
+      "channels": 4,
+      "exists": true,
+      "height": 1335,
+      "id": "bmr_pruning_phase_diagram",
+      "nonblank": true,
+      "path": "output/figures/bmr_pruning_phase_diagram.png",
+      "pixel_variance": 0.08407933879042913,
+      "sha256": "cce4924d58fe46ce9e87565cd82088626155e7b7d44030cf8dde19706a78a91a",
+      "source_artifacts": [
+        {
+          "byte_size": 24401,
+          "exists": true,
+          "path": "output/data/bmr_sweep.json",
+          "sha256": "940b1f040f06b6695468a5f24d527e368b75eee1959e56d538a28549bfe8adeb"
+        }
+      ],
+      "width": 2439
+    },
+    {
+      "byte_size": 418147,
+      "caption": "Sensitivity grid after averaging over observation-noise rows. Cell labels count how many noise rows favor PRUNE prior; PRUNE means the reduced model has lower free energy after removing the separation prior. Color encodes mean Delta F, and the denominator is a finite software robustness grid, not empirical sample size or practice-outcome evidence.",
+      "channels": 4,
+      "exists": true,
+      "height": 1228,
+      "id": "simulation_sensitivity_heatmap",
+      "nonblank": true,
+      "path": "output/figures/simulation_sensitivity_heatmap.png",
+      "pixel_variance": 0.0913799921170337,
+      "sha256": "b2eda930dab8d057adb8912bf378e63b3e9e9ee082996479cce245d54e30a412",
+      "source_artifacts": [
+        {
+          "byte_size": 281165,
+          "exists": true,
+          "path": "output/data/simulation_sensitivity_grid.json",
+          "sha256": "59a7bae83beb9e81bba02290bdc3f19f705f7550efdb49761e61ae66476a2cc9"
+        }
+      ],
+      "width": 2297
+    },
+    {
+      "byte_size": 310085,
+      "caption": "Finite-quantum scope summary for the main Results. Matrix cell text lists validated finite engines and controls; the hatched blocked column names empirical, observer-boundary, all-QRF-context, and physical qFEP claims that remain outside the evidence boundary.",
+      "channels": 4,
+      "exists": true,
+      "height": 1221,
+      "id": "finite_quantum_scope_summary",
+      "nonblank": true,
+      "path": "output/figures/finite_quantum_scope_summary.png",
+      "pixel_variance": 0.031707088648416905,
+      "sha256": "f4eaf4d2001618c7502afe468f58573ca97e915c3bb803c14dee9f5c0ed8b2f7",
+      "source_artifacts": [
+        {
+          "byte_size": 22810,
+          "exists": true,
+          "path": "output/data/quantum_roadmap_readiness_matrix.json",
+          "sha256": "ace0a7c8d1ce637bcf0521de09b435b24affbf335eb82bfac55851b06455d1c6"
+        }
+      ],
+      "width": 2462
+    },
+    {
+      "byte_size": 299839,
+      "caption": "Finite two-qubit boundary-entropy landscape for the direct quantum-information extension. Legends identify reduced entropy, mutual information, CHSH bounds, contextual-fraction proxy, and Landauer-scaled erasure lower bound; the panels support only a finite simulation claim, not empirical evidence or a full qFEP quantum-dynamical realization.",
+      "channels": 4,
+      "exists": true,
+      "height": 1633,
+      "id": "quantum_boundary_entropy_landscape",
+      "nonblank": true,
+      "path": "output/figures/quantum_boundary_entropy_landscape.png",
+      "pixel_variance": 0.03519884444484633,
+      "sha256": "146aff9b180cd5048972017f4683fdeb5cb4d6ccc3680f44af2cec0b2810f345",
+      "source_artifacts": [
+        {
+          "byte_size": 189686,
+          "exists": true,
+          "path": "output/data/quantum_boundary_entropy.json",
+          "sha256": "7957b420446b1e629bad8be30899bf37d68e5f2b6c598a79227c37c92dd68b3c"
+        }
+      ],
+      "width": 2408
+    },
+    {
+      "byte_size": 241474,
+      "caption": "CHSH contextuality witness and basis-sweep audit for the same finite two-qubit family. The scatter colorbar encodes contextual fraction, bound lines mark local and Tsirelson thresholds, and the heatmap colorbar shows rotated measurement entropy while the contour marks reduced-entropy invariance; this does not claim empirical or full QRF dynamics.",
+      "channels": 4,
+      "exists": true,
+      "height": 1048,
+      "id": "quantum_contextuality_witness",
+      "nonblank": true,
+      "path": "output/figures/quantum_contextuality_witness.png",
+      "pixel_variance": 0.0680690696119594,
+      "sha256": "75b390e24f6775398b875ebcc658f64a634ff080f95bd95427962e50f5aba2ba",
+      "source_artifacts": [
+        {
+          "byte_size": 189686,
+          "exists": true,
+          "path": "output/data/quantum_boundary_entropy.json",
+          "sha256": "7957b420446b1e629bad8be30899bf37d68e5f2b6c598a79227c37c92dd68b3c"
+        }
+      ],
+      "width": 2607
+    },
+    {
+      "byte_size": 205083,
+      "caption": "Finite CHSH measurement-cover empirical model for the Bell-state contextuality extension. The heatmap colorbar and printed cell values encode joint probabilities by context and outcome, while the hatched bar legend compares the product negative control with the Bell cover against local and Tsirelson bounds; the figure supports only a finite no-signaling CHSH table, not a full sheaf-obstruction proof or empirical QRF result.",
+      "channels": 4,
+      "exists": true,
+      "height": 999,
+      "id": "quantum_measurement_contextuality_table",
+      "nonblank": true,
+      "path": "output/figures/quantum_measurement_contextuality_table.png",
+      "pixel_variance": 0.09758542962782188,
+      "sha256": "c261b7302fe7d8ffeec058d081457f128771dc8d5b76c48ac230993222a917e0",
+      "source_artifacts": [
+        {
+          "byte_size": 17058,
+          "exists": true,
+          "path": "output/data/quantum_measurement_contextuality.json",
+          "sha256": "e0537676901b36f1f6047d0cc31811d140d863515dd94e2cb896ecf0563a5892"
+        }
+      ],
+      "width": 2725
+    },
+    {
+      "byte_size": 213694,
+      "caption": "Local-polytope audit for the same CHSH measurement-cover artifact. The hatched residual bars show that the product control has an exact deterministic-assignment mixture while the Bell cover has a positive minimum L1 residual against the 16-assignment local polytope; the horizontal-bar legend lists the product-control mixture weights. This is a finite noncontextuality-polytope audit, not a general sheaf-obstruction engine or empirical quantum result.",
+      "channels": 4,
+      "exists": true,
+      "height": 976,
+      "id": "quantum_local_polytope_audit",
+      "nonblank": true,
+      "path": "output/figures/quantum_local_polytope_audit.png",
+      "pixel_variance": 0.06972372869644622,
+      "sha256": "e5c08f7dd9212b4207fa94e2ba0fa34aea73fa420c010af62f0968ec1fecbcac",
+      "source_artifacts": [
+        {
+          "byte_size": 17058,
+          "exists": true,
+          "path": "output/data/quantum_measurement_contextuality.json",
+          "sha256": "e0537676901b36f1f6047d0cc31811d140d863515dd94e2cb896ecf0563a5892"
+        }
+      ],
+      "width": 2607
+    },
+    {
+      "byte_size": 261184,
+      "caption": "Finite open-system dephasing controls for a two-qubit Bell state and product negative control. Line legends map dephasing rates across CHSH decay, global entropy increase, and mutual-information contraction; the figure supports only a trace-preserving finite dephasing-channel claim, not empirical evidence or full qFEP dynamics.",
+      "channels": 4,
+      "exists": true,
+      "height": 879,
+      "id": "quantum_open_system_dynamics",
+      "nonblank": true,
+      "path": "output/figures/quantum_open_system_dynamics.png",
+      "pixel_variance": 0.03813053372684344,
+      "sha256": "d296cfb21228cf60438041c1d755845d20016b7dde2eda2035be1dd9fc377a5e",
+      "source_artifacts": [
+        {
+          "byte_size": 82514,
+          "exists": true,
+          "path": "output/data/quantum_open_system_dynamics.json",
+          "sha256": "eaddfd1bcd6efad87662b80f902e0f3f129653915b0d0782c9403d8aeae6e2dd"
+        }
+      ],
+      "width": 2893
+    },
+    {
+      "byte_size": 260096,
+      "caption": "Boundary-Hamiltonian qFEP extension engine using finite two-qubit Lindblad dynamics. Line legends map Lindblad rates across entropy production, mutual-information contraction, and positivity residual panels; the figure validates a deterministic software surrogate with negative controls, not empirical evidence or a physical qFEP realization.",
+      "channels": 4,
+      "exists": true,
+      "height": 1052,
+      "id": "qfep_boundary_hamiltonian_dynamics",
+      "nonblank": true,
+      "path": "output/figures/qfep_boundary_hamiltonian_dynamics.png",
+      "pixel_variance": 0.03353965550114993,
+      "sha256": "11c7d0f28d5b7d2a91cb0ff857dde4df7b0c5e0096b54ee699f69a149bbd074a",
+      "source_artifacts": [
+        {
+          "byte_size": 41096,
+          "exists": true,
+          "path": "output/data/qfep_boundary_hamiltonian_dynamics.json",
+          "sha256": "3a5b14956c83209f8b16f418ad1a6cfd6ffbd041fb88800b7653300c510d2975"
+        }
+      ],
+      "width": 3353
+    },
+    {
+      "byte_size": 278478,
+      "caption": "Seeded quantum-trajectory unraveling of the finite two-qubit Lindblad surrogate. Line legends compare Monte Carlo ensemble entropy with the exact Lindblad density, rate-colored lines show trace-distance residuals, and jump-count bars with intervals expose the gamma-zero negative control; this validates a stochastic software surrogate, not physical qFEP realization or empirical quantum-boundary evidence.",
+      "channels": 4,
+      "exists": true,
+      "height": 1146,
+      "id": "quantum_trajectory_unraveling",
+      "nonblank": true,
+      "path": "output/figures/quantum_trajectory_unraveling.png",
+      "pixel_variance": 0.04008307762391467,
+      "sha256": "fed99beb39b816a42a9b1cb071ff7d879db102c6be25919ac1c1dd064b363b3d",
+      "source_artifacts": [
+        {
+          "byte_size": 533307,
+          "exists": true,
+          "path": "output/data/quantum_trajectory_unraveling.json",
+          "sha256": "2c5e6b1ffb1bcd1e74fab9b8faf3c7fafac1904c8c7efbd5d40ddb9fe0cb03bb"
+        }
+      ],
+      "width": 3326
+    },
+    {
+      "byte_size": 178177,
+      "caption": "Many-body boundary-screen sweep over exact six-qubit state vectors and subsystem cuts. The entropy colorbar and cell text separate candidate observer-boundary cuts, structured controls, random-cut negative controls, and separable controls; the figure supports only finite cut-sensitivity validation, not empirical or many-body observer-boundary proof.",
+      "channels": 4,
+      "exists": true,
+      "height": 883,
+      "id": "many_body_boundary_screen_sweep",
+      "nonblank": true,
+      "path": "output/figures/many_body_boundary_screen_sweep.png",
+      "pixel_variance": 0.05577971885764447,
+      "sha256": "fb047032f84bff8d60c8177004688057735044c8ef9e905a8334d3b8e2253250",
+      "source_artifacts": [
+        {
+          "byte_size": 4083,
+          "exists": true,
+          "path": "output/data/many_body_boundary_screen_sweep.json",
+          "sha256": "ae54a6fd8c909d001d2cb35ae23308d62d8a330e36772e43e344224ad689e813"
+        }
+      ],
+      "width": 2216
+    },
+    {
+      "byte_size": 163632,
+      "caption": "General measurement-cover sheaf obstruction audit beyond the CHSH-only table. Hatched residual bars distinguish the noncontextual triangle negative control from the parity obstruction, while the binary matrix colorbar reports global-section and no-disturbance checks; the figure is a finite LP audit, not empirical evidence or a full proof for the source paper.",
+      "channels": 4,
+      "exists": true,
+      "height": 952,
+      "id": "sheaf_contextuality_obstruction_audit",
+      "nonblank": true,
+      "path": "output/figures/sheaf_contextuality_obstruction_audit.png",
+      "pixel_variance": 0.11609657048878212,
+      "sha256": "a02879d1dca9544d2da26b2665716af53fc9e9869e11c5201e365323eb825fd7",
+      "source_artifacts": [
+        {
+          "byte_size": 6805,
+          "exists": true,
+          "path": "output/data/sheaf_contextuality_obstruction_audit.json",
+          "sha256": "4555823198a2032cad05028b0a0606d1afce9e417f4b039c2f0b9679ff4b4a93"
+        }
+      ],
+      "width": 2653
+    },
+    {
+      "byte_size": 185099,
+      "caption": "QRF transformation covariance audit for finite probability-preserving relabelings. The binary matrix colorbar marks stochasticity, nonnegativity, and acceptance criteria, while grouped bars show probability-mass and expectation-covariance errors for admissible maps; the figure supports only finite relabeling covariance, not full quantum-reference-frame dynamics.",
+      "channels": 4,
+      "exists": true,
+      "height": 1122,
+      "id": "qrf_transformation_covariance_audit",
+      "nonblank": true,
+      "path": "output/figures/qrf_transformation_covariance_audit.png",
+      "pixel_variance": 0.09958003432494472,
+      "sha256": "9232cf934d0b39be0c8f1ee592c4685c15e330a8a70a60a2ad8b5385c7374415",
+      "source_artifacts": [
+        {
+          "byte_size": 2084,
+          "exists": true,
+          "path": "output/data/qrf_transformation_covariance_audit.json",
+          "sha256": "a86c4893afe383b7808dd16a41520ed2884620398d70454607839ce51344c293"
+        }
+      ],
+      "width": 3004
+    },
+    {
+      "byte_size": 198201,
+      "caption": "Empirical adapter provenance audit showing that the human-evidence interface remains fail-closed. The colorbar and Y/N cell text encode source identity, ethics basis, preprocessing hash, null model, and empirical-claim permission; synthetic fixtures can be demos only, and unsourced human or practice data remain blocked rather than becoming evidence.",
+      "channels": 4,
+      "exists": true,
+      "height": 1001,
+      "id": "empirical_adapter_provenance_audit",
+      "nonblank": true,
+      "path": "output/figures/empirical_adapter_provenance_audit.png",
+      "pixel_variance": 0.1036267880052504,
+      "sha256": "44db0b45a91a43eee456ea1aacc6b39bc1df01c37e78543d479aaab62c4b6706",
+      "source_artifacts": [
+        {
+          "byte_size": 2656,
+          "exists": true,
+          "path": "output/data/empirical_adapter_provenance_audit.json",
+          "sha256": "57f7401b6e92b4e3ecba0b494db50aba9577f5461d15ceb4b15dbcba3354f51a"
+        }
+      ],
+      "width": 2549
+    },
+    {
+      "byte_size": 200820,
+      "caption": "Mixed-state two-qubit entanglement audit for Bell, separable, and Werner-family cases. The line legend maps negativity, PPT minimum eigenvalue, and the Werner threshold, while the bar legend separates separable controls from the Bell control and notes invalid-density rejections; the figure validates a finite PPT/negativity software surrogate, not empirical or many-body boundary evidence.",
+      "channels": 4,
+      "exists": true,
+      "height": 978,
+      "id": "arbitrary_two_qubit_entanglement_audit",
+      "nonblank": true,
+      "path": "output/figures/arbitrary_two_qubit_entanglement_audit.png",
+      "pixel_variance": 0.049595451007414554,
+      "sha256": "b28171b0083adc819ac3b5f2c37ffe819701ea794d1c44f664092aadd9bf6203",
+      "source_artifacts": [
+        {
+          "byte_size": 6221,
+          "exists": true,
+          "path": "output/data/arbitrary_two_qubit_entanglement_audit.json",
+          "sha256": "381b7339cff41f385fd1dd7e88edf01478b0797040b6cb9f94d489bf0a3e621b"
+        }
+      ],
+      "width": 2654
+    },
+    {
+      "byte_size": 199201,
+      "caption": "General measurement-cover polytope audit for triangle, parity, CHSH-product, and CHSH-Bell scenarios. Hatched residual bars distinguish feasible controls from obstruction cases, and the binary colorbar reports parser, feasibility, and no-disturbance checks; the figure is a finite deterministic-assignment LP audit, not empirical contextuality evidence or a full source-paper proof.",
+      "channels": 4,
+      "exists": true,
+      "height": 978,
+      "id": "general_measurement_cover_polytope_audit",
+      "nonblank": true,
+      "path": "output/figures/general_measurement_cover_polytope_audit.png",
+      "pixel_variance": 0.1098206510982608,
+      "sha256": "d4a43dd1482c30acd7ac0c76eb2b38cda9abaaf097698c937e19c7fd91a4b6ec",
+      "source_artifacts": [
+        {
+          "byte_size": 15501,
+          "exists": true,
+          "path": "output/data/general_measurement_cover_polytope_audit.json",
+          "sha256": "db7631042678d9afa56e0083e131215f8a2a71daf4106ae55a84ef619d2054a3"
+        }
+      ],
+      "width": 2725
+    },
+    {
+      "byte_size": 203754,
+      "caption": "Thermodynamic channel-cost audit over finite CPTP maps and input states. The heatmap colorbar encodes Landauer lower bounds in kBT units, cell text gives numeric costs, and the hatched log-scale bars show non-CPTP controls rejected; the figure is finite entropy accounting, not measured heat or physical qFEP thermodynamics.",
+      "channels": 4,
+      "exists": true,
+      "height": 978,
+      "id": "thermodynamic_channel_cost_audit",
+      "nonblank": true,
+      "path": "output/figures/thermodynamic_channel_cost_audit.png",
+      "pixel_variance": 0.0825129102218563,
+      "sha256": "b9fd66a47023169e2d63d36c08f4c45f8b538b176ad9b647332ac48f757ea585",
+      "source_artifacts": [
+        {
+          "byte_size": 5216,
+          "exists": true,
+          "path": "output/data/thermodynamic_channel_cost_audit.json",
+          "sha256": "69eca5fd090135d14e88667f5fa870e445c612ccee703129ed806039284b561d"
+        }
+      ],
+      "width": 2701
+    },
+    {
+      "byte_size": 249002,
+      "caption": "Sparse exact boundary-screen scaling audit across six, eight, and ten qubits. The entropy colorbar and cell text encode reduced entropy and observer/control labels, while the line legend contrasts observer-cut entropy with nonzero amplitude density; this validates finite sparse software scaling only, not empirical or full many-body QRF evidence.",
+      "channels": 4,
+      "exists": true,
+      "height": 978,
+      "id": "sparse_boundary_screen_scaling_audit",
+      "nonblank": true,
+      "path": "output/figures/sparse_boundary_screen_scaling_audit.png",
+      "pixel_variance": 0.06912911176541361,
+      "sha256": "45fb81cfdbafe08659fdbdfd9f0009b033fdb835a9710c96c90c16e30c0889d3",
+      "source_artifacts": [
+        {
+          "byte_size": 11798,
+          "exists": true,
+          "path": "output/data/sparse_boundary_screen_scaling_audit.json",
+          "sha256": "8818c9cc4556433d9bacffeec9205332ec3e8225076db296185f5f258f155915"
+        }
+      ],
+      "width": 2798
+    },
+    {
+      "byte_size": 215152,
+      "caption": "QRF frame-covariance toy audit over finite density matrices and probability vectors. The binary colorbar marks transform acceptance and drift flags, while the grouped-bar legend separates spectrum, reduced-entropy, and probability residuals for admissible unitary/permutation maps with a disclosed display floor for exact-zero residuals; the figure supports only finite covariance checks, not full quantum-reference-frame physics.",
+      "channels": 4,
+      "exists": true,
+      "height": 980,
+      "id": "qrf_frame_covariance_toy_audit",
+      "nonblank": true,
+      "path": "output/figures/qrf_frame_covariance_toy_audit.png",
+      "pixel_variance": 0.07515665788107623,
+      "sha256": "d728e0cf64e2f3799b1e5fd56f87147442538441358f2341b74ecb805d2e9efb",
+      "source_artifacts": [
+        {
+          "byte_size": 2595,
+          "exists": true,
+          "path": "output/data/qrf_frame_covariance_toy_audit.json",
+          "sha256": "26f80bde903e04bd4a447a17d254f5fd3f33e1ecd01ded0f90e38aedb263a9b4"
+        }
+      ],
+      "width": 2749
+    },
+    {
+      "byte_size": 394956,
+      "caption": "Quantum roadmap readiness matrix separating validated finite simulations from blocked future evidence classes. The binary colorbar and Y/N cell text encode whether each roadmap item has an artifact, schema, validator, negative control, and allowed manuscript claim; future rows remain blocked, so the figure is a roadmap governance audit, not evidence that the full qFEP or empirical adapters are implemented.",
+      "channels": 4,
+      "exists": true,
+      "height": 2262,
+      "id": "quantum_roadmap_readiness_matrix",
+      "nonblank": true,
+      "path": "output/figures/quantum_roadmap_readiness_matrix.png",
+      "pixel_variance": 0.1412742717571366,
+      "sha256": "37659287c44b7783517e766087393cf4209f19a3dc70a214caa9f096c26f5401",
+      "source_artifacts": [
+        {
+          "byte_size": 22810,
+          "exists": true,
+          "path": "output/data/quantum_roadmap_readiness_matrix.json",
+          "sha256": "ace0a7c8d1ce637bcf0521de09b435b24affbf335eb82bfac55851b06455d1c6"
+        }
+      ],
+      "width": 2845
+    },
+    {
+      "byte_size": 183735,
+      "caption": "Active-inference profile comparison for separation-constrained, opacified, and post-dual QRF deployments. Short labels are resolved in the profile legend, colored bars encode profile free energy and posterior mass, the sign annotation states that lower free energy ranks higher under the finite software posterior, and the external action legend maps stacked counts to explicit actions from profile-specific A, B, C, and D arrays; this is not empirical evidence for any ontology or practice outcome.",
+      "channels": 4,
+      "exists": true,
+      "height": 1294,
+      "id": "pymdp_profile_comparison",
+      "nonblank": true,
+      "path": "output/figures/pymdp_profile_comparison.png",
+      "pixel_variance": 0.0931005868525521,
+      "sha256": "44164e90708f4f582740b8171a5dc7c44a5f0b3fe1da11bc525eb0145d6f2414",
+      "source_artifacts": [
+        {
+          "byte_size": 13834,
+          "exists": true,
+          "path": "output/data/pymdp_profile_comparison.json",
+          "sha256": "00392acb38a284213150acce154e1e0b88b8494c636adfc0af0ae47956b6578b"
+        },
+        {
+          "byte_size": 110786,
+          "exists": true,
+          "path": "output/data/pymdp_policy_trace.json",
+          "sha256": "6aadab6206e29a45888353b97879f293a847719d27fb01633c562e2de12e59a5"
+        },
+        {
+          "byte_size": 84459,
+          "exists": true,
+          "path": "output/data/pymdp_runtime_diagnostics_log.json",
+          "sha256": "be14dc571d9ddaf736ad6b7ba209f7bded780cb7d025f8556beb5ee240f9197b"
+        }
+      ],
+      "width": 3038
+    },
+    {
+      "byte_size": 207664,
+      "caption": "Deterministic pymdp posterior trajectory over P(contextual_post_dual state) for each QRF profile. The external line legend maps short profile labels to full deployment names, hollow square markers identify perturbation steps, and the axes show a replayed finite trace rather than an empirical time series or evidence for an ontological sector.",
+      "channels": 4,
+      "exists": true,
+      "height": 1120,
+      "id": "posterior_trajectory",
+      "nonblank": true,
+      "path": "output/figures/posterior_trajectory.png",
+      "pixel_variance": 0.02447141276483018,
+      "sha256": "1359ffbed25c54304cc92b1b60a86434cb04b758e373164996bdd92c751826be",
+      "source_artifacts": [
+        {
+          "byte_size": 13834,
+          "exists": true,
+          "path": "output/data/pymdp_profile_comparison.json",
+          "sha256": "00392acb38a284213150acce154e1e0b88b8494c636adfc0af0ae47956b6578b"
+        },
+        {
+          "byte_size": 110786,
+          "exists": true,
+          "path": "output/data/pymdp_policy_trace.json",
+          "sha256": "6aadab6206e29a45888353b97879f293a847719d27fb01633c562e2de12e59a5"
+        },
+        {
+          "byte_size": 84459,
+          "exists": true,
+          "path": "output/data/pymdp_runtime_diagnostics_log.json",
+          "sha256": "be14dc571d9ddaf736ad6b7ba209f7bded780cb7d025f8556beb5ee240f9197b"
+        }
+      ],
+      "width": 2644
+    },
+    {
+      "byte_size": 328005,
+      "caption": "Supplemental pymdp runtime validation dashboard for the structured event log. Panels report model normalization, runtime recomputation residuals, replay controls, and the largest seeded profile-null contrasts; colors, legends, and tolerance lines mark QA status only, not empirical, clinical, neural, practice-efficacy, awakening, or physical qFEP evidence.",
+      "channels": 4,
+      "exists": true,
+      "height": 1750,
+      "id": "pymdp_runtime_validation_dashboard",
+      "nonblank": true,
+      "path": "output/figures/pymdp_runtime_validation_dashboard.png",
+      "pixel_variance": 0.07940922527735364,
+      "sha256": "d7c257ab0da2f9df2e39f1fb9b72304d0fe33769ba57715de95b70958a454198",
+      "source_artifacts": [
+        {
+          "byte_size": 84459,
+          "exists": true,
+          "path": "output/data/pymdp_runtime_diagnostics_log.json",
+          "sha256": "be14dc571d9ddaf736ad6b7ba209f7bded780cb7d025f8556beb5ee240f9197b"
+        },
+        {
+          "byte_size": 7846,
+          "exists": true,
+          "path": "output/data/pymdp_generative_model_audit.json",
+          "sha256": "0e40eebc010ac40099271cb3ac724c114442dea2c61121a9cf97521d407f501c"
+        },
+        {
+          "byte_size": 110786,
+          "exists": true,
+          "path": "output/data/pymdp_policy_trace.json",
+          "sha256": "6aadab6206e29a45888353b97879f293a847719d27fb01633c562e2de12e59a5"
+        },
+        {
+          "byte_size": 13236,
+          "exists": true,
+          "path": "output/data/stochastic_effect_size_audit.json",
+          "sha256": "e22c3dc331c1f528ad12a4e129ee55032c79f5b267fff081f11423a68e969aed"
+        }
+      ],
+      "width": 3037
+    },
+    {
+      "byte_size": 67840,
+      "caption": "Single-trace entropy, switching, variance, and near-criticality diagnostics from a simulated boundary-channel trajectory. The bar legend marks values as one simulated trace, and the stochastic ensemble figure carries the interval/null-control result; neither figure is empirical evidence for neural criticality or contemplative realization.",
+      "channels": 4,
+      "exists": true,
+      "height": 807,
+      "id": "criticality_proxy_panels",
+      "nonblank": true,
+      "path": "output/figures/criticality_proxy_panels.png",
+      "pixel_variance": 0.0775747162230533,
+      "sha256": "d6e17e559bc16d0fa9bc5e988f369036d4e643c61ce328e02d62a411df288693",
+      "source_artifacts": [
+        {
+          "byte_size": 809,
+          "exists": true,
+          "path": "output/reports/criticality_proxy_report.json",
+          "sha256": "1a998ae6a0fae892f5c4a0b7c5f54043733f2388707a935644ae862038180958"
+        }
+      ],
+      "width": 1646
+    },
+    {
+      "byte_size": 192105,
+      "caption": "Seeded stochastic active-inference ensemble for criticality-style indicators. Shared short profile labels, a single external legend, violet profile bars, hatched gray null-control bars, direction annotations, and 95 percent intervals over replayable seeds show simulated trajectory variability only; the figure is not empirical evidence, not neural measurement, not clinical outcome evidence, and not practice-efficacy evidence.",
+      "channels": 4,
+      "exists": true,
+      "height": 1307,
+      "id": "criticality_stochastic_ensemble",
+      "nonblank": true,
+      "path": "output/figures/criticality_stochastic_ensemble.png",
+      "pixel_variance": 0.07670292747874687,
+      "sha256": "e72a99ae226989d82151cc8f50a6f384f62b7bf27e615504bf10f2c57b8a4797",
+      "source_artifacts": [
+        {
+          "byte_size": 387594,
+          "exists": true,
+          "path": "output/data/criticality_stochastic_ensemble.json",
+          "sha256": "68fcaf95cf7f02d5e1c4d9b975fe1efca7c446625fba4d2419cdbde682f4b4b4"
+        }
+      ],
+      "width": 2894
+    },
+    {
+      "byte_size": 177399,
+      "caption": "Measured criticality signatures for the seeded boundary-channel trajectories. Panel A bars encode the measured branching ratio per profile against hatched null controls with a dashed sigma-equals-one balance line, and Panel B is a histogram of single-trace avalanche sizes; the colored bars and dashed reference line are seeded software trajectory diagnostics only, and the figure is not evidence of neural avalanches, branching, or empirical criticality.",
+      "channels": 4,
+      "exists": true,
+      "height": 1099,
+      "id": "criticality_signatures",
+      "nonblank": true,
+      "path": "output/figures/criticality_signatures.png",
+      "pixel_variance": 0.05262386060421435,
+      "sha256": "b891536e3b844b6c40d9f8bbe05703a23e99cda7e7b3ac1b9c514cee91c99de7",
+      "source_artifacts": [
+        {
+          "byte_size": 387594,
+          "exists": true,
+          "path": "output/data/criticality_stochastic_ensemble.json",
+          "sha256": "68fcaf95cf7f02d5e1c4d9b975fe1efca7c446625fba4d2419cdbde682f4b4b4"
+        },
+        {
+          "byte_size": 809,
+          "exists": true,
+          "path": "output/reports/criticality_proxy_report.json",
+          "sha256": "1a998ae6a0fae892f5c4a0b7c5f54043733f2388707a935644ae862038180958"
+        }
+      ],
+      "width": 2921
+    },
+    {
+      "byte_size": 217197,
+      "caption": "Finite scope-of-concern surrogate across QRF profiles. Panel C compares active separation-prior asymmetry with a hatched precision-ablation control; Panel D shows per-channel action influence against an action-shuffled mean. The figure is a finite policy-scope surrogate only, not a measure of compassion, well-being, practice efficacy, or affective outcome.",
+      "channels": 4,
+      "exists": true,
+      "height": 1185,
+      "id": "compassion_scope_widening",
+      "nonblank": true,
+      "path": "output/figures/compassion_scope_widening.png",
+      "pixel_variance": 0.046912702747704635,
+      "sha256": "4e6759c955d9e9e4400fca47db9547be80ee2365c073c756c304ffcab9d679c3",
+      "source_artifacts": [
+        {
+          "byte_size": 4715,
+          "exists": true,
+          "path": "output/data/compassion_scope_audit.json",
+          "sha256": "235b4b481005008720ce6da7eaeefec2bbded2bfe18a26b0307bf41e3ae00463"
+        }
+      ],
+      "width": 3038
+    },
+    {
+      "byte_size": 183813,
+      "caption": "Separation-prior emergence across the empowerment grid. Lines encode the measured factored (self/env) and unfactored model prediction error and their dashed advantage curve as the fraction of action-contingent channels rises; the factored model buys accuracy only when agency is present, and the advantage's rise with empowerment is expected by construction, making this a correctness check rather than a discriminating null. It is a finite deterministic predictor comparison and not a developmental, neural, or empirical empowerment claim.",
+      "channels": 4,
+      "exists": true,
+      "height": 1071,
+      "id": "separation_prior_emergence",
+      "nonblank": true,
+      "path": "output/figures/separation_prior_emergence.png",
+      "pixel_variance": 0.026188017683290876,
+      "sha256": "560f038578bd9b7b562dbe9c51a0ea9f855aa6116aa5606a2e336dc98657d1ec",
+      "source_artifacts": [
+        {
+          "byte_size": 1813,
+          "exists": true,
+          "path": "output/data/separation_prior_emergence_audit.json",
+          "sha256": "b4faba4e08929e4d1c912a9b16f6c4a7c868a9828688f81309d3950d7be1b5d2"
+        }
+      ],
+      "width": 2030
+    },
+    {
+      "byte_size": 171078,
+      "caption": "Generalisation of no-self-evidence to arbitrary internal boundaries. Grouped bars encode the god's-eye entanglement entropy across each environment internal bipartition for a separable versus an entangled environment, while the overlaid markers encode the agent's accessible marginal drift, which stays near zero; the agent cannot adjudicate the internal cut from its marginal, and this is a finite pure-state linear-algebra audit, not a physical or observer-boundary measurement.",
+      "channels": 4,
+      "exists": true,
+      "height": 1071,
+      "id": "internal_cut_unmeasurability",
+      "nonblank": true,
+      "path": "output/figures/internal_cut_unmeasurability.png",
+      "pixel_variance": 0.05138730186346982,
+      "sha256": "6be9c880f7d3e6f9c3f73fa8d742599160218748d1556ebdd68246fbc312068b",
+      "source_artifacts": [
+        {
+          "byte_size": 2622,
+          "exists": true,
+          "path": "output/data/internal_cut_unmeasurability_audit.json",
+          "sha256": "43db8b772213d24ee2e7303468467db56ff91b0e905c5091f91484bcc5c07743"
+        }
+      ],
+      "width": 2412
+    },
+    {
+      "byte_size": 217929,
+      "caption": "Practice protocols rendered as bounded model-intervention deltas. Horizontal bars encode each protocol's metacognitive-access, prior-precision, sector-revisability, compassion-scope, and self-privilege deltas, color encodes increase versus decrease, a dashed line marks no intervention, and each protocol's safety boundary is printed on the figure; these are finite software-interface specifications only and are not therapeutic advice, a claim of realization, a moral prescription, or a clinical protocol.",
+      "channels": 4,
+      "exists": true,
+      "height": 1346,
+      "id": "practice_policy_scope_map",
+      "nonblank": true,
+      "path": "output/figures/practice_policy_scope_map.png",
+      "pixel_variance": 0.050515350830086916,
+      "sha256": "228d0d9a4b01db7269669300d7171789bba91ef95810cba60526ad21ec61d646",
+      "source_artifacts": [
+        {
+          "byte_size": 1307,
+          "exists": true,
+          "path": "output/data/practice_protocol_map.json",
+          "sha256": "7831f2e3de6323cbc90010eb6bca1f4ecef7f176a5601d132303d0a6295d12d7"
+        }
+      ],
+      "width": 2605
+    },
+    {
+      "byte_size": 254985,
+      "caption": "Seeded stochastic profile-null effect-size audit for active-inference ensembles. Grouped short-profile rows use horizontal Cliff's-delta bars, hatches identify Holm-adjusted nonsignificant contrasts, right-side labels give profile-vs-null direction, adjusted p-values, and pooled bootstrap intervals, and the zero reference line separates profile-higher from null-higher effects; this is a finite simulation robustness audit, not empirical, neural, clinical, or practice-efficacy evidence.",
+      "channels": 4,
+      "exists": true,
+      "height": 1394,
+      "id": "stochastic_effect_size_forest",
+      "nonblank": true,
+      "path": "output/figures/stochastic_effect_size_forest.png",
+      "pixel_variance": 0.059942062167128524,
+      "sha256": "3debc50be6923a300090bb9c3d46644237eea99cc6c072a2aabe608a453de00c",
+      "source_artifacts": [
+        {
+          "byte_size": 13236,
+          "exists": true,
+          "path": "output/data/stochastic_effect_size_audit.json",
+          "sha256": "e22c3dc331c1f528ad12a4e129ee55032c79f5b267fff081f11423a68e969aed"
+        }
+      ],
+      "width": 2018
+    },
+    {
+      "byte_size": 307874,
+      "caption": "BMR robustness resampling over the prior-precision/access grid. The left panel shows bootstrap pruning rates over noise rows and the right panel shows Delta-F sign stability with compact confidence intervals; both panels report finite software robustness only, not human self-model or practice-efficacy claims.",
+      "channels": 4,
+      "exists": true,
+      "height": 1583,
+      "id": "bmr_robustness_resampling",
+      "nonblank": true,
+      "path": "output/figures/bmr_robustness_resampling.png",
+      "pixel_variance": 0.13231525676134354,
+      "sha256": "57c3ae73e2dd4e3eba4d76d0f0fb479ca9eac9ab7989cdfa739d06a0456fc9e7",
+      "source_artifacts": [
+        {
+          "byte_size": 18300,
+          "exists": true,
+          "path": "output/data/bmr_robustness_resampling_audit.json",
+          "sha256": "eae12ed2f0ee6482ff25a116939eb8c42e12b22df0ab8a36d32adcca5f70b78e"
+        }
+      ],
+      "width": 3133
+    },
+    {
+      "byte_size": 205812,
+      "caption": "Quantum-trajectory convergence audit for the finite Lindblad surrogate. The line plot shows max trace-distance residual across trajectory counts on a log-scaled axis, while the bar panel contrasts a too-few-trajectories negative control with the largest ensemble against the validation threshold; this checks stochastic software convergence, not physical qFEP realization or empirical quantum evidence.",
+      "channels": 4,
+      "exists": true,
+      "height": 948,
+      "id": "quantum_trajectory_convergence",
+      "nonblank": true,
+      "path": "output/figures/quantum_trajectory_convergence.png",
+      "pixel_variance": 0.0679971040210851,
+      "sha256": "4063473e97aca40dfec4756e2ba787615adace134fafb99f810c841a859e3517",
+      "source_artifacts": [
+        {
+          "byte_size": 2184,
+          "exists": true,
+          "path": "output/data/quantum_trajectory_convergence_audit.json",
+          "sha256": "1627d3b3159a5994d564c938e6b871039fbfaf494fc636c749d56c237b590a0f"
+        }
+      ],
+      "width": 2633
+    },
+    {
+      "byte_size": 282958,
+      "caption": "Shared visual semantic palette ledger for the publication figures. Color swatches and hatch marks bind pass, fail, keep, prune, finite, blocked, stochastic, null-control, quantum, and boundary roles to stable encodings so figure colors cannot silently change meaning; this is a visualization QA artifact, not a source of empirical evidence.",
+      "channels": 4,
+      "exists": true,
+      "height": 1163,
+      "id": "visual_semantic_palette_ledger",
+      "nonblank": true,
+      "path": "output/figures/visual_semantic_palette_ledger.png",
+      "pixel_variance": 0.03225025682804345,
+      "sha256": "b66a04e4c437243c0cb4e516ec981e4c99c3f8647fe5133f2e8a0b48daccfefe",
+      "source_artifacts": [
+        {
+          "byte_size": 56721,
+          "exists": true,
+          "path": "figures.yaml",
+          "sha256": "4ebcac72af4d746e7bc49366fa8a13afcb4ac3161c9a38a68990801adcd2cd20"
+        }
+      ],
+      "width": 2431
+    },
+    {
+      "byte_size": 184610,
+      "caption": "Method assumption and falsification map for the finite software chain. The binary colorbar and cell text show whether each method declares hard constraints, modeling choices, assumptions, evidence ceilings, and negative controls, making verifier-first governance visible without treating the method ledger as empirical or physical qFEP evidence.",
+      "channels": 4,
+      "exists": true,
+      "height": 1635,
+      "id": "method_assumption_failure_map",
+      "nonblank": true,
+      "path": "output/figures/method_assumption_failure_map.png",
+      "pixel_variance": 0.17235760127248806,
+      "sha256": "965619745635d1744a8faaec87ca04bc34a44d9574e84f3706a0828f5f990685",
+      "source_artifacts": [
+        {
+          "byte_size": 6621,
+          "exists": true,
+          "path": "output/data/method_assumption_ledger.json",
+          "sha256": "c4dba64c51969bb5f36ddcbf56fae5af76e5edf56ad3da253b315d5a39447b44"
+        },
+        {
+          "byte_size": 5000,
+          "exists": true,
+          "path": "output/data/method_negative_control_inventory.json",
+          "sha256": "a56a0dae7a7fd482d0721df3462c46356b09e59d04c93b198fec58f2d33fc222"
+        }
+      ],
+      "width": 2894
+    },
+    {
+      "byte_size": 342287,
+      "caption": "Claim-source-validation graph linking each public claim to its source role and validation gate. The node and edge legend identifies claim, source, gate, and binding colors so the figure remains an audit map for claim governance, not an additional evidence source.",
+      "channels": 4,
+      "exists": true,
+      "height": 1262,
+      "id": "claim_source_validation_graph",
+      "nonblank": true,
+      "path": "output/figures/claim_source_validation_graph.png",
+      "pixel_variance": 0.028326252122323814,
+      "sha256": "9efd1026e05ea40508df0adaea7e4f0ccdf6608aab9b4f54c4de8c920ea1d515",
+      "source_artifacts": [
+        {
+          "byte_size": 14311,
+          "exists": true,
+          "path": "output/data/source_claim_crosswalk.json",
+          "sha256": "4ebc652cbe6ace887a1bbdd7d1794750a0a6cb844d69624f7051fd7eb0c0d856"
+        }
+      ],
+      "width": 2519
+    },
+    {
+      "byte_size": 1120965,
+      "caption": "Scholarship coverage by source role and manuscript track. The binary colorbar encodes whether a source supports a track, separating primary recapitulation, implementation anchors, background theory, proxy context, and limitations so citation density cannot launder unsupported claims.",
+      "channels": 4,
+      "exists": true,
+      "height": 5993,
+      "id": "scholarship_coverage_matrix",
+      "nonblank": true,
+      "path": "output/figures/scholarship_coverage_matrix.png",
+      "pixel_variance": 0.06022743108958904,
+      "sha256": "74d0135731500b1e55e42ec4bda53216fcfd5d573441548a3a3badf3ae6f56f7",
+      "source_artifacts": [
+        {
+          "byte_size": 76619,
+          "exists": true,
+          "path": "output/data/scholarship_source_matrix.json",
+          "sha256": "301c792db7d46533205b451c612cae2bfe04416434a9db5155856d7d276b3cae"
+        }
+      ],
+      "width": 2556
+    },
+    {
+      "byte_size": 908929,
+      "caption": "Public claim support by citation key, restricted to claims that appear in the source crosswalk and grouped by evidence class. The binary colorbar marks scoped support links while row separators expose formal, finite-simulation, runtime, proxy, and boundary claims; a support link licenses vocabulary or method scope only and does not upgrade an evidence ceiling.",
+      "channels": 4,
+      "exists": true,
+      "height": 2078,
+      "id": "claim_support_matrix",
+      "nonblank": true,
+      "path": "output/figures/claim_support_matrix.png",
+      "pixel_variance": 0.04383422332847278,
+      "sha256": "b437d7c7c0c44ca41e7a7e2c784021b87cc99cfea02a37c8ef624b5023764386",
+      "source_artifacts": [
+        {
+          "byte_size": 58394,
+          "exists": true,
+          "path": "output/data/claim_support_audit.json",
+          "sha256": "ad60aa79e146c32462d51702683181b2ab0c1ec9f7b865c712d83b5f0baa39bf"
+        }
+      ],
+      "width": 4429
+    },
+    {
+      "byte_size": 100401,
+      "caption": "Manuscript claim audit for citation resolution, public claim-ID visibility, and forbidden positive-efficacy language. The pass/fail color legend makes the local language gate visible while preserving the boundary that passing bars do not certify empirical truth.",
+      "channels": 4,
+      "exists": true,
+      "height": 735,
+      "id": "manuscript_claim_audit",
+      "nonblank": true,
+      "path": "output/figures/manuscript_claim_audit.png",
+      "pixel_variance": 0.10666927804507197,
+      "sha256": "dad502493f7745e79f1a759f9d71d05a36197dbb08be8b22d0b1db30796e439d",
+      "source_artifacts": [
+        {
+          "byte_size": 3696,
+          "exists": true,
+          "path": "output/data/manuscript_claim_audit.json",
+          "sha256": "262de40eaf09195621cba6029a9c8283f416f9fea46c5c183f4dc34bb2aa199e"
+        }
+      ],
+      "width": 1793
+    },
+    {
+      "byte_size": 359425,
+      "caption": "Evidence-ceiling stress matrix showing which public claims are bounded by surrogate, empirical, practice, source-role, runtime, quantum, neural, or normative constraints. Rows are grouped by claim class and the binary colorbar marks active stressors, making clear that support, simulation, and validation gates keep prohibited inferences explicit rather than converting finite software checks into empirical, neural, clinical, practice-efficacy, awakening, or physical qFEP evidence.",
+      "channels": 4,
+      "exists": true,
+      "height": 1566,
+      "id": "evidence_ceiling_stress_matrix",
+      "nonblank": true,
+      "path": "output/figures/evidence_ceiling_stress_matrix.png",
+      "pixel_variance": 0.053017625267110485,
+      "sha256": "3dd8b63c439df51dc1de75b945646693acb6507880c9afc589bc5660baa69427",
+      "source_artifacts": [
+        {
+          "byte_size": 15954,
+          "exists": true,
+          "path": "output/data/evidence_ceiling_audit.json",
+          "sha256": "41aa0286954b917e35284d1132aa57904ff871669c355f4177a031b1f3a892bb"
+        }
+      ],
+      "width": 2627
+    },
+    {
+      "byte_size": 322764,
+      "caption": "Claim-context evidence ladder grouping every public claim by evidence class, scoped source-role count, resolved validation gate, and blocked stronger reading. Horizontal bars encode source-role count, circular markers encode gate presence, and hatched amber blocks encode prohibited empirical, neural, clinical, practice-efficacy, awakening, or physical qFEP inferences, so the figure explains how to read claims without adding evidence beyond the ledger.",
+      "channels": 4,
+      "exists": true,
+      "height": 1284,
+      "id": "claim_context_evidence_ladder",
+      "nonblank": true,
+      "path": "output/figures/claim_context_evidence_ladder.png",
+      "pixel_variance": 0.04977716188311478,
+      "sha256": "6669d1cad888793afa1e12d7e52673c220e615811339af00775c83bb639479e2",
+      "source_artifacts": [
+        {
+          "byte_size": 68987,
+          "exists": true,
+          "path": "output/data/claim_context_ledger.json",
+          "sha256": "d4468e8acf0c822bdf63041c5df6b8873d14af07919d210238c60a69ef648f62"
+        },
+        {
+          "byte_size": 58394,
+          "exists": true,
+          "path": "output/data/claim_support_audit.json",
+          "sha256": "ad60aa79e146c32462d51702683181b2ab0c1ec9f7b865c712d83b5f0baa39bf"
+        },
+        {
+          "byte_size": 15954,
+          "exists": true,
+          "path": "output/data/evidence_ceiling_audit.json",
+          "sha256": "41aa0286954b917e35284d1132aa57904ff871669c355f4177a031b1f3a892bb"
+        }
+      ],
+      "width": 2644
+    },
+    {
+      "byte_size": 202422,
+      "caption": "Operational status map for paper equations 1-14, distinguishing source mapping, finite computation, surrogate boundaries, and validation value bindings. The binary colorbar shows which statuses apply, including finite two-qubit quantum controls where implemented and roadmap boundaries where open-system qFEP claims are not yet simulated.",
+      "channels": 4,
+      "exists": true,
+      "height": 1455,
+      "id": "formalism_operation_map",
+      "nonblank": true,
+      "path": "output/figures/formalism_operation_map.png",
+      "pixel_variance": 0.10897048872218093,
+      "sha256": "49826bf2e20c8f8d77c9a52809bf751090b35d598225aa37d80368201de2be0d",
+      "source_artifacts": [
+        {
+          "byte_size": 13199,
+          "exists": true,
+          "path": "output/data/equation_audit.json",
+          "sha256": "f99b7eb0de64586758f2c0f81dada4c3eccce16e89740455e933afcae9021f65"
+        }
+      ],
+      "width": 1893
+    },
+    {
+      "byte_size": 221465,
+      "caption": "The QRF sector situation for early reading, showing one shared boundary screen of channels b0-b5 read through three sector lenses. A top row of cells carries the evidenced observation symbols, dotted vertical lines tie each bit to the separation-constrained, opacified, and post-dual lens rows below, a legend maps each lens color to a sector label, and a per-lens sector count records how finely each lens carves the screen, so the figure shows that the partitioning changes while the evidenced bitstream and its claim boundary stay finite software surrogates rather than empirical, neural, ontological, or physical qFEP evidence.",
+      "channels": 4,
+      "exists": true,
+      "height": 1545,
+      "id": "qrf_sector_situation",
+      "nonblank": true,
+      "path": "output/figures/qrf_sector_situation.png",
+      "pixel_variance": 0.053458246445067824,
+      "sha256": "1b25ed0e8b1d9fe5b1d5be46e671c041d510890088a863652ce62fb5e44d6440",
+      "source_artifacts": [
+        {
+          "byte_size": 6724,
+          "exists": true,
+          "path": "output/data/qrf_boundary_channel_ledger.json",
+          "sha256": "891aba4a29743399f347c4f9df0257b59f4af218c92ff7bcb104174dc59dc29a"
+        },
+        {
+          "byte_size": 14191,
+          "exists": true,
+          "path": "output/data/qrf_boundary_indistinguishability.json",
+          "sha256": "65ada862f5314bc039e73be6686d9e7b104c79ae7c252e9bd9d26757ce63f2c4"
+        }
+      ],
+      "width": 2989
+    },
+    {
+      "byte_size": 357832,
+      "caption": "Boundary use versus boundary ontology rendered as a stepwise permission diagram for the no-self-evidence claim. Step 1 shows the shared finite b0-b5 bitstream as the only evidenced object; Step 2 licenses reading those same bits through admissible QRF sector labels for prediction, policy selection, and model comparison when the equal-distribution audit passes; Step 3 blocks treating any chosen sector frame as a real self/world boundary because the perturbation control fails. Color encodes the licensed and blocked lanes, while the legend names the two verdicts, keeping the figure a finite software audit and not empirical, neural, clinical, practice-efficacy, or physical qFEP evidence.",
+      "channels": 4,
+      "exists": true,
+      "height": 1691,
+      "id": "boundary_use_vs_ontology",
+      "nonblank": true,
+      "path": "output/figures/boundary_use_vs_ontology.png",
+      "pixel_variance": 0.023744445658331663,
+      "sha256": "85df599649e6b65c1d6cf642bccea585f0b621dbb384c6882676c0b465a5ace1",
+      "source_artifacts": [
+        {
+          "byte_size": 14191,
+          "exists": true,
+          "path": "output/data/qrf_boundary_indistinguishability.json",
+          "sha256": "65ada862f5314bc039e73be6686d9e7b104c79ae7c252e9bd9d26757ce63f2c4"
+        }
+      ],
+      "width": 3523
+    },
+    {
+      "byte_size": 247831,
+      "caption": "Life-cycle of the separation prior's net value, the change in free energy when the prior is removed, against metacognitive access, drawn as one line per prior precision rather than a mean. The bolded arc is the precision whose net value actually crosses keep to prune (the weakest admissible precision for the current sweep); it starts positive in the shaded keep region and falls into the shaded prune region as access rises, while the fainter stronger-precision lines stay in the prune region throughout. The dashed marker locates the useful-to-dispensable crossing, and the figure is a finite software sweep, not a developmental, neural, contemplative, or clinical claim.",
+      "channels": 4,
+      "exists": true,
+      "height": 1347,
+      "id": "separation_prior_net_value",
+      "nonblank": true,
+      "path": "output/figures/separation_prior_net_value.png",
+      "pixel_variance": 0.02454661435444415,
+      "sha256": "ee392aced7a0eda3b576b921a4d6652a3675dfc2a8cd2d3a470cd20b7933a2de",
+      "source_artifacts": [
+        {
+          "byte_size": 24401,
+          "exists": true,
+          "path": "output/data/bmr_sweep.json",
+          "sha256": "940b1f040f06b6695468a5f24d527e368b75eee1959e56d538a28549bfe8adeb"
+        },
+        {
+          "byte_size": 1813,
+          "exists": true,
+          "path": "output/data/separation_prior_emergence_audit.json",
+          "sha256": "b4faba4e08929e4d1c912a9b16f6c4a7c868a9828688f81309d3950d7be1b5d2"
+        }
+      ],
+      "width": 2411
+    },
+    {
+      "byte_size": 168689,
+      "caption": "Minimum bipartition negativity per fixture for the multipartite and higher-dimensional entanglement witness suite. Bars encode the smallest single-subsystem-versus-rest negativity for each GHZ, W, and qutrit fixture, colored to separate entangled fixtures that are detected on every cut from the separable product false-positive controls that must stay at zero negativity; the legend maps the two colors and the figure is a finite PPT/negativity witness over fixed states, not a genuine-multipartite-entanglement certificate and not empirical, neural, or physical qFEP evidence.",
+      "channels": 4,
+      "exists": true,
+      "height": 1210,
+      "id": "multipartite_witness_negativity",
+      "nonblank": true,
+      "path": "output/figures/multipartite_witness_negativity.png",
+      "pixel_variance": 0.054670945651150916,
+      "sha256": "4c610783ab678c7808dd4fc499a631ab5e578b80b778c81a7d11b2a859787b14",
+      "source_artifacts": [
+        {
+          "byte_size": 9568,
+          "exists": true,
+          "path": "output/data/multipartite_witness_suite_audit.json",
+          "sha256": "50d6693b0dd1577bfff72038489b3771453fa63799bf6ece907d0ebb3e32f02d"
+        }
+      ],
+      "width": 2942
+    },
+    {
+      "byte_size": 181638,
+      "caption": "Tensor-network matrix-product-state benchmark shown as two panels. Panel A bars encode the maximum bond dimension per fixture, with entangled GHZ and W states staying at bond two and product states at bond one as the screen grows, demonstrating tractability beyond exact state-vector enumeration; Panel B bars encode the bond-one truncation error, which is positive on entangled fixtures and zero on products, the discriminating control. The figure is a finite exact-MPS benchmark over toy states, not a large-scale many-body simulation and not empirical evidence.",
+      "channels": 4,
+      "exists": true,
+      "height": 1164,
+      "id": "tensor_network_scaling",
+      "nonblank": true,
+      "path": "output/figures/tensor_network_scaling.png",
+      "pixel_variance": 0.09641716385221037,
+      "sha256": "50ba0c2d6d0f66108e93b06fe57529b3c542b290b8b61e6ec29a8421a35c44e8",
+      "source_artifacts": [
+        {
+          "byte_size": 2627,
+          "exists": true,
+          "path": "output/data/tensor_network_benchmark_audit.json",
+          "sha256": "1252f79354b3166564d3cdfcbe3e128e155c95354c057c1022202f5d15b99293"
+        }
+      ],
+      "width": 2962
+    },
+    {
+      "byte_size": 160557,
+      "caption": "Collision-model thermalization surrogate shown as grouped bars of the trace distance from the system qubit to the fixed ancilla, initial versus final, for each coupling strength. The weak and strong partial-SWAP couplings collapse the final distance toward zero while the zero-coupling control leaves the final distance equal to the initial value, the discriminating control; the legend maps the initial and final bars. The figure is a finite deterministic collision surrogate, not a physical heat bath or thermodynamic measurement and not empirical evidence.",
+      "channels": 4,
+      "exists": true,
+      "height": 1210,
+      "id": "collision_model_relaxation",
+      "nonblank": true,
+      "path": "output/figures/collision_model_relaxation.png",
+      "pixel_variance": 0.07002137680390284,
+      "sha256": "6b71baf779719de185b430defc91d23ec013d3c84593bc67a087e09e905da13f",
+      "source_artifacts": [
+        {
+          "byte_size": 1421,
+          "exists": true,
+          "path": "output/data/collision_model_thermalization_audit.json",
+          "sha256": "0960cfe31dbaa3fda7ae103dd60720d2c17071b95f294fe5458c03d76dd3aec6"
+        }
+      ],
+      "width": 2462
+    },
+    {
+      "byte_size": 246253,
+      "caption": "n-cycle contextuality scenario library shown as a feasibility matrix. Rows are cycle lengths labeled odd or even and two-colorable or frustrated, columns are the perfect anti-correlation, quantum, and uncorrelated behaviors, and each colored cell encodes whether the noncontextual-polytope linear program is feasible (a noncontextual model exists) or infeasible (contextual). Odd cycles including the five-cycle pentagon are contextual while even cycles are not, cross-checked against graph two-colorability; the matrix records measured LP feasibility, not an asserted optimal violation, and is not empirical evidence.",
+      "channels": 4,
+      "exists": true,
+      "height": 1301,
+      "id": "n_cycle_contextuality_panel",
+      "nonblank": true,
+      "path": "output/figures/n_cycle_contextuality_panel.png",
+      "pixel_variance": 0.09639372806033629,
+      "sha256": "866329cbd29482da39a68b2fc1347455afe0c3e30690322dc52cf734d33b3d8b",
+      "source_artifacts": [
+        {
+          "byte_size": 2294,
+          "exists": true,
+          "path": "output/data/n_cycle_contextuality_library_audit.json",
+          "sha256": "a39c8d798cc33db0f96a0350ab70f15c3168e4dbcf304bc5a98672f0c7f04b57"
+        }
+      ],
+      "width": 2253
+    },
+    {
+      "byte_size": 366083,
+      "caption": "Data-processing monotonicity surrogate for opacification as forgetting. Panel A shows trace distance never rising after CPTP channels; Panel B shows the transpose control failing complete positivity; Panel C shows selective post-selection can raise distinguishability when the record is kept. The figure is a finite qubit-channel surrogate, not empirical evidence or a physical qFEP, neural, clinical, or contemplative claim.",
+      "channels": 4,
+      "exists": true,
+      "height": 1256,
+      "id": "data_processing_monotonicity",
+      "nonblank": true,
+      "path": "output/figures/data_processing_monotonicity.png",
+      "pixel_variance": 0.05989938758584539,
+      "sha256": "406041ee9c06734700024c129b6d61230ebd7a0b83a8cd4c2fe6b5b3d0629e55",
+      "source_artifacts": [
+        {
+          "byte_size": 12405,
+          "exists": true,
+          "path": "output/data/data_processing_monotonicity_audit.json",
+          "sha256": "feb7a7a6ae9b34e14730a2a2897c2f09d587087bdb5ff754cd18991e645f5861"
+        }
+      ],
+      "width": 3758
+    },
+    {
+      "byte_size": 213226,
+      "caption": "Markov-blanket discovery as a conditional-independence surrogate. Precision support reveals the planted internal/blanket/external split, marginal correlation hides it, and Panel C shows recovery succeeds from precision or partial correlation but not from the marginal threshold. The figure is finite linear algebra, not empirical, neural, developmental, clinical, or physical qFEP evidence.",
+      "channels": 4,
+      "exists": true,
+      "height": 1164,
+      "id": "markov_blanket_discovery",
+      "nonblank": true,
+      "path": "output/figures/markov_blanket_discovery.png",
+      "pixel_variance": 0.07016612880938415,
+      "sha256": "a9dc483557bfa6cd4d1ab479948f315194d0cd0ebb57b35c66d3ea3b23672725",
+      "source_artifacts": [
+        {
+          "byte_size": 6268,
+          "exists": true,
+          "path": "output/data/markov_blanket_discovery_audit.json",
+          "sha256": "f1a3f8bd4678b325b6d13d7a2d3b4684361cd3c395b81152623a2fc9587ed9e5"
+        }
+      ],
+      "width": 3477
+    }
+  ],
+  "schema": "realizing_emptiness.figure_integrity_audit.v1",
+  "source_map_figure_count": 59,
+  "source_map_path": "output/data/figure_source_map.json",
+  "source_map_sha256": "44831795931152664e164e0f3c172e5438c979570d5d1132b118d769d3ce2d01",
+  "undersized_figures": []
+}

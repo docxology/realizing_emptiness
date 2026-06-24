@@ -1,0 +1,360 @@
+{
+  "all_controls_pass": true,
+  "channel_row_count": 27,
+  "channel_rows": [
+    {
+      "channel": "phase_damping",
+      "pair": "z_axis_pair",
+      "relative_entropy_after_bits": 0.678060700444,
+      "relative_entropy_before_bits": 0.692853352233,
+      "relative_entropy_nonincreasing": true,
+      "strength": 0.2,
+      "trace_distance_after": 0.469574275275,
+      "trace_distance_before": 0.474341649025,
+      "trace_distance_nonincreasing": true
+    },
+    {
+      "channel": "phase_damping",
+      "pair": "z_axis_pair",
+      "relative_entropy_after_bits": 0.656102247314,
+      "relative_entropy_before_bits": 0.692853352233,
+      "relative_entropy_nonincreasing": true,
+      "strength": 0.5,
+      "trace_distance_after": 0.462331050223,
+      "trace_distance_before": 0.474341649025,
+      "trace_distance_nonincreasing": true
+    },
+    {
+      "channel": "phase_damping",
+      "pair": "z_axis_pair",
+      "relative_entropy_after_bits": 0.627235475353,
+      "relative_entropy_before_bits": 0.692853352233,
+      "relative_entropy_nonincreasing": true,
+      "strength": 0.9,
+      "trace_distance_after": 0.45249309387,
+      "trace_distance_before": 0.474341649025,
+      "trace_distance_nonincreasing": true
+    },
+    {
+      "channel": "amplitude_damping",
+      "pair": "z_axis_pair",
+      "relative_entropy_after_bits": 0.454018762831,
+      "relative_entropy_before_bits": 0.692853352233,
+      "relative_entropy_nonincreasing": true,
+      "strength": 0.2,
+      "trace_distance_after": 0.384187454246,
+      "trace_distance_before": 0.474341649025,
+      "trace_distance_nonincreasing": true
+    },
+    {
+      "channel": "amplitude_damping",
+      "pair": "z_axis_pair",
+      "relative_entropy_after_bits": 0.232338222108,
+      "relative_entropy_before_bits": 0.692853352233,
+      "relative_entropy_nonincreasing": true,
+      "strength": 0.5,
+      "trace_distance_after": 0.248746859277,
+      "trace_distance_before": 0.474341649025,
+      "trace_distance_nonincreasing": true
+    },
+    {
+      "channel": "amplitude_damping",
+      "pair": "z_axis_pair",
+      "relative_entropy_after_bits": 0.041989053686,
+      "relative_entropy_before_bits": 0.692853352233,
+      "relative_entropy_nonincreasing": true,
+      "strength": 0.9,
+      "trace_distance_after": 0.065383484153,
+      "trace_distance_before": 0.474341649025,
+      "trace_distance_nonincreasing": true
+    },
+    {
+      "channel": "depolarizing",
+      "pair": "z_axis_pair",
+      "relative_entropy_after_bits": 0.432534234754,
+      "relative_entropy_before_bits": 0.692853352233,
+      "relative_entropy_nonincreasing": true,
+      "strength": 0.2,
+      "trace_distance_after": 0.37947331922,
+      "trace_distance_before": 0.474341649025,
+      "trace_distance_nonincreasing": true
+    },
+    {
+      "channel": "depolarizing",
+      "pair": "z_axis_pair",
+      "relative_entropy_after_bits": 0.164781272497,
+      "relative_entropy_before_bits": 0.692853352233,
+      "relative_entropy_nonincreasing": true,
+      "strength": 0.5,
+      "trace_distance_after": 0.237170824513,
+      "trace_distance_before": 0.474341649025,
+      "trace_distance_nonincreasing": true
+    },
+    {
+      "channel": "depolarizing",
+      "pair": "z_axis_pair",
+      "relative_entropy_after_bits": 0.006495984038,
+      "relative_entropy_before_bits": 0.692853352233,
+      "relative_entropy_nonincreasing": true,
+      "strength": 0.9,
+      "trace_distance_after": 0.047434164903,
+      "trace_distance_before": 0.474341649025,
+      "trace_distance_nonincreasing": true
+    },
+    {
+      "channel": "phase_damping",
+      "pair": "tilted_pair",
+      "relative_entropy_after_bits": 0.390747580517,
+      "relative_entropy_before_bits": 0.475835276147,
+      "relative_entropy_nonincreasing": true,
+      "strength": 0.2,
+      "trace_distance_after": 0.35,
+      "trace_distance_before": 0.384057287393,
+      "trace_distance_nonincreasing": true
+    },
+    {
+      "channel": "phase_damping",
+      "pair": "tilted_pair",
+      "relative_entropy_after_bits": 0.267391580827,
+      "relative_entropy_before_bits": 0.475835276147,
+      "relative_entropy_nonincreasing": true,
+      "strength": 0.5,
+      "trace_distance_after": 0.291547594742,
+      "trace_distance_before": 0.384057287393,
+      "trace_distance_nonincreasing": true
+    },
+    {
+      "channel": "phase_damping",
+      "pair": "tilted_pair",
+      "relative_entropy_after_bits": 0.110051327027,
+      "relative_entropy_before_bits": 0.475835276147,
+      "relative_entropy_nonincreasing": true,
+      "strength": 0.9,
+      "trace_distance_after": 0.187082869339,
+      "trace_distance_before": 0.384057287393,
+      "trace_distance_nonincreasing": true
+    },
+    {
+      "channel": "amplitude_damping",
+      "pair": "tilted_pair",
+      "relative_entropy_after_bits": 0.384883591531,
+      "relative_entropy_before_bits": 0.475835276147,
+      "relative_entropy_nonincreasing": true,
+      "strength": 0.2,
+      "trace_distance_after": 0.338230690506,
+      "trace_distance_before": 0.384057287393,
+      "trace_distance_nonincreasing": true
+    },
+    {
+      "channel": "amplitude_damping",
+      "pair": "tilted_pair",
+      "relative_entropy_after_bits": 0.257015022801,
+      "relative_entropy_before_bits": 0.475835276147,
+      "relative_entropy_nonincreasing": true,
+      "strength": 0.5,
+      "trace_distance_after": 0.261007662723,
+      "trace_distance_before": 0.384057287393,
+      "trace_distance_nonincreasing": true
+    },
+    {
+      "channel": "amplitude_damping",
+      "pair": "tilted_pair",
+      "relative_entropy_after_bits": 0.071986281359,
+      "relative_entropy_before_bits": 0.475835276147,
+      "relative_entropy_nonincreasing": true,
+      "strength": 0.9,
+      "trace_distance_after": 0.112805141727,
+      "trace_distance_before": 0.384057287393,
+      "trace_distance_nonincreasing": true
+    },
+    {
+      "channel": "depolarizing",
+      "pair": "tilted_pair",
+      "relative_entropy_after_bits": 0.291406153613,
+      "relative_entropy_before_bits": 0.475835276147,
+      "relative_entropy_nonincreasing": true,
+      "strength": 0.2,
+      "trace_distance_after": 0.307245829915,
+      "trace_distance_before": 0.384057287393,
+      "trace_distance_nonincreasing": true
+    },
+    {
+      "channel": "depolarizing",
+      "pair": "tilted_pair",
+      "relative_entropy_after_bits": 0.109088877046,
+      "relative_entropy_before_bits": 0.475835276147,
+      "relative_entropy_nonincreasing": true,
+      "strength": 0.5,
+      "trace_distance_after": 0.192028643697,
+      "trace_distance_before": 0.384057287393,
+      "trace_distance_nonincreasing": true
+    },
+    {
+      "channel": "depolarizing",
+      "pair": "tilted_pair",
+      "relative_entropy_after_bits": 0.004260072836,
+      "relative_entropy_before_bits": 0.475835276147,
+      "relative_entropy_nonincreasing": true,
+      "strength": 0.9,
+      "trace_distance_after": 0.038405728739,
+      "trace_distance_before": 0.384057287393,
+      "trace_distance_nonincreasing": true
+    },
+    {
+      "channel": "phase_damping",
+      "pair": "antipodal_pair",
+      "relative_entropy_after_bits": 1.2,
+      "relative_entropy_before_bits": 1.2,
+      "relative_entropy_nonincreasing": true,
+      "strength": 0.2,
+      "trace_distance_after": 0.6,
+      "trace_distance_before": 0.6,
+      "trace_distance_nonincreasing": true
+    },
+    {
+      "channel": "phase_damping",
+      "pair": "antipodal_pair",
+      "relative_entropy_after_bits": 1.2,
+      "relative_entropy_before_bits": 1.2,
+      "relative_entropy_nonincreasing": true,
+      "strength": 0.5,
+      "trace_distance_after": 0.6,
+      "trace_distance_before": 0.6,
+      "trace_distance_nonincreasing": true
+    },
+    {
+      "channel": "phase_damping",
+      "pair": "antipodal_pair",
+      "relative_entropy_after_bits": 1.2,
+      "relative_entropy_before_bits": 1.2,
+      "relative_entropy_nonincreasing": true,
+      "strength": 0.9,
+      "trace_distance_after": 0.6,
+      "trace_distance_before": 0.6,
+      "trace_distance_nonincreasing": true
+    },
+    {
+      "channel": "amplitude_damping",
+      "pair": "antipodal_pair",
+      "relative_entropy_after_bits": 0.706809633923,
+      "relative_entropy_before_bits": 1.2,
+      "relative_entropy_nonincreasing": true,
+      "strength": 0.2,
+      "trace_distance_after": 0.48,
+      "trace_distance_before": 0.6,
+      "trace_distance_nonincreasing": true
+    },
+    {
+      "channel": "amplitude_damping",
+      "pair": "antipodal_pair",
+      "relative_entropy_after_bits": 0.326466250649,
+      "relative_entropy_before_bits": 1.2,
+      "relative_entropy_nonincreasing": true,
+      "strength": 0.5,
+      "trace_distance_after": 0.3,
+      "trace_distance_before": 0.6,
+      "trace_distance_nonincreasing": true
+    },
+    {
+      "channel": "amplitude_damping",
+      "pair": "antipodal_pair",
+      "relative_entropy_after_bits": 0.049324930297,
+      "relative_entropy_before_bits": 1.2,
+      "relative_entropy_nonincreasing": true,
+      "strength": 0.9,
+      "trace_distance_after": 0.06,
+      "trace_distance_before": 0.6,
+      "trace_distance_nonincreasing": true
+    },
+    {
+      "channel": "depolarizing",
+      "pair": "antipodal_pair",
+      "relative_entropy_after_bits": 0.724326550794,
+      "relative_entropy_before_bits": 1.2,
+      "relative_entropy_nonincreasing": true,
+      "strength": 0.2,
+      "trace_distance_after": 0.48,
+      "trace_distance_before": 0.6,
+      "trace_distance_nonincreasing": true
+    },
+    {
+      "channel": "depolarizing",
+      "pair": "antipodal_pair",
+      "relative_entropy_after_bits": 0.267925438825,
+      "relative_entropy_before_bits": 1.2,
+      "relative_entropy_nonincreasing": true,
+      "strength": 0.5,
+      "trace_distance_after": 0.3,
+      "trace_distance_before": 0.6,
+      "trace_distance_nonincreasing": true
+    },
+    {
+      "channel": "depolarizing",
+      "pair": "antipodal_pair",
+      "relative_entropy_after_bits": 0.010399896173,
+      "relative_entropy_before_bits": 1.2,
+      "relative_entropy_nonincreasing": true,
+      "strength": 0.9,
+      "trace_distance_after": 0.06,
+      "trace_distance_before": 0.6,
+      "trace_distance_nonincreasing": true
+    }
+  ],
+  "claim_boundary": "finite qubit-channel data-processing (monotonicity) surrogate; the irreversible loss of distinguishability under coarse-grained CPTP channels operationalizes opacification and Bayesian model reduction as forgetting, with a not-completely-positive transpose map and a distinguishability-increasing post-selection as discriminating controls; not empirical evidence and not a physical qFEP, neural, clinical, or contemplative claim",
+  "complete_positivity_rows": [
+    {
+      "choi_min_eigenvalue": 0.0,
+      "completely_positive": true,
+      "map": "phase_damping",
+      "trace_preserving_error": 0.0
+    },
+    {
+      "choi_min_eigenvalue": 0.0,
+      "completely_positive": true,
+      "map": "amplitude_damping",
+      "trace_preserving_error": 0.0
+    },
+    {
+      "choi_min_eigenvalue": 0.25,
+      "completely_positive": true,
+      "map": "depolarizing",
+      "trace_preserving_error": 0.0
+    },
+    {
+      "choi_min_eigenvalue": -1.0,
+      "completely_positive": false,
+      "map": "transpose_control",
+      "trace_preserving_error": 0.0
+    }
+  ],
+  "controls": {
+    "cptp_channels_are_completely_positive": true,
+    "cptp_channels_are_trace_preserving": true,
+    "cptp_channels_do_not_increase_relative_entropy": true,
+    "cptp_channels_do_not_increase_trace_distance": true,
+    "selective_postselection_can_increase_trace_distance": true,
+    "transpose_map_is_not_completely_positive": true
+  },
+  "row_count": 27,
+  "schema": "realizing_emptiness.data_processing_monotonicity_audit.v1",
+  "selective_postselection_rows": [
+    {
+      "angle": 0.39269908,
+      "post_selection_increases_distance": true,
+      "trace_distance_after_postselection": 1.0,
+      "trace_distance_before": 0.707106781187
+    },
+    {
+      "angle": 0.52359878,
+      "post_selection_increases_distance": true,
+      "trace_distance_after_postselection": 1.0,
+      "trace_distance_before": 0.866025403784
+    },
+    {
+      "angle": 0.62831853,
+      "post_selection_increases_distance": true,
+      "trace_distance_after_postselection": 1.0,
+      "trace_distance_before": 0.951056516295
+    }
+  ]
+}

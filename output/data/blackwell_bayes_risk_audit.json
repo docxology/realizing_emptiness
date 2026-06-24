@@ -1,0 +1,84 @@
+{
+  "all_controls_pass": true,
+  "chance_risk": 0.5,
+  "channel": [
+    [
+      0.8,
+      0.2
+    ],
+    [
+      0.2,
+      0.8
+    ]
+  ],
+  "claim_boundary": "finite deterministic Blackwell garbling / Bayes-risk computation over fixed boundary channels; the relabel-preserves / garble-degrades ordering is a software statistical-decision result, not empirical evidence and not a neural, developmental, clinical, practice-efficacy, or physical qFEP claim",
+  "controls": {
+    "bayes_risk_never_below_original_under_garbling": true,
+    "complete_erasure_reaches_chance_risk": true,
+    "invertible_relabeling_preserves_bayes_risk": true,
+    "nontrivial_garbling_strictly_increases_bayes_risk": true
+  },
+  "garbling_rows": [
+    {
+      "bayes_risk": 0.29,
+      "garbling": "weak_garbling",
+      "retention": [
+        0.85,
+        0.85
+      ],
+      "risk_increase_vs_original": 0.09
+    },
+    {
+      "bayes_risk": 0.38,
+      "garbling": "partial_garbling",
+      "retention": [
+        0.7,
+        0.7
+      ],
+      "risk_increase_vs_original": 0.18
+    },
+    {
+      "bayes_risk": 0.44,
+      "garbling": "strong_garbling",
+      "retention": [
+        0.6,
+        0.6
+      ],
+      "risk_increase_vs_original": 0.24
+    },
+    {
+      "bayes_risk": 0.5,
+      "garbling": "complete_erasure",
+      "retention": [
+        0.5,
+        0.5
+      ],
+      "risk_increase_vs_original": 0.3
+    }
+  ],
+  "minimum_grid_garbling_risk": 0.2,
+  "original_bayes_risk": 0.2,
+  "prior": [
+    0.5,
+    0.5
+  ],
+  "relabeling_rows": [
+    {
+      "bayes_risk": 0.2,
+      "permutation": [
+        0,
+        1
+      ],
+      "relabeling": "identity"
+    },
+    {
+      "bayes_risk": 0.2,
+      "permutation": [
+        1,
+        0
+      ],
+      "relabeling": "swap_outcomes"
+    }
+  ],
+  "schema": "realizing_emptiness.blackwell_bayes_risk_audit.v1"
+}

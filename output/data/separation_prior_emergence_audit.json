@@ -1,0 +1,54 @@
+{
+  "all_controls_pass": true,
+  "claim_boundary": "finite deterministic factored-vs-unfactored predictor comparison on a toy boundary stream; not a developmental, neural, clinical, practice-efficacy, or physical qFEP claim",
+  "controls": {
+    "accuracy_gain_monotone_in_empowerment": true,
+    "action_shuffle_collapses_factored_advantage": true,
+    "factored_beats_unfactored_at_high_empowerment": true,
+    "factored_does_not_beat_unfactored_at_zero_empowerment": true,
+    "planted_full_contingency_detected": true
+  },
+  "full_empowerment_advantage": 0.453125,
+  "label": "finite_factored_vs_unfactored_predictor_comparison_not_empirical",
+  "mean_action_shuffled_advantage": 0.0205078125,
+  "row_count": 5,
+  "rows": [
+    {
+      "empowerment": 0.0,
+      "factored_advantage": 0.0,
+      "factored_error": 0.4479166666666667,
+      "self_channel_count": 0,
+      "unfactored_error": 0.4479166666666667
+    },
+    {
+      "empowerment": 0.25,
+      "factored_advantage": 0.15104166666666669,
+      "factored_error": 0.28125,
+      "self_channel_count": 2,
+      "unfactored_error": 0.4322916666666667
+    },
+    {
+      "empowerment": 0.5,
+      "factored_advantage": 0.22656250000000003,
+      "factored_error": 0.20572916666666666,
+      "self_channel_count": 3,
+      "unfactored_error": 0.4322916666666667
+    },
+    {
+      "empowerment": 0.75,
+      "factored_advantage": 0.30208333333333337,
+      "factored_error": 0.15885416666666666,
+      "self_channel_count": 4,
+      "unfactored_error": 0.4609375
+    },
+    {
+      "empowerment": 1.0,
+      "factored_advantage": 0.453125,
+      "factored_error": 0.0,
+      "self_channel_count": 6,
+      "unfactored_error": 0.453125
+    }
+  ],
+  "schema": "realizing_emptiness.separation_prior_emergence_audit.v1",
+  "zero_empowerment_advantage": 0.0
+}

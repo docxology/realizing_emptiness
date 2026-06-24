@@ -1,0 +1,69 @@
+{
+  "$id": "realizing_emptiness.qfep_boundary_hamiltonian_dynamics.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Realizing Emptiness qFEP Boundary Hamiltonian Dynamics",
+  "type": "object",
+  "required": [
+    "schema",
+    "time_grid",
+    "decoherence_rate_grid",
+    "hamiltonian_terms",
+    "row_count",
+    "rows",
+    "negative_controls",
+    "controls",
+    "max_trace_error",
+    "min_eigenvalue",
+    "max_entropy_production_bits",
+    "all_controls_pass",
+    "claim_boundary"
+  ],
+  "properties": {
+    "schema": {"const": "realizing_emptiness.qfep_boundary_hamiltonian_dynamics.v1"},
+    "time_grid": {"type": "array", "minItems": 3, "items": {"type": "number"}},
+    "decoherence_rate_grid": {"type": "array", "minItems": 2, "items": {"type": "number"}},
+    "hamiltonian_terms": {"type": "array", "minItems": 1, "items": {"type": "object"}},
+    "row_count": {"type": "integer", "minimum": 6},
+    "rows": {
+      "type": "array",
+      "minItems": 6,
+      "items": {
+        "type": "object",
+        "required": [
+          "state_label",
+          "time",
+          "decoherence_rate",
+          "hamiltonian_label",
+          "trace_real",
+          "trace_imag_abs",
+          "min_eigenvalue",
+          "global_entropy_bits",
+          "mutual_information_bits",
+          "entropy_production_bits"
+        ],
+        "additionalProperties": true
+      }
+    },
+    "negative_controls": {
+      "type": "array",
+      "minItems": 3,
+      "items": {
+        "type": "object",
+        "required": ["id", "passes", "reason"],
+        "properties": {
+          "id": {"type": "string"},
+          "passes": {"const": true},
+          "reason": {"type": "string", "minLength": 20}
+        },
+        "additionalProperties": false
+      }
+    },
+    "controls": {"type": "object", "additionalProperties": {"const": true}},
+    "max_trace_error": {"type": "number", "minimum": 0, "maximum": 0.000001},
+    "min_eigenvalue": {"type": "number", "minimum": -0.000001},
+    "max_entropy_production_bits": {"type": "number", "minimum": 0},
+    "all_controls_pass": {"const": true},
+    "claim_boundary": {"type": "string", "pattern": "not empirical"}
+  },
+  "additionalProperties": false
+}

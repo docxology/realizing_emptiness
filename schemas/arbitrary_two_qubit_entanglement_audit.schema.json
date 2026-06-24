@@ -1,0 +1,48 @@
+{
+  "$id": "realizing_emptiness.arbitrary_two_qubit_entanglement_audit.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Realizing Emptiness Arbitrary Two-Qubit Entanglement Audit",
+  "type": "object",
+  "required": ["schema", "case_count", "row_count", "rows", "invalid_density_controls", "controls", "all_controls_pass", "claim_boundary"],
+  "properties": {
+    "schema": {"const": "realizing_emptiness.arbitrary_two_qubit_entanglement_audit.v1"},
+    "case_count": {"type": "integer", "minimum": 6},
+    "row_count": {"type": "integer", "minimum": 6},
+    "rows": {
+      "type": "array",
+      "minItems": 6,
+      "items": {
+        "type": "object",
+        "required": ["id", "family", "valid_density_matrix", "ppt_min_eigenvalue", "negativity", "entangled_by_ppt", "expected_entangled"],
+        "properties": {
+          "id": {"type": "string"},
+          "family": {"type": "string"},
+          "valid_density_matrix": {"const": true},
+          "ppt_min_eigenvalue": {"type": "number"},
+          "negativity": {"type": "number", "minimum": 0},
+          "entangled_by_ppt": {"type": "boolean"},
+          "expected_entangled": {"type": "boolean"}
+        },
+        "additionalProperties": true
+      }
+    },
+    "invalid_density_controls": {
+      "type": "array",
+      "minItems": 3,
+      "items": {
+        "type": "object",
+        "required": ["id", "passes", "reason"],
+        "properties": {
+          "id": {"type": "string"},
+          "passes": {"const": true},
+          "reason": {"type": "string", "minLength": 20}
+        },
+        "additionalProperties": false
+      }
+    },
+    "controls": {"type": "object", "additionalProperties": {"const": true}},
+    "all_controls_pass": {"const": true},
+    "claim_boundary": {"type": "string", "pattern": "not empirical"}
+  },
+  "additionalProperties": false
+}

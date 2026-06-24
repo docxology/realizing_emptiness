@@ -1,0 +1,17 @@
+{
+  "$id": "realizing_emptiness.quantum_independent_crosscheck_audit.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Realizing Emptiness Quantum Independent Crosscheck Audit",
+  "type": "object",
+  "required": ["schema", "method", "computed", "rows", "controls", "all_controls_pass", "claim_boundary"],
+  "properties": {
+    "schema": {"const": "realizing_emptiness.quantum_independent_crosscheck_audit.v1"},
+    "method": {"type": "string", "minLength": 20},
+    "computed": {"type": "object", "required": ["product_control_chsh", "bell_chsh", "local_chsh_bound", "tsirelson_bound"], "additionalProperties": {"type": "number"}},
+    "rows": {"type": "array", "minItems": 5, "items": {"type": "object", "required": ["check", "computed", "expected_boundary", "passes"], "additionalProperties": true}},
+    "controls": {"type": "object", "required": ["product_local_crosscheck", "bell_tsirelson_crosscheck", "product_polytope_feasible_independent", "bell_polytope_infeasible_independent", "perturbed_expected_value_control_fails", "independent_assignment_count_16", "claim_boundary_declared"], "additionalProperties": {"type": "boolean"}},
+    "all_controls_pass": {"const": true},
+    "claim_boundary": {"type": "string", "pattern": "not empirical"}
+  },
+  "additionalProperties": false
+}

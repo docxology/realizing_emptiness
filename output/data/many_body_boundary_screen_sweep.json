@@ -1,0 +1,169 @@
+{
+  "all_controls_pass": true,
+  "claim_boundary": "finite deterministic roadmap-engine simulation; not empirical evidence, not a physical qFEP realization, and not evidence for clinical, contemplative, or neural outcomes",
+  "controls": {
+    "observer_cut_has_max_entropy": true,
+    "partition_sensitivity_present": true,
+    "random_cut_not_labeled_observer_evidence": true,
+    "separable_controls_zero_entropy": true
+  },
+  "cut_count": 4,
+  "cuts": [
+    {
+      "cut_class": "candidate_observer_boundary",
+      "id": "observer_boundary_cut",
+      "qubits": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "cut_class": "structured_control",
+      "id": "local_cluster_cut",
+      "qubits": [
+        0,
+        1,
+        3
+      ]
+    },
+    {
+      "cut_class": "structured_control",
+      "id": "alternating_cut",
+      "qubits": [
+        0,
+        2,
+        4
+      ]
+    },
+    {
+      "cut_class": "negative_control_random_cut",
+      "id": "random_cut_control",
+      "qubits": [
+        0,
+        3,
+        5
+      ]
+    }
+  ],
+  "max_boundary_entropy_bits": 3.0,
+  "qubit_count": 6,
+  "row_count": 8,
+  "rows": [
+    {
+      "cut_class": "candidate_observer_boundary",
+      "cut_id": "observer_boundary_cut",
+      "mutual_information_bits": 6.0,
+      "observer_boundary_candidate": true,
+      "qubits": [
+        0,
+        1,
+        2
+      ],
+      "reduced_entropy_bits": 3.0,
+      "state_label": "cross_boundary_bell_pairs",
+      "subsystem_size": 3
+    },
+    {
+      "cut_class": "structured_control",
+      "cut_id": "local_cluster_cut",
+      "mutual_information_bits": 2.0,
+      "observer_boundary_candidate": false,
+      "qubits": [
+        0,
+        1,
+        3
+      ],
+      "reduced_entropy_bits": 1.0,
+      "state_label": "cross_boundary_bell_pairs",
+      "subsystem_size": 3
+    },
+    {
+      "cut_class": "structured_control",
+      "cut_id": "alternating_cut",
+      "mutual_information_bits": 6.0,
+      "observer_boundary_candidate": false,
+      "qubits": [
+        0,
+        2,
+        4
+      ],
+      "reduced_entropy_bits": 3.0,
+      "state_label": "cross_boundary_bell_pairs",
+      "subsystem_size": 3
+    },
+    {
+      "cut_class": "negative_control_random_cut",
+      "cut_id": "random_cut_control",
+      "mutual_information_bits": 2.0,
+      "observer_boundary_candidate": false,
+      "qubits": [
+        0,
+        3,
+        5
+      ],
+      "reduced_entropy_bits": 1.0,
+      "state_label": "cross_boundary_bell_pairs",
+      "subsystem_size": 3
+    },
+    {
+      "cut_class": "candidate_observer_boundary",
+      "cut_id": "observer_boundary_cut",
+      "mutual_information_bits": -0.0,
+      "observer_boundary_candidate": false,
+      "qubits": [
+        0,
+        1,
+        2
+      ],
+      "reduced_entropy_bits": -0.0,
+      "state_label": "separable_product_control",
+      "subsystem_size": 3
+    },
+    {
+      "cut_class": "structured_control",
+      "cut_id": "local_cluster_cut",
+      "mutual_information_bits": -0.0,
+      "observer_boundary_candidate": false,
+      "qubits": [
+        0,
+        1,
+        3
+      ],
+      "reduced_entropy_bits": -0.0,
+      "state_label": "separable_product_control",
+      "subsystem_size": 3
+    },
+    {
+      "cut_class": "structured_control",
+      "cut_id": "alternating_cut",
+      "mutual_information_bits": -0.0,
+      "observer_boundary_candidate": false,
+      "qubits": [
+        0,
+        2,
+        4
+      ],
+      "reduced_entropy_bits": -0.0,
+      "state_label": "separable_product_control",
+      "subsystem_size": 3
+    },
+    {
+      "cut_class": "negative_control_random_cut",
+      "cut_id": "random_cut_control",
+      "mutual_information_bits": -0.0,
+      "observer_boundary_candidate": false,
+      "qubits": [
+        0,
+        3,
+        5
+      ],
+      "reduced_entropy_bits": -0.0,
+      "state_label": "separable_product_control",
+      "subsystem_size": 3
+    }
+  ],
+  "schema": "realizing_emptiness.many_body_boundary_screen_sweep.v1",
+  "separable_control_max_entropy_bits": -0.0,
+  "state_count": 2
+}

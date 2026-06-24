@@ -1,0 +1,57 @@
+{
+  "claim_boundary": "manuscript figure-placement audit only; not empirical, clinical, neural, practice-efficacy, awakening, or physical qFEP evidence",
+  "compact_main_quantum_figure": "../output/figures/finite_quantum_scope_summary.png",
+  "controls": {
+    "compact_quantum_summary_in_main": true,
+    "compact_quantum_summary_not_in_supplement": true,
+    "governance_figures_absent_from_main": true,
+    "governance_figures_present_once_in_supplement": true,
+    "qrf_figures_precede_quantum_summary": true,
+    "qrf_lead_figures_ordered": true,
+    "qrf_lead_figures_present_in_main": true,
+    "retired_qrf_composite_absent": true,
+    "technical_quantum_figures_absent_from_main": true,
+    "technical_quantum_figures_present_in_supplement": true
+  },
+  "governance_figure_count": 4,
+  "governance_figures": [
+    "../output/figures/scholarship_coverage_matrix.png",
+    "../output/figures/claim_support_matrix.png",
+    "../output/figures/claim_source_validation_graph.png",
+    "../output/figures/visual_semantic_palette_ledger.png"
+  ],
+  "governance_figures_in_main": [],
+  "governance_figures_missing_from_supplement": [],
+  "governance_figures_repeated_in_supplement": [],
+  "ok": true,
+  "qrf_lead_figures": [
+    "../output/figures/qrf_boundary_screen_geometry.png",
+    "../output/figures/qrf_channel_relabeling_ledger.png",
+    "../output/figures/qrf_invariance_policy_flow.png"
+  ],
+  "retired_qrf_composite_figure": "../output/figures/qrf_boundary_graphical_model.png",
+  "schema": "realizing_emptiness.manuscript_figure_placement_audit.v1",
+  "technical_quantum_figure_count": 18,
+  "technical_quantum_figures": [
+    "../output/figures/quantum_boundary_entropy_landscape.png",
+    "../output/figures/arbitrary_two_qubit_entanglement_audit.png",
+    "../output/figures/quantum_contextuality_witness.png",
+    "../output/figures/quantum_measurement_contextuality_table.png",
+    "../output/figures/quantum_local_polytope_audit.png",
+    "../output/figures/general_measurement_cover_polytope_audit.png",
+    "../output/figures/quantum_open_system_dynamics.png",
+    "../output/figures/quantum_trajectory_unraveling.png",
+    "../output/figures/quantum_trajectory_convergence.png",
+    "../output/figures/thermodynamic_channel_cost_audit.png",
+    "../output/figures/qfep_boundary_hamiltonian_dynamics.png",
+    "../output/figures/many_body_boundary_screen_sweep.png",
+    "../output/figures/sparse_boundary_screen_scaling_audit.png",
+    "../output/figures/sheaf_contextuality_obstruction_audit.png",
+    "../output/figures/qrf_transformation_covariance_audit.png",
+    "../output/figures/qrf_frame_covariance_toy_audit.png",
+    "../output/figures/empirical_adapter_provenance_audit.png",
+    "../output/figures/quantum_roadmap_readiness_matrix.png"
+  ],
+  "technical_quantum_figures_in_main": [],
+  "technical_quantum_figures_missing_from_supplement": []
+}

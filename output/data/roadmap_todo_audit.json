@@ -1,0 +1,79 @@
+{
+  "all_controls_pass": true,
+  "blocked_external_class_rows": [
+    {
+      "line": 24,
+      "matched_blocked_classes": [
+        "re-3"
+      ],
+      "matched_implemented_ids": [],
+      "scope": "Physical qFEP realization remains blocked until reviewed Hamiltonians, thermodynamic accounting, and independent quantum-information replication exist.",
+      "status": "blocked_external_evidence",
+      "todo_id": "re-3"
+    },
+    {
+      "line": 25,
+      "matched_blocked_classes": [
+        "re-4"
+      ],
+      "matched_implemented_ids": [],
+      "scope": "Human-subject validation remains blocked until ethics review, preregistered outcomes, sourced data, preprocessing provenance, null models, and safety review exist.",
+      "status": "blocked_external_evidence",
+      "todo_id": "re-4"
+    },
+    {
+      "line": 26,
+      "matched_blocked_classes": [
+        "re-13"
+      ],
+      "matched_implemented_ids": [],
+      "scope": "Clinical, awakening, compassion-efficacy, and neural-measurement claims remain blocked and must not be inferred from finite software simulations.",
+      "status": "blocked_external_evidence",
+      "todo_id": "re-13"
+    },
+    {
+      "line": 27,
+      "matched_blocked_classes": [
+        "re-14"
+      ],
+      "matched_implemented_ids": [],
+      "scope": "User-facing practice applications require human review, safety wording, and explicit non-efficacy language before release.",
+      "status": "blocked_external_evidence",
+      "todo_id": "re-14"
+    },
+    {
+      "line": 28,
+      "matched_blocked_classes": [
+        "re-15"
+      ],
+      "matched_implemented_ids": [],
+      "scope": "Public archive release and independent or blinded reproduction remain blocked until explicit publication approval, public deposition, and external reproduction of the artifact bundle exist.",
+      "status": "blocked_external_release",
+      "todo_id": "re-15"
+    }
+  ],
+  "blocked_external_class_violations": [],
+  "blocked_task_ids": [
+    "re-13",
+    "re-14",
+    "re-15",
+    "re-3",
+    "re-4"
+  ],
+  "claim_boundary": "roadmap governance artifact; not empirical evidence, not a physical qFEP realization, and not a clinical, neural, awakening, or practice-efficacy claim",
+  "controls": {
+    "all_blocked_external_task_ids_present_and_blocked": true,
+    "blocked_external_classes_not_described_as_achieved": true,
+    "blocked_external_classes_remain_future": true,
+    "no_future_rows_duplicate_implemented_roadmap_ids": true,
+    "todo_backlog_has_no_historical_completion_rows": true,
+    "todo_file_declares_future_only_backlog": true
+  },
+  "future_roadmap_count": 5,
+  "historical_backlog_rows": [],
+  "implemented_roadmap_count": 17,
+  "missing_blocked_task_ids": [],
+  "schema": "realizing_emptiness.roadmap_todo_audit.v1",
+  "stale_future_rows": [],
+  "todo_row_count": 5
+}

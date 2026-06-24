@@ -1,0 +1,67 @@
+{
+  "$id": "realizing_emptiness.manuscript_claim_audit.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Realizing Emptiness Manuscript Claim Audit",
+  "type": "object",
+  "required": [
+    "schema",
+    "fragment_count",
+    "used_citation_count",
+    "declared_bibliography_count",
+    "public_claim_count",
+    "used_citations",
+    "missing_bibliography_keys",
+    "uncited_bibliography_keys",
+    "public_claim_ids",
+    "missing_claim_mentions",
+    "forbidden_positive_claims",
+    "ok"
+  ],
+  "properties": {
+    "schema": {
+      "const": "realizing_emptiness.manuscript_claim_audit.v1"
+    },
+    "fragment_count": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "used_citation_count": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "declared_bibliography_count": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "public_claim_count": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "used_citations": {
+      "type": "array"
+    },
+    "missing_bibliography_keys": {
+      "type": "array",
+      "maxItems": 0
+    },
+    "uncited_bibliography_keys": {
+      "type": "array"
+    },
+    "public_claim_ids": {
+      "type": "array",
+      "minItems": 1
+    },
+    "missing_claim_mentions": {
+      "type": "array",
+      "maxItems": 0
+    },
+    "forbidden_positive_claims": {
+      "type": "array",
+      "maxItems": 0
+    },
+    "ok": {
+      "const": true
+    }
+  },
+  "additionalProperties": false
+}

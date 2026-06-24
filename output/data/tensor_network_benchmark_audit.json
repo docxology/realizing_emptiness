@@ -1,0 +1,124 @@
+{
+  "all_controls_pass": true,
+  "claim_boundary": "finite exact matrix-product-state tensor-network benchmark over toy boundary-screen states; not empirical evidence, not a large-scale many-body simulation, and not a physical qFEP, neural, clinical, or contemplative claim",
+  "controls": {
+    "exact_mps_reconstructs_every_state": true,
+    "ghz_bond_dimension_stays_two_with_scaling": true,
+    "max_bond_matches_expected": true,
+    "truncation_to_one_hurts_entangled": true,
+    "truncation_to_one_lossless_for_product": true
+  },
+  "fixture_count": 6,
+  "row_count": 6,
+  "rows": [
+    {
+      "bond_dimensions": [
+        2
+      ],
+      "dims": [
+        2,
+        2
+      ],
+      "exact_reconstruction_error": 0.0,
+      "expected_max_bond": 2,
+      "family": "ghz",
+      "id": "ghz_2_qubit",
+      "max_bond_dimension": 2,
+      "truncated_chi1_error": 0.75
+    },
+    {
+      "bond_dimensions": [
+        2,
+        2
+      ],
+      "dims": [
+        2,
+        2,
+        2
+      ],
+      "exact_reconstruction_error": 0.0,
+      "expected_max_bond": 2,
+      "family": "ghz",
+      "id": "ghz_3_qubit",
+      "max_bond_dimension": 2,
+      "truncated_chi1_error": 0.75
+    },
+    {
+      "bond_dimensions": [
+        2,
+        2,
+        2
+      ],
+      "dims": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "exact_reconstruction_error": 0.0,
+      "expected_max_bond": 2,
+      "family": "ghz",
+      "id": "ghz_4_qubit",
+      "max_bond_dimension": 2,
+      "truncated_chi1_error": 0.75
+    },
+    {
+      "bond_dimensions": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "dims": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "exact_reconstruction_error": 0.0,
+      "expected_max_bond": 2,
+      "family": "ghz",
+      "id": "ghz_5_qubit",
+      "max_bond_dimension": 2,
+      "truncated_chi1_error": 0.75
+    },
+    {
+      "bond_dimensions": [
+        2,
+        2
+      ],
+      "dims": [
+        2,
+        2,
+        2
+      ],
+      "exact_reconstruction_error": -0.0,
+      "expected_max_bond": 2,
+      "family": "w",
+      "id": "w_3_qubit",
+      "max_bond_dimension": 2,
+      "truncated_chi1_error": 0.888888888889
+    },
+    {
+      "bond_dimensions": [
+        1,
+        1,
+        1
+      ],
+      "dims": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "exact_reconstruction_error": 0.0,
+      "expected_max_bond": 1,
+      "family": "product",
+      "id": "product_4_qubit",
+      "max_bond_dimension": 1,
+      "truncated_chi1_error": 0.0
+    }
+  ],
+  "schema": "realizing_emptiness.tensor_network_benchmark_audit.v1"
+}

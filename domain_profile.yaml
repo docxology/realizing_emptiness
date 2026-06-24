@@ -1,0 +1,44 @@
+domain: active_inference_emptiness
+display_name: Realizing Emptiness
+required_packages:
+  - numpy
+  - matplotlib
+  - scipy
+  - inferactively-pymdp
+validation_gates:
+  - source_manifest
+  - scholarship_manifest
+  - claim_support_audit
+  - manuscript_claim_audit
+  - evidence_ceiling_audit
+  - figure_integrity_audit
+  - equation_audit
+  - qrf_indistinguishability
+  - bmr_sweep
+  - pymdp_runtime_canary
+  - stochastic_policy_ensemble
+  - quantum_trajectory_unraveling
+  - manuscript_reference_audit
+  - figure_reuse_audit
+  - cover_graphical_abstract_audit
+  - practice_protocol_boundaries
+figure_types:
+  - graphical_abstract_cover
+  - qrf_boundary_screen_geometry
+  - qrf_channel_relabeling_ledger
+  - qrf_invariance_policy_flow
+  - qrf_sectorisation_map
+  - boundary_indistinguishability
+  - qrf_reference_frame_geometry
+  - bmr_free_energy_decomposition
+  - bmr_pruning_phase_diagram
+  - pymdp_profile_comparison
+  - posterior_trajectory
+  - criticality_proxy_panels
+  - criticality_stochastic_ensemble
+  - quantum_trajectory_unraveling
+  - claim_source_validation_graph
+  - scholarship_coverage_matrix
+  - claim_support_matrix
+  - manuscript_claim_audit
+  - evidence_ceiling_stress_matrix

@@ -1,0 +1,38 @@
+{
+  "$id": "realizing_emptiness.scholarship_source_matrix.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Realizing Emptiness Scholarship Source Matrix",
+  "type": "object",
+  "required": ["schema", "source_count", "track_count", "tracks", "rows", "validation"],
+  "properties": {
+    "schema": {
+      "const": "realizing_emptiness.scholarship_source_matrix.v1"
+    },
+    "source_count": {
+      "type": "integer",
+      "minimum": 8
+    },
+    "track_count": {
+      "type": "integer",
+      "minimum": 4
+    },
+    "tracks": {
+      "type": "array"
+    },
+    "rows": {
+      "type": "array",
+      "minItems": 8
+    },
+    "validation": {
+      "type": "object",
+      "required": ["ok"],
+      "properties": {
+        "ok": {
+          "const": true
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}

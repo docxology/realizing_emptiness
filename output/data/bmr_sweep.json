@@ -1,0 +1,910 @@
+{
+  "any_pruning": true,
+  "claim_boundary": "finite Bayesian model-reduction sweep over software priors; not empirical, clinical, neural, awakening, practice-efficacy, or physical qFEP evidence",
+  "high_access_prunes": true,
+  "low_access_not_all_pruned": true,
+  "row_count": 45,
+  "rows": [
+    {
+      "delta_accuracy": -0.30000000000000004,
+      "delta_complexity": -0.04999999999999999,
+      "delta_free_energy": 0.25,
+      "full_model": {
+        "accuracy": 0.8500000000000001,
+        "complexity": 0.45,
+        "free_energy": -0.38000000000000006,
+        "noise": 0.02
+      },
+      "metacognitive_access": 0.0,
+      "prior_precision": 0.2,
+      "prunes_prior": false,
+      "reduced_model": {
+        "accuracy": 0.55,
+        "complexity": 0.4,
+        "free_energy": -0.13000000000000003,
+        "noise": 0.02
+      }
+    },
+    {
+      "delta_accuracy": -0.30000000000000004,
+      "delta_complexity": -0.35,
+      "delta_free_energy": -0.04999999999999995,
+      "full_model": {
+        "accuracy": 0.8500000000000001,
+        "complexity": 0.75,
+        "free_energy": -0.08000000000000008,
+        "noise": 0.02
+      },
+      "metacognitive_access": 0.0,
+      "prior_precision": 0.5,
+      "prunes_prior": true,
+      "reduced_model": {
+        "accuracy": 0.55,
+        "complexity": 0.4,
+        "free_energy": -0.13000000000000003,
+        "noise": 0.02
+      }
+    },
+    {
+      "delta_accuracy": -0.30000000000000004,
+      "delta_complexity": -0.85,
+      "delta_free_energy": -0.5499999999999999,
+      "full_model": {
+        "accuracy": 0.8500000000000001,
+        "complexity": 1.25,
+        "free_energy": 0.41999999999999993,
+        "noise": 0.02
+      },
+      "metacognitive_access": 0.0,
+      "prior_precision": 1.0,
+      "prunes_prior": true,
+      "reduced_model": {
+        "accuracy": 0.55,
+        "complexity": 0.4,
+        "free_energy": -0.13000000000000003,
+        "noise": 0.02
+      }
+    },
+    {
+      "delta_accuracy": -0.30000000000000004,
+      "delta_complexity": -1.85,
+      "delta_free_energy": -1.55,
+      "full_model": {
+        "accuracy": 0.8500000000000001,
+        "complexity": 2.25,
+        "free_energy": 1.42,
+        "noise": 0.02
+      },
+      "metacognitive_access": 0.0,
+      "prior_precision": 2.0,
+      "prunes_prior": true,
+      "reduced_model": {
+        "accuracy": 0.55,
+        "complexity": 0.4,
+        "free_energy": -0.13000000000000003,
+        "noise": 0.02
+      }
+    },
+    {
+      "delta_accuracy": -0.30000000000000004,
+      "delta_complexity": -3.85,
+      "delta_free_energy": -3.55,
+      "full_model": {
+        "accuracy": 0.8500000000000001,
+        "complexity": 4.25,
+        "free_energy": 3.42,
+        "noise": 0.02
+      },
+      "metacognitive_access": 0.0,
+      "prior_precision": 4.0,
+      "prunes_prior": true,
+      "reduced_model": {
+        "accuracy": 0.55,
+        "complexity": 0.4,
+        "free_energy": -0.13000000000000003,
+        "noise": 0.02
+      }
+    },
+    {
+      "delta_accuracy": -0.26249999999999996,
+      "delta_complexity": -0.06875000000000003,
+      "delta_free_energy": 0.1937499999999999,
+      "full_model": {
+        "accuracy": 0.85625,
+        "complexity": 0.45,
+        "free_energy": -0.3862499999999999,
+        "noise": 0.02
+      },
+      "metacognitive_access": 0.125,
+      "prior_precision": 0.2,
+      "prunes_prior": false,
+      "reduced_model": {
+        "accuracy": 0.59375,
+        "complexity": 0.38125,
+        "free_energy": -0.19250000000000003,
+        "noise": 0.02
+      }
+    },
+    {
+      "delta_accuracy": -0.26249999999999996,
+      "delta_complexity": -0.36875,
+      "delta_free_energy": -0.10625000000000008,
+      "full_model": {
+        "accuracy": 0.85625,
+        "complexity": 0.75,
+        "free_energy": -0.08624999999999995,
+        "noise": 0.02
+      },
+      "metacognitive_access": 0.125,
+      "prior_precision": 0.5,
+      "prunes_prior": true,
+      "reduced_model": {
+        "accuracy": 0.59375,
+        "complexity": 0.38125,
+        "free_energy": -0.19250000000000003,
+        "noise": 0.02
+      }
+    },
+    {
+      "delta_accuracy": -0.26249999999999996,
+      "delta_complexity": -0.86875,
+      "delta_free_energy": -0.6062500000000001,
+      "full_model": {
+        "accuracy": 0.85625,
+        "complexity": 1.25,
+        "free_energy": 0.41375000000000006,
+        "noise": 0.02
+      },
+      "metacognitive_access": 0.125,
+      "prior_precision": 1.0,
+      "prunes_prior": true,
+      "reduced_model": {
+        "accuracy": 0.59375,
+        "complexity": 0.38125,
+        "free_energy": -0.19250000000000003,
+        "noise": 0.02
+      }
+    },
+    {
+      "delta_accuracy": -0.26249999999999996,
+      "delta_complexity": -1.86875,
+      "delta_free_energy": -1.6062500000000002,
+      "full_model": {
+        "accuracy": 0.85625,
+        "complexity": 2.25,
+        "free_energy": 1.41375,
+        "noise": 0.02
+      },
+      "metacognitive_access": 0.125,
+      "prior_precision": 2.0,
+      "prunes_prior": true,
+      "reduced_model": {
+        "accuracy": 0.59375,
+        "complexity": 0.38125,
+        "free_energy": -0.19250000000000003,
+        "noise": 0.02
+      }
+    },
+    {
+      "delta_accuracy": -0.26249999999999996,
+      "delta_complexity": -3.86875,
+      "delta_free_energy": -3.6062499999999997,
+      "full_model": {
+        "accuracy": 0.85625,
+        "complexity": 4.25,
+        "free_energy": 3.41375,
+        "noise": 0.02
+      },
+      "metacognitive_access": 0.125,
+      "prior_precision": 4.0,
+      "prunes_prior": true,
+      "reduced_model": {
+        "accuracy": 0.59375,
+        "complexity": 0.38125,
+        "free_energy": -0.19250000000000003,
+        "noise": 0.02
+      }
+    },
+    {
+      "delta_accuracy": -0.22499999999999998,
+      "delta_complexity": -0.08750000000000002,
+      "delta_free_energy": 0.13749999999999996,
+      "full_model": {
+        "accuracy": 0.8625,
+        "complexity": 0.45,
+        "free_energy": -0.3925,
+        "noise": 0.02
+      },
+      "metacognitive_access": 0.25,
+      "prior_precision": 0.2,
+      "prunes_prior": false,
+      "reduced_model": {
+        "accuracy": 0.6375000000000001,
+        "complexity": 0.3625,
+        "free_energy": -0.25500000000000006,
+        "noise": 0.02
+      }
+    },
+    {
+      "delta_accuracy": -0.22499999999999998,
+      "delta_complexity": -0.3875,
+      "delta_free_energy": -0.16250000000000003,
+      "full_model": {
+        "accuracy": 0.8625,
+        "complexity": 0.75,
+        "free_energy": -0.09250000000000004,
+        "noise": 0.02
+      },
+      "metacognitive_access": 0.25,
+      "prior_precision": 0.5,
+      "prunes_prior": true,
+      "reduced_model": {
+        "accuracy": 0.6375000000000001,
+        "complexity": 0.3625,
+        "free_energy": -0.25500000000000006,
+        "noise": 0.02
+      }
+    },
+    {
+      "delta_accuracy": -0.22499999999999998,
+      "delta_complexity": -0.8875,
+      "delta_free_energy": -0.6625000000000001,
+      "full_model": {
+        "accuracy": 0.8625,
+        "complexity": 1.25,
+        "free_energy": 0.4075,
+        "noise": 0.02
+      },
+      "metacognitive_access": 0.25,
+      "prior_precision": 1.0,
+      "prunes_prior": true,
+      "reduced_model": {
+        "accuracy": 0.6375000000000001,
+        "complexity": 0.3625,
+        "free_energy": -0.25500000000000006,
+        "noise": 0.02
+      }
+    },
+    {
+      "delta_accuracy": -0.22499999999999998,
+      "delta_complexity": -1.8875,
+      "delta_free_energy": -1.6625,
+      "full_model": {
+        "accuracy": 0.8625,
+        "complexity": 2.25,
+        "free_energy": 1.4075,
+        "noise": 0.02
+      },
+      "metacognitive_access": 0.25,
+      "prior_precision": 2.0,
+      "prunes_prior": true,
+      "reduced_model": {
+        "accuracy": 0.6375000000000001,
+        "complexity": 0.3625,
+        "free_energy": -0.25500000000000006,
+        "noise": 0.02
+      }
+    },
+    {
+      "delta_accuracy": -0.22499999999999998,
+      "delta_complexity": -3.8875,
+      "delta_free_energy": -3.6625,
+      "full_model": {
+        "accuracy": 0.8625,
+        "complexity": 4.25,
+        "free_energy": 3.4075,
+        "noise": 0.02
+      },
+      "metacognitive_access": 0.25,
+      "prior_precision": 4.0,
+      "prunes_prior": true,
+      "reduced_model": {
+        "accuracy": 0.6375000000000001,
+        "complexity": 0.3625,
+        "free_energy": -0.25500000000000006,
+        "noise": 0.02
+      }
+    },
+    {
+      "delta_accuracy": -0.1875,
+      "delta_complexity": -0.10625000000000001,
+      "delta_free_energy": 0.08124999999999999,
+      "full_model": {
+        "accuracy": 0.86875,
+        "complexity": 0.45,
+        "free_energy": -0.39875,
+        "noise": 0.02
+      },
+      "metacognitive_access": 0.375,
+      "prior_precision": 0.2,
+      "prunes_prior": false,
+      "reduced_model": {
+        "accuracy": 0.68125,
+        "complexity": 0.34375,
+        "free_energy": -0.3175,
+        "noise": 0.02
+      }
+    },
+    {
+      "delta_accuracy": -0.1875,
+      "delta_complexity": -0.40625,
+      "delta_free_energy": -0.21875,
+      "full_model": {
+        "accuracy": 0.86875,
+        "complexity": 0.75,
+        "free_energy": -0.09875000000000002,
+        "noise": 0.02
+      },
+      "metacognitive_access": 0.375,
+      "prior_precision": 0.5,
+      "prunes_prior": true,
+      "reduced_model": {
+        "accuracy": 0.68125,
+        "complexity": 0.34375,
+        "free_energy": -0.3175,
+        "noise": 0.02
+      }
+    },
+    {
+      "delta_accuracy": -0.1875,
+      "delta_complexity": -0.90625,
+      "delta_free_energy": -0.71875,
+      "full_model": {
+        "accuracy": 0.86875,
+        "complexity": 1.25,
+        "free_energy": 0.40125,
+        "noise": 0.02
+      },
+      "metacognitive_access": 0.375,
+      "prior_precision": 1.0,
+      "prunes_prior": true,
+      "reduced_model": {
+        "accuracy": 0.68125,
+        "complexity": 0.34375,
+        "free_energy": -0.3175,
+        "noise": 0.02
+      }
+    },
+    {
+      "delta_accuracy": -0.1875,
+      "delta_complexity": -1.90625,
+      "delta_free_energy": -1.71875,
+      "full_model": {
+        "accuracy": 0.86875,
+        "complexity": 2.25,
+        "free_energy": 1.40125,
+        "noise": 0.02
+      },
+      "metacognitive_access": 0.375,
+      "prior_precision": 2.0,
+      "prunes_prior": true,
+      "reduced_model": {
+        "accuracy": 0.68125,
+        "complexity": 0.34375,
+        "free_energy": -0.3175,
+        "noise": 0.02
+      }
+    },
+    {
+      "delta_accuracy": -0.1875,
+      "delta_complexity": -3.90625,
+      "delta_free_energy": -3.71875,
+      "full_model": {
+        "accuracy": 0.86875,
+        "complexity": 4.25,
+        "free_energy": 3.40125,
+        "noise": 0.02
+      },
+      "metacognitive_access": 0.375,
+      "prior_precision": 4.0,
+      "prunes_prior": true,
+      "reduced_model": {
+        "accuracy": 0.68125,
+        "complexity": 0.34375,
+        "free_energy": -0.3175,
+        "noise": 0.02
+      }
+    },
+    {
+      "delta_accuracy": -0.15000000000000002,
+      "delta_complexity": -0.125,
+      "delta_free_energy": 0.025000000000000022,
+      "full_model": {
+        "accuracy": 0.8750000000000001,
+        "complexity": 0.45,
+        "free_energy": -0.4050000000000001,
+        "noise": 0.02
+      },
+      "metacognitive_access": 0.5,
+      "prior_precision": 0.2,
+      "prunes_prior": false,
+      "reduced_model": {
+        "accuracy": 0.7250000000000001,
+        "complexity": 0.325,
+        "free_energy": -0.38000000000000006,
+        "noise": 0.02
+      }
+    },
+    {
+      "delta_accuracy": -0.15000000000000002,
+      "delta_complexity": -0.425,
+      "delta_free_energy": -0.27499999999999997,
+      "full_model": {
+        "accuracy": 0.8750000000000001,
+        "complexity": 0.75,
+        "free_energy": -0.10500000000000011,
+        "noise": 0.02
+      },
+      "metacognitive_access": 0.5,
+      "prior_precision": 0.5,
+      "prunes_prior": true,
+      "reduced_model": {
+        "accuracy": 0.7250000000000001,
+        "complexity": 0.325,
+        "free_energy": -0.38000000000000006,
+        "noise": 0.02
+      }
+    },
+    {
+      "delta_accuracy": -0.15000000000000002,
+      "delta_complexity": -0.925,
+      "delta_free_energy": -0.7749999999999999,
+      "full_model": {
+        "accuracy": 0.8750000000000001,
+        "complexity": 1.25,
+        "free_energy": 0.3949999999999999,
+        "noise": 0.02
+      },
+      "metacognitive_access": 0.5,
+      "prior_precision": 1.0,
+      "prunes_prior": true,
+      "reduced_model": {
+        "accuracy": 0.7250000000000001,
+        "complexity": 0.325,
+        "free_energy": -0.38000000000000006,
+        "noise": 0.02
+      }
+    },
+    {
+      "delta_accuracy": -0.15000000000000002,
+      "delta_complexity": -1.925,
+      "delta_free_energy": -1.7750000000000001,
+      "full_model": {
+        "accuracy": 0.8750000000000001,
+        "complexity": 2.25,
+        "free_energy": 1.395,
+        "noise": 0.02
+      },
+      "metacognitive_access": 0.5,
+      "prior_precision": 2.0,
+      "prunes_prior": true,
+      "reduced_model": {
+        "accuracy": 0.7250000000000001,
+        "complexity": 0.325,
+        "free_energy": -0.38000000000000006,
+        "noise": 0.02
+      }
+    },
+    {
+      "delta_accuracy": -0.15000000000000002,
+      "delta_complexity": -3.925,
+      "delta_free_energy": -3.775,
+      "full_model": {
+        "accuracy": 0.8750000000000001,
+        "complexity": 4.25,
+        "free_energy": 3.395,
+        "noise": 0.02
+      },
+      "metacognitive_access": 0.5,
+      "prior_precision": 4.0,
+      "prunes_prior": true,
+      "reduced_model": {
+        "accuracy": 0.7250000000000001,
+        "complexity": 0.325,
+        "free_energy": -0.38000000000000006,
+        "noise": 0.02
+      }
+    },
+    {
+      "delta_accuracy": -0.11250000000000004,
+      "delta_complexity": -0.14375,
+      "delta_free_energy": -0.031249999999999944,
+      "full_model": {
+        "accuracy": 0.8812500000000001,
+        "complexity": 0.45,
+        "free_energy": -0.41125000000000006,
+        "noise": 0.02
+      },
+      "metacognitive_access": 0.625,
+      "prior_precision": 0.2,
+      "prunes_prior": true,
+      "reduced_model": {
+        "accuracy": 0.76875,
+        "complexity": 0.30625,
+        "free_energy": -0.4425,
+        "noise": 0.02
+      }
+    },
+    {
+      "delta_accuracy": -0.11250000000000004,
+      "delta_complexity": -0.44375,
+      "delta_free_energy": -0.33124999999999993,
+      "full_model": {
+        "accuracy": 0.8812500000000001,
+        "complexity": 0.75,
+        "free_energy": -0.11125000000000008,
+        "noise": 0.02
+      },
+      "metacognitive_access": 0.625,
+      "prior_precision": 0.5,
+      "prunes_prior": true,
+      "reduced_model": {
+        "accuracy": 0.76875,
+        "complexity": 0.30625,
+        "free_energy": -0.4425,
+        "noise": 0.02
+      }
+    },
+    {
+      "delta_accuracy": -0.11250000000000004,
+      "delta_complexity": -0.94375,
+      "delta_free_energy": -0.8312499999999999,
+      "full_model": {
+        "accuracy": 0.8812500000000001,
+        "complexity": 1.25,
+        "free_energy": 0.38874999999999993,
+        "noise": 0.02
+      },
+      "metacognitive_access": 0.625,
+      "prior_precision": 1.0,
+      "prunes_prior": true,
+      "reduced_model": {
+        "accuracy": 0.76875,
+        "complexity": 0.30625,
+        "free_energy": -0.4425,
+        "noise": 0.02
+      }
+    },
+    {
+      "delta_accuracy": -0.11250000000000004,
+      "delta_complexity": -1.94375,
+      "delta_free_energy": -1.8312499999999998,
+      "full_model": {
+        "accuracy": 0.8812500000000001,
+        "complexity": 2.25,
+        "free_energy": 1.38875,
+        "noise": 0.02
+      },
+      "metacognitive_access": 0.625,
+      "prior_precision": 2.0,
+      "prunes_prior": true,
+      "reduced_model": {
+        "accuracy": 0.76875,
+        "complexity": 0.30625,
+        "free_energy": -0.4425,
+        "noise": 0.02
+      }
+    },
+    {
+      "delta_accuracy": -0.11250000000000004,
+      "delta_complexity": -3.94375,
+      "delta_free_energy": -3.83125,
+      "full_model": {
+        "accuracy": 0.8812500000000001,
+        "complexity": 4.25,
+        "free_energy": 3.38875,
+        "noise": 0.02
+      },
+      "metacognitive_access": 0.625,
+      "prior_precision": 4.0,
+      "prunes_prior": true,
+      "reduced_model": {
+        "accuracy": 0.76875,
+        "complexity": 0.30625,
+        "free_energy": -0.4425,
+        "noise": 0.02
+      }
+    },
+    {
+      "delta_accuracy": -0.07499999999999996,
+      "delta_complexity": -0.16250000000000003,
+      "delta_free_energy": -0.08750000000000008,
+      "full_model": {
+        "accuracy": 0.8875,
+        "complexity": 0.45,
+        "free_energy": -0.4174999999999999,
+        "noise": 0.02
+      },
+      "metacognitive_access": 0.75,
+      "prior_precision": 0.2,
+      "prunes_prior": true,
+      "reduced_model": {
+        "accuracy": 0.8125,
+        "complexity": 0.2875,
+        "free_energy": -0.505,
+        "noise": 0.02
+      }
+    },
+    {
+      "delta_accuracy": -0.07499999999999996,
+      "delta_complexity": -0.4625,
+      "delta_free_energy": -0.38750000000000007,
+      "full_model": {
+        "accuracy": 0.8875,
+        "complexity": 0.75,
+        "free_energy": -0.11749999999999995,
+        "noise": 0.02
+      },
+      "metacognitive_access": 0.75,
+      "prior_precision": 0.5,
+      "prunes_prior": true,
+      "reduced_model": {
+        "accuracy": 0.8125,
+        "complexity": 0.2875,
+        "free_energy": -0.505,
+        "noise": 0.02
+      }
+    },
+    {
+      "delta_accuracy": -0.07499999999999996,
+      "delta_complexity": -0.9625,
+      "delta_free_energy": -0.8875000000000001,
+      "full_model": {
+        "accuracy": 0.8875,
+        "complexity": 1.25,
+        "free_energy": 0.38250000000000006,
+        "noise": 0.02
+      },
+      "metacognitive_access": 0.75,
+      "prior_precision": 1.0,
+      "prunes_prior": true,
+      "reduced_model": {
+        "accuracy": 0.8125,
+        "complexity": 0.2875,
+        "free_energy": -0.505,
+        "noise": 0.02
+      }
+    },
+    {
+      "delta_accuracy": -0.07499999999999996,
+      "delta_complexity": -1.9625,
+      "delta_free_energy": -1.8875000000000002,
+      "full_model": {
+        "accuracy": 0.8875,
+        "complexity": 2.25,
+        "free_energy": 1.3825,
+        "noise": 0.02
+      },
+      "metacognitive_access": 0.75,
+      "prior_precision": 2.0,
+      "prunes_prior": true,
+      "reduced_model": {
+        "accuracy": 0.8125,
+        "complexity": 0.2875,
+        "free_energy": -0.505,
+        "noise": 0.02
+      }
+    },
+    {
+      "delta_accuracy": -0.07499999999999996,
+      "delta_complexity": -3.9625,
+      "delta_free_energy": -3.8874999999999997,
+      "full_model": {
+        "accuracy": 0.8875,
+        "complexity": 4.25,
+        "free_energy": 3.3825,
+        "noise": 0.02
+      },
+      "metacognitive_access": 0.75,
+      "prior_precision": 4.0,
+      "prunes_prior": true,
+      "reduced_model": {
+        "accuracy": 0.8125,
+        "complexity": 0.2875,
+        "free_energy": -0.505,
+        "noise": 0.02
+      }
+    },
+    {
+      "delta_accuracy": -0.03749999999999998,
+      "delta_complexity": -0.18125000000000002,
+      "delta_free_energy": -0.14375,
+      "full_model": {
+        "accuracy": 0.8937499999999999,
+        "complexity": 0.45,
+        "free_energy": -0.4237499999999999,
+        "noise": 0.02
+      },
+      "metacognitive_access": 0.875,
+      "prior_precision": 0.2,
+      "prunes_prior": true,
+      "reduced_model": {
+        "accuracy": 0.85625,
+        "complexity": 0.26875,
+        "free_energy": -0.5674999999999999,
+        "noise": 0.02
+      }
+    },
+    {
+      "delta_accuracy": -0.03749999999999998,
+      "delta_complexity": -0.48125,
+      "delta_free_energy": -0.44375,
+      "full_model": {
+        "accuracy": 0.8937499999999999,
+        "complexity": 0.75,
+        "free_energy": -0.12374999999999993,
+        "noise": 0.02
+      },
+      "metacognitive_access": 0.875,
+      "prior_precision": 0.5,
+      "prunes_prior": true,
+      "reduced_model": {
+        "accuracy": 0.85625,
+        "complexity": 0.26875,
+        "free_energy": -0.5674999999999999,
+        "noise": 0.02
+      }
+    },
+    {
+      "delta_accuracy": -0.03749999999999998,
+      "delta_complexity": -0.98125,
+      "delta_free_energy": -0.94375,
+      "full_model": {
+        "accuracy": 0.8937499999999999,
+        "complexity": 1.25,
+        "free_energy": 0.3762500000000001,
+        "noise": 0.02
+      },
+      "metacognitive_access": 0.875,
+      "prior_precision": 1.0,
+      "prunes_prior": true,
+      "reduced_model": {
+        "accuracy": 0.85625,
+        "complexity": 0.26875,
+        "free_energy": -0.5674999999999999,
+        "noise": 0.02
+      }
+    },
+    {
+      "delta_accuracy": -0.03749999999999998,
+      "delta_complexity": -1.98125,
+      "delta_free_energy": -1.94375,
+      "full_model": {
+        "accuracy": 0.8937499999999999,
+        "complexity": 2.25,
+        "free_energy": 1.3762500000000002,
+        "noise": 0.02
+      },
+      "metacognitive_access": 0.875,
+      "prior_precision": 2.0,
+      "prunes_prior": true,
+      "reduced_model": {
+        "accuracy": 0.85625,
+        "complexity": 0.26875,
+        "free_energy": -0.5674999999999999,
+        "noise": 0.02
+      }
+    },
+    {
+      "delta_accuracy": -0.03749999999999998,
+      "delta_complexity": -3.98125,
+      "delta_free_energy": -3.94375,
+      "full_model": {
+        "accuracy": 0.8937499999999999,
+        "complexity": 4.25,
+        "free_energy": 3.37625,
+        "noise": 0.02
+      },
+      "metacognitive_access": 0.875,
+      "prior_precision": 4.0,
+      "prunes_prior": true,
+      "reduced_model": {
+        "accuracy": 0.85625,
+        "complexity": 0.26875,
+        "free_energy": -0.5674999999999999,
+        "noise": 0.02
+      }
+    },
+    {
+      "delta_accuracy": 0.0,
+      "delta_complexity": -0.2,
+      "delta_free_energy": -0.2,
+      "full_model": {
+        "accuracy": 0.9,
+        "complexity": 0.45,
+        "free_energy": -0.43,
+        "noise": 0.02
+      },
+      "metacognitive_access": 1.0,
+      "prior_precision": 0.2,
+      "prunes_prior": true,
+      "reduced_model": {
+        "accuracy": 0.9,
+        "complexity": 0.25,
+        "free_energy": -0.63,
+        "noise": 0.02
+      }
+    },
+    {
+      "delta_accuracy": 0.0,
+      "delta_complexity": -0.5,
+      "delta_free_energy": -0.5,
+      "full_model": {
+        "accuracy": 0.9,
+        "complexity": 0.75,
+        "free_energy": -0.13000000000000003,
+        "noise": 0.02
+      },
+      "metacognitive_access": 1.0,
+      "prior_precision": 0.5,
+      "prunes_prior": true,
+      "reduced_model": {
+        "accuracy": 0.9,
+        "complexity": 0.25,
+        "free_energy": -0.63,
+        "noise": 0.02
+      }
+    },
+    {
+      "delta_accuracy": 0.0,
+      "delta_complexity": -1.0,
+      "delta_free_energy": -1.0,
+      "full_model": {
+        "accuracy": 0.9,
+        "complexity": 1.25,
+        "free_energy": 0.37,
+        "noise": 0.02
+      },
+      "metacognitive_access": 1.0,
+      "prior_precision": 1.0,
+      "prunes_prior": true,
+      "reduced_model": {
+        "accuracy": 0.9,
+        "complexity": 0.25,
+        "free_energy": -0.63,
+        "noise": 0.02
+      }
+    },
+    {
+      "delta_accuracy": 0.0,
+      "delta_complexity": -2.0,
+      "delta_free_energy": -2.0,
+      "full_model": {
+        "accuracy": 0.9,
+        "complexity": 2.25,
+        "free_energy": 1.37,
+        "noise": 0.02
+      },
+      "metacognitive_access": 1.0,
+      "prior_precision": 2.0,
+      "prunes_prior": true,
+      "reduced_model": {
+        "accuracy": 0.9,
+        "complexity": 0.25,
+        "free_energy": -0.63,
+        "noise": 0.02
+      }
+    },
+    {
+      "delta_accuracy": 0.0,
+      "delta_complexity": -4.0,
+      "delta_free_energy": -4.0,
+      "full_model": {
+        "accuracy": 0.9,
+        "complexity": 4.25,
+        "free_energy": 3.37,
+        "noise": 0.02
+      },
+      "metacognitive_access": 1.0,
+      "prior_precision": 4.0,
+      "prunes_prior": true,
+      "reduced_model": {
+        "accuracy": 0.9,
+        "complexity": 0.25,
+        "free_energy": -0.63,
+        "noise": 0.02
+      }
+    }
+  ],
+  "schema": "realizing_emptiness.bmr_sweep.v1"
+}

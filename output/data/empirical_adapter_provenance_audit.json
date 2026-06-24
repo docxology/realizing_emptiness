@@ -1,0 +1,80 @@
+{
+  "all_controls_pass": true,
+  "claim_boundary": "finite deterministic roadmap-engine simulation; not empirical evidence, not a physical qFEP realization, and not evidence for clinical, contemplative, or neural outcomes",
+  "controls": {
+    "every_record_has_decision": true,
+    "forged_self_asserted_reviewed_dataset_blocked": true,
+    "no_empirical_claims_allowed": true,
+    "placeholder_without_preprocessing_blocked": true,
+    "synthetic_demo_not_empirical_claim": true,
+    "unsourced_human_data_blocked": true
+  },
+  "criteria": [
+    "source_identity",
+    "ethics_basis",
+    "preprocessing_hash",
+    "null_model",
+    "not_synthetic",
+    "independent_external_review"
+  ],
+  "row_count": 4,
+  "rows": [
+    {
+      "allowed_for_empirical_claim": false,
+      "allowed_for_software_demo": false,
+      "decision": "blocked",
+      "has_ethics_basis": false,
+      "has_independent_external_review": false,
+      "has_null_model": false,
+      "has_preprocessing_hash": false,
+      "has_source_identity": false,
+      "id": "unsourced_human_claim_attempt",
+      "provenance_complete": false,
+      "record_type": "human_data_claim",
+      "synthetic": false
+    },
+    {
+      "allowed_for_empirical_claim": false,
+      "allowed_for_software_demo": true,
+      "decision": "demo_only",
+      "has_ethics_basis": true,
+      "has_independent_external_review": false,
+      "has_null_model": true,
+      "has_preprocessing_hash": true,
+      "has_source_identity": true,
+      "id": "synthetic_demo_fixture",
+      "provenance_complete": true,
+      "record_type": "synthetic_demo",
+      "synthetic": true
+    },
+    {
+      "allowed_for_empirical_claim": false,
+      "allowed_for_software_demo": false,
+      "decision": "blocked",
+      "has_ethics_basis": true,
+      "has_independent_external_review": false,
+      "has_null_model": true,
+      "has_preprocessing_hash": false,
+      "has_source_identity": true,
+      "id": "preregistered_placeholder_without_data",
+      "provenance_complete": false,
+      "record_type": "protocol_placeholder",
+      "synthetic": false
+    },
+    {
+      "allowed_for_empirical_claim": false,
+      "allowed_for_software_demo": false,
+      "decision": "blocked",
+      "has_ethics_basis": true,
+      "has_independent_external_review": false,
+      "has_null_model": true,
+      "has_preprocessing_hash": true,
+      "has_source_identity": true,
+      "id": "forged_self_asserted_reviewed_dataset",
+      "provenance_complete": true,
+      "record_type": "reviewed_empirical_dataset",
+      "synthetic": false
+    }
+  ],
+  "schema": "realizing_emptiness.empirical_adapter_provenance_audit.v1"
+}

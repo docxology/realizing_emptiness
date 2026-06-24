@@ -1,0 +1,19 @@
+{
+  "alt_text_length": 280,
+  "aspect_ratio": 1.2,
+  "aspect_ratio_ok": true,
+  "caption_length": 334,
+  "cover_style": "hybrid_symbolic_near_square_large_type",
+  "dimensions_ok": true,
+  "figure_byte_size": 380445,
+  "figure_exists": true,
+  "figure_path": "output/figures/graphical_abstract_cover.png",
+  "height": 2520,
+  "numbered_as_figure": false,
+  "ok": true,
+  "referenced_in_abstract": true,
+  "referenced_in_title_preamble": true,
+  "schema": "realizing_emptiness.cover_graphical_abstract_audit.v1",
+  "source_mapped": true,
+  "width": 3024
+}
