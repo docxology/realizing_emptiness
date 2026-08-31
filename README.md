@@ -20,7 +20,7 @@
 ## State right now (orientation for a cold agent)
 
 - **Project status:** v1.0.0 published (Zenodo + GitHub release). Verify: the DOI link above resolves, and `git log --oneline -1` shows `Realizing Emptiness v1.0.0`.
-- **Counts below are prose snapshots, not live facts.** As of 2026-08-31 the README badges claimed 85 tests / 95% coverage / 428 gates. Re-verify rather than trust: `uv run pytest tests/ --collect-only -q | tail -1` (test count), `uv run python scripts/validate_outputs.py | tail -5` (gate count). (Unverified in-session — the venv had to be rebuilt on this slow volume.)
+- **Counts below are prose snapshots, not live facts.** As of 2026-08-31 the README badges claimed 85 tests / 95% coverage / 428 gates; measured test collection that date gives 86 tests (verified by the command below). Coverage and gate counts were not re-measured in-session. Re-verify rather than trust: `uv run pytest tests/ --collect-only -q | tail -1` (test count), `uv run python scripts/validate_outputs.py | tail -5` (gate count). 
 - **Next actions / backlog:** [TODO.md](TODO.md) is the single canonical backlog — including the five blocked-external-evidence classes and any local, unblocked work.
 - **Commands:** the canonical command list lives in [AGENTS.md](AGENTS.md) (Commands section); the quick start below is a subset.
 
