@@ -2,15 +2,18 @@
 
 Private working project: **Realizing Emptiness**.
 
-Read this with the parent sidecar guidance in `../projects/AGENTS.md`.
-This project is a normal sidecar directory, not a nested Git repo.
+This project is a normal sidecar directory, not a nested Git repo. If you are
+working through the template checkout mirror
+(`template/projects/ongoing/ActiveInference/realizing_emptiness`), also read the
+sidecar guidance at the template repo's `projects/AGENTS.md`; that path does not
+exist from this standalone checkout.
 
 ## Source Contract
 
 - The primary source artifact is the attached local PDF recorded in
   `data/sources/source_manifest.yaml`.
 - Scholarship sources live in `data/sources/scholarship_manifest.yaml`; every
-  citation key listed there must exist in `manuscript/references.bib`.
+  citation key listed there must exist in `docs/manuscript/references.bib`.
 - Public claims live in `output/data/source_claim_crosswalk.json` and are
   audited through `output/data/claim_support_audit.json`; do not add a claim ID
   without a source role, gate, artifact, and evidence ceiling.
@@ -64,9 +67,9 @@ This project is a normal sidecar directory, not a nested Git repo.
 | `src/gates/` | Output, manuscript, source, and documentation validators |
 | `docs/` | Human-readable contracts and guides (flat): QRF intro, glossary, architecture, formalism, validation, visualization, scholarship, roadmap, method inventory, RedTeam audit; index in `docs/README.md` |
 | `scripts/` | Thin orchestrators only |
-| `manuscript/sheaf/` | Track registry and IMRAD manifest |
+| `docs/manuscript/sheaf/` | Track registry and IMRAD manifest |
 
-## Commands
+## Commands (canonical command list — other docs link here, they do not copy it)
 
 ```bash
 uv run python scripts/run_full_chain.py
@@ -83,5 +86,7 @@ Render from the sibling template checkout:
 ```bash
 cd <template-checkout>
 uv run python -m infrastructure.orchestration link-projects
-uv run python scripts/03_render_pdf.py --project working/realizing_emptiness
+uv run python scripts/03_render_pdf.py --project <qualifier>
+# <qualifier> is working/ or archive/ depending on the sidecar lifecycle folder —
+# determine it per docs/running-the-chain.md (canonical render instructions).
 ```

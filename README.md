@@ -17,6 +17,13 @@
 
 ---
 
+## State right now (orientation for a cold agent)
+
+- **Project status:** v1.0.0 published (Zenodo + GitHub release). Verify: the DOI link above resolves, and `git log --oneline -1` shows `Realizing Emptiness v1.0.0`.
+- **Counts below are prose snapshots, not live facts.** As of 2026-08-31 the README badges claimed 85 tests / 95% coverage / 428 gates. Re-verify rather than trust: `uv run pytest tests/ --collect-only -q | tail -1` (test count), `uv run python scripts/validate_outputs.py | tail -5` (gate count). (Unverified in-session — the venv had to be rebuilt on this slow volume.)
+- **Next actions / backlog:** [TODO.md](TODO.md) is the single canonical backlog — including the five blocked-external-evidence classes and any local, unblocked work.
+- **Commands:** the canonical command list lives in [AGENTS.md](AGENTS.md) (Commands section); the quick start below is a subset.
+
 ## What this is
 
 `realizing_emptiness` turns the paper's formal argument — no-self-evidence,
@@ -49,7 +56,7 @@ See the [documentation index](docs/README.md) for the full contract-by-contract 
 | --- | --- |
 | [`src/`](src/) | Finite simulation, formalism, gates, and visualization modules (95% test coverage) |
 | [`scripts/`](scripts/) | Thin orchestrators — the deterministic artifact chain |
-| [`manuscript/`](manuscript/) | Sheaf-composed manuscript sources (compose into the combined PDF) |
+| [`docs/manuscript/`](docs/manuscript/) | Sheaf-composed manuscript sources (compose into the combined PDF) |
 | [`docs/`](docs/README.md) | Conceptual on-ramp, formal mapping, and discipline/gate contracts |
 | [`output/`](output/) | Generated artifacts: data, figures, dashboard, and the rendered PDF |
 | [`schemas/`](schemas/) | JSON schemas for every generated artifact |
@@ -74,8 +81,10 @@ Render the manuscript PDF through the sibling template checkout:
 ```bash
 # from the template checkout
 uv run python -m infrastructure.orchestration link-projects
-uv run python scripts/03_render_pdf.py --project archive/realizing_emptiness
+uv run python scripts/03_render_pdf.py --project <qualifier>
 ```
+
+The correct `--project` qualifier depends on which sidecar lifecycle folder holds the mirror; [docs/running-the-chain.md](docs/running-the-chain.md) is canonical for determining it.
 
 ## Reproducibility & validation
 

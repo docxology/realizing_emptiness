@@ -28,7 +28,7 @@ uv run python scripts/run_full_chain.py
 ```
 
 The script runs thin orchestrators in this order; each imports computation from
-`src/` and writes only into `output/` (or the composed `manuscript/`):
+`src/` and writes only into `output/` (or the composed `docs/manuscript/`):
 
 1. `scripts/generate_formalisms.py` — writes the equation registry, claim
    ledgers, source-hash check, and artifact contract registry to
@@ -54,7 +54,7 @@ The script runs thin orchestrators in this order; each imports computation from
    `output/data/*.json` and `output/reports/*.json`.
 8. `scripts/generate_figures.py` — renders every figure to `output/figures/*.png`
    and writes `output/data/figure_source_map.json` plus the figure audits.
-9. `scripts/compose_manuscript.py` — composes the top-level `manuscript/0X_*.md`
+9. `scripts/compose_manuscript.py` — composes the top-level `docs/manuscript/0X_*.md`
    files from the per-track sheaf fragments and writes the manuscript audits.
 10. `scripts/generate_method_inventory.py` — regenerates
     `docs/method-inventory.md` from the source tree.
@@ -124,12 +124,23 @@ uv run python scripts/validate_outputs.py
 ## Render and manual QA
 
 The project renders through the sibling template checkout, not by hand-editing
-`output/` files:
+`output/` files. **This section is the canonical render instruction** — README
+and AGENTS.md link here rather than restating the qualifier.
+
+Determine the correct `--project` qualifier from the template checkout (the
+mirror lives under one sidecar lifecycle folder):
+
+```bash
+ls projects/working/ projects/archive/ 2>/dev/null | grep realizing_emptiness
+```
+
+Then render with the folder that matched (`working/realizing_emptiness` or
+`archive/realizing_emptiness`):
 
 ```bash
 cd <template-checkout>
 uv run python -m infrastructure.orchestration link-projects
-uv run python scripts/03_render_pdf.py --project working/realizing_emptiness
+uv run python scripts/03_render_pdf.py --project <matched-qualifier>
 ```
 
 After rendering, inspect the actual surfaces that readers see:
