@@ -1,7 +1,7 @@
 # Discussion (IMRAD: Discussion)
 
-Per-track fragments for the Discussion. They compose into `manuscript/04_discussion.md` via
-the sheaf, in the track order declared in `manuscript/sheaf/manifest.yaml`
+Per-track fragments for the Discussion. They compose into `docs/manuscript/04_discussion.md` via
+the sheaf, in the track order declared in `docs/manuscript/sheaf/manifest.yaml`
 (`paper_source, scholarship, practice_protocols, criticality, compassion_proxy, evidence_ceiling, limitations`).
 No `_lead.md` here.
 
@@ -14,4 +14,4 @@ Fragments present:
 - `evidence_ceiling.md` - evidence ceilings as an adversarial brake; the strict reading rule.
 - `limitations.md` - finite engines do not collapse the evidence boundary or change evidence class.
 
-Do not hand-edit the composed `manuscript/04_discussion.md`; edit fragments here.
+Do not hand-edit the composed `docs/manuscript/04_discussion.md`; edit fragments here.

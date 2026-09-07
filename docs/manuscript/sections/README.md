@@ -2,7 +2,7 @@
 
 The hand-edited source of the manuscript. Each subfolder is one manuscript
 section; each Markdown file inside it is one per-track fragment. The top-level
-`manuscript/0X_*.md` files are composed from these fragments by
+`docs/manuscript/0X_*.md` files are composed from these fragments by
 `scripts/compose_manuscript.py` and must never be hand-edited.
 
 ## Layout

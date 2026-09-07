@@ -1,7 +1,7 @@
 # AGENTS: Introduction fragments
 
-- Edit the per-track `*.md` fragments here; never edit the composed `manuscript/01_introduction.md`.
-- Each fragment maps to a `(section=introduction, track)` row in `manuscript/sheaf/manifest.yaml`;
+- Edit the per-track `*.md` fragments here; never edit the composed `docs/manuscript/01_introduction.md`.
+- Each fragment maps to a `(section=introduction, track)` row in `docs/manuscript/sheaf/manifest.yaml`;
   the filename is the track id (`paper_source`, `limitations`).
 - Hold the strict claim ceiling: no empirical, clinical, neural, ontological, awakening, or
   practice-efficacy claims; keep finite-surrogate language.

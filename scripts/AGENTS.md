@@ -8,6 +8,27 @@
 - Run from the project root with the project venv. `run_full_chain.py` invokes
   each step as `sys.executable scripts/<name>.py`.
 
+## Script inventory
+
+| Script | Delegates to | Primary outputs |
+| --- | --- | --- |
+| `generate_formalisms.py` | `formalism.claim_crosswalk`, `formalism.equations`, `formalism.governance`, `formalism.manuscript`, `formalism.scholarship`, `formalism.source`, `formalism.stress`, `gates.contracts` | `output/data/formalism_registry.json`, `equation_audit.json`, `source_claim_crosswalk.json`, governance/contract artifacts |
+| `simulate_boundary_agents.py` | `simulation.pymdp_profiles`, `simulation.qrf_env`, `simulation.stochastic`, `simulation.compassion_scope` | QRF boundary/ledger, pymdp profile + policy trace, stochastic ensemble, compassion-scope artifacts |
+| `generate_quantum_surrogates.py` | `simulation.quantum_surrogates` | finite quantum-information artifacts |
+| `generate_extended_surrogates.py` | `simulation.emergence`, `simulation.blackwell_ordering`, `simulation.classical_data_processing`, `simulation.interaction_information`, `simulation.markov_blanket`, `simulation.quantum_estimation`, `simulation.quantum_surrogates` | extended source-fidelity artifacts |
+| `run_bmr_sweep.py` | `simulation.bmr` | `output/data/bmr_sweep.json` |
+| `generate_statistics.py` | `simulation.statistical_robustness` | statistical robustness artifacts |
+| `generate_sheaf_tracks.py` | `simulation.criticality`, `simulation.sensitivity`, `practice.protocols`, `formalism.claim_context`, `formalism.source_fit`, `gates.roadmap` | criticality/practice/sensitivity/claim-context/roadmap artifacts |
+| `generate_figures.py` | `visualizations.figures` | `output/figures/*` + figure source map |
+| `compose_manuscript.py` | `formalism.compose` | `docs/manuscript/*.md` + `output/data/sheaf_coverage_matrix.json` + structure audits |
+| `generate_method_inventory.py` | `gates.method_inventory` | `docs/method-inventory.md` |
+| `generate_equation_crosswalk.py` | `formalism.equations` | `docs/equation-crosswalk.md` |
+| `z_generate_manuscript_variables.py` | `gates.manuscript_variables` | `output/data/manuscript_variables.json` + hydrated `output/manuscript/*` |
+| `generate_dashboard.py` | `visualizations.dashboard` | static artifact dashboard |
+| `generate_review_response_artifacts.py` | `formalism.claim_redteam`, `formalism.review_response`, `visualizations.dashboard` | review-response + release-manifest artifacts |
+| `validate_outputs.py` | `gates.validation` | `output/reports/validation_report.json` |
+| `check_documentation_contract.py` | `gates.validation` | documentation-contract check |
+
 ## Chain order (run_full_chain.py)
 
 1. `generate_formalisms.py`

@@ -54,8 +54,8 @@ def review_response_rows() -> list[dict[str, Any]]:
             "response_status": "implemented_local_delta",
             "evidence_paths": [
                 "data/sources/scholarship_manifest.yaml",
-                "manuscript/references.bib",
-                "manuscript/sections/supplement/scholarship.md",
+                "docs/manuscript/references.bib",
+                "docs/manuscript/sections/supplement/scholarship.md",
             ],
             "gate": "scholarship_manifest_ok",
             "boundary": CLAIM_BOUNDARY,

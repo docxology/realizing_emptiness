@@ -132,4 +132,4 @@ guaranteed monotone story, and not a contemplative or clinical claim about
 | Implemented finite quantum extension engines and future-evidence governance | [quantum extension governance](quantum-simulation-roadmap.md) |
 | Every code method and the engine it backs | [method inventory](method-inventory.md) |
 | How to set up and run the pipeline | [running the chain](running-the-chain.md) |
-| The manuscript argument itself | `manuscript/01_introduction.md`, then `manuscript/02_methods.md` |
+| The manuscript argument itself | `docs/manuscript/01_introduction.md`, then `docs/manuscript/02_methods.md` |

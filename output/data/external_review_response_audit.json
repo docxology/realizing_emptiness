@@ -68,8 +68,8 @@
       "boundary": "review-response accounting for finite deterministic or seeded software validation only; not empirical, not public independent reproduction, not clinical, not neural, not practice-efficacy, not contemplative-attainment, and not physical qFEP evidence",
       "evidence_paths": [
         "data/sources/scholarship_manifest.yaml",
-        "manuscript/references.bib",
-        "manuscript/sections/supplement/scholarship.md"
+        "docs/manuscript/references.bib",
+        "docs/manuscript/sections/supplement/scholarship.md"
       ],
       "gate": "scholarship_manifest_ok",
       "recommendation_id": "bibliography_additions",

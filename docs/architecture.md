@@ -1,6 +1,6 @@
 # Project Architecture: How the Pieces Connect
 
-How `manuscript/`, `src/`, `scripts/`, `tests/`, and the generated artifacts fit
+How `docs/manuscript/`, `src/`, `scripts/`, `tests/`, and the generated artifacts fit
 together, and the exact recipe for extending each. This is the map a maintainer
 needs before adding a figure, a surrogate, or a claim. For the concepts, read
 [the QRF introduction](qrf-introduction.md) first.
@@ -16,7 +16,7 @@ src/simulation/  --(simulate_boundary_agents.py,    output/data/*.json   (QRF au
                     run_bmr_sweep.py, generate_*_surrogates.py,
                     generate_statistics.py)
 src/visualizations/ --(generate_figures.py)-->      output/figures/*.png + output/data/figure_source_map.json + figure audits
-manuscript/sections/ --(compose_manuscript.py)-->   manuscript/0X_*.md   (composed) + manuscript audits
+docs/manuscript/sections/ --(compose_manuscript.py)-->   docs/manuscript/0X_*.md   (composed) + manuscript audits
 src/gates/       --(validate_outputs.py)-->          PASS/FAIL over every artifact and audit
 ```
 
@@ -32,7 +32,7 @@ Determinism is a contract: fixed seeds, no wall-clock, byte-stable JSON. Tests i
 | `src/visualizations/` | one `_<id>()` renderer per figure, style contracts, caption/integrity audits | business logic (read JSON, draw) |
 | `src/gates/` | output, manuscript, source, and documentation validators | computation that produces claims |
 | `scripts/` | thin orchestrators only (import from `src/`, write `output/`) | algorithms |
-| `manuscript/sections/` | per-track prose fragments | hand-edited composed `0X_*.md` (those are generated) |
+| `docs/manuscript/sections/` | per-track prose fragments | hand-edited composed `0X_*.md` (those are generated) |
 
 The `pymdp` simulation follows that same module boundary. `qrf_env.py` supplies
 the finite QRF deployments and boundary trajectory, `pymdp_profiles.py` builds
@@ -43,11 +43,11 @@ The modules share artifacts and schemas, not hidden cross-module state.
 
 ## The manuscript sheaf
 
-The top-level `manuscript/0X_*.md` files are **generated** by
+The top-level `docs/manuscript/0X_*.md` files are **generated** by
 `scripts/compose_manuscript.py` from per-track fragments under
-`manuscript/sections/<section>/<track>.md`. Edit fragments, never the composed
-files. The manifest (`manuscript/sheaf/manifest.yaml`) lists which tracks each
-section uses; `manuscript/sheaf/tracks.yaml` holds each track's heading and
+`docs/manuscript/sections/<section>/<track>.md`. Edit fragments, never the composed
+files. The manifest (`docs/manuscript/sheaf/manifest.yaml`) lists which tracks each
+section uses; `docs/manuscript/sheaf/tracks.yaml` holds each track's heading and
 anchor. For the abstract, fragments are joined into one paragraph; for other
 sections, each track gets a `## heading {#anchor}`.
 
@@ -78,7 +78,7 @@ sites as a set (a count mismatch fails the suite):
    `src/gates/validation.py`, and bump the `figure_count` assertions in
    `tests/test_practice_and_chain.py`.
 6. **Manifest** — add `id`/`path`/`kind: figure` to `artifact_manifest.yaml`.
-7. **Place it** — embed it once in a `manuscript/sections/**` fragment so its
+7. **Place it** — embed it once in a `docs/manuscript/sections/**` fragment so its
    `@fig:` reference resolves; then `compose_manuscript.py`.
 8. Run `generate_figures.py`, `compose_manuscript.py --strict`,
    `validate_outputs.py`, and `pytest tests/`.

@@ -17,7 +17,7 @@
         "evidence",
         "practice"
       ],
-      "file": "manuscript/sections/abstract/limitations.md",
+      "file": "docs/manuscript/sections/abstract/limitations.md",
       "has_boundary_scope": false,
       "has_negation": false,
       "no_self_risky": false,
@@ -38,7 +38,7 @@
         "no self",
         "self"
       ],
-      "file": "manuscript/sections/abstract/paper_source.md",
+      "file": "docs/manuscript/sections/abstract/paper_source.md",
       "has_boundary_scope": true,
       "has_negation": false,
       "no_self_risky": false,
@@ -56,7 +56,7 @@
         "evidence",
         "qfep"
       ],
-      "file": "manuscript/sections/conclusion/README.md",
+      "file": "docs/manuscript/sections/conclusion/README.md",
       "has_boundary_scope": true,
       "has_negation": true,
       "no_self_risky": false,
@@ -76,7 +76,7 @@
         "qfep",
         "practice"
       ],
-      "file": "manuscript/sections/conclusion/README.md",
+      "file": "docs/manuscript/sections/conclusion/README.md",
       "has_boundary_scope": false,
       "has_negation": false,
       "no_self_risky": false,
@@ -96,7 +96,7 @@
         "evidence",
         "boundary"
       ],
-      "file": "manuscript/sections/conclusion/evidence_ceiling.md",
+      "file": "docs/manuscript/sections/conclusion/evidence_ceiling.md",
       "has_boundary_scope": true,
       "has_negation": true,
       "no_self_risky": false,
@@ -121,7 +121,7 @@
         "practice",
         "boundary"
       ],
-      "file": "manuscript/sections/conclusion/evidence_ceiling.md",
+      "file": "docs/manuscript/sections/conclusion/evidence_ceiling.md",
       "has_boundary_scope": true,
       "has_negation": false,
       "no_self_risky": false,
@@ -140,7 +140,7 @@
         "evidence",
         "boundary"
       ],
-      "file": "manuscript/sections/conclusion/limitations.md",
+      "file": "docs/manuscript/sections/conclusion/limitations.md",
       "has_boundary_scope": true,
       "has_negation": true,
       "no_self_risky": false,
@@ -160,7 +160,7 @@
         "claim",
         "evidence"
       ],
-      "file": "manuscript/sections/conclusion/limitations.md",
+      "file": "docs/manuscript/sections/conclusion/limitations.md",
       "has_boundary_scope": true,
       "has_negation": false,
       "no_self_risky": false,
@@ -182,7 +182,7 @@
         "model",
         "practice"
       ],
-      "file": "manuscript/sections/conclusion/limitations.md",
+      "file": "docs/manuscript/sections/conclusion/limitations.md",
       "has_boundary_scope": false,
       "has_negation": false,
       "no_self_risky": false,
@@ -200,7 +200,7 @@
         "qrf",
         "boundary"
       ],
-      "file": "manuscript/sections/conclusion/paper_source.md",
+      "file": "docs/manuscript/sections/conclusion/paper_source.md",
       "has_boundary_scope": true,
       "has_negation": false,
       "no_self_risky": false,
@@ -219,7 +219,7 @@
         "claim",
         "self"
       ],
-      "file": "manuscript/sections/conclusion/paper_source.md",
+      "file": "docs/manuscript/sections/conclusion/paper_source.md",
       "has_boundary_scope": true,
       "has_negation": true,
       "no_self_risky": false,
@@ -237,7 +237,7 @@
         "evidence",
         "criticality"
       ],
-      "file": "manuscript/sections/discussion/criticality.md",
+      "file": "docs/manuscript/sections/discussion/criticality.md",
       "has_boundary_scope": false,
       "has_negation": true,
       "no_self_risky": false,
@@ -261,7 +261,7 @@
         "results",
         "practice"
       ],
-      "file": "manuscript/sections/discussion/evidence_ceiling.md",
+      "file": "docs/manuscript/sections/discussion/evidence_ceiling.md",
       "has_boundary_scope": true,
       "has_negation": false,
       "no_self_risky": false,
@@ -279,7 +279,7 @@
         "qrf",
         "bmr"
       ],
-      "file": "manuscript/sections/discussion/evidence_ceiling.md",
+      "file": "docs/manuscript/sections/discussion/evidence_ceiling.md",
       "has_boundary_scope": true,
       "has_negation": false,
       "no_self_risky": false,
@@ -301,7 +301,7 @@
         "practice",
         "self"
       ],
-      "file": "manuscript/sections/discussion/evidence_ceiling.md",
+      "file": "docs/manuscript/sections/discussion/evidence_ceiling.md",
       "has_boundary_scope": true,
       "has_negation": true,
       "no_self_risky": false,
@@ -327,7 +327,7 @@
         "compassion",
         "practice"
       ],
-      "file": "manuscript/sections/discussion/evidence_ceiling.md",
+      "file": "docs/manuscript/sections/discussion/evidence_ceiling.md",
       "has_boundary_scope": false,
       "has_negation": false,
       "no_self_risky": false,
@@ -348,7 +348,7 @@
         "practice",
         "boundary"
       ],
-      "file": "manuscript/sections/discussion/limitations.md",
+      "file": "docs/manuscript/sections/discussion/limitations.md",
       "has_boundary_scope": false,
       "has_negation": true,
       "no_self_risky": false,
@@ -365,7 +365,7 @@
       "claim_target_terms": [
         "criticality"
       ],
-      "file": "manuscript/sections/discussion/limitations.md",
+      "file": "docs/manuscript/sections/discussion/limitations.md",
       "has_boundary_scope": false,
       "has_negation": true,
       "no_self_risky": false,
@@ -381,7 +381,7 @@
         "artifact",
         "evidence"
       ],
-      "file": "manuscript/sections/discussion/limitations.md",
+      "file": "docs/manuscript/sections/discussion/limitations.md",
       "has_boundary_scope": true,
       "has_negation": true,
       "no_self_risky": false,
@@ -400,7 +400,7 @@
         "evidence",
         "qrf"
       ],
-      "file": "manuscript/sections/discussion/paper_source.md",
+      "file": "docs/manuscript/sections/discussion/paper_source.md",
       "has_boundary_scope": false,
       "has_negation": true,
       "no_self_risky": false,
@@ -417,7 +417,7 @@
       "claim_target_terms": [
         "software"
       ],
-      "file": "manuscript/sections/discussion/paper_source.md",
+      "file": "docs/manuscript/sections/discussion/paper_source.md",
       "has_boundary_scope": true,
       "has_negation": false,
       "no_self_risky": false,
@@ -434,7 +434,7 @@
       "claim_target_terms": [
         "model"
       ],
-      "file": "manuscript/sections/discussion/paper_source.md",
+      "file": "docs/manuscript/sections/discussion/paper_source.md",
       "has_boundary_scope": true,
       "has_negation": false,
       "no_self_risky": false,
@@ -455,7 +455,7 @@
         "software",
         "boundary"
       ],
-      "file": "manuscript/sections/discussion/paper_source.md",
+      "file": "docs/manuscript/sections/discussion/paper_source.md",
       "has_boundary_scope": true,
       "has_negation": true,
       "no_self_risky": false,
@@ -475,7 +475,7 @@
         "model",
         "claim"
       ],
-      "file": "manuscript/sections/discussion/paper_source.md",
+      "file": "docs/manuscript/sections/discussion/paper_source.md",
       "has_boundary_scope": true,
       "has_negation": true,
       "no_self_risky": false,
@@ -497,7 +497,7 @@
         "self",
         "boundary"
       ],
-      "file": "manuscript/sections/discussion/paper_source.md",
+      "file": "docs/manuscript/sections/discussion/paper_source.md",
       "has_boundary_scope": true,
       "has_negation": true,
       "no_self_risky": false,
@@ -514,7 +514,7 @@
       "claim_target_terms": [
         "surrogate"
       ],
-      "file": "manuscript/sections/discussion/paper_source.md",
+      "file": "docs/manuscript/sections/discussion/paper_source.md",
       "has_boundary_scope": true,
       "has_negation": true,
       "no_self_risky": false,
@@ -538,7 +538,7 @@
         "criticality",
         "compassion"
       ],
-      "file": "manuscript/sections/discussion/paper_source.md",
+      "file": "docs/manuscript/sections/discussion/paper_source.md",
       "has_boundary_scope": true,
       "has_negation": true,
       "no_self_risky": false,
@@ -557,7 +557,7 @@
         "qfep",
         "boundary"
       ],
-      "file": "manuscript/sections/discussion/paper_source.md",
+      "file": "docs/manuscript/sections/discussion/paper_source.md",
       "has_boundary_scope": false,
       "has_negation": true,
       "no_self_risky": false,
@@ -577,7 +577,7 @@
         "software",
         "claim"
       ],
-      "file": "manuscript/sections/discussion/practice_protocols.md",
+      "file": "docs/manuscript/sections/discussion/practice_protocols.md",
       "has_boundary_scope": true,
       "has_negation": false,
       "no_self_risky": false,
@@ -600,7 +600,7 @@
         "self",
         "boundary"
       ],
-      "file": "manuscript/sections/discussion/practice_protocols.md",
+      "file": "docs/manuscript/sections/discussion/practice_protocols.md",
       "has_boundary_scope": true,
       "has_negation": true,
       "no_self_risky": false,
@@ -620,7 +620,7 @@
         "criticality",
         "practice"
       ],
-      "file": "manuscript/sections/discussion/scholarship.md",
+      "file": "docs/manuscript/sections/discussion/scholarship.md",
       "has_boundary_scope": true,
       "has_negation": true,
       "no_self_risky": false,
@@ -641,7 +641,7 @@
         "practice",
         "self"
       ],
-      "file": "manuscript/sections/discussion/scholarship.md",
+      "file": "docs/manuscript/sections/discussion/scholarship.md",
       "has_boundary_scope": true,
       "has_negation": true,
       "no_self_risky": false,
@@ -663,7 +663,7 @@
         "qfep",
         "practice"
       ],
-      "file": "manuscript/sections/discussion/scholarship.md",
+      "file": "docs/manuscript/sections/discussion/scholarship.md",
       "has_boundary_scope": false,
       "has_negation": true,
       "no_self_risky": false,
@@ -679,7 +679,7 @@
         "evidence",
         "compassion"
       ],
-      "file": "manuscript/sections/introduction/paper_source.md",
+      "file": "docs/manuscript/sections/introduction/paper_source.md",
       "has_boundary_scope": false,
       "has_negation": true,
       "no_self_risky": false,
@@ -696,7 +696,7 @@
       "claim_target_terms": [
         "model"
       ],
-      "file": "manuscript/sections/introduction/paper_source.md",
+      "file": "docs/manuscript/sections/introduction/paper_source.md",
       "has_boundary_scope": true,
       "has_negation": true,
       "no_self_risky": false,
@@ -717,7 +717,7 @@
         "qrf",
         "boundary"
       ],
-      "file": "manuscript/sections/introduction/paper_source.md",
+      "file": "docs/manuscript/sections/introduction/paper_source.md",
       "has_boundary_scope": true,
       "has_negation": false,
       "no_self_risky": false,
@@ -740,7 +740,7 @@
         "evidence",
         "qfep"
       ],
-      "file": "manuscript/sections/introduction/paper_source.md",
+      "file": "docs/manuscript/sections/introduction/paper_source.md",
       "has_boundary_scope": false,
       "has_negation": true,
       "no_self_risky": false,
@@ -753,7 +753,7 @@
       "blocked_domain_risky": false,
       "blocked_domains": [],
       "claim_target_terms": [],
-      "file": "manuscript/sections/methods/pymdp.md",
+      "file": "docs/manuscript/sections/methods/pymdp.md",
       "has_boundary_scope": false,
       "has_negation": false,
       "no_self_risky": false,
@@ -777,7 +777,7 @@
         "qfep",
         "practice"
       ],
-      "file": "manuscript/sections/methods/pymdp.md",
+      "file": "docs/manuscript/sections/methods/pymdp.md",
       "has_boundary_scope": true,
       "has_negation": true,
       "no_self_risky": false,
@@ -800,7 +800,7 @@
         "qfep",
         "practice"
       ],
-      "file": "manuscript/sections/methods/qfep.md",
+      "file": "docs/manuscript/sections/methods/qfep.md",
       "has_boundary_scope": true,
       "has_negation": true,
       "no_self_risky": false,
@@ -824,7 +824,7 @@
         "self",
         "boundary"
       ],
-      "file": "manuscript/sections/methods/separation_prior.md",
+      "file": "docs/manuscript/sections/methods/separation_prior.md",
       "has_boundary_scope": true,
       "has_negation": true,
       "no_self_risky": false,
@@ -843,7 +843,7 @@
         "result",
         "model"
       ],
-      "file": "manuscript/sections/methods/separation_prior.md",
+      "file": "docs/manuscript/sections/methods/separation_prior.md",
       "has_boundary_scope": false,
       "has_negation": true,
       "no_self_risky": false,
@@ -863,7 +863,7 @@
         "claim",
         "practice"
       ],
-      "file": "manuscript/sections/results/AGENTS.md",
+      "file": "docs/manuscript/sections/results/AGENTS.md",
       "has_boundary_scope": false,
       "has_negation": false,
       "no_self_risky": false,
@@ -886,7 +886,7 @@
         "self",
         "boundary"
       ],
-      "file": "manuscript/sections/results/_lead.md",
+      "file": "docs/manuscript/sections/results/_lead.md",
       "has_boundary_scope": true,
       "has_negation": false,
       "no_self_risky": false,
@@ -906,7 +906,7 @@
       "claim_target_terms": [
         "surrogate"
       ],
-      "file": "manuscript/sections/results/bmr.md",
+      "file": "docs/manuscript/sections/results/bmr.md",
       "has_boundary_scope": true,
       "has_negation": true,
       "no_self_risky": false,
@@ -923,7 +923,7 @@
       "claim_target_terms": [
         "claim"
       ],
-      "file": "manuscript/sections/results/bmr.md",
+      "file": "docs/manuscript/sections/results/bmr.md",
       "has_boundary_scope": true,
       "has_negation": true,
       "no_self_risky": false,
@@ -943,7 +943,7 @@
         "evidence",
         "boundary"
       ],
-      "file": "manuscript/sections/results/bmr.md",
+      "file": "docs/manuscript/sections/results/bmr.md",
       "has_boundary_scope": false,
       "has_negation": true,
       "no_self_risky": false,
@@ -960,7 +960,7 @@
         "surrogate",
         "boundary"
       ],
-      "file": "manuscript/sections/results/bmr.md",
+      "file": "docs/manuscript/sections/results/bmr.md",
       "has_boundary_scope": true,
       "has_negation": false,
       "no_self_risky": false,
@@ -977,7 +977,7 @@
       "claim_target_terms": [
         "software"
       ],
-      "file": "manuscript/sections/results/bmr.md",
+      "file": "docs/manuscript/sections/results/bmr.md",
       "has_boundary_scope": true,
       "has_negation": false,
       "no_self_risky": false,
@@ -994,7 +994,7 @@
       "claim_target_terms": [
         "evidence"
       ],
-      "file": "manuscript/sections/results/pymdp.md",
+      "file": "docs/manuscript/sections/results/pymdp.md",
       "has_boundary_scope": true,
       "has_negation": false,
       "no_self_risky": false,
@@ -1019,7 +1019,7 @@
         "practice",
         "boundary"
       ],
-      "file": "manuscript/sections/results/qfep.md",
+      "file": "docs/manuscript/sections/results/qfep.md",
       "has_boundary_scope": true,
       "has_negation": false,
       "no_self_risky": false,
@@ -1036,7 +1036,7 @@
       "claim_target_terms": [
         "claim"
       ],
-      "file": "manuscript/sections/results/qfep.md",
+      "file": "docs/manuscript/sections/results/qfep.md",
       "has_boundary_scope": true,
       "has_negation": false,
       "no_self_risky": false,
@@ -1059,7 +1059,7 @@
         "claim",
         "qfep"
       ],
-      "file": "manuscript/sections/results/qfep.md",
+      "file": "docs/manuscript/sections/results/qfep.md",
       "has_boundary_scope": true,
       "has_negation": false,
       "no_self_risky": false,
@@ -1076,7 +1076,7 @@
         "result",
         "qrf"
       ],
-      "file": "manuscript/sections/results/qrf.md",
+      "file": "docs/manuscript/sections/results/qrf.md",
       "has_boundary_scope": true,
       "has_negation": true,
       "no_self_risky": false,
@@ -1095,7 +1095,7 @@
         "qrf",
         "boundary"
       ],
-      "file": "manuscript/sections/results/qrf.md",
+      "file": "docs/manuscript/sections/results/qrf.md",
       "has_boundary_scope": true,
       "has_negation": false,
       "no_self_risky": false,
@@ -1116,7 +1116,7 @@
         "evidence",
         "qfep"
       ],
-      "file": "manuscript/sections/results/qrf.md",
+      "file": "docs/manuscript/sections/results/qrf.md",
       "has_boundary_scope": true,
       "has_negation": true,
       "no_self_risky": false,
@@ -1133,7 +1133,7 @@
       "claim_target_terms": [
         "boundary"
       ],
-      "file": "manuscript/sections/results/qrf.md",
+      "file": "docs/manuscript/sections/results/qrf.md",
       "has_boundary_scope": false,
       "has_negation": true,
       "no_self_risky": false,
@@ -1153,7 +1153,7 @@
         "claim",
         "practice"
       ],
-      "file": "manuscript/sections/supplement/AGENTS.md",
+      "file": "docs/manuscript/sections/supplement/AGENTS.md",
       "has_boundary_scope": false,
       "has_negation": false,
       "no_self_risky": false,
@@ -1172,7 +1172,7 @@
         "model",
         "self"
       ],
-      "file": "manuscript/sections/supplement/compassion_proxy.md",
+      "file": "docs/manuscript/sections/supplement/compassion_proxy.md",
       "has_boundary_scope": false,
       "has_negation": true,
       "no_self_risky": false,
@@ -1188,7 +1188,7 @@
         "compassion",
         "self"
       ],
-      "file": "manuscript/sections/supplement/compassion_proxy.md",
+      "file": "docs/manuscript/sections/supplement/compassion_proxy.md",
       "has_boundary_scope": false,
       "has_negation": true,
       "no_self_risky": false,
@@ -1210,7 +1210,7 @@
         "compassion",
         "practice"
       ],
-      "file": "manuscript/sections/supplement/compassion_proxy.md",
+      "file": "docs/manuscript/sections/supplement/compassion_proxy.md",
       "has_boundary_scope": true,
       "has_negation": true,
       "no_self_risky": false,
@@ -1227,7 +1227,7 @@
         "qrf",
         "compassion"
       ],
-      "file": "manuscript/sections/supplement/compassion_proxy.md",
+      "file": "docs/manuscript/sections/supplement/compassion_proxy.md",
       "has_boundary_scope": true,
       "has_negation": false,
       "no_self_risky": false,
@@ -1242,7 +1242,7 @@
       "blocked_domain_risky": false,
       "blocked_domains": [],
       "claim_target_terms": [],
-      "file": "manuscript/sections/supplement/compassion_proxy.md",
+      "file": "docs/manuscript/sections/supplement/compassion_proxy.md",
       "has_boundary_scope": false,
       "has_negation": false,
       "no_self_risky": false,
@@ -1263,7 +1263,7 @@
         "compassion",
         "practice"
       ],
-      "file": "manuscript/sections/supplement/compassion_proxy.md",
+      "file": "docs/manuscript/sections/supplement/compassion_proxy.md",
       "has_boundary_scope": true,
       "has_negation": true,
       "no_self_risky": false,
@@ -1283,7 +1283,7 @@
         "claim",
         "practice"
       ],
-      "file": "manuscript/sections/supplement/contemplative_inquiry.md",
+      "file": "docs/manuscript/sections/supplement/contemplative_inquiry.md",
       "has_boundary_scope": false,
       "has_negation": true,
       "no_self_risky": false,
@@ -1301,7 +1301,7 @@
         "result",
         "results"
       ],
-      "file": "manuscript/sections/supplement/contemplative_inquiry.md",
+      "file": "docs/manuscript/sections/supplement/contemplative_inquiry.md",
       "has_boundary_scope": false,
       "has_negation": false,
       "no_self_risky": false,
@@ -1324,7 +1324,7 @@
         "evidence",
         "practice"
       ],
-      "file": "manuscript/sections/supplement/contemplative_inquiry.md",
+      "file": "docs/manuscript/sections/supplement/contemplative_inquiry.md",
       "has_boundary_scope": true,
       "has_negation": true,
       "no_self_risky": false,
@@ -1339,7 +1339,7 @@
       "claim_target_terms": [
         "artifact"
       ],
-      "file": "manuscript/sections/supplement/criticality.md",
+      "file": "docs/manuscript/sections/supplement/criticality.md",
       "has_boundary_scope": false,
       "has_negation": true,
       "no_self_risky": false,
@@ -1360,7 +1360,7 @@
         "evidence",
         "practice"
       ],
-      "file": "manuscript/sections/supplement/criticality.md",
+      "file": "docs/manuscript/sections/supplement/criticality.md",
       "has_boundary_scope": false,
       "has_negation": true,
       "no_self_risky": false,
@@ -1378,7 +1378,7 @@
         "software",
         "criticality"
       ],
-      "file": "manuscript/sections/supplement/criticality.md",
+      "file": "docs/manuscript/sections/supplement/criticality.md",
       "has_boundary_scope": true,
       "has_negation": true,
       "no_self_risky": false,
@@ -1399,7 +1399,7 @@
         "evidence",
         "criticality"
       ],
-      "file": "manuscript/sections/supplement/criticality.md",
+      "file": "docs/manuscript/sections/supplement/criticality.md",
       "has_boundary_scope": true,
       "has_negation": true,
       "no_self_risky": false,
@@ -1418,7 +1418,7 @@
         "evidence",
         "practice"
       ],
-      "file": "manuscript/sections/supplement/criticality.md",
+      "file": "docs/manuscript/sections/supplement/criticality.md",
       "has_boundary_scope": true,
       "has_negation": true,
       "no_self_risky": false,
@@ -1440,7 +1440,7 @@
         "evidence",
         "criticality"
       ],
-      "file": "manuscript/sections/supplement/criticality.md",
+      "file": "docs/manuscript/sections/supplement/criticality.md",
       "has_boundary_scope": false,
       "has_negation": true,
       "no_self_risky": false,
@@ -1455,7 +1455,7 @@
       "claim_target_terms": [
         "simulation"
       ],
-      "file": "manuscript/sections/supplement/criticality.md",
+      "file": "docs/manuscript/sections/supplement/criticality.md",
       "has_boundary_scope": true,
       "has_negation": true,
       "no_self_risky": false,
@@ -1478,7 +1478,7 @@
         "evidence",
         "practice"
       ],
-      "file": "manuscript/sections/supplement/criticality.md",
+      "file": "docs/manuscript/sections/supplement/criticality.md",
       "has_boundary_scope": true,
       "has_negation": true,
       "no_self_risky": false,
@@ -1496,7 +1496,7 @@
         "surrogate",
         "practice"
       ],
-      "file": "manuscript/sections/supplement/evidence_ceiling.md",
+      "file": "docs/manuscript/sections/supplement/evidence_ceiling.md",
       "has_boundary_scope": true,
       "has_negation": false,
       "no_self_risky": false,
@@ -1519,7 +1519,7 @@
         "qfep",
         "practice"
       ],
-      "file": "manuscript/sections/supplement/evidence_ceiling.md",
+      "file": "docs/manuscript/sections/supplement/evidence_ceiling.md",
       "has_boundary_scope": false,
       "has_negation": true,
       "no_self_risky": false,
@@ -1537,7 +1537,7 @@
       "claim_target_terms": [
         "qfep"
       ],
-      "file": "manuscript/sections/supplement/evidence_ceiling.md",
+      "file": "docs/manuscript/sections/supplement/evidence_ceiling.md",
       "has_boundary_scope": true,
       "has_negation": true,
       "no_self_risky": false,
@@ -1557,7 +1557,7 @@
         "evidence",
         "practice"
       ],
-      "file": "manuscript/sections/supplement/evidence_ceiling.md",
+      "file": "docs/manuscript/sections/supplement/evidence_ceiling.md",
       "has_boundary_scope": true,
       "has_negation": false,
       "no_self_risky": false,
@@ -1582,7 +1582,7 @@
         "qfep",
         "practice"
       ],
-      "file": "manuscript/sections/supplement/evidence_ceiling.md",
+      "file": "docs/manuscript/sections/supplement/evidence_ceiling.md",
       "has_boundary_scope": true,
       "has_negation": false,
       "no_self_risky": false,
@@ -1598,7 +1598,7 @@
         "clinical"
       ],
       "claim_target_terms": [],
-      "file": "manuscript/sections/supplement/limitations.md",
+      "file": "docs/manuscript/sections/supplement/limitations.md",
       "has_boundary_scope": false,
       "has_negation": false,
       "no_self_risky": false,
@@ -1622,7 +1622,7 @@
         "practice",
         "boundary"
       ],
-      "file": "manuscript/sections/supplement/practice_protocols.md",
+      "file": "docs/manuscript/sections/supplement/practice_protocols.md",
       "has_boundary_scope": true,
       "has_negation": true,
       "no_self_risky": false,
@@ -1641,7 +1641,7 @@
         "qfep",
         "boundary"
       ],
-      "file": "manuscript/sections/supplement/qfep.md",
+      "file": "docs/manuscript/sections/supplement/qfep.md",
       "has_boundary_scope": true,
       "has_negation": true,
       "no_self_risky": false,
@@ -1663,7 +1663,7 @@
         "claim",
         "boundary"
       ],
-      "file": "manuscript/sections/supplement/qfep.md",
+      "file": "docs/manuscript/sections/supplement/qfep.md",
       "has_boundary_scope": true,
       "has_negation": true,
       "no_self_risky": false,
@@ -1681,7 +1681,7 @@
         "audit",
         "claim"
       ],
-      "file": "manuscript/sections/supplement/qfep.md",
+      "file": "docs/manuscript/sections/supplement/qfep.md",
       "has_boundary_scope": true,
       "has_negation": true,
       "no_self_risky": false,
@@ -1699,7 +1699,7 @@
         "audit",
         "claim"
       ],
-      "file": "manuscript/sections/supplement/qfep.md",
+      "file": "docs/manuscript/sections/supplement/qfep.md",
       "has_boundary_scope": true,
       "has_negation": true,
       "no_self_risky": false,
@@ -1721,7 +1721,7 @@
         "evidence",
         "qfep"
       ],
-      "file": "manuscript/sections/supplement/qfep.md",
+      "file": "docs/manuscript/sections/supplement/qfep.md",
       "has_boundary_scope": true,
       "has_negation": true,
       "no_self_risky": false,
@@ -1734,7 +1734,7 @@
       "blocked_domain_risky": false,
       "blocked_domains": [],
       "claim_target_terms": [],
-      "file": "manuscript/sections/supplement/qfep.md",
+      "file": "docs/manuscript/sections/supplement/qfep.md",
       "has_boundary_scope": false,
       "has_negation": true,
       "no_self_risky": false,
@@ -1751,7 +1751,7 @@
       "claim_target_terms": [
         "self"
       ],
-      "file": "manuscript/sections/supplement/qfep.md",
+      "file": "docs/manuscript/sections/supplement/qfep.md",
       "has_boundary_scope": false,
       "has_negation": true,
       "no_self_risky": false,
@@ -1774,7 +1774,7 @@
         "claim",
         "qfep"
       ],
-      "file": "manuscript/sections/supplement/qfep.md",
+      "file": "docs/manuscript/sections/supplement/qfep.md",
       "has_boundary_scope": true,
       "has_negation": true,
       "no_self_risky": false,
@@ -1795,7 +1795,7 @@
         "claim",
         "qfep"
       ],
-      "file": "manuscript/sections/supplement/qfep.md",
+      "file": "docs/manuscript/sections/supplement/qfep.md",
       "has_boundary_scope": true,
       "has_negation": true,
       "no_self_risky": false,
@@ -1816,7 +1816,7 @@
         "claim",
         "qfep"
       ],
-      "file": "manuscript/sections/supplement/qfep.md",
+      "file": "docs/manuscript/sections/supplement/qfep.md",
       "has_boundary_scope": true,
       "has_negation": true,
       "no_self_risky": false,
@@ -1831,7 +1831,7 @@
       "claim_target_terms": [
         "qfep"
       ],
-      "file": "manuscript/sections/supplement/qfep.md",
+      "file": "docs/manuscript/sections/supplement/qfep.md",
       "has_boundary_scope": false,
       "has_negation": true,
       "no_self_risky": false,
@@ -1851,7 +1851,7 @@
       "claim_target_terms": [
         "qfep"
       ],
-      "file": "manuscript/sections/supplement/qfep.md",
+      "file": "docs/manuscript/sections/supplement/qfep.md",
       "has_boundary_scope": false,
       "has_negation": true,
       "no_self_risky": false,
@@ -1872,7 +1872,7 @@
         "qfep",
         "practice"
       ],
-      "file": "manuscript/sections/supplement/scholarship.md",
+      "file": "docs/manuscript/sections/supplement/scholarship.md",
       "has_boundary_scope": true,
       "has_negation": true,
       "no_self_risky": false,
@@ -1890,7 +1890,7 @@
       "claim_target_terms": [
         "qfep"
       ],
-      "file": "manuscript/sections/supplement/scholarship.md",
+      "file": "docs/manuscript/sections/supplement/scholarship.md",
       "has_boundary_scope": false,
       "has_negation": true,
       "no_self_risky": false,
@@ -1906,7 +1906,7 @@
         "neural"
       ],
       "claim_target_terms": [],
-      "file": "manuscript/sections/supplement/symbol_glossary.md",
+      "file": "docs/manuscript/sections/supplement/symbol_glossary.md",
       "has_boundary_scope": false,
       "has_negation": true,
       "no_self_risky": false,
@@ -1924,7 +1924,7 @@
         "claim",
         "evidence"
       ],
-      "file": "manuscript/sections/supplement/symbol_glossary.md",
+      "file": "docs/manuscript/sections/supplement/symbol_glossary.md",
       "has_boundary_scope": true,
       "has_negation": true,
       "no_self_risky": false,
@@ -1945,7 +1945,7 @@
         "evidence",
         "qfep"
       ],
-      "file": "manuscript/sections/supplement/validation.md",
+      "file": "docs/manuscript/sections/supplement/validation.md",
       "has_boundary_scope": true,
       "has_negation": true,
       "no_self_risky": false,
@@ -1967,7 +1967,7 @@
         "practice",
         "boundary"
       ],
-      "file": "manuscript/sections/supplement/validation.md",
+      "file": "docs/manuscript/sections/supplement/validation.md",
       "has_boundary_scope": false,
       "has_negation": true,
       "no_self_risky": false,
@@ -1987,7 +1987,7 @@
         "claim",
         "practice"
       ],
-      "file": "manuscript/sections/supplement/validation.md",
+      "file": "docs/manuscript/sections/supplement/validation.md",
       "has_boundary_scope": false,
       "has_negation": false,
       "no_self_risky": false,
@@ -2005,7 +2005,7 @@
         "surrogate",
         "practice"
       ],
-      "file": "manuscript/sections/supplement/validation.md",
+      "file": "docs/manuscript/sections/supplement/validation.md",
       "has_boundary_scope": true,
       "has_negation": false,
       "no_self_risky": false,
@@ -2028,7 +2028,7 @@
         "qfep",
         "practice"
       ],
-      "file": "manuscript/sections/supplement/validation.md",
+      "file": "docs/manuscript/sections/supplement/validation.md",
       "has_boundary_scope": false,
       "has_negation": true,
       "no_self_risky": false,
@@ -2046,7 +2046,7 @@
       "claim_target_terms": [
         "qfep"
       ],
-      "file": "manuscript/sections/supplement/validation.md",
+      "file": "docs/manuscript/sections/supplement/validation.md",
       "has_boundary_scope": true,
       "has_negation": true,
       "no_self_risky": false,
@@ -2066,7 +2066,7 @@
         "evidence",
         "practice"
       ],
-      "file": "manuscript/sections/supplement/validation.md",
+      "file": "docs/manuscript/sections/supplement/validation.md",
       "has_boundary_scope": true,
       "has_negation": false,
       "no_self_risky": false,
@@ -2091,7 +2091,7 @@
         "qfep",
         "practice"
       ],
-      "file": "manuscript/sections/supplement/validation.md",
+      "file": "docs/manuscript/sections/supplement/validation.md",
       "has_boundary_scope": true,
       "has_negation": false,
       "no_self_risky": false,
@@ -2117,7 +2117,7 @@
         "no-self",
         "self"
       ],
-      "file": "manuscript/sections/supplement/validation.md",
+      "file": "docs/manuscript/sections/supplement/validation.md",
       "has_boundary_scope": true,
       "has_negation": true,
       "no_self_risky": false,
@@ -2139,7 +2139,7 @@
         "qfep",
         "practice"
       ],
-      "file": "manuscript/sections/supplement/validation.md",
+      "file": "docs/manuscript/sections/supplement/validation.md",
       "has_boundary_scope": true,
       "has_negation": true,
       "no_self_risky": false,
@@ -2161,7 +2161,7 @@
         "qfep",
         "practice"
       ],
-      "file": "manuscript/sections/supplement/validation.md",
+      "file": "docs/manuscript/sections/supplement/validation.md",
       "has_boundary_scope": false,
       "has_negation": true,
       "no_self_risky": false,
@@ -2180,7 +2180,7 @@
         "evidence",
         "qfep"
       ],
-      "file": "manuscript/sections/supplement/validation.md",
+      "file": "docs/manuscript/sections/supplement/validation.md",
       "has_boundary_scope": true,
       "has_negation": true,
       "no_self_risky": false,
@@ -2200,7 +2200,7 @@
         "claim",
         "qfep"
       ],
-      "file": "manuscript/sections/supplement/validation.md",
+      "file": "docs/manuscript/sections/supplement/validation.md",
       "has_boundary_scope": true,
       "has_negation": true,
       "no_self_risky": false,
@@ -2221,7 +2221,7 @@
       "claim_target_terms": [
         "qfep"
       ],
-      "file": "manuscript/sections/supplement/validation.md",
+      "file": "docs/manuscript/sections/supplement/validation.md",
       "has_boundary_scope": false,
       "has_negation": true,
       "no_self_risky": false,
@@ -2237,7 +2237,7 @@
         "clinical"
       ],
       "claim_target_terms": [],
-      "file": "manuscript/sections/supplement/validation.md",
+      "file": "docs/manuscript/sections/supplement/validation.md",
       "has_boundary_scope": false,
       "has_negation": false,
       "no_self_risky": false,
@@ -2263,7 +2263,7 @@
         "no-self",
         "self"
       ],
-      "file": "manuscript/sections/supplement/visualization.md",
+      "file": "docs/manuscript/sections/supplement/visualization.md",
       "has_boundary_scope": true,
       "has_negation": true,
       "no_self_risky": false,
@@ -2285,7 +2285,7 @@
         "qfep",
         "practice"
       ],
-      "file": "manuscript/sections/supplement/visualization.md",
+      "file": "docs/manuscript/sections/supplement/visualization.md",
       "has_boundary_scope": true,
       "has_negation": true,
       "no_self_risky": false,
@@ -2307,7 +2307,7 @@
         "qfep",
         "practice"
       ],
-      "file": "manuscript/sections/supplement/visualization.md",
+      "file": "docs/manuscript/sections/supplement/visualization.md",
       "has_boundary_scope": false,
       "has_negation": true,
       "no_self_risky": false,
@@ -2326,7 +2326,7 @@
         "evidence",
         "qfep"
       ],
-      "file": "manuscript/sections/supplement/visualization.md",
+      "file": "docs/manuscript/sections/supplement/visualization.md",
       "has_boundary_scope": true,
       "has_negation": true,
       "no_self_risky": false,
@@ -2346,7 +2346,7 @@
         "claim",
         "qfep"
       ],
-      "file": "manuscript/sections/supplement/visualization.md",
+      "file": "docs/manuscript/sections/supplement/visualization.md",
       "has_boundary_scope": true,
       "has_negation": true,
       "no_self_risky": false,

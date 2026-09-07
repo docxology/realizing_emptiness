@@ -11,7 +11,7 @@ from typing import Any
 import yaml
 
 
-MANUSCRIPT_FILES = tuple(f"manuscript/{index:02d}_{name}.md" for index, name in (
+MANUSCRIPT_FILES = tuple(f"docs/manuscript/{index:02d}_{name}.md" for index, name in (
     (0, "abstract"),
     (1, "introduction"),
     (2, "methods"),
@@ -179,7 +179,7 @@ def build_figure_placement_audit(project_root: Path) -> dict[str, Any]:
     main_text = "\n".join(
         text for relative, text in texts.items() if not relative.endswith("06_supplement.md")
     )
-    supplement_text = texts.get("manuscript/06_supplement.md", "")
+    supplement_text = texts.get("docs/manuscript/06_supplement.md", "")
     technical_in_main = sorted(path for path in TECHNICAL_QUANTUM_FIGURES if path in main_text)
     technical_missing_from_supplement = sorted(path for path in TECHNICAL_QUANTUM_FIGURES if path not in supplement_text)
     governance_in_main = sorted(path for path in SUPPLEMENTAL_GOVERNANCE_FIGURES if path in main_text)
@@ -227,8 +227,8 @@ def build_figure_placement_audit(project_root: Path) -> dict[str, Any]:
 
 def build_cover_graphical_abstract_audit(project_root: Path) -> dict[str, Any]:
     """Audit the unnumbered graphical abstract cover image."""
-    abstract = (project_root / "manuscript" / "00_abstract.md").read_text(encoding="utf-8")
-    preamble = (project_root / "manuscript" / "preamble.md").read_text(encoding="utf-8")
+    abstract = (project_root / "docs" / "manuscript" / "00_abstract.md").read_text(encoding="utf-8")
+    preamble = (project_root / "docs" / "manuscript" / "preamble.md").read_text(encoding="utf-8")
     figure_path = project_root / "output" / "figures" / "graphical_abstract_cover.png"
     figures_yaml = yaml.safe_load((project_root / "figures.yaml").read_text(encoding="utf-8"))
     cover_meta = figures_yaml.get("figures", {}).get("graphical_abstract_cover", {})

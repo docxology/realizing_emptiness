@@ -44,4 +44,4 @@ Keep `_lead.md` a short signpost for the section. Recompose after any change.
 ## Recompose and no machine paths
 
 After editing, run `uv run python scripts/compose_manuscript.py --strict`.
-Use repository-relative paths only; no absolute `/Users/` paths.
+Use repository-relative paths only; no absolute home-directory paths.

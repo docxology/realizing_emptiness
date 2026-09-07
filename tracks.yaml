@@ -1,6 +1,6 @@
 sheaf:
-  registry: manuscript/sheaf/tracks.yaml
-  manifest: manuscript/sheaf/manifest.yaml
+  registry: docs/manuscript/sheaf/tracks.yaml
+  manifest: docs/manuscript/sheaf/manifest.yaml
   composer: scripts/compose_manuscript.py
 tracks:
   - id: paper_source

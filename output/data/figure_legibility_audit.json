@@ -35,7 +35,7 @@
     {
       "colorbar_count": 0,
       "cropped_text_count": 0,
-      "height": 1447,
+      "height": 1453,
       "id": "qrf_boundary_screen_geometry",
       "layout_ok": true,
       "legend_axis_overlap_count": 0,
@@ -43,16 +43,16 @@
       "min_font_pt": 12.0,
       "ok": true,
       "panel_count": 1,
-      "pixel_variance": 0.01856000191898226,
+      "pixel_variance": 0.018468481211983235,
       "source_data_alternative_count": 3,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
-      "width": 2486
+      "width": 2487
     },
     {
       "colorbar_count": 0,
       "cropped_text_count": 0,
-      "height": 1305,
+      "height": 1309,
       "id": "qrf_channel_relabeling_ledger",
       "layout_ok": true,
       "legend_axis_overlap_count": 0,
@@ -60,11 +60,11 @@
       "min_font_pt": 12.0,
       "ok": true,
       "panel_count": 1,
-      "pixel_variance": 0.068933077555597,
+      "pixel_variance": 0.06898870831054703,
       "source_data_alternative_count": 2,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
-      "width": 3133
+      "width": 3136
     },
     {
       "colorbar_count": 0,
@@ -77,16 +77,16 @@
       "min_font_pt": 12.0,
       "ok": true,
       "panel_count": 2,
-      "pixel_variance": 0.09013003505033867,
+      "pixel_variance": 0.09049269360904807,
       "source_data_alternative_count": 2,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
-      "width": 3373
+      "width": 3378
     },
     {
       "colorbar_count": 0,
       "cropped_text_count": 0,
-      "height": 639,
+      "height": 638,
       "id": "qrf_sectorisation_map",
       "layout_ok": true,
       "legend_axis_overlap_count": 0,
@@ -94,16 +94,16 @@
       "min_font_pt": 12.0,
       "ok": true,
       "panel_count": 1,
-      "pixel_variance": 0.05570698898382234,
+      "pixel_variance": 0.05563459873397123,
       "source_data_alternative_count": 1,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
-      "width": 1879
+      "width": 1875
     },
     {
       "colorbar_count": 0,
       "cropped_text_count": 0,
-      "height": 880,
+      "height": 875,
       "id": "boundary_indistinguishability",
       "layout_ok": true,
       "legend_axis_overlap_count": 0,
@@ -111,16 +111,16 @@
       "min_font_pt": 12.0,
       "ok": true,
       "panel_count": 1,
-      "pixel_variance": 0.09915646759606055,
+      "pixel_variance": 0.09898457747763519,
       "source_data_alternative_count": 1,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
-      "width": 1982
+      "width": 1984
     },
     {
       "colorbar_count": 0,
       "cropped_text_count": 0,
-      "height": 1455,
+      "height": 1452,
       "id": "qrf_reference_frame_geometry",
       "layout_ok": true,
       "legend_axis_overlap_count": 0,
@@ -128,7 +128,7 @@
       "min_font_pt": 12.0,
       "ok": true,
       "panel_count": 1,
-      "pixel_variance": 0.021238155354964657,
+      "pixel_variance": 0.021277102358374284,
       "source_data_alternative_count": 2,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
@@ -137,7 +137,7 @@
     {
       "colorbar_count": 0,
       "cropped_text_count": 0,
-      "height": 1216,
+      "height": 1213,
       "id": "bmr_free_energy_decomposition",
       "layout_ok": true,
       "legend_axis_overlap_count": 0,
@@ -145,16 +145,16 @@
       "min_font_pt": 12.0,
       "ok": true,
       "panel_count": 1,
-      "pixel_variance": 0.02467346827236963,
+      "pixel_variance": 0.02470706247217829,
       "source_data_alternative_count": 1,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
-      "width": 2221
+      "width": 2224
     },
     {
       "colorbar_count": 1,
       "cropped_text_count": 0,
-      "height": 1335,
+      "height": 1323,
       "id": "bmr_pruning_phase_diagram",
       "layout_ok": true,
       "legend_axis_overlap_count": 0,
@@ -162,16 +162,16 @@
       "min_font_pt": 12.0,
       "ok": true,
       "panel_count": 1,
-      "pixel_variance": 0.08407933879042913,
+      "pixel_variance": 0.08414267736078372,
       "source_data_alternative_count": 1,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
-      "width": 2439
+      "width": 2441
     },
     {
       "colorbar_count": 1,
       "cropped_text_count": 0,
-      "height": 1228,
+      "height": 1224,
       "id": "simulation_sensitivity_heatmap",
       "layout_ok": true,
       "legend_axis_overlap_count": 0,
@@ -179,16 +179,16 @@
       "min_font_pt": 12.0,
       "ok": true,
       "panel_count": 1,
-      "pixel_variance": 0.0913799921170337,
+      "pixel_variance": 0.09176361300614028,
       "source_data_alternative_count": 1,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
-      "width": 2297
+      "width": 2310
     },
     {
       "colorbar_count": 0,
       "cropped_text_count": 0,
-      "height": 1221,
+      "height": 1216,
       "id": "finite_quantum_scope_summary",
       "layout_ok": true,
       "legend_axis_overlap_count": 0,
@@ -196,11 +196,11 @@
       "min_font_pt": 12.0,
       "ok": true,
       "panel_count": 1,
-      "pixel_variance": 0.031707088648416905,
+      "pixel_variance": 0.031840958881494935,
       "source_data_alternative_count": 1,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
-      "width": 2462
+      "width": 2463
     },
     {
       "colorbar_count": 0,
@@ -213,16 +213,16 @@
       "min_font_pt": 12.0,
       "ok": true,
       "panel_count": 4,
-      "pixel_variance": 0.03519884444484633,
+      "pixel_variance": 0.035133529712510304,
       "source_data_alternative_count": 1,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
-      "width": 2408
+      "width": 2413
     },
     {
       "colorbar_count": 2,
       "cropped_text_count": 0,
-      "height": 1048,
+      "height": 1045,
       "id": "quantum_contextuality_witness",
       "layout_ok": true,
       "legend_axis_overlap_count": 0,
@@ -230,16 +230,16 @@
       "min_font_pt": 12.0,
       "ok": true,
       "panel_count": 2,
-      "pixel_variance": 0.0680690696119594,
+      "pixel_variance": 0.06818943198381881,
       "source_data_alternative_count": 1,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
-      "width": 2607
+      "width": 2610
     },
     {
       "colorbar_count": 1,
       "cropped_text_count": 0,
-      "height": 999,
+      "height": 996,
       "id": "quantum_measurement_contextuality_table",
       "layout_ok": true,
       "legend_axis_overlap_count": 0,
@@ -247,16 +247,16 @@
       "min_font_pt": 12.0,
       "ok": true,
       "panel_count": 2,
-      "pixel_variance": 0.09758542962782188,
+      "pixel_variance": 0.09777580412477067,
       "source_data_alternative_count": 1,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
-      "width": 2725
+      "width": 2726
     },
     {
       "colorbar_count": 0,
       "cropped_text_count": 0,
-      "height": 976,
+      "height": 971,
       "id": "quantum_local_polytope_audit",
       "layout_ok": true,
       "legend_axis_overlap_count": 0,
@@ -264,16 +264,16 @@
       "min_font_pt": 12.0,
       "ok": true,
       "panel_count": 2,
-      "pixel_variance": 0.06972372869644622,
+      "pixel_variance": 0.06988777993949696,
       "source_data_alternative_count": 1,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
-      "width": 2607
+      "width": 2610
     },
     {
       "colorbar_count": 0,
       "cropped_text_count": 0,
-      "height": 879,
+      "height": 878,
       "id": "quantum_open_system_dynamics",
       "layout_ok": true,
       "legend_axis_overlap_count": 0,
@@ -281,11 +281,11 @@
       "min_font_pt": 12.0,
       "ok": true,
       "panel_count": 3,
-      "pixel_variance": 0.03813053372684344,
+      "pixel_variance": 0.038177653849231837,
       "source_data_alternative_count": 1,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
-      "width": 2893
+      "width": 2894
     },
     {
       "colorbar_count": 0,
@@ -298,11 +298,11 @@
       "min_font_pt": 12.0,
       "ok": true,
       "panel_count": 3,
-      "pixel_variance": 0.03353965550114993,
+      "pixel_variance": 0.03352195779936219,
       "source_data_alternative_count": 1,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
-      "width": 3353
+      "width": 3356
     },
     {
       "colorbar_count": 0,
@@ -315,16 +315,16 @@
       "min_font_pt": 12.0,
       "ok": true,
       "panel_count": 3,
-      "pixel_variance": 0.04008307762391467,
+      "pixel_variance": 0.040107893240873806,
       "source_data_alternative_count": 1,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
-      "width": 3326
+      "width": 3328
     },
     {
       "colorbar_count": 1,
       "cropped_text_count": 0,
-      "height": 883,
+      "height": 875,
       "id": "many_body_boundary_screen_sweep",
       "layout_ok": true,
       "legend_axis_overlap_count": 0,
@@ -332,16 +332,16 @@
       "min_font_pt": 12.0,
       "ok": true,
       "panel_count": 1,
-      "pixel_variance": 0.05577971885764447,
+      "pixel_variance": 0.05577450096839062,
       "source_data_alternative_count": 1,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
-      "width": 2216
+      "width": 2219
     },
     {
       "colorbar_count": 1,
       "cropped_text_count": 0,
-      "height": 952,
+      "height": 945,
       "id": "sheaf_contextuality_obstruction_audit",
       "layout_ok": true,
       "legend_axis_overlap_count": 0,
@@ -349,16 +349,16 @@
       "min_font_pt": 12.0,
       "ok": true,
       "panel_count": 2,
-      "pixel_variance": 0.11609657048878212,
+      "pixel_variance": 0.11614519269817834,
       "source_data_alternative_count": 1,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
-      "width": 2653
+      "width": 2658
     },
     {
       "colorbar_count": 1,
       "cropped_text_count": 0,
-      "height": 1122,
+      "height": 1113,
       "id": "qrf_transformation_covariance_audit",
       "layout_ok": true,
       "legend_axis_overlap_count": 0,
@@ -366,16 +366,16 @@
       "min_font_pt": 12.0,
       "ok": true,
       "panel_count": 2,
-      "pixel_variance": 0.09958003432494472,
+      "pixel_variance": 0.09963158457064286,
       "source_data_alternative_count": 1,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
-      "width": 3004
+      "width": 3002
     },
     {
       "colorbar_count": 1,
       "cropped_text_count": 0,
-      "height": 1001,
+      "height": 996,
       "id": "empirical_adapter_provenance_audit",
       "layout_ok": true,
       "legend_axis_overlap_count": 0,
@@ -383,16 +383,16 @@
       "min_font_pt": 12.0,
       "ok": true,
       "panel_count": 1,
-      "pixel_variance": 0.1036267880052504,
+      "pixel_variance": 0.10348939224750321,
       "source_data_alternative_count": 1,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
-      "width": 2549
+      "width": 2552
     },
     {
       "colorbar_count": 0,
       "cropped_text_count": 0,
-      "height": 978,
+      "height": 969,
       "id": "arbitrary_two_qubit_entanglement_audit",
       "layout_ok": true,
       "legend_axis_overlap_count": 0,
@@ -400,16 +400,16 @@
       "min_font_pt": 12.0,
       "ok": true,
       "panel_count": 2,
-      "pixel_variance": 0.049595451007414554,
+      "pixel_variance": 0.04981635877165615,
       "source_data_alternative_count": 1,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
-      "width": 2654
+      "width": 2656
     },
     {
       "colorbar_count": 1,
       "cropped_text_count": 0,
-      "height": 978,
+      "height": 969,
       "id": "general_measurement_cover_polytope_audit",
       "layout_ok": true,
       "legend_axis_overlap_count": 0,
@@ -417,16 +417,16 @@
       "min_font_pt": 12.0,
       "ok": true,
       "panel_count": 2,
-      "pixel_variance": 0.1098206510982608,
+      "pixel_variance": 0.10972003663295261,
       "source_data_alternative_count": 1,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
-      "width": 2725
+      "width": 2730
     },
     {
       "colorbar_count": 1,
       "cropped_text_count": 0,
-      "height": 978,
+      "height": 972,
       "id": "thermodynamic_channel_cost_audit",
       "layout_ok": true,
       "legend_axis_overlap_count": 0,
@@ -434,16 +434,16 @@
       "min_font_pt": 12.0,
       "ok": true,
       "panel_count": 2,
-      "pixel_variance": 0.0825129102218563,
+      "pixel_variance": 0.08242799264530229,
       "source_data_alternative_count": 1,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
-      "width": 2701
+      "width": 2702
     },
     {
       "colorbar_count": 1,
       "cropped_text_count": 0,
-      "height": 978,
+      "height": 972,
       "id": "sparse_boundary_screen_scaling_audit",
       "layout_ok": true,
       "legend_axis_overlap_count": 0,
@@ -451,16 +451,16 @@
       "min_font_pt": 12.0,
       "ok": true,
       "panel_count": 2,
-      "pixel_variance": 0.06912911176541361,
+      "pixel_variance": 0.06913529056950171,
       "source_data_alternative_count": 1,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
-      "width": 2798
+      "width": 2804
     },
     {
       "colorbar_count": 1,
       "cropped_text_count": 0,
-      "height": 980,
+      "height": 967,
       "id": "qrf_frame_covariance_toy_audit",
       "layout_ok": true,
       "legend_axis_overlap_count": 0,
@@ -468,7 +468,7 @@
       "min_font_pt": 12.0,
       "ok": true,
       "panel_count": 2,
-      "pixel_variance": 0.07515665788107623,
+      "pixel_variance": 0.07514810186642894,
       "source_data_alternative_count": 1,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
@@ -477,7 +477,7 @@
     {
       "colorbar_count": 1,
       "cropped_text_count": 0,
-      "height": 2262,
+      "height": 2254,
       "id": "quantum_roadmap_readiness_matrix",
       "layout_ok": true,
       "legend_axis_overlap_count": 0,
@@ -485,16 +485,16 @@
       "min_font_pt": 12.0,
       "ok": true,
       "panel_count": 1,
-      "pixel_variance": 0.1412742717571366,
+      "pixel_variance": 0.14131736355382804,
       "source_data_alternative_count": 1,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
-      "width": 2845
+      "width": 2848
     },
     {
       "colorbar_count": 0,
       "cropped_text_count": 0,
-      "height": 1294,
+      "height": 1293,
       "id": "pymdp_profile_comparison",
       "layout_ok": true,
       "legend_axis_overlap_count": 0,
@@ -502,16 +502,16 @@
       "min_font_pt": 12.0,
       "ok": true,
       "panel_count": 3,
-      "pixel_variance": 0.0931005868525521,
+      "pixel_variance": 0.09308009243894229,
       "source_data_alternative_count": 3,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
-      "width": 3038
+      "width": 3043
     },
     {
       "colorbar_count": 0,
       "cropped_text_count": 0,
-      "height": 1120,
+      "height": 1117,
       "id": "posterior_trajectory",
       "layout_ok": true,
       "legend_axis_overlap_count": 0,
@@ -519,11 +519,11 @@
       "min_font_pt": 12.0,
       "ok": true,
       "panel_count": 1,
-      "pixel_variance": 0.02447141276483018,
+      "pixel_variance": 0.024473188317669595,
       "source_data_alternative_count": 3,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
-      "width": 2644
+      "width": 2650
     },
     {
       "colorbar_count": 0,
@@ -536,7 +536,7 @@
       "min_font_pt": 12.0,
       "ok": true,
       "panel_count": 4,
-      "pixel_variance": 0.07940922527735364,
+      "pixel_variance": 0.07920680168581487,
       "source_data_alternative_count": 4,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
@@ -545,7 +545,7 @@
     {
       "colorbar_count": 0,
       "cropped_text_count": 0,
-      "height": 807,
+      "height": 804,
       "id": "criticality_proxy_panels",
       "layout_ok": true,
       "legend_axis_overlap_count": 0,
@@ -553,16 +553,16 @@
       "min_font_pt": 12.0,
       "ok": true,
       "panel_count": 1,
-      "pixel_variance": 0.0775747162230533,
+      "pixel_variance": 0.07745223235990085,
       "source_data_alternative_count": 1,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
-      "width": 1646
+      "width": 1648
     },
     {
       "colorbar_count": 0,
       "cropped_text_count": 0,
-      "height": 1307,
+      "height": 1310,
       "id": "criticality_stochastic_ensemble",
       "layout_ok": true,
       "legend_axis_overlap_count": 0,
@@ -570,16 +570,16 @@
       "min_font_pt": 12.0,
       "ok": true,
       "panel_count": 2,
-      "pixel_variance": 0.07670292747874687,
+      "pixel_variance": 0.07649650258115756,
       "source_data_alternative_count": 1,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
-      "width": 2894
+      "width": 2896
     },
     {
       "colorbar_count": 0,
       "cropped_text_count": 0,
-      "height": 1099,
+      "height": 1101,
       "id": "criticality_signatures",
       "layout_ok": true,
       "legend_axis_overlap_count": 0,
@@ -587,16 +587,16 @@
       "min_font_pt": 12.0,
       "ok": true,
       "panel_count": 2,
-      "pixel_variance": 0.05262386060421435,
+      "pixel_variance": 0.05169540112898202,
       "source_data_alternative_count": 2,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
-      "width": 2921
+      "width": 2918
     },
     {
       "colorbar_count": 0,
       "cropped_text_count": 0,
-      "height": 1185,
+      "height": 1181,
       "id": "compassion_scope_widening",
       "layout_ok": true,
       "legend_axis_overlap_count": 0,
@@ -604,16 +604,16 @@
       "min_font_pt": 12.0,
       "ok": true,
       "panel_count": 2,
-      "pixel_variance": 0.046912702747704635,
+      "pixel_variance": 0.04658463282068735,
       "source_data_alternative_count": 1,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
-      "width": 3038
+      "width": 3035
     },
     {
       "colorbar_count": 0,
       "cropped_text_count": 0,
-      "height": 1071,
+      "height": 1067,
       "id": "separation_prior_emergence",
       "layout_ok": true,
       "legend_axis_overlap_count": 0,
@@ -621,16 +621,16 @@
       "min_font_pt": 12.0,
       "ok": true,
       "panel_count": 1,
-      "pixel_variance": 0.026188017683290876,
+      "pixel_variance": 0.02628455417582457,
       "source_data_alternative_count": 1,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
-      "width": 2030
+      "width": 2027
     },
     {
       "colorbar_count": 0,
       "cropped_text_count": 0,
-      "height": 1071,
+      "height": 1063,
       "id": "internal_cut_unmeasurability",
       "layout_ok": true,
       "legend_axis_overlap_count": 0,
@@ -638,16 +638,16 @@
       "min_font_pt": 12.0,
       "ok": true,
       "panel_count": 1,
-      "pixel_variance": 0.05138730186346982,
+      "pixel_variance": 0.051228121581435984,
       "source_data_alternative_count": 1,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
-      "width": 2412
+      "width": 2411
     },
     {
       "colorbar_count": 0,
       "cropped_text_count": 0,
-      "height": 1346,
+      "height": 1335,
       "id": "practice_policy_scope_map",
       "layout_ok": true,
       "legend_axis_overlap_count": 0,
@@ -655,16 +655,16 @@
       "min_font_pt": 12.0,
       "ok": true,
       "panel_count": 1,
-      "pixel_variance": 0.050515350830086916,
+      "pixel_variance": 0.05047293890892793,
       "source_data_alternative_count": 1,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
-      "width": 2605
+      "width": 2611
     },
     {
       "colorbar_count": 0,
       "cropped_text_count": 0,
-      "height": 1394,
+      "height": 1390,
       "id": "stochastic_effect_size_forest",
       "layout_ok": true,
       "legend_axis_overlap_count": 0,
@@ -672,16 +672,16 @@
       "min_font_pt": 12.0,
       "ok": true,
       "panel_count": 1,
-      "pixel_variance": 0.059942062167128524,
+      "pixel_variance": 0.059974182926356465,
       "source_data_alternative_count": 1,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
-      "width": 2018
+      "width": 2024
     },
     {
       "colorbar_count": 2,
       "cropped_text_count": 0,
-      "height": 1583,
+      "height": 1582,
       "id": "bmr_robustness_resampling",
       "layout_ok": true,
       "legend_axis_overlap_count": 0,
@@ -689,16 +689,16 @@
       "min_font_pt": 12.0,
       "ok": true,
       "panel_count": 2,
-      "pixel_variance": 0.13231525676134354,
+      "pixel_variance": 0.13240053226722076,
       "source_data_alternative_count": 1,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
-      "width": 3133
+      "width": 3138
     },
     {
       "colorbar_count": 0,
       "cropped_text_count": 0,
-      "height": 948,
+      "height": 945,
       "id": "quantum_trajectory_convergence",
       "layout_ok": true,
       "legend_axis_overlap_count": 0,
@@ -706,16 +706,16 @@
       "min_font_pt": 12.0,
       "ok": true,
       "panel_count": 2,
-      "pixel_variance": 0.0679971040210851,
+      "pixel_variance": 0.06802873794977843,
       "source_data_alternative_count": 1,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
-      "width": 2633
+      "width": 2636
     },
     {
       "colorbar_count": 0,
       "cropped_text_count": 0,
-      "height": 1163,
+      "height": 1157,
       "id": "visual_semantic_palette_ledger",
       "layout_ok": true,
       "legend_axis_overlap_count": 0,
@@ -723,16 +723,16 @@
       "min_font_pt": 12.0,
       "ok": true,
       "panel_count": 1,
-      "pixel_variance": 0.03225025682804345,
+      "pixel_variance": 0.03236122442538797,
       "source_data_alternative_count": 1,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
-      "width": 2431
+      "width": 2433
     },
     {
       "colorbar_count": 1,
       "cropped_text_count": 0,
-      "height": 1635,
+      "height": 1629,
       "id": "method_assumption_failure_map",
       "layout_ok": true,
       "legend_axis_overlap_count": 0,
@@ -740,16 +740,16 @@
       "min_font_pt": 12.0,
       "ok": true,
       "panel_count": 1,
-      "pixel_variance": 0.17235760127248806,
+      "pixel_variance": 0.1723177388949462,
       "source_data_alternative_count": 2,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
-      "width": 2894
+      "width": 2898
     },
     {
       "colorbar_count": 0,
       "cropped_text_count": 0,
-      "height": 1262,
+      "height": 1257,
       "id": "claim_source_validation_graph",
       "layout_ok": true,
       "legend_axis_overlap_count": 0,
@@ -757,16 +757,16 @@
       "min_font_pt": 12.0,
       "ok": true,
       "panel_count": 1,
-      "pixel_variance": 0.028326252122323814,
+      "pixel_variance": 0.028402352265964943,
       "source_data_alternative_count": 1,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
-      "width": 2519
+      "width": 2522
     },
     {
       "colorbar_count": 1,
       "cropped_text_count": 0,
-      "height": 5993,
+      "height": 5992,
       "id": "scholarship_coverage_matrix",
       "layout_ok": true,
       "legend_axis_overlap_count": 0,
@@ -774,11 +774,11 @@
       "min_font_pt": 12.0,
       "ok": true,
       "panel_count": 1,
-      "pixel_variance": 0.06022743108958904,
+      "pixel_variance": 0.06041607625792661,
       "source_data_alternative_count": 1,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
-      "width": 2556
+      "width": 2565
     },
     {
       "colorbar_count": 1,
@@ -791,16 +791,16 @@
       "min_font_pt": 12.0,
       "ok": true,
       "panel_count": 1,
-      "pixel_variance": 0.04383422332847278,
+      "pixel_variance": 0.04383088514738674,
       "source_data_alternative_count": 1,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
-      "width": 4429
+      "width": 4436
     },
     {
       "colorbar_count": 0,
       "cropped_text_count": 0,
-      "height": 735,
+      "height": 731,
       "id": "manuscript_claim_audit",
       "layout_ok": true,
       "legend_axis_overlap_count": 0,
@@ -808,16 +808,16 @@
       "min_font_pt": 12.0,
       "ok": true,
       "panel_count": 1,
-      "pixel_variance": 0.10666927804507197,
+      "pixel_variance": 0.10640032463913335,
       "source_data_alternative_count": 1,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
-      "width": 1793
+      "width": 1796
     },
     {
       "colorbar_count": 1,
       "cropped_text_count": 0,
-      "height": 1566,
+      "height": 1568,
       "id": "evidence_ceiling_stress_matrix",
       "layout_ok": true,
       "legend_axis_overlap_count": 0,
@@ -825,16 +825,16 @@
       "min_font_pt": 12.0,
       "ok": true,
       "panel_count": 1,
-      "pixel_variance": 0.053017625267110485,
+      "pixel_variance": 0.053092813419683735,
       "source_data_alternative_count": 1,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
-      "width": 2627
+      "width": 2635
     },
     {
       "colorbar_count": 0,
       "cropped_text_count": 0,
-      "height": 1284,
+      "height": 1270,
       "id": "claim_context_evidence_ladder",
       "layout_ok": true,
       "legend_axis_overlap_count": 0,
@@ -842,16 +842,16 @@
       "min_font_pt": 12.0,
       "ok": true,
       "panel_count": 1,
-      "pixel_variance": 0.04977716188311478,
+      "pixel_variance": 0.050108712210241005,
       "source_data_alternative_count": 3,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
-      "width": 2644
+      "width": 2646
     },
     {
       "colorbar_count": 1,
       "cropped_text_count": 0,
-      "height": 1455,
+      "height": 1451,
       "id": "formalism_operation_map",
       "layout_ok": true,
       "legend_axis_overlap_count": 0,
@@ -859,16 +859,16 @@
       "min_font_pt": 12.0,
       "ok": true,
       "panel_count": 1,
-      "pixel_variance": 0.10897048872218093,
+      "pixel_variance": 0.10890645025609894,
       "source_data_alternative_count": 1,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
-      "width": 1893
+      "width": 1895
     },
     {
       "colorbar_count": 0,
       "cropped_text_count": 0,
-      "height": 1545,
+      "height": 1549,
       "id": "qrf_sector_situation",
       "layout_ok": true,
       "legend_axis_overlap_count": 0,
@@ -876,16 +876,16 @@
       "min_font_pt": 12.0,
       "ok": true,
       "panel_count": 1,
-      "pixel_variance": 0.053458246445067824,
+      "pixel_variance": 0.05337377525529727,
       "source_data_alternative_count": 2,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
-      "width": 2989
+      "width": 2991
     },
     {
       "colorbar_count": 0,
       "cropped_text_count": 0,
-      "height": 1691,
+      "height": 1688,
       "id": "boundary_use_vs_ontology",
       "layout_ok": true,
       "legend_axis_overlap_count": 0,
@@ -893,7 +893,7 @@
       "min_font_pt": 12.0,
       "ok": true,
       "panel_count": 1,
-      "pixel_variance": 0.023744445658331663,
+      "pixel_variance": 0.02386268612910147,
       "source_data_alternative_count": 1,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
@@ -902,7 +902,7 @@
     {
       "colorbar_count": 0,
       "cropped_text_count": 0,
-      "height": 1347,
+      "height": 1340,
       "id": "separation_prior_net_value",
       "layout_ok": true,
       "legend_axis_overlap_count": 0,
@@ -910,16 +910,16 @@
       "min_font_pt": 12.0,
       "ok": true,
       "panel_count": 1,
-      "pixel_variance": 0.02454661435444415,
+      "pixel_variance": 0.024695800338999423,
       "source_data_alternative_count": 2,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
-      "width": 2411
+      "width": 2410
     },
     {
       "colorbar_count": 0,
       "cropped_text_count": 0,
-      "height": 1210,
+      "height": 1200,
       "id": "multipartite_witness_negativity",
       "layout_ok": true,
       "legend_axis_overlap_count": 0,
@@ -927,16 +927,16 @@
       "min_font_pt": 12.0,
       "ok": true,
       "panel_count": 1,
-      "pixel_variance": 0.054670945651150916,
+      "pixel_variance": 0.05354116333865253,
       "source_data_alternative_count": 1,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
-      "width": 2942
+      "width": 2939
     },
     {
       "colorbar_count": 0,
       "cropped_text_count": 0,
-      "height": 1164,
+      "height": 1158,
       "id": "tensor_network_scaling",
       "layout_ok": true,
       "legend_axis_overlap_count": 0,
@@ -944,16 +944,16 @@
       "min_font_pt": 12.0,
       "ok": true,
       "panel_count": 2,
-      "pixel_variance": 0.09641716385221037,
+      "pixel_variance": 0.09589680210894191,
       "source_data_alternative_count": 1,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
-      "width": 2962
+      "width": 2959
     },
     {
       "colorbar_count": 0,
       "cropped_text_count": 0,
-      "height": 1210,
+      "height": 1200,
       "id": "collision_model_relaxation",
       "layout_ok": true,
       "legend_axis_overlap_count": 0,
@@ -961,16 +961,16 @@
       "min_font_pt": 12.0,
       "ok": true,
       "panel_count": 1,
-      "pixel_variance": 0.07002137680390284,
+      "pixel_variance": 0.06949762956077907,
       "source_data_alternative_count": 1,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
-      "width": 2462
+      "width": 2459
     },
     {
       "colorbar_count": 0,
       "cropped_text_count": 0,
-      "height": 1301,
+      "height": 1291,
       "id": "n_cycle_contextuality_panel",
       "layout_ok": true,
       "legend_axis_overlap_count": 0,
@@ -978,16 +978,16 @@
       "min_font_pt": 12.0,
       "ok": true,
       "panel_count": 1,
-      "pixel_variance": 0.09639372806033629,
+      "pixel_variance": 0.09545339679258052,
       "source_data_alternative_count": 1,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
-      "width": 2253
+      "width": 2256
     },
     {
       "colorbar_count": 0,
       "cropped_text_count": 0,
-      "height": 1256,
+      "height": 1249,
       "id": "data_processing_monotonicity",
       "layout_ok": true,
       "legend_axis_overlap_count": 0,
@@ -995,16 +995,16 @@
       "min_font_pt": 12.0,
       "ok": true,
       "panel_count": 3,
-      "pixel_variance": 0.05989938758584539,
+      "pixel_variance": 0.0596826643265934,
       "source_data_alternative_count": 1,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
-      "width": 3758
+      "width": 3755
     },
     {
       "colorbar_count": 2,
       "cropped_text_count": 0,
-      "height": 1164,
+      "height": 1158,
       "id": "markov_blanket_discovery",
       "layout_ok": true,
       "legend_axis_overlap_count": 0,
@@ -1012,11 +1012,11 @@
       "min_font_pt": 12.0,
       "ok": true,
       "panel_count": 3,
-      "pixel_variance": 0.07016612880938415,
+      "pixel_variance": 0.06975971788987712,
       "source_data_alternative_count": 1,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
-      "width": 3477
+      "width": 3473
     }
   ],
   "schema": "realizing_emptiness.figure_legibility_audit.v1",

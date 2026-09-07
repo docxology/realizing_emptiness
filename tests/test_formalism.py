@@ -97,7 +97,7 @@ def test_scholarship_manifest_covers_bibliography_and_tracks(pytestconfig, tmp_p
 
     broken_root = tmp_path / "broken_scholarship"
     (broken_root / "data" / "sources").mkdir(parents=True)
-    (broken_root / "manuscript").mkdir()
+    (broken_root / "docs" / "manuscript").mkdir(parents=True)
     manifest = yaml.safe_load((root / "data" / "sources" / "scholarship_manifest.yaml").read_text(encoding="utf-8"))
     manifest["entries"] = [
         entry for entry in manifest["entries"] if entry["citation_key"] != "biehl2021technical_fep"
@@ -106,8 +106,8 @@ def test_scholarship_manifest_covers_bibliography_and_tracks(pytestconfig, tmp_p
         yaml.safe_dump(manifest, sort_keys=False),
         encoding="utf-8",
     )
-    (broken_root / "manuscript" / "references.bib").write_text(
-        (root / "manuscript" / "references.bib").read_text(encoding="utf-8"),
+    (broken_root / "docs" / "manuscript" / "references.bib").write_text(
+        (root / "docs" / "manuscript" / "references.bib").read_text(encoding="utf-8"),
         encoding="utf-8",
     )
     broken_validation = validate_scholarship_manifest(broken_root)
@@ -333,7 +333,7 @@ def test_claim_redteam_audit_resolves_claim_locations_and_rejects_false_certific
             "ok": False,
             "risky_rows": [
                 {
-                    "file": "manuscript/sections/results/test.md",
+                    "file": "docs/manuscript/sections/results/test.md",
                     "sentence": "The software establishes no-self.",
                 }
             ],
@@ -424,7 +424,7 @@ def test_review_response_artifacts_account_for_local_release_and_figures(pytestc
     assert "src/formalism/review_response.py" in release_paths
     assert "schemas/artifact_release_manifest.schema.json" in release_paths
     assert "tests/test_formalism.py" in release_paths
-    assert "manuscript/sections/results/bmr.md" in release_paths
+    assert "docs/manuscript/sections/results/bmr.md" in release_paths
     assert "docs/validation-contract.md" in release_paths
     assert release["controls"]["source_tree_included"] is True
     assert release["controls"]["schemas_included"] is True

@@ -54,4 +54,4 @@ titles overall.
 
 ## No machine paths
 
-Use repository-relative paths only. No absolute `/Users/` paths anywhere.
+Use repository-relative paths only. No absolute home-directory paths anywhere.

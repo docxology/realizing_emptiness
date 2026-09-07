@@ -1,9 +1,9 @@
 # AGENTS: Supplement fragments
 
-- Edit the per-track `*.md` fragments here; never edit the composed `manuscript/06_supplement.md`.
-- Each fragment maps to a `(section=supplement, track)` row in `manuscript/sheaf/manifest.yaml`;
+- Edit the per-track `*.md` fragments here; never edit the composed `docs/manuscript/06_supplement.md`.
+- Each fragment maps to a `(section=supplement, track)` row in `docs/manuscript/sheaf/manifest.yaml`;
   the filename is the track id.
-- Subsection heading/anchor for the qfep track come from `manuscript/sheaf/tracks.yaml`; other
+- Subsection heading/anchor for the qfep track come from `docs/manuscript/sheaf/tracks.yaml`; other
   fragments here carry their own in-body headings - keep them stable.
 - Hold the strict claim ceiling: command logs, render gates, source maps, and reproducibility
   counts are audit material only, not argumentative evidence; no empirical, clinical, neural,

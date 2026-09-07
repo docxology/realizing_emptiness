@@ -188,7 +188,7 @@ The validator intentionally attacks false certification:
   negative log-log residual slope, largest-count tolerance, improvement over
   the smallest audited count, and a too-few-trajectories negative control that
   fails;
-- manuscript citations must resolve to `manuscript/references.bib`;
+- manuscript citations must resolve to `docs/manuscript/references.bib`;
 - every public claim ID must appear in manuscript prose;
 - unsupported positive efficacy, attainment, clinical, or neural-measurement
   wording must be absent from manuscript fragments;

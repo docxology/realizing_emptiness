@@ -150,7 +150,7 @@ BLOCKED_CLAIM_DOMAINS = (
 
 def manuscript_fragment_text(project_root: Path) -> str:
     """Concatenate source manuscript fragments for audit."""
-    section_root = project_root / "manuscript" / "sections"
+    section_root = project_root / "docs" / "manuscript" / "sections"
     parts = []
     for path in sorted(section_root.glob("*/*.md")):
         parts.append(path.read_text(encoding="utf-8"))
@@ -189,7 +189,7 @@ def _forbidden_hits(text: str) -> list[dict[str, str]]:
 
 def _sentences_with_locations(project_root: Path) -> list[dict[str, str]]:
     rows = []
-    for path in sorted((project_root / "manuscript" / "sections").glob("*/*.md")):
+    for path in sorted((project_root / "docs" / "manuscript" / "sections").glob("*/*.md")):
         text = path.read_text(encoding="utf-8")
         for match in re.finditer(r"[^.!?\n]+[.!?]", text):
             sentence = re.sub(r"\s+", " ", match.group(0)).strip()
@@ -270,7 +270,7 @@ def build_manuscript_claim_audit(project_root: Path, crosswalk: dict[str, Any]) 
     forbidden_hits = _forbidden_hits(text)
     return {
         "schema": "realizing_emptiness.manuscript_claim_audit.v1",
-        "fragment_count": len(list((project_root / "manuscript" / "sections").glob("*/*.md"))),
+        "fragment_count": len(list((project_root / "docs" / "manuscript" / "sections").glob("*/*.md"))),
         "used_citation_count": len(used_citations),
         "declared_bibliography_count": len(declared_bib),
         "public_claim_count": len(public_claim_ids),

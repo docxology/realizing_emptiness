@@ -116,7 +116,7 @@ def build_rendered_figure_caption_audit_from_texts(
 
 def build_rendered_figure_caption_audit(project_root: Path) -> dict[str, Any]:
     """Build an audit over composed manuscript figure captions."""
-    manuscript_dir = project_root / "manuscript"
+    manuscript_dir = project_root / "docs" / "manuscript"
     texts = {
         path.name: path.read_text(encoding="utf-8")
         for path in sorted(manuscript_dir.glob("*.md"))

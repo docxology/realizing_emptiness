@@ -9,6 +9,7 @@
 | src/formalism/claim_context.py | 165 | function | `_reader_claim_overclaims` | No docstring. |
 | src/formalism/claim_context.py | 178 | function | `build_claim_context_ledger` | Build a reader-facing claim ledger from source, support, and ceiling artifacts. |
 | src/formalism/claim_context.py | 319 | function | `write_claim_context_ledger` | Write claim context ledger JSON. |
+| src/formalism/claim_crosswalk.py | 6 | function | `claim_crosswalk` | No docstring. |
 | src/formalism/claim_redteam.py | 47 | function | `_load_json` | No docstring. |
 | src/formalism/claim_redteam.py | 55 | function | `_composed_manuscript_anchors` | No docstring. |
 | src/formalism/claim_redteam.py | 64 | function | `_figure_ids` | No docstring. |
@@ -17,6 +18,11 @@
 | src/formalism/claim_redteam.py | 80 | function | `_reader_overclaims` | No docstring. |
 | src/formalism/claim_redteam.py | 92 | function | `build_claim_redteam_audit` | No docstring. |
 | src/formalism/claim_redteam.py | 279 | function | `write_claim_redteam_audit` | No docstring. |
+| src/formalism/compose.py | 14 | function | `_load_manifest` | No docstring. |
+| src/formalism/compose.py | 19 | function | `_load_tracks` | No docstring. |
+| src/formalism/compose.py | 25 | function | `_track_heading` | No docstring. |
+| src/formalism/compose.py | 35 | function | `_cover_graphical_abstract_block` | No docstring. |
+| src/formalism/compose.py | 47 | function | `compose` | No docstring. |
 | src/formalism/equations.py | 38 | function | `_operational_status` | No docstring. |
 | src/formalism/equations.py | 43 | class | `EquationSurrogate` | Metadata for one paper equation and its software status. |
 | src/formalism/equations.py | 54 | function | `as_dict` | Serialize equation metadata. |
@@ -126,6 +132,12 @@
 | src/gates/manuscript.py | 176 | function | `build_figure_placement_audit` | Audit balanced main/supplement placement for technical and governance figures. |
 | src/gates/manuscript.py | 228 | function | `build_cover_graphical_abstract_audit` | Audit the unnumbered graphical abstract cover image. |
 | src/gates/manuscript.py | 283 | function | `write_manuscript_structure_audits` | Write manuscript reference, figure reuse, figure-placement, and cover graphic audits. |
+| src/gates/manuscript_variables.py | 15 | function | `_load_json` | No docstring. |
+| src/gates/manuscript_variables.py | 19 | function | `compute_variables` | No docstring. |
+| src/gates/manuscript_variables.py | 47 | function | `hydrate_manuscript` | No docstring. |
+| src/gates/manuscript_variables.py | 56 | function | `replace` | No docstring. |
+| src/gates/method_inventory.py | 9 | function | `collect_entries` | No docstring. |
+| src/gates/method_inventory.py | 29 | function | `render` | No docstring. |
 | src/gates/roadmap.py | 92 | function | `_load_json` | No docstring. |
 | src/gates/roadmap.py | 96 | function | `_normalise` | No docstring. |
 | src/gates/roadmap.py | 100 | function | `_todo_records` | No docstring. |

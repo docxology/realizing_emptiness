@@ -1,7 +1,7 @@
 # Abstract (IMRAD: Abstract)
 
-Per-track fragments for the Abstract. They compose into `manuscript/00_abstract.md` via
-the sheaf, in the track order declared in `manuscript/sheaf/manifest.yaml`
+Per-track fragments for the Abstract. They compose into `docs/manuscript/00_abstract.md` via
+the sheaf, in the track order declared in `docs/manuscript/sheaf/manifest.yaml`
 (`paper_source, qfep, qrf, bmr, pymdp, limitations`). No `_lead.md` here.
 
 Fragments present:
@@ -12,4 +12,4 @@ Fragments present:
 - `pymdp.md` - states the profile-specific active-inference (inferactively-pymdp) layer and its records.
 - `limitations.md` - states the bounded-interface framing and that logs/gates live in the supplement.
 
-Do not hand-edit the composed `manuscript/00_abstract.md`; edit fragments here.
+Do not hand-edit the composed `docs/manuscript/00_abstract.md`; edit fragments here.

@@ -29,7 +29,7 @@ from visualizations.style import MIN_READABLE_FONT_PT, SEMANTIC_COLORS, semantic
 
 
 def _manifest_section_table(root: Path) -> dict[str, dict[str, object]]:
-    manifest = yaml.safe_load((root / "manuscript" / "sheaf" / "manifest.yaml").read_text(encoding="utf-8"))
+    manifest = yaml.safe_load((root / "docs" / "manuscript" / "sheaf" / "manifest.yaml").read_text(encoding="utf-8"))
     return {
         row["output"]: {"section": row["title"], "tracks": row["tracks"]}
         for row in manifest["sections"]
@@ -37,7 +37,7 @@ def _manifest_section_table(root: Path) -> dict[str, dict[str, object]]:
 
 
 def _readme_section_table(root: Path) -> dict[str, dict[str, object]]:
-    readme = (root / "manuscript" / "README.md").read_text(encoding="utf-8")
+    readme = (root / "docs" / "manuscript" / "README.md").read_text(encoding="utf-8")
     rows: dict[str, dict[str, object]] = {}
     in_table = False
     for line in readme.splitlines():
@@ -362,8 +362,8 @@ def test_documentation_contract_and_method_inventory(pytestconfig) -> None:
 
 def test_reproducibility_material_stays_supplemental(pytestconfig) -> None:
     root: Path = pytestconfig.realizing_emptiness_root
-    main_text = "\n".join((root / "manuscript" / name).read_text(encoding="utf-8") for name in ("02_methods.md", "03_results.md", "05_conclusion.md"))
-    supplement_text = (root / "manuscript" / "06_supplement.md").read_text(encoding="utf-8")
+    main_text = "\n".join((root / "docs" / "manuscript" / name).read_text(encoding="utf-8") for name in ("02_methods.md", "03_results.md", "05_conclusion.md"))
+    supplement_text = (root / "docs" / "manuscript" / "06_supplement.md").read_text(encoding="utf-8")
     assert "Reproducibility Gates" not in main_text
     assert "The validation report records" not in main_text
     assert "# Supplementary Audits and Reproducibility {#sec:supplement}" in supplement_text
@@ -398,11 +398,11 @@ def test_reproducibility_material_stays_supplemental(pytestconfig) -> None:
 
 def test_manuscript_subsection_titles_and_references(pytestconfig) -> None:
     root: Path = pytestconfig.realizing_emptiness_root
-    methods = (root / "manuscript" / "02_methods.md").read_text(encoding="utf-8")
-    results = (root / "manuscript" / "03_results.md").read_text(encoding="utf-8")
-    discussion = (root / "manuscript" / "04_discussion.md").read_text(encoding="utf-8")
-    conclusion = (root / "manuscript" / "05_conclusion.md").read_text(encoding="utf-8")
-    supplement = (root / "manuscript" / "06_supplement.md").read_text(encoding="utf-8")
+    methods = (root / "docs" / "manuscript" / "02_methods.md").read_text(encoding="utf-8")
+    results = (root / "docs" / "manuscript" / "03_results.md").read_text(encoding="utf-8")
+    discussion = (root / "docs" / "manuscript" / "04_discussion.md").read_text(encoding="utf-8")
+    conclusion = (root / "docs" / "manuscript" / "05_conclusion.md").read_text(encoding="utf-8")
+    supplement = (root / "docs" / "manuscript" / "06_supplement.md").read_text(encoding="utf-8")
     assert "## Equation Registry and Finite qFEP Engines {#sec:methods-roadmap-quantum-engines}" in methods
     assert "## Finite QRF Boundary Screen and Relabeling Rules {#sec:methods-finite-qrf-boundary-screen}" in methods
     assert "## Separation Prior as a Restricted QRF Subspace {#sec:methods-separation-prior-subspace}" in methods
@@ -433,13 +433,13 @@ def test_manuscript_subsection_titles_and_references(pytestconfig) -> None:
 
 def test_manuscript_prose_and_visual_reference_contract(pytestconfig) -> None:
     root: Path = pytestconfig.realizing_emptiness_root
-    abstract = (root / "manuscript" / "00_abstract.md").read_text(encoding="utf-8")
-    intro = (root / "manuscript" / "01_introduction.md").read_text(encoding="utf-8")
-    results = (root / "manuscript" / "03_results.md").read_text(encoding="utf-8")
-    supplement = (root / "manuscript" / "06_supplement.md").read_text(encoding="utf-8")
+    abstract = (root / "docs" / "manuscript" / "00_abstract.md").read_text(encoding="utf-8")
+    intro = (root / "docs" / "manuscript" / "01_introduction.md").read_text(encoding="utf-8")
+    results = (root / "docs" / "manuscript" / "03_results.md").read_text(encoding="utf-8")
+    supplement = (root / "docs" / "manuscript" / "06_supplement.md").read_text(encoding="utf-8")
     source_fragment_text = "\n".join(
         path.read_text(encoding="utf-8")
-        for path in (root / "manuscript" / "sections").rglob("*.md")
+        for path in (root / "docs" / "manuscript" / "sections").rglob("*.md")
     )
 
     abstract_lines = [line.strip() for line in abstract.splitlines() if line.strip()]
@@ -523,7 +523,7 @@ def test_manuscript_prose_and_visual_reference_contract(pytestconfig) -> None:
         "../output/figures/qrf_invariance_policy_flow.png",
     ]
     assert [results.find(path) for path in qrf_paths] == sorted(results.find(path) for path in qrf_paths)
-    methods = (root / "manuscript" / "02_methods.md").read_text(encoding="utf-8")
+    methods = (root / "docs" / "manuscript" / "02_methods.md").read_text(encoding="utf-8")
     for path in (
         "../output/figures/separation_prior_emergence.png",
         "../output/figures/separation_prior_net_value.png",
@@ -532,8 +532,8 @@ def test_manuscript_prose_and_visual_reference_contract(pytestconfig) -> None:
         assert path in results
     assert results.find("../output/figures/separation_prior_emergence.png") < results.find("../output/figures/separation_prior_net_value.png")
     assert results.find("../output/figures/separation_prior_net_value.png") < results.find("../output/figures/bmr_free_energy_decomposition.png")
-    discussion = (root / "manuscript" / "04_discussion.md").read_text(encoding="utf-8")
-    conclusion = (root / "manuscript" / "05_conclusion.md").read_text(encoding="utf-8")
+    discussion = (root / "docs" / "manuscript" / "04_discussion.md").read_text(encoding="utf-8")
+    conclusion = (root / "docs" / "manuscript" / "05_conclusion.md").read_text(encoding="utf-8")
     for phrase in (
         "boundary use, QRF relabeling, separation-prior emergence, BMR pruning, and post-dual revision",
         "finite success changes model organization, not the evidence class",
@@ -631,10 +631,10 @@ def test_manuscript_prose_and_visual_reference_contract(pytestconfig) -> None:
     for text in [
         abstract,
         intro,
-        (root / "manuscript" / "02_methods.md").read_text(encoding="utf-8"),
+        (root / "docs" / "manuscript" / "02_methods.md").read_text(encoding="utf-8"),
         results,
-        (root / "manuscript" / "04_discussion.md").read_text(encoding="utf-8"),
-        (root / "manuscript" / "05_conclusion.md").read_text(encoding="utf-8"),
+        (root / "docs" / "manuscript" / "04_discussion.md").read_text(encoding="utf-8"),
+        (root / "docs" / "manuscript" / "05_conclusion.md").read_text(encoding="utf-8"),
     ]:
         main_pngs.update(path for path in image_re.findall(text) if path.endswith(".png"))
     for path in main_pngs:

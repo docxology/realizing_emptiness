@@ -63,7 +63,7 @@ def load_scholarship_manifest(project_root: Path) -> dict[str, Any]:
 
 def bibliography_keys(project_root: Path) -> set[str]:
     """Return citation keys declared in the manuscript bibliography."""
-    text = (project_root / "manuscript" / "references.bib").read_text(encoding="utf-8")
+    text = (project_root / "docs" / "manuscript" / "references.bib").read_text(encoding="utf-8")
     return set(re.findall(r"@\w+\{([^,\s]+)", text))
 
 

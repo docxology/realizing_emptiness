@@ -114,7 +114,7 @@ def build_artifact_release_manifest(project_root: Path) -> dict[str, Any]:
         "source_tree_included": any(row["path"].startswith("src/") and row["path"].endswith(".py") for row in rows),
         "schemas_included": any(row["path"].startswith("schemas/") and row["path"].endswith(".json") for row in rows),
         "tests_included": any(row["path"].startswith("tests/") and row["path"].endswith(".py") for row in rows),
-        "manuscript_sources_included": any(row["path"].startswith("manuscript/sections/") for row in rows),
+        "manuscript_sources_included": any(row["path"].startswith("docs/manuscript/sections/") for row in rows),
         "docs_included": any(row["path"].startswith("docs/") and row["path"].endswith(".md") for row in rows),
         "rerun_scripts_included": all(
             any(row["path"] == path for row in rows)

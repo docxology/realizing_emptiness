@@ -1,4 +1,4 @@
 schema: realizing_emptiness.fragment_index.v1
-root: manuscript/sections
+root: docs/manuscript/sections
 policy: Fragments are paraphrased project prose and must not contain long copied source passages.
 

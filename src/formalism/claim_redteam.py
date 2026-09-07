@@ -54,7 +54,7 @@ def _load_json(project_root: Path, relative: str) -> dict[str, Any]:
 
 def _composed_manuscript_anchors(project_root: Path) -> set[str]:
     anchors: set[str] = set()
-    for path in sorted((project_root / "manuscript").glob("[0-9][0-9]_*.md")):
+    for path in sorted((project_root / "docs" / "manuscript").glob("[0-9][0-9]_*.md")):
         text = path.read_text(encoding="utf-8")
         anchors.update(match.group(1) for match in re.finditer(r"\{#(sec:[^}\s]+)\}", text))
         anchors.update(match.group(1) for match in re.finditer(r"id=[\"'](sec:[^\"']+)[\"']", text))

@@ -508,11 +508,11 @@ def _schema_check(project_root: Path, schema_relative: str, target_relative: str
 
 def _subsection_anchor_audit(project_root: Path) -> dict[str, Any]:
     section_files = [
-        "manuscript/01_introduction.md",
-        "manuscript/02_methods.md",
-        "manuscript/03_results.md",
-        "manuscript/04_discussion.md",
-        "manuscript/05_conclusion.md",
+        "docs/manuscript/01_introduction.md",
+        "docs/manuscript/02_methods.md",
+        "docs/manuscript/03_results.md",
+        "docs/manuscript/04_discussion.md",
+        "docs/manuscript/05_conclusion.md",
     ]
     generic_titles = {"qrf deployment", "validation", "visual evidence", "limitations", "results", "methods"}
     rows = []

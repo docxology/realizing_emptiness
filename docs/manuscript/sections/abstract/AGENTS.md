@@ -1,7 +1,7 @@
 # AGENTS: Abstract fragments
 
-- Edit the per-track `*.md` fragments here; never edit the composed `manuscript/00_abstract.md`.
-- Each fragment maps to a `(section=abstract, track)` row in `manuscript/sheaf/manifest.yaml`;
+- Edit the per-track `*.md` fragments here; never edit the composed `docs/manuscript/00_abstract.md`.
+- Each fragment maps to a `(section=abstract, track)` row in `docs/manuscript/sheaf/manifest.yaml`;
   the filename is the track id (`paper_source`, `qfep`, `qrf`, `bmr`, `pymdp`, `limitations`).
 - Hold the strict claim ceiling: no empirical, clinical, neural, ontological, awakening, or
   practice-efficacy claims; keep finite-surrogate language.

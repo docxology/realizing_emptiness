@@ -32,4 +32,4 @@ uv run python scripts/compose_manuscript.py --strict
 
 ## No machine paths
 
-Repository-relative paths only. No absolute `/Users/` paths.
+Repository-relative paths only. No absolute home-directory paths.

@@ -1,8 +1,8 @@
 # Supplement (IMRAD: Supplementary material)
 
 Per-track fragments for Supplementary Audits and Reproducibility. They compose into
-`manuscript/06_supplement.md` via the sheaf, in the track order declared in
-`manuscript/sheaf/manifest.yaml`
+`docs/manuscript/06_supplement.md` via the sheaf, in the track order declared in
+`docs/manuscript/sheaf/manifest.yaml`
 (`symbol_glossary, qfep, criticality, compassion_proxy, scholarship, practice_protocols, contemplative_inquiry, validation`).
 `_lead.md` is the section signpost, rendered before the first subsection.
 
@@ -18,4 +18,4 @@ Fragments present:
 - `validation.md` - final meta-manuscript record: reproducibility gates, claim ceilings, figure source maps, release/review-response hardening, dashboard-facing audit surfaces, and supplemental limitations.
 - `evidence_ceiling.md`, `visualization.md`, `limitations.md` - legacy pre-consolidation fragments retained for comparison; their composed material now lives under `validation.md`.
 
-Do not hand-edit the composed `manuscript/06_supplement.md`; edit fragments here.
+Do not hand-edit the composed `docs/manuscript/06_supplement.md`; edit fragments here.

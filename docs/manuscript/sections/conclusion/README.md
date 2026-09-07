@@ -1,7 +1,7 @@
 # Conclusion (IMRAD: Conclusion)
 
-Per-track fragments for the Conclusion. They compose into `manuscript/05_conclusion.md` via the
-sheaf, in the track order declared in `manuscript/sheaf/manifest.yaml`
+Per-track fragments for the Conclusion. They compose into `docs/manuscript/05_conclusion.md` via the
+sheaf, in the track order declared in `docs/manuscript/sheaf/manifest.yaml`
 (`paper_source, qfep, evidence_ceiling, limitations`).
 No `_lead.md` here.
 
@@ -13,4 +13,4 @@ Fragments present:
   pymdp profiles) as source-faithful finite software validation against a declared evidence
   ceiling, and frames it as a platform for stronger future evidence.
 
-Do not hand-edit the composed `manuscript/05_conclusion.md`; edit fragments here.
+Do not hand-edit the composed `docs/manuscript/05_conclusion.md`; edit fragments here.

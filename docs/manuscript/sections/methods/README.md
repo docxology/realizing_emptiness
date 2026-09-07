@@ -1,7 +1,7 @@
 # Methods (IMRAD: Methods)
 
-Per-track fragments for the Methods. They compose into `manuscript/02_methods.md` via the
-sheaf, in the track order declared in `manuscript/sheaf/manifest.yaml`
+Per-track fragments for the Methods. They compose into `docs/manuscript/02_methods.md` via the
+sheaf, in the track order declared in `docs/manuscript/sheaf/manifest.yaml`
 (`qfep, qrf, separation_prior, bmr, pymdp`).
 `_lead.md` is the section signpost, rendered before the first subsection.
 
@@ -13,4 +13,4 @@ Fragments present:
 - `bmr.md` - Bayesian model reduction sweep and sensitivity grid over the separation prior.
 - `pymdp.md` - profile-specific pymdp generative models and the four linked runtime contracts.
 
-Do not hand-edit the composed `manuscript/02_methods.md`; edit fragments here.
+Do not hand-edit the composed `docs/manuscript/02_methods.md`; edit fragments here.

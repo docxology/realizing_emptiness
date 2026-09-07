@@ -1,9 +1,9 @@
 # AGENTS: Discussion fragments
 
-- Edit the per-track `*.md` fragments here; never edit the composed `manuscript/04_discussion.md`.
-- Each fragment maps to a `(section=discussion, track)` row in `manuscript/sheaf/manifest.yaml`;
+- Edit the per-track `*.md` fragments here; never edit the composed `docs/manuscript/04_discussion.md`.
+- Each fragment maps to a `(section=discussion, track)` row in `docs/manuscript/sheaf/manifest.yaml`;
   the filename is the track id.
-- Subsection headings and anchors come from `manuscript/sheaf/tracks.yaml` (`section_titles`,
+- Subsection headings and anchors come from `docs/manuscript/sheaf/tracks.yaml` (`section_titles`,
   `section_anchors`); do not hardcode them in the fragment body.
 - Hold the strict claim ceiling: no empirical, clinical, neural, ontological, awakening, or
   practice-efficacy claims; interpretation stays inside the declared evidence ceilings.

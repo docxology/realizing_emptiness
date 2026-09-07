@@ -8,7 +8,7 @@ The generated artifact `output/data/scholarship_source_matrix.json` makes the
 source ledger executable:
 
 - citation keys must be unique;
-- every citation key must appear in `manuscript/references.bib`;
+- every citation key must appear in `docs/manuscript/references.bib`;
 - every source must declare an `evidence_status`;
 - required tracks must have at least one source role;
 - recent arXiv additions for QRF, Markov-blanket/FEP, and contemplative-AI

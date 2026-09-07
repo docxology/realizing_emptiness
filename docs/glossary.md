@@ -114,7 +114,7 @@ physical-qFEP evidence.
   implementation claim and does not mean public archive deposition or
   independent reproduction.
 - **sheaf / track** — the modular manuscript system: each section is composed
-  from per-topic track fragments under `manuscript/sections/`.
+  from per-topic track fragments under `docs/manuscript/sections/`.
   ([architecture](architecture.md))
 
 See [the QRF introduction](qrf-introduction.md) for how these fit together and

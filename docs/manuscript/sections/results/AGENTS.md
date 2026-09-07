@@ -1,9 +1,9 @@
 # AGENTS: Results fragments
 
-- Edit the per-track `*.md` fragments here; never edit the composed `manuscript/03_results.md`.
-- Each fragment maps to a `(section=results, track)` row in `manuscript/sheaf/manifest.yaml`;
+- Edit the per-track `*.md` fragments here; never edit the composed `docs/manuscript/03_results.md`.
+- Each fragment maps to a `(section=results, track)` row in `docs/manuscript/sheaf/manifest.yaml`;
   the filename is the track id. `_lead.md` is the pre-subsection signpost, not a track.
-- Subsection headings and anchors come from `manuscript/sheaf/tracks.yaml` (`section_titles`,
+- Subsection headings and anchors come from `docs/manuscript/sheaf/tracks.yaml` (`section_titles`,
   `section_anchors`); do not hardcode them in the fragment body.
 - Hold the strict claim ceiling: results are finite software/simulation outputs only; no
   empirical, clinical, neural, ontological, awakening, or practice-efficacy claims.

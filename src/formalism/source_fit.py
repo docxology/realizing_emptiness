@@ -182,8 +182,8 @@ CORE_ROWS: tuple[dict[str, Any], ...] = (
 def _declared_section_anchors(project_root: Path) -> set[str]:
     """Return anchors declared by the sheaf manifest/tracks plus composed files."""
     anchors: set[str] = set()
-    tracks_path = project_root / "manuscript" / "sheaf" / "tracks.yaml"
-    manifest_path = project_root / "manuscript" / "sheaf" / "manifest.yaml"
+    tracks_path = project_root / "docs" / "manuscript" / "sheaf" / "tracks.yaml"
+    manifest_path = project_root / "docs" / "manuscript" / "sheaf" / "manifest.yaml"
     if tracks_path.exists() and manifest_path.exists():
         tracks_payload = yaml.safe_load(tracks_path.read_text(encoding="utf-8"))
         manifest_payload = yaml.safe_load(manifest_path.read_text(encoding="utf-8"))
@@ -195,7 +195,7 @@ def _declared_section_anchors(project_root: Path) -> set[str]:
                 anchors.add(
                     declared.get(section_id, {}).get(track_id, f"sec:{section_id}-{track_id.replace('_', '-')}")
                 )
-    for manuscript_path in (project_root / "manuscript").glob("*.md"):
+    for manuscript_path in (project_root / "docs" / "manuscript").glob("*.md"):
         if manuscript_path.name[:2].isdigit():
             text = manuscript_path.read_text(encoding="utf-8")
             anchors.update(match.split("}", 1)[0] for match in text.split("{#")[1:])
