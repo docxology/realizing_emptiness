@@ -2,11 +2,19 @@
 
 ## Scope
 
-Version 1.1.0 audits the source, finite numerical surrogates, source and claim
+Version 1.2.0 extends the v1.1.0 audit of source, finite numerical surrogates, source and claim
 contracts, manuscript composition, visualization pipeline, documentation,
 distribution contents, and publication metadata. These checks establish
 software behavior only. The empirical and independent-reproduction boundaries
 in the [validation contract](validation-contract.md) remain in force.
+
+The expansion adds 32 verified scholarship records, run-level mean-difference
+and Cliff's-delta intervals, paired branching contrasts, Monte Carlo bounds
+for finite permutation decisions, and calibration over 128 independent seed
+sets. The figure set grows from 59 to 61. The [statistical methods](statistical-methods.md)
+and [scholarship synthesis](scholarship-expansion.md) record assumptions,
+selection scope and limitations. These are methodological software additions;
+the original source digest and empirical evidence ceilings remain binding.
 
 ## Reproduced findings and repairs
 
@@ -48,7 +56,7 @@ prerequisite; an unpacked source archive intentionally omits generated analysis.
 
 The local artifact release manifest records reproducibility inputs; it is not
 a receipt for GitHub publication or Zenodo deposition. Version 1.0.0 retains
-its archived DOI. Version 1.1.0 uses its GitHub version URL until a new DOI is
+its archived DOI. Version 1.2.0 uses its GitHub version URL until a new DOI is
 actually assigned. A public repository or release does not establish independent
 or blinded reproduction, physical qFEP realization, neural measurement, clinical
 benefit, or contemplative attainment.

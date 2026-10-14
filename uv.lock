@@ -1598,7 +1598,7 @@ wheels = [
 
 [[package]]
 name = "realizing-emptiness"
-version = "1.1.0"
+version = "1.2.0"
 source = { editable = "." }
 dependencies = [
     { name = "inferactively-pymdp" },

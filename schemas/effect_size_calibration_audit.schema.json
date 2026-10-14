@@ -9,6 +9,7 @@
     "null_arm",
     "positive_arm",
     "sign_flip_arm",
+    "seed_bank",
     "controls",
     "all_controls_pass",
     "claim_boundary"
@@ -34,6 +35,14 @@
       "type": "object",
       "required": ["cliffs_delta"]
     },
+    "seed_bank": {
+      "type": "object", "required": ["repetitions", "alpha", "positive_shift", "rows", "null_rejection", "positive_rejection", "null_coverage", "positive_coverage", "controls", "all_controls_pass", "claim_boundary"],
+      "properties": {"alpha": {"type": "number", "exclusiveMinimum": 0, "exclusiveMaximum": 1}, "positive_shift": {"type": "number"}, "repetitions": {"type": "integer", "minimum": 32}, "rows": {"type": "array", "minItems": 32, "items": {"$ref": "#/$defs/seed_row"}},
+        "null_rejection": {"$ref": "#/$defs/rate"}, "positive_rejection": {"$ref": "#/$defs/rate"},
+        "null_coverage": {"$ref": "#/$defs/rate"}, "positive_coverage": {"$ref": "#/$defs/rate"},
+        "all_controls_pass": {"const": true}, "claim_boundary": {"type": "string", "pattern": "not empirical"},
+        "controls": {"type": "object", "additionalProperties": {"const": true}}}
+    },
     "controls": {
       "type": "object",
       "additionalProperties": {
@@ -48,5 +57,15 @@
       "pattern": "not empirical statistical power"
     }
   },
+  "$defs": {"seed_row": {"type": "object", "required": ["seed", "null_p", "positive_p", "null_rejected", "positive_rejected", "null_covered", "positive_covered", "null_ci95_low", "null_ci95_high", "positive_ci95_low", "positive_ci95_high"], "properties": {
+    "seed": {"type": "integer"}, "null_p": {"type": "number", "minimum": 0, "maximum": 1}, "positive_p": {"type": "number", "minimum": 0, "maximum": 1},
+    "null_rejected": {"type": "boolean"}, "positive_rejected": {"type": "boolean"}, "null_covered": {"type": "boolean"}, "positive_covered": {"type": "boolean"},
+    "null_ci95_low": {"type": "number"}, "null_ci95_high": {"type": "number"}, "positive_ci95_low": {"type": "number"}, "positive_ci95_high": {"type": "number"}
+  }}, "rate": {"type": "object", "required": ["hits", "trials", "rate", "mcse", "confidence_level", "ci_low", "ci_high"], "properties": {
+    "confidence_level": {"const": 0.95},
+    "hits": {"type": "integer", "minimum": 0}, "trials": {"type": "integer", "minimum": 1},
+    "rate": {"type": "number", "minimum": 0, "maximum": 1}, "mcse": {"type": "number", "minimum": 0},
+    "ci_low": {"type": "number", "minimum": 0, "maximum": 1}, "ci_high": {"type": "number", "minimum": 0, "maximum": 1}
+  }}},
   "additionalProperties": true
 }

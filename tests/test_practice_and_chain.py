@@ -127,7 +127,7 @@ def test_figures_deterministic_under_rcparam_pollution(pytestconfig) -> None:
 def test_figure_source_map_can_regenerate(pytestconfig) -> None:
     root: Path = pytestconfig.realizing_emptiness_root
     source_map = generate_all_figures(root)
-    assert source_map["figure_count"] == 59
+    assert source_map["figure_count"] == 61
     figure_ids = {row["id"] for row in source_map["figures"]}
     assert "data_processing_monotonicity" in figure_ids
     assert "graphical_abstract_cover" in figure_ids
@@ -183,7 +183,7 @@ def test_figure_source_map_can_regenerate(pytestconfig) -> None:
         assert row["legend_axis_overlap_count"] == 0
     integrity = build_figure_integrity_audit(root, source_map)
     assert integrity["ok"] is True
-    assert integrity["figure_count"] == 59
+    assert integrity["figure_count"] == 61
     assert integrity["blank_figures"] == []
     caption_audit = json.loads((root / "output" / "data" / "visual_caption_audit.json").read_text(encoding="utf-8"))
     assert caption_audit["ok"] is True
@@ -225,7 +225,7 @@ def test_figure_source_map_can_regenerate(pytestconfig) -> None:
     assert legibility["legend_axis_overlaps"] == []
     assert legibility["layout_failures"] == []
     dashboard_payload = build_artifact_dashboard_payload(root, source_map)
-    assert dashboard_payload["figures"]["figure_count"] == 59
+    assert dashboard_payload["figures"]["figure_count"] == 61
     assert dashboard_payload["pymdp_runtime"]["all_controls_pass"] is True
     assert dashboard_payload["pymdp_runtime"]["replay_equal"] is True
     assert dashboard_payload["pymdp_runtime"]["canary_warning_count"] >= 1

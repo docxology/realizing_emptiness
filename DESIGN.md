@@ -66,6 +66,14 @@ Hatches: `null` uses `//`, `control` uses `//`, `blocked` uses `..`,
 
 ## 5. Components And Patterns
 
+- Statistical forests align a point estimate with an interval for that same
+  estimand. Vertically stacked panels show dominance and mean differences at
+  manuscript width; marker fill
+  identifies Holm nonrejection and shape identifies unresolved Monte Carlo
+  decisions. Never attach pooled-mean intervals to a contrast.
+- Paired-control figures preserve run pairing. Calibration figures show finite
+  repetition counts and exact binomial uncertainty, including boundary rates.
+
 - Lead QRF sequence: boundary-screen geometry, channel relabeling, and
   invariance/policy flow use direct labels, stable channel IDs, and the
   boundary/QRF/pass palette.

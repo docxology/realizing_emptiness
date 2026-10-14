@@ -2,7 +2,7 @@
   "all_figures_nonblank": true,
   "all_sources_hashed": true,
   "blank_figures": [],
-  "figure_count": 59,
+  "figure_count": 61,
   "missing_figures": [],
   "missing_sources": [],
   "ok": true,
@@ -746,10 +746,10 @@
           "sha256": "6aadab6206e29a45888353b97879f293a847719d27fb01633c562e2de12e59a5"
         },
         {
-          "byte_size": 13236,
+          "byte_size": 27898,
           "exists": true,
           "path": "output/data/stochastic_effect_size_audit.json",
-          "sha256": "e22c3dc331c1f528ad12a4e129ee55032c79f5b267fff081f11423a68e969aed"
+          "sha256": "46dc653d42a6c69b4aa1a99ba0b370a32158765381320f5accbdda542934d9a8"
         }
       ],
       "width": 3037
@@ -788,10 +788,10 @@
       "sha256": "8616843a53e860c3acab5a23c54618d5ca6d38201f6126ec054ce4c2a2237da7",
       "source_artifacts": [
         {
-          "byte_size": 387878,
+          "byte_size": 388706,
           "exists": true,
           "path": "output/data/criticality_stochastic_ensemble.json",
-          "sha256": "17fe597ee97c71b50c16a945c75fcf91b2625ed974e719a13fdd584a1c2cbdb1"
+          "sha256": "3b6f2e8f6dbbc83a54325667c76ec5bba21621a952c90dc42e709651ad9f5e20"
         }
       ],
       "width": 2896
@@ -809,10 +809,10 @@
       "sha256": "842aedae15f8c7353ae06628b38fff63cd871ba4a00bd7659278f69b31ce994f",
       "source_artifacts": [
         {
-          "byte_size": 387878,
+          "byte_size": 388706,
           "exists": true,
           "path": "output/data/criticality_stochastic_ensemble.json",
-          "sha256": "17fe597ee97c71b50c16a945c75fcf91b2625ed974e719a13fdd584a1c2cbdb1"
+          "sha256": "3b6f2e8f6dbbc83a54325667c76ec5bba21621a952c90dc42e709651ad9f5e20"
         },
         {
           "byte_size": 809,
@@ -908,43 +908,85 @@
       "width": 2611
     },
     {
-      "byte_size": 280912,
-      "caption": "Seeded stochastic profile-null effect-size audit for active-inference ensembles. Grouped short-profile rows use horizontal Cliff's-delta bars, hatches identify Holm-adjusted nonsignificant contrasts, right-side labels give profile-vs-null direction, adjusted p-values, and pooled bootstrap intervals, and the zero reference line separates profile-higher from null-higher effects; this is a finite simulation robustness audit, not empirical, neural, clinical, or practice-efficacy evidence.",
+      "byte_size": 299740,
+      "caption": "Run-level profile versus independent random-null contrasts. Panel A shows Cliff's delta and its own percentile bootstrap interval; Panel B shows the mean difference and its own interval in row-specific units (switch fraction or nats). The shared legend identifies hollow Holm-nonrejection markers and diamonds where finite permutation Monte Carlo uncertainty leaves the decision unresolved; dashed lines mark zero. These pointwise intervals are finite software diagnostics, not empirical, neural, clinical, or practice-efficacy evidence.",
       "channels": 4,
       "exists": true,
-      "height": 1252,
+      "height": 2898,
       "id": "stochastic_effect_size_forest",
       "nonblank": true,
       "path": "output/figures/stochastic_effect_size_forest.png",
-      "pixel_variance": 0.047302195925651894,
-      "sha256": "254f01965ac9e4d1af31cfd65a2f38936d8c9d5452f4c429737262afdf644fc1",
+      "pixel_variance": 0.01945541489526853,
+      "sha256": "d2626d8ec76d0acf7515b1b584f9f9c9112ad97b78476a6c53dee6e6da4a1d82",
       "source_artifacts": [
         {
-          "byte_size": 13236,
+          "byte_size": 27898,
           "exists": true,
           "path": "output/data/stochastic_effect_size_audit.json",
-          "sha256": "e22c3dc331c1f528ad12a4e129ee55032c79f5b267fff081f11423a68e969aed"
+          "sha256": "46dc653d42a6c69b4aa1a99ba0b370a32158765381320f5accbdda542934d9a8"
         }
       ],
-      "width": 2324
+      "width": 2077
     },
     {
-      "byte_size": 304197,
-      "caption": "BMR robustness resampling over the prior-precision/access grid. The upper panel shows bootstrap pruning rates in percent over noise rows and the lower panel shows Delta-F sign stability with compact confidence intervals and P/K decision labels; both panels report finite software robustness only, not human self-model or practice-efficacy claims.",
+      "byte_size": 83517,
+      "caption": "Paired branching contrasts for finite software trajectories. Colored points encode the mean original-minus-shuffled branching difference for each profile; horizontal lines and the legend identify 95 percent percentile intervals from resampling original/shuffled run pairs together. The dashed zero line is a reference, and each run has one fixed histogram-preserving shuffle. This conditional software comparison is not empirical evidence, neural measurement, or proof of criticality.",
+      "channels": 4,
+      "exists": true,
+      "height": 931,
+      "id": "criticality_paired_contrasts",
+      "nonblank": true,
+      "path": "output/figures/criticality_paired_contrasts.png",
+      "pixel_variance": 0.02378370616999245,
+      "sha256": "40fe30c6c53cc89bb5ea92f2c36c24d4616d9bb33402b97f3c7fcc14bfa796b3",
+      "source_artifacts": [
+        {
+          "byte_size": 388706,
+          "exists": true,
+          "path": "output/data/criticality_stochastic_ensemble.json",
+          "sha256": "3b6f2e8f6dbbc83a54325667c76ec5bba21621a952c90dc42e709651ad9f5e20"
+        }
+      ],
+      "width": 2077
+    },
+    {
+      "byte_size": 127519,
+      "caption": "Synthetic seed-bank calibration for the finite resampling machinery. Panel A bars show rejection percentages for zero and injected normal shifts; Panel B bars show mean-difference interval coverage. Whiskers encode exact binomial intervals over independent seed sets, counts identify hits and repetitions, and dashed reference lines with legends mark nominal alpha and coverage. This limited generator check is not empirical statistical power or universal error-rate certification.",
+      "channels": 4,
+      "exists": true,
+      "height": 1177,
+      "id": "resampling_calibration",
+      "nonblank": true,
+      "path": "output/figures/resampling_calibration.png",
+      "pixel_variance": 0.06008439867656197,
+      "sha256": "8ed18aebd8de70250d12cd1e4cfb328a870e7f2224286ec5d53fb1807267f347",
+      "source_artifacts": [
+        {
+          "byte_size": 71696,
+          "exists": true,
+          "path": "output/data/effect_size_calibration_audit.json",
+          "sha256": "a95eec768b7169e11e5d14de91b2eb540657d2abeaade49cf1615ea8b79958ac"
+        }
+      ],
+      "width": 2465
+    },
+    {
+      "byte_size": 305457,
+      "caption": "BMR robustness resampling over the finite prior-precision/access grid. The upper panel shows conditional bootstrap pruning rates over the listed noise rows; the lower panel marks whether the conditional grid-mean Delta-F interval excludes zero, with compact interval and P/K labels. This does not establish stability at every noise value or under an unknown population of noise settings. Exact grid extrema and all-row sign agreement are recorded separately in the artifact. Both panels report finite software robustness only.",
       "channels": 4,
       "exists": true,
       "height": 2721,
       "id": "bmr_robustness_resampling",
       "nonblank": true,
       "path": "output/figures/bmr_robustness_resampling.png",
-      "pixel_variance": 0.14026626211256477,
-      "sha256": "93021e58a2465b164dbef18df89dd34e2e76c2c2551e3c271949d0f5fdbe3202",
+      "pixel_variance": 0.14034887756295925,
+      "sha256": "ea6bce38d6215a67430b89141796dd18d2f11c92695e1ace9f48524255de1103",
       "source_artifacts": [
         {
-          "byte_size": 18300,
+          "byte_size": 24994,
           "exists": true,
           "path": "output/data/bmr_robustness_resampling_audit.json",
-          "sha256": "eae12ed2f0ee6482ff25a116939eb8c42e12b22df0ab8a36d32adcca5f70b78e"
+          "sha256": "0a6f42b7659546dc2270b9e2523286d409b2f19be891c42cd06b1ffccd2af343"
         }
       ],
       "width": 2558
@@ -983,10 +1025,10 @@
       "sha256": "a53987b60ed8656f88807dd2ccfb2e25939a10f08caeb30f1f3ed8750ba5e603",
       "source_artifacts": [
         {
-          "byte_size": 56989,
+          "byte_size": 59002,
           "exists": true,
           "path": "figures.yaml",
-          "sha256": "a3b2ba677e190d18495bd99d9d70d01c6798211ba52616ad9db93c4c68622508"
+          "sha256": "4a269125ff677147927f5c07a21d47b43952d0ff6a4ca3e0e0aa2cbd356f558d"
         }
       ],
       "width": 2441
@@ -1040,7 +1082,7 @@
       "width": 2522
     },
     {
-      "byte_size": 356425,
+      "byte_size": 364455,
       "caption": "Scholarship coverage summarized by declared source status and manuscript track. The heatmap colorbar and numbered cells count citations assigned to each status-track pair; individual citation keys and bindings remain in scholarship_source_matrix.json. Counts describe contextual coverage, not evidence strength, empirical support, or physical qFEP confirmation.",
       "channels": 4,
       "exists": true,
@@ -1048,20 +1090,20 @@
       "id": "scholarship_coverage_matrix",
       "nonblank": true,
       "path": "output/figures/scholarship_coverage_matrix.png",
-      "pixel_variance": 0.033013471727389346,
-      "sha256": "78fd4a9de0a3743a798b4a554e9264aa71eda6af00413509bdb385c0ef2796ef",
+      "pixel_variance": 0.031493352373178574,
+      "sha256": "17e9e1cafbb9165476c860a91a4437f79698974470acb735d2d81cb29ece4e10",
       "source_artifacts": [
         {
-          "byte_size": 76619,
+          "byte_size": 102986,
           "exists": true,
           "path": "output/data/scholarship_source_matrix.json",
-          "sha256": "301c792db7d46533205b451c612cae2bfe04416434a9db5155856d7d276b3cae"
+          "sha256": "23d8ac08ed05466f4adad168b598142f79e3b2f90fb1c3041aaf9a7ca6eb2c42"
         }
       ],
       "width": 3043
     },
     {
-      "byte_size": 381319,
+      "byte_size": 386264,
       "caption": "Scoped public-claim support summarized by declared source status. The heatmap colorbar and numbered cells show distinct citation counts for each claim and status; individual claim-citation bindings remain in claim_support_audit.json. Source density is a coverage diagnostic, not evidence strength or empirical, neural, clinical, practice-efficacy, awakening, or physical qFEP confirmation.",
       "channels": 4,
       "exists": true,
@@ -1069,14 +1111,14 @@
       "id": "claim_support_matrix",
       "nonblank": true,
       "path": "output/figures/claim_support_matrix.png",
-      "pixel_variance": 0.03261440936382844,
-      "sha256": "99d412ca134fa748fa033e6dc2975a016c617030534981f67dad3ae90f557266",
+      "pixel_variance": 0.03193225363900846,
+      "sha256": "0fdc6e5ef193f14974e5e9be580533d2c7a3c8c14438f1c043a6b30f867b0f39",
       "source_artifacts": [
         {
-          "byte_size": 58394,
+          "byte_size": 77376,
           "exists": true,
           "path": "output/data/claim_support_audit.json",
-          "sha256": "ad60aa79e146c32462d51702683181b2ab0c1ec9f7b865c712d83b5f0baa39bf"
+          "sha256": "f635d2a7a084e9072a619ba12f5480913f2964586f721b23c599255e8f783ca1"
         }
       ],
       "width": 2659
@@ -1094,10 +1136,10 @@
       "sha256": "fcbbd9dd890e8e3996dfd5fb880f2448246c07ca1481e7c0792a76fb83e79c43",
       "source_artifacts": [
         {
-          "byte_size": 3696,
+          "byte_size": 4586,
           "exists": true,
           "path": "output/data/manuscript_claim_audit.json",
-          "sha256": "262de40eaf09195621cba6029a9c8283f416f9fea46c5c183f4dc34bb2aa199e"
+          "sha256": "199d24263578bf36c89e0621dcdfbd36f3861f45ae80a210784152234439ecfa"
         }
       ],
       "width": 1796
@@ -1115,16 +1157,16 @@
       "sha256": "a7684a35fd2b3cfbca0f00db0b355e176247e27c803b466c0d1567a75bd7f8e9",
       "source_artifacts": [
         {
-          "byte_size": 15954,
+          "byte_size": 15955,
           "exists": true,
           "path": "output/data/evidence_ceiling_audit.json",
-          "sha256": "41aa0286954b917e35284d1132aa57904ff871669c355f4177a031b1f3a892bb"
+          "sha256": "9837de980babb703d7aed52ebbe217e0dac029598d54e4c89c61e4ad25b48d31"
         }
       ],
       "width": 2765
     },
     {
-      "byte_size": 322134,
+      "byte_size": 315617,
       "caption": "Claim-context evidence ladder grouping every public claim by evidence class, scoped source-role count, resolved validation gate, and blocked stronger reading. Horizontal bars encode source-role count, circular markers encode gate presence, and hatched amber blocks encode prohibited empirical, neural, clinical, practice-efficacy, awakening, or physical qFEP inferences, so the figure explains how to read claims without adding evidence beyond the ledger.",
       "channels": 4,
       "exists": true,
@@ -1132,26 +1174,26 @@
       "id": "claim_context_evidence_ladder",
       "nonblank": true,
       "path": "output/figures/claim_context_evidence_ladder.png",
-      "pixel_variance": 0.050108712210241005,
-      "sha256": "436b26939310f42cedbe193405f9177e8247cbdccf7b5523ad591ab9ad263a18",
+      "pixel_variance": 0.048533938955397114,
+      "sha256": "30d46e07e0a81f5496b9c53db605ef9f0d31cc5bb22cf457710d5f6fba046762",
       "source_artifacts": [
         {
-          "byte_size": 68987,
+          "byte_size": 80366,
           "exists": true,
           "path": "output/data/claim_context_ledger.json",
-          "sha256": "d4468e8acf0c822bdf63041c5df6b8873d14af07919d210238c60a69ef648f62"
+          "sha256": "38dc28586e989d9d452d4ecd21d0a6402f6979872052bda943ea4ac2bab6b2fe"
         },
         {
-          "byte_size": 58394,
+          "byte_size": 77376,
           "exists": true,
           "path": "output/data/claim_support_audit.json",
-          "sha256": "ad60aa79e146c32462d51702683181b2ab0c1ec9f7b865c712d83b5f0baa39bf"
+          "sha256": "f635d2a7a084e9072a619ba12f5480913f2964586f721b23c599255e8f783ca1"
         },
         {
-          "byte_size": 15954,
+          "byte_size": 15955,
           "exists": true,
           "path": "output/data/evidence_ceiling_audit.json",
-          "sha256": "41aa0286954b917e35284d1132aa57904ff871669c355f4177a031b1f3a892bb"
+          "sha256": "9837de980babb703d7aed52ebbe217e0dac029598d54e4c89c61e4ad25b48d31"
         }
       ],
       "width": 2646
@@ -1380,8 +1422,8 @@
     }
   ],
   "schema": "realizing_emptiness.figure_integrity_audit.v1",
-  "source_map_figure_count": 59,
+  "source_map_figure_count": 61,
   "source_map_path": "output/data/figure_source_map.json",
-  "source_map_sha256": "5e4464db8d759b6a8284e496c986043ba77632886e031be3da7793677872af81",
+  "source_map_sha256": "196f9bfd985414f06089158411de1ae732fa5cede1473b3f834b8843e993b1fc",
   "undersized_figures": []
 }

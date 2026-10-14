@@ -838,3 +838,422 @@ entries:
     doi: "10.1007/978-94-017-7303-4_4"
     tracks: [qfep]
     supports_claims: [quantum_measurement_contextuality]
+  - id: simulation_estimand_design
+    citation_key: morris2019simulation
+    title: Using simulation studies to evaluate statistical methods
+    source_type: peer_reviewed_article
+    role: simulation estimand, performance measure, and Monte Carlo uncertainty method boundary
+    evidence_status: methodological_background
+    doi: 10.1002/sim.8086
+    tracks:
+    - validation
+    - criticality
+    - bmr
+    supports_claims:
+    - criticality_proxy_boundary
+    - bmr_prunes_sigma
+  - id: simulation_design_protocol
+    citation_key: burton2006simulation
+    title: The design of simulation studies in medical statistics
+    source_type: peer_reviewed_article
+    role: simulation design and replicate-budget method boundary
+    evidence_status: methodological_background
+    doi: 10.1002/sim.2673
+    tracks:
+    - validation
+    - criticality
+    supports_claims:
+    - criticality_proxy_boundary
+  - id: random_permutation_pvalues
+    citation_key: phipson2010permutation
+    title: 'Permutation P-values Should Never Be Zero: Calculating Exact P-values When Permutations Are Randomly Drawn'
+    source_type: peer_reviewed_article
+    role: random-permutation plus-one p-value method and finite-resolution caution
+    evidence_status: methodological_background
+    doi: 10.2202/1544-6115.1585
+    tracks:
+    - validation
+    - criticality
+    supports_claims:
+    - criticality_proxy_boundary
+  - id: random_permutation_exactness
+    citation_key: hemerik2018exact
+    title: Exact testing with random permutations
+    source_type: peer_reviewed_article
+    role: group invariance and identity-transformation conditions for exact random-permutation tests
+    evidence_status: methodological_background
+    doi: 10.1007/s11749-017-0571-1
+    tracks:
+    - validation
+    - criticality
+    supports_claims:
+    - criticality_proxy_boundary
+  - id: stepdown_multiplicity
+    citation_key: romano2005stepdown
+    title: Exact and Approximate Stepdown Methods for Multiple Hypothesis Testing
+    source_type: peer_reviewed_article
+    role: resampling stepdown multiplicity method and dependence-assumption boundary
+    evidence_status: methodological_background
+    doi: 10.1198/016214504000000539
+    tracks:
+    - validation
+    - criticality
+    supports_claims:
+    - criticality_proxy_boundary
+  - id: stationary_block_bootstrap
+    citation_key: kunsch1989bootstrap
+    title: The Jackknife and the Bootstrap for General Stationary Observations
+    source_type: peer_reviewed_article
+    role: stationary dependent-data block-bootstrap method and temporal-dependence caution
+    evidence_status: methodological_background
+    doi: 10.1214/aos/1176347265
+    tracks:
+    - validation
+    - criticality
+    supports_claims:
+    - criticality_proxy_boundary
+  - id: stationary_bootstrap
+    citation_key: politis1994stationary
+    title: The Stationary Bootstrap
+    source_type: peer_reviewed_article
+    role: stationary bootstrap method and block-length assumption boundary
+    evidence_status: methodological_background
+    doi: 10.1080/01621459.1994.10476870
+    tracks:
+    - validation
+    - criticality
+    supports_claims:
+    - criticality_proxy_boundary
+  - id: time_series_surrogate_nulls
+    citation_key: theiler1992surrogate
+    title: 'Testing for nonlinearity in time series: the method of surrogate data'
+    source_type: peer_reviewed_article
+    role: time-series surrogate null specification and nonlinearity-inference caution
+    evidence_status: methodological_background
+    doi: 10.1016/0167-2789(92)90102-S
+    tracks:
+    - criticality
+    - validation
+    - limitations
+    supports_claims:
+    - criticality_proxy_boundary
+  - id: iterated_surrogate_controls
+    citation_key: schreiber1996surrogate
+    title: Improved Surrogate Data for Nonlinearity Tests
+    source_type: peer_reviewed_article
+    role: autocorrelation-preserving surrogate method and false-positive caution
+    evidence_status: methodological_background
+    doi: 10.1103/PhysRevLett.77.635
+    tracks:
+    - criticality
+    - validation
+    - limitations
+    supports_claims:
+    - criticality_proxy_boundary
+  - id: proper_scoring_rules
+    citation_key: gneiting2007scoring
+    title: Strictly Proper Scoring Rules, Prediction, and Estimation
+    source_type: peer_reviewed_article
+    role: proper scoring-rule and probabilistic prediction evaluation method boundary
+    evidence_status: methodological_background
+    doi: 10.1198/016214506000001437
+    tracks:
+    - validation
+    - bmr
+    supports_claims:
+    - bmr_prunes_sigma
+  - id: posterior_quantile_validation
+    citation_key: cook2006validation
+    title: Validation of Software for Bayesian Models Using Posterior Quantiles
+    source_type: peer_reviewed_article
+    role: Bayesian software validation method and model-adequacy boundary
+    evidence_status: methodological_background
+    doi: 10.1198/106186006X136976
+    tracks:
+    - validation
+    - bmr
+    supports_claims:
+    - bmr_prunes_sigma
+    - artifact_release_readiness
+  - id: monte_carlo_standard_errors
+    citation_key: flegal2008montecarlo
+    title: 'Markov Chain Monte Carlo: Can We Trust the Third Significant Figure?'
+    source_type: peer_reviewed_article
+    role: Monte Carlo standard-error reporting method with correlated-sampling caution
+    evidence_status: methodological_background
+    doi: 10.1214/08-STS257
+    tracks:
+    - validation
+    - criticality
+    - qfep
+    supports_claims:
+    - criticality_proxy_boundary
+    - quantum_open_system_dephasing
+  - id: exchangeability_blocks
+    citation_key: winkler2014permutation
+    title: Permutation inference for the general linear model
+    source_type: peer_reviewed_article
+    role: exchangeability-block and paired-permutation method boundary
+    evidence_status: methodological_background
+    doi: 10.1016/j.neuroimage.2014.01.060
+    tracks:
+    - validation
+    - criticality
+    supports_claims:
+    - criticality_proxy_boundary
+  - id: fep_mathematical_assumptions
+    citation_key: buckley2017mathematical
+    title: 'The free energy principle for action and perception: A mathematical review'
+    source_type: peer_reviewed_article
+    role: active-inference mathematical assumptions and implementation boundary
+    evidence_status: theoretical_background
+    doi: 10.1016/j.jmp.2017.09.004
+    tracks:
+    - pymdp
+    - limitations
+    supports_claims:
+    - fep_background
+    - self_evidencing_boundary
+  - id: expected_free_energy_origins
+    citation_key: millidge2021whence
+    title: Whence the Expected Free Energy?
+    source_type: peer_reviewed_article
+    role: expected-free-energy objective derivation and exploratory-policy assumption boundary
+    evidence_status: theoretical_background
+    doi: 10.1162/neco_a_01354
+    tracks:
+    - pymdp
+    - limitations
+    supports_claims:
+    - fep_background
+    - habit_policy_precision
+  - id: active_inference_process_theory
+    citation_key: friston2017process
+    title: 'Active Inference: A Process Theory'
+    source_type: peer_reviewed_article
+    role: active-inference policy and process-theory implementation background
+    evidence_status: theoretical_background
+    doi: 10.1162/NECO_a_00912
+    tracks:
+    - pymdp
+    - practice_protocols
+    supports_claims:
+    - fep_background
+    - metacognitive_access_model
+  - id: fep_model_instrumentalism
+    citation_key: vanes2021models
+    title: Living models or life modelled? On the use of models in the free energy principle
+    source_type: peer_reviewed_article
+    role: model-use versus organismic representation critique and ontology boundary
+    evidence_status: theoretical_background
+    doi: 10.1177/1059712320918678
+    tracks:
+    - paper_source
+    - scholarship
+    - limitations
+    supports_claims:
+    - self_evidencing_boundary
+    - source_boundary_unevidenceable
+  - id: quantum_no_cloning
+    citation_key: wootters1982cloning
+    title: A single quantum cannot be cloned
+    source_type: peer_reviewed_article
+    role: quantum no-cloning theorem and classical-copy versus physical-operation boundary
+    evidence_status: methodological_background
+    doi: 10.1038/299802a0
+    tracks:
+    - qfep
+    - qrf
+    - limitations
+    supports_claims:
+    - qfep_surrogate_scope
+    - qrf_background_only
+  - id: quantum_no_broadcasting
+    citation_key: barnum1996broadcast
+    title: Noncommuting Mixed States Cannot Be Broadcast
+    source_type: peer_reviewed_article
+    role: quantum no-broadcasting theorem and noncommuting-state operation boundary
+    evidence_status: methodological_background
+    doi: 10.1103/PhysRevLett.76.2818
+    tracks:
+    - qfep
+    - qrf
+    - limitations
+    supports_claims:
+    - qfep_surrogate_scope
+    - qrf_background_only
+  - id: quantum_asymmetry_modes
+    citation_key: marvian2014modes
+    title: 'Modes of asymmetry: The application of harmonic analysis to symmetric quantum dynamics and quantum reference frames'
+    source_type: peer_reviewed_article
+    role: quantum symmetry modes and reference-frame resource constraints
+    evidence_status: methodological_background
+    doi: 10.1103/PhysRevA.90.062110
+    tracks:
+    - qrf
+    - qfep
+    - limitations
+    supports_claims:
+    - qrf_background_only
+    - qfep_surrogate_scope
+  - id: qrf_resource_theory
+    citation_key: gour2008reference
+    title: 'The resource theory of quantum reference frames: manipulations and monotones'
+    source_type: peer_reviewed_article
+    role: quantum reference-frame resource theory and allowed-operation boundary
+    evidence_status: methodological_background
+    doi: 10.1088/1367-2630/10/3/033023
+    tracks:
+    - qrf
+    - qfep
+    - limitations
+    supports_claims:
+    - qrf_background_only
+    - qfep_surrogate_scope
+  - id: quantum_asymmetry_constraints
+    citation_key: marvian2014noether
+    title: Extending Noether's theorem by quantifying the asymmetry of quantum states
+    source_type: peer_reviewed_article
+    role: quantum asymmetry monotones and open-system symmetry constraints
+    evidence_status: methodological_background
+    doi: 10.1038/ncomms4821
+    tracks:
+    - qrf
+    - qfep
+    - limitations
+    supports_claims:
+    - qrf_background_only
+    - qfep_surrogate_scope
+  - id: contemplative_experience_variability
+    citation_key: lindahl2017varieties
+    title: 'The varieties of contemplative experience: A mixed-methods study of meditation-related challenges in Western Buddhists'
+    source_type: peer_reviewed_article
+    role: contemplative experience taxonomy and interpretation/impairment caution
+    evidence_status: methodological_background
+    doi: 10.1371/journal.pone.0176239
+    tracks:
+    - practice_protocols
+    - contemplative_inquiry
+    - limitations
+    supports_claims:
+    - practice_protocol_boundary
+  - id: meditation_adverse_measurement
+    citation_key: britton2021adverse
+    title: Defining and Measuring Meditation-Related Adverse Effects in Mindfulness-Based Programs
+    source_type: peer_reviewed_article
+    role: practice safety and active adverse-experience measurement boundary
+    evidence_status: methodological_background
+    doi: 10.1177/2167702621996340
+    tracks:
+    - practice_protocols
+    - contemplative_inquiry
+    - limitations
+    supports_claims:
+    - practice_protocol_boundary
+  - id: mindfulness_methodology_critique
+    citation_key: vandam2018hype
+    title: 'Mind the Hype: A Critical Evaluation and Prescriptive Agenda for Research on Mindfulness and Meditation'
+    source_type: peer_reviewed_article
+    role: mindfulness construct and evidence-inflation methodological caution
+    evidence_status: methodological_background
+    doi: 10.1177/1745691617709589
+    tracks:
+    - practice_protocols
+    - contemplative_inquiry
+    - limitations
+    supports_claims:
+    - practice_protocol_boundary
+    - compassion_proxy_boundary
+  - id: meditation_research_design
+    citation_key: davidson2015methodological
+    title: Conceptual and methodological issues in research on mindfulness and meditation
+    source_type: peer_reviewed_article
+    role: meditation comparison-design and self-report inference method boundary
+    evidence_status: methodological_background
+    doi: 10.1037/a0039512
+    tracks:
+    - practice_protocols
+    - contemplative_inquiry
+    - limitations
+    supports_claims:
+    - practice_protocol_boundary
+  - id: mindfulness_measurement_boundary
+    citation_key: grossman2008measuring
+    title: On measuring mindfulness in psychosomatic and psychological research
+    source_type: peer_reviewed_article
+    role: mindfulness measurement and construct-validity caution
+    evidence_status: methodological_background
+    doi: 10.1016/j.jpsychores.2008.02.001
+    tracks:
+    - practice_protocols
+    - contemplative_inquiry
+    - limitations
+    supports_claims:
+    - practice_protocol_boundary
+  - id: phenomenological_interview_method
+    citation_key: petitmengin2006experience
+    title: 'Describing one''s subjective experience in the second person: An interview method for the science of consciousness'
+    source_type: peer_reviewed_article
+    role: first-person interview method and report-validity boundary
+    evidence_status: methodological_background
+    doi: 10.1007/s11097-006-9022-2
+    tracks:
+    - practice_protocols
+    - contemplative_inquiry
+    - limitations
+    supports_claims:
+    - practice_protocol_boundary
+  - id: first_person_data_constraints
+    citation_key: lutz2002neurophenomenology
+    title: 'Guiding the study of brain dynamics by using first-person data: Synchrony patterns correlate with ongoing conscious
+      states during a simple visual task'
+    source_type: peer_reviewed_article
+    role: first-person and physiological data integration method boundary, not local neural evidence
+    evidence_status: methodological_background
+    doi: 10.1073/pnas.032658199
+    tracks:
+    - practice_protocols
+    - contemplative_inquiry
+    - limitations
+    supports_claims:
+    - practice_protocol_boundary
+  - id: calibration_test_quantity_sensitivity
+    citation_key: modrak2025calibration
+    title: 'Simulation-Based Calibration Checking for Bayesian Computation: The Choice of Test Quantities Shapes Sensitivity'
+    source_type: peer_reviewed_article
+    role: Bayesian calibration test-quantity sensitivity and undetected-error method boundary
+    evidence_status: methodological_background
+    doi: 10.1214/23-BA1404
+    tracks:
+    - validation
+    - bmr
+    - limitations
+    supports_claims:
+    - bmr_prunes_sigma
+    - artifact_release_readiness
+  - id: posterior_conditional_calibration
+    citation_key: sailynoja2026posterior
+    title: 'Posterior SBC: simulation-based calibration checking conditional on data'
+    source_type: peer_reviewed_article
+    role: conditional posterior calibration method and dataset-specific computation boundary
+    evidence_status: methodological_background
+    doi: 10.1007/s11222-026-10825-9
+    tracks:
+    - validation
+    - bmr
+    - limitations
+    supports_claims:
+    - bmr_prunes_sigma
+    - artifact_release_readiness
+  - id: minimal_active_inference_agent
+    citation_key: mcgregor2015minimal
+    title: A Minimal Active Inference Agent
+    source_type: preprint
+    role: minimal active-inference implementation and preference-as-distribution background
+    evidence_status: theoretical_background
+    doi: 10.48550/arXiv.1503.04187
+    tracks:
+    - pymdp
+    - limitations
+    supports_claims:
+    - fep_background

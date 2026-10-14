@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "realizing-emptiness"
-version = "1.1.0"
+version = "1.2.0"
 description = "Research-grade active-inference software foundation for Realizing Emptiness."
 readme = "README.md"
 authors = [{ name = "Daniel Ari Friedman", email = "daniel@activeinference.institute" }]

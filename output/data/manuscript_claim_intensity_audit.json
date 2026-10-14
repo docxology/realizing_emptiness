@@ -2,7 +2,7 @@
   "claim_boundary": "sentence-level manuscript language audit; not empirical evidence",
   "ok": true,
   "risky_rows": [],
-  "row_count": 117,
+  "row_count": 127,
   "rows": [
     {
       "allowed": true,
@@ -668,6 +668,125 @@
       "has_negation": true,
       "no_self_risky": false,
       "sentence": "None of these moves supplies the missing evidence that would be needed for claims about public independent reproduction, human subjects, practice outcomes, neural regimes, or physical qFEP dynamics.",
+      "strong_verbs": [],
+      "unscoped_strong_claim": false
+    },
+    {
+      "allowed": true,
+      "blocked_domain_risky": false,
+      "blocked_domains": [],
+      "claim_target_terms": [],
+      "file": "docs/manuscript/sections/discussion/scholarship.md",
+      "has_boundary_scope": false,
+      "has_negation": false,
+      "no_self_risky": false,
+      "sentence": "A shuffled trajectory conditions on observed values while removing temporal order; rejecting that null establishes sensitivity to order under the chosen construction.",
+      "strong_verbs": [
+        "establishes"
+      ],
+      "unscoped_strong_claim": false
+    },
+    {
+      "allowed": true,
+      "blocked_domain_risky": false,
+      "blocked_domains": [
+        "neural"
+      ],
+      "claim_target_terms": [
+        "software",
+        "evidence"
+      ],
+      "file": "docs/manuscript/sections/discussion/scholarship.md",
+      "has_boundary_scope": true,
+      "has_negation": true,
+      "no_self_risky": false,
+      "sentence": "It does not identify a critical regime, establish nonlinearity against every linear process, or turn a software trajectory into neural evidence.",
+      "strong_verbs": [
+        "establish"
+      ],
+      "unscoped_strong_claim": false
+    },
+    {
+      "allowed": true,
+      "blocked_domain_risky": false,
+      "blocked_domains": [],
+      "claim_target_terms": [
+        "surrogate"
+      ],
+      "file": "docs/manuscript/sections/discussion/scholarship.md",
+      "has_boundary_scope": true,
+      "has_negation": false,
+      "no_self_risky": false,
+      "sentence": "Surrogate-data methodology and autocorrelation-preserving constructions show why the features preserved by a null must be declared explicitly [@theiler1992surrogate; @schreiber1996surrogate].",
+      "strong_verbs": [
+        "show"
+      ],
+      "unscoped_strong_claim": false
+    },
+    {
+      "allowed": true,
+      "blocked_domain_risky": false,
+      "blocked_domains": [
+        "human subject"
+      ],
+      "claim_target_terms": [],
+      "file": "docs/manuscript/sections/discussion/scholarship.md",
+      "has_boundary_scope": false,
+      "has_negation": true,
+      "no_self_risky": false,
+      "sentence": "The latter should not be confused with an interval for a profile contrast or with variability among hypothetical human subjects.",
+      "strong_verbs": [],
+      "unscoped_strong_claim": false
+    },
+    {
+      "allowed": true,
+      "blocked_domain_risky": false,
+      "blocked_domains": [],
+      "claim_target_terms": [],
+      "file": "docs/manuscript/sections/discussion/scholarship.md",
+      "has_boundary_scope": false,
+      "has_negation": true,
+      "no_self_risky": false,
+      "sentence": "These sources motivate adversarial checks, independent seed banks, and explicit calibration targets; they do not establish that a synthetic effect-size positive control is Bayesian posterior calibration.",
+      "strong_verbs": [
+        "establish"
+      ],
+      "unscoped_strong_claim": false
+    },
+    {
+      "allowed": true,
+      "blocked_domain_risky": false,
+      "blocked_domains": [],
+      "claim_target_terms": [
+        "self"
+      ],
+      "file": "docs/manuscript/sections/discussion/scholarship.md",
+      "has_boundary_scope": true,
+      "has_negation": true,
+      "no_self_risky": false,
+      "sentence": "Our inference from these sources is that finite relabeling covariance is a useful consistency check, but does not by itself supply a physical reference-frame resource theory or validate the quantum free-energy principle.",
+      "strong_verbs": [
+        "validate"
+      ],
+      "unscoped_strong_claim": false
+    },
+    {
+      "allowed": true,
+      "blocked_domain_risky": false,
+      "blocked_domains": [
+        "realization",
+        "clinical",
+        "neural"
+      ],
+      "claim_target_terms": [
+        "simulation",
+        "compassion"
+      ],
+      "file": "docs/manuscript/sections/discussion/scholarship.md",
+      "has_boundary_scope": true,
+      "has_negation": true,
+      "no_self_risky": false,
+      "sentence": "No simulation profile licenses an inference of safety, compassion, realization, clinical benefit, or neural change.",
       "strong_verbs": [],
       "unscoped_strong_claim": false
     },
@@ -1434,17 +1553,30 @@
     {
       "allowed": true,
       "blocked_domain_risky": false,
-      "blocked_domains": [],
-      "claim_target_terms": [
-        "simulation"
+      "blocked_domains": [
+        "realization"
       ],
+      "claim_target_terms": [],
       "file": "docs/manuscript/sections/supplement/criticality.md",
-      "has_boundary_scope": true,
-      "has_negation": false,
+      "has_boundary_scope": false,
+      "has_negation": true,
       "no_self_risky": false,
-      "sentence": "The forest shows which finite stochastic separations survive the declared random-null comparison and which should be treated as weak or unstable simulation behavior.",
+      "sentence": "It conditions on one shuffle per run and does not integrate over all possible shuffle realizations.",
+      "strong_verbs": [],
+      "unscoped_strong_claim": false
+    },
+    {
+      "allowed": true,
+      "blocked_domain_risky": false,
+      "blocked_domains": [],
+      "claim_target_terms": [],
+      "file": "docs/manuscript/sections/supplement/criticality.md",
+      "has_boundary_scope": false,
+      "has_negation": true,
+      "no_self_risky": false,
+      "sentence": "No paired sign-flip p-value is asserted, because pairing alone does not establish null sign symmetry.",
       "strong_verbs": [
-        "shows"
+        "establish"
       ],
       "unscoped_strong_claim": false
     },
@@ -1879,6 +2011,36 @@
       "no_self_risky": false,
       "sentence": "Here, a quantum-trajectory citation can justify the stochastic unraveling algorithm; it cannot make the trajectory a physical qFEP realization.",
       "strong_verbs": [],
+      "unscoped_strong_claim": false
+    },
+    {
+      "allowed": true,
+      "blocked_domain_risky": false,
+      "blocked_domains": [],
+      "claim_target_terms": [],
+      "file": "docs/manuscript/sections/supplement/scholarship.md",
+      "has_boundary_scope": false,
+      "has_negation": true,
+      "no_self_risky": false,
+      "sentence": "This targeted curation does not establish completeness or agreement across the relevant disciplines.",
+      "strong_verbs": [
+        "establish"
+      ],
+      "unscoped_strong_claim": false
+    },
+    {
+      "allowed": true,
+      "blocked_domain_risky": false,
+      "blocked_domains": [],
+      "claim_target_terms": [],
+      "file": "docs/manuscript/sections/supplement/scholarship.md",
+      "has_boundary_scope": false,
+      "has_negation": true,
+      "no_self_risky": false,
+      "sentence": "None supplies empirical power or validates an unimplemented method.",
+      "strong_verbs": [
+        "validates"
+      ],
       "unscoped_strong_claim": false
     },
     {
@@ -2341,6 +2503,6 @@
     }
   ],
   "schema": "realizing_emptiness.manuscript_claim_intensity_audit.v1",
-  "sentence_count": 1294,
-  "strong_verb_count": 42
+  "sentence_count": 1376,
+  "strong_verb_count": 49
 }

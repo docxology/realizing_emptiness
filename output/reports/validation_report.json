@@ -129,6 +129,7 @@
     "exists:output/figures/claim_support_matrix.png": true,
     "exists:output/figures/collision_model_relaxation.png": true,
     "exists:output/figures/compassion_scope_widening.png": true,
+    "exists:output/figures/criticality_paired_contrasts.png": true,
     "exists:output/figures/criticality_proxy_panels.png": true,
     "exists:output/figures/criticality_signatures.png": true,
     "exists:output/figures/criticality_stochastic_ensemble.png": true,
@@ -167,6 +168,7 @@
     "exists:output/figures/quantum_roadmap_readiness_matrix.png": true,
     "exists:output/figures/quantum_trajectory_convergence.png": true,
     "exists:output/figures/quantum_trajectory_unraveling.png": true,
+    "exists:output/figures/resampling_calibration.png": true,
     "exists:output/figures/scholarship_coverage_matrix.png": true,
     "exists:output/figures/separation_prior_emergence.png": true,
     "exists:output/figures/separation_prior_net_value.png": true,
@@ -430,7 +432,7 @@
     "visual_caption_audit_ok": true,
     "visual_style_audit_ok": true
   },
-  "passed": 428,
+  "passed": 430,
   "schema": "realizing_emptiness.validation_report.v1",
-  "total": 428
+  "total": 430
 }

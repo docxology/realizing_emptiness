@@ -1,5 +1,5 @@
 {
-  "figure_reference_count": 55,
+  "figure_reference_count": 57,
   "manuscript_count": 8,
   "missing_interpretive_boundaries": [],
   "missing_or_weak_captions": [],
@@ -151,7 +151,7 @@
       "visual_encoding": "Zero-centered diverging heatmap encodes mean Delta F; contrast-aware cell text reports how many observation-noise rows favor PRUNE, and gridlines preserve row and column separation."
     },
     {
-      "caption_length": 346,
+      "caption_length": 526,
       "figure_id": "bmr_robustness_resampling",
       "figure_path": "../../output/figures/bmr_robustness_resampling.png",
       "has_interpretive_boundary": true,
@@ -160,7 +160,7 @@
       "manuscript": "03_results.md",
       "ok": true,
       "source_artifact_count": 1,
-      "source_map_caption_length": 346,
+      "source_map_caption_length": 526,
       "visual_encoding": "Two-panel heatmap; sequential colorbar encodes bootstrap pruning rate, binary colorbar encodes Delta-F sign stability, compact cell text provides decision and interval labels, and the external legend distinguishes keep from prune semantics."
     },
     {
@@ -567,7 +567,33 @@
       "visual_encoding": "Single bar color legend encodes one simulated trajectory diagnostic across entropy, switching, variance, and near-critical labels."
     },
     {
-      "caption_length": 489,
+      "caption_length": 484,
+      "figure_id": "criticality_paired_contrasts",
+      "figure_path": "../../output/figures/criticality_paired_contrasts.png",
+      "has_interpretive_boundary": true,
+      "has_source_artifact": true,
+      "has_visual_encoding_language": true,
+      "manuscript": "06_supplement.md",
+      "ok": true,
+      "source_artifact_count": 1,
+      "source_map_caption_length": 484,
+      "visual_encoding": "Horizontal contrast plot with one row per profile, stochastic-colored points, paired bootstrap interval lines, and a dashed zero reference explained in the legend."
+    },
+    {
+      "caption_length": 481,
+      "figure_id": "resampling_calibration",
+      "figure_path": "../../output/figures/resampling_calibration.png",
+      "has_interpretive_boundary": true,
+      "has_source_artifact": true,
+      "has_visual_encoding_language": true,
+      "manuscript": "06_supplement.md",
+      "ok": true,
+      "source_artifact_count": 1,
+      "source_map_caption_length": 481,
+      "visual_encoding": "Two-panel grouped bar figure with null and stochastic colors, exact binomial interval whiskers, hit-count labels and dashed nominal reference lines explained by legends."
+    },
+    {
+      "caption_length": 537,
       "figure_id": "stochastic_effect_size_forest",
       "figure_path": "../../output/figures/stochastic_effect_size_forest.png",
       "has_interpretive_boundary": true,
@@ -576,8 +602,8 @@
       "manuscript": "06_supplement.md",
       "ok": true,
       "source_artifact_count": 1,
-      "source_map_caption_length": 489,
-      "visual_encoding": "Horizontal forest plot; grouped y-axis rows use short profile labels, bar color encodes effect direction, hatches encode Holm p-values above threshold, text labels give adjusted p-values and bootstrap intervals, and the dashed vertical line marks zero effect."
+      "source_map_caption_length": 537,
+      "visual_encoding": "Two-panel forest plot with shared profile/metric rows, colored point estimates and horizontal 95 percent pointwise percentile intervals; hollow markers encode Holm nonrejection and diamonds encode unresolved Monte Carlo decisions; dashed reference lines encode zero."
     },
     {
       "caption_length": 358,
@@ -724,5 +750,5 @@
     }
   ],
   "schema": "realizing_emptiness.rendered_figure_caption_audit.v1",
-  "unique_figure_count": 55
+  "unique_figure_count": 57
 }

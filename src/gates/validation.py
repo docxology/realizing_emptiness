@@ -17,6 +17,8 @@ from formalism.scholarship import validate_scholarship_manifest
 from formalism.source import verify_primary_source_hash
 from gates.contracts import build_artifact_contract_registry
 from simulation.pymdp_profiles import expected_free_energy_terms
+from simulation.resampling import binomial_summary
+from simulation.statistical_robustness import _holm_adjust
 from visualizations.integrity import compare_figure_integrity
 
 
@@ -153,6 +155,8 @@ EXPECTED_FIGURES = [
     "output/figures/internal_cut_unmeasurability.png",
     "output/figures/practice_policy_scope_map.png",
     "output/figures/stochastic_effect_size_forest.png",
+    "output/figures/criticality_paired_contrasts.png",
+    "output/figures/resampling_calibration.png",
     "output/figures/bmr_robustness_resampling.png",
     "output/figures/quantum_trajectory_convergence.png",
     "output/figures/visual_semantic_palette_ledger.png",
@@ -591,6 +595,39 @@ def _subsection_anchor_audit(project_root: Path) -> dict[str, Any]:
         "missing_references": missing_references,
         "ok": bool(rows) and not duplicate_anchors and not weak_titles and not missing_anchors and not missing_references,
     }
+
+
+def _permutation_metadata_matches(audit: dict[str, Any]) -> bool:
+    rows = audit.get("rows", [])
+    if not rows:
+        return False
+    confidence = 1 - 0.05 / len(rows)
+    tails = []
+    for row in rows:
+        hits, draws = row["permutation_exceedances"], row["permutation_draws"]
+        if not 0 <= hits <= draws:
+            return False
+        expected = binomial_summary(hits, draws, confidence=confidence)
+        if not all(math.isclose(row[field], value, rel_tol=1e-12, abs_tol=1e-12) for field, value in (
+            ("permutation_p", (hits + 1) / (draws + 1)),
+            ("permutation_resolution", 1 / (draws + 1)),
+            ("permutation_mcse", expected["mcse"]),
+            ("permutation_tail_confidence_level", confidence),
+            ("permutation_tail_family_ci95_low", expected["ci_low"]),
+            ("permutation_tail_family_ci95_high", expected["ci_high"]),
+        )):
+            return False
+        tails.append(expected)
+    lower = _holm_adjust([tail["ci_low"] for tail in tails])
+    upper = _holm_adjust([tail["ci_high"] for tail in tails])
+    adjusted = _holm_adjust([row["permutation_p"] for row in rows])
+    return audit["resampling_design"]["permutation_family_size"] == len(rows) and all(
+        math.isclose(row["holm_p"], point, abs_tol=1e-12)
+        and math.isclose(row["holm_mc_ci95_low"], low, abs_tol=1e-12)
+        and math.isclose(row["holm_mc_ci95_high"], high, abs_tol=1e-12)
+        and row["holm_decision_mc_stable"] == (high < 0.05 or low >= 0.05)
+        for row, point, low, high in zip(rows, adjusted, lower, upper, strict=True)
+    )
 
 
 def validate_outputs(project_root: Path) -> dict[str, bool]:
@@ -1256,6 +1293,8 @@ def validate_outputs(project_root: Path) -> dict[str, bool]:
         and criticality_stochastic.get("controls", {}).get("null_controls_present") is True
         and criticality_stochastic.get("controls", {}).get("profiles_differ_from_null_controls") is True
         and criticality_stochastic.get("summary_row_count", 0) >= 6
+        and all(row["paired_branching_ci95_low"] <= row["paired_branching_ci95_high"]
+                for row in criticality_stochastic.get("null_contrasts", []))
         and "not empirical" in criticality_stochastic.get("claim_boundary", "")
         and "not empirical neural-criticality" in criticality_stochastic.get("claim_boundary", "")
     )
@@ -1263,6 +1302,7 @@ def validate_outputs(project_root: Path) -> dict[str, bool]:
     checks["stochastic_effect_size_audit_ok"] = (
         stochastic_effects.get("schema") == "realizing_emptiness.stochastic_effect_size_audit.v1"
         and stochastic_effects.get("all_controls_pass") is True
+        and _permutation_metadata_matches(stochastic_effects)
         and stochastic_effects.get("metric_count", 0) >= 6
         and stochastic_effects.get("row_count") == len(stochastic_effects.get("rows", []))
         and stochastic_effects.get("controls", {}).get("all_intervals_finite") is True
@@ -1270,6 +1310,10 @@ def validate_outputs(project_root: Path) -> dict[str, bool]:
         and all(0.0 <= row.get("permutation_p", -1.0) <= 1.0 for row in stochastic_effects.get("rows", []))
         and all(0.0 <= row.get("holm_p", -1.0) <= 1.0 for row in stochastic_effects.get("rows", []))
         and any(abs(row.get("cliffs_delta", 0.0)) > 0.1 for row in stochastic_effects.get("rows", []))
+        and all(row["difference_ci95_low"] <= row["difference_ci95_high"]
+                and row["cliffs_ci95_low"] <= row["cliffs_ci95_high"]
+                and row["permutation_p"] == (row["permutation_exceedances"] + 1) / (row["permutation_draws"] + 1)
+                for row in stochastic_effects.get("rows", []))
         and "not empirical" in stochastic_effects.get("claim_boundary", "")
     )
     bmr_resampling = _load_json(project_root, "output/data/bmr_robustness_resampling_audit.json")
@@ -1303,6 +1347,31 @@ def validate_outputs(project_root: Path) -> dict[str, bool]:
         and effect_size_calibration.get("controls", {}).get("positive_effect_rejected") is True
         and effect_size_calibration.get("controls", {}).get("cliffs_delta_sign_matches_injection") is True
         and effect_size_calibration.get("controls", {}).get("positive_effect_magnitude_recovered") is True
+        and effect_size_calibration.get("seed_bank", {}).get("all_controls_pass") is True
+        and effect_size_calibration["seed_bank"]["null_rejection"]["ci_high"] <= 0.25
+        and effect_size_calibration["seed_bank"]["positive_rejection"]["ci_low"] >= 0.75
+        and effect_size_calibration.get("seed_bank", {}).get("repetitions") == len(effect_size_calibration.get("seed_bank", {}).get("rows", []))
+        and all(
+            row[f"{label}_rejected"] == (row[f"{label}_p"] <= effect_size_calibration["seed_bank"]["alpha"])
+            and row[f"{label}_ci95_low"] <= row[f"{label}_ci95_high"]
+            and row[f"{label}_covered"] == (row[f"{label}_ci95_low"] <= truth <= row[f"{label}_ci95_high"])
+            for row in effect_size_calibration.get("seed_bank", {}).get("rows", [])
+            for label, truth in (("null", 0.0), ("positive", effect_size_calibration["seed_bank"]["positive_shift"]))
+        )
+        and all(
+            effect_size_calibration["seed_bank"][f"{label}_{outcome}"]["hits"]
+            == sum(row[f"{label}_{field}"] for row in effect_size_calibration["seed_bank"]["rows"])
+            and effect_size_calibration["seed_bank"][f"{label}_{outcome}"]["trials"] == effect_size_calibration["seed_bank"]["repetitions"]
+            for label in ("null", "positive")
+            for outcome, field in (("rejection", "rejected"), ("coverage", "covered"))
+        )
+        and all(summary["hits"] <= summary["trials"]
+                and summary["rate"] == summary["hits"] / summary["trials"]
+                and summary["ci_low"] <= summary["rate"] <= summary["ci_high"]
+                and all(math.isclose(summary[field], binomial_summary(summary["hits"], summary["trials"])[field], abs_tol=1e-12)
+                        for field in ("ci_low", "ci_high", "mcse"))
+                for summary in (effect_size_calibration.get("seed_bank", {}).get(key, {})
+                    for key in ("null_rejection", "positive_rejection", "null_coverage", "positive_coverage")))
         and effect_size_calibration.get("positive_arm", {}).get("permutation_p", 1.0)
         <= effect_size_calibration.get("alpha", 0.05)
         and effect_size_calibration.get("null_arm", {}).get("permutation_p", 0.0)
@@ -1604,6 +1673,8 @@ def validate_outputs(project_root: Path) -> dict[str, bool]:
         "quantum_trajectory_unraveling",
         "pymdp_runtime_validation_dashboard",
         "stochastic_effect_size_forest",
+        "criticality_paired_contrasts",
+        "resampling_calibration",
         "bmr_robustness_resampling",
         "quantum_trajectory_convergence",
         "visual_semantic_palette_ledger",

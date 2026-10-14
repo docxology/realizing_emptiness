@@ -8,10 +8,10 @@
     "one_row_per_manifest_figure": true,
     "parameters_or_controls_present_where_available": true
   },
-  "figure_count": 59,
+  "figure_count": 61,
   "missing_rows": [],
   "missing_source_artifacts": [],
-  "row_count": 59,
+  "row_count": 61,
   "rows": [
     {
       "claim_boundary": "review-response accounting for finite deterministic or seeded software validation only; not empirical, not public independent reproduction, not clinical, not neural, not practice-efficacy, not contemplative-attainment, and not physical qFEP evidence",
@@ -1699,6 +1699,7 @@
         "output/data/stochastic_effect_size_audit.json::all_intervals_finite",
         "output/data/stochastic_effect_size_audit.json::all_p_values_bounded",
         "output/data/stochastic_effect_size_audit.json::has_nonzero_effects",
+        "output/data/stochastic_effect_size_audit.json::intervals_match_estimands",
         "output/data/stochastic_effect_size_audit.json::seeded_resampling_declared"
       ],
       "figure_id": "pymdp_runtime_validation_dashboard",
@@ -1795,6 +1796,7 @@
             "all_intervals_finite",
             "all_p_values_bounded",
             "has_nonzero_effects",
+            "intervals_match_estimands",
             "seeded_resampling_declared"
           ],
           "exists": true,
@@ -2152,6 +2154,7 @@
         "output/data/stochastic_effect_size_audit.json::all_intervals_finite",
         "output/data/stochastic_effect_size_audit.json::all_p_values_bounded",
         "output/data/stochastic_effect_size_audit.json::has_nonzero_effects",
+        "output/data/stochastic_effect_size_audit.json::intervals_match_estimands",
         "output/data/stochastic_effect_size_audit.json::seeded_resampling_declared"
       ],
       "figure_id": "stochastic_effect_size_forest",
@@ -2174,6 +2177,7 @@
             "all_intervals_finite",
             "all_p_values_bounded",
             "has_nonzero_effects",
+            "intervals_match_estimands",
             "seeded_resampling_declared"
           ],
           "exists": true,
@@ -2183,6 +2187,98 @@
             "row_count": 18
           },
           "source_artifact": "output/data/stochastic_effect_size_audit.json"
+        }
+      ],
+      "traceable": true
+    },
+    {
+      "claim_boundary": "review-response accounting for finite deterministic or seeded software validation only; not empirical, not public independent reproduction, not clinical, not neural, not practice-efficacy, not contemplative-attainment, and not physical qFEP evidence",
+      "control_fields": [
+        "output/data/criticality_stochastic_ensemble.json::all_controls_pass",
+        "output/data/criticality_stochastic_ensemble.json::all_intervals_finite",
+        "output/data/criticality_stochastic_ensemble.json::branching_estimator_recovers_planted_sigma",
+        "output/data/criticality_stochastic_ensemble.json::majority_of_profiles_ci_separate_from_null",
+        "output/data/criticality_stochastic_ensemble.json::measured_branching_separates_from_null",
+        "output/data/criticality_stochastic_ensemble.json::null_controls_present",
+        "output/data/criticality_stochastic_ensemble.json::profiles_differ_from_null_controls",
+        "output/data/criticality_stochastic_ensemble.json::seeded_policy_source"
+      ],
+      "figure_id": "criticality_paired_contrasts",
+      "parameter_fields": [
+        "output/data/criticality_stochastic_ensemble.json::branching_null_seed",
+        "output/data/criticality_stochastic_ensemble.json::runs_per_profile",
+        "output/data/criticality_stochastic_ensemble.json::seed"
+      ],
+      "path": "output/figures/criticality_paired_contrasts.png",
+      "result_counts": {
+        "output/data/criticality_stochastic_ensemble.json": {
+          "metric_row_count": 768,
+          "summary_row_count": 6
+        }
+      },
+      "source_artifact_count": 1,
+      "source_artifacts": [
+        "output/data/criticality_stochastic_ensemble.json"
+      ],
+      "source_metadata": [
+        {
+          "control_fields": [
+            "all_controls_pass",
+            "all_intervals_finite",
+            "branching_estimator_recovers_planted_sigma",
+            "majority_of_profiles_ci_separate_from_null",
+            "measured_branching_separates_from_null",
+            "null_controls_present",
+            "profiles_differ_from_null_controls",
+            "seeded_policy_source"
+          ],
+          "exists": true,
+          "parameter_fields": [
+            "branching_null_seed",
+            "runs_per_profile",
+            "seed"
+          ],
+          "result_counts": {
+            "metric_row_count": 768,
+            "summary_row_count": 6
+          },
+          "source_artifact": "output/data/criticality_stochastic_ensemble.json"
+        }
+      ],
+      "traceable": true
+    },
+    {
+      "claim_boundary": "review-response accounting for finite deterministic or seeded software validation only; not empirical, not public independent reproduction, not clinical, not neural, not practice-efficacy, not contemplative-attainment, and not physical qFEP evidence",
+      "control_fields": [
+        "output/data/effect_size_calibration_audit.json::all_controls_pass",
+        "output/data/effect_size_calibration_audit.json::cliffs_delta_sign_matches_injection",
+        "output/data/effect_size_calibration_audit.json::null_not_rejected",
+        "output/data/effect_size_calibration_audit.json::positive_effect_magnitude_recovered",
+        "output/data/effect_size_calibration_audit.json::positive_effect_rejected",
+        "output/data/effect_size_calibration_audit.json::seed_bank_calibrated"
+      ],
+      "figure_id": "resampling_calibration",
+      "parameter_fields": [],
+      "path": "output/figures/resampling_calibration.png",
+      "result_counts": {},
+      "source_artifact_count": 1,
+      "source_artifacts": [
+        "output/data/effect_size_calibration_audit.json"
+      ],
+      "source_metadata": [
+        {
+          "control_fields": [
+            "all_controls_pass",
+            "cliffs_delta_sign_matches_injection",
+            "null_not_rejected",
+            "positive_effect_magnitude_recovered",
+            "positive_effect_rejected",
+            "seed_bank_calibrated"
+          ],
+          "exists": true,
+          "parameter_fields": [],
+          "result_counts": {},
+          "source_artifact": "output/data/effect_size_calibration_audit.json"
         }
       ],
       "traceable": true
@@ -2293,7 +2389,7 @@
       "path": "output/figures/visual_semantic_palette_ledger.png",
       "result_counts": {
         "figures.yaml": {
-          "figure_config_count": 59,
+          "figure_config_count": 61,
           "palette_role_count": 6
         }
       },
@@ -2315,7 +2411,7 @@
             "palette"
           ],
           "result_counts": {
-            "figure_config_count": 59,
+            "figure_config_count": 61,
             "palette_role_count": 6
           },
           "source_artifact": "figures.yaml"
@@ -2402,9 +2498,9 @@
       "path": "output/figures/scholarship_coverage_matrix.png",
       "result_counts": {
         "output/data/scholarship_source_matrix.json": {
-          "source_count": 93,
+          "source_count": 125,
           "track_count": 14,
-          "validation.entry_count": 93
+          "validation.entry_count": 125
         }
       },
       "source_artifact_count": 1,
@@ -2417,9 +2513,9 @@
           "exists": true,
           "parameter_fields": [],
           "result_counts": {
-            "source_count": 93,
+            "source_count": 125,
             "track_count": 14,
-            "validation.entry_count": 93
+            "validation.entry_count": 125
           },
           "source_artifact": "output/data/scholarship_source_matrix.json"
         }
@@ -2438,7 +2534,7 @@
         "output/data/claim_support_audit.json": {
           "public_claim_count": 15,
           "registered_claim_count": 18,
-          "support_row_count": 140
+          "support_row_count": 187
         }
       },
       "source_artifact_count": 1,
@@ -2455,7 +2551,7 @@
           "result_counts": {
             "public_claim_count": 15,
             "registered_claim_count": 18,
-            "support_row_count": 140
+            "support_row_count": 187
           },
           "source_artifact": "output/data/claim_support_audit.json"
         }
@@ -2472,10 +2568,10 @@
       "path": "output/figures/manuscript_claim_audit.png",
       "result_counts": {
         "output/data/manuscript_claim_audit.json": {
-          "declared_bibliography_count": 98,
+          "declared_bibliography_count": 130,
           "fragment_count": 56,
           "public_claim_count": 15,
-          "used_citation_count": 98
+          "used_citation_count": 130
         }
       },
       "source_artifact_count": 1,
@@ -2490,10 +2586,10 @@
           "exists": true,
           "parameter_fields": [],
           "result_counts": {
-            "declared_bibliography_count": 98,
+            "declared_bibliography_count": 130,
             "fragment_count": 56,
             "public_claim_count": 15,
-            "used_citation_count": 98
+            "used_citation_count": 130
           },
           "source_artifact": "output/data/manuscript_claim_audit.json"
         }
@@ -2562,7 +2658,7 @@
         "output/data/claim_support_audit.json": {
           "public_claim_count": 15,
           "registered_claim_count": 18,
-          "support_row_count": 140
+          "support_row_count": 187
         },
         "output/data/evidence_ceiling_audit.json": {
           "claim_count": 15
@@ -2608,7 +2704,7 @@
           "result_counts": {
             "public_claim_count": 15,
             "registered_claim_count": 18,
-            "support_row_count": 140
+            "support_row_count": 187
           },
           "source_artifact": "output/data/claim_support_audit.json"
         },

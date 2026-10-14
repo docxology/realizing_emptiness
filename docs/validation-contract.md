@@ -175,8 +175,15 @@ The validator intentionally attacks false certification:
   indicators from the stochastic policy ensemble, include null contrasts, and
   state that these are not neural measurements;
 - `stochastic_effect_size_audit.json` must report finite profile-versus-null
-  intervals, permutation p-values, Holm-adjusted p-values, and Cliff's-delta
-  directions over seeded software rows;
+  mean-difference and Cliff's-delta intervals over independently resampled runs,
+  permutation counts and resolution, Holm-adjusted p-values, and familywise
+  Monte Carlo bounds with explicit unresolved decisions;
+- `criticality_stochastic_ensemble.json` also records paired real-minus-shuffled
+  branching intervals conditional on one histogram-preserving shuffle per run;
+- `effect_size_calibration_audit.json` must retain per-seed rejection and coverage
+  rows and exact binomial rate intervals over 128 seed sets. The absent-effect
+  injection must fail the positive-control gate. See [statistical methods](statistical-methods.md)
+  for broad diagnostic thresholds and the distinction from nominal calibration;
 - `bmr_robustness_resampling_audit.json` must report finite bootstrap intervals,
   bounded pruning rates, and at least one stable sign cell over the sensitivity
   grid;

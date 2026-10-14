@@ -1,11 +1,11 @@
 {
-  "figure_count": 59,
+  "figure_count": 61,
   "missing_interpretive_boundaries": [],
   "missing_or_weak_captions": [],
   "missing_source_artifacts": [],
   "missing_visual_encodings": [],
   "ok": true,
-  "row_count": 59,
+  "row_count": 61,
   "rows": [
     {
       "caption_length": 334,
@@ -388,17 +388,37 @@
       "visual_encoding": "Single-panel horizontal bar chart whose bar lengths encode model-intervention deltas, color encodes the sign of each delta with a legend, and a dashed line encodes the no-intervention baseline."
     },
     {
-      "caption_length": 489,
+      "caption_length": 537,
       "has_interpretive_boundary": true,
       "has_source_artifact": true,
       "has_visual_encoding": true,
       "id": "stochastic_effect_size_forest",
       "ok": true,
       "source_artifact_count": 1,
-      "visual_encoding": "Horizontal forest plot; grouped y-axis rows use short profile labels, bar color encodes effect direction, hatches encode Holm p-values above threshold, text labels give adjusted p-values and bootstrap intervals, and the dashed vertical line marks zero effect."
+      "visual_encoding": "Two-panel forest plot with shared profile/metric rows, colored point estimates and horizontal 95 percent pointwise percentile intervals; hollow markers encode Holm nonrejection and diamonds encode unresolved Monte Carlo decisions; dashed reference lines encode zero."
     },
     {
-      "caption_length": 346,
+      "caption_length": 484,
+      "has_interpretive_boundary": true,
+      "has_source_artifact": true,
+      "has_visual_encoding": true,
+      "id": "criticality_paired_contrasts",
+      "ok": true,
+      "source_artifact_count": 1,
+      "visual_encoding": "Horizontal contrast plot with one row per profile, stochastic-colored points, paired bootstrap interval lines, and a dashed zero reference explained in the legend."
+    },
+    {
+      "caption_length": 481,
+      "has_interpretive_boundary": true,
+      "has_source_artifact": true,
+      "has_visual_encoding": true,
+      "id": "resampling_calibration",
+      "ok": true,
+      "source_artifact_count": 1,
+      "visual_encoding": "Two-panel grouped bar figure with null and stochastic colors, exact binomial interval whiskers, hit-count labels and dashed nominal reference lines explained by legends."
+    },
+    {
+      "caption_length": 526,
       "has_interpretive_boundary": true,
       "has_source_artifact": true,
       "has_visual_encoding": true,

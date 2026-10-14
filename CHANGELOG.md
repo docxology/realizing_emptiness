@@ -1,5 +1,22 @@
 # Changelog
 
+## 1.2.0 - 2026-10-14
+
+- Expand the curated scholarship ledger from 93 to 125 entries and the
+  bibliography from 98 to 130 entries, with manuscript synthesis and a
+  source-linked account of the search scope and limitations.
+- Estimate mean-difference and tie-aware Cliff's-delta uncertainty by resampling
+  complete independent runs; add paired real-minus-shuffled branching intervals.
+- Record permutation counts, finite resolution and familywise Monte Carlo
+  bounds around Holm decisions, with unresolved decisions shown explicitly.
+- Add 128-seed synthetic rejection/coverage calibration, exact binomial
+  intervals and an absent-effect negative control.
+- Redesign the effect forest and add paired-contrast and calibration figures,
+  bringing the source-mapped figure set to 61. Document all estimands,
+  resampling assumptions and finite-grid BMR limitations.
+- Update validation schemas, regression tests, release metadata and pinned
+  GitHub Actions; retain the original source hash and scientific claim ceilings.
+
 ## 1.1.0 - 2026-10-14
 
 - Reject missing, malformed, structurally invalid, and truncated validation

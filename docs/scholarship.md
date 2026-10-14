@@ -118,3 +118,60 @@ deterministic trace, expected-free-energy policy vocabulary, and structured
 runtime-diagnostics log, not the truth of any QRF ontology.
 Markov-blanket sources support boundary-formalism context, not a claim that the
 finite boundary screen is an empirical or quantum boundary.
+
+## Estimands, nulls, and calibration
+
+The [targeted scholarship expansion](scholarship-expansion.md) records 32
+additional sources verified on 2026-10-14, including the primary records and
+the operational reason for each addition. This is a targeted methodological
+curation, not a systematic review or an estimate of disciplinary consensus.
+The ledger now contains 125 entries. Publication dates use the journal issue
+year when it differs from online-first publication; the minimal active-inference
+agent remains explicitly a preprint.
+
+The statistical sources sharpen three different questions. First, what is the
+estimand: a profile mean, a difference between profiles, a dominance effect, or
+a paired difference between an original trajectory and its shuffled control?
+Second, what is resampled: independent runs, intact pairs, stationary blocks,
+or time order conditional on a fixed trajectory? Third, what uncertainty is
+reported: variation across generated runs, an interval for the contrast, or
+Monte Carlo error from a finite resampling budget? Morris and Burton motivate
+explicit simulation design; Kunsch and Politis-Romano constrain dependent-data
+resampling; Phipson-Smyth, Hemerik-Goeman, and Winkler constrain permutation
+validity. Theiler and Schreiber-Schmitz make the preserved and destroyed
+features of a surrogate null part of the scientific question. Romano-Wolf
+provides a comparison for multiplicity methods without implying that the
+local Holm procedure implements a dependence-adaptive stepdown algorithm.
+
+Cook, Modrak, and Sailynoja distinguish computational calibration from model
+adequacy. A rank or coverage check can miss errors to which its chosen test
+quantity is insensitive; conditioning a check on a dataset answers a narrower
+question than averaging over the prior predictive distribution. Flegal
+motivates reporting simulation error, while Gneiting-Raftery motivates scoring
+the predictive distribution rather than equating low entropy with predictive
+success. These are design constraints and comparisons: their presence in the
+ledger does not certify that every cited method has been implemented.
+
+## Physical and experiential interpretation boundaries
+
+The added active-inference literature distinguishes the implemented objective
+from an interpretation of the modeled system. Buckley makes assumptions
+inspectable; Millidge questions an automatic identification of expected and
+variational free energy; Friston and McGregor provide process and minimal-agent
+comparators. Van Es supplies a further counterweight: a scientist's model and
+a model attributed to an organism are different claims. Existing FEP critiques
+and qualified responses remain mandatory.
+
+Quantum no-cloning, no-broadcasting, and asymmetry-resource sources separate
+software operations on stored arrays from physically admissible operations on
+unknown states. Frame covariance under relabeling alone does not specify a
+symmetry group, admissible channels, or a consumable reference-frame resource.
+The existing physical-QRF counterweights remain mandatory.
+
+Phenomenological interview methods and first-person-data research motivate
+careful elicitation and analysis of reports, while meditation measurement and
+adverse-experience studies motivate construct validity, comparison conditions,
+and explicit safety monitoring for any future human study. They supply no
+human observations to this repository. Profile names, precision parameters,
+and care-scope quantities remain model interfaces; none is a validated measure
+of mindfulness, compassion, attainment, clinical benefit, or neural activity.

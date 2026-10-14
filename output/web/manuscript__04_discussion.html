@@ -766,6 +766,100 @@ gelman2020bayesianworkflow; pineau2020reproducibility]. None of these
 moves supplies the missing evidence that would be needed for claims
 about public independent reproduction, human subjects, practice
 outcomes, neural regimes, or physical qFEP dynamics.</p>
+<p>Statistical interpretation begins with an estimand rather than a
+significance label. Simulation design separates the data-generating
+mechanism, target quantity, estimator, and performance criterion
+[morris2019simulation; burton2006simulation]. For example, uncertainty
+in a difference of profile means concerns a contrast; an interval around
+the mean of pooled profile and control rows concerns a different
+quantity. Likewise, a dominance effect summarizes ordered comparisons
+and need not agree with a mean difference. Our methodological
+implication is to name the contrast and preserve its sampling unit
+throughout resampling, interval construction, and reporting. Multiple
+timesteps within a generated trajectory do not become independent
+replications by being placed in a table. Block-bootstrap theory provides
+methods for dependent stationary observations, with assumptions and
+tuning choices that a whole-run bootstrap does not share
+[kunsch1989bootstrap; politis1994stationary]. Citing these methods does
+not assert that the local audit implements stationary or block
+bootstrapping.</p>
+<p>The null model also determines the scope of a result. A shuffled
+trajectory conditions on observed values while removing temporal order;
+rejecting that null establishes sensitivity to order under the chosen
+construction. It does not identify a critical regime, establish
+nonlinearity against every linear process, or turn a software trajectory
+into neural evidence. Surrogate-data methodology and
+autocorrelation-preserving constructions show why the features preserved
+by a null must be declared explicitly [theiler1992surrogate;
+schreiber1996surrogate]. When an original trajectory is compared with
+its own shuffled control, resampling intact pairs preserves that
+relationship. A paired sign-flip test additionally requires a justified
+symmetry or randomization argument; pairing alone is insufficient.
+Permutation methods depend on invariance and exchangeability conditions,
+including restrictions on permissible rearrangements
+[winkler2014permutation; hemerik2018exact]. Finite random-permutation
+p-values require the identity-observation convention and a nonzero
+attainable minimum; a plus-one correction cannot repair an invalid null
+[phipson2010permutation]. Multiplicity correction protects a declared
+family only when its input tests are valid [romano2005stepdown].</p>
+<p>Calibration adds another distinct question. Repeating a seeded
+generator measures performance under that generator, while the finite
+number of repetitions introduces Monte Carlo uncertainty
+[morris2019simulation; flegal2008montecarlo]. The latter should not be
+confused with an interval for a profile contrast or with variability
+among hypothetical human subjects. Posterior-quantile validation can
+identify implementation errors, but the sensitivity of a calibration
+check depends on its test quantity [cook2006validation;
+modrak2025calibration]. Recent posterior simulation-based calibration
+further distinguishes average prior-predictive behavior from computation
+conditional on particular data [sailynoja2026posterior]. These sources
+motivate adversarial checks, independent seed banks, and explicit
+calibration targets; they do not establish that a synthetic effect-size
+positive control is Bayesian posterior calibration. Proper scoring rules
+offer a complementary criterion for probabilistic predictions, so a
+narrower distribution or lower entropy alone is not treated as
+predictive success [gneiting2007scoring].</p>
+<p>The same discipline applies to the active-inference interpretation.
+Mathematical expositions and minimal agents make assumptions and
+preference distributions explicit [buckley2017mathematical;
+mcgregor2015minimal; friston2017process]. Expected free energy is an
+objective with a particular derivation and decomposition, rather than an
+automatic consequence of replacing present observations with future ones
+[millidge2021whence]. Van Es’s instrumentalist argument adds a
+conceptual counterweight: a model used by a scientist and a
+representation attributed to an organism are separate commitments
+[vanes2021models]. Together with the existing blanket critiques and
+response, this makes the local generative model an inspectable
+computational construction without settling the ontology of
+selfhood.</p>
+<p>Quantum-information limits specify a further boundary. Copying a
+known numerical state description in software is different from
+implementing a physical channel that clones an arbitrary unknown state
+or broadcasts a noncommuting family [wootters1982cloning;
+barnum1996broadcast]. Reference-frame resource theories require
+specified symmetries and allowed operations, with constraints on
+asymmetry resources and state transformations [gour2008reference;
+marvian2014modes; marvian2014noether]. Our inference from these sources
+is that finite relabeling covariance is a useful consistency check, but
+does not by itself supply a physical reference-frame resource theory or
+validate the quantum free-energy principle.</p>
+<p>Finally, phenomenological vocabulary requires a measurement bridge
+that this project does not provide. Interview methods explain how
+descriptions can be elicited and how their validity can be questioned;
+first-person-data research illustrates a design in which reports
+constrain a separate analysis rather than replacing it
+[petitmengin2006experience; lutz2002neurophenomenology]. Construct and
+design critiques caution against identifying questionnaire scores,
+practice labels, or researcher-defined parameters with a single
+invariant mindfulness construct [grossman2008measuring;
+davidson2015methodological; vandam2018hype]. Studies of difficult
+contemplative experiences also distinguish the description of an
+experience from its interpretation, valence, duration, and functional
+impact [lindahl2017varieties; britton2021adverse]. For this repository,
+these are requirements for any future empirical interface, not
+human-subject results or advice about practice. No simulation profile
+licenses an inference of safety, compassion, realization, clinical
+benefit, or neural change.</p>
 <h2 id="sec:discussion-practice-interface-boundaries">Practice
 Interfaces Remain Outcome-Independent</h2>
 <p>The practice protocol map is useful because it keeps contemplative

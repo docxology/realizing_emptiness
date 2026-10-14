@@ -3955,110 +3955,84 @@ def _stochastic_effect_size_forest(
     project_root: Path, style: dict[str, Any], audit: dict[str, Any]
 ) -> Path:
     colors = _semantic_colors(style)
-    rows = [
-        row
-        for row in audit["rows"]
-        if row["metric"]
-        in {"switch_rate", "mean_surprise", "mean_weighted_expected_free_energy"}
-    ]
-    metric_labels = {
-        "switch_rate": "switch rate",
-        "mean_surprise": "surprise",
-        "mean_weighted_expected_free_energy": "weighted EFE",
-    }
-    rows = sorted(rows, key=lambda row: (row["profile"], row["metric"]))
-    labels = [
-        f"{_profile_label(row['profile'])} | {metric_labels[row['metric']]}"
-        for row in rows
-    ]
-    y = np.arange(len(rows))
-    effects = np.array([row["cliffs_delta"] for row in rows], dtype=float)
-    p_values = np.array([row["holm_p"] for row in rows], dtype=float)
-    fig, ax = plt.subplots(figsize=(13.8, 6.6))
-    bar_colors = [
-        colors["stochastic"] if value >= 0 else colors["null"] for value in effects
-    ]
-    bars = ax.barh(
-        y, effects, color=bar_colors, edgecolor=colors["boundary"], linewidth=0.6
-    )
-    for bar, p_value in zip(bars, p_values, strict=True):
-        if p_value >= 0.05:
-            bar.set_hatch("//")
-    previous_profile = None
+    metrics = {"switch_rate": "switch fraction", "mean_surprise": "surprise (nats)",
+               "mean_weighted_expected_free_energy": "weighted EFE (nats)"}
+    rows = sorted((row for row in audit["rows"] if row["metric"] in metrics),
+                  key=lambda row: (row["profile"], row["metric"]))
+    labels = [f"{_profile_label(row['profile'])} | {metrics[row['metric']]}" for row in rows]
+    fig, axes = plt.subplots(2, 1, figsize=(8.8, 11.0), sharey=True)
     for index, row in enumerate(rows):
-        if previous_profile is not None and row["profile"] != previous_profile:
-            ax.axhline(index - 0.5, color=style["palette"]["grid"], linewidth=1.1)
-        previous_profile = row["profile"]
-    ax.axvline(
-        0.0,
-        color=colors["boundary"],
-        linestyle="--",
-        linewidth=1.0,
-        label="no profile-null effect",
-    )
-    ax.set_yticks(y, labels)
-    ax.tick_params(axis="y", labelsize=9)
-    ax.invert_yaxis()
-    lower = min(-1.02, float(effects.min()) - 0.15)
-    upper = max(0.18, float(effects.max()) + 0.25)
-    ax.set_xlim(lower, upper)
-    ax.set_xlabel("Cliff's delta (profile ensemble minus null control)")
-    ax.set_title("Seeded stochastic profile-null effect sizes with robustness labels")
-    ax.legend(
-        handles=[
-            Patch(
-                facecolor=colors["stochastic"],
-                edgecolor=colors["boundary"],
-                label="profile higher",
-            ),
-            Patch(
-                facecolor=colors["null"],
-                edgecolor=colors["boundary"],
-                label="null higher",
-            ),
-            Patch(
-                facecolor="white",
-                edgecolor=colors["boundary"],
-                hatch="//",
-                label="Holm p >= 0.05",
-            ),
-            Line2D(
-                [0], [0], color=colors["boundary"], linestyle="--", label="zero effect"
-            ),
-        ],
-        title="Effect legend",
-        fontsize=9,
-        loc="upper center",
-        bbox_to_anchor=(0.5, -0.18),
-        ncol=2,
-    )
+        color = colors["stochastic"] if row["holm_p"] < 0.05 else colors["null"]
+        marker = "o" if row["holm_decision_mc_stable"] else "D"
+        for ax, estimate, low, high in (
+            (axes[0], row["cliffs_delta"], row["cliffs_ci95_low"], row["cliffs_ci95_high"]),
+            (axes[1], row["delta_profile_minus_null"], row["difference_ci95_low"], row["difference_ci95_high"]),
+        ):
+            ax.hlines(index, low, high, color=color, linewidth=2)
+            ax.scatter(estimate, index, marker=marker, s=52, edgecolor=color,
+                       facecolor=color if row["holm_p"] < 0.05 else "white", zorder=3)
+    for index, ax in enumerate(axes):
+        ax.axvline(0, color=colors["boundary"], linestyle="--", linewidth=1)
+        ax.set_yticks(np.arange(len(rows)), labels)
+        ax.grid(axis="x", color=style["palette"]["grid"], linewidth=0.5, alpha=0.6)
+    axes[0].invert_yaxis()
+    axes[0].set_xlim(-1.1, 1.1)
+    axes[0].set_title("SR1 | Dominance effect")
+    axes[0].set_xlabel("Cliff's delta (profile minus random null)")
+    axes[1].set_title("SR2 | Mean difference")
+    axes[1].set_xlabel("Difference in row-specific native units")
+    fig.legend(handles=[
+        Line2D([0], [0], color=colors["stochastic"], marker="o", label="95% pointwise interval"),
+        Line2D([0], [0], color=colors["null"], marker="o", markerfacecolor="white", label="Holm p >= 0.05"),
+        Line2D([0], [0], color=colors["boundary"], marker="D", linestyle="none", label="MC decision unresolved"),
+    ], loc="lower center", bbox_to_anchor=(0.5, -0.10), ncol=2)
+    return _save_return(fig, _fig_path(project_root, style, "stochastic_effect_size_forest"), style["dpi"])
+
+
+def _criticality_paired_contrasts(
+    project_root: Path, style: dict[str, Any], audit: dict[str, Any]
+) -> Path:
+    colors = _semantic_colors(style)
+    rows = audit["null_contrasts"]
+    fig, ax = plt.subplots(figsize=(8.8, 4.3))
     for index, row in enumerate(rows):
-        interval = [
-            row.get(
-                "pooled_bootstrap_ci95_low", row.get("delta_profile_minus_null", 0.0)
-            ),
-            row.get(
-                "pooled_bootstrap_ci95_high", row.get("delta_profile_minus_null", 0.0)
-            ),
-        ]
-        ax.text(
-            1.02,
-            index,
-            f"Holm p={row['holm_p']:.3f}; pooled-mean CI [{interval[0]:.2f}, {interval[1]:.2f}]",
-            transform=ax.get_yaxis_transform(),
-            va="center",
-            ha="left",
-            fontsize=9,
-            color=style["palette"]["muted"],
-        )
-    ax.grid(axis="x", color=style["palette"]["grid"], linewidth=0.5, alpha=0.55)
-    _panel_label(ax, "SR")
-    setattr(fig, "_layout_rect", (0.0, 0.12, 0.72, 1.0))
-    return _save_return(
-        fig,
-        _fig_path(project_root, style, "stochastic_effect_size_forest"),
-        style["dpi"],
-    )
+        ax.hlines(index, row["paired_branching_ci95_low"], row["paired_branching_ci95_high"],
+                  color=colors["stochastic"], linewidth=3)
+        ax.scatter(row["branching_ratio_delta_vs_null"], index, color=colors["stochastic"], s=65)
+    ax.set_yticks(range(len(rows)), [_profile_label(row["profile"]) for row in rows])
+    ax.axvline(0, color=colors["boundary"], linestyle="--", label="zero paired difference")
+    ax.set_xlabel("Mean branching difference: original minus within-run shuffle")
+    ax.set_title("Paired trajectory branching contrasts")
+    ax.legend(handles=[
+        Line2D([0], [0], color=colors["stochastic"], marker="o", label="95% paired-run bootstrap interval"),
+        Line2D([0], [0], color=colors["boundary"], linestyle="--", label="zero difference"),
+    ], loc="upper center", bbox_to_anchor=(0.5, -0.23))
+    return _save_return(fig, _fig_path(project_root, style, "criticality_paired_contrasts"), style["dpi"])
+
+
+def _resampling_calibration(
+    project_root: Path, style: dict[str, Any], audit: dict[str, Any]
+) -> Path:
+    colors = _semantic_colors(style)
+    bank = audit["seed_bank"]
+    fig, axes = plt.subplots(1, 2, figsize=(10.4, 5.4))
+    for ax, outcome, target in ((axes[0], "rejection", bank["alpha"]), (axes[1], "coverage", bank["nominal_coverage"])):
+        for index, label in enumerate(("null", "positive")):
+            summary = bank[f"{label}_{outcome}"]
+            rate = 100 * summary["rate"]
+            ax.bar(index, rate, color=colors["null" if label == "null" else "stochastic"], width=0.5)
+            ax.errorbar(index, rate, yerr=[[rate - 100 * summary["ci_low"]], [100 * summary["ci_high"] - rate]],
+                        color=colors["boundary"], capsize=6, linewidth=1.5)
+            ax.text(index, 108, f"{summary['hits']}/{summary['trials']}", ha="center", va="center")
+        ax.set_xticks([0, 1], ["zero shift", "injected shift"])
+        ax.axhline(100 * target, linestyle="--", color=colors["boundary"], label=f"reference {target:.0%}")
+        ax.set_ylim(-5, 115)
+        ax.set_ylabel("Percentage of seeded repetitions")
+        ax.legend(loc="lower center", bbox_to_anchor=(0.5, -0.3))
+    axes[0].set_title("Permutation rejection frequency")
+    axes[1].set_title("Mean-difference interval coverage")
+    fig.suptitle(f"Synthetic calibration over {bank['repetitions']} independent seed sets")
+    return _save_return(fig, _fig_path(project_root, style, "resampling_calibration"), style["dpi"])
 
 
 def _bmr_robustness_resampling(
@@ -4121,7 +4095,7 @@ def _bmr_robustness_resampling(
     axes[1].set_yticks(range(len(precisions)), [f"{value:g}" for value in precisions])
     _add_heatmap_cell_grid(axes[1], len(precisions), len(accesses))
     axes[1].set_xlabel("Metacognitive access")
-    axes[1].set_title("Delta-F sign stability: P=prune, K=keep; CI low/high")
+    axes[1].set_title("Conditional grid-mean CI excludes zero: P=prune, K=keep")
     for y_idx, precision in enumerate(precisions):
         for x_idx, access in enumerate(accesses):
             row = lookup[(precision, access)]
@@ -6125,6 +6099,7 @@ def generate_all_figures(project_root: Path) -> dict[str, Any]:
     internal_cut = _load_json(data / "internal_cut_unmeasurability_audit.json")
     practice_map = _load_json(data / "practice_protocol_map.json")
     stochastic_effects = _load_json(data / "stochastic_effect_size_audit.json")
+    effect_calibration = _load_json(data / "effect_size_calibration_audit.json")
     bmr_robustness = _load_json(data / "bmr_robustness_resampling_audit.json")
     trajectory_convergence = _load_json(
         data / "quantum_trajectory_convergence_audit.json"
@@ -6245,6 +6220,8 @@ def generate_all_figures(project_root: Path) -> dict[str, Any]:
         "stochastic_effect_size_forest": _stochastic_effect_size_forest(
             project_root, style, stochastic_effects
         ),
+        "criticality_paired_contrasts": _criticality_paired_contrasts(project_root, style, criticality_stochastic),
+        "resampling_calibration": _resampling_calibration(project_root, style, effect_calibration),
         "bmr_robustness_resampling": _bmr_robustness_resampling(
             project_root, style, bmr_robustness
         ),
@@ -6461,6 +6438,8 @@ def _source_artifacts_for(figure_id: str) -> list[str]:
         "stochastic_effect_size_forest": [
             "output/data/stochastic_effect_size_audit.json"
         ],
+        "criticality_paired_contrasts": ["output/data/criticality_stochastic_ensemble.json"],
+        "resampling_calibration": ["output/data/effect_size_calibration_audit.json"],
         "bmr_robustness_resampling": [
             "output/data/bmr_robustness_resampling_audit.json"
         ],

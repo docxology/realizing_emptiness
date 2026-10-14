@@ -464,6 +464,12 @@ artifacts:
   - id: stochastic_effect_size_forest
     path: output/figures/stochastic_effect_size_forest.png
     kind: figure
+  - id: criticality_paired_contrasts
+    path: output/figures/criticality_paired_contrasts.png
+    kind: figure
+  - id: resampling_calibration
+    path: output/figures/resampling_calibration.png
+    kind: figure
   - id: bmr_robustness_resampling
     path: output/figures/bmr_robustness_resampling.png
     kind: figure

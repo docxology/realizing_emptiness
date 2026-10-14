@@ -1,6 +1,6 @@
 {
   "duplicate_supplement_paths": [],
-  "image_reference_count": 56,
+  "image_reference_count": 58,
   "ok": true,
   "rows": [
     {
@@ -225,6 +225,16 @@
     },
     {
       "file": "docs/manuscript/06_supplement.md",
+      "path": "../../output/figures/criticality_paired_contrasts.png",
+      "section_class": "supplement"
+    },
+    {
+      "file": "docs/manuscript/06_supplement.md",
+      "path": "../../output/figures/resampling_calibration.png",
+      "section_class": "supplement"
+    },
+    {
+      "file": "docs/manuscript/06_supplement.md",
       "path": "../../output/figures/stochastic_effect_size_forest.png",
       "section_class": "supplement"
     },
@@ -285,5 +295,5 @@
     }
   ],
   "schema": "realizing_emptiness.figure_reuse_audit.v1",
-  "unique_image_path_count": 56
+  "unique_image_path_count": 58
 }

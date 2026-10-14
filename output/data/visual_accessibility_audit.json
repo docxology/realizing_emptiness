@@ -1,12 +1,12 @@
 {
-  "figure_count": 59,
+  "figure_count": 61,
   "missing_alt_text": [],
   "missing_data_table_alternative": [],
   "missing_legend_or_colorbar": [],
   "missing_non_color_encoding": [],
   "missing_units_or_axes": [],
   "ok": true,
-  "row_count": 59,
+  "row_count": 61,
   "rows": [
     {
       "alt_text_length": 280,
@@ -389,13 +389,33 @@
       "ok": true
     },
     {
-      "alt_text_length": 241,
+      "alt_text_length": 192,
       "has_alt_text": true,
       "has_data_table_alternative": true,
       "has_legend_or_colorbar": true,
       "has_non_color_encoding": true,
       "has_units_or_axes": true,
       "id": "stochastic_effect_size_forest",
+      "ok": true
+    },
+    {
+      "alt_text_length": 139,
+      "has_alt_text": true,
+      "has_data_table_alternative": true,
+      "has_legend_or_colorbar": true,
+      "has_non_color_encoding": true,
+      "has_units_or_axes": true,
+      "id": "criticality_paired_contrasts",
+      "ok": true
+    },
+    {
+      "alt_text_length": 143,
+      "has_alt_text": true,
+      "has_data_table_alternative": true,
+      "has_legend_or_colorbar": true,
+      "has_non_color_encoding": true,
+      "has_units_or_axes": true,
+      "id": "resampling_calibration",
       "ok": true
     },
     {

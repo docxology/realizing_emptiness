@@ -5,6 +5,7 @@
 \usepackage{booktabs}
 \usepackage{etoolbox}
 \AtBeginDocument{\hypersetup{hidelinks}}
+\AtBeginDocument{\setcounter{tocdepth}{2}}
 \AtEndEnvironment{titlepage}{%
 \vspace*{-0.7cm}
 \noindent\makebox[\textwidth][c]{%

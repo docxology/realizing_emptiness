@@ -10,6 +10,7 @@ from typing import Any
 import numpy as np
 
 from simulation.quantum_surrogates import build_quantum_trajectory_unraveling
+from simulation.resampling import bootstrap_contrast, permutation_test, binomial_summary
 
 
 CLAIM_BOUNDARY = (
@@ -48,19 +49,7 @@ def _bootstrap_ci(
 def _permutation_p_value(
     first: list[float], second: list[float], *, seed: int, draws: int = 1024
 ) -> float:
-    left = np.asarray(first, dtype=float)
-    right = np.asarray(second, dtype=float)
-    observed = abs(float(np.mean(left) - np.mean(right)))
-    pooled = np.concatenate([left, right])
-    rng = np.random.default_rng(seed)
-    exceedances = 0
-    for _ in range(draws):
-        shuffled = rng.permutation(pooled)
-        delta = abs(
-            float(np.mean(shuffled[: len(left)]) - np.mean(shuffled[len(left) :]))
-        )
-        exceedances += int(delta >= observed)
-    return float((exceedances + 1) / (draws + 1))
+    return float(permutation_test(first, second, seed=seed, draws=draws)["p_value"])
 
 
 def _cliffs_delta(first: list[float], second: list[float]) -> float:
@@ -97,6 +86,7 @@ def build_stochastic_effect_size_audit(stochastic: dict[str, Any]) -> dict[str, 
         grouped[(row["profile"], bool(row["null_control"]))].append(row)
     rows = []
     p_values = []
+    family_size = len({profile for profile, _ in grouped}) * len(metric_names)
     for profile in sorted({profile for profile, _ in grouped}):
         for metric_index, metric in enumerate(metric_names):
             profile_values = [float(row[metric]) for row in grouped[(profile, False)]]
@@ -107,9 +97,12 @@ def build_stochastic_effect_size_audit(stochastic: dict[str, Any]) -> dict[str, 
             )
             profile_ci = _bootstrap_ci(profile_values, seed=7100 + metric_index)
             null_ci = _bootstrap_ci(null_values, seed=7200 + metric_index)
-            p_value = _permutation_p_value(
-                profile_values, null_values, seed=7300 + 17 * metric_index + len(rows)
+            contrast = bootstrap_contrast(profile_values, null_values, seed=7400 + len(rows))
+            permutation = permutation_test(
+                profile_values, null_values, seed=7300 + 17 * metric_index + len(rows),
+                confidence=1 - 0.05 / family_size,
             )
+            p_value = float(permutation["p_value"])
             p_values.append(p_value)
             rows.append(
                 {
@@ -126,11 +119,29 @@ def build_stochastic_effect_size_audit(stochastic: dict[str, Any]) -> dict[str, 
                     "pooled_bootstrap_ci95_high": pooled_ci["ci95_high"],
                     "cliffs_delta": _cliffs_delta(profile_values, null_values),
                     "permutation_p": p_value,
+                    "difference_ci95_low": contrast["difference_ci95_low"],
+                    "difference_ci95_high": contrast["difference_ci95_high"],
+                    "cliffs_ci95_low": contrast["cliffs_ci95_low"],
+                    "cliffs_ci95_high": contrast["cliffs_ci95_high"],
+                    "profile_run_count": len(profile_values), "null_run_count": len(null_values),
+                    "bootstrap_seed": 7400 + len(rows), "bootstrap_draws": 2048,
+                    "permutation_seed": 7300 + 17 * metric_index + len(rows),
+                    "permutation_draws": permutation["draws"],
+                    "permutation_exceedances": permutation["exceedances"],
+                    "permutation_resolution": permutation["resolution"],
+                    "permutation_mcse": permutation["mcse"],
+                    "permutation_tail_family_ci95_low": permutation["tail_ci_low"],
+                    "permutation_tail_family_ci95_high": permutation["tail_ci_high"],
+                    "permutation_tail_confidence_level": permutation["tail_confidence_level"],
                 }
             )
     adjusted = _holm_adjust(p_values)
-    for row, p_adjusted in zip(rows, adjusted, strict=True):
+    lower_adjusted = _holm_adjust([row["permutation_tail_family_ci95_low"] for row in rows])
+    upper_adjusted = _holm_adjust([row["permutation_tail_family_ci95_high"] for row in rows])
+    for row, p_adjusted, low, high in zip(rows, adjusted, lower_adjusted, upper_adjusted, strict=True):
         row["holm_p"] = p_adjusted
+        row["holm_mc_ci95_low"], row["holm_mc_ci95_high"] = low, high
+        row["holm_decision_mc_stable"] = bool(high < 0.05 or low >= 0.05)
         row["finite_interval"] = _finite(
             [
                 row["profile_mean"],
@@ -142,10 +153,13 @@ def build_stochastic_effect_size_audit(stochastic: dict[str, Any]) -> dict[str, 
                 row["cliffs_delta"],
                 row["permutation_p"],
                 row["holm_p"],
+                row["difference_ci95_low"], row["difference_ci95_high"],
+                row["cliffs_ci95_low"], row["cliffs_ci95_high"], low, high,
             ]
         )
         row["effect_direction"] = (
-            "profile_higher" if row["delta_profile_minus_null"] > 0 else "null_higher"
+            "profile_higher" if row["delta_profile_minus_null"] > 0 else
+            "null_higher" if row["delta_profile_minus_null"] < 0 else "equal"
         )
     controls = {
         "all_intervals_finite": all(row["finite_interval"] for row in rows),
@@ -155,12 +169,19 @@ def build_stochastic_effect_size_audit(stochastic: dict[str, Any]) -> dict[str, 
         ),
         "has_nonzero_effects": any(abs(row["cliffs_delta"]) > 0.1 for row in rows),
         "seeded_resampling_declared": True,
+        "intervals_match_estimands": all(-1 <= row["cliffs_ci95_low"] <= row["cliffs_ci95_high"] <= 1
+                                        and row["difference_ci95_low"] <= row["difference_ci95_high"] for row in rows),
     }
     return {
         "schema": "realizing_emptiness.stochastic_effect_size_audit.v1",
         "metric_count": len(metric_names),
         "row_count": len(rows),
         "rows": rows,
+        "resampling_design": {"unit": "independent_trajectory_run", "bootstrap_method": "percentile",
+                              "interval_confidence": 0.95, "intervals_simultaneous": False,
+                              "null": "independent_uniform_observation_action_runs",
+                              "permutation_family_size": len(rows), "mc_family_confidence": 0.95,
+                              "mc_interval_method": "Bonferroni_Clopper_Pearson_then_monotone_Holm"},
         "controls": controls,
         "all_controls_pass": all(controls.values()),
         "claim_boundary": CLAIM_BOUNDARY,
@@ -188,6 +209,9 @@ def build_bmr_robustness_resampling_audit(
                 "metacognitive_access": access,
                 "noise_row_count": len(group),
                 "mean_delta_free_energy": delta_ci["mean"],
+                "grid_delta_min": min(delta_values), "grid_delta_max": max(delta_values),
+                "pruned_noise_rows": int(sum(prune_values)),
+                "all_noise_rows_same_sign": bool(min(delta_values) > 0 or max(delta_values) < 0),
                 "delta_ci95_low": delta_ci["ci95_low"],
                 "delta_ci95_high": delta_ci["ci95_high"],
                 "pruning_rate": prune_ci["mean"],
@@ -319,17 +343,53 @@ def _synthetic_arm(
         treatment.tolist(), baseline.tolist(), seed=seed + 1 + base_seed_offset
     )
     cliffs = _cliffs_delta(treatment.tolist(), baseline.tolist())
-    delta_ci = _bootstrap_ci(
-        (treatment - baseline).tolist(), seed=seed + 2 + base_seed_offset
-    )
+    delta_ci = bootstrap_contrast(treatment, baseline, seed=seed + 2 + base_seed_offset)
     return {
         "injected_shift": float(shift),
         "permutation_p": permutation_p,
         "cliffs_delta": cliffs,
         "mean_difference": float(np.mean(treatment) - np.mean(baseline)),
-        "mean_difference_ci95_low": delta_ci["ci95_low"],
-        "mean_difference_ci95_high": delta_ci["ci95_high"],
+        "mean_difference_ci95_low": delta_ci["difference_ci95_low"],
+        "mean_difference_ci95_high": delta_ci["difference_ci95_high"],
     }
+
+
+def build_seed_bank_calibration(
+    *, seed: int = 104242, repetitions: int = 128, positive_shift: float = 1.0,
+) -> dict[str, Any]:
+    """Measure rejection and difference-interval coverage across independent synthetic seed sets."""
+    if repetitions < 1 or not np.isfinite(positive_shift):
+        raise ValueError("calibration requires a positive repetition count and finite shift")
+    rows = []
+    for index in range(repetitions):
+        run_seed = seed + index * 10
+        rng = np.random.default_rng(run_seed)
+        baseline = rng.normal(size=64)
+        null = rng.normal(size=64)
+        shifted = rng.normal(loc=positive_shift, size=64)
+        row: dict[str, Any] = {"seed": run_seed}
+        for label, values, truth in (("null", null, 0.0), ("positive", shifted, positive_shift)):
+            contrast = bootstrap_contrast(values, baseline, seed=run_seed + 1, draws=512)
+            p = float(permutation_test(values, baseline, seed=run_seed + 2, draws=511)["p_value"])
+            row[f"{label}_p"] = p
+            row[f"{label}_mean_difference"] = contrast["mean_difference"]
+            row[f"{label}_ci95_low"] = contrast["difference_ci95_low"]
+            row[f"{label}_ci95_high"] = contrast["difference_ci95_high"]
+            row[f"{label}_rejected"] = p <= 0.05
+            row[f"{label}_covered"] = contrast["difference_ci95_low"] <= truth <= contrast["difference_ci95_high"]
+        rows.append(row)
+    summaries = {f"{label}_{outcome}": binomial_summary(
+        sum(row[f"{label}_{field}"] for row in rows), repetitions)
+        for label in ("null", "positive") for outcome, field in (("rejection", "rejected"), ("coverage", "covered"))}
+    controls = {"seed_bank_large_enough": repetitions >= 32,
+                "null_rejection_bounded": summaries["null_rejection"]["ci_high"] <= 0.25,
+                "injected_effect_detected": summaries["positive_rejection"]["ci_low"] >= 0.75}
+    return {"seed": seed, "repetitions": repetitions, "sample_size_per_group": 64,
+            "bootstrap_draws": 512, "permutation_draws": 511, "alpha": 0.05,
+            "nominal_coverage": 0.95, "positive_shift": float(positive_shift),
+            "calibration_limits": {"null_rejection_upper_max": 0.25, "positive_rejection_lower_min": 0.75},
+            "rows": rows, **summaries, "controls": controls, "all_controls_pass": all(controls.values()),
+            "claim_boundary": "finite normal-generator diagnostic with Monte Carlo error; not empirical statistical power or universal coverage certification"}
 
 
 def build_effect_size_test_calibration_audit(
@@ -347,6 +407,7 @@ def build_effect_size_test_calibration_audit(
     null_arm = _synthetic_arm(shift=0.0, seed=seed)
     positive_arm = _synthetic_arm(shift=positive_shift, seed=seed + 1000)
     sign_flip_arm = _synthetic_arm(shift=-positive_shift, seed=seed + 2000)
+    seed_bank = build_seed_bank_calibration(positive_shift=positive_shift)
     controls = {
         "null_not_rejected": bool(
             null_arm["permutation_p"] > alpha and abs(null_arm["cliffs_delta"]) < 0.33
@@ -363,6 +424,7 @@ def build_effect_size_test_calibration_audit(
             <= positive_shift
             <= positive_arm["mean_difference_ci95_high"]
         ),
+        "seed_bank_calibrated": seed_bank["all_controls_pass"],
     }
     return {
         "schema": "realizing_emptiness.effect_size_calibration_audit.v1",
@@ -371,6 +433,7 @@ def build_effect_size_test_calibration_audit(
         "null_arm": null_arm,
         "positive_arm": positive_arm,
         "sign_flip_arm": sign_flip_arm,
+        "seed_bank": seed_bank,
         "controls": controls,
         "all_controls_pass": all(controls.values()),
         "claim_boundary": (

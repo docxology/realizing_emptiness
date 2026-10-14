@@ -53,6 +53,8 @@ physical-qFEP evidence.
 | Document | Purpose |
 | --- | --- |
 | [Scholarship source matrix](scholarship.md) | Source-role matrix separating primary-target claims, implementation anchors, formal background, and proxy-only empirical context. |
+| [Scholarship expansion](scholarship-expansion.md) | Targeted primary-source synthesis of statistical estimands, null constructions, calibration, FEP critiques, QRF resources and contemplative measurement limits. |
+| [Statistical methods](statistical-methods.md) | Executable estimands, sampling units, bootstrap and permutation budgets, Monte Carlo uncertainty, paired controls and calibration limits. |
 | [Method inventory](method-inventory.md) *(generated)* | Per-method governance ledger: hard constraints, assumptions, evidence ceilings, and falsification controls. |
 | [Adversarial audit record](redteam-audit.md) | Numbered stress-test findings and their resolved minimal fixes. |
 

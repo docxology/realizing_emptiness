@@ -52,6 +52,8 @@ TECHNICAL_QUANTUM_FIGURES = (
     "../../output/figures/quantum_open_system_dynamics.png",
     "../../output/figures/quantum_trajectory_unraveling.png",
     "../../output/figures/quantum_trajectory_convergence.png",
+    "../../output/figures/criticality_paired_contrasts.png",
+    "../../output/figures/resampling_calibration.png",
     "../../output/figures/thermodynamic_channel_cost_audit.png",
     "../../output/figures/qfep_boundary_hamiltonian_dynamics.png",
     "../../output/figures/many_body_boundary_screen_sweep.png",

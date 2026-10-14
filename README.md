@@ -9,7 +9,7 @@
 
 | | |
 | --- | --- |
-| **Version** | v1.1.0; [changes](CHANGELOG.md) and [release validation](docs/release-validation.md) |
+| **Version** | v1.2.0; [changes](CHANGELOG.md) and [release validation](docs/release-validation.md) |
 | **Archived v1.0.0 (Zenodo)** | [10.5281/zenodo.20834847](https://doi.org/10.5281/zenodo.20834847); [concept DOI](https://doi.org/10.5281/zenodo.20834846). A new version DOI is not yet recorded. |
 | **Manuscript PDF** | [`realizing_emptiness_combined.pdf`](output/pdf/realizing_emptiness_combined.pdf) · [latest release](https://github.com/docxology/realizing_emptiness/releases/latest) |
 | 📚 **Source preprint** | [osf.io/preprints/psyarxiv/m78z2_v1](https://osf.io/preprints/psyarxiv/m78z2_v1) |
@@ -19,8 +19,9 @@
 
 ## State right now (orientation for a cold agent)
 
-- **Project status:** v1.1.0 updates the validation, manuscript, distribution,
-  and release contracts. The v1.0.0 DOI identifies the earlier archive; it does
+- **Project status:** v1.2.0 expands the scholarship ledger to 125 sources,
+  adds run-level contrast intervals and finite-sampling diagnostics, and updates
+  the manuscript and visualizations. The v1.0.0 DOI identifies the earlier archive; it does
   not identify this version.
 - **Measured status:** use the [release validation record](docs/release-validation.md),
   the CI run for the commit, and `output/reports/validation_report.json`.
@@ -48,7 +49,8 @@ the software stops and empirical science would have to begin.
 - **Active inference** — a real `pymdp` profile stack (explicit `A/B/C/D` arrays, deterministic policy traces, runtime diagnostics) plus seeded stochastic ensembles with null controls and replayable seeds.
 - **Bayesian model reduction** — separation-prior pruning sweeps with sensitivity analysis over prior precision, metacognitive access, and observation noise.
 - **Finite quantum information** — two-qubit separability entropy, CHSH/contextuality witnesses, local-polytope feasibility audits, CPTP channel-cost and dephasing surrogates, quantum-trajectory unraveling, and a Cramér–Rao coherence bound.
-- **Measured statistics** — branching-ratio and avalanche-size criticality signatures separated from a shuffled null, bootstrap/permutation effect sizes with Holm correction, and positive-control calibration.
+- **Measured statistics** — run-level mean-difference and Cliff's-delta intervals, paired branching contrasts, permutation Monte Carlo uncertainty with Holm correction, and calibration over 128 seed sets. See [statistical methods](docs/statistical-methods.md).
+- **Expanded scholarship** — 125 ledger entries with source roles and claim ceilings, including statistical limitations, FEP critiques, quantum reference frames and contemplative measurement. See the [expansion synthesis](docs/scholarship-expansion.md).
 - **Adversarial claim governance** — scholarship source-role matrix, claim-support and claim-context ledgers, evidence-ceiling and claim-intensity audits, and a 37-finding [red-team record](docs/redteam-audit.md).
 - **Reproducible visualization** — source-mapped figures with integrity hashes, a semantic palette, accessibility/caption audits, and a static [artifact dashboard](output/dashboard/index.html).
 
@@ -101,8 +103,8 @@ The correct `--project` qualifier depends on which sidecar lifecycle folder hold
 
 ## Citation
 
-> Friedman, Daniel Ari (2026). *Realizing Emptiness* (v1.1.0). Active Inference
-> Institute. https://github.com/docxology/realizing_emptiness/releases/tag/v1.1.0
+> Friedman, Daniel Ari (2026). *Realizing Emptiness* (v1.2.0). Active Inference
+> Institute. https://github.com/docxology/realizing_emptiness/releases/tag/v1.2.0
 
 The archived v1.0.0 version DOI remains available above. The concept DOI
 [10.5281/zenodo.20834846](https://doi.org/10.5281/zenodo.20834846) tracks the

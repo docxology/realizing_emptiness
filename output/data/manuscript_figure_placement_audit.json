@@ -31,7 +31,7 @@
   ],
   "retired_qrf_composite_figure": "../../output/figures/qrf_boundary_graphical_model.png",
   "schema": "realizing_emptiness.manuscript_figure_placement_audit.v1",
-  "technical_quantum_figure_count": 18,
+  "technical_quantum_figure_count": 20,
   "technical_quantum_figures": [
     "../../output/figures/quantum_boundary_entropy_landscape.png",
     "../../output/figures/arbitrary_two_qubit_entanglement_audit.png",
@@ -42,6 +42,8 @@
     "../../output/figures/quantum_open_system_dynamics.png",
     "../../output/figures/quantum_trajectory_unraveling.png",
     "../../output/figures/quantum_trajectory_convergence.png",
+    "../../output/figures/criticality_paired_contrasts.png",
+    "../../output/figures/resampling_calibration.png",
     "../../output/figures/thermodynamic_channel_cost_audit.png",
     "../../output/figures/qfep_boundary_hamiltonian_dynamics.png",
     "../../output/figures/many_body_boundary_screen_sweep.png",

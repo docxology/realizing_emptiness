@@ -59,6 +59,15 @@ control** on synthetic data:
 
 ## Verdicts must be measured, not declared
 
+The [statistical methods](statistical-methods.md) specify the unit of replication,
+contrast estimands, pointwise interval scope, permutation exchangeability and
+finite Monte Carlo error. Calibration reports rejection and coverage over 128
+independent synthetic seed sets, including exact binomial intervals and an
+absent-effect negative control. A broad software diagnostic gate does not certify
+nominal type-I error or interval coverage under other generators. BMR resampling
+conditions on the finite noise grid; exact grid extrema and all-row sign checks
+are separate from a conditional bootstrap mean interval.
+
 A verdict field set to a string literal, or a control gated on a variable the
 analysis already declares inferior, passes even when the finding flips. Every
 keep/prune, recover/fail, and pass/fail verdict in this project is therefore

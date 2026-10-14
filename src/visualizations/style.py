@@ -41,6 +41,8 @@ MIN_TEXT_CONTRAST_RATIO = 4.5
 STYLE_BACKGROUND_COLOR = "#ffffff"
 
 FIGURE_RENDER_CONTRACTS = {
+    "criticality_paired_contrasts": {"roles": ["stochastic", "null", "boundary"], "panel_count": 1, "legend_count": 1, "colorbar_count": 0, "min_font_pt": 12.0},
+    "resampling_calibration": {"roles": ["stochastic", "null", "boundary"], "panel_count": 2, "legend_count": 2, "colorbar_count": 0, "min_font_pt": 12.0},
     "graphical_abstract_cover": {"roles": ["source", "finite", "stochastic", "blocked", "boundary"], "panel_count": 1, "legend_count": 1, "colorbar_count": 0, "min_font_pt": 12.0},
     "qrf_boundary_screen_geometry": {"roles": ["boundary", "qrf_sector", "finite"], "panel_count": 1, "legend_count": 1, "colorbar_count": 0, "min_font_pt": 12.0},
     "qrf_channel_relabeling_ledger": {"roles": ["boundary", "qrf_sector", "pass"], "panel_count": 1, "legend_count": 1, "colorbar_count": 0, "min_font_pt": 12.0},
@@ -86,7 +88,7 @@ FIGURE_RENDER_CONTRACTS = {
     "evidence_ceiling_stress_matrix": {"roles": ["blocked"], "panel_count": 1, "legend_count": 0, "colorbar_count": 1, "min_font_pt": 12.0},
     "claim_context_evidence_ladder": {"roles": ["source", "pass", "blocked", "finite"], "panel_count": 1, "legend_count": 1, "colorbar_count": 0, "min_font_pt": 12.0},
     "formalism_operation_map": {"roles": ["finite", "blocked"], "panel_count": 1, "legend_count": 0, "colorbar_count": 1, "min_font_pt": 12.0},
-    "stochastic_effect_size_forest": {"roles": ["stochastic", "null"], "panel_count": 1, "legend_count": 1, "colorbar_count": 0, "min_font_pt": 12.0},
+    "stochastic_effect_size_forest": {"roles": ["stochastic", "null"], "panel_count": 2, "legend_count": 1, "colorbar_count": 0, "min_font_pt": 12.0},
     "bmr_robustness_resampling": {"roles": ["keep", "prune"], "panel_count": 2, "legend_count": 1, "colorbar_count": 2, "min_font_pt": 12.0},
     "quantum_trajectory_convergence": {"roles": ["quantum", "stochastic", "blocked"], "panel_count": 2, "legend_count": 2, "colorbar_count": 0, "min_font_pt": 12.0},
     "visual_semantic_palette_ledger": {"roles": ["pass", "fail", "keep", "prune", "finite", "blocked", "stochastic", "quantum"], "panel_count": 1, "legend_count": 1, "colorbar_count": 0, "min_font_pt": 12.0},

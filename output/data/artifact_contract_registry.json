@@ -1,7 +1,7 @@
 {
   "all_controls_pass": true,
   "claim_boundary": "artifact contract registry for finite software validation; not empirical, clinical, neural, practice-efficacy, awakening, or physical qFEP evidence",
-  "contract_count": 147,
+  "contract_count": 149,
   "controls": {
     "all_json_data_artifacts_have_schema": true,
     "all_rows_have_claim_boundary": true,
@@ -1394,6 +1394,28 @@
       "kind": "figure",
       "manuscript_role": "publication_visual",
       "path": "output/figures/stochastic_effect_size_forest.png",
+      "path_exists": true,
+      "schema": null,
+      "schema_path": null
+    },
+    {
+      "claim_boundary": "artifact contract registry for finite software validation; not empirical, clinical, neural, practice-efficacy, awakening, or physical qFEP evidence",
+      "dashboard_group": "figures",
+      "id": "criticality_paired_contrasts",
+      "kind": "figure",
+      "manuscript_role": "publication_visual",
+      "path": "output/figures/criticality_paired_contrasts.png",
+      "path_exists": true,
+      "schema": null,
+      "schema_path": null
+    },
+    {
+      "claim_boundary": "artifact contract registry for finite software validation; not empirical, clinical, neural, practice-efficacy, awakening, or physical qFEP evidence",
+      "dashboard_group": "figures",
+      "id": "resampling_calibration",
+      "kind": "figure",
+      "manuscript_role": "publication_visual",
+      "path": "output/figures/resampling_calibration.png",
       "path_exists": true,
       "schema": null,
       "schema_path": null

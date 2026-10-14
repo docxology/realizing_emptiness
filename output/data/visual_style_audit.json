@@ -1,6 +1,6 @@
 {
   "claim_boundary": "visual style audit only; not empirical evidence",
-  "figure_count": 59,
+  "figure_count": 61,
   "hatches": {
     "blocked": "..",
     "control": "//",
@@ -114,7 +114,7 @@
       "role": "source"
     }
   ],
-  "row_count": 59,
+  "row_count": 61,
   "rows": [
     {
       "colorbar_count": 0,
@@ -595,6 +595,32 @@
       "roles": [
         "stochastic",
         "null"
+      ]
+    },
+    {
+      "colorbar_count": 0,
+      "has_legend_or_colorbar": true,
+      "id": "criticality_paired_contrasts",
+      "legend_count": 1,
+      "missing_roles": [],
+      "ok": true,
+      "roles": [
+        "stochastic",
+        "null",
+        "boundary"
+      ]
+    },
+    {
+      "colorbar_count": 0,
+      "has_legend_or_colorbar": true,
+      "id": "resampling_calibration",
+      "legend_count": 2,
+      "missing_roles": [],
+      "ok": true,
+      "roles": [
+        "stochastic",
+        "null",
+        "boundary"
       ]
     },
     {

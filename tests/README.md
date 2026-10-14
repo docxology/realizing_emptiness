@@ -13,6 +13,7 @@ neural, ontological, awakening, practice-efficacy, or physical-qFEP claims).
 | `conftest.py` | Sets `MPLBACKEND=Agg`, puts `src/` on `sys.path`, exposes `pytestconfig.realizing_emptiness_root`. |
 | `test_formalism.py` | Source manifest + pinned hash, equation registry/audit, claim crosswalk, governance ledgers, manuscript claim audits, models. |
 | `test_simulation.py` | QRF/BMR/pymdp/criticality/quantum surrogates, compassion scope, statistical robustness, byte-identical determinism replay. |
+| `test_resampling.py` | Independent and paired estimands, ties, finite permutation resolution, exact binomial boundaries, invalid samples, deterministic multi-seed calibration and an absent-effect negative control. |
 | `test_practice_and_chain.py` | Practice maps, the full script chain end-to-end, output validation, figures, dashboard, manuscript structure/reference/placement audits. |
 | `test_release_contracts.py` | Malformed schemas and inputs, pinned source identity, runtime dependency identity, read-only composition, hydration, numerical boundaries, and visual telemetry. |
 

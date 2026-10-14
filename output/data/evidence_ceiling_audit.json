@@ -23,7 +23,7 @@
         "source_role_boundary": true,
         "surrogate_scope": false
       },
-      "support_count": 3
+      "support_count": 6
     },
     {
       "artifact": "output/data/bmr_sweep.json",
@@ -43,7 +43,7 @@
         "source_role_boundary": false,
         "surrogate_scope": true
       },
-      "support_count": 7
+      "support_count": 12
     },
     {
       "artifact": "output/data/practice_protocol_map.json",
@@ -63,7 +63,7 @@
         "source_role_boundary": false,
         "surrogate_scope": false
       },
-      "support_count": 3
+      "support_count": 4
     },
     {
       "artifact": "output/data/criticality_stochastic_ensemble.json",
@@ -83,7 +83,7 @@
         "source_role_boundary": false,
         "surrogate_scope": false
       },
-      "support_count": 13
+      "support_count": 24
     },
     {
       "artifact": "output/data/simulation_sensitivity_grid.json",
@@ -103,7 +103,7 @@
         "source_role_boundary": false,
         "surrogate_scope": true
       },
-      "support_count": 6
+      "support_count": 7
     },
     {
       "artifact": "output/data/practice_protocol_map.json",
@@ -123,7 +123,7 @@
         "source_role_boundary": true,
         "surrogate_scope": false
       },
-      "support_count": 15
+      "support_count": 22
     },
     {
       "artifact": "output/data/pymdp_profile_comparison.json",
@@ -163,7 +163,7 @@
         "source_role_boundary": false,
         "surrogate_scope": true
       },
-      "support_count": 16
+      "support_count": 21
     },
     {
       "artifact": "output/data/quantum_boundary_entropy.json",
@@ -223,7 +223,7 @@
         "source_role_boundary": true,
         "surrogate_scope": true
       },
-      "support_count": 11
+      "support_count": 12
     },
     {
       "artifact": "output/data/quantum_boundary_entropy.json",
@@ -263,7 +263,7 @@
         "source_role_boundary": true,
         "surrogate_scope": false
       },
-      "support_count": 12
+      "support_count": 14
     },
     {
       "artifact": "output/data/formalism_registry.json",
@@ -303,7 +303,7 @@
         "source_role_boundary": true,
         "surrogate_scope": true
       },
-      "support_count": 15
+      "support_count": 16
     }
   ],
   "schema": "realizing_emptiness.evidence_ceiling_audit.v1",

@@ -53,12 +53,21 @@
         "rule": "release_readiness_requires_artifact_or_workflow_source"
       },
       "source_keys": [
+        "cook2006validation",
         "gelman2020bayesianworkflow",
+        "modrak2025calibration",
         "pineau2020reproducibility",
+        "sailynoja2026posterior",
         "talts2018sbc"
       ],
-      "source_role_count": 3,
+      "source_role_count": 6,
       "source_roles": [
+        {
+          "citation_key": "cook2006validation",
+          "evidence_status": "methodological_background",
+          "role": "Bayesian software validation method and model-adequacy boundary",
+          "source_id": "posterior_quantile_validation"
+        },
         {
           "citation_key": "gelman2020bayesianworkflow",
           "evidence_status": "methodological_background",
@@ -66,10 +75,22 @@
           "source_id": "gelman_bayesian_workflow"
         },
         {
+          "citation_key": "modrak2025calibration",
+          "evidence_status": "methodological_background",
+          "role": "Bayesian calibration test-quantity sensitivity and undetected-error method boundary",
+          "source_id": "calibration_test_quantity_sensitivity"
+        },
+        {
           "citation_key": "pineau2020reproducibility",
           "evidence_status": "methodological_background",
           "role": "artifact release and reproducibility checklist practice background",
           "source_id": "pineau_reproducibility_checklist"
+        },
+        {
+          "citation_key": "sailynoja2026posterior",
+          "evidence_status": "methodological_background",
+          "role": "conditional posterior calibration method and dataset-specific computation boundary",
+          "source_id": "posterior_conditional_calibration"
         },
         {
           "citation_key": "talts2018sbc",
@@ -82,7 +103,7 @@
         "empirical_gap",
         "source_role_boundary"
       ],
-      "support_count": 3,
+      "support_count": 6,
       "validation_gate": "artifact_release_manifest_ok"
     },
     {
@@ -112,16 +133,27 @@
         "rule": "model_claim_requires_formal_or_active_inference_source"
       },
       "source_keys": [
+        "cook2006validation",
         "efron1979bootstrap",
         "friston2011posthoc",
         "friston2018bmr",
         "gelman2020bayesianworkflow",
+        "gneiting2007scoring",
+        "modrak2025calibration",
+        "morris2019simulation",
         "parr2022active",
+        "sailynoja2026posterior",
         "sandvedsmith2026noself",
         "talts2018sbc"
       ],
-      "source_role_count": 7,
+      "source_role_count": 12,
       "source_roles": [
+        {
+          "citation_key": "cook2006validation",
+          "evidence_status": "methodological_background",
+          "role": "Bayesian software validation method and model-adequacy boundary",
+          "source_id": "posterior_quantile_validation"
+        },
         {
           "citation_key": "efron1979bootstrap",
           "evidence_status": "methodological_background",
@@ -147,10 +179,34 @@
           "source_id": "gelman_bayesian_workflow"
         },
         {
+          "citation_key": "gneiting2007scoring",
+          "evidence_status": "methodological_background",
+          "role": "proper scoring-rule and probabilistic prediction evaluation method boundary",
+          "source_id": "proper_scoring_rules"
+        },
+        {
+          "citation_key": "modrak2025calibration",
+          "evidence_status": "methodological_background",
+          "role": "Bayesian calibration test-quantity sensitivity and undetected-error method boundary",
+          "source_id": "calibration_test_quantity_sensitivity"
+        },
+        {
+          "citation_key": "morris2019simulation",
+          "evidence_status": "methodological_background",
+          "role": "simulation estimand, performance measure, and Monte Carlo uncertainty method boundary",
+          "source_id": "simulation_estimand_design"
+        },
+        {
           "citation_key": "parr2022active",
           "evidence_status": "theoretical_background",
           "role": "active-inference notation and free-energy decomposition",
           "source_id": "active_inference_book"
+        },
+        {
+          "citation_key": "sailynoja2026posterior",
+          "evidence_status": "methodological_background",
+          "role": "conditional posterior calibration method and dataset-specific computation boundary",
+          "source_id": "posterior_conditional_calibration"
         },
         {
           "citation_key": "sandvedsmith2026noself",
@@ -169,7 +225,7 @@
         "empirical_gap",
         "surrogate_scope"
       ],
-      "support_count": 7,
+      "support_count": 12,
       "validation_gate": "bmr_pruning_edges"
     },
     {
@@ -200,9 +256,10 @@
       "source_keys": [
         "doctor2022care",
         "singer2014empathy_compassion",
-        "strauss2016compassion_measurement"
+        "strauss2016compassion_measurement",
+        "vandam2018hype"
       ],
-      "source_role_count": 3,
+      "source_role_count": 4,
       "source_roles": [
         {
           "citation_key": "doctor2022care",
@@ -221,13 +278,19 @@
           "evidence_status": "conceptual_background",
           "role": "compassion definition and measurement boundary",
           "source_id": "compassion_definitions_measurement"
+        },
+        {
+          "citation_key": "vandam2018hype",
+          "evidence_status": "methodological_background",
+          "role": "mindfulness construct and evidence-inflation methodological caution",
+          "source_id": "mindfulness_methodology_critique"
         }
       ],
       "stressors": [
         "normative_boundary",
         "practice_boundary"
       ],
-      "support_count": 3,
+      "support_count": 4,
       "validation_gate": "practice_boundaries"
     },
     {
@@ -257,26 +320,43 @@
       },
       "source_keys": [
         "beggs2003neuronal",
+        "burton2006simulation",
         "cliff1993dominance",
         "cocchi2017criticality",
         "destexhe2021criticality_evidence",
         "efron1979bootstrap",
+        "flegal2008montecarlo",
+        "hemerik2018exact",
         "hipolito2021markov",
         "holm1979sequential",
+        "kunsch1989bootstrap",
+        "morris2019simulation",
         "nosek2018preregistration",
+        "phipson2010permutation",
+        "politis1994stationary",
+        "romano2005stepdown",
+        "schreiber1996surrogate",
         "shew2013criticality",
+        "theiler1992surrogate",
         "touboul2017power_law_absence_criticality",
         "westfall1993resampling",
         "wilkinson2016fair",
-        "wilting2019criticality"
+        "wilting2019criticality",
+        "winkler2014permutation"
       ],
-      "source_role_count": 13,
+      "source_role_count": 24,
       "source_roles": [
         {
           "citation_key": "beggs2003neuronal",
           "evidence_status": "theoretical_background",
           "role": "founding empirical source for neuronal avalanches and branching ratio sigma=1 criticality signature",
           "source_id": "neuronal_avalanches_branching"
+        },
+        {
+          "citation_key": "burton2006simulation",
+          "evidence_status": "methodological_background",
+          "role": "simulation design and replicate-budget method boundary",
+          "source_id": "simulation_design_protocol"
         },
         {
           "citation_key": "cliff1993dominance",
@@ -303,6 +383,18 @@
           "source_id": "bootstrap_uncertainty"
         },
         {
+          "citation_key": "flegal2008montecarlo",
+          "evidence_status": "methodological_background",
+          "role": "Monte Carlo standard-error reporting method with correlated-sampling caution",
+          "source_id": "monte_carlo_standard_errors"
+        },
+        {
+          "citation_key": "hemerik2018exact",
+          "evidence_status": "methodological_background",
+          "role": "group invariance and identity-transformation conditions for exact random-permutation tests",
+          "source_id": "random_permutation_exactness"
+        },
+        {
           "citation_key": "hipolito2021markov",
           "evidence_status": "future_empirical_context",
           "role": "Markov-blanket partition and neural-boundary caution",
@@ -315,16 +407,58 @@
           "source_id": "holm_multiple_testing"
         },
         {
+          "citation_key": "kunsch1989bootstrap",
+          "evidence_status": "methodological_background",
+          "role": "stationary dependent-data block-bootstrap method and temporal-dependence caution",
+          "source_id": "stationary_block_bootstrap"
+        },
+        {
+          "citation_key": "morris2019simulation",
+          "evidence_status": "methodological_background",
+          "role": "simulation estimand, performance measure, and Monte Carlo uncertainty method boundary",
+          "source_id": "simulation_estimand_design"
+        },
+        {
           "citation_key": "nosek2018preregistration",
           "evidence_status": "methodological_background",
           "role": "preregistration and empirical-claim governance context",
           "source_id": "preregistration_revolution"
         },
         {
+          "citation_key": "phipson2010permutation",
+          "evidence_status": "methodological_background",
+          "role": "random-permutation plus-one p-value method and finite-resolution caution",
+          "source_id": "random_permutation_pvalues"
+        },
+        {
+          "citation_key": "politis1994stationary",
+          "evidence_status": "methodological_background",
+          "role": "stationary bootstrap method and block-length assumption boundary",
+          "source_id": "stationary_bootstrap"
+        },
+        {
+          "citation_key": "romano2005stepdown",
+          "evidence_status": "methodological_background",
+          "role": "resampling stepdown multiplicity method and dependence-assumption boundary",
+          "source_id": "stepdown_multiplicity"
+        },
+        {
+          "citation_key": "schreiber1996surrogate",
+          "evidence_status": "methodological_background",
+          "role": "autocorrelation-preserving surrogate method and false-positive caution",
+          "source_id": "iterated_surrogate_controls"
+        },
+        {
           "citation_key": "shew2013criticality",
           "evidence_status": "future_empirical_context",
           "role": "criticality metric background",
           "source_id": "criticality_benefits"
+        },
+        {
+          "citation_key": "theiler1992surrogate",
+          "evidence_status": "methodological_background",
+          "role": "time-series surrogate null specification and nonlinearity-inference caution",
+          "source_id": "time_series_surrogate_nulls"
         },
         {
           "citation_key": "touboul2017power_law_absence_criticality",
@@ -349,13 +483,19 @@
           "evidence_status": "theoretical_background",
           "role": "review acknowledging criticality as a disputed proxy vocabulary in neuroscience",
           "source_id": "criticality_neuroscience_review"
+        },
+        {
+          "citation_key": "winkler2014permutation",
+          "evidence_status": "methodological_background",
+          "role": "exchangeability-block and paired-permutation method boundary",
+          "source_id": "exchangeability_blocks"
         }
       ],
       "stressors": [
         "empirical_gap",
         "neural_measurement_boundary"
       ],
-      "support_count": 13,
+      "support_count": 24,
       "validation_gate": "criticality_stochastic_ensemble_ok"
     },
     {
@@ -388,19 +528,26 @@
       },
       "source_keys": [
         "dacosta2020discrete",
+        "friston2017process",
         "prest2026lettinggo",
         "prest2026selfingwithoutself",
         "sandvedsmith2021mentalaction",
         "sandvedsmith2024metacognitive",
         "tal2026advancedmeditation"
       ],
-      "source_role_count": 6,
+      "source_role_count": 7,
       "source_roles": [
         {
           "citation_key": "dacosta2020discrete",
           "evidence_status": "methodological_background",
           "role": "discrete active-inference A/B/C/D implementation background",
           "source_id": "discrete_active_inference_synthesis"
+        },
+        {
+          "citation_key": "friston2017process",
+          "evidence_status": "theoretical_background",
+          "role": "active-inference policy and process-theory implementation background",
+          "source_id": "active_inference_process_theory"
         },
         {
           "citation_key": "prest2026lettinggo",
@@ -437,7 +584,7 @@
         "empirical_gap",
         "surrogate_scope"
       ],
-      "support_count": 6,
+      "support_count": 7,
       "validation_gate": "simulation_sensitivity_grid_ok"
     },
     {
@@ -469,29 +616,54 @@
         "rule": "proxy_or_practice_claim_requires_boundary_or_caution_source"
       },
       "source_keys": [
+        "britton2021adverse",
         "dahl2015self",
+        "davidson2015methodological",
+        "grossman2008measuring",
         "laukkonen2021many",
         "laukkonen2025contemplativeai",
         "limanowski2018seeing",
+        "lindahl2017varieties",
+        "lutz2002neurophenomenology",
         "lutz2008attention",
         "lutz2015matrix",
         "nosek2018preregistration",
+        "petitmengin2006experience",
         "prest2026lettinggo",
         "prest2026selfingwithoutself",
         "sandvedsmith2021mentalaction",
         "sandvedsmith2026noself",
         "siderits2013middle",
         "tal2026advancedmeditation",
+        "vandam2018hype",
         "varela1991embodied",
         "wilkinson2016fair"
       ],
-      "source_role_count": 15,
+      "source_role_count": 22,
       "source_roles": [
+        {
+          "citation_key": "britton2021adverse",
+          "evidence_status": "methodological_background",
+          "role": "practice safety and active adverse-experience measurement boundary",
+          "source_id": "meditation_adverse_measurement"
+        },
         {
           "citation_key": "dahl2015self",
           "evidence_status": "conceptual_background",
           "role": "attentional, constructive, and deconstructive practice taxonomy",
           "source_id": "meditation_self_mechanisms"
+        },
+        {
+          "citation_key": "davidson2015methodological",
+          "evidence_status": "methodological_background",
+          "role": "meditation comparison-design and self-report inference method boundary",
+          "source_id": "meditation_research_design"
+        },
+        {
+          "citation_key": "grossman2008measuring",
+          "evidence_status": "methodological_background",
+          "role": "mindfulness measurement and construct-validity caution",
+          "source_id": "mindfulness_measurement_boundary"
         },
         {
           "citation_key": "laukkonen2021many",
@@ -512,6 +684,18 @@
           "source_id": "opacity_precision"
         },
         {
+          "citation_key": "lindahl2017varieties",
+          "evidence_status": "methodological_background",
+          "role": "contemplative experience taxonomy and interpretation/impairment caution",
+          "source_id": "contemplative_experience_variability"
+        },
+        {
+          "citation_key": "lutz2002neurophenomenology",
+          "evidence_status": "methodological_background",
+          "role": "first-person and physiological data integration method boundary, not local neural evidence",
+          "source_id": "first_person_data_constraints"
+        },
+        {
           "citation_key": "lutz2008attention",
           "evidence_status": "conceptual_background",
           "role": "focused-attention / open-monitoring / non-dual practice-style taxonomy",
@@ -528,6 +712,12 @@
           "evidence_status": "methodological_background",
           "role": "preregistration and empirical-claim governance context",
           "source_id": "preregistration_revolution"
+        },
+        {
+          "citation_key": "petitmengin2006experience",
+          "evidence_status": "methodological_background",
+          "role": "first-person interview method and report-validity boundary",
+          "source_id": "phenomenological_interview_method"
         },
         {
           "citation_key": "prest2026lettinggo",
@@ -566,6 +756,12 @@
           "source_id": "active_inference_advanced_meditation_review"
         },
         {
+          "citation_key": "vandam2018hype",
+          "evidence_status": "methodological_background",
+          "role": "mindfulness construct and evidence-inflation methodological caution",
+          "source_id": "mindfulness_methodology_critique"
+        },
+        {
           "citation_key": "varela1991embodied",
           "evidence_status": "philosophical_background",
           "role": "enactive and neurophenomenological background for boundary-as-interface vocabulary",
@@ -582,7 +778,7 @@
         "practice_boundary",
         "source_role_boundary"
       ],
-      "support_count": 15,
+      "support_count": 22,
       "validation_gate": "practice_boundaries"
     },
     {
@@ -667,12 +863,16 @@
         "rule": "quantum_or_qfep_claim_requires_quantum_method_source"
       },
       "source_keys": [
+        "barnum1996broadcast",
         "dalibard1992wavefunction",
         "fields2022qfep",
         "gorini1976completelypositive",
+        "gour2008reference",
         "horodecki1996separability",
         "kraus1983states",
         "lindblad1976generators",
+        "marvian2014modes",
+        "marvian2014noether",
         "molmer1993montecarlo",
         "nielsen2010quantum",
         "orus2014tensor",
@@ -682,10 +882,17 @@
         "vedral2002relative",
         "werner1989quantum",
         "wiseman2010quantum",
+        "wootters1982cloning",
         "zurek2003decoherence"
       ],
-      "source_role_count": 16,
+      "source_role_count": 21,
       "source_roles": [
+        {
+          "citation_key": "barnum1996broadcast",
+          "evidence_status": "methodological_background",
+          "role": "quantum no-broadcasting theorem and noncommuting-state operation boundary",
+          "source_id": "quantum_no_broadcasting"
+        },
         {
           "citation_key": "dalibard1992wavefunction",
           "evidence_status": "methodological_background",
@@ -705,6 +912,12 @@
           "source_id": "gks_quantum_dynamical_semigroups"
         },
         {
+          "citation_key": "gour2008reference",
+          "evidence_status": "methodological_background",
+          "role": "quantum reference-frame resource theory and allowed-operation boundary",
+          "source_id": "qrf_resource_theory"
+        },
+        {
           "citation_key": "horodecki1996separability",
           "evidence_status": "methodological_background",
           "role": "separability theorem context for finite two-qubit PPT/negativity audits",
@@ -721,6 +934,18 @@
           "evidence_status": "methodological_background",
           "role": "Lindblad open-system generator background for finite boundary-Hamiltonian audits",
           "source_id": "lindblad_quantum_semigroups"
+        },
+        {
+          "citation_key": "marvian2014modes",
+          "evidence_status": "methodological_background",
+          "role": "quantum symmetry modes and reference-frame resource constraints",
+          "source_id": "quantum_asymmetry_modes"
+        },
+        {
+          "citation_key": "marvian2014noether",
+          "evidence_status": "methodological_background",
+          "role": "quantum asymmetry monotones and open-system symmetry constraints",
+          "source_id": "quantum_asymmetry_constraints"
         },
         {
           "citation_key": "molmer1993montecarlo",
@@ -777,6 +1002,12 @@
           "source_id": "quantum_measurement_control"
         },
         {
+          "citation_key": "wootters1982cloning",
+          "evidence_status": "methodological_background",
+          "role": "quantum no-cloning theorem and classical-copy versus physical-operation boundary",
+          "source_id": "quantum_no_cloning"
+        },
+        {
           "citation_key": "zurek2003decoherence",
           "evidence_status": "theoretical_background",
           "role": "finite dephasing-channel and classical-boundary roadmap context",
@@ -787,7 +1018,7 @@
         "quantum_gap",
         "surrogate_scope"
       ],
-      "support_count": 16,
+      "support_count": 21,
       "validation_gate": "quantum_extension_roadmap_ok"
     },
     {
@@ -997,6 +1228,7 @@
       },
       "source_keys": [
         "dalibard1992wavefunction",
+        "flegal2008montecarlo",
         "gorini1976completelypositive",
         "kraus1983states",
         "lindblad1976generators",
@@ -1008,13 +1240,19 @@
         "wiseman2010quantum",
         "zurek2003decoherence"
       ],
-      "source_role_count": 11,
+      "source_role_count": 12,
       "source_roles": [
         {
           "citation_key": "dalibard1992wavefunction",
           "evidence_status": "methodological_background",
           "role": "quantum-jump and wave-function unraveling method background",
           "source_id": "monte_carlo_wavefunction_prl"
+        },
+        {
+          "citation_key": "flegal2008montecarlo",
+          "evidence_status": "methodological_background",
+          "role": "Monte Carlo standard-error reporting method with correlated-sampling caution",
+          "source_id": "monte_carlo_standard_errors"
         },
         {
           "citation_key": "gorini1976completelypositive",
@@ -1082,7 +1320,7 @@
         "source_role_boundary",
         "surrogate_scope"
       ],
-      "support_count": 11,
+      "support_count": 12,
       "validation_gate": "quantum_open_system_dynamics_ok"
     },
     {
@@ -1212,6 +1450,7 @@
         "beck2025dynamicmarkovblanket",
         "biehl2021technical_fep",
         "bruineberg2022emperor",
+        "buckley2017mathematical",
         "friston2023fep_simpler",
         "heins2022sparse_coupling",
         "hohwy2016self",
@@ -1219,9 +1458,10 @@
         "kirchhoff2018blankets",
         "possati2025markovblanketdensity",
         "prest2026selfingwithoutself",
-        "sethbayne2022theories"
+        "sethbayne2022theories",
+        "vanes2021models"
       ],
-      "source_role_count": 12,
+      "source_role_count": 14,
       "source_roles": [
         {
           "citation_key": "aguilera2021particular",
@@ -1246,6 +1486,12 @@
           "evidence_status": "theoretical_background",
           "role": "Pearl-blanket versus Friston-blanket critique of ontological boundary inference",
           "source_id": "emperor_new_markov_blankets"
+        },
+        {
+          "citation_key": "buckley2017mathematical",
+          "evidence_status": "theoretical_background",
+          "role": "active-inference mathematical assumptions and implementation boundary",
+          "source_id": "fep_mathematical_assumptions"
         },
         {
           "citation_key": "friston2023fep_simpler",
@@ -1294,13 +1540,19 @@
           "evidence_status": "theoretical_background",
           "role": "predictive self-model and self-evidencing context",
           "source_id": "seth_bayne_theories_consciousness"
+        },
+        {
+          "citation_key": "vanes2021models",
+          "evidence_status": "theoretical_background",
+          "role": "model-use versus organismic representation critique and ontology boundary",
+          "source_id": "fep_model_instrumentalism"
         }
       ],
       "stressors": [
         "empirical_gap",
         "source_role_boundary"
       ],
-      "support_count": 12,
+      "support_count": 14,
       "validation_gate": "claim_support_audit_ok"
     },
     {
@@ -1399,11 +1651,12 @@
         "munafo2017manifesto",
         "rovelli1996relational",
         "sandvedsmith2026noself",
+        "vanes2021models",
         "varela1991embodied",
         "westerhoff2009madhyamaka",
         "zahavi2005subjectivity_selfhood"
       ],
-      "source_role_count": 15,
+      "source_role_count": 16,
       "source_roles": [
         {
           "citation_key": "beck2025dynamicmarkovblanket",
@@ -1478,6 +1731,12 @@
           "source_id": "no_self_evidence_preprint"
         },
         {
+          "citation_key": "vanes2021models",
+          "evidence_status": "theoretical_background",
+          "role": "model-use versus organismic representation critique and ontology boundary",
+          "source_id": "fep_model_instrumentalism"
+        },
+        {
           "citation_key": "varela1991embodied",
           "evidence_status": "philosophical_background",
           "role": "enactive and neurophenomenological background for boundary-as-interface vocabulary",
@@ -1500,7 +1759,7 @@
         "source_role_boundary",
         "surrogate_scope"
       ],
-      "support_count": 15,
+      "support_count": 16,
       "validation_gate": "qrf_indistinguishable"
     }
   ],

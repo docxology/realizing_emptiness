@@ -5,6 +5,7 @@ from __future__ import annotations
 from typing import Any
 
 import numpy as np
+from simulation.resampling import bootstrap_contrast
 
 
 CRITICALITY_CLAIM_BOUNDARY = (
@@ -305,6 +306,21 @@ def build_criticality_stochastic_ensemble(policy_ensemble: dict[str, Any]) -> di
         }
         for profile in profiles
     ]
+    for index, contrast in enumerate(null_contrasts):
+        profile = contrast["profile"]
+        runs = sorted(run for name, run, null in branching if name == profile and not null)
+        paired = bootstrap_contrast(
+            [branching[(profile, run, False)] for run in runs],
+            [branching[(profile, run, True)] for run in runs],
+            seed=int(policy_ensemble.get("seed", 0)) + 92000 + index, paired=True,
+        )
+        contrast["paired_branching_ci95_low"] = paired["difference_ci95_low"]
+        contrast["paired_branching_ci95_high"] = paired["difference_ci95_high"]
+        contrast["paired_run_count"] = len(runs)
+        contrast["paired_bootstrap_seed"] = int(policy_ensemble.get("seed", 0)) + 92000 + index
+        contrast["paired_bootstrap_draws"] = 2048
+        contrast["paired_branching_interval_excludes_zero"] = (
+            paired["difference_ci95_high"] < 0 or paired["difference_ci95_low"] > 0)
     profiles_ci_separating = sum(1 for row in null_contrasts if row["any_signature_ci_disjoint_from_null"])
     calibration = branching_estimator_calibration()
     controls = {

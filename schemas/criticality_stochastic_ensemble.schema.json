@@ -63,7 +63,8 @@
       "type": "array",
       "minItems": 3,
       "items": {
-        "type": "object"
+        "type": "object", "required": ["paired_branching_ci95_low", "paired_branching_ci95_high", "paired_run_count", "paired_branching_interval_excludes_zero"],
+        "properties": {"paired_branching_ci95_low": {"type": "number"}, "paired_branching_ci95_high": {"type": "number"}, "paired_run_count": {"type": "integer", "minimum": 2}, "paired_branching_interval_excludes_zero": {"type": "boolean"}}
       }
     },
     "controls": {

@@ -51,9 +51,9 @@
       "row_controls_pass": true,
       "section_anchors_resolve": true,
       "section_count": 2,
-      "source_role_count": 3,
+      "source_role_count": 6,
       "source_themes": [],
-      "support_count": 3,
+      "support_count": 6,
       "unresolved_figure_bindings": [],
       "unresolved_sections": [],
       "validation_gate": "artifact_release_manifest_ok"
@@ -84,11 +84,11 @@
       "row_controls_pass": true,
       "section_anchors_resolve": true,
       "section_count": 3,
-      "source_role_count": 7,
+      "source_role_count": 12,
       "source_themes": [
         "bmr_pruning_of_sigma"
       ],
-      "support_count": 7,
+      "support_count": 12,
       "unresolved_figure_bindings": [],
       "unresolved_sections": [],
       "validation_gate": "bmr_pruning_edges"
@@ -118,11 +118,11 @@
       "row_controls_pass": true,
       "section_anchors_resolve": true,
       "section_count": 3,
-      "source_role_count": 3,
+      "source_role_count": 4,
       "source_themes": [
         "compassion_as_policy_scope"
       ],
-      "support_count": 3,
+      "support_count": 4,
       "unresolved_figure_bindings": [],
       "unresolved_sections": [],
       "validation_gate": "practice_boundaries"
@@ -152,11 +152,11 @@
       "row_controls_pass": true,
       "section_anchors_resolve": true,
       "section_count": 3,
-      "source_role_count": 13,
+      "source_role_count": 24,
       "source_themes": [
         "criticality_prediction_boundary"
       ],
-      "support_count": 13,
+      "support_count": 24,
       "unresolved_figure_bindings": [],
       "unresolved_sections": [],
       "validation_gate": "criticality_stochastic_ensemble_ok"
@@ -189,12 +189,12 @@
       "row_controls_pass": true,
       "section_anchors_resolve": true,
       "section_count": 6,
-      "source_role_count": 6,
+      "source_role_count": 7,
       "source_themes": [
         "opacification_and_metacognitive_access",
         "separation_prior_sigma"
       ],
-      "support_count": 6,
+      "support_count": 7,
       "unresolved_figure_bindings": [],
       "unresolved_sections": [],
       "validation_gate": "simulation_sensitivity_grid_ok"
@@ -227,12 +227,12 @@
       "row_controls_pass": true,
       "section_anchors_resolve": true,
       "section_count": 6,
-      "source_role_count": 15,
+      "source_role_count": 22,
       "source_themes": [
         "compassion_as_policy_scope",
         "opacification_and_metacognitive_access"
       ],
-      "support_count": 15,
+      "support_count": 22,
       "unresolved_figure_bindings": [],
       "unresolved_sections": [],
       "validation_gate": "practice_boundaries"
@@ -295,9 +295,9 @@
       "row_controls_pass": true,
       "section_anchors_resolve": true,
       "section_count": 2,
-      "source_role_count": 16,
+      "source_role_count": 21,
       "source_themes": [],
-      "support_count": 16,
+      "support_count": 21,
       "unresolved_figure_bindings": [],
       "unresolved_sections": [],
       "validation_gate": "quantum_extension_roadmap_ok"
@@ -394,9 +394,9 @@
       "row_controls_pass": true,
       "section_anchors_resolve": true,
       "section_count": 2,
-      "source_role_count": 11,
+      "source_role_count": 12,
       "source_themes": [],
-      "support_count": 11,
+      "support_count": 12,
       "unresolved_figure_bindings": [],
       "unresolved_sections": [],
       "validation_gate": "quantum_open_system_dynamics_ok"
@@ -455,9 +455,9 @@
       "row_controls_pass": true,
       "section_anchors_resolve": true,
       "section_count": 2,
-      "source_role_count": 12,
+      "source_role_count": 14,
       "source_themes": [],
-      "support_count": 12,
+      "support_count": 14,
       "unresolved_figure_bindings": [],
       "unresolved_sections": [],
       "validation_gate": "claim_support_audit_ok"
@@ -530,13 +530,13 @@
       "row_controls_pass": true,
       "section_anchors_resolve": true,
       "section_count": 6,
-      "source_role_count": 15,
+      "source_role_count": 16,
       "source_themes": [
         "no_self_evidence_boundary",
         "post_dual_unconstrained_qrf_space",
         "qrf_sectorisation_equations_7_to_10"
       ],
-      "support_count": 15,
+      "support_count": 16,
       "unresolved_figure_bindings": [],
       "unresolved_sections": [],
       "validation_gate": "qrf_indistinguishable"

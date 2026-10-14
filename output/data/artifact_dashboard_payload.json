@@ -58,7 +58,7 @@
         "source_role_boundary": true,
         "surrogate_scope": false
       },
-      "support_count": 3
+      "support_count": 6
     },
     {
       "claim_id": "bmr_prunes_sigma",
@@ -73,7 +73,7 @@
         "source_role_boundary": false,
         "surrogate_scope": true
       },
-      "support_count": 7
+      "support_count": 12
     },
     {
       "claim_id": "compassion_proxy_boundary",
@@ -88,7 +88,7 @@
         "source_role_boundary": false,
         "surrogate_scope": false
       },
-      "support_count": 3
+      "support_count": 4
     },
     {
       "claim_id": "criticality_proxy_boundary",
@@ -103,7 +103,7 @@
         "source_role_boundary": false,
         "surrogate_scope": false
       },
-      "support_count": 13
+      "support_count": 24
     },
     {
       "claim_id": "metacognitive_access_model",
@@ -118,7 +118,7 @@
         "source_role_boundary": false,
         "surrogate_scope": true
       },
-      "support_count": 6
+      "support_count": 7
     },
     {
       "claim_id": "practice_protocol_boundary",
@@ -133,7 +133,7 @@
         "source_role_boundary": true,
         "surrogate_scope": false
       },
-      "support_count": 15
+      "support_count": 22
     },
     {
       "claim_id": "pymdp_runtime_canary",
@@ -163,7 +163,7 @@
         "source_role_boundary": false,
         "surrogate_scope": true
       },
-      "support_count": 16
+      "support_count": 21
     },
     {
       "claim_id": "quantum_contextuality_witness",
@@ -208,7 +208,7 @@
         "source_role_boundary": true,
         "surrogate_scope": true
       },
-      "support_count": 11
+      "support_count": 12
     },
     {
       "claim_id": "quantum_separability_entropy",
@@ -238,7 +238,7 @@
         "source_role_boundary": true,
         "surrogate_scope": false
       },
-      "support_count": 12
+      "support_count": 14
     },
     {
       "claim_id": "separation_prior_sigma",
@@ -268,7 +268,7 @@
         "source_role_boundary": true,
         "surrogate_scope": true
       },
-      "support_count": 15
+      "support_count": 16
     }
   ],
   "claim_context": {
@@ -293,7 +293,7 @@
   },
   "contract_registry": {
     "all_controls_pass": true,
-    "contract_count": 147,
+    "contract_count": 149,
     "duplicate_ids": [],
     "missing_schema_paths": []
   },
@@ -324,7 +324,7 @@
     ]
   },
   "figures": {
-    "figure_count": 59,
+    "figure_count": 61,
     "figure_ids": [
       "graphical_abstract_cover",
       "qrf_boundary_screen_geometry",
@@ -365,6 +365,8 @@
       "internal_cut_unmeasurability",
       "practice_policy_scope_map",
       "stochastic_effect_size_forest",
+      "criticality_paired_contrasts",
+      "resampling_calibration",
       "bmr_robustness_resampling",
       "quantum_trajectory_convergence",
       "visual_semantic_palette_ledger",
@@ -388,8 +390,8 @@
     ]
   },
   "manifest_coverage": {
-    "generated_count": 146,
-    "manifest_count": 147,
+    "generated_count": 148,
+    "manifest_count": 149,
     "missing_manifest_paths": [],
     "unmanifested_generated_paths": []
   },
@@ -442,12 +444,12 @@
     "bmr_alternative_ok": true,
     "claim_boundary": "local private artifact package only, not public independent reproduction; not empirical, clinical, neural, practice-efficacy, contemplative-attainment, or physical qFEP evidence",
     "figure_parameter_ledger_ok": true,
-    "figure_parameter_rows": 59,
+    "figure_parameter_rows": 61,
     "public_publication_performed": false,
     "public_reproduction_status": "blocked_external_publication",
     "qrf_label_ablation_ok": true,
     "quantum_crosscheck_ok": true,
-    "release_file_count": 454,
+    "release_file_count": 460,
     "release_scope": "local_private_artifact_bundle_not_public_release",
     "review_response_ok": true,
     "review_response_rows": 7
@@ -530,22 +532,22 @@
   },
   "validation_report": {
     "all_passed": true,
-    "passed": 428,
-    "total": 428
+    "passed": 430,
+    "total": 430
   },
   "visual_quality": {
     "cropped_text": [],
     "layout_failures": [],
     "legend_axis_overlaps": [],
     "legibility_ok": true,
-    "legibility_row_count": 59,
+    "legibility_row_count": 61,
     "low_contrast_roles": [],
     "missing_legend_or_colorbar": [],
     "missing_roles": [],
     "overlapping_text": [],
     "overlapping_titles": [],
     "style_ok": true,
-    "style_row_count": 59,
+    "style_row_count": 61,
     "undersized": [],
     "undersized_text": []
   }
