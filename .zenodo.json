@@ -1,6 +1,6 @@
 {
   "title": "Realizing Emptiness",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Software foundation for source-faithful operationalization of the formalisms in 'There is no self-evidence: A physics of emptiness realisation' (Sandved-Smith, Fields, Doctor, Laukkonen, and Hohwy, 2026). Finite operational surrogates for paper equations 1-14, active-inference QRF profiles, Bayesian model reduction sweeps, finite quantum-information simulations, and an adversarial claim-governance layer with explicit evidence ceilings.",
   "creators": [
     {

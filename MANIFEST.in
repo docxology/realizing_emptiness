@@ -1,0 +1,14 @@
+include LICENSE README.md AGENTS.md DESIGN.md ISA.md TODO.md CHANGELOG.md
+include CITATION.cff codemeta.json .zenodo.json .python-version uv.lock conftest.py
+include output/pdf/realizing_emptiness_combined.pdf
+include *.yaml
+recursive-include src *.py *.md
+recursive-include scripts *.py *.md
+recursive-include tests *.py *.md
+recursive-include schemas *.json *.md
+recursive-include data *.yaml *.yml *.md
+recursive-include docs *.md *.yaml *.yml *.bib *.pdf
+recursive-include .github *.yaml *.yml
+global-exclude *.pyc
+prune build
+prune dist

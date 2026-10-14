@@ -61,17 +61,17 @@
 | src/formalism/models.py | 111 | function | `complexity_cost` | Return a positive complexity cost for the structural prior. |
 | src/formalism/models.py | 115 | function | `admissible` | Restrict deployments if the prior remains enforced. |
 | src/formalism/models.py | 122 | function | `complexity_kl` | Return the categorical KL complexity D_KL[Q(s) || P(s|m)] for eq 11. |
-| src/formalism/models.py | 146 | function | `vfe_noise_insufficient_learning` | Decompose a finite VFE-style surprise into noise and insufficient learning (eq 6). |
-| src/formalism/models.py | 180 | class | `FreeEnergyTerms` | Finite free-energy decomposition used by the surrogate. |
-| src/formalism/models.py | 188 | function | `from_distributions` | Build VFE terms from finite categorical distributions (eq 11 worked example). |
-| src/formalism/models.py | 213 | function | `free_energy` | Compute F = complexity - accuracy + noise. |
-| src/formalism/models.py | 217 | function | `as_dict` | Serialize terms. |
-| src/formalism/models.py | 228 | class | `BMRComparison` | Bayesian model-reduction comparison between full and reduced models. |
-| src/formalism/models.py | 235 | function | `delta_complexity` | Reduced-minus-full complexity. |
-| src/formalism/models.py | 240 | function | `delta_accuracy` | Reduced-minus-full accuracy. |
-| src/formalism/models.py | 245 | function | `delta_free_energy` | Delta F = Delta complexity - Delta accuracy, with noise folded into F. |
-| src/formalism/models.py | 250 | function | `prunes_prior` | Return whether the reduced model is preferred. |
-| src/formalism/models.py | 254 | function | `as_dict` | Serialize BMR comparison. |
+| src/formalism/models.py | 148 | function | `vfe_noise_insufficient_learning` | Decompose a finite VFE-style surprise into noise and insufficient learning (eq 6). |
+| src/formalism/models.py | 184 | class | `FreeEnergyTerms` | Finite free-energy decomposition used by the surrogate. |
+| src/formalism/models.py | 192 | function | `from_distributions` | Build VFE terms from finite categorical distributions (eq 11 worked example). |
+| src/formalism/models.py | 217 | function | `free_energy` | Compute F = complexity - accuracy + noise. |
+| src/formalism/models.py | 221 | function | `as_dict` | Serialize terms. |
+| src/formalism/models.py | 232 | class | `BMRComparison` | Bayesian model-reduction comparison between full and reduced models. |
+| src/formalism/models.py | 239 | function | `delta_complexity` | Reduced-minus-full complexity. |
+| src/formalism/models.py | 244 | function | `delta_accuracy` | Reduced-minus-full accuracy. |
+| src/formalism/models.py | 249 | function | `delta_free_energy` | Delta F = Delta complexity - Delta accuracy, with noise folded into F. |
+| src/formalism/models.py | 254 | function | `prunes_prior` | Return whether the reduced model is preferred. |
+| src/formalism/models.py | 258 | function | `as_dict` | Serialize BMR comparison. |
 | src/formalism/review_response_bmr.py | 11 | function | `bmr_comparison` | No docstring. |
 | src/formalism/review_response_bmr.py | 37 | function | `crossing_for_prior` | No docstring. |
 | src/formalism/review_response_bmr.py | 56 | function | `build_bmr_alternative_prior_audit` | No docstring. |
@@ -96,11 +96,12 @@
 | src/formalism/review_response_quantum.py | 56 | function | `independent_polytope_matrix` | No docstring. |
 | src/formalism/review_response_quantum.py | 72 | function | `independent_polytope_fit` | No docstring. |
 | src/formalism/review_response_quantum.py | 108 | function | `build_quantum_independent_crosscheck_audit` | No docstring. |
-| src/formalism/review_response_release.py | 41 | function | `manifest_paths` | No docstring. |
-| src/formalism/review_response_release.py | 46 | function | `release_support_paths` | No docstring. |
-| src/formalism/review_response_release.py | 61 | function | `build_artifact_release_manifest` | No docstring. |
-| src/formalism/review_response_release.py | 150 | function | `write_artifact_release_manifest` | No docstring. |
-| src/formalism/review_response_writers.py | 14 | function | `write_review_response_artifacts` | No docstring. |
+| src/formalism/review_response_release.py | 47 | function | `manifest_paths` | No docstring. |
+| src/formalism/review_response_release.py | 52 | function | `release_support_paths` | No docstring. |
+| src/formalism/review_response_release.py | 67 | function | `build_artifact_release_manifest` | No docstring. |
+| src/formalism/review_response_release.py | 155 | function | `write_artifact_release_manifest` | No docstring. |
+| src/formalism/review_response_writers.py | 14 | function | `initialize_artifact_release_manifest` | No docstring. |
+| src/formalism/review_response_writers.py | 26 | function | `write_review_response_artifacts` | No docstring. |
 | src/formalism/scholarship.py | 58 | function | `load_scholarship_manifest` | Load the scholarship manifest. |
 | src/formalism/scholarship.py | 64 | function | `bibliography_keys` | Return citation keys declared in the manuscript bibliography. |
 | src/formalism/scholarship.py | 70 | function | `validate_scholarship_manifest` | Validate uniqueness, bibliography coverage, and claim-boundary fields. |
@@ -108,9 +109,9 @@
 | src/formalism/scholarship.py | 147 | function | `build_claim_support_audit` | Build a claim-by-source support audit from the scholarship manifest. |
 | src/formalism/scholarship.py | 188 | function | `write_scholarship_source_matrix` | Write scholarship matrix JSON. |
 | src/formalism/scholarship.py | 197 | function | `write_claim_support_audit` | Write claim support audit JSON. |
-| src/formalism/source.py | 12 | function | `load_source_manifest` | Load the source manifest from the project. |
-| src/formalism/source.py | 22 | function | `sha256_file` | Compute SHA-256 for a local file. |
-| src/formalism/source.py | 31 | function | `verify_primary_source_hash` | Verify the attached PDF hash when the local source file is present. |
+| src/formalism/source.py | 15 | function | `load_source_manifest` | Load the source manifest from the project. |
+| src/formalism/source.py | 25 | function | `sha256_file` | Compute SHA-256 for a local file. |
+| src/formalism/source.py | 34 | function | `verify_primary_source_hash` | Verify the attached PDF hash when the local source file is present. |
 | src/formalism/source_fit.py | 182 | function | `_declared_section_anchors` | Return anchors declared by the sheaf manifest/tracks plus composed files. |
 | src/formalism/source_fit.py | 205 | function | `build_source_argument_coverage_audit` | Build coverage rows tying source-paper themes to local sections, artifacts, and gates. |
 | src/formalism/source_fit.py | 254 | function | `write_source_argument_coverage_audit` | Write the source-argument coverage audit artifact. |
@@ -127,15 +128,15 @@
 | src/gates/manuscript.py | 83 | function | `_manuscript_texts` | No docstring. |
 | src/gates/manuscript.py | 91 | function | `_clean_ref` | No docstring. |
 | src/gates/manuscript.py | 95 | function | `build_manuscript_reference_audit` | Audit composed manuscript section, figure, and equation references. |
-| src/gates/manuscript.py | 140 | function | `_image_paths` | No docstring. |
-| src/gates/manuscript.py | 147 | function | `build_figure_reuse_audit` | Audit that supplement figures do not duplicate main or cover visuals. |
-| src/gates/manuscript.py | 176 | function | `build_figure_placement_audit` | Audit balanced main/supplement placement for technical and governance figures. |
-| src/gates/manuscript.py | 228 | function | `build_cover_graphical_abstract_audit` | Audit the unnumbered graphical abstract cover image. |
-| src/gates/manuscript.py | 283 | function | `write_manuscript_structure_audits` | Write manuscript reference, figure reuse, figure-placement, and cover graphic audits. |
+| src/gates/manuscript.py | 151 | function | `_image_paths` | No docstring. |
+| src/gates/manuscript.py | 158 | function | `build_figure_reuse_audit` | Audit that supplement figures do not duplicate main or cover visuals. |
+| src/gates/manuscript.py | 187 | function | `build_figure_placement_audit` | Audit balanced main/supplement placement for technical and governance figures. |
+| src/gates/manuscript.py | 239 | function | `build_cover_graphical_abstract_audit` | Audit the unnumbered graphical abstract cover image. |
+| src/gates/manuscript.py | 294 | function | `write_manuscript_structure_audits` | Write manuscript reference, figure reuse, figure-placement, and cover graphic audits. |
 | src/gates/manuscript_variables.py | 15 | function | `_load_json` | No docstring. |
 | src/gates/manuscript_variables.py | 19 | function | `compute_variables` | No docstring. |
 | src/gates/manuscript_variables.py | 47 | function | `hydrate_manuscript` | No docstring. |
-| src/gates/manuscript_variables.py | 56 | function | `replace` | No docstring. |
+| src/gates/manuscript_variables.py | 55 | function | `replace` | No docstring. |
 | src/gates/method_inventory.py | 9 | function | `collect_entries` | No docstring. |
 | src/gates/method_inventory.py | 29 | function | `render` | No docstring. |
 | src/gates/roadmap.py | 92 | function | `_load_json` | No docstring. |
@@ -145,19 +146,22 @@
 | src/gates/roadmap.py | 165 | function | `build_roadmap_todo_audit` | Build a fail-closed audit linking TODO rows to machine roadmap state. |
 | src/gates/roadmap.py | 236 | function | `build_validation_dependency_graph` | Build an explicit dependency graph for artifacts, validators, figures, and render gates. |
 | src/gates/roadmap.py | 559 | function | `write_roadmap_governance_artifacts` | Write roadmap/TODO and dependency-graph artifacts. |
-| src/gates/validation.py | 365 | function | `_load_json` | No docstring. |
-| src/gates/validation.py | 376 | function | `_exists` | No docstring. |
-| src/gates/validation.py | 380 | function | `_release_file_fingerprints` | No docstring. |
-| src/gates/validation.py | 392 | function | `_load_yaml` | No docstring. |
-| src/gates/validation.py | 397 | function | `_model_from_audit_row` | No docstring. |
-| src/gates/validation.py | 404 | function | `_pymdp_trace_math_ok` | No docstring. |
-| src/gates/validation.py | 467 | function | `_pymdp_runtime_log_ok` | No docstring. |
-| src/gates/validation.py | 500 | function | `_schema_check` | No docstring. |
-| src/gates/validation.py | 509 | function | `_subsection_anchor_audit` | No docstring. |
-| src/gates/validation.py | 562 | function | `validate_outputs` | Return named output checks. |
-| src/gates/validation.py | 1813 | function | `write_validation_report` | Write validation report to output/reports. |
-| src/gates/validation.py | 1829 | function | `_tracked_doc_paths` | Return the documentation files governed by the contract. |
-| src/gates/validation.py | 1836 | function | `check_documentation_contract` | Check project docs for stale identity, machine paths, orphans, and broken links. |
+| src/gates/validation.py | 365 | function | `_reject_json_constant` | No docstring. |
+| src/gates/validation.py | 369 | function | `_finite_json_float` | No docstring. |
+| src/gates/validation.py | 376 | function | `_load_json` | No docstring. |
+| src/gates/validation.py | 394 | function | `_exists` | No docstring. |
+| src/gates/validation.py | 398 | function | `_release_file_fingerprints` | No docstring. |
+| src/gates/validation.py | 410 | function | `_load_yaml` | No docstring. |
+| src/gates/validation.py | 415 | function | `_model_from_audit_row` | No docstring. |
+| src/gates/validation.py | 422 | function | `_pymdp_trace_math_ok` | No docstring. |
+| src/gates/validation.py | 485 | function | `_pymdp_runtime_log_ok` | No docstring. |
+| src/gates/validation.py | 518 | function | `_valid_schema` | No docstring. |
+| src/gates/validation.py | 528 | function | `_schema_check` | No docstring. |
+| src/gates/validation.py | 543 | function | `_subsection_anchor_audit` | No docstring. |
+| src/gates/validation.py | 596 | function | `validate_outputs` | Return named output checks. |
+| src/gates/validation.py | 1858 | function | `write_validation_report` | Write validation report to output/reports. |
+| src/gates/validation.py | 1874 | function | `_tracked_doc_paths` | Return the documentation files governed by the contract. |
+| src/gates/validation.py | 1881 | function | `check_documentation_contract` | Check project docs for stale identity, machine paths, orphans, and broken links. |
 | src/practice/protocols.py | 8 | function | `practice_protocol_map` | Return bounded practice protocol mappings for software interfaces. |
 | src/simulation/blackwell_ordering.py | 37 | function | `_bayes_error` | Bayes risk of the optimal decision rule under 0-1 loss: 1 - sum_o max_state p(state) p(o|state). |
 | src/simulation/blackwell_ordering.py | 43 | function | `_relabel` | Invertible relabeling: permute the outcome columns (a reversible post-processing). |
@@ -185,9 +189,10 @@
 | src/simulation/criticality.py | 144 | function | `_activity_series` | Return a per-step boundary-channel activity series (count of channel flips). |
 | src/simulation/criticality.py | 154 | function | `build_criticality_report` | Build a single-trace diagnostic retained for source-boundary continuity. |
 | src/simulation/criticality.py | 188 | function | `_interval` | No docstring. |
-| src/simulation/criticality.py | 201 | function | `_branching_by_run` | Reconstruct each run's observation activity and return its measured branching ratio. |
-| src/simulation/criticality.py | 214 | function | `build_criticality_stochastic_ensemble` | Summarize seeded active-inference ensembles as simulated criticality indicators. |
-| src/simulation/criticality.py | 267 | function | `_ci_disjoint` | True iff the real and null 95% confidence intervals for ``metric`` do not overlap. |
+| src/simulation/criticality.py | 201 | function | `_branching_observations` | No docstring. |
+| src/simulation/criticality.py | 217 | function | `_branching_by_run` | No docstring. |
+| src/simulation/criticality.py | 222 | function | `build_criticality_stochastic_ensemble` | Summarize seeded active-inference ensembles as simulated criticality indicators. |
+| src/simulation/criticality.py | 275 | function | `_ci_disjoint` | True iff the real and null 95% confidence intervals for ``metric`` do not overlap. |
 | src/simulation/emergence.py | 33 | function | `emergence_trajectory` | Build a boundary stream where a fraction ``empowerment`` of channels track the action. |
 | src/simulation/emergence.py | 68 | function | `_mode_predictor_error` | Return the mean bit error of a per-channel mode predictor. |
 | src/simulation/emergence.py | 91 | function | `score_factored_vs_unfactored` | Return the measured prediction errors of the factored and unfactored predictors. |
@@ -237,11 +242,11 @@
 | src/simulation/pymdp_profiles.py | 414 | function | `run_profile_comparison` | Compare QRF profiles using a deterministic pymdp policy trace. |
 | src/simulation/pymdp_profiles.py | 466 | function | `build_pymdp_runtime_diagnostics_log` | Build the four-layer runtime/model/trace/replay diagnostics log. |
 | src/simulation/qrf_env.py | 20 | function | `default_deployments` | Return the three v1 QRF profiles. |
-| src/simulation/qrf_env.py | 35 | function | `simulate_boundary_trajectory` | Generate deterministic boundary observations for finite profile comparison. |
-| src/simulation/qrf_env.py | 65 | function | `_uniform_boundary_distribution` | No docstring. |
-| src/simulation/qrf_env.py | 71 | function | `boundary_indistinguishability_audit` | Check that admissible QRF labels do not change boundary probabilities. |
-| src/simulation/qrf_env.py | 106 | function | `boundary_channel_ledger` | Return the b0-b5 QRF channel ledger used by the relabeling figure and source-fit audits. |
-| src/simulation/qrf_env.py | 173 | function | `score_deployment` | Score a deployment by deterministic prediction, flexibility, and scope. |
+| src/simulation/qrf_env.py | 38 | function | `simulate_boundary_trajectory` | Generate deterministic boundary observations for finite profile comparison. |
+| src/simulation/qrf_env.py | 71 | function | `_uniform_boundary_distribution` | No docstring. |
+| src/simulation/qrf_env.py | 77 | function | `boundary_indistinguishability_audit` | Check that admissible QRF labels do not change boundary probabilities. |
+| src/simulation/qrf_env.py | 112 | function | `boundary_channel_ledger` | Return the b0-b5 QRF channel ledger used by the relabeling figure and source-fit audits. |
+| src/simulation/qrf_env.py | 179 | function | `score_deployment` | Score a deployment by deterministic prediction, flexibility, and scope. |
 | src/simulation/quantum_estimation.py | 38 | function | `_density` | No docstring. |
 | src/simulation/quantum_estimation.py | 42 | function | `_d_density` | No docstring. |
 | src/simulation/quantum_estimation.py | 46 | function | `_symmetric_logarithmic_derivative` | SLD operator L solving rho L + L rho = 2 d_rho, via the eigenbasis spectral formula. |
@@ -384,120 +389,120 @@
 | src/visualizations/captions.py | 116 | function | `write_visual_caption_audit` | Write visual-caption audit JSON. |
 | src/visualizations/captions.py | 125 | function | `build_visual_accessibility_audit` | Audit accessibility metadata for source-mapped figures. |
 | src/visualizations/captions.py | 165 | function | `write_visual_accessibility_audit` | Write visual-accessibility audit JSON. |
-| src/visualizations/dashboard.py | 19 | function | `_load_json` | No docstring. |
-| src/visualizations/dashboard.py | 25 | function | `_load_yaml` | No docstring. |
-| src/visualizations/dashboard.py | 30 | function | `_escape` | No docstring. |
-| src/visualizations/dashboard.py | 34 | function | `build_artifact_dashboard_payload` | No docstring. |
-| src/visualizations/dashboard.py | 285 | function | `_table` | No docstring. |
-| src/visualizations/dashboard.py | 294 | function | `_figure_link` | No docstring. |
-| src/visualizations/dashboard.py | 301 | function | `_argument_arc_table` | No docstring. |
-| src/visualizations/dashboard.py | 317 | function | `render_artifact_dashboard_html` | No docstring. |
-| src/visualizations/dashboard.py | 541 | function | `write_artifact_dashboard` | No docstring. |
-| src/visualizations/figures.py | 36 | function | `_load_json` | No docstring. |
-| src/visualizations/figures.py | 40 | function | `_load_style` | No docstring. |
-| src/visualizations/figures.py | 45 | function | `_enforce_readable_text` | No docstring. |
-| src/visualizations/figures.py | 53 | function | `_empty_layout_telemetry` | No docstring. |
-| src/visualizations/figures.py | 63 | function | `_bbox_overlap_area` | No docstring. |
-| src/visualizations/figures.py | 69 | function | `_bbox_outside` | No docstring. |
-| src/visualizations/figures.py | 78 | function | `_text_layout_categories` | No docstring. |
-| src/visualizations/figures.py | 102 | function | `_visible_text_boxes` | No docstring. |
-| src/visualizations/figures.py | 124 | function | `_legend_boxes` | No docstring. |
-| src/visualizations/figures.py | 136 | function | `_pairwise_overlap_count` | No docstring. |
-| src/visualizations/figures.py | 145 | function | `_measure_layout` | No docstring. |
-| src/visualizations/figures.py | 188 | function | `_record_layout_telemetry` | No docstring. |
-| src/visualizations/figures.py | 192 | function | `_layout_rect_for` | No docstring. |
-| src/visualizations/figures.py | 210 | function | `_lift_low_figure_text` | No docstring. |
-| src/visualizations/figures.py | 225 | function | `_wrap_axis_titles` | No docstring. |
-| src/visualizations/figures.py | 233 | function | `_save` | No docstring. |
-| src/visualizations/figures.py | 248 | function | `_fig_path` | No docstring. |
-| src/visualizations/figures.py | 252 | function | `_sectorisation_map` | No docstring. |
-| src/visualizations/figures.py | 287 | function | `_save_return` | No docstring. |
-| src/visualizations/figures.py | 292 | function | `_save_fixed_return` | No docstring. |
-| src/visualizations/figures.py | 303 | function | `_panel_label` | No docstring. |
-| src/visualizations/figures.py | 317 | function | `_zero_centered_norm` | No docstring. |
-| src/visualizations/figures.py | 329 | function | `_heatmap_text_color` | No docstring. |
-| src/visualizations/figures.py | 335 | function | `_add_heatmap_cell_grid` | No docstring. |
-| src/visualizations/figures.py | 342 | function | `_semantic_colors` | No docstring. |
-| src/visualizations/figures.py | 365 | function | `_profile_label` | No docstring. |
-| src/visualizations/figures.py | 369 | function | `_compact_axis_label` | No docstring. |
-| src/visualizations/figures.py | 375 | function | `_profile_color` | No docstring. |
-| src/visualizations/figures.py | 379 | function | `_graphical_abstract_cover` | No docstring. |
-| src/visualizations/figures.py | 398 | function | `box` | No docstring. |
-| src/visualizations/figures.py | 687 | function | `_qrf_sector_colors` | No docstring. |
-| src/visualizations/figures.py | 699 | function | `_qrf_boundary_screen_geometry` | No docstring. |
-| src/visualizations/figures.py | 872 | function | `_qrf_channel_relabeling_ledger` | No docstring. |
-| src/visualizations/figures.py | 1037 | function | `_qrf_invariance_policy_flow` | No docstring. |
-| src/visualizations/figures.py | 1144 | function | `_finite_quantum_scope_summary` | No docstring. |
-| src/visualizations/figures.py | 1264 | function | `_binary_colorbar` | No docstring. |
-| src/visualizations/figures.py | 1271 | function | `_binary_colorbar_unlabeled` | No docstring. |
-| src/visualizations/figures.py | 1277 | function | `_boundary_audit` | No docstring. |
-| src/visualizations/figures.py | 1325 | function | `_qrf_reference_frame_geometry` | No docstring. |
-| src/visualizations/figures.py | 1520 | function | `_bmr_decomposition` | No docstring. |
-| src/visualizations/figures.py | 1580 | function | `_bmr_phase_diagram` | No docstring. |
-| src/visualizations/figures.py | 1648 | function | `_simulation_sensitivity_heatmap` | No docstring. |
-| src/visualizations/figures.py | 1714 | function | `_quantum_boundary_entropy_landscape` | No docstring. |
-| src/visualizations/figures.py | 1793 | function | `_quantum_contextuality_witness` | No docstring. |
-| src/visualizations/figures.py | 1895 | function | `_quantum_measurement_contextuality_table` | No docstring. |
-| src/visualizations/figures.py | 1998 | function | `_quantum_local_polytope_audit` | No docstring. |
-| src/visualizations/figures.py | 2100 | function | `_quantum_open_system_dynamics` | No docstring. |
-| src/visualizations/figures.py | 2156 | function | `_qfep_boundary_hamiltonian_dynamics` | No docstring. |
-| src/visualizations/figures.py | 2214 | function | `_many_body_boundary_screen_sweep` | No docstring. |
-| src/visualizations/figures.py | 2278 | function | `_sheaf_contextuality_obstruction_audit` | No docstring. |
-| src/visualizations/figures.py | 2371 | function | `_qrf_transformation_covariance_audit` | No docstring. |
-| src/visualizations/figures.py | 2435 | function | `_empirical_adapter_provenance_audit` | No docstring. |
-| src/visualizations/figures.py | 2498 | function | `_arbitrary_two_qubit_entanglement_audit` | No docstring. |
-| src/visualizations/figures.py | 2596 | function | `_general_measurement_cover_polytope_audit` | No docstring. |
-| src/visualizations/figures.py | 2690 | function | `_thermodynamic_channel_cost_audit` | No docstring. |
-| src/visualizations/figures.py | 2766 | function | `_sparse_boundary_screen_scaling_audit` | No docstring. |
-| src/visualizations/figures.py | 2851 | function | `_qrf_frame_covariance_toy_audit` | No docstring. |
-| src/visualizations/figures.py | 2955 | function | `_profile_comparison` | No docstring. |
-| src/visualizations/figures.py | 3064 | function | `_posterior_trajectory` | No docstring. |
-| src/visualizations/figures.py | 3138 | function | `_pymdp_runtime_validation_dashboard` | No docstring. |
-| src/visualizations/figures.py | 3339 | function | `_criticality` | No docstring. |
-| src/visualizations/figures.py | 3365 | function | `_criticality_stochastic_ensemble` | No docstring. |
-| src/visualizations/figures.py | 3482 | function | `_criticality_signatures` | Measured criticality signatures: branching ratio per profile and avalanche sizes. |
-| src/visualizations/figures.py | 3593 | function | `_compassion_scope_widening` | Scope-of-concern widening (precision driver) plus the active per-channel action-influence. |
-| src/visualizations/figures.py | 3674 | function | `_practice_policy_scope_map` | Render practice protocols as model-intervention deltas with on-figure safety boundaries. |
-| src/visualizations/figures.py | 3733 | function | `_separation_prior_emergence` | Factored vs unfactored predictor error across the empowerment grid (section 4.1). |
-| src/visualizations/figures.py | 3788 | function | `_internal_cut_unmeasurability` | Internal-cut entropy (god's-eye) versus A's invariant accessible marginal (section 3.3). |
-| src/visualizations/figures.py | 3850 | function | `_quantum_trajectory_unraveling` | No docstring. |
-| src/visualizations/figures.py | 3946 | function | `_stochastic_effect_size_forest` | No docstring. |
-| src/visualizations/figures.py | 4056 | function | `_bmr_robustness_resampling` | No docstring. |
-| src/visualizations/figures.py | 4155 | function | `_quantum_trajectory_convergence` | No docstring. |
-| src/visualizations/figures.py | 4216 | function | `_visual_semantic_palette_ledger` | No docstring. |
-| src/visualizations/figures.py | 4324 | function | `_method_assumption_failure_map` | No docstring. |
-| src/visualizations/figures.py | 4419 | function | `_claim_graph` | No docstring. |
-| src/visualizations/figures.py | 4485 | function | `_scholarship_coverage` | No docstring. |
-| src/visualizations/figures.py | 4525 | function | `_claim_support_matrix` | No docstring. |
-| src/visualizations/figures.py | 4650 | function | `_manuscript_claim_audit` | No docstring. |
-| src/visualizations/figures.py | 4687 | function | `_evidence_ceiling_stress_matrix` | No docstring. |
-| src/visualizations/figures.py | 4768 | function | `_claim_context_evidence_ladder` | No docstring. |
-| src/visualizations/figures.py | 4936 | function | `_formalism_operation_map` | No docstring. |
-| src/visualizations/figures.py | 4968 | function | `_quantum_roadmap_readiness_matrix` | No docstring. |
-| src/visualizations/figures.py | 5053 | function | `boundary_use_ontology_verdicts` | Derive the use/ontology lane verdicts from the indistinguishability audit flags. |
-| src/visualizations/figures.py | 5079 | function | `separation_prior_lifecycle` | Derive the separation-prior net-value lifecycle from the BMR sweep. |
-| src/visualizations/figures.py | 5103 | function | `_crosses` | No docstring. |
-| src/visualizations/figures.py | 5128 | function | `_qrf_sector_situation` | Early-section sector situation: one shared screen read through three QRF lenses. |
-| src/visualizations/figures.py | 5297 | function | `_boundary_use_vs_ontology` | Conceptual permission diagram: boundary use is licensed, boundary ontology is not. |
-| src/visualizations/figures.py | 5323 | function | `badge` | No docstring. |
-| src/visualizations/figures.py | 5338 | function | `wrapped` | No docstring. |
-| src/visualizations/figures.py | 5397 | function | `lane` | No docstring. |
-| src/visualizations/figures.py | 5542 | function | `_separation_prior_net_value` | Lifecycle synthesis: the separation prior's net value vs. metacognitive access, per precision. |
-| src/visualizations/figures.py | 5662 | function | `_multipartite_witness_negativity` | Minimum bipartition negativity per fixture; separable false-positive controls sit at zero. |
-| src/visualizations/figures.py | 5722 | function | `_tensor_network_scaling` | Two panels: MPS bond-dimension scaling and the bond-one truncation control. |
-| src/visualizations/figures.py | 5788 | function | `_collision_model_relaxation` | Initial vs final trace distance to the ancilla per coupling; zero-coupling control unchanged. |
-| src/visualizations/figures.py | 5842 | function | `_data_processing_monotonicity` | Three panels: the data-processing inequality and its two firing discriminating controls. |
-| src/visualizations/figures.py | 5979 | function | `_markov_blanket_discovery` | Three panels: sparse precision support, dense marginal covariance, and the F1 recovery contrast. |
-| src/visualizations/figures.py | 6079 | function | `_markov_axis_ticks` | No docstring. |
-| src/visualizations/figures.py | 6085 | function | `_n_cycle_contextuality_panel` | Feasibility matrix over n-cycle behaviors; odd cycles are contextual, cross-checked vs 2-colorability. |
-| src/visualizations/figures.py | 6162 | function | `generate_all_figures` | Generate all registered figures and write the source map. |
-| src/visualizations/figures.py | 6433 | function | `_source_artifacts_for` | No docstring. |
+| src/visualizations/dashboard.py | 20 | function | `_load_json` | No docstring. |
+| src/visualizations/dashboard.py | 26 | function | `_load_yaml` | No docstring. |
+| src/visualizations/dashboard.py | 31 | function | `_escape` | No docstring. |
+| src/visualizations/dashboard.py | 35 | function | `build_artifact_dashboard_payload` | No docstring. |
+| src/visualizations/dashboard.py | 287 | function | `_table` | No docstring. |
+| src/visualizations/dashboard.py | 296 | function | `_figure_link` | No docstring. |
+| src/visualizations/dashboard.py | 303 | function | `_argument_arc_table` | No docstring. |
+| src/visualizations/dashboard.py | 319 | function | `render_artifact_dashboard_html` | No docstring. |
+| src/visualizations/dashboard.py | 545 | function | `write_artifact_dashboard` | No docstring. |
+| src/visualizations/figures.py | 39 | function | `_load_json` | No docstring. |
+| src/visualizations/figures.py | 43 | function | `_load_style` | No docstring. |
+| src/visualizations/figures.py | 48 | function | `_enforce_readable_text` | No docstring. |
+| src/visualizations/figures.py | 56 | function | `_empty_layout_telemetry` | No docstring. |
+| src/visualizations/figures.py | 66 | function | `_bbox_overlap_area` | No docstring. |
+| src/visualizations/figures.py | 72 | function | `_bbox_outside` | No docstring. |
+| src/visualizations/figures.py | 81 | function | `_text_layout_categories` | No docstring. |
+| src/visualizations/figures.py | 105 | function | `_visible_text_boxes` | No docstring. |
+| src/visualizations/figures.py | 127 | function | `_legend_boxes` | No docstring. |
+| src/visualizations/figures.py | 139 | function | `_pairwise_overlap_count` | No docstring. |
+| src/visualizations/figures.py | 148 | function | `_measure_layout` | No docstring. |
+| src/visualizations/figures.py | 191 | function | `_record_layout_telemetry` | No docstring. |
+| src/visualizations/figures.py | 199 | function | `_layout_rect_for` | No docstring. |
+| src/visualizations/figures.py | 217 | function | `_lift_low_figure_text` | No docstring. |
+| src/visualizations/figures.py | 232 | function | `_wrap_axis_titles` | No docstring. |
+| src/visualizations/figures.py | 240 | function | `_save` | No docstring. |
+| src/visualizations/figures.py | 256 | function | `_fig_path` | No docstring. |
+| src/visualizations/figures.py | 260 | function | `_sectorisation_map` | No docstring. |
+| src/visualizations/figures.py | 295 | function | `_save_return` | No docstring. |
+| src/visualizations/figures.py | 300 | function | `_save_fixed_return` | No docstring. |
+| src/visualizations/figures.py | 311 | function | `_panel_label` | No docstring. |
+| src/visualizations/figures.py | 325 | function | `_zero_centered_norm` | No docstring. |
+| src/visualizations/figures.py | 337 | function | `_heatmap_text_color` | No docstring. |
+| src/visualizations/figures.py | 343 | function | `_add_heatmap_cell_grid` | No docstring. |
+| src/visualizations/figures.py | 350 | function | `_semantic_colors` | No docstring. |
+| src/visualizations/figures.py | 373 | function | `_profile_label` | No docstring. |
+| src/visualizations/figures.py | 377 | function | `_compact_axis_label` | No docstring. |
+| src/visualizations/figures.py | 383 | function | `_profile_color` | No docstring. |
+| src/visualizations/figures.py | 387 | function | `_graphical_abstract_cover` | No docstring. |
+| src/visualizations/figures.py | 406 | function | `box` | No docstring. |
+| src/visualizations/figures.py | 695 | function | `_qrf_sector_colors` | No docstring. |
+| src/visualizations/figures.py | 707 | function | `_qrf_boundary_screen_geometry` | No docstring. |
+| src/visualizations/figures.py | 880 | function | `_qrf_channel_relabeling_ledger` | No docstring. |
+| src/visualizations/figures.py | 1045 | function | `_qrf_invariance_policy_flow` | No docstring. |
+| src/visualizations/figures.py | 1152 | function | `_finite_quantum_scope_summary` | No docstring. |
+| src/visualizations/figures.py | 1272 | function | `_binary_colorbar` | No docstring. |
+| src/visualizations/figures.py | 1279 | function | `_binary_colorbar_unlabeled` | No docstring. |
+| src/visualizations/figures.py | 1285 | function | `_boundary_audit` | No docstring. |
+| src/visualizations/figures.py | 1333 | function | `_qrf_reference_frame_geometry` | No docstring. |
+| src/visualizations/figures.py | 1528 | function | `_bmr_decomposition` | No docstring. |
+| src/visualizations/figures.py | 1588 | function | `_bmr_phase_diagram` | No docstring. |
+| src/visualizations/figures.py | 1656 | function | `_simulation_sensitivity_heatmap` | No docstring. |
+| src/visualizations/figures.py | 1722 | function | `_quantum_boundary_entropy_landscape` | No docstring. |
+| src/visualizations/figures.py | 1801 | function | `_quantum_contextuality_witness` | No docstring. |
+| src/visualizations/figures.py | 1903 | function | `_quantum_measurement_contextuality_table` | No docstring. |
+| src/visualizations/figures.py | 2006 | function | `_quantum_local_polytope_audit` | No docstring. |
+| src/visualizations/figures.py | 2108 | function | `_quantum_open_system_dynamics` | No docstring. |
+| src/visualizations/figures.py | 2164 | function | `_qfep_boundary_hamiltonian_dynamics` | No docstring. |
+| src/visualizations/figures.py | 2222 | function | `_many_body_boundary_screen_sweep` | No docstring. |
+| src/visualizations/figures.py | 2286 | function | `_sheaf_contextuality_obstruction_audit` | No docstring. |
+| src/visualizations/figures.py | 2379 | function | `_qrf_transformation_covariance_audit` | No docstring. |
+| src/visualizations/figures.py | 2443 | function | `_empirical_adapter_provenance_audit` | No docstring. |
+| src/visualizations/figures.py | 2506 | function | `_arbitrary_two_qubit_entanglement_audit` | No docstring. |
+| src/visualizations/figures.py | 2604 | function | `_general_measurement_cover_polytope_audit` | No docstring. |
+| src/visualizations/figures.py | 2698 | function | `_thermodynamic_channel_cost_audit` | No docstring. |
+| src/visualizations/figures.py | 2774 | function | `_sparse_boundary_screen_scaling_audit` | No docstring. |
+| src/visualizations/figures.py | 2859 | function | `_qrf_frame_covariance_toy_audit` | No docstring. |
+| src/visualizations/figures.py | 2963 | function | `_profile_comparison` | No docstring. |
+| src/visualizations/figures.py | 3072 | function | `_posterior_trajectory` | No docstring. |
+| src/visualizations/figures.py | 3146 | function | `_pymdp_runtime_validation_dashboard` | No docstring. |
+| src/visualizations/figures.py | 3347 | function | `_criticality` | No docstring. |
+| src/visualizations/figures.py | 3373 | function | `_criticality_stochastic_ensemble` | No docstring. |
+| src/visualizations/figures.py | 3490 | function | `_criticality_signatures` | Measured criticality signatures: branching ratio per profile and avalanche sizes. |
+| src/visualizations/figures.py | 3601 | function | `_compassion_scope_widening` | Scope-of-concern widening (precision driver) plus the active per-channel action-influence. |
+| src/visualizations/figures.py | 3682 | function | `_practice_policy_scope_map` | Render practice protocols as model-intervention deltas with on-figure safety boundaries. |
+| src/visualizations/figures.py | 3741 | function | `_separation_prior_emergence` | Factored vs unfactored predictor error across the empowerment grid (section 4.1). |
+| src/visualizations/figures.py | 3796 | function | `_internal_cut_unmeasurability` | Internal-cut entropy (god's-eye) versus A's invariant accessible marginal (section 3.3). |
+| src/visualizations/figures.py | 3858 | function | `_quantum_trajectory_unraveling` | No docstring. |
+| src/visualizations/figures.py | 3954 | function | `_stochastic_effect_size_forest` | No docstring. |
+| src/visualizations/figures.py | 4064 | function | `_bmr_robustness_resampling` | No docstring. |
+| src/visualizations/figures.py | 4161 | function | `_quantum_trajectory_convergence` | No docstring. |
+| src/visualizations/figures.py | 4222 | function | `_visual_semantic_palette_ledger` | No docstring. |
+| src/visualizations/figures.py | 4330 | function | `_method_assumption_failure_map` | No docstring. |
+| src/visualizations/figures.py | 4425 | function | `_claim_graph` | No docstring. |
+| src/visualizations/figures.py | 4491 | function | `_scholarship_coverage` | No docstring. |
+| src/visualizations/figures.py | 4518 | function | `_claim_support_matrix` | No docstring. |
+| src/visualizations/figures.py | 4555 | function | `_manuscript_claim_audit` | No docstring. |
+| src/visualizations/figures.py | 4592 | function | `_evidence_ceiling_stress_matrix` | No docstring. |
+| src/visualizations/figures.py | 4673 | function | `_claim_context_evidence_ladder` | No docstring. |
+| src/visualizations/figures.py | 4841 | function | `_formalism_operation_map` | No docstring. |
+| src/visualizations/figures.py | 4873 | function | `_quantum_roadmap_readiness_matrix` | No docstring. |
+| src/visualizations/figures.py | 4958 | function | `boundary_use_ontology_verdicts` | Derive the use/ontology lane verdicts from the indistinguishability audit flags. |
+| src/visualizations/figures.py | 4984 | function | `separation_prior_lifecycle` | Derive the separation-prior net-value lifecycle from the BMR sweep. |
+| src/visualizations/figures.py | 5008 | function | `_crosses` | No docstring. |
+| src/visualizations/figures.py | 5033 | function | `_qrf_sector_situation` | Early-section sector situation: one shared screen read through three QRF lenses. |
+| src/visualizations/figures.py | 5202 | function | `_boundary_use_vs_ontology` | Conceptual permission diagram: boundary use is licensed, boundary ontology is not. |
+| src/visualizations/figures.py | 5228 | function | `badge` | No docstring. |
+| src/visualizations/figures.py | 5243 | function | `wrapped` | No docstring. |
+| src/visualizations/figures.py | 5302 | function | `lane` | No docstring. |
+| src/visualizations/figures.py | 5447 | function | `_separation_prior_net_value` | Lifecycle synthesis: the separation prior's net value vs. metacognitive access, per precision. |
+| src/visualizations/figures.py | 5567 | function | `_multipartite_witness_negativity` | Minimum bipartition negativity per fixture; separable false-positive controls sit at zero. |
+| src/visualizations/figures.py | 5627 | function | `_tensor_network_scaling` | Two panels: MPS bond-dimension scaling and the bond-one truncation control. |
+| src/visualizations/figures.py | 5693 | function | `_collision_model_relaxation` | Initial vs final trace distance to the ancilla per coupling; zero-coupling control unchanged. |
+| src/visualizations/figures.py | 5747 | function | `_data_processing_monotonicity` | Three panels: the data-processing inequality and its two firing discriminating controls. |
+| src/visualizations/figures.py | 5884 | function | `_markov_blanket_discovery` | Three panels: sparse precision support, dense marginal covariance, and the F1 recovery contrast. |
+| src/visualizations/figures.py | 5984 | function | `_markov_axis_ticks` | No docstring. |
+| src/visualizations/figures.py | 5990 | function | `_n_cycle_contextuality_panel` | Feasibility matrix over n-cycle behaviors; odd cycles are contextual, cross-checked vs 2-colorability. |
+| src/visualizations/figures.py | 6067 | function | `generate_all_figures` | Generate all registered figures and write the source map. |
+| src/visualizations/figures.py | 6342 | function | `_source_artifacts_for` | No docstring. |
 | src/visualizations/integrity.py | 19 | function | `file_sha256` | Return the SHA-256 digest for a file. |
 | src/visualizations/integrity.py | 28 | function | `_image_metrics` | No docstring. |
-| src/visualizations/integrity.py | 46 | function | `_load_json` | No docstring. |
-| src/visualizations/integrity.py | 50 | function | `build_figure_integrity_audit` | Build current hashes, dimensions, and source hashes for source-mapped figures. |
-| src/visualizations/integrity.py | 120 | function | `write_figure_integrity_audit` | Write figure integrity audit JSON. |
-| src/visualizations/integrity.py | 128 | function | `compare_figure_integrity` | Compare saved figure integrity metadata against current files. |
+| src/visualizations/integrity.py | 49 | function | `_load_json` | No docstring. |
+| src/visualizations/integrity.py | 53 | function | `build_figure_integrity_audit` | Build current hashes, dimensions, and source hashes for source-mapped figures. |
+| src/visualizations/integrity.py | 123 | function | `write_figure_integrity_audit` | Write figure integrity audit JSON. |
+| src/visualizations/integrity.py | 131 | function | `compare_figure_integrity` | Compare saved figure integrity metadata against current files. |
 | src/visualizations/rendered_captions.py | 18 | function | `_figure_lookup` | No docstring. |
 | src/visualizations/rendered_captions.py | 30 | function | `expand_markdown_figure_captions` | Replace short Markdown figure captions with source-of-truth captions. |
 | src/visualizations/rendered_captions.py | 34 | function | `replace` | No docstring. |

@@ -1,8 +1,8 @@
 # AGENTS.md - realizing_emptiness
 
-Private working project: **Realizing Emptiness**.
+Research software project: **Realizing Emptiness**.
 
-This project is a normal sidecar directory, not a nested Git repo. If you are
+This checkout is a standalone Git repository and can also serve as a sidecar. If you are
 working through the template checkout mirror
 (`template/projects/ongoing/ActiveInference/realizing_emptiness`), also read the
 sidecar guidance at the template repo's `projects/AGENTS.md`; that path does not
@@ -85,8 +85,6 @@ Render from the sibling template checkout:
 
 ```bash
 cd <template-checkout>
-uv run python -m infrastructure.orchestration link-projects
-uv run python scripts/03_render_pdf.py --project <qualifier>
-# <qualifier> is working/ or archive/ depending on the sidecar lifecycle folder —
-# determine it per docs/running-the-chain.md (canonical render instructions).
+uv run python scripts/pipeline/stage_03_render.py --project <verified-qualifier>
+# Resolve the actual sidecar qualifier per docs/running-the-chain.md first.
 ```

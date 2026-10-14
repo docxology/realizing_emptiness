@@ -7,6 +7,9 @@ import textwrap
 from pathlib import Path
 from typing import Any
 
+import matplotlib
+
+matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import numpy as np
 import yaml
@@ -30,7 +33,7 @@ from visualizations.style import (
 )
 
 
-_LAYOUT_TELEMETRY: dict[str, dict[str, bool | int]] = {}
+_LAYOUT_TELEMETRY: dict[str, dict[str, bool | int | float]] = {}
 
 
 def _load_json(path: Path) -> dict[str, Any]:
@@ -56,7 +59,7 @@ def _empty_layout_telemetry() -> dict[str, bool | int]:
         "title_overlap_count": 0,
         "cropped_text_count": 0,
         "legend_axis_overlap_count": 0,
-        "layout_ok": True,
+        "layout_ok": False,
     }
 
 
@@ -187,6 +190,10 @@ def _measure_layout(fig: plt.Figure) -> dict[str, bool | int]:
 
 def _record_layout_telemetry(fig: plt.Figure, path: Path) -> None:
     _LAYOUT_TELEMETRY[path.stem] = _measure_layout(fig)
+    _LAYOUT_TELEMETRY[path.stem]["measured_min_font_pt"] = min(
+        (float(text.get_fontsize()) for text in fig.findobj(match=Text) if text.get_visible() and text.get_text().strip()),
+        default=0.0,
+    )
 
 
 def _layout_rect_for(fig: plt.Figure) -> tuple[float, float, float, float] | None:
@@ -240,6 +247,7 @@ def _save(fig: plt.Figure, path: Path, dpi: int) -> None:
         fig.tight_layout(rect=layout_rect)
     else:
         fig.tight_layout()
+    _enforce_readable_text(fig)
     _record_layout_telemetry(fig, path)
     fig.savefig(path, dpi=dpi, bbox_inches="tight", pad_inches=0.14)
     plt.close(fig)
@@ -302,13 +310,13 @@ def _save_fixed_return(fig: plt.Figure, path: Path, dpi: int) -> Path:
 
 def _panel_label(ax: plt.Axes, label: str) -> None:
     ax.text(
-        0.015,
-        0.98,
+        -0.02,
+        1.03,
         label,
         transform=ax.transAxes,
         fontsize=12.3,
         fontweight="bold",
-        va="top",
+        va="bottom",
         ha="left",
         bbox={"facecolor": "white", "edgecolor": "none", "alpha": 0.86, "pad": 1.0},
     )
@@ -1601,11 +1609,11 @@ def _bmr_phase_diagram(
     for p_idx in range(len(precisions)):
         for a_idx in range(len(accesses)):
             value = matrix[p_idx, a_idx]
-            decision = "PRUNE prior" if prune[p_idx, a_idx] else "KEEP prior"
+            decision = "PRUNE" if prune[p_idx, a_idx] else "KEEP"
             ax.text(
                 a_idx,
                 p_idx,
-                f"{decision}\nDF {value:+.2f}",
+                f"{decision}\n{value:+.2f}",
                 ha="center",
                 va="center",
                 fontsize=9,
@@ -1619,7 +1627,7 @@ def _bmr_phase_diagram(
     ax.set_ylabel("Separation-prior precision")
     ax.set_title("BMR decision grid: keep or prune the separation prior")
     cbar = fig.colorbar(
-        image, ax=ax, label="Delta F = F_reduced - F_full; negative favors PRUNE prior"
+        image, ax=ax, label="Delta F (reduced minus full)"
     )
     cbar.ax.axhline(0.0, color="white", linewidth=1.4)
     ax.legend(
@@ -1680,7 +1688,7 @@ def _simulation_sensitivity_heatmap(
             ax.text(
                 a_idx,
                 p_idx,
-                f"{prune_count[p_idx, a_idx]}/{noise_count[p_idx, a_idx]} noise rows\nfavor PRUNE",
+                f"{prune_count[p_idx, a_idx]}/{noise_count[p_idx, a_idx]}",
                 ha="center",
                 va="center",
                 fontsize=8.5,
@@ -1692,7 +1700,7 @@ def _simulation_sensitivity_heatmap(
     _add_heatmap_cell_grid(ax, len(precisions), len(accesses))
     ax.set_xlabel("Metacognitive access")
     ax.set_ylabel("Separation-prior precision")
-    ax.set_title("Sensitivity grid: mean Delta F and noise-row pruning count")
+    ax.set_title("Sensitivity grid: mean Delta F; cells count pruned / noise rows")
     cbar = fig.colorbar(image, ax=ax, label="Mean Delta F; negative favors PRUNE prior")
     cbar.ax.axhline(0.0, color="white", linewidth=1.4)
     ax.text(
@@ -3523,7 +3531,7 @@ def _criticality_signatures(
         color=colors["null"],
         hatch="//",
         edgecolor=colors["boundary"],
-        label="null control",
+        label="shuffled observations",
     )
     axes[0].axhline(
         1.0,
@@ -3535,7 +3543,7 @@ def _criticality_signatures(
     axes[0].set_xticks(x, profile_labels, fontsize=9)
     axes[0].set_ylabel("Measured branching ratio", fontsize=10.1)
     axes[0].set_title("Branching ratio separates profiles from null", fontsize=11.2)
-    axes[0].legend(fontsize=9, loc="upper right")
+    axes[0].legend(fontsize=9, loc="upper left", ncol=2)
     _panel_label(axes[0], "A")
 
     sizes = report.get("avalanche_size_distribution", {}).get("sizes", [])
@@ -3966,7 +3974,7 @@ def _stochastic_effect_size_forest(
     y = np.arange(len(rows))
     effects = np.array([row["cliffs_delta"] for row in rows], dtype=float)
     p_values = np.array([row["holm_p"] for row in rows], dtype=float)
-    fig, ax = plt.subplots(figsize=(10.8, 6.6))
+    fig, ax = plt.subplots(figsize=(13.8, 6.6))
     bar_colors = [
         colors["stochastic"] if value >= 0 else colors["null"] for value in effects
     ]
@@ -4020,12 +4028,11 @@ def _stochastic_effect_size_forest(
         ],
         title="Effect legend",
         fontsize=9,
-        loc="upper left",
-        bbox_to_anchor=(1.02, 1.0),
-        ncol=1,
+        loc="upper center",
+        bbox_to_anchor=(0.5, -0.18),
+        ncol=2,
     )
     for index, row in enumerate(rows):
-        effect_label = "profile higher" if effects[index] >= 0 else "null higher"
         interval = [
             row.get(
                 "pooled_bootstrap_ci95_low", row.get("delta_profile_minus_null", 0.0)
@@ -4035,17 +4042,18 @@ def _stochastic_effect_size_forest(
             ),
         ]
         ax.text(
-            upper - 0.02,
+            1.02,
             index,
-            f"{effect_label}; Holm p={row['holm_p']:.3f}; CI[{interval[0]:.2f},{interval[1]:.2f}]",
+            f"Holm p={row['holm_p']:.3f}; pooled-mean CI [{interval[0]:.2f}, {interval[1]:.2f}]",
+            transform=ax.get_yaxis_transform(),
             va="center",
-            ha="right",
+            ha="left",
             fontsize=9,
             color=style["palette"]["muted"],
         )
     ax.grid(axis="x", color=style["palette"]["grid"], linewidth=0.5, alpha=0.55)
     _panel_label(ax, "SR")
-    setattr(fig, "_layout_rect", (0.0, 0.10, 0.80, 1.0))
+    setattr(fig, "_layout_rect", (0.0, 0.12, 0.72, 1.0))
     return _save_return(
         fig,
         _fig_path(project_root, style, "stochastic_effect_size_forest"),
@@ -4078,9 +4086,7 @@ def _bmr_robustness_resampling(
             for precision in precisions
         ]
     )
-    fig, axes = plt.subplots(
-        1, 2, figsize=(13.2, 6.1), gridspec_kw={"width_ratios": [1.0, 1.12]}
-    )
+    fig, axes = plt.subplots(2, 1, figsize=(10.8, 10.5))
     image = axes[0].imshow(
         prune_matrix, aspect="auto", cmap="YlGnBu", vmin=0.0, vmax=1.0
     )
@@ -4090,7 +4096,7 @@ def _bmr_robustness_resampling(
             axes[0].text(
                 x_idx,
                 y_idx,
-                f"{row['pruning_rate']:.0%}\n{'stable' if row['sign_stable'] else 'mixed'}",
+                f"{row['pruning_rate'] * 100:.0f}",
                 ha="center",
                 va="center",
                 fontsize=9,
@@ -4102,7 +4108,7 @@ def _bmr_robustness_resampling(
     _add_heatmap_cell_grid(axes[0], len(precisions), len(accesses))
     axes[0].set_xlabel("Metacognitive access")
     axes[0].set_ylabel("Separation-prior precision")
-    axes[0].set_title("Pruning-rate robustness")
+    axes[0].set_title("Pruning-rate robustness (cell values in percent)")
     cbar = fig.colorbar(image, ax=axes[0], fraction=0.04, pad=0.02)
     cbar.set_label("Bootstrap pruning rate over noise rows")
     stable_cmap = ListedColormap(
@@ -4115,7 +4121,7 @@ def _bmr_robustness_resampling(
     axes[1].set_yticks(range(len(precisions)), [f"{value:g}" for value in precisions])
     _add_heatmap_cell_grid(axes[1], len(precisions), len(accesses))
     axes[1].set_xlabel("Metacognitive access")
-    axes[1].set_title("Delta-F sign stability (CI low/high)")
+    axes[1].set_title("Delta-F sign stability: P=prune, K=keep; CI low/high")
     for y_idx, precision in enumerate(precisions):
         for x_idx, access in enumerate(accesses):
             row = lookup[(precision, access)]
@@ -4123,7 +4129,7 @@ def _bmr_robustness_resampling(
             axes[1].text(
                 x_idx,
                 y_idx,
-                f"{label}\n{row['delta_ci95_low']:+.1f}\n{row['delta_ci95_high']:+.1f}",
+                f"{'P' if label == 'prune' else 'K'}\n{row['delta_ci95_low']:+.1f}\n{row['delta_ci95_high']:+.1f}",
                 ha="center",
                 va="center",
                 fontsize=9,
@@ -4487,164 +4493,63 @@ def _scholarship_coverage(
 ) -> Path:
     tracks = matrix_payload["tracks"]
     rows = matrix_payload["rows"]
-    matrix = np.array(
-        [[1.0 if row["tracks"].get(track) else 0.0 for track in tracks] for row in rows]
-    )
-    labels = [row["citation_key"] for row in rows]
-    fig, ax = plt.subplots(figsize=(10.8, max(6.2, len(labels) * 0.27)))
-    image = ax.imshow(matrix, aspect="auto", cmap="Greens", vmin=0, vmax=1)
-    ax.set_xticks(range(len(tracks)), tracks, rotation=35, ha="right")
-    ax.set_yticks(range(len(labels)), labels)
-    ax.set_xticks(np.arange(-0.5, len(tracks), 1), minor=True)
-    ax.set_yticks(np.arange(-0.5, len(labels), 1), minor=True)
-    ax.grid(which="minor", color="white", linewidth=0.7)
-    for y_idx in range(matrix.shape[0]):
-        for x_idx in range(matrix.shape[1]):
-            if matrix[y_idx, x_idx]:
-                ax.text(
-                    x_idx,
-                    y_idx,
-                    "Y",
-                    ha="center",
-                    va="center",
-                    fontsize=9,
-                    color=style["palette"]["primary"],
-                    fontweight="bold",
-                )
-    ax.tick_params(axis="y", labelsize=9)
-    ax.set_title("Scholarship coverage by track")
-    ax.set_xlabel("Model track")
-    ax.set_ylabel("Citation key")
-    _binary_colorbar(fig, image, ax, "track support")
+    statuses = sorted({row["evidence_status"] for row in rows})
+    matrix = np.array([
+        [sum(bool(row["tracks"].get(track)) for row in rows if row["evidence_status"] == status) for track in tracks]
+        for status in statuses
+    ])
+    fig, ax = plt.subplots(figsize=(13.6, 6.4))
+    image = ax.imshow(matrix, aspect="auto", cmap="Greens", vmin=0)
+    ax.set_xticks(range(len(tracks)), [label.replace("_", "\n") for label in tracks], rotation=55, ha="right")
+    ax.set_yticks(range(len(statuses)), [label.replace("_", " ") for label in statuses])
+    for y_idx in range(len(statuses)):
+        for x_idx in range(len(tracks)):
+            ax.text(x_idx, y_idx, str(matrix[y_idx, x_idx]), ha="center", va="center",
+                    color=_heatmap_text_color(image, matrix[y_idx, x_idx]))
+    _add_heatmap_cell_grid(ax, len(statuses), len(tracks))
+    ax.set_title("Scholarship coverage: citation counts by source status and track")
+    ax.set_xlabel("Manuscript track; full citation keys remain in the source JSON")
+    ax.set_ylabel("Declared source status")
+    fig.colorbar(image, ax=ax, label="Citation count (context coverage)")
     _panel_label(ax, "V")
-    return _save_return(
-        fig, _fig_path(project_root, style, "scholarship_coverage_matrix"), style["dpi"]
-    )
+    return _save_return(fig, _fig_path(project_root, style, "scholarship_coverage_matrix"), style["dpi"])
 
 
 def _claim_support_matrix(
     project_root: Path, style: dict[str, Any], audit: dict[str, Any]
 ) -> Path:
-    class_order = {
-        "operational_surrogate": 0,
-        "implemented_model": 1,
-        "finite_sweep": 2,
-        "finite_quantum_simulation": 3,
-        "runtime_canary": 4,
-        "proxy_boundary": 5,
-        "safety_boundary": 6,
-        "background_boundary": 7,
-        "implementation_boundary": 8,
+    rows = [row for row in audit["support_rows"] if row["public_crosswalk_claim"]]
+    claims = sorted({row["claim_id"] for row in rows})
+    statuses = sorted({row["evidence_status"] for row in rows})
+    matrix = np.array([
+        [len({row["citation_key"] for row in rows if row["claim_id"] == claim and row["evidence_status"] == status}) for status in statuses]
+        for claim in claims
+    ])
+    fig, ax = plt.subplots(figsize=(11.4, 8.8))
+    image = ax.imshow(matrix, aspect="auto", cmap="Blues", vmin=0)
+    status_labels = {
+        "conceptual_background": "Conceptual",
+        "formal_background": "Formal",
+        "future_empirical_context": "Future data",
+        "implementation_anchor": "Impl.",
+        "methodological_background": "Methods",
+        "philosophical_background": "Philosophy",
+        "source_anchor": "Source",
+        "theoretical_background": "Theory",
     }
-    claim_kind = {
-        row["claim_id"]: row["claim_kind"]
-        for row in audit["support_rows"]
-        if row["public_crosswalk_claim"]
-    }
-    public_claims = sorted(
-        {
-            row["claim_id"]
-            for row in audit["support_rows"]
-            if row["public_crosswalk_claim"]
-        },
-        key=lambda claim: (class_order.get(claim_kind.get(claim, ""), 99), claim),
-    )
-    citation_keys = sorted(
-        {
-            row["citation_key"]
-            for row in audit["support_rows"]
-            if row["public_crosswalk_claim"]
-        }
-    )
-    lookup = {
-        (row["claim_id"], row["citation_key"])
-        for row in audit["support_rows"]
-        if row["public_crosswalk_claim"]
-    }
-    matrix = np.array(
-        [
-            [1.0 if (claim, citation) in lookup else 0.0 for citation in citation_keys]
-            for claim in public_claims
-        ]
-    )
-    fig, ax = plt.subplots(figsize=(18.6, 8.8))
-    image = ax.imshow(matrix, aspect="auto", cmap="Blues", vmin=0, vmax=1)
-    ax.set_xticks(
-        range(len(citation_keys)),
-        [_compact_axis_label(key, 15) for key in citation_keys],
-        rotation=58,
-        ha="right",
-        rotation_mode="anchor",
-    )
-    ax.set_yticks(range(len(public_claims)), public_claims)
-    ax.tick_params(axis="both", labelsize=9)
-    ax.set_xticks(np.arange(-0.5, len(citation_keys), 1), minor=True)
-    ax.set_yticks(np.arange(-0.5, len(public_claims), 1), minor=True)
-    ax.grid(which="minor", color="white", linewidth=0.65)
-    for y_idx in range(matrix.shape[0]):
-        for x_idx in range(matrix.shape[1]):
-            if matrix[y_idx, x_idx]:
-                ax.text(
-                    x_idx,
-                    y_idx,
-                    "o",
-                    ha="center",
-                    va="center",
-                    fontsize=9,
-                    color=style["palette"]["primary"],
-                    fontweight="bold",
-                )
-    group_midpoints: list[float] = []
-    group_labels: list[str] = []
-    previous_kind = None
-    group_start = 0
-    for y_idx, claim in enumerate(public_claims):
-        kind = claim_kind.get(claim, "")
-        if previous_kind is not None and kind != previous_kind:
-            ax.axhline(y_idx - 0.5, color="white", linewidth=1.6)
-            group_midpoints.append((group_start + y_idx - 1) / 2)
-            group_labels.append(previous_kind.replace("_", " "))
-            group_start = y_idx
-        previous_kind = kind
-    if public_claims:
-        group_midpoints.append((group_start + len(public_claims) - 1) / 2)
-        group_labels.append(claim_kind.get(public_claims[-1], "").replace("_", " "))
-    ax.set_xlim(-0.5, len(citation_keys) + 4.5)
-    for midpoint, label in zip(group_midpoints, group_labels, strict=True):
-        ax.text(
-            len(citation_keys) + 0.15,
-            midpoint,
-            label,
-            ha="left",
-            va="center",
-            fontsize=9,
-            color=style["palette"]["muted"],
-            clip_on=False,
-            bbox={"facecolor": "white", "edgecolor": "none", "alpha": 0.82, "pad": 1.0},
-        )
-    ax.text(
-        len(citation_keys) + 0.15,
-        -0.95,
-        "claim class",
-        ha="left",
-        va="bottom",
-        fontsize=9,
-        fontweight="bold",
-        clip_on=False,
-    )
-    ax.set_title("Scoped public-claim support by citation key")
-    ax.set_xlabel("Citation key (abbreviated; full keys in source audit)")
-    ax.set_ylabel("Claim ID")
-    colorbar = fig.colorbar(
-        image, ax=ax, orientation="vertical", fraction=0.018, pad=0.065
-    )
-    colorbar.set_ticks([0, 1])
-    colorbar.set_ticklabels(["absent", "present"])
-    colorbar.set_label("scoped citation support")
+    ax.set_xticks(range(len(statuses)), [status_labels[label] for label in statuses], rotation=60, ha="right")
+    ax.set_yticks(range(len(claims)), claims)
+    for y_idx in range(len(claims)):
+        for x_idx in range(len(statuses)):
+            ax.text(x_idx, y_idx, str(matrix[y_idx, x_idx]), ha="center", va="center",
+                    color=_heatmap_text_color(image, matrix[y_idx, x_idx]))
+    _add_heatmap_cell_grid(ax, len(claims), len(statuses))
+    ax.set_title("Scoped public-claim support by declared source status")
+    ax.set_xlabel("Source status; individual claim-citation bindings remain in JSON")
+    ax.set_ylabel("Public claim ID")
+    fig.colorbar(image, ax=ax, label="Distinct citation count (not evidence strength)")
     _panel_label(ax, "W")
-    return _save_return(
-        fig, _fig_path(project_root, style, "claim_support_matrix"), style["dpi"]
-    )
+    return _save_return(fig, _fig_path(project_root, style, "claim_support_matrix"), style["dpi"])
 
 
 def _manuscript_claim_audit(
@@ -6161,6 +6066,7 @@ def _n_cycle_contextuality_panel(
 
 def generate_all_figures(project_root: Path) -> dict[str, Any]:
     """Generate all registered figures and write the source map."""
+    _LAYOUT_TELEMETRY.clear()
     style = _load_style(project_root)
     font_scale = max(float(style.get("font_scale", 1.0)), 1.0)
     # Reset to library defaults first so figure bytes are identical whether this
@@ -6398,6 +6304,9 @@ def generate_all_figures(project_root: Path) -> dict[str, Any]:
     }
     figure_rows = []
     for figure_id, path in produced.items():
+        layout = dict(_LAYOUT_TELEMETRY.get(figure_id, _empty_layout_telemetry()))
+        contract = render_contract_for(figure_id)
+        contract["min_font_pt"] = layout.pop("measured_min_font_pt", 0.0)
         row = {
             "id": figure_id,
             "path": str(path.relative_to(project_root)),
@@ -6405,8 +6314,8 @@ def generate_all_figures(project_root: Path) -> dict[str, Any]:
             "caption": style["figures"][figure_id]["caption"],
             "visual_encoding": style["figures"][figure_id]["visual_encoding"],
             "alt_text": style["figures"][figure_id]["alt_text"],
-            "render_contract": render_contract_for(figure_id),
-            **_LAYOUT_TELEMETRY.get(figure_id, _empty_layout_telemetry()),
+            "render_contract": contract,
+            **layout,
         }
         if figure_id == "qrf_channel_relabeling_ledger":
             row["channel_labels"] = [

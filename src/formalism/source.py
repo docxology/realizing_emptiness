@@ -9,6 +9,9 @@ from typing import Any
 import yaml
 
 
+PRIMARY_SOURCE_SHA256 = "94e2335c3a4a37b8d49039b11b45ccda25bad65d4b80aa15428b84abfba699ac"
+
+
 def load_source_manifest(project_root: Path) -> dict[str, Any]:
     """Load the source manifest from the project."""
     path = project_root / "data" / "sources" / "source_manifest.yaml"
@@ -44,6 +47,6 @@ def verify_primary_source_hash(project_root: Path) -> dict[str, Any]:
         "exists": exists,
         "expected_sha256": expected,
         "actual_sha256": actual,
-        "ok": bool(exists and actual == expected),
+        "ok": bool(exists and actual == expected == PRIMARY_SOURCE_SHA256),
     }
 

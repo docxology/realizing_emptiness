@@ -33,7 +33,10 @@ surrogate. Keep claim-bounding language in the prose, not just in gates.
 
 ## Figures
 
-- Embed as `![short](../output/figures/<id>.png){#fig:<id>}`. The short caption
+- Fragments use `![short](../output/figures/<id>.png){#fig:<id>}` as a
+  composition token; these paths are not resolved from the fragment directory.
+  The composer writes `../../output/figures/` paths valid from `docs/manuscript/`,
+  and hydration rebases them to `../figures/` in `output/manuscript/`. The short caption
   is overwritten at compose time by the canonical caption in `figures.yaml`.
 - Each canonical caption must be at least 120 characters and contain both an
   interpretive-boundary term and an encoding term.

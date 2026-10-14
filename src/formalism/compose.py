@@ -7,7 +7,7 @@ from pathlib import Path
 
 import yaml
 
-from gates.manuscript import write_manuscript_structure_audits
+from gates.manuscript import build_manuscript_reference_audit, write_manuscript_structure_audits
 from visualizations.rendered_captions import expand_markdown_figure_captions, write_rendered_figure_caption_audit
 
 
@@ -80,11 +80,16 @@ def compose(project_root: Path, validate_only: bool = False, strict: bool = Fals
             body_parts.append(_cover_graphical_abstract_block().strip() + "\n")
             body_parts.append(paragraph.strip() + "\n")
         coverage_rows.append(row)
-        if not validate_only:
-            body = "\n".join(body_parts).rstrip() + "\n"
-            output.write_text(expand_markdown_figure_captions(body, project_root), encoding="utf-8")
+        body = "\n".join(body_parts).rstrip() + "\n"
+        body = expand_markdown_figure_captions(body, project_root)
+        body = body.replace("(../output/figures/", "(../../output/figures/")
+        body = body.replace('src="../output/figures/', 'src="../../output/figures/')
+        if validate_only:
+            if not output.exists() or output.read_text(encoding="utf-8") != body:
+                issues.append(f"stale composed manuscript {output.relative_to(project_root)}")
+        else:
+            output.write_text(body, encoding="utf-8")
     data_dir = project_root / "output" / "data"
-    data_dir.mkdir(parents=True, exist_ok=True)
     coverage = {
         "schema": "realizing_emptiness.sheaf_coverage_matrix.v1",
         "section_count": len(sections),
@@ -93,13 +98,20 @@ def compose(project_root: Path, validate_only: bool = False, strict: bool = Fals
         "missing_count": len(issues),
         "ok": not issues,
     }
-    (data_dir / "sheaf_coverage_matrix.json").write_text(
-        json.dumps(coverage, indent=2, sort_keys=True) + "\n",
-        encoding="utf-8",
-    )
     if not validate_only:
+        data_dir.mkdir(parents=True, exist_ok=True)
+        (data_dir / "sheaf_coverage_matrix.json").write_text(
+            json.dumps(coverage, indent=2, sort_keys=True) + "\n",
+            encoding="utf-8",
+        )
         write_rendered_figure_caption_audit(project_root)
         write_manuscript_structure_audits(project_root)
+    if validate_only:
+        reference_audit = build_manuscript_reference_audit(project_root)
+        if not reference_audit["ok"]:
+            issues.append(f"manuscript references invalid: {reference_audit}")
+        coverage["missing_count"] = len(issues)
+        coverage["ok"] = not issues
     if strict and issues:
         raise SystemExit("\n".join(issues))
     return coverage

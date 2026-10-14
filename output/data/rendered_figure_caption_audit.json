@@ -10,7 +10,7 @@
     {
       "caption_length": 631,
       "figure_id": "qrf_sector_situation",
-      "figure_path": "../output/figures/qrf_sector_situation.png",
+      "figure_path": "../../output/figures/qrf_sector_situation.png",
       "has_interpretive_boundary": true,
       "has_source_artifact": true,
       "has_visual_encoding_language": true,
@@ -23,7 +23,7 @@
     {
       "caption_length": 337,
       "figure_id": "qrf_boundary_screen_geometry",
-      "figure_path": "../output/figures/qrf_boundary_screen_geometry.png",
+      "figure_path": "../../output/figures/qrf_boundary_screen_geometry.png",
       "has_interpretive_boundary": true,
       "has_source_artifact": true,
       "has_visual_encoding_language": true,
@@ -36,7 +36,7 @@
     {
       "caption_length": 692,
       "figure_id": "boundary_use_vs_ontology",
-      "figure_path": "../output/figures/boundary_use_vs_ontology.png",
+      "figure_path": "../../output/figures/boundary_use_vs_ontology.png",
       "has_interpretive_boundary": true,
       "has_source_artifact": true,
       "has_visual_encoding_language": true,
@@ -49,7 +49,7 @@
     {
       "caption_length": 326,
       "figure_id": "qrf_channel_relabeling_ledger",
-      "figure_path": "../output/figures/qrf_channel_relabeling_ledger.png",
+      "figure_path": "../../output/figures/qrf_channel_relabeling_ledger.png",
       "has_interpretive_boundary": true,
       "has_source_artifact": true,
       "has_visual_encoding_language": true,
@@ -62,7 +62,7 @@
     {
       "caption_length": 376,
       "figure_id": "qrf_invariance_policy_flow",
-      "figure_path": "../output/figures/qrf_invariance_policy_flow.png",
+      "figure_path": "../../output/figures/qrf_invariance_policy_flow.png",
       "has_interpretive_boundary": true,
       "has_source_artifact": true,
       "has_visual_encoding_language": true,
@@ -75,7 +75,7 @@
     {
       "caption_length": 260,
       "figure_id": "finite_quantum_scope_summary",
-      "figure_path": "../output/figures/finite_quantum_scope_summary.png",
+      "figure_path": "../../output/figures/finite_quantum_scope_summary.png",
       "has_interpretive_boundary": true,
       "has_source_artifact": true,
       "has_visual_encoding_language": true,
@@ -88,7 +88,7 @@
     {
       "caption_length": 540,
       "figure_id": "separation_prior_emergence",
-      "figure_path": "../output/figures/separation_prior_emergence.png",
+      "figure_path": "../../output/figures/separation_prior_emergence.png",
       "has_interpretive_boundary": true,
       "has_source_artifact": true,
       "has_visual_encoding_language": true,
@@ -101,7 +101,7 @@
     {
       "caption_length": 674,
       "figure_id": "separation_prior_net_value",
-      "figure_path": "../output/figures/separation_prior_net_value.png",
+      "figure_path": "../../output/figures/separation_prior_net_value.png",
       "has_interpretive_boundary": true,
       "has_source_artifact": true,
       "has_visual_encoding_language": true,
@@ -114,7 +114,7 @@
     {
       "caption_length": 325,
       "figure_id": "bmr_free_energy_decomposition",
-      "figure_path": "../output/figures/bmr_free_energy_decomposition.png",
+      "figure_path": "../../output/figures/bmr_free_energy_decomposition.png",
       "has_interpretive_boundary": true,
       "has_source_artifact": true,
       "has_visual_encoding_language": true,
@@ -127,7 +127,7 @@
     {
       "caption_length": 389,
       "figure_id": "bmr_pruning_phase_diagram",
-      "figure_path": "../output/figures/bmr_pruning_phase_diagram.png",
+      "figure_path": "../../output/figures/bmr_pruning_phase_diagram.png",
       "has_interpretive_boundary": true,
       "has_source_artifact": true,
       "has_visual_encoding_language": true,
@@ -140,7 +140,7 @@
     {
       "caption_length": 349,
       "figure_id": "simulation_sensitivity_heatmap",
-      "figure_path": "../output/figures/simulation_sensitivity_heatmap.png",
+      "figure_path": "../../output/figures/simulation_sensitivity_heatmap.png",
       "has_interpretive_boundary": true,
       "has_source_artifact": true,
       "has_visual_encoding_language": true,
@@ -151,22 +151,22 @@
       "visual_encoding": "Zero-centered diverging heatmap encodes mean Delta F; contrast-aware cell text reports how many observation-noise rows favor PRUNE, and gridlines preserve row and column separation."
     },
     {
-      "caption_length": 310,
+      "caption_length": 346,
       "figure_id": "bmr_robustness_resampling",
-      "figure_path": "../output/figures/bmr_robustness_resampling.png",
+      "figure_path": "../../output/figures/bmr_robustness_resampling.png",
       "has_interpretive_boundary": true,
       "has_source_artifact": true,
       "has_visual_encoding_language": true,
       "manuscript": "03_results.md",
       "ok": true,
       "source_artifact_count": 1,
-      "source_map_caption_length": 310,
+      "source_map_caption_length": 346,
       "visual_encoding": "Two-panel heatmap; sequential colorbar encodes bootstrap pruning rate, binary colorbar encodes Delta-F sign stability, compact cell text provides decision and interval labels, and the external legend distinguishes keep from prune semantics."
     },
     {
       "caption_length": 499,
       "figure_id": "pymdp_profile_comparison",
-      "figure_path": "../output/figures/pymdp_profile_comparison.png",
+      "figure_path": "../../output/figures/pymdp_profile_comparison.png",
       "has_interpretive_boundary": true,
       "has_source_artifact": true,
       "has_visual_encoding_language": true,
@@ -179,7 +179,7 @@
     {
       "caption_length": 343,
       "figure_id": "posterior_trajectory",
-      "figure_path": "../output/figures/posterior_trajectory.png",
+      "figure_path": "../../output/figures/posterior_trajectory.png",
       "has_interpretive_boundary": true,
       "has_source_artifact": true,
       "has_visual_encoding_language": true,
@@ -192,7 +192,7 @@
     {
       "caption_length": 506,
       "figure_id": "practice_policy_scope_map",
-      "figure_path": "../output/figures/practice_policy_scope_map.png",
+      "figure_path": "../../output/figures/practice_policy_scope_map.png",
       "has_interpretive_boundary": true,
       "has_source_artifact": true,
       "has_visual_encoding_language": true,
@@ -205,7 +205,7 @@
     {
       "caption_length": 480,
       "figure_id": "internal_cut_unmeasurability",
-      "figure_path": "../output/figures/internal_cut_unmeasurability.png",
+      "figure_path": "../../output/figures/internal_cut_unmeasurability.png",
       "has_interpretive_boundary": true,
       "has_source_artifact": true,
       "has_visual_encoding_language": true,
@@ -218,7 +218,7 @@
     {
       "caption_length": 390,
       "figure_id": "markov_blanket_discovery",
-      "figure_path": "../output/figures/markov_blanket_discovery.png",
+      "figure_path": "../../output/figures/markov_blanket_discovery.png",
       "has_interpretive_boundary": true,
       "has_source_artifact": true,
       "has_visual_encoding_language": true,
@@ -231,7 +231,7 @@
     {
       "caption_length": 344,
       "figure_id": "quantum_boundary_entropy_landscape",
-      "figure_path": "../output/figures/quantum_boundary_entropy_landscape.png",
+      "figure_path": "../../output/figures/quantum_boundary_entropy_landscape.png",
       "has_interpretive_boundary": true,
       "has_source_artifact": true,
       "has_visual_encoding_language": true,
@@ -244,7 +244,7 @@
     {
       "caption_length": 390,
       "figure_id": "arbitrary_two_qubit_entanglement_audit",
-      "figure_path": "../output/figures/arbitrary_two_qubit_entanglement_audit.png",
+      "figure_path": "../../output/figures/arbitrary_two_qubit_entanglement_audit.png",
       "has_interpretive_boundary": true,
       "has_source_artifact": true,
       "has_visual_encoding_language": true,
@@ -257,7 +257,7 @@
     {
       "caption_length": 578,
       "figure_id": "multipartite_witness_negativity",
-      "figure_path": "../output/figures/multipartite_witness_negativity.png",
+      "figure_path": "../../output/figures/multipartite_witness_negativity.png",
       "has_interpretive_boundary": true,
       "has_source_artifact": true,
       "has_visual_encoding_language": true,
@@ -270,7 +270,7 @@
     {
       "caption_length": 564,
       "figure_id": "tensor_network_scaling",
-      "figure_path": "../output/figures/tensor_network_scaling.png",
+      "figure_path": "../../output/figures/tensor_network_scaling.png",
       "has_interpretive_boundary": true,
       "has_source_artifact": true,
       "has_visual_encoding_language": true,
@@ -283,7 +283,7 @@
     {
       "caption_length": 559,
       "figure_id": "collision_model_relaxation",
-      "figure_path": "../output/figures/collision_model_relaxation.png",
+      "figure_path": "../../output/figures/collision_model_relaxation.png",
       "has_interpretive_boundary": true,
       "has_source_artifact": true,
       "has_visual_encoding_language": true,
@@ -296,7 +296,7 @@
     {
       "caption_length": 425,
       "figure_id": "data_processing_monotonicity",
-      "figure_path": "../output/figures/data_processing_monotonicity.png",
+      "figure_path": "../../output/figures/data_processing_monotonicity.png",
       "has_interpretive_boundary": true,
       "has_source_artifact": true,
       "has_visual_encoding_language": true,
@@ -309,7 +309,7 @@
     {
       "caption_length": 618,
       "figure_id": "n_cycle_contextuality_panel",
-      "figure_path": "../output/figures/n_cycle_contextuality_panel.png",
+      "figure_path": "../../output/figures/n_cycle_contextuality_panel.png",
       "has_interpretive_boundary": true,
       "has_source_artifact": true,
       "has_visual_encoding_language": true,
@@ -322,7 +322,7 @@
     {
       "caption_length": 348,
       "figure_id": "quantum_contextuality_witness",
-      "figure_path": "../output/figures/quantum_contextuality_witness.png",
+      "figure_path": "../../output/figures/quantum_contextuality_witness.png",
       "has_interpretive_boundary": true,
       "has_source_artifact": true,
       "has_visual_encoding_language": true,
@@ -335,7 +335,7 @@
     {
       "caption_length": 427,
       "figure_id": "quantum_measurement_contextuality_table",
-      "figure_path": "../output/figures/quantum_measurement_contextuality_table.png",
+      "figure_path": "../../output/figures/quantum_measurement_contextuality_table.png",
       "has_interpretive_boundary": true,
       "has_source_artifact": true,
       "has_visual_encoding_language": true,
@@ -348,7 +348,7 @@
     {
       "caption_length": 453,
       "figure_id": "quantum_local_polytope_audit",
-      "figure_path": "../output/figures/quantum_local_polytope_audit.png",
+      "figure_path": "../../output/figures/quantum_local_polytope_audit.png",
       "has_interpretive_boundary": true,
       "has_source_artifact": true,
       "has_visual_encoding_language": true,
@@ -361,7 +361,7 @@
     {
       "caption_length": 382,
       "figure_id": "general_measurement_cover_polytope_audit",
-      "figure_path": "../output/figures/general_measurement_cover_polytope_audit.png",
+      "figure_path": "../../output/figures/general_measurement_cover_polytope_audit.png",
       "has_interpretive_boundary": true,
       "has_source_artifact": true,
       "has_visual_encoding_language": true,
@@ -374,7 +374,7 @@
     {
       "caption_length": 329,
       "figure_id": "quantum_open_system_dynamics",
-      "figure_path": "../output/figures/quantum_open_system_dynamics.png",
+      "figure_path": "../../output/figures/quantum_open_system_dynamics.png",
       "has_interpretive_boundary": true,
       "has_source_artifact": true,
       "has_visual_encoding_language": true,
@@ -387,7 +387,7 @@
     {
       "caption_length": 406,
       "figure_id": "quantum_trajectory_unraveling",
-      "figure_path": "../output/figures/quantum_trajectory_unraveling.png",
+      "figure_path": "../../output/figures/quantum_trajectory_unraveling.png",
       "has_interpretive_boundary": true,
       "has_source_artifact": true,
       "has_visual_encoding_language": true,
@@ -400,7 +400,7 @@
     {
       "caption_length": 402,
       "figure_id": "quantum_trajectory_convergence",
-      "figure_path": "../output/figures/quantum_trajectory_convergence.png",
+      "figure_path": "../../output/figures/quantum_trajectory_convergence.png",
       "has_interpretive_boundary": true,
       "has_source_artifact": true,
       "has_visual_encoding_language": true,
@@ -413,7 +413,7 @@
     {
       "caption_length": 324,
       "figure_id": "thermodynamic_channel_cost_audit",
-      "figure_path": "../output/figures/thermodynamic_channel_cost_audit.png",
+      "figure_path": "../../output/figures/thermodynamic_channel_cost_audit.png",
       "has_interpretive_boundary": true,
       "has_source_artifact": true,
       "has_visual_encoding_language": true,
@@ -426,7 +426,7 @@
     {
       "caption_length": 342,
       "figure_id": "qfep_boundary_hamiltonian_dynamics",
-      "figure_path": "../output/figures/qfep_boundary_hamiltonian_dynamics.png",
+      "figure_path": "../../output/figures/qfep_boundary_hamiltonian_dynamics.png",
       "has_interpretive_boundary": true,
       "has_source_artifact": true,
       "has_visual_encoding_language": true,
@@ -439,7 +439,7 @@
     {
       "caption_length": 351,
       "figure_id": "many_body_boundary_screen_sweep",
-      "figure_path": "../output/figures/many_body_boundary_screen_sweep.png",
+      "figure_path": "../../output/figures/many_body_boundary_screen_sweep.png",
       "has_interpretive_boundary": true,
       "has_source_artifact": true,
       "has_visual_encoding_language": true,
@@ -452,7 +452,7 @@
     {
       "caption_length": 347,
       "figure_id": "sparse_boundary_screen_scaling_audit",
-      "figure_path": "../output/figures/sparse_boundary_screen_scaling_audit.png",
+      "figure_path": "../../output/figures/sparse_boundary_screen_scaling_audit.png",
       "has_interpretive_boundary": true,
       "has_source_artifact": true,
       "has_visual_encoding_language": true,
@@ -465,7 +465,7 @@
     {
       "caption_length": 361,
       "figure_id": "sheaf_contextuality_obstruction_audit",
-      "figure_path": "../output/figures/sheaf_contextuality_obstruction_audit.png",
+      "figure_path": "../../output/figures/sheaf_contextuality_obstruction_audit.png",
       "has_interpretive_boundary": true,
       "has_source_artifact": true,
       "has_visual_encoding_language": true,
@@ -478,7 +478,7 @@
     {
       "caption_length": 364,
       "figure_id": "qrf_transformation_covariance_audit",
-      "figure_path": "../output/figures/qrf_transformation_covariance_audit.png",
+      "figure_path": "../../output/figures/qrf_transformation_covariance_audit.png",
       "has_interpretive_boundary": true,
       "has_source_artifact": true,
       "has_visual_encoding_language": true,
@@ -491,7 +491,7 @@
     {
       "caption_length": 430,
       "figure_id": "qrf_frame_covariance_toy_audit",
-      "figure_path": "../output/figures/qrf_frame_covariance_toy_audit.png",
+      "figure_path": "../../output/figures/qrf_frame_covariance_toy_audit.png",
       "has_interpretive_boundary": true,
       "has_source_artifact": true,
       "has_visual_encoding_language": true,
@@ -504,7 +504,7 @@
     {
       "caption_length": 351,
       "figure_id": "empirical_adapter_provenance_audit",
-      "figure_path": "../output/figures/empirical_adapter_provenance_audit.png",
+      "figure_path": "../../output/figures/empirical_adapter_provenance_audit.png",
       "has_interpretive_boundary": true,
       "has_source_artifact": true,
       "has_visual_encoding_language": true,
@@ -517,7 +517,7 @@
     {
       "caption_length": 409,
       "figure_id": "quantum_roadmap_readiness_matrix",
-      "figure_path": "../output/figures/quantum_roadmap_readiness_matrix.png",
+      "figure_path": "../../output/figures/quantum_roadmap_readiness_matrix.png",
       "has_interpretive_boundary": true,
       "has_source_artifact": true,
       "has_visual_encoding_language": true,
@@ -530,7 +530,7 @@
     {
       "caption_length": 455,
       "figure_id": "criticality_signatures",
-      "figure_path": "../output/figures/criticality_signatures.png",
+      "figure_path": "../../output/figures/criticality_signatures.png",
       "has_interpretive_boundary": true,
       "has_source_artifact": true,
       "has_visual_encoding_language": true,
@@ -543,7 +543,7 @@
     {
       "caption_length": 428,
       "figure_id": "criticality_stochastic_ensemble",
-      "figure_path": "../output/figures/criticality_stochastic_ensemble.png",
+      "figure_path": "../../output/figures/criticality_stochastic_ensemble.png",
       "has_interpretive_boundary": true,
       "has_source_artifact": true,
       "has_visual_encoding_language": true,
@@ -556,7 +556,7 @@
     {
       "caption_length": 340,
       "figure_id": "criticality_proxy_panels",
-      "figure_path": "../output/figures/criticality_proxy_panels.png",
+      "figure_path": "../../output/figures/criticality_proxy_panels.png",
       "has_interpretive_boundary": true,
       "has_source_artifact": true,
       "has_visual_encoding_language": true,
@@ -569,7 +569,7 @@
     {
       "caption_length": 489,
       "figure_id": "stochastic_effect_size_forest",
-      "figure_path": "../output/figures/stochastic_effect_size_forest.png",
+      "figure_path": "../../output/figures/stochastic_effect_size_forest.png",
       "has_interpretive_boundary": true,
       "has_source_artifact": true,
       "has_visual_encoding_language": true,
@@ -582,7 +582,7 @@
     {
       "caption_length": 358,
       "figure_id": "compassion_scope_widening",
-      "figure_path": "../output/figures/compassion_scope_widening.png",
+      "figure_path": "../../output/figures/compassion_scope_widening.png",
       "has_interpretive_boundary": true,
       "has_source_artifact": true,
       "has_visual_encoding_language": true,
@@ -595,7 +595,7 @@
     {
       "caption_length": 262,
       "figure_id": "manuscript_claim_audit",
-      "figure_path": "../output/figures/manuscript_claim_audit.png",
+      "figure_path": "../../output/figures/manuscript_claim_audit.png",
       "has_interpretive_boundary": true,
       "has_source_artifact": true,
       "has_visual_encoding_language": true,
@@ -608,7 +608,7 @@
     {
       "caption_length": 455,
       "figure_id": "claim_context_evidence_ladder",
-      "figure_path": "../output/figures/claim_context_evidence_ladder.png",
+      "figure_path": "../../output/figures/claim_context_evidence_ladder.png",
       "has_interpretive_boundary": true,
       "has_source_artifact": true,
       "has_visual_encoding_language": true,
@@ -621,7 +621,7 @@
     {
       "caption_length": 483,
       "figure_id": "evidence_ceiling_stress_matrix",
-      "figure_path": "../output/figures/evidence_ceiling_stress_matrix.png",
+      "figure_path": "../../output/figures/evidence_ceiling_stress_matrix.png",
       "has_interpretive_boundary": true,
       "has_source_artifact": true,
       "has_visual_encoding_language": true,
@@ -634,7 +634,7 @@
     {
       "caption_length": 357,
       "figure_id": "pymdp_runtime_validation_dashboard",
-      "figure_path": "../output/figures/pymdp_runtime_validation_dashboard.png",
+      "figure_path": "../../output/figures/pymdp_runtime_validation_dashboard.png",
       "has_interpretive_boundary": true,
       "has_source_artifact": true,
       "has_visual_encoding_language": true,
@@ -645,35 +645,35 @@
       "visual_encoding": "Four-panel dashboard; bar colors encode pass/fail, finite residual, stochastic profile-higher, and null-higher roles; dashed or dotted lines encode tolerances and zero effects; legends explain control status and profile-null effect direction."
     },
     {
-      "caption_length": 284,
+      "caption_length": 361,
       "figure_id": "scholarship_coverage_matrix",
-      "figure_path": "../output/figures/scholarship_coverage_matrix.png",
+      "figure_path": "../../output/figures/scholarship_coverage_matrix.png",
       "has_interpretive_boundary": true,
       "has_source_artifact": true,
       "has_visual_encoding_language": true,
       "manuscript": "06_supplement.md",
       "ok": true,
       "source_artifact_count": 1,
-      "source_map_caption_length": 284,
-      "visual_encoding": "Binary matrix colorbar maps absent/present track support; rows are citation keys and columns are model tracks."
+      "source_map_caption_length": 361,
+      "visual_encoding": "Count heatmap; rows encode declared source status, columns encode manuscript tracks, numbered cells and a sequential colorbar encode citation counts, and the linked JSON preserves individual citations."
     },
     {
-      "caption_length": 362,
+      "caption_length": 389,
       "figure_id": "claim_support_matrix",
-      "figure_path": "../output/figures/claim_support_matrix.png",
+      "figure_path": "../../output/figures/claim_support_matrix.png",
       "has_interpretive_boundary": true,
       "has_source_artifact": true,
       "has_visual_encoding_language": true,
       "manuscript": "06_supplement.md",
       "ok": true,
       "source_artifact_count": 1,
-      "source_map_caption_length": 362,
-      "visual_encoding": "Binary matrix colorbar maps absent/present claim support; rows are public claims grouped by evidence class, columns are citation keys, and separator lines mark claim-class boundaries."
+      "source_map_caption_length": 389,
+      "visual_encoding": "Count heatmap; rows are public claim IDs, columns are declared source statuses, and numeric cell labels plus the colorbar count distinct citations. Individual bindings remain in the source artifact."
     },
     {
       "caption_length": 263,
       "figure_id": "claim_source_validation_graph",
-      "figure_path": "../output/figures/claim_source_validation_graph.png",
+      "figure_path": "../../output/figures/claim_source_validation_graph.png",
       "has_interpretive_boundary": true,
       "has_source_artifact": true,
       "has_visual_encoding_language": true,
@@ -686,7 +686,7 @@
     {
       "caption_length": 340,
       "figure_id": "visual_semantic_palette_ledger",
-      "figure_path": "../output/figures/visual_semantic_palette_ledger.png",
+      "figure_path": "../../output/figures/visual_semantic_palette_ledger.png",
       "has_interpretive_boundary": true,
       "has_source_artifact": true,
       "has_visual_encoding_language": true,
@@ -699,7 +699,7 @@
     {
       "caption_length": 345,
       "figure_id": "method_assumption_failure_map",
-      "figure_path": "../output/figures/method_assumption_failure_map.png",
+      "figure_path": "../../output/figures/method_assumption_failure_map.png",
       "has_interpretive_boundary": true,
       "has_source_artifact": true,
       "has_visual_encoding_language": true,
@@ -712,7 +712,7 @@
     {
       "caption_length": 338,
       "figure_id": "formalism_operation_map",
-      "figure_path": "../output/figures/formalism_operation_map.png",
+      "figure_path": "../../output/figures/formalism_operation_map.png",
       "has_interpretive_boundary": true,
       "has_source_artifact": true,
       "has_visual_encoding_language": true,

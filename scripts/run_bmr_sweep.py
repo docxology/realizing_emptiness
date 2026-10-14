@@ -5,10 +5,12 @@ from __future__ import annotations
 
 from _bootstrap import PROJECT_ROOT
 from simulation.bmr import write_bmr_sweep
+from simulation.sensitivity import write_sensitivity_grid
 
 
 def main() -> int:
     write_bmr_sweep(PROJECT_ROOT)
+    write_sensitivity_grid(PROJECT_ROOT)
     return 0
 
 

@@ -4,6 +4,7 @@
 \usepackage{amssymb}
 \usepackage{booktabs}
 \usepackage{etoolbox}
+\AtBeginDocument{\hypersetup{hidelinks}}
 \AtEndEnvironment{titlepage}{%
 \vspace*{-0.7cm}
 \noindent\makebox[\textwidth][c]{%

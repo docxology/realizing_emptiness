@@ -26,7 +26,10 @@ def file_sha256(path: Path) -> str:
 
 
 def _image_metrics(path: Path) -> dict[str, Any]:
-    image = np.asarray(mpimg.imread(path), dtype=float)
+    try:
+        image = np.asarray(mpimg.imread(path), dtype=float)
+    except (OSError, ValueError, SyntaxError):
+        return {"width": 0, "height": 0, "channels": 0, "pixel_variance": 0.0, "nonblank": False}
     if image.ndim == 2:
         height, width = image.shape
         channels = 1

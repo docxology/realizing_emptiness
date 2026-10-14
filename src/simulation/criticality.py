@@ -198,17 +198,25 @@ def _interval(values: list[float]) -> dict[str, float]:
     }
 
 
-def _branching_by_run(policy_ensemble: dict[str, Any]) -> dict[tuple[str, int, bool], float]:
-    """Reconstruct each run's observation activity and return its measured branching ratio."""
+def _branching_observations(policy_ensemble: dict[str, Any]) -> dict[tuple[str, int, bool], np.ndarray]:
     grouped: dict[tuple[str, int, bool], list[tuple[int, int]]] = {}
     for row in policy_ensemble.get("rows", []):
-        key = (row["profile"], int(row["run_index"]), bool(row["null_control"]))
+        if row["null_control"]:
+            continue
+        key = (row["profile"], int(row["run_index"]), False)
         grouped.setdefault(key, []).append((int(row["step"]), int(row["observation"])))
-    branching: dict[tuple[str, int, bool], float] = {}
-    for key, steps in grouped.items():
+    series: dict[tuple[str, int, bool], np.ndarray] = {}
+    rng = np.random.default_rng(int(policy_ensemble.get("seed", 0)) + 91)
+    for key, steps in sorted(grouped.items()):
         observations = np.array([obs for _, obs in sorted(steps)], dtype=float)
-        branching[key] = branching_ratio(_activity_series(observations))
-    return branching
+        series[key] = observations
+        series[(key[0], key[1], True)] = rng.permutation(observations)
+    return series
+
+
+def _branching_by_run(policy_ensemble: dict[str, Any]) -> dict[tuple[str, int, bool], float]:
+    return {key: branching_ratio(_activity_series(series))
+            for key, series in _branching_observations(policy_ensemble).items()}
 
 
 def build_criticality_stochastic_ensemble(policy_ensemble: dict[str, Any]) -> dict[str, Any]:
@@ -334,6 +342,8 @@ def build_criticality_stochastic_ensemble(policy_ensemble: dict[str, Any]) -> di
         "metric_rows": metric_rows,
         "summary_rows": summary_rows,
         "null_contrasts": null_contrasts,
+        "branching_null_method": "seeded_per_run_observation_permutation",
+        "branching_null_seed": int(policy_ensemble.get("seed", 0)) + 91,
         "branching_estimator_calibration": calibration,
         "controls": controls,
         "all_controls_pass": all(controls.values()),

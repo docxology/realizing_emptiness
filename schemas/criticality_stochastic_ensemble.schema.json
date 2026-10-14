@@ -9,11 +9,17 @@
     "metric_rows",
     "summary_rows",
     "null_contrasts",
+    "branching_null_method",
+    "branching_null_seed",
     "controls",
     "all_controls_pass",
     "claim_boundary"
   ],
   "properties": {
+    "branching_null_method": {
+      "const": "seeded_per_run_observation_permutation"
+    },
+    "branching_null_seed": {"type": "integer"},
     "schema": {
       "const": "realizing_emptiness.criticality_stochastic_ensemble.v1"
     },

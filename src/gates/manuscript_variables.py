@@ -48,17 +48,17 @@ def hydrate_manuscript(project_root: Path, variables: dict) -> None:
     source = project_root / "docs" / "manuscript"
     target = project_root / "output" / "manuscript"
     target.mkdir(parents=True, exist_ok=True)
-    for stale in target.glob("*"):
-        if stale.is_file():
-            stale.unlink()
-    for path in sorted(source.glob("*.md")):
+    for name in ("README.md", "AGENTS.md", "MANUSCRIPT_STATUS.md"):
+        (target / name).unlink(missing_ok=True)
+    for path in sorted(source.glob("[0-9][0-9]_*.md")):
         text = path.read_text(encoding="utf-8")
         def replace(match: re.Match[str]) -> str:
             key = match.group(1)
             if key not in variables:
                 raise KeyError(f"unknown manuscript variable {key}")
             return str(variables[key])
-        (target / path.name).write_text(TOKEN_RE.sub(replace, text), encoding="utf-8")
+        text = TOKEN_RE.sub(replace, text).replace("../../output/figures/", "../figures/")
+        (target / path.name).write_text(text, encoding="utf-8")
     for aux in ("config.yaml", "preamble.md", "references.bib"):
         src = source / aux
         if src.exists():

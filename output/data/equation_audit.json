@@ -221,11 +221,11 @@
       "dual": 1.151104579100767
     },
     "eq10_constrained_deployment_count": 1,
-    "eq11_complexity_kl_bits": 0.1187091007693073,
+    "eq11_complexity_kl_bits": 0.11870910076930724,
     "eq11_free_energy_terms": {
       "accuracy": -0.4310877054821933,
-      "complexity": 0.1187091007693073,
-      "free_energy": 0.5997968062515007,
+      "complexity": 0.11870910076930724,
+      "free_energy": 0.5997968062515006,
       "noise": 0.05
     },
     "eq12_delta_formula_available": true,
@@ -241,10 +241,10 @@
     "eq3_interaction_cost": 6.0,
     "eq4_binary_channel_count": 6,
     "eq5_prediction_error": 0.5,
-    "eq6_insufficient_learning_bits": 0.0718753084433516,
+    "eq6_insufficient_learning_bits": 0.07187530844335166,
     "eq6_noise_bits": 0.9927744539878084,
-    "eq6_vfe_bits": 1.06464976243116,
-    "eq6_vfe_surrogate": 0.5997968062515007,
+    "eq6_vfe_bits": 1.0646497624311602,
+    "eq6_vfe_surrogate": 0.5997968062515006,
     "eq7_sector_count_dual": 2,
     "eq8_profile_posterior": [
       0.3602966152405401,

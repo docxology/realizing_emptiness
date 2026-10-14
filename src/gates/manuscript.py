@@ -35,38 +35,38 @@ HARDCODED_FIGURE_RE = re.compile(r"(?i)\b(?:figure|fig\.|table)\s+\d+\b")
 # guard; the test-pinned figure-caption range label "equations 7-10" is whitelisted.
 EQUATION_TEXT_RE = re.compile(r"(?i)\bequations?\s+(\d+)(?:\s*[-–]\s*(\d+))?\b")
 EQUATION_SOURCE_QUALIFIERS = ("source", "registry", "paper", "sandved")
-COMPACT_MAIN_QUANTUM_FIGURE = "../output/figures/finite_quantum_scope_summary.png"
+COMPACT_MAIN_QUANTUM_FIGURE = "../../output/figures/finite_quantum_scope_summary.png"
 QRF_LEAD_FIGURES = (
-    "../output/figures/qrf_boundary_screen_geometry.png",
-    "../output/figures/qrf_channel_relabeling_ledger.png",
-    "../output/figures/qrf_invariance_policy_flow.png",
+    "../../output/figures/qrf_boundary_screen_geometry.png",
+    "../../output/figures/qrf_channel_relabeling_ledger.png",
+    "../../output/figures/qrf_invariance_policy_flow.png",
 )
-RETIRED_QRF_COMPOSITE_FIGURE = "../output/figures/qrf_boundary_graphical_model.png"
+RETIRED_QRF_COMPOSITE_FIGURE = "../../output/figures/qrf_boundary_graphical_model.png"
 TECHNICAL_QUANTUM_FIGURES = (
-    "../output/figures/quantum_boundary_entropy_landscape.png",
-    "../output/figures/arbitrary_two_qubit_entanglement_audit.png",
-    "../output/figures/quantum_contextuality_witness.png",
-    "../output/figures/quantum_measurement_contextuality_table.png",
-    "../output/figures/quantum_local_polytope_audit.png",
-    "../output/figures/general_measurement_cover_polytope_audit.png",
-    "../output/figures/quantum_open_system_dynamics.png",
-    "../output/figures/quantum_trajectory_unraveling.png",
-    "../output/figures/quantum_trajectory_convergence.png",
-    "../output/figures/thermodynamic_channel_cost_audit.png",
-    "../output/figures/qfep_boundary_hamiltonian_dynamics.png",
-    "../output/figures/many_body_boundary_screen_sweep.png",
-    "../output/figures/sparse_boundary_screen_scaling_audit.png",
-    "../output/figures/sheaf_contextuality_obstruction_audit.png",
-    "../output/figures/qrf_transformation_covariance_audit.png",
-    "../output/figures/qrf_frame_covariance_toy_audit.png",
-    "../output/figures/empirical_adapter_provenance_audit.png",
-    "../output/figures/quantum_roadmap_readiness_matrix.png",
+    "../../output/figures/quantum_boundary_entropy_landscape.png",
+    "../../output/figures/arbitrary_two_qubit_entanglement_audit.png",
+    "../../output/figures/quantum_contextuality_witness.png",
+    "../../output/figures/quantum_measurement_contextuality_table.png",
+    "../../output/figures/quantum_local_polytope_audit.png",
+    "../../output/figures/general_measurement_cover_polytope_audit.png",
+    "../../output/figures/quantum_open_system_dynamics.png",
+    "../../output/figures/quantum_trajectory_unraveling.png",
+    "../../output/figures/quantum_trajectory_convergence.png",
+    "../../output/figures/thermodynamic_channel_cost_audit.png",
+    "../../output/figures/qfep_boundary_hamiltonian_dynamics.png",
+    "../../output/figures/many_body_boundary_screen_sweep.png",
+    "../../output/figures/sparse_boundary_screen_scaling_audit.png",
+    "../../output/figures/sheaf_contextuality_obstruction_audit.png",
+    "../../output/figures/qrf_transformation_covariance_audit.png",
+    "../../output/figures/qrf_frame_covariance_toy_audit.png",
+    "../../output/figures/empirical_adapter_provenance_audit.png",
+    "../../output/figures/quantum_roadmap_readiness_matrix.png",
 )
 SUPPLEMENTAL_GOVERNANCE_FIGURES = (
-    "../output/figures/scholarship_coverage_matrix.png",
-    "../output/figures/claim_support_matrix.png",
-    "../output/figures/claim_source_validation_graph.png",
-    "../output/figures/visual_semantic_palette_ledger.png",
+    "../../output/figures/scholarship_coverage_matrix.png",
+    "../../output/figures/claim_support_matrix.png",
+    "../../output/figures/claim_source_validation_graph.png",
+    "../../output/figures/visual_semantic_palette_ledger.png",
 )
 
 
@@ -98,6 +98,8 @@ def build_manuscript_reference_audit(project_root: Path) -> dict[str, Any]:
     anchors: dict[str, list[str]] = {}
     refs: dict[str, list[str]] = {}
     hardcoded_rows = []
+    missing_images = []
+    citation_keys: set[str] = set()
     for relative, text in texts.items():
         for anchor in ANCHOR_RE.findall(text):
             anchors.setdefault(anchor, []).append(relative)
@@ -105,6 +107,13 @@ def build_manuscript_reference_audit(project_root: Path) -> dict[str, Any]:
             refs.setdefault(_clean_ref(ref), []).append(relative)
         for match in HARDCODED_FIGURE_RE.finditer(text):
             hardcoded_rows.append({"file": relative, "match": match.group(0)})
+        for image_path in _image_paths(text):
+            if not (project_root / relative).parent.joinpath(image_path).is_file():
+                missing_images.append(f"{relative}::{image_path}")
+        citation_keys.update(re.findall(r"(?<![\w@])@([A-Za-z][A-Za-z0-9_:-]*)", text))
+    bibliography = project_root / "docs/manuscript/references.bib"
+    known_citations = set(re.findall(r"@\w+\s*\{\s*([^,\s]+)", bibliography.read_text(encoding="utf-8"))) if bibliography.is_file() else set()
+    unknown_citations = sorted(key for key in citation_keys if not key.startswith(("fig:", "sec:", "eq:", "tbl:")) and key not in known_citations)
     anchored_eq_numbers = {anchor.split(":", 1)[1] for anchor in anchors if anchor.startswith("eq:")}
     for relative, text in texts.items():
         for match in EQUATION_TEXT_RE.finditer(text):
@@ -133,7 +142,9 @@ def build_manuscript_reference_audit(project_root: Path) -> dict[str, Any]:
         "duplicate_anchors": duplicate_anchors,
         "unresolved_references": unresolved_refs,
         "hardcoded_figure_numbers": hardcoded_rows,
-        "ok": not duplicate_anchors and not unresolved_refs and not hardcoded_rows,
+        "missing_images": missing_images,
+        "unknown_citations": unknown_citations,
+        "ok": len(texts) == len(MANUSCRIPT_FILES) and not duplicate_anchors and not unresolved_refs and not hardcoded_rows and not missing_images and not unknown_citations,
     }
 
 

@@ -7,6 +7,7 @@ import subprocess
 import sys
 
 from _bootstrap import PROJECT_ROOT
+from formalism.review_response_writers import initialize_artifact_release_manifest
 
 
 COMMANDS = [
@@ -26,10 +27,15 @@ COMMANDS = [
     [sys.executable, "scripts/z_generate_manuscript_variables.py"],
     [sys.executable, "scripts/generate_review_response_artifacts.py"],
     [sys.executable, "scripts/validate_outputs.py"],
+    [sys.executable, "scripts/z_generate_manuscript_variables.py"],
+    [sys.executable, "scripts/generate_dashboard.py"],
+    [sys.executable, "scripts/generate_review_response_artifacts.py"],
+    [sys.executable, "scripts/validate_outputs.py"],
 ]
 
 
 def main() -> int:
+    initialize_artifact_release_manifest(PROJECT_ROOT)
     for command in COMMANDS:
         print("$", " ".join(command))
         result = subprocess.run(command, cwd=PROJECT_ROOT, check=False)

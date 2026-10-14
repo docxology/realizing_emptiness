@@ -55,8 +55,8 @@ class QRFDeployment:
             raise ValueError("sector label count must match boundary channel count")
         if not 0.0 <= self.metacognitive_access <= 1.0:
             raise ValueError("metacognitive_access must be in [0, 1]")
-        if self.prior_precision < 0:
-            raise ValueError("prior_precision must be non-negative")
+        if not np.isfinite(self.prior_precision) or self.prior_precision < 0:
+            raise ValueError("prior_precision must be finite and non-negative")
 
     @property
     def is_dual(self) -> bool:
@@ -128,6 +128,8 @@ def complexity_kl(posterior: np.ndarray, prior: np.ndarray, *, base: float = 2.0
     The result is non-negative and is zero exactly when ``posterior == prior``
     (Gibbs' inequality). Units default to bits (``base=2``).
     """
+    if not np.isfinite(base) or base <= 1.0:
+        raise ValueError("base must be finite and greater than 1")
     q = np.asarray(posterior, dtype=float)
     p = np.asarray(prior, dtype=float)
     if q.shape != p.shape or q.ndim != 1:
@@ -139,8 +141,8 @@ def complexity_kl(posterior: np.ndarray, prior: np.ndarray, *, base: float = 2.0
     support = q > 0.0
     if np.any(p[support] <= 0.0):
         raise ValueError("prior must be positive wherever the posterior has support")
-    ratio = q[support] / p[support]
-    return float((q[support] * (np.log(ratio) / np.log(base))).sum())
+    log_ratio = np.log(q[support]) - np.log(p[support])
+    return float((q[support] * (log_ratio / np.log(base))).sum())
 
 
 def vfe_noise_insufficient_learning(
@@ -155,6 +157,8 @@ def vfe_noise_insufficient_learning(
     (the model mismatch a better-learned model would remove). Both arguments are normalized
     categorical distributions; units default to bits.
     """
+    if not np.isfinite(base) or base <= 1.0:
+        raise ValueError("base must be finite and greater than 1")
     realized_dist = np.asarray(realized, dtype=float)
     predicted_dist = np.asarray(predicted, dtype=float)
     if realized_dist.shape != predicted_dist.shape or realized_dist.ndim != 1:

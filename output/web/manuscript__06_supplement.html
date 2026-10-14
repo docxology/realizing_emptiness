@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta charset="utf-8" />
-  <meta name="generator" content="pandoc 3.10" />
+  <meta name="generator" content="pandoc 3.12.1" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <title>06_supplement.md.web</title>
   <style>
@@ -11,7 +11,10 @@
     */
     html {
       color: #1a1a1a;
+      color: light-dark(#1a1a1a, #fdfdfd);
       background-color: #fdfdfd;
+      background-color: light-dark(#fdfdfd, #1a1a1a);
+      color-scheme: light dark;
     }
     body {
       margin: 0 auto;
@@ -36,12 +39,16 @@
     }
     @media print {
       html {
-        background-color: white;
+        color-scheme: light only;
       }
-      body {
+      html, body, pre, code {
         background-color: transparent;
+      }
+      body, a, a:visited, blockquote {
         color: black;
-        font-size: 12pt;
+      }
+      pre, code {
+        padding: 0;
       }
       p, h2, h3 {
         orphans: 3;
@@ -54,11 +61,8 @@
     p {
       margin: 1em 0;
     }
-    a {
-      color: #1a1a1a;
-    }
-    a:visited {
-      color: #1a1a1a;
+    a, a:visited {
+      color: inherit;
     }
     img {
       max-width: 100%;
@@ -87,8 +91,11 @@
     blockquote {
       margin: 1em 0 1em 1.7em;
       padding-left: 1em;
-      border-left: 2px solid #e6e6e6;
+      border-left: 2px solid;
+      border-color: #e6e6e6;
+      border-color: light-dark(#e6e6e6, #4c4c4c);
       color: #606060;
+      color: light-dark(#606060, #b6b6b6);
     }
     code {
       white-space: pre-wrap;
@@ -112,7 +119,7 @@
     }
     hr {
       border: none;
-      border-top: 1px solid #1a1a1a;
+      border-top: 1px solid currentColor;
       height: 1px;
       margin: 1em 0;
     }
@@ -129,11 +136,11 @@
     }
     tbody {
       margin-top: 0.5em;
-      border-top: 1px solid #1a1a1a;
-      border-bottom: 1px solid #1a1a1a;
+      border-top: 1px solid currentColor;
+      border-bottom: 1px solid currentColor;
     }
     th {
-      border-top: 1px solid #1a1a1a;
+      border-top: 1px solid currentColor;
       padding: 0.25em 0.5em 0.25em 0.5em;
     }
     td {
@@ -173,11 +180,464 @@
       vertical-align: middle;
     }
   </style>
-  <script defer=""
-  src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"
-  type="text/javascript"></script>
+  <script data-template-mathjax-config>
+window.MathJax = window.MathJax || {};
+window.MathJax.chtml = Object.assign({}, window.MathJax.chtml, {
+  fontURL: "https://cdn.jsdelivr.net/npm/@mathjax/mathjax-newcm-font@4.0.0/chtml/woff2",
+  dynamicPrefix: "https://cdn.jsdelivr.net/npm/@mathjax/mathjax-newcm-font@4.0.0/chtml/dynamic"
+});
+var templateMathOutput = window.MathJax.output || {};
+window.MathJax.output = Object.assign({}, templateMathOutput, {
+  displayOverflow: "linebreak",
+  linebreaks: Object.assign({}, templateMathOutput.linebreaks, {
+    inline: true,
+    width: "100%",
+    lineleading: 0.5
+  })
+});
+window.normalizeTemplateMathJaxAria = function () {
+  document.querySelectorAll("mjx-speech[aria-roledescription]").forEach(function (node) {
+    var roleDescription = node.getAttribute("aria-roledescription") || "";
+    if (/[-]/.test(roleDescription)) {
+      node.setAttribute("aria-roledescription", "mathematical expression");
+    }
+  });
+};
+window.MathJax.startup = Object.assign({}, window.MathJax.startup, {
+  ready: function () {
+    var measuredWidth = document.documentElement.clientWidth;
+    var reflowQueued = false;
+    window.MathJax.startup.defaultReady();
+    window.templateMathJaxReflowPromise = window.MathJax.startup.promise.then(
+      window.normalizeTemplateMathJaxAria
+    );
+    function reflowDisplayMath() {
+      if (reflowQueued || document.documentElement.clientWidth === measuredWidth) return;
+      reflowQueued = true;
+      window.templateMathJaxReflowPromise = window.templateMathJaxReflowPromise
+        .catch(function () { /* A later resize may retry a failed render. */ })
+        .then(async function () {
+          var width = document.documentElement.clientWidth;
+          try {
+            // MathJax 4 MathItem.STATE.METRICS = 110. The default RERENDER
+            // state retains old container metrics and cannot reflow on zoom.
+            await window.MathJax.startup.document.rerenderPromise(110);
+            window.normalizeTemplateMathJaxAria();
+            window.templateMathJaxReflowError = null;
+          } catch (error) {
+            window.templateMathJaxReflowError = String(error);
+            console.error("MathJax viewport reflow failed", error);
+            throw error;
+          } finally {
+            measuredWidth = width;
+            reflowQueued = false;
+          }
+        })
+        .then(reflowDisplayMath);
+      // Keep failure observable to callers without an unhandled rejection.
+      window.templateMathJaxReflowPromise.catch(function () {});
+    }
+    window.addEventListener("resize", reflowDisplayMath);
+    // Also cover a resize that happened during the initial asynchronous render.
+    window.templateMathJaxReflowPromise.then(reflowDisplayMath);
+  }
+});
+</script>
+<script defer=""
+  type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@4.0.0/tex-chtml.js" integrity="sha384-2BWc4dVaHADUocwKrUrK9u3iDwHxVMKXWEcoRmUkXYSFKhAsgVAYClu9ydNuo5Oz" crossorigin="anonymous"></script>
+
+<link data-template-favicon rel="icon" href="favicon.ico">
+
+<style>
+:root {
+  --brand-1: #5b6ee0;
+  --web-bg: #f8f8f8;
+  --web-surface: #ffffff;
+  --web-text: #2c3e50;
+  --web-border: #bdc3c7;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --brand-1: #7e8ce8;
+    --web-bg: #0f1420;
+    --web-surface: #161c2b;
+    --web-text: #e6eaf2;
+    --web-border: #2a3447;
+  }
+}
+.theorem-box {
+  border-left: 4px solid var(--brand-1);
+  background: var(--web-surface);
+  padding: 0.6em 1em;
+  margin: 1.1em 0;
+  border-radius: 0 4px 4px 0;
+}
+.theorem-box.definition { border-left-style: dashed; }
+.theorem-box > p:first-child { margin-top: 0; }
+.theorem-box > p:last-child { margin-bottom: 0; }
+.figure-long-description {
+  border: 1px solid var(--web-border);
+  border-radius: 4px;
+  margin-block: 0.75rem;
+  padding: 0.5rem 0.75rem;
+}
+.figure-long-description > summary { cursor: pointer; font-weight: 700; }
+.figure-long-description > p { max-width: 80ch; overflow-wrap: anywhere; }
+.figure-exact-values { max-width: 80ch; overflow-wrap: anywhere; }
+code { overflow-wrap: anywhere; word-break: break-word; }
+pre {
+  max-width: 100%;
+  overflow: visible;
+  overflow-wrap: anywhere;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+pre code { overflow-wrap: inherit; white-space: inherit; word-break: inherit; }
+div.sourceCode { max-width: 100%; overflow: visible; }
+pre.sourceCode { background: #2c3e50; color: #ecf0f1; }
+pre.sourceCode code,
+pre.sourceCode code span { color: inherit; }
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span {
+  display: block;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+mjx-container[display="true"] { max-width: 100%; overflow: visible; }
+.table-scroll {
+  max-width: 100%;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  scrollbar-gutter: stable;
+}
+.table-scroll:focus-visible {
+  outline: 3px solid var(--brand-1);
+  outline-offset: 3px;
+}
+.table-scroll > table { margin-block: 0; min-width: 100%; width: max-content; }
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  max-width: 100%;
+  overflow-x: hidden;
+  overflow-x: clip;
+}
+
+body {
+  font-family: 'Liberation Serif', 'Times New Roman', serif;
+  line-height: 1.6;
+  width: min(100%, 800px);
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f8f8f8;
+  color: #1a1a1a;
+  overflow-wrap: break-word;
+  overflow-x: hidden;
+  overflow-x: clip;
+}
+
+main,
+nav,
+section,
+article,
+figure,
+figcaption {
+  min-width: 0;
+}
+
+.skip-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 0.65rem 0.9rem;
+  transform: translateY(-120%);
+  background-color: #1a1a1a;
+  color: #ffffff;
+  font-family: sans-serif;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.skip-link:visited {
+  color: #ffffff;
+}
+
+.skip-link:focus,
+.skip-link:focus-visible {
+  transform: translateY(0);
+}
+
+@media (max-width: 600px) {
+  body {
+    width: 100%;
+    max-width: 100%;
+    padding: 16px;
+  }
+
+  figure img {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 800px) {
+  body {
+    width: 100%;
+    max-width: 100vw;
+    margin: 0 auto;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #2c3e50;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 5px;
+  overflow-wrap: anywhere;
+}
+
+code {
+  background-color: #ecf0f1;
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-family: 'Liberation Mono', 'Courier New', monospace;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+pre {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  padding: 15px;
+  border-radius: 5px;
+  max-width: 100%;
+  overflow: visible;
+  overflow-wrap: anywhere;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+pre code {
+  overflow-wrap: inherit;
+  white-space: inherit;
+  word-break: inherit;
+}
+
+div.sourceCode {
+  max-width: 100%;
+  overflow: visible;
+}
+
+pre.sourceCode {
+  background: #2c3e50;
+  color: #ecf0f1;
+}
+
+pre.sourceCode code,
+pre.sourceCode code span {
+  color: inherit;
+}
+
+pre > code.sourceCode {
+  white-space: pre-wrap;
+}
+
+pre > code.sourceCode > span {
+  display: block;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.table-scroll {
+  max-width: 100%;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  scrollbar-gutter: stable;
+}
+
+.table-scroll:focus-visible {
+  outline: 3px solid #1f6f8b;
+  outline-offset: 3px;
+}
+
+.table-scroll > table {
+  margin-block: 0;
+  min-width: 100%;
+  width: max-content;
+}
+
+figure {
+  max-width: 100%;
+  margin: 1.5rem 0;
+}
+
+th, td {
+  border: 1px solid #bdc3c7;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #1f6f8b;
+  color: white;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #bdc3c7;
+  border-radius: 5px;
+  margin: 20px 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  color: #b91c1c;
+  text-decoration: underline;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.14em;
+  overflow-wrap: anywhere;
+}
+
+a:visited {
+  color: #8f1d1d;
+}
+
+a:hover {
+  text-decoration-thickness: 0.14em;
+}
+
+a:focus-visible {
+  outline: 3px solid #1f6f8b;
+  outline-offset: 3px;
+}
+
+.toc {
+  background-color: #ecf0f1;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.toc a,
+#TOC a {
+  color: #b91c1c;
+  display: inline-block;
+  min-height: 28px;
+  line-height: 1.5;
+  padding-block: 2px;
+}
+
+.toc li,
+#TOC li {
+  margin-block: 1px;
+}
+
+.math {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 1.1em;
+}
+
+mjx-container[display="true"] {
+  display: block;
+  max-width: 100%;
+  overflow: visible;
+  padding-bottom: 0.25rem;
+}
+
+.figure {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.figure img {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #3498db;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* A reading column keeps prose comfortable, but dense scientific figures need
+   a larger inspection surface.  The rendered image remains responsive and the
+   explicit link opens its source-resolution asset without changing the PDF. */
+.figure-full-size-link {
+  color: inherit;
+  display: block;
+  max-width: 100%;
+  text-align: center;
+}
+
+.figure-full-size-link img {
+  cursor: zoom-in;
+  margin-bottom: 0.45rem;
+}
+
+.figure-full-size-label {
+  color: #1f6f8b;
+  display: inline-block;
+  font-family: sans-serif;
+  font-size: 0.875rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+  text-decoration: underline;
+  text-underline-offset: 0.14em;
+}
+
+.figure-full-size-link:focus-visible {
+  outline: 3px solid #1f6f8b;
+  outline-offset: 4px;
+}
+
+@media (min-width: 1000px) {
+  /* Wide figure links stay within the viewport but extend beyond the prose
+     column. Do not clip their labels at the narrower body boundary. */
+  body {
+    overflow-x: visible;
+  }
+
+  .figure-full-size-link {
+    left: 50%;
+    max-width: none;
+    position: relative;
+    transform: translateX(-50%);
+    width: min(1080px, calc(100vw - 3rem));
+  }
+}
+
+.figure-caption {
+  font-style: italic;
+  color: #4b5563;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.figure-long-description,
+.figure-exact-values {
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+
+</style>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<main id="main-content" tabindex="-1">
 <h1 id="sec:supplement">Supplementary Audits and Reproducibility</h1>
 <p>This supplement collects the load-bearing software audits and
 governance surfaces kept out of the main argument, grouped so readers
@@ -227,7 +687,7 @@ indistinguishability surrogates (<span class="citation"
 data-cites="eq:7">@eq:7</span>, <span class="citation"
 data-cites="eq:8">@eq:8</span>, <span class="citation"
 data-cites="eq:9">@eq:9</span>).</p>
-<table>
+<div class="table-scroll" role="region" tabindex="0" aria-label="Scrollable data table"><table data-responsive-table="true">
 <colgroup>
 <col style="width: 33%" />
 <col style="width: 33%" />
@@ -298,14 +758,14 @@ data-cites="eq:8">@eq:8</span>).</td>
 <td>A finite probability distribution over boundary outcomes.</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h3
 id="separation-prior-free-energy-and-bayesian-model-reduction">Separation
 prior, free energy, and Bayesian model reduction</h3>
 <p>These symbols appear in the separation-prior and free-energy
 surrogates (<span class="citation" data-cites="eq:10">@eq:10</span>,
 equation 6, and equation 11 of the registry).</p>
-<table>
+<div class="table-scroll" role="region" tabindex="0" aria-label="Scrollable data table"><table data-responsive-table="true">
 <colgroup>
 <col style="width: 33%" />
 <col style="width: 33%" />
@@ -360,13 +820,13 @@ model parameters (registry equation 11).</td>
 <td>The expected log-likelihood of observations under the model.</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h3 id="active-inference-generative-arrays-pymdp">Active-inference
 generative arrays (pymdp)</h3>
 <p>The profile-specific generative models are built from four arrays.
 The manuscript names them in words; the conventional single letters are
 given here for cross-reference only.</p>
-<table>
+<div class="table-scroll" role="region" tabindex="0" aria-label="Scrollable data table"><table data-responsive-table="true">
 <colgroup>
 <col style="width: 33%" />
 <col style="width: 33%" />
@@ -405,13 +865,13 @@ array” in prose.</td>
 <td>The prior over hidden states at the first step.</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h3 id="seeded-criticality-signatures">Seeded criticality
 signatures</h3>
 <p>These quantities are computed from seeded boundary-channel activity
 series (see <span class="citation"
 data-cites="sec:supplement-criticality-indicators">@sec:supplement-criticality-indicators</span>).</p>
-<table>
+<div class="table-scroll" role="region" tabindex="0" aria-label="Scrollable data table"><table data-responsive-table="true">
 <colgroup>
 <col style="width: 33%" />
 <col style="width: 33%" />
@@ -450,13 +910,13 @@ series.</td>
 exponential fits to the avalanche-size distribution.</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h3 id="finite-quantum-information-quantities">Finite
 quantum-information quantities</h3>
 <p>These appear in the finite quantum and contextuality engines (<span
 class="citation"
 data-cites="sec:supplement-finite-quantum-contextuality-audits">@sec:supplement-finite-quantum-contextuality-audits</span>).</p>
-<table>
+<div class="table-scroll" role="region" tabindex="0" aria-label="Scrollable data table"><table data-responsive-table="true">
 <colgroup>
 <col style="width: 33%" />
 <col style="width: 33%" />
@@ -500,7 +960,7 @@ criterion.</td>
 the registry’s first equation.</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p>Every symbol above denotes a quantity inside a finite, replayable
 software surrogate. None of these symbols, individually or in
 combination, is a measurement of a physical, neural, or contemplative
@@ -534,10 +994,10 @@ non-trivial, yet remains inaccessible from one side. The audit is a
 finite pure-state linear-algebra computation, not a physical or
 observer-boundary measurement.</p>
 <figure id="fig:internal_cut_unmeasurability">
-<img src="../figures/internal_cut_unmeasurability.png"
+<a class="figure-full-size-link" href="../figures/internal_cut_unmeasurability.png" target="_blank" rel="noopener" aria-label="Open full-size figure, Generalisation of no-self-evidence to arbitrary internal boundaries."><img src="../figures/internal_cut_unmeasurability.png"
 style="width:90.0%"
-alt="Generalisation of no-self-evidence to arbitrary internal boundaries. Grouped bars encode the god’s-eye entanglement entropy across each environment internal bipartition for a separable versus an entangled environment, while the overlaid markers encode the agent’s accessible marginal drift, which stays near zero; the agent cannot adjudicate the internal cut from its marginal, and this is a finite pure-state linear-algebra audit, not a physical or observer-boundary measurement." />
-<figcaption aria-hidden="true">Generalisation of no-self-evidence to
+alt="Generalisation of no-self-evidence to arbitrary internal boundaries. Grouped bars encode the god’s-eye entanglement entropy across each environment internal bipartition for a separable versus an entangled environment, while the overlaid markers encode the agent’s accessible marginal drift, which stays near zero; the agent cannot adjudicate the internal cut from its marginal, and this is a finite pure-state linear-algebra audit, not a physical or observer-boundary measurement." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
+<figcaption>Generalisation of no-self-evidence to
 arbitrary internal boundaries. Grouped bars encode the god’s-eye
 entanglement entropy across each environment internal bipartition for a
 separable versus an entangled environment, while the overlaid markers
@@ -580,9 +1040,9 @@ marginal-recovery fraction. The audit is a finite deterministic
 linear-algebra computation, not a neural, developmental, or empirical
 claim about any real system’s boundary.</p>
 <figure id="fig:markov_blanket_discovery">
-<img src="../figures/markov_blanket_discovery.png" style="width:90.0%"
-alt="Markov-blanket discovery as a conditional-independence surrogate. Precision support reveals the planted internal/blanket/external split, marginal correlation hides it, and Panel C shows recovery succeeds from precision or partial correlation but not from the marginal threshold. The figure is finite linear algebra, not empirical, neural, developmental, clinical, or physical qFEP evidence." />
-<figcaption aria-hidden="true">Markov-blanket discovery as a
+<a class="figure-full-size-link" href="../figures/markov_blanket_discovery.png" target="_blank" rel="noopener" aria-label="Open full-size figure, Markov-blanket discovery as a conditional-independence surrogate."><img src="../figures/markov_blanket_discovery.png" style="width:90.0%"
+alt="Markov-blanket discovery as a conditional-independence surrogate. Precision support reveals the planted internal/blanket/external split, marginal correlation hides it, and Panel C shows recovery succeeds from precision or partial correlation but not from the marginal threshold. The figure is finite linear algebra, not empirical, neural, developmental, clinical, or physical qFEP evidence." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
+<figcaption>Markov-blanket discovery as a
 conditional-independence surrogate. Precision support reveals the
 planted internal/blanket/external split, marginal correlation hides it,
 and Panel C shows recovery succeeds from precision or partial
@@ -642,10 +1102,10 @@ finite two-qubit family. The product endpoint is the separable control
 and the Bell endpoint approaches one bit of reduced entropy and the
 Tsirelson CHSH value.</p>
 <figure id="fig:quantum_boundary_entropy_landscape">
-<img src="../figures/quantum_boundary_entropy_landscape.png"
+<a class="figure-full-size-link" href="../figures/quantum_boundary_entropy_landscape.png" target="_blank" rel="noopener" aria-label="Open full-size figure, Finite two-qubit boundary-entropy landscape"><img src="../figures/quantum_boundary_entropy_landscape.png"
 style="width:90.0%"
-alt="Finite two-qubit boundary-entropy landscape for the direct quantum-information extension. Legends identify reduced entropy, mutual information, CHSH bounds, contextual-fraction proxy, and Landauer-scaled erasure lower bound; the panels support only a finite simulation claim, not empirical evidence or a full qFEP quantum-dynamical realization." />
-<figcaption aria-hidden="true">Finite two-qubit boundary-entropy
+alt="Finite two-qubit boundary-entropy landscape for the direct quantum-information extension. Legends identify reduced entropy, mutual information, CHSH bounds, contextual-fraction proxy, and Landauer-scaled erasure lower bound; the panels support only a finite simulation claim, not empirical evidence or a full qFEP quantum-dynamical realization." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
+<figcaption>Finite two-qubit boundary-entropy
 landscape for the direct quantum-information extension. Legends identify
 reduced entropy, mutual information, CHSH bounds, contextual-fraction
 proxy, and Landauer-scaled erasure lower bound; the panels support only
@@ -659,10 +1119,10 @@ controls remain zero-negativity, Bell controls are positive,
 Werner-family rows cross the PPT threshold, and invalid density matrices
 are rejected before witness values become interpretable.</p>
 <figure id="fig:arbitrary_two_qubit_entanglement_audit">
-<img src="../figures/arbitrary_two_qubit_entanglement_audit.png"
+<a class="figure-full-size-link" href="../figures/arbitrary_two_qubit_entanglement_audit.png" target="_blank" rel="noopener" aria-label="Open full-size figure, Mixed-state two-qubit entanglement audit for Bell, separable, and Werner-family cases."><img src="../figures/arbitrary_two_qubit_entanglement_audit.png"
 style="width:90.0%"
-alt="Mixed-state two-qubit entanglement audit for Bell, separable, and Werner-family cases. The line legend maps negativity, PPT minimum eigenvalue, and the Werner threshold, while the bar legend separates separable controls from the Bell control and notes invalid-density rejections; the figure validates a finite PPT/negativity software surrogate, not empirical or many-body boundary evidence." />
-<figcaption aria-hidden="true">Mixed-state two-qubit entanglement audit
+alt="Mixed-state two-qubit entanglement audit for Bell, separable, and Werner-family cases. The line legend maps negativity, PPT minimum eigenvalue, and the Werner threshold, while the bar legend separates separable controls from the Bell control and notes invalid-density rejections; the figure validates a finite PPT/negativity software surrogate, not empirical or many-body boundary evidence." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
+<figcaption>Mixed-state two-qubit entanglement audit
 for Bell, separable, and Werner-family cases. The line legend maps
 negativity, PPT minimum eigenvalue, and the Werner threshold, while the
 bar legend separates separable controls from the Bell control and notes
@@ -685,10 +1145,10 @@ witness suite audit artifact; it is not a
 genuine-multipartite-entanglement certificate and is not empirical,
 neural, clinical, or physical qFEP evidence.</p>
 <figure id="fig:multipartite_witness_negativity">
-<img src="../figures/multipartite_witness_negativity.png"
+<a class="figure-full-size-link" href="../figures/multipartite_witness_negativity.png" target="_blank" rel="noopener" aria-label="Open full-size figure, Minimum bipartition negativity per fixture"><img src="../figures/multipartite_witness_negativity.png"
 style="width:90.0%"
-alt="Minimum bipartition negativity per fixture for the multipartite and higher-dimensional entanglement witness suite. Bars encode the smallest single-subsystem-versus-rest negativity for each GHZ, W, and qutrit fixture, colored to separate entangled fixtures that are detected on every cut from the separable product false-positive controls that must stay at zero negativity; the legend maps the two colors and the figure is a finite PPT/negativity witness over fixed states, not a genuine-multipartite-entanglement certificate and not empirical, neural, or physical qFEP evidence." />
-<figcaption aria-hidden="true">Minimum bipartition negativity per
+alt="Minimum bipartition negativity per fixture for the multipartite and higher-dimensional entanglement witness suite. Bars encode the smallest single-subsystem-versus-rest negativity for each GHZ, W, and qutrit fixture, colored to separate entangled fixtures that are detected on every cut from the separable product false-positive controls that must stay at zero negativity; the legend maps the two colors and the figure is a finite PPT/negativity witness over fixed states, not a genuine-multipartite-entanglement certificate and not empirical, neural, or physical qFEP evidence." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
+<figcaption>Minimum bipartition negativity per
 fixture for the multipartite and higher-dimensional entanglement witness
 suite. Bars encode the smallest single-subsystem-versus-rest negativity
 for each GHZ, W, and qutrit fixture, colored to separate entangled
@@ -710,9 +1170,9 @@ on the product state. This is a finite exact-MPS benchmark over toy
 sizes, not a large-scale many-body simulation and not empirical
 evidence.</p>
 <figure id="fig:tensor_network_scaling">
-<img src="../figures/tensor_network_scaling.png" style="width:90.0%"
-alt="Tensor-network matrix-product-state benchmark shown as two panels. Panel A bars encode the maximum bond dimension per fixture, with entangled GHZ and W states staying at bond two and product states at bond one as the screen grows, demonstrating tractability beyond exact state-vector enumeration; Panel B bars encode the bond-one truncation error, which is positive on entangled fixtures and zero on products, the discriminating control. The figure is a finite exact-MPS benchmark over toy states, not a large-scale many-body simulation and not empirical evidence." />
-<figcaption aria-hidden="true">Tensor-network matrix-product-state
+<a class="figure-full-size-link" href="../figures/tensor_network_scaling.png" target="_blank" rel="noopener" aria-label="Open full-size figure, Tensor-network matrix-product-state benchmark shown as two panels."><img src="../figures/tensor_network_scaling.png" style="width:90.0%"
+alt="Tensor-network matrix-product-state benchmark shown as two panels. Panel A bars encode the maximum bond dimension per fixture, with entangled GHZ and W states staying at bond two and product states at bond one as the screen grows, demonstrating tractability beyond exact state-vector enumeration; Panel B bars encode the bond-one truncation error, which is positive on entangled fixtures and zero on products, the discriminating control. The figure is a finite exact-MPS benchmark over toy states, not a large-scale many-body simulation and not empirical evidence." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
+<figcaption>Tensor-network matrix-product-state
 benchmark shown as two panels. Panel A bars encode the maximum bond
 dimension per fixture, with entangled GHZ and W states staying at bond
 two and product states at bond one as the screen grows, demonstrating
@@ -731,9 +1191,9 @@ step stays trace-preserving and positive. It is a finite deterministic
 relaxation surrogate, not a physical heat bath or a thermodynamic
 measurement, and not empirical evidence.</p>
 <figure id="fig:collision_model_relaxation">
-<img src="../figures/collision_model_relaxation.png" style="width:90.0%"
-alt="Collision-model thermalization surrogate shown as grouped bars of the trace distance from the system qubit to the fixed ancilla, initial versus final, for each coupling strength. The weak and strong partial-SWAP couplings collapse the final distance toward zero while the zero-coupling control leaves the final distance equal to the initial value, the discriminating control; the legend maps the initial and final bars. The figure is a finite deterministic collision surrogate, not a physical heat bath or thermodynamic measurement and not empirical evidence." />
-<figcaption aria-hidden="true">Collision-model thermalization surrogate
+<a class="figure-full-size-link" href="../figures/collision_model_relaxation.png" target="_blank" rel="noopener" aria-label="Open full-size figure, Collision-model thermalization surrogate shown as grouped bars of the trace distance from…"><img src="../figures/collision_model_relaxation.png" style="width:90.0%"
+alt="Collision-model thermalization surrogate shown as grouped bars of the trace distance from the system qubit to the fixed ancilla, initial versus final, for each coupling strength. The weak and strong partial-SWAP couplings collapse the final distance toward zero while the zero-coupling control leaves the final distance equal to the initial value, the discriminating control; the legend maps the initial and final bars. The figure is a finite deterministic collision surrogate, not a physical heat bath or thermodynamic measurement and not empirical evidence." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
+<figcaption>Collision-model thermalization surrogate
 shown as grouped bars of the trace distance from the system qubit to the
 fixed ancilla, initial versus final, for each coupling strength. The
 weak and strong partial-SWAP couplings collapse the final distance
@@ -768,10 +1228,10 @@ keeping the record can sharpen rather than blur. The audit is a finite
 qubit-channel linear-algebra computation, not a physical qFEP, neural,
 clinical, or contemplative claim.</p>
 <figure id="fig:data_processing_monotonicity">
-<img src="../figures/data_processing_monotonicity.png"
+<a class="figure-full-size-link" href="../figures/data_processing_monotonicity.png" target="_blank" rel="noopener" aria-label="Open full-size figure, Data-processing monotonicity surrogate for opacification as forgetting."><img src="../figures/data_processing_monotonicity.png"
 style="width:90.0%"
-alt="Data-processing monotonicity surrogate for opacification as forgetting. Panel A shows trace distance never rising after CPTP channels; Panel B shows the transpose control failing complete positivity; Panel C shows selective post-selection can raise distinguishability when the record is kept. The figure is a finite qubit-channel surrogate, not empirical evidence or a physical qFEP, neural, clinical, or contemplative claim." />
-<figcaption aria-hidden="true">Data-processing monotonicity surrogate
+alt="Data-processing monotonicity surrogate for opacification as forgetting. Panel A shows trace distance never rising after CPTP channels; Panel B shows the transpose control failing complete positivity; Panel C shows selective post-selection can raise distinguishability when the record is kept. The figure is a finite qubit-channel surrogate, not empirical evidence or a physical qFEP, neural, clinical, or contemplative claim." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
+<figcaption>Data-processing monotonicity surrogate
 for opacification as forgetting. Panel A shows trace distance never
 rising after CPTP channels; Panel B shows the transpose control failing
 complete positivity; Panel C shows selective post-selection can raise
@@ -837,10 +1297,10 @@ cross-checked against two-colorability rather than an asserted optimal
 quantum violation, so the audit is a finite contextuality-structure
 library and not empirical evidence.</p>
 <figure id="fig:n_cycle_contextuality_panel">
-<img src="../figures/n_cycle_contextuality_panel.png"
+<a class="figure-full-size-link" href="../figures/n_cycle_contextuality_panel.png" target="_blank" rel="noopener" aria-label="Open full-size figure, n-cycle contextuality scenario library shown as a feasibility matrix."><img src="../figures/n_cycle_contextuality_panel.png"
 style="width:90.0%"
-alt="n-cycle contextuality scenario library shown as a feasibility matrix. Rows are cycle lengths labeled odd or even and two-colorable or frustrated, columns are the perfect anti-correlation, quantum, and uncorrelated behaviors, and each colored cell encodes whether the noncontextual-polytope linear program is feasible (a noncontextual model exists) or infeasible (contextual). Odd cycles including the five-cycle pentagon are contextual while even cycles are not, cross-checked against graph two-colorability; the matrix records measured LP feasibility, not an asserted optimal violation, and is not empirical evidence." />
-<figcaption aria-hidden="true">n-cycle contextuality scenario library
+alt="n-cycle contextuality scenario library shown as a feasibility matrix. Rows are cycle lengths labeled odd or even and two-colorable or frustrated, columns are the perfect anti-correlation, quantum, and uncorrelated behaviors, and each colored cell encodes whether the noncontextual-polytope linear program is feasible (a noncontextual model exists) or infeasible (contextual). Odd cycles including the five-cycle pentagon are contextual while even cycles are not, cross-checked against graph two-colorability; the matrix records measured LP feasibility, not an asserted optimal violation, and is not empirical evidence." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
+<figcaption>n-cycle contextuality scenario library
 shown as a feasibility matrix. Rows are cycle lengths labeled odd or
 even and two-colorable or frustrated, columns are the perfect
 anti-correlation, quantum, and uncorrelated behaviors, and each colored
@@ -857,10 +1317,10 @@ separates CHSH strength from basis-sweep entropy behavior. The figure
 supports only a finite CHSH witness and local-basis invariance control;
 it is not a general QRF contextuality proof.</p>
 <figure id="fig:quantum_contextuality_witness">
-<img src="../figures/quantum_contextuality_witness.png"
+<a class="figure-full-size-link" href="../figures/quantum_contextuality_witness.png" target="_blank" rel="noopener" aria-label="Open full-size figure, CHSH contextuality witness and basis-sweep audit for the same finite two-qubit family."><img src="../figures/quantum_contextuality_witness.png"
 style="width:90.0%"
-alt="CHSH contextuality witness and basis-sweep audit for the same finite two-qubit family. The scatter colorbar encodes contextual fraction, bound lines mark local and Tsirelson thresholds, and the heatmap colorbar shows rotated measurement entropy while the contour marks reduced-entropy invariance; this does not claim empirical or full QRF dynamics." />
-<figcaption aria-hidden="true">CHSH contextuality witness and
+alt="CHSH contextuality witness and basis-sweep audit for the same finite two-qubit family. The scatter colorbar encodes contextual fraction, bound lines mark local and Tsirelson thresholds, and the heatmap colorbar shows rotated measurement entropy while the contour marks reduced-entropy invariance; this does not claim empirical or full QRF dynamics." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
+<figcaption>CHSH contextuality witness and
 basis-sweep audit for the same finite two-qubit family. The scatter
 colorbar encodes contextual fraction, bound lines mark local and
 Tsirelson thresholds, and the heatmap colorbar shows rotated measurement
@@ -882,10 +1342,10 @@ locality, and local-polytope feasibility without calling the original
 quantum helper functions, and its perturbed expected-value control must
 fail before the claim is accepted.</p>
 <figure id="fig:quantum_measurement_contextuality_table">
-<img src="../figures/quantum_measurement_contextuality_table.png"
+<a class="figure-full-size-link" href="../figures/quantum_measurement_contextuality_table.png" target="_blank" rel="noopener" aria-label="Open full-size figure, Finite CHSH measurement-cover empirical model"><img src="../figures/quantum_measurement_contextuality_table.png"
 style="width:90.0%"
-alt="Finite CHSH measurement-cover empirical model for the Bell-state contextuality extension. The heatmap colorbar and printed cell values encode joint probabilities by context and outcome, while the hatched bar legend compares the product negative control with the Bell cover against local and Tsirelson bounds; the figure supports only a finite no-signaling CHSH table, not a full sheaf-obstruction proof or empirical QRF result." />
-<figcaption aria-hidden="true">Finite CHSH measurement-cover empirical
+alt="Finite CHSH measurement-cover empirical model for the Bell-state contextuality extension. The heatmap colorbar and printed cell values encode joint probabilities by context and outcome, while the hatched bar legend compares the product negative control with the Bell cover against local and Tsirelson bounds; the figure supports only a finite no-signaling CHSH table, not a full sheaf-obstruction proof or empirical QRF result." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
+<figcaption>Finite CHSH measurement-cover empirical
 model for the Bell-state contextuality extension. The heatmap colorbar
 and printed cell values encode joint probabilities by context and
 outcome, while the hatched bar legend compares the product negative
@@ -894,10 +1354,10 @@ figure supports only a finite no-signaling CHSH table, not a full
 sheaf-obstruction proof or empirical QRF result.</figcaption>
 </figure>
 <figure id="fig:quantum_local_polytope_audit">
-<img src="../figures/quantum_local_polytope_audit.png"
+<a class="figure-full-size-link" href="../figures/quantum_local_polytope_audit.png" target="_blank" rel="noopener" aria-label="Open full-size figure, Local-polytope audit for the same CHSH measurement-cover artifact."><img src="../figures/quantum_local_polytope_audit.png"
 style="width:90.0%"
-alt="Local-polytope audit for the same CHSH measurement-cover artifact. The hatched residual bars show that the product control has an exact deterministic-assignment mixture while the Bell cover has a positive minimum L1 residual against the 16-assignment local polytope; the horizontal-bar legend lists the product-control mixture weights. This is a finite noncontextuality-polytope audit, not a general sheaf-obstruction engine or empirical quantum result." />
-<figcaption aria-hidden="true">Local-polytope audit for the same CHSH
+alt="Local-polytope audit for the same CHSH measurement-cover artifact. The hatched residual bars show that the product control has an exact deterministic-assignment mixture while the Bell cover has a positive minimum L1 residual against the 16-assignment local polytope; the horizontal-bar legend lists the product-control mixture weights. This is a finite noncontextuality-polytope audit, not a general sheaf-obstruction engine or empirical quantum result." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
+<figcaption>Local-polytope audit for the same CHSH
 measurement-cover artifact. The hatched residual bars show that the
 product control has an exact deterministic-assignment mixture while the
 Bell cover has a positive minimum L1 residual against the 16-assignment
@@ -914,10 +1374,10 @@ CHSH-product, and CHSH-Bell scenarios. It turns the CHSH example into
 reusable finite obstruction machinery while remaining scenario-local and
 non-empirical.</p>
 <figure id="fig:general_measurement_cover_polytope_audit">
-<img src="../figures/general_measurement_cover_polytope_audit.png"
+<a class="figure-full-size-link" href="../figures/general_measurement_cover_polytope_audit.png" target="_blank" rel="noopener" aria-label="Open full-size figure, General measurement-cover polytope audit"><img src="../figures/general_measurement_cover_polytope_audit.png"
 style="width:90.0%"
-alt="General measurement-cover polytope audit for triangle, parity, CHSH-product, and CHSH-Bell scenarios. Hatched residual bars distinguish feasible controls from obstruction cases, and the binary colorbar reports parser, feasibility, and no-disturbance checks; the figure is a finite deterministic-assignment LP audit, not empirical contextuality evidence or a full source-paper proof." />
-<figcaption aria-hidden="true">General measurement-cover polytope audit
+alt="General measurement-cover polytope audit for triangle, parity, CHSH-product, and CHSH-Bell scenarios. Hatched residual bars distinguish feasible controls from obstruction cases, and the binary colorbar reports parser, feasibility, and no-disturbance checks; the figure is a finite deterministic-assignment LP audit, not empirical contextuality evidence or a full source-paper proof." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
+<figcaption>General measurement-cover polytope audit
 for triangle, parity, CHSH-product, and CHSH-Bell scenarios. Hatched
 residual bars distinguish feasible controls from obstruction cases, and
 the binary colorbar reports parser, feasibility, and no-disturbance
@@ -932,10 +1392,10 @@ mutual-information contraction, and CHSH decay for a finite two-qubit
 channel. It validates a channel-control surface, not the source paper’s
 full open-system qFEP dynamics.</p>
 <figure id="fig:quantum_open_system_dynamics">
-<img src="../figures/quantum_open_system_dynamics.png"
+<a class="figure-full-size-link" href="../figures/quantum_open_system_dynamics.png" target="_blank" rel="noopener" aria-label="Open full-size figure, Finite open-system dephasing controls"><img src="../figures/quantum_open_system_dynamics.png"
 style="width:90.0%"
-alt="Finite open-system dephasing controls for a two-qubit Bell state and product negative control. Line legends map dephasing rates across CHSH decay, global entropy increase, and mutual-information contraction; the figure supports only a trace-preserving finite dephasing-channel claim, not empirical evidence or full qFEP dynamics." />
-<figcaption aria-hidden="true">Finite open-system dephasing controls for
+alt="Finite open-system dephasing controls for a two-qubit Bell state and product negative control. Line legends map dephasing rates across CHSH decay, global entropy increase, and mutual-information contraction; the figure supports only a trace-preserving finite dephasing-channel claim, not empirical evidence or full qFEP dynamics." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
+<figcaption>Finite open-system dephasing controls for
 a two-qubit Bell state and product negative control. Line legends map
 dephasing rates across CHSH decay, global entropy increase, and
 mutual-information contraction; the figure supports only a
@@ -953,10 +1413,10 @@ varies trajectory count, compares against exact Lindblad evolution, and
 requires a too-few-trajectory negative control to fail
 [plenio1998quantumjump].</p>
 <figure id="fig:quantum_trajectory_unraveling">
-<img src="../figures/quantum_trajectory_unraveling.png"
+<a class="figure-full-size-link" href="../figures/quantum_trajectory_unraveling.png" target="_blank" rel="noopener" aria-label="Open full-size figure, Seeded quantum-trajectory unraveling of the finite two-qubit Lindblad surrogate."><img src="../figures/quantum_trajectory_unraveling.png"
 style="width:90.0%"
-alt="Seeded quantum-trajectory unraveling of the finite two-qubit Lindblad surrogate. Line legends compare Monte Carlo ensemble entropy with the exact Lindblad density, rate-colored lines show trace-distance residuals, and jump-count bars with intervals expose the gamma-zero negative control; this validates a stochastic software surrogate, not physical qFEP realization or empirical quantum-boundary evidence." />
-<figcaption aria-hidden="true">Seeded quantum-trajectory unraveling of
+alt="Seeded quantum-trajectory unraveling of the finite two-qubit Lindblad surrogate. Line legends compare Monte Carlo ensemble entropy with the exact Lindblad density, rate-colored lines show trace-distance residuals, and jump-count bars with intervals expose the gamma-zero negative control; this validates a stochastic software surrogate, not physical qFEP realization or empirical quantum-boundary evidence." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
+<figcaption>Seeded quantum-trajectory unraveling of
 the finite two-qubit Lindblad surrogate. Line legends compare Monte
 Carlo ensemble entropy with the exact Lindblad density, rate-colored
 lines show trace-distance residuals, and jump-count bars with intervals
@@ -965,10 +1425,10 @@ software surrogate, not physical qFEP realization or empirical
 quantum-boundary evidence.</figcaption>
 </figure>
 <figure id="fig:quantum_trajectory_convergence">
-<img src="../figures/quantum_trajectory_convergence.png"
+<a class="figure-full-size-link" href="../figures/quantum_trajectory_convergence.png" target="_blank" rel="noopener" aria-label="Open full-size figure, Quantum-trajectory convergence audit for the finite Lindblad surrogate."><img src="../figures/quantum_trajectory_convergence.png"
 style="width:90.0%"
-alt="Quantum-trajectory convergence audit for the finite Lindblad surrogate. The line plot shows max trace-distance residual across trajectory counts on a log-scaled axis, while the bar panel contrasts a too-few-trajectories negative control with the largest ensemble against the validation threshold; this checks stochastic software convergence, not physical qFEP realization or empirical quantum evidence." />
-<figcaption aria-hidden="true">Quantum-trajectory convergence audit for
+alt="Quantum-trajectory convergence audit for the finite Lindblad surrogate. The line plot shows max trace-distance residual across trajectory counts on a log-scaled axis, while the bar panel contrasts a too-few-trajectories negative control with the largest ensemble against the validation threshold; this checks stochastic software convergence, not physical qFEP realization or empirical quantum evidence." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
+<figcaption>Quantum-trajectory convergence audit for
 the finite Lindblad surrogate. The line plot shows max trace-distance
 residual across trajectory counts on a log-scaled axis, while the bar
 panel contrasts a too-few-trajectories negative control with the largest
@@ -983,10 +1443,10 @@ Declared channels must be CPTP, non-CPTP controls are rejected, and
 Landauer lower bounds are reported only as kBT-scale software
 quantities.</p>
 <figure id="fig:thermodynamic_channel_cost_audit">
-<img src="../figures/thermodynamic_channel_cost_audit.png"
+<a class="figure-full-size-link" href="../figures/thermodynamic_channel_cost_audit.png" target="_blank" rel="noopener" aria-label="Open full-size figure, Thermodynamic channel-cost audit over finite CPTP maps and input states."><img src="../figures/thermodynamic_channel_cost_audit.png"
 style="width:90.0%"
-alt="Thermodynamic channel-cost audit over finite CPTP maps and input states. The heatmap colorbar encodes Landauer lower bounds in kBT units, cell text gives numeric costs, and the hatched log-scale bars show non-CPTP controls rejected; the figure is finite entropy accounting, not measured heat or physical qFEP thermodynamics." />
-<figcaption aria-hidden="true">Thermodynamic channel-cost audit over
+alt="Thermodynamic channel-cost audit over finite CPTP maps and input states. The heatmap colorbar encodes Landauer lower bounds in kBT units, cell text gives numeric costs, and the hatched log-scale bars show non-CPTP controls rejected; the figure is finite entropy accounting, not measured heat or physical qFEP thermodynamics." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
+<figcaption>Thermodynamic channel-cost audit over
 finite CPTP maps and input states. The heatmap colorbar encodes Landauer
 lower bounds in kBT units, cell text gives numeric costs, and the
 hatched log-scale bars show non-CPTP controls rejected; the figure is
@@ -1000,10 +1460,10 @@ positivity, entropy, mutual-information, and malformed-dynamics
 controls. It gives a deterministic open-system test bed without
 licensing physical qFEP realization.</p>
 <figure id="fig:qfep_boundary_hamiltonian_dynamics">
-<img src="../figures/qfep_boundary_hamiltonian_dynamics.png"
+<a class="figure-full-size-link" href="../figures/qfep_boundary_hamiltonian_dynamics.png" target="_blank" rel="noopener" aria-label="Open full-size figure, Boundary-Hamiltonian qFEP extension engine using finite two-qubit Lindblad dynamics."><img src="../figures/qfep_boundary_hamiltonian_dynamics.png"
 style="width:90.0%"
-alt="Boundary-Hamiltonian qFEP extension engine using finite two-qubit Lindblad dynamics. Line legends map Lindblad rates across entropy production, mutual-information contraction, and positivity residual panels; the figure validates a deterministic software surrogate with negative controls, not empirical evidence or a physical qFEP realization." />
-<figcaption aria-hidden="true">Boundary-Hamiltonian qFEP extension
+alt="Boundary-Hamiltonian qFEP extension engine using finite two-qubit Lindblad dynamics. Line legends map Lindblad rates across entropy production, mutual-information contraction, and positivity residual panels; the figure validates a deterministic software surrogate with negative controls, not empirical evidence or a physical qFEP realization." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
+<figcaption>Boundary-Hamiltonian qFEP extension
 engine using finite two-qubit Lindblad dynamics. Line legends map
 Lindblad rates across entropy production, mutual-information
 contraction, and positivity residual panels; the figure validates a
@@ -1018,10 +1478,10 @@ test cut sensitivity, separable controls, random-cut non-evidence
 controls, and sparse exact scaling. These figures are many-body software
 diagnostics, not proof that a real observer boundary has been found.</p>
 <figure id="fig:many_body_boundary_screen_sweep">
-<img src="../figures/many_body_boundary_screen_sweep.png"
+<a class="figure-full-size-link" href="../figures/many_body_boundary_screen_sweep.png" target="_blank" rel="noopener" aria-label="Open full-size figure, Many-body boundary-screen sweep over exact six-qubit state vectors and subsystem cuts."><img src="../figures/many_body_boundary_screen_sweep.png"
 style="width:90.0%"
-alt="Many-body boundary-screen sweep over exact six-qubit state vectors and subsystem cuts. The entropy colorbar and cell text separate candidate observer-boundary cuts, structured controls, random-cut negative controls, and separable controls; the figure supports only finite cut-sensitivity validation, not empirical or many-body observer-boundary proof." />
-<figcaption aria-hidden="true">Many-body boundary-screen sweep over
+alt="Many-body boundary-screen sweep over exact six-qubit state vectors and subsystem cuts. The entropy colorbar and cell text separate candidate observer-boundary cuts, structured controls, random-cut negative controls, and separable controls; the figure supports only finite cut-sensitivity validation, not empirical or many-body observer-boundary proof." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
+<figcaption>Many-body boundary-screen sweep over
 exact six-qubit state vectors and subsystem cuts. The entropy colorbar
 and cell text separate candidate observer-boundary cuts, structured
 controls, random-cut negative controls, and separable controls; the
@@ -1029,10 +1489,10 @@ figure supports only finite cut-sensitivity validation, not empirical or
 many-body observer-boundary proof.</figcaption>
 </figure>
 <figure id="fig:sparse_boundary_screen_scaling_audit">
-<img src="../figures/sparse_boundary_screen_scaling_audit.png"
+<a class="figure-full-size-link" href="../figures/sparse_boundary_screen_scaling_audit.png" target="_blank" rel="noopener" aria-label="Open full-size figure, Sparse exact boundary-screen scaling audit across six, eight, and ten qubits."><img src="../figures/sparse_boundary_screen_scaling_audit.png"
 style="width:90.0%"
-alt="Sparse exact boundary-screen scaling audit across six, eight, and ten qubits. The entropy colorbar and cell text encode reduced entropy and observer/control labels, while the line legend contrasts observer-cut entropy with nonzero amplitude density; this validates finite sparse software scaling only, not empirical or full many-body QRF evidence." />
-<figcaption aria-hidden="true">Sparse exact boundary-screen scaling
+alt="Sparse exact boundary-screen scaling audit across six, eight, and ten qubits. The entropy colorbar and cell text encode reduced entropy and observer/control labels, while the line legend contrasts observer-cut entropy with nonzero amplitude density; this validates finite sparse software scaling only, not empirical or full many-body QRF evidence." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
+<figcaption>Sparse exact boundary-screen scaling
 audit across six, eight, and ten qubits. The entropy colorbar and cell
 text encode reduced entropy and observer/control labels, while the line
 legend contrasts observer-cut entropy with nonzero amplitude density;
@@ -1052,10 +1512,10 @@ entropies, and invalid transform rejection. These are finite covariance
 and obstruction checks, not full quantum-reference-frame physics
 [bartlett2007reference].</p>
 <figure id="fig:sheaf_contextuality_obstruction_audit">
-<img src="../figures/sheaf_contextuality_obstruction_audit.png"
+<a class="figure-full-size-link" href="../figures/sheaf_contextuality_obstruction_audit.png" target="_blank" rel="noopener" aria-label="Open full-size figure, General measurement-cover sheaf obstruction audit beyond the CHSH-only table."><img src="../figures/sheaf_contextuality_obstruction_audit.png"
 style="width:90.0%"
-alt="General measurement-cover sheaf obstruction audit beyond the CHSH-only table. Hatched residual bars distinguish the noncontextual triangle negative control from the parity obstruction, while the binary matrix colorbar reports global-section and no-disturbance checks; the figure is a finite LP audit, not empirical evidence or a full proof for the source paper." />
-<figcaption aria-hidden="true">General measurement-cover sheaf
+alt="General measurement-cover sheaf obstruction audit beyond the CHSH-only table. Hatched residual bars distinguish the noncontextual triangle negative control from the parity obstruction, while the binary matrix colorbar reports global-section and no-disturbance checks; the figure is a finite LP audit, not empirical evidence or a full proof for the source paper." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
+<figcaption>General measurement-cover sheaf
 obstruction audit beyond the CHSH-only table. Hatched residual bars
 distinguish the noncontextual triangle negative control from the parity
 obstruction, while the binary matrix colorbar reports global-section and
@@ -1063,10 +1523,10 @@ no-disturbance checks; the figure is a finite LP audit, not empirical
 evidence or a full proof for the source paper.</figcaption>
 </figure>
 <figure id="fig:qrf_transformation_covariance_audit">
-<img src="../figures/qrf_transformation_covariance_audit.png"
+<a class="figure-full-size-link" href="../figures/qrf_transformation_covariance_audit.png" target="_blank" rel="noopener" aria-label="Open full-size figure, QRF transformation covariance audit for finite probability-preserving relabelings."><img src="../figures/qrf_transformation_covariance_audit.png"
 style="width:90.0%"
-alt="QRF transformation covariance audit for finite probability-preserving relabelings. The binary matrix colorbar marks stochasticity, nonnegativity, and acceptance criteria, while grouped bars show probability-mass and expectation-covariance errors for admissible maps; the figure supports only finite relabeling covariance, not full quantum-reference-frame dynamics." />
-<figcaption aria-hidden="true">QRF transformation covariance audit for
+alt="QRF transformation covariance audit for finite probability-preserving relabelings. The binary matrix colorbar marks stochasticity, nonnegativity, and acceptance criteria, while grouped bars show probability-mass and expectation-covariance errors for admissible maps; the figure supports only finite relabeling covariance, not full quantum-reference-frame dynamics." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
+<figcaption>QRF transformation covariance audit for
 finite probability-preserving relabelings. The binary matrix colorbar
 marks stochasticity, nonnegativity, and acceptance criteria, while
 grouped bars show probability-mass and expectation-covariance errors for
@@ -1074,10 +1534,10 @@ admissible maps; the figure supports only finite relabeling covariance,
 not full quantum-reference-frame dynamics.</figcaption>
 </figure>
 <figure id="fig:qrf_frame_covariance_toy_audit">
-<img src="../figures/qrf_frame_covariance_toy_audit.png"
+<a class="figure-full-size-link" href="../figures/qrf_frame_covariance_toy_audit.png" target="_blank" rel="noopener" aria-label="Open full-size figure, QRF frame-covariance toy audit over finite density matrices and probability vectors."><img src="../figures/qrf_frame_covariance_toy_audit.png"
 style="width:90.0%"
-alt="QRF frame-covariance toy audit over finite density matrices and probability vectors. The binary colorbar marks transform acceptance and drift flags, while the grouped-bar legend separates spectrum, reduced-entropy, and probability residuals for admissible unitary/permutation maps with a disclosed display floor for exact-zero residuals; the figure supports only finite covariance checks, not full quantum-reference-frame physics." />
-<figcaption aria-hidden="true">QRF frame-covariance toy audit over
+alt="QRF frame-covariance toy audit over finite density matrices and probability vectors. The binary colorbar marks transform acceptance and drift flags, while the grouped-bar legend separates spectrum, reduced-entropy, and probability residuals for admissible unitary/permutation maps with a disclosed display floor for exact-zero residuals; the figure supports only finite covariance checks, not full quantum-reference-frame physics." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
+<figcaption>QRF frame-covariance toy audit over
 finite density matrices and probability vectors. The binary colorbar
 marks transform acceptance and drift flags, while the grouped-bar legend
 separates spectrum, reduced-entropy, and probability residuals for
@@ -1095,10 +1555,10 @@ data-cites="fig:quantum_roadmap_readiness_matrix">@fig:quantum_roadmap_readiness
 records which finite engines are implemented and which external-evidence
 classes remain blocked.</p>
 <figure id="fig:empirical_adapter_provenance_audit">
-<img src="../figures/empirical_adapter_provenance_audit.png"
+<a class="figure-full-size-link" href="../figures/empirical_adapter_provenance_audit.png" target="_blank" rel="noopener" aria-label="Open full-size figure, Empirical adapter provenance audit showing that the human-evidence interface remains…"><img src="../figures/empirical_adapter_provenance_audit.png"
 style="width:90.0%"
-alt="Empirical adapter provenance audit showing that the human-evidence interface remains fail-closed. The colorbar and Y/N cell text encode source identity, ethics basis, preprocessing hash, null model, and empirical-claim permission; synthetic fixtures can be demos only, and unsourced human or practice data remain blocked rather than becoming evidence." />
-<figcaption aria-hidden="true">Empirical adapter provenance audit
+alt="Empirical adapter provenance audit showing that the human-evidence interface remains fail-closed. The colorbar and Y/N cell text encode source identity, ethics basis, preprocessing hash, null model, and empirical-claim permission; synthetic fixtures can be demos only, and unsourced human or practice data remain blocked rather than becoming evidence." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
+<figcaption>Empirical adapter provenance audit
 showing that the human-evidence interface remains fail-closed. The
 colorbar and Y/N cell text encode source identity, ethics basis,
 preprocessing hash, null model, and empirical-claim permission;
@@ -1106,10 +1566,10 @@ synthetic fixtures can be demos only, and unsourced human or practice
 data remain blocked rather than becoming evidence.</figcaption>
 </figure>
 <figure id="fig:quantum_roadmap_readiness_matrix">
-<img src="../figures/quantum_roadmap_readiness_matrix.png"
+<a class="figure-full-size-link" href="../figures/quantum_roadmap_readiness_matrix.png" target="_blank" rel="noopener" aria-label="Open full-size figure, Quantum roadmap readiness matrix separating validated finite simulations from blocked future…"><img src="../figures/quantum_roadmap_readiness_matrix.png"
 style="width:90.0%"
-alt="Quantum roadmap readiness matrix separating validated finite simulations from blocked future evidence classes. The binary colorbar and Y/N cell text encode whether each roadmap item has an artifact, schema, validator, negative control, and allowed manuscript claim; future rows remain blocked, so the figure is a roadmap governance audit, not evidence that the full qFEP or empirical adapters are implemented." />
-<figcaption aria-hidden="true">Quantum roadmap readiness matrix
+alt="Quantum roadmap readiness matrix separating validated finite simulations from blocked future evidence classes. The binary colorbar and Y/N cell text encode whether each roadmap item has an artifact, schema, validator, negative control, and allowed manuscript claim; future rows remain blocked, so the figure is a roadmap governance audit, not evidence that the full qFEP or empirical adapters are implemented." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
+<figcaption>Quantum roadmap readiness matrix
 separating validated finite simulations from blocked future evidence
 classes. The binary colorbar and Y/N cell text encode whether each
 roadmap item has an artifact, schema, validator, negative control, and
@@ -1134,24 +1594,22 @@ the caution is that these signatures are not dispositive even in
 empirical neuroscience without stronger controls
 [touboul2017power_law_absence_criticality;
 destexhe2021criticality_evidence].</p>
-<p>The engine carries both kinds of control. The discriminating negative
-control is a per-series shuffle: the measured branching ratio must
-separate each profile ensemble from its shuffled null by disjoint
-ninety-five percent confidence intervals, not merely by a mean
-difference, so a separation that survives reflects the temporal
-structure of the activity beyond sampling noise rather than its marginal
-rate. A profile whose real and null intervals overlap is not credited,
-and the criticality reading is reported only when most profiles separate
-from their null on at least one signature. The positive control is a
-planted-branching calibration: a pure geometric activity series with a
-known branching ratio is fed to the estimator, which must recover the
-planted value within tolerance. Without the calibration the measured
-branching number would be of unknown meaning; with it, the estimator is
-shown to measure branching rather than emit an artifact. The seeded
-stochastic ensemble adds replayable variability and confidence
-intervals, and the effect-size forest reports profile-minus-null
-differences with bootstrap intervals and Holm-adjusted permutation
-tests.</p>
+<p>The engine carries both kinds of control. For branching, the
+discriminating negative control is a seeded permutation of each original
+observation series, preserving its histogram while disrupting temporal
+order. A profile’s measured branching ratio is credited as separated
+only when its real and shuffled ninety-five percent confidence intervals
+are disjoint. The other trajectory metrics retain independently sampled
+uniform observation/action controls; their contrasts do not isolate
+temporal order at fixed marginals. The aggregate readiness gate requires
+a majority of profiles to separate on at least one signature and at
+least one profile to separate on measured branching. The positive
+control is a planted-branching calibration: a pure geometric activity
+series with a known branching ratio is fed to the estimator, which must
+recover the planted value within tolerance. This calibrates the finite
+estimator, not an empirical criticality claim. The effect-size forest
+separately reports profile-minus-random-null differences, pooled-mean
+bootstrap intervals, and Holm-adjusted permutation tests.</p>
 <p>These signatures structure the shape of a future empirical test; they
 are not neural measurements, clinical outcomes, or evidence that any
 contemplative practice produced a critical regime.</p>
@@ -1181,9 +1639,9 @@ against the shuffled null, not the single-trace avalanche fit, that
 carries the criticality reading. The surrogate fixes the shape of a
 future empirical test; it does not observe criticality.</p>
 <figure id="fig:criticality_signatures">
-<img src="../figures/criticality_signatures.png" style="width:90.0%"
-alt="Measured criticality signatures for the seeded boundary-channel trajectories. Panel A bars encode the measured branching ratio per profile against hatched null controls with a dashed sigma-equals-one balance line, and Panel B is a histogram of single-trace avalanche sizes; the colored bars and dashed reference line are seeded software trajectory diagnostics only, and the figure is not evidence of neural avalanches, branching, or empirical criticality." />
-<figcaption aria-hidden="true">Measured criticality signatures for the
+<a class="figure-full-size-link" href="../figures/criticality_signatures.png" target="_blank" rel="noopener" aria-label="Open full-size figure, Measured criticality signatures for the seeded boundary-channel trajectories."><img src="../figures/criticality_signatures.png" style="width:90.0%"
+alt="Measured criticality signatures for the seeded boundary-channel trajectories. Panel A bars encode the measured branching ratio per profile against hatched null controls with a dashed sigma-equals-one balance line, and Panel B is a histogram of single-trace avalanche sizes; the colored bars and dashed reference line are seeded software trajectory diagnostics only, and the figure is not evidence of neural avalanches, branching, or empirical criticality." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
+<figcaption>Measured criticality signatures for the
 seeded boundary-channel trajectories. Panel A bars encode the measured
 branching ratio per profile against hatched null controls with a dashed
 sigma-equals-one balance line, and Panel B is a histogram of
@@ -1193,10 +1651,10 @@ evidence of neural avalanches, branching, or empirical
 criticality.</figcaption>
 </figure>
 <figure id="fig:criticality_stochastic_ensemble">
-<img src="../figures/criticality_stochastic_ensemble.png"
+<a class="figure-full-size-link" href="../figures/criticality_stochastic_ensemble.png" target="_blank" rel="noopener" aria-label="Open full-size figure, Seeded stochastic active-inference ensemble for criticality-style indicators."><img src="../figures/criticality_stochastic_ensemble.png"
 style="width:90.0%"
-alt="Seeded stochastic active-inference ensemble for criticality-style indicators. Shared short profile labels, a single external legend, violet profile bars, hatched gray null-control bars, direction annotations, and 95 percent intervals over replayable seeds show simulated trajectory variability only; the figure is not empirical evidence, not neural measurement, not clinical outcome evidence, and not practice-efficacy evidence." />
-<figcaption aria-hidden="true">Seeded stochastic active-inference
+alt="Seeded stochastic active-inference ensemble for criticality-style indicators. Shared short profile labels, a single external legend, violet profile bars, hatched gray null-control bars, direction annotations, and 95 percent intervals over replayable seeds show simulated trajectory variability only; the figure is not empirical evidence, not neural measurement, not clinical outcome evidence, and not practice-efficacy evidence." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
+<figcaption>Seeded stochastic active-inference
 ensemble for criticality-style indicators. Shared short profile labels,
 a single external legend, violet profile bars, hatched gray null-control
 bars, direction annotations, and 95 percent intervals over replayable
@@ -1205,9 +1663,9 @@ empirical evidence, not neural measurement, not clinical outcome
 evidence, and not practice-efficacy evidence.</figcaption>
 </figure>
 <figure id="fig:criticality_proxy_panels">
-<img src="../figures/criticality_proxy_panels.png" style="width:90.0%"
-alt="Single-trace entropy, switching, variance, and near-criticality diagnostics from a simulated boundary-channel trajectory. The bar legend marks values as one simulated trace, and the stochastic ensemble figure carries the interval/null-control result; neither figure is empirical evidence for neural criticality or contemplative realization." />
-<figcaption aria-hidden="true">Single-trace entropy, switching,
+<a class="figure-full-size-link" href="../figures/criticality_proxy_panels.png" target="_blank" rel="noopener" aria-label="Open full-size figure, Single-trace entropy, switching, variance"><img src="../figures/criticality_proxy_panels.png" style="width:90.0%"
+alt="Single-trace entropy, switching, variance, and near-criticality diagnostics from a simulated boundary-channel trajectory. The bar legend marks values as one simulated trace, and the stochastic ensemble figure carries the interval/null-control result; neither figure is empirical evidence for neural criticality or contemplative realization." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
+<figcaption>Single-trace entropy, switching,
 variance, and near-criticality diagnostics from a simulated
 boundary-channel trajectory. The bar legend marks values as one
 simulated trace, and the stochastic ensemble figure carries the
@@ -1216,17 +1674,19 @@ neural criticality or contemplative realization.</figcaption>
 </figure>
 <p>The effect-size forest adds the adversarial statistical view. For
 each profile and trajectory metric, the audit reports the
-profile-minus-null mean difference, bootstrap interval, permutation
-p-value, Holm-adjusted p-value, and Cliff’s-delta direction
-[westfall1993resampling]. The point of the forest is not significance
-hunting; it shows which finite stochastic separations are large enough
-to survive the declared null comparison and which should be treated as
-weak or unstable simulation behavior.</p>
+profile-minus-null mean difference, separate group-mean intervals, a
+pooled-mean bootstrap interval, permutation p-value, Holm-adjusted
+p-value, and Cliff’s-delta direction [westfall1993resampling]. The
+pooled interval describes the combined sample mean; it is not an
+interval for the difference or for Cliff’s delta. The forest shows which
+finite stochastic separations survive the declared random-null
+comparison and which should be treated as weak or unstable simulation
+behavior.</p>
 <figure id="fig:stochastic_effect_size_forest">
-<img src="../figures/stochastic_effect_size_forest.png"
+<a class="figure-full-size-link" href="../figures/stochastic_effect_size_forest.png" target="_blank" rel="noopener" aria-label="Open full-size figure, Seeded stochastic profile-null effect-size audit for active-inference ensembles."><img src="../figures/stochastic_effect_size_forest.png"
 style="width:90.0%"
-alt="Seeded stochastic profile-null effect-size audit for active-inference ensembles. Grouped short-profile rows use horizontal Cliff’s-delta bars, hatches identify Holm-adjusted nonsignificant contrasts, right-side labels give profile-vs-null direction, adjusted p-values, and pooled bootstrap intervals, and the zero reference line separates profile-higher from null-higher effects; this is a finite simulation robustness audit, not empirical, neural, clinical, or practice-efficacy evidence." />
-<figcaption aria-hidden="true">Seeded stochastic profile-null
+alt="Seeded stochastic profile-null effect-size audit for active-inference ensembles. Grouped short-profile rows use horizontal Cliff’s-delta bars, hatches identify Holm-adjusted nonsignificant contrasts, right-side labels give profile-vs-null direction, adjusted p-values, and pooled bootstrap intervals, and the zero reference line separates profile-higher from null-higher effects; this is a finite simulation robustness audit, not empirical, neural, clinical, or practice-efficacy evidence." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
+<figcaption>Seeded stochastic profile-null
 effect-size audit for active-inference ensembles. Grouped short-profile
 rows use horizontal Cliff’s-delta bars, hatches identify Holm-adjusted
 nonsignificant contrasts, right-side labels give profile-vs-null
@@ -1292,9 +1752,9 @@ separation prior rather than the partition sizes. This is a finite
 policy-scope surrogate; it is not a measure of compassion, well-being,
 practice efficacy, or any affective, moral, or clinical outcome.</p>
 <figure id="fig:compassion_scope_widening">
-<img src="../figures/compassion_scope_widening.png" style="width:90.0%"
-alt="Finite scope-of-concern surrogate across QRF profiles. Panel C compares active separation-prior asymmetry with a hatched precision-ablation control; Panel D shows per-channel action influence against an action-shuffled mean. The figure is a finite policy-scope surrogate only, not a measure of compassion, well-being, practice efficacy, or affective outcome." />
-<figcaption aria-hidden="true">Finite scope-of-concern surrogate across
+<a class="figure-full-size-link" href="../figures/compassion_scope_widening.png" target="_blank" rel="noopener" aria-label="Open full-size figure, Finite scope-of-concern surrogate across QRF profiles."><img src="../figures/compassion_scope_widening.png" style="width:90.0%"
+alt="Finite scope-of-concern surrogate across QRF profiles. Panel C compares active separation-prior asymmetry with a hatched precision-ablation control; Panel D shows per-channel action influence against an action-shuffled mean. The figure is a finite policy-scope surrogate only, not a measure of compassion, well-being, practice efficacy, or affective outcome." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
+<figcaption>Finite scope-of-concern surrogate across
 QRF profiles. Panel C compares active separation-prior asymmetry with a
 hatched precision-ablation control; Panel D shows per-channel action
 influence against an action-shuffled mean. The figure is a finite
@@ -1639,17 +2099,24 @@ the manuscript gate rejects unresolved citations and positive
 realization, clinical, or neural-measurement language.</li>
 </ul>
 <p>The public claim IDs checked by the manuscript audit are
-source_boundary_unevidenceable; separation_prior_sigma;
-bmr_prunes_sigma; practice_protocol_boundary; qfep_surrogate_scope;
-quantum_separability_entropy; quantum_contextuality_witness;
-quantum_measurement_contextuality; quantum_open_system_dephasing;
-pymdp_runtime_canary; criticality_proxy_boundary;
-compassion_proxy_boundary; self_evidencing_boundary;
-metacognitive_access_model; and artifact_release_readiness.</p>
+<code>source_boundary_unevidenceable</code>;
+<code>separation_prior_sigma</code>; <code>bmr_prunes_sigma</code>;
+<code>practice_protocol_boundary</code>;
+<code>qfep_surrogate_scope</code>;
+<code>quantum_separability_entropy</code>;
+<code>quantum_contextuality_witness</code>;
+<code>quantum_measurement_contextuality</code>;
+<code>quantum_open_system_dephasing</code>;
+<code>pymdp_runtime_canary</code>;
+<code>criticality_proxy_boundary</code>;
+<code>compassion_proxy_boundary</code>;
+<code>self_evidencing_boundary</code>;
+<code>metacognitive_access_model</code>; and
+<code>artifact_release_readiness</code>.</p>
 <figure id="fig:manuscript_claim_audit">
-<img src="../figures/manuscript_claim_audit.png" style="width:90.0%"
-alt="Manuscript claim audit for citation resolution, public claim-ID visibility, and forbidden positive-efficacy language. The pass/fail color legend makes the local language gate visible while preserving the boundary that passing bars do not certify empirical truth." />
-<figcaption aria-hidden="true">Manuscript claim audit for citation
+<a class="figure-full-size-link" href="../figures/manuscript_claim_audit.png" target="_blank" rel="noopener" aria-label="Open full-size figure, Manuscript claim audit for citation resolution, public claim-ID visibility"><img src="../figures/manuscript_claim_audit.png" style="width:90.0%"
+alt="Manuscript claim audit for citation resolution, public claim-ID visibility, and forbidden positive-efficacy language. The pass/fail color legend makes the local language gate visible while preserving the boundary that passing bars do not certify empirical truth." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
+<figcaption>Manuscript claim audit for citation
 resolution, public claim-ID visibility, and forbidden positive-efficacy
 language. The pass/fail color legend makes the local language gate
 visible while preserving the boundary that passing bars do not certify
@@ -1688,10 +2155,10 @@ whether the validation gate resolves, and the blocked marker records the
 stronger reading that remains prohibited. A longer bar therefore means
 broader source-role context, not a higher evidence class.</p>
 <figure id="fig:claim_context_evidence_ladder">
-<img src="../figures/claim_context_evidence_ladder.png"
+<a class="figure-full-size-link" href="../figures/claim_context_evidence_ladder.png" target="_blank" rel="noopener" aria-label="Open full-size figure, Claim-context evidence ladder grouping every public claim by evidence class, scoped…"><img src="../figures/claim_context_evidence_ladder.png"
 style="width:92.0%"
-alt="Claim-context evidence ladder grouping every public claim by evidence class, scoped source-role count, resolved validation gate, and blocked stronger reading. Horizontal bars encode source-role count, circular markers encode gate presence, and hatched amber blocks encode prohibited empirical, neural, clinical, practice-efficacy, awakening, or physical qFEP inferences, so the figure explains how to read claims without adding evidence beyond the ledger." />
-<figcaption aria-hidden="true">Claim-context evidence ladder grouping
+alt="Claim-context evidence ladder grouping every public claim by evidence class, scoped source-role count, resolved validation gate, and blocked stronger reading. Horizontal bars encode source-role count, circular markers encode gate presence, and hatched amber blocks encode prohibited empirical, neural, clinical, practice-efficacy, awakening, or physical qFEP inferences, so the figure explains how to read claims without adding evidence beyond the ledger." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
+<figcaption>Claim-context evidence ladder grouping
 every public claim by evidence class, scoped source-role count, resolved
 validation gate, and blocked stronger reading. Horizontal bars encode
 source-role count, circular markers encode gate presence, and hatched
@@ -1714,10 +2181,10 @@ safety bounded because their local artifacts are modeled interfaces and
 stochastic indicators, not empirical measurements or efficacy
 evidence.</p>
 <figure id="fig:evidence_ceiling_stress_matrix">
-<img src="../figures/evidence_ceiling_stress_matrix.png"
+<a class="figure-full-size-link" href="../figures/evidence_ceiling_stress_matrix.png" target="_blank" rel="noopener" aria-label="Open full-size figure, Evidence-ceiling stress matrix showing which public claims are bounded by surrogate…"><img src="../figures/evidence_ceiling_stress_matrix.png"
 style="width:90.0%"
-alt="Evidence-ceiling stress matrix showing which public claims are bounded by surrogate, empirical, practice, source-role, runtime, quantum, neural, or normative constraints. Rows are grouped by claim class and the binary colorbar marks active stressors, making clear that support, simulation, and validation gates keep prohibited inferences explicit rather than converting finite software checks into empirical, neural, clinical, practice-efficacy, awakening, or physical qFEP evidence." />
-<figcaption aria-hidden="true">Evidence-ceiling stress matrix showing
+alt="Evidence-ceiling stress matrix showing which public claims are bounded by surrogate, empirical, practice, source-role, runtime, quantum, neural, or normative constraints. Rows are grouped by claim class and the binary colorbar marks active stressors, making clear that support, simulation, and validation gates keep prohibited inferences explicit rather than converting finite software checks into empirical, neural, clinical, practice-efficacy, awakening, or physical qFEP evidence." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
+<figcaption>Evidence-ceiling stress matrix showing
 which public claims are bounded by surrogate, empirical, practice,
 source-role, runtime, quantum, neural, or normative constraints. Rows
 are grouped by claim class and the binary colorbar marks active
@@ -1756,13 +2223,16 @@ prose lists source-map and validation contracts rather than reprinting
 numbered main-text figures.</p>
 <p>The scholarship and claim-governance visuals audit support and
 presentation rather than adding model behavior. The scholarship matrix
-records source-role coverage by track; the claim-support matrix lists
-which public claim IDs have scoped citation support; the
-claim-source-validation graph links claims to source roles and
-validation gates; and the semantic palette ledger freezes color and
-hatch meanings across figures. These panels make the manuscript easier
-to audit, but they are not evidence for no-self, practice efficacy,
-neural criticality, or physical qFEP realization.</p>
+summarizes citation counts by declared source status and track; the
+claim-support matrix summarizes distinct citation counts by public claim
+and source status. Individual source and claim-citation bindings remain
+in the linked JSON artifacts, and counts express contextual coverage
+rather than strength of evidence. The claim-source-validation graph
+links claims to source roles and validation gates, and the semantic
+palette ledger freezes color and hatch meanings across figures. These
+panels make the manuscript easier to audit, but they are not evidence
+for no-self, practice efficacy, neural criticality, or physical qFEP
+realization.</p>
 <p>The <code>pymdp</code> runtime dashboard is supplemental for the same
 reason: it audits whether the active-inference surface is reproducible,
 normalized, and recomputable from saved arrays. Its panels summarize
@@ -1772,10 +2242,10 @@ stochastic/null contrasts; they are validation checks for the software
 interface, not additional model-behavior evidence and not empirical
 data.</p>
 <figure id="fig:pymdp_runtime_validation_dashboard">
-<img src="../figures/pymdp_runtime_validation_dashboard.png"
+<a class="figure-full-size-link" href="../figures/pymdp_runtime_validation_dashboard.png" target="_blank" rel="noopener" aria-label="Open full-size figure, Supplemental pymdp runtime validation dashboard for the structured event log."><img src="../figures/pymdp_runtime_validation_dashboard.png"
 style="width:90.0%"
-alt="Supplemental pymdp runtime validation dashboard for the structured event log. Panels report model normalization, runtime recomputation residuals, replay controls, and the largest seeded profile-null contrasts; colors, legends, and tolerance lines mark QA status only, not empirical, clinical, neural, practice-efficacy, awakening, or physical qFEP evidence." />
-<figcaption aria-hidden="true">Supplemental pymdp runtime validation
+alt="Supplemental pymdp runtime validation dashboard for the structured event log. Panels report model normalization, runtime recomputation residuals, replay controls, and the largest seeded profile-null contrasts; colors, legends, and tolerance lines mark QA status only, not empirical, clinical, neural, practice-efficacy, awakening, or physical qFEP evidence." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
+<figcaption>Supplemental pymdp runtime validation
 dashboard for the structured event log. Panels report model
 normalization, runtime recomputation residuals, replay controls, and the
 largest seeded profile-null contrasts; colors, legends, and tolerance
@@ -1783,40 +2253,43 @@ lines mark QA status only, not empirical, clinical, neural,
 practice-efficacy, awakening, or physical qFEP evidence.</figcaption>
 </figure>
 <figure id="fig:scholarship_coverage_matrix">
-<img src="../figures/scholarship_coverage_matrix.png"
+<a class="figure-full-size-link" href="../figures/scholarship_coverage_matrix.png" target="_blank" rel="noopener" aria-label="Open full-size figure, Scholarship coverage summarized by declared source status and manuscript track."><img src="../figures/scholarship_coverage_matrix.png"
 style="width:90.0%"
-alt="Scholarship coverage by source role and manuscript track. The binary colorbar encodes whether a source supports a track, separating primary recapitulation, implementation anchors, background theory, proxy context, and limitations so citation density cannot launder unsupported claims." />
-<figcaption aria-hidden="true">Scholarship coverage by source role and
-manuscript track. The binary colorbar encodes whether a source supports
-a track, separating primary recapitulation, implementation anchors,
-background theory, proxy context, and limitations so citation density
-cannot launder unsupported claims.</figcaption>
+alt="Scholarship coverage summarized by declared source status and manuscript track. The heatmap colorbar and numbered cells count citations assigned to each status-track pair; individual citation keys and bindings remain in scholarship_source_matrix.json. Counts describe contextual coverage, not evidence strength, empirical support, or physical qFEP confirmation." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
+<figcaption>Scholarship coverage summarized by
+declared source status and manuscript track. The heatmap colorbar and
+numbered cells count citations assigned to each status-track pair;
+individual citation keys and bindings remain in
+scholarship_source_matrix.json. Counts describe contextual coverage, not
+evidence strength, empirical support, or physical qFEP
+confirmation.</figcaption>
 </figure>
 <figure id="fig:claim_support_matrix">
-<img src="../figures/claim_support_matrix.png" style="width:90.0%"
-alt="Public claim support by citation key, restricted to claims that appear in the source crosswalk and grouped by evidence class. The binary colorbar marks scoped support links while row separators expose formal, finite-simulation, runtime, proxy, and boundary claims; a support link licenses vocabulary or method scope only and does not upgrade an evidence ceiling." />
-<figcaption aria-hidden="true">Public claim support by citation key,
-restricted to claims that appear in the source crosswalk and grouped by
-evidence class. The binary colorbar marks scoped support links while row
-separators expose formal, finite-simulation, runtime, proxy, and
-boundary claims; a support link licenses vocabulary or method scope only
-and does not upgrade an evidence ceiling.</figcaption>
+<a class="figure-full-size-link" href="../figures/claim_support_matrix.png" target="_blank" rel="noopener" aria-label="Open full-size figure, Scoped public-claim support summarized by declared source status."><img src="../figures/claim_support_matrix.png" style="width:90.0%"
+alt="Scoped public-claim support summarized by declared source status. The heatmap colorbar and numbered cells show distinct citation counts for each claim and status; individual claim-citation bindings remain in claim_support_audit.json. Source density is a coverage diagnostic, not evidence strength or empirical, neural, clinical, practice-efficacy, awakening, or physical qFEP confirmation." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
+<figcaption>Scoped public-claim support summarized by
+declared source status. The heatmap colorbar and numbered cells show
+distinct citation counts for each claim and status; individual
+claim-citation bindings remain in claim_support_audit.json. Source
+density is a coverage diagnostic, not evidence strength or empirical,
+neural, clinical, practice-efficacy, awakening, or physical qFEP
+confirmation.</figcaption>
 </figure>
 <figure id="fig:claim_source_validation_graph">
-<img src="../figures/claim_source_validation_graph.png"
+<a class="figure-full-size-link" href="../figures/claim_source_validation_graph.png" target="_blank" rel="noopener" aria-label="Open full-size figure, Claim-source-validation graph linking each public claim to its source role"><img src="../figures/claim_source_validation_graph.png"
 style="width:90.0%"
-alt="Claim-source-validation graph linking each public claim to its source role and validation gate. The node and edge legend identifies claim, source, gate, and binding colors so the figure remains an audit map for claim governance, not an additional evidence source." />
-<figcaption aria-hidden="true">Claim-source-validation graph linking
+alt="Claim-source-validation graph linking each public claim to its source role and validation gate. The node and edge legend identifies claim, source, gate, and binding colors so the figure remains an audit map for claim governance, not an additional evidence source." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
+<figcaption>Claim-source-validation graph linking
 each public claim to its source role and validation gate. The node and
 edge legend identifies claim, source, gate, and binding colors so the
 figure remains an audit map for claim governance, not an additional
 evidence source.</figcaption>
 </figure>
 <figure id="fig:visual_semantic_palette_ledger">
-<img src="../figures/visual_semantic_palette_ledger.png"
+<a class="figure-full-size-link" href="../figures/visual_semantic_palette_ledger.png" target="_blank" rel="noopener" aria-label="Open full-size figure, Shared visual semantic palette ledger for the publication figures."><img src="../figures/visual_semantic_palette_ledger.png"
 style="width:90.0%"
-alt="Shared visual semantic palette ledger for the publication figures. Color swatches and hatch marks bind pass, fail, keep, prune, finite, blocked, stochastic, null-control, quantum, and boundary roles to stable encodings so figure colors cannot silently change meaning; this is a visualization QA artifact, not a source of empirical evidence." />
-<figcaption aria-hidden="true">Shared visual semantic palette ledger for
+alt="Shared visual semantic palette ledger for the publication figures. Color swatches and hatch marks bind pass, fail, keep, prune, finite, blocked, stochastic, null-control, quantum, and boundary roles to stable encodings so figure colors cannot silently change meaning; this is a visualization QA artifact, not a source of empirical evidence." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
+<figcaption>Shared visual semantic palette ledger for
 the publication figures. Color swatches and hatch marks bind pass, fail,
 keep, prune, finite, blocked, stochastic, null-control, quantum, and
 boundary roles to stable encodings so figure colors cannot silently
@@ -1832,10 +2305,10 @@ the project: a method is not stronger because its figure is beautiful;
 it is stronger when its assumptions, failure modes, and forbidden
 inferences are inspectable.</p>
 <figure id="fig:method_assumption_failure_map">
-<img src="../figures/method_assumption_failure_map.png"
+<a class="figure-full-size-link" href="../figures/method_assumption_failure_map.png" target="_blank" rel="noopener" aria-label="Open full-size figure, Method assumption and falsification map for the finite software chain."><img src="../figures/method_assumption_failure_map.png"
 style="width:90.0%"
-alt="Method assumption and falsification map for the finite software chain. The binary colorbar and cell text show whether each method declares hard constraints, modeling choices, assumptions, evidence ceilings, and negative controls, making verifier-first governance visible without treating the method ledger as empirical or physical qFEP evidence." />
-<figcaption aria-hidden="true">Method assumption and falsification map
+alt="Method assumption and falsification map for the finite software chain. The binary colorbar and cell text show whether each method declares hard constraints, modeling choices, assumptions, evidence ceilings, and negative controls, making verifier-first governance visible without treating the method ledger as empirical or physical qFEP evidence." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
+<figcaption>Method assumption and falsification map
 for the finite software chain. The binary colorbar and cell text show
 whether each method declares hard constraints, modeling choices,
 assumptions, evidence ceilings, and negative controls, making
@@ -1843,9 +2316,9 @@ verifier-first governance visible without treating the method ledger as
 empirical or physical qFEP evidence.</figcaption>
 </figure>
 <figure id="fig:formalism_operation_map">
-<img src="../figures/formalism_operation_map.png" style="width:90.0%"
-alt="Operational status map for paper equations 1-14, distinguishing source mapping, finite computation, surrogate boundaries, and validation value bindings. The binary colorbar shows which statuses apply, including finite two-qubit quantum controls where implemented and roadmap boundaries where open-system qFEP claims are not yet simulated." />
-<figcaption aria-hidden="true">Operational status map for paper
+<a class="figure-full-size-link" href="../figures/formalism_operation_map.png" target="_blank" rel="noopener" aria-label="Open full-size figure, Operational status map for paper equations 1-14, distinguishing source mapping, finite…"><img src="../figures/formalism_operation_map.png" style="width:90.0%"
+alt="Operational status map for paper equations 1-14, distinguishing source mapping, finite computation, surrogate boundaries, and validation value bindings. The binary colorbar shows which statuses apply, including finite two-qubit quantum controls where implemented and roadmap boundaries where open-system qFEP claims are not yet simulated." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
+<figcaption>Operational status map for paper
 equations 1-14, distinguishing source mapping, finite computation,
 surrogate boundaries, and validation value bindings. The binary colorbar
 shows which statuses apply, including finite two-qubit quantum controls
@@ -1889,5 +2362,6 @@ criteria.</li>
 <p>They define the current software boundary within which future
 visualization, empirical adapters, and practice-interface work can be
 developed without laundering unsupported claims.</p>
+</main>
 </body>
 </html>

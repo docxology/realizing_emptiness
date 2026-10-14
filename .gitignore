@@ -1,4 +1,16 @@
 .venv/
+build/
+dist/
+output/pdf/*.aux
+output/pdf/*.bbl
+output/pdf/*.blg
+output/pdf/*.log
+output/pdf/*.tex
+output/pdf/*.toc
+output/pdf/_combined_manuscript.md
+output/pdf/_combined_manuscript.pdf
+output/web/_combined_manuscript.md
+output/reports/manuscript_composition.json
 .DS_Store
 .omo/
 .codegraph

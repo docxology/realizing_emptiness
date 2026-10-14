@@ -2,7 +2,7 @@
   "claim_boundary": "sentence-level manuscript language audit; not empirical evidence",
   "ok": true,
   "risky_rows": [],
-  "row_count": 118,
+  "row_count": 117,
   "rows": [
     {
       "allowed": true,
@@ -1335,23 +1335,6 @@
     {
       "allowed": true,
       "blocked_domain_risky": false,
-      "blocked_domains": [],
-      "claim_target_terms": [
-        "artifact"
-      ],
-      "file": "docs/manuscript/sections/supplement/criticality.md",
-      "has_boundary_scope": false,
-      "has_negation": true,
-      "no_self_risky": false,
-      "sentence": "Without the calibration the measured branching number would be of unknown meaning; with it, the estimator is shown to measure branching rather than emit an artifact.",
-      "strong_verbs": [
-        "shown"
-      ],
-      "unscoped_strong_claim": false
-    },
-    {
-      "allowed": true,
-      "blocked_domain_risky": false,
       "blocked_domains": [
         "clinical",
         "neural"
@@ -1457,9 +1440,9 @@
       ],
       "file": "docs/manuscript/sections/supplement/criticality.md",
       "has_boundary_scope": true,
-      "has_negation": true,
+      "has_negation": false,
       "no_self_risky": false,
-      "sentence": "The point of the forest is not significance hunting; it shows which finite stochastic separations are large enough to survive the declared null comparison and which should be treated as weak or unstable simulation behavior.",
+      "sentence": "The forest shows which finite stochastic separations survive the declared random-null comparison and which should be treated as weak or unstable simulation behavior.",
       "strong_verbs": [
         "shows"
       ],
@@ -2358,6 +2341,6 @@
     }
   ],
   "schema": "realizing_emptiness.manuscript_claim_intensity_audit.v1",
-  "sentence_count": 1289,
-  "strong_verb_count": 43
+  "sentence_count": 1294,
+  "strong_verb_count": 42
 }

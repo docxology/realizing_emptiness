@@ -8,6 +8,7 @@ from pathlib import Path
 from typing import Any
 
 import yaml
+from visualizations.style import SEMANTIC_COLORS
 
 
 CLAIM_BOUNDARY = (
@@ -80,6 +81,7 @@ def build_artifact_dashboard_payload(project_root: Path, source_map: dict[str, A
         "output/reports/validation_report.json",
         "output/reports/output_statistics.json",
         "output/reports/output_statistics.txt",
+        "output/reports/manuscript_composition.json",
     ):
         generated_paths.discard(ignored)
     manifest_coverage = {
@@ -348,6 +350,7 @@ def render_artifact_dashboard_html(payload: dict[str, Any]) -> str:
         if validation["all_passed"] is None
         else "all passed" if validation["all_passed"] else "has failing checks"
     )
+    validation_color = SEMANTIC_COLORS["pass" if validation["all_passed"] is True else "blocked"]
     return f"""<!doctype html>
 <html lang="en">
 <head>
@@ -367,6 +370,7 @@ def render_artifact_dashboard_html(payload: dict[str, Any]) -> str:
     .grid {{ display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 14px; margin: 20px 0; }}
     .metric {{ background: white; border: 1px solid #d4d4d8; border-radius: 8px; padding: 16px; }}
     .metric strong {{ display: block; font-size: 30px; color: #0f766e; line-height: 1.2; }}
+    .metric .validation-status {{ color: {validation_color}; }}
     .cover-preview {{ margin: 26px 0 32px; }}
     .cover-preview a {{ display: block; }}
     .cover-preview img {{ display: block; width: min(100%, 1160px); margin: 0 auto; background: white; border: 1px solid #d4d4d8; border-radius: 8px; box-shadow: 0 12px 34px rgb(15 23 42 / 0.12); }}
@@ -392,7 +396,7 @@ def render_artifact_dashboard_html(payload: dict[str, Any]) -> str:
     <div class="metric"><span>Governance rows</span><strong>{payload["roadmap"]["implemented_count"] + payload["roadmap"]["future_count"]}</strong></div>
     <div class="metric"><span>Figures</span><strong>{payload["figures"]["figure_count"]}</strong></div>
     <div class="metric"><span>Dependency nodes</span><strong>{payload["dependency_graph"]["node_count"]}</strong></div>
-    <div class="metric"><span>Validation</span><strong>{_escape(validation_status)}</strong><span>{validation["passed"]}/{validation["total"]} checks recorded</span></div>
+    <div class="metric"><span>Validation</span><strong class="validation-status">{_escape(validation_status)}</strong><span>{validation["passed"]}/{validation["total"]} checks recorded</span></div>
   </div>
   <figure class="cover-preview">
     <a href="../figures/graphical_abstract_cover.png"><img src="../figures/graphical_abstract_cover.png" alt="Graphical abstract cover for the static Realizing Emptiness software artifact package."></a>

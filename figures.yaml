@@ -205,7 +205,7 @@ figures:
     alt_text: Horizontal effect-size plot grouped by profile, comparing profile simulations with null controls for switch rate, surprise, and expected-free-energy metrics with adjusted p-values, bootstrap interval labels, and a zero-effect reference line.
   bmr_robustness_resampling:
     filename: bmr_robustness_resampling.png
-    caption: BMR robustness resampling over the prior-precision/access grid. The left panel shows bootstrap pruning rates over noise rows and the right panel shows Delta-F sign stability with compact confidence intervals; both panels report finite software robustness only, not human self-model or practice-efficacy claims.
+    caption: BMR robustness resampling over the prior-precision/access grid. The upper panel shows bootstrap pruning rates in percent over noise rows and the lower panel shows Delta-F sign stability with compact confidence intervals and P/K decision labels; both panels report finite software robustness only, not human self-model or practice-efficacy claims.
     visual_encoding: Two-panel heatmap; sequential colorbar encodes bootstrap pruning rate, binary colorbar encodes Delta-F sign stability, compact cell text provides decision and interval labels, and the external legend distinguishes keep from prune semantics.
     alt_text: Two-panel BMR robustness figure showing pruning-rate percentages and Delta-F sign stability across prior precision and metacognitive access after resampling observation-noise rows.
   quantum_trajectory_convergence:
@@ -230,14 +230,14 @@ figures:
     alt_text: Three-column graph linking each public claim to its source support and validation gate, with every row showing a claim-source-gate binding.
   scholarship_coverage_matrix:
     filename: scholarship_coverage_matrix.png
-    caption: Scholarship coverage by source role and manuscript track. The binary colorbar encodes whether a source supports a track, separating primary recapitulation, implementation anchors, background theory, proxy context, and limitations so citation density cannot launder unsupported claims.
-    visual_encoding: Binary matrix colorbar maps absent/present track support; rows are citation keys and columns are model tracks.
-    alt_text: Binary matrix showing which bibliography keys support each manuscript or model track in the scholarship manifest.
+    caption: Scholarship coverage summarized by declared source status and manuscript track. The heatmap colorbar and numbered cells count citations assigned to each status-track pair; individual citation keys and bindings remain in scholarship_source_matrix.json. Counts describe contextual coverage, not evidence strength, empirical support, or physical qFEP confirmation.
+    visual_encoding: Count heatmap; rows encode declared source status, columns encode manuscript tracks, numbered cells and a sequential colorbar encode citation counts, and the linked JSON preserves individual citations.
+    alt_text: Citation-count matrix by source status and manuscript track, with numeric cell labels and full citation identities available in the source JSON.
   claim_support_matrix:
     filename: claim_support_matrix.png
-    caption: Public claim support by citation key, restricted to claims that appear in the source crosswalk and grouped by evidence class. The binary colorbar marks scoped support links while row separators expose formal, finite-simulation, runtime, proxy, and boundary claims; a support link licenses vocabulary or method scope only and does not upgrade an evidence ceiling.
-    visual_encoding: Binary matrix colorbar maps absent/present claim support; rows are public claims grouped by evidence class, columns are citation keys, and separator lines mark claim-class boundaries.
-    alt_text: Binary matrix showing which citation keys support each public claim ID in the source claim crosswalk, grouped by evidence class so support density is distinct from claim strength.
+    caption: Scoped public-claim support summarized by declared source status. The heatmap colorbar and numbered cells show distinct citation counts for each claim and status; individual claim-citation bindings remain in claim_support_audit.json. Source density is a coverage diagnostic, not evidence strength or empirical, neural, clinical, practice-efficacy, awakening, or physical qFEP confirmation.
+    visual_encoding: Count heatmap; rows are public claim IDs, columns are declared source statuses, and numeric cell labels plus the colorbar count distinct citations. Individual bindings remain in the source artifact.
+    alt_text: Public claim IDs against declared source statuses with distinct citation counts in every cell and a source-data alternative containing individual claim-citation bindings.
   manuscript_claim_audit:
     filename: manuscript_claim_audit.png
     caption: Manuscript claim audit for citation resolution, public claim-ID visibility, and forbidden positive-efficacy language. The pass/fail color legend makes the local language gate visible while preserving the boundary that passing bars do not certify empirical truth.

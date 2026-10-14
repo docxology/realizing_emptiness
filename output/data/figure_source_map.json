@@ -1016,7 +1016,7 @@
     },
     {
       "alt_text": "Two-panel BMR robustness figure showing pruning-rate percentages and Delta-F sign stability across prior precision and metacognitive access after resampling observation-noise rows.",
-      "caption": "BMR robustness resampling over the prior-precision/access grid. The left panel shows bootstrap pruning rates over noise rows and the right panel shows Delta-F sign stability with compact confidence intervals; both panels report finite software robustness only, not human self-model or practice-efficacy claims.",
+      "caption": "BMR robustness resampling over the prior-precision/access grid. The upper panel shows bootstrap pruning rates in percent over noise rows and the lower panel shows Delta-F sign stability with compact confidence intervals and P/K decision labels; both panels report finite software robustness only, not human self-model or practice-efficacy claims.",
       "cropped_text_count": 0,
       "id": "bmr_robustness_resampling",
       "layout_ok": true,
@@ -1149,8 +1149,8 @@
       "visual_encoding": "Node color legend maps claim/source/gate nodes; gray lines encode validated bindings across the three columns."
     },
     {
-      "alt_text": "Binary matrix showing which bibliography keys support each manuscript or model track in the scholarship manifest.",
-      "caption": "Scholarship coverage by source role and manuscript track. The binary colorbar encodes whether a source supports a track, separating primary recapitulation, implementation anchors, background theory, proxy context, and limitations so citation density cannot launder unsupported claims.",
+      "alt_text": "Citation-count matrix by source status and manuscript track, with numeric cell labels and full citation identities available in the source JSON.",
+      "caption": "Scholarship coverage summarized by declared source status and manuscript track. The heatmap colorbar and numbered cells count citations assigned to each status-track pair; individual citation keys and bindings remain in scholarship_source_matrix.json. Counts describe contextual coverage, not evidence strength, empirical support, or physical qFEP confirmation.",
       "cropped_text_count": 0,
       "id": "scholarship_coverage_matrix",
       "layout_ok": true,
@@ -1159,7 +1159,7 @@
       "render_contract": {
         "colorbar_count": 1,
         "legend_count": 0,
-        "min_font_pt": 12.0,
+        "min_font_pt": 12.3,
         "panel_count": 1,
         "roles": [
           "source"
@@ -1170,11 +1170,11 @@
       ],
       "text_overlap_count": 0,
       "title_overlap_count": 0,
-      "visual_encoding": "Binary matrix colorbar maps absent/present track support; rows are citation keys and columns are model tracks."
+      "visual_encoding": "Count heatmap; rows encode declared source status, columns encode manuscript tracks, numbered cells and a sequential colorbar encode citation counts, and the linked JSON preserves individual citations."
     },
     {
-      "alt_text": "Binary matrix showing which citation keys support each public claim ID in the source claim crosswalk, grouped by evidence class so support density is distinct from claim strength.",
-      "caption": "Public claim support by citation key, restricted to claims that appear in the source crosswalk and grouped by evidence class. The binary colorbar marks scoped support links while row separators expose formal, finite-simulation, runtime, proxy, and boundary claims; a support link licenses vocabulary or method scope only and does not upgrade an evidence ceiling.",
+      "alt_text": "Public claim IDs against declared source statuses with distinct citation counts in every cell and a source-data alternative containing individual claim-citation bindings.",
+      "caption": "Scoped public-claim support summarized by declared source status. The heatmap colorbar and numbered cells show distinct citation counts for each claim and status; individual claim-citation bindings remain in claim_support_audit.json. Source density is a coverage diagnostic, not evidence strength or empirical, neural, clinical, practice-efficacy, awakening, or physical qFEP confirmation.",
       "cropped_text_count": 0,
       "id": "claim_support_matrix",
       "layout_ok": true,
@@ -1183,7 +1183,7 @@
       "render_contract": {
         "colorbar_count": 1,
         "legend_count": 0,
-        "min_font_pt": 12.0,
+        "min_font_pt": 12.3,
         "panel_count": 1,
         "roles": [
           "source",
@@ -1195,7 +1195,7 @@
       ],
       "text_overlap_count": 0,
       "title_overlap_count": 0,
-      "visual_encoding": "Binary matrix colorbar maps absent/present claim support; rows are public claims grouped by evidence class, columns are citation keys, and separator lines mark claim-class boundaries."
+      "visual_encoding": "Count heatmap; rows are public claim IDs, columns are declared source statuses, and numeric cell labels plus the colorbar count distinct citations. Individual bindings remain in the source artifact."
     },
     {
       "alt_text": "Three-bar audit showing pass status for citation resolution, public claim ID mentions, and absence of forbidden positive efficacy language.",

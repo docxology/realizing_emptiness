@@ -2,7 +2,7 @@
 
 The documentation home for the `realizing_emptiness` project. Every document
 records how one part of the source-faithful software foundation works or is
-governed. Files are flat in this folder (no subdirectories). Two documents are
+governed. Reference guides are flat; manuscript sources live under `manuscript/`. Two documents are
 **generated** by the chain and must not be hand-edited — they are marked below.
 
 > **Published.** v1.0.0 is archived on Zenodo at
@@ -29,6 +29,7 @@ physical-qFEP evidence.
 | --- | --- |
 | [Project architecture](architecture.md) | How manuscript, `src`, `scripts`, `tests`, and artifacts connect, with recipes for adding a figure or a claim. |
 | [Running the chain](running-the-chain.md) | Setup, the full-chain run with a per-stage walkthrough, output layout, verification gates, single-result reproduction, and gate-failure troubleshooting. |
+| [Release validation](release-validation.md) | Audit findings, verification receipts, packaging, rendering, and version-publication boundaries. |
 | [`src/simulation` module contract](../src/simulation/README.md) | Source-level map for the finite simulation modules, including the modular `pymdp` profile stack, its `A/B/C/D` arrays, deterministic traces, runtime diagnostics, and validation gates. |
 
 ## Formal mapping (paper to software)

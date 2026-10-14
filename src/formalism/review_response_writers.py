@@ -11,6 +11,18 @@ from formalism.review_response_quantum import build_quantum_independent_crossche
 from formalism.review_response_release import write_artifact_release_manifest
 
 
+def initialize_artifact_release_manifest(project_root: Path) -> Path:
+    return json_write(
+        project_root / "output/data/artifact_release_manifest.json",
+        {
+            "schema": "realizing_emptiness.artifact_release_manifest.v1",
+            "provisional": True,
+            "all_controls_pass": False,
+            "claim_boundary": LOCAL_RELEASE_BOUNDARY,
+        },
+    )
+
+
 def write_review_response_artifacts(project_root: Path) -> dict[str, Path]:
     data_dir = project_root / "output" / "data"
     paths = {
@@ -31,15 +43,7 @@ def write_review_response_artifacts(project_root: Path) -> dict[str, Path]:
             build_bmr_alternative_prior_audit(),
         ),
     }
-    release_path = data_dir / "artifact_release_manifest.json"
-    json_write(
-        release_path,
-        {
-            "schema": "realizing_emptiness.artifact_release_manifest.v1",
-            "provisional": True,
-            "claim_boundary": LOCAL_RELEASE_BOUNDARY,
-        },
-    )
+    initialize_artifact_release_manifest(project_root)
     paths["external_review_response_audit"] = json_write(
         data_dir / "external_review_response_audit.json",
         build_external_review_response_audit(project_root),

@@ -11,7 +11,6 @@ from formalism.source_fit import write_source_argument_coverage_audit
 from gates.roadmap import write_roadmap_governance_artifacts
 from practice.protocols import practice_protocol_map
 from simulation.criticality import build_criticality_report, build_criticality_stochastic_ensemble
-from simulation.sensitivity import write_sensitivity_grid
 
 
 def _load_json(relative: str) -> dict:
@@ -28,8 +27,6 @@ def main() -> int:
     criticality = build_criticality_report(profile)
     criticality_stochastic = build_criticality_stochastic_ensemble(stochastic)
     practice = practice_protocol_map()
-    write_sensitivity_grid(PROJECT_ROOT)
-    write_source_argument_coverage_audit(PROJECT_ROOT)
     (reports_dir / "criticality_proxy_report.json").write_text(
         json.dumps(criticality, indent=2, sort_keys=True) + "\n",
         encoding="utf-8",
@@ -42,6 +39,7 @@ def main() -> int:
         json.dumps(practice, indent=2, sort_keys=True) + "\n",
         encoding="utf-8",
     )
+    write_source_argument_coverage_audit(PROJECT_ROOT)
     crosswalk = _load_json("output/data/source_claim_crosswalk.json")
     write_claim_context_ledger(PROJECT_ROOT, crosswalk)
     write_roadmap_governance_artifacts(PROJECT_ROOT)

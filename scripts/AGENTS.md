@@ -16,9 +16,9 @@
 | `simulate_boundary_agents.py` | `simulation.pymdp_profiles`, `simulation.qrf_env`, `simulation.stochastic`, `simulation.compassion_scope` | QRF boundary/ledger, pymdp profile + policy trace, stochastic ensemble, compassion-scope artifacts |
 | `generate_quantum_surrogates.py` | `simulation.quantum_surrogates` | finite quantum-information artifacts |
 | `generate_extended_surrogates.py` | `simulation.emergence`, `simulation.blackwell_ordering`, `simulation.classical_data_processing`, `simulation.interaction_information`, `simulation.markov_blanket`, `simulation.quantum_estimation`, `simulation.quantum_surrogates` | extended source-fidelity artifacts |
-| `run_bmr_sweep.py` | `simulation.bmr` | `output/data/bmr_sweep.json` |
+| `run_bmr_sweep.py` | `simulation.bmr`, `simulation.sensitivity` | BMR sweep and sensitivity grid JSON/CSV |
 | `generate_statistics.py` | `simulation.statistical_robustness` | statistical robustness artifacts |
-| `generate_sheaf_tracks.py` | `simulation.criticality`, `simulation.sensitivity`, `practice.protocols`, `formalism.claim_context`, `formalism.source_fit`, `gates.roadmap` | criticality/practice/sensitivity/claim-context/roadmap artifacts |
+| `generate_sheaf_tracks.py` | `simulation.criticality`, `practice.protocols`, `formalism.claim_context`, `formalism.source_fit`, `gates.roadmap` | criticality/practice/claim-context/roadmap artifacts |
 | `generate_figures.py` | `visualizations.figures` | `output/figures/*` + figure source map |
 | `compose_manuscript.py` | `formalism.compose` | `docs/manuscript/*.md` + `output/data/sheaf_coverage_matrix.json` + structure audits |
 | `generate_method_inventory.py` | `gates.method_inventory` | `docs/method-inventory.md` |
@@ -47,6 +47,10 @@
 14. `z_generate_manuscript_variables.py`
 15. `generate_review_response_artifacts.py`
 16. `validate_outputs.py`
+17. `z_generate_manuscript_variables.py`
+18. `generate_dashboard.py`
+19. `generate_review_response_artifacts.py`
+20. `validate_outputs.py`
 
 Respect ordering: later steps read artifacts produced by earlier ones
 (`generate_equation_crosswalk.py` requires `formalism_registry.json`; sheaf

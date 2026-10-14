@@ -1,0 +1,42 @@
+name: Research software validation
+
+on:
+  push:
+    branches: [main]
+    tags: ['v*']
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: validation-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ['3.10', '3.12', '3.14']
+    env:
+      UV_PYTHON: ${{ matrix.python }}
+      UV_LINK_MODE: copy
+      MPLBACKEND: Agg
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - uses: astral-sh/setup-uv@d0d8abe699bfb85fec6de9f7adb5ae17292296ff
+        with:
+          enable-cache: true
+      - run: uv sync --frozen --extra dev
+      - run: uv run --frozen pytest tests/ --cov=src --cov-fail-under=90
+      - run: uv run --frozen python scripts/check_documentation_contract.py --check
+      - run: uv run --frozen python scripts/generate_method_inventory.py --check
+      - run: uv run --frozen python scripts/generate_equation_crosswalk.py --check
+      - run: uv run --frozen python scripts/compose_manuscript.py --validate-only --strict
+      - run: uv run --frozen python scripts/validate_outputs.py
+      - if: matrix.python == '3.14'
+        run: uv build

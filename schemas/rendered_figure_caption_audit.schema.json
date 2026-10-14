@@ -41,7 +41,7 @@
         "properties": {
           "manuscript": {"type": "string", "pattern": "^[0-9]{2}_[A-Za-z0-9_]+\\.md$"},
           "figure_id": {"type": "string", "pattern": "^[a-z0-9_]+$"},
-          "figure_path": {"type": "string", "pattern": "^\\.\\./output/figures/[a-z0-9_]+\\.png$"},
+          "figure_path": {"type": "string", "pattern": "^\\.\\./\\.\\./output/figures/[a-z0-9_]+\\.png$"},
           "caption_length": {"type": "integer", "minimum": 120},
           "source_artifact_count": {"type": "integer", "minimum": 1},
           "has_source_artifact": {"const": true},

@@ -40,6 +40,8 @@ Hatches: `null` uses `//`, `control` uses `//`, `blocked` uses `..`,
 ## 3. Typography And Legibility
 
 - Minimum readable font: 12.0 pt.
+- Source-map font minima must be measured from rendered text objects after
+  layout. Missing layout telemetry fails the legibility audit.
 - Cover and title-like figure labels should exceed the shared minimum; dense
   axes, legends, colorbars, cell labels, and footnotes may use the minimum but
   not go below it.
@@ -55,6 +57,12 @@ Hatches: `null` uses `//`, `control` uses `//`, `blocked` uses `..`,
   proves the encoding is otherwise explained.
 - Captions must name the artifact, the visual encoding, and the interpretive
   boundary. Avoid absolute machine paths.
+- Dense citation matrices use counts by declared source status in the manuscript;
+  individual citation bindings remain in their linked JSON artifacts. Counts
+  express contextual coverage, never strength of evidence.
+- Heatmap labels must fit their cells. Use compact decision/count labels and
+  move explanatory text to the caption or legend; keep panel letters outside
+  the data grid.
 
 ## 5. Components And Patterns
 

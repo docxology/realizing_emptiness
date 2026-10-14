@@ -398,7 +398,7 @@
       "visual_encoding": "Horizontal forest plot; grouped y-axis rows use short profile labels, bar color encodes effect direction, hatches encode Holm p-values above threshold, text labels give adjusted p-values and bootstrap intervals, and the dashed vertical line marks zero effect."
     },
     {
-      "caption_length": 310,
+      "caption_length": 346,
       "has_interpretive_boundary": true,
       "has_source_artifact": true,
       "has_visual_encoding": true,
@@ -448,24 +448,24 @@
       "visual_encoding": "Node color legend maps claim/source/gate nodes; gray lines encode validated bindings across the three columns."
     },
     {
-      "caption_length": 284,
+      "caption_length": 361,
       "has_interpretive_boundary": true,
       "has_source_artifact": true,
       "has_visual_encoding": true,
       "id": "scholarship_coverage_matrix",
       "ok": true,
       "source_artifact_count": 1,
-      "visual_encoding": "Binary matrix colorbar maps absent/present track support; rows are citation keys and columns are model tracks."
+      "visual_encoding": "Count heatmap; rows encode declared source status, columns encode manuscript tracks, numbered cells and a sequential colorbar encode citation counts, and the linked JSON preserves individual citations."
     },
     {
-      "caption_length": 362,
+      "caption_length": 389,
       "has_interpretive_boundary": true,
       "has_source_artifact": true,
       "has_visual_encoding": true,
       "id": "claim_support_matrix",
       "ok": true,
       "source_artifact_count": 1,
-      "visual_encoding": "Binary matrix colorbar maps absent/present claim support; rows are public claims grouped by evidence class, columns are citation keys, and separator lines mark claim-class boundaries."
+      "visual_encoding": "Count heatmap; rows are public claim IDs, columns are declared source statuses, and numeric cell labels plus the colorbar count distinct citations. Individual bindings remain in the source artifact."
     },
     {
       "caption_length": 262,

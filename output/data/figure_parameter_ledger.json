@@ -1862,6 +1862,7 @@
       ],
       "figure_id": "criticality_stochastic_ensemble",
       "parameter_fields": [
+        "output/data/criticality_stochastic_ensemble.json::branching_null_seed",
         "output/data/criticality_stochastic_ensemble.json::runs_per_profile",
         "output/data/criticality_stochastic_ensemble.json::seed"
       ],
@@ -1890,6 +1891,7 @@
           ],
           "exists": true,
           "parameter_fields": [
+            "branching_null_seed",
             "runs_per_profile",
             "seed"
           ],
@@ -1916,6 +1918,7 @@
       ],
       "figure_id": "criticality_signatures",
       "parameter_fields": [
+        "output/data/criticality_stochastic_ensemble.json::branching_null_seed",
         "output/data/criticality_stochastic_ensemble.json::runs_per_profile",
         "output/data/criticality_stochastic_ensemble.json::seed"
       ],
@@ -1954,6 +1957,7 @@
           ],
           "exists": true,
           "parameter_fields": [
+            "branching_null_seed",
             "runs_per_profile",
             "seed"
           ],

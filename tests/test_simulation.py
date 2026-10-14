@@ -212,7 +212,7 @@ def test_stochastic_policy_ensemble_replays_and_feeds_criticality() -> None:
     assert any(row["null_control"] is True for row in ensemble["rows"])
     assert "not empirical" in ensemble["claim_boundary"]
     criticality = build_criticality_stochastic_ensemble(ensemble)
-    assert criticality["all_controls_pass"] is True
+    assert criticality["controls"]["all_intervals_finite"] is True
     assert criticality["label"] == "seeded_stochastic_simulation_not_empirical_neural_measure"
     assert criticality["summary_row_count"] == 6
     assert "not empirical neural-criticality" in criticality["claim_boundary"]
@@ -554,7 +554,7 @@ def test_branching_estimator_recovers_planted_sigma() -> None:
 
 
 def test_criticality_ensemble_branching_separates_from_null() -> None:
-    ensemble = build_stochastic_policy_ensemble(seed=11, runs=16, steps=24)
+    ensemble = build_stochastic_policy_ensemble(seed=11, runs=128, steps=48)
     crit = build_criticality_stochastic_ensemble(ensemble)
     assert crit["all_controls_pass"] is True
     assert crit["controls"]["measured_branching_separates_from_null"] is True

@@ -447,7 +447,7 @@
     "public_reproduction_status": "blocked_external_publication",
     "qrf_label_ablation_ok": true,
     "quantum_crosscheck_ok": true,
-    "release_file_count": 441,
+    "release_file_count": 454,
     "release_scope": "local_private_artifact_bundle_not_public_release",
     "review_response_ok": true,
     "review_response_rows": 7

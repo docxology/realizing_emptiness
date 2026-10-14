@@ -19,15 +19,18 @@ LEDGER_CLAIM_BOUNDARY = (
 
 def default_deployments(channel_count: int = 6) -> tuple[QRFDeployment, ...]:
     """Return the three v1 QRF profiles."""
+    BoundaryScreen.default(channel_count).validate()
     if channel_count != 6:
         labels = tuple("self" if index % 2 == 0 else "env" for index in range(channel_count))
         contextual = tuple(f"context_{index}" for index in range(channel_count))
+        opacified = tuple(label if index % 2 == 0 else contextual[index] for index, label in enumerate(labels))
     else:
         labels = ("self", "self", "env", "env", "env", "self")
         contextual = ("body", "action", "world", "world", "other", "care")
+        opacified = ("self", "action", "env", "env", "other", "care")
     return (
         QRFDeployment("separation_constrained", labels, metacognitive_access=0.0, prior_precision=4.0),
-        QRFDeployment("opacified", ("self", "action", "env", "env", "other", "care"), 0.55, 2.0),
+        QRFDeployment("opacified", opacified, 0.55, 2.0),
         QRFDeployment("post_dual", contextual, 1.0, 0.2),
     )
 
@@ -40,6 +43,9 @@ def simulate_boundary_trajectory(
 ) -> list[dict[str, Any]]:
     """Generate deterministic boundary observations for finite profile comparison."""
     active_screen = screen or BoundaryScreen.default()
+    active_screen.validate()
+    if steps < 1:
+        raise ValueError("steps must be positive")
     rng = np.random.default_rng(seed)
     hidden_context = rng.integers(0, 2, size=active_screen.channel_count)
     trajectory: list[dict[str, Any]] = []

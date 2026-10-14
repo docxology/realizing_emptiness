@@ -9,9 +9,14 @@ from formalism.review_response_common import LOCAL_RELEASE_BOUNDARY, json_write,
 RELEASE_SUPPORT_ROOT_FILES = (
     "AGENTS.md",
     "CITATION.cff",
+    "CHANGELOG.md",
     "DESIGN.md",
     "ISA.md",
     "README.md",
+    "LICENSE",
+    "MANIFEST.in",
+    ".zenodo.json",
+    ".python-version",
     "TODO.md",
     "artifact_manifest.yaml",
     "codemeta.json",
@@ -29,7 +34,8 @@ RELEASE_SUPPORT_ROOT_FILES = (
 
 RELEASE_SUPPORT_DIR_SUFFIXES = {
     "data": {".md", ".yaml", ".yml"},
-    "docs": {".md", ".pdf"},
+    "docs": {".md", ".pdf", ".bib", ".yaml", ".yml"},
+    ".github": {".md", ".yaml", ".yml"},
     "manuscript": {".bib", ".md", ".yaml", ".yml"},
     "schemas": {".json", ".md"},
     "scripts": {".md", ".py"},
@@ -98,8 +104,7 @@ def build_artifact_release_manifest(project_root: Path) -> dict[str, Any]:
         "uv run python scripts/generate_equation_crosswalk.py --check",
         "uv run python scripts/compose_manuscript.py --validate-only --strict",
         "uv run python scripts/validate_outputs.py",
-        "cd <template-checkout> && uv run python -m infrastructure.orchestration link-projects",
-        "cd <template-checkout> && uv run python scripts/03_render_pdf.py --project working/realizing_emptiness",
+        "cd <template-checkout> && uv run python scripts/pipeline/stage_03_render.py --project <verified-qualifier>",
     ]
     controls = {
         "all_paths_relative": all(not Path(row["path"]).is_absolute() and ".." not in Path(row["path"]).parts for row in rows),

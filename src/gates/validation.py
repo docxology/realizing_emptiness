@@ -6,11 +6,11 @@ import json
 import math
 import re
 from pathlib import Path
-from typing import Any
+from typing import Any, NoReturn
 
 import yaml
 import numpy as np
-from jsonschema import Draft202012Validator
+from jsonschema import Draft202012Validator, SchemaError
 
 from formalism.review_response import build_artifact_release_manifest
 from formalism.scholarship import validate_scholarship_manifest
@@ -362,15 +362,33 @@ SCHEMA_TARGETS = [
 ]
 
 
+def _reject_json_constant(value: str) -> NoReturn:
+    raise ValueError(f"non-finite JSON constant: {value}")
+
+
+def _finite_json_float(value: str) -> float:
+    number = float(value)
+    if not np.isfinite(number):
+        raise ValueError(f"non-finite JSON number: {value}")
+    return number
+
+
 def _load_json(project_root: Path, relative: str) -> dict[str, Any]:
     # Fail-closed: a missing or unparseable gated artifact yields an empty payload so the gate
     # that reads it evaluates to False, rather than crashing the whole validator. The artifact's
     # own `exists:` / `schema_valid:` checks still report the underlying problem.
     try:
-        payload = json.loads((project_root / relative).read_text(encoding="utf-8"))
-    except (FileNotFoundError, json.JSONDecodeError):
+        payload = json.loads((project_root / relative).read_text(encoding="utf-8"), parse_constant=_reject_json_constant, parse_float=_finite_json_float)
+    except (OSError, UnicodeError, ValueError):
         return {}
-    return payload if isinstance(payload, dict) else {}
+    if not isinstance(payload, dict):
+        return {}
+    schema_relative = next((schema for schema, target, kind in SCHEMA_TARGETS if target == relative and kind == "json"), None)
+    if schema_relative is not None:
+        schema = _load_json(project_root, schema_relative)
+        if not _valid_schema(schema) or not Draft202012Validator(schema).is_valid(payload):
+            return {}
+    return payload
 
 
 def _exists(project_root: Path, relative: str) -> bool:
@@ -497,11 +515,27 @@ def _pymdp_runtime_log_ok(runtime_log: dict[str, Any], policy_trace: dict[str, A
     )
 
 
+def _valid_schema(schema: dict[str, Any]) -> bool:
+    if schema.get("type") != "object" or not schema.get("properties"):
+        return False
+    try:
+        Draft202012Validator.check_schema(schema)
+    except SchemaError:
+        return False
+    return True
+
+
 def _schema_check(project_root: Path, schema_relative: str, target_relative: str, kind: str) -> bool:
     if not _exists(project_root, schema_relative) or not _exists(project_root, target_relative):
         return False
     schema = _load_json(project_root, schema_relative)
-    target = _load_json(project_root, target_relative) if kind == "json" else _load_yaml(project_root, target_relative)
+    if not _valid_schema(schema):
+        return False
+    try:
+        text = (project_root / target_relative).read_text(encoding="utf-8")
+        target = json.loads(text, parse_constant=_reject_json_constant, parse_float=_finite_json_float) if kind == "json" else yaml.safe_load(text)
+    except (OSError, UnicodeError, ValueError, yaml.YAMLError):
+        return False
     validator = Draft202012Validator(schema)
     return not list(validator.iter_errors(target))
 
@@ -562,6 +596,12 @@ def _subsection_anchor_audit(project_root: Path) -> dict[str, Any]:
 def validate_outputs(project_root: Path) -> dict[str, bool]:
     """Return named output checks."""
     checks: dict[str, bool] = {}
+    for schema_relative, target_relative, kind in SCHEMA_TARGETS:
+        if kind == "yaml":
+            checks[f"schema_valid:{target_relative}"] = _schema_check(project_root, schema_relative, target_relative, kind)
+    if not all(checks.values()):
+        checks["source_hash"] = False
+        return checks
     checks["source_hash"] = verify_primary_source_hash(project_root)["ok"]
     for relative in EXPECTED_DATA + EXPECTED_REPORTS + EXPECTED_FIGURES + EXPECTED_WEB + EXPECTED_SCHEMAS:
         checks[f"exists:{relative}"] = _exists(project_root, relative)
@@ -584,6 +624,7 @@ def validate_outputs(project_root: Path) -> dict[str, bool]:
     generated_paths.discard("output/reports/validation_report.json")
     generated_paths.discard("output/reports/output_statistics.json")
     generated_paths.discard("output/reports/output_statistics.txt")
+    generated_paths.discard("output/reports/manuscript_composition.json")
     checks["generated_outputs_manifested"] = generated_paths <= manifest_paths
     for schema_relative, target_relative, kind in SCHEMA_TARGETS:
         checks[f"schema_valid:{target_relative}"] = _schema_check(project_root, schema_relative, target_relative, kind)
@@ -1679,7 +1720,11 @@ def validate_outputs(project_root: Path) -> dict[str, bool]:
         and legibility.get("ok") is True
         and "not empirical" in legibility.get("claim_boundary", "")
     )
-    figure_integrity = compare_figure_integrity(project_root)
+    figure_integrity = (
+        compare_figure_integrity(project_root)
+        if checks["schema_valid:output/data/figure_source_map.json"] and checks["schema_valid:output/data/figure_integrity_audit.json"]
+        else {"ok": False}
+    )
     checks["figure_integrity_audit_ok"] = (
         figure_integrity.get("ok") is True
         and figure_integrity.get("figure_hash_mismatches") == []
@@ -1784,7 +1829,7 @@ def validate_outputs(project_root: Path) -> dict[str, bool]:
         and cover_audit.get("cover_style") == "hybrid_symbolic_near_square_large_type"
     )
     variables_path = project_root / "output" / "data" / "manuscript_variables.json"
-    variables = json.loads(variables_path.read_text(encoding="utf-8")) if variables_path.exists() else {}
+    variables = _load_json(project_root, "output/data/manuscript_variables.json")
     checks["variables_validation_counts"] = variables.get("VALIDATION_TOTAL_COUNT", 0) >= 10
     hydrated = project_root / "output" / "manuscript"
     unresolved = []

@@ -30,7 +30,9 @@ or physical qFEP claims. Define every acronym at first use.
 ## Figures and cross-references
 
 - Embed figures as `![short](../output/figures/<id>.png){#fig:<id>}`; the
-  canonical caption replaces the short one at compose time.
+  canonical caption replaces the short one at compose time. This is a
+  composition token; the composer resolves it for the composed source directory
+  and hydration rebases it for rendering.
 - Use `@fig:`, `@sec:`, `@eq:` cross-references. Never write a hardcoded
   "Figure 3".
 - Respect figure placement: QRF lead figures in the main sections before the

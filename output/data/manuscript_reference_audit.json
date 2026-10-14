@@ -5,9 +5,11 @@
   "figure_reference_count": 38,
   "file_count": 7,
   "hardcoded_figure_numbers": [],
+  "missing_images": [],
   "ok": true,
   "reference_count": 65,
   "schema": "realizing_emptiness.manuscript_reference_audit.v1",
   "section_reference_count": 23,
+  "unknown_citations": [],
   "unresolved_references": []
 }

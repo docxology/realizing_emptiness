@@ -33,12 +33,12 @@ A cold agent should: (1) read [README.md](README.md) top-to-bottom, (2) confirm
 status from the "State right now" section, (3) come here for next actions, (4)
 verify with the canonical commands in [AGENTS.md](AGENTS.md).
 
-### Backlog: local doc/ergonomics items (from the 2026-08-31 agent-ergonomics pass — see REVIEW_LOG_2026-08-31.md)
+### Local documentation and environment maintenance
 
 | ID | Priority | Scope | Scope detail and docs |
 | --- | --- | --- | --- |
-| re-doc-1 | Medium | Fix the generator, not the generated files: `scripts/compose_manuscript.py` emits `../output/figures/*.png` links in `docs/manuscript/0X_*.md` that do not resolve at the committed location (57 links). Emit paths valid from `docs/manuscript/` or reference the dashboard instead. | Docs: [docs/manuscript/README.md](docs/manuscript/README.md), `scripts/compose_manuscript.py`. |
-| re-doc-2 | Medium | Pin Python floor/upper in `pyproject.toml`: current env uses Python 3.14 and binary wheels for scipy/matplotlib/rpds break (collection ImportError). Environment had to be rebuilt on 2026-08-31. | Docs: `pyproject.toml`, verify with `uv run pytest tests/ --collect-only -q`. |
+| re-doc-1 | Done (v1.1.0) | Composer now emits resolving figure paths and hydration rebases them for rendering; strict validation checks image files. | Docs: [manuscript guide](docs/manuscript/README.md), [release validation](docs/release-validation.md). |
+| re-doc-2 | Done (v1.1.0) | Python support is bounded to 3.10-3.14 with a frozen dependency lock and CI matrix. A separate GitVault environment preserves the original local environment. | Docs: [running the chain](docs/running-the-chain.md), `pyproject.toml`. |
 | re-doc-3 | Done (2026-08-31) | Render `--project` qualifier conflicted across README/AGENTS/running-the-chain; one canonical statement now lives in docs/running-the-chain.md. | Docs: [docs/running-the-chain.md](docs/running-the-chain.md). |
 | re-doc-4 | Done (2026-08-31) | README lacked an orientation ladder (state / next actions / canonical pointers) and never linked TODO.md; added "State right now" section and canonical-command pointer to AGENTS.md. | Docs: [README.md](README.md), [AGENTS.md](AGENTS.md). |
 | re-doc-5 | Done (2026-08-31) | AGENTS.md pointed to nonexistent ../projects/AGENTS.md from the standalone checkout; fixed to name the template-mirror location conditionally. | Docs: [AGENTS.md](AGENTS.md). |

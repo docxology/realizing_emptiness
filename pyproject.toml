@@ -4,18 +4,27 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "realizing-emptiness"
-version = "1.0.0"
+version = "1.1.0"
 description = "Research-grade active-inference software foundation for Realizing Emptiness."
 readme = "README.md"
 authors = [{ name = "Daniel Ari Friedman", email = "daniel@activeinference.institute" }]
-requires-python = ">=3.10"
+requires-python = ">=3.10,<3.15"
+license = { file = "LICENSE" }
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering",
+]
 dependencies = [
     "inferactively-pymdp==1.0.3",
     "jsonschema>=4.22.0",
     "matplotlib>=3.7.0",
     "numpy>=1.24.0",
+    "pillow>=12.3.0",
     "pyyaml>=6.0",
-    "scipy>=1.11.0",
+    "scipy>=1.11.0; python_version >= '3.11' or sys_platform != 'darwin'",
+    "scipy==1.14.1; python_version < '3.11' and sys_platform == 'darwin'",
 ]
 
 [project.optional-dependencies]
@@ -24,6 +33,11 @@ dev = [
     "pytest-cov>=4.1.0",
     "pytest-timeout>=2.4.0",
 ]
+
+[project.urls]
+Repository = "https://github.com/docxology/realizing_emptiness"
+Documentation = "https://github.com/docxology/realizing_emptiness/blob/main/docs/README.md"
+Issues = "https://github.com/docxology/realizing_emptiness/issues"
 
 [tool.setuptools]
 package-dir = {"" = "src"}
