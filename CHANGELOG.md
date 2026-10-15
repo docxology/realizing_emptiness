@@ -1,5 +1,24 @@
 # Changelog
 
+## 2.0.0 - 2026-10-14
+
+- Consolidate the public runtime API around `pymdp_runtime_dependency_check`;
+  coordinate claim IDs, gates, schemas, dashboard keys and documentation.
+- Publish current-only data contracts: profile comparison v3, runtime log v2,
+  criticality report/ensemble v2, dashboard payload v2 and stochastic effect-size audit v2.
+- Remove unused statistical interval fields, duplicate effect-size calculations,
+  the coarse criticality heuristic and its single-trace chart. Keep 60
+  source-mapped figures and distinguish descriptive random-control summaries
+  from histogram-preserving shuffled branching contrasts.
+- Require a strict majority of profiles to separate on measured branching,
+  reconstruct acceptance from trajectory records, and reject stale fields.
+- Reject invalid activity counts/avalanche thresholds and unresolved figure
+  bindings. Placement audit v2 checks every image against the current registry;
+  strict composition rejects unselected fragments. Remove three superseded
+  manuscript fragments and an unused track.
+- Regenerate the manuscript, documentation, figures and release artifacts while
+  preserving the pinned source digest and finite-software evidence ceilings.
+
 ## 1.2.0 - 2026-10-14
 
 - Expand the curated scholarship ledger from 93 to 125 entries and the

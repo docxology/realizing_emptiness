@@ -2,7 +2,7 @@
   "claim_boundary": "sentence-level manuscript language audit; not empirical evidence",
   "ok": true,
   "risky_rows": [],
-  "row_count": 127,
+  "row_count": 114,
   "rows": [
     {
       "allowed": true,
@@ -241,7 +241,7 @@
       "has_boundary_scope": false,
       "has_negation": true,
       "no_self_risky": false,
-      "sentence": "Even then, power-law-like avalanche summaries would not by themselves establish criticality, because similar scaling can arise without a critical state and cortical-criticality evidence remains method-sensitive [@touboul2017power_law_absence_criticality; @destexhe2021criticality_evidence].",
+      "sentence": "Power-law-like avalanche summaries would not by themselves establish criticality, because similar scaling can arise without a critical state and cortical-criticality evidence remains method-sensitive [@touboul2017power_law_absence_criticality; @destexhe2021criticality_evidence].",
       "strong_verbs": [
         "establish"
       ],
@@ -1484,10 +1484,8 @@
       "has_boundary_scope": true,
       "has_negation": true,
       "no_self_risky": false,
-      "sentence": "@fig:criticality_signatures shows that the measured branching ratio separates the profile ensembles from their shuffled null controls by disjoint ninety-five percent confidence intervals, which is the finite software analogue of a criticality signature and not a measurement of neural avalanches or branching in any nervous system.",
-      "strong_verbs": [
-        "shows"
-      ],
+      "sentence": "@fig:criticality_signatures reports measured branching against shuffled null controls as a finite software diagnostic, not a measurement of neural avalanches or branching in any nervous system.",
+      "strong_verbs": [],
       "unscoped_strong_claim": false
     },
     {
@@ -1534,26 +1532,6 @@
       "allowed": true,
       "blocked_domain_risky": false,
       "blocked_domains": [
-        "realization",
-        "neural"
-      ],
-      "claim_target_terms": [
-        "result",
-        "evidence",
-        "criticality"
-      ],
-      "file": "docs/manuscript/sections/supplement/criticality.md",
-      "has_boundary_scope": false,
-      "has_negation": true,
-      "no_self_risky": false,
-      "sentence": "The bar legend marks values as one simulated trace, and the companion seeded-ensemble figure carries the interval/null-control result; neither figure is empirical evidence for neural criticality or contemplative realization.",
-      "strong_verbs": [],
-      "unscoped_strong_claim": false
-    },
-    {
-      "allowed": true,
-      "blocked_domain_risky": false,
-      "blocked_domains": [
         "realization"
       ],
       "claim_target_terms": [],
@@ -1578,147 +1556,6 @@
       "strong_verbs": [
         "establish"
       ],
-      "unscoped_strong_claim": false
-    },
-    {
-      "allowed": true,
-      "blocked_domain_risky": false,
-      "blocked_domains": [
-        "clinical",
-        "neural"
-      ],
-      "claim_target_terms": [
-        "audit",
-        "simulation",
-        "evidence",
-        "practice"
-      ],
-      "file": "docs/manuscript/sections/supplement/criticality.md",
-      "has_boundary_scope": true,
-      "has_negation": true,
-      "no_self_risky": false,
-      "sentence": "Grouped short-profile rows use horizontal Cliff's-delta bars, hatches identify Holm-adjusted nonsignificant contrasts, right-side labels give profile-vs-null direction, adjusted p-values, and pooled bootstrap intervals, and the zero reference line separates profile-higher from null-higher effects; this is a finite simulation robustness audit, not empirical, neural, clinical, or practice-efficacy evidence.",
-      "strong_verbs": [],
-      "unscoped_strong_claim": false
-    },
-    {
-      "allowed": true,
-      "blocked_domain_risky": false,
-      "blocked_domains": [
-        "neural"
-      ],
-      "claim_target_terms": [
-        "surrogate",
-        "practice"
-      ],
-      "file": "docs/manuscript/sections/supplement/evidence_ceiling.md",
-      "has_boundary_scope": true,
-      "has_negation": false,
-      "no_self_risky": false,
-      "sentence": "The stressors cover surrogate scope, empirical gaps, runtime dependencies, source-role limits, practice boundaries, quantum gaps, neural-measurement boundaries, and normative boundaries.",
-      "strong_verbs": [],
-      "unscoped_strong_claim": false
-    },
-    {
-      "allowed": true,
-      "blocked_domain_risky": false,
-      "blocked_domains": [
-        "awakening",
-        "clinical",
-        "neural",
-        "physical qfep"
-      ],
-      "claim_target_terms": [
-        "claim",
-        "evidence",
-        "qfep",
-        "practice"
-      ],
-      "file": "docs/manuscript/sections/supplement/evidence_ceiling.md",
-      "has_boundary_scope": false,
-      "has_negation": true,
-      "no_self_risky": false,
-      "sentence": "Horizontal bars encode source-role count, circular markers encode gate presence, and hatched amber blocks encode prohibited empirical, neural, clinical, practice-efficacy, awakening, or physical qFEP inferences, so the figure explains how to read claims without adding evidence beyond the ledger.",
-      "strong_verbs": [],
-      "unscoped_strong_claim": false
-    },
-    {
-      "allowed": true,
-      "blocked_domain_risky": false,
-      "blocked_domains": [
-        "realization",
-        "physical qfep"
-      ],
-      "claim_target_terms": [
-        "qfep"
-      ],
-      "file": "docs/manuscript/sections/supplement/evidence_ceiling.md",
-      "has_boundary_scope": true,
-      "has_negation": true,
-      "no_self_risky": false,
-      "sentence": "The quantum rows are quantum-method bounded because they check finite density matrices, contextuality covers, channels, and trajectories without becoming a physical qFEP realization.",
-      "strong_verbs": [],
-      "unscoped_strong_claim": false
-    },
-    {
-      "allowed": true,
-      "blocked_domain_risky": false,
-      "blocked_domains": [
-        "neural"
-      ],
-      "claim_target_terms": [
-        "surrogate",
-        "claim",
-        "evidence",
-        "practice"
-      ],
-      "file": "docs/manuscript/sections/supplement/evidence_ceiling.md",
-      "has_boundary_scope": true,
-      "has_negation": false,
-      "no_self_risky": false,
-      "sentence": "[Evidence-ceiling stress matrix showing which public claims are bounded by surrogate, empirical, practice, source-role, runtime, quantum, neural, or normative constraints.",
-      "strong_verbs": [],
-      "unscoped_strong_claim": false
-    },
-    {
-      "allowed": true,
-      "blocked_domain_risky": false,
-      "blocked_domains": [
-        "awakening",
-        "clinical",
-        "neural",
-        "physical qfep"
-      ],
-      "claim_target_terms": [
-        "software",
-        "simulation",
-        "claim",
-        "evidence",
-        "qfep",
-        "practice"
-      ],
-      "file": "docs/manuscript/sections/supplement/evidence_ceiling.md",
-      "has_boundary_scope": true,
-      "has_negation": false,
-      "no_self_risky": false,
-      "sentence": "Rows are grouped by claim class and the binary colorbar marks active stressors, making clear that support, simulation, and validation gates keep prohibited inferences explicit rather than converting finite software checks into empirical, neural, clinical, practice-efficacy, awakening, or physical qFEP evidence.",
-      "strong_verbs": [],
-      "unscoped_strong_claim": false
-    },
-    {
-      "allowed": true,
-      "blocked_domain_risky": false,
-      "blocked_domains": [
-        "awakening",
-        "clinical"
-      ],
-      "claim_target_terms": [],
-      "file": "docs/manuscript/sections/supplement/limitations.md",
-      "has_boundary_scope": false,
-      "has_negation": false,
-      "no_self_risky": false,
-      "sentence": "- provide clinical outcomes, developmental landmarks, or awakening criteria.",
-      "strong_verbs": [],
       "unscoped_strong_claim": false
     },
     {
@@ -2389,120 +2226,9 @@
       "sentence": "- provide clinical outcomes, developmental landmarks, or awakening criteria.",
       "strong_verbs": [],
       "unscoped_strong_claim": false
-    },
-    {
-      "allowed": true,
-      "blocked_domain_risky": false,
-      "blocked_domains": [
-        "realization",
-        "neural",
-        "practice efficacy",
-        "physical qfep"
-      ],
-      "claim_target_terms": [
-        "audit",
-        "evidence",
-        "qfep",
-        "criticality",
-        "practice",
-        "no-self",
-        "self"
-      ],
-      "file": "docs/manuscript/sections/supplement/visualization.md",
-      "has_boundary_scope": true,
-      "has_negation": true,
-      "no_self_risky": false,
-      "sentence": "These panels make the manuscript easier to audit, but they are not evidence for no-self, practice efficacy, neural criticality, or physical qFEP realization.",
-      "strong_verbs": [],
-      "unscoped_strong_claim": false
-    },
-    {
-      "allowed": true,
-      "blocked_domain_risky": false,
-      "blocked_domains": [
-        "awakening",
-        "clinical",
-        "neural",
-        "physical qfep"
-      ],
-      "claim_target_terms": [
-        "evidence",
-        "qfep",
-        "practice"
-      ],
-      "file": "docs/manuscript/sections/supplement/visualization.md",
-      "has_boundary_scope": true,
-      "has_negation": true,
-      "no_self_risky": false,
-      "sentence": "Panels report A/B/D normalization residuals, posterior and expected-free-energy recomputation residuals, replay and runtime dependency controls, and the largest seeded profile-null robustness contrasts; pass/fail colors, profile-null colors, legends, and tolerance lines make this a QA surface, not empirical, clinical, neural, practice-efficacy, awakening, or physical qFEP evidence.",
-      "strong_verbs": [],
-      "unscoped_strong_claim": false
-    },
-    {
-      "allowed": true,
-      "blocked_domain_risky": false,
-      "blocked_domains": [
-        "awakening",
-        "clinical",
-        "neural",
-        "physical qfep"
-      ],
-      "claim_target_terms": [
-        "claim",
-        "qfep",
-        "practice"
-      ],
-      "file": "docs/manuscript/sections/supplement/visualization.md",
-      "has_boundary_scope": false,
-      "has_negation": true,
-      "no_self_risky": false,
-      "sentence": "The binary colorbar and cell labels encode whether a citation key supports a track, separating primary recapitulation, implementation anchors, background theory, proxy context, and limitations so citation density cannot launder unsupported empirical, neural, clinical, practice-efficacy, awakening, or physical qFEP claims.",
-      "strong_verbs": [],
-      "unscoped_strong_claim": false
-    },
-    {
-      "allowed": true,
-      "blocked_domain_risky": false,
-      "blocked_domains": [
-        "physical qfep"
-      ],
-      "claim_target_terms": [
-        "model",
-        "evidence",
-        "qfep"
-      ],
-      "file": "docs/manuscript/sections/supplement/visualization.md",
-      "has_boundary_scope": true,
-      "has_negation": true,
-      "no_self_risky": false,
-      "sentence": "The binary colorbar and cell text show whether each method declares hard constraints, modeling choices, assumptions, evidence ceilings, and negative controls, making verifier-first governance visible without treating the method ledger as empirical or physical qFEP evidence.",
-      "strong_verbs": [
-        "show"
-      ],
-      "unscoped_strong_claim": false
-    },
-    {
-      "allowed": true,
-      "blocked_domain_risky": false,
-      "blocked_domains": [
-        "physical qfep"
-      ],
-      "claim_target_terms": [
-        "claim",
-        "qfep"
-      ],
-      "file": "docs/manuscript/sections/supplement/visualization.md",
-      "has_boundary_scope": true,
-      "has_negation": true,
-      "no_self_risky": false,
-      "sentence": "The binary colorbar and cell labels show which statuses apply, including finite two-qubit controls where implemented and roadmap boundaries where open-system physical qFEP claims are not yet simulated.",
-      "strong_verbs": [
-        "show"
-      ],
-      "unscoped_strong_claim": false
     }
   ],
   "schema": "realizing_emptiness.manuscript_claim_intensity_audit.v1",
-  "sentence_count": 1376,
-  "strong_verb_count": 49
+  "sentence_count": 1299,
+  "strong_verb_count": 46
 }

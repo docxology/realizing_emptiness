@@ -181,7 +181,7 @@
       "claim_boundary": "source-argument coverage audit for manuscript relevance; not empirical, clinical, neural, practice-efficacy, awakening, or physical qFEP evidence",
       "evidence_ceiling_claims": [
         "source_boundary_unevidenceable",
-        "pymdp_runtime_canary"
+        "pymdp_runtime_dependency"
       ],
       "has_evidence_ceiling_claim": true,
       "local_sections": [

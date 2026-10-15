@@ -3,9 +3,14 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "Realizing Emptiness Manuscript Figure Placement Audit",
   "type": "object",
-  "required": ["schema", "technical_quantum_figure_count", "governance_figure_count", "controls", "ok", "claim_boundary"],
+  "required": ["schema", "technical_quantum_figure_count", "governance_figure_count", "unregistered_figure_paths", "controls", "ok", "claim_boundary"],
   "properties": {
-    "schema": {"const": "realizing_emptiness.manuscript_figure_placement_audit.v1"},
+    "schema": {"const": "realizing_emptiness.manuscript_figure_placement_audit.v2"},
+    "unregistered_figure_paths": {"type": "array", "maxItems": 0},
+    "technical_quantum_figures": {"type": "array", "items": {"type": "string"}},
+    "governance_figures": {"type": "array", "items": {"type": "string"}},
+    "compact_main_quantum_figure": {"type": "string"},
+    "qrf_lead_figures": {"type": "array", "items": {"type": "string"}},
     "technical_quantum_figure_count": {"type": "integer", "minimum": 10},
     "technical_quantum_figures_in_main": {"type": "array", "maxItems": 0},
     "technical_quantum_figures_missing_from_supplement": {"type": "array", "maxItems": 0},
@@ -25,7 +30,7 @@
         "qrf_lead_figures_present_in_main",
         "qrf_lead_figures_ordered",
         "qrf_figures_precede_quantum_summary",
-        "retired_qrf_composite_absent"
+        "all_embedded_figures_registered"
       ],
       "properties": {
         "compact_quantum_summary_in_main": {"const": true},
@@ -37,12 +42,12 @@
         "qrf_lead_figures_present_in_main": {"const": true},
         "qrf_lead_figures_ordered": {"const": true},
         "qrf_figures_precede_quantum_summary": {"const": true},
-        "retired_qrf_composite_absent": {"const": true}
+        "all_embedded_figures_registered": {"const": true}
       },
-      "additionalProperties": true
+      "additionalProperties": false
     },
     "ok": {"const": true},
     "claim_boundary": {"type": "string", "pattern": "not empirical|figure-placement"}
   },
-  "additionalProperties": true
+  "additionalProperties": false
 }

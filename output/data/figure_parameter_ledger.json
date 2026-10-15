@@ -8,10 +8,10 @@
     "one_row_per_manifest_figure": true,
     "parameters_or_controls_present_where_available": true
   },
-  "figure_count": 61,
+  "figure_count": 60,
   "missing_rows": [],
   "missing_source_artifacts": [],
-  "row_count": 61,
+  "row_count": 60,
   "rows": [
     {
       "claim_boundary": "review-response accounting for finite deterministic or seeded software validation only; not empirical, not public independent reproduction, not clinical, not neural, not practice-efficacy, not contemplative-attainment, and not physical qFEP evidence",
@@ -176,7 +176,7 @@
       "result_counts": {
         "output/data/pymdp_profile_comparison.json": {
           "generative_model_summary.profile_count": 3,
-          "pymdp_canary.state_factor_count": 2
+          "runtime_dependency_check.state_factor_count": 2
         },
         "output/data/qrf_boundary_channel_ledger.json": {
           "channel_count": 6,
@@ -202,7 +202,7 @@
           ],
           "result_counts": {
             "generative_model_summary.profile_count": 3,
-            "pymdp_canary.state_factor_count": 2
+            "runtime_dependency_check.state_factor_count": 2
           },
           "source_artifact": "output/data/pymdp_profile_comparison.json"
         },
@@ -316,7 +316,7 @@
       "result_counts": {
         "output/data/pymdp_profile_comparison.json": {
           "generative_model_summary.profile_count": 3,
-          "pymdp_canary.state_factor_count": 2
+          "runtime_dependency_check.state_factor_count": 2
         },
         "output/data/qrf_boundary_indistinguishability.json": {
           "channel_count": 6,
@@ -337,7 +337,7 @@
           ],
           "result_counts": {
             "generative_model_summary.profile_count": 3,
-            "pymdp_canary.state_factor_count": 2
+            "runtime_dependency_check.state_factor_count": 2
           },
           "source_artifact": "output/data/pymdp_profile_comparison.json"
         },
@@ -367,7 +367,7 @@
       "result_counts": {
         "output/data/pymdp_profile_comparison.json": {
           "generative_model_summary.profile_count": 3,
-          "pymdp_canary.state_factor_count": 2
+          "runtime_dependency_check.state_factor_count": 2
         }
       },
       "source_artifact_count": 1,
@@ -383,7 +383,7 @@
           ],
           "result_counts": {
             "generative_model_summary.profile_count": 3,
-            "pymdp_canary.state_factor_count": 2
+            "runtime_dependency_check.state_factor_count": 2
           },
           "source_artifact": "output/data/pymdp_profile_comparison.json"
         }
@@ -437,7 +437,7 @@
       "result_counts": {
         "output/data/pymdp_profile_comparison.json": {
           "generative_model_summary.profile_count": 3,
-          "pymdp_canary.state_factor_count": 2
+          "runtime_dependency_check.state_factor_count": 2
         },
         "output/data/qrf_boundary_indistinguishability.json": {
           "channel_count": 6,
@@ -458,7 +458,7 @@
           ],
           "result_counts": {
             "generative_model_summary.profile_count": 3,
-            "pymdp_canary.state_factor_count": 2
+            "runtime_dependency_check.state_factor_count": 2
           },
           "source_artifact": "output/data/pymdp_profile_comparison.json"
         },
@@ -1464,12 +1464,12 @@
         "output/data/pymdp_runtime_diagnostics_log.json::all_state_posteriors_normalized",
         "output/data/pymdp_runtime_diagnostics_log.json::all_trace_labels_resolve",
         "output/data/pymdp_runtime_diagnostics_log.json::all_vfe_finite",
-        "output/data/pymdp_runtime_diagnostics_log.json::canary_ok",
-        "output/data/pymdp_runtime_diagnostics_log.json::canary_warnings_captured",
         "output/data/pymdp_runtime_diagnostics_log.json::deterministic_replay_equal",
         "output/data/pymdp_runtime_diagnostics_log.json::efe_terms_rederived",
         "output/data/pymdp_runtime_diagnostics_log.json::empirical_prior_matches_library",
         "output/data/pymdp_runtime_diagnostics_log.json::perturbation_flags_present",
+        "output/data/pymdp_runtime_diagnostics_log.json::runtime_dependency_ok",
+        "output/data/pymdp_runtime_diagnostics_log.json::runtime_warnings_captured",
         "output/data/pymdp_runtime_diagnostics_log.json::weighted_expected_free_energy_recomputed"
       ],
       "figure_id": "pymdp_profile_comparison",
@@ -1485,13 +1485,13 @@
         },
         "output/data/pymdp_profile_comparison.json": {
           "generative_model_summary.profile_count": 3,
-          "pymdp_canary.state_factor_count": 2
+          "runtime_dependency_check.state_factor_count": 2
         },
         "output/data/pymdp_runtime_diagnostics_log.json": {
-          "canary.state_factor_count": 2,
           "model_profile_count": 3,
           "profile_count": 3,
           "replay.row_count": 72,
+          "runtime_dependency_check.state_factor_count": 2,
           "summary.perturbed_step_count": 11,
           "trace_row_count": 72
         }
@@ -1511,7 +1511,7 @@
           ],
           "result_counts": {
             "generative_model_summary.profile_count": 3,
-            "pymdp_canary.state_factor_count": 2
+            "runtime_dependency_check.state_factor_count": 2
           },
           "source_artifact": "output/data/pymdp_profile_comparison.json"
         },
@@ -1538,12 +1538,12 @@
             "all_state_posteriors_normalized",
             "all_trace_labels_resolve",
             "all_vfe_finite",
-            "canary_ok",
-            "canary_warnings_captured",
             "deterministic_replay_equal",
             "efe_terms_rederived",
             "empirical_prior_matches_library",
             "perturbation_flags_present",
+            "runtime_dependency_ok",
+            "runtime_warnings_captured",
             "weighted_expected_free_energy_recomputed"
           ],
           "exists": true,
@@ -1551,10 +1551,10 @@
             "seed"
           ],
           "result_counts": {
-            "canary.state_factor_count": 2,
             "model_profile_count": 3,
             "profile_count": 3,
             "replay.row_count": 72,
+            "runtime_dependency_check.state_factor_count": 2,
             "summary.perturbed_step_count": 11,
             "trace_row_count": 72
           },
@@ -1576,12 +1576,12 @@
         "output/data/pymdp_runtime_diagnostics_log.json::all_state_posteriors_normalized",
         "output/data/pymdp_runtime_diagnostics_log.json::all_trace_labels_resolve",
         "output/data/pymdp_runtime_diagnostics_log.json::all_vfe_finite",
-        "output/data/pymdp_runtime_diagnostics_log.json::canary_ok",
-        "output/data/pymdp_runtime_diagnostics_log.json::canary_warnings_captured",
         "output/data/pymdp_runtime_diagnostics_log.json::deterministic_replay_equal",
         "output/data/pymdp_runtime_diagnostics_log.json::efe_terms_rederived",
         "output/data/pymdp_runtime_diagnostics_log.json::empirical_prior_matches_library",
         "output/data/pymdp_runtime_diagnostics_log.json::perturbation_flags_present",
+        "output/data/pymdp_runtime_diagnostics_log.json::runtime_dependency_ok",
+        "output/data/pymdp_runtime_diagnostics_log.json::runtime_warnings_captured",
         "output/data/pymdp_runtime_diagnostics_log.json::weighted_expected_free_energy_recomputed"
       ],
       "figure_id": "posterior_trajectory",
@@ -1597,13 +1597,13 @@
         },
         "output/data/pymdp_profile_comparison.json": {
           "generative_model_summary.profile_count": 3,
-          "pymdp_canary.state_factor_count": 2
+          "runtime_dependency_check.state_factor_count": 2
         },
         "output/data/pymdp_runtime_diagnostics_log.json": {
-          "canary.state_factor_count": 2,
           "model_profile_count": 3,
           "profile_count": 3,
           "replay.row_count": 72,
+          "runtime_dependency_check.state_factor_count": 2,
           "summary.perturbed_step_count": 11,
           "trace_row_count": 72
         }
@@ -1623,7 +1623,7 @@
           ],
           "result_counts": {
             "generative_model_summary.profile_count": 3,
-            "pymdp_canary.state_factor_count": 2
+            "runtime_dependency_check.state_factor_count": 2
           },
           "source_artifact": "output/data/pymdp_profile_comparison.json"
         },
@@ -1650,12 +1650,12 @@
             "all_state_posteriors_normalized",
             "all_trace_labels_resolve",
             "all_vfe_finite",
-            "canary_ok",
-            "canary_warnings_captured",
             "deterministic_replay_equal",
             "efe_terms_rederived",
             "empirical_prior_matches_library",
             "perturbation_flags_present",
+            "runtime_dependency_ok",
+            "runtime_warnings_captured",
             "weighted_expected_free_energy_recomputed"
           ],
           "exists": true,
@@ -1663,10 +1663,10 @@
             "seed"
           ],
           "result_counts": {
-            "canary.state_factor_count": 2,
             "model_profile_count": 3,
             "profile_count": 3,
             "replay.row_count": 72,
+            "runtime_dependency_check.state_factor_count": 2,
             "summary.perturbed_step_count": 11,
             "trace_row_count": 72
           },
@@ -1688,12 +1688,12 @@
         "output/data/pymdp_runtime_diagnostics_log.json::all_state_posteriors_normalized",
         "output/data/pymdp_runtime_diagnostics_log.json::all_trace_labels_resolve",
         "output/data/pymdp_runtime_diagnostics_log.json::all_vfe_finite",
-        "output/data/pymdp_runtime_diagnostics_log.json::canary_ok",
-        "output/data/pymdp_runtime_diagnostics_log.json::canary_warnings_captured",
         "output/data/pymdp_runtime_diagnostics_log.json::deterministic_replay_equal",
         "output/data/pymdp_runtime_diagnostics_log.json::efe_terms_rederived",
         "output/data/pymdp_runtime_diagnostics_log.json::empirical_prior_matches_library",
         "output/data/pymdp_runtime_diagnostics_log.json::perturbation_flags_present",
+        "output/data/pymdp_runtime_diagnostics_log.json::runtime_dependency_ok",
+        "output/data/pymdp_runtime_diagnostics_log.json::runtime_warnings_captured",
         "output/data/pymdp_runtime_diagnostics_log.json::weighted_expected_free_energy_recomputed",
         "output/data/stochastic_effect_size_audit.json::all_controls_pass",
         "output/data/stochastic_effect_size_audit.json::all_intervals_finite",
@@ -1716,10 +1716,10 @@
           "row_count": 72
         },
         "output/data/pymdp_runtime_diagnostics_log.json": {
-          "canary.state_factor_count": 2,
           "model_profile_count": 3,
           "profile_count": 3,
           "replay.row_count": 72,
+          "runtime_dependency_check.state_factor_count": 2,
           "summary.perturbed_step_count": 11,
           "trace_row_count": 72
         },
@@ -1748,12 +1748,12 @@
             "all_state_posteriors_normalized",
             "all_trace_labels_resolve",
             "all_vfe_finite",
-            "canary_ok",
-            "canary_warnings_captured",
             "deterministic_replay_equal",
             "efe_terms_rederived",
             "empirical_prior_matches_library",
             "perturbation_flags_present",
+            "runtime_dependency_ok",
+            "runtime_warnings_captured",
             "weighted_expected_free_energy_recomputed"
           ],
           "exists": true,
@@ -1761,10 +1761,10 @@
             "seed"
           ],
           "result_counts": {
-            "canary.state_factor_count": 2,
             "model_profile_count": 3,
             "profile_count": 3,
             "replay.row_count": 72,
+            "runtime_dependency_check.state_factor_count": 2,
             "summary.perturbed_step_count": 11,
             "trace_row_count": 72
           },
@@ -1806,46 +1806,6 @@
             "row_count": 18
           },
           "source_artifact": "output/data/stochastic_effect_size_audit.json"
-        }
-      ],
-      "traceable": true
-    },
-    {
-      "claim_boundary": "review-response accounting for finite deterministic or seeded software validation only; not empirical, not public independent reproduction, not clinical, not neural, not practice-efficacy, not contemplative-attainment, and not physical qFEP evidence",
-      "control_fields": [],
-      "figure_id": "criticality_proxy_panels",
-      "parameter_fields": [],
-      "path": "output/figures/criticality_proxy_panels.png",
-      "result_counts": {
-        "output/reports/criticality_proxy_report.json": {
-          "avalanche_size_distribution.avalanche_count": 1,
-          "branching_ratio": 1.0085470085470085,
-          "criticality_index": 0.008547008547008517,
-          "entropy_nats": 0.6931471805599453,
-          "near_critical_score": 0.05626998707219166,
-          "switch_rate": 0.8913043478260869,
-          "variance": 0.25
-        }
-      },
-      "source_artifact_count": 1,
-      "source_artifacts": [
-        "output/reports/criticality_proxy_report.json"
-      ],
-      "source_metadata": [
-        {
-          "control_fields": [],
-          "exists": true,
-          "parameter_fields": [],
-          "result_counts": {
-            "avalanche_size_distribution.avalanche_count": 1,
-            "branching_ratio": 1.0085470085470085,
-            "criticality_index": 0.008547008547008517,
-            "entropy_nats": 0.6931471805599453,
-            "near_critical_score": 0.05626998707219166,
-            "switch_rate": 0.8913043478260869,
-            "variance": 0.25
-          },
-          "source_artifact": "output/reports/criticality_proxy_report.json"
         }
       ],
       "traceable": true
@@ -1933,11 +1893,7 @@
         "output/reports/criticality_proxy_report.json": {
           "avalanche_size_distribution.avalanche_count": 1,
           "branching_ratio": 1.0085470085470085,
-          "criticality_index": 0.008547008547008517,
-          "entropy_nats": 0.6931471805599453,
-          "near_critical_score": 0.05626998707219166,
-          "switch_rate": 0.8913043478260869,
-          "variance": 0.25
+          "criticality_index": 0.008547008547008517
         }
       },
       "source_artifact_count": 2,
@@ -1976,11 +1932,7 @@
           "result_counts": {
             "avalanche_size_distribution.avalanche_count": 1,
             "branching_ratio": 1.0085470085470085,
-            "criticality_index": 0.008547008547008517,
-            "entropy_nats": 0.6931471805599453,
-            "near_critical_score": 0.05626998707219166,
-            "switch_rate": 0.8913043478260869,
-            "variance": 0.25
+            "criticality_index": 0.008547008547008517
           },
           "source_artifact": "output/reports/criticality_proxy_report.json"
         }
@@ -2389,7 +2341,7 @@
       "path": "output/figures/visual_semantic_palette_ledger.png",
       "result_counts": {
         "figures.yaml": {
-          "figure_config_count": 61,
+          "figure_config_count": 60,
           "palette_role_count": 6
         }
       },
@@ -2411,7 +2363,7 @@
             "palette"
           ],
           "result_counts": {
-            "figure_config_count": 61,
+            "figure_config_count": 60,
             "palette_role_count": 6
           },
           "source_artifact": "figures.yaml"
@@ -2569,7 +2521,7 @@
       "result_counts": {
         "output/data/manuscript_claim_audit.json": {
           "declared_bibliography_count": 130,
-          "fragment_count": 56,
+          "fragment_count": 53,
           "public_claim_count": 15,
           "used_citation_count": 130
         }
@@ -2587,7 +2539,7 @@
           "parameter_fields": [],
           "result_counts": {
             "declared_bibliography_count": 130,
-            "fragment_count": 56,
+            "fragment_count": 53,
             "public_claim_count": 15,
             "used_citation_count": 130
           },

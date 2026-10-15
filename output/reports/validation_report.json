@@ -130,7 +130,6 @@
     "exists:output/figures/collision_model_relaxation.png": true,
     "exists:output/figures/compassion_scope_widening.png": true,
     "exists:output/figures/criticality_paired_contrasts.png": true,
-    "exists:output/figures/criticality_proxy_panels.png": true,
     "exists:output/figures/criticality_signatures.png": true,
     "exists:output/figures/criticality_stochastic_ensemble.png": true,
     "exists:output/figures/data_processing_monotonicity.png": true,
@@ -297,9 +296,9 @@
     "ongoing_revision_audit_ok": true,
     "posterior_normalized": true,
     "practice_boundaries": true,
-    "pymdp_canary": true,
     "pymdp_generative_model_ok": true,
     "pymdp_policy_trace_ok": true,
+    "pymdp_runtime_dependency_ok": true,
     "pymdp_runtime_diagnostics_log_ok": true,
     "qfep_boundary_hamiltonian_dynamics_ok": true,
     "qrf_boundary_channel_ledger_ok": true,
@@ -432,7 +431,7 @@
     "visual_caption_audit_ok": true,
     "visual_style_audit_ok": true
   },
-  "passed": 430,
+  "passed": 429,
   "schema": "realizing_emptiness.validation_report.v1",
-  "total": 430
+  "total": 429
 }

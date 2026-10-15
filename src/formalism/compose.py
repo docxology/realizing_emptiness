@@ -51,6 +51,12 @@ def compose(project_root: Path, validate_only: bool = False, strict: bool = Fals
     sections = manifest["sections"]
     coverage_rows = []
     issues = []
+    fragment_root = project_root / "docs" / "manuscript" / "sections"
+    selected_fragments = {fragment_root / section["id"] / f"{track}.md"
+                          for section in sections for track in section["tracks"]}
+    for fragment in sorted(fragment_root.glob("*/*.md")):
+        if fragment.name not in {"README.md", "AGENTS.md", "_lead.md"} and fragment not in selected_fragments:
+            issues.append(f"unselected fragment {fragment.relative_to(project_root)}")
     for section in sections:
         output = project_root / "docs" / "manuscript" / section["output"]
         section_dir = project_root / "docs" / "manuscript" / "sections" / section["id"]

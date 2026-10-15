@@ -1,7 +1,7 @@
 {
   "declared_bibliography_count": 130,
   "forbidden_positive_claims": [],
-  "fragment_count": 56,
+  "fragment_count": 53,
   "missing_bibliography_keys": [],
   "missing_claim_mentions": [],
   "ok": true,
@@ -13,7 +13,7 @@
     "criticality_proxy_boundary",
     "metacognitive_access_model",
     "practice_protocol_boundary",
-    "pymdp_runtime_canary",
+    "pymdp_runtime_dependency",
     "qfep_surrogate_scope",
     "quantum_contextuality_witness",
     "quantum_measurement_contextuality",

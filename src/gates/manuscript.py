@@ -41,7 +41,6 @@ QRF_LEAD_FIGURES = (
     "../../output/figures/qrf_channel_relabeling_ledger.png",
     "../../output/figures/qrf_invariance_policy_flow.png",
 )
-RETIRED_QRF_COMPOSITE_FIGURE = "../../output/figures/qrf_boundary_graphical_model.png"
 TECHNICAL_QUANTUM_FIGURES = (
     "../../output/figures/quantum_boundary_entropy_landscape.png",
     "../../output/figures/arbitrary_two_qubit_entanglement_audit.png",
@@ -204,7 +203,10 @@ def build_figure_placement_audit(project_root: Path) -> dict[str, Any]:
     compact_in_supplement = COMPACT_MAIN_QUANTUM_FIGURE in supplement_text
     qrf_indices = [main_text.find(path) for path in QRF_LEAD_FIGURES]
     compact_index = main_text.find(COMPACT_MAIN_QUANTUM_FIGURE)
-    retired_qrf_absent = RETIRED_QRF_COMPOSITE_FIGURE not in main_text and RETIRED_QRF_COMPOSITE_FIGURE not in supplement_text
+    figure_config = yaml.safe_load((project_root / "figures.yaml").read_text(encoding="utf-8"))
+    registered = {f"../../output/figures/{row['filename']}" for row in figure_config["figures"].values()}
+    embedded = {path for text in texts.values() for path in _image_paths(text)}
+    unregistered = sorted(embedded - registered)
     controls = {
         "compact_quantum_summary_in_main": compact_in_main,
         "compact_quantum_summary_not_in_supplement": not compact_in_supplement,
@@ -216,10 +218,10 @@ def build_figure_placement_audit(project_root: Path) -> dict[str, Any]:
         "qrf_lead_figures_present_in_main": all(index >= 0 for index in qrf_indices),
         "qrf_lead_figures_ordered": qrf_indices == sorted(qrf_indices) and len(set(qrf_indices)) == len(qrf_indices),
         "qrf_figures_precede_quantum_summary": all(index >= 0 and compact_index > index for index in qrf_indices),
-        "retired_qrf_composite_absent": retired_qrf_absent,
+        "all_embedded_figures_registered": bool(registered) and not unregistered,
     }
     return {
-        "schema": "realizing_emptiness.manuscript_figure_placement_audit.v1",
+        "schema": "realizing_emptiness.manuscript_figure_placement_audit.v2",
         "technical_quantum_figure_count": len(TECHNICAL_QUANTUM_FIGURES),
         "technical_quantum_figures": list(TECHNICAL_QUANTUM_FIGURES),
         "technical_quantum_figures_in_main": technical_in_main,
@@ -231,7 +233,7 @@ def build_figure_placement_audit(project_root: Path) -> dict[str, Any]:
         "governance_figures_repeated_in_supplement": governance_repeated_in_supplement,
         "compact_main_quantum_figure": COMPACT_MAIN_QUANTUM_FIGURE,
         "qrf_lead_figures": list(QRF_LEAD_FIGURES),
-        "retired_qrf_composite_figure": RETIRED_QRF_COMPOSITE_FIGURE,
+        "unregistered_figure_paths": unregistered,
         "controls": controls,
         "ok": all(controls.values()),
         "claim_boundary": "manuscript figure-placement audit only; not empirical, clinical, neural, practice-efficacy, awakening, or physical qFEP evidence",

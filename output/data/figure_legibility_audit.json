@@ -1,7 +1,7 @@
 {
   "claim_boundary": "figure legibility audit only; not empirical evidence",
   "cropped_text": [],
-  "figure_count": 61,
+  "figure_count": 60,
   "layout_failures": [],
   "legend_axis_overlaps": [],
   "minimum_height_px": 600,
@@ -13,7 +13,7 @@
   "ok": true,
   "overlapping_text": [],
   "overlapping_titles": [],
-  "row_count": 61,
+  "row_count": 60,
   "rows": [
     {
       "colorbar_count": 0,
@@ -545,23 +545,6 @@
     {
       "colorbar_count": 0,
       "cropped_text_count": 0,
-      "height": 804,
-      "id": "criticality_proxy_panels",
-      "layout_ok": true,
-      "legend_axis_overlap_count": 0,
-      "legend_count": 1,
-      "min_font_pt": 12.0,
-      "ok": true,
-      "panel_count": 1,
-      "pixel_variance": 0.07745223235990085,
-      "source_data_alternative_count": 1,
-      "text_overlap_count": 0,
-      "title_overlap_count": 0,
-      "width": 1648
-    },
-    {
-      "colorbar_count": 0,
-      "cropped_text_count": 0,
       "height": 1310,
       "id": "criticality_stochastic_ensemble",
       "layout_ok": true,
@@ -570,7 +553,7 @@
       "min_font_pt": 12.0,
       "ok": true,
       "panel_count": 2,
-      "pixel_variance": 0.07650102997097545,
+      "pixel_variance": 0.0726937966238291,
       "source_data_alternative_count": 1,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
@@ -791,7 +774,7 @@
       "min_font_pt": 12.0,
       "ok": true,
       "panel_count": 1,
-      "pixel_variance": 0.028402352265964943,
+      "pixel_variance": 0.028765629709545076,
       "source_data_alternative_count": 1,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
@@ -825,7 +808,7 @@
       "min_font_pt": 12.3,
       "ok": true,
       "panel_count": 1,
-      "pixel_variance": 0.03193225363900846,
+      "pixel_variance": 0.03206610926748936,
       "source_data_alternative_count": 1,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
@@ -859,11 +842,11 @@
       "min_font_pt": 12.0,
       "ok": true,
       "panel_count": 1,
-      "pixel_variance": 0.05268548896260606,
+      "pixel_variance": 0.05256784401758186,
       "source_data_alternative_count": 1,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
-      "width": 2765
+      "width": 2769
     },
     {
       "colorbar_count": 0,
@@ -876,11 +859,11 @@
       "min_font_pt": 12.0,
       "ok": true,
       "panel_count": 1,
-      "pixel_variance": 0.048533938955397114,
+      "pixel_variance": 0.04857467886782718,
       "source_data_alternative_count": 3,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
-      "width": 2646
+      "width": 2645
     },
     {
       "colorbar_count": 1,

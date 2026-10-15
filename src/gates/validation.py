@@ -18,6 +18,8 @@ from formalism.source import verify_primary_source_hash
 from gates.contracts import build_artifact_contract_registry
 from simulation.pymdp_profiles import expected_free_energy_terms
 from simulation.resampling import binomial_summary
+from simulation.resampling import bootstrap_contrast
+from simulation.criticality import _branching_by_run
 from simulation.statistical_robustness import _holm_adjust
 from visualizations.integrity import compare_figure_integrity
 
@@ -147,7 +149,6 @@ EXPECTED_FIGURES = [
     "output/figures/pymdp_profile_comparison.png",
     "output/figures/posterior_trajectory.png",
     "output/figures/pymdp_runtime_validation_dashboard.png",
-    "output/figures/criticality_proxy_panels.png",
     "output/figures/criticality_stochastic_ensemble.png",
     "output/figures/criticality_signatures.png",
     "output/figures/compassion_scope_widening.png",
@@ -377,6 +378,94 @@ def _finite_json_float(value: str) -> float:
     return number
 
 
+def _criticality_stochastic_ensemble_matches(payload: dict[str, Any], policy: dict[str, Any]) -> bool:
+    try:
+        controls = {
+            "seeded_policy_source", "all_intervals_finite", "null_controls_present",
+            "profiles_differ_from_null_controls", "measured_branching_separates_from_null",
+            "majority_of_profiles_ci_separate_from_null", "branching_estimator_recovers_planted_sigma",
+        }
+        if (payload["schema"] != "realizing_emptiness.criticality_stochastic_ensemble.v2"
+                or policy["schema"] != "realizing_emptiness.stochastic_policy_ensemble.v1"
+                or payload["label"] != "seeded_stochastic_simulation_not_empirical_neural_measure"
+                or payload["all_controls_pass"] is not True
+                or set(payload["controls"]) != controls
+                or any(value is not True for value in payload["controls"].values())
+                or "not empirical neural-criticality" not in payload["claim_boundary"]
+                or payload["branching_null_method"] != "seeded_per_run_observation_permutation"
+                or payload["branching_null_seed"] != policy["seed"] + 91
+                or any(payload[key] != policy[key] for key in ("seed", "runs_per_profile", "steps"))):
+            return False
+        rows = payload["metric_rows"]
+        summaries = payload["summary_rows"]
+        contrasts = payload["null_contrasts"]
+        profiles = sorted({row["profile"] for row in rows})
+        runs = payload["runs_per_profile"]
+        if len(profiles) < 3 or runs < 2:
+            return False
+        expected_keys = {(profile, run, null) for profile in profiles for run in range(runs) for null in (False, True)}
+        indexed = {(row["profile"], row["run_index"], row["null_control"]): row for row in rows}
+        branching = _branching_by_run(policy)
+        if (set(indexed) != expected_keys or set(branching) != expected_keys
+                or len(rows) != len(expected_keys) or payload["metric_row_count"] != len(rows)
+                or payload["summary_row_count"] != len(summaries) or len(summaries) != 2 * len(profiles)
+                or len(contrasts) != len(profiles) or {row["profile"] for row in contrasts} != set(profiles)):
+            return False
+
+        def matches(actual: float, expected: float) -> bool:
+            return not isinstance(actual, bool) and math.isfinite(actual) and math.isclose(actual, expected, rel_tol=1e-10, abs_tol=1e-12)
+
+        metrics = ("observation_entropy_nats", "action_entropy_nats", "switch_rate", "variance",
+                   "autocorrelation_lag1", "branching_ratio", "criticality_index")
+        intervals = {}
+        for key, row in indexed.items():
+            if (type(row["null_control"]) is not bool
+                    or not matches(row["branching_ratio"], branching[key])
+                    or not matches(row["criticality_index"], abs(branching[key] - 1.0))):
+                return False
+        for summary in summaries:
+            key = (summary["profile"], summary["null_control"])
+            if key in intervals or key[0] not in profiles or type(key[1]) is not bool or summary["run_count"] != runs:
+                return False
+            intervals[key] = {}
+            for metric in metrics:
+                values = np.asarray([indexed[(key[0], run, key[1])][metric] for run in range(runs)], dtype=float)
+                if not np.isfinite(values).all():
+                    return False
+                mean, sd = float(values.mean()), float(values.std(ddof=1))
+                width = 1.96 * sd / math.sqrt(runs)
+                interval = dict(mean=mean, sd=sd, ci95_low=mean-width, ci95_high=mean+width)
+                if any(not matches(summary["metrics"][metric][field], value) for field, value in interval.items()):
+                    return False
+                intervals[key][metric] = interval
+        separating = 0
+        for contrast in contrasts:
+            profile = contrast["profile"]
+            real, null = intervals[(profile, False)], intervals[(profile, True)]
+            for metric in ("branching_ratio", "criticality_index", "switch_rate"):
+                if not matches(contrast[f"{metric}_delta_vs_null"], real[metric]["mean"] - null[metric]["mean"]):
+                    return False
+            for metric in ("branching_ratio", "switch_rate"):
+                disjoint = real[metric]["ci95_low"] > null[metric]["ci95_high"] or real[metric]["ci95_high"] < null[metric]["ci95_low"]
+                if contrast[f"{metric}_ci_disjoint_from_null"] is not disjoint:
+                    return False
+                if metric == "branching_ratio":
+                    separating += int(disjoint)
+            seed = policy["seed"] + 92000 + profiles.index(profile)
+            paired = bootstrap_contrast([branching[(profile, run, False)] for run in range(runs)],
+                                        [branching[(profile, run, True)] for run in range(runs)], seed=seed, paired=True)
+            low, high = paired["difference_ci95_low"], paired["difference_ci95_high"]
+            if (contrast["paired_run_count"] != runs or contrast["paired_bootstrap_seed"] != seed
+                    or contrast["paired_bootstrap_draws"] != 2048
+                    or not matches(contrast["paired_branching_ci95_low"], low)
+                    or not matches(contrast["paired_branching_ci95_high"], high)
+                    or contrast["paired_branching_interval_excludes_zero"] is not (high < 0 or low > 0)):
+                return False
+        return separating > len(profiles) / 2
+    except (KeyError, TypeError, ValueError, OverflowError, IndexError):
+        return False
+
+
 def _load_json(project_root: Path, relative: str) -> dict[str, Any]:
     # Fail-closed: a missing or unparseable gated artifact yields an empty payload so the gate
     # that reads it evaluates to False, rather than crashing the whole validator. The artifact's
@@ -466,8 +555,8 @@ def _pymdp_trace_math_ok(policy_trace: dict[str, Any], model_audit: dict[str, An
 
 _REQUIRED_PYMDP_CONTROLS = frozenset(
     {
-        "canary_ok",
-        "canary_warnings_captured",
+        "runtime_dependency_ok",
+        "runtime_warnings_captured",
         "all_model_hashes_present",
         "all_models_normalized",
         "deterministic_replay_equal",
@@ -492,12 +581,12 @@ def _pymdp_runtime_log_ok(runtime_log: dict[str, Any], policy_trace: dict[str, A
     replay = runtime_log.get("replay", {})
     row_count = len(runtime_log.get("rows", []))
     return (
-        runtime_log.get("schema") == "realizing_emptiness.pymdp_runtime_diagnostics_log.v1"
+        runtime_log.get("schema") == "realizing_emptiness.pymdp_runtime_diagnostics_log.v2"
         and runtime_log.get("all_controls_pass") is True
         and runtime_log.get("trace_row_count") == policy_trace.get("row_count") == row_count
         and runtime_log.get("runtime_versions", {}).get("inferactively_pymdp") == "1.0.3"
-        and runtime_log.get("canary", {}).get("ok") is True
-        and len(runtime_log.get("canary", {}).get("warnings", [])) >= 1
+        and runtime_log.get("runtime_dependency_check", {}).get("ok") is True
+        and len(runtime_log.get("runtime_dependency_check", {}).get("warnings", [])) >= 1
         and runtime_log.get("model_profile_count") == 3
         and len({row.get("sha256") for row in runtime_log.get("model_hashes", [])}) == 3
         and all(len(row.get("sha256", "")) == 64 for row in runtime_log.get("model_hashes", []))
@@ -1232,7 +1321,7 @@ def validate_outputs(project_root: Path) -> dict[str, bool]:
         and "not empirical" in method_controls.get("claim_boundary", "")
     )
     profile = _load_json(project_root, "output/data/pymdp_profile_comparison.json")
-    checks["pymdp_canary"] = profile.get("pymdp_canary", {}).get("ok") is True
+    checks["pymdp_runtime_dependency_ok"] = profile.get("runtime_dependency_check", {}).get("ok") is True
     checks["posterior_normalized"] = profile.get("posterior_normalized") is True
     policy_trace = _load_json(project_root, "output/data/pymdp_policy_trace.json")
     model_audit = _load_json(project_root, "output/data/pymdp_generative_model_audit.json")
@@ -1279,13 +1368,13 @@ def validate_outputs(project_root: Path) -> dict[str, bool]:
     checks["practice_boundaries"] = practice.get("allow_user_facing_claims") is False and practice.get("all_have_safety_boundaries") is True
     criticality = _load_json(project_root, "output/reports/criticality_proxy_report.json")
     checks["criticality_boundary"] = (
-        criticality.get("schema") == "realizing_emptiness.criticality_proxy_report.v1"
+        criticality.get("schema") == "realizing_emptiness.criticality_proxy_report.v2"
         and criticality.get("label") == "single_trace_diagnostic_not_empirical_neural_measure"
         and "not evidence" in criticality.get("claim_boundary", "")
     )
     criticality_stochastic = _load_json(project_root, "output/data/criticality_stochastic_ensemble.json")
     checks["criticality_stochastic_ensemble_ok"] = (
-        criticality_stochastic.get("schema") == "realizing_emptiness.criticality_stochastic_ensemble.v1"
+        _criticality_stochastic_ensemble_matches(criticality_stochastic, stochastic_policy)
         and criticality_stochastic.get("label") == "seeded_stochastic_simulation_not_empirical_neural_measure"
         and criticality_stochastic.get("all_controls_pass") is True
         and criticality_stochastic.get("controls", {}).get("seeded_policy_source") is True
@@ -1300,7 +1389,7 @@ def validate_outputs(project_root: Path) -> dict[str, bool]:
     )
     stochastic_effects = _load_json(project_root, "output/data/stochastic_effect_size_audit.json")
     checks["stochastic_effect_size_audit_ok"] = (
-        stochastic_effects.get("schema") == "realizing_emptiness.stochastic_effect_size_audit.v1"
+        stochastic_effects.get("schema") == "realizing_emptiness.stochastic_effect_size_audit.v2"
         and stochastic_effects.get("all_controls_pass") is True
         and _permutation_metadata_matches(stochastic_effects)
         and stochastic_effects.get("metric_count", 0) >= 6
@@ -1709,7 +1798,6 @@ def validate_outputs(project_root: Path) -> dict[str, bool]:
         and qrf_ledger_row.get("channel_labels") == [f"b{index}" for index in range(6)]
         and "equations 7-10" in qrf_ledger_row.get("caption", "").lower()
         and "ontological" in qrf_ledger_row.get("caption", "")
-        and "qrf_boundary_graphical_model" not in figure_rows_by_id
     )
     caption_audit = _load_json(project_root, "output/data/visual_caption_audit.json")
     checks["visual_caption_audit_ok"] = (
@@ -1807,7 +1895,7 @@ def validate_outputs(project_root: Path) -> dict[str, bool]:
     )
     dashboard_payload = _load_json(project_root, "output/data/artifact_dashboard_payload.json")
     checks["artifact_dashboard_ok"] = (
-        dashboard_payload.get("schema") == "realizing_emptiness.artifact_dashboard_payload.v1"
+        dashboard_payload.get("schema") == "realizing_emptiness.artifact_dashboard_payload.v2"
         and dashboard_payload.get("roadmap", {}).get("implemented_count") == roadmap.get("implemented_count")
         and dashboard_payload.get("readiness", {}).get("future_blocked") is True
         and dashboard_payload.get("todo_audit", {}).get("all_controls_pass") is True
@@ -1815,7 +1903,7 @@ def validate_outputs(project_root: Path) -> dict[str, bool]:
         and dashboard_payload.get("dependency_graph", {}).get("all_controls_pass") is True
         and dashboard_payload.get("pymdp_runtime", {}).get("all_controls_pass") is True
         and dashboard_payload.get("pymdp_runtime", {}).get("replay_equal") is True
-        and dashboard_payload.get("pymdp_runtime", {}).get("canary_warning_count", 0) >= 1
+        and dashboard_payload.get("pymdp_runtime", {}).get("runtime_warning_count", 0) >= 1
         and dashboard_payload.get("pymdp_runtime", {}).get("max_weighted_expected_free_energy_residual", 1.0) < 1e-7
         and dashboard_payload.get("stochastic_engines", {}).get("active_inference_ensemble_ok") is True
         and dashboard_payload.get("stochastic_engines", {}).get("criticality_ensemble_ok") is True
@@ -1867,7 +1955,7 @@ def validate_outputs(project_root: Path) -> dict[str, bool]:
     )
     placement = _load_json(project_root, "output/data/manuscript_figure_placement_audit.json")
     checks["manuscript_figure_placement_audit_ok"] = (
-        placement.get("schema") == "realizing_emptiness.manuscript_figure_placement_audit.v1"
+        placement.get("schema") == "realizing_emptiness.manuscript_figure_placement_audit.v2"
         and placement.get("ok") is True
         and placement.get("technical_quantum_figures_in_main") == []
         and placement.get("technical_quantum_figures_missing_from_supplement") == []
@@ -1883,7 +1971,8 @@ def validate_outputs(project_root: Path) -> dict[str, bool]:
         and placement.get("controls", {}).get("qrf_lead_figures_present_in_main") is True
         and placement.get("controls", {}).get("qrf_lead_figures_ordered") is True
         and placement.get("controls", {}).get("qrf_figures_precede_quantum_summary") is True
-        and placement.get("controls", {}).get("retired_qrf_composite_absent") is True
+        and placement.get("controls", {}).get("all_embedded_figures_registered") is True
+        and placement.get("unregistered_figure_paths") == []
         and "not empirical" in placement.get("claim_boundary", "")
     )
     cover_audit = _load_json(project_root, "output/data/cover_graphical_abstract_audit.json")

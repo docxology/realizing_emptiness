@@ -1,6 +1,6 @@
 {
   "claim_boundary": "visual style audit only; not empirical evidence",
-  "figure_count": 61,
+  "figure_count": 60,
   "hatches": {
     "blocked": "..",
     "control": "//",
@@ -114,7 +114,7 @@
       "role": "source"
     }
   ],
-  "row_count": 61,
+  "row_count": 60,
   "rows": [
     {
       "colorbar_count": 0,
@@ -497,17 +497,6 @@
         "fail",
         "stochastic",
         "null"
-      ]
-    },
-    {
-      "colorbar_count": 0,
-      "has_legend_or_colorbar": true,
-      "id": "criticality_proxy_panels",
-      "legend_count": 1,
-      "missing_roles": [],
-      "ok": true,
-      "roles": [
-        "finite"
       ]
     },
     {

@@ -14,7 +14,7 @@ bounded software. The integrity boundary is deliberately narrow:
   non-computable for v1;
 - the source ledger verifies the attached PDF hash and records the OSF preprint
   URL without copying long passages from the source;
-- `pymdp` participation is guarded by an import/version/runtime canary pinned
+- `pymdp` participation is guarded by a runtime dependency check pinned
   to `inferactively-pymdp==1.0.3`;
 - QRF, separation-prior, Bayesian model reduction, criticality, compassion, and
   practice outputs are deterministic toy or proxy artifacts unless separately

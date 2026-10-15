@@ -1,5 +1,5 @@
 {
-  "figure_reference_count": 57,
+  "figure_reference_count": 56,
   "manuscript_count": 8,
   "missing_interpretive_boundaries": [],
   "missing_or_weak_captions": [],
@@ -541,7 +541,7 @@
       "visual_encoding": "Two panels; Panel A grouped bars with a legend encode measured branching ratio for profile versus hatched null plus a dashed balance line, and Panel B is a histogram whose bar heights encode avalanche-size counts."
     },
     {
-      "caption_length": 428,
+      "caption_length": 507,
       "figure_id": "criticality_stochastic_ensemble",
       "figure_path": "../../output/figures/criticality_stochastic_ensemble.png",
       "has_interpretive_boundary": true,
@@ -550,21 +550,8 @@
       "manuscript": "06_supplement.md",
       "ok": true,
       "source_artifact_count": 1,
-      "source_map_caption_length": 428,
+      "source_map_caption_length": 507,
       "visual_encoding": "Two-panel grouped bar chart; shared legend explains profile versus null color and hatch, text annotations encode profile-vs-null direction, and error bars encode 95 percent intervals across seeded runs."
-    },
-    {
-      "caption_length": 340,
-      "figure_id": "criticality_proxy_panels",
-      "figure_path": "../../output/figures/criticality_proxy_panels.png",
-      "has_interpretive_boundary": true,
-      "has_source_artifact": true,
-      "has_visual_encoding_language": true,
-      "manuscript": "06_supplement.md",
-      "ok": true,
-      "source_artifact_count": 1,
-      "source_map_caption_length": 340,
-      "visual_encoding": "Single bar color legend encodes one simulated trajectory diagnostic across entropy, switching, variance, and near-critical labels."
     },
     {
       "caption_length": 484,
@@ -750,5 +737,5 @@
     }
   ],
   "schema": "realizing_emptiness.rendered_figure_caption_audit.v1",
-  "unique_figure_count": 57
+  "unique_figure_count": 56
 }

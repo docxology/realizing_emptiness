@@ -14,13 +14,6 @@ CRITICALITY_CLAIM_BOUNDARY = (
 )
 
 
-def _entropy(values: np.ndarray) -> float:
-    counts = np.bincount(values.astype(int).ravel(), minlength=2).astype(float)
-    probs = counts / counts.sum()
-    probs = probs[probs > 0]
-    return float(-(probs * np.log(probs)).sum())
-
-
 def branching_ratio(activity: np.ndarray) -> float:
     """Return the finite branching ratio sigma = descendants per ancestor over an activity series.
 
@@ -30,9 +23,11 @@ def branching_ratio(activity: np.ndarray) -> float:
     below or above 1 marks subcritical or supercritical software dynamics. Returns 0.0 when
     there is no ancestor activity. This is a software-trajectory diagnostic only.
     """
-    series = np.asarray(activity, dtype=float).ravel()
-    if not np.isfinite(series).all():
-        raise ValueError("activity series must be finite")
+    series = np.asarray(activity, dtype=float)
+    if series.ndim != 1:
+        raise ValueError("activity must be a one-dimensional series")
+    if not np.isfinite(series).all() or np.any(series < 0):
+        raise ValueError("activity series must be finite and non-negative")
     if series.size < 2:
         return 0.0
     ancestors = series[:-1]
@@ -53,7 +48,13 @@ def avalanche_size_distribution(activity: np.ndarray, *, threshold: float = 0.0)
     the power-law fit) over the observed sizes. This is a finite shape diagnostic, never a
     claim of true scale-free neural dynamics.
     """
-    series = np.asarray(activity, dtype=float).ravel()
+    series = np.asarray(activity, dtype=float)
+    if series.ndim != 1:
+        raise ValueError("activity must be a one-dimensional series")
+    if not np.isfinite(series).all() or np.any(series < 0):
+        raise ValueError("activity series must be finite and non-negative")
+    if not np.isfinite(threshold) or threshold < 0:
+        raise ValueError("avalanche threshold must be finite and non-negative")
     sizes: list[float] = []
     current = 0.0
     active = False
@@ -153,32 +154,13 @@ def _activity_series(observations: np.ndarray) -> np.ndarray:
 
 
 def build_criticality_report(profile_payload: dict[str, Any]) -> dict[str, Any]:
-    """Build a single-trace diagnostic retained for source-boundary continuity."""
+    """Measure branching and avalanche sizes on one finite boundary-channel trace."""
     observations = np.array([row["observation"] for row in profile_payload["trajectory"]], dtype=float)
-    diffs = np.abs(np.diff(observations, axis=0))
-    flattened = observations.ravel()
-    if len(flattened) > 1:
-        autocorrelation = float(np.corrcoef(flattened[:-1], flattened[1:])[0, 1])
-        if not np.isfinite(autocorrelation):
-            autocorrelation = 0.0
-    else:
-        autocorrelation = 0.0
-    switch_rate = float(diffs.mean()) if diffs.size else 0.0
-    variance = float(observations.var())
-    entropy = _entropy(observations)
-    # Legacy coarse score retained for source-boundary continuity; the claim-bearing
-    # quantities are now the MEASURED branching and avalanche signatures below.
-    near_critical_score = float(1.0 - min(1.0, abs(switch_rate - 0.5) + abs(autocorrelation)))
     activity = _activity_series(observations)
     signatures = criticality_signatures(activity)
     return {
-        "schema": "realizing_emptiness.criticality_proxy_report.v1",
+        "schema": "realizing_emptiness.criticality_proxy_report.v2",
         "label": "single_trace_diagnostic_not_empirical_neural_measure",
-        "entropy_nats": entropy,
-        "switch_rate": switch_rate,
-        "variance": variance,
-        "autocorrelation_lag1": autocorrelation,
-        "near_critical_score": near_critical_score,
         "branching_ratio": signatures["branching_ratio"],
         "criticality_index": signatures["criticality_index"],
         "avalanche_size_distribution": signatures["avalanche_size_distribution"],
@@ -225,9 +207,6 @@ def build_criticality_stochastic_ensemble(policy_ensemble: dict[str, Any]) -> di
     branching = _branching_by_run(policy_ensemble)
     metric_rows: list[dict[str, Any]] = []
     for row in policy_ensemble.get("run_summaries", []):
-        near_critical_score = float(
-            1.0 - min(1.0, abs(float(row["switch_rate"]) - 0.5) + abs(float(row["autocorrelation_lag1"])))
-        )
         run_branching = branching.get(
             (row["profile"], int(row["run_index"]), bool(row["null_control"])), 0.0
         )
@@ -242,7 +221,6 @@ def build_criticality_stochastic_ensemble(policy_ensemble: dict[str, Any]) -> di
                 "switch_rate": row["switch_rate"],
                 "variance": row["observation_variance"],
                 "autocorrelation_lag1": row["autocorrelation_lag1"],
-                "near_critical_score": near_critical_score,
                 "branching_ratio": run_branching,
                 "criticality_index": float(abs(run_branching - 1.0)),
             }
@@ -254,7 +232,6 @@ def build_criticality_stochastic_ensemble(policy_ensemble: dict[str, Any]) -> di
         "switch_rate",
         "variance",
         "autocorrelation_lag1",
-        "near_critical_score",
         "branching_ratio",
         "criticality_index",
     ]
@@ -287,12 +264,9 @@ def build_criticality_stochastic_ensemble(policy_ensemble: dict[str, Any]) -> di
             or real_interval["ci95_high"] < null_interval["ci95_low"]
         )
 
-    discriminating_metrics = ("branching_ratio", "switch_rate", "near_critical_score")
     null_contrasts = [
         {
             "profile": profile,
-            "near_critical_delta_vs_null": real_by_profile[profile]["metrics"]["near_critical_score"]["mean"]
-            - null_by_profile[profile]["metrics"]["near_critical_score"]["mean"],
             "switch_rate_delta_vs_null": real_by_profile[profile]["metrics"]["switch_rate"]["mean"]
             - null_by_profile[profile]["metrics"]["switch_rate"]["mean"],
             "branching_ratio_delta_vs_null": real_by_profile[profile]["metrics"]["branching_ratio"]["mean"]
@@ -301,8 +275,6 @@ def build_criticality_stochastic_ensemble(policy_ensemble: dict[str, Any]) -> di
             - null_by_profile[profile]["metrics"]["criticality_index"]["mean"],
             "branching_ratio_ci_disjoint_from_null": _ci_disjoint(profile, "branching_ratio"),
             "switch_rate_ci_disjoint_from_null": _ci_disjoint(profile, "switch_rate"),
-            "near_critical_score_ci_disjoint_from_null": _ci_disjoint(profile, "near_critical_score"),
-            "any_signature_ci_disjoint_from_null": any(_ci_disjoint(profile, metric) for metric in discriminating_metrics),
         }
         for profile in profiles
     ]
@@ -321,7 +293,7 @@ def build_criticality_stochastic_ensemble(policy_ensemble: dict[str, Any]) -> di
         contrast["paired_bootstrap_draws"] = 2048
         contrast["paired_branching_interval_excludes_zero"] = (
             paired["difference_ci95_high"] < 0 or paired["difference_ci95_low"] > 0)
-    profiles_ci_separating = sum(1 for row in null_contrasts if row["any_signature_ci_disjoint_from_null"])
+    profiles_ci_separating = sum(1 for row in null_contrasts if row["branching_ratio_ci_disjoint_from_null"])
     calibration = branching_estimator_calibration()
     controls = {
         "seeded_policy_source": policy_ensemble.get("schema") == "realizing_emptiness.stochastic_policy_ensemble.v1",
@@ -332,23 +304,19 @@ def build_criticality_stochastic_ensemble(policy_ensemble: dict[str, Any]) -> di
             for value in interval.values()
         ),
         "null_controls_present": any(row["null_control"] for row in metric_rows),
-        # Upgraded from a bare mean-delta > 0.01 threshold (which a noise-level difference could pass)
-        # to confidence-interval disjointness, so a separation that survives is statistically genuine.
         "profiles_differ_from_null_controls": any(
-            row["any_signature_ci_disjoint_from_null"] for row in null_contrasts
+            row["branching_ratio_ci_disjoint_from_null"] for row in null_contrasts
         ),
         "measured_branching_separates_from_null": any(
             row["branching_ratio_ci_disjoint_from_null"] for row in null_contrasts
         ),
-        # Honest majority test: the criticality reading is CI-grounded only if most profiles separate
-        # from their shuffled null on at least one signature; profiles within sampling noise are not
-        # credited. This is what demotes a marginally-separating profile at small ensemble sizes.
-        "majority_of_profiles_ci_separate_from_null": bool(profiles_ci_separating >= (len(profiles) + 1) // 2),
+        # A strict majority must separate on measured branching against its paired shuffle.
+        "majority_of_profiles_ci_separate_from_null": bool(profiles_ci_separating > len(profiles) / 2),
         "branching_estimator_recovers_planted_sigma": calibration["branching_estimator_recovers_planted_sigma"]
         and calibration["branching_ordering_preserved"],
     }
     return {
-        "schema": "realizing_emptiness.criticality_stochastic_ensemble.v1",
+        "schema": "realizing_emptiness.criticality_stochastic_ensemble.v2",
         "label": "seeded_stochastic_simulation_not_empirical_neural_measure",
         "seed": policy_ensemble.get("seed"),
         "runs_per_profile": policy_ensemble.get("runs_per_profile"),

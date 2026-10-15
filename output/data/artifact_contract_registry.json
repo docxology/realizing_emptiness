@@ -1,7 +1,7 @@
 {
   "all_controls_pass": true,
   "claim_boundary": "artifact contract registry for finite software validation; not empirical, clinical, neural, practice-efficacy, awakening, or physical qFEP evidence",
-  "contract_count": 149,
+  "contract_count": 148,
   "controls": {
     "all_json_data_artifacts_have_schema": true,
     "all_rows_have_claim_boundary": true,
@@ -515,7 +515,7 @@
       "manuscript_role": "generated_data",
       "path": "output/data/pymdp_profile_comparison.json",
       "path_exists": true,
-      "schema": "realizing_emptiness.pymdp_profile_comparison.v2",
+      "schema": "realizing_emptiness.pymdp_profile_comparison.v3",
       "schema_path": "schemas/pymdp_profile_comparison.schema.json"
     },
     {
@@ -548,7 +548,7 @@
       "manuscript_role": "generated_data",
       "path": "output/data/pymdp_runtime_diagnostics_log.json",
       "path_exists": true,
-      "schema": "realizing_emptiness.pymdp_runtime_diagnostics_log.v1",
+      "schema": "realizing_emptiness.pymdp_runtime_diagnostics_log.v2",
       "schema_path": "schemas/pymdp_runtime_diagnostics_log.schema.json"
     },
     {
@@ -570,7 +570,7 @@
       "manuscript_role": "generated_data",
       "path": "output/data/criticality_stochastic_ensemble.json",
       "path_exists": true,
-      "schema": "realizing_emptiness.criticality_stochastic_ensemble.v1",
+      "schema": "realizing_emptiness.criticality_stochastic_ensemble.v2",
       "schema_path": "schemas/criticality_stochastic_ensemble.schema.json"
     },
     {
@@ -581,7 +581,7 @@
       "manuscript_role": "validator_audit",
       "path": "output/data/stochastic_effect_size_audit.json",
       "path_exists": true,
-      "schema": "realizing_emptiness.stochastic_effect_size_audit.v1",
+      "schema": "realizing_emptiness.stochastic_effect_size_audit.v2",
       "schema_path": "schemas/stochastic_effect_size_audit.schema.json"
     },
     {
@@ -911,7 +911,7 @@
       "manuscript_role": "validator_audit",
       "path": "output/data/manuscript_figure_placement_audit.json",
       "path_exists": true,
-      "schema": "realizing_emptiness.manuscript_figure_placement_audit.v1",
+      "schema": "realizing_emptiness.manuscript_figure_placement_audit.v2",
       "schema_path": "schemas/manuscript_figure_placement_audit.schema.json"
     },
     {
@@ -955,7 +955,7 @@
       "manuscript_role": "generated_data",
       "path": "output/data/artifact_dashboard_payload.json",
       "path_exists": true,
-      "schema": "realizing_emptiness.artifact_dashboard_payload.v1",
+      "schema": "realizing_emptiness.artifact_dashboard_payload.v2",
       "schema_path": "schemas/artifact_dashboard_payload.schema.json"
     },
     {
@@ -966,7 +966,7 @@
       "manuscript_role": "generated_data",
       "path": "output/reports/criticality_proxy_report.json",
       "path_exists": true,
-      "schema": "realizing_emptiness.criticality_proxy_report.v1",
+      "schema": "realizing_emptiness.criticality_proxy_report.v2",
       "schema_path": "schemas/criticality_proxy_report.schema.json"
     },
     {
@@ -1306,17 +1306,6 @@
       "kind": "figure",
       "manuscript_role": "publication_visual",
       "path": "output/figures/pymdp_runtime_validation_dashboard.png",
-      "path_exists": true,
-      "schema": null,
-      "schema_path": null
-    },
-    {
-      "claim_boundary": "artifact contract registry for finite software validation; not empirical, clinical, neural, practice-efficacy, awakening, or physical qFEP evidence",
-      "dashboard_group": "figures",
-      "id": "criticality_proxy_panels",
-      "kind": "figure",
-      "manuscript_role": "publication_visual",
-      "path": "output/figures/criticality_proxy_panels.png",
       "path_exists": true,
       "schema": null,
       "schema_path": null

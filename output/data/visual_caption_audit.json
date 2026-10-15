@@ -1,11 +1,11 @@
 {
-  "figure_count": 61,
+  "figure_count": 60,
   "missing_interpretive_boundaries": [],
   "missing_or_weak_captions": [],
   "missing_source_artifacts": [],
   "missing_visual_encodings": [],
   "ok": true,
-  "row_count": 61,
+  "row_count": 60,
   "rows": [
     {
       "caption_length": 334,
@@ -318,17 +318,7 @@
       "visual_encoding": "Four-panel dashboard; bar colors encode pass/fail, finite residual, stochastic profile-higher, and null-higher roles; dashed or dotted lines encode tolerances and zero effects; legends explain control status and profile-null effect direction."
     },
     {
-      "caption_length": 340,
-      "has_interpretive_boundary": true,
-      "has_source_artifact": true,
-      "has_visual_encoding": true,
-      "id": "criticality_proxy_panels",
-      "ok": true,
-      "source_artifact_count": 1,
-      "visual_encoding": "Single bar color legend encodes one simulated trajectory diagnostic across entropy, switching, variance, and near-critical labels."
-    },
-    {
-      "caption_length": 428,
+      "caption_length": 507,
       "has_interpretive_boundary": true,
       "has_source_artifact": true,
       "has_visual_encoding": true,

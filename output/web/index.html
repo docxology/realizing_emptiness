@@ -1957,7 +1957,7 @@ ontology is true. The posterior trajectory traces how
 observations and marked perturbation steps; every step is renormalized
 before it enters fig. <a href="#fig:posterior_trajectory">14</a>. The
 supplemental runtime dashboard in fig. <a
-href="#fig:pymdp_runtime_validation_dashboard">51</a> reports the
+href="#fig:pymdp_runtime_validation_dashboard">50</a> reports the
 corresponding residuals and replay controls as validation checks for the
 software surface, not as empirical evidence.</p>
 <figure id="fig:pymdp_profile_comparison">
@@ -2406,14 +2406,13 @@ Vocabulary</h2>
 <p>The criticality proxy track provides a target shape for future
 empirical adapters: if real data are introduced, the same validator
 should require source identity, preprocessing provenance, and negative
-controls. Reporting the measured branching ratio and avalanche-size
-distribution, rather than a hand-built near-critical score, sharpens
-that target shape, because a future empirical adapter would compute the
-same finite signatures over real activity series and compare them
-against the same shuffled null. Even then, power-law-like avalanche
-summaries would not by themselves establish criticality, because similar
-scaling can arise without a critical state and cortical-criticality
-evidence remains method-sensitive <span class="citation"
+controls. A future empirical adapter would compute measured branching
+and avalanche-size summaries over reviewed activity series and compare
+them against histogram-preserving shuffled controls. Power-law-like
+avalanche summaries would not by themselves establish criticality,
+because similar scaling can arise without a critical state and
+cortical-criticality evidence remains method-sensitive <span
+class="citation"
 data-cites="touboul2017power_law_absence_criticality destexhe2021criticality_evidence">(<a
 href="#ref-touboul2017power_law_absence_criticality"
 role="doc-biblioref">Touboul and Destexhe 2017</a>; <a
@@ -3648,21 +3647,18 @@ empirical adapters are implemented.</figcaption>
 <h2 data-number="7.3" id="sec:supplement-criticality-indicators"><span
 class="header-section-number">7.3</span> Criticality Signatures with
 Null Controls</h2>
-<p>The criticality layer computes the two finite signatures the source
-paper names for its empirical criticality prediction, rather than a
-hand-tuned score, over seeded boundary-channel activity series drawn
-from the active-inference trajectories. A branching ratio is estimated
-as descendants per ancestor over each activity series, and an
-avalanche-size distribution is extracted from maximal supra-threshold
-runs of that activity and summarised by a finite
-power-law-versus-exponential log-likelihood-ratio diagnostic <span
-class="citation" data-cites="beggs2003neuronal">(<a
+<p>The criticality layer computes two finite signatures over seeded
+boundary-channel activity series drawn from the active-inference
+trajectories. A branching ratio is estimated as descendants per ancestor
+over each activity series, and an avalanche-size distribution is
+extracted from maximal supra-threshold runs of that activity and
+summarised by a finite power-law-versus-exponential log-likelihood-ratio
+diagnostic <span class="citation" data-cites="beggs2003neuronal">(<a
 href="#ref-beggs2003neuronal" role="doc-biblioref">Beggs and Plenz
 2003</a>)</span>. The derived criticality index is the absolute distance
-of the measured branching ratio from one, so the keep-or-critical
-reading follows the measurement rather than a constant; the caution is
-that these signatures are not dispositive even in empirical neuroscience
-without stronger controls <span class="citation"
+of the measured branching ratio from one. These signatures are not
+dispositive even in empirical neuroscience without stronger controls
+<span class="citation"
 data-cites="touboul2017power_law_absence_criticality destexhe2021criticality_evidence">(<a
 href="#ref-touboul2017power_law_absence_criticality"
 role="doc-biblioref">Touboul and Destexhe 2017</a>; <a
@@ -3676,43 +3672,37 @@ only when its real and shuffled ninety-five percent confidence intervals
 are disjoint. The other trajectory metrics retain independently sampled
 uniform observation/action controls; their contrasts do not isolate
 temporal order at fixed marginals. The aggregate readiness gate requires
-a majority of profiles to separate on at least one signature and at
-least one profile to separate on measured branching. The positive
-control is a planted-branching calibration: a pure geometric activity
-series with a known branching ratio is fed to the estimator, which must
-recover the planted value within tolerance. This calibrates the finite
-estimator, not an empirical criticality claim. The effect-size forest
-separately reports profile-minus-random-null differences, run-level
-mean-difference and Cliff’s-delta bootstrap intervals, and Holm-adjusted
-permutation tests.</p>
+a strict majority of profiles to separate on measured branching,
+independently reconstructed from the recorded trajectories and run
+summaries. The positive control is a planted-branching calibration: a
+pure geometric activity series with a known branching ratio is fed to
+the estimator, which must recover the planted value within tolerance.
+This calibrates the finite estimator, not an empirical criticality
+claim. The effect-size forest separately reports
+profile-minus-random-null differences, run-level mean-difference and
+Cliff’s-delta bootstrap intervals, and Holm-adjusted permutation
+tests.</p>
 <p>These signatures structure the shape of a future empirical test; they
 are not neural measurements, clinical outcomes, or evidence that any
 contemplative practice produced a critical regime.</p>
 <h3 data-number="7.3.1" id="sec:supplement-criticality-proxies"><span
 class="header-section-number">7.3.1</span> Seeded Criticality Indicators
 with Null Controls</h3>
-<p>The reported criticality-style outputs are seeded stochastic
-simulation indicators computed from the active-inference trajectories:
-observation entropy, action entropy, switching rate, variance,
-autocorrelation, null-control contrasts, and confidence intervals over
-replayable seeds. The single-trace diagnostic remains as a compact
-continuity check, but fig. <a
-href="#fig:criticality_stochastic_ensemble">42</a> carries the
-claim-bearing result because it exposes variability and null
-controls.</p>
-<p>fig. <a href="#fig:criticality_signatures">41</a> shows that the
-measured branching ratio separates the profile ensembles from their
-shuffled null controls by disjoint ninety-five percent confidence
-intervals, which is the finite software analogue of a criticality
-signature and not a measurement of neural avalanches or branching in any
-nervous system. The avalanche-size power-law-versus-exponential
-log-likelihood ratio is reported for continuity only and is
-non-discriminating on a single trace, where a sample size of one leaves
-the power-law and exponential fits statistically indistinguishable; it
-is the branching-ratio separation against the shuffled null, not the
-single-trace avalanche fit, that carries the criticality reading. The
-surrogate fixes the shape of a future empirical test; it does not
-observe criticality.</p>
+<p>The reported outputs distinguish temporal-order diagnostics from
+descriptive trajectory summaries. fig. <a
+href="#fig:criticality_stochastic_ensemble">42</a> reports finite
+software observation entropy and switching rate under independent random
+controls. Measured branching uses a histogram-preserving shuffled
+control in fig. <a href="#fig:criticality_signatures">41</a>.</p>
+<p>fig. <a href="#fig:criticality_signatures">41</a> reports measured
+branching against shuffled null controls as a finite software
+diagnostic, not a measurement of neural avalanches or branching in any
+nervous system. The single-trace avalanche histogram is descriptive:
+when fewer than three sizes are available, the shape comparison returns
+zero as an insufficient-sample convention and cannot discriminate
+distributions. The branching-ratio separation against the shuffled null
+supplies the gated comparison. The surrogate fixes the shape of a future
+empirical test; it does not observe criticality.</p>
 <figure id="fig:criticality_signatures">
 <a class="figure-full-size-link" href="../figures/criticality_signatures.png" target="_blank" rel="noopener" aria-label="Open full-size Figure 41, Measured criticality signatures for the seeded boundary-channel trajectories."><img src="../figures/criticality_signatures.png" style="width:90.0%"
 alt="Figure 41: Measured criticality signatures for the seeded boundary-channel trajectories. Panel A bars encode the measured branching ratio per profile against hatched null controls with a dashed sigma-equals-one balance line, and Panel B is a histogram of single-trace avalanche sizes; the colored bars and dashed reference line are seeded software trajectory diagnostics only, and the figure is not evidence of neural avalanches, branching, or empirical criticality." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
@@ -3726,37 +3716,28 @@ figure is not evidence of neural avalanches, branching, or empirical
 criticality.</figcaption>
 </figure>
 <figure id="fig:criticality_stochastic_ensemble">
-<a class="figure-full-size-link" href="../figures/criticality_stochastic_ensemble.png" target="_blank" rel="noopener" aria-label="Open full-size Figure 42, Seeded stochastic active-inference ensemble for criticality-style indicators."><img src="../figures/criticality_stochastic_ensemble.png"
+<a class="figure-full-size-link" href="../figures/criticality_stochastic_ensemble.png" target="_blank" rel="noopener" aria-label="Open full-size Figure 42, Seeded observation entropy and switch-rate summaries under independently sampled uniform…"><img src="../figures/criticality_stochastic_ensemble.png"
 style="width:90.0%"
-alt="Figure 42: Seeded stochastic active-inference ensemble for criticality-style indicators. Shared short profile labels, a single external legend, violet profile bars, hatched gray null-control bars, direction annotations, and 95 percent intervals over replayable seeds show simulated trajectory variability only; the figure is not empirical evidence, not neural measurement, not clinical outcome evidence, and not practice-efficacy evidence." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
-<figcaption>Figure 42: Seeded stochastic
-active-inference ensemble for criticality-style indicators. Shared short
-profile labels, a single external legend, violet profile bars, hatched
-gray null-control bars, direction annotations, and 95 percent intervals
-over replayable seeds show simulated trajectory variability only; the
-figure is not empirical evidence, not neural measurement, not clinical
-outcome evidence, and not practice-efficacy evidence.</figcaption>
+alt="Figure 42: Seeded observation entropy and switch-rate summaries under independently sampled uniform observation/action controls. Shared short profile labels, a single external legend, violet profile bars, hatched gray control bars, direction annotations, and pointwise normal-approximation 95 percent intervals across complete runs show finite software variability; these controls do not preserve the original observation histogram, and the figure is not empirical evidence for neural criticality or practice efficacy." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
+<figcaption>Figure 42: Seeded observation entropy and
+switch-rate summaries under independently sampled uniform
+observation/action controls. Shared short profile labels, a single
+external legend, violet profile bars, hatched gray control bars,
+direction annotations, and pointwise normal-approximation 95 percent
+intervals across complete runs show finite software variability; these
+controls do not preserve the original observation histogram, and the
+figure is not empirical evidence for neural criticality or practice
+efficacy.</figcaption>
 </figure>
-<figure id="fig:criticality_proxy_panels">
-<a class="figure-full-size-link" href="../figures/criticality_proxy_panels.png" target="_blank" rel="noopener" aria-label="Open full-size Figure 43, Single-trace entropy, switching, variance"><img src="../figures/criticality_proxy_panels.png" style="width:90.0%"
-alt="Figure 43: Single-trace entropy, switching, variance, and near-criticality diagnostics from a simulated boundary-channel trajectory. The bar legend marks values as one simulated trace, and the stochastic ensemble figure carries the interval/null-control result; neither figure is empirical evidence for neural criticality or contemplative realization." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
-<figcaption>Figure 43: Single-trace entropy,
-switching, variance, and near-criticality diagnostics from a simulated
-boundary-channel trajectory. The bar legend marks values as one
-simulated trace, and the stochastic ensemble figure carries the
-interval/null-control result; neither figure is empirical evidence for
-neural criticality or contemplative realization.</figcaption>
-</figure>
-<p>The effect-size forest now estimates uncertainty for the contrasts
+<p>The effect-size forest estimates uncertainty for the contrasts
 themselves. For each profile and trajectory metric, independent complete
 runs are resampled separately in the two groups, and both the mean
 difference and tie-aware Cliff’s delta are recomputed in each of 2,048
 replicates. These are pointwise percentile intervals; they are not
 simultaneous coverage guarantees and timesteps are not independent
-replicates. Separate group and pooled-mean intervals remain in the JSON
-for traceability but do not supply the effect intervals in fig. <a
-href="#fig:stochastic_effect_size_forest">46</a>, <span class="citation"
-data-cites="westfall1993resampling">(<a
+replicates. The intervals in fig. <a
+href="#fig:stochastic_effect_size_forest">45</a> match these contrast
+estimands <span class="citation" data-cites="westfall1993resampling">(<a
 href="#ref-westfall1993resampling" role="doc-biblioref">Westfall and
 Young 1993</a>)</span>.</p>
 <p>The two-sided mean-statistic permutation calculation uses 4,095
@@ -3773,17 +3754,17 @@ a nonrejection is not evidence of equality.</p>
 <p>The branching comparison has a different sampling design. Each
 original trajectory is paired with its own fixed histogram-preserving
 shuffle, and the paired bootstrap resamples intact original/shuffle run
-pairs. fig. <a href="#fig:criticality_paired_contrasts">44</a> reports
+pairs. fig. <a href="#fig:criticality_paired_contrasts">43</a> reports
 an interval for that difference without replacing the existing
 disjoint-interval gate. It conditions on one shuffle per run and does
 not integrate over all possible shuffle realizations. No paired
 sign-flip p-value is asserted, because pairing alone does not establish
 null sign symmetry.</p>
 <figure id="fig:criticality_paired_contrasts">
-<a class="figure-full-size-link" href="../figures/criticality_paired_contrasts.png" target="_blank" rel="noopener" aria-label="Open full-size Figure 44, Paired branching contrasts for finite software trajectories."><img src="../figures/criticality_paired_contrasts.png"
+<a class="figure-full-size-link" href="../figures/criticality_paired_contrasts.png" target="_blank" rel="noopener" aria-label="Open full-size Figure 43, Paired branching contrasts for finite software trajectories."><img src="../figures/criticality_paired_contrasts.png"
 style="width:90.0%"
-alt="Figure 44: Paired branching contrasts for finite software trajectories. Colored points encode the mean original-minus-shuffled branching difference for each profile; horizontal lines and the legend identify 95 percent percentile intervals from resampling original/shuffled run pairs together. The dashed zero line is a reference, and each run has one fixed histogram-preserving shuffle. This conditional software comparison is not empirical evidence, neural measurement, or proof of criticality." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
-<figcaption>Figure 44: Paired branching contrasts for
+alt="Figure 43: Paired branching contrasts for finite software trajectories. Colored points encode the mean original-minus-shuffled branching difference for each profile; horizontal lines and the legend identify 95 percent percentile intervals from resampling original/shuffled run pairs together. The dashed zero line is a reference, and each run has one fixed histogram-preserving shuffle. This conditional software comparison is not empirical evidence, neural measurement, or proof of criticality." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
+<figcaption>Figure 43: Paired branching contrasts for
 finite software trajectories. Colored points encode the mean
 original-minus-shuffled branching difference for each profile;
 horizontal lines and the legend identify 95 percent percentile intervals
@@ -3797,16 +3778,16 @@ repetitions in addition to the original null, injected-shift, and
 sign-flip fixtures. Each repetition records actual intervals and
 rejection/coverage outcomes for zero and unit shifts. Exact binomial
 intervals accompany the rejection and coverage frequencies in fig. <a
-href="#fig:resampling_calibration">45</a>; the nominal lines are
+href="#fig:resampling_calibration">44</a>; the nominal lines are
 references, not certificates. At zero or complete rejection the plug-in
 Monte Carlo standard error is zero, but the exact binomial interval
 still exposes finite-budget uncertainty. This is a limited generator
 diagnostic, not empirical power, universal type-I-error control, or
 Bayesian posterior calibration.</p>
 <figure id="fig:resampling_calibration">
-<a class="figure-full-size-link" href="../figures/resampling_calibration.png" target="_blank" rel="noopener" aria-label="Open full-size Figure 45, Synthetic seed-bank calibration for the finite resampling machinery."><img src="../figures/resampling_calibration.png" style="width:90.0%"
-alt="Figure 45: Synthetic seed-bank calibration for the finite resampling machinery. Panel A bars show rejection percentages for zero and injected normal shifts; Panel B bars show mean-difference interval coverage. Whiskers encode exact binomial intervals over independent seed sets, counts identify hits and repetitions, and dashed reference lines with legends mark nominal alpha and coverage. This limited generator check is not empirical statistical power or universal error-rate certification." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
-<figcaption>Figure 45: Synthetic seed-bank
+<a class="figure-full-size-link" href="../figures/resampling_calibration.png" target="_blank" rel="noopener" aria-label="Open full-size Figure 44, Synthetic seed-bank calibration for the finite resampling machinery."><img src="../figures/resampling_calibration.png" style="width:90.0%"
+alt="Figure 44: Synthetic seed-bank calibration for the finite resampling machinery. Panel A bars show rejection percentages for zero and injected normal shifts; Panel B bars show mean-difference interval coverage. Whiskers encode exact binomial intervals over independent seed sets, counts identify hits and repetitions, and dashed reference lines with legends mark nominal alpha and coverage. This limited generator check is not empirical statistical power or universal error-rate certification." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
+<figcaption>Figure 44: Synthetic seed-bank
 calibration for the finite resampling machinery. Panel A bars show
 rejection percentages for zero and injected normal shifts; Panel B bars
 show mean-difference interval coverage. Whiskers encode exact binomial
@@ -3816,10 +3797,10 @@ and coverage. This limited generator check is not empirical statistical
 power or universal error-rate certification.</figcaption>
 </figure>
 <figure id="fig:stochastic_effect_size_forest">
-<a class="figure-full-size-link" href="../figures/stochastic_effect_size_forest.png" target="_blank" rel="noopener" aria-label="Open full-size Figure 46, Run-level profile versus independent random-null contrasts."><img src="../figures/stochastic_effect_size_forest.png"
+<a class="figure-full-size-link" href="../figures/stochastic_effect_size_forest.png" target="_blank" rel="noopener" aria-label="Open full-size Figure 45, Run-level profile versus independent random-null contrasts."><img src="../figures/stochastic_effect_size_forest.png"
 style="width:90.0%"
-alt="Figure 46: Run-level profile versus independent random-null contrasts. Panel A shows Cliff’s delta and its own percentile bootstrap interval; Panel B shows the mean difference and its own interval in row-specific units (switch fraction or nats). The shared legend identifies hollow Holm-nonrejection markers and diamonds where finite permutation Monte Carlo uncertainty leaves the decision unresolved; dashed lines mark zero. These pointwise intervals are finite software diagnostics, not empirical, neural, clinical, or practice-efficacy evidence." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
-<figcaption>Figure 46: Run-level profile versus
+alt="Figure 45: Run-level profile versus independent random-null contrasts. Panel A shows Cliff’s delta and its own percentile bootstrap interval; Panel B shows the mean difference and its own interval in row-specific units (switch fraction or nats). The shared legend identifies hollow Holm-nonrejection markers and diamonds where finite permutation Monte Carlo uncertainty leaves the decision unresolved; dashed lines mark zero. These pointwise intervals are finite software diagnostics, not empirical, neural, clinical, or practice-efficacy evidence." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
+<figcaption>Figure 45: Run-level profile versus
 independent random-null contrasts. Panel A shows Cliff’s delta and its
 own percentile bootstrap interval; Panel B shows the mean difference and
 its own interval in row-specific units (switch fraction or nats). The
@@ -3877,7 +3858,7 @@ Policy Scope</h3>
 <p>The proxy is defined as widening the field of modeled error without
 privileging a self sector, and the artifact reports this as a
 policy-scope quantity, not a moral or clinical endpoint. As shown in
-fig. <a href="#fig:compassion_scope_widening">47</a>, the
+fig. <a href="#fig:compassion_scope_widening">46</a>, the
 scope-asymmetry is negative under the separation-constrained profile,
 where concern concentrates on the self partition, and rises toward zero
 under the opacified and post-dual profiles, where concern widens to
@@ -3888,9 +3869,9 @@ rather than the partition sizes. This is a finite policy-scope
 surrogate; it is not a measure of compassion, well-being, practice
 efficacy, or any affective, moral, or clinical outcome.</p>
 <figure id="fig:compassion_scope_widening">
-<a class="figure-full-size-link" href="../figures/compassion_scope_widening.png" target="_blank" rel="noopener" aria-label="Open full-size Figure 47, Finite scope-of-concern surrogate across QRF profiles."><img src="../figures/compassion_scope_widening.png" style="width:90.0%"
-alt="Figure 47: Finite scope-of-concern surrogate across QRF profiles. Panel C compares active separation-prior asymmetry with a hatched precision-ablation control; Panel D shows per-channel action influence against an action-shuffled mean. The figure is a finite policy-scope surrogate only, not a measure of compassion, well-being, practice efficacy, or affective outcome." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
-<figcaption>Figure 47: Finite scope-of-concern
+<a class="figure-full-size-link" href="../figures/compassion_scope_widening.png" target="_blank" rel="noopener" aria-label="Open full-size Figure 46, Finite scope-of-concern surrogate across QRF profiles."><img src="../figures/compassion_scope_widening.png" style="width:90.0%"
+alt="Figure 46: Finite scope-of-concern surrogate across QRF profiles. Panel C compares active separation-prior asymmetry with a hatched precision-ablation control; Panel D shows per-channel action influence against an action-shuffled mean. The figure is a finite policy-scope surrogate only, not a measure of compassion, well-being, practice efficacy, or affective outcome." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
+<figcaption>Figure 46: Finite scope-of-concern
 surrogate across QRF profiles. Panel C compares active separation-prior
 asymmetry with a hatched precision-ablation control; Panel D shows
 per-channel action influence against an action-shuffled mean. The figure
@@ -4399,8 +4380,8 @@ class="header-section-number">7.8.1</span> Reproducibility Gates</h3>
 BMR sweeps, sensitivity sweeps, criticality and practice maps, figure
 generation, sheaf composition, dashboard and review-response hardening,
 variable hydration, post-hydration hash refresh, and output validation
-in a fixed order. The validation report records <code>430</code> passing
-output checks across <code>430</code> total checks after the latest
+in a fixed order. The validation report records <code>429</code> passing
+output checks across <code>429</code> total checks after the latest
 full-chain run.</p>
 <p>The gates are fail-closed and cover the full surface, one family per
 check:</p>
@@ -4454,16 +4435,16 @@ realization, clinical, or neural-measurement language.</li>
 <code>quantum_contextuality_witness</code>;
 <code>quantum_measurement_contextuality</code>;
 <code>quantum_open_system_dephasing</code>;
-<code>pymdp_runtime_canary</code>;
+<code>pymdp_runtime_dependency</code>;
 <code>criticality_proxy_boundary</code>;
 <code>compassion_proxy_boundary</code>;
 <code>self_evidencing_boundary</code>;
 <code>metacognitive_access_model</code>; and
 <code>artifact_release_readiness</code>.</p>
 <figure id="fig:manuscript_claim_audit">
-<a class="figure-full-size-link" href="../figures/manuscript_claim_audit.png" target="_blank" rel="noopener" aria-label="Open full-size Figure 48, Manuscript claim audit for citation resolution, public claim-ID visibility"><img src="../figures/manuscript_claim_audit.png" style="width:90.0%"
-alt="Figure 48: Manuscript claim audit for citation resolution, public claim-ID visibility, and forbidden positive-efficacy language. The pass/fail color legend makes the local language gate visible while preserving the boundary that passing bars do not certify empirical truth." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
-<figcaption>Figure 48: Manuscript claim audit for
+<a class="figure-full-size-link" href="../figures/manuscript_claim_audit.png" target="_blank" rel="noopener" aria-label="Open full-size Figure 47, Manuscript claim audit for citation resolution, public claim-ID visibility"><img src="../figures/manuscript_claim_audit.png" style="width:90.0%"
+alt="Figure 47: Manuscript claim audit for citation resolution, public claim-ID visibility, and forbidden positive-efficacy language. The pass/fail color legend makes the local language gate visible while preserving the boundary that passing bars do not certify empirical truth." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
+<figcaption>Figure 47: Manuscript claim audit for
 citation resolution, public claim-ID visibility, and forbidden
 positive-efficacy language. The pass/fail color legend makes the local
 language gate visible while preserving the boundary that passing bars do
@@ -4497,16 +4478,16 @@ finite software behavior declared for that class.</p>
 readable, and the evidence-ceiling stress matrix is its adversarial
 companion: it marks which stronger readings remain disallowed even when
 a figure, source row, or validation gate passes. In fig. <a
-href="#fig:claim_context_evidence_ladder">49</a> the bar length reports
+href="#fig:claim_context_evidence_ladder">48</a> the bar length reports
 scoped source-role count, the gate marker reports whether the validation
 gate resolves, and the blocked marker records the stronger reading that
 remains prohibited. A longer bar therefore means broader source-role
 context, not a higher evidence class.</p>
 <figure id="fig:claim_context_evidence_ladder">
-<a class="figure-full-size-link" href="../figures/claim_context_evidence_ladder.png" target="_blank" rel="noopener" aria-label="Open full-size Figure 49, Claim-context evidence ladder grouping every public claim by evidence class, scoped…"><img src="../figures/claim_context_evidence_ladder.png"
+<a class="figure-full-size-link" href="../figures/claim_context_evidence_ladder.png" target="_blank" rel="noopener" aria-label="Open full-size Figure 48, Claim-context evidence ladder grouping every public claim by evidence class, scoped…"><img src="../figures/claim_context_evidence_ladder.png"
 style="width:92.0%"
-alt="Figure 49: Claim-context evidence ladder grouping every public claim by evidence class, scoped source-role count, resolved validation gate, and blocked stronger reading. Horizontal bars encode source-role count, circular markers encode gate presence, and hatched amber blocks encode prohibited empirical, neural, clinical, practice-efficacy, awakening, or physical qFEP inferences, so the figure explains how to read claims without adding evidence beyond the ledger." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
-<figcaption>Figure 49: Claim-context evidence ladder
+alt="Figure 48: Claim-context evidence ladder grouping every public claim by evidence class, scoped source-role count, resolved validation gate, and blocked stronger reading. Horizontal bars encode source-role count, circular markers encode gate presence, and hatched amber blocks encode prohibited empirical, neural, clinical, practice-efficacy, awakening, or physical qFEP inferences, so the figure explains how to read claims without adding evidence beyond the ledger." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
+<figcaption>Figure 48: Claim-context evidence ladder
 grouping every public claim by evidence class, scoped source-role count,
 resolved validation gate, and blocked stronger reading. Horizontal bars
 encode source-role count, circular markers encode gate presence, and
@@ -4529,10 +4510,10 @@ safety bounded because their local artifacts are modeled interfaces and
 stochastic indicators, not empirical measurements or efficacy
 evidence.</p>
 <figure id="fig:evidence_ceiling_stress_matrix">
-<a class="figure-full-size-link" href="../figures/evidence_ceiling_stress_matrix.png" target="_blank" rel="noopener" aria-label="Open full-size Figure 50, Evidence-ceiling stress matrix showing which public claims are bounded by surrogate…"><img src="../figures/evidence_ceiling_stress_matrix.png"
+<a class="figure-full-size-link" href="../figures/evidence_ceiling_stress_matrix.png" target="_blank" rel="noopener" aria-label="Open full-size Figure 49, Evidence-ceiling stress matrix showing which public claims are bounded by surrogate…"><img src="../figures/evidence_ceiling_stress_matrix.png"
 style="width:90.0%"
-alt="Figure 50: Evidence-ceiling stress matrix showing which public claims are bounded by surrogate, empirical, practice, source-role, runtime, quantum, neural, or normative constraints. Rows are grouped by claim class and the binary colorbar marks active stressors, making clear that support, simulation, and validation gates keep prohibited inferences explicit rather than converting finite software checks into empirical, neural, clinical, practice-efficacy, awakening, or physical qFEP evidence." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
-<figcaption>Figure 50: Evidence-ceiling stress matrix
+alt="Figure 49: Evidence-ceiling stress matrix showing which public claims are bounded by surrogate, empirical, practice, source-role, runtime, quantum, neural, or normative constraints. Rows are grouped by claim class and the binary colorbar marks active stressors, making clear that support, simulation, and validation gates keep prohibited inferences explicit rather than converting finite software checks into empirical, neural, clinical, practice-efficacy, awakening, or physical qFEP evidence." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
+<figcaption>Figure 49: Evidence-ceiling stress matrix
 showing which public claims are bounded by surrogate, empirical,
 practice, source-role, runtime, quantum, neural, or normative
 constraints. Rows are grouped by claim class and the binary colorbar
@@ -4591,10 +4572,10 @@ stochastic/null contrasts; they are validation checks for the software
 interface, not additional model-behavior evidence and not empirical
 data.</p>
 <figure id="fig:pymdp_runtime_validation_dashboard">
-<a class="figure-full-size-link" href="../figures/pymdp_runtime_validation_dashboard.png" target="_blank" rel="noopener" aria-label="Open full-size Figure 51, Supplemental pymdp runtime validation dashboard for the structured event log."><img src="../figures/pymdp_runtime_validation_dashboard.png"
+<a class="figure-full-size-link" href="../figures/pymdp_runtime_validation_dashboard.png" target="_blank" rel="noopener" aria-label="Open full-size Figure 50, Supplemental pymdp runtime validation dashboard for the structured event log."><img src="../figures/pymdp_runtime_validation_dashboard.png"
 style="width:90.0%"
-alt="Figure 51: Supplemental pymdp runtime validation dashboard for the structured event log. Panels report model normalization, runtime recomputation residuals, replay controls, and the largest seeded profile-null contrasts; colors, legends, and tolerance lines mark QA status only, not empirical, clinical, neural, practice-efficacy, awakening, or physical qFEP evidence." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
-<figcaption>Figure 51: Supplemental pymdp runtime
+alt="Figure 50: Supplemental pymdp runtime validation dashboard for the structured event log. Panels report model normalization, runtime recomputation residuals, replay controls, and the largest seeded profile-null contrasts; colors, legends, and tolerance lines mark QA status only, not empirical, clinical, neural, practice-efficacy, awakening, or physical qFEP evidence." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
+<figcaption>Figure 50: Supplemental pymdp runtime
 validation dashboard for the structured event log. Panels report model
 normalization, runtime recomputation residuals, replay controls, and the
 largest seeded profile-null contrasts; colors, legends, and tolerance
@@ -4602,10 +4583,10 @@ lines mark QA status only, not empirical, clinical, neural,
 practice-efficacy, awakening, or physical qFEP evidence.</figcaption>
 </figure>
 <figure id="fig:scholarship_coverage_matrix">
-<a class="figure-full-size-link" href="../figures/scholarship_coverage_matrix.png" target="_blank" rel="noopener" aria-label="Open full-size Figure 52, Scholarship coverage summarized by declared source status and manuscript track."><img src="../figures/scholarship_coverage_matrix.png"
+<a class="figure-full-size-link" href="../figures/scholarship_coverage_matrix.png" target="_blank" rel="noopener" aria-label="Open full-size Figure 51, Scholarship coverage summarized by declared source status and manuscript track."><img src="../figures/scholarship_coverage_matrix.png"
 style="width:90.0%"
-alt="Figure 52: Scholarship coverage summarized by declared source status and manuscript track. The heatmap colorbar and numbered cells count citations assigned to each status-track pair; individual citation keys and bindings remain in scholarship_source_matrix.json. Counts describe contextual coverage, not evidence strength, empirical support, or physical qFEP confirmation." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
-<figcaption>Figure 52: Scholarship coverage
+alt="Figure 51: Scholarship coverage summarized by declared source status and manuscript track. The heatmap colorbar and numbered cells count citations assigned to each status-track pair; individual citation keys and bindings remain in scholarship_source_matrix.json. Counts describe contextual coverage, not evidence strength, empirical support, or physical qFEP confirmation." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
+<figcaption>Figure 51: Scholarship coverage
 summarized by declared source status and manuscript track. The heatmap
 colorbar and numbered cells count citations assigned to each
 status-track pair; individual citation keys and bindings remain in
@@ -4614,9 +4595,9 @@ evidence strength, empirical support, or physical qFEP
 confirmation.</figcaption>
 </figure>
 <figure id="fig:claim_support_matrix">
-<a class="figure-full-size-link" href="../figures/claim_support_matrix.png" target="_blank" rel="noopener" aria-label="Open full-size Figure 53, Scoped public-claim support summarized by declared source status."><img src="../figures/claim_support_matrix.png" style="width:90.0%"
-alt="Figure 53: Scoped public-claim support summarized by declared source status. The heatmap colorbar and numbered cells show distinct citation counts for each claim and status; individual claim-citation bindings remain in claim_support_audit.json. Source density is a coverage diagnostic, not evidence strength or empirical, neural, clinical, practice-efficacy, awakening, or physical qFEP confirmation." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
-<figcaption>Figure 53: Scoped public-claim support
+<a class="figure-full-size-link" href="../figures/claim_support_matrix.png" target="_blank" rel="noopener" aria-label="Open full-size Figure 52, Scoped public-claim support summarized by declared source status."><img src="../figures/claim_support_matrix.png" style="width:90.0%"
+alt="Figure 52: Scoped public-claim support summarized by declared source status. The heatmap colorbar and numbered cells show distinct citation counts for each claim and status; individual claim-citation bindings remain in claim_support_audit.json. Source density is a coverage diagnostic, not evidence strength or empirical, neural, clinical, practice-efficacy, awakening, or physical qFEP confirmation." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
+<figcaption>Figure 52: Scoped public-claim support
 summarized by declared source status. The heatmap colorbar and numbered
 cells show distinct citation counts for each claim and status;
 individual claim-citation bindings remain in claim_support_audit.json.
@@ -4625,20 +4606,20 @@ empirical, neural, clinical, practice-efficacy, awakening, or physical
 qFEP confirmation.</figcaption>
 </figure>
 <figure id="fig:claim_source_validation_graph">
-<a class="figure-full-size-link" href="../figures/claim_source_validation_graph.png" target="_blank" rel="noopener" aria-label="Open full-size Figure 54, Claim-source-validation graph linking each public claim to its source role"><img src="../figures/claim_source_validation_graph.png"
+<a class="figure-full-size-link" href="../figures/claim_source_validation_graph.png" target="_blank" rel="noopener" aria-label="Open full-size Figure 53, Claim-source-validation graph linking each public claim to its source role"><img src="../figures/claim_source_validation_graph.png"
 style="width:90.0%"
-alt="Figure 54: Claim-source-validation graph linking each public claim to its source role and validation gate. The node and edge legend identifies claim, source, gate, and binding colors so the figure remains an audit map for claim governance, not an additional evidence source." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
-<figcaption>Figure 54: Claim-source-validation graph
+alt="Figure 53: Claim-source-validation graph linking each public claim to its source role and validation gate. The node and edge legend identifies claim, source, gate, and binding colors so the figure remains an audit map for claim governance, not an additional evidence source." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
+<figcaption>Figure 53: Claim-source-validation graph
 linking each public claim to its source role and validation gate. The
 node and edge legend identifies claim, source, gate, and binding colors
 so the figure remains an audit map for claim governance, not an
 additional evidence source.</figcaption>
 </figure>
 <figure id="fig:visual_semantic_palette_ledger">
-<a class="figure-full-size-link" href="../figures/visual_semantic_palette_ledger.png" target="_blank" rel="noopener" aria-label="Open full-size Figure 55, Shared visual semantic palette ledger for the publication figures."><img src="../figures/visual_semantic_palette_ledger.png"
+<a class="figure-full-size-link" href="../figures/visual_semantic_palette_ledger.png" target="_blank" rel="noopener" aria-label="Open full-size Figure 54, Shared visual semantic palette ledger for the publication figures."><img src="../figures/visual_semantic_palette_ledger.png"
 style="width:90.0%"
-alt="Figure 55: Shared visual semantic palette ledger for the publication figures. Color swatches and hatch marks bind pass, fail, keep, prune, finite, blocked, stochastic, null-control, quantum, and boundary roles to stable encodings so figure colors cannot silently change meaning; this is a visualization QA artifact, not a source of empirical evidence." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
-<figcaption>Figure 55: Shared visual semantic palette
+alt="Figure 54: Shared visual semantic palette ledger for the publication figures. Color swatches and hatch marks bind pass, fail, keep, prune, finite, blocked, stochastic, null-control, quantum, and boundary roles to stable encodings so figure colors cannot silently change meaning; this is a visualization QA artifact, not a source of empirical evidence." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
+<figcaption>Figure 54: Shared visual semantic palette
 ledger for the publication figures. Color swatches and hatch marks bind
 pass, fail, keep, prune, finite, blocked, stochastic, null-control,
 quantum, and boundary roles to stable encodings so figure colors cannot
@@ -4654,10 +4635,10 @@ the project: a method is not stronger because its figure is beautiful;
 it is stronger when its assumptions, failure modes, and forbidden
 inferences are inspectable.</p>
 <figure id="fig:method_assumption_failure_map">
-<a class="figure-full-size-link" href="../figures/method_assumption_failure_map.png" target="_blank" rel="noopener" aria-label="Open full-size Figure 56, Method assumption and falsification map for the finite software chain."><img src="../figures/method_assumption_failure_map.png"
+<a class="figure-full-size-link" href="../figures/method_assumption_failure_map.png" target="_blank" rel="noopener" aria-label="Open full-size Figure 55, Method assumption and falsification map for the finite software chain."><img src="../figures/method_assumption_failure_map.png"
 style="width:90.0%"
-alt="Figure 56: Method assumption and falsification map for the finite software chain. The binary colorbar and cell text show whether each method declares hard constraints, modeling choices, assumptions, evidence ceilings, and negative controls, making verifier-first governance visible without treating the method ledger as empirical or physical qFEP evidence." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
-<figcaption>Figure 56: Method assumption and
+alt="Figure 55: Method assumption and falsification map for the finite software chain. The binary colorbar and cell text show whether each method declares hard constraints, modeling choices, assumptions, evidence ceilings, and negative controls, making verifier-first governance visible without treating the method ledger as empirical or physical qFEP evidence." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
+<figcaption>Figure 55: Method assumption and
 falsification map for the finite software chain. The binary colorbar and
 cell text show whether each method declares hard constraints, modeling
 choices, assumptions, evidence ceilings, and negative controls, making
@@ -4665,9 +4646,9 @@ verifier-first governance visible without treating the method ledger as
 empirical or physical qFEP evidence.</figcaption>
 </figure>
 <figure id="fig:formalism_operation_map">
-<a class="figure-full-size-link" href="../figures/formalism_operation_map.png" target="_blank" rel="noopener" aria-label="Open full-size Figure 57, Operational status map for paper equations 1-14, distinguishing source mapping, finite…"><img src="../figures/formalism_operation_map.png" style="width:90.0%"
-alt="Figure 57: Operational status map for paper equations 1-14, distinguishing source mapping, finite computation, surrogate boundaries, and validation value bindings. The binary colorbar shows which statuses apply, including finite two-qubit quantum controls where implemented and roadmap boundaries where open-system qFEP claims are not yet simulated." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
-<figcaption>Figure 57: Operational status map for
+<a class="figure-full-size-link" href="../figures/formalism_operation_map.png" target="_blank" rel="noopener" aria-label="Open full-size Figure 56, Operational status map for paper equations 1-14, distinguishing source mapping, finite…"><img src="../figures/formalism_operation_map.png" style="width:90.0%"
+alt="Figure 56: Operational status map for paper equations 1-14, distinguishing source mapping, finite computation, surrogate boundaries, and validation value bindings. The binary colorbar shows which statuses apply, including finite two-qubit quantum controls where implemented and roadmap boundaries where open-system qFEP claims are not yet simulated." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
+<figcaption>Figure 56: Operational status map for
 paper equations 1-14, distinguishing source mapping, finite computation,
 surrogate boundaries, and validation value bindings. The binary colorbar
 shows which statuses apply, including finite two-qubit quantum controls

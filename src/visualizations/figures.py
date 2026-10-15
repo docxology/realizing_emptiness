@@ -3165,7 +3165,7 @@ def _pymdp_runtime_validation_dashboard(
     summary = runtime_log["summary"]
     controls = runtime_log["controls"]
     control_items = [
-        ("runtime\ncheck", controls["canary_ok"]),
+        ("runtime\ncheck", controls["runtime_dependency_ok"]),
         ("model\nhashes", controls["all_model_hashes_present"]),
         ("replay", controls["deterministic_replay_equal"]),
         ("labels", controls["all_trace_labels_resolve"]),
@@ -3344,32 +3344,6 @@ def _pymdp_runtime_validation_dashboard(
     )
 
 
-def _criticality(
-    project_root: Path, style: dict[str, Any], report: dict[str, Any]
-) -> Path:
-    labels = ["entropy", "switch", "variance", "near-critical"]
-    values = [
-        report["entropy_nats"],
-        report["switch_rate"],
-        report["variance"],
-        report["near_critical_score"],
-    ]
-    fig, ax = plt.subplots(figsize=(7, 3.5))
-    ax.bar(labels, values, color=style["palette"]["secondary"])
-    ax.set_title("Single-trace criticality diagnostic")
-    ax.set_ylabel("Simulated diagnostic value")
-    ax.legend(
-        handles=[
-            Patch(color=style["palette"]["secondary"], label="single simulated trace")
-        ],
-        fontsize=9,
-    )
-    _panel_label(ax, "T")
-    return _save_return(
-        fig, _fig_path(project_root, style, "criticality_proxy_panels"), style["dpi"]
-    )
-
-
 def _criticality_stochastic_ensemble(
     project_root: Path, style: dict[str, Any], criticality: dict[str, Any]
 ) -> Path:
@@ -3388,14 +3362,14 @@ def _criticality_stochastic_ensemble(
     for ax, metric, title, ylabel in (
         (
             axes[0],
-            "near_critical_score",
-            "Near-critical score is simulated with null controls",
-            "Score",
+            "observation_entropy_nats",
+            "Observation entropy under independent random controls",
+            "Entropy (nats)",
         ),
         (
             axes[1],
             "switch_rate",
-            "Switch-rate intervals expose trajectory variability",
+            "Switch rate under independent random controls",
             "Switch rate",
         ),
     ):
@@ -3454,6 +3428,7 @@ def _criticality_stochastic_ensemble(
         ax.set_xticks(x, profile_labels)
         ax.set_ylabel(ylabel)
         ax.set_title(title)
+        ax.set_ylim(0, 1.22 * max(float(real_high.max()), float(null_high.max())))
         ax.grid(axis="y", color=style["palette"]["grid"], linewidth=0.5, alpha=0.55)
     _panel_label(axes[0], "SA")
     _panel_label(axes[1], "SB")
@@ -3476,7 +3451,7 @@ def _criticality_stochastic_ensemble(
         fontsize=9,
     )
     fig.suptitle(
-        "Seeded stochastic criticality indicators remain simulation-only",
+        "Seeded trajectory summaries with independent random controls",
         fontsize=15.1,
         fontweight="bold",
     )
@@ -4572,7 +4547,7 @@ def _evidence_ceiling_stress_matrix(
         "implemented_model": 1,
         "finite_sweep": 2,
         "finite_quantum_simulation": 3,
-        "runtime_canary": 4,
+        "runtime_dependency_check": 4,
         "proxy_boundary": 5,
         "safety_boundary": 6,
         "background_boundary": 7,
@@ -4653,7 +4628,7 @@ def _claim_context_evidence_ladder(
         "implemented_model": 1,
         "finite_sweep": 2,
         "finite_quantum_simulation": 3,
-        "runtime_canary": 4,
+        "runtime_dependency_check": 4,
         "proxy_boundary": 5,
         "safety_boundary": 6,
         "background_boundary": 7,
@@ -4674,7 +4649,7 @@ def _claim_context_evidence_ladder(
         "implemented_model": "#60a5fa",
         "finite_sweep": "#34d399",
         "finite_quantum_simulation": "#818cf8",
-        "runtime_canary": "#fbbf24",
+        "runtime_dependency_check": "#fbbf24",
         "proxy_boundary": "#f59e0b",
         "safety_boundary": "#fb7185",
         "background_boundary": "#a78bfa",
@@ -6061,9 +6036,6 @@ def generate_all_figures(project_root: Path) -> dict[str, Any]:
             "figure.titlesize": 18.0 * font_scale,
         }
     )
-    (project_root / "output" / "figures" / "qrf_boundary_graphical_model.png").unlink(
-        missing_ok=True
-    )
     data = project_root / "output" / "data"
     profile = _load_json(data / "pymdp_profile_comparison.json")
     policy_trace = _load_json(data / "pymdp_policy_trace.json")
@@ -6198,7 +6170,6 @@ def generate_all_figures(project_root: Path) -> dict[str, Any]:
         "pymdp_runtime_validation_dashboard": _pymdp_runtime_validation_dashboard(
             project_root, style, pymdp_runtime, model_audit, stochastic_effects
         ),
-        "criticality_proxy_panels": _criticality(project_root, style, criticality),
         "criticality_stochastic_ensemble": _criticality_stochastic_ensemble(
             project_root, style, criticality_stochastic
         ),
@@ -6419,7 +6390,6 @@ def _source_artifacts_for(figure_id: str) -> list[str]:
             "output/data/pymdp_policy_trace.json",
             "output/data/stochastic_effect_size_audit.json",
         ],
-        "criticality_proxy_panels": ["output/reports/criticality_proxy_report.json"],
         "criticality_stochastic_ensemble": [
             "output/data/criticality_stochastic_ensemble.json"
         ],

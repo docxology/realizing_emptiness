@@ -74,7 +74,6 @@ FIGURE_RENDER_CONTRACTS = {
     "pymdp_profile_comparison": {"roles": ["finite", "qrf_sector"], "panel_count": 3, "legend_count": 3, "colorbar_count": 0, "min_font_pt": 12.0},
     "posterior_trajectory": {"roles": ["finite"], "panel_count": 1, "legend_count": 1, "colorbar_count": 0, "min_font_pt": 12.0},
     "pymdp_runtime_validation_dashboard": {"roles": ["finite", "pass", "fail", "stochastic", "null"], "panel_count": 4, "legend_count": 4, "colorbar_count": 0, "min_font_pt": 12.0},
-    "criticality_proxy_panels": {"roles": ["finite"], "panel_count": 1, "legend_count": 1, "colorbar_count": 0, "min_font_pt": 12.0},
     "criticality_stochastic_ensemble": {"roles": ["stochastic", "null"], "panel_count": 2, "legend_count": 2, "colorbar_count": 0, "min_font_pt": 12.0},
     "criticality_signatures": {"roles": ["stochastic", "null", "finite"], "panel_count": 2, "legend_count": 2, "colorbar_count": 0, "min_font_pt": 12.0},
     "compassion_scope_widening": {"roles": ["finite", "null"], "panel_count": 2, "legend_count": 2, "colorbar_count": 0, "min_font_pt": 12.0},

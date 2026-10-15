@@ -1579,20 +1579,16 @@ adapters are implemented.</figcaption>
 </figure>
 <h2 id="sec:supplement-criticality-indicators">Criticality Signatures
 with Null Controls</h2>
-<p>The criticality layer computes the two finite signatures the source
-paper names for its empirical criticality prediction, rather than a
-hand-tuned score, over seeded boundary-channel activity series drawn
-from the active-inference trajectories. A branching ratio is estimated
-as descendants per ancestor over each activity series, and an
-avalanche-size distribution is extracted from maximal supra-threshold
-runs of that activity and summarised by a finite
-power-law-versus-exponential log-likelihood-ratio diagnostic
-[beggs2003neuronal]. The derived criticality index is the absolute
-distance of the measured branching ratio from one, so the
-keep-or-critical reading follows the measurement rather than a constant;
-the caution is that these signatures are not dispositive even in
-empirical neuroscience without stronger controls
-[touboul2017power_law_absence_criticality;
+<p>The criticality layer computes two finite signatures over seeded
+boundary-channel activity series drawn from the active-inference
+trajectories. A branching ratio is estimated as descendants per ancestor
+over each activity series, and an avalanche-size distribution is
+extracted from maximal supra-threshold runs of that activity and
+summarised by a finite power-law-versus-exponential log-likelihood-ratio
+diagnostic [beggs2003neuronal]. The derived criticality index is the
+absolute distance of the measured branching ratio from one. These
+signatures are not dispositive even in empirical neuroscience without
+stronger controls [touboul2017power_law_absence_criticality;
 destexhe2021criticality_evidence].</p>
 <p>The engine carries both kinds of control. For branching, the
 discriminating negative control is a seeded permutation of each original
@@ -1602,43 +1598,38 @@ only when its real and shuffled ninety-five percent confidence intervals
 are disjoint. The other trajectory metrics retain independently sampled
 uniform observation/action controls; their contrasts do not isolate
 temporal order at fixed marginals. The aggregate readiness gate requires
-a majority of profiles to separate on at least one signature and at
-least one profile to separate on measured branching. The positive
-control is a planted-branching calibration: a pure geometric activity
-series with a known branching ratio is fed to the estimator, which must
-recover the planted value within tolerance. This calibrates the finite
-estimator, not an empirical criticality claim. The effect-size forest
-separately reports profile-minus-random-null differences, run-level
-mean-difference and Cliff’s-delta bootstrap intervals, and Holm-adjusted
-permutation tests.</p>
+a strict majority of profiles to separate on measured branching,
+independently reconstructed from the recorded trajectories and run
+summaries. The positive control is a planted-branching calibration: a
+pure geometric activity series with a known branching ratio is fed to
+the estimator, which must recover the planted value within tolerance.
+This calibrates the finite estimator, not an empirical criticality
+claim. The effect-size forest separately reports
+profile-minus-random-null differences, run-level mean-difference and
+Cliff’s-delta bootstrap intervals, and Holm-adjusted permutation
+tests.</p>
 <p>These signatures structure the shape of a future empirical test; they
 are not neural measurements, clinical outcomes, or evidence that any
 contemplative practice produced a critical regime.</p>
 <h3 id="sec:supplement-criticality-proxies">Seeded Criticality
 Indicators with Null Controls</h3>
-<p>The reported criticality-style outputs are seeded stochastic
-simulation indicators computed from the active-inference trajectories:
-observation entropy, action entropy, switching rate, variance,
-autocorrelation, null-control contrasts, and confidence intervals over
-replayable seeds. The single-trace diagnostic remains as a compact
-continuity check, but <span class="citation"
+<p>The reported outputs distinguish temporal-order diagnostics from
+descriptive trajectory summaries. <span class="citation"
 data-cites="fig:criticality_stochastic_ensemble">@fig:criticality_stochastic_ensemble</span>
-carries the claim-bearing result because it exposes variability and null
-controls.</p>
+reports finite software observation entropy and switching rate under
+independent random controls. Measured branching uses a
+histogram-preserving shuffled control in <span class="citation"
+data-cites="fig:criticality_signatures">@fig:criticality_signatures</span>.</p>
 <p><span class="citation"
 data-cites="fig:criticality_signatures">@fig:criticality_signatures</span>
-shows that the measured branching ratio separates the profile ensembles
-from their shuffled null controls by disjoint ninety-five percent
-confidence intervals, which is the finite software analogue of a
-criticality signature and not a measurement of neural avalanches or
-branching in any nervous system. The avalanche-size
-power-law-versus-exponential log-likelihood ratio is reported for
-continuity only and is non-discriminating on a single trace, where a
-sample size of one leaves the power-law and exponential fits
-statistically indistinguishable; it is the branching-ratio separation
-against the shuffled null, not the single-trace avalanche fit, that
-carries the criticality reading. The surrogate fixes the shape of a
-future empirical test; it does not observe criticality.</p>
+reports measured branching against shuffled null controls as a finite
+software diagnostic, not a measurement of neural avalanches or branching
+in any nervous system. The single-trace avalanche histogram is
+descriptive: when fewer than three sizes are available, the shape
+comparison returns zero as an insufficient-sample convention and cannot
+discriminate distributions. The branching-ratio separation against the
+shuffled null supplies the gated comparison. The surrogate fixes the
+shape of a future empirical test; it does not observe criticality.</p>
 <figure id="fig:criticality_signatures">
 <a class="figure-full-size-link" href="../figures/criticality_signatures.png" target="_blank" rel="noopener" aria-label="Open full-size figure, Measured criticality signatures for the seeded boundary-channel trajectories."><img src="../figures/criticality_signatures.png" style="width:90.0%"
 alt="Measured criticality signatures for the seeded boundary-channel trajectories. Panel A bars encode the measured branching ratio per profile against hatched null controls with a dashed sigma-equals-one balance line, and Panel B is a histogram of single-trace avalanche sizes; the colored bars and dashed reference line are seeded software trajectory diagnostics only, and the figure is not evidence of neural avalanches, branching, or empirical criticality." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
@@ -1652,38 +1643,28 @@ evidence of neural avalanches, branching, or empirical
 criticality.</figcaption>
 </figure>
 <figure id="fig:criticality_stochastic_ensemble">
-<a class="figure-full-size-link" href="../figures/criticality_stochastic_ensemble.png" target="_blank" rel="noopener" aria-label="Open full-size figure, Seeded stochastic active-inference ensemble for criticality-style indicators."><img src="../figures/criticality_stochastic_ensemble.png"
+<a class="figure-full-size-link" href="../figures/criticality_stochastic_ensemble.png" target="_blank" rel="noopener" aria-label="Open full-size figure, Seeded observation entropy and switch-rate summaries under independently sampled uniform…"><img src="../figures/criticality_stochastic_ensemble.png"
 style="width:90.0%"
-alt="Seeded stochastic active-inference ensemble for criticality-style indicators. Shared short profile labels, a single external legend, violet profile bars, hatched gray null-control bars, direction annotations, and 95 percent intervals over replayable seeds show simulated trajectory variability only; the figure is not empirical evidence, not neural measurement, not clinical outcome evidence, and not practice-efficacy evidence." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
-<figcaption>Seeded stochastic active-inference
-ensemble for criticality-style indicators. Shared short profile labels,
-a single external legend, violet profile bars, hatched gray null-control
-bars, direction annotations, and 95 percent intervals over replayable
-seeds show simulated trajectory variability only; the figure is not
-empirical evidence, not neural measurement, not clinical outcome
-evidence, and not practice-efficacy evidence.</figcaption>
+alt="Seeded observation entropy and switch-rate summaries under independently sampled uniform observation/action controls. Shared short profile labels, a single external legend, violet profile bars, hatched gray control bars, direction annotations, and pointwise normal-approximation 95 percent intervals across complete runs show finite software variability; these controls do not preserve the original observation histogram, and the figure is not empirical evidence for neural criticality or practice efficacy." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
+<figcaption>Seeded observation entropy and
+switch-rate summaries under independently sampled uniform
+observation/action controls. Shared short profile labels, a single
+external legend, violet profile bars, hatched gray control bars,
+direction annotations, and pointwise normal-approximation 95 percent
+intervals across complete runs show finite software variability; these
+controls do not preserve the original observation histogram, and the
+figure is not empirical evidence for neural criticality or practice
+efficacy.</figcaption>
 </figure>
-<figure id="fig:criticality_proxy_panels">
-<a class="figure-full-size-link" href="../figures/criticality_proxy_panels.png" target="_blank" rel="noopener" aria-label="Open full-size figure, Single-trace entropy, switching, variance"><img src="../figures/criticality_proxy_panels.png" style="width:90.0%"
-alt="Single-trace entropy, switching, variance, and near-criticality diagnostics from a simulated boundary-channel trajectory. The bar legend marks values as one simulated trace, and the stochastic ensemble figure carries the interval/null-control result; neither figure is empirical evidence for neural criticality or contemplative realization." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
-<figcaption>Single-trace entropy, switching,
-variance, and near-criticality diagnostics from a simulated
-boundary-channel trajectory. The bar legend marks values as one
-simulated trace, and the stochastic ensemble figure carries the
-interval/null-control result; neither figure is empirical evidence for
-neural criticality or contemplative realization.</figcaption>
-</figure>
-<p>The effect-size forest now estimates uncertainty for the contrasts
+<p>The effect-size forest estimates uncertainty for the contrasts
 themselves. For each profile and trajectory metric, independent complete
 runs are resampled separately in the two groups, and both the mean
 difference and tie-aware Cliff’s delta are recomputed in each of 2,048
 replicates. These are pointwise percentile intervals; they are not
 simultaneous coverage guarantees and timesteps are not independent
-replicates. Separate group and pooled-mean intervals remain in the JSON
-for traceability but do not supply the effect intervals in <span
-class="citation"
-data-cites="fig:stochastic_effect_size_forest">@fig:stochastic_effect_size_forest
-[westfall1993resampling]</span>.</p>
+replicates. The intervals in <span class="citation"
+data-cites="fig:stochastic_effect_size_forest">@fig:stochastic_effect_size_forest</span>
+match these contrast estimands [westfall1993resampling].</p>
 <p>The two-sided mean-statistic permutation calculation uses 4,095
 independent random label permutations with the plus-one correction,
 giving an attainable resolution of one over 4,096. Its validity as a
@@ -2165,8 +2146,8 @@ contemplative-attainment evidence, or physical qFEP realization.</p>
 BMR sweeps, sensitivity sweeps, criticality and practice maps, figure
 generation, sheaf composition, dashboard and review-response hardening,
 variable hydration, post-hydration hash refresh, and output validation
-in a fixed order. The validation report records <code>430</code> passing
-output checks across <code>430</code> total checks after the latest
+in a fixed order. The validation report records <code>429</code> passing
+output checks across <code>429</code> total checks after the latest
 full-chain run.</p>
 <p>The gates are fail-closed and cover the full surface, one family per
 check:</p>
@@ -2220,7 +2201,7 @@ realization, clinical, or neural-measurement language.</li>
 <code>quantum_contextuality_witness</code>;
 <code>quantum_measurement_contextuality</code>;
 <code>quantum_open_system_dephasing</code>;
-<code>pymdp_runtime_canary</code>;
+<code>pymdp_runtime_dependency</code>;
 <code>criticality_proxy_boundary</code>;
 <code>compassion_proxy_boundary</code>;
 <code>self_evidencing_boundary</code>;

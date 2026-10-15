@@ -108,7 +108,7 @@ Resolved findings:
     removing a figure caption's boundary phrase or visual-encoding text now
     fails the visual-caption audit.
 
-12. `pymdp` canary overtrust: a live import and normalized one-step posterior
+12. `pymdp` runtime dependency check overtrust: a live import and normalized one-step posterior
     could pass while the paper-specific agent remained a local score table.
     Minimal fix: add profile-specific `A`, `B`, `C`, and `D` arrays,
     `output/data/pymdp_generative_model_audit.json`,
@@ -118,7 +118,7 @@ Resolved findings:
     posterior normalization, label resolution, captured runtime warnings,
     deterministic replay, and profile-specific action differences. Negative
     control: an unnormalized transition column, mismatched weighted
-    expected-free-energy row, missing canary-warning capture, or unresolved
+    expected-free-energy row, missing runtime-warning capture, or unresolved
     action/observation label fails before figure generation can certify the
     profile comparison.
 
@@ -286,7 +286,7 @@ Resolved findings:
     introduction citation, unnumbered cover graphical abstract, ordered QRF lead
     figures, no duplicate supplement PNGs, and no hard-coded manuscript figure
     numbers. Negative control: reprinting a main-text PNG in the supplement,
-    embedding the retired QRF composite, or writing "Figure 1" in manuscript
+    embedding an unregistered figure, or writing "Figure 1" in manuscript
     prose fails validation.
 
 24. Cover-art regression: the graphical abstract could satisfy path and caption
@@ -361,14 +361,14 @@ Resolved findings:
     sections: the seeded effect-size machinery had only negative controls, so a
     profile-vs-null non-rejection was uninterpretable without a positive control;
     the section 6.2 compassion and section 6.3 criticality tracks were the thinnest
-    operationalizations (a one-line label ratio and a hand-built near-critical
-    score), and equation 11 was registered as a KL complexity term that the
+    operationalizations (coarse scalar heuristics), and equation 11 was
+    registered as a KL complexity term that the
     scalar `FreeEnergyTerms` never computed. Minimal fix: add
     `output/data/effect_size_calibration_audit.json` with null, positive, and
     sign-flip synthetic arms wired into `effect_size_calibration_audit_ok`;
     replace the compassion ratio with `compassion_scope.py` scope-of-concern plus
     a precision-ablation control in `output/data/compassion_scope_audit.json`;
-    replace the criticality near-critical score with measured branching-ratio and
+    use measured branching-ratio and
     avalanche-size signatures and require the measured branching to separate from
     the shuffled null; compute a worked categorical KL for equation 11 and derive
     the equation 13-14 minima and strict-superset witness from measured free

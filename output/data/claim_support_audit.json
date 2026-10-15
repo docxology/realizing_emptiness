@@ -33,8 +33,8 @@
       "kind": "safety_boundary"
     },
     {
-      "id": "pymdp_runtime_canary",
-      "kind": "runtime_canary"
+      "id": "pymdp_runtime_dependency",
+      "kind": "runtime_dependency_check"
     },
     {
       "id": "qfep_surrogate_scope",
@@ -174,7 +174,7 @@
       "varela1991embodied",
       "wilkinson2016fair"
     ],
-    "pymdp_runtime_canary": [
+    "pymdp_runtime_dependency": [
       "dacosta2020discrete",
       "friston2015epistemic",
       "heins2022pymdp"
@@ -1063,8 +1063,8 @@
     },
     {
       "citation_key": "dacosta2020discrete",
-      "claim_id": "pymdp_runtime_canary",
-      "claim_kind": "runtime_canary",
+      "claim_id": "pymdp_runtime_dependency",
+      "claim_kind": "runtime_dependency_check",
       "evidence_status": "methodological_background",
       "public_crosswalk_claim": true,
       "role": "discrete active-inference A/B/C/D implementation background",
@@ -1072,8 +1072,8 @@
     },
     {
       "citation_key": "friston2015epistemic",
-      "claim_id": "pymdp_runtime_canary",
-      "claim_kind": "runtime_canary",
+      "claim_id": "pymdp_runtime_dependency",
+      "claim_kind": "runtime_dependency_check",
       "evidence_status": "theoretical_background",
       "public_crosswalk_claim": true,
       "role": "expected free energy and policy-selection background",
@@ -1081,8 +1081,8 @@
     },
     {
       "citation_key": "heins2022pymdp",
-      "claim_id": "pymdp_runtime_canary",
-      "claim_kind": "runtime_canary",
+      "claim_id": "pymdp_runtime_dependency",
+      "claim_kind": "runtime_dependency_check",
       "evidence_status": "implementation_anchor",
       "public_crosswalk_claim": true,
       "role": "runtime and implementation anchor",

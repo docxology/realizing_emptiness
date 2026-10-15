@@ -23,7 +23,7 @@ CLAIM_KINDS = {
     "habit_policy_precision": "background_boundary",
     "metacognitive_access_model": "implementation_boundary",
     "practice_protocol_boundary": "safety_boundary",
-    "pymdp_runtime_canary": "runtime_canary",
+    "pymdp_runtime_dependency": "runtime_dependency_check",
     "quantum_contextuality_witness": "finite_quantum_simulation",
     "quantum_measurement_contextuality": "finite_quantum_simulation",
     "quantum_open_system_dephasing": "finite_quantum_simulation",

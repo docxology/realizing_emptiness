@@ -2,6 +2,7 @@
   "claim_boundary": "manuscript figure-placement audit only; not empirical, clinical, neural, practice-efficacy, awakening, or physical qFEP evidence",
   "compact_main_quantum_figure": "../../output/figures/finite_quantum_scope_summary.png",
   "controls": {
+    "all_embedded_figures_registered": true,
     "compact_quantum_summary_in_main": true,
     "compact_quantum_summary_not_in_supplement": true,
     "governance_figures_absent_from_main": true,
@@ -9,7 +10,6 @@
     "qrf_figures_precede_quantum_summary": true,
     "qrf_lead_figures_ordered": true,
     "qrf_lead_figures_present_in_main": true,
-    "retired_qrf_composite_absent": true,
     "technical_quantum_figures_absent_from_main": true,
     "technical_quantum_figures_present_in_supplement": true
   },
@@ -29,8 +29,7 @@
     "../../output/figures/qrf_channel_relabeling_ledger.png",
     "../../output/figures/qrf_invariance_policy_flow.png"
   ],
-  "retired_qrf_composite_figure": "../../output/figures/qrf_boundary_graphical_model.png",
-  "schema": "realizing_emptiness.manuscript_figure_placement_audit.v1",
+  "schema": "realizing_emptiness.manuscript_figure_placement_audit.v2",
   "technical_quantum_figure_count": 20,
   "technical_quantum_figures": [
     "../../output/figures/quantum_boundary_entropy_landscape.png",
@@ -55,5 +54,6 @@
     "../../output/figures/quantum_roadmap_readiness_matrix.png"
   ],
   "technical_quantum_figures_in_main": [],
-  "technical_quantum_figures_missing_from_supplement": []
+  "technical_quantum_figures_missing_from_supplement": [],
+  "unregistered_figure_paths": []
 }

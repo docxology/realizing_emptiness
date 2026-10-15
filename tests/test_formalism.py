@@ -312,6 +312,12 @@ def test_claim_redteam_audit_resolves_claim_locations_and_rejects_false_certific
     assert unresolved_figure["unresolved_figure_bindings"] == [
         {"claim_id": unresolved_figure_context["rows"][0]["claim_id"], "figure_id": "not_a_figure"}
     ]
+    unresolved_figure_context["rows"][0]["figure_bindings"] = ["governed_fallback:missing"]
+    bypass = build_claim_redteam_audit(root, crosswalk, claim_context=unresolved_figure_context)
+    assert bypass["all_controls_pass"] is False
+    assert bypass["unresolved_figure_bindings"] == [
+        {"claim_id": unresolved_figure_context["rows"][0]["claim_id"], "figure_id": "governed_fallback:missing"}
+    ]
 
     missing_boundary_context = json.loads(json.dumps(build_claim_context_ledger(root, crosswalk)))
     missing_boundary_context["rows"][0]["prohibited_inference"] = ""

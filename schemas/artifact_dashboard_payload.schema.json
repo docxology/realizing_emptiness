@@ -5,14 +5,24 @@
   "type": "object",
   "required": ["schema", "roadmap", "readiness", "todo_audit", "figures", "dependency_graph", "pymdp_runtime", "stochastic_engines", "statistical_robustness", "visual_quality", "method_governance", "source_fit", "claim_context", "claim_redteam", "contract_registry", "review_hardening", "manuscript_audits", "claim_ceiling_rows", "manifest_coverage", "validation_report", "claim_boundary"],
   "properties": {
-    "schema": {"const": "realizing_emptiness.artifact_dashboard_payload.v1"},
+    "schema": {"const": "realizing_emptiness.artifact_dashboard_payload.v2"},
     "roadmap": {"type": "object", "required": ["implemented_count", "future_count", "implemented_ids", "future_ids", "blocked_task_ids"], "additionalProperties": true},
     "readiness": {"type": "object", "required": ["all_controls_pass", "future_blocked", "future_ids", "forged_completed_future_row_rejected"], "additionalProperties": true},
     "todo_audit": {"type": "object", "required": ["all_controls_pass", "stale_future_rows", "historical_backlog_rows", "blocked_external_class_violations"], "additionalProperties": true},
     "figures": {"type": "object", "required": ["figure_count", "figure_ids"], "additionalProperties": true},
     "argument_arc": {"type": "array", "items": {"type": "object", "required": ["stage", "description", "figure_id", "figure_present"], "properties": {"stage": {"type": "string"}, "description": {"type": "string"}, "figure_id": {"type": "string"}, "figure_present": {"type": "boolean"}}, "additionalProperties": false}},
     "dependency_graph": {"type": "object", "required": ["node_count", "edge_count", "all_controls_pass"], "additionalProperties": true},
-    "pymdp_runtime": {"type": "object", "required": ["all_controls_pass", "trace_row_count", "model_profile_count", "replay_equal", "max_policy_posterior_norm_residual", "max_weighted_expected_free_energy_residual", "claim_boundary"], "additionalProperties": true},
+    "pymdp_runtime": {
+      "type": "object", "required": ["all_controls_pass", "trace_row_count", "model_profile_count", "replay_equal", "runtime_warning_count", "max_policy_posterior_norm_residual", "max_weighted_expected_free_energy_residual", "claim_boundary"],
+      "properties": {
+        "all_controls_pass": {"type": "boolean"}, "trace_row_count": {"type": "integer", "minimum": 0},
+        "model_profile_count": {"type": "integer", "minimum": 0}, "replay_equal": {"type": "boolean"},
+        "runtime_warning_count": {"type": "integer", "minimum": 0},
+        "max_policy_posterior_norm_residual": {"type": "number"}, "max_weighted_expected_free_energy_residual": {"type": "number"},
+        "claim_boundary": {"type": "string"}
+      },
+      "additionalProperties": false
+    },
     "stochastic_engines": {"type": "object", "required": ["active_inference_ensemble_ok", "criticality_ensemble_ok", "quantum_trajectory_ok", "claim_boundary"], "additionalProperties": true},
     "statistical_robustness": {"type": "object", "required": ["all_controls_pass", "stochastic_effects_pass", "bmr_resampling_pass", "trajectory_convergence_pass", "claim_boundary"], "additionalProperties": true},
     "visual_quality": {"type": "object", "required": ["style_ok", "legibility_ok", "missing_roles", "undersized"], "additionalProperties": true},

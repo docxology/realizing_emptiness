@@ -120,7 +120,7 @@ CORE_ROWS: tuple[dict[str, Any], ...] = (
             "output/data/qrf_boundary_channel_ledger.json",
         ],
         "validation_gates": ["pymdp_profiles", "pymdp_policy_trace_ok", "qrf_boundary_channel_ledger_ok"],
-        "evidence_ceiling_claims": ["source_boundary_unevidenceable", "pymdp_runtime_canary"],
+        "evidence_ceiling_claims": ["source_boundary_unevidenceable", "pymdp_runtime_dependency"],
         "primary_coverage_class": "active_inference_bmr_argument",
     },
     {

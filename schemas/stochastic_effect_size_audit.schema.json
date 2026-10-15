@@ -5,13 +5,20 @@
   "type": "object",
   "required": ["schema", "metric_count", "row_count", "rows", "resampling_design", "controls", "all_controls_pass", "claim_boundary"],
   "properties": {
-    "schema": {"const": "realizing_emptiness.stochastic_effect_size_audit.v1"},
+    "schema": {"const": "realizing_emptiness.stochastic_effect_size_audit.v2"},
     "metric_count": {"type": "integer", "minimum": 1},
     "row_count": {"type": "integer", "minimum": 1},
     "rows": {"type": "array", "minItems": 1, "items": {
       "type": "object",
       "required": ["profile", "metric", "permutation_p", "holm_p", "cliffs_delta", "difference_ci95_low", "difference_ci95_high", "cliffs_ci95_low", "cliffs_ci95_high", "profile_run_count", "null_run_count", "permutation_draws", "permutation_exceedances", "permutation_resolution", "permutation_mcse", "permutation_tail_confidence_level", "permutation_tail_family_ci95_low", "permutation_tail_family_ci95_high", "holm_mc_ci95_low", "holm_mc_ci95_high", "holm_decision_mc_stable"],
       "properties": {
+        "profile": {"type": "string"}, "metric": {"type": "string"},
+        "profile_mean": {"type": "number"}, "null_mean": {"type": "number"},
+        "delta_profile_minus_null": {"type": "number"},
+        "bootstrap_seed": {"type": "integer"}, "bootstrap_draws": {"const": 2048},
+        "permutation_seed": {"type": "integer"},
+        "finite_interval": {"const": true},
+        "effect_direction": {"enum": ["profile_higher", "null_higher", "equal"]},
         "permutation_p": {"type": "number", "minimum": 0, "maximum": 1}, "holm_p": {"type": "number", "minimum": 0, "maximum": 1}, "cliffs_delta": {"type": "number", "minimum": -1, "maximum": 1},
         "difference_ci95_low": {"type": "number"}, "difference_ci95_high": {"type": "number"},
         "cliffs_ci95_low": {"type": "number", "minimum": -1, "maximum": 1}, "cliffs_ci95_high": {"type": "number", "minimum": -1, "maximum": 1},
@@ -23,7 +30,8 @@
         "permutation_tail_family_ci95_low": {"type": "number", "minimum": 0, "maximum": 1}, "permutation_tail_family_ci95_high": {"type": "number", "minimum": 0, "maximum": 1},
         "holm_mc_ci95_low": {"type": "number", "minimum": 0, "maximum": 1}, "holm_mc_ci95_high": {"type": "number", "minimum": 0, "maximum": 1},
         "holm_decision_mc_stable": {"type": "boolean"}
-      }
+      },
+      "additionalProperties": false
     }},
     "resampling_design": {"type": "object", "required": ["unit", "bootstrap_method", "permutation_family_size", "mc_family_confidence", "interval_confidence", "intervals_simultaneous", "mc_interval_method"], "properties": {
       "unit": {"const": "independent_trajectory_run"}, "bootstrap_method": {"const": "percentile"}, "permutation_family_size": {"type": "integer", "minimum": 1},

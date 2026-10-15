@@ -9,7 +9,7 @@
 
 | | |
 | --- | --- |
-| **Version** | v1.2.0; [changes](CHANGELOG.md) and [release validation](docs/release-validation.md) |
+| **Version** | v2.0.0; [changes](CHANGELOG.md) and [release validation](docs/release-validation.md) |
 | **Archived v1.0.0 (Zenodo)** | [10.5281/zenodo.20834847](https://doi.org/10.5281/zenodo.20834847); [concept DOI](https://doi.org/10.5281/zenodo.20834846). A new version DOI is not yet recorded. |
 | **Manuscript PDF** | [`realizing_emptiness_combined.pdf`](output/pdf/realizing_emptiness_combined.pdf) · [latest release](https://github.com/docxology/realizing_emptiness/releases/latest) |
 | 📚 **Source preprint** | [osf.io/preprints/psyarxiv/m78z2_v1](https://osf.io/preprints/psyarxiv/m78z2_v1) |
@@ -19,9 +19,10 @@
 
 ## State right now (orientation for a cold agent)
 
-- **Project status:** v1.2.0 expands the scholarship ledger to 125 sources,
-  adds run-level contrast intervals and finite-sampling diagnostics, and updates
-  the manuscript and visualizations. The v1.0.0 DOI identifies the earlier archive; it does
+- **Project status:** v2.0.0 consolidates the runtime API and statistical contracts,
+  requires measured branching for criticality gates, and removes superseded
+  manuscript material and visualizations. The scholarship ledger has 125 sources.
+  The v1.0.0 DOI identifies the earlier archive; it does
   not identify this version.
 - **Measured status:** use the [release validation record](docs/release-validation.md),
   the CI run for the commit, and `output/reports/validation_report.json`.
@@ -103,8 +104,8 @@ The correct `--project` qualifier depends on which sidecar lifecycle folder hold
 
 ## Citation
 
-> Friedman, Daniel Ari (2026). *Realizing Emptiness* (v1.2.0). Active Inference
-> Institute. https://github.com/docxology/realizing_emptiness/releases/tag/v1.2.0
+> Friedman, Daniel Ari (2026). *Realizing Emptiness* (v2.0.0). Active Inference
+> Institute. https://github.com/docxology/realizing_emptiness/releases/tag/v2.0.0
 
 The archived v1.0.0 version DOI remains available above. The concept DOI
 [10.5281/zenodo.20834846](https://doi.org/10.5281/zenodo.20834846) tracks the

@@ -9,7 +9,7 @@
     "steps",
     "channels",
     "runtime_versions",
-    "canary",
+    "runtime_dependency_check",
     "model_hashes",
     "trace_row_count",
     "profile_count",
@@ -25,7 +25,7 @@
     "claim_boundary"
   ],
   "properties": {
-    "schema": {"const": "realizing_emptiness.pymdp_runtime_diagnostics_log.v1"},
+    "schema": {"const": "realizing_emptiness.pymdp_runtime_diagnostics_log.v2"},
     "seed": {"type": "integer"},
     "steps": {"type": "integer", "minimum": 1},
     "channels": {"type": "integer", "minimum": 1},
@@ -42,15 +42,20 @@
       },
       "additionalProperties": false
     },
-    "canary": {
+    "runtime_dependency_check": {
       "type": "object",
-      "required": ["ok", "version", "warnings"],
+      "required": ["schema", "ok", "version", "required_version", "version_ok", "policy_posterior_normalized", "warnings"],
       "properties": {
+        "schema": {"const": "realizing_emptiness.pymdp_runtime_dependency_check.v1"},
+        "required_version": {"const": "1.0.3"}, "version_ok": {"const": true},
+        "agent_class": {"const": "Agent"}, "state_factor_count": {"type": "integer", "minimum": 1},
+        "policy_posterior_sum": {"type": "number"}, "policy_posterior_normalized": {"const": true},
+        "neg_efe_shape": {"type": "array", "items": {"type": "integer"}}, "vfe_available": {"type": "boolean"},
         "ok": {"const": true},
         "version": {"const": "1.0.3"},
         "warnings": {"type": "array", "minItems": 1, "items": {"type": "string"}}
       },
-      "additionalProperties": true
+      "additionalProperties": false
     },
     "model_hashes": {
       "type": "array",
@@ -157,13 +162,23 @@
     "controls": {
       "type": "object",
       "required": [
-        "canary_ok", "canary_warnings_captured", "all_model_hashes_present", "all_models_normalized",
+        "runtime_dependency_ok", "runtime_warnings_captured", "all_model_hashes_present", "all_models_normalized",
         "deterministic_replay_equal", "all_state_posteriors_normalized", "all_policy_posteriors_normalized",
         "weighted_expected_free_energy_recomputed", "efe_terms_rederived", "all_trace_labels_resolve",
         "all_selected_action_indices_match", "all_numeric_fields_finite", "perturbation_flags_present",
         "all_vfe_finite", "all_entropies_in_bounds", "empirical_prior_matches_library"
       ],
-      "additionalProperties": {"const": true}
+      "properties": {
+        "runtime_dependency_ok": {"const": true}, "runtime_warnings_captured": {"const": true},
+        "all_model_hashes_present": {"const": true}, "all_models_normalized": {"const": true},
+        "deterministic_replay_equal": {"const": true}, "all_state_posteriors_normalized": {"const": true},
+        "all_policy_posteriors_normalized": {"const": true}, "weighted_expected_free_energy_recomputed": {"const": true},
+        "efe_terms_rederived": {"const": true}, "all_trace_labels_resolve": {"const": true},
+        "all_selected_action_indices_match": {"const": true}, "all_numeric_fields_finite": {"const": true},
+        "perturbation_flags_present": {"const": true}, "all_vfe_finite": {"const": true},
+        "all_entropies_in_bounds": {"const": true}, "empirical_prior_matches_library": {"const": true}
+      },
+      "additionalProperties": false
     },
     "all_controls_pass": {"const": true},
     "claim_boundary": {"type": "string", "pattern": "not empirical"}

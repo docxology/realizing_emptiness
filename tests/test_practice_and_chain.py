@@ -127,11 +127,10 @@ def test_figures_deterministic_under_rcparam_pollution(pytestconfig) -> None:
 def test_figure_source_map_can_regenerate(pytestconfig) -> None:
     root: Path = pytestconfig.realizing_emptiness_root
     source_map = generate_all_figures(root)
-    assert source_map["figure_count"] == 61
+    assert source_map["figure_count"] == 60
     figure_ids = {row["id"] for row in source_map["figures"]}
     assert "data_processing_monotonicity" in figure_ids
     assert "graphical_abstract_cover" in figure_ids
-    assert "qrf_boundary_graphical_model" not in figure_ids
     assert [row["id"] for row in source_map["figures"][1:4]] == [
         "qrf_boundary_screen_geometry",
         "qrf_channel_relabeling_ledger",
@@ -183,7 +182,7 @@ def test_figure_source_map_can_regenerate(pytestconfig) -> None:
         assert row["legend_axis_overlap_count"] == 0
     integrity = build_figure_integrity_audit(root, source_map)
     assert integrity["ok"] is True
-    assert integrity["figure_count"] == 61
+    assert integrity["figure_count"] == 60
     assert integrity["blank_figures"] == []
     caption_audit = json.loads((root / "output" / "data" / "visual_caption_audit.json").read_text(encoding="utf-8"))
     assert caption_audit["ok"] is True
@@ -225,10 +224,10 @@ def test_figure_source_map_can_regenerate(pytestconfig) -> None:
     assert legibility["legend_axis_overlaps"] == []
     assert legibility["layout_failures"] == []
     dashboard_payload = build_artifact_dashboard_payload(root, source_map)
-    assert dashboard_payload["figures"]["figure_count"] == 61
+    assert dashboard_payload["figures"]["figure_count"] == 60
     assert dashboard_payload["pymdp_runtime"]["all_controls_pass"] is True
     assert dashboard_payload["pymdp_runtime"]["replay_equal"] is True
-    assert dashboard_payload["pymdp_runtime"]["canary_warning_count"] >= 1
+    assert dashboard_payload["pymdp_runtime"]["runtime_warning_count"] >= 1
     assert dashboard_payload["pymdp_runtime"]["max_weighted_expected_free_energy_residual"] < 1e-7
     assert dashboard_payload["roadmap"]["implemented_count"] >= 17
     assert set(dashboard_payload["roadmap"]["future_ids"]) == {"re-3", "re-4", "re-13", "re-14", "re-15"}
@@ -466,7 +465,7 @@ def test_manuscript_prose_and_visual_reference_contract(pytestconfig) -> None:
     assert "quantum-trajectory" in abstract_paragraph
     assert "This pass" not in abstract_paragraph
     assert "draft" not in abstract_paragraph.lower()
-    assert "runtime canary" not in abstract_paragraph
+    assert "runtime dependency check" not in abstract_paragraph
 
     first_intro_body = next(line.strip() for line in intro.splitlines() if line.strip() and not line.startswith("#"))
     assert first_intro_body.startswith("Sandved-Smith et al. [@sandvedsmith2026noself]")
@@ -517,7 +516,6 @@ def test_manuscript_prose_and_visual_reference_contract(pytestconfig) -> None:
     assert "@fig:qrf_invariance_policy_flow" in results
     assert "{#fig:qrf_channel_relabeling_ledger" in results
     assert "{#fig:qrf_invariance_policy_flow" in results
-    assert "../output/figures/qrf_boundary_graphical_model.png" not in results
     qrf_paths = [
         "../output/figures/qrf_channel_relabeling_ledger.png",
         "../output/figures/qrf_invariance_policy_flow.png",
@@ -656,7 +654,8 @@ def test_manuscript_prose_and_visual_reference_contract(pytestconfig) -> None:
     assert placement["controls"]["qrf_lead_figures_present_in_main"] is True
     assert placement["controls"]["qrf_lead_figures_ordered"] is True
     assert placement["controls"]["qrf_figures_precede_quantum_summary"] is True
-    assert placement["controls"]["retired_qrf_composite_absent"] is True
+    assert placement["controls"]["all_embedded_figures_registered"] is True
+    assert placement["unregistered_figure_paths"] == []
     assert cover["ok"] is True
     assert cover["cover_style"] == "hybrid_symbolic_near_square_large_type"
     assert cover["aspect_ratio_ok"] is True

@@ -182,7 +182,7 @@ artifacts:
   - id: pymdp_profile_comparison
     path: output/data/pymdp_profile_comparison.json
     kind: data
-    schema: realizing_emptiness.pymdp_profile_comparison.v2
+    schema: realizing_emptiness.pymdp_profile_comparison.v3
   - id: pymdp_policy_trace
     path: output/data/pymdp_policy_trace.json
     kind: data
@@ -194,7 +194,7 @@ artifacts:
   - id: pymdp_runtime_diagnostics_log
     path: output/data/pymdp_runtime_diagnostics_log.json
     kind: data
-    schema: realizing_emptiness.pymdp_runtime_diagnostics_log.v1
+    schema: realizing_emptiness.pymdp_runtime_diagnostics_log.v2
   - id: stochastic_policy_ensemble
     path: output/data/stochastic_policy_ensemble.json
     kind: data
@@ -202,11 +202,11 @@ artifacts:
   - id: criticality_stochastic_ensemble
     path: output/data/criticality_stochastic_ensemble.json
     kind: data
-    schema: realizing_emptiness.criticality_stochastic_ensemble.v1
+    schema: realizing_emptiness.criticality_stochastic_ensemble.v2
   - id: stochastic_effect_size_audit
     path: output/data/stochastic_effect_size_audit.json
     kind: data
-    schema: realizing_emptiness.stochastic_effect_size_audit.v1
+    schema: realizing_emptiness.stochastic_effect_size_audit.v2
   - id: bmr_robustness_resampling_audit
     path: output/data/bmr_robustness_resampling_audit.json
     kind: data
@@ -326,7 +326,7 @@ artifacts:
   - id: manuscript_figure_placement_audit
     path: output/data/manuscript_figure_placement_audit.json
     kind: data
-    schema: realizing_emptiness.manuscript_figure_placement_audit.v1
+    schema: realizing_emptiness.manuscript_figure_placement_audit.v2
   - id: cover_graphical_abstract_audit
     path: output/data/cover_graphical_abstract_audit.json
     kind: data
@@ -342,11 +342,11 @@ artifacts:
   - id: artifact_dashboard_payload
     path: output/data/artifact_dashboard_payload.json
     kind: data
-    schema: realizing_emptiness.artifact_dashboard_payload.v1
+    schema: realizing_emptiness.artifact_dashboard_payload.v2
   - id: criticality_proxy_report
     path: output/reports/criticality_proxy_report.json
     kind: report
-    schema: realizing_emptiness.criticality_proxy_report.v1
+    schema: realizing_emptiness.criticality_proxy_report.v2
   - id: graphical_abstract_cover
     path: output/figures/graphical_abstract_cover.png
     kind: figure
@@ -439,9 +439,6 @@ artifacts:
     kind: figure
   - id: pymdp_runtime_validation_dashboard
     path: output/figures/pymdp_runtime_validation_dashboard.png
-    kind: figure
-  - id: criticality_proxy_panels
-    path: output/figures/criticality_proxy_panels.png
     kind: figure
   - id: criticality_stochastic_ensemble_figure
     path: output/figures/criticality_stochastic_ensemble.png

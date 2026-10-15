@@ -30,6 +30,7 @@ physical-qFEP evidence.
 | [Project architecture](architecture.md) | How manuscript, `src`, `scripts`, `tests`, and artifacts connect, with recipes for adding a figure or a claim. |
 | [Running the chain](running-the-chain.md) | Setup, the full-chain run with a per-stage walkthrough, output layout, verification gates, single-result reproduction, and gate-failure troubleshooting. |
 | [Release validation](release-validation.md) | Audit findings, verification receipts, packaging, rendering, and version-publication boundaries. |
+| [Current API and data contracts](api-contracts.md) | Public runtime entry points, versioned artifact fields, measured-branching acceptance, and regeneration requirements for v2.0.0. |
 | [`src/simulation` module contract](../src/simulation/README.md) | Source-level map for the finite simulation modules, including the modular `pymdp` profile stack, its `A/B/C/D` arrays, deterministic traces, runtime diagnostics, and validation gates. |
 
 ## Formal mapping (paper to software)

@@ -27,8 +27,8 @@ justification for treating coded observation labels as neural event counts.
 
 The contrast artifact uses 2,048 seeded percentile replicates for both mean
 differences and Cliff's delta. Intact pairs are sampled together for the
-branching contrast. Separate group and pooled means remain for backwards
-traceability; their intervals are never substituted for a contrast interval.
+branching contrast. Each reported interval belongs to its named contrast;
+group means are descriptive point estimates.
 Confidence level is 95% pointwise, not simultaneous across profiles or metrics.
 Percentile intervals can have imperfect finite-sample coverage, particularly
 for discrete, skewed or small samples. A degenerate interval on a constant

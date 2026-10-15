@@ -3180,7 +3180,7 @@
       "habit_policy_precision": 2,
       "metacognitive_access_model": 7,
       "practice_protocol_boundary": 22,
-      "pymdp_runtime_canary": 3,
+      "pymdp_runtime_dependency": 3,
       "qfep_surrogate_scope": 21,
       "qrf_background_only": 11,
       "quantum_contextuality_witness": 6,

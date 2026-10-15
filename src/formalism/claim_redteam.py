@@ -73,10 +73,6 @@ def _source_themes_by_claim(source_coverage: dict[str, Any]) -> dict[str, list[s
     return {claim_id: sorted(theme for theme in themes if theme) for claim_id, themes in by_claim.items()}
 
 
-def _binding_resolves(binding: str, figure_ids: set[str]) -> bool:
-    return binding in figure_ids or binding.startswith("governed_fallback:")
-
-
 def _reader_overclaims(text: str) -> list[str]:
     lower = text.lower()
     hits: list[str] = []
@@ -139,7 +135,7 @@ def build_claim_redteam_audit(
         figure_bindings = list(context.get("figure_bindings", []))
         unresolved_for_claim = sorted(section for section in sections if section not in manuscript_anchors)
         unresolved_figures_for_claim = sorted(
-            binding for binding in figure_bindings if not _binding_resolves(binding, mapped_figure_ids)
+            binding for binding in figure_bindings if binding not in mapped_figure_ids
         )
 
         if not sections:

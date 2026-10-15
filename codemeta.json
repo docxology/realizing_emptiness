@@ -1,7 +1,7 @@
 {
   "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
   "@type": "SoftwareSourceCode",
-  "identifier": "https://github.com/docxology/realizing_emptiness/releases/tag/v1.2.0",
+  "identifier": "https://github.com/docxology/realizing_emptiness/releases/tag/v2.0.0",
   "author": [
     {
       "@id": "https://orcid.org/0000-0001-6232-9096",
@@ -25,6 +25,6 @@
   ],
   "license": "https://spdx.org/licenses/MIT",
   "name": "Realizing Emptiness",
-  "version": "1.2.0"
+  "version": "2.0.0"
 }
 

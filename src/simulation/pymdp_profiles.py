@@ -391,7 +391,7 @@ def pymdp_runtime_dependency_check(required_version: str = PYMDP_REQUIRED_VERSIO
     q_pi, neg_efe = agent.infer_policies(qs)
     posterior_sum = float(jnp.sum(q_pi))
     return {
-        "schema": "realizing_emptiness.pymdp_canary.v1",
+        "schema": "realizing_emptiness.pymdp_runtime_dependency_check.v1",
         "required_version": required_version,
         "version": version,
         "version_ok": ok_version,
@@ -404,11 +404,6 @@ def pymdp_runtime_dependency_check(required_version: str = PYMDP_REQUIRED_VERSIO
         "warnings": [str(warning.message) for warning in captured_warnings],
         "ok": bool(ok_version and abs(posterior_sum - 1.0) < 1e-5),
     }
-
-
-def pymdp_version_canary(required_version: str = PYMDP_REQUIRED_VERSION) -> dict[str, Any]:
-    """Compatibility wrapper for the runtime dependency check artifact."""
-    return pymdp_runtime_dependency_check(required_version=required_version)
 
 
 def run_profile_comparison(*, seed: int = 7, steps: int = 12, channels: int = 6) -> dict[str, Any]:
@@ -440,7 +435,7 @@ def run_profile_comparison(*, seed: int = 7, steps: int = 12, channels: int = 6)
         )
     best_row = min(rows, key=lambda row: row["free_energy"])
     return {
-        "schema": "realizing_emptiness.pymdp_profile_comparison.v2",
+        "schema": "realizing_emptiness.pymdp_profile_comparison.v3",
         "seed": seed,
         "steps": steps,
         "channels": channels,
@@ -458,7 +453,7 @@ def run_profile_comparison(*, seed: int = 7, steps: int = 12, channels: int = 6)
         "posterior_normalized": abs(sum(row["posterior_mass"] for row in rows) - 1.0) < 1e-9,
         "policy_trace_all_posteriors_normalized": policy_trace["all_posteriors_normalized"],
         "best_profile": best_row["deployment"]["name"],
-        "pymdp_canary": pymdp_runtime_dependency_check(),
+        "runtime_dependency_check": pymdp_runtime_dependency_check(),
         "claim_boundary": CLAIM_BOUNDARY,
     }
 
@@ -472,7 +467,7 @@ def build_pymdp_runtime_diagnostics_log(*, seed: int = 7, steps: int = 12, chann
         spec.deployment.name: build_profile_generative_model(spec)
         for spec in profile_specs(channels)
     }
-    canary = pymdp_runtime_dependency_check()
+    runtime_check = pymdp_runtime_dependency_check()
     model_hash_rows = [
         {
             "profile": profile_name,
@@ -570,8 +565,8 @@ def build_pymdp_runtime_diagnostics_log(*, seed: int = 7, steps: int = 12, chann
         "profile_summaries_equal": policy_trace["profile_summaries"] == replay_trace["profile_summaries"],
     }
     controls = {
-        "canary_ok": canary.get("ok") is True,
-        "canary_warnings_captured": isinstance(canary.get("warnings"), list) and len(canary.get("warnings", [])) >= 1,
+        "runtime_dependency_ok": runtime_check.get("ok") is True,
+        "runtime_warnings_captured": isinstance(runtime_check.get("warnings"), list) and len(runtime_check.get("warnings", [])) >= 1,
         "all_model_hashes_present": all(row["sha256"] for row in model_hash_rows),
         "all_models_normalized": model_audit.get("all_models_normalized") is True,
         "deterministic_replay_equal": replay["trace_rows_equal"] and replay["profile_summaries_equal"],
@@ -591,7 +586,7 @@ def build_pymdp_runtime_diagnostics_log(*, seed: int = 7, steps: int = 12, chann
         "empirical_prior_matches_library": bool(max_empirical_prior_residual < 1e-5),
     }
     return {
-        "schema": "realizing_emptiness.pymdp_runtime_diagnostics_log.v1",
+        "schema": "realizing_emptiness.pymdp_runtime_diagnostics_log.v2",
         "seed": seed,
         "steps": steps,
         "channels": channels,
@@ -603,7 +598,7 @@ def build_pymdp_runtime_diagnostics_log(*, seed: int = 7, steps: int = 12, chann
             "numpy": _package_version("numpy"),
             "scipy": _package_version("scipy"),
         },
-        "canary": canary,
+        "runtime_dependency_check": runtime_check,
         "model_hashes": model_hash_rows,
         "model_profile_count": len(model_hash_rows),
         "trace_row_count": len(diagnostic_rows),

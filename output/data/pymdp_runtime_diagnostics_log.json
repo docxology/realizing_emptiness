@@ -5,25 +5,6 @@
     "release_prior"
   ],
   "all_controls_pass": true,
-  "canary": {
-    "agent_class": "Agent",
-    "neg_efe_shape": [
-      1,
-      2
-    ],
-    "ok": true,
-    "policy_posterior_normalized": true,
-    "policy_posterior_sum": 1.0,
-    "required_version": "1.0.3",
-    "schema": "realizing_emptiness.pymdp_canary.v1",
-    "state_factor_count": 2,
-    "version": "1.0.3",
-    "version_ok": true,
-    "vfe_available": true,
-    "warnings": [
-      "A JAX array is being set as static! This can result in unexpected behavior and is usually a mistake to do."
-    ]
-  },
   "channels": 6,
   "claim_boundary": "structured pymdp runtime diagnostics over finite software traces; not empirical data, not a neural measurement, not practice-efficacy evidence, and not quantum-dynamical evidence",
   "controls": {
@@ -36,12 +17,12 @@
     "all_state_posteriors_normalized": true,
     "all_trace_labels_resolve": true,
     "all_vfe_finite": true,
-    "canary_ok": true,
-    "canary_warnings_captured": true,
     "deterministic_replay_equal": true,
     "efe_terms_rederived": true,
     "empirical_prior_matches_library": true,
     "perturbation_flags_present": true,
+    "runtime_dependency_ok": true,
+    "runtime_warnings_captured": true,
     "weighted_expected_free_energy_recomputed": true
   },
   "empirical_prior_binding": [
@@ -2157,6 +2138,25 @@
       "weighted_expected_free_energy_residual": 8.250555794120373e-11
     }
   ],
+  "runtime_dependency_check": {
+    "agent_class": "Agent",
+    "neg_efe_shape": [
+      1,
+      2
+    ],
+    "ok": true,
+    "policy_posterior_normalized": true,
+    "policy_posterior_sum": 1.0,
+    "required_version": "1.0.3",
+    "schema": "realizing_emptiness.pymdp_runtime_dependency_check.v1",
+    "state_factor_count": 2,
+    "version": "1.0.3",
+    "version_ok": true,
+    "vfe_available": true,
+    "warnings": [
+      "A JAX array is being set as static! This can result in unexpected behavior and is usually a mistake to do."
+    ]
+  },
   "runtime_versions": {
     "inferactively_pymdp": "1.0.3",
     "jax": "0.9.2",
@@ -2165,7 +2165,7 @@
     "python": "3.14.7",
     "scipy": "1.17.1"
   },
-  "schema": "realizing_emptiness.pymdp_runtime_diagnostics_log.v1",
+  "schema": "realizing_emptiness.pymdp_runtime_diagnostics_log.v2",
   "seed": 7,
   "state_labels": [
     "contracted_dual",

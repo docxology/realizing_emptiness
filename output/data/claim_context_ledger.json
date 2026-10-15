@@ -785,9 +785,9 @@
       "allowed_interpretation": "Allowed only as package import, agent construction, state inference, and policy-posterior normalization diagnostics: The active-inference runtime dependency check uses the pinned pymdp package and records a normalized policy posterior.",
       "artifact": "output/data/pymdp_profile_comparison.json",
       "artifact_exists": true,
-      "claim_id": "pymdp_runtime_canary",
+      "claim_id": "pymdp_runtime_dependency",
       "evidence_ceiling": "package import, agent construction, state inference, and policy-posterior normalization diagnostics",
-      "evidence_class": "runtime_canary",
+      "evidence_class": "runtime_dependency_check",
       "figure_bindings": [
         "pymdp_profile_comparison",
         "claim_context_evidence_ladder"
@@ -836,7 +836,7 @@
         "runtime_dependency"
       ],
       "support_count": 3,
-      "validation_gate": "pymdp_canary"
+      "validation_gate": "pymdp_runtime_dependency_ok"
     },
     {
       "allowed_interpretation": "Allowed only as finite equation registry plus two-qubit quantum-information witnesses, mixed-state entanglement checks, measurement-cover/local-polytope controls, channel-cost accounting, dephasing controls, stochastic quantum-trajectory checks, and implemented extension-engine audits: The qFEP is represented here by finite operational surrogates, source mappings, direct two-qubit tests for separability entropy, mixed-state PPT/negativity controls, CHSH contextuality, generic measurement-cover polytope checks, finite CPTP channel-cost accounting, dephasing controls, seeded quantum-trajectory unraveling, and implemented extension engines for boundary-Hamiltonian Lindblad dynamics, sparse many-body cuts, sheaf obstruction, QRF relabeling and frame covariance, and fail-closed empirical provenance.",

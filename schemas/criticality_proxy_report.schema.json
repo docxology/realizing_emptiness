@@ -3,11 +3,25 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "Realizing Emptiness Criticality Proxy Report",
   "type": "object",
-  "required": ["schema", "label", "claim_boundary"],
+  "required": ["schema", "label", "branching_ratio", "criticality_index", "avalanche_size_distribution", "claim_boundary"],
   "properties": {
-    "schema": {"const": "realizing_emptiness.criticality_proxy_report.v1"},
+    "schema": {"const": "realizing_emptiness.criticality_proxy_report.v2"},
     "label": {"const": "single_trace_diagnostic_not_empirical_neural_measure"},
+    "branching_ratio": {"type": "number", "minimum": 0},
+    "criticality_index": {"type": "number", "minimum": 0},
+    "avalanche_size_distribution": {
+      "type": "object",
+      "required": ["avalanche_count", "sizes", "mean_size", "max_size", "power_law_vs_exponential_llr"],
+      "properties": {
+        "avalanche_count": {"type": "integer", "minimum": 0},
+        "sizes": {"type": "array", "items": {"type": "number", "exclusiveMinimum": 0}},
+        "mean_size": {"type": "number", "minimum": 0},
+        "max_size": {"type": "number", "minimum": 0},
+        "power_law_vs_exponential_llr": {"type": "number"}
+      },
+      "additionalProperties": false
+    },
     "claim_boundary": {"type": "string", "pattern": "not evidence|not empirical"}
   },
-  "additionalProperties": true
+  "additionalProperties": false
 }

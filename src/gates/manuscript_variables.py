@@ -32,7 +32,7 @@ def compute_variables(project_root: Path) -> dict:
         "BMR_ROW_COUNT": bmr["row_count"],
         "SENSITIVITY_ROW_COUNT": sensitivity["row_count"],
         "BEST_PROFILE": profile["best_profile"],
-        "PYMDP_VERSION": profile["pymdp_canary"]["version"],
+        "PYMDP_VERSION": profile["runtime_dependency_check"]["version"],
         "STOCHASTIC_RUNS_PER_PROFILE": stochastic["runs_per_profile"],
         "STOCHASTIC_STEPS": stochastic["steps"],
         "STOCHASTIC_ROW_COUNT": stochastic["row_count"],

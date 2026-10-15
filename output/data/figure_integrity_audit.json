@@ -2,7 +2,7 @@
   "all_figures_nonblank": true,
   "all_sources_hashed": true,
   "blank_figures": [],
-  "figure_count": 61,
+  "figure_count": 60,
   "missing_figures": [],
   "missing_sources": [],
   "ok": true,
@@ -20,10 +20,10 @@
       "sha256": "61b0f917e2119959376c878e297216db5b93e9e667a6fbf51c9e7d3e1df1db68",
       "source_artifacts": [
         {
-          "byte_size": 14311,
+          "byte_size": 14340,
           "exists": true,
           "path": "output/data/source_claim_crosswalk.json",
-          "sha256": "4ebc652cbe6ace887a1bbdd7d1794750a0a6cb844d69624f7051fd7eb0c0d856"
+          "sha256": "3476f2c1aef5f5148ac5bfdc5878db8d928197ad531be6a5552f42447ca73d44"
         },
         {
           "byte_size": 13204,
@@ -65,10 +65,10 @@
       "sha256": "fa8a95d2c8aa357a3e19097fb5f6872f66da8dea3f258d3f341c58f25b2b2ba0",
       "source_artifacts": [
         {
-          "byte_size": 13834,
+          "byte_size": 13864,
           "exists": true,
           "path": "output/data/pymdp_profile_comparison.json",
-          "sha256": "00392acb38a284213150acce154e1e0b88b8494c636adfc0af0ae47956b6578b"
+          "sha256": "da1b9728268ec5fc5a08f4edc9404f079f811d084bffe39364729975ddde03af"
         },
         {
           "byte_size": 14191,
@@ -125,10 +125,10 @@
       "sha256": "2a33e106163784d8e7131e00e8c3381d35dbe3162c62b1eefa72bd1baf4d37cb",
       "source_artifacts": [
         {
-          "byte_size": 13834,
+          "byte_size": 13864,
           "exists": true,
           "path": "output/data/pymdp_profile_comparison.json",
-          "sha256": "00392acb38a284213150acce154e1e0b88b8494c636adfc0af0ae47956b6578b"
+          "sha256": "da1b9728268ec5fc5a08f4edc9404f079f811d084bffe39364729975ddde03af"
         },
         {
           "byte_size": 14191,
@@ -152,10 +152,10 @@
       "sha256": "08622255b0e8d3bf203a130af362d74f4e120892ab7768838f867c79ac05c140",
       "source_artifacts": [
         {
-          "byte_size": 13834,
+          "byte_size": 13864,
           "exists": true,
           "path": "output/data/pymdp_profile_comparison.json",
-          "sha256": "00392acb38a284213150acce154e1e0b88b8494c636adfc0af0ae47956b6578b"
+          "sha256": "da1b9728268ec5fc5a08f4edc9404f079f811d084bffe39364729975ddde03af"
         }
       ],
       "width": 1875
@@ -194,10 +194,10 @@
       "sha256": "ece1fbfa4c52948334111bdcbb18d32af202fad7e4ffdc92b9a40a8546752d0d",
       "source_artifacts": [
         {
-          "byte_size": 13834,
+          "byte_size": 13864,
           "exists": true,
           "path": "output/data/pymdp_profile_comparison.json",
-          "sha256": "00392acb38a284213150acce154e1e0b88b8494c636adfc0af0ae47956b6578b"
+          "sha256": "da1b9728268ec5fc5a08f4edc9404f079f811d084bffe39364729975ddde03af"
         },
         {
           "byte_size": 14191,
@@ -662,10 +662,10 @@
       "sha256": "10a71687fbd3a9cdd3e5bd0cda117b3718ac20ef5fdd9825f82f1f9b83a438f4",
       "source_artifacts": [
         {
-          "byte_size": 13834,
+          "byte_size": 13864,
           "exists": true,
           "path": "output/data/pymdp_profile_comparison.json",
-          "sha256": "00392acb38a284213150acce154e1e0b88b8494c636adfc0af0ae47956b6578b"
+          "sha256": "da1b9728268ec5fc5a08f4edc9404f079f811d084bffe39364729975ddde03af"
         },
         {
           "byte_size": 110786,
@@ -674,10 +674,10 @@
           "sha256": "6aadab6206e29a45888353b97879f293a847719d27fb01633c562e2de12e59a5"
         },
         {
-          "byte_size": 84458,
+          "byte_size": 84507,
           "exists": true,
           "path": "output/data/pymdp_runtime_diagnostics_log.json",
-          "sha256": "e4bd0c1a0c4f0c9d17500ffe506c15dc88a4c81aea1416d4739bc3e7f5f3656d"
+          "sha256": "b60b42bbf468a6e7c8493a331eb09b29627927da4f320a138a3ac1d37e6a686c"
         }
       ],
       "width": 3043
@@ -695,10 +695,10 @@
       "sha256": "11d2d1b3defea23f5629d75bce051cb9881bd5647a8fc602d656992276a89bc7",
       "source_artifacts": [
         {
-          "byte_size": 13834,
+          "byte_size": 13864,
           "exists": true,
           "path": "output/data/pymdp_profile_comparison.json",
-          "sha256": "00392acb38a284213150acce154e1e0b88b8494c636adfc0af0ae47956b6578b"
+          "sha256": "da1b9728268ec5fc5a08f4edc9404f079f811d084bffe39364729975ddde03af"
         },
         {
           "byte_size": 110786,
@@ -707,10 +707,10 @@
           "sha256": "6aadab6206e29a45888353b97879f293a847719d27fb01633c562e2de12e59a5"
         },
         {
-          "byte_size": 84458,
+          "byte_size": 84507,
           "exists": true,
           "path": "output/data/pymdp_runtime_diagnostics_log.json",
-          "sha256": "e4bd0c1a0c4f0c9d17500ffe506c15dc88a4c81aea1416d4739bc3e7f5f3656d"
+          "sha256": "b60b42bbf468a6e7c8493a331eb09b29627927da4f320a138a3ac1d37e6a686c"
         }
       ],
       "width": 2650
@@ -728,10 +728,10 @@
       "sha256": "25e78939173054dcdce8fc3e5236d99e2e68358beaca2627256191c7a20c50c4",
       "source_artifacts": [
         {
-          "byte_size": 84458,
+          "byte_size": 84507,
           "exists": true,
           "path": "output/data/pymdp_runtime_diagnostics_log.json",
-          "sha256": "e4bd0c1a0c4f0c9d17500ffe506c15dc88a4c81aea1416d4739bc3e7f5f3656d"
+          "sha256": "b60b42bbf468a6e7c8493a331eb09b29627927da4f320a138a3ac1d37e6a686c"
         },
         {
           "byte_size": 7846,
@@ -746,52 +746,31 @@
           "sha256": "6aadab6206e29a45888353b97879f293a847719d27fb01633c562e2de12e59a5"
         },
         {
-          "byte_size": 27898,
+          "byte_size": 22640,
           "exists": true,
           "path": "output/data/stochastic_effect_size_audit.json",
-          "sha256": "46dc653d42a6c69b4aa1a99ba0b370a32158765381320f5accbdda542934d9a8"
+          "sha256": "883b9b6dc63fae1502fe3111593bfca65e04ac4dd0f261d87d0da39ce170b638"
         }
       ],
       "width": 3037
     },
     {
-      "byte_size": 67178,
-      "caption": "Single-trace entropy, switching, variance, and near-criticality diagnostics from a simulated boundary-channel trajectory. The bar legend marks values as one simulated trace, and the stochastic ensemble figure carries the interval/null-control result; neither figure is empirical evidence for neural criticality or contemplative realization.",
-      "channels": 4,
-      "exists": true,
-      "height": 804,
-      "id": "criticality_proxy_panels",
-      "nonblank": true,
-      "path": "output/figures/criticality_proxy_panels.png",
-      "pixel_variance": 0.07745223235990085,
-      "sha256": "778d3ac614ee7898f082762ade85c7e371fdc75eb119b88645405b18cad35a74",
-      "source_artifacts": [
-        {
-          "byte_size": 809,
-          "exists": true,
-          "path": "output/reports/criticality_proxy_report.json",
-          "sha256": "1a998ae6a0fae892f5c4a0b7c5f54043733f2388707a935644ae862038180958"
-        }
-      ],
-      "width": 1648
-    },
-    {
-      "byte_size": 191167,
-      "caption": "Seeded stochastic active-inference ensemble for criticality-style indicators. Shared short profile labels, a single external legend, violet profile bars, hatched gray null-control bars, direction annotations, and 95 percent intervals over replayable seeds show simulated trajectory variability only; the figure is not empirical evidence, not neural measurement, not clinical outcome evidence, and not practice-efficacy evidence.",
+      "byte_size": 193811,
+      "caption": "Seeded observation entropy and switch-rate summaries under independently sampled uniform observation/action controls. Shared short profile labels, a single external legend, violet profile bars, hatched gray control bars, direction annotations, and pointwise normal-approximation 95 percent intervals across complete runs show finite software variability; these controls do not preserve the original observation histogram, and the figure is not empirical evidence for neural criticality or practice efficacy.",
       "channels": 4,
       "exists": true,
       "height": 1310,
       "id": "criticality_stochastic_ensemble",
       "nonblank": true,
       "path": "output/figures/criticality_stochastic_ensemble.png",
-      "pixel_variance": 0.07650102997097545,
-      "sha256": "8616843a53e860c3acab5a23c54618d5ca6d38201f6126ec054ce4c2a2237da7",
+      "pixel_variance": 0.0726937966238291,
+      "sha256": "82504d537696ea38f9cfe7ab703412905106887d770ebf787b671a9aafd2db75",
       "source_artifacts": [
         {
-          "byte_size": 388706,
+          "byte_size": 349430,
           "exists": true,
           "path": "output/data/criticality_stochastic_ensemble.json",
-          "sha256": "3b6f2e8f6dbbc83a54325667c76ec5bba21621a952c90dc42e709651ad9f5e20"
+          "sha256": "15b2b91c238679f6d99094f94f827bdcff8f4ae078f078be1da8ed57c674784a"
         }
       ],
       "width": 2896
@@ -809,16 +788,16 @@
       "sha256": "842aedae15f8c7353ae06628b38fff63cd871ba4a00bd7659278f69b31ce994f",
       "source_artifacts": [
         {
-          "byte_size": 388706,
+          "byte_size": 349430,
           "exists": true,
           "path": "output/data/criticality_stochastic_ensemble.json",
-          "sha256": "3b6f2e8f6dbbc83a54325667c76ec5bba21621a952c90dc42e709651ad9f5e20"
+          "sha256": "15b2b91c238679f6d99094f94f827bdcff8f4ae078f078be1da8ed57c674784a"
         },
         {
-          "byte_size": 809,
+          "byte_size": 622,
           "exists": true,
           "path": "output/reports/criticality_proxy_report.json",
-          "sha256": "1a998ae6a0fae892f5c4a0b7c5f54043733f2388707a935644ae862038180958"
+          "sha256": "564c26946842a1a3bb5573397e82ef4aa21cca35eb93e46228aa35ec70b49f7f"
         }
       ],
       "width": 2918
@@ -920,10 +899,10 @@
       "sha256": "d2626d8ec76d0acf7515b1b584f9f9c9112ad97b78476a6c53dee6e6da4a1d82",
       "source_artifacts": [
         {
-          "byte_size": 27898,
+          "byte_size": 22640,
           "exists": true,
           "path": "output/data/stochastic_effect_size_audit.json",
-          "sha256": "46dc653d42a6c69b4aa1a99ba0b370a32158765381320f5accbdda542934d9a8"
+          "sha256": "883b9b6dc63fae1502fe3111593bfca65e04ac4dd0f261d87d0da39ce170b638"
         }
       ],
       "width": 2077
@@ -941,10 +920,10 @@
       "sha256": "40fe30c6c53cc89bb5ea92f2c36c24d4616d9bb33402b97f3c7fcc14bfa796b3",
       "source_artifacts": [
         {
-          "byte_size": 388706,
+          "byte_size": 349430,
           "exists": true,
           "path": "output/data/criticality_stochastic_ensemble.json",
-          "sha256": "3b6f2e8f6dbbc83a54325667c76ec5bba21621a952c90dc42e709651ad9f5e20"
+          "sha256": "15b2b91c238679f6d99094f94f827bdcff8f4ae078f078be1da8ed57c674784a"
         }
       ],
       "width": 2077
@@ -1025,10 +1004,10 @@
       "sha256": "a53987b60ed8656f88807dd2ccfb2e25939a10f08caeb30f1f3ed8750ba5e603",
       "source_artifacts": [
         {
-          "byte_size": 59002,
+          "byte_size": 58319,
           "exists": true,
           "path": "figures.yaml",
-          "sha256": "4a269125ff677147927f5c07a21d47b43952d0ff6a4ca3e0e0aa2cbd356f558d"
+          "sha256": "0bb4f2273adef85f3a8e11e9622f463159a22a1d28d0f5d7df3bd788135a5a27"
         }
       ],
       "width": 2441
@@ -1061,7 +1040,7 @@
       "width": 2898
     },
     {
-      "byte_size": 342600,
+      "byte_size": 348688,
       "caption": "Claim-source-validation graph linking each public claim to its source role and validation gate. The node and edge legend identifies claim, source, gate, and binding colors so the figure remains an audit map for claim governance, not an additional evidence source.",
       "channels": 4,
       "exists": true,
@@ -1069,14 +1048,14 @@
       "id": "claim_source_validation_graph",
       "nonblank": true,
       "path": "output/figures/claim_source_validation_graph.png",
-      "pixel_variance": 0.028402352265964943,
-      "sha256": "d54cd2a23c8ab2bde8521d60b0233adc4c0a5f30c645ec65fca10b931e72b1bf",
+      "pixel_variance": 0.028765629709545076,
+      "sha256": "60cd7059efe6144e15ef35aef76db1437499853de7ba373e9f714945ee58707d",
       "source_artifacts": [
         {
-          "byte_size": 14311,
+          "byte_size": 14340,
           "exists": true,
           "path": "output/data/source_claim_crosswalk.json",
-          "sha256": "4ebc652cbe6ace887a1bbdd7d1794750a0a6cb844d69624f7051fd7eb0c0d856"
+          "sha256": "3476f2c1aef5f5148ac5bfdc5878db8d928197ad531be6a5552f42447ca73d44"
         }
       ],
       "width": 2522
@@ -1094,16 +1073,16 @@
       "sha256": "17e9e1cafbb9165476c860a91a4437f79698974470acb735d2d81cb29ece4e10",
       "source_artifacts": [
         {
-          "byte_size": 102986,
+          "byte_size": 102990,
           "exists": true,
           "path": "output/data/scholarship_source_matrix.json",
-          "sha256": "23d8ac08ed05466f4adad168b598142f79e3b2f90fb1c3041aaf9a7ca6eb2c42"
+          "sha256": "8c09ec238c3e5ba38c39309d3698304bf5e7bce733ea2d082514bb526b662e03"
         }
       ],
       "width": 3043
     },
     {
-      "byte_size": 386264,
+      "byte_size": 386724,
       "caption": "Scoped public-claim support summarized by declared source status. The heatmap colorbar and numbered cells show distinct citation counts for each claim and status; individual claim-citation bindings remain in claim_support_audit.json. Source density is a coverage diagnostic, not evidence strength or empirical, neural, clinical, practice-efficacy, awakening, or physical qFEP confirmation.",
       "channels": 4,
       "exists": true,
@@ -1111,14 +1090,14 @@
       "id": "claim_support_matrix",
       "nonblank": true,
       "path": "output/figures/claim_support_matrix.png",
-      "pixel_variance": 0.03193225363900846,
-      "sha256": "0fdc6e5ef193f14974e5e9be580533d2c7a3c8c14438f1c043a6b30f867b0f39",
+      "pixel_variance": 0.03206610926748936,
+      "sha256": "4e5fa49dc7fd6523e3ed4556fdfbbc32a98048a351a467de2e0c136166913d21",
       "source_artifacts": [
         {
-          "byte_size": 77376,
+          "byte_size": 77436,
           "exists": true,
           "path": "output/data/claim_support_audit.json",
-          "sha256": "f635d2a7a084e9072a619ba12f5480913f2964586f721b23c599255e8f783ca1"
+          "sha256": "a97a127abb02934a148ed3538cc94bb23c154fd57d68c737b85cb683763f0b95"
         }
       ],
       "width": 2659
@@ -1136,16 +1115,16 @@
       "sha256": "fcbbd9dd890e8e3996dfd5fb880f2448246c07ca1481e7c0792a76fb83e79c43",
       "source_artifacts": [
         {
-          "byte_size": 4586,
+          "byte_size": 4590,
           "exists": true,
           "path": "output/data/manuscript_claim_audit.json",
-          "sha256": "199d24263578bf36c89e0621dcdfbd36f3861f45ae80a210784152234439ecfa"
+          "sha256": "b739be587771bdb134e337ec42cab5aba5e62bba0923753a3804a61b56deef45"
         }
       ],
       "width": 1796
     },
     {
-      "byte_size": 373959,
+      "byte_size": 377196,
       "caption": "Evidence-ceiling stress matrix showing which public claims are bounded by surrogate, empirical, practice, source-role, runtime, quantum, neural, or normative constraints. Rows are grouped by claim class and the binary colorbar marks active stressors, making clear that support, simulation, and validation gates keep prohibited inferences explicit rather than converting finite software checks into empirical, neural, clinical, practice-efficacy, awakening, or physical qFEP evidence.",
       "channels": 4,
       "exists": true,
@@ -1153,20 +1132,20 @@
       "id": "evidence_ceiling_stress_matrix",
       "nonblank": true,
       "path": "output/figures/evidence_ceiling_stress_matrix.png",
-      "pixel_variance": 0.05268548896260606,
-      "sha256": "a7684a35fd2b3cfbca0f00db0b355e176247e27c803b466c0d1567a75bd7f8e9",
+      "pixel_variance": 0.05256784401758186,
+      "sha256": "fbca6c89aa39e587c42616b9d55084ed8aa7b38bf805c5d7a514ac5156b2a825",
       "source_artifacts": [
         {
-          "byte_size": 15955,
+          "byte_size": 15984,
           "exists": true,
           "path": "output/data/evidence_ceiling_audit.json",
-          "sha256": "9837de980babb703d7aed52ebbe217e0dac029598d54e4c89c61e4ad25b48d31"
+          "sha256": "32d8694f7981b7c2ad08e428be332e6772d06646f284f9ea725d2e299be8bbd9"
         }
       ],
-      "width": 2765
+      "width": 2769
     },
     {
-      "byte_size": 315617,
+      "byte_size": 320771,
       "caption": "Claim-context evidence ladder grouping every public claim by evidence class, scoped source-role count, resolved validation gate, and blocked stronger reading. Horizontal bars encode source-role count, circular markers encode gate presence, and hatched amber blocks encode prohibited empirical, neural, clinical, practice-efficacy, awakening, or physical qFEP inferences, so the figure explains how to read claims without adding evidence beyond the ledger.",
       "channels": 4,
       "exists": true,
@@ -1174,29 +1153,29 @@
       "id": "claim_context_evidence_ladder",
       "nonblank": true,
       "path": "output/figures/claim_context_evidence_ladder.png",
-      "pixel_variance": 0.048533938955397114,
-      "sha256": "30d46e07e0a81f5496b9c53db605ef9f0d31cc5bb22cf457710d5f6fba046762",
+      "pixel_variance": 0.04857467886782718,
+      "sha256": "12ca98a6b0218b9ba128aff1b5c497d289dafd21399fe1212bbfb539ca228e93",
       "source_artifacts": [
         {
-          "byte_size": 80366,
+          "byte_size": 80395,
           "exists": true,
           "path": "output/data/claim_context_ledger.json",
-          "sha256": "38dc28586e989d9d452d4ecd21d0a6402f6979872052bda943ea4ac2bab6b2fe"
+          "sha256": "d2a6d2eab290bba3b3817688e6e7a9c0fc80805b4a7c3c6bc0537357a0946b47"
         },
         {
-          "byte_size": 77376,
+          "byte_size": 77436,
           "exists": true,
           "path": "output/data/claim_support_audit.json",
-          "sha256": "f635d2a7a084e9072a619ba12f5480913f2964586f721b23c599255e8f783ca1"
+          "sha256": "a97a127abb02934a148ed3538cc94bb23c154fd57d68c737b85cb683763f0b95"
         },
         {
-          "byte_size": 15955,
+          "byte_size": 15984,
           "exists": true,
           "path": "output/data/evidence_ceiling_audit.json",
-          "sha256": "9837de980babb703d7aed52ebbe217e0dac029598d54e4c89c61e4ad25b48d31"
+          "sha256": "32d8694f7981b7c2ad08e428be332e6772d06646f284f9ea725d2e299be8bbd9"
         }
       ],
-      "width": 2646
+      "width": 2645
     },
     {
       "byte_size": 201486,
@@ -1422,8 +1401,8 @@
     }
   ],
   "schema": "realizing_emptiness.figure_integrity_audit.v1",
-  "source_map_figure_count": 61,
+  "source_map_figure_count": 60,
   "source_map_path": "output/data/figure_source_map.json",
-  "source_map_sha256": "196f9bfd985414f06089158411de1ae732fa5cede1473b3f834b8843e993b1fc",
+  "source_map_sha256": "1c4edbabff0bdb0a1205e862a97ff13e9bdf03a9ba4b5f6080f5139e278e0b5a",
   "undersized_figures": []
 }

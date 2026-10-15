@@ -68,8 +68,7 @@ action-observation flow, `output/figures/qrf_channel_relabeling_ledger.png` for
 the `b0`-`b5` channel ledger and equations 7-10, and
 `output/figures/qrf_invariance_policy_flow.png` for the normalized probability
 mass audit, failing perturbation control, and active-inference action counts.
-The retired four-panel composite is not generated as a manuscript figure, and
-the single-purpose QRF support panels remain generated source-map artifacts but
+The single-purpose QRF support panels remain generated source-map artifacts but
 are not repeated as numbered main Results figures.
 
 ## Admissible Relabeling And Negative Controls

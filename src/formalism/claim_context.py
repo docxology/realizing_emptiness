@@ -21,7 +21,7 @@ CLAIM_BOUNDARY = (
 PROXY_OR_SAFETY_STATUSES = {
     "proxy_boundary",
     "safety_boundary",
-    "runtime_canary",
+    "runtime_dependency_check",
     "background_boundary",
     "implementation_boundary",
 }
@@ -64,7 +64,7 @@ FIGURE_BINDINGS = {
     "quantum_contextuality_witness": ["finite_quantum_scope_summary", "claim_context_evidence_ladder"],
     "quantum_measurement_contextuality": ["finite_quantum_scope_summary", "claim_context_evidence_ladder"],
     "quantum_open_system_dephasing": ["finite_quantum_scope_summary", "claim_context_evidence_ladder"],
-    "pymdp_runtime_canary": ["pymdp_profile_comparison", "claim_context_evidence_ladder"],
+    "pymdp_runtime_dependency": ["pymdp_profile_comparison", "claim_context_evidence_ladder"],
     "criticality_proxy_boundary": ["criticality_stochastic_ensemble", "claim_context_evidence_ladder"],
     "compassion_proxy_boundary": ["evidence_ceiling_stress_matrix", "claim_context_evidence_ladder"],
     "self_evidencing_boundary": ["claim_context_evidence_ladder"],
@@ -109,7 +109,7 @@ def _role_rule(claim: dict[str, Any], support_rows: list[dict[str, Any]]) -> dic
             "ok": ok,
             "rationale": "A single primary-preprint row is sufficient because sigma is a source-paper formal claim.",
         }
-    if status == "runtime_canary":
+    if status == "runtime_dependency_check":
         ok = any(term in role_text for term in ("implementation", "runtime", "pymdp", "discrete active-inference"))
         return {"rule": "runtime_claim_requires_implementation_source", "ok": ok, "rationale": "Runtime claims need implementation or discrete active-inference support."}
     if status == "finite_quantum_simulation" or claim_id == "qfep_surrogate_scope":

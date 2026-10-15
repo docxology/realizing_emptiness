@@ -78,7 +78,6 @@ def collect_numeric_results(payload: dict[str, Any], prefix: str = "") -> dict[s
                 "claim_count",
                 "branching_ratio",
                 "criticality_index",
-                "near_critical_score",
                 "switch_rate",
                 "variance",
                 "entropy_nats",

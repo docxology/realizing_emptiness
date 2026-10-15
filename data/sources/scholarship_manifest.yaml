@@ -113,7 +113,7 @@ entries:
     evidence_status: methodological_background
     doi: "10.1016/j.jmp.2020.102447"
     tracks: [pymdp, bmr, validation]
-    supports_claims: [pymdp_runtime_canary, metacognitive_access_model]
+    supports_claims: [pymdp_runtime_dependency, metacognitive_access_model]
   - id: epistemic_value_policy_selection
     citation_key: friston2015epistemic
     title: "Active inference and epistemic value"
@@ -122,7 +122,7 @@ entries:
     evidence_status: theoretical_background
     doi: "10.1080/17588928.2015.1020053"
     tracks: [pymdp, bmr, qfep]
-    supports_claims: [pymdp_runtime_canary]
+    supports_claims: [pymdp_runtime_dependency]
   - id: pymdp_joss
     citation_key: heins2022pymdp
     title: "pymdp: A Python library for active inference in discrete state spaces"
@@ -131,7 +131,7 @@ entries:
     evidence_status: implementation_anchor
     doi: "10.21105/joss.04098"
     tracks: [pymdp, validation]
-    supports_claims: [pymdp_runtime_canary]
+    supports_claims: [pymdp_runtime_dependency]
   - id: quantum_reference_frames
     citation_key: giacomini2019qrf
     title: "Quantum mechanics and the covariance of physical laws in quantum reference frames"

@@ -113,7 +113,7 @@ def build_artifact_dashboard_payload(project_root: Path, source_map: dict[str, A
         )
     ]
     return {
-        "schema": "realizing_emptiness.artifact_dashboard_payload.v1",
+        "schema": "realizing_emptiness.artifact_dashboard_payload.v2",
         "roadmap": {
             "implemented_count": roadmap.get("implemented_count", 0),
             "future_count": roadmap.get("future_count", 0),
@@ -151,7 +151,7 @@ def build_artifact_dashboard_payload(project_root: Path, source_map: dict[str, A
             "model_profile_count": pymdp_runtime.get("model_profile_count", 0),
             "replay_equal": pymdp_runtime.get("replay", {}).get("trace_rows_equal") is True
             and pymdp_runtime.get("replay", {}).get("profile_summaries_equal") is True,
-            "canary_warning_count": len(pymdp_runtime.get("canary", {}).get("warnings", [])),
+            "runtime_warning_count": len(pymdp_runtime.get("runtime_dependency_check", {}).get("warnings", [])),
             "max_policy_posterior_norm_residual": pymdp_runtime.get("summary", {}).get(
                 "max_policy_posterior_norm_residual", 1.0
             ),
@@ -431,7 +431,7 @@ def render_artifact_dashboard_html(payload: dict[str, Any]) -> str:
 	      ["trace rows", pymdp_runtime["trace_row_count"]],
 	      ["profile models hashed", pymdp_runtime["model_profile_count"]],
 	      ["deterministic replay equal", pymdp_runtime["replay_equal"]],
-	      ["captured runtime dependency warnings", pymdp_runtime["canary_warning_count"]],
+	      ["captured runtime dependency warnings", pymdp_runtime["runtime_warning_count"]],
 	      ["max policy posterior residual", f"{pymdp_runtime['max_policy_posterior_norm_residual']:.2e}"],
 	      ["max weighted EFE residual", f"{pymdp_runtime['max_weighted_expected_free_energy_residual']:.2e}"],
 	      ["claim boundary", pymdp_runtime["claim_boundary"]],

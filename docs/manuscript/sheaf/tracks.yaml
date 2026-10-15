@@ -30,9 +30,6 @@ tracks:
   - id: practice_protocols
     label: Practice protocols
     order: 10
-  - id: visualization
-    label: Visual evidence
-    order: 11
   - id: validation
     label: Reproducibility, gates, and meta-manuscript record
     order: 17

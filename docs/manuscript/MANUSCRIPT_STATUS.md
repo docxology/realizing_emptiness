@@ -2,6 +2,6 @@
 
 - **Project:** realizing_emptiness
 - **Manuscript title:** Realizing Emptiness
-- **Location:** `docs/manuscript/` (canonical default; legacy `manuscript/` fallback resolved by `infrastructure.core.project_paths.resolve_manuscript_dir`)
-- **Type:** Active publication-target manuscript (8 section files)
+- **Location:** `docs/manuscript/` (canonical manuscript directory)
+- **Type:** Active publication-target manuscript (7 sheaf-composed section files)
 - **Status file purpose:** Tracks publication-readiness of the manuscript content in this directory.

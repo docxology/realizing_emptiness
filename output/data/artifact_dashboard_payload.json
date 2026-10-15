@@ -136,7 +136,7 @@
       "support_count": 22
     },
     {
-      "claim_id": "pymdp_runtime_canary",
+      "claim_id": "pymdp_runtime_dependency",
       "status": "",
       "stressors": {
         "empirical_gap": false,
@@ -293,7 +293,7 @@
   },
   "contract_registry": {
     "all_controls_pass": true,
-    "contract_count": 149,
+    "contract_count": 148,
     "duplicate_ids": [],
     "missing_schema_paths": []
   },
@@ -324,7 +324,7 @@
     ]
   },
   "figures": {
-    "figure_count": 61,
+    "figure_count": 60,
     "figure_ids": [
       "graphical_abstract_cover",
       "qrf_boundary_screen_geometry",
@@ -357,7 +357,6 @@
       "pymdp_profile_comparison",
       "posterior_trajectory",
       "pymdp_runtime_validation_dashboard",
-      "criticality_proxy_panels",
       "criticality_stochastic_ensemble",
       "criticality_signatures",
       "compassion_scope_widening",
@@ -390,8 +389,8 @@
     ]
   },
   "manifest_coverage": {
-    "generated_count": 148,
-    "manifest_count": 149,
+    "generated_count": 147,
+    "manifest_count": 148,
     "missing_manifest_paths": [],
     "unmanifested_generated_paths": []
   },
@@ -418,12 +417,12 @@
   },
   "pymdp_runtime": {
     "all_controls_pass": true,
-    "canary_warning_count": 1,
     "claim_boundary": "structured pymdp runtime diagnostics over finite software traces; not empirical data, not a neural measurement, not practice-efficacy evidence, and not quantum-dynamical evidence",
     "max_policy_posterior_norm_residual": 5.960464477539063e-08,
     "max_weighted_expected_free_energy_residual": 1.3294909173566793e-08,
     "model_profile_count": 3,
     "replay_equal": true,
+    "runtime_warning_count": 1,
     "trace_row_count": 72
   },
   "readiness": {
@@ -444,7 +443,7 @@
     "bmr_alternative_ok": true,
     "claim_boundary": "local private artifact package only, not public independent reproduction; not empirical, clinical, neural, practice-efficacy, contemplative-attainment, or physical qFEP evidence",
     "figure_parameter_ledger_ok": true,
-    "figure_parameter_rows": 61,
+    "figure_parameter_rows": 60,
     "public_publication_performed": false,
     "public_reproduction_status": "blocked_external_publication",
     "qrf_label_ablation_ok": true,
@@ -491,7 +490,7 @@
       "empirical_adapter"
     ]
   },
-  "schema": "realizing_emptiness.artifact_dashboard_payload.v1",
+  "schema": "realizing_emptiness.artifact_dashboard_payload.v2",
   "source_fit": {
     "all_controls_pass": true,
     "claim_boundary": "source-argument coverage audit for manuscript relevance; not empirical, clinical, neural, practice-efficacy, awakening, or physical qFEP evidence",
@@ -532,22 +531,22 @@
   },
   "validation_report": {
     "all_passed": true,
-    "passed": 430,
-    "total": 430
+    "passed": 429,
+    "total": 429
   },
   "visual_quality": {
     "cropped_text": [],
     "layout_failures": [],
     "legend_axis_overlaps": [],
     "legibility_ok": true,
-    "legibility_row_count": 61,
+    "legibility_row_count": 60,
     "low_contrast_roles": [],
     "missing_legend_or_colorbar": [],
     "missing_roles": [],
     "overlapping_text": [],
     "overlapping_titles": [],
     "style_ok": true,
-    "style_row_count": 61,
+    "style_row_count": 60,
     "undersized": [],
     "undersized_text": []
   }

@@ -32,7 +32,6 @@ from simulation.pymdp_profiles import (
     normalize_probability,
     profile_specs,
     pymdp_runtime_dependency_check,
-    pymdp_version_canary,
     run_policy_trace,
     run_profile_comparison,
     softmax_negative,
@@ -433,18 +432,20 @@ def test_quantum_open_system_dephasing_controls() -> None:
     assert "not empirical" in payload["claim_boundary"]
 
 
-def test_pymdp_canary_and_profile_comparison() -> None:
-    canary = pymdp_version_canary()
+def test_runtime_dependency_check_and_profile_comparison() -> None:
     runtime_check = pymdp_runtime_dependency_check()
-    assert canary["ok"] is True
     assert runtime_check["ok"] is True
-    assert runtime_check["schema"] == canary["schema"]
-    assert canary["version"] == "1.0.3"
+    assert runtime_check["schema"] == "realizing_emptiness.pymdp_runtime_dependency_check.v1"
+    assert runtime_check["version"] == "1.0.3"
+    assert runtime_check["warnings"]
+    incompatible = pymdp_runtime_dependency_check(required_version="0.0.0")
+    assert incompatible["version_ok"] is False
+    assert incompatible["ok"] is False
     payload = run_profile_comparison()
     assert payload["posterior_normalized"] is True
     assert payload["policy_trace_all_posteriors_normalized"] is True
-    assert payload["pymdp_canary"]["ok"] is True
-    assert payload["schema"] == "realizing_emptiness.pymdp_profile_comparison.v2"
+    assert payload["runtime_dependency_check"]["ok"] is True
+    assert payload["schema"] == "realizing_emptiness.pymdp_profile_comparison.v3"
     assert payload["best_profile"] in {row["deployment"]["name"] for row in payload["rows"]}
 
 
@@ -481,10 +482,10 @@ def test_pymdp_generative_models_and_policy_trace_are_normalized() -> None:
 def test_pymdp_runtime_diagnostics_log_replays_and_recomputes() -> None:
     payload = build_pymdp_runtime_diagnostics_log(seed=7, steps=5)
     replay = build_pymdp_runtime_diagnostics_log(seed=7, steps=5)
-    assert payload["schema"] == "realizing_emptiness.pymdp_runtime_diagnostics_log.v1"
+    assert payload["schema"] == "realizing_emptiness.pymdp_runtime_diagnostics_log.v2"
     assert payload["all_controls_pass"] is True
     assert payload["runtime_versions"]["inferactively_pymdp"] == "1.0.3"
-    assert len(payload["canary"]["warnings"]) >= 1
+    assert len(payload["runtime_dependency_check"]["warnings"]) >= 1
     assert payload["trace_row_count"] == 15
     assert payload["model_profile_count"] == 3
     assert len({row["sha256"] for row in payload["model_hashes"]}) == 3
@@ -517,15 +518,22 @@ def test_pymdp_runtime_diagnostics_log_replays_and_recomputes() -> None:
     assert _pymdp_runtime_log_ok({**payload, "controls": {}}, policy_trace) is False
     # A NARROWED (nonempty) controls object must also fail: the fix requires the full key set,
     # so the hole is closed rather than merely shrunk to "len(controls) > 0".
-    assert _pymdp_runtime_log_ok({**payload, "controls": {"canary_ok": True}}, policy_trace) is False
+    assert _pymdp_runtime_log_ok({**payload, "controls": {"runtime_dependency_ok": True}}, policy_trace) is False
+    for replacement in ({"warnings": []}, {"ok": False}):
+        corrupted = {
+            **payload,
+            "runtime_dependency_check": {**payload["runtime_dependency_check"], **replacement},
+        }
+        assert _pymdp_runtime_log_ok(corrupted, policy_trace) is False
     assert "not empirical" in payload["claim_boundary"]
 
 
 def test_criticality_report_is_labeled_proxy() -> None:
     report = build_criticality_report(run_profile_comparison())
-    assert report["schema"] == "realizing_emptiness.criticality_proxy_report.v1"
+    assert report["schema"] == "realizing_emptiness.criticality_proxy_report.v2"
     assert "not evidence" in report["claim_boundary"]
-    assert 0.0 <= report["near_critical_score"] <= 1.0
+    assert report["branching_ratio"] >= 0
+    assert report["criticality_index"] == abs(report["branching_ratio"] - 1)
 
 
 def test_branching_ratio_and_avalanche_signatures() -> None:

@@ -37,8 +37,7 @@ the gate to recompute and verify the saved `pymdp` trace.
 
 1. `pymdp_runtime_dependency_check` verifies only the pinned dependency surface:
    package version, imports, agent construction, state inference, and normalized
-   policy posterior. The compatibility wrapper `pymdp_version_canary` remains so
-   existing schema keys and tests do not churn.
+   policy posterior.
 2. `build_generative_model_audit` records the profile-specific `A`, `B`, `C`,
    and `D` arrays. `A` maps hidden QRF state to observation cue, `B` stores the
    action-conditioned transition tensor, `C` stores preferences, and `D` stores

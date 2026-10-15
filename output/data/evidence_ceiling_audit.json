@@ -127,11 +127,11 @@
     },
     {
       "artifact": "output/data/pymdp_profile_comparison.json",
-      "claim_id": "pymdp_runtime_canary",
-      "claim_status": "runtime_canary",
+      "claim_id": "pymdp_runtime_dependency",
+      "claim_status": "runtime_dependency_check",
       "evidence_ceiling": "package import, agent construction, state inference, and policy-posterior normalization diagnostics",
       "future_evidence_required": "Version-pinned benchmark suites and comparison agents if performance or optimality claims are introduced.",
-      "gate": "pymdp_canary",
+      "gate": "pymdp_runtime_dependency_ok",
       "prohibited_inference": "Do not read the runtime dependency check as a benchmark of active-inference optimality or scientific validity.",
       "stressors": {
         "empirical_gap": false,

@@ -46,19 +46,6 @@ def _bootstrap_ci(
     }
 
 
-def _permutation_p_value(
-    first: list[float], second: list[float], *, seed: int, draws: int = 1024
-) -> float:
-    return float(permutation_test(first, second, seed=seed, draws=draws)["p_value"])
-
-
-def _cliffs_delta(first: list[float], second: list[float]) -> float:
-    left = np.asarray(first, dtype=float)
-    right = np.asarray(second, dtype=float)
-    comparisons = np.sign(left[:, None] - right[None, :])
-    return float(np.sum(comparisons) / comparisons.size)
-
-
 def _holm_adjust(p_values: list[float]) -> list[float]:
     indexed = sorted(enumerate(p_values), key=lambda item: item[1])
     adjusted = [0.0] * len(p_values)
@@ -92,11 +79,6 @@ def build_stochastic_effect_size_audit(stochastic: dict[str, Any]) -> dict[str, 
             profile_values = [float(row[metric]) for row in grouped[(profile, False)]]
             null_values = [float(row[metric]) for row in grouped[(profile, True)]]
             observed_delta = float(np.mean(profile_values) - np.mean(null_values))
-            pooled_ci = _bootstrap_ci(
-                profile_values + null_values, seed=7000 + metric_index
-            )
-            profile_ci = _bootstrap_ci(profile_values, seed=7100 + metric_index)
-            null_ci = _bootstrap_ci(null_values, seed=7200 + metric_index)
             contrast = bootstrap_contrast(profile_values, null_values, seed=7400 + len(rows))
             permutation = permutation_test(
                 profile_values, null_values, seed=7300 + 17 * metric_index + len(rows),
@@ -108,16 +90,10 @@ def build_stochastic_effect_size_audit(stochastic: dict[str, Any]) -> dict[str, 
                 {
                     "profile": profile,
                     "metric": metric,
-                    "profile_mean": profile_ci["mean"],
-                    "profile_ci95_low": profile_ci["ci95_low"],
-                    "profile_ci95_high": profile_ci["ci95_high"],
-                    "null_mean": null_ci["mean"],
-                    "null_ci95_low": null_ci["ci95_low"],
-                    "null_ci95_high": null_ci["ci95_high"],
+                    "profile_mean": float(np.mean(profile_values)),
+                    "null_mean": float(np.mean(null_values)),
                     "delta_profile_minus_null": observed_delta,
-                    "pooled_bootstrap_ci95_low": pooled_ci["ci95_low"],
-                    "pooled_bootstrap_ci95_high": pooled_ci["ci95_high"],
-                    "cliffs_delta": _cliffs_delta(profile_values, null_values),
+                    "cliffs_delta": contrast["cliffs_delta"],
                     "permutation_p": p_value,
                     "difference_ci95_low": contrast["difference_ci95_low"],
                     "difference_ci95_high": contrast["difference_ci95_high"],
@@ -145,11 +121,7 @@ def build_stochastic_effect_size_audit(stochastic: dict[str, Any]) -> dict[str, 
         row["finite_interval"] = _finite(
             [
                 row["profile_mean"],
-                row["profile_ci95_low"],
-                row["profile_ci95_high"],
                 row["null_mean"],
-                row["null_ci95_low"],
-                row["null_ci95_high"],
                 row["cliffs_delta"],
                 row["permutation_p"],
                 row["holm_p"],
@@ -173,7 +145,7 @@ def build_stochastic_effect_size_audit(stochastic: dict[str, Any]) -> dict[str, 
                                         and row["difference_ci95_low"] <= row["difference_ci95_high"] for row in rows),
     }
     return {
-        "schema": "realizing_emptiness.stochastic_effect_size_audit.v1",
+        "schema": "realizing_emptiness.stochastic_effect_size_audit.v2",
         "metric_count": len(metric_names),
         "row_count": len(rows),
         "rows": rows,
@@ -339,15 +311,14 @@ def _synthetic_arm(
     rng = np.random.default_rng(seed)
     baseline = rng.normal(0.0, 1.0, size=sample_size)
     treatment = rng.normal(shift, 1.0, size=sample_size)
-    permutation_p = _permutation_p_value(
-        treatment.tolist(), baseline.tolist(), seed=seed + 1 + base_seed_offset
+    permutation = permutation_test(
+        treatment.tolist(), baseline.tolist(), seed=seed + 1 + base_seed_offset, draws=1024
     )
-    cliffs = _cliffs_delta(treatment.tolist(), baseline.tolist())
     delta_ci = bootstrap_contrast(treatment, baseline, seed=seed + 2 + base_seed_offset)
     return {
         "injected_shift": float(shift),
-        "permutation_p": permutation_p,
-        "cliffs_delta": cliffs,
+        "permutation_p": permutation["p_value"],
+        "cliffs_delta": delta_ci["cliffs_delta"],
         "mean_difference": float(np.mean(treatment) - np.mean(baseline)),
         "mean_difference_ci95_low": delta_ci["difference_ci95_low"],
         "mean_difference_ci95_high": delta_ci["difference_ci95_high"],

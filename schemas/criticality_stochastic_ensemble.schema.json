@@ -21,7 +21,7 @@
     },
     "branching_null_seed": {"type": "integer"},
     "schema": {
-      "const": "realizing_emptiness.criticality_stochastic_ensemble.v1"
+      "const": "realizing_emptiness.criticality_stochastic_ensemble.v2"
     },
     "label": {
       "const": "seeded_stochastic_simulation_not_empirical_neural_measure"
@@ -49,29 +49,79 @@
       "type": "array",
       "minItems": 1,
       "items": {
-        "type": "object"
+        "type": "object",
+        "required": ["profile", "run_index", "seed", "null_control", "observation_entropy_nats", "action_entropy_nats", "switch_rate", "variance", "autocorrelation_lag1", "branching_ratio", "criticality_index"],
+        "properties": {
+          "profile": {"type": "string"}, "run_index": {"type": "integer", "minimum": 0},
+          "seed": {"type": "integer"}, "null_control": {"type": "boolean"},
+          "observation_entropy_nats": {"type": "number"}, "action_entropy_nats": {"type": "number"},
+          "switch_rate": {"type": "number"}, "variance": {"type": "number"},
+          "autocorrelation_lag1": {"type": "number"}, "branching_ratio": {"type": "number", "minimum": 0},
+          "criticality_index": {"type": "number", "minimum": 0}
+        },
+        "additionalProperties": false
       }
     },
     "summary_rows": {
       "type": "array",
       "minItems": 6,
       "items": {
-        "type": "object"
+        "type": "object", "required": ["profile", "null_control", "run_count", "metrics"],
+        "properties": {
+          "profile": {"type": "string"}, "null_control": {"type": "boolean"},
+          "run_count": {"type": "integer", "minimum": 2},
+          "metrics": {
+            "type": "object",
+            "required": ["observation_entropy_nats", "action_entropy_nats", "switch_rate", "variance", "autocorrelation_lag1", "branching_ratio", "criticality_index"],
+            "properties": {
+              "observation_entropy_nats": {"$ref": "#/$defs/interval"},
+              "action_entropy_nats": {"$ref": "#/$defs/interval"},
+              "switch_rate": {"$ref": "#/$defs/interval"}, "variance": {"$ref": "#/$defs/interval"},
+              "autocorrelation_lag1": {"$ref": "#/$defs/interval"},
+              "branching_ratio": {"$ref": "#/$defs/interval"}, "criticality_index": {"$ref": "#/$defs/interval"}
+            },
+            "additionalProperties": false
+          }
+        },
+        "additionalProperties": false
       }
     },
     "null_contrasts": {
       "type": "array",
       "minItems": 3,
       "items": {
-        "type": "object", "required": ["paired_branching_ci95_low", "paired_branching_ci95_high", "paired_run_count", "paired_branching_interval_excludes_zero"],
-        "properties": {"paired_branching_ci95_low": {"type": "number"}, "paired_branching_ci95_high": {"type": "number"}, "paired_run_count": {"type": "integer", "minimum": 2}, "paired_branching_interval_excludes_zero": {"type": "boolean"}}
+        "type": "object",
+        "required": ["profile", "switch_rate_delta_vs_null", "branching_ratio_delta_vs_null", "criticality_index_delta_vs_null", "branching_ratio_ci_disjoint_from_null", "switch_rate_ci_disjoint_from_null", "paired_branching_ci95_low", "paired_branching_ci95_high", "paired_run_count", "paired_bootstrap_seed", "paired_bootstrap_draws", "paired_branching_interval_excludes_zero"],
+        "properties": {
+          "profile": {"type": "string"},
+          "switch_rate_delta_vs_null": {"type": "number"},
+          "branching_ratio_delta_vs_null": {"type": "number"},
+          "criticality_index_delta_vs_null": {"type": "number"},
+          "branching_ratio_ci_disjoint_from_null": {"type": "boolean"},
+          "switch_rate_ci_disjoint_from_null": {"type": "boolean"},
+          "paired_branching_ci95_low": {"type": "number"},
+          "paired_branching_ci95_high": {"type": "number"},
+          "paired_run_count": {"type": "integer", "minimum": 2},
+          "paired_bootstrap_seed": {"type": "integer"},
+          "paired_bootstrap_draws": {"const": 2048},
+          "paired_branching_interval_excludes_zero": {"type": "boolean"}
+        },
+        "additionalProperties": false
       }
     },
     "controls": {
       "type": "object",
-      "additionalProperties": {
-        "const": true
-      }
+      "required": ["seeded_policy_source", "all_intervals_finite", "null_controls_present", "profiles_differ_from_null_controls", "measured_branching_separates_from_null", "majority_of_profiles_ci_separate_from_null", "branching_estimator_recovers_planted_sigma"],
+      "properties": {
+        "seeded_policy_source": {"const": true},
+        "all_intervals_finite": {"const": true},
+        "null_controls_present": {"const": true},
+        "profiles_differ_from_null_controls": {"const": true},
+        "measured_branching_separates_from_null": {"const": true},
+        "majority_of_profiles_ci_separate_from_null": {"const": true},
+        "branching_estimator_recovers_planted_sigma": {"const": true}
+      },
+      "additionalProperties": false
     },
     "all_controls_pass": {
       "const": true
@@ -82,6 +132,13 @@
     },
     "branching_estimator_calibration": {
       "type": "object"
+    }
+  },
+  "$defs": {
+    "interval": {
+      "type": "object", "required": ["mean", "sd", "ci95_low", "ci95_high"],
+      "properties": {"mean": {"type": "number"}, "sd": {"type": "number", "minimum": 0}, "ci95_low": {"type": "number"}, "ci95_high": {"type": "number"}},
+      "additionalProperties": false
     }
   },
   "additionalProperties": false

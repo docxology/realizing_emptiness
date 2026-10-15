@@ -61,7 +61,7 @@ exist from this standalone checkout.
 | Path | Role |
 | --- | --- |
 | `src/formalism/` | Paper-source registry, equation surrogates, QRF/BMR data models |
-| `src/simulation/` | Boundary-channel environment, pymdp canary, profile comparison, BMR, criticality proxies |
+| `src/simulation/` | Boundary-channel environment, pymdp runtime dependency check, profile comparison, BMR, criticality proxies |
 | `src/practice/` | Practice protocol specifications mapped to model interventions |
 | `src/visualizations/` | Deterministic figure generation, source map, semantic design contracts, and integrity audit |
 | `src/gates/` | Output, manuscript, source, and documentation validators |

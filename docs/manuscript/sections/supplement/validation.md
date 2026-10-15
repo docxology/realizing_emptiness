@@ -19,7 +19,7 @@ The gates are fail-closed and cover the full surface, one family per check:
 - Structure: subsection titles, anchors, manuscript references, and figure numbering must remain machine-auditable.
 - Practice and language: user-facing efficacy claims are rejected, and the manuscript gate rejects unresolved citations and positive realization, clinical, or neural-measurement language.
 
-The public claim IDs checked by the manuscript audit are `source_boundary_unevidenceable`; `separation_prior_sigma`; `bmr_prunes_sigma`; `practice_protocol_boundary`; `qfep_surrogate_scope`; `quantum_separability_entropy`; `quantum_contextuality_witness`; `quantum_measurement_contextuality`; `quantum_open_system_dephasing`; `pymdp_runtime_canary`; `criticality_proxy_boundary`; `compassion_proxy_boundary`; `self_evidencing_boundary`; `metacognitive_access_model`; and `artifact_release_readiness`.
+The public claim IDs checked by the manuscript audit are `source_boundary_unevidenceable`; `separation_prior_sigma`; `bmr_prunes_sigma`; `practice_protocol_boundary`; `qfep_surrogate_scope`; `quantum_separability_entropy`; `quantum_contextuality_witness`; `quantum_measurement_contextuality`; `quantum_open_system_dephasing`; `pymdp_runtime_dependency`; `criticality_proxy_boundary`; `compassion_proxy_boundary`; `self_evidencing_boundary`; `metacognitive_access_model`; and `artifact_release_readiness`.
 
 ![Manuscript claim audit.](../output/figures/manuscript_claim_audit.png){#fig:manuscript_claim_audit width=90%}
 

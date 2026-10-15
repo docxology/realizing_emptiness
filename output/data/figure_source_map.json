@@ -1,5 +1,5 @@
 {
-  "figure_count": 61,
+  "figure_count": 60,
   "figures": [
     {
       "alt_text": "Near-square cover schematic with a central finite boundary bitstream surrounded by source paper, formal registry, stochastic and quantum simulation engines, and claim gates; colored nodes and ribbons show that QRF sector labels change while the evidenced bitstream stays the same.",
@@ -812,32 +812,8 @@
       "visual_encoding": "Four-panel dashboard; bar colors encode pass/fail, finite residual, stochastic profile-higher, and null-higher roles; dashed or dotted lines encode tolerances and zero effects; legends explain control status and profile-null effect direction."
     },
     {
-      "alt_text": "Bar chart of one simulated criticality diagnostic trace showing entropy, switching, variance, and near-critical score from boundary-channel trajectories.",
-      "caption": "Single-trace entropy, switching, variance, and near-criticality diagnostics from a simulated boundary-channel trajectory. The bar legend marks values as one simulated trace, and the stochastic ensemble figure carries the interval/null-control result; neither figure is empirical evidence for neural criticality or contemplative realization.",
-      "cropped_text_count": 0,
-      "id": "criticality_proxy_panels",
-      "layout_ok": true,
-      "legend_axis_overlap_count": 0,
-      "path": "output/figures/criticality_proxy_panels.png",
-      "render_contract": {
-        "colorbar_count": 0,
-        "legend_count": 1,
-        "min_font_pt": 12.0,
-        "panel_count": 1,
-        "roles": [
-          "finite"
-        ]
-      },
-      "source_artifacts": [
-        "output/reports/criticality_proxy_report.json"
-      ],
-      "text_overlap_count": 0,
-      "title_overlap_count": 0,
-      "visual_encoding": "Single bar color legend encodes one simulated trajectory diagnostic across entropy, switching, variance, and near-critical labels."
-    },
-    {
-      "alt_text": "Two grouped-bar panels using short profile labels and one shared legend, showing near-critical score and switch-rate intervals for profile simulations compared with null controls across seeded stochastic active-inference runs.",
-      "caption": "Seeded stochastic active-inference ensemble for criticality-style indicators. Shared short profile labels, a single external legend, violet profile bars, hatched gray null-control bars, direction annotations, and 95 percent intervals over replayable seeds show simulated trajectory variability only; the figure is not empirical evidence, not neural measurement, not clinical outcome evidence, and not practice-efficacy evidence.",
+      "alt_text": "Two grouped-bar panels using short profile labels and one shared legend, showing observation entropy in nats and switch-rate intervals for profile simulations compared with independent uniform random controls.",
+      "caption": "Seeded observation entropy and switch-rate summaries under independently sampled uniform observation/action controls. Shared short profile labels, a single external legend, violet profile bars, hatched gray control bars, direction annotations, and pointwise normal-approximation 95 percent intervals across complete runs show finite software variability; these controls do not preserve the original observation histogram, and the figure is not empirical evidence for neural criticality or practice efficacy.",
       "cropped_text_count": 0,
       "id": "criticality_stochastic_ensemble",
       "layout_ok": true,
