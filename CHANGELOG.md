@@ -10,6 +10,8 @@
   contracts, and canonical `B[next_state, previous_state, action]` tensors.
 - Connect declarations to real `pymdp` inference and the existing finite
   NumPy/SciPy engines; retain independent numerical checks and claim ceilings.
+- Reject invalid finite Blackwell probability domains before computation and
+  measure malformed-prior rejection in the GNN audit.
 - Replace duplicated YAML model defaults with GNN references and change
   `ProfileSpec` to reference the authoritative model. Add the model audit and
   bounded upstream categorical interoperability checks.

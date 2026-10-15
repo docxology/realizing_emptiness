@@ -172,22 +172,25 @@
 | src/modeling/audit.py | 129 | function | `_replace_parameter` | No docstring. |
 | src/modeling/audit.py | 133 | function | `_admission_controls` | No docstring. |
 | src/modeling/audit.py | 154 | function | `build_gnn_model_audit` | Recompute model admission, implementation provenance, and native execution evidence. |
-| src/modeling/audit.py | 209 | function | `_equivalent` | No docstring. |
-| src/modeling/audit.py | 219 | function | `gnn_model_audit_matches` | Reject missing, forged, stale, or non-reproducible receipts by independent reconstruction. |
-| src/modeling/registry.py | 29 | class | `ModelSpecification` | A source-bound declaration admitted by upstream and project contracts. |
-| src/modeling/registry.py | 41 | function | `upstream_identity` | No docstring. |
-| src/modeling/registry.py | 46 | function | `specification_root` | Select real alternate specification files for controlled experiments and tests. |
-| src/modeling/registry.py | 55 | function | `specification_paths` | No docstring. |
-| src/modeling/registry.py | 63 | function | `_finite_tree` | No docstring. |
-| src/modeling/registry.py | 75 | function | `parse_model` | Reject lossy parser recovery, then consume the actual upstream typed IR. |
-| src/modeling/registry.py | 137 | function | `_parse_cached` | No docstring. |
-| src/modeling/registry.py | 141 | function | `load_model` | No docstring. |
-| src/modeling/registry.py | 149 | function | `model_parameters` | No docstring. |
+| src/modeling/audit.py | 219 | function | `_equivalent` | No docstring. |
+| src/modeling/audit.py | 229 | function | `gnn_model_audit_matches` | Reject missing, forged, stale, or non-reproducible receipts by independent reconstruction. |
+| src/modeling/registry.py | 30 | class | `ModelSpecification` | A source-bound declaration admitted by upstream and project contracts. |
+| src/modeling/registry.py | 42 | function | `upstream_identity` | No docstring. |
+| src/modeling/registry.py | 47 | function | `specification_root` | Select real alternate specification files for controlled experiments and tests. |
+| src/modeling/registry.py | 56 | function | `specification_paths` | No docstring. |
+| src/modeling/registry.py | 64 | function | `_finite_tree` | No docstring. |
+| src/modeling/registry.py | 74 | function | `_validate_blackwell_parameters` | No docstring. |
+| src/modeling/registry.py | 78 | function | `probability` | No docstring. |
+| src/modeling/registry.py | 81 | function | `distribution` | No docstring. |
+| src/modeling/registry.py | 103 | function | `parse_model` | Reject lossy parser recovery, then consume the actual upstream typed IR. |
+| src/modeling/registry.py | 167 | function | `_parse_cached` | No docstring. |
+| src/modeling/registry.py | 171 | function | `load_model` | No docstring. |
+| src/modeling/registry.py | 179 | function | `model_parameters` | No docstring. |
 | src/practice/protocols.py | 9 | function | `practice_protocol_map` | Return bounded practice protocol mappings for software interfaces. |
 | src/simulation/blackwell_ordering.py | 37 | function | `_bayes_error` | Bayes risk of the optimal decision rule under 0-1 loss: 1 - sum_o max_state p(state) p(o|state). |
-| src/simulation/blackwell_ordering.py | 44 | function | `_relabel` | Invertible relabeling: permute the outcome columns (a reversible post-processing). |
-| src/simulation/blackwell_ordering.py | 49 | function | `_garble` | Row-stochastic post-processing G; A' = A @ G. Lossy unless G is a permutation. |
-| src/simulation/blackwell_ordering.py | 55 | function | `build_blackwell_bayes_risk_audit` | Finite Blackwell ordering surrogate with relabel-preserves and garble-degrades controls. |
+| src/simulation/blackwell_ordering.py | 43 | function | `_relabel` | Invertible relabeling: permute the outcome columns (a reversible post-processing). |
+| src/simulation/blackwell_ordering.py | 48 | function | `_garble` | Row-stochastic post-processing G; A' = A @ G. Lossy unless G is a permutation. |
+| src/simulation/blackwell_ordering.py | 54 | function | `build_blackwell_bayes_risk_audit` | Finite Blackwell ordering surrogate with relabel-preserves and garble-degrades controls. |
 | src/simulation/bmr.py | 18 | function | `compare_models` | Compare full and reduced models at one point in the finite sweep. |
 | src/simulation/bmr.py | 36 | function | `run_bmr_sweep` | Run deterministic BMR sweep over prior precision and metacognitive access. |
 | src/simulation/bmr.py | 67 | function | `write_bmr_sweep` | Write BMR sweep JSON and CSV artifacts. |

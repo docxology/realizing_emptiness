@@ -10,6 +10,7 @@ from functools import lru_cache
 from hashlib import sha256
 from importlib.resources import files
 import json
+import math
 from pathlib import Path
 import re
 from typing import Any, Iterator
@@ -66,10 +67,37 @@ def _finite_tree(value: Any) -> bool:
     if isinstance(value, (list, tuple)):
         return all(_finite_tree(item) for item in value)
     if isinstance(value, float):
-        import math
-
         return math.isfinite(value)
     return value is None or isinstance(value, (str, int, bool))
+
+
+def _validate_blackwell_parameters(parameters: dict[str, Any]) -> None:
+    if set(parameters) != {"prior", "channel", "grid_steps", "named_garblings"}:
+        raise ValueError("Blackwell requires its complete finite decision contract")
+
+    def probability(value: Any) -> bool:
+        return type(value) in {int, float} and 0 <= value <= 1 and math.isfinite(value)
+
+    def distribution(value: Any) -> bool:
+        return (isinstance(value, list) and len(value) == 2 and all(probability(item) for item in value)
+                and math.isclose(sum(value), 1.0, rel_tol=0, abs_tol=1e-12))
+
+    if not distribution(parameters["prior"]):
+        raise ValueError("Blackwell prior must be a normalized binary probability distribution")
+    channel = parameters["channel"]
+    if not isinstance(channel, list) or len(channel) != 2 or not all(distribution(row) for row in channel):
+        raise ValueError("Blackwell channel must be a binary row-stochastic probability matrix")
+    if type(parameters["grid_steps"]) is not int or parameters["grid_steps"] < 2:
+        raise ValueError("Blackwell grid_steps must be an integer of at least two")
+    garblings = parameters["named_garblings"]
+    if (not isinstance(garblings, list) or not garblings
+            or any(not isinstance(row, list) or len(row) != 3
+                   or not isinstance(row[0], str) or not row[0]
+                   or not all(probability(item) for item in row[1:]) for row in garblings)):
+        raise ValueError("Blackwell named garblings require names and probability retentions")
+    names = [row[0] for row in garblings]
+    if len(names) != len(set(names)) or not {"partial_garbling", "complete_erasure"} <= set(names):
+        raise ValueError("Blackwell garblings require unique names and both mathematical controls")
 
 
 def parse_model(content: str, model_id: str) -> ModelSpecification:
@@ -130,6 +158,8 @@ def parse_model(content: str, model_id: str) -> ModelSpecification:
         raise ValueError("finite native models require the explicit FiniteSurrogate contract")
     else:
         tensors = {}
+        if model_id == "finite_blackwell":
+            _validate_blackwell_parameters(settings["parameters"])
     return ModelSpecification(model_id, sha256(content.encode()).hexdigest(), settings["family"], settings["backend"], settings["consumer"], deepcopy(settings["parameters"]), deepcopy(tensors))
 
 

@@ -151,6 +151,17 @@ def test_claim_flags_cannot_replace_actual_controls(receipt):
     assert not gnn_model_audit_matches(forged, root)
 
 
+def test_non_normalized_finite_prior_cannot_receive_a_green_audit(receipt, mirror):
+    _, payload = receipt
+    path = mirror / "src/modeling/specifications/finite_blackwell.gnn.md"
+    original = path.read_text()
+    assert '"prior": [0.5, 0.5]' in original
+    path.write_text(original.replace('"prior": [0.5, 0.5]', '"prior": [0.25, 0.25]'))
+    with pytest.raises(ValueError, match="Blackwell"):
+        build_gnn_model_audit(mirror)
+    assert not gnn_model_audit_matches(payload, mirror)
+
+
 def test_catalog_duplicates_and_registry_drift_are_rejected(receipt, mirror):
     _, payload = receipt
     path = mirror / "src/modeling/catalog.json"

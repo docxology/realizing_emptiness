@@ -96,6 +96,48 @@ def test_missing_specification_has_no_python_default(tmp_path):
         run_bmr_sweep()
 
 
+@pytest.mark.parametrize(("key", "value"), [
+    ("prior", [0.25, 0.25]),
+    ("prior", [-0.1, 1.1]),
+    ("prior", [1.0]),
+    ("prior", [True, False]),
+    ("channel", [[0.4, 0.1], [0.1, 0.4]]),
+    ("channel", [[1.1, -0.1], [0.2, 0.8]]),
+    ("channel", [[0.8, 0.2]]),
+    ("grid_steps", 1),
+    ("grid_steps", 2.5),
+    ("grid_steps", True),
+    ("named_garblings", [["partial_garbling", 1.1, 0.7], ["complete_erasure", 0.5, 0.5]]),
+    ("named_garblings", [["complete_erasure", 0.5, 0.5]]),
+    ("named_garblings", [["partial_garbling", 0.7, 0.7]] * 2 + [["complete_erasure", 0.5, 0.5]]),
+])
+def test_blackwell_invalid_gnn_domains_fail_before_execution(finite_specs, key, value):
+    _mutate(finite_specs, "finite_blackwell", key, value)
+    with specification_root(finite_specs):
+        with pytest.raises(ValueError, match="Blackwell"):
+            load_model("finite_blackwell")
+        with pytest.raises(ValueError, match="Blackwell"):
+            build_blackwell_bayes_risk_audit()
+
+
+def test_blackwell_normalized_nonuniform_prior_is_consumed(finite_specs):
+    baseline = build_blackwell_bayes_risk_audit()
+    _mutate(finite_specs, "finite_blackwell", "prior", [0.6, 0.4])
+    with specification_root(finite_specs):
+        result = build_blackwell_bayes_risk_audit()
+    assert result["prior"] == [0.6, 0.4]
+    assert result["chance_risk"] == pytest.approx(0.4)
+    assert result["chance_risk"] != baseline["chance_risk"]
+    assert result["original_bayes_risk"] == pytest.approx(0.2)
+    assert result["all_controls_pass"]
+
+
+@pytest.mark.parametrize("grid_steps", [0, 1, 2.5, True])
+def test_blackwell_invalid_explicit_grid_is_rejected(grid_steps):
+    with pytest.raises(ValueError, match="Blackwell"):
+        build_blackwell_bayes_risk_audit(grid_steps=grid_steps)
+
+
 def test_compatibility_exports_resolve_current_specification(finite_specs):
     import simulation.compassion_scope as compassion
     import simulation.markov_blanket as blanket

@@ -187,6 +187,16 @@ def build_gnn_model_audit(project_root: Path) -> dict[str, Any]:
         reference = load_model("separation_constrained")
         content = (root / "separation_constrained.gnn.md").read_text()
         controls = _admission_controls(content, reference.model_id)
+        finite_content = (root / "finite_blackwell.gnn.md").read_text()
+        settings_line = next(line for line in finite_content.splitlines() if line.startswith("settings="))
+        finite_settings = ast.literal_eval(settings_line.removeprefix("settings="))
+        finite_settings[0]["parameters"]["prior"] = [0.25, 0.25]
+        try:
+            parse_model(_replace_parameter(finite_content, "settings", finite_settings), "finite_blackwell")
+        except ValueError:
+            controls["invalid_finite_probability_rejected"] = True
+        else:
+            controls["invalid_finite_probability_rejected"] = False
         baseline = next(row for row in native if row["model_id"] == reference.model_id)
         changed_c = _native_probe(parse_model(_replace_parameter(content, "C", list(reversed(reference.tensors["C"]))), reference.model_id))
         changed_d = _native_probe(parse_model(_replace_parameter(content, "D", np.roll(reference.tensors["D"], 1).tolist()), reference.model_id))

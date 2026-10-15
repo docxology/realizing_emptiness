@@ -216,7 +216,7 @@
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/data/figure_integrity_audit.json",
-      "sha256": "8f788816ef838c7e1b7e6cd6feea2af6bc1e5228b89f3b6d08b581946c0daac7"
+      "sha256": "08ead80de35c92006491ba5752c30850d77957c1fb406352fbd7305a7eb7e561"
     },
     {
       "artifact_id": "figure_legibility_audit",
@@ -228,11 +228,11 @@
     },
     {
       "artifact_id": "figure_parameter_ledger",
-      "bytes": 247722,
+      "bytes": 255642,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/data/figure_parameter_ledger.json",
-      "sha256": "e41e4d08caaddf4a4c49ba18987abdb950f340cfeacfbdd88c91826bbcee78e5"
+      "sha256": "e25842a92965935afda8257477aba93c08353ca97ce2cfe8cfee5c7b2c8f34f3"
     },
     {
       "artifact_id": "figure_reuse_audit",
@@ -268,11 +268,11 @@
     },
     {
       "artifact_id": "gnn_model_audit",
-      "bytes": 44386,
+      "bytes": 44435,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/data/gnn_model_audit.json",
-      "sha256": "5b59bc77bd4c4dda855d0341c05de520df4d87d742681c973221c249c3f962fb"
+      "sha256": "2e113c1d2dd728a05f7cd5f3c7edcf68f9d94eb2136bd81df7fbbcab09050a75"
     },
     {
       "artifact_id": "interaction_information_boundary_audit",
@@ -1239,11 +1239,11 @@
       "sha256": "f6c6395ed22b9ebe387448e3565fc896fac290a97ce89470691aaa09764093a2"
     },
     {
-      "bytes": 5505,
+      "bytes": 5636,
       "exists": true,
       "kind": "release_support",
       "path": "CHANGELOG.md",
-      "sha256": "5e36edaa91deb57d217354a4ccc1e57ee75bf783c2d0afedd69382f8b29a2b52"
+      "sha256": "bb8f20d67ed5b0bae7c11d05d4980544ecf1b1fc946afebd4f83a20c7d84d0ef"
     },
     {
       "bytes": 715,
@@ -1407,11 +1407,11 @@
       "sha256": "fd1951217154c018cfdc7b3e2e7f93cb2a11c9844cf93b2e18d3e9bea63ef733"
     },
     {
-      "bytes": 7308,
+      "bytes": 7614,
       "exists": true,
       "kind": "release_support",
       "path": "docs/gnn-modeling.md",
-      "sha256": "02aa1aa8a2343beb3271d253def607f388648161163103db05b5ca9bf35b2b19"
+      "sha256": "90ecbb825c4be88a85971cf5b4ade3623b72525c8669b2ea19cadb077a8daa13"
     },
     {
       "bytes": 3372,
@@ -1932,11 +1932,11 @@
       "sha256": "5e037b291eea2f1cbf5223e66346bc94254f69a9b8effe5e9b12260d1176de29"
     },
     {
-      "bytes": 65503,
+      "bytes": 65755,
       "exists": true,
       "kind": "release_support",
       "path": "docs/method-inventory.md",
-      "sha256": "ff88da42e277a1b954b6b89f29c35117b58dafafd54ff2cadb5e7d6a86fbe2c3"
+      "sha256": "809ef71074fc1fd448923af235953ee8bd2443961dd3ea62378b8748dbc5840f"
     },
     {
       "bytes": 13063,
@@ -2296,11 +2296,11 @@
       "sha256": "082686459e19c111ccbd3f114198f76f0bccec14edf1d419b22e14beaee02b86"
     },
     {
-      "bytes": 13662,
+      "bytes": 13793,
       "exists": true,
       "kind": "release_support",
       "path": "schemas/gnn_model_audit.schema.json",
-      "sha256": "8c294cd21b81153069a0fc570dbb7965f3f3e4fa9b57531e0ddd70ec88ed9215"
+      "sha256": "d249ff79b4742a19f2d1c8858add62080e6ee9d8ed3c93dbf88737e13b4c4aeb"
     },
     {
       "bytes": 730,
@@ -3122,11 +3122,11 @@
       "sha256": "9154ef0877af34ed4c5d640bffbe171caedfba0da4a4fb397c22eb41ae96e161"
     },
     {
-      "bytes": 13838,
+      "bytes": 14464,
       "exists": true,
       "kind": "release_support",
       "path": "src/modeling/audit.py",
-      "sha256": "8aae4bfe2323a9ef60d8321baf587fe9ec755de7d77aa68e74a3887aff157cba"
+      "sha256": "30a601f6518d8c9874e8c1065e0d505890e7f59a2efe308cc559032722978825"
     },
     {
       "bytes": 6630,
@@ -3136,11 +3136,11 @@
       "sha256": "676fe75ad8c4fae60f07d7622261c919fae3e6a79a8be9b8b500efbc39dd953a"
     },
     {
-      "bytes": 7719,
+      "bytes": 9625,
       "exists": true,
       "kind": "release_support",
       "path": "src/modeling/registry.py",
-      "sha256": "7abeb18aa8b481455a4f5b954251d5131d3fcc6f89e91e8adbc4d6d8508933ce"
+      "sha256": "77bc40113fb2aa2fdbc6365d386bd9d3c863c3f7ce9ab190fdba04dac707d990"
     },
     {
       "bytes": 657,
@@ -3507,11 +3507,11 @@
       "sha256": "8f7549156afc631e48eed0ba24f82adfd77b86c2d7aa1024454ad2e0b81d1a19"
     },
     {
-      "bytes": 6093,
+      "bytes": 6195,
       "exists": true,
       "kind": "release_support",
       "path": "src/simulation/blackwell_ordering.py",
-      "sha256": "135bc3a3ef75ca6dc2aecc301d7cb2908032908731ff69bd40b4ae4dfdda9790"
+      "sha256": "b307ad58d49cfc5c050d9cbd3a17d8128c435806506e918587c65963fa928be5"
     },
     {
       "bytes": 3597,
@@ -3724,18 +3724,18 @@
       "sha256": "df2efdda03e09ef6b66f0ac767a35a3fe5ab5c1e4c77b5be28af68d8df8e0a61"
     },
     {
-      "bytes": 10911,
+      "bytes": 11408,
       "exists": true,
       "kind": "release_support",
       "path": "tests/test_gnn_contract.py",
-      "sha256": "dafcdbdeb6111fd794920b721acb452001078e13c057e28a92a722f53f477d03"
+      "sha256": "542228ec19967601db8ba926fa2adc8b768569e416ba7f892abc8bdecb94eb67"
     },
     {
-      "bytes": 5415,
+      "bytes": 7202,
       "exists": true,
       "kind": "release_support",
       "path": "tests/test_gnn_finite.py",
-      "sha256": "1feefd155f56042f3c16715ec3ddec47d261a06c07547567d3c2bc9f6757486a"
+      "sha256": "3723f178129e5d3816bcc21820b66c7a9029f00960cbf22e99487c62486b9154"
     },
     {
       "bytes": 5194,

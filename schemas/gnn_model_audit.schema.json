@@ -482,6 +482,7 @@
         "missing_c_rejected",
         "wrong_shape_rejected",
         "invalid_probability_rejected",
+        "invalid_finite_probability_rejected",
         "catalog_complete",
         "all_consumers_source_bound",
         "all_categorical_models_executed",
@@ -511,6 +512,9 @@
           "const": true
         },
         "invalid_probability_rejected": {
+          "const": true
+        },
+        "invalid_finite_probability_rejected": {
           "const": true
         },
         "catalog_complete": {

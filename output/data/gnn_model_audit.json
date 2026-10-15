@@ -1,6 +1,6 @@
 {
   "all_controls_pass": true,
-  "audit_sha256": "8aae4bfe2323a9ef60d8321baf587fe9ec755de7d77aa68e74a3887aff157cba",
+  "audit_sha256": "30a601f6518d8c9874e8c1065e0d505890e7f59a2efe308cc559032722978825",
   "catalog_sha256": "676fe75ad8c4fae60f07d7622261c919fae3e6a79a8be9b8b500efbc39dd953a",
   "claim_boundary": "GNN specifications and finite software execution only; not empirical, clinical, neural, practice-efficacy, or physical qFEP evidence",
   "controls": {
@@ -10,6 +10,7 @@
     "catalog_complete": true,
     "d_mutation_changes_real_posterior": true,
     "duplicate_section_rejected": true,
+    "invalid_finite_probability_rejected": true,
     "invalid_probability_rejected": true,
     "malformed_rejected": true,
     "missing_c_rejected": true,
@@ -35,7 +36,7 @@
     {
       "backend": "numpy_scipy",
       "consumer": "simulation.blackwell_ordering:build_blackwell_bayes_risk_audit",
-      "consumer_sha256": "135bc3a3ef75ca6dc2aecc301d7cb2908032908731ff69bd40b4ae4dfdda9790",
+      "consumer_sha256": "b307ad58d49cfc5c050d9cbd3a17d8128c435806506e918587c65963fa928be5",
       "consumer_source": "src/simulation/blackwell_ordering.py",
       "family": "finite_blackwell",
       "model_id": "finite_blackwell",
@@ -1003,7 +1004,7 @@
       "tensors_sha256": "1f3f1ed2dde0ec7ebe2f5fa7f43560698626c2766403d5140a2bf880eb7a56fc"
     }
   ],
-  "registry_sha256": "7abeb18aa8b481455a4f5b954251d5131d3fcc6f89e91e8adbc4d6d8508933ce",
+  "registry_sha256": "77bc40113fb2aa2fdbc6365d386bd9d3c863c3f7ce9ab190fdba04dac707d990",
   "schema": "realizing_emptiness.gnn_model_audit.v1",
   "upstream": {
     "commit": "46459949944e3217f8a6a804d4ff8c52829ef275",

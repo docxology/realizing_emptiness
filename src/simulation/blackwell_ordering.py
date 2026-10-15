@@ -34,9 +34,8 @@ CLAIM_BOUNDARY = (
 # the hidden boundary state, under 0-1 loss. The channel is informative (Bayes error 0.2 < chance 0.5).
 
 
-def _bayes_error(channel: np.ndarray) -> float:
+def _bayes_error(channel: np.ndarray, prior: np.ndarray) -> float:
     """Bayes risk of the optimal decision rule under 0-1 loss: 1 - sum_o max_state p(state) p(o|state)."""
-    prior = np.asarray(model_parameters("finite_blackwell")["prior"], dtype=float)
     joint = prior[:, None] * channel
     return float(1.0 - joint.max(axis=0).sum())
 
@@ -65,22 +64,24 @@ def build_blackwell_bayes_risk_audit(*, grid_steps: int | None = None) -> dict[s
     prior = np.asarray(parameters["prior"], dtype=float)
     channel = np.asarray(parameters["channel"], dtype=float)
     grid_steps = parameters["grid_steps"] if grid_steps is None else grid_steps
+    if type(grid_steps) is not int or grid_steps < 2:
+        raise ValueError("Blackwell grid_steps must be an integer of at least two")
     tolerance = 1e-9
     chance_risk = float(1.0 - prior.max())
-    original_risk = _bayes_error(channel)
+    original_risk = _bayes_error(channel, prior)
 
     relabel_rows = []
     for name, permutation in (("identity", (0, 1)), ("swap_outcomes", (1, 0))):
         relabel_rows.append({
             "relabeling": name,
             "permutation": list(permutation),
-            "bayes_risk": round(_bayes_error(_relabel(channel, permutation)), 10),
+            "bayes_risk": round(_bayes_error(_relabel(channel, permutation), prior), 10),
         })
 
     named_garblings = parameters["named_garblings"]
     garble_rows = []
     for name, retention_a, retention_b in named_garblings:
-        risk = _bayes_error(_garble(channel, retention_a, retention_b))
+        risk = _bayes_error(_garble(channel, retention_a, retention_b), prior)
         garble_rows.append({
             "garbling": name,
             "retention": [round(retention_a, 6), round(retention_b, 6)],
@@ -92,7 +93,7 @@ def build_blackwell_bayes_risk_audit(*, grid_steps: int | None = None) -> dict[s
     grid_risks = []
     for step_a in range(grid_steps):
         for step_b in range(grid_steps):
-            risk = _bayes_error(_garble(channel, step_a / (grid_steps - 1), step_b / (grid_steps - 1)))
+            risk = _bayes_error(_garble(channel, step_a / (grid_steps - 1), step_b / (grid_steps - 1)), prior)
             grid_risks.append(risk)
     minimum_grid_risk = min(grid_risks)
 

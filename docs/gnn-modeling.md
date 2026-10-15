@@ -90,6 +90,10 @@ additional stored defaults.
 3. For categorical models, update explicit `A/B/C/D` tensors consistently
    with their dimensions and canonical axis order. For finite models, update
    the parameters consumed by the named engine.
+   The finite Blackwell contract rejects non-normalized priors, non-stochastic
+   channels, invalid probability retentions, missing or duplicate named controls,
+   and grids with fewer than two integer steps before computation. It preserves
+   the declared probabilities without silently normalizing them.
 4. Exercise the real consumer and a discriminating negative control. A
    grammar-valid declaration alone does not demonstrate that an input was
    consumed or that a scientific interpretation follows.
