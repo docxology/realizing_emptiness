@@ -13,6 +13,13 @@ contemplative attainment. Every surrogate carries an explicit **evidence
 ceiling** naming the stronger reading its support does *not* license, and the
 ceiling is stored on the artifact, not only in prose.
 
+The [GNN model layer](gnn-modeling.md) makes the declared inputs inspectable
+before execution. Strict grammar and tensor validation establish admissible
+software inputs; source hashes and mutation controls establish the route into
+the consumer. Neither admits a stronger interpretation of the result.
+Independent numerical acceptance checks remain separate from model settings,
+so changing a declaration cannot also change the standard used to judge it.
+
 ## Negative controls: a control must be able to fail
 
 A passing check is only informative if a corresponding failing case exists. Each

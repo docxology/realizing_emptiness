@@ -8,6 +8,8 @@ from math import log
 from pathlib import Path
 from typing import Any
 
+from modeling.registry import model_parameters
+
 from formalism.models import BMRComparison, FreeEnergyTerms
 
 
@@ -35,21 +37,22 @@ def compare_sensitivity_point(
     if not 0.0 <= observation_noise <= 0.5:
         raise ValueError("observation_noise must be in [0, 0.5]")
 
-    retained_accuracy = max(0.0, 0.55 + 0.35 * metacognitive_access - 0.18 * observation_noise)
-    sigma_accuracy_bonus = max(0.0, 0.30 * (1.0 - metacognitive_access) * (1.0 - observation_noise))
+    parameters = model_parameters("finite_sensitivity")
+    retained_accuracy = max(0.0, parameters["accuracy_base"] + parameters["access_accuracy"] * metacognitive_access - parameters["retained_noise_penalty"] * observation_noise)
+    sigma_accuracy_bonus = max(0.0, parameters["sigma_accuracy"] * (1.0 - metacognitive_access) * (1.0 - observation_noise))
     full_model = FreeEnergyTerms(
         accuracy=retained_accuracy + sigma_accuracy_bonus,
-        complexity=0.25 + prior_precision + 0.10 * observation_noise,
-        noise=0.02 + 0.08 * observation_noise,
+        complexity=parameters["complexity_base"] + prior_precision + parameters["full_complexity_noise"] * observation_noise,
+        noise=parameters["noise_base"] + parameters["full_noise"] * observation_noise,
     )
     reduced_model = FreeEnergyTerms(
-        accuracy=max(0.0, retained_accuracy - 0.05 * observation_noise * (1.0 - metacognitive_access)),
-        complexity=0.25 + 0.15 * (1.0 - metacognitive_access) + 0.05 * observation_noise,
-        noise=0.02 + 0.14 * observation_noise * (1.0 - metacognitive_access),
+        accuracy=max(0.0, retained_accuracy - parameters["reduced_accuracy_noise"] * observation_noise * (1.0 - metacognitive_access)),
+        complexity=parameters["complexity_base"] + parameters["reduced_complexity"] * (1.0 - metacognitive_access) + parameters["reduced_complexity_noise"] * observation_noise,
+        noise=parameters["noise_base"] + parameters["reduced_noise"] * observation_noise * (1.0 - metacognitive_access),
     )
     comparison = BMRComparison(full_model=full_model, reduced_model=reduced_model)
     entropy = _binary_entropy(observation_noise)
-    separation_index = float((prior_precision / 4.0) * (1.0 - metacognitive_access))
+    separation_index = float((prior_precision / parameters["separation_scale"]) * (1.0 - metacognitive_access))
     return {
         "prior_precision": float(prior_precision),
         "metacognitive_access": float(metacognitive_access),
@@ -65,11 +68,15 @@ def compare_sensitivity_point(
 
 def build_sensitivity_grid(
     *,
-    access_grid: tuple[float, ...] = (0.0, 0.125, 0.25, 0.375, 0.5, 0.625, 0.75, 0.875, 1.0),
-    precision_grid: tuple[float, ...] = (0.2, 0.5, 1.0, 2.0, 4.0),
-    noise_grid: tuple[float, ...] = (0.0, 0.05, 0.1, 0.2, 0.25, 0.35, 0.4),
+    access_grid: tuple[float, ...] | None = None,
+    precision_grid: tuple[float, ...] | None = None,
+    noise_grid: tuple[float, ...] | None = None,
 ) -> dict[str, Any]:
     """Run the finite sensitivity grid over access, precision, and observation noise."""
+    parameters = model_parameters("finite_sensitivity")
+    access_grid = tuple(parameters["access_grid"]) if access_grid is None else access_grid
+    precision_grid = tuple(parameters["precision_grid"]) if precision_grid is None else precision_grid
+    noise_grid = tuple(parameters["noise_grid"]) if noise_grid is None else noise_grid
     rows = [
         compare_sensitivity_point(
             prior_precision=precision,

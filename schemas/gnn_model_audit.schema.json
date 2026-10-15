@@ -1,0 +1,541 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "catalog_sha256",
+    "registry_sha256",
+    "audit_sha256",
+    "upstream",
+    "model_count",
+    "models",
+    "native_probes",
+    "mutation_probes",
+    "controls",
+    "all_controls_pass",
+    "claim_boundary"
+  ],
+  "properties": {
+    "schema": {
+      "const": "realizing_emptiness.gnn_model_audit.v1"
+    },
+    "catalog_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "registry_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "audit_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "upstream": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "version",
+        "commit",
+        "repository",
+        "pin_sha256",
+        "direct_url_sha256",
+        "module_sha256"
+      ],
+      "properties": {
+        "version": {
+          "const": "4.1.0"
+        },
+        "commit": {
+          "const": "46459949944e3217f8a6a804d4ff8c52829ef275"
+        },
+        "repository": {
+          "const": "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation"
+        },
+        "pin_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "direct_url_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "module_sha256": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "gnn.parsers.markdown_parser",
+            "gnn.validation.semantic_validator",
+            "gnn.render.pomdp_contract",
+            "gnn.execute.pymdp.simulation"
+          ],
+          "properties": {
+            "gnn.parsers.markdown_parser": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            },
+            "gnn.validation.semantic_validator": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            },
+            "gnn.render.pomdp_contract": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            },
+            "gnn.execute.pymdp.simulation": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            }
+          }
+        }
+      }
+    },
+    "model_count": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "models": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "model_id",
+          "path",
+          "sha256",
+          "family",
+          "backend",
+          "consumer",
+          "parameters_sha256",
+          "tensors_sha256",
+          "consumer_source",
+          "consumer_sha256"
+        ],
+        "properties": {
+          "model_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "path": {
+            "type": "string",
+            "pattern": "^src/modeling/specifications/[a-z][a-z0-9_]*\\.gnn\\.md$"
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "family": {
+            "type": "string",
+            "minLength": 1
+          },
+          "backend": {
+            "enum": [
+              "pymdp",
+              "numpy_scipy"
+            ]
+          },
+          "consumer": {
+            "type": "string",
+            "pattern": "^[a-z_]+\\.[a-z_]+:[a-z_]+$"
+          },
+          "parameters_sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "tensors_sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "consumer_source": {
+            "type": "string",
+            "pattern": "^src/[a-z_/]+\\.py$"
+          },
+          "consumer_sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          }
+        }
+      }
+    },
+    "native_probes": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "model_id",
+          "source_sha256",
+          "tensors_sha256",
+          "steps",
+          "seed",
+          "observations",
+          "actions",
+          "beliefs",
+          "policy_posterior",
+          "negative_expected_free_energy",
+          "manual_first_posterior"
+        ],
+        "properties": {
+          "model_id": {
+            "enum": [
+              "separation_constrained",
+              "opacified",
+              "post_dual"
+            ]
+          },
+          "source_sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "tensors_sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "steps": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "seed": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "observations": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "integer",
+              "minimum": 0
+            }
+          },
+          "actions": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "integer",
+              "minimum": 0
+            }
+          },
+          "beliefs": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "number"
+              }
+            }
+          },
+          "policy_posterior": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "number"
+              }
+            }
+          },
+          "negative_expected_free_energy": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "number"
+              }
+            }
+          },
+          "manual_first_posterior": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "number"
+            }
+          }
+        }
+      }
+    },
+    "mutation_probes": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "C",
+        "D"
+      ],
+      "properties": {
+        "C": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "model_id",
+            "source_sha256",
+            "tensors_sha256",
+            "steps",
+            "seed",
+            "observations",
+            "actions",
+            "beliefs",
+            "policy_posterior",
+            "negative_expected_free_energy",
+            "manual_first_posterior"
+          ],
+          "properties": {
+            "model_id": {
+              "enum": [
+                "separation_constrained",
+                "opacified",
+                "post_dual"
+              ]
+            },
+            "source_sha256": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            },
+            "tensors_sha256": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            },
+            "steps": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "seed": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "observations": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "integer",
+                "minimum": 0
+              }
+            },
+            "actions": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "integer",
+                "minimum": 0
+              }
+            },
+            "beliefs": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "number"
+                }
+              }
+            },
+            "policy_posterior": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "number"
+                }
+              }
+            },
+            "negative_expected_free_energy": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "number"
+                }
+              }
+            },
+            "manual_first_posterior": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "number"
+              }
+            }
+          }
+        },
+        "D": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "model_id",
+            "source_sha256",
+            "tensors_sha256",
+            "steps",
+            "seed",
+            "observations",
+            "actions",
+            "beliefs",
+            "policy_posterior",
+            "negative_expected_free_energy",
+            "manual_first_posterior"
+          ],
+          "properties": {
+            "model_id": {
+              "enum": [
+                "separation_constrained",
+                "opacified",
+                "post_dual"
+              ]
+            },
+            "source_sha256": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            },
+            "tensors_sha256": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            },
+            "steps": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "seed": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "observations": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "integer",
+                "minimum": 0
+              }
+            },
+            "actions": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "integer",
+                "minimum": 0
+              }
+            },
+            "beliefs": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "number"
+                }
+              }
+            },
+            "policy_posterior": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "number"
+                }
+              }
+            },
+            "negative_expected_free_energy": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "number"
+                }
+              }
+            },
+            "manual_first_posterior": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "number"
+              }
+            }
+          }
+        }
+      }
+    },
+    "controls": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "valid_model_admitted",
+        "malformed_rejected",
+        "duplicate_section_rejected",
+        "unknown_edge_rejected",
+        "nonfinite_rejected",
+        "missing_c_rejected",
+        "wrong_shape_rejected",
+        "invalid_probability_rejected",
+        "catalog_complete",
+        "all_consumers_source_bound",
+        "all_categorical_models_executed",
+        "c_mutation_changes_real_policy",
+        "d_mutation_changes_real_posterior"
+      ],
+      "properties": {
+        "valid_model_admitted": {
+          "const": true
+        },
+        "malformed_rejected": {
+          "const": true
+        },
+        "duplicate_section_rejected": {
+          "const": true
+        },
+        "unknown_edge_rejected": {
+          "const": true
+        },
+        "nonfinite_rejected": {
+          "const": true
+        },
+        "missing_c_rejected": {
+          "const": true
+        },
+        "wrong_shape_rejected": {
+          "const": true
+        },
+        "invalid_probability_rejected": {
+          "const": true
+        },
+        "catalog_complete": {
+          "const": true
+        },
+        "all_consumers_source_bound": {
+          "const": true
+        },
+        "all_categorical_models_executed": {
+          "const": true
+        },
+        "c_mutation_changes_real_policy": {
+          "const": true
+        },
+        "d_mutation_changes_real_posterior": {
+          "const": true
+        }
+      }
+    },
+    "all_controls_pass": {
+      "const": true
+    },
+    "claim_boundary": {
+      "type": "string",
+      "pattern": "not empirical"
+    }
+  }
+}

@@ -24,6 +24,8 @@ from __future__ import annotations
 
 from typing import Any
 
+from modeling.registry import model_parameters
+
 import numpy as np
 
 
@@ -74,8 +76,11 @@ def _synergistic_xor_joint() -> np.ndarray:
     return joint
 
 
-def _redundant_screen_joint(internal_fidelity: float = 0.85, external_fidelity: float = 0.8) -> np.ndarray:
+def _redundant_screen_joint(internal_fidelity: float | None = None, external_fidelity: float | None = None) -> np.ndarray:
     """Common cause: B uniform, I and E each track B independently, so I _||_ E | B (a clean screen)."""
+    parameters = model_parameters("finite_interaction_information")
+    internal_fidelity = parameters["internal_fidelity"] if internal_fidelity is None else internal_fidelity
+    external_fidelity = parameters["external_fidelity"] if external_fidelity is None else external_fidelity
     joint = np.zeros((2, 2, 2))
     for b in (0, 1):
         for i in (0, 1):

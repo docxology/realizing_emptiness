@@ -1,7 +1,7 @@
 {
   "all_controls_pass": true,
   "claim_boundary": "artifact contract registry for finite software validation; not empirical, clinical, neural, practice-efficacy, awakening, or physical qFEP evidence",
-  "contract_count": 148,
+  "contract_count": 149,
   "controls": {
     "all_json_data_artifacts_have_schema": true,
     "all_rows_have_claim_boundary": true,
@@ -12,6 +12,17 @@
   "duplicate_ids": [],
   "missing_schema_paths": [],
   "rows": [
+    {
+      "claim_boundary": "artifact contract registry for finite software validation; not empirical, clinical, neural, practice-efficacy, awakening, or physical qFEP evidence",
+      "dashboard_group": "data-artifacts",
+      "id": "gnn_model_audit",
+      "kind": "data",
+      "manuscript_role": "validator_audit",
+      "path": "output/data/gnn_model_audit.json",
+      "path_exists": true,
+      "schema": "realizing_emptiness.gnn_model_audit.v1",
+      "schema_path": "schemas/gnn_model_audit.schema.json"
+    },
     {
       "claim_boundary": "artifact contract registry for finite software validation; not empirical, clinical, neural, practice-efficacy, awakening, or physical qFEP evidence",
       "dashboard_group": "data-artifacts",
@@ -955,7 +966,7 @@
       "manuscript_role": "generated_data",
       "path": "output/data/artifact_dashboard_payload.json",
       "path_exists": true,
-      "schema": "realizing_emptiness.artifact_dashboard_payload.v2",
+      "schema": "realizing_emptiness.artifact_dashboard_payload.v3",
       "schema_path": "schemas/artifact_dashboard_payload.schema.json"
     },
     {

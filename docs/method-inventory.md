@@ -22,16 +22,16 @@
 | src/formalism/compose.py | 25 | function | `_track_heading` | No docstring. |
 | src/formalism/compose.py | 35 | function | `_cover_graphical_abstract_block` | No docstring. |
 | src/formalism/compose.py | 47 | function | `compose` | No docstring. |
-| src/formalism/equations.py | 38 | function | `_operational_status` | No docstring. |
-| src/formalism/equations.py | 43 | class | `EquationSurrogate` | Metadata for one paper equation and its software status. |
-| src/formalism/equations.py | 54 | function | `as_dict` | Serialize equation metadata. |
-| src/formalism/equations.py | 74 | function | `equation_registry` | Return the complete equation registry for paper equations 1-14. |
-| src/formalism/equations.py | 94 | function | `_softmax` | No docstring. |
-| src/formalism/equations.py | 100 | function | `_deployment_free_energy` | Return a deterministic finite free energy F = complexity - accuracy for a deployment. |
-| src/formalism/equations.py | 112 | function | `_strict_superset_witness` | Return whether some non-admissible deployment in ``roster`` beats every dual one. |
-| src/formalism/equations.py | 131 | function | `_containment_audit` | Derive eqs 13-14 solution-set containment from measured free energy. |
-| src/formalism/equations.py | 160 | function | `render_equation_crosswalk` | Render a paper-to-software equation crosswalk from the formalism registry. |
-| src/formalism/equations.py | 209 | function | `evaluate_equation_surrogates` | Evaluate deterministic finite surrogates for all computable equations. |
+| src/formalism/equations.py | 40 | function | `_operational_status` | No docstring. |
+| src/formalism/equations.py | 45 | class | `EquationSurrogate` | Metadata for one paper equation and its software status. |
+| src/formalism/equations.py | 56 | function | `as_dict` | Serialize equation metadata. |
+| src/formalism/equations.py | 76 | function | `equation_registry` | Return the complete equation registry for paper equations 1-14. |
+| src/formalism/equations.py | 96 | function | `_softmax` | No docstring. |
+| src/formalism/equations.py | 102 | function | `_deployment_free_energy` | Return a deterministic finite free energy F = complexity - accuracy for a deployment. |
+| src/formalism/equations.py | 115 | function | `_strict_superset_witness` | Return whether some non-admissible deployment in ``roster`` beats every dual one. |
+| src/formalism/equations.py | 134 | function | `_containment_audit` | Derive eqs 13-14 solution-set containment from measured free energy. |
+| src/formalism/equations.py | 163 | function | `render_equation_crosswalk` | Render a paper-to-software equation crosswalk from the formalism registry. |
+| src/formalism/equations.py | 212 | function | `evaluate_equation_surrogates` | Evaluate deterministic finite surrogates for all computable equations. |
 | src/formalism/governance.py | 108 | function | `build_method_assumption_ledger` | Return the method assumption ledger. |
 | src/formalism/governance.py | 122 | function | `build_method_negative_control_inventory` | Return method-to-negative-control coverage rows. |
 | src/formalism/governance.py | 146 | function | `write_method_governance_artifacts` | Write method governance JSON artifacts. |
@@ -46,34 +46,34 @@
 | src/formalism/manuscript.py | 296 | function | `write_manuscript_claim_intensity_audit` | Write the sentence-level manuscript claim-intensity audit. |
 | src/formalism/models.py | 13 | class | `BoundaryScreen` | Finite boundary screen carrying binary observation channels. |
 | src/formalism/models.py | 20 | function | `default` | Create a named finite boundary screen. |
-| src/formalism/models.py | 24 | function | `validate` | Reject malformed boundary screens. |
-| src/formalism/models.py | 31 | function | `all_bitstrings` | Enumerate all binary strings over the boundary. |
-| src/formalism/models.py | 43 | class | `QRFDeployment` | A QRF deployment as a semantic sector label per boundary channel. |
-| src/formalism/models.py | 51 | function | `validate` | Check deployment dimensions and parameter ranges. |
-| src/formalism/models.py | 62 | function | `is_dual` | Return whether the deployment preserves only self/env labels. |
-| src/formalism/models.py | 67 | function | `flexibility` | Operational flexibility score used by the finite surrogate. |
-| src/formalism/models.py | 72 | function | `as_dict` | Serialize deployment to JSON-compatible data. |
-| src/formalism/models.py | 85 | class | `Sectorisation` | Grouped view of a QRF deployment. |
-| src/formalism/models.py | 92 | function | `from_deployment` | Build sector-to-channel mapping from channel labels. |
-| src/formalism/models.py | 99 | function | `as_dict` | Serialize grouped sectorisation. |
-| src/formalism/models.py | 105 | class | `SeparationPrior` | Structural prior that restricts admissible deployments to dual sectorisations. |
-| src/formalism/models.py | 111 | function | `complexity_cost` | Return a positive complexity cost for the structural prior. |
-| src/formalism/models.py | 115 | function | `admissible` | Restrict deployments if the prior remains enforced. |
-| src/formalism/models.py | 122 | function | `complexity_kl` | Return the categorical KL complexity D_KL[Q(s) || P(s|m)] for eq 11. |
-| src/formalism/models.py | 148 | function | `vfe_noise_insufficient_learning` | Decompose a finite VFE-style surprise into noise and insufficient learning (eq 6). |
-| src/formalism/models.py | 184 | class | `FreeEnergyTerms` | Finite free-energy decomposition used by the surrogate. |
-| src/formalism/models.py | 192 | function | `from_distributions` | Build VFE terms from finite categorical distributions (eq 11 worked example). |
-| src/formalism/models.py | 217 | function | `free_energy` | Compute F = complexity - accuracy + noise. |
-| src/formalism/models.py | 221 | function | `as_dict` | Serialize terms. |
-| src/formalism/models.py | 232 | class | `BMRComparison` | Bayesian model-reduction comparison between full and reduced models. |
-| src/formalism/models.py | 239 | function | `delta_complexity` | Reduced-minus-full complexity. |
-| src/formalism/models.py | 244 | function | `delta_accuracy` | Reduced-minus-full accuracy. |
-| src/formalism/models.py | 249 | function | `delta_free_energy` | Delta F = Delta complexity - Delta accuracy, with noise folded into F. |
-| src/formalism/models.py | 254 | function | `prunes_prior` | Return whether the reduced model is preferred. |
-| src/formalism/models.py | 258 | function | `as_dict` | Serialize BMR comparison. |
-| src/formalism/review_response_bmr.py | 11 | function | `bmr_comparison` | No docstring. |
-| src/formalism/review_response_bmr.py | 37 | function | `crossing_for_prior` | No docstring. |
-| src/formalism/review_response_bmr.py | 56 | function | `build_bmr_alternative_prior_audit` | No docstring. |
+| src/formalism/models.py | 27 | function | `validate` | Reject malformed boundary screens. |
+| src/formalism/models.py | 34 | function | `all_bitstrings` | Enumerate all binary strings over the boundary. |
+| src/formalism/models.py | 46 | class | `QRFDeployment` | A QRF deployment as a semantic sector label per boundary channel. |
+| src/formalism/models.py | 54 | function | `validate` | Check deployment dimensions and parameter ranges. |
+| src/formalism/models.py | 65 | function | `is_dual` | Return whether the deployment preserves only self/env labels. |
+| src/formalism/models.py | 70 | function | `flexibility` | Operational flexibility score used by the finite surrogate. |
+| src/formalism/models.py | 78 | function | `as_dict` | Serialize deployment to JSON-compatible data. |
+| src/formalism/models.py | 91 | class | `Sectorisation` | Grouped view of a QRF deployment. |
+| src/formalism/models.py | 98 | function | `from_deployment` | Build sector-to-channel mapping from channel labels. |
+| src/formalism/models.py | 105 | function | `as_dict` | Serialize grouped sectorisation. |
+| src/formalism/models.py | 111 | class | `SeparationPrior` | Structural prior that restricts admissible deployments to dual sectorisations. |
+| src/formalism/models.py | 117 | function | `complexity_cost` | Return a positive complexity cost for the structural prior. |
+| src/formalism/models.py | 121 | function | `admissible` | Restrict deployments if the prior remains enforced. |
+| src/formalism/models.py | 128 | function | `complexity_kl` | Return the categorical KL complexity D_KL[Q(s) || P(s|m)] for eq 11. |
+| src/formalism/models.py | 154 | function | `vfe_noise_insufficient_learning` | Decompose a finite VFE-style surprise into noise and insufficient learning (eq 6). |
+| src/formalism/models.py | 190 | class | `FreeEnergyTerms` | Finite free-energy decomposition used by the surrogate. |
+| src/formalism/models.py | 198 | function | `from_distributions` | Build VFE terms from finite categorical distributions (eq 11 worked example). |
+| src/formalism/models.py | 223 | function | `free_energy` | Compute F = complexity - accuracy + noise. |
+| src/formalism/models.py | 227 | function | `as_dict` | Serialize terms. |
+| src/formalism/models.py | 238 | class | `BMRComparison` | Bayesian model-reduction comparison between full and reduced models. |
+| src/formalism/models.py | 245 | function | `delta_complexity` | Reduced-minus-full complexity. |
+| src/formalism/models.py | 250 | function | `delta_accuracy` | Reduced-minus-full accuracy. |
+| src/formalism/models.py | 255 | function | `delta_free_energy` | Delta F = Delta complexity - Delta accuracy, with noise folded into F. |
+| src/formalism/models.py | 260 | function | `prunes_prior` | Return whether the reduced model is preferred. |
+| src/formalism/models.py | 264 | function | `as_dict` | Serialize BMR comparison. |
+| src/formalism/review_response_bmr.py | 12 | function | `bmr_comparison` | No docstring. |
+| src/formalism/review_response_bmr.py | 39 | function | `crossing_for_prior` | No docstring. |
+| src/formalism/review_response_bmr.py | 58 | function | `build_bmr_alternative_prior_audit` | No docstring. |
 | src/formalism/review_response_common.py | 35 | function | `load_json` | No docstring. |
 | src/formalism/review_response_common.py | 42 | function | `load_yaml` | No docstring. |
 | src/formalism/review_response_common.py | 47 | function | `sha256` | No docstring. |
@@ -145,250 +145,272 @@
 | src/gates/roadmap.py | 165 | function | `build_roadmap_todo_audit` | Build a fail-closed audit linking TODO rows to machine roadmap state. |
 | src/gates/roadmap.py | 236 | function | `build_validation_dependency_graph` | Build an explicit dependency graph for artifacts, validators, figures, and render gates. |
 | src/gates/roadmap.py | 559 | function | `write_roadmap_governance_artifacts` | Write roadmap/TODO and dependency-graph artifacts. |
-| src/gates/validation.py | 370 | function | `_reject_json_constant` | No docstring. |
-| src/gates/validation.py | 374 | function | `_finite_json_float` | No docstring. |
-| src/gates/validation.py | 381 | function | `_criticality_stochastic_ensemble_matches` | No docstring. |
-| src/gates/validation.py | 415 | function | `matches` | No docstring. |
-| src/gates/validation.py | 469 | function | `_load_json` | No docstring. |
-| src/gates/validation.py | 487 | function | `_exists` | No docstring. |
-| src/gates/validation.py | 491 | function | `_release_file_fingerprints` | No docstring. |
-| src/gates/validation.py | 503 | function | `_load_yaml` | No docstring. |
-| src/gates/validation.py | 508 | function | `_model_from_audit_row` | No docstring. |
-| src/gates/validation.py | 515 | function | `_pymdp_trace_math_ok` | No docstring. |
-| src/gates/validation.py | 578 | function | `_pymdp_runtime_log_ok` | No docstring. |
-| src/gates/validation.py | 611 | function | `_valid_schema` | No docstring. |
-| src/gates/validation.py | 621 | function | `_schema_check` | No docstring. |
-| src/gates/validation.py | 636 | function | `_subsection_anchor_audit` | No docstring. |
-| src/gates/validation.py | 689 | function | `_permutation_metadata_matches` | No docstring. |
-| src/gates/validation.py | 722 | function | `validate_outputs` | Return named output checks. |
-| src/gates/validation.py | 2018 | function | `write_validation_report` | Write validation report to output/reports. |
-| src/gates/validation.py | 2034 | function | `_tracked_doc_paths` | Return the documentation files governed by the contract. |
-| src/gates/validation.py | 2041 | function | `check_documentation_contract` | Check project docs for stale identity, machine paths, orphans, and broken links. |
-| src/practice/protocols.py | 8 | function | `practice_protocol_map` | Return bounded practice protocol mappings for software interfaces. |
+| src/gates/validation.py | 375 | function | `_reject_json_constant` | No docstring. |
+| src/gates/validation.py | 379 | function | `_finite_json_float` | No docstring. |
+| src/gates/validation.py | 386 | function | `_criticality_stochastic_ensemble_matches` | No docstring. |
+| src/gates/validation.py | 421 | function | `matches` | No docstring. |
+| src/gates/validation.py | 475 | function | `_load_json` | No docstring. |
+| src/gates/validation.py | 493 | function | `_exists` | No docstring. |
+| src/gates/validation.py | 497 | function | `_release_file_fingerprints` | No docstring. |
+| src/gates/validation.py | 509 | function | `_load_yaml` | No docstring. |
+| src/gates/validation.py | 514 | function | `_model_from_audit_row` | No docstring. |
+| src/gates/validation.py | 521 | function | `_pymdp_trace_math_ok` | No docstring. |
+| src/gates/validation.py | 584 | function | `_pymdp_runtime_log_ok` | No docstring. |
+| src/gates/validation.py | 617 | function | `_valid_schema` | No docstring. |
+| src/gates/validation.py | 627 | function | `_schema_check` | No docstring. |
+| src/gates/validation.py | 642 | function | `_subsection_anchor_audit` | No docstring. |
+| src/gates/validation.py | 695 | function | `_permutation_metadata_matches` | No docstring. |
+| src/gates/validation.py | 728 | function | `validate_outputs` | Return named output checks. |
+| src/gates/validation.py | 2033 | function | `write_validation_report` | Write validation report to output/reports. |
+| src/gates/validation.py | 2049 | function | `_tracked_doc_paths` | Return the documentation files governed by the contract. |
+| src/gates/validation.py | 2056 | function | `check_documentation_contract` | Check project docs for stale identity, machine paths, orphans, and broken links. |
+| src/modeling/audit.py | 28 | function | `_digest` | No docstring. |
+| src/modeling/audit.py | 32 | function | `_file_hash` | No docstring. |
+| src/modeling/audit.py | 36 | function | `_upstream` | No docstring. |
+| src/modeling/audit.py | 56 | function | `_consumer_binding` | No docstring. |
+| src/modeling/audit.py | 86 | function | `_native_probe` | No docstring. |
+| src/modeling/audit.py | 129 | function | `_replace_parameter` | No docstring. |
+| src/modeling/audit.py | 133 | function | `_admission_controls` | No docstring. |
+| src/modeling/audit.py | 154 | function | `build_gnn_model_audit` | Recompute model admission, implementation provenance, and native execution evidence. |
+| src/modeling/audit.py | 209 | function | `_equivalent` | No docstring. |
+| src/modeling/audit.py | 219 | function | `gnn_model_audit_matches` | Reject missing, forged, stale, or non-reproducible receipts by independent reconstruction. |
+| src/modeling/registry.py | 29 | class | `ModelSpecification` | A source-bound declaration admitted by upstream and project contracts. |
+| src/modeling/registry.py | 41 | function | `upstream_identity` | No docstring. |
+| src/modeling/registry.py | 46 | function | `specification_root` | Select real alternate specification files for controlled experiments and tests. |
+| src/modeling/registry.py | 55 | function | `specification_paths` | No docstring. |
+| src/modeling/registry.py | 63 | function | `_finite_tree` | No docstring. |
+| src/modeling/registry.py | 75 | function | `parse_model` | Reject lossy parser recovery, then consume the actual upstream typed IR. |
+| src/modeling/registry.py | 137 | function | `_parse_cached` | No docstring. |
+| src/modeling/registry.py | 141 | function | `load_model` | No docstring. |
+| src/modeling/registry.py | 149 | function | `model_parameters` | No docstring. |
+| src/practice/protocols.py | 9 | function | `practice_protocol_map` | Return bounded practice protocol mappings for software interfaces. |
 | src/simulation/blackwell_ordering.py | 37 | function | `_bayes_error` | Bayes risk of the optimal decision rule under 0-1 loss: 1 - sum_o max_state p(state) p(o|state). |
-| src/simulation/blackwell_ordering.py | 43 | function | `_relabel` | Invertible relabeling: permute the outcome columns (a reversible post-processing). |
-| src/simulation/blackwell_ordering.py | 48 | function | `_garble` | Row-stochastic post-processing G; A' = A @ G. Lossy unless G is a permutation. |
-| src/simulation/blackwell_ordering.py | 54 | function | `build_blackwell_bayes_risk_audit` | Finite Blackwell ordering surrogate with relabel-preserves and garble-degrades controls. |
-| src/simulation/bmr.py | 16 | function | `compare_models` | Compare full and reduced models at one point in the finite sweep. |
-| src/simulation/bmr.py | 33 | function | `run_bmr_sweep` | Run deterministic BMR sweep over prior precision and metacognitive access. |
-| src/simulation/bmr.py | 61 | function | `write_bmr_sweep` | Write BMR sweep JSON and CSV artifacts. |
-| src/simulation/classical_data_processing.py | 35 | function | `_mutual_information` | I(X;Y) in bits from a 2D joint distribution. |
-| src/simulation/classical_data_processing.py | 47 | function | `_chain_informations` | Return (I(interior;external), I(blanket;external)) for the chain external -> blanket -> interior. |
-| src/simulation/classical_data_processing.py | 63 | function | `build_classical_data_processing_audit` | Finite classical data-processing surrogate with a sufficiency-saturation discriminating control. |
-| src/simulation/compassion_scope.py | 54 | function | `compassion_boundary_stream` | Return a finite boundary stream with heterogeneous per-channel action-contingency. |
-| src/simulation/compassion_scope.py | 92 | function | `channel_influence` | Return a per-channel realised action-influence score in [0, 1]. |
-| src/simulation/compassion_scope.py | 122 | function | `_precision_weights` | Return per-channel concern precision under the separation prior. |
-| src/simulation/compassion_scope.py | 140 | function | `compute_scope_of_concern` | Return the finite self/non-self concern split for one deployment. |
-| src/simulation/compassion_scope.py | 188 | function | `_is_monotone_increasing` | No docstring. |
-| src/simulation/compassion_scope.py | 192 | function | `build_compassion_scope_audit` | Audit scope-of-concern widening across profiles, with separable controls for the two |
-| src/simulation/criticality.py | 17 | function | `branching_ratio` | Return the finite branching ratio sigma = descendants per ancestor over an activity series. |
-| src/simulation/criticality.py | 42 | function | `avalanche_size_distribution` | Extract avalanche sizes from supra-threshold runs of an activity series. |
-| src/simulation/criticality.py | 81 | function | `_power_law_vs_exponential_llr` | Return a finite per-sample log-likelihood ratio favoring a power-law over an exponential. |
-| src/simulation/criticality.py | 103 | function | `criticality_signatures` | Bundle the measured criticality signatures and a DERIVED criticality index. |
-| src/simulation/criticality.py | 120 | function | `_planted_geometric_activity` | Return a geometric activity series whose exact branching ratio is ``sigma``. |
-| src/simulation/criticality.py | 125 | function | `branching_estimator_calibration` | Positive control: the branching estimator recovers a planted branching ratio. |
-| src/simulation/criticality.py | 146 | function | `_activity_series` | Return a per-step boundary-channel activity series (count of channel flips). |
-| src/simulation/criticality.py | 156 | function | `build_criticality_report` | Measure branching and avalanche sizes on one finite boundary-channel trace. |
-| src/simulation/criticality.py | 171 | function | `_interval` | No docstring. |
-| src/simulation/criticality.py | 184 | function | `_branching_observations` | No docstring. |
-| src/simulation/criticality.py | 200 | function | `_branching_by_run` | No docstring. |
-| src/simulation/criticality.py | 205 | function | `build_criticality_stochastic_ensemble` | Summarize seeded active-inference ensembles as simulated criticality indicators. |
-| src/simulation/criticality.py | 253 | function | `_ci_disjoint` | True iff the real and null 95% confidence intervals for ``metric`` do not overlap. |
-| src/simulation/emergence.py | 33 | function | `emergence_trajectory` | Build a boundary stream where a fraction ``empowerment`` of channels track the action. |
-| src/simulation/emergence.py | 68 | function | `_mode_predictor_error` | Return the mean bit error of a per-channel mode predictor. |
-| src/simulation/emergence.py | 91 | function | `score_factored_vs_unfactored` | Return the measured prediction errors of the factored and unfactored predictors. |
-| src/simulation/emergence.py | 116 | function | `_window_error` | Mean bit error when the channels in ``self_set`` are action-conditioned, the rest marginal. |
-| src/simulation/emergence.py | 123 | function | `_best_self_set` | Post-dual revision: action-condition a channel only when that MATERIALLY lowers its error. |
-| src/simulation/emergence.py | 140 | function | `_run_revision_stream` | Run one rigid-vs-revising comparison over a (possibly) non-stationary boundary stream. |
-| src/simulation/emergence.py | 186 | function | `build_ongoing_revision_audit` | Operationalize the post-dual agent's ongoing revision under non-stationarity (5.2/5.3). |
-| src/simulation/emergence.py | 218 | function | `_action_shuffled_factored_advantage` | Mean factored advantage after permuting the action sequence relative to the observations. |
-| src/simulation/emergence.py | 241 | function | `build_separation_prior_emergence_audit` | Audit when a factored self/env model buys predictive accuracy over an unfactored model. |
-| src/simulation/interaction_information.py | 37 | function | `_conditional_mutual_information` | I(I;E|B) in bits for a joint indexed [internal, blanket, external]. |
-| src/simulation/interaction_information.py | 55 | function | `_marginal_mutual_information` | I(I;E) in bits, marginalising out the blanket. |
-| src/simulation/interaction_information.py | 68 | function | `_synergistic_xor_joint` | B = I XOR E with I, E independent and uniform: marginal I(I;E) = 0 exactly, I(I;E|B) = 1 bit. |
-| src/simulation/interaction_information.py | 77 | function | `_redundant_screen_joint` | Common cause: B uniform, I and E each track B independently, so I _||_ E | B (a clean screen). |
-| src/simulation/interaction_information.py | 89 | function | `_independent_null_joint` | All three variables independent and uniform: no structure, so II = 0. |
-| src/simulation/interaction_information.py | 94 | function | `build_interaction_information_boundary_audit` | Finite interaction-information surrogate with synergy, redundancy, and null regimes. |
-| src/simulation/markov_blanket.py | 60 | function | `_precision_from_edges` | No docstring. |
-| src/simulation/markov_blanket.py | 68 | function | `_correlation_from_precision` | No docstring. |
-| src/simulation/markov_blanket.py | 74 | function | `_partial_correlation` | No docstring. |
-| src/simulation/markov_blanket.py | 81 | function | `_neighbors` | Markov blanket of ``nodes``: graph neighbors of the node set, excluding the set itself. |
-| src/simulation/markov_blanket.py | 92 | function | `_f1` | No docstring. |
-| src/simulation/markov_blanket.py | 105 | function | `_support_adjacency` | No docstring. |
-| src/simulation/markov_blanket.py | 111 | function | `_marginal_recovers_blanket` | True iff some marginal-correlation threshold recovers the blanket of INTERNAL exactly. |
-| src/simulation/markov_blanket.py | 122 | function | `_perturbation_ensemble` | Perturb the planted edge weights (preserving the structural internal-external zeros) and measure |
-| src/simulation/markov_blanket.py | 152 | function | `build_markov_blanket_discovery_audit` | Recover a planted Markov boundary from conditional independence, invisible to the marginal. |
-| src/simulation/pymdp_profiles.py | 31 | function | `_shannon_entropy` | Return the natural-log Shannon entropy of a probability vector (0 for a point mass). |
-| src/simulation/pymdp_profiles.py | 39 | class | `ProfileSpec` | Profile-specific active-inference generative-model parameters. |
-| src/simulation/pymdp_profiles.py | 49 | function | `softmax_negative` | Return a normalized softmax over negative values for policy selection. |
-| src/simulation/pymdp_profiles.py | 56 | function | `normalize_probability` | Normalize a nonnegative probability vector and fail on zero mass. |
-| src/simulation/pymdp_profiles.py | 65 | function | `_normalise_columns` | Normalize every column of a likelihood or transition matrix. |
-| src/simulation/pymdp_profiles.py | 70 | function | `profile_specs` | Return the public finite QRF profile specifications. |
-| src/simulation/pymdp_profiles.py | 80 | function | `_likelihood_matrix` | Create A matrix mapping hidden QRF state to observation cue. |
-| src/simulation/pymdp_profiles.py | 89 | function | `_transition_tensor` | Create B tensor for stabilize, inspect, and release actions. |
-| src/simulation/pymdp_profiles.py | 121 | function | `build_profile_generative_model` | Build explicit A/B/C/D arrays for one QRF profile. |
-| src/simulation/pymdp_profiles.py | 141 | function | `expected_free_energy_values` | Compute finite expected-free-energy surrogates for every action. |
-| src/simulation/pymdp_profiles.py | 146 | function | `expected_free_energy_terms` | Return risk/ambiguity/expected-free-energy terms for each action. |
-| src/simulation/pymdp_profiles.py | 174 | function | `_agent_from_model` | Construct the pinned pymdp Agent from one explicit A/B/C/D model. |
-| src/simulation/pymdp_profiles.py | 190 | function | `_array_payload` | Serialize an array with shape and rounded values for audit JSON. |
-| src/simulation/pymdp_profiles.py | 198 | function | `_model_hash` | Hash rounded A/B/C/D arrays so model drift is visible in diagnostics. |
-| src/simulation/pymdp_profiles.py | 208 | function | `_package_version` | Return the installed package version or an explicit not-installed marker. |
-| src/simulation/pymdp_profiles.py | 216 | function | `_term_residuals` | Compute maximum saved-vs-recomputed residuals for EFE term fields. |
-| src/simulation/pymdp_profiles.py | 229 | function | `build_generative_model_audit` | Audit profile-specific A/B/C/D arrays and their normalization. |
-| src/simulation/pymdp_profiles.py | 266 | function | `_extract_state_posterior` | Flatten the latest pymdp state posterior into a one-dimensional vector. |
-| src/simulation/pymdp_profiles.py | 272 | function | `_simulate_profile` | Run one deterministic profile trace and summarize its action choices. |
-| src/simulation/pymdp_profiles.py | 343 | function | `run_policy_trace` | Run a deterministic multi-profile pymdp policy trace. |
-| src/simulation/pymdp_profiles.py | 367 | function | `pymdp_runtime_dependency_check` | Verify the pinned pymdp runtime surface without asserting model validity. |
-| src/simulation/pymdp_profiles.py | 409 | function | `run_profile_comparison` | Compare QRF profiles using a deterministic pymdp policy trace. |
-| src/simulation/pymdp_profiles.py | 461 | function | `build_pymdp_runtime_diagnostics_log` | Build the four-layer runtime/model/trace/replay diagnostics log. |
-| src/simulation/qrf_env.py | 20 | function | `default_deployments` | Return the three v1 QRF profiles. |
-| src/simulation/qrf_env.py | 38 | function | `simulate_boundary_trajectory` | Generate deterministic boundary observations for finite profile comparison. |
-| src/simulation/qrf_env.py | 71 | function | `_uniform_boundary_distribution` | No docstring. |
-| src/simulation/qrf_env.py | 77 | function | `boundary_indistinguishability_audit` | Check that admissible QRF labels do not change boundary probabilities. |
-| src/simulation/qrf_env.py | 112 | function | `boundary_channel_ledger` | Return the b0-b5 QRF channel ledger used by the relabeling figure and source-fit audits. |
-| src/simulation/qrf_env.py | 179 | function | `score_deployment` | Score a deployment by deterministic prediction, flexibility, and scope. |
-| src/simulation/quantum_estimation.py | 38 | function | `_density` | No docstring. |
-| src/simulation/quantum_estimation.py | 42 | function | `_d_density` | No docstring. |
-| src/simulation/quantum_estimation.py | 46 | function | `_symmetric_logarithmic_derivative` | SLD operator L solving rho L + L rho = 2 d_rho, via the eigenbasis spectral formula. |
-| src/simulation/quantum_estimation.py | 59 | function | `_quantum_fisher_information` | QFI = Tr[d_rho L] with L the symmetric logarithmic derivative. |
-| src/simulation/quantum_estimation.py | 64 | function | `_sld_optimal_axis` | Bloch axis of the SLD-eigenbasis measurement, which saturates the quantum Cramer-Rao bound. |
-| src/simulation/quantum_estimation.py | 76 | function | `_classical_fisher_information` | Classical Fisher information of the projective measurement along ``axis`` (Bloch direction). |
-| src/simulation/quantum_estimation.py | 86 | function | `_coherent_bloch` | No docstring. |
-| src/simulation/quantum_estimation.py | 90 | function | `_coherent_d_bloch` | No docstring. |
-| src/simulation/quantum_estimation.py | 94 | function | `_classical_bloch` | No docstring. |
-| src/simulation/quantum_estimation.py | 98 | function | `_classical_d_bloch` | No docstring. |
-| src/simulation/quantum_estimation.py | 102 | function | `build_quantum_cramer_rao_estimation_audit` | Finite quantum Cramer-Rao estimation surrogate with a coherent-vs-classical discriminating control. |
-| src/simulation/quantum_estimation.py | 118 | function | `family_rows` | No docstring. |
-| src/simulation/quantum_surrogates.py | 93 | function | `_state` | No docstring. |
-| src/simulation/quantum_surrogates.py | 100 | function | `_density` | No docstring. |
-| src/simulation/quantum_surrogates.py | 104 | function | `_reduced_first_qubit` | No docstring. |
-| src/simulation/quantum_surrogates.py | 109 | function | `_reduced_second_qubit` | No docstring. |
-| src/simulation/quantum_surrogates.py | 114 | function | `_entropy_bits` | No docstring. |
-| src/simulation/quantum_surrogates.py | 121 | function | `_shannon_bits` | No docstring. |
-| src/simulation/quantum_surrogates.py | 127 | function | `_local_rotation` | No docstring. |
-| src/simulation/quantum_surrogates.py | 133 | function | `_rotated_density` | No docstring. |
-| src/simulation/quantum_surrogates.py | 139 | function | `_chsh_max` | No docstring. |
-| src/simulation/quantum_surrogates.py | 143 | function | `_chsh_contexts` | No docstring. |
-| src/simulation/quantum_surrogates.py | 152 | function | `_joint_probability_rows` | No docstring. |
-| src/simulation/quantum_surrogates.py | 171 | function | `_chsh_rows_for_model` | No docstring. |
-| src/simulation/quantum_surrogates.py | 196 | function | `_chsh_value` | No docstring. |
-| src/simulation/quantum_surrogates.py | 200 | function | `_normalization_errors` | No docstring. |
-| src/simulation/quantum_surrogates.py | 209 | function | `_marginal` | No docstring. |
-| src/simulation/quantum_surrogates.py | 220 | function | `_no_signaling_errors` | No docstring. |
-| src/simulation/quantum_surrogates.py | 247 | function | `_deterministic_assignments` | No docstring. |
-| src/simulation/quantum_surrogates.py | 257 | function | `_probability_vector` | No docstring. |
-| src/simulation/quantum_surrogates.py | 268 | function | `_local_polytope_matrix` | No docstring. |
-| src/simulation/quantum_surrogates.py | 283 | function | `_local_polytope_fit` | No docstring. |
-| src/simulation/quantum_surrogates.py | 342 | function | `_bell_dephased_density` | No docstring. |
-| src/simulation/quantum_surrogates.py | 351 | function | `_product_density` | No docstring. |
-| src/simulation/quantum_surrogates.py | 357 | function | `_bell_state_vector` | No docstring. |
-| src/simulation/quantum_surrogates.py | 364 | function | `_matrix_is_hermitian` | No docstring. |
-| src/simulation/quantum_surrogates.py | 368 | function | `_lindblad_superoperator` | Return a column-vectorized Lindblad generator superoperator. |
-| src/simulation/quantum_surrogates.py | 381 | function | `_evolve_density_lindblad` | No docstring. |
-| src/simulation/quantum_surrogates.py | 388 | function | `_density_metrics` | No docstring. |
-| src/simulation/quantum_surrogates.py | 409 | function | `_density_validity` | No docstring. |
-| src/simulation/quantum_surrogates.py | 426 | function | `_partial_transpose_second_qubit` | No docstring. |
-| src/simulation/quantum_surrogates.py | 431 | function | `_negativity` | No docstring. |
-| src/simulation/quantum_surrogates.py | 438 | function | `_werner_state` | No docstring. |
-| src/simulation/quantum_surrogates.py | 443 | function | `_partial_trace_pure_state` | No docstring. |
-| src/simulation/quantum_surrogates.py | 452 | function | `_many_body_bell_pair_state` | No docstring. |
-| src/simulation/quantum_surrogates.py | 464 | function | `_many_body_product_state` | No docstring. |
-| src/simulation/quantum_surrogates.py | 476 | function | `_von_neumann_entropy_bits` | Return the von Neumann entropy of a density matrix in bits. |
-| src/simulation/quantum_surrogates.py | 483 | function | `_env_bipartitions` | Enumerate non-trivial bipartitions of the environment qubits (deduplicated by lowest index). |
-| src/simulation/quantum_surrogates.py | 497 | function | `build_internal_cut_unmeasurability_audit` | Generalise the no-self-evidence result to arbitrary internal boundaries (section 3.3). |
-| src/simulation/quantum_surrogates.py | 517 | function | `env_state` | No docstring. |
-| src/simulation/quantum_surrogates.py | 571 | function | `_scenario_probability_vector` | No docstring. |
-| src/simulation/quantum_surrogates.py | 576 | function | `_measurement_assignments` | No docstring. |
-| src/simulation/quantum_surrogates.py | 583 | function | `_generic_polytope_fit` | No docstring. |
-| src/simulation/quantum_surrogates.py | 634 | function | `_pair_context_rows` | No docstring. |
-| src/simulation/quantum_surrogates.py | 656 | function | `_no_disturbance_error` | No docstring. |
-| src/simulation/quantum_surrogates.py | 674 | function | `_normalise_probability` | No docstring. |
-| src/simulation/quantum_surrogates.py | 682 | function | `_kraus_cptp_error` | No docstring. |
-| src/simulation/quantum_surrogates.py | 692 | function | `_apply_kraus_channel` | No docstring. |
-| src/simulation/quantum_surrogates.py | 699 | function | `_swap_unitary_two_qubit` | No docstring. |
-| src/simulation/quantum_surrogates.py | 709 | function | `_basis_permutation_for_unitary` | No docstring. |
-| src/simulation/quantum_surrogates.py | 716 | function | `_dephasing_metric_row` | No docstring. |
-| src/simulation/quantum_surrogates.py | 745 | function | `_row` | No docstring. |
-| src/simulation/quantum_surrogates.py | 771 | function | `_basis_invariance_rows` | No docstring. |
-| src/simulation/quantum_surrogates.py | 791 | function | `build_quantum_boundary_entropy` | Build finite two-qubit entropy, CHSH, and basis-invariance artifacts. |
-| src/simulation/quantum_surrogates.py | 829 | function | `build_quantum_open_system_dynamics` | Build finite dephasing-channel dynamics for Bell and product controls. |
-| src/simulation/quantum_surrogates.py | 886 | function | `build_quantum_measurement_contextuality` | Build a finite CHSH measurement-cover empirical model and controls. |
-| src/simulation/quantum_surrogates.py | 948 | function | `build_qfep_boundary_hamiltonian_dynamics` | Build finite boundary-Hamiltonian Lindblad dynamics for the roadmap qFEP engine. |
-| src/simulation/quantum_surrogates.py | 1032 | function | `_trace_distance` | No docstring. |
-| src/simulation/quantum_surrogates.py | 1037 | function | `build_quantum_trajectory_unraveling` | Build seeded Monte Carlo wave-function trajectories for the finite Lindblad audit. |
-| src/simulation/quantum_surrogates.py | 1167 | function | `build_many_body_boundary_screen_sweep` | Build a finite many-body boundary-screen sweep over subsystem cuts. |
-| src/simulation/quantum_surrogates.py | 1227 | function | `build_sheaf_contextuality_obstruction_audit` | Build a finite general measurement-cover obstruction audit beyond CHSH only. |
-| src/simulation/quantum_surrogates.py | 1293 | function | `build_sigma_contextuality_suppression_audit` | Operationalize the paper's claim that the separation prior suppresses contextuality (6.1). |
-| src/simulation/quantum_surrogates.py | 1361 | function | `build_qrf_transformation_covariance_audit` | Build a finite probability-preserving QRF transformation covariance audit. |
-| src/simulation/quantum_surrogates.py | 1425 | function | `build_empirical_adapter_provenance_audit` | Build a fail-closed empirical-adapter provenance audit with synthetic controls. |
-| src/simulation/quantum_surrogates.py | 1521 | function | `build_arbitrary_two_qubit_entanglement_audit` | Build a mixed-state two-qubit entanglement audit with PPT/negativity controls. |
-| src/simulation/quantum_surrogates.py | 1618 | function | `_ghz_vector` | No docstring. |
-| src/simulation/quantum_surrogates.py | 1625 | function | `_w_vector` | No docstring. |
-| src/simulation/quantum_surrogates.py | 1632 | function | `_product_ground_vector` | No docstring. |
-| src/simulation/quantum_surrogates.py | 1638 | function | `_qudit_max_entangled_vector` | No docstring. |
-| src/simulation/quantum_surrogates.py | 1645 | function | `_bell_pair_plus_ground_vector` | Three-qubit Bell pair on qubits 0,1 tensored with |0> on qubit 2 (an asymmetric fixture). |
-| src/simulation/quantum_surrogates.py | 1653 | function | `_partial_transpose_dims` | No docstring. |
-| src/simulation/quantum_surrogates.py | 1664 | function | `_bipartition_negativity` | No docstring. |
-| src/simulation/quantum_surrogates.py | 1670 | function | `_density_validity_general` | No docstring. |
-| src/simulation/quantum_surrogates.py | 1683 | function | `build_multipartite_witness_suite_audit` | Finite multipartite and higher-dimensional entanglement-witness suite (roadmap re-10). |
-| src/simulation/quantum_surrogates.py | 1729 | function | `family` | No docstring. |
-| src/simulation/quantum_surrogates.py | 1776 | function | `_state_to_mps` | No docstring. |
-| src/simulation/quantum_surrogates.py | 1795 | function | `_mps_to_state` | No docstring. |
-| src/simulation/quantum_surrogates.py | 1802 | function | `_truncated_mps_error` | No docstring. |
-| src/simulation/quantum_surrogates.py | 1820 | function | `build_tensor_network_benchmark_audit` | Finite exact matrix-product-state benchmark with scaling and truncation controls (roadmap re-11). |
-| src/simulation/quantum_surrogates.py | 1873 | function | `_partial_swap_unitary` | No docstring. |
-| src/simulation/quantum_surrogates.py | 1878 | function | `build_collision_model_thermalization_audit` | Finite collision-model relaxation surrogate with a zero-coupling control (roadmap re-12). |
-| src/simulation/quantum_surrogates.py | 1931 | function | `_no_signaling_table` | No docstring. |
-| src/simulation/quantum_surrogates.py | 1944 | function | `_max_marginal_drift` | No docstring. |
-| src/simulation/quantum_surrogates.py | 1957 | function | `build_no_signaling_scenario_library_audit` | Finite no-signaling / no-disturbance audit over a scenario library (roadmap re-9). |
-| src/simulation/quantum_surrogates.py | 2012 | function | `_n_cycle_behavior_rows` | Build a no-disturbing n-cycle behavior: unbiased marginals, edge correlation E_i = correlation. |
-| src/simulation/quantum_surrogates.py | 2033 | function | `build_n_cycle_contextuality_library_audit` | Finite n-cycle contextuality scenario library via noncontextual-polytope LP (roadmap re-9). |
-| src/simulation/quantum_surrogates.py | 2082 | function | `_generic_chsh_probability_rows` | No docstring. |
-| src/simulation/quantum_surrogates.py | 2104 | function | `build_general_measurement_cover_polytope_audit` | Build a reusable finite measurement-cover parser and polytope audit. |
-| src/simulation/quantum_surrogates.py | 2187 | function | `build_thermodynamic_channel_cost_audit` | Build finite CPTP channel checks with entropy-change and Landauer summaries. |
-| src/simulation/quantum_surrogates.py | 2264 | function | `build_sparse_boundary_screen_scaling_audit` | Build sparse exact many-body boundary-screen scaling diagnostics. |
-| src/simulation/quantum_surrogates.py | 2338 | function | `build_qrf_frame_covariance_toy_audit` | Build a finite density/probability frame-covariance audit for QRF toy transforms. |
-| src/simulation/quantum_surrogates.py | 2409 | function | `build_quantum_extension_roadmap` | Build the scoped roadmap from finite simulations to fuller evidence classes. |
-| src/simulation/quantum_surrogates.py | 2569 | function | `build_quantum_roadmap_readiness_matrix` | Build a fail-closed readiness matrix for roadmap claims. |
-| src/simulation/quantum_surrogates.py | 2702 | function | `future_readiness_row` | No docstring. |
-| src/simulation/quantum_surrogates.py | 2778 | function | `write_quantum_artifacts` | Write quantum-boundary simulation and roadmap artifacts. |
-| src/simulation/quantum_surrogates.py | 2893 | function | `_bloch_density` | Single-qubit density from a Bloch vector; norm < 1 guarantees full rank (finite relative entropy). |
-| src/simulation/quantum_surrogates.py | 2899 | function | `_hermitian_log2` | Base-2 matrix logarithm via Hermitian eigendecomposition (0 * log 0 = 0 convention). |
-| src/simulation/quantum_surrogates.py | 2906 | function | `_relative_entropy_bits` | Quantum relative entropy S(rho||sigma) in bits; sigma must be full rank for a finite value. |
-| src/simulation/quantum_surrogates.py | 2912 | function | `_qubit_channel_kraus` | Kraus operators for canonical qubit channels parameterized by strength in [0, 1]. |
-| src/simulation/quantum_surrogates.py | 2934 | function | `_apply_kraus` | No docstring. |
-| src/simulation/quantum_surrogates.py | 2938 | function | `_kraus_trace_preserving_error` | No docstring. |
-| src/simulation/quantum_surrogates.py | 2943 | function | `_kraus_choi_min_eigenvalue` | Minimum eigenvalue of the (unnormalized) Choi matrix; >= 0 iff the map is completely positive. |
-| src/simulation/quantum_surrogates.py | 2956 | function | `_transpose_map_choi_min_eigenvalue` | Choi matrix of the transpose map is the SWAP operator; its minimum eigenvalue is -1 (not CP). |
-| src/simulation/quantum_surrogates.py | 2964 | function | `_post_selected_density` | No docstring. |
-| src/simulation/quantum_surrogates.py | 2970 | function | `build_data_processing_monotonicity_audit` | Finite qubit data-processing (monotonicity) surrogate for opacification as forgetting (roadmap re-15). |
+| src/simulation/blackwell_ordering.py | 44 | function | `_relabel` | Invertible relabeling: permute the outcome columns (a reversible post-processing). |
+| src/simulation/blackwell_ordering.py | 49 | function | `_garble` | Row-stochastic post-processing G; A' = A @ G. Lossy unless G is a permutation. |
+| src/simulation/blackwell_ordering.py | 55 | function | `build_blackwell_bayes_risk_audit` | Finite Blackwell ordering surrogate with relabel-preserves and garble-degrades controls. |
+| src/simulation/bmr.py | 18 | function | `compare_models` | Compare full and reduced models at one point in the finite sweep. |
+| src/simulation/bmr.py | 36 | function | `run_bmr_sweep` | Run deterministic BMR sweep over prior precision and metacognitive access. |
+| src/simulation/bmr.py | 67 | function | `write_bmr_sweep` | Write BMR sweep JSON and CSV artifacts. |
+| src/simulation/classical_data_processing.py | 34 | function | `_mutual_information` | I(X;Y) in bits from a 2D joint distribution. |
+| src/simulation/classical_data_processing.py | 46 | function | `_chain_informations` | Return (I(interior;external), I(blanket;external)) for the chain external -> blanket -> interior. |
+| src/simulation/classical_data_processing.py | 65 | function | `build_classical_data_processing_audit` | Finite classical data-processing surrogate with a sufficiency-saturation discriminating control. |
+| src/simulation/compassion_scope.py | 53 | function | `__getattr__` | Resolve the historical vector export without freezing a second authority. |
+| src/simulation/compassion_scope.py | 60 | function | `compassion_boundary_stream` | Return a finite boundary stream with heterogeneous per-channel action-contingency. |
+| src/simulation/compassion_scope.py | 102 | function | `channel_influence` | Return a per-channel realised action-influence score in [0, 1]. |
+| src/simulation/compassion_scope.py | 132 | function | `_precision_weights` | Return per-channel concern precision under the separation prior. |
+| src/simulation/compassion_scope.py | 151 | function | `compute_scope_of_concern` | Return the finite self/non-self concern split for one deployment. |
+| src/simulation/compassion_scope.py | 200 | function | `_is_monotone_increasing` | No docstring. |
+| src/simulation/compassion_scope.py | 204 | function | `build_compassion_scope_audit` | Audit scope-of-concern widening across profiles, with separable controls for the two |
+| src/simulation/criticality.py | 18 | function | `branching_ratio` | Return the finite branching ratio sigma = descendants per ancestor over an activity series. |
+| src/simulation/criticality.py | 43 | function | `avalanche_size_distribution` | Extract avalanche sizes from supra-threshold runs of an activity series. |
+| src/simulation/criticality.py | 82 | function | `_power_law_vs_exponential_llr` | Return a finite per-sample log-likelihood ratio favoring a power-law over an exponential. |
+| src/simulation/criticality.py | 104 | function | `criticality_signatures` | Bundle the measured criticality signatures and a DERIVED criticality index. |
+| src/simulation/criticality.py | 121 | function | `_planted_geometric_activity` | Return a geometric activity series whose exact branching ratio is ``sigma``. |
+| src/simulation/criticality.py | 126 | function | `branching_estimator_calibration` | Positive control: the branching estimator recovers a planted branching ratio. |
+| src/simulation/criticality.py | 150 | function | `_activity_series` | Return a per-step boundary-channel activity series (count of channel flips). |
+| src/simulation/criticality.py | 160 | function | `build_criticality_report` | Measure branching and avalanche sizes on one finite boundary-channel trace. |
+| src/simulation/criticality.py | 175 | function | `_interval` | No docstring. |
+| src/simulation/criticality.py | 188 | function | `_branching_observations` | No docstring. |
+| src/simulation/criticality.py | 205 | function | `_branching_by_run` | No docstring. |
+| src/simulation/criticality.py | 210 | function | `build_criticality_stochastic_ensemble` | Summarize seeded active-inference ensembles as simulated criticality indicators. |
+| src/simulation/criticality.py | 259 | function | `_ci_disjoint` | True iff the real and null 95% confidence intervals for ``metric`` do not overlap. |
+| src/simulation/emergence.py | 35 | function | `emergence_trajectory` | Build a boundary stream where a fraction ``empowerment`` of channels track the action. |
+| src/simulation/emergence.py | 74 | function | `_mode_predictor_error` | Return the mean bit error of a per-channel mode predictor. |
+| src/simulation/emergence.py | 97 | function | `score_factored_vs_unfactored` | Return the measured prediction errors of the factored and unfactored predictors. |
+| src/simulation/emergence.py | 122 | function | `_window_error` | Mean bit error when the channels in ``self_set`` are action-conditioned, the rest marginal. |
+| src/simulation/emergence.py | 129 | function | `_best_self_set` | Post-dual revision: action-condition a channel only when that MATERIALLY lowers its error. |
+| src/simulation/emergence.py | 147 | function | `_run_revision_stream` | Run one rigid-vs-revising comparison over a (possibly) non-stationary boundary stream. |
+| src/simulation/emergence.py | 195 | function | `build_ongoing_revision_audit` | Operationalize the post-dual agent's ongoing revision under non-stationarity (5.2/5.3). |
+| src/simulation/emergence.py | 231 | function | `_action_shuffled_factored_advantage` | Mean factored advantage after permuting the action sequence relative to the observations. |
+| src/simulation/emergence.py | 254 | function | `build_separation_prior_emergence_audit` | Audit when a factored self/env model buys predictive accuracy over an unfactored model. |
+| src/simulation/interaction_information.py | 39 | function | `_conditional_mutual_information` | I(I;E|B) in bits for a joint indexed [internal, blanket, external]. |
+| src/simulation/interaction_information.py | 57 | function | `_marginal_mutual_information` | I(I;E) in bits, marginalising out the blanket. |
+| src/simulation/interaction_information.py | 70 | function | `_synergistic_xor_joint` | B = I XOR E with I, E independent and uniform: marginal I(I;E) = 0 exactly, I(I;E|B) = 1 bit. |
+| src/simulation/interaction_information.py | 79 | function | `_redundant_screen_joint` | Common cause: B uniform, I and E each track B independently, so I _||_ E | B (a clean screen). |
+| src/simulation/interaction_information.py | 94 | function | `_independent_null_joint` | All three variables independent and uniform: no structure, so II = 0. |
+| src/simulation/interaction_information.py | 99 | function | `build_interaction_information_boundary_audit` | Finite interaction-information surrogate with synergy, redundancy, and null regimes. |
+| src/simulation/markov_blanket.py | 46 | function | `_graph` | No docstring. |
+| src/simulation/markov_blanket.py | 50 | function | `_edges` | No docstring. |
+| src/simulation/markov_blanket.py | 54 | function | `__getattr__` | Keep historical graph exports dynamically bound to the specification. |
+| src/simulation/markov_blanket.py | 63 | function | `_precision_from_edges` | No docstring. |
+| src/simulation/markov_blanket.py | 74 | function | `_correlation_from_precision` | No docstring. |
+| src/simulation/markov_blanket.py | 80 | function | `_partial_correlation` | No docstring. |
+| src/simulation/markov_blanket.py | 87 | function | `_neighbors` | Markov blanket of ``nodes``: graph neighbors of the node set, excluding the set itself. |
+| src/simulation/markov_blanket.py | 98 | function | `_f1` | No docstring. |
+| src/simulation/markov_blanket.py | 111 | function | `_support_adjacency` | No docstring. |
+| src/simulation/markov_blanket.py | 117 | function | `_marginal_recovers_blanket` | True iff some marginal-correlation threshold recovers the blanket of INTERNAL exactly. |
+| src/simulation/markov_blanket.py | 129 | function | `_perturbation_ensemble` | Perturb the planted edge weights (preserving the structural internal-external zeros) and measure |
+| src/simulation/markov_blanket.py | 162 | function | `build_markov_blanket_discovery_audit` | Recover a planted Markov boundary from conditional independence, invisible to the marginal. |
+| src/simulation/pymdp_profiles.py | 36 | function | `_shannon_entropy` | Return the natural-log Shannon entropy of a probability vector (0 for a point mass). |
+| src/simulation/pymdp_profiles.py | 44 | class | `ProfileSpec` | Profile-specific active-inference generative-model parameters. |
+| src/simulation/pymdp_profiles.py | 51 | function | `softmax_negative` | Return a normalized softmax over negative values for policy selection. |
+| src/simulation/pymdp_profiles.py | 58 | function | `normalize_probability` | Normalize a nonnegative probability vector and fail on zero mass. |
+| src/simulation/pymdp_profiles.py | 67 | function | `profile_specs` | Return the public finite QRF profile specifications. |
+| src/simulation/pymdp_profiles.py | 73 | function | `build_profile_generative_model` | Build explicit A/B/C/D arrays for one QRF profile. |
+| src/simulation/pymdp_profiles.py | 87 | function | `expected_free_energy_values` | Compute finite expected-free-energy surrogates for every action. |
+| src/simulation/pymdp_profiles.py | 92 | function | `expected_free_energy_terms` | Return risk/ambiguity/expected-free-energy terms for each action. |
+| src/simulation/pymdp_profiles.py | 120 | function | `_agent_from_model` | Construct the pinned pymdp Agent from one explicit A/B/C/D model. |
+| src/simulation/pymdp_profiles.py | 136 | function | `_array_payload` | Serialize an array with shape and rounded values for audit JSON. |
+| src/simulation/pymdp_profiles.py | 144 | function | `_model_hash` | Hash rounded A/B/C/D arrays so model drift is visible in diagnostics. |
+| src/simulation/pymdp_profiles.py | 154 | function | `_package_version` | Return the installed package version or an explicit not-installed marker. |
+| src/simulation/pymdp_profiles.py | 162 | function | `_term_residuals` | Compute maximum saved-vs-recomputed residuals for EFE term fields. |
+| src/simulation/pymdp_profiles.py | 175 | function | `build_generative_model_audit` | Audit profile-specific A/B/C/D arrays and their normalization. |
+| src/simulation/pymdp_profiles.py | 212 | function | `_extract_state_posterior` | Flatten the latest pymdp state posterior into a one-dimensional vector. |
+| src/simulation/pymdp_profiles.py | 218 | function | `_simulate_profile` | Run one deterministic profile trace and summarize its action choices. |
+| src/simulation/pymdp_profiles.py | 290 | function | `_runtime_arguments` | No docstring. |
+| src/simulation/pymdp_profiles.py | 295 | function | `run_policy_trace` | Run a deterministic multi-profile pymdp policy trace. |
+| src/simulation/pymdp_profiles.py | 320 | function | `runtime_warnings_match_version` | No docstring. |
+| src/simulation/pymdp_profiles.py | 327 | function | `pymdp_runtime_dependency_check` | Verify the pinned pymdp runtime surface without asserting model validity. |
+| src/simulation/pymdp_profiles.py | 358 | function | `run_profile_comparison` | Compare QRF profiles using a deterministic pymdp policy trace. |
+| src/simulation/pymdp_profiles.py | 411 | function | `build_pymdp_runtime_diagnostics_log` | Build the four-layer runtime/model/trace/replay diagnostics log. |
+| src/simulation/qrf_env.py | 21 | function | `default_deployments` | Return the three v1 QRF profiles. |
+| src/simulation/qrf_env.py | 41 | function | `simulate_boundary_trajectory` | Generate deterministic boundary observations for finite profile comparison. |
+| src/simulation/qrf_env.py | 77 | function | `_uniform_boundary_distribution` | No docstring. |
+| src/simulation/qrf_env.py | 83 | function | `boundary_indistinguishability_audit` | Check that admissible QRF labels do not change boundary probabilities. |
+| src/simulation/qrf_env.py | 118 | function | `boundary_channel_ledger` | Return the b0-b5 QRF channel ledger used by the relabeling figure and source-fit audits. |
+| src/simulation/qrf_env.py | 185 | function | `score_deployment` | Score a deployment by deterministic prediction, flexibility, and scope. |
+| src/simulation/quantum_estimation.py | 40 | function | `_density` | No docstring. |
+| src/simulation/quantum_estimation.py | 44 | function | `_d_density` | No docstring. |
+| src/simulation/quantum_estimation.py | 48 | function | `_symmetric_logarithmic_derivative` | SLD operator L solving rho L + L rho = 2 d_rho, via the eigenbasis spectral formula. |
+| src/simulation/quantum_estimation.py | 61 | function | `_quantum_fisher_information` | QFI = Tr[d_rho L] with L the symmetric logarithmic derivative. |
+| src/simulation/quantum_estimation.py | 66 | function | `_sld_optimal_axis` | Bloch axis of the SLD-eigenbasis measurement, which saturates the quantum Cramer-Rao bound. |
+| src/simulation/quantum_estimation.py | 78 | function | `_classical_fisher_information` | Classical Fisher information of the projective measurement along ``axis`` (Bloch direction). |
+| src/simulation/quantum_estimation.py | 88 | function | `_coherent_bloch` | No docstring. |
+| src/simulation/quantum_estimation.py | 92 | function | `_coherent_d_bloch` | No docstring. |
+| src/simulation/quantum_estimation.py | 96 | function | `_classical_bloch` | No docstring. |
+| src/simulation/quantum_estimation.py | 100 | function | `_classical_d_bloch` | No docstring. |
+| src/simulation/quantum_estimation.py | 104 | function | `build_quantum_cramer_rao_estimation_audit` | Finite quantum Cramer-Rao estimation surrogate with a coherent-vs-classical discriminating control. |
+| src/simulation/quantum_estimation.py | 122 | function | `family_rows` | No docstring. |
+| src/simulation/quantum_surrogates.py | 95 | function | `_state` | No docstring. |
+| src/simulation/quantum_surrogates.py | 102 | function | `_density` | No docstring. |
+| src/simulation/quantum_surrogates.py | 106 | function | `_reduced_first_qubit` | No docstring. |
+| src/simulation/quantum_surrogates.py | 111 | function | `_reduced_second_qubit` | No docstring. |
+| src/simulation/quantum_surrogates.py | 116 | function | `_entropy_bits` | No docstring. |
+| src/simulation/quantum_surrogates.py | 123 | function | `_shannon_bits` | No docstring. |
+| src/simulation/quantum_surrogates.py | 129 | function | `_local_rotation` | No docstring. |
+| src/simulation/quantum_surrogates.py | 135 | function | `_rotated_density` | No docstring. |
+| src/simulation/quantum_surrogates.py | 141 | function | `_chsh_max` | No docstring. |
+| src/simulation/quantum_surrogates.py | 145 | function | `_chsh_contexts` | No docstring. |
+| src/simulation/quantum_surrogates.py | 149 | function | `_joint_probability_rows` | No docstring. |
+| src/simulation/quantum_surrogates.py | 168 | function | `_chsh_rows_for_model` | No docstring. |
+| src/simulation/quantum_surrogates.py | 193 | function | `_chsh_value` | No docstring. |
+| src/simulation/quantum_surrogates.py | 197 | function | `_normalization_errors` | No docstring. |
+| src/simulation/quantum_surrogates.py | 206 | function | `_marginal` | No docstring. |
+| src/simulation/quantum_surrogates.py | 217 | function | `_no_signaling_errors` | No docstring. |
+| src/simulation/quantum_surrogates.py | 244 | function | `_deterministic_assignments` | No docstring. |
+| src/simulation/quantum_surrogates.py | 254 | function | `_probability_vector` | No docstring. |
+| src/simulation/quantum_surrogates.py | 265 | function | `_local_polytope_matrix` | No docstring. |
+| src/simulation/quantum_surrogates.py | 280 | function | `_local_polytope_fit` | No docstring. |
+| src/simulation/quantum_surrogates.py | 339 | function | `_bell_dephased_density` | No docstring. |
+| src/simulation/quantum_surrogates.py | 348 | function | `_product_density` | No docstring. |
+| src/simulation/quantum_surrogates.py | 354 | function | `_bell_state_vector` | No docstring. |
+| src/simulation/quantum_surrogates.py | 361 | function | `_matrix_is_hermitian` | No docstring. |
+| src/simulation/quantum_surrogates.py | 365 | function | `_lindblad_superoperator` | Return a column-vectorized Lindblad generator superoperator. |
+| src/simulation/quantum_surrogates.py | 378 | function | `_evolve_density_lindblad` | No docstring. |
+| src/simulation/quantum_surrogates.py | 385 | function | `_density_metrics` | No docstring. |
+| src/simulation/quantum_surrogates.py | 406 | function | `_density_validity` | No docstring. |
+| src/simulation/quantum_surrogates.py | 423 | function | `_partial_transpose_second_qubit` | No docstring. |
+| src/simulation/quantum_surrogates.py | 428 | function | `_negativity` | No docstring. |
+| src/simulation/quantum_surrogates.py | 435 | function | `_werner_state` | No docstring. |
+| src/simulation/quantum_surrogates.py | 440 | function | `_partial_trace_pure_state` | No docstring. |
+| src/simulation/quantum_surrogates.py | 449 | function | `_many_body_bell_pair_state` | No docstring. |
+| src/simulation/quantum_surrogates.py | 461 | function | `_many_body_product_state` | No docstring. |
+| src/simulation/quantum_surrogates.py | 473 | function | `_von_neumann_entropy_bits` | Return the von Neumann entropy of a density matrix in bits. |
+| src/simulation/quantum_surrogates.py | 480 | function | `_env_bipartitions` | Enumerate non-trivial bipartitions of the environment qubits (deduplicated by lowest index). |
+| src/simulation/quantum_surrogates.py | 494 | function | `build_internal_cut_unmeasurability_audit` | Generalise the no-self-evidence result to arbitrary internal boundaries (section 3.3). |
+| src/simulation/quantum_surrogates.py | 516 | function | `env_state` | No docstring. |
+| src/simulation/quantum_surrogates.py | 570 | function | `_scenario_probability_vector` | No docstring. |
+| src/simulation/quantum_surrogates.py | 575 | function | `_measurement_assignments` | No docstring. |
+| src/simulation/quantum_surrogates.py | 582 | function | `_generic_polytope_fit` | No docstring. |
+| src/simulation/quantum_surrogates.py | 633 | function | `_pair_context_rows` | No docstring. |
+| src/simulation/quantum_surrogates.py | 655 | function | `_no_disturbance_error` | No docstring. |
+| src/simulation/quantum_surrogates.py | 673 | function | `_normalise_probability` | No docstring. |
+| src/simulation/quantum_surrogates.py | 681 | function | `_kraus_cptp_error` | No docstring. |
+| src/simulation/quantum_surrogates.py | 691 | function | `_apply_kraus_channel` | No docstring. |
+| src/simulation/quantum_surrogates.py | 698 | function | `_swap_unitary_two_qubit` | No docstring. |
+| src/simulation/quantum_surrogates.py | 708 | function | `_basis_permutation_for_unitary` | No docstring. |
+| src/simulation/quantum_surrogates.py | 715 | function | `_dephasing_metric_row` | No docstring. |
+| src/simulation/quantum_surrogates.py | 744 | function | `_row` | No docstring. |
+| src/simulation/quantum_surrogates.py | 770 | function | `_basis_invariance_rows` | No docstring. |
+| src/simulation/quantum_surrogates.py | 790 | function | `build_quantum_boundary_entropy` | Build finite two-qubit entropy, CHSH, and basis-invariance artifacts. |
+| src/simulation/quantum_surrogates.py | 831 | function | `build_quantum_open_system_dynamics` | Build finite dephasing-channel dynamics for Bell and product controls. |
+| src/simulation/quantum_surrogates.py | 891 | function | `build_quantum_measurement_contextuality` | Build a finite CHSH measurement-cover empirical model and controls. |
+| src/simulation/quantum_surrogates.py | 953 | function | `build_qfep_boundary_hamiltonian_dynamics` | Build finite boundary-Hamiltonian Lindblad dynamics for the roadmap qFEP engine. |
+| src/simulation/quantum_surrogates.py | 1040 | function | `_trace_distance` | No docstring. |
+| src/simulation/quantum_surrogates.py | 1045 | function | `build_quantum_trajectory_unraveling` | Build seeded Monte Carlo wave-function trajectories for the finite Lindblad audit. |
+| src/simulation/quantum_surrogates.py | 1180 | function | `build_many_body_boundary_screen_sweep` | Build a finite many-body boundary-screen sweep over subsystem cuts. |
+| src/simulation/quantum_surrogates.py | 1237 | function | `build_sheaf_contextuality_obstruction_audit` | Build a finite general measurement-cover obstruction audit beyond CHSH only. |
+| src/simulation/quantum_surrogates.py | 1283 | function | `build_sigma_contextuality_suppression_audit` | Operationalize the paper's claim that the separation prior suppresses contextuality (6.1). |
+| src/simulation/quantum_surrogates.py | 1339 | function | `build_qrf_transformation_covariance_audit` | Build a finite probability-preserving QRF transformation covariance audit. |
+| src/simulation/quantum_surrogates.py | 1404 | function | `build_empirical_adapter_provenance_audit` | Build a fail-closed empirical-adapter provenance audit with synthetic controls. |
+| src/simulation/quantum_surrogates.py | 1500 | function | `build_arbitrary_two_qubit_entanglement_audit` | Build a mixed-state two-qubit entanglement audit with PPT/negativity controls. |
+| src/simulation/quantum_surrogates.py | 1598 | function | `_ghz_vector` | No docstring. |
+| src/simulation/quantum_surrogates.py | 1605 | function | `_w_vector` | No docstring. |
+| src/simulation/quantum_surrogates.py | 1612 | function | `_product_ground_vector` | No docstring. |
+| src/simulation/quantum_surrogates.py | 1618 | function | `_qudit_max_entangled_vector` | No docstring. |
+| src/simulation/quantum_surrogates.py | 1625 | function | `_bell_pair_plus_ground_vector` | Three-qubit Bell pair on qubits 0,1 tensored with |0> on qubit 2 (an asymmetric fixture). |
+| src/simulation/quantum_surrogates.py | 1633 | function | `_partial_transpose_dims` | No docstring. |
+| src/simulation/quantum_surrogates.py | 1644 | function | `_bipartition_negativity` | No docstring. |
+| src/simulation/quantum_surrogates.py | 1650 | function | `_density_validity_general` | No docstring. |
+| src/simulation/quantum_surrogates.py | 1663 | function | `build_multipartite_witness_suite_audit` | Finite multipartite and higher-dimensional entanglement-witness suite (roadmap re-10). |
+| src/simulation/quantum_surrogates.py | 1710 | function | `family` | No docstring. |
+| src/simulation/quantum_surrogates.py | 1757 | function | `_state_to_mps` | No docstring. |
+| src/simulation/quantum_surrogates.py | 1776 | function | `_mps_to_state` | No docstring. |
+| src/simulation/quantum_surrogates.py | 1783 | function | `_truncated_mps_error` | No docstring. |
+| src/simulation/quantum_surrogates.py | 1801 | function | `build_tensor_network_benchmark_audit` | Finite exact matrix-product-state benchmark with scaling and truncation controls (roadmap re-11). |
+| src/simulation/quantum_surrogates.py | 1855 | function | `_partial_swap_unitary` | No docstring. |
+| src/simulation/quantum_surrogates.py | 1860 | function | `build_collision_model_thermalization_audit` | Finite collision-model relaxation surrogate with a zero-coupling control (roadmap re-12). |
+| src/simulation/quantum_surrogates.py | 1914 | function | `_no_signaling_table` | No docstring. |
+| src/simulation/quantum_surrogates.py | 1927 | function | `_max_marginal_drift` | No docstring. |
+| src/simulation/quantum_surrogates.py | 1940 | function | `build_no_signaling_scenario_library_audit` | Finite no-signaling / no-disturbance audit over a scenario library (roadmap re-9). |
+| src/simulation/quantum_surrogates.py | 1996 | function | `_n_cycle_behavior_rows` | Build a no-disturbing n-cycle behavior: unbiased marginals, edge correlation E_i = correlation. |
+| src/simulation/quantum_surrogates.py | 2017 | function | `build_n_cycle_contextuality_library_audit` | Finite n-cycle contextuality scenario library via noncontextual-polytope LP (roadmap re-9). |
+| src/simulation/quantum_surrogates.py | 2067 | function | `_generic_chsh_probability_rows` | No docstring. |
+| src/simulation/quantum_surrogates.py | 2089 | function | `build_general_measurement_cover_polytope_audit` | Build a reusable finite measurement-cover parser and polytope audit. |
+| src/simulation/quantum_surrogates.py | 2147 | function | `build_thermodynamic_channel_cost_audit` | Build finite CPTP channel checks with entropy-change and Landauer summaries. |
+| src/simulation/quantum_surrogates.py | 2225 | function | `build_sparse_boundary_screen_scaling_audit` | Build sparse exact many-body boundary-screen scaling diagnostics. |
+| src/simulation/quantum_surrogates.py | 2301 | function | `build_qrf_frame_covariance_toy_audit` | Build a finite density/probability frame-covariance audit for QRF toy transforms. |
+| src/simulation/quantum_surrogates.py | 2373 | function | `build_quantum_extension_roadmap` | Build the scoped roadmap from finite simulations to fuller evidence classes. |
+| src/simulation/quantum_surrogates.py | 2533 | function | `build_quantum_roadmap_readiness_matrix` | Build a fail-closed readiness matrix for roadmap claims. |
+| src/simulation/quantum_surrogates.py | 2666 | function | `future_readiness_row` | No docstring. |
+| src/simulation/quantum_surrogates.py | 2742 | function | `write_quantum_artifacts` | Write quantum-boundary simulation and roadmap artifacts. |
+| src/simulation/quantum_surrogates.py | 2857 | function | `_bloch_density` | Single-qubit density from a Bloch vector; norm < 1 guarantees full rank (finite relative entropy). |
+| src/simulation/quantum_surrogates.py | 2863 | function | `_hermitian_log2` | Base-2 matrix logarithm via Hermitian eigendecomposition (0 * log 0 = 0 convention). |
+| src/simulation/quantum_surrogates.py | 2870 | function | `_relative_entropy_bits` | Quantum relative entropy S(rho||sigma) in bits; sigma must be full rank for a finite value. |
+| src/simulation/quantum_surrogates.py | 2876 | function | `_qubit_channel_kraus` | Kraus operators for canonical qubit channels parameterized by strength in [0, 1]. |
+| src/simulation/quantum_surrogates.py | 2898 | function | `_apply_kraus` | No docstring. |
+| src/simulation/quantum_surrogates.py | 2902 | function | `_kraus_trace_preserving_error` | No docstring. |
+| src/simulation/quantum_surrogates.py | 2907 | function | `_kraus_choi_min_eigenvalue` | Minimum eigenvalue of the (unnormalized) Choi matrix; >= 0 iff the map is completely positive. |
+| src/simulation/quantum_surrogates.py | 2920 | function | `_transpose_map_choi_min_eigenvalue` | Choi matrix of the transpose map is the SWAP operator; its minimum eigenvalue is -1 (not CP). |
+| src/simulation/quantum_surrogates.py | 2928 | function | `_post_selected_density` | No docstring. |
+| src/simulation/quantum_surrogates.py | 2934 | function | `build_data_processing_monotonicity_audit` | Finite qubit data-processing (monotonicity) surrogate for opacification as forgetting (roadmap re-15). |
 | src/simulation/resampling.py | 7 | function | `_sample` | No docstring. |
 | src/simulation/resampling.py | 14 | function | `_draw_count` | No docstring. |
 | src/simulation/resampling.py | 19 | function | `binomial_summary` | Report a finite count, rate, Monte Carlo SE and exact binomial interval. |
 | src/simulation/resampling.py | 30 | function | `bootstrap_contrast` | Percentile intervals for the mean difference and tie-aware Cliff's delta. |
 | src/simulation/resampling.py | 57 | function | `permutation_test` | Two-sided independent-run label permutations with plus-one correction. |
-| src/simulation/sensitivity.py | 17 | function | `_binary_entropy` | Return binary entropy in nats for an observation-noise probability. |
-| src/simulation/sensitivity.py | 24 | function | `compare_sensitivity_point` | Evaluate one finite sensitivity point for the separation-prior reduction. |
-| src/simulation/sensitivity.py | 66 | function | `build_sensitivity_grid` | Run the finite sensitivity grid over access, precision, and observation noise. |
-| src/simulation/sensitivity.py | 101 | function | `write_sensitivity_grid` | Write sensitivity grid JSON and CSV artifacts. |
-| src/simulation/statistical_robustness.py | 22 | function | `_load_json` | No docstring. |
-| src/simulation/statistical_robustness.py | 26 | function | `_finite` | No docstring. |
-| src/simulation/statistical_robustness.py | 30 | function | `_bootstrap_ci` | No docstring. |
-| src/simulation/statistical_robustness.py | 49 | function | `_holm_adjust` | No docstring. |
-| src/simulation/statistical_robustness.py | 61 | function | `build_stochastic_effect_size_audit` | Compare profile ensembles to null controls with deterministic resampling. |
-| src/simulation/statistical_robustness.py | 163 | function | `build_bmr_robustness_resampling_audit` | Summarize BMR pruning robustness over observation-noise rows. |
-| src/simulation/statistical_robustness.py | 236 | function | `build_quantum_trajectory_convergence_audit` | Check finite quantum-trajectory residuals across ensemble sizes. |
-| src/simulation/statistical_robustness.py | 303 | function | `_synthetic_arm` | Run the effect-size machinery on two seeded normal samples with a known shift. |
-| src/simulation/statistical_robustness.py | 328 | function | `build_seed_bank_calibration` | Measure rejection and difference-interval coverage across independent synthetic seed sets. |
-| src/simulation/statistical_robustness.py | 366 | function | `build_effect_size_test_calibration_audit` | Positive control: verify the effect-size machinery rejects a known injected effect. |
-| src/simulation/statistical_robustness.py | 417 | function | `build_statistical_robustness_audit` | Aggregate statistical robustness controls into one reader-facing artifact. |
-| src/simulation/statistical_robustness.py | 447 | function | `write_statistical_robustness_artifacts` | Write statistical robustness artifacts from generated simulation outputs. |
-| src/simulation/stochastic.py | 29 | function | `_categorical_sample` | No docstring. |
-| src/simulation/stochastic.py | 33 | function | `_entropy` | No docstring. |
-| src/simulation/stochastic.py | 40 | function | `_run_profile_once` | No docstring. |
-| src/simulation/stochastic.py | 127 | function | `_interval` | No docstring. |
-| src/simulation/stochastic.py | 140 | function | `_summaries_by_profile` | No docstring. |
-| src/simulation/stochastic.py | 168 | function | `build_stochastic_policy_ensemble` | Run seeded stochastic active-inference ensembles and null controls. |
+| src/simulation/sensitivity.py | 19 | function | `_binary_entropy` | Return binary entropy in nats for an observation-noise probability. |
+| src/simulation/sensitivity.py | 26 | function | `compare_sensitivity_point` | Evaluate one finite sensitivity point for the separation-prior reduction. |
+| src/simulation/sensitivity.py | 69 | function | `build_sensitivity_grid` | Run the finite sensitivity grid over access, precision, and observation noise. |
+| src/simulation/sensitivity.py | 108 | function | `write_sensitivity_grid` | Write sensitivity grid JSON and CSV artifacts. |
+| src/simulation/statistical_robustness.py | 23 | function | `_load_json` | No docstring. |
+| src/simulation/statistical_robustness.py | 27 | function | `_finite` | No docstring. |
+| src/simulation/statistical_robustness.py | 31 | function | `_bootstrap_ci` | No docstring. |
+| src/simulation/statistical_robustness.py | 50 | function | `_holm_adjust` | No docstring. |
+| src/simulation/statistical_robustness.py | 62 | function | `build_stochastic_effect_size_audit` | Compare profile ensembles to null controls with deterministic resampling. |
+| src/simulation/statistical_robustness.py | 168 | function | `build_bmr_robustness_resampling_audit` | Summarize BMR pruning robustness over observation-noise rows. |
+| src/simulation/statistical_robustness.py | 244 | function | `build_quantum_trajectory_convergence_audit` | Check finite quantum-trajectory residuals across ensemble sizes. |
+| src/simulation/statistical_robustness.py | 315 | function | `_synthetic_arm` | Run the effect-size machinery on two seeded normal samples with a known shift. |
+| src/simulation/statistical_robustness.py | 346 | function | `build_seed_bank_calibration` | Measure rejection and difference-interval coverage across independent synthetic seed sets. |
+| src/simulation/statistical_robustness.py | 390 | function | `build_effect_size_test_calibration_audit` | Positive control: verify the effect-size machinery rejects a known injected effect. |
+| src/simulation/statistical_robustness.py | 444 | function | `build_statistical_robustness_audit` | Aggregate statistical robustness controls into one reader-facing artifact. |
+| src/simulation/statistical_robustness.py | 474 | function | `write_statistical_robustness_artifacts` | Write statistical robustness artifacts from generated simulation outputs. |
+| src/simulation/stochastic.py | 30 | function | `_categorical_sample` | No docstring. |
+| src/simulation/stochastic.py | 34 | function | `_entropy` | No docstring. |
+| src/simulation/stochastic.py | 41 | function | `_run_profile_once` | No docstring. |
+| src/simulation/stochastic.py | 128 | function | `_interval` | No docstring. |
+| src/simulation/stochastic.py | 141 | function | `_summaries_by_profile` | No docstring. |
+| src/simulation/stochastic.py | 169 | function | `build_stochastic_policy_ensemble` | Run seeded stochastic active-inference ensembles and null controls. |
 | src/visualizations/captions.py | 80 | function | `build_visual_caption_audit` | Audit figure captions and visual-encoding descriptions. |
 | src/visualizations/captions.py | 116 | function | `write_visual_caption_audit` | Write visual-caption audit JSON. |
 | src/visualizations/captions.py | 125 | function | `build_visual_accessibility_audit` | Audit accessibility metadata for source-mapped figures. |
@@ -397,11 +419,11 @@
 | src/visualizations/dashboard.py | 26 | function | `_load_yaml` | No docstring. |
 | src/visualizations/dashboard.py | 31 | function | `_escape` | No docstring. |
 | src/visualizations/dashboard.py | 35 | function | `build_artifact_dashboard_payload` | No docstring. |
-| src/visualizations/dashboard.py | 287 | function | `_table` | No docstring. |
-| src/visualizations/dashboard.py | 296 | function | `_figure_link` | No docstring. |
-| src/visualizations/dashboard.py | 303 | function | `_argument_arc_table` | No docstring. |
-| src/visualizations/dashboard.py | 319 | function | `render_artifact_dashboard_html` | No docstring. |
-| src/visualizations/dashboard.py | 545 | function | `write_artifact_dashboard` | No docstring. |
+| src/visualizations/dashboard.py | 293 | function | `_table` | No docstring. |
+| src/visualizations/dashboard.py | 302 | function | `_figure_link` | No docstring. |
+| src/visualizations/dashboard.py | 309 | function | `_argument_arc_table` | No docstring. |
+| src/visualizations/dashboard.py | 325 | function | `render_artifact_dashboard_html` | No docstring. |
+| src/visualizations/dashboard.py | 555 | function | `write_artifact_dashboard` | No docstring. |
 | src/visualizations/figures.py | 39 | function | `_load_json` | No docstring. |
 | src/visualizations/figures.py | 43 | function | `_load_style` | No docstring. |
 | src/visualizations/figures.py | 48 | function | `_enforce_readable_text` | No docstring. |

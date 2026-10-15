@@ -4,11 +4,11 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "realizing-emptiness"
-version = "2.0.0"
+version = "3.0.0"
 description = "Research-grade active-inference software foundation for Realizing Emptiness."
 readme = "README.md"
 authors = [{ name = "Daniel Ari Friedman", email = "daniel@activeinference.institute" }]
-requires-python = ">=3.10,<3.15"
+requires-python = ">=3.11,<3.15"
 license = { file = "LICENSE" }
 classifiers = [
     "Development Status :: 4 - Beta",
@@ -17,14 +17,15 @@ classifiers = [
     "Topic :: Scientific/Engineering",
 ]
 dependencies = [
-    "inferactively-pymdp==1.0.3",
+    "generalized-notation-notation @ git+https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation.git@46459949944e3217f8a6a804d4ff8c52829ef275",
+    "inferactively-pymdp==1.0.4; python_version < '3.12'",
+    "inferactively-pymdp==1.0.3; python_version >= '3.12'",
     "jsonschema>=4.22.0",
     "matplotlib>=3.7.0",
     "numpy>=1.24.0",
     "pillow>=12.3.0",
     "pyyaml>=6.0",
-    "scipy>=1.11.0; python_version >= '3.11' or sys_platform != 'darwin'",
-    "scipy==1.14.1; python_version < '3.11' and sys_platform == 'darwin'",
+    "scipy>=1.11.0",
 ]
 
 [project.optional-dependencies]
@@ -44,6 +45,9 @@ package-dir = {"" = "src"}
 
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[tool.setuptools.package-data]
+modeling = ["specifications/*.gnn.md", "upstream.json", "catalog.json"]
 
 [tool.pytest.ini_options]
 pythonpath = [".", "src"]

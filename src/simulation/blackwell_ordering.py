@@ -19,6 +19,8 @@ from __future__ import annotations
 
 from typing import Any
 
+from modeling.registry import model_parameters
+
 import numpy as np
 
 
@@ -30,13 +32,12 @@ CLAIM_BOUNDARY = (
 
 # A symmetric binary boundary channel A[state, outcome] = p(outcome | state) and a uniform prior over
 # the hidden boundary state, under 0-1 loss. The channel is informative (Bayes error 0.2 < chance 0.5).
-_PRIOR = np.array([0.5, 0.5])
-_CHANNEL = np.array([[0.8, 0.2], [0.2, 0.8]])
 
 
 def _bayes_error(channel: np.ndarray) -> float:
     """Bayes risk of the optimal decision rule under 0-1 loss: 1 - sum_o max_state p(state) p(o|state)."""
-    joint = _PRIOR[:, None] * channel
+    prior = np.asarray(model_parameters("finite_blackwell")["prior"], dtype=float)
+    joint = prior[:, None] * channel
     return float(1.0 - joint.max(axis=0).sum())
 
 
@@ -51,7 +52,7 @@ def _garble(channel: np.ndarray, retention_a: float, retention_b: float) -> np.n
     return channel @ garbling
 
 
-def build_blackwell_bayes_risk_audit(*, grid_steps: int = 21) -> dict[str, Any]:
+def build_blackwell_bayes_risk_audit(*, grid_steps: int | None = None) -> dict[str, Any]:
     """Finite Blackwell ordering surrogate with relabel-preserves and garble-degrades controls.
 
     The original channel's Bayes risk is compared against every invertible relabeling (which must
@@ -60,27 +61,26 @@ def build_blackwell_bayes_risk_audit(*, grid_steps: int = 21) -> dict[str, Any]:
     garbling over a dense grid ever lowers it (Blackwell monotonicity, a data-processing inequality);
     and a complete-erasure garbling reaches the prior chance risk.
     """
+    parameters = model_parameters("finite_blackwell")
+    prior = np.asarray(parameters["prior"], dtype=float)
+    channel = np.asarray(parameters["channel"], dtype=float)
+    grid_steps = parameters["grid_steps"] if grid_steps is None else grid_steps
     tolerance = 1e-9
-    chance_risk = float(1.0 - _PRIOR.max())
-    original_risk = _bayes_error(_CHANNEL)
+    chance_risk = float(1.0 - prior.max())
+    original_risk = _bayes_error(channel)
 
     relabel_rows = []
     for name, permutation in (("identity", (0, 1)), ("swap_outcomes", (1, 0))):
         relabel_rows.append({
             "relabeling": name,
             "permutation": list(permutation),
-            "bayes_risk": round(_bayes_error(_relabel(_CHANNEL, permutation)), 10),
+            "bayes_risk": round(_bayes_error(_relabel(channel, permutation)), 10),
         })
 
-    named_garblings = (
-        ("weak_garbling", 0.85, 0.85),
-        ("partial_garbling", 0.7, 0.7),
-        ("strong_garbling", 0.6, 0.6),
-        ("complete_erasure", 0.5, 0.5),
-    )
+    named_garblings = parameters["named_garblings"]
     garble_rows = []
     for name, retention_a, retention_b in named_garblings:
-        risk = _bayes_error(_garble(_CHANNEL, retention_a, retention_b))
+        risk = _bayes_error(_garble(channel, retention_a, retention_b))
         garble_rows.append({
             "garbling": name,
             "retention": [round(retention_a, 6), round(retention_b, 6)],
@@ -92,7 +92,7 @@ def build_blackwell_bayes_risk_audit(*, grid_steps: int = 21) -> dict[str, Any]:
     grid_risks = []
     for step_a in range(grid_steps):
         for step_b in range(grid_steps):
-            risk = _bayes_error(_garble(_CHANNEL, step_a / (grid_steps - 1), step_b / (grid_steps - 1)))
+            risk = _bayes_error(_garble(channel, step_a / (grid_steps - 1), step_b / (grid_steps - 1)))
             grid_risks.append(risk)
     minimum_grid_risk = min(grid_risks)
 
@@ -109,8 +109,8 @@ def build_blackwell_bayes_risk_audit(*, grid_steps: int = 21) -> dict[str, Any]:
     }
     return {
         "schema": "realizing_emptiness.blackwell_bayes_risk_audit.v1",
-        "prior": _PRIOR.tolist(),
-        "channel": _CHANNEL.tolist(),
+        "prior": prior.tolist(),
+        "channel": channel.tolist(),
         "chance_risk": round(chance_risk, 10),
         "original_bayes_risk": round(original_risk, 10),
         "minimum_grid_garbling_risk": round(minimum_grid_risk, 10),

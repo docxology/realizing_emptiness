@@ -14,7 +14,7 @@
       "has_visual_encoding": true,
       "id": "graphical_abstract_cover",
       "ok": true,
-      "source_artifact_count": 5,
+      "source_artifact_count": 6,
       "visual_encoding": "Near-square cover schematic; large box border colors encode source, finite software, stochastic simulation, and blocked stronger claims; directed arrows encode source-to-artifact-to-claim-gate flow; the dashed circle encodes the finite boundary screen; colored nodes and relabeling ribbons encode QRF sector labels."
     },
     {
@@ -24,7 +24,7 @@
       "has_visual_encoding": true,
       "id": "qrf_boundary_screen_geometry",
       "ok": true,
-      "source_artifact_count": 3,
+      "source_artifact_count": 4,
       "visual_encoding": "Standalone schematic; dashed circle encodes the finite boundary screen, labeled nodes encode b0-b5 channels, orange and blue directed edges encode action and observation flow, role text labels encode channel semantics, and the legend explains boundary, channel, action, and observation marks."
     },
     {
@@ -34,7 +34,7 @@
       "has_visual_encoding": true,
       "id": "qrf_channel_relabeling_ledger",
       "ok": true,
-      "source_artifact_count": 2,
+      "source_artifact_count": 3,
       "visual_encoding": "Matrix-style ledger; columns are b0-b5 channels, rows are channel roles, invariant same-bit evidence, and three QRF profiles; sector colors plus cell text encode relabeling, the equation callout anchors equations 7-10, and the legend maps each color to a sector label."
     },
     {
@@ -44,7 +44,7 @@
       "has_visual_encoding": true,
       "id": "qrf_invariance_policy_flow",
       "ok": true,
-      "source_artifact_count": 2,
+      "source_artifact_count": 3,
       "visual_encoding": "Two-panel chart; Panel A uses bars for admissible probability mass, a dashed line for the normalized target, and an x marker for the failing control, while Panel B uses horizontal stacked bars and an external legend to encode selected actions by profile."
     },
     {
@@ -54,7 +54,7 @@
       "has_visual_encoding": true,
       "id": "qrf_sectorisation_map",
       "ok": true,
-      "source_artifact_count": 1,
+      "source_artifact_count": 2,
       "visual_encoding": "Categorical color legend maps sector labels to matrix cells; rows are QRF profiles and columns are boundary channels."
     },
     {
@@ -64,7 +64,7 @@
       "has_visual_encoding": true,
       "id": "boundary_indistinguishability",
       "ok": true,
-      "source_artifact_count": 1,
+      "source_artifact_count": 2,
       "visual_encoding": "Blue bars encode profile probability mass; dashed teal line encodes the normalized probability target and legend identifies both."
     },
     {
@@ -74,7 +74,7 @@
       "has_visual_encoding": true,
       "id": "qrf_reference_frame_geometry",
       "ok": true,
-      "source_artifact_count": 2,
+      "source_artifact_count": 3,
       "visual_encoding": "Node color legend maps sectors; dashed boundary circle marks the screen; orange and blue arrows encode action and observation edges."
     },
     {
@@ -84,7 +84,7 @@
       "has_visual_encoding": true,
       "id": "bmr_free_energy_decomposition",
       "ok": true,
-      "source_artifact_count": 1,
+      "source_artifact_count": 2,
       "visual_encoding": "Line chart; color and marker legend encodes Delta F, Delta complexity, and Delta accuracy, while the dashed horizontal threshold marks Delta F = 0 as the keep/prune boundary."
     },
     {
@@ -94,7 +94,7 @@
       "has_visual_encoding": true,
       "id": "bmr_pruning_phase_diagram",
       "ok": true,
-      "source_artifact_count": 1,
+      "source_artifact_count": 2,
       "visual_encoding": "Zero-centered diverging colorbar encodes Delta F; grid cell text labels KEEP prior or PRUNE prior with the numeric value; the external legend defines the model-comparison meaning of each decision."
     },
     {
@@ -104,7 +104,7 @@
       "has_visual_encoding": true,
       "id": "simulation_sensitivity_heatmap",
       "ok": true,
-      "source_artifact_count": 1,
+      "source_artifact_count": 2,
       "visual_encoding": "Zero-centered diverging heatmap encodes mean Delta F; contrast-aware cell text reports how many observation-noise rows favor PRUNE, and gridlines preserve row and column separation."
     },
     {
@@ -114,7 +114,7 @@
       "has_visual_encoding": true,
       "id": "finite_quantum_scope_summary",
       "ok": true,
-      "source_artifact_count": 1,
+      "source_artifact_count": 2,
       "visual_encoding": "Matrix figure; row labels group quantum engine families, column labels distinguish finite implementation, negative controls, main-text claim scope, and blocked stronger claims, while fill color and the legend encode finite-validated cells versus hatched blocked-claim cells."
     },
     {
@@ -124,7 +124,7 @@
       "has_visual_encoding": true,
       "id": "quantum_boundary_entropy_landscape",
       "ok": true,
-      "source_artifact_count": 1,
+      "source_artifact_count": 2,
       "visual_encoding": "Four-panel line plot; legends map line colors and markers to entropy, CHSH, contextual-fraction, and Landauer quantities, while dashed and dotted horizontal lines mark local and Tsirelson bounds."
     },
     {
@@ -134,7 +134,7 @@
       "has_visual_encoding": true,
       "id": "quantum_contextuality_witness",
       "ok": true,
-      "source_artifact_count": 1,
+      "source_artifact_count": 2,
       "visual_encoding": "Left panel uses scatter colorbar for contextual fraction with line legends for bounds; right panel uses heatmap colorbar for rotated measurement entropy and a contour legend for reduced-entropy drift."
     },
     {
@@ -144,7 +144,7 @@
       "has_visual_encoding": true,
       "id": "quantum_measurement_contextuality_table",
       "ok": true,
-      "source_artifact_count": 1,
+      "source_artifact_count": 2,
       "visual_encoding": "Heatmap colorbar plus cell labels encode joint probabilities; bar colors and hatches encode product control versus Bell cover; dashed and dotted lines encode local and Tsirelson bounds."
     },
     {
@@ -154,7 +154,7 @@
       "has_visual_encoding": true,
       "id": "quantum_local_polytope_audit",
       "ok": true,
-      "source_artifact_count": 1,
+      "source_artifact_count": 2,
       "visual_encoding": "Bar colors and hatches distinguish product control from Bell cover; dashed line marks zero residual; horizontal bars encode deterministic-assignment mixture weights with text labels."
     },
     {
@@ -164,7 +164,7 @@
       "has_visual_encoding": true,
       "id": "quantum_open_system_dynamics",
       "ok": true,
-      "source_artifact_count": 1,
+      "source_artifact_count": 2,
       "visual_encoding": "Three-panel line plot; legends map line colors and markers to dephasing rates, the dashed line marks the local CHSH bound, and axes encode time against CHSH, entropy, and mutual information."
     },
     {
@@ -174,7 +174,7 @@
       "has_visual_encoding": true,
       "id": "qfep_boundary_hamiltonian_dynamics",
       "ok": true,
-      "source_artifact_count": 1,
+      "source_artifact_count": 2,
       "visual_encoding": "Three-panel line plot with rate legends; x-axes encode time, y-axes encode entropy bits, mutual information bits, and negative-eigenvalue residuals."
     },
     {
@@ -184,7 +184,7 @@
       "has_visual_encoding": true,
       "id": "quantum_trajectory_unraveling",
       "ok": true,
-      "source_artifact_count": 1,
+      "source_artifact_count": 2,
       "visual_encoding": "Three-panel figure; solid and dashed lines encode ensemble versus exact entropy, colored lines encode dephasing rates and trace distance, and bar error intervals encode jump counts by rate."
     },
     {
@@ -194,7 +194,7 @@
       "has_visual_encoding": true,
       "id": "many_body_boundary_screen_sweep",
       "ok": true,
-      "source_artifact_count": 1,
+      "source_artifact_count": 2,
       "visual_encoding": "Heatmap colorbar encodes reduced entropy in bits; rows are finite states, columns are subsystem cuts, and cell text labels entropy plus observer/control status."
     },
     {
@@ -204,7 +204,7 @@
       "has_visual_encoding": true,
       "id": "sheaf_contextuality_obstruction_audit",
       "ok": true,
-      "source_artifact_count": 1,
+      "source_artifact_count": 2,
       "visual_encoding": "Bar colors and hatches distinguish feasible and obstructed scenarios; dashed line marks zero residual; binary matrix colorbar and Y/N cell text encode audit criteria."
     },
     {
@@ -214,7 +214,7 @@
       "has_visual_encoding": true,
       "id": "qrf_transformation_covariance_audit",
       "ok": true,
-      "source_artifact_count": 1,
+      "source_artifact_count": 2,
       "visual_encoding": "Binary heatmap colorbar and Y/N cell text encode transformation criteria; grouped bars and legend encode mass error versus covariance error."
     },
     {
@@ -224,7 +224,7 @@
       "has_visual_encoding": true,
       "id": "empirical_adapter_provenance_audit",
       "ok": true,
-      "source_artifact_count": 1,
+      "source_artifact_count": 2,
       "visual_encoding": "Binary heatmap colorbar maps criterion absent/present; rows are adapter records, columns are provenance criteria, and right-side text gives blocked or demo-only decisions."
     },
     {
@@ -234,7 +234,7 @@
       "has_visual_encoding": true,
       "id": "arbitrary_two_qubit_entanglement_audit",
       "ok": true,
-      "source_artifact_count": 1,
+      "source_artifact_count": 2,
       "visual_encoding": "Line colors and markers encode negativity and PPT eigenvalue across Werner p; dotted vertical line encodes the PPT threshold, E/S labels mark entangled or separable rows, and bar colors encode separable versus Bell controls."
     },
     {
@@ -244,7 +244,7 @@
       "has_visual_encoding": true,
       "id": "general_measurement_cover_polytope_audit",
       "ok": true,
-      "source_artifact_count": 1,
+      "source_artifact_count": 2,
       "visual_encoding": "Bar colors and hatches distinguish feasible controls from infeasible obstructions; dashed line marks zero residual; binary matrix colorbar and Y/N cell text encode feasibility, expected status, and no-disturbance criteria."
     },
     {
@@ -254,7 +254,7 @@
       "has_visual_encoding": true,
       "id": "thermodynamic_channel_cost_audit",
       "ok": true,
-      "source_artifact_count": 1,
+      "source_artifact_count": 2,
       "visual_encoding": "Sequential heatmap colorbar encodes Landauer lower-bound cost; cell text provides values, hatched bars encode invalid-channel CPTP residuals, and dashed line marks the rejection threshold."
     },
     {
@@ -264,7 +264,7 @@
       "has_visual_encoding": true,
       "id": "sparse_boundary_screen_scaling_audit",
       "ok": true,
-      "source_artifact_count": 1,
+      "source_artifact_count": 2,
       "visual_encoding": "Heatmap colorbar encodes reduced entropy in bits by qubit count and cut; cell text labels observer versus control, and dual-axis line legend encodes entropy growth and amplitude-density decay."
     },
     {
@@ -274,7 +274,7 @@
       "has_visual_encoding": true,
       "id": "qrf_frame_covariance_toy_audit",
       "ok": true,
-      "source_artifact_count": 1,
+      "source_artifact_count": 2,
       "visual_encoding": "Binary heatmap colorbar and Y/N cell text encode accepted transforms and drift flags; grouped bar colors and hatches encode spectrum, reduced-entropy, and probability residuals, with a dotted floor line marking zero-residual display."
     },
     {
@@ -284,7 +284,7 @@
       "has_visual_encoding": true,
       "id": "quantum_roadmap_readiness_matrix",
       "ok": true,
-      "source_artifact_count": 1,
+      "source_artifact_count": 2,
       "visual_encoding": "Binary heatmap colorbar maps absent versus present readiness criteria; cell text shows Y or N, and right-side row labels distinguish finite validated rows from blocked roadmap rows."
     },
     {
@@ -294,7 +294,7 @@
       "has_visual_encoding": true,
       "id": "pymdp_profile_comparison",
       "ok": true,
-      "source_artifact_count": 3,
+      "source_artifact_count": 4,
       "visual_encoding": "Three panels use profile colors for free energy and posterior mass, an on-figure sign annotation for the lower-free-energy convention, and stacked action bars with an external action legend."
     },
     {
@@ -304,7 +304,7 @@
       "has_visual_encoding": true,
       "id": "posterior_trajectory",
       "ok": true,
-      "source_artifact_count": 3,
+      "source_artifact_count": 4,
       "visual_encoding": "Line color and marker legend maps profiles; hollow square markers encode perturbation steps; x-axis encodes simulation step and y-axis encodes P(contextual_post_dual state)."
     },
     {
@@ -314,7 +314,7 @@
       "has_visual_encoding": true,
       "id": "pymdp_runtime_validation_dashboard",
       "ok": true,
-      "source_artifact_count": 4,
+      "source_artifact_count": 5,
       "visual_encoding": "Four-panel dashboard; bar colors encode pass/fail, finite residual, stochastic profile-higher, and null-higher roles; dashed or dotted lines encode tolerances and zero effects; legends explain control status and profile-null effect direction."
     },
     {
@@ -324,7 +324,7 @@
       "has_visual_encoding": true,
       "id": "criticality_stochastic_ensemble",
       "ok": true,
-      "source_artifact_count": 1,
+      "source_artifact_count": 2,
       "visual_encoding": "Two-panel grouped bar chart; shared legend explains profile versus null color and hatch, text annotations encode profile-vs-null direction, and error bars encode 95 percent intervals across seeded runs."
     },
     {
@@ -334,7 +334,7 @@
       "has_visual_encoding": true,
       "id": "criticality_signatures",
       "ok": true,
-      "source_artifact_count": 2,
+      "source_artifact_count": 3,
       "visual_encoding": "Two panels; Panel A grouped bars with a legend encode measured branching ratio for profile versus hatched null plus a dashed balance line, and Panel B is a histogram whose bar heights encode avalanche-size counts."
     },
     {
@@ -344,7 +344,7 @@
       "has_visual_encoding": true,
       "id": "compassion_scope_widening",
       "ok": true,
-      "source_artifact_count": 1,
+      "source_artifact_count": 2,
       "visual_encoding": "Two-panel figure; Panel C is a grouped bar chart whose bar heights encode scope asymmetry with a legend distinguishing separation-prior-active bars from the hatched precision-ablation control and a dashed self/non-self balance line, and Panel D is a bar chart whose heights encode per-channel action-influence for b0-b5 with a dashed line at the action-shuffled mean."
     },
     {
@@ -354,7 +354,7 @@
       "has_visual_encoding": true,
       "id": "separation_prior_emergence",
       "ok": true,
-      "source_artifact_count": 1,
+      "source_artifact_count": 2,
       "visual_encoding": "Single-panel line chart whose lines encode factored versus unfactored prediction error and a dashed line encodes the measured factored advantage across the empowerment axis, with a legend and a zero reference line."
     },
     {
@@ -364,7 +364,7 @@
       "has_visual_encoding": true,
       "id": "internal_cut_unmeasurability",
       "ok": true,
-      "source_artifact_count": 1,
+      "source_artifact_count": 2,
       "visual_encoding": "Single-panel grouped bar chart whose bar heights encode the internal-cut entanglement entropy for separable versus entangled environments, with overlaid markers encoding the near-zero accessible marginal drift and a legend."
     },
     {
@@ -374,7 +374,7 @@
       "has_visual_encoding": true,
       "id": "practice_policy_scope_map",
       "ok": true,
-      "source_artifact_count": 1,
+      "source_artifact_count": 2,
       "visual_encoding": "Single-panel horizontal bar chart whose bar lengths encode model-intervention deltas, color encodes the sign of each delta with a legend, and a dashed line encodes the no-intervention baseline."
     },
     {
@@ -384,7 +384,7 @@
       "has_visual_encoding": true,
       "id": "stochastic_effect_size_forest",
       "ok": true,
-      "source_artifact_count": 1,
+      "source_artifact_count": 2,
       "visual_encoding": "Two-panel forest plot with shared profile/metric rows, colored point estimates and horizontal 95 percent pointwise percentile intervals; hollow markers encode Holm nonrejection and diamonds encode unresolved Monte Carlo decisions; dashed reference lines encode zero."
     },
     {
@@ -394,7 +394,7 @@
       "has_visual_encoding": true,
       "id": "criticality_paired_contrasts",
       "ok": true,
-      "source_artifact_count": 1,
+      "source_artifact_count": 2,
       "visual_encoding": "Horizontal contrast plot with one row per profile, stochastic-colored points, paired bootstrap interval lines, and a dashed zero reference explained in the legend."
     },
     {
@@ -404,7 +404,7 @@
       "has_visual_encoding": true,
       "id": "resampling_calibration",
       "ok": true,
-      "source_artifact_count": 1,
+      "source_artifact_count": 2,
       "visual_encoding": "Two-panel grouped bar figure with null and stochastic colors, exact binomial interval whiskers, hit-count labels and dashed nominal reference lines explained by legends."
     },
     {
@@ -414,7 +414,7 @@
       "has_visual_encoding": true,
       "id": "bmr_robustness_resampling",
       "ok": true,
-      "source_artifact_count": 1,
+      "source_artifact_count": 2,
       "visual_encoding": "Two-panel heatmap; sequential colorbar encodes bootstrap pruning rate, binary colorbar encodes Delta-F sign stability, compact cell text provides decision and interval labels, and the external legend distinguishes keep from prune semantics."
     },
     {
@@ -424,7 +424,7 @@
       "has_visual_encoding": true,
       "id": "quantum_trajectory_convergence",
       "ok": true,
-      "source_artifact_count": 1,
+      "source_artifact_count": 2,
       "visual_encoding": "Two-panel figure; line color encodes trace-distance residual over trajectory count, dotted and dashed thresholds mark tolerance, bar color and hatch distinguish the failing negative control from the passing largest ensemble."
     },
     {
@@ -434,7 +434,7 @@
       "has_visual_encoding": true,
       "id": "visual_semantic_palette_ledger",
       "ok": true,
-      "source_artifact_count": 1,
+      "source_artifact_count": 2,
       "visual_encoding": "Swatch ledger; filled rectangles encode semantic colors, hatches encode null or blocked roles, text labels provide role names and color values, and the legend states cross-figure reuse."
     },
     {
@@ -444,7 +444,7 @@
       "has_visual_encoding": true,
       "id": "method_assumption_failure_map",
       "ok": true,
-      "source_artifact_count": 2,
+      "source_artifact_count": 3,
       "visual_encoding": "Binary matrix colorbar maps contract absent/present; rows are method IDs, columns are governance fields, and cell text gives Y/N or the number of negative controls."
     },
     {
@@ -454,7 +454,7 @@
       "has_visual_encoding": true,
       "id": "claim_source_validation_graph",
       "ok": true,
-      "source_artifact_count": 1,
+      "source_artifact_count": 2,
       "visual_encoding": "Node color legend maps claim/source/gate nodes; gray lines encode validated bindings across the three columns."
     },
     {
@@ -464,7 +464,7 @@
       "has_visual_encoding": true,
       "id": "scholarship_coverage_matrix",
       "ok": true,
-      "source_artifact_count": 1,
+      "source_artifact_count": 2,
       "visual_encoding": "Count heatmap; rows encode declared source status, columns encode manuscript tracks, numbered cells and a sequential colorbar encode citation counts, and the linked JSON preserves individual citations."
     },
     {
@@ -474,7 +474,7 @@
       "has_visual_encoding": true,
       "id": "claim_support_matrix",
       "ok": true,
-      "source_artifact_count": 1,
+      "source_artifact_count": 2,
       "visual_encoding": "Count heatmap; rows are public claim IDs, columns are declared source statuses, and numeric cell labels plus the colorbar count distinct citations. Individual bindings remain in the source artifact."
     },
     {
@@ -484,7 +484,7 @@
       "has_visual_encoding": true,
       "id": "manuscript_claim_audit",
       "ok": true,
-      "source_artifact_count": 1,
+      "source_artifact_count": 2,
       "visual_encoding": "Bar color legend maps teal to pass and amber to fail; bars encode manuscript language-gate checks."
     },
     {
@@ -494,7 +494,7 @@
       "has_visual_encoding": true,
       "id": "evidence_ceiling_stress_matrix",
       "ok": true,
-      "source_artifact_count": 1,
+      "source_artifact_count": 2,
       "visual_encoding": "Binary matrix colorbar maps absent/present boundary stressors; rows are public claims grouped by evidence class, columns are stressor types, and separator lines mark claim-class boundaries."
     },
     {
@@ -504,7 +504,7 @@
       "has_visual_encoding": true,
       "id": "claim_context_evidence_ladder",
       "ok": true,
-      "source_artifact_count": 3,
+      "source_artifact_count": 4,
       "visual_encoding": "Horizontal ladder chart; y-axis rows are public claim IDs grouped by evidence class, bar length encodes scoped source-role count, circular pass markers encode resolved validation gates, and hatched blocked markers encode disallowed stronger interpretations."
     },
     {
@@ -514,7 +514,7 @@
       "has_visual_encoding": true,
       "id": "formalism_operation_map",
       "ok": true,
-      "source_artifact_count": 1,
+      "source_artifact_count": 2,
       "visual_encoding": "Binary matrix colorbar maps absent/present operational statuses; rows are equations and columns are software-status categories."
     },
     {
@@ -524,7 +524,7 @@
       "has_visual_encoding": true,
       "id": "qrf_sector_situation",
       "ok": true,
-      "source_artifact_count": 2,
+      "source_artifact_count": 3,
       "visual_encoding": "Layered schematic; top boundary cells encode the shared channels and their observation symbols, dotted vertical lines encode the same evidenced bit reaching every lens, colored lens cells and text encode QRF sector labels, the right-hand text encodes the sector count per lens, and the legend maps each color to a sector label."
     },
     {
@@ -534,7 +534,7 @@
       "has_visual_encoding": true,
       "id": "boundary_use_vs_ontology",
       "ok": true,
-      "source_artifact_count": 1,
+      "source_artifact_count": 2,
       "visual_encoding": "Stepwise schematic; a top source box and b0-b5 bit cells encode the shared finite boundary screen, arrows encode the two possible readings, numbered badges and large rounded boxes encode licensed use versus blocked ontology, teal and amber borders encode pass and blocked verdicts, italic audit strips encode the bound validator flags, and the legend maps each verdict color."
     },
     {
@@ -544,7 +544,7 @@
       "has_visual_encoding": true,
       "id": "separation_prior_net_value",
       "ok": true,
-      "source_artifact_count": 2,
+      "source_artifact_count": 3,
       "visual_encoding": "Single-panel line chart; one line per prior precision encodes delta free energy versus metacognitive access on the axes, the bolded line marks the precision whose net value crosses zero, shaded keep and prune bands encode the sign of net value, a dashed vertical line marks the crossing access, and the legend names each precision line."
     },
     {
@@ -554,7 +554,7 @@
       "has_visual_encoding": true,
       "id": "multipartite_witness_negativity",
       "ok": true,
-      "source_artifact_count": 1,
+      "source_artifact_count": 2,
       "visual_encoding": "Single-panel bar chart; the bar height encodes minimum bipartition negativity per fixture, teal versus amber bar color encodes entangled fixtures versus separable false-positive controls, a zero reference line marks the control level, and the legend maps each color to a fixture class."
     },
     {
@@ -564,7 +564,7 @@
       "has_visual_encoding": true,
       "id": "tensor_network_scaling",
       "ok": true,
-      "source_artifact_count": 1,
+      "source_artifact_count": 2,
       "visual_encoding": "Two-panel bar chart; Panel A bar height encodes maximum bond dimension with color separating entangled and product fixtures, Panel B bar height encodes bond-one truncation error with color separating lossy entangled bars from lossless product bars, and each panel legend maps the colors to fixture classes."
     },
     {
@@ -574,7 +574,7 @@
       "has_visual_encoding": true,
       "id": "collision_model_relaxation",
       "ok": true,
-      "source_artifact_count": 1,
+      "source_artifact_count": 2,
       "visual_encoding": "Single-panel grouped bar chart; paired bar heights encode the initial and final trace distance to the ancilla per coupling on the value axis, color separates the initial from the final bar, and the legend names both."
     },
     {
@@ -584,7 +584,7 @@
       "has_visual_encoding": true,
       "id": "n_cycle_contextuality_panel",
       "ok": true,
-      "source_artifact_count": 1,
+      "source_artifact_count": 2,
       "visual_encoding": "Single-panel categorical matrix; rows encode cycle length and parity, columns encode the three behaviors, two-color cell fill and cell text encode feasible versus infeasible LP verdicts, and the legend maps the colors to noncontextual versus contextual."
     },
     {
@@ -594,7 +594,7 @@
       "has_visual_encoding": true,
       "id": "data_processing_monotonicity",
       "ok": true,
-      "source_artifact_count": 1,
+      "source_artifact_count": 2,
       "visual_encoding": "Three-panel figure; Panel A uses a scatter whose point color encodes the channel family and a dashed diagonal reference line encoding no change, Panel B uses bars whose height encodes the Choi minimum eigenvalue and whose color and legend encode completely-positive versus not-completely-positive maps, and Panel C uses grouped bars whose paired heights and color encode the trace distance before versus after selective post-selection."
     },
     {
@@ -604,7 +604,7 @@
       "has_visual_encoding": true,
       "id": "markov_blanket_discovery",
       "ok": true,
-      "source_artifact_count": 1,
+      "source_artifact_count": 2,
       "visual_encoding": "Three-panel figure; Panel A and Panel B use heatmaps whose colorbar encodes the magnitude of precision and marginal-correlation entries respectively over the internal, blanket, and external node axes, and Panel C uses bars whose height and color encode the blanket-recovery F1 per reading with a dashed reference line and legend marking exact recovery."
     }
   ],

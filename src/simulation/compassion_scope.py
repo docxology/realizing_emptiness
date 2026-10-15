@@ -29,6 +29,8 @@ from __future__ import annotations
 
 from typing import Any
 
+from modeling.registry import model_parameters
+
 import numpy as np
 
 from formalism.models import QRFDeployment
@@ -48,14 +50,18 @@ SELF_SECTORS = frozenset({"self", "body"})
 # (contextual-world), b4 (other-agent), and b5 (care-salience) sit between. A channel's
 # realised influence is MEASURED from the finite stream below, not read from this vector;
 # the vector only parameterises how strongly each channel tracks the action.
-CHANNEL_CONTROLLABILITY: tuple[float, ...] = (0.95, 0.90, 0.10, 0.35, 0.55, 0.75)
+def __getattr__(name: str) -> Any:
+    """Resolve the historical vector export without freezing a second authority."""
+    if name == "CHANNEL_CONTROLLABILITY":
+        return tuple(model_parameters("finite_compassion_scope")["controllability"])
+    raise AttributeError(name)
 
 
 def compassion_boundary_stream(
-    controllability: tuple[float, ...] = CHANNEL_CONTROLLABILITY,
+    controllability: tuple[float, ...] | None = None,
     *,
-    seed: int = 7,
-    steps: int = 96,
+    seed: int | None = None,
+    steps: int | None = None,
 ) -> list[dict[str, Any]]:
     """Return a finite boundary stream with heterogeneous per-channel action-contingency.
 
@@ -65,6 +71,10 @@ def compassion_boundary_stream(
     function of the action, and a channel with controllability 0 is action-independent. The
     stream is fully deterministic given ``seed``.
     """
+    parameters = model_parameters("finite_compassion_scope")
+    controllability = tuple(parameters["controllability"]) if controllability is None else controllability
+    seed = parameters["stream_seed"] if seed is None else seed
+    steps = parameters["steps"] if steps is None else steps
     rng = np.random.default_rng(seed)
     channels = len(controllability)
     bias = rng.integers(0, 2, size=channels)
@@ -130,9 +140,10 @@ def _precision_weights(
     deployment equalises concern. With ``ablate=True`` the self boost is removed, leaving the
     partition-size-only baseline used by the negative control.
     """
+    baseline = model_parameters("finite_compassion_scope")["baseline_precision"]
     self_boost = 0.0 if ablate else deployment.prior_precision * (1.0 - deployment.metacognitive_access)
     return np.array(
-        [1.0 + self_boost if label in SELF_SECTORS else 1.0 for label in sector_labels],
+        [baseline + self_boost if label in SELF_SECTORS else baseline for label in sector_labels],
         dtype=float,
     )
 
@@ -157,7 +168,8 @@ def compute_scope_of_concern(
     labels = tuple(sector_labels) if sector_labels is not None else deployment.sector_labels
     influence_vector = channel_influence(trajectory) if influence is None else np.asarray(influence, dtype=float)
     weights = _precision_weights(deployment, labels, ablate=ablate_prior)
-    concern = (1.0 + influence_vector) * weights
+    parameters = model_parameters("finite_compassion_scope")
+    concern = (parameters["baseline_concern"] + parameters["influence_weight"] * influence_vector) * weights
     self_mask = np.array([label in SELF_SECTORS for label in labels], dtype=bool)
     # Per-channel MEAN concern, not partition sum: this makes scope_asymmetry independent of how
     # many channels each partition holds, so the widening reflects the separation prior's per-unit
@@ -192,10 +204,10 @@ def _is_monotone_increasing(values: list[float], *, tolerance: float = 1e-9) -> 
 def build_compassion_scope_audit(
     deployments: tuple[QRFDeployment, ...],
     *,
-    controllability: tuple[float, ...] = CHANNEL_CONTROLLABILITY,
-    seed: int = 19,
-    steps: int = 96,
-    action_shuffle_count: int = 32,
+    controllability: tuple[float, ...] | None = None,
+    seed: int | None = None,
+    steps: int | None = None,
+    action_shuffle_count: int | None = None,
 ) -> dict[str, Any]:
     """Audit scope-of-concern widening across profiles, with separable controls for the two
     drivers of concern: the separation prior (precision) and the realised action-influence.
@@ -209,6 +221,11 @@ def build_compassion_scope_audit(
     (observation, action) pairing — and removing it (influence-free concern) measurably changes the
     scope, which is what makes the blend genuinely active rather than decorative.
     """
+    parameters = model_parameters("finite_compassion_scope")
+    controllability = tuple(parameters["controllability"]) if controllability is None else controllability
+    seed = parameters["audit_seed"] if seed is None else seed
+    steps = parameters["steps"] if steps is None else steps
+    action_shuffle_count = parameters["action_shuffle_count"] if action_shuffle_count is None else action_shuffle_count
     stream = compassion_boundary_stream(controllability, seed=seed, steps=steps)
     influence = channel_influence(stream)
     rows = [compute_scope_of_concern(d, stream, influence=influence) for d in deployments]
@@ -268,7 +285,7 @@ def build_compassion_scope_audit(
     # "non-increasing" check would be vacuous: self_boost is non-decreasing in prior_precision, so the
     # curve is algebraically non-increasing for every valid input and could never fail.)
     base = deployments[0]
-    dose_precisions = (0.0, 1.0, 2.0, 4.0, 8.0)
+    dose_precisions = tuple(parameters["dose_precisions"])
     dose_asymmetries = [
         compute_scope_of_concern(
             QRFDeployment(f"dose_{p}", base.sector_labels, base.metacognitive_access, p),

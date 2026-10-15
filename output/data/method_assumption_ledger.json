@@ -66,7 +66,7 @@
       "modeling_choices": [
         "three-state QRF profile model",
         "finite expected-free-energy proxy terms",
-        "profile-specific priors, preferences, and transition relaxation drive action differences"
+        "GNN-declared priors, preferences, and transition tensors drive action differences"
       ]
     },
     {
@@ -86,7 +86,7 @@
       ],
       "method_id": "seeded_stochastic_policy_ensemble",
       "modeling_choices": [
-        "64 runs per profile",
+        "GNN-declared runs per profile",
         "null-control action and observation sampling"
       ]
     },

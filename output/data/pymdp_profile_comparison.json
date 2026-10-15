@@ -27,9 +27,9 @@
       "deployment": {
         "flexibility": 0.16666666666666666,
         "is_dual": true,
-        "metacognitive_access": 0.0,
+        "metacognitive_access": 0,
         "name": "separation_constrained",
-        "prior_precision": 4.0,
+        "prior_precision": 4,
         "sector_labels": [
           "self",
           "self",
@@ -40,20 +40,20 @@
         ]
       },
       "final_policy_posterior": [
-        0.33041352,
+        0.33041349,
         0.33569959,
         0.33388686
       ],
       "final_state_posterior": [
         0.97938627,
         0.0167609,
-        0.00385279
+        0.00385278
       ],
-      "mean_vfe": 0.731322642415762,
-      "mean_weighted_expected_free_energy": -1.063868745599984,
+      "mean_vfe": 0.7313226585586866,
+      "mean_weighted_expected_free_energy": -1.0638687515214755,
       "posterior_normalized_all_steps": true,
       "profile": "separation_constrained",
-      "profile_energy": -0.7919811631131639
+      "profile_energy": -0.7919811690346554
     },
     {
       "action_counts": {
@@ -66,7 +66,7 @@
         "is_dual": false,
         "metacognitive_access": 0.55,
         "name": "opacified",
-        "prior_precision": 2.0,
+        "prior_precision": 2,
         "sector_labels": [
           "self",
           "action",
@@ -79,18 +79,18 @@
       "final_policy_posterior": [
         0.33755744,
         0.34328017,
-        0.31916246
+        0.31916243
       ],
       "final_state_posterior": [
         0.0465846,
-        0.19287878,
+        0.19287877,
         0.76053661
       ],
-      "mean_vfe": 0.860562801361084,
-      "mean_weighted_expected_free_energy": -0.952844884742824,
+      "mean_vfe": 0.8605627864599228,
+      "mean_weighted_expected_free_energy": -0.9528448840290973,
       "posterior_normalized_all_steps": true,
       "profile": "opacified",
-      "profile_energy": -0.9406224270092021
+      "profile_energy": -0.9406224262954753
     },
     {
       "action_counts": {
@@ -101,7 +101,7 @@
       "deployment": {
         "flexibility": 0.9166666666666667,
         "is_dual": false,
-        "metacognitive_access": 1.0,
+        "metacognitive_access": 1,
         "name": "post_dual",
         "prior_precision": 0.2,
         "sector_labels": [
@@ -123,18 +123,18 @@
         0.03195938,
         0.96162844
       ],
-      "mean_vfe": 0.6986371800303459,
-      "mean_weighted_expected_free_energy": -1.1054900906397973,
+      "mean_vfe": 0.6986371638874213,
+      "mean_weighted_expected_free_energy": -1.105490082118436,
       "posterior_normalized_all_steps": true,
       "profile": "post_dual",
-      "profile_energy": -1.3440257792810062
+      "profile_energy": -1.3440257707596448
     }
   ],
   "posterior_normalized": true,
   "posterior_sum": 1.0,
   "rows": [
     {
-      "accuracy": 1.063868745599984,
+      "accuracy": 1.0638687515214755,
       "action_counts": {
         "inspect_boundary": 16,
         "release_prior": 0,
@@ -145,9 +145,9 @@
       "deployment": {
         "flexibility": 0.16666666666666666,
         "is_dual": true,
-        "metacognitive_access": 0.0,
+        "metacognitive_access": 0,
         "name": "separation_constrained",
-        "prior_precision": 4.0,
+        "prior_precision": 4,
         "sector_labels": [
           "self",
           "self",
@@ -158,25 +158,25 @@
         ]
       },
       "final_policy_posterior": [
-        0.33041352,
+        0.33041349,
         0.33569959,
         0.33388686
       ],
       "final_state_posterior": [
         0.97938627,
         0.0167609,
-        0.00385279
+        0.00385278
       ],
       "flexibility": 0.16666666666666666,
-      "free_energy": -0.7919811631131639,
-      "mean_vfe": 0.731322642415762,
-      "mean_weighted_expected_free_energy": -1.063868745599984,
-      "posterior_mass": 0.2566038825313631,
+      "free_energy": -0.7919811690346554,
+      "mean_vfe": 0.7313226585586866,
+      "mean_weighted_expected_free_energy": -1.0638687515214755,
+      "posterior_mass": 0.256603884689972,
       "posterior_normalized_all_steps": true,
-      "prediction_error": 0.731322642415762
+      "prediction_error": 0.7313226585586866
     },
     {
-      "accuracy": 0.952844884742824,
+      "accuracy": 0.9528448840290973,
       "action_counts": {
         "inspect_boundary": 7,
         "release_prior": 17,
@@ -189,7 +189,7 @@
         "is_dual": false,
         "metacognitive_access": 0.55,
         "name": "opacified",
-        "prior_precision": 2.0,
+        "prior_precision": 2,
         "sector_labels": [
           "self",
           "action",
@@ -202,23 +202,23 @@
       "final_policy_posterior": [
         0.33755744,
         0.34328017,
-        0.31916246
+        0.31916243
       ],
       "final_state_posterior": [
         0.0465846,
-        0.19287878,
+        0.19287877,
         0.76053661
       ],
       "flexibility": 0.6916666666666667,
-      "free_energy": -0.9406224270092021,
-      "mean_vfe": 0.860562801361084,
-      "mean_weighted_expected_free_energy": -0.952844884742824,
-      "posterior_mass": 0.29772637102221566,
+      "free_energy": -0.9406224262954753,
+      "mean_vfe": 0.8605627864599228,
+      "mean_weighted_expected_free_energy": -0.9528448840290973,
+      "posterior_mass": 0.29772637155127657,
       "posterior_normalized_all_steps": true,
-      "prediction_error": 0.860562801361084
+      "prediction_error": 0.8605627864599228
     },
     {
-      "accuracy": 1.1054900906397973,
+      "accuracy": 1.105490082118436,
       "action_counts": {
         "inspect_boundary": 0,
         "release_prior": 24,
@@ -229,7 +229,7 @@
       "deployment": {
         "flexibility": 0.9166666666666667,
         "is_dual": false,
-        "metacognitive_access": 1.0,
+        "metacognitive_access": 1,
         "name": "post_dual",
         "prior_precision": 0.2,
         "sector_labels": [
@@ -252,26 +252,26 @@
         0.96162844
       ],
       "flexibility": 0.9166666666666667,
-      "free_energy": -1.3440257792810062,
-      "mean_vfe": 0.6986371800303459,
-      "mean_weighted_expected_free_energy": -1.1054900906397973,
-      "posterior_mass": 0.44566974644642116,
+      "free_energy": -1.3440257707596448,
+      "mean_vfe": 0.6986371638874213,
+      "mean_weighted_expected_free_energy": -1.105490082118436,
+      "posterior_mass": 0.4456697437587514,
       "posterior_normalized_all_steps": true,
-      "prediction_error": 0.6986371800303459
+      "prediction_error": 0.6986371638874213
     }
   ],
   "runtime_dependency_check": {
     "agent_class": "Agent",
     "neg_efe_shape": [
       1,
-      2
+      3
     ],
     "ok": true,
     "policy_posterior_normalized": true,
     "policy_posterior_sum": 1.0,
     "required_version": "1.0.3",
     "schema": "realizing_emptiness.pymdp_runtime_dependency_check.v1",
-    "state_factor_count": 2,
+    "state_factor_count": 1,
     "version": "1.0.3",
     "version_ok": true,
     "vfe_available": true,

@@ -8,6 +8,7 @@ from typing import Any
 
 import numpy as np
 
+from modeling.registry import model_parameters
 from simulation.pymdp_profiles import (
     ACTION_LABELS,
     OBSERVATION_LABELS,
@@ -167,18 +168,23 @@ def _summaries_by_profile(run_summaries: list[dict[str, Any]], *, null_control: 
 
 def build_stochastic_policy_ensemble(
     *,
-    seed: int = 101,
-    runs: int = 128,
-    steps: int = 48,
-    channels: int = 6,
+    seed: int | None = None,
+    runs: int | None = None,
+    steps: int | None = None,
+    channels: int | None = None,
 ) -> dict[str, Any]:
     """Run seeded stochastic active-inference ensembles and null controls."""
+    design = model_parameters("statistical_policy_ensemble")
+    seed = design["seed"] if seed is None else seed
+    runs = design["runs"] if runs is None else runs
+    steps = design["steps"] if steps is None else steps
+    channels = design["channels"] if channels is None else channels
     rows: list[dict[str, Any]] = []
     run_summaries: list[dict[str, Any]] = []
     for profile_index, spec in enumerate(profile_specs(channels)):
         model = build_profile_generative_model(spec)
         for run_index in range(runs):
-            run_seed = seed + 10000 * profile_index + run_index
+            run_seed = seed + design["profile_seed_stride"] * profile_index + run_index
             profile_rows, summary = _run_profile_once(
                 model=model,
                 seed=run_seed,
@@ -188,7 +194,7 @@ def build_stochastic_policy_ensemble(
             )
             null_rows, null_summary = _run_profile_once(
                 model=model,
-                seed=run_seed + 500000,
+                seed=run_seed + design["null_seed_offset"],
                 profile=spec.deployment.name,
                 run_index=run_index,
                 steps=steps,

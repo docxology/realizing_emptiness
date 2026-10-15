@@ -11,6 +11,8 @@ import numpy as np
 from scipy.linalg import expm
 from scipy.optimize import linprog
 
+from modeling.registry import model_parameters
+
 
 CLAIM_BOUNDARY = (
     "finite two-qubit quantum-information simulation; not empirical evidence and "
@@ -141,12 +143,7 @@ def _chsh_max(concurrence: float) -> float:
 
 
 def _chsh_contexts() -> list[dict[str, Any]]:
-    return [
-        {"id": "A0B0", "a_label": "A0", "b_label": "B0", "a_angle": 0.0, "b_angle": math.pi / 4.0, "sign": 1.0},
-        {"id": "A0B1", "a_label": "A0", "b_label": "B1", "a_angle": 0.0, "b_angle": -math.pi / 4.0, "sign": 1.0},
-        {"id": "A1B0", "a_label": "A1", "b_label": "B0", "a_angle": math.pi / 2.0, "b_angle": math.pi / 4.0, "sign": 1.0},
-        {"id": "A1B1", "a_label": "A1", "b_label": "B1", "a_angle": math.pi / 2.0, "b_angle": -math.pi / 4.0, "sign": -1.0},
-    ]
+    return model_parameters("quantum_measurement_contextuality")["contexts"]
 
 
 def _joint_probability_rows(model_label: str, context: dict[str, Any], correlation: float) -> list[dict[str, Any]]:
@@ -494,7 +491,7 @@ def _env_bipartitions(env_local_indices: tuple[int, ...]) -> list[tuple[tuple[in
     return bipartitions
 
 
-def build_internal_cut_unmeasurability_audit(*, env_qubits: int = 4) -> dict[str, Any]:
+def build_internal_cut_unmeasurability_audit(*, env_qubits: int | None = None) -> dict[str, Any]:
     """Generalise the no-self-evidence result to arbitrary internal boundaries (section 3.3).
 
     A finite agent A cannot verify, from its own side, that any internal bipartition B1|B2 of its
@@ -506,6 +503,8 @@ def build_internal_cut_unmeasurability_audit(*, env_qubits: int = 4) -> dict[str
     across the two states (A cannot adjudicate the cut) while a two-sided oracle that is given the
     full joint state does recover the differing internal-cut entropy (resolving-power control).
     """
+    parameters = model_parameters("quantum_internal_cut_unmeasurability_audit")
+    env_qubits = parameters["env_qubits"] if env_qubits is None else env_qubits
     total_qubits = 2 + env_qubits
     a_index, anc_index = 0, 1
     env_global = tuple(range(2, total_qubits))
@@ -788,10 +787,13 @@ def _basis_invariance_rows(theta_grid: np.ndarray, rotation_grid: np.ndarray) ->
     return rows
 
 
-def build_quantum_boundary_entropy(*, theta_count: int = 33, rotation_count: int = 25) -> dict[str, Any]:
+def build_quantum_boundary_entropy(*, theta_count: int | None = None, rotation_count: int | None = None) -> dict[str, Any]:
     """Build finite two-qubit entropy, CHSH, and basis-invariance artifacts."""
-    theta_grid = np.linspace(0.0, math.pi / 4.0, theta_count)
-    rotation_grid = np.linspace(0.0, math.pi / 2.0, rotation_count)
+    parameters = model_parameters("quantum_boundary_entropy")
+    theta_count = parameters["theta_count"] if theta_count is None else theta_count
+    rotation_count = parameters["rotation_count"] if rotation_count is None else rotation_count
+    theta_grid = np.linspace(*parameters["theta_bounds"], theta_count)
+    rotation_grid = np.linspace(*parameters["rotation_bounds"], rotation_count)
     rows = [_row(float(theta), index) for index, theta in enumerate(theta_grid)]
     basis_rows = _basis_invariance_rows(theta_grid, rotation_grid)
     max_chsh = max(row["chsh_s_max"] for row in rows)
@@ -826,12 +828,15 @@ def build_quantum_boundary_entropy(*, theta_count: int = 33, rotation_count: int
     }
 
 
-def build_quantum_open_system_dynamics(*, time_count: int = 21, decoherence_rate_count: int = 4) -> dict[str, Any]:
+def build_quantum_open_system_dynamics(*, time_count: int | None = None, decoherence_rate_count: int | None = None) -> dict[str, Any]:
     """Build finite dephasing-channel dynamics for Bell and product controls."""
-    time_grid = np.linspace(0.0, 4.0, time_count)
-    base_rates = np.array([0.0, 0.2, 0.5, 1.0], dtype=float)
+    parameters = model_parameters("quantum_open_system_dynamics")
+    time_count = parameters["time_count"] if time_count is None else time_count
+    decoherence_rate_count = parameters["decoherence_rate_count"] if decoherence_rate_count is None else decoherence_rate_count
+    time_grid = np.linspace(*parameters["time_bounds"], time_count)
+    base_rates = np.array(parameters["rates"], dtype=float)
     if decoherence_rate_count != len(base_rates):
-        rate_grid = np.linspace(0.0, 1.0, decoherence_rate_count)
+        rate_grid = np.linspace(min(base_rates), max(base_rates), decoherence_rate_count)
     else:
         rate_grid = base_rates
     rows = []
@@ -945,12 +950,15 @@ def build_quantum_measurement_contextuality() -> dict[str, Any]:
     }
 
 
-def build_qfep_boundary_hamiltonian_dynamics(*, time_count: int = 21, decoherence_rate_count: int = 4) -> dict[str, Any]:
+def build_qfep_boundary_hamiltonian_dynamics(*, time_count: int | None = None, decoherence_rate_count: int | None = None) -> dict[str, Any]:
     """Build finite boundary-Hamiltonian Lindblad dynamics for the roadmap qFEP engine."""
-    time_grid = np.linspace(0.0, 3.0, time_count)
-    base_rates = np.array([0.0, 0.12, 0.3, 0.6], dtype=float)
-    rate_grid = base_rates if decoherence_rate_count == len(base_rates) else np.linspace(0.0, 0.6, decoherence_rate_count)
-    hamiltonian = 0.35 * np.kron(SIGMA_Z, IDENTITY_2) + 0.2 * np.kron(SIGMA_Z, SIGMA_Z)
+    parameters = model_parameters("quantum_qfep_boundary_hamiltonian_dynamics")
+    time_count = parameters["time_count"] if time_count is None else time_count
+    decoherence_rate_count = parameters["decoherence_rate_count"] if decoherence_rate_count is None else decoherence_rate_count
+    time_grid = np.linspace(*parameters["time_bounds"], time_count)
+    base_rates = np.array(parameters["rates"], dtype=float)
+    rate_grid = base_rates if decoherence_rate_count == len(base_rates) else np.linspace(min(base_rates), max(base_rates), decoherence_rate_count)
+    hamiltonian = parameters["hamiltonian_z"] * np.kron(SIGMA_Z, IDENTITY_2) + parameters["hamiltonian_zz"] * np.kron(SIGMA_Z, SIGMA_Z)
     rho0 = _density(_bell_state_vector())
     rows: list[dict[str, Any]] = []
     for rate in rate_grid:
@@ -1014,8 +1022,8 @@ def build_qfep_boundary_hamiltonian_dynamics(*, time_count: int = 21, decoherenc
         "time_grid": [round(float(value), 8) for value in time_grid],
         "decoherence_rate_grid": [round(float(value), 8) for value in rate_grid],
         "hamiltonian_terms": [
-            {"operator": "Z tensor I", "coefficient": 0.35},
-            {"operator": "Z tensor Z", "coefficient": 0.2},
+            {"operator": "Z tensor I", "coefficient": parameters["hamiltonian_z"]},
+            {"operator": "Z tensor Z", "coefficient": parameters["hamiltonian_zz"]},
         ],
         "row_count": len(rows),
         "rows": rows,
@@ -1036,17 +1044,22 @@ def _trace_distance(first: np.ndarray, second: np.ndarray) -> float:
 
 def build_quantum_trajectory_unraveling(
     *,
-    seed: int = 404,
-    trajectory_count: int = 1024,
-    step_count: int = 30,
-    total_time: float = 3.0,
+    seed: int | None = None,
+    trajectory_count: int | None = None,
+    step_count: int | None = None,
+    total_time: float | None = None,
 ) -> dict[str, Any]:
     """Build seeded Monte Carlo wave-function trajectories for the finite Lindblad audit."""
+    parameters = model_parameters("quantum_trajectory_unraveling")
+    seed = parameters["seed"] if seed is None else seed
+    trajectory_count = parameters["trajectory_count"] if trajectory_count is None else trajectory_count
+    step_count = parameters["step_count"] if step_count is None else step_count
+    total_time = parameters["total_time"] if total_time is None else total_time
     rng = np.random.default_rng(seed)
     time_grid = np.linspace(0.0, total_time, step_count + 1)
     dt = float(total_time / step_count)
-    rate_grid = np.array([0.0, 0.12, 0.3, 0.6], dtype=float)
-    hamiltonian = 0.35 * np.kron(SIGMA_Z, IDENTITY_2) + 0.2 * np.kron(SIGMA_Z, SIGMA_Z)
+    rate_grid = np.array(parameters["rates"], dtype=float)
+    hamiltonian = parameters["hamiltonian_z"] * np.kron(SIGMA_Z, IDENTITY_2) + parameters["hamiltonian_zz"] * np.kron(SIGMA_Z, SIGMA_Z)
     psi0 = _bell_state_vector()
     rho0 = _density(psi0)
     rows: list[dict[str, Any]] = []
@@ -1164,14 +1177,11 @@ def build_quantum_trajectory_unraveling(
     }
 
 
-def build_many_body_boundary_screen_sweep(*, qubit_count: int = 6) -> dict[str, Any]:
+def build_many_body_boundary_screen_sweep(*, qubit_count: int | None = None) -> dict[str, Any]:
     """Build a finite many-body boundary-screen sweep over subsystem cuts."""
-    cuts = [
-        {"id": "observer_boundary_cut", "qubits": [0, 1, 2], "cut_class": "candidate_observer_boundary"},
-        {"id": "local_cluster_cut", "qubits": [0, 1, 3], "cut_class": "structured_control"},
-        {"id": "alternating_cut", "qubits": [0, 2, 4], "cut_class": "structured_control"},
-        {"id": "random_cut_control", "qubits": [0, 3, 5], "cut_class": "negative_control_random_cut"},
-    ]
+    parameters = model_parameters("quantum_many_body_boundary_screen_sweep")
+    qubit_count = parameters["qubit_count"] if qubit_count is None else qubit_count
+    cuts = parameters["cuts"]
     states = [
         {"id": "cross_boundary_bell_pairs", "vector": _many_body_bell_pair_state(qubit_count)},
         {"id": "separable_product_control", "vector": _many_body_product_state(qubit_count)},
@@ -1226,28 +1236,8 @@ def build_many_body_boundary_screen_sweep(*, qubit_count: int = 6) -> dict[str, 
 
 def build_sheaf_contextuality_obstruction_audit() -> dict[str, Any]:
     """Build a finite general measurement-cover obstruction audit beyond CHSH only."""
-    scenarios = [
-        {
-            "id": "noncontextual_triangle_control",
-            "measurements": ["A", "B", "C"],
-            "contexts": [
-                ("AB", ("A", "B"), 1),
-                ("BC", ("B", "C"), 1),
-                ("AC", ("A", "C"), 1),
-            ],
-            "expected_feasible": True,
-        },
-        {
-            "id": "parity_obstruction",
-            "measurements": ["A", "B", "C"],
-            "contexts": [
-                ("AB", ("A", "B"), 1),
-                ("BC", ("B", "C"), 1),
-                ("AC", ("A", "C"), -1),
-            ],
-            "expected_feasible": False,
-        },
-    ]
+    parameters = model_parameters("quantum_sheaf_contextuality_obstruction_audit")
+    scenarios = parameters["scenarios"]
     rows = []
     probability_rows = []
     for scenario in scenarios:
@@ -1303,20 +1293,8 @@ def build_sigma_contextuality_suppression_audit() -> dict[str, Any]:
     suppress, so the delta must be zero under both regimes. The positive resolving-power control is
     that the unconstrained agent genuinely exhibits contextuality on the obstruction scenario.
     """
-    scenarios = [
-        {
-            "id": "parity_obstruction",
-            "measurements": ["A", "B", "C"],
-            "contexts": [("AB", ("A", "B"), 1), ("BC", ("B", "C"), 1), ("AC", ("A", "C"), -1)],
-            "contextual": True,
-        },
-        {
-            "id": "noncontextual_triangle_control",
-            "measurements": ["A", "B", "C"],
-            "contexts": [("AB", ("A", "B"), 1), ("BC", ("B", "C"), 1), ("AC", ("A", "C"), 1)],
-            "contextual": False,
-        },
-    ]
+    parameters = model_parameters("quantum_sigma_contextuality_suppression_audit")
+    scenarios = parameters["scenarios"]
     rows = []
     for scenario in scenarios:
         scenario_rows = _pair_context_rows(scenario_id=scenario["id"], contexts=scenario["contexts"])
@@ -1360,8 +1338,9 @@ def build_sigma_contextuality_suppression_audit() -> dict[str, Any]:
 
 def build_qrf_transformation_covariance_audit() -> dict[str, Any]:
     """Build a finite probability-preserving QRF transformation covariance audit."""
-    base_probability = _normalise_probability(np.array([0.18, 0.22, 0.31, 0.29], dtype=float))
-    base_observable = np.array([0.2, 0.7, 1.3, 1.9], dtype=float)
+    parameters = model_parameters("quantum_qrf_transformation_covariance_audit")
+    base_probability = _normalise_probability(np.array(parameters["probability"], dtype=float))
+    base_observable = np.array(parameters["observable"], dtype=float)
     transformations = [
         {"id": "identity_frame", "matrix": np.eye(4), "admissible": True},
         {"id": "self_environment_swap", "matrix": np.eye(4)[[1, 0, 2, 3], :], "admissible": True},
@@ -1520,21 +1499,22 @@ def build_empirical_adapter_provenance_audit() -> dict[str, Any]:
 
 def build_arbitrary_two_qubit_entanglement_audit() -> dict[str, Any]:
     """Build a mixed-state two-qubit entanglement audit with PPT/negativity controls."""
+    parameters = model_parameters("quantum_arbitrary_two_qubit_entanglement_audit")
     product_zero = _density(np.array([1.0, 0.0, 0.0, 0.0], dtype=complex))
     product_one = _density(np.array([0.0, 0.0, 0.0, 1.0], dtype=complex))
-    separable_mixture = 0.55 * product_zero + 0.45 * product_one
+    separable_mixture = parameters["mixture_weights"][0] * product_zero + parameters["mixture_weights"][1] * product_one
     cases: list[dict[str, Any]] = [
         {"id": "product_zero_control", "family": "separable_control", "rho": product_zero, "parameter": 0.0, "expected_entangled": False},
         {
             "id": "classical_mixture_control",
             "family": "separable_control",
             "rho": separable_mixture,
-            "parameter": 0.55,
+            "parameter": parameters["mixture_weights"][0],
             "expected_entangled": False,
         },
         {"id": "bell_state", "family": "bell", "rho": _density(_bell_state_vector()), "parameter": 1.0, "expected_entangled": True},
     ]
-    for p in (0.0, 0.25, 1.0 / 3.0, 0.5, 0.75, 1.0):
+    for p in parameters["werner_grid"]:
         cases.append(
             {
                 "id": f"werner_p_{p:.3f}".replace(".", "_"),
@@ -1689,9 +1669,10 @@ def build_multipartite_witness_suite_audit() -> dict[str, Any]:
     product states (qubit and qutrit) must NOT be detected on any cut, while GHZ, W, and the qutrit
     maximally entangled state must be detected. Finite linear algebra only; see the claim boundary.
     """
+    parameters = model_parameters("quantum_multipartite_witness_suite_audit")
     tolerance = 1e-9
     fixtures: list[dict[str, Any]] = []
-    for n_qubits in (2, 3, 4):
+    for n_qubits in parameters["qubit_counts"]:
         fixtures.append({"id": f"ghz_{n_qubits}_qubit", "family": "ghz", "dims": [2] * n_qubits, "vector": _ghz_vector(n_qubits), "expected_entangled": True})
         fixtures.append({"id": f"product_{n_qubits}_qubit_control", "family": "separable_control", "dims": [2] * n_qubits, "vector": _product_ground_vector([2] * n_qubits), "expected_entangled": False})
     fixtures.append({"id": "w_3_qubit", "family": "w", "dims": [2, 2, 2], "vector": _w_vector(3), "expected_entangled": True})
@@ -1826,10 +1807,11 @@ def build_tensor_network_benchmark_audit() -> dict[str, Any]:
     enumeration; and a bond-one truncation is the discriminating control pair: it loses fidelity on
     the entangled states but is lossless on the product state.
     """
+    parameters = model_parameters("quantum_tensor_network_benchmark_audit")
     tolerance = 1e-9
     fixtures = [
         {"id": f"ghz_{n}_qubit", "family": "ghz", "dims": [2] * n, "vector": _ghz_vector(n), "expected_max_bond": 2}
-        for n in (2, 3, 4, 5)
+        for n in parameters["qubit_counts"]
     ]
     fixtures.append({"id": "w_3_qubit", "family": "w", "dims": [2, 2, 2], "vector": _w_vector(3), "expected_max_bond": 2})
     fixtures.append({"id": "product_4_qubit", "family": "product", "dims": [2, 2, 2, 2], "vector": _product_ground_vector([2, 2, 2, 2]), "expected_max_bond": 1})
@@ -1883,13 +1865,14 @@ def build_collision_model_thermalization_audit() -> dict[str, Any]:
     (trace distance falls toward zero); the zero-coupling collision is the discriminating control
     that must leave the system unchanged. Every step stays trace-preserving and positive.
     """
+    parameters = model_parameters("quantum_collision_model_thermalization_audit")
     tolerance = 1e-9
-    steps = 30
-    rho_system_initial = np.array([[1.0, 0.0], [0.0, 0.0]], dtype=complex)
-    rho_ancilla = np.array([[0.7, 0.0], [0.0, 0.3]], dtype=complex)
+    steps = parameters["steps"]
+    rho_system_initial = np.array(parameters["system_density"], dtype=complex)
+    rho_ancilla = np.array(parameters["ancilla_density"], dtype=complex)
     initial_distance = _trace_distance(rho_system_initial, rho_ancilla)
     rows: list[dict[str, Any]] = []
-    for theta, label in ((0.3, "weak_coupling"), (0.8, "strong_coupling"), (0.0, "zero_coupling_control")):
+    for theta, label in parameters["couplings"]:
         unitary = _partial_swap_unitary(theta)
         rho = rho_system_initial.copy()
         distances, trace_ok, positive = [], True, True
@@ -1929,7 +1912,7 @@ def build_collision_model_thermalization_audit() -> dict[str, Any]:
 
 
 def _no_signaling_table(product_control: bool) -> dict[tuple[int, int, int, int], float]:
-    setting_angle = {0: 0.0, 1: math.pi / 4.0}
+    setting_angle = model_parameters("quantum_no_signaling_scenario_library_audit")["setting_angles"]
     table: dict[tuple[int, int, int, int], float] = {}
     for x in (0, 1):
         for y in (0, 1):
@@ -1962,10 +1945,11 @@ def build_no_signaling_scenario_library_audit() -> dict[str, Any]:
     and product scenarios must satisfy it; a deliberately disturbing table is the discriminating
     negative control that injects a setting-dependent marginal and must be flagged as signaling.
     """
+    parameters = model_parameters("quantum_no_signaling_scenario_library_audit")
     tolerance = 1e-9
     disturbing = _no_signaling_table(product_control=False)
-    disturbing[(0, 0, 1, 1)] += 0.1
-    disturbing[(0, 0, 1, -1)] -= 0.1
+    disturbing[(0, 0, 1, 1)] += parameters["disturbance"]
+    disturbing[(0, 0, 1, -1)] -= parameters["disturbance"]
     scenarios = [
         {"id": "quantum_chsh_bell", "family": "quantum", "table": _no_signaling_table(product_control=False), "expected_no_signaling": True},
         {"id": "product_local", "family": "product", "table": _no_signaling_table(product_control=True), "expected_no_signaling": True},
@@ -2040,7 +2024,8 @@ def build_n_cycle_contextuality_library_audit() -> dict[str, Any]:
     bipartite, so its frustrated behaviors have no noncontextual model (LP infeasible), while even
     cycles stay feasible. Verdicts are measured LP feasibility, never an asserted quantum constant.
     """
-    cycles = (3, 4, 5, 6, 7)
+    parameters = model_parameters("quantum_n_cycle_contextuality_library_audit")
+    cycles = parameters["cycles"]
     rows: list[dict[str, Any]] = []
     for n in cycles:
         is_odd = n % 2 == 1
@@ -2103,38 +2088,13 @@ def _generic_chsh_probability_rows(model_label: str, product_control: bool) -> l
 
 def build_general_measurement_cover_polytope_audit() -> dict[str, Any]:
     """Build a reusable finite measurement-cover parser and polytope audit."""
-    scenarios = [
-        {
-            "id": "triangle_feasible_control",
-            "measurements": ["A", "B", "C"],
-            "rows": _pair_context_rows(
-                scenario_id="triangle_feasible_control",
-                contexts=[("AB", ("A", "B"), 1), ("BC", ("B", "C"), 1), ("AC", ("A", "C"), 1)],
-            ),
-            "expected_feasible": True,
-        },
-        {
-            "id": "triangle_parity_obstruction",
-            "measurements": ["A", "B", "C"],
-            "rows": _pair_context_rows(
-                scenario_id="triangle_parity_obstruction",
-                contexts=[("AB", ("A", "B"), 1), ("BC", ("B", "C"), 1), ("AC", ("A", "C"), -1)],
-            ),
-            "expected_feasible": False,
-        },
-        {
-            "id": "chsh_product_control",
-            "measurements": ["A0", "A1", "B0", "B1"],
-            "rows": _generic_chsh_probability_rows("chsh_product_control", product_control=True),
-            "expected_feasible": True,
-        },
-        {
-            "id": "chsh_bell_obstruction",
-            "measurements": ["A0", "A1", "B0", "B1"],
-            "rows": _generic_chsh_probability_rows("chsh_bell_obstruction", product_control=False),
-            "expected_feasible": False,
-        },
-    ]
+    scenarios = model_parameters("quantum_general_measurement_cover_polytope")["scenarios"]
+    for scenario in scenarios:
+        scenario["rows"] = (
+            _pair_context_rows(scenario_id=scenario["id"], contexts=scenario["contexts"])
+            if "contexts" in scenario
+            else _generic_chsh_probability_rows(scenario["id"], product_control=scenario["product_control"])
+        )
     rows = []
     probability_rows = []
     for scenario in scenarios:
@@ -2186,20 +2146,21 @@ def build_general_measurement_cover_polytope_audit() -> dict[str, Any]:
 
 def build_thermodynamic_channel_cost_audit() -> dict[str, Any]:
     """Build finite CPTP channel checks with entropy-change and Landauer summaries."""
+    parameters = model_parameters("quantum_thermodynamic_channel_cost_audit")
     ket0 = np.array([[1.0], [0.0]], dtype=complex)
     ket1 = np.array([[0.0], [1.0]], dtype=complex)
     bra0 = ket0.conjugate().T
     bra1 = ket1.conjugate().T
     states = [
         {"id": "maximally_mixed", "rho": np.eye(2, dtype=complex) / 2.0},
-        {"id": "biased_mixed", "rho": np.diag([0.8, 0.2]).astype(complex)},
+        {"id": "biased_mixed", "rho": np.diag(parameters["biased_population"]).astype(complex)},
         {"id": "pure_zero", "rho": ket0 @ bra0},
     ]
     channels = [
         {"id": "identity_control", "kraus": [IDENTITY_2]},
         {"id": "erasure_to_zero", "kraus": [ket0 @ bra0, ket0 @ bra1]},
-        {"id": "half_dephasing", "kraus": [math.sqrt(0.75) * IDENTITY_2, math.sqrt(0.25) * SIGMA_Z]},
-        {"id": "bit_flip_noise", "kraus": [math.sqrt(0.85) * IDENTITY_2, math.sqrt(0.15) * SIGMA_X]},
+        {"id": "half_dephasing", "kraus": [math.sqrt(parameters["dephasing_weights"][0]) * IDENTITY_2, math.sqrt(parameters["dephasing_weights"][1]) * SIGMA_Z]},
+        {"id": "bit_flip_noise", "kraus": [math.sqrt(parameters["bit_flip_weights"][0]) * IDENTITY_2, math.sqrt(parameters["bit_flip_weights"][1]) * SIGMA_X]},
     ]
     rows: list[dict[str, Any]] = []
     for channel in channels:
@@ -2261,8 +2222,10 @@ def build_thermodynamic_channel_cost_audit() -> dict[str, Any]:
     }
 
 
-def build_sparse_boundary_screen_scaling_audit(*, qubit_counts: tuple[int, ...] = (6, 8, 10)) -> dict[str, Any]:
+def build_sparse_boundary_screen_scaling_audit(*, qubit_counts: tuple[int, ...] | None = None) -> dict[str, Any]:
     """Build sparse exact many-body boundary-screen scaling diagnostics."""
+    parameters = model_parameters("quantum_sparse_boundary_screen_scaling_audit")
+    qubit_counts = parameters["qubit_counts"] if qubit_counts is None else qubit_counts
     rows: list[dict[str, Any]] = []
     cuts_by_size: dict[int, list[dict[str, Any]]] = {}
     for qubit_count in qubit_counts:
@@ -2337,8 +2300,9 @@ def build_sparse_boundary_screen_scaling_audit(*, qubit_counts: tuple[int, ...] 
 
 def build_qrf_frame_covariance_toy_audit() -> dict[str, Any]:
     """Build a finite density/probability frame-covariance audit for QRF toy transforms."""
-    base_rho = 0.7 * _density(_state(math.pi / 6.0)) + 0.3 * _density(np.array([0.0, 1.0, 0.0, 0.0], dtype=complex))
-    base_probability = _normalise_probability(np.array([0.12, 0.38, 0.18, 0.32], dtype=float))
+    parameters = model_parameters("quantum_qrf_frame_covariance_toy_audit")
+    base_rho = parameters["mixture_weights"][0] * _density(_state(parameters["theta"])) + parameters["mixture_weights"][1] * _density(np.array([0.0, 1.0, 0.0, 0.0], dtype=complex))
+    base_probability = _normalise_probability(np.array(parameters["probability"], dtype=float))
     transforms = [
         {"id": "identity_unitary", "matrix": np.eye(4, dtype=complex), "admissible": True},
         {"id": "swap_unitary", "matrix": _swap_unitary_two_qubit(), "admissible": True},
@@ -2984,17 +2948,10 @@ def build_data_processing_monotonicity_audit() -> dict[str, Any]:
        This control FIRES, showing the irreversibility belongs specifically to the coarse-grained
        (record-discarding) channel, not to the interaction itself: keeping the record can sharpen.
     """
+    parameters = model_parameters("quantum_data_processing_monotonicity_audit")
     tolerance = 1e-9
-    state_pairs = [
-        {"id": "z_axis_pair", "rho": (0.3, 0.0, 0.5), "sigma": (0.0, 0.0, -0.4)},
-        {"id": "tilted_pair", "rho": (0.5, 0.2, 0.1), "sigma": (-0.2, 0.3, 0.4)},
-        {"id": "antipodal_pair", "rho": (0.0, 0.0, 0.6), "sigma": (0.0, 0.0, -0.6)},
-    ]
-    channels = [
-        {"name": "phase_damping", "strengths": (0.2, 0.5, 0.9)},
-        {"name": "amplitude_damping", "strengths": (0.2, 0.5, 0.9)},
-        {"name": "depolarizing", "strengths": (0.2, 0.5, 0.9)},
-    ]
+    state_pairs = parameters["state_pairs"]
+    channels = parameters["channels"]
     channel_rows: list[dict[str, Any]] = []
     for pair in state_pairs:
         rho = _bloch_density(pair["rho"])
@@ -3022,7 +2979,7 @@ def build_data_processing_monotonicity_audit() -> dict[str, Any]:
     cp_rows: list[dict[str, Any]] = []
     for channel in channels:
         # Use the mid strength purely to instantiate the Kraus set for the structural CP / TP check.
-        kraus = _qubit_channel_kraus(channel["name"], 0.5)
+        kraus = _qubit_channel_kraus(channel["name"], parameters["structural_strength"])
         cp_rows.append({
             "map": channel["name"],
             "trace_preserving_error": round(_kraus_trace_preserving_error(kraus), 12),
@@ -3037,7 +2994,7 @@ def build_data_processing_monotonicity_audit() -> dict[str, Any]:
         "completely_positive": bool(transpose_min_eig > -tolerance),
     })
     selective_rows: list[dict[str, Any]] = []
-    for angle in (math.pi / 8.0, math.pi / 6.0, math.pi / 5.0):
+    for angle in parameters["selection_angles"]:
         psi = _bloch_density((math.sin(2 * angle), 0.0, math.cos(2 * angle)))
         phi = _bloch_density((-math.sin(2 * angle), 0.0, math.cos(2 * angle)))
         base = _trace_distance(psi, phi)

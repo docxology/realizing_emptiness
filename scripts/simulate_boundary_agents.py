@@ -5,9 +5,8 @@ from __future__ import annotations
 
 import json
 
-import yaml
-
 from _bootstrap import PROJECT_ROOT
+from modeling.registry import model_parameters
 from formalism.models import BoundaryScreen
 from simulation.pymdp_profiles import (
     build_generative_model_audit,
@@ -25,28 +24,22 @@ from simulation.stochastic import build_stochastic_policy_ensemble
 
 
 def main() -> int:
-    with (PROJECT_ROOT / "pymdp.yaml").open("r", encoding="utf-8") as handle:
-        cfg = yaml.safe_load(handle)
+    cfg = model_parameters("qrf_boundary")
     data_dir = PROJECT_ROOT / "output" / "data"
     data_dir.mkdir(parents=True, exist_ok=True)
     channels = int(cfg["channels"])
-    stochastic_cfg = cfg.get("stochastic", {})
-    stochastic_runs = int(stochastic_cfg.get("runs_per_profile", 128))
-    stochastic_steps = int(stochastic_cfg.get("steps", 48))
     screen = BoundaryScreen.default(channels)
     audit = boundary_indistinguishability_audit(default_deployments(channels), screen)
     ledger = boundary_channel_ledger(default_deployments(channels), screen)
-    profile = run_profile_comparison(seed=int(cfg["random_seed"]), steps=int(cfg["steps"]), channels=channels)
-    policy_trace = run_policy_trace(seed=int(cfg["random_seed"]), steps=int(cfg["steps"]), channels=channels)
+    profile = run_profile_comparison(seed=int(cfg["seed"]), steps=int(cfg["steps"]), channels=channels)
+    policy_trace = run_policy_trace(seed=int(cfg["seed"]), steps=int(cfg["steps"]), channels=channels)
     stochastic = build_stochastic_policy_ensemble(
-        seed=int(cfg["random_seed"]) + 94,
-        runs=stochastic_runs,
-        steps=stochastic_steps,
+        seed=int(cfg["seed"]) + cfg["stochastic_seed_offset"],
         channels=channels,
     )
     model_audit = build_generative_model_audit(channels=channels)
-    runtime_log = build_pymdp_runtime_diagnostics_log(seed=int(cfg["random_seed"]), steps=int(cfg["steps"]), channels=channels)
-    compassion_scope = build_compassion_scope_audit(default_deployments(channels), seed=int(cfg["random_seed"]) + 19)
+    runtime_log = build_pymdp_runtime_diagnostics_log(seed=int(cfg["seed"]), steps=int(cfg["steps"]), channels=channels)
+    compassion_scope = build_compassion_scope_audit(default_deployments(channels), seed=int(cfg["seed"]) + cfg["compassion_seed_offset"])
     (data_dir / "qrf_boundary_indistinguishability.json").write_text(
         json.dumps(audit, indent=2, sort_keys=True) + "\n",
         encoding="utf-8",

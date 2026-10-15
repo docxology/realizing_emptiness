@@ -1,6 +1,6 @@
 {
   "all_controls_pass": true,
-  "artifact_count": 148,
+  "artifact_count": 149,
   "claim_boundary": "local private artifact package only, not public independent reproduction; not empirical, clinical, neural, practice-efficacy, contemplative-attainment, or physical qFEP evidence",
   "controls": {
     "all_files_exist": true,
@@ -24,15 +24,15 @@
   "excluded_self_from_hashes": [
     "output/data/artifact_release_manifest.json"
   ],
-  "file_count": 460,
+  "file_count": 520,
   "files": [
     {
       "artifact_id": "artifact_dashboard",
-      "bytes": 23525,
+      "bytes": 24074,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/dashboard/index.html",
-      "sha256": "e78f8ce780837e2d3ccdcb0121019a9f8442fb792b196190fdd61de3b29d3e86"
+      "sha256": "d8ec7697bb40426d185ae2972ca560f249bb0e0aca865573569505cad472975c"
     },
     {
       "artifact_id": "arbitrary_two_qubit_entanglement_audit",
@@ -44,19 +44,19 @@
     },
     {
       "artifact_id": "artifact_contract_registry",
-      "bytes": 79479,
+      "bytes": 80001,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/data/artifact_contract_registry.json",
-      "sha256": "1aac59a951e5d5f59cd4ab95e7fb1b3fdbbd33628450353aa5d691fa206d7bd8"
+      "sha256": "c80f55f2ed0a4907017f00eb8f7190995f6e75e282420c7740d242168a4c721b"
     },
     {
       "artifact_id": "artifact_dashboard_payload",
-      "bytes": 17893,
+      "bytes": 18070,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/data/artifact_dashboard_payload.json",
-      "sha256": "eb03e18189f274e977465d3dac95f3969be05ea9f5535212293b780ce3dc1a29"
+      "sha256": "ebd6a52f16b8af43492f921cb905d6b7ca7a1c151faf57b9f90e36441e80bb2b"
     },
     {
       "artifact_id": "blackwell_bayes_risk_audit",
@@ -212,27 +212,27 @@
     },
     {
       "artifact_id": "figure_integrity_audit",
-      "bytes": 70754,
+      "bytes": 83833,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/data/figure_integrity_audit.json",
-      "sha256": "b87913b64ddf1e7b92c78c98aeb9ada6d15385472398d3be10461918b37b9345"
+      "sha256": "8f788816ef838c7e1b7e6cd6feea2af6bc1e5228b89f3b6d08b581946c0daac7"
     },
     {
       "artifact_id": "figure_legibility_audit",
-      "bytes": 28439,
+      "bytes": 28438,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/data/figure_legibility_audit.json",
-      "sha256": "5bac973e26df3170597b92f38331dcf1dd7a20fae1690b07f0d5df1faa39d07d"
+      "sha256": "95548ed3985406089e1748bf773e362a06b41980ba30edf63db51e1c8bfbf7b1"
     },
     {
       "artifact_id": "figure_parameter_ledger",
-      "bytes": 133674,
+      "bytes": 247722,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/data/figure_parameter_ledger.json",
-      "sha256": "7bf33090eeb7c266c69049a1939e17e460a5dfcb91c04bdf0d363b2848e7b3ce"
+      "sha256": "e41e4d08caaddf4a4c49ba18987abdb950f340cfeacfbdd88c91826bbcee78e5"
     },
     {
       "artifact_id": "figure_reuse_audit",
@@ -244,11 +244,11 @@
     },
     {
       "artifact_id": "figure_source_map",
-      "bytes": 92024,
+      "bytes": 94664,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/data/figure_source_map.json",
-      "sha256": "1c4edbabff0bdb0a1205e862a97ff13e9bdf03a9ba4b5f6080f5139e278e0b5a"
+      "sha256": "fd42bb609e9999d4886e21c38d889888fb4f36d3c5302aa51512e033912faa16"
     },
     {
       "artifact_id": "formalism_registry",
@@ -265,6 +265,14 @@
       "kind": "manifest_artifact",
       "path": "output/data/general_measurement_cover_polytope_audit.json",
       "sha256": "db7631042678d9afa56e0083e131215f8a2a71daf4106ae55a84ef619d2054a3"
+    },
+    {
+      "artifact_id": "gnn_model_audit",
+      "bytes": 44386,
+      "exists": true,
+      "kind": "manifest_artifact",
+      "path": "output/data/gnn_model_audit.json",
+      "sha256": "5b59bc77bd4c4dda855d0341c05de520df4d87d742681c973221c249c3f962fb"
     },
     {
       "artifact_id": "interaction_information_boundary_audit",
@@ -292,11 +300,11 @@
     },
     {
       "artifact_id": "manuscript_claim_intensity_audit",
-      "bytes": 78657,
+      "bytes": 82156,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/data/manuscript_claim_intensity_audit.json",
-      "sha256": "1ca0b9d2d1c7ae7405e7bcbb36cf96c7861afeed540fc30d58c921ea0ef5f56f"
+      "sha256": "ba16da647e9f073b3afab0d82ca13a0c56599f0b0cdb1432cd0e34a9ab991f05"
     },
     {
       "artifact_id": "manuscript_figure_placement_audit",
@@ -320,7 +328,7 @@
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/data/manuscript_variables.json",
-      "sha256": "96d175a1fc3698ec8df8953718abc1ac5f153f7f779e183e156576170b6ed2e0"
+      "sha256": "4ab1db128c759f006e0df5e59f4497bede77c045c5cbd629e35645f5a3dea9c1"
     },
     {
       "artifact_id": "many_body_boundary_screen_sweep",
@@ -340,11 +348,11 @@
     },
     {
       "artifact_id": "method_assumption_ledger",
-      "bytes": 6621,
+      "bytes": 6624,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/data/method_assumption_ledger.json",
-      "sha256": "c4dba64c51969bb5f36ddcbf56fae5af76e5edf56ad3da253b315d5a39447b44"
+      "sha256": "fcb9166b32e7dee8b978fb58588191c4fa7aaef7722478c4679b8322af91db27"
     },
     {
       "artifact_id": "method_negative_control_inventory",
@@ -396,35 +404,35 @@
     },
     {
       "artifact_id": "pymdp_generative_model_audit",
-      "bytes": 7846,
+      "bytes": 7838,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/data/pymdp_generative_model_audit.json",
-      "sha256": "0e40eebc010ac40099271cb3ac724c114442dea2c61121a9cf97521d407f501c"
+      "sha256": "f7f9f162e32abc85beef137e727fa832c3063ad2f7f40ecd2a9634bc3b6d436f"
     },
     {
       "artifact_id": "pymdp_policy_trace",
-      "bytes": 110786,
+      "bytes": 110897,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/data/pymdp_policy_trace.json",
-      "sha256": "6aadab6206e29a45888353b97879f293a847719d27fb01633c562e2de12e59a5"
+      "sha256": "a17c624226deed1f3c7b2a6b5567a202ba4ea4a9e5aa1f67233b0f828a0b5a50"
     },
     {
       "artifact_id": "pymdp_profile_comparison",
-      "bytes": 13864,
+      "bytes": 13855,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/data/pymdp_profile_comparison.json",
-      "sha256": "da1b9728268ec5fc5a08f4edc9404f079f811d084bffe39364729975ddde03af"
+      "sha256": "41af984185a71873f19c784075ed92aed3f26b7b5b33fead7e02801b554a4b7b"
     },
     {
       "artifact_id": "pymdp_runtime_diagnostics_log",
-      "bytes": 84507,
+      "bytes": 84672,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/data/pymdp_runtime_diagnostics_log.json",
-      "sha256": "b60b42bbf468a6e7c8493a331eb09b29627927da4f320a138a3ac1d37e6a686c"
+      "sha256": "14d425585d1558eb150ebed8d8cd8c5b9ce2a06f2d2e16e70d5c6212cd386c10"
     },
     {
       "artifact_id": "qfep_boundary_hamiltonian_dynamics",
@@ -444,11 +452,11 @@
     },
     {
       "artifact_id": "qrf_boundary_indistinguishability",
-      "bytes": 14191,
+      "bytes": 14183,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/data/qrf_boundary_indistinguishability.json",
-      "sha256": "65ada862f5314bc039e73be6686d9e7b104c79ae7c252e9bd9d26757ce63f2c4"
+      "sha256": "d3cb2c14d6756d0c16a928572cbcc3c85c968e0b8c691a0ccc9f17f5bbd0d168"
     },
     {
       "artifact_id": "qrf_frame_covariance_toy_audit",
@@ -552,7 +560,7 @@
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/data/rendered_figure_caption_audit.json",
-      "sha256": "4904bab39dfa8ba73a60a25acc1a9411cf56eeda60066e1b4b2e5c795bda76a3"
+      "sha256": "6dc51826697978fa2b19fde9582baa2de68b5f73aac916cba32bd27259aee284"
     },
     {
       "artifact_id": "roadmap_todo_audit",
@@ -652,19 +660,19 @@
     },
     {
       "artifact_id": "stochastic_effect_size_audit",
-      "bytes": 22640,
+      "bytes": 22634,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/data/stochastic_effect_size_audit.json",
-      "sha256": "883b9b6dc63fae1502fe3111593bfca65e04ac4dd0f261d87d0da39ce170b638"
+      "sha256": "8109dcbf4d1313d3fa922d61c26c4d168f559576ea0869397ba506ce1aa48151"
     },
     {
       "artifact_id": "stochastic_policy_ensemble",
-      "bytes": 25772856,
+      "bytes": 25768787,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/data/stochastic_policy_ensemble.json",
-      "sha256": "d03d06c643a4f23527dbf3bd575169e0c356368fbbf363a9107778e6d26f3767"
+      "sha256": "b17bb5c9884e6c73122247161a9f99bd7cfe18e8b339b6d187d0115a50a41865"
     },
     {
       "artifact_id": "tensor_network_benchmark_audit",
@@ -704,7 +712,7 @@
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/data/visual_caption_audit.json",
-      "sha256": "2073c19d312c266d9e018ffe67aff1cd5444f66ba5377b7163c308eeddcc6f26"
+      "sha256": "1252d83b0524432f01a13c7ae5b0868ad67015bafc007e41277f857807315504"
     },
     {
       "artifact_id": "visual_style_audit",
@@ -964,11 +972,11 @@
     },
     {
       "artifact_id": "pymdp_runtime_validation_dashboard",
-      "bytes": 326210,
+      "bytes": 325423,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/figures/pymdp_runtime_validation_dashboard.png",
-      "sha256": "25e78939173054dcdce8fc3e5236d99e2e68358beaca2627256191c7a20c50c4"
+      "sha256": "812d539fa85aa7b5bcac15006803131b34225152546c0622f971a664ffce3d8b"
     },
     {
       "artifact_id": "qfep_boundary_hamiltonian_dynamics_figure",
@@ -1207,7 +1215,7 @@
       "exists": true,
       "kind": "release_support",
       "path": ".github/workflows/ci.yml",
-      "sha256": "9ded9482b5ad526cc1a982987f2ce79642377b94701c19e4c683b2a057dd1a49"
+      "sha256": "8080f251c89c9285b2dd865bca566a532738c48f777abd433f359b46934096b1"
     },
     {
       "bytes": 5,
@@ -1217,32 +1225,32 @@
       "sha256": "a876e0b10411037a012498b9fe18d9bc1df32ed8b722a13564dc944ddcfd9135"
     },
     {
-      "bytes": 1224,
+      "bytes": 1261,
       "exists": true,
       "kind": "release_support",
       "path": ".zenodo.json",
-      "sha256": "421361bfccaee3f3d69d895a7211ff4e441cf127cb1215109316e4170638c99b"
+      "sha256": "02b2d929426ee081b29f2777bd03ead98dfef30991182ad0e542021effc6c88a"
     },
     {
-      "bytes": 4780,
+      "bytes": 5432,
       "exists": true,
       "kind": "release_support",
       "path": "AGENTS.md",
-      "sha256": "92a2ecfc608848999638fd5832141a4d15bd34588d6bc27ccd9f7240335b55fe"
+      "sha256": "f6c6395ed22b9ebe387448e3565fc896fac290a97ce89470691aaa09764093a2"
     },
     {
-      "bytes": 4288,
+      "bytes": 5505,
       "exists": true,
       "kind": "release_support",
       "path": "CHANGELOG.md",
-      "sha256": "e275325eba5f43eb22d500fd2963c0708000551d893aa04afda3bd39aab586a1"
+      "sha256": "5e36edaa91deb57d217354a4ccc1e57ee75bf783c2d0afedd69382f8b29a2b52"
     },
     {
-      "bytes": 681,
+      "bytes": 715,
       "exists": true,
       "kind": "release_support",
       "path": "CITATION.cff",
-      "sha256": "7839c79ab6879175c4bde44ebb5d91557877a17356c154d987488e702b62d253"
+      "sha256": "045bd196eb13e6f5accde889c670444a49008c9bc4eb3a6aec6bffc1455b9606"
     },
     {
       "bytes": 5336,
@@ -1266,18 +1274,18 @@
       "sha256": "918c8648b9931f8e8a874339bd7c8a4f5376b49baa52c8ab212314e0049ebcd1"
     },
     {
-      "bytes": 542,
+      "bytes": 549,
       "exists": true,
       "kind": "release_support",
       "path": "MANIFEST.in",
-      "sha256": "570a6483d6b8cb500e6f0029acf3d6a1b84f76fc18a3f7fa18ee0ca16ec4c64e"
+      "sha256": "7c54e31f5b5af0e71835b3bcdda6abb8461701cc8231084ac5187b6cf893dac4"
     },
     {
-      "bytes": 8524,
+      "bytes": 8896,
       "exists": true,
       "kind": "release_support",
       "path": "README.md",
-      "sha256": "824a9961a2b1ab8354e4da9b7d45f899d0fcebbf8be3523f79ed3e5dab12dde9"
+      "sha256": "39d0c73e7c48789620c571803306d1b7ed993adc0f61f0dab5b602f30fb2ec74"
     },
     {
       "bytes": 5346,
@@ -1287,18 +1295,18 @@
       "sha256": "249f2073b391f06f82b9ef02d87109d996745bfc421be02e5972a7b8aca508ad"
     },
     {
-      "bytes": 21735,
+      "bytes": 21868,
       "exists": true,
       "kind": "release_support",
       "path": "artifact_manifest.yaml",
-      "sha256": "574cc5c683a085f32fbed5652e0e534f9d6de6a5f0dacaaea1d6abb656ec03ef"
+      "sha256": "f109a624b216e33086f83a953229f7d5fb00cfd2bd6e1ae95027616cfac3547b"
     },
     {
-      "bytes": 813,
+      "bytes": 850,
       "exists": true,
       "kind": "release_support",
       "path": "codemeta.json",
-      "sha256": "46d6be2664b4999be436b072de6ad188c405e8063cf23e00efb79607bf53a4f2"
+      "sha256": "469accc034d5a986459154231f2b81655d12327c92e80a31cb884c2d002c0b07"
     },
     {
       "bytes": 432,
@@ -1357,11 +1365,11 @@
       "sha256": "eb396d1b0053da6141fd0fd1493ebf9e1660c5584e71f8d6f02c752970eee8d9"
     },
     {
-      "bytes": 5866,
+      "bytes": 6060,
       "exists": true,
       "kind": "release_support",
       "path": "docs/README.md",
-      "sha256": "155541b579e1058ca78c32234b6f0a861c641818240d63b4842d1b5681e4d6cd"
+      "sha256": "1d0a63eec496eb397516899f3dec6844031854e1afa0f30b96e634f3c54746c8"
     },
     {
       "bytes": 534361,
@@ -1371,18 +1379,18 @@
       "sha256": "94e2335c3a4a37b8d49039b11b45ccda25bad65d4b80aa15428b84abfba699ac"
     },
     {
-      "bytes": 3581,
+      "bytes": 5184,
       "exists": true,
       "kind": "release_support",
       "path": "docs/api-contracts.md",
-      "sha256": "98866ca33da263294f022e3601397ffcd5d202701f5938be7e579796e84bf9fa"
+      "sha256": "b30236a5bc41c0da653d6c17d8ebc60648da7f4500c99026542dbc168aea7154"
     },
     {
-      "bytes": 6479,
+      "bytes": 7190,
       "exists": true,
       "kind": "release_support",
       "path": "docs/architecture.md",
-      "sha256": "5f42e96a2460d2fd795e00fcf0ae61889eea8c154236159f469897f8baf8ef92"
+      "sha256": "4a018c4c794527291acb7f321195bf9f9cfb3e0997a1f987a9681469860cdb3b"
     },
     {
       "bytes": 5862,
@@ -1392,11 +1400,18 @@
       "sha256": "0a80148037219e3cdd739ec8be83d0ae1259a222842860146cafd9723d05f5eb"
     },
     {
-      "bytes": 7341,
+      "bytes": 7628,
       "exists": true,
       "kind": "release_support",
       "path": "docs/glossary.md",
-      "sha256": "98acbfc049d58732874cfbccf9e596c6397a889e85b834c70791882ce188ecd7"
+      "sha256": "fd1951217154c018cfdc7b3e2e7f93cb2a11c9844cf93b2e18d3e9bea63ef733"
+    },
+    {
+      "bytes": 7308,
+      "exists": true,
+      "kind": "release_support",
+      "path": "docs/gnn-modeling.md",
+      "sha256": "02aa1aa8a2343beb3271d253def607f388648161163103db05b5ca9bf35b2b19"
     },
     {
       "bytes": 3372,
@@ -1413,11 +1428,11 @@
       "sha256": "b6b09db8e5009c6bfbf4665356112dff3f587ce96d482904f46600d83a5613b4"
     },
     {
-      "bytes": 23563,
+      "bytes": 26134,
       "exists": true,
       "kind": "release_support",
       "path": "docs/manuscript/02_methods.md",
-      "sha256": "a8c2018a14a3d282bd5f3f85726fc4354ddbb5b14bb67da1e2a2e36db6e119b4"
+      "sha256": "9f6aa7700597a3c48eae79780e5a1f4d0131973ab97e81f3885b4b20662d390c"
     },
     {
       "bytes": 15889,
@@ -1427,11 +1442,11 @@
       "sha256": "541179709a3a7311a5910b3cbe88056e1ec637de649ddbdec5c972b18e213888"
     },
     {
-      "bytes": 29459,
+      "bytes": 29462,
       "exists": true,
       "kind": "release_support",
       "path": "docs/manuscript/04_discussion.md",
-      "sha256": "df09893f3836da0e7f8dcee67d5cde3be991b1d9b5b0401a092325002aa81f34"
+      "sha256": "f9a0df855b7a35e2811bf0281e0f38a112da84c6eff4219ee192449199f74941"
     },
     {
       "bytes": 5531,
@@ -1441,11 +1456,11 @@
       "sha256": "51262e555b15eeac344a2e9c6c0caed850ef2819a8cd45896b01161127d1139e"
     },
     {
-      "bytes": 87104,
+      "bytes": 89074,
       "exists": true,
       "kind": "release_support",
       "path": "docs/manuscript/06_supplement.md",
-      "sha256": "07ccd68483411911035f694f122869dc8c1f4900ae055cad7b5e47160382c25b"
+      "sha256": "675a807d43be3406602952583d3924f55a641646964ac3f4a949a8465b65024d"
     },
     {
       "bytes": 32,
@@ -1480,7 +1495,7 @@
       "exists": true,
       "kind": "release_support",
       "path": "docs/manuscript/config.yaml",
-      "sha256": "c6504b2a3d2c237563410b457c992a0c1763f4ffa825767b7d1062bbf32bfa45"
+      "sha256": "7ccedf6c5688ac240441362a6c11a56827f6fb3e2e01ea5425215a5817f308e3"
     },
     {
       "bytes": 430,
@@ -1651,11 +1666,11 @@
       "sha256": "b74cd9f03e834968cc4974a782fd5070d736afd201583183dc0aac33b57d7ef7"
     },
     {
-      "bytes": 9425,
+      "bytes": 9428,
       "exists": true,
       "kind": "release_support",
       "path": "docs/manuscript/sections/discussion/paper_source.md",
-      "sha256": "3bc724e0183999a939c15adf944306f3c678e9b0e99cc84b78a1e73d3763f87d"
+      "sha256": "b1e7739923d8aa0bb7200b03c0f38c6d1d17b89d9ff17f0b472515e96105dd5a"
     },
     {
       "bytes": 1488,
@@ -1721,32 +1736,32 @@
       "sha256": "6a77d148095ed816f6e3a8292886d4f8b166cb31fa2db875f6d5eaf807010294"
     },
     {
-      "bytes": 1041,
+      "bytes": 1515,
       "exists": true,
       "kind": "release_support",
       "path": "docs/manuscript/sections/methods/bmr.md",
-      "sha256": "b6a7638569080b9eab9021533b457cb4bfd3eb86ffc701c8dd9e8ad54cc1e15c"
+      "sha256": "152f06858411acc5edfac2282219f9eaf7190c9a128773c3dbd65114d5dcc4bf"
     },
     {
-      "bytes": 5081,
+      "bytes": 6086,
       "exists": true,
       "kind": "release_support",
       "path": "docs/manuscript/sections/methods/pymdp.md",
-      "sha256": "aae0ce1fda1d54b11594fc7d572fdd9477941671da41704731823ad4d5db0b38"
+      "sha256": "eab7f296e473c7e740954f5a4c2b1c348834d254b68c962581713e7660bedb1a"
     },
     {
-      "bytes": 6757,
+      "bytes": 7486,
       "exists": true,
       "kind": "release_support",
       "path": "docs/manuscript/sections/methods/qfep.md",
-      "sha256": "c78501c157ae447a7d7b750b35b331824c9a5add1cdc4195f4e67a6aa6926d89"
+      "sha256": "a0a4ecbe6b62173de73ffeb70f0531a2acead1736809d70443b84cfab8ac9985"
     },
     {
-      "bytes": 4722,
+      "bytes": 5085,
       "exists": true,
       "kind": "release_support",
       "path": "docs/manuscript/sections/methods/qrf.md",
-      "sha256": "843a10a02f0d1de27d6fdfc07d64788c17d6334a2c7c503ace462e6591e1d30d"
+      "sha256": "c02737ea2de398e07940df77da13683b04da84a7fe19ad012c309bd9d0d27375"
     },
     {
       "bytes": 4081,
@@ -1847,11 +1862,11 @@
       "sha256": "6460422daeab331cc33896696c52d92d753e06b234fada0f6dbabf2736e70a5d"
     },
     {
-      "bytes": 713,
+      "bytes": 1092,
       "exists": true,
       "kind": "release_support",
       "path": "docs/manuscript/sections/supplement/practice_protocols.md",
-      "sha256": "50c2c9e5e1b9c2682029a2a01500225aa3f401c6cb65dd84c5da2021fee0f1ef"
+      "sha256": "3c0f25d86a654b77ef3c12e0bee89e61b2d06e75779f4cb7c263238e26f6ad44"
     },
     {
       "bytes": 23075,
@@ -1875,11 +1890,11 @@
       "sha256": "2b209e1c23a25e26c25ddab664b6469f964e5c958457431fc5cb4424cf961ea2"
     },
     {
-      "bytes": 16592,
+      "bytes": 18183,
       "exists": true,
       "kind": "release_support",
       "path": "docs/manuscript/sections/supplement/validation.md",
-      "sha256": "bdb3b9b35d4de6b5c91f2c542d291218f7b2ff832208ab86c7a1b748698fd8db"
+      "sha256": "9be321543907070b056cb9553b5814e87403ade77124e4ba31a054c8048277bf"
     },
     {
       "bytes": 1208,
@@ -1917,18 +1932,18 @@
       "sha256": "5e037b291eea2f1cbf5223e66346bc94254f69a9b8effe5e9b12260d1176de29"
     },
     {
-      "bytes": 63433,
+      "bytes": 65503,
       "exists": true,
       "kind": "release_support",
       "path": "docs/method-inventory.md",
-      "sha256": "d82f0d5665cf4847eaf060d6c3f5f952aad81ba40c85a939b4698001ba120e04"
+      "sha256": "ff88da42e277a1b954b6b89f29c35117b58dafafd54ff2cadb5e7d6a86fbe2c3"
     },
     {
-      "bytes": 12597,
+      "bytes": 13063,
       "exists": true,
       "kind": "release_support",
       "path": "docs/qrf-formalism.md",
-      "sha256": "51c941567af753d69bfd15f4744f53b46ffd3cc267fc4fc5940f6a602fd7d1f3"
+      "sha256": "a00f0c87c269f3b18539ce4773c10d488d580fd09cc7f2a748d0fd0c4d70d81e"
     },
     {
       "bytes": 6964,
@@ -1952,18 +1967,18 @@
       "sha256": "9735a024e3aba42d3336972e1f674464df6a09832ff10a6dddcb7fa9dab3dfd6"
     },
     {
-      "bytes": 6042,
+      "bytes": 6872,
       "exists": true,
       "kind": "release_support",
       "path": "docs/release-validation.md",
-      "sha256": "b2c54e028b0346aa24b77015bc27e4089f80fd2a9062e788607e0a937255695c"
+      "sha256": "439e4efb06450ca0ca23f3ed5deb87b3abd8e981a5bda4e5450b31409e3f9ee8"
     },
     {
-      "bytes": 11811,
+      "bytes": 12168,
       "exists": true,
       "kind": "release_support",
       "path": "docs/running-the-chain.md",
-      "sha256": "1c3f538508917ca5cb434c58ae2e1d52301d9b3af652139a228b997b3a7afdc7"
+      "sha256": "4b6b66ffbc3d7546153343829983f30fdefb87a363c116688bb1ac213114ed79"
     },
     {
       "bytes": 14270,
@@ -1980,25 +1995,25 @@
       "sha256": "d7ac27229a050956a8b1214809128a3124be1a8dee67e47bfe29026e21de876d"
     },
     {
-      "bytes": 5923,
+      "bytes": 6360,
       "exists": true,
       "kind": "release_support",
       "path": "docs/statistical-methods.md",
-      "sha256": "0dce01d733fe8cd59929dcee7f901ff055bd0e1f2b13b4189b1c83a37d1e7f1f"
+      "sha256": "f8c30dde1a1d808aa323b8d4b2b9cfc0314af1b1d801e81f37da23860cbacf97"
     },
     {
-      "bytes": 6250,
+      "bytes": 6705,
       "exists": true,
       "kind": "release_support",
       "path": "docs/surrogate-methodology.md",
-      "sha256": "aecfecc76a7c0dd8efd22608127356d935945c4448994fc25f1bab1f9f1441a1"
+      "sha256": "3fb80ec63026c8202e4e72f4a3d3d35e50a99ef4ee2353e91cfa971674fd269d"
     },
     {
-      "bytes": 16820,
+      "bytes": 17258,
       "exists": true,
       "kind": "release_support",
       "path": "docs/validation-contract.md",
-      "sha256": "4a010176eb779c86ea0f459b8b27b723a2443c2b3ce70478fd85ef59b3128fd4"
+      "sha256": "fdf190b0e873ebe0d171c13c9dc209bf8152f725de903835ea961933fbd2c9fd"
     },
     {
       "bytes": 8991,
@@ -2015,11 +2030,11 @@
       "sha256": "e51001f23baa4fd9a77ae28ee453af6f7280cdad9642558a9b9fcbd5b0e70480"
     },
     {
-      "bytes": 1525,
+      "bytes": 884,
       "exists": true,
       "kind": "release_support",
       "path": "emptiness.yaml",
-      "sha256": "1cad739af85ab520a31ac5d55c2610dae6553de0f9f2b25104d3960e52e2a086"
+      "sha256": "fc45c119d26b2fd14b313c8f03df978e528fc4d1d04457d0381450d642896b3f"
     },
     {
       "bytes": 2400,
@@ -2036,18 +2051,18 @@
       "sha256": "0bb4f2273adef85f3a8e11e9622f463159a22a1d28d0f5d7df3bd788135a5a27"
     },
     {
-      "bytes": 544,
+      "bytes": 444,
       "exists": true,
       "kind": "release_support",
       "path": "pymdp.yaml",
-      "sha256": "10d3e2f929dd48425f7dbe7f17ac433e4a05dca9f3c95b5d25db2b3f1f81d5a9"
+      "sha256": "de1662ce6172cfaa1b2955bbedd6197e4bcd68d6b0f74d360a9ac962f2e3c8a9"
     },
     {
-      "bytes": 1747,
+      "bytes": 1969,
       "exists": true,
       "kind": "release_support",
       "path": "pyproject.toml",
-      "sha256": "64ac40c2eeb56127c8170109eeaa81382a175a1fdb4026bca4deecdb2eed3f22"
+      "sha256": "f3c25e00c1ee232d83d7ce4f81a1f4640954afda9def021f7e0f63b67ae6bbe6"
     },
     {
       "bytes": 1430,
@@ -2078,11 +2093,11 @@
       "sha256": "34608b1ab732e8fa7aa18292deea15832e83baa92865c28f5ece30bbf64ca6b5"
     },
     {
-      "bytes": 5401,
+      "bytes": 5704,
       "exists": true,
       "kind": "release_support",
       "path": "schemas/artifact_dashboard_payload.schema.json",
-      "sha256": "c214695c79669097766da114f8147ac285e65120553db749546df3209aab79e9"
+      "sha256": "0db87909bfebc8f01d6f2c26e999bf1282eff01cb0de58c3cf0c410c8c6e8613"
     },
     {
       "bytes": 1046,
@@ -2281,6 +2296,13 @@
       "sha256": "082686459e19c111ccbd3f114198f76f0bccec14edf1d419b22e14beaee02b86"
     },
     {
+      "bytes": 13662,
+      "exists": true,
+      "kind": "release_support",
+      "path": "schemas/gnn_model_audit.schema.json",
+      "sha256": "8c294cd21b81153069a0fc570dbb7965f3f3e4fa9b57531e0ddd70ec88ed9215"
+    },
+    {
       "bytes": 730,
       "exists": true,
       "kind": "release_support",
@@ -2407,18 +2429,18 @@
       "sha256": "4fa758ba1fb5dfb94112476481eb3f769a993b891955fdbd70f5285c6cc21210"
     },
     {
-      "bytes": 2107,
+      "bytes": 2311,
       "exists": true,
       "kind": "release_support",
       "path": "schemas/pymdp_profile_comparison.schema.json",
-      "sha256": "00be87ddab7dcdc146bdf0d107f7c1391fff635497503b8716c38cca02a7989b"
+      "sha256": "e40b66903b02a74fa351ca9e2474285181a8096463ca173041a068439804d0b0"
     },
     {
-      "bytes": 7761,
+      "bytes": 7975,
       "exists": true,
       "kind": "release_support",
       "path": "schemas/pymdp_runtime_diagnostics_log.schema.json",
-      "sha256": "5fd52ae4725d59492dc92da903ea9a0e948be73c039c3f8ecd54c286b8607bd0"
+      "sha256": "ae032d32c9851dcb15bcb699a5213473bf1fedf312d72772df1f77b68b5d2894"
     },
     {
       "bytes": 2242,
@@ -2750,6 +2772,13 @@
       "sha256": "72a26e43cabe8539c39b421a4c1e4fa106e7bbcbe3f7a4149c9b4b2d73a51295"
     },
     {
+      "bytes": 559,
+      "exists": true,
+      "kind": "release_support",
+      "path": "scripts/generate_gnn_models.py",
+      "sha256": "32fe6560ae3a397fc02733282c04bfd9b7208ee62bc4253939dc0c3829fe79d7"
+    },
+    {
       "bytes": 931,
       "exists": true,
       "kind": "release_support",
@@ -2792,18 +2821,18 @@
       "sha256": "6ad856674793a9f85d8caaf2249a0c84bc03528492277f82a13d20ed59b2b1ef"
     },
     {
-      "bytes": 1857,
+      "bytes": 1913,
       "exists": true,
       "kind": "release_support",
       "path": "scripts/run_full_chain.py",
-      "sha256": "c5f5623ff7060cba11cf29ba63459846d846152e3ef80591a8f67841f1eb8684"
+      "sha256": "ebb2630c538600f5f6e0394bd3051608f3ce7cbfb3458bde0817f13cb48ae043"
     },
     {
-      "bytes": 3399,
+      "bytes": 3140,
       "exists": true,
       "kind": "release_support",
       "path": "scripts/simulate_boundary_agents.py",
-      "sha256": "879513846fac91fab21d5d4eb4437c1eab72fa79ed2890640391f9f77ce47fc5"
+      "sha256": "3f081bda3840c6e374bb76cde163610c7e2a281eb9ca757bddbb0ccf7ea8f86d"
     },
     {
       "bytes": 626,
@@ -2890,18 +2919,18 @@
       "sha256": "e7559d9d7feeee3248e7e48c8dff235738a084ec7244d3fc3885a44eeb6ea8e0"
     },
     {
-      "bytes": 16592,
+      "bytes": 17009,
       "exists": true,
       "kind": "release_support",
       "path": "src/formalism/equations.py",
-      "sha256": "2f8dfbd2043f5e2a0c4d469cba461d7f16ac8a55321eb6c4a116c9245b7771a4"
+      "sha256": "1356a7415ea57c21493d1c0b7101d98bdb67313f516479620559d7aaf03ff29b"
     },
     {
-      "bytes": 8352,
+      "bytes": 8355,
       "exists": true,
       "kind": "release_support",
       "path": "src/formalism/governance.py",
-      "sha256": "dc95c9b672cef61565861ccaaefe615e22acd72156f47c7aba347707ca2256d6"
+      "sha256": "ee9faad4efa8ce1a19a590dec882cd22c9c2ba6d063110310fa37cd33e24f1a7"
     },
     {
       "bytes": 12050,
@@ -2911,11 +2940,11 @@
       "sha256": "294fc59b8fe17d2c405f5e5512ddeb87dd5f9fd587ea6f29c21e7e27752c3c38"
     },
     {
-      "bytes": 10913,
+      "bytes": 11265,
       "exists": true,
       "kind": "release_support",
       "path": "src/formalism/models.py",
-      "sha256": "8938fec3ec58299a6bc351ae3254d4c13751307c938808b22e464f14d4296813"
+      "sha256": "312a932c5b13773d87d44a04923757799866679d2cac3dbdc2a1992d82280b66"
     },
     {
       "bytes": 2306,
@@ -2925,11 +2954,11 @@
       "sha256": "2e72a2e863ee17672fb3155725295b68420d4dac991152e2d5f8463f94f50492"
     },
     {
-      "bytes": 5707,
+      "bytes": 5877,
       "exists": true,
       "kind": "release_support",
       "path": "src/formalism/review_response_bmr.py",
-      "sha256": "8108852feab2797303ba4214bf9d76410580ba899ea6e0f2bb82fddd410db516"
+      "sha256": "74ba452872917235f95053046e1718f9308b76af92a28c3abbf8249b94a671f4"
     },
     {
       "bytes": 2729,
@@ -2967,11 +2996,11 @@
       "sha256": "e5a10a121b4c428c2bd6cb022eaad8ce3ed1bd1fbc278f60700b4233c274d8a5"
     },
     {
-      "bytes": 6472,
+      "bytes": 6481,
       "exists": true,
       "kind": "release_support",
       "path": "src/formalism/review_response_release.py",
-      "sha256": "867445d80ed247d2e50417aeeb3910b57fa2d267df9f469ac5fe3702bebb0ca0"
+      "sha256": "e1e2bfc19ad2406d050ff0af048c5434fe2f8d113d4eb3880a8feb07056913aa"
     },
     {
       "bytes": 2336,
@@ -3065,11 +3094,368 @@
       "sha256": "731456b7abfb96171f8a8baa90b21cb893059f3dc0f4b6e7b70729f7d08a0cfa"
     },
     {
-      "bytes": 137775,
+      "bytes": 139188,
       "exists": true,
       "kind": "release_support",
       "path": "src/gates/validation.py",
-      "sha256": "38baa331d3d779a577acd990b361a4d44bc3c8060c689756c6efb01650d4cc27"
+      "sha256": "8b0c4a15223e4f0da4945f43dbf60249963b2b879f0444b0a28f0831079ca0ac"
+    },
+    {
+      "bytes": 872,
+      "exists": true,
+      "kind": "release_support",
+      "path": "src/modeling/AGENTS.md",
+      "sha256": "25e8e95432e43664c997fd2360d64c11043c26e26e45526f59366f938229b56c"
+    },
+    {
+      "bytes": 642,
+      "exists": true,
+      "kind": "release_support",
+      "path": "src/modeling/README.md",
+      "sha256": "2348890ac5866ba77557ca2909403932de0d932dfd802ff6abc7de631d444838"
+    },
+    {
+      "bytes": 229,
+      "exists": true,
+      "kind": "release_support",
+      "path": "src/modeling/__init__.py",
+      "sha256": "9154ef0877af34ed4c5d640bffbe171caedfba0da4a4fb397c22eb41ae96e161"
+    },
+    {
+      "bytes": 13838,
+      "exists": true,
+      "kind": "release_support",
+      "path": "src/modeling/audit.py",
+      "sha256": "8aae4bfe2323a9ef60d8321baf587fe9ec755de7d77aa68e74a3887aff157cba"
+    },
+    {
+      "bytes": 6630,
+      "exists": true,
+      "kind": "release_support",
+      "path": "src/modeling/catalog.json",
+      "sha256": "676fe75ad8c4fae60f07d7622261c919fae3e6a79a8be9b8b500efbc39dd953a"
+    },
+    {
+      "bytes": 7719,
+      "exists": true,
+      "kind": "release_support",
+      "path": "src/modeling/registry.py",
+      "sha256": "7abeb18aa8b481455a4f5b954251d5131d3fcc6f89e91e8adbc4d6d8508933ce"
+    },
+    {
+      "bytes": 657,
+      "exists": true,
+      "kind": "release_support",
+      "path": "src/modeling/specifications/finite_alternative_bmr.gnn.md",
+      "sha256": "2d07eb18afee77e1d68bd60c6946513b5b684f53395e68e696d30cb065fbb4f5"
+    },
+    {
+      "bytes": 777,
+      "exists": true,
+      "kind": "release_support",
+      "path": "src/modeling/specifications/finite_blackwell.gnn.md",
+      "sha256": "a6aaac966f4fb182a195fd4844a328a1e522975c48c5655d600aa6ff5dd54e09"
+    },
+    {
+      "bytes": 763,
+      "exists": true,
+      "kind": "release_support",
+      "path": "src/modeling/specifications/finite_bmr.gnn.md",
+      "sha256": "86d8ab8af5461375b926dd561208c0718d997afc308fbd671c5f9988f28f4cb9"
+    },
+    {
+      "bytes": 881,
+      "exists": true,
+      "kind": "release_support",
+      "path": "src/modeling/specifications/finite_classical_data_processing.gnn.md",
+      "sha256": "b4e452c867c21aa7d44a913ae9de6089f1aedf79a8c522505a6c0df0de33b627"
+    },
+    {
+      "bytes": 824,
+      "exists": true,
+      "kind": "release_support",
+      "path": "src/modeling/specifications/finite_compassion_scope.gnn.md",
+      "sha256": "f044b42607f876fea709969707ccf02d0a66deee0d9fe681b41bd196ef856639"
+    },
+    {
+      "bytes": 758,
+      "exists": true,
+      "kind": "release_support",
+      "path": "src/modeling/specifications/finite_emergence.gnn.md",
+      "sha256": "c1352086adbba7c1d62bdacca4a846dd67d91fb7c7a60dbe6a2da4aeb861b9ff"
+    },
+    {
+      "bytes": 1121,
+      "exists": true,
+      "kind": "release_support",
+      "path": "src/modeling/specifications/finite_equations.gnn.md",
+      "sha256": "96af7b73964e319ecdfe0d981473f7f7370cf7d3508c2b1afad2172c4a3af791"
+    },
+    {
+      "bytes": 666,
+      "exists": true,
+      "kind": "release_support",
+      "path": "src/modeling/specifications/finite_interaction_information.gnn.md",
+      "sha256": "3b49164f40cb8ae43a44f24a1d6a428d722ffd28aeaab41df29dfc6f2c2898bc"
+    },
+    {
+      "bytes": 881,
+      "exists": true,
+      "kind": "release_support",
+      "path": "src/modeling/specifications/finite_markov_blanket.gnn.md",
+      "sha256": "9de7ad6e7bcee1288c552b3c0f4ae5504dfff5db99b8fe10ae7cbb7ce459f67d"
+    },
+    {
+      "bytes": 1054,
+      "exists": true,
+      "kind": "release_support",
+      "path": "src/modeling/specifications/finite_sensitivity.gnn.md",
+      "sha256": "4e428d161b6b9ae39a8b55b965b38e4de4fb5e9b49ecb07ea20f88fbc92bc49c"
+    },
+    {
+      "bytes": 1299,
+      "exists": true,
+      "kind": "release_support",
+      "path": "src/modeling/specifications/opacified.gnn.md",
+      "sha256": "fb0bb46eae3bb167f9850f032def3ff2ddc467cb3ae8cd8c4638fbd3d1d8b96c"
+    },
+    {
+      "bytes": 1334,
+      "exists": true,
+      "kind": "release_support",
+      "path": "src/modeling/specifications/post_dual.gnn.md",
+      "sha256": "3aa2c9295d0be26dcf2b942142a3306e53c86077ffae8a4ad741445e6d22c1c3"
+    },
+    {
+      "bytes": 953,
+      "exists": true,
+      "kind": "release_support",
+      "path": "src/modeling/specifications/practice_mapping.gnn.md",
+      "sha256": "01c2310b2702fe29791e89142c0446ab4326e82c79a56304a33c118b167dbd16"
+    },
+    {
+      "bytes": 1339,
+      "exists": true,
+      "kind": "release_support",
+      "path": "src/modeling/specifications/qrf_boundary.gnn.md",
+      "sha256": "df648539566a7488a36ca525266351a540934bad0013762d6d9a608ac4d9067d"
+    },
+    {
+      "bytes": 750,
+      "exists": true,
+      "kind": "release_support",
+      "path": "src/modeling/specifications/quantum_arbitrary_two_qubit_entanglement_audit.gnn.md",
+      "sha256": "096ac0f8c71bd6c8a9386724b23e4b1b64d9114caa82ebed593935040f21c0be"
+    },
+    {
+      "bytes": 725,
+      "exists": true,
+      "kind": "release_support",
+      "path": "src/modeling/specifications/quantum_boundary_entropy.gnn.md",
+      "sha256": "ae218125418908b76d90411501c4d5f90c4d9c1fd6d1d283a56b215c51a8a883"
+    },
+    {
+      "bytes": 846,
+      "exists": true,
+      "kind": "release_support",
+      "path": "src/modeling/specifications/quantum_collision_model_thermalization_audit.gnn.md",
+      "sha256": "59191b05bb1b5da77ff5d405dcee8537e1bee08ec320b3c56bab3de3b0d2f886"
+    },
+    {
+      "bytes": 657,
+      "exists": true,
+      "kind": "release_support",
+      "path": "src/modeling/specifications/quantum_cramer_rao_estimation.gnn.md",
+      "sha256": "f98e51c40f7aa22246f865c0c7c317475fe6c8ae7e7849491af06f90dc4f472a"
+    },
+    {
+      "bytes": 1182,
+      "exists": true,
+      "kind": "release_support",
+      "path": "src/modeling/specifications/quantum_data_processing_monotonicity_audit.gnn.md",
+      "sha256": "cec2b1273a50e93b2a51d7d17706f0f7162de0a23bd98358c9196244bb316277"
+    },
+    {
+      "bytes": 1238,
+      "exists": true,
+      "kind": "release_support",
+      "path": "src/modeling/specifications/quantum_general_measurement_cover_polytope.gnn.md",
+      "sha256": "7d4f1e528947cb3458b9f48b8759b0e0664dc57d479d17f1c567f299e75f7441"
+    },
+    {
+      "bytes": 658,
+      "exists": true,
+      "kind": "release_support",
+      "path": "src/modeling/specifications/quantum_internal_cut_unmeasurability_audit.gnn.md",
+      "sha256": "47bdab336d238890f76ba4be58601f5dbf973b1546da347186d02f75bdcd500b"
+    },
+    {
+      "bytes": 1021,
+      "exists": true,
+      "kind": "release_support",
+      "path": "src/modeling/specifications/quantum_many_body_boundary_screen_sweep.gnn.md",
+      "sha256": "35edb6c0bac1bfdb37a19fdc67852da8c1c29ace69ee5893ec7b7690bde6a7f8"
+    },
+    {
+      "bytes": 1066,
+      "exists": true,
+      "kind": "release_support",
+      "path": "src/modeling/specifications/quantum_measurement_contextuality.gnn.md",
+      "sha256": "a261f0dbbf7812ea1ed9ffc40ee1d05241b28b51a7eaee2aeebf89e6550ee0ab"
+    },
+    {
+      "bytes": 662,
+      "exists": true,
+      "kind": "release_support",
+      "path": "src/modeling/specifications/quantum_multipartite_witness_suite_audit.gnn.md",
+      "sha256": "f13f5d688d56f740e48b321ab675a817b0c34571613bedf164178d038e7b98cd"
+    },
+    {
+      "bytes": 671,
+      "exists": true,
+      "kind": "release_support",
+      "path": "src/modeling/specifications/quantum_n_cycle_contextuality_library_audit.gnn.md",
+      "sha256": "c43f9bdbf41190b8aa1768590398b5005403cbe98328615b57f0783ab9a7a89b"
+    },
+    {
+      "bytes": 709,
+      "exists": true,
+      "kind": "release_support",
+      "path": "src/modeling/specifications/quantum_no_signaling_scenario_library_audit.gnn.md",
+      "sha256": "3b2a833fdc0e846f88bbbd2426c6fb021cab208201ce5b1fd486c6bfb146005f"
+    },
+    {
+      "bytes": 712,
+      "exists": true,
+      "kind": "release_support",
+      "path": "src/modeling/specifications/quantum_open_system_dynamics.gnn.md",
+      "sha256": "28981d2bf15bc779222c9e2ccb397fc83ffadb8592bca26405ab299f7a1dcb80"
+    },
+    {
+      "bytes": 793,
+      "exists": true,
+      "kind": "release_support",
+      "path": "src/modeling/specifications/quantum_qfep_boundary_hamiltonian_dynamics.gnn.md",
+      "sha256": "33e418036e311177d09d0a844a2b508ea68d34a849a367172e9adc960079cfa0"
+    },
+    {
+      "bytes": 730,
+      "exists": true,
+      "kind": "release_support",
+      "path": "src/modeling/specifications/quantum_qrf_frame_covariance_toy_audit.gnn.md",
+      "sha256": "ceaa91772e9af0b67d61245b378c25f950ec7cbfc3a1310da6107412de43e362"
+    },
+    {
+      "bytes": 721,
+      "exists": true,
+      "kind": "release_support",
+      "path": "src/modeling/specifications/quantum_qrf_transformation_covariance_audit.gnn.md",
+      "sha256": "d7d0c55254df8e3385173ffb3c510bd022937c87ff450ad7b16ddca4cdeb1230"
+    },
+    {
+      "bytes": 1025,
+      "exists": true,
+      "kind": "release_support",
+      "path": "src/modeling/specifications/quantum_sheaf_contextuality_obstruction_audit.gnn.md",
+      "sha256": "d5a51d83b9c82e140bfb4e6f4edaa09c56d4d6ba87e821cd8a66263b9adc9599"
+    },
+    {
+      "bytes": 1011,
+      "exists": true,
+      "kind": "release_support",
+      "path": "src/modeling/specifications/quantum_sigma_contextuality_suppression_audit.gnn.md",
+      "sha256": "5d640cb6e54c7adc709ec5e2d77970caf1b6d177be3630dd67b87f7c0a005bf8"
+    },
+    {
+      "bytes": 675,
+      "exists": true,
+      "kind": "release_support",
+      "path": "src/modeling/specifications/quantum_sparse_boundary_screen_scaling_audit.gnn.md",
+      "sha256": "5c826309836f41bf12e94187d1de0e93ac1aa54b11a6f62dbb6890fa59f5e189"
+    },
+    {
+      "bytes": 659,
+      "exists": true,
+      "kind": "release_support",
+      "path": "src/modeling/specifications/quantum_tensor_network_benchmark_audit.gnn.md",
+      "sha256": "73973df1af1b2a2f396265b331873b23e4ac6d07120f17203d6773773a862724"
+    },
+    {
+      "bytes": 737,
+      "exists": true,
+      "kind": "release_support",
+      "path": "src/modeling/specifications/quantum_thermodynamic_channel_cost_audit.gnn.md",
+      "sha256": "e8e0d8a338252825f16e6042af8fd0ef5da02e5252cb409bb80b6402aac36b20"
+    },
+    {
+      "bytes": 764,
+      "exists": true,
+      "kind": "release_support",
+      "path": "src/modeling/specifications/quantum_trajectory_unraveling.gnn.md",
+      "sha256": "11d6cb30160cde6dfd762a637ed0bafe6edfd261b89ead60e90b1daa5a9d3914"
+    },
+    {
+      "bytes": 1222,
+      "exists": true,
+      "kind": "release_support",
+      "path": "src/modeling/specifications/separation_constrained.gnn.md",
+      "sha256": "e6cf8d2e38c5a5b9685deb16088478217064d96376bdbf14c2fd1cad3229a46e"
+    },
+    {
+      "bytes": 591,
+      "exists": true,
+      "kind": "release_support",
+      "path": "src/modeling/specifications/statistical_bmr.gnn.md",
+      "sha256": "2f09260460bcb48775dab5b59b23e8b536495bff7f2913dd57e68c8f4d6dcfd5"
+    },
+    {
+      "bytes": 831,
+      "exists": true,
+      "kind": "release_support",
+      "path": "src/modeling/specifications/statistical_calibration.gnn.md",
+      "sha256": "388ae20acb37ff32576ae81b15a7e4d744ebdadddbe175b1b89224507dbe7411"
+    },
+    {
+      "bytes": 699,
+      "exists": true,
+      "kind": "release_support",
+      "path": "src/modeling/specifications/statistical_convergence.gnn.md",
+      "sha256": "cd4ee10c24f8414e16f091f3aaad3af0bd9f3c1f6c907141b9543cfcf9cfd43c"
+    },
+    {
+      "bytes": 821,
+      "exists": true,
+      "kind": "release_support",
+      "path": "src/modeling/specifications/statistical_criticality.gnn.md",
+      "sha256": "56181f978bc0703724a153706da2b461f085e17f3fa08db822579f2f461caa16"
+    },
+    {
+      "bytes": 685,
+      "exists": true,
+      "kind": "release_support",
+      "path": "src/modeling/specifications/statistical_effects.gnn.md",
+      "sha256": "8e289f1efd1eb6556bccbfb563bc5b384d0fa52aa0b03c6d1d9b0e85d34f2bfa"
+    },
+    {
+      "bytes": 700,
+      "exists": true,
+      "kind": "release_support",
+      "path": "src/modeling/specifications/statistical_policy_ensemble.gnn.md",
+      "sha256": "957212806991ef441da3a9603cf314c169a199c0962b3168cdb88cb5c5d239e4"
+    },
+    {
+      "bytes": 812,
+      "exists": true,
+      "kind": "release_support",
+      "path": "src/modeling/specifications/statistical_seed_bank.gnn.md",
+      "sha256": "9b8e892b57be33b6433b9229a583943793596ab7defe284a0b48ac2c18a5e7a7"
+    },
+    {
+      "bytes": 478,
+      "exists": true,
+      "kind": "release_support",
+      "path": "src/modeling/upstream.json",
+      "sha256": "ca481b780e898dc878ac60ecd2bf4c23fe9d3d3051bb74ecffcf6ddb5c42e7d6"
     },
     {
       "bytes": 1123,
@@ -3093,11 +3479,11 @@
       "sha256": "37b8a203066df94f59d867e371cf69d63b579e2d889c8b6bbc4d6a52136fb2ca"
     },
     {
-      "bytes": 1747,
+      "bytes": 1785,
       "exists": true,
       "kind": "release_support",
       "path": "src/practice/protocols.py",
-      "sha256": "72f3f6818f9f629f7703d7b9c7678cf3dfdca0bf84b35ce683c14f3ffee3602c"
+      "sha256": "7e6600d612988e675a87043580db57b0a54486583fe2c7196de22406c876f714"
     },
     {
       "bytes": 1493,
@@ -3121,88 +3507,88 @@
       "sha256": "8f7549156afc631e48eed0ba24f82adfd77b86c2d7aa1024454ad2e0b81d1a19"
     },
     {
-      "bytes": 5921,
+      "bytes": 6093,
       "exists": true,
       "kind": "release_support",
       "path": "src/simulation/blackwell_ordering.py",
-      "sha256": "588a9d2a933c2edcc6b94831d10304ee88a4244cb30e99f95653e5b0793a2e60"
+      "sha256": "135bc3a3ef75ca6dc2aecc301d7cb2908032908731ff69bd40b4ae4dfdda9790"
     },
     {
-      "bytes": 3127,
+      "bytes": 3597,
       "exists": true,
       "kind": "release_support",
       "path": "src/simulation/bmr.py",
-      "sha256": "51891f30606b50cb4330de44f1ad7dee3b17e618b466172d6172ad2a97c5d0de"
+      "sha256": "3b0dd9c7d70f552001ca2cc411968f63d4567d7bd486c5e20d9c677aecc28efd"
     },
     {
-      "bytes": 5598,
+      "bytes": 5897,
       "exists": true,
       "kind": "release_support",
       "path": "src/simulation/classical_data_processing.py",
-      "sha256": "876e3536a1dd99992d73ff9a9bf25d03148c609dd6d57ca9213b1f4c4736eed9"
+      "sha256": "21a94d29edd6ba3c866f0c61ac44072c7a2e593347d20443bbcbee405e72a083"
     },
     {
-      "bytes": 17325,
+      "bytes": 18514,
       "exists": true,
       "kind": "release_support",
       "path": "src/simulation/compassion_scope.py",
-      "sha256": "8966fc9f23fd35b5b3b3eea108d53ccf0616d0c273796d599a377be55756a267"
+      "sha256": "9a4a86d4909eec949821001cc89d07b7a95e900de07b9a302a7e55dc44a6675f"
     },
     {
-      "bytes": 16342,
+      "bytes": 16786,
       "exists": true,
       "kind": "release_support",
       "path": "src/simulation/criticality.py",
-      "sha256": "1c3855b0596cf4407033d506d80aed79569679b2948ddcfb259e74b170dca86d"
+      "sha256": "ae26d2cbb6eacdab50ffca7db7ef0552cd80f9d567c779d78e2cca7ada0c511a"
     },
     {
-      "bytes": 15807,
+      "bytes": 16997,
       "exists": true,
       "kind": "release_support",
       "path": "src/simulation/emergence.py",
-      "sha256": "9ade5f021e2bed61be50de92c31b12e12619779b3568c6cace0d74135bf23a95"
+      "sha256": "22cb93647a69de24f20e31d161d224f59c38295fda8d0c20b2db08ac0d734f8b"
     },
     {
-      "bytes": 6934,
+      "bytes": 7281,
       "exists": true,
       "kind": "release_support",
       "path": "src/simulation/interaction_information.py",
-      "sha256": "016455b3bb1f26cd119b73d8ec038696d56b058d6ee52a60de7b83855f1e018e"
+      "sha256": "7e4ed6c3faec9bfa4286dcb33c8aacf41d46ddb2d819a02d55edbb1ead2fcd84"
     },
     {
-      "bytes": 14281,
+      "bytes": 15208,
       "exists": true,
       "kind": "release_support",
       "path": "src/simulation/markov_blanket.py",
-      "sha256": "f68349159d4ec9bb8e058ae8944bead4aa301bc00e09fa88bfa67e2f82793ad0"
+      "sha256": "a974fbe09aa16af334fe83bdcf6b7c8c34d42d453c46e6a5f7136cca5bbf048b"
     },
     {
-      "bytes": 29022,
+      "bytes": 28061,
       "exists": true,
       "kind": "release_support",
       "path": "src/simulation/pymdp_profiles.py",
-      "sha256": "7b0ec51d6616f4d93626bda2754413c783efebed71fc4e9bf56158cd798f377f"
+      "sha256": "4fd3a3a926e58f0aab9d28e7f93b31155ea4af4bd6901f79e98d1364f520e91c"
     },
     {
-      "bytes": 9489,
+      "bytes": 10143,
       "exists": true,
       "kind": "release_support",
       "path": "src/simulation/qrf_env.py",
-      "sha256": "6aff9e5006e97c64e9855aa6f2b01ba537bff0997371306ff0a98d3be191b9fc"
+      "sha256": "c728854a06090edf75786bf062875bf4400e34d891a2c20508ca587ea9bc2649"
     },
     {
-      "bytes": 7973,
+      "bytes": 8175,
       "exists": true,
       "kind": "release_support",
       "path": "src/simulation/quantum_estimation.py",
-      "sha256": "bb65a201ee197bd9ddd3290a5d757716614a513353e4df8e2b647dd663721f9b"
+      "sha256": "0ec3a04be723caf8639ff3517c33d9d8f9527cfb5f84cfb934e1cb284e99c523"
     },
     {
-      "bytes": 156129,
+      "bytes": 156428,
       "exists": true,
       "kind": "release_support",
       "path": "src/simulation/quantum_surrogates.py",
-      "sha256": "19987a755b907728b0b48357aec0d35ab23bedae2d89224c99ff96caebc307bd"
+      "sha256": "06d33b063bde4b2c946cb9b393af7948d04d0733caa835862dd99265f291dba5"
     },
     {
       "bytes": 3988,
@@ -3212,25 +3598,25 @@
       "sha256": "e2d1e70961a01697ee28579b3614c8dd41f9abb94ac6ed9e3c56ba036a935154"
     },
     {
-      "bytes": 5322,
+      "bytes": 6067,
       "exists": true,
       "kind": "release_support",
       "path": "src/simulation/sensitivity.py",
-      "sha256": "99f4fed2949065f7e9636b2bd7094a0ac31e1939ac4d508e7a4f6b2cc3cad2b1"
+      "sha256": "2e0b6a1f6f3cb6608626cefd73432892c9597b0ceec66f65bf1bf5e221c09169"
     },
     {
-      "bytes": 21867,
+      "bytes": 24292,
       "exists": true,
       "kind": "release_support",
       "path": "src/simulation/statistical_robustness.py",
-      "sha256": "f0958e010d1e6c17d34ff2a196113738db8333f11c14386e7d2e6fa9aa62220d"
+      "sha256": "16a7607b1f11ce11e08e49da1182502f11fcb7d5116b5bd091dc47d23379b71c"
     },
     {
-      "bytes": 9946,
+      "bytes": 10361,
       "exists": true,
       "kind": "release_support",
       "path": "src/simulation/stochastic.py",
-      "sha256": "b3bf446b78ac8e9a6f6cb70d942c87d4d2b7ca2c10f7298cf1447e4910199525"
+      "sha256": "36f3de6488d03de5f80bee1455cc04a29cd19a88512c3d8fd5f0ae5a87e911a1"
     },
     {
       "bytes": 1945,
@@ -3261,18 +3647,18 @@
       "sha256": "70dff302440259b2acd57acbaea39e94250d8c5a0dbabe21e45281f7e1450bc1"
     },
     {
-      "bytes": 33523,
+      "bytes": 34459,
       "exists": true,
       "kind": "release_support",
       "path": "src/visualizations/dashboard.py",
-      "sha256": "1b0e6dc1c3c76ab3241e9a9e49388d7a898a74303ab1338572d765634d6c62bb"
+      "sha256": "3bef87995bf3114a59323f8a49c6448fe1974759f8d0862990a005cbfbb86502"
     },
     {
-      "bytes": 223261,
+      "bytes": 223300,
       "exists": true,
       "kind": "release_support",
       "path": "src/visualizations/figures.py",
-      "sha256": "aac10ecc2aca58945a22105baa9e5c8acad6b5047593b2845f9ae04aac3a5a49"
+      "sha256": "bf2ddeee7b27dcc46110ae68f4ca53ab457fd07a35ef04b18a946ab91bc3f375"
     },
     {
       "bytes": 7692,
@@ -3338,6 +3724,41 @@
       "sha256": "df2efdda03e09ef6b66f0ac767a35a3fe5ab5c1e4c77b5be28af68d8df8e0a61"
     },
     {
+      "bytes": 10911,
+      "exists": true,
+      "kind": "release_support",
+      "path": "tests/test_gnn_contract.py",
+      "sha256": "dafcdbdeb6111fd794920b721acb452001078e13c057e28a92a722f53f477d03"
+    },
+    {
+      "bytes": 5415,
+      "exists": true,
+      "kind": "release_support",
+      "path": "tests/test_gnn_finite.py",
+      "sha256": "1feefd155f56042f3c16715ec3ddec47d261a06c07547567d3c2bc9f6757486a"
+    },
+    {
+      "bytes": 5194,
+      "exists": true,
+      "kind": "release_support",
+      "path": "tests/test_gnn_quantum.py",
+      "sha256": "5544a7ad19868e7f0cc3f0ffc6e438fd65bdba7977badfaba366f341dc9befac"
+    },
+    {
+      "bytes": 1713,
+      "exists": true,
+      "kind": "release_support",
+      "path": "tests/test_gnn_runtime_versions.py",
+      "sha256": "3353f3674c0b1447cc0d8fbd7b96639f2be8cc7bf5e07ee5cd09b01324b1f4b4"
+    },
+    {
+      "bytes": 7938,
+      "exists": true,
+      "kind": "release_support",
+      "path": "tests/test_gnn_statistics.py",
+      "sha256": "a63b34d1c9781c22a2b8da955f6da66134633058b049582a5dcc4358dfe0aef3"
+    },
+    {
       "bytes": 1729,
       "exists": true,
       "kind": "release_support",
@@ -3345,11 +3766,11 @@
       "sha256": "049ba3dafab06cb362b51402cc87aa69795d292251ce4d1106fdc7d888a0a7cc"
     },
     {
-      "bytes": 53224,
+      "bytes": 53373,
       "exists": true,
       "kind": "release_support",
       "path": "tests/test_practice_and_chain.py",
-      "sha256": "8530233e3bec11c531329c410bd9c57522ae2245b7f38d5969a14a33e55769f4"
+      "sha256": "6c05e3318466af22f452e0a40ec5416fa010cc0843c341a582886b4b579d1acb"
     },
     {
       "bytes": 12458,
@@ -3373,11 +3794,11 @@
       "sha256": "9e21f86d0f28aad613e6465911344544161250c31e04eaba4aa003e9ae4eb310"
     },
     {
-      "bytes": 57806,
+      "bytes": 58187,
       "exists": true,
       "kind": "release_support",
       "path": "tests/test_simulation.py",
-      "sha256": "5f8cda148bbcf11794d0764ceb47a8005adf5524330f626c1a501984ac0def64"
+      "sha256": "a572f56173d1e89c7172b28a02e4c9b131773ff6cf5aa897a2f8aa676742b8bc"
     },
     {
       "bytes": 1963,
@@ -3387,11 +3808,11 @@
       "sha256": "4310116e6a9543adec0d685ea47cfffb774a0a2081c87864ff9abf405e383715"
     },
     {
-      "bytes": 452886,
+      "bytes": 645487,
       "exists": true,
       "kind": "release_support",
       "path": "uv.lock",
-      "sha256": "fe9cd325c419e9ad15e4b117c572535ddf0304f176779c8064e2104eb321a7be"
+      "sha256": "d97ea6d6a3c05e784e62d01ed098046a707c0b99c7cb5169847b0531c1663690"
     }
   ],
   "missing_paths": [],

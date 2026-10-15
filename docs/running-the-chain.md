@@ -15,11 +15,11 @@ artifacts, read
 
 ## Setup
 
-Python 3.10-3.14 is supported; dependencies are managed with `uv`.
-The default development version is 3.14. On macOS with Python 3.10 the lock
-uses SciPy 1.14.1: the newer 1.15.x wheel fails to load on current macOS,
-matching the [upstream PROPACK loader report](https://github.com/scipy/scipy/issues/25635).
-The compatibility pin is restricted to that Python/platform combination.
+Python 3.11-3.14 is supported; dependencies are managed with `uv`.
+The default development version is 3.14. The frozen lock includes GNN at its
+pinned upstream revision and Python-specific `pymdp` versions: 1.0.4 on 3.11,
+1.0.3 on 3.12 and later. See [GNN modeling](gnn-modeling.md) for provenance,
+packaged resources, and model-authoring instructions.
 
 ```bash
 uv sync --frozen --extra dev
@@ -29,9 +29,12 @@ Run all subsequent commands from the project root with `uv run`.
 
 ## Run the full chain
 
-```bash
-uv run python scripts/run_full_chain.py
-```
+Run the full-chain command in [AGENTS.md](../AGENTS.md).
+
+The numerical stages read admitted GNN specifications rather than duplicated
+YAML model defaults. The chain also records the model provenance and execution
+audit at `output/data/gnn_model_audit.json`; malformed specifications stop
+execution before they can be treated as numerical inputs.
 
 The runner first writes an explicitly provisional, non-passing release-manifest
 placeholder. This gives claim-context producers a declared artifact path on a
@@ -119,14 +122,7 @@ manifest; arbitrary extra analysis files still fail manifest coverage.
 
 Run after the full chain (or after a targeted regeneration):
 
-```bash
-uv run pytest tests/ --cov=src --cov-fail-under=90
-uv run python scripts/check_documentation_contract.py --check
-uv run python scripts/generate_method_inventory.py --check
-uv run python scripts/generate_equation_crosswalk.py --check
-uv run python scripts/compose_manuscript.py --validate-only --strict
-uv run python scripts/validate_outputs.py
-```
+Use the canonical verification commands in [AGENTS.md](../AGENTS.md).
 
 - `pytest tests/ --cov=src --cov-fail-under=90` — re-runs the real chain against
   real artifacts (no mocks) and enforces the 90% source-coverage floor.
@@ -209,6 +205,11 @@ downstream step. The architecture map shows which script writes which JSON; see
 
 ## When a gate fails
 
+- **GNN admission or `gnn_model_audit_ok` fails**: inspect the named
+  specification, its source hash, declared dimensions, backend, and consumer.
+  Repair the declaration or adapter and rerun the real consumer plus the
+  negative control; do not replace the upstream validation with a success
+  flag. Follow the [authoring workflow](gnn-modeling.md#authoring-and-validation).
 - **Figure audit fails** (caption, accessibility, style, legibility, integrity,
   or rendered-caption): inspect `output/data/figure_source_map.json` and the
   failing figure under `output/figures/`, then re-run `generate_figures.py`. The

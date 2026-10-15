@@ -7,6 +7,8 @@ import json
 from pathlib import Path
 from typing import Any
 
+from modeling.registry import model_parameters
+
 from formalism.models import BMRComparison, FreeEnergyTerms
 
 
@@ -15,27 +17,31 @@ CLAIM_BOUNDARY = "finite Bayesian model-reduction sweep over software priors; no
 
 def compare_models(prior_precision: float, metacognitive_access: float) -> BMRComparison:
     """Compare full and reduced models at one point in the finite sweep."""
-    retained_accuracy = 0.55 + 0.35 * metacognitive_access
-    sigma_accuracy_bonus = 0.30 * (1.0 - metacognitive_access)
+    parameters = model_parameters("finite_bmr")
+    retained_accuracy = parameters["accuracy_base"] + parameters["access_accuracy"] * metacognitive_access
+    sigma_accuracy_bonus = parameters["sigma_accuracy"] * (1.0 - metacognitive_access)
     full = FreeEnergyTerms(
         accuracy=retained_accuracy + sigma_accuracy_bonus,
-        complexity=0.25 + prior_precision,
-        noise=0.02,
+        complexity=parameters["complexity_base"] + prior_precision,
+        noise=parameters["noise_base"],
     )
     reduced = FreeEnergyTerms(
         accuracy=retained_accuracy,
-        complexity=0.25 + 0.15 * (1.0 - metacognitive_access),
-        noise=0.02,
+        complexity=parameters["complexity_base"] + parameters["reduced_complexity"] * (1.0 - metacognitive_access),
+        noise=parameters["noise_base"],
     )
     return BMRComparison(full_model=full, reduced_model=reduced)
 
 
 def run_bmr_sweep(
     *,
-    access_grid: tuple[float, ...] = (0.0, 0.125, 0.25, 0.375, 0.5, 0.625, 0.75, 0.875, 1.0),
-    precision_grid: tuple[float, ...] = (0.2, 0.5, 1.0, 2.0, 4.0),
+    access_grid: tuple[float, ...] | None = None,
+    precision_grid: tuple[float, ...] | None = None,
 ) -> dict[str, Any]:
     """Run deterministic BMR sweep over prior precision and metacognitive access."""
+    parameters = model_parameters("finite_bmr")
+    access_grid = tuple(parameters["access_grid"]) if access_grid is None else access_grid
+    precision_grid = tuple(parameters["precision_grid"]) if precision_grid is None else precision_grid
     rows = []
     for access in access_grid:
         for precision in precision_grid:

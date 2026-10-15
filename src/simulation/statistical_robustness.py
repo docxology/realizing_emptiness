@@ -9,6 +9,7 @@ from typing import Any
 
 import numpy as np
 
+from modeling.registry import model_parameters
 from simulation.quantum_surrogates import build_quantum_trajectory_unraveling
 from simulation.resampling import bootstrap_contrast, permutation_test, binomial_summary
 
@@ -28,7 +29,7 @@ def _finite(values: list[float] | np.ndarray) -> bool:
 
 
 def _bootstrap_ci(
-    values: list[float], *, seed: int, draws: int = 1024
+    values: list[float], *, seed: int, draws: int
 ) -> dict[str, float]:
     array = np.asarray(values, dtype=float)
     if len(array) == 0:
@@ -60,6 +61,7 @@ def _holm_adjust(p_values: list[float]) -> list[float]:
 
 def build_stochastic_effect_size_audit(stochastic: dict[str, Any]) -> dict[str, Any]:
     """Compare profile ensembles to null controls with deterministic resampling."""
+    design = model_parameters("statistical_effects")
     metric_names = [
         "observation_entropy_nats",
         "action_entropy_nats",
@@ -79,9 +81,12 @@ def build_stochastic_effect_size_audit(stochastic: dict[str, Any]) -> dict[str, 
             profile_values = [float(row[metric]) for row in grouped[(profile, False)]]
             null_values = [float(row[metric]) for row in grouped[(profile, True)]]
             observed_delta = float(np.mean(profile_values) - np.mean(null_values))
-            contrast = bootstrap_contrast(profile_values, null_values, seed=7400 + len(rows))
+            bootstrap_seed = design["bootstrap_seed"] + len(rows)
+            permutation_seed = design["permutation_seed"] + design["permutation_metric_seed_stride"] * metric_index + len(rows)
+            contrast = bootstrap_contrast(profile_values, null_values, seed=bootstrap_seed,
+                                          draws=design["bootstrap_draws"])
             permutation = permutation_test(
-                profile_values, null_values, seed=7300 + 17 * metric_index + len(rows),
+                profile_values, null_values, seed=permutation_seed, draws=design["permutation_draws"],
                 confidence=1 - 0.05 / family_size,
             )
             p_value = float(permutation["p_value"])
@@ -100,8 +105,8 @@ def build_stochastic_effect_size_audit(stochastic: dict[str, Any]) -> dict[str, 
                     "cliffs_ci95_low": contrast["cliffs_ci95_low"],
                     "cliffs_ci95_high": contrast["cliffs_ci95_high"],
                     "profile_run_count": len(profile_values), "null_run_count": len(null_values),
-                    "bootstrap_seed": 7400 + len(rows), "bootstrap_draws": 2048,
-                    "permutation_seed": 7300 + 17 * metric_index + len(rows),
+                    "bootstrap_seed": bootstrap_seed, "bootstrap_draws": design["bootstrap_draws"],
+                    "permutation_seed": permutation_seed,
                     "permutation_draws": permutation["draws"],
                     "permutation_exceedances": permutation["exceedances"],
                     "permutation_resolution": permutation["resolution"],
@@ -164,6 +169,7 @@ def build_bmr_robustness_resampling_audit(
     sensitivity: dict[str, Any],
 ) -> dict[str, Any]:
     """Summarize BMR pruning robustness over observation-noise rows."""
+    design = model_parameters("statistical_bmr")
     grouped: dict[tuple[float, float], list[dict[str, Any]]] = defaultdict(list)
     for row in sensitivity.get("rows", []):
         grouped[
@@ -173,8 +179,10 @@ def build_bmr_robustness_resampling_audit(
     for index, ((precision, access), group) in enumerate(sorted(grouped.items())):
         delta_values = [float(row["delta_free_energy"]) for row in group]
         prune_values = [1.0 if row["prunes_prior"] else 0.0 for row in group]
-        delta_ci = _bootstrap_ci(delta_values, seed=8100 + index)
-        prune_ci = _bootstrap_ci(prune_values, seed=8200 + index)
+        delta_ci = _bootstrap_ci(delta_values, seed=design["delta_seed"] + index,
+                                 draws=design["bootstrap_draws"])
+        prune_ci = _bootstrap_ci(prune_values, seed=design["pruning_seed"] + index,
+                                 draws=design["bootstrap_draws"])
         rows.append(
             {
                 "prior_precision": precision,
@@ -235,18 +243,22 @@ def build_bmr_robustness_resampling_audit(
 
 def build_quantum_trajectory_convergence_audit(
     *,
-    seed: int = 29,
-    trajectory_counts: tuple[int, ...] = (16, 64, 128, 256, 512, 1024, 2048),
-    too_few_count: int = 8,
+    seed: int | None = None,
+    trajectory_counts: tuple[int, ...] | None = None,
+    too_few_count: int | None = None,
 ) -> dict[str, Any]:
     """Check finite quantum-trajectory residuals across ensemble sizes."""
+    design = model_parameters("statistical_convergence")
+    seed = design["seed"] if seed is None else seed
+    trajectory_counts = tuple(design["trajectory_counts"]) if trajectory_counts is None else trajectory_counts
+    too_few_count = design["too_few_count"] if too_few_count is None else too_few_count
     rows = []
     for count in trajectory_counts:
         payload = build_quantum_trajectory_unraveling(
             seed=seed,
             trajectory_count=count,
-            step_count=16,
-            total_time=1.2,
+            step_count=design["step_count"],
+            total_time=design["total_time"],
         )
         rows.append(
             {
@@ -261,8 +273,8 @@ def build_quantum_trajectory_convergence_audit(
     too_few = build_quantum_trajectory_unraveling(
         seed=seed,
         trajectory_count=too_few_count,
-        step_count=16,
-        total_time=1.2,
+        step_count=design["step_count"],
+        total_time=design["total_time"],
     )
     x = np.log(np.asarray([row["trajectory_count"] for row in rows], dtype=float))
     y = np.log(
@@ -301,20 +313,26 @@ def build_quantum_trajectory_convergence_audit(
 
 
 def _synthetic_arm(
-    *, shift: float, seed: int, sample_size: int = 128, base_seed_offset: int = 0
+    *, shift: float, seed: int, sample_size: int | None = None, base_seed_offset: int = 0
 ) -> dict[str, Any]:
     """Run the effect-size machinery on two seeded normal samples with a known shift.
 
     Returns the permutation p-value, Cliff's delta, and bootstrap interval of the shift so
     the calibration can assert the test detects an injected effect and ignores the null.
     """
+    design = model_parameters("statistical_calibration")
+    sample_size = design["sample_size"] if sample_size is None else sample_size
     rng = np.random.default_rng(seed)
-    baseline = rng.normal(0.0, 1.0, size=sample_size)
-    treatment = rng.normal(shift, 1.0, size=sample_size)
+    baseline = rng.normal(design["normal_mean"], design["normal_scale"], size=sample_size)
+    treatment = rng.normal(design["normal_mean"] + shift, design["normal_scale"], size=sample_size)
     permutation = permutation_test(
-        treatment.tolist(), baseline.tolist(), seed=seed + 1 + base_seed_offset, draws=1024
+        treatment.tolist(), baseline.tolist(),
+        seed=seed + design["permutation_seed_offset"] + base_seed_offset,
+        draws=design["permutation_draws"],
     )
-    delta_ci = bootstrap_contrast(treatment, baseline, seed=seed + 2 + base_seed_offset)
+    delta_ci = bootstrap_contrast(treatment, baseline,
+                                 seed=seed + design["bootstrap_seed_offset"] + base_seed_offset,
+                                 draws=design["bootstrap_draws"])
     return {
         "injected_shift": float(shift),
         "permutation_p": permutation["p_value"],
@@ -326,22 +344,28 @@ def _synthetic_arm(
 
 
 def build_seed_bank_calibration(
-    *, seed: int = 104242, repetitions: int = 128, positive_shift: float = 1.0,
+    *, seed: int | None = None, repetitions: int | None = None, positive_shift: float | None = None,
 ) -> dict[str, Any]:
     """Measure rejection and difference-interval coverage across independent synthetic seed sets."""
+    design = model_parameters("statistical_seed_bank")
+    seed = design["seed"] if seed is None else seed
+    repetitions = design["repetitions"] if repetitions is None else repetitions
+    positive_shift = design["positive_shift"] if positive_shift is None else positive_shift
     if repetitions < 1 or not np.isfinite(positive_shift):
         raise ValueError("calibration requires a positive repetition count and finite shift")
     rows = []
     for index in range(repetitions):
-        run_seed = seed + index * 10
+        run_seed = seed + index * design["seed_stride"]
         rng = np.random.default_rng(run_seed)
-        baseline = rng.normal(size=64)
-        null = rng.normal(size=64)
-        shifted = rng.normal(loc=positive_shift, size=64)
+        baseline = rng.normal(design["normal_mean"], design["normal_scale"], size=design["sample_size"])
+        null = rng.normal(design["normal_mean"], design["normal_scale"], size=design["sample_size"])
+        shifted = rng.normal(design["normal_mean"] + positive_shift, design["normal_scale"], size=design["sample_size"])
         row: dict[str, Any] = {"seed": run_seed}
         for label, values, truth in (("null", null, 0.0), ("positive", shifted, positive_shift)):
-            contrast = bootstrap_contrast(values, baseline, seed=run_seed + 1, draws=512)
-            p = float(permutation_test(values, baseline, seed=run_seed + 2, draws=511)["p_value"])
+            contrast = bootstrap_contrast(values, baseline, seed=run_seed + design["bootstrap_seed_offset"],
+                                          draws=design["bootstrap_draws"])
+            p = float(permutation_test(values, baseline, seed=run_seed + design["permutation_seed_offset"],
+                                       draws=design["permutation_draws"])["p_value"])
             row[f"{label}_p"] = p
             row[f"{label}_mean_difference"] = contrast["mean_difference"]
             row[f"{label}_ci95_low"] = contrast["difference_ci95_low"]
@@ -355,8 +379,8 @@ def build_seed_bank_calibration(
     controls = {"seed_bank_large_enough": repetitions >= 32,
                 "null_rejection_bounded": summaries["null_rejection"]["ci_high"] <= 0.25,
                 "injected_effect_detected": summaries["positive_rejection"]["ci_low"] >= 0.75}
-    return {"seed": seed, "repetitions": repetitions, "sample_size_per_group": 64,
-            "bootstrap_draws": 512, "permutation_draws": 511, "alpha": 0.05,
+    return {"seed": seed, "repetitions": repetitions, "sample_size_per_group": design["sample_size"],
+            "bootstrap_draws": design["bootstrap_draws"], "permutation_draws": design["permutation_draws"], "alpha": 0.05,
             "nominal_coverage": 0.95, "positive_shift": float(positive_shift),
             "calibration_limits": {"null_rejection_upper_max": 0.25, "positive_rejection_lower_min": 0.75},
             "rows": rows, **summaries, "controls": controls, "all_controls_pass": all(controls.values()),
@@ -364,7 +388,7 @@ def build_seed_bank_calibration(
 
 
 def build_effect_size_test_calibration_audit(
-    *, seed: int = 4242, alpha: float = 0.05, positive_shift: float = 1.0
+    *, seed: int | None = None, alpha: float = 0.05, positive_shift: float | None = None
 ) -> dict[str, Any]:
     """Positive control: verify the effect-size machinery rejects a known injected effect.
 
@@ -375,9 +399,12 @@ def build_effect_size_test_calibration_audit(
     the profile-vs-null contrast is uninterpretable. This calibrates the test on synthetic data;
     it is NOT empirical statistical power over real meditators, brains, or behavioural data.
     """
+    design = model_parameters("statistical_calibration")
+    seed = design["seed"] if seed is None else seed
+    positive_shift = design["positive_shift"] if positive_shift is None else positive_shift
     null_arm = _synthetic_arm(shift=0.0, seed=seed)
-    positive_arm = _synthetic_arm(shift=positive_shift, seed=seed + 1000)
-    sign_flip_arm = _synthetic_arm(shift=-positive_shift, seed=seed + 2000)
+    positive_arm = _synthetic_arm(shift=positive_shift, seed=seed + design["positive_seed_offset"])
+    sign_flip_arm = _synthetic_arm(shift=-positive_shift, seed=seed + design["sign_flip_seed_offset"])
     seed_bank = build_seed_bank_calibration(positive_shift=positive_shift)
     controls = {
         "null_not_rejected": bool(

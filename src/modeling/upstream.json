@@ -1,0 +1,10 @@
+{
+  "repository": "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation",
+  "commit": "46459949944e3217f8a6a804d4ff8c52829ef275",
+  "version": "4.1.0",
+  "license": "CC-BY-NC-SA-4.0",
+  "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+  "parser": "gnn.parsers.markdown_parser.MarkdownGNNParser",
+  "validator": "gnn.validation.semantic_validator.SemanticValidator",
+  "compiler": "gnn.render.pomdp_contract.build_canonical_pomdp_spec"
+}

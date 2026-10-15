@@ -1,0 +1,1021 @@
+{
+  "all_controls_pass": true,
+  "audit_sha256": "8aae4bfe2323a9ef60d8321baf587fe9ec755de7d77aa68e74a3887aff157cba",
+  "catalog_sha256": "676fe75ad8c4fae60f07d7622261c919fae3e6a79a8be9b8b500efbc39dd953a",
+  "claim_boundary": "GNN specifications and finite software execution only; not empirical, clinical, neural, practice-efficacy, or physical qFEP evidence",
+  "controls": {
+    "all_categorical_models_executed": true,
+    "all_consumers_source_bound": true,
+    "c_mutation_changes_real_policy": true,
+    "catalog_complete": true,
+    "d_mutation_changes_real_posterior": true,
+    "duplicate_section_rejected": true,
+    "invalid_probability_rejected": true,
+    "malformed_rejected": true,
+    "missing_c_rejected": true,
+    "nonfinite_rejected": true,
+    "unknown_edge_rejected": true,
+    "valid_model_admitted": true,
+    "wrong_shape_rejected": true
+  },
+  "model_count": 44,
+  "models": [
+    {
+      "backend": "numpy_scipy",
+      "consumer": "formalism.review_response_bmr:build_bmr_alternative_prior_audit",
+      "consumer_sha256": "74ba452872917235f95053046e1718f9308b76af92a28c3abbf8249b94a671f4",
+      "consumer_source": "src/formalism/review_response_bmr.py",
+      "family": "finite_alternative_bmr",
+      "model_id": "finite_alternative_bmr",
+      "parameters_sha256": "8f1ce6d5ec124ca974b939ea7f9f228a4150ad9acafb96a810231366a88e27c6",
+      "path": "src/modeling/specifications/finite_alternative_bmr.gnn.md",
+      "sha256": "2d07eb18afee77e1d68bd60c6946513b5b684f53395e68e696d30cb065fbb4f5",
+      "tensors_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "backend": "numpy_scipy",
+      "consumer": "simulation.blackwell_ordering:build_blackwell_bayes_risk_audit",
+      "consumer_sha256": "135bc3a3ef75ca6dc2aecc301d7cb2908032908731ff69bd40b4ae4dfdda9790",
+      "consumer_source": "src/simulation/blackwell_ordering.py",
+      "family": "finite_blackwell",
+      "model_id": "finite_blackwell",
+      "parameters_sha256": "d3e030bdc2e0356be0df4b543da2ffe36b226247553df77f31845e92bbfa5b0c",
+      "path": "src/modeling/specifications/finite_blackwell.gnn.md",
+      "sha256": "a6aaac966f4fb182a195fd4844a328a1e522975c48c5655d600aa6ff5dd54e09",
+      "tensors_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "backend": "numpy_scipy",
+      "consumer": "simulation.bmr:run_bmr_sweep",
+      "consumer_sha256": "3b0dd9c7d70f552001ca2cc411968f63d4567d7bd486c5e20d9c677aecc28efd",
+      "consumer_source": "src/simulation/bmr.py",
+      "family": "finite_bmr",
+      "model_id": "finite_bmr",
+      "parameters_sha256": "71417a05712957590005b4e4cc60b12e15801cdcaf4b39168010a88086d54895",
+      "path": "src/modeling/specifications/finite_bmr.gnn.md",
+      "sha256": "86d8ab8af5461375b926dd561208c0718d997afc308fbd671c5f9988f28f4cb9",
+      "tensors_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "backend": "numpy_scipy",
+      "consumer": "simulation.classical_data_processing:build_classical_data_processing_audit",
+      "consumer_sha256": "21a94d29edd6ba3c866f0c61ac44072c7a2e593347d20443bbcbee405e72a083",
+      "consumer_source": "src/simulation/classical_data_processing.py",
+      "family": "finite_classical_data_processing",
+      "model_id": "finite_classical_data_processing",
+      "parameters_sha256": "212d4aa67ff2b61903adb26c2d5385db0a75680d9bdbf14b7a757f021cea2042",
+      "path": "src/modeling/specifications/finite_classical_data_processing.gnn.md",
+      "sha256": "b4e452c867c21aa7d44a913ae9de6089f1aedf79a8c522505a6c0df0de33b627",
+      "tensors_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "backend": "numpy_scipy",
+      "consumer": "simulation.compassion_scope:build_compassion_scope_audit",
+      "consumer_sha256": "9a4a86d4909eec949821001cc89d07b7a95e900de07b9a302a7e55dc44a6675f",
+      "consumer_source": "src/simulation/compassion_scope.py",
+      "family": "finite_compassion_scope",
+      "model_id": "finite_compassion_scope",
+      "parameters_sha256": "d212730de7722c4f1a265ac4fa3604c52edffa7a96b9cc8efcb591685f132a23",
+      "path": "src/modeling/specifications/finite_compassion_scope.gnn.md",
+      "sha256": "f044b42607f876fea709969707ccf02d0a66deee0d9fe681b41bd196ef856639",
+      "tensors_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "backend": "numpy_scipy",
+      "consumer": "simulation.emergence:build_separation_prior_emergence_audit",
+      "consumer_sha256": "22cb93647a69de24f20e31d161d224f59c38295fda8d0c20b2db08ac0d734f8b",
+      "consumer_source": "src/simulation/emergence.py",
+      "family": "finite_emergence",
+      "model_id": "finite_emergence",
+      "parameters_sha256": "9495d2d425e16c36e1050f850daf31dcefe889aa51666909a365d2c6d39979ee",
+      "path": "src/modeling/specifications/finite_emergence.gnn.md",
+      "sha256": "c1352086adbba7c1d62bdacca4a846dd67d91fb7c7a60dbe6a2da4aeb861b9ff",
+      "tensors_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "backend": "numpy_scipy",
+      "consumer": "formalism.equations:evaluate_equation_surrogates",
+      "consumer_sha256": "1356a7415ea57c21493d1c0b7101d98bdb67313f516479620559d7aaf03ff29b",
+      "consumer_source": "src/formalism/equations.py",
+      "family": "finite_equations",
+      "model_id": "finite_equations",
+      "parameters_sha256": "35b08be71a418fe6f54530b973d5030f9f1df748ae6968f1cfed81adc40fbf82",
+      "path": "src/modeling/specifications/finite_equations.gnn.md",
+      "sha256": "96af7b73964e319ecdfe0d981473f7f7370cf7d3508c2b1afad2172c4a3af791",
+      "tensors_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "backend": "numpy_scipy",
+      "consumer": "simulation.interaction_information:build_interaction_information_boundary_audit",
+      "consumer_sha256": "7e4ed6c3faec9bfa4286dcb33c8aacf41d46ddb2d819a02d55edbb1ead2fcd84",
+      "consumer_source": "src/simulation/interaction_information.py",
+      "family": "finite_interaction_information",
+      "model_id": "finite_interaction_information",
+      "parameters_sha256": "bb882ba5f4ef3ba3669ce68a73b9259a440f6d16e41376a044c3302af0a15c7e",
+      "path": "src/modeling/specifications/finite_interaction_information.gnn.md",
+      "sha256": "3b49164f40cb8ae43a44f24a1d6a428d722ffd28aeaab41df29dfc6f2c2898bc",
+      "tensors_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "backend": "numpy_scipy",
+      "consumer": "simulation.markov_blanket:build_markov_blanket_discovery_audit",
+      "consumer_sha256": "a974fbe09aa16af334fe83bdcf6b7c8c34d42d453c46e6a5f7136cca5bbf048b",
+      "consumer_source": "src/simulation/markov_blanket.py",
+      "family": "finite_markov_blanket",
+      "model_id": "finite_markov_blanket",
+      "parameters_sha256": "03f8c5cfa4e639a91b912305575ea357f192d287ce148c38439c3fa3cc5d7508",
+      "path": "src/modeling/specifications/finite_markov_blanket.gnn.md",
+      "sha256": "9de7ad6e7bcee1288c552b3c0f4ae5504dfff5db99b8fe10ae7cbb7ce459f67d",
+      "tensors_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "backend": "numpy_scipy",
+      "consumer": "simulation.sensitivity:build_sensitivity_grid",
+      "consumer_sha256": "2e0b6a1f6f3cb6608626cefd73432892c9597b0ceec66f65bf1bf5e221c09169",
+      "consumer_source": "src/simulation/sensitivity.py",
+      "family": "finite_sensitivity",
+      "model_id": "finite_sensitivity",
+      "parameters_sha256": "d824e950692efd8a14942777e1f7ec1708d781528b15687b66227460ac1028e9",
+      "path": "src/modeling/specifications/finite_sensitivity.gnn.md",
+      "sha256": "4e428d161b6b9ae39a8b55b965b38e4de4fb5e9b49ecb07ea20f88fbc92bc49c",
+      "tensors_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "backend": "pymdp",
+      "consumer": "simulation.pymdp_profiles:build_profile_generative_model",
+      "consumer_sha256": "4fd3a3a926e58f0aab9d28e7f93b31155ea4af4bd6901f79e98d1364f520e91c",
+      "consumer_source": "src/simulation/pymdp_profiles.py",
+      "family": "categorical_qrf",
+      "model_id": "opacified",
+      "parameters_sha256": "2c8f1ffeb290f63ac372772984f9839f2f1baef077e4b04d445777d5a71bd1d5",
+      "path": "src/modeling/specifications/opacified.gnn.md",
+      "sha256": "fb0bb46eae3bb167f9850f032def3ff2ddc467cb3ae8cd8c4638fbd3d1d8b96c",
+      "tensors_sha256": "d6bedd2fdc0789a4957cf952aa736783ebd70880410e85482b71756fbbf6d359"
+    },
+    {
+      "backend": "pymdp",
+      "consumer": "simulation.pymdp_profiles:build_profile_generative_model",
+      "consumer_sha256": "4fd3a3a926e58f0aab9d28e7f93b31155ea4af4bd6901f79e98d1364f520e91c",
+      "consumer_source": "src/simulation/pymdp_profiles.py",
+      "family": "categorical_qrf",
+      "model_id": "post_dual",
+      "parameters_sha256": "28f00db1a8c02653974c0e5c8761ab934d090f808b2a388d0f9024313131ea97",
+      "path": "src/modeling/specifications/post_dual.gnn.md",
+      "sha256": "3aa2c9295d0be26dcf2b942142a3306e53c86077ffae8a4ad741445e6d22c1c3",
+      "tensors_sha256": "8661bb32359ea156dc4f8fccf13ed2874887cd88409f7aa7510ac78c7cc5bc76"
+    },
+    {
+      "backend": "numpy_scipy",
+      "consumer": "practice.protocols:practice_protocol_map",
+      "consumer_sha256": "7e6600d612988e675a87043580db57b0a54486583fe2c7196de22406c876f714",
+      "consumer_source": "src/practice/protocols.py",
+      "family": "practice_governance",
+      "model_id": "practice_mapping",
+      "parameters_sha256": "5aa5921b109e0b2ef679825e77c9a08f149b319ce1e8992c547d4ec9bbd5b96c",
+      "path": "src/modeling/specifications/practice_mapping.gnn.md",
+      "sha256": "01c2310b2702fe29791e89142c0446ab4326e82c79a56304a33c118b167dbd16",
+      "tensors_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "backend": "numpy_scipy",
+      "consumer": "simulation.qrf_env:default_deployments",
+      "consumer_sha256": "c728854a06090edf75786bf062875bf4400e34d891a2c20508ca587ea9bc2649",
+      "consumer_source": "src/simulation/qrf_env.py",
+      "family": "boundary_runtime_design",
+      "model_id": "qrf_boundary",
+      "parameters_sha256": "680162e177e5d3ce9ee21a740a87f47fd8a84f51789a13b38202dc094eb65012",
+      "path": "src/modeling/specifications/qrf_boundary.gnn.md",
+      "sha256": "df648539566a7488a36ca525266351a540934bad0013762d6d9a608ac4d9067d",
+      "tensors_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "backend": "numpy_scipy",
+      "consumer": "simulation.quantum_surrogates:build_arbitrary_two_qubit_entanglement_audit",
+      "consumer_sha256": "06d33b063bde4b2c946cb9b393af7948d04d0733caa835862dd99265f291dba5",
+      "consumer_source": "src/simulation/quantum_surrogates.py",
+      "family": "quantum_arbitrary_two_qubit_entanglement_audit",
+      "model_id": "quantum_arbitrary_two_qubit_entanglement_audit",
+      "parameters_sha256": "f4ceb8ca75c44092a302e227a51678e5e4494df596cc8e556b7bbb5685c6460c",
+      "path": "src/modeling/specifications/quantum_arbitrary_two_qubit_entanglement_audit.gnn.md",
+      "sha256": "096ac0f8c71bd6c8a9386724b23e4b1b64d9114caa82ebed593935040f21c0be",
+      "tensors_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "backend": "numpy_scipy",
+      "consumer": "simulation.quantum_surrogates:build_quantum_boundary_entropy",
+      "consumer_sha256": "06d33b063bde4b2c946cb9b393af7948d04d0733caa835862dd99265f291dba5",
+      "consumer_source": "src/simulation/quantum_surrogates.py",
+      "family": "quantum_boundary_entropy",
+      "model_id": "quantum_boundary_entropy",
+      "parameters_sha256": "93b6dfc0604da29015ad29f88980cdc97e2f60f43849d013535025c9d5a8f936",
+      "path": "src/modeling/specifications/quantum_boundary_entropy.gnn.md",
+      "sha256": "ae218125418908b76d90411501c4d5f90c4d9c1fd6d1d283a56b215c51a8a883",
+      "tensors_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "backend": "numpy_scipy",
+      "consumer": "simulation.quantum_surrogates:build_collision_model_thermalization_audit",
+      "consumer_sha256": "06d33b063bde4b2c946cb9b393af7948d04d0733caa835862dd99265f291dba5",
+      "consumer_source": "src/simulation/quantum_surrogates.py",
+      "family": "quantum_collision_model_thermalization_audit",
+      "model_id": "quantum_collision_model_thermalization_audit",
+      "parameters_sha256": "c5c73acbbc707cfcc81ff2d8f1d6a5e1bd1096a1d56fbad5ae386956829f1084",
+      "path": "src/modeling/specifications/quantum_collision_model_thermalization_audit.gnn.md",
+      "sha256": "59191b05bb1b5da77ff5d405dcee8537e1bee08ec320b3c56bab3de3b0d2f886",
+      "tensors_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "backend": "numpy_scipy",
+      "consumer": "simulation.quantum_estimation:build_quantum_cramer_rao_estimation_audit",
+      "consumer_sha256": "0ec3a04be723caf8639ff3517c33d9d8f9527cfb5f84cfb934e1cb284e99c523",
+      "consumer_source": "src/simulation/quantum_estimation.py",
+      "family": "quantum_cramer_rao_estimation",
+      "model_id": "quantum_cramer_rao_estimation",
+      "parameters_sha256": "55580d32f5599240114fc38dbf64901d613d935f8b934bec1ef5df929df3d711",
+      "path": "src/modeling/specifications/quantum_cramer_rao_estimation.gnn.md",
+      "sha256": "f98e51c40f7aa22246f865c0c7c317475fe6c8ae7e7849491af06f90dc4f472a",
+      "tensors_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "backend": "numpy_scipy",
+      "consumer": "simulation.quantum_surrogates:build_data_processing_monotonicity_audit",
+      "consumer_sha256": "06d33b063bde4b2c946cb9b393af7948d04d0733caa835862dd99265f291dba5",
+      "consumer_source": "src/simulation/quantum_surrogates.py",
+      "family": "quantum_data_processing_monotonicity_audit",
+      "model_id": "quantum_data_processing_monotonicity_audit",
+      "parameters_sha256": "c9180430278e1706bf986e13fe30c7179f177ea39526551ad5dbe4781dadd83c",
+      "path": "src/modeling/specifications/quantum_data_processing_monotonicity_audit.gnn.md",
+      "sha256": "cec2b1273a50e93b2a51d7d17706f0f7162de0a23bd98358c9196244bb316277",
+      "tensors_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "backend": "numpy_scipy",
+      "consumer": "simulation.quantum_surrogates:build_general_measurement_cover_polytope_audit",
+      "consumer_sha256": "06d33b063bde4b2c946cb9b393af7948d04d0733caa835862dd99265f291dba5",
+      "consumer_source": "src/simulation/quantum_surrogates.py",
+      "family": "quantum_general_measurement_cover_polytope",
+      "model_id": "quantum_general_measurement_cover_polytope",
+      "parameters_sha256": "a12109c747f1a0bb16a4e4620ef3489aeab742000a711fb7808383b6b14fc0ee",
+      "path": "src/modeling/specifications/quantum_general_measurement_cover_polytope.gnn.md",
+      "sha256": "7d4f1e528947cb3458b9f48b8759b0e0664dc57d479d17f1c567f299e75f7441",
+      "tensors_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "backend": "numpy_scipy",
+      "consumer": "simulation.quantum_surrogates:build_internal_cut_unmeasurability_audit",
+      "consumer_sha256": "06d33b063bde4b2c946cb9b393af7948d04d0733caa835862dd99265f291dba5",
+      "consumer_source": "src/simulation/quantum_surrogates.py",
+      "family": "quantum_internal_cut_unmeasurability_audit",
+      "model_id": "quantum_internal_cut_unmeasurability_audit",
+      "parameters_sha256": "5fbe80463623cf16db33926aa3c5a124cbaad1a746c68d83530525eb676ec18c",
+      "path": "src/modeling/specifications/quantum_internal_cut_unmeasurability_audit.gnn.md",
+      "sha256": "47bdab336d238890f76ba4be58601f5dbf973b1546da347186d02f75bdcd500b",
+      "tensors_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "backend": "numpy_scipy",
+      "consumer": "simulation.quantum_surrogates:build_many_body_boundary_screen_sweep",
+      "consumer_sha256": "06d33b063bde4b2c946cb9b393af7948d04d0733caa835862dd99265f291dba5",
+      "consumer_source": "src/simulation/quantum_surrogates.py",
+      "family": "quantum_many_body_boundary_screen_sweep",
+      "model_id": "quantum_many_body_boundary_screen_sweep",
+      "parameters_sha256": "71d7c43a2d369854c3b43d1c771b8148c87960d8b04687b1b7c28a389cedf0da",
+      "path": "src/modeling/specifications/quantum_many_body_boundary_screen_sweep.gnn.md",
+      "sha256": "35edb6c0bac1bfdb37a19fdc67852da8c1c29ace69ee5893ec7b7690bde6a7f8",
+      "tensors_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "backend": "numpy_scipy",
+      "consumer": "simulation.quantum_surrogates:build_quantum_measurement_contextuality",
+      "consumer_sha256": "06d33b063bde4b2c946cb9b393af7948d04d0733caa835862dd99265f291dba5",
+      "consumer_source": "src/simulation/quantum_surrogates.py",
+      "family": "quantum_measurement_contextuality",
+      "model_id": "quantum_measurement_contextuality",
+      "parameters_sha256": "c1fecb9f371fea37e36a2abc9739a5ee2f0b5dbe8306518982c2b036e6fb3da7",
+      "path": "src/modeling/specifications/quantum_measurement_contextuality.gnn.md",
+      "sha256": "a261f0dbbf7812ea1ed9ffc40ee1d05241b28b51a7eaee2aeebf89e6550ee0ab",
+      "tensors_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "backend": "numpy_scipy",
+      "consumer": "simulation.quantum_surrogates:build_multipartite_witness_suite_audit",
+      "consumer_sha256": "06d33b063bde4b2c946cb9b393af7948d04d0733caa835862dd99265f291dba5",
+      "consumer_source": "src/simulation/quantum_surrogates.py",
+      "family": "quantum_multipartite_witness_suite_audit",
+      "model_id": "quantum_multipartite_witness_suite_audit",
+      "parameters_sha256": "e65e91829e260048e2eeaf2153a2dbb3835b7d1ee898d0d3754bd086ac98f0f1",
+      "path": "src/modeling/specifications/quantum_multipartite_witness_suite_audit.gnn.md",
+      "sha256": "f13f5d688d56f740e48b321ab675a817b0c34571613bedf164178d038e7b98cd",
+      "tensors_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "backend": "numpy_scipy",
+      "consumer": "simulation.quantum_surrogates:build_n_cycle_contextuality_library_audit",
+      "consumer_sha256": "06d33b063bde4b2c946cb9b393af7948d04d0733caa835862dd99265f291dba5",
+      "consumer_source": "src/simulation/quantum_surrogates.py",
+      "family": "quantum_n_cycle_contextuality_library_audit",
+      "model_id": "quantum_n_cycle_contextuality_library_audit",
+      "parameters_sha256": "db40cc3c8f55a2685a7560878928d1d0dc93ac1ee812c94222ac8eb7ae6c1dee",
+      "path": "src/modeling/specifications/quantum_n_cycle_contextuality_library_audit.gnn.md",
+      "sha256": "c43f9bdbf41190b8aa1768590398b5005403cbe98328615b57f0783ab9a7a89b",
+      "tensors_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "backend": "numpy_scipy",
+      "consumer": "simulation.quantum_surrogates:build_no_signaling_scenario_library_audit",
+      "consumer_sha256": "06d33b063bde4b2c946cb9b393af7948d04d0733caa835862dd99265f291dba5",
+      "consumer_source": "src/simulation/quantum_surrogates.py",
+      "family": "quantum_no_signaling_scenario_library_audit",
+      "model_id": "quantum_no_signaling_scenario_library_audit",
+      "parameters_sha256": "9d8318308c0a84335f3eab484ddc30bf9b5fdd1e28c55141e92bc29e43d709e6",
+      "path": "src/modeling/specifications/quantum_no_signaling_scenario_library_audit.gnn.md",
+      "sha256": "3b2a833fdc0e846f88bbbd2426c6fb021cab208201ce5b1fd486c6bfb146005f",
+      "tensors_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "backend": "numpy_scipy",
+      "consumer": "simulation.quantum_surrogates:build_quantum_open_system_dynamics",
+      "consumer_sha256": "06d33b063bde4b2c946cb9b393af7948d04d0733caa835862dd99265f291dba5",
+      "consumer_source": "src/simulation/quantum_surrogates.py",
+      "family": "quantum_open_system_dynamics",
+      "model_id": "quantum_open_system_dynamics",
+      "parameters_sha256": "abf50616493233515e6c59fa5669062ed37bc0b0c6994be7935a25671c5775f0",
+      "path": "src/modeling/specifications/quantum_open_system_dynamics.gnn.md",
+      "sha256": "28981d2bf15bc779222c9e2ccb397fc83ffadb8592bca26405ab299f7a1dcb80",
+      "tensors_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "backend": "numpy_scipy",
+      "consumer": "simulation.quantum_surrogates:build_qfep_boundary_hamiltonian_dynamics",
+      "consumer_sha256": "06d33b063bde4b2c946cb9b393af7948d04d0733caa835862dd99265f291dba5",
+      "consumer_source": "src/simulation/quantum_surrogates.py",
+      "family": "quantum_qfep_boundary_hamiltonian_dynamics",
+      "model_id": "quantum_qfep_boundary_hamiltonian_dynamics",
+      "parameters_sha256": "ccdf351519b78dd0d8ee393c2e3bfda706ffdeb0e03356cb460d37df95f16efd",
+      "path": "src/modeling/specifications/quantum_qfep_boundary_hamiltonian_dynamics.gnn.md",
+      "sha256": "33e418036e311177d09d0a844a2b508ea68d34a849a367172e9adc960079cfa0",
+      "tensors_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "backend": "numpy_scipy",
+      "consumer": "simulation.quantum_surrogates:build_qrf_frame_covariance_toy_audit",
+      "consumer_sha256": "06d33b063bde4b2c946cb9b393af7948d04d0733caa835862dd99265f291dba5",
+      "consumer_source": "src/simulation/quantum_surrogates.py",
+      "family": "quantum_qrf_frame_covariance_toy_audit",
+      "model_id": "quantum_qrf_frame_covariance_toy_audit",
+      "parameters_sha256": "0e85c90e9c6590eddec20984574a68ca10676db313abd622c7b5669531eeeaab",
+      "path": "src/modeling/specifications/quantum_qrf_frame_covariance_toy_audit.gnn.md",
+      "sha256": "ceaa91772e9af0b67d61245b378c25f950ec7cbfc3a1310da6107412de43e362",
+      "tensors_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "backend": "numpy_scipy",
+      "consumer": "simulation.quantum_surrogates:build_qrf_transformation_covariance_audit",
+      "consumer_sha256": "06d33b063bde4b2c946cb9b393af7948d04d0733caa835862dd99265f291dba5",
+      "consumer_source": "src/simulation/quantum_surrogates.py",
+      "family": "quantum_qrf_transformation_covariance_audit",
+      "model_id": "quantum_qrf_transformation_covariance_audit",
+      "parameters_sha256": "44b460db9ff9bcbb8f2d9d9bc650ecfa577241a8dc7a1fc2b07cdb8d8cc13ca4",
+      "path": "src/modeling/specifications/quantum_qrf_transformation_covariance_audit.gnn.md",
+      "sha256": "d7d0c55254df8e3385173ffb3c510bd022937c87ff450ad7b16ddca4cdeb1230",
+      "tensors_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "backend": "numpy_scipy",
+      "consumer": "simulation.quantum_surrogates:build_sheaf_contextuality_obstruction_audit",
+      "consumer_sha256": "06d33b063bde4b2c946cb9b393af7948d04d0733caa835862dd99265f291dba5",
+      "consumer_source": "src/simulation/quantum_surrogates.py",
+      "family": "quantum_sheaf_contextuality_obstruction_audit",
+      "model_id": "quantum_sheaf_contextuality_obstruction_audit",
+      "parameters_sha256": "cd55d62847498a280cb3a68875d1d913a4a469f570b5bf1688c8fece08336f67",
+      "path": "src/modeling/specifications/quantum_sheaf_contextuality_obstruction_audit.gnn.md",
+      "sha256": "d5a51d83b9c82e140bfb4e6f4edaa09c56d4d6ba87e821cd8a66263b9adc9599",
+      "tensors_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "backend": "numpy_scipy",
+      "consumer": "simulation.quantum_surrogates:build_sigma_contextuality_suppression_audit",
+      "consumer_sha256": "06d33b063bde4b2c946cb9b393af7948d04d0733caa835862dd99265f291dba5",
+      "consumer_source": "src/simulation/quantum_surrogates.py",
+      "family": "quantum_sigma_contextuality_suppression_audit",
+      "model_id": "quantum_sigma_contextuality_suppression_audit",
+      "parameters_sha256": "73cc64563031ae4cfc838ee368b62558ec8f17460936f1d4d30b538b0a247640",
+      "path": "src/modeling/specifications/quantum_sigma_contextuality_suppression_audit.gnn.md",
+      "sha256": "5d640cb6e54c7adc709ec5e2d77970caf1b6d177be3630dd67b87f7c0a005bf8",
+      "tensors_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "backend": "numpy_scipy",
+      "consumer": "simulation.quantum_surrogates:build_sparse_boundary_screen_scaling_audit",
+      "consumer_sha256": "06d33b063bde4b2c946cb9b393af7948d04d0733caa835862dd99265f291dba5",
+      "consumer_source": "src/simulation/quantum_surrogates.py",
+      "family": "quantum_sparse_boundary_screen_scaling_audit",
+      "model_id": "quantum_sparse_boundary_screen_scaling_audit",
+      "parameters_sha256": "3f695fc7a6e2a6942f84dca0dc049aa9a528ca3fc0b96492591358c2333dbf81",
+      "path": "src/modeling/specifications/quantum_sparse_boundary_screen_scaling_audit.gnn.md",
+      "sha256": "5c826309836f41bf12e94187d1de0e93ac1aa54b11a6f62dbb6890fa59f5e189",
+      "tensors_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "backend": "numpy_scipy",
+      "consumer": "simulation.quantum_surrogates:build_tensor_network_benchmark_audit",
+      "consumer_sha256": "06d33b063bde4b2c946cb9b393af7948d04d0733caa835862dd99265f291dba5",
+      "consumer_source": "src/simulation/quantum_surrogates.py",
+      "family": "quantum_tensor_network_benchmark_audit",
+      "model_id": "quantum_tensor_network_benchmark_audit",
+      "parameters_sha256": "1930c62a0e6f1861848697d6c9bb1d247ad4094095b846c5cf86d94fc6c9d7a3",
+      "path": "src/modeling/specifications/quantum_tensor_network_benchmark_audit.gnn.md",
+      "sha256": "73973df1af1b2a2f396265b331873b23e4ac6d07120f17203d6773773a862724",
+      "tensors_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "backend": "numpy_scipy",
+      "consumer": "simulation.quantum_surrogates:build_thermodynamic_channel_cost_audit",
+      "consumer_sha256": "06d33b063bde4b2c946cb9b393af7948d04d0733caa835862dd99265f291dba5",
+      "consumer_source": "src/simulation/quantum_surrogates.py",
+      "family": "quantum_thermodynamic_channel_cost_audit",
+      "model_id": "quantum_thermodynamic_channel_cost_audit",
+      "parameters_sha256": "aa1c936aab763e449202b4133e726ccc2e202f398fea7cfd40675de9408773c6",
+      "path": "src/modeling/specifications/quantum_thermodynamic_channel_cost_audit.gnn.md",
+      "sha256": "e8e0d8a338252825f16e6042af8fd0ef5da02e5252cb409bb80b6402aac36b20",
+      "tensors_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "backend": "numpy_scipy",
+      "consumer": "simulation.quantum_surrogates:build_quantum_trajectory_unraveling",
+      "consumer_sha256": "06d33b063bde4b2c946cb9b393af7948d04d0733caa835862dd99265f291dba5",
+      "consumer_source": "src/simulation/quantum_surrogates.py",
+      "family": "quantum_trajectory_unraveling",
+      "model_id": "quantum_trajectory_unraveling",
+      "parameters_sha256": "ec93a9afbea79314cdee4ddd88bae0d2f4b4fd0eaaa6e0e9326cfff1c6779a1b",
+      "path": "src/modeling/specifications/quantum_trajectory_unraveling.gnn.md",
+      "sha256": "11d6cb30160cde6dfd762a637ed0bafe6edfd261b89ead60e90b1daa5a9d3914",
+      "tensors_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "backend": "pymdp",
+      "consumer": "simulation.pymdp_profiles:build_profile_generative_model",
+      "consumer_sha256": "4fd3a3a926e58f0aab9d28e7f93b31155ea4af4bd6901f79e98d1364f520e91c",
+      "consumer_source": "src/simulation/pymdp_profiles.py",
+      "family": "categorical_qrf",
+      "model_id": "separation_constrained",
+      "parameters_sha256": "65788275879a6e014cb4aca2d17f6264aa6c6b859db61ad0c0d7457a89db143b",
+      "path": "src/modeling/specifications/separation_constrained.gnn.md",
+      "sha256": "e6cf8d2e38c5a5b9685deb16088478217064d96376bdbf14c2fd1cad3229a46e",
+      "tensors_sha256": "1f3f1ed2dde0ec7ebe2f5fa7f43560698626c2766403d5140a2bf880eb7a56fc"
+    },
+    {
+      "backend": "numpy_scipy",
+      "consumer": "simulation.statistical_robustness:build_bmr_robustness_resampling_audit",
+      "consumer_sha256": "16a7607b1f11ce11e08e49da1182502f11fcb7d5116b5bd091dc47d23379b71c",
+      "consumer_source": "src/simulation/statistical_robustness.py",
+      "family": "statistical",
+      "model_id": "statistical_bmr",
+      "parameters_sha256": "803b09be03f4d94476ed339e468d43fad259e4801291995f15af6c25245acce8",
+      "path": "src/modeling/specifications/statistical_bmr.gnn.md",
+      "sha256": "2f09260460bcb48775dab5b59b23e8b536495bff7f2913dd57e68c8f4d6dcfd5",
+      "tensors_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "backend": "numpy_scipy",
+      "consumer": "simulation.statistical_robustness:build_effect_size_test_calibration_audit",
+      "consumer_sha256": "16a7607b1f11ce11e08e49da1182502f11fcb7d5116b5bd091dc47d23379b71c",
+      "consumer_source": "src/simulation/statistical_robustness.py",
+      "family": "statistical",
+      "model_id": "statistical_calibration",
+      "parameters_sha256": "ef219e3cebd21d7a09f784c56c38f881f115104c8ad7db69c94ca0f69e9c3c31",
+      "path": "src/modeling/specifications/statistical_calibration.gnn.md",
+      "sha256": "388ae20acb37ff32576ae81b15a7e4d744ebdadddbe175b1b89224507dbe7411",
+      "tensors_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "backend": "numpy_scipy",
+      "consumer": "simulation.statistical_robustness:build_quantum_trajectory_convergence_audit",
+      "consumer_sha256": "16a7607b1f11ce11e08e49da1182502f11fcb7d5116b5bd091dc47d23379b71c",
+      "consumer_source": "src/simulation/statistical_robustness.py",
+      "family": "statistical",
+      "model_id": "statistical_convergence",
+      "parameters_sha256": "f59f827e3d74aa217a919ffc97be5c7820798ded39de02a146b49c0e27a0d1da",
+      "path": "src/modeling/specifications/statistical_convergence.gnn.md",
+      "sha256": "cd4ee10c24f8414e16f091f3aaad3af0bd9f3c1f6c907141b9543cfcf9cfd43c",
+      "tensors_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "backend": "numpy_scipy",
+      "consumer": "simulation.criticality:build_criticality_stochastic_ensemble",
+      "consumer_sha256": "ae26d2cbb6eacdab50ffca7db7ef0552cd80f9d567c779d78e2cca7ada0c511a",
+      "consumer_source": "src/simulation/criticality.py",
+      "family": "statistical",
+      "model_id": "statistical_criticality",
+      "parameters_sha256": "78aabe4c09312f6b4fae1161da980055256f7cd29ac26ef989e61028ec15c7e4",
+      "path": "src/modeling/specifications/statistical_criticality.gnn.md",
+      "sha256": "56181f978bc0703724a153706da2b461f085e17f3fa08db822579f2f461caa16",
+      "tensors_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "backend": "numpy_scipy",
+      "consumer": "simulation.statistical_robustness:build_stochastic_effect_size_audit",
+      "consumer_sha256": "16a7607b1f11ce11e08e49da1182502f11fcb7d5116b5bd091dc47d23379b71c",
+      "consumer_source": "src/simulation/statistical_robustness.py",
+      "family": "statistical",
+      "model_id": "statistical_effects",
+      "parameters_sha256": "053af174bd5b38b925375bb0b7dde0a9cd9a71fa2ca64f3b2569a41db9dba704",
+      "path": "src/modeling/specifications/statistical_effects.gnn.md",
+      "sha256": "8e289f1efd1eb6556bccbfb563bc5b384d0fa52aa0b03c6d1d9b0e85d34f2bfa",
+      "tensors_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "backend": "numpy_scipy",
+      "consumer": "simulation.stochastic:build_stochastic_policy_ensemble",
+      "consumer_sha256": "36f3de6488d03de5f80bee1455cc04a29cd19a88512c3d8fd5f0ae5a87e911a1",
+      "consumer_source": "src/simulation/stochastic.py",
+      "family": "statistical",
+      "model_id": "statistical_policy_ensemble",
+      "parameters_sha256": "39dda7f81a8d3526a948cd47a0a85a7d83fd10439e955e93f69a637255e56599",
+      "path": "src/modeling/specifications/statistical_policy_ensemble.gnn.md",
+      "sha256": "957212806991ef441da3a9603cf314c169a199c0962b3168cdb88cb5c5d239e4",
+      "tensors_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "backend": "numpy_scipy",
+      "consumer": "simulation.statistical_robustness:build_seed_bank_calibration",
+      "consumer_sha256": "16a7607b1f11ce11e08e49da1182502f11fcb7d5116b5bd091dc47d23379b71c",
+      "consumer_source": "src/simulation/statistical_robustness.py",
+      "family": "statistical",
+      "model_id": "statistical_seed_bank",
+      "parameters_sha256": "52ae2fe22e0db9c46e52665b26866f3df9892e2279620c1ac44a0295702b66ca",
+      "path": "src/modeling/specifications/statistical_seed_bank.gnn.md",
+      "sha256": "9b8e892b57be33b6433b9229a583943793596ab7defe284a0b48ac2c18a5e7a7",
+      "tensors_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    }
+  ],
+  "mutation_probes": {
+    "C": {
+      "actions": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "beliefs": [
+        [
+          0.3045092523097992,
+          0.6843501329421997,
+          0.011140583083033562
+        ],
+        [
+          0.038520798087120056,
+          0.9255886673927307,
+          0.03589054197072983
+        ],
+        [
+          0.01803763397037983,
+          0.9427261352539062,
+          0.039236243814229965
+        ],
+        [
+          0.6371278166770935,
+          0.2394600212574005,
+          0.1234121322631836
+        ]
+      ],
+      "manual_first_posterior": [
+        0.30450928381962866,
+        0.6843501326259948,
+        0.01114058355437666
+      ],
+      "model_id": "separation_constrained",
+      "negative_expected_free_energy": [
+        [
+          0.5953920483589172,
+          0.6994973421096802,
+          0.8580328226089478
+        ],
+        [
+          0.6801629066467285,
+          0.7153935432434082,
+          0.8854490518569946
+        ],
+        [
+          0.6854333877563477,
+          0.7156795263290405,
+          0.8859213590621948
+        ],
+        [
+          0.5373947620391846,
+          0.7240792512893677,
+          0.8405163288116455
+        ]
+      ],
+      "observations": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "policy_posterior": [
+        [
+          0.013675013557076454,
+          0.07233122736215591,
+          0.9139937162399292
+        ],
+        [
+          0.03395024314522743,
+          0.05965549498796463,
+          0.9063942432403564
+        ],
+        [
+          0.03656672313809395,
+          0.059327732771635056,
+          0.9041056036949158
+        ],
+        [
+          0.006731350440531969,
+          0.13345016539096832,
+          0.8598185181617737
+        ]
+      ],
+      "seed": 7,
+      "source_sha256": "982620856ba43ee8580ed9871303b51b9ee48d3ba9513b99643a9727f1ce8451",
+      "steps": 4,
+      "tensors_sha256": "dffeed7cf1b8f157bd10c6a9fb7e105e51dadb0f5bfb231ca79864e36225a195"
+    },
+    "D": {
+      "actions": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "beliefs": [
+        [
+          0.002925605047494173,
+          0.9824464321136475,
+          0.014628025703132153
+        ],
+        [
+          0.042595140635967255,
+          0.9430912733078003,
+          0.014313592575490475
+        ],
+        [
+          0.04674724116921425,
+          0.9389938712120056,
+          0.014258847571909428
+        ],
+        [
+          0.864804744720459,
+          0.1139397919178009,
+          0.021255500614643097
+        ]
+      ],
+      "manual_first_posterior": [
+        0.0029256060183895246,
+        0.9824463638896629,
+        0.014628030091947622
+      ],
+      "model_id": "separation_constrained",
+      "negative_expected_free_energy": [
+        [
+          0.9001297950744629,
+          0.7327636480331421,
+          0.685519814491272
+        ],
+        [
+          0.922551691532135,
+          0.7588788270950317,
+          0.71490079164505
+        ],
+        [
+          0.9248207807540894,
+          0.761544942855835,
+          0.7178959846496582
+        ],
+        [
+          1.1132287979125977,
+          1.0922906398773193,
+          1.0821166038513184
+        ]
+      ],
+      "observations": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "policy_posterior": [
+        [
+          0.9082854390144348,
+          0.06240842863917351,
+          0.02930619940161705
+        ],
+        [
+          0.9017469882965088,
+          0.06573089957237244,
+          0.032522089779376984
+        ],
+        [
+          0.9010271430015564,
+          0.06609690934419632,
+          0.03287585824728012
+        ],
+        [
+          0.4304407835006714,
+          0.30790743231773376,
+          0.26165181398391724
+        ]
+      ],
+      "seed": 7,
+      "source_sha256": "c200b29c3f6726f406fe2b5461f99eef5c4d925ede11f863786caf6a9108f887",
+      "steps": 4,
+      "tensors_sha256": "4426846bdf39657b219beb979b30491d824a8238c994a092a6964b66fbdd608e"
+    }
+  },
+  "native_probes": [
+    {
+      "actions": [
+        1,
+        2,
+        1,
+        1
+      ],
+      "beliefs": [
+        [
+          0.12780380249023438,
+          0.2885904610157013,
+          0.5836057662963867
+        ],
+        [
+          0.06000242754817009,
+          0.8058601021766663,
+          0.13413742184638977
+        ],
+        [
+          0.04838098958134651,
+          0.18406569957733154,
+          0.7675533294677734
+        ],
+        [
+          0.044548600912094116,
+          0.7814814448356628,
+          0.17397001385688782
+        ]
+      ],
+      "manual_first_posterior": [
+        0.12780382429310128,
+        0.2885904178305332,
+        0.5836057578763657
+      ],
+      "model_id": "opacified",
+      "negative_expected_free_energy": [
+        [
+          0.9281131625175476,
+          0.9585145711898804,
+          0.9095051288604736
+        ],
+        [
+          0.9327076077461243,
+          0.972915768623352,
+          0.974638819694519
+        ],
+        [
+          0.9245542883872986,
+          0.9414469003677368,
+          0.8679817318916321
+        ],
+        [
+          0.9407041072845459,
+          0.9763708710670471,
+          0.971962571144104
+        ]
+      ],
+      "observations": [
+        2,
+        1,
+        2,
+        1
+      ],
+      "policy_posterior": [
+        [
+          0.2968246340751648,
+          0.48278191685676575,
+          0.2203933596611023
+        ],
+        [
+          0.20581182837486267,
+          0.3916207253932953,
+          0.40256744623184204
+        ],
+        [
+          0.3683496415615082,
+          0.4826613962650299,
+          0.14898888766765594
+        ],
+        [
+          0.22632668912410736,
+          0.40047314763069153,
+          0.3732001483440399
+        ]
+      ],
+      "seed": 7,
+      "source_sha256": "fb0bb46eae3bb167f9850f032def3ff2ddc467cb3ae8cd8c4638fbd3d1d8b96c",
+      "steps": 4,
+      "tensors_sha256": "d6bedd2fdc0789a4957cf952aa736783ebd70880410e85482b71756fbbf6d359"
+    },
+    {
+      "actions": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "beliefs": [
+        [
+          0.01191619597375393,
+          0.035138100385665894,
+          0.9529457688331604
+        ],
+        [
+          0.006816322915256023,
+          0.03234877437353134,
+          0.9608349800109863
+        ],
+        [
+          0.00644285324960947,
+          0.03199603036046028,
+          0.9615610837936401
+        ],
+        [
+          0.016888050362467766,
+          0.7099896669387817,
+          0.27312231063842773
+        ]
+      ],
+      "manual_first_posterior": [
+        0.01191619381888411,
+        0.035138101312634826,
+        0.9529457048684811
+      ],
+      "model_id": "post_dual",
+      "negative_expected_free_energy": [
+        [
+          1.1106717586517334,
+          1.1123334169387817,
+          1.1364972591400146
+        ],
+        [
+          1.112398624420166,
+          1.1134108304977417,
+          1.1363117694854736
+        ],
+        [
+          1.1125458478927612,
+          1.1135096549987793,
+          1.1362943649291992
+        ],
+        [
+          0.8709172010421753,
+          0.9014357328414917,
+          1.0630488395690918
+        ]
+      ],
+      "observations": [
+        2,
+        2,
+        2,
+        1
+      ],
+      "policy_posterior": [
+        [
+          0.28259745240211487,
+          0.2902114987373352,
+          0.4271911084651947
+        ],
+        [
+          0.28715550899505615,
+          0.2918439209461212,
+          0.42100057005882263
+        ],
+        [
+          0.28753888607025146,
+          0.29200735688209534,
+          0.4204536974430084
+        ],
+        [
+          0.041219983249902725,
+          0.06716952472925186,
+          0.8916105031967163
+        ]
+      ],
+      "seed": 7,
+      "source_sha256": "3aa2c9295d0be26dcf2b942142a3306e53c86077ffae8a4ad741445e6d22c1c3",
+      "steps": 4,
+      "tensors_sha256": "8661bb32359ea156dc4f8fccf13ed2874887cd88409f7aa7510ac78c7cc5bc76"
+    },
+    {
+      "actions": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "beliefs": [
+        [
+          0.3045092523097992,
+          0.6843501329421997,
+          0.011140583083033562
+        ],
+        [
+          0.9196228981018066,
+          0.06777089834213257,
+          0.012606170028448105
+        ],
+        [
+          0.2983188331127167,
+          0.6896860599517822,
+          0.01199513953179121
+        ],
+        [
+          0.9185762405395508,
+          0.06859541684389114,
+          0.012828338891267776
+        ]
+      ],
+      "manual_first_posterior": [
+        0.30450928381962866,
+        0.6843501326259948,
+        0.01114058355437666
+      ],
+      "model_id": "separation_constrained",
+      "negative_expected_free_energy": [
+        [
+          1.0388951301574707,
+          0.9052309393882751,
+          0.8774590492248535
+        ],
+        [
+          1.1048707962036133,
+          1.1007601022720337,
+          1.0929595232009888
+        ],
+        [
+          1.0368661880493164,
+          0.9023590087890625,
+          0.8741579055786133
+        ],
+        [
+          1.1050677299499512,
+          1.1006197929382324,
+          1.0927695035934448
+        ]
+      ],
+      "observations": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "policy_posterior": [
+        [
+          0.8379665017127991,
+          0.09872617572546005,
+          0.06330731511116028
+        ],
+        [
+          0.3619484305381775,
+          0.33890867233276367,
+          0.29914289712905884
+        ],
+        [
+          0.8401493430137634,
+          0.09765733778476715,
+          0.06219329312443733
+        ],
+        [
+          0.3632817268371582,
+          0.3383265733718872,
+          0.2983916699886322
+        ]
+      ],
+      "seed": 7,
+      "source_sha256": "e6cf8d2e38c5a5b9685deb16088478217064d96376bdbf14c2fd1cad3229a46e",
+      "steps": 4,
+      "tensors_sha256": "1f3f1ed2dde0ec7ebe2f5fa7f43560698626c2766403d5140a2bf880eb7a56fc"
+    }
+  ],
+  "registry_sha256": "7abeb18aa8b481455a4f5b954251d5131d3fcc6f89e91e8adbc4d6d8508933ce",
+  "schema": "realizing_emptiness.gnn_model_audit.v1",
+  "upstream": {
+    "commit": "46459949944e3217f8a6a804d4ff8c52829ef275",
+    "direct_url_sha256": "7f8baf6c85b8ace3bd897db4b0f809db0d1b5d30c39f8f68ade22652e6e8773e",
+    "module_sha256": {
+      "gnn.execute.pymdp.simulation": "5a9ce849731778ce87c4a411d4985a8231fed3e399253523b0e10c496307ab3b",
+      "gnn.parsers.markdown_parser": "24a30ea7e67d597e891fe16e521e13be5f2013af90eeb282cfe257940b281e82",
+      "gnn.render.pomdp_contract": "7361599879c471a4e3af7df91ed6ce95087662796c050bf29beeb3c10b32674d",
+      "gnn.validation.semantic_validator": "575dda02acf01989a1bbc217923748dc180741dacb97e682e30e4323670aedfb"
+    },
+    "pin_sha256": "ca481b780e898dc878ac60ecd2bf4c23fe9d3d3051bb74ecffcf6ddb5c42e7d6",
+    "repository": "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation",
+    "version": "4.1.0"
+  }
+}

@@ -27,7 +27,7 @@
       "ok": true,
       "panel_count": 1,
       "pixel_variance": 0.02375528997930658,
-      "source_data_alternative_count": 5,
+      "source_data_alternative_count": 6,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
       "width": 3024
@@ -44,7 +44,7 @@
       "ok": true,
       "panel_count": 1,
       "pixel_variance": 0.018468481211983235,
-      "source_data_alternative_count": 3,
+      "source_data_alternative_count": 4,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
       "width": 2487
@@ -61,7 +61,7 @@
       "ok": true,
       "panel_count": 1,
       "pixel_variance": 0.06898870831054703,
-      "source_data_alternative_count": 2,
+      "source_data_alternative_count": 3,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
       "width": 3136
@@ -78,7 +78,7 @@
       "ok": true,
       "panel_count": 2,
       "pixel_variance": 0.09054857496055435,
-      "source_data_alternative_count": 2,
+      "source_data_alternative_count": 3,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
       "width": 3378
@@ -95,7 +95,7 @@
       "ok": true,
       "panel_count": 1,
       "pixel_variance": 0.05556055545495501,
-      "source_data_alternative_count": 1,
+      "source_data_alternative_count": 2,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
       "width": 1875
@@ -112,7 +112,7 @@
       "ok": true,
       "panel_count": 1,
       "pixel_variance": 0.09898457747763519,
-      "source_data_alternative_count": 1,
+      "source_data_alternative_count": 2,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
       "width": 1984
@@ -129,7 +129,7 @@
       "ok": true,
       "panel_count": 1,
       "pixel_variance": 0.021147702891344995,
-      "source_data_alternative_count": 2,
+      "source_data_alternative_count": 3,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
       "width": 2663
@@ -146,7 +146,7 @@
       "ok": true,
       "panel_count": 1,
       "pixel_variance": 0.02471528015388619,
-      "source_data_alternative_count": 1,
+      "source_data_alternative_count": 2,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
       "width": 2224
@@ -163,7 +163,7 @@
       "ok": true,
       "panel_count": 1,
       "pixel_variance": 0.0771437159668019,
-      "source_data_alternative_count": 1,
+      "source_data_alternative_count": 2,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
       "width": 2439
@@ -180,7 +180,7 @@
       "ok": true,
       "panel_count": 1,
       "pixel_variance": 0.07164561560258391,
-      "source_data_alternative_count": 1,
+      "source_data_alternative_count": 2,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
       "width": 2310
@@ -197,7 +197,7 @@
       "ok": true,
       "panel_count": 1,
       "pixel_variance": 0.03184185095359896,
-      "source_data_alternative_count": 1,
+      "source_data_alternative_count": 2,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
       "width": 2463
@@ -214,7 +214,7 @@
       "ok": true,
       "panel_count": 4,
       "pixel_variance": 0.035204778429504195,
-      "source_data_alternative_count": 1,
+      "source_data_alternative_count": 2,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
       "width": 2413
@@ -231,7 +231,7 @@
       "ok": true,
       "panel_count": 2,
       "pixel_variance": 0.06822728042916834,
-      "source_data_alternative_count": 1,
+      "source_data_alternative_count": 2,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
       "width": 2610
@@ -248,7 +248,7 @@
       "ok": true,
       "panel_count": 2,
       "pixel_variance": 0.09800884238046428,
-      "source_data_alternative_count": 1,
+      "source_data_alternative_count": 2,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
       "width": 2726
@@ -265,7 +265,7 @@
       "ok": true,
       "panel_count": 2,
       "pixel_variance": 0.07006006551986263,
-      "source_data_alternative_count": 1,
+      "source_data_alternative_count": 2,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
       "width": 2610
@@ -282,7 +282,7 @@
       "ok": true,
       "panel_count": 3,
       "pixel_variance": 0.03822060365149551,
-      "source_data_alternative_count": 1,
+      "source_data_alternative_count": 2,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
       "width": 2894
@@ -299,7 +299,7 @@
       "ok": true,
       "panel_count": 3,
       "pixel_variance": 0.03358610513299236,
-      "source_data_alternative_count": 1,
+      "source_data_alternative_count": 2,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
       "width": 3356
@@ -316,7 +316,7 @@
       "ok": true,
       "panel_count": 3,
       "pixel_variance": 0.04026505157379063,
-      "source_data_alternative_count": 1,
+      "source_data_alternative_count": 2,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
       "width": 3328
@@ -333,7 +333,7 @@
       "ok": true,
       "panel_count": 1,
       "pixel_variance": 0.05645957434351208,
-      "source_data_alternative_count": 1,
+      "source_data_alternative_count": 2,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
       "width": 2219
@@ -350,7 +350,7 @@
       "ok": true,
       "panel_count": 2,
       "pixel_variance": 0.11673545198382435,
-      "source_data_alternative_count": 1,
+      "source_data_alternative_count": 2,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
       "width": 2658
@@ -367,7 +367,7 @@
       "ok": true,
       "panel_count": 2,
       "pixel_variance": 0.09997905666089815,
-      "source_data_alternative_count": 1,
+      "source_data_alternative_count": 2,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
       "width": 3002
@@ -384,7 +384,7 @@
       "ok": true,
       "panel_count": 1,
       "pixel_variance": 0.10348499107313923,
-      "source_data_alternative_count": 1,
+      "source_data_alternative_count": 2,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
       "width": 2552
@@ -401,7 +401,7 @@
       "ok": true,
       "panel_count": 2,
       "pixel_variance": 0.050023008108629224,
-      "source_data_alternative_count": 1,
+      "source_data_alternative_count": 2,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
       "width": 2656
@@ -418,7 +418,7 @@
       "ok": true,
       "panel_count": 2,
       "pixel_variance": 0.11006632921141651,
-      "source_data_alternative_count": 1,
+      "source_data_alternative_count": 2,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
       "width": 2730
@@ -435,7 +435,7 @@
       "ok": true,
       "panel_count": 2,
       "pixel_variance": 0.08243381479097808,
-      "source_data_alternative_count": 1,
+      "source_data_alternative_count": 2,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
       "width": 2702
@@ -452,7 +452,7 @@
       "ok": true,
       "panel_count": 2,
       "pixel_variance": 0.06935715798773529,
-      "source_data_alternative_count": 1,
+      "source_data_alternative_count": 2,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
       "width": 2804
@@ -469,7 +469,7 @@
       "ok": true,
       "panel_count": 2,
       "pixel_variance": 0.07563220516264081,
-      "source_data_alternative_count": 1,
+      "source_data_alternative_count": 2,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
       "width": 2749
@@ -486,7 +486,7 @@
       "ok": true,
       "panel_count": 1,
       "pixel_variance": 0.1414565555488371,
-      "source_data_alternative_count": 1,
+      "source_data_alternative_count": 2,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
       "width": 2848
@@ -503,7 +503,7 @@
       "ok": true,
       "panel_count": 3,
       "pixel_variance": 0.09316281630159198,
-      "source_data_alternative_count": 3,
+      "source_data_alternative_count": 4,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
       "width": 3043
@@ -520,7 +520,7 @@
       "ok": true,
       "panel_count": 1,
       "pixel_variance": 0.02449752224656879,
-      "source_data_alternative_count": 3,
+      "source_data_alternative_count": 4,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
       "width": 2650
@@ -536,8 +536,8 @@
       "min_font_pt": 12.0,
       "ok": true,
       "panel_count": 4,
-      "pixel_variance": 0.07925245781675895,
-      "source_data_alternative_count": 4,
+      "pixel_variance": 0.0794441894275906,
+      "source_data_alternative_count": 5,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
       "width": 3037
@@ -554,7 +554,7 @@
       "ok": true,
       "panel_count": 2,
       "pixel_variance": 0.0726937966238291,
-      "source_data_alternative_count": 1,
+      "source_data_alternative_count": 2,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
       "width": 2896
@@ -571,7 +571,7 @@
       "ok": true,
       "panel_count": 2,
       "pixel_variance": 0.05255651669039652,
-      "source_data_alternative_count": 2,
+      "source_data_alternative_count": 3,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
       "width": 2918
@@ -588,7 +588,7 @@
       "ok": true,
       "panel_count": 2,
       "pixel_variance": 0.046646297831089006,
-      "source_data_alternative_count": 1,
+      "source_data_alternative_count": 2,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
       "width": 3035
@@ -605,7 +605,7 @@
       "ok": true,
       "panel_count": 1,
       "pixel_variance": 0.02628455417582457,
-      "source_data_alternative_count": 1,
+      "source_data_alternative_count": 2,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
       "width": 2027
@@ -622,7 +622,7 @@
       "ok": true,
       "panel_count": 1,
       "pixel_variance": 0.051228121581435984,
-      "source_data_alternative_count": 1,
+      "source_data_alternative_count": 2,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
       "width": 2411
@@ -639,7 +639,7 @@
       "ok": true,
       "panel_count": 1,
       "pixel_variance": 0.05047293890892793,
-      "source_data_alternative_count": 1,
+      "source_data_alternative_count": 2,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
       "width": 2611
@@ -656,7 +656,7 @@
       "ok": true,
       "panel_count": 2,
       "pixel_variance": 0.01945541489526853,
-      "source_data_alternative_count": 1,
+      "source_data_alternative_count": 2,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
       "width": 2077
@@ -673,7 +673,7 @@
       "ok": true,
       "panel_count": 1,
       "pixel_variance": 0.02378370616999245,
-      "source_data_alternative_count": 1,
+      "source_data_alternative_count": 2,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
       "width": 2077
@@ -690,7 +690,7 @@
       "ok": true,
       "panel_count": 2,
       "pixel_variance": 0.06008439867656197,
-      "source_data_alternative_count": 1,
+      "source_data_alternative_count": 2,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
       "width": 2465
@@ -707,7 +707,7 @@
       "ok": true,
       "panel_count": 2,
       "pixel_variance": 0.14034887756295925,
-      "source_data_alternative_count": 1,
+      "source_data_alternative_count": 2,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
       "width": 2558
@@ -724,7 +724,7 @@
       "ok": true,
       "panel_count": 2,
       "pixel_variance": 0.06819752587891974,
-      "source_data_alternative_count": 1,
+      "source_data_alternative_count": 2,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
       "width": 2636
@@ -741,7 +741,7 @@
       "ok": true,
       "panel_count": 1,
       "pixel_variance": 0.03217970370155851,
-      "source_data_alternative_count": 1,
+      "source_data_alternative_count": 2,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
       "width": 2441
@@ -758,7 +758,7 @@
       "ok": true,
       "panel_count": 1,
       "pixel_variance": 0.1724395597775856,
-      "source_data_alternative_count": 2,
+      "source_data_alternative_count": 3,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
       "width": 2898
@@ -775,7 +775,7 @@
       "ok": true,
       "panel_count": 1,
       "pixel_variance": 0.028765629709545076,
-      "source_data_alternative_count": 1,
+      "source_data_alternative_count": 2,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
       "width": 2522
@@ -792,7 +792,7 @@
       "ok": true,
       "panel_count": 1,
       "pixel_variance": 0.031493352373178574,
-      "source_data_alternative_count": 1,
+      "source_data_alternative_count": 2,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
       "width": 3043
@@ -809,7 +809,7 @@
       "ok": true,
       "panel_count": 1,
       "pixel_variance": 0.03206610926748936,
-      "source_data_alternative_count": 1,
+      "source_data_alternative_count": 2,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
       "width": 2659
@@ -826,7 +826,7 @@
       "ok": true,
       "panel_count": 1,
       "pixel_variance": 0.10640032463913336,
-      "source_data_alternative_count": 1,
+      "source_data_alternative_count": 2,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
       "width": 1796
@@ -843,7 +843,7 @@
       "ok": true,
       "panel_count": 1,
       "pixel_variance": 0.05256784401758186,
-      "source_data_alternative_count": 1,
+      "source_data_alternative_count": 2,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
       "width": 2769
@@ -860,7 +860,7 @@
       "ok": true,
       "panel_count": 1,
       "pixel_variance": 0.04857467886782718,
-      "source_data_alternative_count": 3,
+      "source_data_alternative_count": 4,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
       "width": 2645
@@ -877,7 +877,7 @@
       "ok": true,
       "panel_count": 1,
       "pixel_variance": 0.1086743074473018,
-      "source_data_alternative_count": 1,
+      "source_data_alternative_count": 2,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
       "width": 1895
@@ -894,7 +894,7 @@
       "ok": true,
       "panel_count": 1,
       "pixel_variance": 0.05337377525529727,
-      "source_data_alternative_count": 2,
+      "source_data_alternative_count": 3,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
       "width": 2991
@@ -911,7 +911,7 @@
       "ok": true,
       "panel_count": 1,
       "pixel_variance": 0.02386268612910147,
-      "source_data_alternative_count": 1,
+      "source_data_alternative_count": 2,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
       "width": 3523
@@ -928,7 +928,7 @@
       "ok": true,
       "panel_count": 1,
       "pixel_variance": 0.02471752742696666,
-      "source_data_alternative_count": 2,
+      "source_data_alternative_count": 3,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
       "width": 2410
@@ -945,7 +945,7 @@
       "ok": true,
       "panel_count": 1,
       "pixel_variance": 0.05354116333865253,
-      "source_data_alternative_count": 1,
+      "source_data_alternative_count": 2,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
       "width": 2939
@@ -962,7 +962,7 @@
       "ok": true,
       "panel_count": 2,
       "pixel_variance": 0.09714899854950206,
-      "source_data_alternative_count": 1,
+      "source_data_alternative_count": 2,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
       "width": 2959
@@ -979,7 +979,7 @@
       "ok": true,
       "panel_count": 1,
       "pixel_variance": 0.06949762956077907,
-      "source_data_alternative_count": 1,
+      "source_data_alternative_count": 2,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
       "width": 2459
@@ -996,7 +996,7 @@
       "ok": true,
       "panel_count": 1,
       "pixel_variance": 0.09630144050003765,
-      "source_data_alternative_count": 1,
+      "source_data_alternative_count": 2,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
       "width": 2256
@@ -1013,7 +1013,7 @@
       "ok": true,
       "panel_count": 3,
       "pixel_variance": 0.05974191427120556,
-      "source_data_alternative_count": 1,
+      "source_data_alternative_count": 2,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
       "width": 3755
@@ -1030,7 +1030,7 @@
       "ok": true,
       "panel_count": 3,
       "pixel_variance": 0.06975659274967952,
-      "source_data_alternative_count": 1,
+      "source_data_alternative_count": 2,
       "text_overlap_count": 0,
       "title_overlap_count": 0,
       "width": 3473

@@ -21,6 +21,8 @@ from typing import Any
 
 import numpy as np
 
+from modeling.registry import model_parameters
+
 
 CLAIM_BOUNDARY = (
     "finite deterministic single-qubit quantum-Cramer-Rao estimation-theory computation over the "
@@ -99,7 +101,7 @@ def _classical_d_bloch(sigma: float, radius: float) -> np.ndarray:
     return np.array([0.0, 0.0, -radius * math.sin(sigma)])
 
 
-def build_quantum_cramer_rao_estimation_audit(*, radius: float = 0.6) -> dict[str, Any]:
+def build_quantum_cramer_rao_estimation_audit(*, radius: float | None = None) -> dict[str, Any]:
     """Finite quantum Cramer-Rao estimation surrogate with a coherent-vs-classical discriminating control.
 
     Over a grid of separation values the audit computes, for two encodings of sigma, the quantum Fisher
@@ -111,9 +113,11 @@ def build_quantum_cramer_rao_estimation_audit(*, radius: float = 0.6) -> dict[st
     coherent encoding (it fires); and for the classical encoding the pointer measurement is already
     optimal (no gap) -- so the information gap is created by coherence, not by construction.
     """
+    parameters = model_parameters("quantum_cramer_rao_estimation")
+    radius = parameters["radius"] if radius is None else radius
     tolerance = 1e-9
-    pointer_axis = np.array([0.0, 0.0, 1.0])
-    sigma_grid = (0.4, 0.7, 1.0, 1.3)
+    pointer_axis = np.array(parameters["pointer_axis"])
+    sigma_grid = parameters["sigma_grid"]
 
     def family_rows(bloch_fn, d_bloch_fn) -> list[dict[str, Any]]:
         rows: list[dict[str, Any]] = []

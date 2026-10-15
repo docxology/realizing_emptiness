@@ -1,9 +1,31 @@
 # Current API and data contracts
 
-Version 2.0.0 consolidates the runtime and statistical interfaces. Consumers
+Version 3.0.0 makes GNN declarations authoritative for model inputs. Consumers
 must regenerate artifacts with the installed package and update their field
 lookups to the contracts below. Reusing an artifact from an earlier release
 fails schema validation. The canonical commands are in [AGENTS.md](../AGENTS.md).
+
+## GNN model interface and migration
+
+Python 3.11-3.14 replaces the previous Python 3.10 floor. The frozen dependency
+set pins upstream GNN; `pymdp` is 1.0.4 on Python 3.11 and 1.0.3 on later
+supported interpreters. See [GNN modeling](gnn-modeling.md) for provenance,
+packaging, authoring, and the distinct categorical and finite execution paths.
+
+`modeling.load_model(id)` returns a `ModelSpecification` with source hash,
+family, backend, consumer, parameters, and canonical categorical tensors where
+applicable. `modeling.model_parameters(id)` returns an independent parameter
+dictionary. `modeling.specification_root(path)` selects real alternate files
+for controlled experiments; it restores the prior root on context exit.
+
+`ProfileSpec` identifies its authoritative GNN model instead of carrying
+independent numerical defaults. Update callers that constructed profiles with
+the old numerical fields to use the corresponding model identifier and
+declaration. Do not recreate the removed defaults in YAML or Python. The
+model audit at `output/data/gnn_model_audit.json` is checked by
+`gnn_model_audit_ok`; existing model-specific and claim-ceiling gates still
+apply. This changes specification authority without introducing new public
+scientific claim IDs.
 
 ## Runtime dependency check
 
@@ -17,7 +39,12 @@ policy inference, and captured warnings. It returns
 | Profile comparison | `realizing_emptiness.pymdp_profile_comparison.v3`, field `runtime_dependency_check` |
 | Runtime diagnostics | `realizing_emptiness.pymdp_runtime_diagnostics_log.v2`, field `runtime_dependency_check` |
 | Runtime controls | `runtime_dependency_ok`, `runtime_warnings_captured` |
-| Dashboard count | Payload v2, `runtime_warning_count` |
+| Dashboard | Payload v3 adds the source-bound `modeling` summary and retains `runtime_warning_count` |
+
+The pinned constructor emits one captured warning on pymdp 1.0.3 and none
+on 1.0.4. Both the runtime gate and nested JSON schema enforce that version-specific
+record; missing records and unexpected counts fail. A zero count on 1.0.4 is an
+observed runtime outcome, not an omitted diagnostic.
 | Claim / gate | `pymdp_runtime_dependency` / `pymdp_runtime_dependency_ok` |
 
 The dependency check establishes finite runtime behavior. It supplies no

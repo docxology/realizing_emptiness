@@ -1,6 +1,6 @@
 QRF deployments are represented as assignments from boundary channels to semantic sectors. A deployment contains a sector label per boundary bit, a metacognitive-access parameter, and a separation-prior precision. The separation-constrained profile restricts labels to the dual `self` and `env` sectors; the opacified profile mixes dual and contextual labels; the post-dual profile searches a richer sector vocabulary over body, action, world, other, and care.
 
-The shipped profile table is fixed by `src/simulation/qrf_env.py:default_deployments`:
+The shipped profile table is declared in the three categorical Generalized Notation Notation (GNN) specifications under `src/modeling/specifications/`; `src/simulation/qrf_env.py:default_deployments` reads their validated deployment parameters. The shared `qrf_boundary` specification declares the boundary design. This keeps the sector labels and numerical model inputs traceable to the same declarative source used by the active-inference adapter:
 
 | profile | b0-b5 sector labels | metacognitive access | separation-prior precision | operational reading | policy consequence |
 | --- | --- | ---: | ---: | --- | --- |

@@ -436,8 +436,10 @@ def test_runtime_dependency_check_and_profile_comparison() -> None:
     runtime_check = pymdp_runtime_dependency_check()
     assert runtime_check["ok"] is True
     assert runtime_check["schema"] == "realizing_emptiness.pymdp_runtime_dependency_check.v1"
-    assert runtime_check["version"] == "1.0.3"
-    assert runtime_check["warnings"]
+    from simulation.pymdp_profiles import PYMDP_REQUIRED_VERSION
+
+    assert runtime_check["version"] == PYMDP_REQUIRED_VERSION
+    assert len(runtime_check["warnings"]) == (1 if PYMDP_REQUIRED_VERSION == "1.0.3" else 0)
     incompatible = pymdp_runtime_dependency_check(required_version="0.0.0")
     assert incompatible["version_ok"] is False
     assert incompatible["ok"] is False
@@ -484,8 +486,10 @@ def test_pymdp_runtime_diagnostics_log_replays_and_recomputes() -> None:
     replay = build_pymdp_runtime_diagnostics_log(seed=7, steps=5)
     assert payload["schema"] == "realizing_emptiness.pymdp_runtime_diagnostics_log.v2"
     assert payload["all_controls_pass"] is True
-    assert payload["runtime_versions"]["inferactively_pymdp"] == "1.0.3"
-    assert len(payload["runtime_dependency_check"]["warnings"]) >= 1
+    from simulation.pymdp_profiles import PYMDP_REQUIRED_VERSION
+
+    assert payload["runtime_versions"]["inferactively_pymdp"] == PYMDP_REQUIRED_VERSION
+    assert len(payload["runtime_dependency_check"]["warnings"]) == (1 if PYMDP_REQUIRED_VERSION == "1.0.3" else 0)
     assert payload["trace_row_count"] == 15
     assert payload["model_profile_count"] == 3
     assert len({row["sha256"] for row in payload["model_hashes"]}) == 3
@@ -519,7 +523,8 @@ def test_pymdp_runtime_diagnostics_log_replays_and_recomputes() -> None:
     # A NARROWED (nonempty) controls object must also fail: the fix requires the full key set,
     # so the hole is closed rather than merely shrunk to "len(controls) > 0".
     assert _pymdp_runtime_log_ok({**payload, "controls": {"runtime_dependency_ok": True}}, policy_trace) is False
-    for replacement in ({"warnings": []}, {"ok": False}):
+    invalid_warnings = [] if PYMDP_REQUIRED_VERSION == "1.0.3" else ["unexpected constructor warning"]
+    for replacement in ({"warnings": invalid_warnings}, {"ok": False}):
         corrupted = {
             **payload,
             "runtime_dependency_check": {**payload["runtime_dependency_check"], **replacement},

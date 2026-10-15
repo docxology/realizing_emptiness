@@ -5,6 +5,7 @@ from __future__ import annotations
 from typing import Any
 
 import numpy as np
+from modeling.registry import model_parameters
 from simulation.resampling import bootstrap_contrast
 
 
@@ -117,7 +118,7 @@ def criticality_signatures(activity: np.ndarray, *, threshold: float = 0.0) -> d
     }
 
 
-def _planted_geometric_activity(sigma: float, *, length: int = 8, start: float = 1.0) -> np.ndarray:
+def _planted_geometric_activity(sigma: float, *, length: int, start: float) -> np.ndarray:
     """Return a geometric activity series whose exact branching ratio is ``sigma``."""
     return start * np.power(float(sigma), np.arange(length, dtype=float))
 
@@ -131,8 +132,11 @@ def branching_estimator_calibration(*, tolerance: float = 1e-9) -> dict[str, Any
     with it, the estimator is shown to measure branching rather than emit an artifact. Calibration
     on synthetic series, not an empirical claim.
     """
-    planted = {"subcritical": 0.5, "critical": 1.0, "supercritical": 1.5}
-    recovered = {name: branching_ratio(_planted_geometric_activity(sigma)) for name, sigma in planted.items()}
+    design = model_parameters("statistical_criticality")
+    planted = design["planted_branching_ratios"]
+    recovered = {name: branching_ratio(_planted_geometric_activity(
+        sigma, length=design["calibration_length"], start=design["calibration_start"]))
+        for name, sigma in planted.items()}
     recovers = all(abs(recovered[name] - sigma) <= tolerance for name, sigma in planted.items())
     ordered = recovered["subcritical"] < recovered["critical"] < recovered["supercritical"]
     return {
@@ -189,7 +193,8 @@ def _branching_observations(policy_ensemble: dict[str, Any]) -> dict[tuple[str, 
         key = (row["profile"], int(row["run_index"]), False)
         grouped.setdefault(key, []).append((int(row["step"]), int(row["observation"])))
     series: dict[tuple[str, int, bool], np.ndarray] = {}
-    rng = np.random.default_rng(int(policy_ensemble.get("seed", 0)) + 91)
+    design = model_parameters("statistical_criticality")
+    rng = np.random.default_rng(int(policy_ensemble.get("seed", 0)) + design["shuffle_seed_offset"])
     for key, steps in sorted(grouped.items()):
         observations = np.array([obs for _, obs in sorted(steps)], dtype=float)
         series[key] = observations
@@ -204,6 +209,7 @@ def _branching_by_run(policy_ensemble: dict[str, Any]) -> dict[tuple[str, int, b
 
 def build_criticality_stochastic_ensemble(policy_ensemble: dict[str, Any]) -> dict[str, Any]:
     """Summarize seeded active-inference ensembles as simulated criticality indicators."""
+    design = model_parameters("statistical_criticality")
     branching = _branching_by_run(policy_ensemble)
     metric_rows: list[dict[str, Any]] = []
     for row in policy_ensemble.get("run_summaries", []):
@@ -284,13 +290,14 @@ def build_criticality_stochastic_ensemble(policy_ensemble: dict[str, Any]) -> di
         paired = bootstrap_contrast(
             [branching[(profile, run, False)] for run in runs],
             [branching[(profile, run, True)] for run in runs],
-            seed=int(policy_ensemble.get("seed", 0)) + 92000 + index, paired=True,
+            seed=int(policy_ensemble.get("seed", 0)) + design["bootstrap_seed_offset"] + index,
+            draws=design["bootstrap_draws"], paired=True,
         )
         contrast["paired_branching_ci95_low"] = paired["difference_ci95_low"]
         contrast["paired_branching_ci95_high"] = paired["difference_ci95_high"]
         contrast["paired_run_count"] = len(runs)
-        contrast["paired_bootstrap_seed"] = int(policy_ensemble.get("seed", 0)) + 92000 + index
-        contrast["paired_bootstrap_draws"] = 2048
+        contrast["paired_bootstrap_seed"] = int(policy_ensemble.get("seed", 0)) + design["bootstrap_seed_offset"] + index
+        contrast["paired_bootstrap_draws"] = design["bootstrap_draws"]
         contrast["paired_branching_interval_excludes_zero"] = (
             paired["difference_ci95_high"] < 0 or paired["difference_ci95_low"] > 0)
     profiles_ci_separating = sum(1 for row in null_contrasts if row["branching_ratio_ci_disjoint_from_null"])
@@ -327,7 +334,7 @@ def build_criticality_stochastic_ensemble(policy_ensemble: dict[str, Any]) -> di
         "summary_rows": summary_rows,
         "null_contrasts": null_contrasts,
         "branching_null_method": "seeded_per_run_observation_permutation",
-        "branching_null_seed": int(policy_ensemble.get("seed", 0)) + 91,
+        "branching_null_seed": int(policy_ensemble.get("seed", 0)) + design["shuffle_seed_offset"],
         "branching_estimator_calibration": calibration,
         "controls": controls,
         "all_controls_pass": all(controls.values()),

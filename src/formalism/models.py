@@ -17,8 +17,11 @@ class BoundaryScreen:
     bit_names: tuple[str, ...]
 
     @classmethod
-    def default(cls, channel_count: int = 6) -> "BoundaryScreen":
+    def default(cls, channel_count: int | None = None) -> "BoundaryScreen":
         """Create a named finite boundary screen."""
+        from modeling.registry import model_parameters
+
+        channel_count = model_parameters("qrf_boundary")["channels"] if channel_count is None else channel_count
         return cls(channel_count=channel_count, bit_names=tuple(f"b{i}" for i in range(channel_count)))
 
     def validate(self) -> None:
@@ -67,7 +70,10 @@ class QRFDeployment:
     def flexibility(self) -> float:
         """Operational flexibility score used by the finite surrogate."""
         diversity = len(set(self.sector_labels)) / max(1, len(self.sector_labels))
-        return float(0.5 * diversity + 0.5 * self.metacognitive_access)
+        from modeling.registry import model_parameters
+
+        design = model_parameters("qrf_boundary")
+        return float(design["flexibility_diversity_weight"] * diversity + design["flexibility_access_weight"] * self.metacognitive_access)
 
     def as_dict(self) -> dict[str, Any]:
         """Serialize deployment to JSON-compatible data."""

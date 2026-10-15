@@ -8,6 +8,7 @@ from typing import Any
 import numpy as np
 
 from formalism.models import BoundaryScreen, QRFDeployment, Sectorisation
+from modeling.registry import model_parameters
 
 
 CLAIM_BOUNDARY = "finite QRF boundary-channel indistinguishability audit; not empirical, clinical, neural, awakening, practice-efficacy, or physical qFEP evidence"
@@ -17,31 +18,36 @@ LEDGER_CLAIM_BOUNDARY = (
 )
 
 
-def default_deployments(channel_count: int = 6) -> tuple[QRFDeployment, ...]:
+def default_deployments(channel_count: int | None = None) -> tuple[QRFDeployment, ...]:
     """Return the three v1 QRF profiles."""
+    design = model_parameters("qrf_boundary")
+    channel_count = design["channels"] if channel_count is None else channel_count
     BoundaryScreen.default(channel_count).validate()
-    if channel_count != 6:
-        labels = tuple("self" if index % 2 == 0 else "env" for index in range(channel_count))
-        contextual = tuple(f"context_{index}" for index in range(channel_count))
-        opacified = tuple(label if index % 2 == 0 else contextual[index] for index, label in enumerate(labels))
-    else:
-        labels = ("self", "self", "env", "env", "env", "self")
-        contextual = ("body", "action", "world", "world", "other", "care")
-        opacified = ("self", "action", "env", "env", "other", "care")
-    return (
-        QRFDeployment("separation_constrained", labels, metacognitive_access=0.0, prior_precision=4.0),
-        QRFDeployment("opacified", opacified, 0.55, 2.0),
-        QRFDeployment("post_dual", contextual, 1.0, 0.2),
-    )
+    deployments = []
+    for model_id in design["profile_ids"]:
+        row = model_parameters(model_id)["deployment"]
+        labels = tuple(row["sector_labels"])
+        if channel_count != design["channels"]:
+            dual = tuple(design["dual_pattern"][index % len(design["dual_pattern"])] for index in range(channel_count))
+            contextual = tuple(f'{design["context_prefix"]}{index}' for index in range(channel_count))
+            choices = (dual, tuple(label if index % design["opacified_keep_modulus"] == 0 else contextual[index] for index, label in enumerate(dual)), contextual)
+            labels = choices[design["profile_ids"].index(model_id)]
+        deployment = QRFDeployment(row["name"], labels, row["metacognitive_access"], row["prior_precision"])
+        deployment.validate(BoundaryScreen.default(channel_count))
+        deployments.append(deployment)
+    return tuple(deployments)
 
 
 def simulate_boundary_trajectory(
     *,
-    seed: int = 7,
-    steps: int = 12,
+    seed: int | None = None,
+    steps: int | None = None,
     screen: BoundaryScreen | None = None,
 ) -> list[dict[str, Any]]:
     """Generate deterministic boundary observations for finite profile comparison."""
+    design = model_parameters("qrf_boundary")
+    seed = design["seed"] if seed is None else seed
+    steps = design["steps"] if steps is None else steps
     active_screen = screen or BoundaryScreen.default()
     active_screen.validate()
     if steps < 1:
@@ -51,7 +57,7 @@ def simulate_boundary_trajectory(
     trajectory: list[dict[str, Any]] = []
     for step in range(steps):
         action = int((step + hidden_context[0]) % 2)
-        drift = (step % 3 == 0)
+        drift = (step % design["drift_period"] == 0)
         observation = np.bitwise_xor(hidden_context, action)
         if drift:
             observation = observation.copy()
@@ -182,8 +188,9 @@ def score_deployment(deployment: QRFDeployment, trajectory: list[dict[str, Any]]
     actions = np.array([row["action"] for row in trajectory], dtype=float)
     action_signal = np.repeat(actions[:, None], observations.shape[1], axis=1)
     prediction_error = float(np.mean((observations - action_signal) ** 2))
-    complexity = float(np.log1p(deployment.prior_precision) + 0.2 * (1.0 - deployment.metacognitive_access))
-    accuracy = float(1.1 - prediction_error + 0.35 * deployment.flexibility)
+    design = model_parameters("qrf_boundary")
+    complexity = float(np.log1p(deployment.prior_precision) + design["score_access_complexity"] * (1.0 - deployment.metacognitive_access))
+    accuracy = float(design["score_accuracy_base"] - prediction_error + design["score_flexibility_accuracy"] * deployment.flexibility)
     compassion_scope = float(len(set(deployment.sector_labels) - {"self"}) / len(set(deployment.sector_labels)))
     return {
         "prediction_error": prediction_error,

@@ -6458,4 +6458,4 @@ def _source_artifacts_for(figure_id: str) -> list[str]:
         ],
         "markov_blanket_discovery": ["output/data/markov_blanket_discovery_audit.json"],
     }
-    return mapping[figure_id]
+    return [*mapping[figure_id], "output/data/gnn_model_audit.json"]

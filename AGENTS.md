@@ -10,6 +10,13 @@ exist from this standalone checkout.
 
 ## Source Contract
 
+- Model declarations and experiment designs live in `src/modeling/specifications/`.
+  Use the commit-pinned Generalized Notation Notation dependency through
+  `src/modeling/registry.py`; bind every numerical producer to the catalog and
+  regenerate `output/data/gnn_model_audit.json`. See `docs/gnn-modeling.md`.
+  Categorical inference consumes canonical GNN A/B/C/D tensors; native finite
+  evaluators consume admitted GNN parameters and retain independent mathematical
+  checks. Keep model choices out of parallel YAML/Python defaults.
 - The primary source artifact is the attached local PDF recorded in
   `data/sources/source_manifest.yaml`.
 - Scholarship sources live in `data/sources/scholarship_manifest.yaml`; every
@@ -60,6 +67,7 @@ exist from this standalone checkout.
 
 | Path | Role |
 | --- | --- |
+| `src/modeling/` | GNN declarations, pinned upstream provenance, strict admission, and executable model audit |
 | `src/formalism/` | Paper-source registry, equation surrogates, QRF/BMR data models |
 | `src/simulation/` | Boundary-channel environment, pymdp runtime dependency check, profile comparison, BMR, criticality proxies |
 | `src/practice/` | Practice protocol specifications mapped to model interventions |

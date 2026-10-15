@@ -1,6 +1,10 @@
 schema: realizing_emptiness.artifact_manifest.v1
 project: realizing_emptiness
 artifacts:
+  - id: gnn_model_audit
+    path: output/data/gnn_model_audit.json
+    kind: data
+    schema: realizing_emptiness.gnn_model_audit.v1
   - id: formalism_registry
     path: output/data/formalism_registry.json
     kind: data
@@ -342,7 +346,7 @@ artifacts:
   - id: artifact_dashboard_payload
     path: output/data/artifact_dashboard_payload.json
     kind: data
-    schema: realizing_emptiness.artifact_dashboard_payload.v2
+    schema: realizing_emptiness.artifact_dashboard_payload.v3
   - id: criticality_proxy_report
     path: output/reports/criticality_proxy_report.json
     kind: report

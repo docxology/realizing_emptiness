@@ -87,21 +87,27 @@ detect a wrong boundary distribution.
 
 ## pymdp Coupling
 
-`src/simulation/pymdp_profiles.py` builds a profile-specific discrete
-active-inference model with explicit arrays:
+The three categorical GNN specifications declare profile-specific discrete
+active-inference models. `src/simulation/pymdp_profiles.py` consumes their
+upstream-validated tensors through the [model registry](gnn-modeling.md):
 
 - `A`: likelihood from hidden QRF state to boundary cue;
 - `B`: transition tensor over actions `stabilize_dual`, `inspect_boundary`, and
-  `release_prior`;
+  `release_prior`, ordered as `[next_state, previous_state, action]`;
 - `C`: preference vector over observation cues;
 - `D`: initial state prior.
+
+Deployment labels, access, and separation-prior precision come from the same
+GNN declarations. Parsing and semantic admission precede inference; separate
+negative controls still test normalization, model consumption, and the
+boundary-indistinguishability argument.
 
 The generated artifacts form four linked contracts. First,
 `output/data/pymdp_profile_comparison.json` carries the profile-level comparison
 plus the limited runtime dependency check: pinned package version, imports,
 agent construction, state inference, and policy-posterior normalization. Second,
 `output/data/pymdp_generative_model_audit.json` stores the explicit normalized
-`A`, `B`, `C`, and `D` arrays. Third,
+`A`, `B`, and `D` probability arrays and finite `C` preference scores. Third,
 `output/data/pymdp_policy_trace.json` and
 `output/data/pymdp_runtime_diagnostics_log.json` store the deterministic trace,
 model hashes, package/JAX versions, action and observation labels, perturbation

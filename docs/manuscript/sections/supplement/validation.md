@@ -7,6 +7,7 @@ The local chain runs formalism generation, boundary-agent simulation, BMR sweeps
 The gates are fail-closed and cover the full surface, one family per check:
 
 - Source hash: the attached PDF recorded in `data/sources/source_manifest.yaml` is verified against SHA-256 `94e2335c3a4a37b8d49039b11b45ccda25bad65d4b80aa15428b84abfba699ac`.
+- Model declarations: `gnn_model_audit_ok` checks source-bound Generalized Notation Notation (GNN) contracts, upstream provenance, admitted tensors or finite parameters, and bounded execution receipts; model-specific numerical and claim gates remain necessary.
 - Formalism: all fourteen equations must be mapped to artifacts and boundaries.
 - QRF: boundary-label indistinguishability holds across admissible relabelings, plus a failing negative control.
 - Quantum and implemented extension engines: product-state and Bell-state entropy, mixed-state PPT and negativity, local and Tsirelson CHSH, basis invariance, CHSH measurement-cover normalization, no-signaling, local-polytope feasibility, generic measurement-cover linear programs, CPTP channel-cost, trace-preserving dephasing, boundary-Hamiltonian Lindblad trace/positivity/entropy, seeded quantum-trajectory norm/trace/PSD/reconstruction, exact and sparse many-body cut sensitivity, sheaf obstruction, QRF transformation and frame covariance, the multipartite witness, tensor-network, collision-model, no-signaling-library, and n-cycle contextuality controls, with physical qFEP and human-practice evidence explicitly blocked.
@@ -20,6 +21,10 @@ The gates are fail-closed and cover the full surface, one family per check:
 - Practice and language: user-facing efficacy claims are rejected, and the manuscript gate rejects unresolved citations and positive realization, clinical, or neural-measurement language.
 
 The public claim IDs checked by the manuscript audit are `source_boundary_unevidenceable`; `separation_prior_sigma`; `bmr_prunes_sigma`; `practice_protocol_boundary`; `qfep_surrogate_scope`; `quantum_separability_entropy`; `quantum_contextuality_witness`; `quantum_measurement_contextuality`; `quantum_open_system_dephasing`; `pymdp_runtime_dependency`; `criticality_proxy_boundary`; `compassion_proxy_boundary`; `self_evidencing_boundary`; `metacognitive_access_model`; and `artifact_release_readiness`.
+
+The GNN dependency is pinned to version 4.1.0 at commit `46459949944e3217f8a6a804d4ff8c52829ef275` of the Active Inference Institute's Generalized Notation Notation repository. Packaged model files and `upstream.json` retain the source and tool identity. Admission rejects missing or duplicate sections, parser recovery, malformed connections, invalid dimensions, non-finite parameters, and invalid categorical probabilities. Real alternate-file controls change an admitted parameter or tensor and check its numerical consumer; malformed-file controls must fail. The bounded upstream native categorical execution check establishes interoperability for that finite model, while the local quantum and finite engines retain their own computational checks. These controls test specification-to-execution integrity, not scientific truth or empirical validity.
+
+The dependency's declared license is CC-BY-NC-SA-4.0, separate from this project's MIT license. The runtime and packaging records must establish the actual interpreter, installed dependency revision, and availability of specification resources outside the checkout. The software supports Python 3.11 through 3.14; publication and rendering receipts remain separate from source validation. No new public scientific claim ID follows from adding this declarative model layer.
 
 ![Manuscript claim audit.](../output/figures/manuscript_claim_audit.png){#fig:manuscript_claim_audit width=90%}
 

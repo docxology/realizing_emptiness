@@ -22,6 +22,8 @@ from __future__ import annotations
 
 from typing import Any
 
+from modeling.registry import model_parameters
+
 import numpy as np
 
 
@@ -41,23 +43,27 @@ CLAIM_BOUNDARY = (
 # threshold on the marginal correlation matrix can then isolate exactly the blanket, even though the
 # conditional-independence (precision) support recovers it exactly -- the finite-software echo of
 # no-self-evidence: the interior's passively-observed marginal cannot locate its own boundary.
-INTERNAL = (0, 1)
-BLANKET = (2, 3)
-EXTERNAL = (4, 5)
-_EDGES = {
-    (0, 1): 0.05,  # internal-internal
-    (0, 2): 0.40,  # internal-blanket (strong)
-    (1, 2): 0.20,  # internal-blanket (moderate)
-    (1, 3): 0.10,  # internal-blanket (weak -- this true edge is masked in the marginal)
-    (2, 3): 0.30,  # blanket-blanket
-    (2, 4): 0.45,  # blanket-external (strong bridge)
-    (2, 5): 0.30,  # blanket-external (strong bridge)
-    (3, 5): 0.25,  # blanket-external
-    (4, 5): 0.05,  # external-external
-}
+def _graph() -> dict[str, Any]:
+    return model_parameters("finite_markov_blanket")
 
 
-def _precision_from_edges(edges: dict[tuple[int, int], float], *, size: int = 6, diagonal: float = 2.0) -> np.ndarray:
+def _edges() -> dict[tuple[int, int], float]:
+    return {(a, b): weight for a, b, weight in _graph()["edges"]}
+
+
+def __getattr__(name: str) -> Any:
+    """Keep historical graph exports dynamically bound to the specification."""
+    if name in {"INTERNAL", "BLANKET", "EXTERNAL"}:
+        return tuple(_graph()[name.lower()])
+    if name == "_EDGES":
+        return _edges()
+    raise AttributeError(name)
+
+
+def _precision_from_edges(edges: dict[tuple[int, int], float], *, size: int | None = None, diagonal: float | None = None) -> np.ndarray:
+    parameters = _graph()
+    size = parameters["size"] if size is None else size
+    diagonal = parameters["diagonal"] if diagonal is None else diagonal
     precision = np.eye(size) * diagonal
     for (a, b), value in edges.items():
         precision[a, b] = value
@@ -110,10 +116,11 @@ def _support_adjacency(matrix: np.ndarray, tolerance: float) -> np.ndarray:
 
 def _marginal_recovers_blanket(precision: np.ndarray, truth: set[int], threshold_steps: int) -> bool:
     """True iff some marginal-correlation threshold recovers the blanket of INTERNAL exactly."""
+    internal = tuple(_graph()["internal"])
     correlation = _correlation_from_precision(precision)
     for step in range(threshold_steps):
         threshold = step / threshold_steps
-        recovered = _neighbors(_support_adjacency(correlation, threshold), INTERNAL)
+        recovered = _neighbors(_support_adjacency(correlation, threshold), internal)
         if abs(_f1(recovered, truth) - 1.0) < 1e-9:
             return True
     return False
@@ -127,17 +134,20 @@ def _perturbation_ensemble(truth: set[int], *, sample_count: int, noise: float, 
     claim into an honest DISTRIBUTIONAL one: the boundary is reliably visible in conditional independence
     but only contingently in the marginal.
     """
+    parameters = _graph()
+    internal = tuple(parameters["internal"])
+    edges_base = _edges()
     rng = np.random.default_rng(seed)
     positive_definite = 0
     precision_recoveries = 0
     marginal_recoveries = 0
     for _ in range(sample_count):
-        edges = {key: value * (1.0 + noise * float(rng.standard_normal())) for key, value in _EDGES.items()}
+        edges = {key: value * (1.0 + noise * float(rng.standard_normal())) for key, value in edges_base.items()}
         precision = _precision_from_edges(edges)
         if float(np.min(np.linalg.eigvalsh(precision))) <= 1e-6:
             continue
         positive_definite += 1
-        if abs(_f1(_neighbors(_support_adjacency(precision, 1e-9), INTERNAL), truth) - 1.0) < 1e-9:
+        if abs(_f1(_neighbors(_support_adjacency(precision, 1e-9), internal), truth) - 1.0) < 1e-9:
             precision_recoveries += 1
         if _marginal_recovers_blanket(precision, truth, threshold_steps):
             marginal_recoveries += 1
@@ -149,7 +159,7 @@ def _perturbation_ensemble(truth: set[int], *, sample_count: int, noise: float, 
     }
 
 
-def build_markov_blanket_discovery_audit(*, threshold_steps: int = 500, ensemble_samples: int = 200, ensemble_noise: float = 0.25, ensemble_seed: int = 0) -> dict[str, Any]:
+def build_markov_blanket_discovery_audit(*, threshold_steps: int | None = None, ensemble_samples: int | None = None, ensemble_noise: float | None = None, ensemble_seed: int | None = None) -> dict[str, Any]:
     """Recover a planted Markov boundary from conditional independence, invisible to the marginal.
 
     The precision support exactly recovers the internal node set's blanket (the blanket nodes), and
@@ -161,16 +171,24 @@ def build_markov_blanket_discovery_audit(*, threshold_steps: int = 500, ensemble
     tiny but nonzero value) breaks the exact conditional independence so the exact-support detector
     no longer reports a clean separation. All verdicts are measured by set comparison, never asserted.
     """
+    parameters = _graph()
+    threshold_steps = parameters["threshold_steps"] if threshold_steps is None else threshold_steps
+    ensemble_samples = parameters["ensemble_samples"] if ensemble_samples is None else ensemble_samples
+    ensemble_noise = parameters["ensemble_noise"] if ensemble_noise is None else ensemble_noise
+    ensemble_seed = parameters["ensemble_seed"] if ensemble_seed is None else ensemble_seed
+    internal = tuple(parameters["internal"])
+    blanket = tuple(parameters["blanket"])
+    external = tuple(parameters["external"])
     tolerance = 1e-9
-    precision = _precision_from_edges(_EDGES)
-    truth = set(BLANKET)
+    precision = _precision_from_edges(_edges())
+    truth = set(blanket)
     correlation = _correlation_from_precision(precision)
     partial = _partial_correlation(precision)
 
     # Precision-support detector: read the exact conditional-independence graph.
     precision_adjacency = _support_adjacency(precision, tolerance)
-    precision_recovered = _neighbors(precision_adjacency, INTERNAL)
-    precision_external = {node for node in EXTERNAL if node not in precision_recovered and node not in INTERNAL}
+    precision_recovered = _neighbors(precision_adjacency, internal)
+    precision_external = {node for node in external if node not in precision_recovered and node not in internal}
     precision_f1 = _f1(precision_recovered, truth)
 
     # Anti-strawman baseline 1 (precision-aware): threshold partial correlations. This ALSO recovers
@@ -179,7 +197,7 @@ def build_markov_blanket_discovery_audit(*, threshold_steps: int = 500, ensemble
     partial_best_f1 = 0.0
     partial_best_threshold = None
     for threshold in thresholds:
-        recovered = _neighbors(_support_adjacency(partial, threshold), INTERNAL)
+        recovered = _neighbors(_support_adjacency(partial, threshold), internal)
         score = _f1(recovered, truth)
         if score > partial_best_f1:
             partial_best_f1, partial_best_threshold = score, threshold
@@ -193,7 +211,7 @@ def build_markov_blanket_discovery_audit(*, threshold_steps: int = 500, ensemble
     marginal_best_threshold = None
     marginal_rows = []
     for index, threshold in enumerate(thresholds):
-        recovered = _neighbors(_support_adjacency(correlation, threshold), INTERNAL)
+        recovered = _neighbors(_support_adjacency(correlation, threshold), internal)
         score = _f1(recovered, truth)
         if index % store_every == 0:
             marginal_rows.append({"threshold": threshold, "f1": round(score, 6), "recovered": sorted(recovered)})
@@ -204,21 +222,21 @@ def build_markov_blanket_discovery_audit(*, threshold_steps: int = 500, ensemble
     # there is no node conditionally independent of the internal set -> no nontrivial blanket.
     dense_edges = {(a, b): 0.2 for a in range(6) for b in range(a + 1, 6)}
     dense_precision = _precision_from_edges(dense_edges, diagonal=3.0)
-    dense_recovered = _neighbors(_support_adjacency(dense_precision, tolerance), INTERNAL)
-    dense_external = {node for node in range(6) if node not in dense_recovered and node not in INTERNAL}
+    dense_recovered = _neighbors(_support_adjacency(dense_precision, tolerance), internal)
+    dense_external = {node for node in range(6) if node not in dense_recovered and node not in internal}
 
     # Discriminating control 2: epsilon internal-external coupling -> the conditional independence is
     # only approximate, so the exact-support detector must see internal-external edges and report the
     # exact separation as broken (it is not vacuously satisfied by exact-zero arithmetic).
     epsilon = 1e-3
-    epsilon_edges = dict(_EDGES)
-    for internal_node in INTERNAL:
-        for external_node in EXTERNAL:
+    epsilon_edges = _edges()
+    for internal_node in internal:
+        for external_node in external:
             epsilon_edges[(internal_node, external_node)] = epsilon
     epsilon_precision = _precision_from_edges(epsilon_edges)
     epsilon_adjacency = _support_adjacency(epsilon_precision, tolerance)
     epsilon_internal_external_edges = sum(
-        1 for i in INTERNAL for e in EXTERNAL if epsilon_adjacency[i, e]
+        1 for i in internal for e in external if epsilon_adjacency[i, e]
     )
 
     ensemble = _perturbation_ensemble(
@@ -226,11 +244,11 @@ def build_markov_blanket_discovery_audit(*, threshold_steps: int = 500, ensemble
     )
     controls = {
         "precision_support_recovers_blanket": bool(abs(precision_f1 - 1.0) < tolerance),
-        "internal_external_conditionally_independent": bool(precision_external == set(EXTERNAL)),
+        "internal_external_conditionally_independent": bool(precision_external == set(external)),
         "partial_correlation_threshold_also_recovers_blanket": bool(abs(partial_best_f1 - 1.0) < tolerance),
         "marginal_covariance_threshold_cannot_recover_blanket": bool(marginal_best_f1 < 1.0 - 1e-6),
         "dense_precision_has_no_nontrivial_blanket": bool(len(dense_external) == 0),
-        "epsilon_coupling_breaks_exact_separation": bool(epsilon_internal_external_edges == len(INTERNAL) * len(EXTERNAL)),
+        "epsilon_coupling_breaks_exact_separation": bool(epsilon_internal_external_edges == len(internal) * len(external)),
         # Distributional honesty: the per-instance "marginal cannot recover" result only holds for THIS
         # confounded instance. Across structurally-similar perturbations the precision support recovers
         # the blanket in EVERY positive-definite instance while the marginal recovers it only for a
@@ -244,9 +262,9 @@ def build_markov_blanket_discovery_audit(*, threshold_steps: int = 500, ensemble
     return {
         "schema": "realizing_emptiness.markov_blanket_discovery_audit.v1",
         "variable_count": precision.shape[0],
-        "internal_nodes": list(INTERNAL),
-        "blanket_nodes": list(BLANKET),
-        "external_nodes": list(EXTERNAL),
+        "internal_nodes": list(internal),
+        "blanket_nodes": list(blanket),
+        "external_nodes": list(external),
         "precision_matrix": np.round(precision, 6).tolist(),
         "marginal_correlation_matrix": np.round(correlation, 6).tolist(),
         "precision_support_recovered_blanket": sorted(precision_recovered),

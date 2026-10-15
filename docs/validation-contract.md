@@ -1,6 +1,6 @@
 # Validation Contract
 
-`scripts/validate_outputs.py` is fail-closed for the v1 artifact surface. It
+`scripts/validate_outputs.py` is fail-closed for the current artifact surface. It
 checks source integrity, output existence, schema validity, scholarship coverage,
 claim-support bindings, evidence-ceiling stressors, joined claim RedTeam
 controls, equation mapping, QRF negative controls, reader-facing claim-context
@@ -31,6 +31,12 @@ resolution.
 
 The validator intentionally attacks false certification:
 
+- `output/data/gnn_model_audit.json` binds model declarations to source hashes,
+  upstream provenance, strict grammar and semantic admission, categorical
+  tensor contracts, and bounded execution checks through `gnn_model_audit_ok`;
+  malformed declarations and valid input mutations must exercise real parsing
+  and consumers, while independent numerical thresholds remain outside model
+  settings (see [GNN modeling](gnn-modeling.md));
 - schema files are validated against their actual target artifacts;
 - `data/sources/source_manifest.yaml` must use the current `local_pdf` contract;
 - `output/data/formalism_registry.json` must expose the current equation schema;
@@ -156,7 +162,7 @@ The validator intentionally attacks false certification:
   check for the pinned `inferactively-pymdp` version, imports, agent
   construction, state inference, and policy-posterior normalization; this check
   does not certify active-inference optimality or scientific validity;
-- `pymdp_generative_model_audit.json` must show normalized `A`, `B`, `C`, and `D`
+- `pymdp_generative_model_audit.json` must show normalized `A`, `B`, and `D`
   arrays for all three QRF profiles;
 - `pymdp_policy_trace.json` must normalize state and policy posteriors at every
   time step and preserve deterministic replay metadata;

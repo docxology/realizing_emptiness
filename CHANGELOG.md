@@ -1,5 +1,25 @@
 # Changelog
 
+## 3.0.0 - 2026-10-14
+
+- Make packaged Generalized Notation Notation (GNN) declarations the authority
+  for categorical QRF tensors and canonical finite-model inputs. Pin upstream
+  GNN 4.1.0 at revision `46459949944e3217f8a6a804d4ff8c52829ef275`.
+- Admit specifications through the upstream Markdown parser and strict
+  semantic validator, with complete grammar, source hashes, explicit backend
+  contracts, and canonical `B[next_state, previous_state, action]` tensors.
+- Connect declarations to real `pymdp` inference and the existing finite
+  NumPy/SciPy engines; retain independent numerical checks and claim ceilings.
+- Replace duplicated YAML model defaults with GNN references and change
+  `ProfileSpec` to reference the authoritative model. Add the model audit and
+  bounded upstream categorical interoperability checks.
+- Raise the Python floor to 3.11 and update the CI matrix to 3.11, 3.12, and
+  3.14. Use the upstream-compatible `pymdp` markers, 1.0.4 on 3.11 and 1.0.3
+  on later supported versions.
+- Document model authoring, installation, package resources, provenance,
+  dependency licensing, manuscript methods, and migration. GNN integration
+  introduces no empirical or physical qFEP evidence.
+
 ## 2.0.0 - 2026-10-14
 
 - Consolidate the public runtime API around `pymdp_runtime_dependency_check`;

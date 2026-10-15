@@ -11,6 +11,7 @@ needs before adding a figure, a surrogate, or a claim. For the concepts, read
 lives in `src/`, all outputs land under `output/`.
 
 ```
+src/modeling/   --(upstream parser + strict validation)--> source-bound tensors/parameters --> numerical engines
 src/formalism/   --(generate_formalisms.py)-->      output/data/*.json   (equation registry, claim ledgers, contract registry)
 src/simulation/  --(simulate_boundary_agents.py,    output/data/*.json   (QRF audits, pymdp, bmr, criticality, compassion, quantum)
                     run_bmr_sweep.py, generate_*_surrogates.py,
@@ -27,6 +28,7 @@ Determinism is a contract: fixed seeds, no wall-clock, byte-stable JSON. Tests i
 
 | Layer | Holds | Never holds |
 | --- | --- | --- |
+| `src/modeling/` | packaged GNN model declarations, upstream provenance, strict admission, source hashes | numerical engine implementations, empirical claims |
 | `src/formalism/` | equation registry, data models, claim/source/scholarship ledgers | rendering, orchestration |
 | `src/simulation/` | deterministic + seeded surrogates (QRF, pymdp, BMR, criticality, compassion, quantum, and the implemented finite-quantum extension engines — see [method-inventory.md](method-inventory.md)) | I/O beyond returning data |
 | `src/visualizations/` | one `_<id>()` renderer per figure, style contracts, caption/integrity audits | business logic (read JSON, draw) |
@@ -34,9 +36,16 @@ Determinism is a contract: fixed seeds, no wall-clock, byte-stable JSON. Tests i
 | `scripts/` | thin orchestrators only (import from `src/`, write `output/`) | algorithms |
 | `docs/manuscript/sections/` | per-track prose fragments | hand-edited composed `0X_*.md` (those are generated) |
 
-The `pymdp` simulation follows that same module boundary. `qrf_env.py` supplies
-the finite QRF deployments and boundary trajectory, `pymdp_profiles.py` builds
-profile-specific `A/B/C/D` arrays and deterministic policy traces, `stochastic.py`
+The [GNN modeling guide](gnn-modeling.md) defines the model-authoring workflow.
+`modeling.registry` parses and validates declarations before consumers receive
+their parameters. Categorical specifications pass through the upstream canonical
+POMDP tensor contract; the other finite engines consume admitted parameters
+through their NumPy/SciPy implementations. Mathematical algorithms and independent
+validation thresholds remain in code.
+
+The `pymdp` simulation follows that same module boundary. `qrf_env.py` reads
+the GNN deployment and boundary parameters, `pymdp_profiles.py` adapts the
+declared `A/B/C/D` arrays for inference and deterministic policy traces, `stochastic.py`
 samples seeded ensembles from those same normalized models, and
 `src/gates/validation.py` recomputes the saved trace and runtime diagnostics.
 The modules share artifacts and schemas, not hidden cross-module state.

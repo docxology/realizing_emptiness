@@ -39,7 +39,7 @@ RELEASE_SUPPORT_DIR_SUFFIXES = {
     "manuscript": {".bib", ".md", ".yaml", ".yml"},
     "schemas": {".json", ".md"},
     "scripts": {".md", ".py"},
-    "src": {".md", ".py"},
+    "src": {".md", ".py", ".json"},
     "tests": {".md", ".py"},
 }
 

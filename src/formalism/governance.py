@@ -43,7 +43,7 @@ METHOD_ROWS: tuple[dict[str, Any], ...] = (
         "modeling_choices": [
             "three-state QRF profile model",
             "finite expected-free-energy proxy terms",
-            "profile-specific priors, preferences, and transition relaxation drive action differences",
+            "GNN-declared priors, preferences, and transition tensors drive action differences",
         ],
         "assumptions": [
             "profile differences are software hypotheses about QRF deployments",
@@ -61,7 +61,7 @@ METHOD_ROWS: tuple[dict[str, Any], ...] = (
         "method_id": "seeded_stochastic_policy_ensemble",
         "artifact": "output/data/stochastic_policy_ensemble.json",
         "hard_constraints": ["random draws must sample normalized distributions", "replay with same seed must reproduce rows"],
-        "modeling_choices": ["64 runs per profile", "null-control action and observation sampling"],
+        "modeling_choices": ["GNN-declared runs per profile", "null-control action and observation sampling"],
         "assumptions": ["stochastic variability tests software robustness, not human variability"],
         "evidence_ceiling": "seeded simulation ensemble only",
         "falsification_controls": ["same-seed replay", "different seed changes sampled rows", "null-control contrasts"],

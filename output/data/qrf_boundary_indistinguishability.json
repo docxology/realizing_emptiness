@@ -9,9 +9,9 @@
       "deployment": {
         "flexibility": 0.16666666666666666,
         "is_dual": true,
-        "metacognitive_access": 0.0,
+        "metacognitive_access": 0,
         "name": "separation_constrained",
-        "prior_precision": 4.0,
+        "prior_precision": 4,
         "sector_labels": [
           "self",
           "self",
@@ -302,7 +302,7 @@
         "is_dual": false,
         "metacognitive_access": 0.55,
         "name": "opacified",
-        "prior_precision": 2.0,
+        "prior_precision": 2,
         "sector_labels": [
           "self",
           "action",
@@ -597,7 +597,7 @@
       "deployment": {
         "flexibility": 0.9166666666666667,
         "is_dual": false,
-        "metacognitive_access": 1.0,
+        "metacognitive_access": 1,
         "name": "post_dual",
         "prior_precision": 0.2,
         "sector_labels": [

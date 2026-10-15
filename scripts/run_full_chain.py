@@ -11,6 +11,7 @@ from formalism.review_response_writers import initialize_artifact_release_manife
 
 
 COMMANDS = [
+    [sys.executable, "scripts/generate_gnn_models.py"],
     [sys.executable, "scripts/generate_formalisms.py"],
     [sys.executable, "scripts/simulate_boundary_agents.py"],
     [sys.executable, "scripts/generate_quantum_surrogates.py"],

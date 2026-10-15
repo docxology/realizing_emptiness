@@ -27,7 +27,8 @@
         "output/data/equation_audit.json",
         "output/data/qrf_boundary_indistinguishability.json",
         "output/data/stochastic_policy_ensemble.json",
-        "output/data/quantum_trajectory_unraveling.json"
+        "output/data/quantum_trajectory_unraveling.json",
+        "output/data/gnn_model_audit.json"
       ],
       "text_overlap_count": 0,
       "title_overlap_count": 0,
@@ -55,7 +56,8 @@
       "source_artifacts": [
         "output/data/pymdp_profile_comparison.json",
         "output/data/qrf_boundary_indistinguishability.json",
-        "output/data/qrf_boundary_channel_ledger.json"
+        "output/data/qrf_boundary_channel_ledger.json",
+        "output/data/gnn_model_audit.json"
       ],
       "text_overlap_count": 0,
       "title_overlap_count": 0,
@@ -90,7 +92,8 @@
       },
       "source_artifacts": [
         "output/data/qrf_boundary_channel_ledger.json",
-        "output/data/qrf_boundary_indistinguishability.json"
+        "output/data/qrf_boundary_indistinguishability.json",
+        "output/data/gnn_model_audit.json"
       ],
       "text_overlap_count": 0,
       "title_overlap_count": 0,
@@ -118,7 +121,8 @@
       },
       "source_artifacts": [
         "output/data/pymdp_profile_comparison.json",
-        "output/data/qrf_boundary_indistinguishability.json"
+        "output/data/qrf_boundary_indistinguishability.json",
+        "output/data/gnn_model_audit.json"
       ],
       "text_overlap_count": 0,
       "title_overlap_count": 0,
@@ -142,7 +146,8 @@
         ]
       },
       "source_artifacts": [
-        "output/data/pymdp_profile_comparison.json"
+        "output/data/pymdp_profile_comparison.json",
+        "output/data/gnn_model_audit.json"
       ],
       "text_overlap_count": 0,
       "title_overlap_count": 0,
@@ -167,7 +172,8 @@
         ]
       },
       "source_artifacts": [
-        "output/data/qrf_boundary_indistinguishability.json"
+        "output/data/qrf_boundary_indistinguishability.json",
+        "output/data/gnn_model_audit.json"
       ],
       "text_overlap_count": 0,
       "title_overlap_count": 0,
@@ -193,7 +199,8 @@
       },
       "source_artifacts": [
         "output/data/pymdp_profile_comparison.json",
-        "output/data/qrf_boundary_indistinguishability.json"
+        "output/data/qrf_boundary_indistinguishability.json",
+        "output/data/gnn_model_audit.json"
       ],
       "text_overlap_count": 0,
       "title_overlap_count": 0,
@@ -218,7 +225,8 @@
         ]
       },
       "source_artifacts": [
-        "output/data/bmr_sweep.json"
+        "output/data/bmr_sweep.json",
+        "output/data/gnn_model_audit.json"
       ],
       "text_overlap_count": 0,
       "title_overlap_count": 0,
@@ -243,7 +251,8 @@
         ]
       },
       "source_artifacts": [
-        "output/data/bmr_sweep.json"
+        "output/data/bmr_sweep.json",
+        "output/data/gnn_model_audit.json"
       ],
       "text_overlap_count": 0,
       "title_overlap_count": 0,
@@ -268,7 +277,8 @@
         ]
       },
       "source_artifacts": [
-        "output/data/simulation_sensitivity_grid.json"
+        "output/data/simulation_sensitivity_grid.json",
+        "output/data/gnn_model_audit.json"
       ],
       "text_overlap_count": 0,
       "title_overlap_count": 0,
@@ -294,7 +304,8 @@
         ]
       },
       "source_artifacts": [
-        "output/data/quantum_roadmap_readiness_matrix.json"
+        "output/data/quantum_roadmap_readiness_matrix.json",
+        "output/data/gnn_model_audit.json"
       ],
       "text_overlap_count": 0,
       "title_overlap_count": 0,
@@ -319,7 +330,8 @@
         ]
       },
       "source_artifacts": [
-        "output/data/quantum_boundary_entropy.json"
+        "output/data/quantum_boundary_entropy.json",
+        "output/data/gnn_model_audit.json"
       ],
       "text_overlap_count": 0,
       "title_overlap_count": 0,
@@ -344,7 +356,8 @@
         ]
       },
       "source_artifacts": [
-        "output/data/quantum_boundary_entropy.json"
+        "output/data/quantum_boundary_entropy.json",
+        "output/data/gnn_model_audit.json"
       ],
       "text_overlap_count": 0,
       "title_overlap_count": 0,
@@ -369,7 +382,8 @@
         ]
       },
       "source_artifacts": [
-        "output/data/quantum_measurement_contextuality.json"
+        "output/data/quantum_measurement_contextuality.json",
+        "output/data/gnn_model_audit.json"
       ],
       "text_overlap_count": 0,
       "title_overlap_count": 0,
@@ -394,7 +408,8 @@
         ]
       },
       "source_artifacts": [
-        "output/data/quantum_measurement_contextuality.json"
+        "output/data/quantum_measurement_contextuality.json",
+        "output/data/gnn_model_audit.json"
       ],
       "text_overlap_count": 0,
       "title_overlap_count": 0,
@@ -418,7 +433,8 @@
         ]
       },
       "source_artifacts": [
-        "output/data/quantum_open_system_dynamics.json"
+        "output/data/quantum_open_system_dynamics.json",
+        "output/data/gnn_model_audit.json"
       ],
       "text_overlap_count": 0,
       "title_overlap_count": 0,
@@ -443,7 +459,8 @@
         ]
       },
       "source_artifacts": [
-        "output/data/qfep_boundary_hamiltonian_dynamics.json"
+        "output/data/qfep_boundary_hamiltonian_dynamics.json",
+        "output/data/gnn_model_audit.json"
       ],
       "text_overlap_count": 0,
       "title_overlap_count": 0,
@@ -469,7 +486,8 @@
         ]
       },
       "source_artifacts": [
-        "output/data/quantum_trajectory_unraveling.json"
+        "output/data/quantum_trajectory_unraveling.json",
+        "output/data/gnn_model_audit.json"
       ],
       "text_overlap_count": 0,
       "title_overlap_count": 0,
@@ -494,7 +512,8 @@
         ]
       },
       "source_artifacts": [
-        "output/data/many_body_boundary_screen_sweep.json"
+        "output/data/many_body_boundary_screen_sweep.json",
+        "output/data/gnn_model_audit.json"
       ],
       "text_overlap_count": 0,
       "title_overlap_count": 0,
@@ -519,7 +538,8 @@
         ]
       },
       "source_artifacts": [
-        "output/data/sheaf_contextuality_obstruction_audit.json"
+        "output/data/sheaf_contextuality_obstruction_audit.json",
+        "output/data/gnn_model_audit.json"
       ],
       "text_overlap_count": 0,
       "title_overlap_count": 0,
@@ -545,7 +565,8 @@
         ]
       },
       "source_artifacts": [
-        "output/data/qrf_transformation_covariance_audit.json"
+        "output/data/qrf_transformation_covariance_audit.json",
+        "output/data/gnn_model_audit.json"
       ],
       "text_overlap_count": 0,
       "title_overlap_count": 0,
@@ -570,7 +591,8 @@
         ]
       },
       "source_artifacts": [
-        "output/data/empirical_adapter_provenance_audit.json"
+        "output/data/empirical_adapter_provenance_audit.json",
+        "output/data/gnn_model_audit.json"
       ],
       "text_overlap_count": 0,
       "title_overlap_count": 0,
@@ -595,7 +617,8 @@
         ]
       },
       "source_artifacts": [
-        "output/data/arbitrary_two_qubit_entanglement_audit.json"
+        "output/data/arbitrary_two_qubit_entanglement_audit.json",
+        "output/data/gnn_model_audit.json"
       ],
       "text_overlap_count": 0,
       "title_overlap_count": 0,
@@ -620,7 +643,8 @@
         ]
       },
       "source_artifacts": [
-        "output/data/general_measurement_cover_polytope_audit.json"
+        "output/data/general_measurement_cover_polytope_audit.json",
+        "output/data/gnn_model_audit.json"
       ],
       "text_overlap_count": 0,
       "title_overlap_count": 0,
@@ -645,7 +669,8 @@
         ]
       },
       "source_artifacts": [
-        "output/data/thermodynamic_channel_cost_audit.json"
+        "output/data/thermodynamic_channel_cost_audit.json",
+        "output/data/gnn_model_audit.json"
       ],
       "text_overlap_count": 0,
       "title_overlap_count": 0,
@@ -670,7 +695,8 @@
         ]
       },
       "source_artifacts": [
-        "output/data/sparse_boundary_screen_scaling_audit.json"
+        "output/data/sparse_boundary_screen_scaling_audit.json",
+        "output/data/gnn_model_audit.json"
       ],
       "text_overlap_count": 0,
       "title_overlap_count": 0,
@@ -696,7 +722,8 @@
         ]
       },
       "source_artifacts": [
-        "output/data/qrf_frame_covariance_toy_audit.json"
+        "output/data/qrf_frame_covariance_toy_audit.json",
+        "output/data/gnn_model_audit.json"
       ],
       "text_overlap_count": 0,
       "title_overlap_count": 0,
@@ -721,7 +748,8 @@
         ]
       },
       "source_artifacts": [
-        "output/data/quantum_roadmap_readiness_matrix.json"
+        "output/data/quantum_roadmap_readiness_matrix.json",
+        "output/data/gnn_model_audit.json"
       ],
       "text_overlap_count": 0,
       "title_overlap_count": 0,
@@ -748,7 +776,8 @@
       "source_artifacts": [
         "output/data/pymdp_profile_comparison.json",
         "output/data/pymdp_policy_trace.json",
-        "output/data/pymdp_runtime_diagnostics_log.json"
+        "output/data/pymdp_runtime_diagnostics_log.json",
+        "output/data/gnn_model_audit.json"
       ],
       "text_overlap_count": 0,
       "title_overlap_count": 0,
@@ -774,7 +803,8 @@
       "source_artifacts": [
         "output/data/pymdp_profile_comparison.json",
         "output/data/pymdp_policy_trace.json",
-        "output/data/pymdp_runtime_diagnostics_log.json"
+        "output/data/pymdp_runtime_diagnostics_log.json",
+        "output/data/gnn_model_audit.json"
       ],
       "text_overlap_count": 0,
       "title_overlap_count": 0,
@@ -805,7 +835,8 @@
         "output/data/pymdp_runtime_diagnostics_log.json",
         "output/data/pymdp_generative_model_audit.json",
         "output/data/pymdp_policy_trace.json",
-        "output/data/stochastic_effect_size_audit.json"
+        "output/data/stochastic_effect_size_audit.json",
+        "output/data/gnn_model_audit.json"
       ],
       "text_overlap_count": 0,
       "title_overlap_count": 0,
@@ -830,7 +861,8 @@
         ]
       },
       "source_artifacts": [
-        "output/data/criticality_stochastic_ensemble.json"
+        "output/data/criticality_stochastic_ensemble.json",
+        "output/data/gnn_model_audit.json"
       ],
       "text_overlap_count": 0,
       "title_overlap_count": 0,
@@ -857,7 +889,8 @@
       },
       "source_artifacts": [
         "output/data/criticality_stochastic_ensemble.json",
-        "output/reports/criticality_proxy_report.json"
+        "output/reports/criticality_proxy_report.json",
+        "output/data/gnn_model_audit.json"
       ],
       "text_overlap_count": 0,
       "title_overlap_count": 0,
@@ -882,7 +915,8 @@
         ]
       },
       "source_artifacts": [
-        "output/data/compassion_scope_audit.json"
+        "output/data/compassion_scope_audit.json",
+        "output/data/gnn_model_audit.json"
       ],
       "text_overlap_count": 0,
       "title_overlap_count": 0,
@@ -908,7 +942,8 @@
         ]
       },
       "source_artifacts": [
-        "output/data/separation_prior_emergence_audit.json"
+        "output/data/separation_prior_emergence_audit.json",
+        "output/data/gnn_model_audit.json"
       ],
       "text_overlap_count": 0,
       "title_overlap_count": 0,
@@ -934,7 +969,8 @@
         ]
       },
       "source_artifacts": [
-        "output/data/internal_cut_unmeasurability_audit.json"
+        "output/data/internal_cut_unmeasurability_audit.json",
+        "output/data/gnn_model_audit.json"
       ],
       "text_overlap_count": 0,
       "title_overlap_count": 0,
@@ -959,7 +995,8 @@
         ]
       },
       "source_artifacts": [
-        "output/data/practice_protocol_map.json"
+        "output/data/practice_protocol_map.json",
+        "output/data/gnn_model_audit.json"
       ],
       "text_overlap_count": 0,
       "title_overlap_count": 0,
@@ -984,7 +1021,8 @@
         ]
       },
       "source_artifacts": [
-        "output/data/stochastic_effect_size_audit.json"
+        "output/data/stochastic_effect_size_audit.json",
+        "output/data/gnn_model_audit.json"
       ],
       "text_overlap_count": 0,
       "title_overlap_count": 0,
@@ -1010,7 +1048,8 @@
         ]
       },
       "source_artifacts": [
-        "output/data/criticality_stochastic_ensemble.json"
+        "output/data/criticality_stochastic_ensemble.json",
+        "output/data/gnn_model_audit.json"
       ],
       "text_overlap_count": 0,
       "title_overlap_count": 0,
@@ -1036,7 +1075,8 @@
         ]
       },
       "source_artifacts": [
-        "output/data/effect_size_calibration_audit.json"
+        "output/data/effect_size_calibration_audit.json",
+        "output/data/gnn_model_audit.json"
       ],
       "text_overlap_count": 0,
       "title_overlap_count": 0,
@@ -1061,7 +1101,8 @@
         ]
       },
       "source_artifacts": [
-        "output/data/bmr_robustness_resampling_audit.json"
+        "output/data/bmr_robustness_resampling_audit.json",
+        "output/data/gnn_model_audit.json"
       ],
       "text_overlap_count": 0,
       "title_overlap_count": 0,
@@ -1087,7 +1128,8 @@
         ]
       },
       "source_artifacts": [
-        "output/data/quantum_trajectory_convergence_audit.json"
+        "output/data/quantum_trajectory_convergence_audit.json",
+        "output/data/gnn_model_audit.json"
       ],
       "text_overlap_count": 0,
       "title_overlap_count": 0,
@@ -1118,7 +1160,8 @@
         ]
       },
       "source_artifacts": [
-        "figures.yaml"
+        "figures.yaml",
+        "output/data/gnn_model_audit.json"
       ],
       "text_overlap_count": 0,
       "title_overlap_count": 0,
@@ -1145,7 +1188,8 @@
       },
       "source_artifacts": [
         "output/data/method_assumption_ledger.json",
-        "output/data/method_negative_control_inventory.json"
+        "output/data/method_negative_control_inventory.json",
+        "output/data/gnn_model_audit.json"
       ],
       "text_overlap_count": 0,
       "title_overlap_count": 0,
@@ -1170,7 +1214,8 @@
         ]
       },
       "source_artifacts": [
-        "output/data/source_claim_crosswalk.json"
+        "output/data/source_claim_crosswalk.json",
+        "output/data/gnn_model_audit.json"
       ],
       "text_overlap_count": 0,
       "title_overlap_count": 0,
@@ -1194,7 +1239,8 @@
         ]
       },
       "source_artifacts": [
-        "output/data/scholarship_source_matrix.json"
+        "output/data/scholarship_source_matrix.json",
+        "output/data/gnn_model_audit.json"
       ],
       "text_overlap_count": 0,
       "title_overlap_count": 0,
@@ -1219,7 +1265,8 @@
         ]
       },
       "source_artifacts": [
-        "output/data/claim_support_audit.json"
+        "output/data/claim_support_audit.json",
+        "output/data/gnn_model_audit.json"
       ],
       "text_overlap_count": 0,
       "title_overlap_count": 0,
@@ -1244,7 +1291,8 @@
         ]
       },
       "source_artifacts": [
-        "output/data/manuscript_claim_audit.json"
+        "output/data/manuscript_claim_audit.json",
+        "output/data/gnn_model_audit.json"
       ],
       "text_overlap_count": 0,
       "title_overlap_count": 0,
@@ -1268,7 +1316,8 @@
         ]
       },
       "source_artifacts": [
-        "output/data/evidence_ceiling_audit.json"
+        "output/data/evidence_ceiling_audit.json",
+        "output/data/gnn_model_audit.json"
       ],
       "text_overlap_count": 0,
       "title_overlap_count": 0,
@@ -1297,7 +1346,8 @@
       "source_artifacts": [
         "output/data/claim_context_ledger.json",
         "output/data/claim_support_audit.json",
-        "output/data/evidence_ceiling_audit.json"
+        "output/data/evidence_ceiling_audit.json",
+        "output/data/gnn_model_audit.json"
       ],
       "text_overlap_count": 0,
       "title_overlap_count": 0,
@@ -1322,7 +1372,8 @@
         ]
       },
       "source_artifacts": [
-        "output/data/equation_audit.json"
+        "output/data/equation_audit.json",
+        "output/data/gnn_model_audit.json"
       ],
       "text_overlap_count": 0,
       "title_overlap_count": 0,
@@ -1349,7 +1400,8 @@
       },
       "source_artifacts": [
         "output/data/qrf_boundary_channel_ledger.json",
-        "output/data/qrf_boundary_indistinguishability.json"
+        "output/data/qrf_boundary_indistinguishability.json",
+        "output/data/gnn_model_audit.json"
       ],
       "text_overlap_count": 0,
       "title_overlap_count": 0,
@@ -1375,7 +1427,8 @@
         ]
       },
       "source_artifacts": [
-        "output/data/qrf_boundary_indistinguishability.json"
+        "output/data/qrf_boundary_indistinguishability.json",
+        "output/data/gnn_model_audit.json"
       ],
       "text_overlap_count": 0,
       "title_overlap_count": 0,
@@ -1402,7 +1455,8 @@
       },
       "source_artifacts": [
         "output/data/bmr_sweep.json",
-        "output/data/separation_prior_emergence_audit.json"
+        "output/data/separation_prior_emergence_audit.json",
+        "output/data/gnn_model_audit.json"
       ],
       "text_overlap_count": 0,
       "title_overlap_count": 0,
@@ -1428,7 +1482,8 @@
         ]
       },
       "source_artifacts": [
-        "output/data/multipartite_witness_suite_audit.json"
+        "output/data/multipartite_witness_suite_audit.json",
+        "output/data/gnn_model_audit.json"
       ],
       "text_overlap_count": 0,
       "title_overlap_count": 0,
@@ -1455,7 +1510,8 @@
         ]
       },
       "source_artifacts": [
-        "output/data/tensor_network_benchmark_audit.json"
+        "output/data/tensor_network_benchmark_audit.json",
+        "output/data/gnn_model_audit.json"
       ],
       "text_overlap_count": 0,
       "title_overlap_count": 0,
@@ -1481,7 +1537,8 @@
         ]
       },
       "source_artifacts": [
-        "output/data/collision_model_thermalization_audit.json"
+        "output/data/collision_model_thermalization_audit.json",
+        "output/data/gnn_model_audit.json"
       ],
       "text_overlap_count": 0,
       "title_overlap_count": 0,
@@ -1506,7 +1563,8 @@
         ]
       },
       "source_artifacts": [
-        "output/data/n_cycle_contextuality_library_audit.json"
+        "output/data/n_cycle_contextuality_library_audit.json",
+        "output/data/gnn_model_audit.json"
       ],
       "text_overlap_count": 0,
       "title_overlap_count": 0,
@@ -1537,7 +1595,8 @@
         ]
       },
       "source_artifacts": [
-        "output/data/data_processing_monotonicity_audit.json"
+        "output/data/data_processing_monotonicity_audit.json",
+        "output/data/gnn_model_audit.json"
       ],
       "text_overlap_count": 0,
       "title_overlap_count": 0,
@@ -1563,7 +1622,8 @@
         ]
       },
       "source_artifacts": [
-        "output/data/markov_blanket_discovery_audit.json"
+        "output/data/markov_blanket_discovery_audit.json",
+        "output/data/gnn_model_audit.json"
       ],
       "text_overlap_count": 0,
       "title_overlap_count": 0,

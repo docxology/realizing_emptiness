@@ -1,0 +1,181 @@
+{
+  "schema": "realizing_emptiness.gnn_catalog.v1",
+  "models": [
+    {
+      "model_id": "finite_alternative_bmr",
+      "consumer": "formalism.review_response_bmr:build_bmr_alternative_prior_audit"
+    },
+    {
+      "model_id": "finite_blackwell",
+      "consumer": "simulation.blackwell_ordering:build_blackwell_bayes_risk_audit"
+    },
+    {
+      "model_id": "finite_bmr",
+      "consumer": "simulation.bmr:run_bmr_sweep"
+    },
+    {
+      "model_id": "finite_classical_data_processing",
+      "consumer": "simulation.classical_data_processing:build_classical_data_processing_audit"
+    },
+    {
+      "model_id": "finite_compassion_scope",
+      "consumer": "simulation.compassion_scope:build_compassion_scope_audit"
+    },
+    {
+      "model_id": "finite_emergence",
+      "consumer": "simulation.emergence:build_separation_prior_emergence_audit"
+    },
+    {
+      "model_id": "finite_equations",
+      "consumer": "formalism.equations:evaluate_equation_surrogates"
+    },
+    {
+      "model_id": "finite_interaction_information",
+      "consumer": "simulation.interaction_information:build_interaction_information_boundary_audit"
+    },
+    {
+      "model_id": "finite_markov_blanket",
+      "consumer": "simulation.markov_blanket:build_markov_blanket_discovery_audit"
+    },
+    {
+      "model_id": "finite_sensitivity",
+      "consumer": "simulation.sensitivity:build_sensitivity_grid"
+    },
+    {
+      "model_id": "opacified",
+      "consumer": "simulation.pymdp_profiles:build_profile_generative_model"
+    },
+    {
+      "model_id": "post_dual",
+      "consumer": "simulation.pymdp_profiles:build_profile_generative_model"
+    },
+    {
+      "model_id": "practice_mapping",
+      "consumer": "practice.protocols:practice_protocol_map"
+    },
+    {
+      "model_id": "qrf_boundary",
+      "consumer": "simulation.qrf_env:default_deployments"
+    },
+    {
+      "model_id": "quantum_arbitrary_two_qubit_entanglement_audit",
+      "consumer": "simulation.quantum_surrogates:build_arbitrary_two_qubit_entanglement_audit"
+    },
+    {
+      "model_id": "quantum_boundary_entropy",
+      "consumer": "simulation.quantum_surrogates:build_quantum_boundary_entropy"
+    },
+    {
+      "model_id": "quantum_collision_model_thermalization_audit",
+      "consumer": "simulation.quantum_surrogates:build_collision_model_thermalization_audit"
+    },
+    {
+      "model_id": "quantum_cramer_rao_estimation",
+      "consumer": "simulation.quantum_estimation:build_quantum_cramer_rao_estimation_audit"
+    },
+    {
+      "model_id": "quantum_data_processing_monotonicity_audit",
+      "consumer": "simulation.quantum_surrogates:build_data_processing_monotonicity_audit"
+    },
+    {
+      "model_id": "quantum_general_measurement_cover_polytope",
+      "consumer": "simulation.quantum_surrogates:build_general_measurement_cover_polytope_audit"
+    },
+    {
+      "model_id": "quantum_internal_cut_unmeasurability_audit",
+      "consumer": "simulation.quantum_surrogates:build_internal_cut_unmeasurability_audit"
+    },
+    {
+      "model_id": "quantum_many_body_boundary_screen_sweep",
+      "consumer": "simulation.quantum_surrogates:build_many_body_boundary_screen_sweep"
+    },
+    {
+      "model_id": "quantum_measurement_contextuality",
+      "consumer": "simulation.quantum_surrogates:build_quantum_measurement_contextuality"
+    },
+    {
+      "model_id": "quantum_multipartite_witness_suite_audit",
+      "consumer": "simulation.quantum_surrogates:build_multipartite_witness_suite_audit"
+    },
+    {
+      "model_id": "quantum_n_cycle_contextuality_library_audit",
+      "consumer": "simulation.quantum_surrogates:build_n_cycle_contextuality_library_audit"
+    },
+    {
+      "model_id": "quantum_no_signaling_scenario_library_audit",
+      "consumer": "simulation.quantum_surrogates:build_no_signaling_scenario_library_audit"
+    },
+    {
+      "model_id": "quantum_open_system_dynamics",
+      "consumer": "simulation.quantum_surrogates:build_quantum_open_system_dynamics"
+    },
+    {
+      "model_id": "quantum_qfep_boundary_hamiltonian_dynamics",
+      "consumer": "simulation.quantum_surrogates:build_qfep_boundary_hamiltonian_dynamics"
+    },
+    {
+      "model_id": "quantum_qrf_frame_covariance_toy_audit",
+      "consumer": "simulation.quantum_surrogates:build_qrf_frame_covariance_toy_audit"
+    },
+    {
+      "model_id": "quantum_qrf_transformation_covariance_audit",
+      "consumer": "simulation.quantum_surrogates:build_qrf_transformation_covariance_audit"
+    },
+    {
+      "model_id": "quantum_sheaf_contextuality_obstruction_audit",
+      "consumer": "simulation.quantum_surrogates:build_sheaf_contextuality_obstruction_audit"
+    },
+    {
+      "model_id": "quantum_sigma_contextuality_suppression_audit",
+      "consumer": "simulation.quantum_surrogates:build_sigma_contextuality_suppression_audit"
+    },
+    {
+      "model_id": "quantum_sparse_boundary_screen_scaling_audit",
+      "consumer": "simulation.quantum_surrogates:build_sparse_boundary_screen_scaling_audit"
+    },
+    {
+      "model_id": "quantum_tensor_network_benchmark_audit",
+      "consumer": "simulation.quantum_surrogates:build_tensor_network_benchmark_audit"
+    },
+    {
+      "model_id": "quantum_thermodynamic_channel_cost_audit",
+      "consumer": "simulation.quantum_surrogates:build_thermodynamic_channel_cost_audit"
+    },
+    {
+      "model_id": "quantum_trajectory_unraveling",
+      "consumer": "simulation.quantum_surrogates:build_quantum_trajectory_unraveling"
+    },
+    {
+      "model_id": "separation_constrained",
+      "consumer": "simulation.pymdp_profiles:build_profile_generative_model"
+    },
+    {
+      "model_id": "statistical_bmr",
+      "consumer": "simulation.statistical_robustness:build_bmr_robustness_resampling_audit"
+    },
+    {
+      "model_id": "statistical_calibration",
+      "consumer": "simulation.statistical_robustness:build_effect_size_test_calibration_audit"
+    },
+    {
+      "model_id": "statistical_convergence",
+      "consumer": "simulation.statistical_robustness:build_quantum_trajectory_convergence_audit"
+    },
+    {
+      "model_id": "statistical_criticality",
+      "consumer": "simulation.criticality:build_criticality_stochastic_ensemble"
+    },
+    {
+      "model_id": "statistical_effects",
+      "consumer": "simulation.statistical_robustness:build_stochastic_effect_size_audit"
+    },
+    {
+      "model_id": "statistical_policy_ensemble",
+      "consumer": "simulation.stochastic:build_stochastic_policy_ensemble"
+    },
+    {
+      "model_id": "statistical_seed_bank",
+      "consumer": "simulation.statistical_robustness:build_seed_bank_calibration"
+    }
+  ]
+}

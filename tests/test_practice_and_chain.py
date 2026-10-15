@@ -227,7 +227,8 @@ def test_figure_source_map_can_regenerate(pytestconfig) -> None:
     assert dashboard_payload["figures"]["figure_count"] == 60
     assert dashboard_payload["pymdp_runtime"]["all_controls_pass"] is True
     assert dashboard_payload["pymdp_runtime"]["replay_equal"] is True
-    assert dashboard_payload["pymdp_runtime"]["runtime_warning_count"] >= 1
+    recorded = json.loads((root / "output/data/pymdp_runtime_diagnostics_log.json").read_text())
+    assert dashboard_payload["pymdp_runtime"]["runtime_warning_count"] == len(recorded["runtime_dependency_check"]["warnings"])
     assert dashboard_payload["pymdp_runtime"]["max_weighted_expected_free_energy_residual"] < 1e-7
     assert dashboard_payload["roadmap"]["implemented_count"] >= 17
     assert set(dashboard_payload["roadmap"]["future_ids"]) == {"re-3", "re-4", "re-13", "re-14", "re-15"}

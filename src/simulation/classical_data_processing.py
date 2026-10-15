@@ -17,6 +17,8 @@ from __future__ import annotations
 
 from typing import Any
 
+from modeling.registry import model_parameters
+
 import numpy as np
 
 
@@ -27,9 +29,6 @@ CLAIM_BOUNDARY = (
     "or physical qFEP claim"
 )
 
-_EXTERNAL_PRIOR = np.array([1.0 / 3.0, 1.0 / 3.0, 1.0 / 3.0])
-# p(blanket | external): the blanket tracks the external world with noise.
-_BLANKET_GIVEN_EXTERNAL = np.array([[0.8, 0.1, 0.1], [0.1, 0.8, 0.1], [0.1, 0.1, 0.8]])
 
 
 def _mutual_information(joint: np.ndarray) -> float:
@@ -46,14 +45,17 @@ def _mutual_information(joint: np.ndarray) -> float:
 
 def _chain_informations(interior_given_blanket: np.ndarray) -> tuple[float, float]:
     """Return (I(interior;external), I(blanket;external)) for the chain external -> blanket -> interior."""
-    external_count = _EXTERNAL_PRIOR.shape[0]
-    blanket_count = _BLANKET_GIVEN_EXTERNAL.shape[1]
+    parameters = model_parameters("finite_classical_data_processing")
+    external_prior = np.asarray(parameters["external_prior"], dtype=float)
+    blanket_given_external = np.asarray(parameters["blanket_given_external"], dtype=float)
+    external_count = external_prior.shape[0]
+    blanket_count = blanket_given_external.shape[1]
     interior_count = interior_given_blanket.shape[1]
     external_interior = np.zeros((external_count, interior_count))
     external_blanket = np.zeros((external_count, blanket_count))
     for e in range(external_count):
         for b in range(blanket_count):
-            weight = _EXTERNAL_PRIOR[e] * _BLANKET_GIVEN_EXTERNAL[e, b]
+            weight = external_prior[e] * blanket_given_external[e, b]
             external_blanket[e, b] += weight
             for i in range(interior_count):
                 external_interior[e, i] += weight * interior_given_blanket[b, i]
@@ -69,11 +71,14 @@ def build_classical_data_processing_audit() -> dict[str, Any]:
     read-out strictly loses information; a constant read-out reaches zero. Saturation versus strict loss
     is the discriminating control, measured from the joint, not asserted.
     """
+    parameters = model_parameters("finite_classical_data_processing")
+    external_prior = np.asarray(parameters["external_prior"], dtype=float)
+    blanket_given_external = np.asarray(parameters["blanket_given_external"], dtype=float)
     tolerance = 1e-9
     readouts = {
         "sufficient_identity": np.eye(3),
-        "lossy_merge": np.array([[1.0, 0.0], [1.0, 0.0], [0.0, 1.0]]),
-        "lossy_partial": np.array([[0.9, 0.1], [0.5, 0.5], [0.1, 0.9]]),
+        "lossy_merge": np.asarray(parameters["lossy_merge"], dtype=float),
+        "lossy_partial": np.asarray(parameters["lossy_partial"], dtype=float),
         "constant_erasure": np.array([[1.0], [1.0], [1.0]]),
     }
     rows = []
@@ -95,8 +100,8 @@ def build_classical_data_processing_audit() -> dict[str, Any]:
     }
     return {
         "schema": "realizing_emptiness.classical_data_processing_audit.v1",
-        "external_prior": _EXTERNAL_PRIOR.tolist(),
-        "blanket_given_external": _BLANKET_GIVEN_EXTERNAL.tolist(),
+        "external_prior": external_prior.tolist(),
+        "blanket_given_external": blanket_given_external.tolist(),
         "row_count": len(rows),
         "rows": rows,
         "controls": controls,

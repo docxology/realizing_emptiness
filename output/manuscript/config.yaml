@@ -1,7 +1,7 @@
 paper:
   title: "Realizing Emptiness"
   subtitle: "Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction"
-  version: "2.0.0"
+  version: "3.0.0"
   date: "2026-10-14"
 authors:
   - name: "Daniel Ari Friedman"
@@ -11,10 +11,10 @@ authors:
     corresponding: true
 publication:
   github_repository: "docxology/realizing_emptiness"
-  repository_url: "https://github.com/docxology/realizing_emptiness/releases/tag/v2.0.0"
+  repository_url: "https://github.com/docxology/realizing_emptiness/releases/tag/v3.0.0"
   repository_label: "Versioned software release"
   concept_doi: "10.5281/zenodo.20834846"
-  doi_status: "Not assigned for v2.0.0"
+  doi_status: "Not assigned for v3.0.0"
 keywords:
   - active inference
   - emptiness

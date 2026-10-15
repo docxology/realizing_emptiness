@@ -5,6 +5,8 @@ from __future__ import annotations
 from dataclasses import dataclass
 from typing import Any
 
+from modeling.registry import model_parameters
+
 import numpy as np
 
 from .models import (
@@ -104,8 +106,9 @@ def _deployment_free_energy(deployment: QRFDeployment) -> float:
     accuracy grows with deployment flexibility. This is a finite scoring surrogate
     used only to derive eqs 13-14 minima from measured values, not a hidden empirical claim.
     """
-    complexity = float(np.log1p(deployment.prior_precision) + 0.2 * (1.0 - deployment.metacognitive_access))
-    accuracy = float(0.6 + 0.35 * deployment.flexibility)
+    parameters = model_parameters("finite_equations")
+    complexity = float(np.log1p(deployment.prior_precision) + parameters["deployment_complexity_access"] * (1.0 - deployment.metacognitive_access))
+    accuracy = float(parameters["deployment_accuracy_base"] + parameters["deployment_accuracy_flexibility"] * deployment.flexibility)
     return complexity - accuracy
 
 
@@ -208,41 +211,42 @@ def render_equation_crosswalk(registry: dict[str, Any]) -> str:
 
 def evaluate_equation_surrogates(screen: BoundaryScreen | None = None) -> dict[str, Any]:
     """Evaluate deterministic finite surrogates for all computable equations."""
+    parameters = model_parameters("finite_equations")
     active_screen = screen or BoundaryScreen.default()
     active_screen.validate()
-    deployments = (
-        QRFDeployment("dual", ("self", "self", "env", "env", "env", "self"), 0.0, 4.0),
-        QRFDeployment("contextual", ("body", "action", "world", "world", "other", "care"), 1.0, 0.2),
+    deployments = tuple(
+        QRFDeployment(name, tuple(labels), access, precision)
+        for name, labels, access, precision in parameters["deployments"]
     )
     for deployment in deployments:
         deployment.validate(active_screen)
 
-    channel_cost = np.ones(active_screen.channel_count)
+    channel_cost = np.full(active_screen.channel_count, parameters["channel_cost"])
     interaction_cost = float(channel_cost.sum())
-    predicted = np.zeros(active_screen.channel_count)
-    realized = np.array([0, 1, 1, 0, 1, 0], dtype=float)
+    predicted = np.full(active_screen.channel_count, parameters["predicted"])
+    realized = np.array(parameters["realized"], dtype=float)
     prediction_error = float(np.mean((predicted - realized) ** 2))
 
     # eq 6: a worked VFE decomposition over a finite observation channel. The cross-entropy of a
     # realized channel distribution against the model's predicted distribution splits exactly into
     # irreducible entropy (noise) and a KL divergence (insufficient learning a better model removes).
-    eq6_realized = np.array([0.55, 0.45])
-    eq6_predicted = np.array([0.7, 0.3])
+    eq6_realized = np.array(parameters["eq6_realized"])
+    eq6_predicted = np.array(parameters["eq6_predicted"])
     eq6_decomposition = vfe_noise_insufficient_learning(eq6_realized, eq6_predicted)
 
     # eq 11: a worked categorical VFE over the dual self/env state factor. The
     # complexity term is a genuine KL divergence D_KL[Q(s) || P(s|m)] (not a scalar
     # stand-in) and accuracy is the expected log-likelihood <ln P(o|s,m)>.
-    eq11_posterior = np.array([0.7, 0.3])
-    eq11_prior = np.array([0.5, 0.5])
-    eq11_log_likelihood = np.log(np.array([0.8, 0.4]))
+    eq11_posterior = np.array(parameters["eq11_posterior"])
+    eq11_prior = np.array(parameters["eq11_prior"])
+    eq11_log_likelihood = np.log(np.array(parameters["eq11_likelihood"]))
     free_energy = FreeEnergyTerms.from_distributions(
-        eq11_posterior, eq11_prior, eq11_log_likelihood, noise=0.05
+        eq11_posterior, eq11_prior, eq11_log_likelihood, noise=parameters["eq11_noise"]
     )
     eq11_complexity_kl_bits = complexity_kl(eq11_posterior, eq11_prior)
 
-    posterior = _softmax(np.array([-0.3, -0.2, -0.7]))
-    prior = SeparationPrior(precision=4.0, enforced=True)
+    posterior = _softmax(np.array(parameters["posterior_logits"]))
+    prior = SeparationPrior(precision=parameters["prior_precision"], enforced=True)
     constrained = prior.admissible(deployments)
 
     # eqs 13-14: derive the constrained and unconstrained minima from MEASURED finite

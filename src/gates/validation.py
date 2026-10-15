@@ -16,15 +16,18 @@ from formalism.review_response import build_artifact_release_manifest
 from formalism.scholarship import validate_scholarship_manifest
 from formalism.source import verify_primary_source_hash
 from gates.contracts import build_artifact_contract_registry
-from simulation.pymdp_profiles import expected_free_energy_terms
+from simulation.pymdp_profiles import expected_free_energy_terms, PYMDP_REQUIRED_VERSION, build_generative_model_audit, runtime_warnings_match_version
 from simulation.resampling import binomial_summary
 from simulation.resampling import bootstrap_contrast
 from simulation.criticality import _branching_by_run
 from simulation.statistical_robustness import _holm_adjust
 from visualizations.integrity import compare_figure_integrity
+from modeling.registry import model_parameters, specification_root
+from modeling.audit import gnn_model_audit_matches
 
 
 EXPECTED_DATA = [
+    "output/data/gnn_model_audit.json",
     "output/data/formalism_registry.json",
     "output/data/equation_audit.json",
     "output/data/source_claim_crosswalk.json",
@@ -185,6 +188,7 @@ EXPECTED_WEB = [
 ]
 
 EXPECTED_SCHEMAS = [
+    "schemas/gnn_model_audit.schema.json",
     "schemas/artifact_manifest.schema.json",
     "schemas/source_manifest.schema.json",
     "schemas/formalism_registry.schema.json",
@@ -276,6 +280,7 @@ EXPECTED_SCHEMAS = [
 ]
 
 SCHEMA_TARGETS = [
+    ("schemas/gnn_model_audit.schema.json", "output/data/gnn_model_audit.json", "json"),
     ("schemas/artifact_manifest.schema.json", "artifact_manifest.yaml", "yaml"),
     ("schemas/source_manifest.schema.json", "data/sources/source_manifest.yaml", "yaml"),
     ("schemas/formalism_registry.schema.json", "output/data/formalism_registry.json", "json"),
@@ -380,6 +385,7 @@ def _finite_json_float(value: str) -> float:
 
 def _criticality_stochastic_ensemble_matches(payload: dict[str, Any], policy: dict[str, Any]) -> bool:
     try:
+        design = model_parameters("statistical_criticality")
         controls = {
             "seeded_policy_source", "all_intervals_finite", "null_controls_present",
             "profiles_differ_from_null_controls", "measured_branching_separates_from_null",
@@ -393,7 +399,7 @@ def _criticality_stochastic_ensemble_matches(payload: dict[str, Any], policy: di
                 or any(value is not True for value in payload["controls"].values())
                 or "not empirical neural-criticality" not in payload["claim_boundary"]
                 or payload["branching_null_method"] != "seeded_per_run_observation_permutation"
-                or payload["branching_null_seed"] != policy["seed"] + 91
+                or payload["branching_null_seed"] != policy["seed"] + design["shuffle_seed_offset"]
                 or any(payload[key] != policy[key] for key in ("seed", "runs_per_profile", "steps"))):
             return False
         rows = payload["metric_rows"]
@@ -451,12 +457,12 @@ def _criticality_stochastic_ensemble_matches(payload: dict[str, Any], policy: di
                     return False
                 if metric == "branching_ratio":
                     separating += int(disjoint)
-            seed = policy["seed"] + 92000 + profiles.index(profile)
+            seed = policy["seed"] + design["bootstrap_seed_offset"] + profiles.index(profile)
             paired = bootstrap_contrast([branching[(profile, run, False)] for run in range(runs)],
-                                        [branching[(profile, run, True)] for run in range(runs)], seed=seed, paired=True)
+                                        [branching[(profile, run, True)] for run in range(runs)], seed=seed, paired=True, draws=design["bootstrap_draws"])
             low, high = paired["difference_ci95_low"], paired["difference_ci95_high"]
             if (contrast["paired_run_count"] != runs or contrast["paired_bootstrap_seed"] != seed
-                    or contrast["paired_bootstrap_draws"] != 2048
+                    or contrast["paired_bootstrap_draws"] != design["bootstrap_draws"]
                     or not matches(contrast["paired_branching_ci95_low"], low)
                     or not matches(contrast["paired_branching_ci95_high"], high)
                     or contrast["paired_branching_interval_excludes_zero"] is not (high < 0 or low > 0)):
@@ -584,9 +590,9 @@ def _pymdp_runtime_log_ok(runtime_log: dict[str, Any], policy_trace: dict[str, A
         runtime_log.get("schema") == "realizing_emptiness.pymdp_runtime_diagnostics_log.v2"
         and runtime_log.get("all_controls_pass") is True
         and runtime_log.get("trace_row_count") == policy_trace.get("row_count") == row_count
-        and runtime_log.get("runtime_versions", {}).get("inferactively_pymdp") == "1.0.3"
+        and runtime_log.get("runtime_versions", {}).get("inferactively_pymdp") == PYMDP_REQUIRED_VERSION
         and runtime_log.get("runtime_dependency_check", {}).get("ok") is True
-        and len(runtime_log.get("runtime_dependency_check", {}).get("warnings", [])) >= 1
+        and runtime_warnings_match_version(runtime_log.get("runtime_dependency_check", {}))
         and runtime_log.get("model_profile_count") == 3
         and len({row.get("sha256") for row in runtime_log.get("model_hashes", [])}) == 3
         and all(len(row.get("sha256", "")) == 64 for row in runtime_log.get("model_hashes", []))
@@ -729,6 +735,7 @@ def validate_outputs(project_root: Path) -> dict[str, bool]:
         checks["source_hash"] = False
         return checks
     checks["source_hash"] = verify_primary_source_hash(project_root)["ok"]
+    checks["gnn_model_audit_ok"] = gnn_model_audit_matches(_load_json(project_root, "output/data/gnn_model_audit.json"), project_root)
     for relative in EXPECTED_DATA + EXPECTED_REPORTS + EXPECTED_FIGURES + EXPECTED_WEB + EXPECTED_SCHEMAS:
         checks[f"exists:{relative}"] = _exists(project_root, relative)
     artifact_manifest = _load_yaml(project_root, "artifact_manifest.yaml")
@@ -1321,10 +1328,16 @@ def validate_outputs(project_root: Path) -> dict[str, bool]:
         and "not empirical" in method_controls.get("claim_boundary", "")
     )
     profile = _load_json(project_root, "output/data/pymdp_profile_comparison.json")
-    checks["pymdp_runtime_dependency_ok"] = profile.get("runtime_dependency_check", {}).get("ok") is True
+    dependency = profile.get("runtime_dependency_check", {})
+    checks["pymdp_runtime_dependency_ok"] = (dependency.get("ok") is True and dependency.get("version") == dependency.get("required_version") == PYMDP_REQUIRED_VERSION)
     checks["posterior_normalized"] = profile.get("posterior_normalized") is True
     policy_trace = _load_json(project_root, "output/data/pymdp_policy_trace.json")
     model_audit = _load_json(project_root, "output/data/pymdp_generative_model_audit.json")
+    try:
+        with specification_root(project_root / "src/modeling/specifications"):
+            checks["gnn_categorical_sources_match"] = model_audit == build_generative_model_audit()
+    except (ValueError, TypeError, KeyError, OSError):
+        checks["gnn_categorical_sources_match"] = False
     runtime_log = _load_json(project_root, "output/data/pymdp_runtime_diagnostics_log.json")
     checks["pymdp_policy_trace_ok"] = (
         policy_trace.get("schema") == "realizing_emptiness.pymdp_policy_trace.v1"
@@ -1895,7 +1908,9 @@ def validate_outputs(project_root: Path) -> dict[str, bool]:
     )
     dashboard_payload = _load_json(project_root, "output/data/artifact_dashboard_payload.json")
     checks["artifact_dashboard_ok"] = (
-        dashboard_payload.get("schema") == "realizing_emptiness.artifact_dashboard_payload.v2"
+        dashboard_payload.get("schema") == "realizing_emptiness.artifact_dashboard_payload.v3"
+        and dashboard_payload.get("modeling", {}).get("audit_ok") is True
+        and dashboard_payload.get("modeling", {}).get("model_count") == _load_json(project_root, "output/data/gnn_model_audit.json").get("model_count")
         and dashboard_payload.get("roadmap", {}).get("implemented_count") == roadmap.get("implemented_count")
         and dashboard_payload.get("readiness", {}).get("future_blocked") is True
         and dashboard_payload.get("todo_audit", {}).get("all_controls_pass") is True
@@ -1903,7 +1918,7 @@ def validate_outputs(project_root: Path) -> dict[str, bool]:
         and dashboard_payload.get("dependency_graph", {}).get("all_controls_pass") is True
         and dashboard_payload.get("pymdp_runtime", {}).get("all_controls_pass") is True
         and dashboard_payload.get("pymdp_runtime", {}).get("replay_equal") is True
-        and dashboard_payload.get("pymdp_runtime", {}).get("runtime_warning_count", 0) >= 1
+        and dashboard_payload.get("pymdp_runtime", {}).get("runtime_warning_count") == len(runtime_log.get("runtime_dependency_check", {}).get("warnings", []))
         and dashboard_payload.get("pymdp_runtime", {}).get("max_weighted_expected_free_energy_residual", 1.0) < 1e-7
         and dashboard_payload.get("stochastic_engines", {}).get("active_inference_ensemble_ok") is True
         and dashboard_payload.get("stochastic_engines", {}).get("criticality_ensemble_ok") is True

@@ -2,7 +2,7 @@
   "claim_boundary": "sentence-level manuscript language audit; not empirical evidence",
   "ok": true,
   "risky_rows": [],
-  "row_count": 114,
+  "row_count": 120,
   "rows": [
     {
       "allowed": true,
@@ -871,12 +871,30 @@
       "allowed": true,
       "blocked_domain_risky": false,
       "blocked_domains": [],
+      "claim_target_terms": [
+        "software",
+        "model"
+      ],
+      "file": "docs/manuscript/sections/methods/bmr.md",
+      "has_boundary_scope": true,
+      "has_negation": false,
+      "no_self_risky": false,
+      "sentence": "The baseline comparison inputs and sensitivity-grid settings are declared in Generalized Notation Notation (GNN) specifications and read through the same validated finite-software model registry as the categorical profiles.",
+      "strong_verbs": [
+        "validated"
+      ],
+      "unscoped_strong_claim": false
+    },
+    {
+      "allowed": true,
+      "blocked_domain_risky": false,
+      "blocked_domains": [],
       "claim_target_terms": [],
       "file": "docs/manuscript/sections/methods/pymdp.md",
       "has_boundary_scope": false,
       "has_negation": false,
       "no_self_risky": false,
-      "sentence": "3`, imports the JAX-first `Agent` and `utils` surface, constructs a small agent, runs state inference, and confirms policy-posterior normalization.",
+      "sentence": "12 and later supported versions), imports the JAX-first `Agent` surface, constructs a small agent, runs state inference, and confirms policy-posterior normalization.",
       "strong_verbs": [
         "confirms"
       ],
@@ -908,6 +926,26 @@
       "allowed": true,
       "blocked_domain_risky": false,
       "blocked_domains": [
+        "physical qfep"
+      ],
+      "claim_target_terms": [
+        "qfep"
+      ],
+      "file": "docs/manuscript/sections/methods/qfep.md",
+      "has_boundary_scope": false,
+      "has_negation": true,
+      "no_self_risky": false,
+      "sentence": "This division does not imply that the upstream GNN package implements quantum inference or that a validated declaration establishes physical qFEP dynamics.",
+      "strong_verbs": [
+        "establishes",
+        "validated"
+      ],
+      "unscoped_strong_claim": false
+    },
+    {
+      "allowed": true,
+      "blocked_domain_risky": false,
+      "blocked_domains": [
         "realization",
         "neural",
         "physical qfep"
@@ -925,6 +963,21 @@
       "no_self_risky": false,
       "sentence": "The additional implemented extension artifacts add stronger software validation and more adversarial failure cases, but the prohibited inference remains explicit: none of these finite engines is physical qFEP realization, empirical practice evidence, neural measurement, or evidence for contemplative attainment.",
       "strong_verbs": [],
+      "unscoped_strong_claim": false
+    },
+    {
+      "allowed": true,
+      "blocked_domain_risky": false,
+      "blocked_domains": [],
+      "claim_target_terms": [],
+      "file": "docs/manuscript/sections/methods/qrf.md",
+      "has_boundary_scope": false,
+      "has_negation": false,
+      "no_self_risky": false,
+      "sentence": "py:default_deployments` reads their validated deployment parameters.",
+      "strong_verbs": [
+        "validated"
+      ],
       "unscoped_strong_claim": false
     },
     {
@@ -1585,6 +1638,23 @@
     {
       "allowed": true,
       "blocked_domain_risky": false,
+      "blocked_domains": [],
+      "claim_target_terms": [
+        "simulation"
+      ],
+      "file": "docs/manuscript/sections/supplement/practice_protocols.md",
+      "has_boundary_scope": true,
+      "has_negation": true,
+      "no_self_risky": false,
+      "sentence": "They are not applied to simulation state and do not demonstrate an intervention effect.",
+      "strong_verbs": [
+        "demonstrate"
+      ],
+      "unscoped_strong_claim": false
+    },
+    {
+      "allowed": true,
+      "blocked_domain_risky": false,
       "blocked_domains": [
         "physical qfep"
       ],
@@ -1980,6 +2050,38 @@
     {
       "allowed": true,
       "blocked_domain_risky": false,
+      "blocked_domains": [],
+      "claim_target_terms": [
+        "model"
+      ],
+      "file": "docs/manuscript/sections/supplement/validation.md",
+      "has_boundary_scope": true,
+      "has_negation": false,
+      "no_self_risky": false,
+      "sentence": "The bounded upstream native categorical execution check establishes interoperability for that finite model, while the local quantum and finite engines retain their own computational checks.",
+      "strong_verbs": [
+        "establishes"
+      ],
+      "unscoped_strong_claim": false
+    },
+    {
+      "allowed": true,
+      "blocked_domain_risky": false,
+      "blocked_domains": [],
+      "claim_target_terms": [],
+      "file": "docs/manuscript/sections/supplement/validation.md",
+      "has_boundary_scope": false,
+      "has_negation": false,
+      "no_self_risky": false,
+      "sentence": "The runtime and packaging records must establish the actual interpreter, installed dependency revision, and availability of specification resources outside the checkout.",
+      "strong_verbs": [
+        "establish"
+      ],
+      "unscoped_strong_claim": false
+    },
+    {
+      "allowed": true,
+      "blocked_domain_risky": false,
       "blocked_domains": [
         "neural"
       ],
@@ -2229,6 +2331,6 @@
     }
   ],
   "schema": "realizing_emptiness.manuscript_claim_intensity_audit.v1",
-  "sentence_count": 1299,
-  "strong_verb_count": 46
+  "sentence_count": 1342,
+  "strong_verb_count": 53
 }

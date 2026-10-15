@@ -21,6 +21,8 @@ from __future__ import annotations
 
 from typing import Any
 
+from modeling.registry import model_parameters
+
 import numpy as np
 
 
@@ -31,7 +33,7 @@ CLAIM_BOUNDARY = (
 
 
 def emergence_trajectory(
-    *, empowerment: float, seed: int = 5, steps: int = 64, channels: int = 6
+    *, empowerment: float, seed: int | None = None, steps: int | None = None, channels: int | None = None
 ) -> dict[str, Any]:
     """Build a boundary stream where a fraction ``empowerment`` of channels track the action.
 
@@ -40,6 +42,10 @@ def emergence_trajectory(
     action-independent (driven by their own seeded process). Returns the action sequence, the
     observation matrix, and the index set of action-contingent (self) channels.
     """
+    parameters = model_parameters("finite_emergence")
+    seed = parameters["seed"] if seed is None else seed
+    steps = parameters["steps"] if steps is None else steps
+    channels = parameters["channels"] if channels is None else channels
     if not 0.0 <= empowerment <= 1.0:
         raise ValueError("empowerment must be in [0, 1]")
     rng = np.random.default_rng(seed)
@@ -120,13 +126,14 @@ def _window_error(observations: np.ndarray, actions: np.ndarray, self_set: froze
     return _mode_predictor_error(observations, actions, condition_on_action=mask)
 
 
-def _best_self_set(obs: np.ndarray, act: np.ndarray, channels: int, *, margin: float = 0.1) -> frozenset[int]:
+def _best_self_set(obs: np.ndarray, act: np.ndarray, channels: int, *, margin: float | None = None) -> frozenset[int]:
     """Post-dual revision: action-condition a channel only when that MATERIALLY lowers its error.
 
     The margin prevents switching the sectorisation on in-sample noise (a two-bucket action-conditioned
     fit can beat the marginal by chance on a genuinely action-independent channel), so the revision
     tracks a real regime change rather than overfitting.
     """
+    margin = model_parameters("finite_emergence")["revision_margin"] if margin is None else margin
     chosen = set()
     for channel in range(channels):
         column = obs[:, channel:channel + 1]
@@ -140,9 +147,11 @@ def _best_self_set(obs: np.ndarray, act: np.ndarray, channels: int, *, margin: f
 def _run_revision_stream(*, regime_change: bool, steps: int, seed: int, channels: int) -> dict[str, Any]:
     """Run one rigid-vs-revising comparison over a (possibly) non-stationary boundary stream."""
     rng = np.random.default_rng(seed)
-    half = steps // 2
-    window_a_self = frozenset(range(channels // 2))
-    window_b_self = frozenset(range(channels // 2, channels)) if regime_change else window_a_self
+    parameters = model_parameters("finite_emergence")
+    half = int(steps * parameters["regime_fraction"])
+    self_count = int(channels * parameters["self_fraction"])
+    window_a_self = frozenset(range(self_count))
+    window_b_self = frozenset(range(self_count, channels)) if regime_change else window_a_self
     bias = rng.integers(0, 2, size=channels)
     env_state = rng.integers(0, 2, size=channels)
     actions = rng.integers(0, 2, size=steps)
@@ -183,7 +192,7 @@ def _run_revision_stream(*, regime_change: bool, steps: int, seed: int, channels
     }
 
 
-def build_ongoing_revision_audit(*, steps: int = 64, seed: int = 11, channels: int = 6) -> dict[str, Any]:
+def build_ongoing_revision_audit(*, steps: int | None = None, seed: int | None = None, channels: int | None = None) -> dict[str, Any]:
     """Operationalize the post-dual agent's ongoing revision under non-stationarity (5.2/5.3).
 
     A non-stationary boundary stream changes regime at the midpoint: the action-contingent (self)
@@ -194,6 +203,10 @@ def build_ongoing_revision_audit(*, steps: int = 64, seed: int = 11, channels: i
     so the gain is attributable to revision-under-change rather than to generic adaptive overfitting.
     All verdicts are derived from measured window errors.
     """
+    parameters = model_parameters("finite_emergence")
+    steps = parameters["steps"] if steps is None else steps
+    seed = parameters["revision_seed"] if seed is None else seed
+    channels = parameters["channels"] if channels is None else channels
     nonstationary = _run_revision_stream(regime_change=True, steps=steps, seed=seed, channels=channels)
     stationary = _run_revision_stream(regime_change=False, steps=steps, seed=seed, channels=channels)
     controls = {
@@ -239,7 +252,7 @@ def _action_shuffled_factored_advantage(trajectory: dict[str, Any], *, shuffle_c
 
 
 def build_separation_prior_emergence_audit(
-    *, empowerment_grid: tuple[float, ...] = (0.0, 0.25, 0.5, 0.75, 1.0), seed: int = 5, action_shuffle_count: int = 32
+    *, empowerment_grid: tuple[float, ...] | None = None, seed: int | None = None, action_shuffle_count: int | None = None
 ) -> dict[str, Any]:
     """Audit when a factored self/env model buys predictive accuracy over an unfactored model.
 
@@ -257,6 +270,10 @@ def build_separation_prior_emergence_audit(
     gain to genuine action-contingency rather than to the factored predictor's extra free parameters.
     All verdicts are derived from measured predictor errors.
     """
+    parameters = model_parameters("finite_emergence")
+    empowerment_grid = tuple(parameters["empowerment_grid"]) if empowerment_grid is None else empowerment_grid
+    seed = parameters["seed"] if seed is None else seed
+    action_shuffle_count = parameters["action_shuffle_count"] if action_shuffle_count is None else action_shuffle_count
     rows = []
     full_trajectory = None
     for empowerment in empowerment_grid:

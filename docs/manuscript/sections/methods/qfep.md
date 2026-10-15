@@ -2,6 +2,8 @@ Every symbol introduced in this subsection — the sectorisation map, the bounda
 
 The equation registry covers paper equations 1-14. Each row records the paper section, formal expression, computability status, operational status, paper-to-software bridge, validation artifact, and interpretive boundary. The registry therefore treats the source paper as a formal specification rather than as a set of slogans to be reproduced in code. The operational status map is retained as supplemental governance material so the first numbered result can present the finite QRF boundary model directly.
 
+The computational declarations use Generalized Notation Notation (GNN) to bind each finite model's inputs to a readable source file and hash. Upstream parsing and strict semantic validation precede the project-specific execution contract. For quantum and other finite surrogates, admitted parameters are consumed by the existing NumPy/SciPy engines: GNN supplies specification and validation, while these explicit numerical implementations supply the dynamics, linear algebra, and optimization. Mathematical constants and independent acceptance thresholds remain in code. This division does not imply that the upstream GNN package implements quantum inference or that a validated declaration establishes physical qFEP dynamics.
+
 For stable internal reference, the registry file records all fourteen source equations, while the manuscript anchors the QRF rows used repeatedly by the boundary-channel argument. The sectorisation map $Q$ sends boundary states $B$ to sector labels $S_Q$:
 
 $$

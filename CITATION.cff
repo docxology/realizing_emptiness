@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: If you use this software, please cite it using the metadata from this file.
 title: Realizing Emptiness
 type: software
-version: 2.0.0
+version: 3.0.0
 date-released: '2026-10-14'
 license: MIT
 repository-code: https://github.com/docxology/realizing_emptiness
@@ -22,4 +22,5 @@ keywords:
   - quantum reference frames
   - Bayesian model reduction
   - pymdp
+  - Generalized Notation Notation
 

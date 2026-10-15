@@ -8,6 +8,13 @@ evidence. The [scholarship synthesis](scholarship-expansion.md) explains the
 methodological sources and counterweights. This document specifies the executed
 methods in `simulation.resampling`, `statistical_robustness` and `criticality`.
 
+Canonical experiment settings, seeds, budgets, and calibration inputs are
+declared in packaged GNN specifications and admitted through the shared
+[model registry](gnn-modeling.md). The resampling algorithms and independent
+acceptance thresholds remain in code. The values described below refer to
+the shipped declarations; alternate-model experiments must retain their
+source hashes and rerun the relevant numerical and artifact gates.
+
 ## Estimands and designs
 
 | Output | Estimand | Resampling unit and reference |

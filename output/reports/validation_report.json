@@ -62,6 +62,7 @@
     "exists:output/data/figure_source_map.json": true,
     "exists:output/data/formalism_registry.json": true,
     "exists:output/data/general_measurement_cover_polytope_audit.json": true,
+    "exists:output/data/gnn_model_audit.json": true,
     "exists:output/data/interaction_information_boundary_audit.json": true,
     "exists:output/data/internal_cut_unmeasurability_audit.json": true,
     "exists:output/data/manuscript_claim_audit.json": true,
@@ -210,6 +211,7 @@
     "exists:schemas/figure_source_map.schema.json": true,
     "exists:schemas/formalism_registry.schema.json": true,
     "exists:schemas/general_measurement_cover_polytope_audit.schema.json": true,
+    "exists:schemas/gnn_model_audit.schema.json": true,
     "exists:schemas/interaction_information_boundary_audit.schema.json": true,
     "exists:schemas/internal_cut_unmeasurability_audit.schema.json": true,
     "exists:schemas/manuscript_claim_audit.schema.json": true,
@@ -277,6 +279,8 @@
     "future_public_archive_and_independent_reproduction_blocked": true,
     "general_measurement_cover_polytope_audit_ok": true,
     "generated_outputs_manifested": true,
+    "gnn_categorical_sources_match": true,
+    "gnn_model_audit_ok": true,
     "hydrated_tokens_resolved": true,
     "interaction_information_boundary_audit_ok": true,
     "internal_cut_unmeasurability_audit_ok": true,
@@ -354,6 +358,7 @@
     "schema_valid:output/data/figure_source_map.json": true,
     "schema_valid:output/data/formalism_registry.json": true,
     "schema_valid:output/data/general_measurement_cover_polytope_audit.json": true,
+    "schema_valid:output/data/gnn_model_audit.json": true,
     "schema_valid:output/data/interaction_information_boundary_audit.json": true,
     "schema_valid:output/data/internal_cut_unmeasurability_audit.json": true,
     "schema_valid:output/data/manuscript_claim_audit.json": true,
@@ -431,7 +436,7 @@
     "visual_caption_audit_ok": true,
     "visual_style_audit_ok": true
   },
-  "passed": 429,
+  "passed": 434,
   "schema": "realizing_emptiness.validation_report.v1",
-  "total": 429
+  "total": 434
 }

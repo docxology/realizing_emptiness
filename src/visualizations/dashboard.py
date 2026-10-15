@@ -35,6 +35,7 @@ def _escape(value: object) -> str:
 def build_artifact_dashboard_payload(project_root: Path, source_map: dict[str, Any]) -> dict[str, Any]:
     data_dir = project_root / "output" / "data"
     reports_dir = project_root / "output" / "reports"
+    modeling = _load_json(data_dir / "gnn_model_audit.json")
     roadmap = _load_json(data_dir / "quantum_extension_roadmap.json")
     readiness = _load_json(data_dir / "quantum_roadmap_readiness_matrix.json")
     todo_audit = _load_json(data_dir / "roadmap_todo_audit.json")
@@ -113,7 +114,12 @@ def build_artifact_dashboard_payload(project_root: Path, source_map: dict[str, A
         )
     ]
     return {
-        "schema": "realizing_emptiness.artifact_dashboard_payload.v2",
+        "schema": "realizing_emptiness.artifact_dashboard_payload.v3",
+        "modeling": {
+            "audit_ok": modeling.get("all_controls_pass") is True,
+            "model_count": modeling.get("model_count", 0),
+            "claim_boundary": "GNN specifications with categorical and native finite backends; not empirical evidence",
+        },
         "roadmap": {
             "implemented_count": roadmap.get("implemented_count", 0),
             "future_count": roadmap.get("future_count", 0),
@@ -402,6 +408,10 @@ def render_artifact_dashboard_html(payload: dict[str, Any]) -> str:
     <a href="../figures/graphical_abstract_cover.png"><img src="../figures/graphical_abstract_cover.png" alt="Graphical abstract cover for the static Realizing Emptiness software artifact package."></a>
     <figcaption>Cover graphical abstract for the local finite-software evidence package; not empirical, clinical, neural, awakening, practice-efficacy, or physical qFEP evidence.</figcaption>
   </figure>
+  <h2>GNN specification and execution</h2>
+  <p>Generalized Notation Notation declares the inputs used by the categorical, finite quantum, classical, and statistical models. Upstream parsing and semantic validation precede each numerical backend.</p>
+  <p><strong>{payload["modeling"]["model_count"]} declarations</strong>; model audit: <strong>{"PASS" if payload["modeling"]["audit_ok"] else "FAIL"}</strong>. <a href="../data/gnn_model_audit.json">Inspect specification hashes, consumer bindings, and native inference receipts</a>.</p>
+  <p>{_escape(payload["modeling"]["claim_boundary"])}</p>
   <h2>Argument Arc</h2>
   <p>The no-self-evidence argument as a navigable sequence from boundary screen to active-inference profile execution; each stage links to its lead figure. This is a reading aid over finite-software artifacts, not an empirical or ontological claim.</p>
   {_argument_arc_table(payload["argument_arc"])}

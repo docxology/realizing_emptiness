@@ -34,7 +34,7 @@
       "required": ["python", "inferactively_pymdp", "jax", "jaxlib", "numpy", "scipy"],
       "properties": {
         "python": {"type": "string"},
-        "inferactively_pymdp": {"const": "1.0.3"},
+        "inferactively_pymdp": {"enum": ["1.0.3", "1.0.4"]},
         "jax": {"type": "string"},
         "jaxlib": {"type": "string"},
         "numpy": {"type": "string"},
@@ -43,17 +43,18 @@
       "additionalProperties": false
     },
     "runtime_dependency_check": {
+      "allOf": [{"if": {"properties": {"version": {"const": "1.0.3"}}}, "then": {"properties": {"warnings": {"minItems": 1, "maxItems": 1}}}, "else": {"properties": {"warnings": {"maxItems": 0}}}}],
       "type": "object",
       "required": ["schema", "ok", "version", "required_version", "version_ok", "policy_posterior_normalized", "warnings"],
       "properties": {
         "schema": {"const": "realizing_emptiness.pymdp_runtime_dependency_check.v1"},
-        "required_version": {"const": "1.0.3"}, "version_ok": {"const": true},
+        "required_version": {"enum": ["1.0.3", "1.0.4"]}, "version_ok": {"const": true},
         "agent_class": {"const": "Agent"}, "state_factor_count": {"type": "integer", "minimum": 1},
         "policy_posterior_sum": {"type": "number"}, "policy_posterior_normalized": {"const": true},
         "neg_efe_shape": {"type": "array", "items": {"type": "integer"}}, "vfe_available": {"type": "boolean"},
         "ok": {"const": true},
-        "version": {"const": "1.0.3"},
-        "warnings": {"type": "array", "minItems": 1, "items": {"type": "string"}}
+        "version": {"enum": ["1.0.3", "1.0.4"]},
+        "warnings": {"type": "array", "items": {"type": "string"}}
       },
       "additionalProperties": false
     },

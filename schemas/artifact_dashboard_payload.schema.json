@@ -3,9 +3,10 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "Realizing Emptiness Artifact Dashboard Payload",
   "type": "object",
-  "required": ["schema", "roadmap", "readiness", "todo_audit", "figures", "dependency_graph", "pymdp_runtime", "stochastic_engines", "statistical_robustness", "visual_quality", "method_governance", "source_fit", "claim_context", "claim_redteam", "contract_registry", "review_hardening", "manuscript_audits", "claim_ceiling_rows", "manifest_coverage", "validation_report", "claim_boundary"],
+  "required": ["schema", "modeling", "roadmap", "readiness", "todo_audit", "figures", "dependency_graph", "pymdp_runtime", "stochastic_engines", "statistical_robustness", "visual_quality", "method_governance", "source_fit", "claim_context", "claim_redteam", "contract_registry", "review_hardening", "manuscript_audits", "claim_ceiling_rows", "manifest_coverage", "validation_report", "claim_boundary"],
   "properties": {
-    "schema": {"const": "realizing_emptiness.artifact_dashboard_payload.v2"},
+    "schema": {"const": "realizing_emptiness.artifact_dashboard_payload.v3"},
+    "modeling": {"type": "object", "required": ["audit_ok", "model_count", "claim_boundary"], "properties": {"audit_ok": {"type": "boolean"}, "model_count": {"type": "integer", "minimum": 0}, "claim_boundary": {"type": "string", "pattern": "not empirical"}}, "additionalProperties": false},
     "roadmap": {"type": "object", "required": ["implemented_count", "future_count", "implemented_ids", "future_ids", "blocked_task_ids"], "additionalProperties": true},
     "readiness": {"type": "object", "required": ["all_controls_pass", "future_blocked", "future_ids", "forged_completed_future_row_rejected"], "additionalProperties": true},
     "todo_audit": {"type": "object", "required": ["all_controls_pass", "stale_future_rows", "historical_backlog_rows", "blocked_external_class_violations"], "additionalProperties": true},

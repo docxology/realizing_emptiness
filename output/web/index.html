@@ -1200,6 +1200,17 @@ specification rather than as a set of slogans to be reproduced in code.
 The operational status map is retained as supplemental governance
 material so the first numbered result can present the finite QRF
 boundary model directly.</p>
+<p>The computational declarations use Generalized Notation Notation
+(GNN) to bind each finite model’s inputs to a readable source file and
+hash. Upstream parsing and strict semantic validation precede the
+project-specific execution contract. For quantum and other finite
+surrogates, admitted parameters are consumed by the existing NumPy/SciPy
+engines: GNN supplies specification and validation, while these explicit
+numerical implementations supply the dynamics, linear algebra, and
+optimization. Mathematical constants and independent acceptance
+thresholds remain in code. This division does not imply that the
+upstream GNN package implements quantum inference or that a validated
+declaration establishes physical qFEP dynamics.</p>
 <p>For stable internal reference, the registry file records all fourteen
 source equations, while the manuscript anchors the QRF rows used
 repeatedly by the boundary-channel argument. The sectorisation map <span
@@ -1362,8 +1373,14 @@ The separation-constrained profile restricts labels to the dual
 <code>self</code> and <code>env</code> sectors; the opacified profile
 mixes dual and contextual labels; the post-dual profile searches a
 richer sector vocabulary over body, action, world, other, and care.</p>
-<p>The shipped profile table is fixed by
-<code>src/simulation/qrf_env.py:default_deployments</code>:</p>
+<p>The shipped profile table is declared in the three categorical
+Generalized Notation Notation (GNN) specifications under
+<code>src/modeling/specifications/</code>;
+<code>src/simulation/qrf_env.py:default_deployments</code> reads their
+validated deployment parameters. The shared <code>qrf_boundary</code>
+specification declares the boundary design. This keeps the sector labels
+and numerical model inputs traceable to the same declarative source used
+by the active-inference adapter:</p>
 <div class="table-scroll" role="region" tabindex="0" aria-label="Scrollable data table"><table data-responsive-table="true">
 <colgroup>
 <col style="width: 15%" />
@@ -1559,6 +1576,13 @@ data-cites="friston2018bmr">(<a href="#ref-friston2018bmr"
 role="doc-biblioref">Friston et al. 2018</a>)</span>. Removal is favored
 when metacognitive access makes the separation prior’s accuracy
 contribution dispensable while the complexity cost remains.</p>
+<p>The baseline comparison inputs and sensitivity-grid settings are
+declared in Generalized Notation Notation (GNN) specifications and read
+through the same validated finite-software model registry as the
+categorical profiles. The finite BMR equations and independent sign and
+boundary checks remain in Python. A parameter mutation therefore tests
+whether the declared input changes the real comparison; it does not
+redefine the criterion by which that comparison is checked.</p>
 <p>The expanded simulation layer adds a sensitivity grid over
 observation noise, prior precision, and metacognitive access. This grid
 asks whether the qualitative reduction result survives a broader
@@ -1577,27 +1601,42 @@ externally reviewed priors.</p>
 <h2 data-number="3.5" id="sec:methods-pymdp-generative-models"><span
 class="header-section-number">3.5</span> Profile-Specific pymdp
 Generative Models</h2>
-<p>The <code>pymdp</code> simulation is checked in four linked layers
-<span class="citation"
+<p>Generalized Notation Notation (GNN) supplies the declarative model
+layer for the active-inference simulation. Each QRF profile has a
+packaged specification containing explicit likelihood <code>A</code>,
+transition <code>B</code>, preference <code>C</code>, and initial-prior
+<code>D</code> tensors, together with deployment parameters. The pinned
+upstream GNN Markdown parser and strict semantic validator admit the
+declaration before an upstream canonical partially observable Markov
+decision process (POMDP) tensor contract checks its dimensions and
+probabilities. Transitions use the declared order
+<code>B[next_state, previous_state, action]</code>. The local adapter
+passes these admitted tensors to real <code>pymdp.Agent</code> calls;
+the specification’s source hash binds the model to the input text.
+Grammar validity, numerical execution, and the interpretation of that
+execution remain separate checks.</p>
+<p>The <code>pymdp</code> simulation is then checked in four linked
+layers <span class="citation"
 data-cites="heins2022pymdp dacosta2020discrete">(<a
 href="#ref-heins2022pymdp" role="doc-biblioref">Heins et al. 2022</a>;
 <a href="#ref-dacosta2020discrete" role="doc-biblioref">Da Costa et al.
-2020</a>)</span>. First, a pinned-runtime dependency check verifies
-<code>inferactively-pymdp==1.0.3</code>, imports the JAX-first
-<code>Agent</code> and <code>utils</code> surface, constructs a small
-agent, runs state inference, and confirms policy-posterior
-normalization. Second, the generative-model audit gives each QRF profile
-explicit <code>A</code>, <code>B</code>, <code>C</code>, and
-<code>D</code> arrays, with <code>A</code> mapping hidden QRF state to
-boundary cue, <code>B</code> encoding action-conditioned transitions,
-<code>C</code> encoding preferences, and <code>D</code> encoding the
-initial prior. Third, the deterministic policy trace and runtime
-diagnostics log record posterior state beliefs, policy posteriors,
-expected-free-energy terms, per-step variational free energy, belief and
-policy-posterior entropies, selected action labels, perturbation flags,
-model hashes, normalization residuals, replay metadata, and row-level
-recomputation checks against the saved arrays; the log additionally
-binds its manual temporal-prior step to the library’s own
+2020</a>)</span>. First, a pinned-runtime dependency check verifies the
+interpreter-specific <code>inferactively-pymdp</code> version (1.0.4 on
+Python 3.11; 1.0.3 on Python 3.12 and later supported versions), imports
+the JAX-first <code>Agent</code> surface, constructs a small agent, runs
+state inference, and confirms policy-posterior normalization. Second,
+the generative-model audit records each profile’s admitted
+<code>A</code>, <code>B</code>, <code>C</code>, and <code>D</code>
+arrays, with <code>A</code> mapping hidden QRF state to boundary cue,
+<code>B</code> encoding action-conditioned transitions, <code>C</code>
+encoding preference scores, and <code>D</code> encoding the initial
+prior. Third, the deterministic policy trace and runtime diagnostics log
+record posterior state beliefs, policy posteriors, expected-free-energy
+terms, per-step variational free energy, belief and policy-posterior
+entropies, selected action labels, perturbation flags, model hashes,
+normalization residuals, replay metadata, and row-level recomputation
+checks against the saved arrays; the log additionally binds its manual
+temporal-prior step to the library’s own
 <code>update_empirical_prior</code> so the numpy-transparent shortcut
 cannot diverge from the <code>pymdp</code> convention, and every
 diagnostic control is pinned by an explicit required-key contract so a
@@ -1615,19 +1654,20 @@ separation-constrained state. <code>inspect_boundary</code> keeps the
 opacified state available and permits movement toward either the dual or
 contextual reading. <code>release_prior</code> moves probability toward
 the contextual/post-dual state, with the strength of that movement
-controlled by the profile’s transition-relaxation parameter. These
-action labels are finite transition operators, not reports of inner
+declared in the profile’s explicit transition tensor. These action
+labels are finite transition operators, not reports of inner
 experience.</p>
-<p>Profile-specific action differences enter through the <code>A</code>,
-<code>B</code>, <code>C</code>, and <code>D</code> arrays.
-<code>A</code> combines the profile’s likelihood confidence with
-contextual bias from metacognitive access; <code>B</code> encodes the
-three action-conditioned transition tensors and the profile’s transition
-relaxation; <code>C</code> stores the profile preference vector over
-observations; and <code>D</code> stores the profile’s initial state
-prior. The same policy loop can therefore select different actions
-across profiles because their priors, preferences, and transition costs
-make different policies cheap or costly under expected free energy. This
+<p>Profile-specific action differences enter through the declared
+<code>A</code>, <code>B</code>, <code>C</code>, and <code>D</code>
+arrays. <code>A</code> expresses profile-specific observation confidence
+and contextual bias; <code>B</code> explicitly records the three
+action-conditioned transition matrices; <code>C</code> stores the
+profile preference vector over observations; and <code>D</code> stores
+the profile’s initial state prior. These tensors are read from GNN
+rather than reconstructed from a second set of numerical defaults in
+Python. The same policy loop can therefore select different actions
+across profiles because their priors, preferences, and transitions make
+different policies cheap or costly under expected free energy. This
 makes expected-free-energy policy selection inspectable in the same
 register as the BMR comparison, while preserving the fact that the loop
 ranks finite software deployments rather than ontologies <span
@@ -1636,9 +1676,8 @@ href="#ref-friston2015epistemic" role="doc-biblioref">Friston et al.
 2015</a>; <a href="#ref-parr2022active" role="doc-biblioref">Parr et al.
 2022</a>)</span>. The loop is a single-step perception-action cycle
 (policy length one) iterated over time steps with a fixed generative
-model; multi-step policy planning and parameter learning are
-intentionally outside the v1 finite surrogate, so the static model is a
-deliberate design choice rather than an omission.</p>
+model; multi-step policy planning and parameter learning are outside
+this finite surrogate.</p>
 <p>The runtime dependency check is intentionally limited. It verifies
 that the expected package version, backend imports, agent construction,
 state inference, and policy posterior normalization are live in the
@@ -1647,18 +1686,19 @@ modules so that QRF labels, separation-prior parameters, source-boundary
 language, and expected-free-energy decomposition can be rederived by the
 validator rather than hidden inside a black-box runtime call.</p>
 <p>The stochastic ensemble uses the same expected-free-energy utility as
-the deterministic trace. Hidden states, observations, and actions are
-sampled from the normalized profile-specific <code>A</code>,
-<code>B</code>, <code>C</code>, and <code>D</code> arrays, while null
-controls replace the policy-conditioned observation and action channels
-with uniform draws. The generated ensemble uses <code>128</code>
-replayed runs per profile over <code>48</code> sampled steps, yielding
-<code>36864</code> profile/null rows for finite robustness checks.
-Replayable seeds make the ensemble stochastic rather than arbitrary: a
-fixed seed reproduces run rows exactly, a changed seed changes sampled
-paths, and posterior normalization is checked at every sampled step. The
-robustness layer then compares profile rows with null rows using
-bootstrap intervals <span class="citation"
+the deterministic trace. Hidden states and observations are sampled from
+the normalized profile-specific <code>A</code>, <code>B</code>, and
+<code>D</code> distributions; actions are sampled from policy posteriors
+whose expected-free-energy terms use the <code>C</code> preference
+scores. Null controls replace the policy-conditioned observation and
+action channels with uniform draws. The generated ensemble uses
+<code>128</code> replayed runs per profile over <code>48</code> sampled
+steps, yielding <code>36864</code> profile/null rows for finite
+robustness checks. Replayable seeds make the ensemble stochastic rather
+than arbitrary: a fixed seed reproduces run rows exactly, a changed seed
+changes sampled paths, and posterior normalization is checked at every
+sampled step. The robustness layer then compares profile rows with null
+rows using bootstrap intervals <span class="citation"
 data-cites="efron1979bootstrap">(<a href="#ref-efron1979bootstrap"
 role="doc-biblioref">Efron 1979</a>)</span>, permutation contrasts with
 Holm correction for multiple profile-metric comparisons <span
@@ -2037,14 +2077,14 @@ organization, not the evidence class.</p>
 active-inference reasons. The observed boundary stream is the same kind
 of evidence object, but each profile supplies different sector labels,
 metacognitive access, prior precision, observation preferences, initial
-state priors, and action-conditioned transition relaxation. Under
+state priors, and explicit action-conditioned transitions. Under
 expected free energy, those arrays make <code>stabilize_dual</code>,
 <code>inspect_boundary</code>, and <code>release_prior</code>
 differently costly or attractive. The resulting action-frequency
-differences are therefore model-internal consequences of the declared
-<code>A</code>, <code>B</code>, <code>C</code>, and <code>D</code>
-arrays, not behavioral evidence that a subject has moved through
-psychological, contemplative, or ontological stages.</p>
+differences are therefore model-internal consequences of the
+GNN-declared <code>A</code>, <code>B</code>, <code>C</code>, and
+<code>D</code> arrays, not behavioral evidence that a subject has moved
+through psychological, contemplative, or ontological stages.</p>
 <p>QRF labels are handled in the same way. The labels self, environment,
 body, world, action, other, and care are permitted as relabelings of a
 finite screen, and fig. <a
@@ -4204,6 +4244,12 @@ protocol’s safety boundary is printed on the figure; nothing here is
 therapeutic advice, a claim of realization, a moral prescription, or a
 clinical protocol, and the practice layer stays outcome-independent
 unless reviewed evidence and ethics constraints are added.</p>
+<p>The numerical deltas are declared as Generalized Notation Notation
+(GNN) mapping metadata and read into the practice governance artifact.
+They are not applied to simulation state and do not demonstrate an
+intervention effect. Safety wording and the prohibition on user-facing
+efficacy claims remain in the implementation, independently of those
+editable numerical declarations.</p>
 <h2 data-number="7.7" id="sec:supplement-contemplative-inquiry"><span
 class="header-section-number">7.7</span> Contemplative Inquiry as
 Progressive Opacification</h2>
@@ -4380,8 +4426,8 @@ class="header-section-number">7.8.1</span> Reproducibility Gates</h3>
 BMR sweeps, sensitivity sweeps, criticality and practice maps, figure
 generation, sheaf composition, dashboard and review-response hardening,
 variable hydration, post-hydration hash refresh, and output validation
-in a fixed order. The validation report records <code>429</code> passing
-output checks across <code>429</code> total checks after the latest
+in a fixed order. The validation report records <code>434</code> passing
+output checks across <code>434</code> total checks after the latest
 full-chain run.</p>
 <p>The gates are fail-closed and cover the full surface, one family per
 check:</p>
@@ -4390,6 +4436,11 @@ check:</p>
 <code>data/sources/source_manifest.yaml</code> is verified against
 SHA-256
 <code>94e2335c3a4a37b8d49039b11b45ccda25bad65d4b80aa15428b84abfba699ac</code>.</li>
+<li>Model declarations: <code>gnn_model_audit_ok</code> checks
+source-bound Generalized Notation Notation (GNN) contracts, upstream
+provenance, admitted tensors or finite parameters, and bounded execution
+receipts; model-specific numerical and claim gates remain
+necessary.</li>
 <li>Formalism: all fourteen equations must be mapped to artifacts and
 boundaries.</li>
 <li>QRF: boundary-label indistinguishability holds across admissible
@@ -4441,6 +4492,27 @@ realization, clinical, or neural-measurement language.</li>
 <code>self_evidencing_boundary</code>;
 <code>metacognitive_access_model</code>; and
 <code>artifact_release_readiness</code>.</p>
+<p>The GNN dependency is pinned to version 4.1.0 at commit
+<code>46459949944e3217f8a6a804d4ff8c52829ef275</code> of the Active
+Inference Institute’s Generalized Notation Notation repository. Packaged
+model files and <code>upstream.json</code> retain the source and tool
+identity. Admission rejects missing or duplicate sections, parser
+recovery, malformed connections, invalid dimensions, non-finite
+parameters, and invalid categorical probabilities. Real alternate-file
+controls change an admitted parameter or tensor and check its numerical
+consumer; malformed-file controls must fail. The bounded upstream native
+categorical execution check establishes interoperability for that finite
+model, while the local quantum and finite engines retain their own
+computational checks. These controls test specification-to-execution
+integrity, not scientific truth or empirical validity.</p>
+<p>The dependency’s declared license is CC-BY-NC-SA-4.0, separate from
+this project’s MIT license. The runtime and packaging records must
+establish the actual interpreter, installed dependency revision, and
+availability of specification resources outside the checkout. The
+software supports Python 3.11 through 3.14; publication and rendering
+receipts remain separate from source validation. No new public
+scientific claim ID follows from adding this declarative model
+layer.</p>
 <figure id="fig:manuscript_claim_audit">
 <a class="figure-full-size-link" href="../figures/manuscript_claim_audit.png" target="_blank" rel="noopener" aria-label="Open full-size Figure 47, Manuscript claim audit for citation resolution, public claim-ID visibility"><img src="../figures/manuscript_claim_audit.png" style="width:90.0%"
 alt="Figure 47: Manuscript claim audit for citation resolution, public claim-ID visibility, and forbidden positive-efficacy language. The pass/fail color legend makes the local language gate visible while preserving the boundary that passing bars do not certify empirical truth." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
