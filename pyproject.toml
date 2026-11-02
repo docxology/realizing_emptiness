@@ -8,7 +8,7 @@ version = "3.0.0"
 description = "Research-grade active-inference software foundation for Realizing Emptiness."
 readme = "README.md"
 authors = [{ name = "Daniel Ari Friedman", email = "daniel@activeinference.institute" }]
-requires-python = ">=3.11,<3.15"
+requires-python = ">=3.11"
 license = { file = "LICENSE" }
 classifiers = [
     "Development Status :: 4 - Beta",
