@@ -15,6 +15,8 @@
 | 📚 **Source preprint** | [osf.io/preprints/psyarxiv/m78z2_v1](https://osf.io/preprints/psyarxiv/m78z2_v1) |
 | 📖 **Documentation** | [`docs/`](docs/README.md) |
 
+![Realizing Emptiness Architecture Overview](docs/assets/architecture-overview.svg)
+
 ---
 
 ## State right now (orientation for a cold agent)
