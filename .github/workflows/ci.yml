@@ -32,7 +32,9 @@ jobs:
         with:
           enable-cache: true
       - run: uv sync --frozen --extra dev
-      - run: uv run --frozen pytest tests/ --cov=src --cov-fail-under=90
+      # Two workers: tests/conftest.py keeps every test that shares output/ on one
+      # worker in order; the isolated-copy chain bootstrap runs on the other.
+      - run: uv run --frozen pytest tests/ -n 2 --dist loadgroup --cov=src --cov-fail-under=90
       - run: uv run --frozen python scripts/check_documentation_contract.py --check
       - run: uv run --frozen python scripts/generate_method_inventory.py --check
       - run: uv run --frozen python scripts/generate_equation_crosswalk.py --check
