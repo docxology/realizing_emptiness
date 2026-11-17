@@ -1939,11 +1939,11 @@
       "sha256": "5e037b291eea2f1cbf5223e66346bc94254f69a9b8effe5e9b12260d1176de29"
     },
     {
-      "bytes": 65917,
+      "bytes": 66060,
       "exists": true,
       "kind": "release_support",
       "path": "docs/method-inventory.md",
-      "sha256": "2f9fc4db2279abaf1719a25f7af0031bb99b2803dd11b02aa4f027cd6a85e1e7"
+      "sha256": "ca79540a9ab9cf07997df4d466e3eacdc3726380aee0ed95211e757be2478ce9"
     },
     {
       "bytes": 13063,
@@ -3010,11 +3010,11 @@
       "sha256": "e5a10a121b4c428c2bd6cb022eaad8ce3ed1bd1fbc278f60700b4233c274d8a5"
     },
     {
-      "bytes": 8601,
+      "bytes": 9517,
       "exists": true,
       "kind": "release_support",
       "path": "src/formalism/review_response_release.py",
-      "sha256": "7a0b4149e0a67ac0f2bc4c34adbda7c5297027a278bb36c653f07998948fc034"
+      "sha256": "1624ae9ece6871d4786e35a2cc0e17e0dc8dd38b804712e35411b84dc1012e73"
     },
     {
       "bytes": 2336,
@@ -3787,11 +3787,11 @@
       "sha256": "6c05e3318466af22f452e0a40ec5416fa010cc0843c341a582886b4b579d1acb"
     },
     {
-      "bytes": 14807,
+      "bytes": 17105,
       "exists": true,
       "kind": "release_support",
       "path": "tests/test_release_contracts.py",
-      "sha256": "80d77074ce0d388fc62a8330fcac82eca8c0409ae18cb7882fc8d5f3b0b23b1d"
+      "sha256": "1e04e88efeddd08f3aa364dc5570173fcbbc7d6972ab5778dcfde9ec76358b80"
     },
     {
       "bytes": 5713,

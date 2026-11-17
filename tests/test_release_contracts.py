@@ -277,6 +277,58 @@ def test_release_manifest_drift_names_changed_added_and_removed_files(tmp_path: 
     ]
 
 
+def test_release_manifest_drift_rejects_boolean_number_substitutions(tmp_path: Path) -> None:
+    from formalism.review_response_release import RELEASE_MANIFEST_PATH, release_manifest_drift
+
+    root = _release_project(tmp_path)
+    manifest = root / RELEASE_MANIFEST_PATH
+    recorded = json.loads(manifest.read_text(encoding="utf-8"))
+    recorded["artifact_count"] = False
+    recorded["public_publication_performed"] = 0
+    recorded["controls"]["all_files_exist"] = 1
+    readme_row = next(row for row in recorded["files"] if row["path"] == "README.md")
+    readme_row["exists"] = 1
+    manifest.write_text(json.dumps(recorded), encoding="utf-8")
+
+    assert release_manifest_drift(root) == [
+        "field 'artifact_count' differs",
+        "field 'controls' differs",
+        "field 'public_publication_performed' differs",
+        "README.md: recorded row metadata differs",
+    ]
+
+
+def test_release_manifest_drift_rejects_an_unknown_null_field(tmp_path: Path) -> None:
+    from formalism.review_response_release import RELEASE_MANIFEST_PATH, release_manifest_drift
+
+    root = _release_project(tmp_path)
+    manifest = root / RELEASE_MANIFEST_PATH
+    recorded = json.loads(manifest.read_text(encoding="utf-8"))
+    recorded["unknown"] = None
+    manifest.write_text(json.dumps(recorded), encoding="utf-8")
+
+    assert release_manifest_drift(root) == ["field 'unknown' differs"]
+
+
+def test_release_manifest_drift_rejects_a_missing_nullable_row_field(tmp_path: Path) -> None:
+    from formalism.review_response_release import release_manifest_drift, write_artifact_release_manifest
+
+    root = _release_project(tmp_path)
+    (root / "artifact_manifest.yaml").write_text(
+        "artifacts:\n  - id: null\n    path: evidence.json\n", encoding="utf-8"
+    )
+    (root / "evidence.json").write_text("{}\n", encoding="utf-8")
+    manifest = write_artifact_release_manifest(root)
+    assert release_manifest_drift(root) == []
+
+    recorded = json.loads(manifest.read_text(encoding="utf-8"))
+    evidence_row = next(row for row in recorded["files"] if row["path"] == "evidence.json")
+    assert evidence_row.pop("artifact_id") is None
+    manifest.write_text(json.dumps(recorded), encoding="utf-8")
+
+    assert release_manifest_drift(root) == ["evidence.json: recorded row metadata differs"]
+
+
 def test_release_manifest_drift_rejects_missing_and_malformed_manifests(tmp_path: Path) -> None:
     from formalism.review_response_release import RELEASE_MANIFEST_PATH, release_manifest_drift
 

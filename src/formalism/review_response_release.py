@@ -161,6 +161,22 @@ def write_artifact_release_manifest(project_root: Path) -> Path:
     return json_write(project_root / "output" / "data" / "artifact_release_manifest.json", build_artifact_release_manifest(project_root))
 
 
+def _same_json_value(recorded: Any, current: Any) -> bool:
+    """Compare JSON structures with exact types and object keys."""
+    if type(recorded) is not type(current):
+        return False
+    if isinstance(current, dict):
+        return recorded.keys() == current.keys() and all(
+            _same_json_value(recorded[key], value) for key, value in current.items()
+        )
+    if isinstance(current, list):
+        return len(recorded) == len(current) and all(
+            _same_json_value(recorded_item, current_item)
+            for recorded_item, current_item in zip(recorded, current)
+        )
+    return recorded == current
+
+
 def release_manifest_drift(project_root: Path) -> list[str]:
     """Describe how the recorded release manifest differs from one built now.
 
@@ -180,7 +196,8 @@ def release_manifest_drift(project_root: Path) -> list[str]:
     drift = [
         f"field {key!r} differs"
         for key in sorted(set(recorded) | set(current))
-        if key != "files" and recorded.get(key) != current.get(key)
+        if key != "files"
+        and (key not in recorded or key not in current or not _same_json_value(recorded[key], current[key]))
     ]
     recorded_files = recorded.get("files")
     if not isinstance(recorded_files, list) or not all(isinstance(row, dict) for row in recorded_files):
@@ -194,9 +211,11 @@ def release_manifest_drift(project_root: Path) -> list[str]:
             drift.append(f"{relative}: recorded but not part of the release")
         elif relative not in recorded_rows:
             drift.append(f"{relative}: part of the release but not recorded")
-        elif recorded_rows[relative] != current_rows[relative]:
-            drift.append(
-                f"{relative}: recorded sha256 {recorded_rows[relative].get('sha256')}, "
-                f"on disk {current_rows[relative].get('sha256')}"
-            )
+        elif not _same_json_value(recorded_rows[relative], current_rows[relative]):
+            recorded_hash = recorded_rows[relative].get("sha256")
+            current_hash = current_rows[relative].get("sha256")
+            if _same_json_value(recorded_hash, current_hash):
+                drift.append(f"{relative}: recorded row metadata differs")
+            else:
+                drift.append(f"{relative}: recorded sha256 {recorded_hash}, on disk {current_hash}")
     return drift
