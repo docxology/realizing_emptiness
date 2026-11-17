@@ -36,8 +36,11 @@ jobs:
       # The tests regenerate outputs in place, so check the committed release
       # manifest against the committed files before they run.
       - run: uv run --frozen python scripts/check_release_manifest.py
-      # The source-only chain bootstrap runs in the `bootstrap` job below.
-      - run: uv run --frozen pytest tests/ --deselect "$BOOTSTRAP_TEST" --cov=src --cov-fail-under=90
+      # On 3.14 the full serial suite was faster than the split.
+      - if: matrix.python == '3.14'
+        run: uv run --frozen pytest tests/ --cov=src --cov-fail-under=90
+      - if: matrix.python != '3.14'
+        run: uv run --frozen pytest tests/ --deselect "$BOOTSTRAP_TEST" --cov=src --cov-fail-under=90
       - run: uv run --frozen python scripts/check_documentation_contract.py --check
       - run: uv run --frozen python scripts/generate_method_inventory.py --check
       - run: uv run --frozen python scripts/generate_equation_crosswalk.py --check
@@ -55,7 +58,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        python: ['3.11', '3.12', '3.14']
+        python: ['3.11', '3.12']
     env:
       UV_PYTHON: ${{ matrix.python }}
       UV_LINK_MODE: copy

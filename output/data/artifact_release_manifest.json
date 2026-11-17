@@ -1218,11 +1218,11 @@
       "sha256": "5c3fa444faf98052aa77a2cd21b02322b4c35d3c9ce9640f19b18d0632153011"
     },
     {
-      "bytes": 2638,
+      "bytes": 2765,
       "exists": true,
       "kind": "release_support",
       "path": ".github/workflows/ci.yml",
-      "sha256": "dbadc7f551d2a2affa31221f1e078dcd7da5c5c1874efda9ec56a386c81c2190"
+      "sha256": "cb2aa17b8889be0dba1111eae3785b9a80028932094f3ec2e454990f05b75ff8"
     },
     {
       "bytes": 5,
