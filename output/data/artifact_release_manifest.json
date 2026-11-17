@@ -24,7 +24,7 @@
   "excluded_self_from_hashes": [
     "output/data/artifact_release_manifest.json"
   ],
-  "file_count": 520,
+  "file_count": 522,
   "files": [
     {
       "artifact_id": "artifact_dashboard",
@@ -32,7 +32,7 @@
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/dashboard/index.html",
-      "sha256": "d8ec7697bb40426d185ae2972ca560f249bb0e0aca865573569505cad472975c"
+      "sha256": "f2ba99dafeac32b9c40184156c06d5cfc3dd72d44b247f07ba7b22ee6d29b0b4"
     },
     {
       "artifact_id": "arbitrary_two_qubit_entanglement_audit",
@@ -56,7 +56,7 @@
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/data/artifact_dashboard_payload.json",
-      "sha256": "ebd6a52f16b8af43492f921cb905d6b7ca7a1c151faf57b9f90e36441e80bb2b"
+      "sha256": "4d1d907c809abcff3156b409988fdd4b8226ade7832f5ff957f8ca914d9aaafe"
     },
     {
       "artifact_id": "blackwell_bayes_risk_audit",
@@ -1211,18 +1211,25 @@
       "sha256": "564c26946842a1a3bb5573397e82ef4aa21cca35eb93e46228aa35ec70b49f7f"
     },
     {
-      "bytes": 1265,
+      "bytes": 292,
+      "exists": true,
+      "kind": "release_support",
+      "path": ".github/dependabot.yml",
+      "sha256": "5c3fa444faf98052aa77a2cd21b02322b4c35d3c9ce9640f19b18d0632153011"
+    },
+    {
+      "bytes": 2765,
       "exists": true,
       "kind": "release_support",
       "path": ".github/workflows/ci.yml",
-      "sha256": "8080f251c89c9285b2dd865bca566a532738c48f777abd433f359b46934096b1"
+      "sha256": "cb2aa17b8889be0dba1111eae3785b9a80028932094f3ec2e454990f05b75ff8"
     },
     {
       "bytes": 5,
       "exists": true,
       "kind": "release_support",
       "path": ".python-version",
-      "sha256": "a876e0b10411037a012498b9fe18d9bc1df32ed8b722a13564dc944ddcfd9135"
+      "sha256": "1253c91eccb2aac1c6ff2ac03fd69c1aaa0b221abd3d1bf5b563c12602452b4e"
     },
     {
       "bytes": 1261,
@@ -1232,11 +1239,11 @@
       "sha256": "02b2d929426ee081b29f2777bd03ead98dfef30991182ad0e542021effc6c88a"
     },
     {
-      "bytes": 5432,
+      "bytes": 5519,
       "exists": true,
       "kind": "release_support",
       "path": "AGENTS.md",
-      "sha256": "f6c6395ed22b9ebe387448e3565fc896fac290a97ce89470691aaa09764093a2"
+      "sha256": "395df4feb0ce13b5ae5d0305729079b4a4eaef5bc034d3e0ca11271ffd8c86bb"
     },
     {
       "bytes": 5636,
@@ -1281,18 +1288,18 @@
       "sha256": "7c54e31f5b5af0e71835b3bcdda6abb8461701cc8231084ac5187b6cf893dac4"
     },
     {
-      "bytes": 8896,
+      "bytes": 8981,
       "exists": true,
       "kind": "release_support",
       "path": "README.md",
-      "sha256": "39d0c73e7c48789620c571803306d1b7ed993adc0f61f0dab5b602f30fb2ec74"
+      "sha256": "41b7f58f07a7ac9e095af699a23945e6a6127c901b5f0fb3581e95459efebcba"
     },
     {
-      "bytes": 5346,
+      "bytes": 7985,
       "exists": true,
       "kind": "release_support",
       "path": "TODO.md",
-      "sha256": "249f2073b391f06f82b9ef02d87109d996745bfc421be02e5972a7b8aca508ad"
+      "sha256": "d6d1ba8973bf24d3ed3e80e1b93b8491b629aaada755a2297bf427fc2ba2c1f4"
     },
     {
       "bytes": 21868,
@@ -1932,11 +1939,11 @@
       "sha256": "5e037b291eea2f1cbf5223e66346bc94254f69a9b8effe5e9b12260d1176de29"
     },
     {
-      "bytes": 65755,
+      "bytes": 66060,
       "exists": true,
       "kind": "release_support",
       "path": "docs/method-inventory.md",
-      "sha256": "809ef71074fc1fd448923af235953ee8bd2443961dd3ea62378b8748dbc5840f"
+      "sha256": "ca79540a9ab9cf07997df4d466e3eacdc3726380aee0ed95211e757be2478ce9"
     },
     {
       "bytes": 13063,
@@ -1974,11 +1981,11 @@
       "sha256": "439e4efb06450ca0ca23f3ed5deb87b3abd8e981a5bda4e5450b31409e3f9ee8"
     },
     {
-      "bytes": 12168,
+      "bytes": 12431,
       "exists": true,
       "kind": "release_support",
       "path": "docs/running-the-chain.md",
-      "sha256": "4b6b66ffbc3d7546153343829983f30fdefb87a363c116688bb1ac213114ed79"
+      "sha256": "1a0e150ee26b66472575be90c3d83306a205f5d98403e7284b1c5e92ed288ad9"
     },
     {
       "bytes": 14270,
@@ -2058,11 +2065,11 @@
       "sha256": "de1662ce6172cfaa1b2955bbedd6197e4bcd68d6b0f74d360a9ac962f2e3c8a9"
     },
     {
-      "bytes": 1969,
+      "bytes": 1963,
       "exists": true,
       "kind": "release_support",
       "path": "pyproject.toml",
-      "sha256": "f3c25e00c1ee232d83d7ce4f81a1f4640954afda9def021f7e0f63b67ae6bbe6"
+      "sha256": "d50e7ee44a72a7681c7486335e74a52f132884eda1bc141ae7ca28f1027a4063"
     },
     {
       "bytes": 1430,
@@ -2702,11 +2709,11 @@
       "sha256": "9d69d5f445688e4eda912a56182a152ab0ee95052db383e36f5aa16d1c4fcd0b"
     },
     {
-      "bytes": 4583,
+      "bytes": 4747,
       "exists": true,
       "kind": "release_support",
       "path": "scripts/AGENTS.md",
-      "sha256": "09635adf5ac4e5d59000df034eafc4715c279f504ce7aea0bce4ccd06e5d618b"
+      "sha256": "464b76cd6c39bc1aec0500abadf4d9f98458c471f6f6f49a9045a3b2fc1fa699"
     },
     {
       "bytes": 4887,
@@ -2728,6 +2735,13 @@
       "kind": "release_support",
       "path": "scripts/check_documentation_contract.py",
       "sha256": "031f0eba15e8f9e7d6857acd471b452ba3a1953f173ba09e97bc334fed48da1c"
+    },
+    {
+      "bytes": 880,
+      "exists": true,
+      "kind": "release_support",
+      "path": "scripts/check_release_manifest.py",
+      "sha256": "4ba722907d46ecad6ac9ba75c7a4076aad550f8ae9e78a194a706307fcdbbfd3"
     },
     {
       "bytes": 577,
@@ -2996,11 +3010,11 @@
       "sha256": "e5a10a121b4c428c2bd6cb022eaad8ce3ed1bd1fbc278f60700b4233c274d8a5"
     },
     {
-      "bytes": 6481,
+      "bytes": 9517,
       "exists": true,
       "kind": "release_support",
       "path": "src/formalism/review_response_release.py",
-      "sha256": "e1e2bfc19ad2406d050ff0af048c5434fe2f8d113d4eb3880a8feb07056913aa"
+      "sha256": "1624ae9ece6871d4786e35a2cc0e17e0dc8dd38b804712e35411b84dc1012e73"
     },
     {
       "bytes": 2336,
@@ -3773,11 +3787,11 @@
       "sha256": "6c05e3318466af22f452e0a40ec5416fa010cc0843c341a582886b4b579d1acb"
     },
     {
-      "bytes": 12458,
+      "bytes": 17105,
       "exists": true,
       "kind": "release_support",
       "path": "tests/test_release_contracts.py",
-      "sha256": "e280ab60ae0a1c0dcc1d6634232fb051874f16156be7030f3c609fc63e890ab2"
+      "sha256": "1e04e88efeddd08f3aa364dc5570173fcbbc7d6972ab5778dcfde9ec76358b80"
     },
     {
       "bytes": 5713,
@@ -3808,11 +3822,11 @@
       "sha256": "4310116e6a9543adec0d685ea47cfffb774a0a2081c87864ff9abf405e383715"
     },
     {
-      "bytes": 645487,
+      "bytes": 743853,
       "exists": true,
       "kind": "release_support",
       "path": "uv.lock",
-      "sha256": "d97ea6d6a3c05e784e62d01ed098046a707c0b99c7cb5169847b0531c1663690"
+      "sha256": "2c9248c0994c0faccd22ebff8ceaf36740676c0c073519533b6eda68c5c84e72"
     }
   ],
   "missing_paths": [],
@@ -3824,6 +3838,7 @@
   ],
   "release_scope": "local_private_artifact_bundle_not_public_release",
   "required_commands": [
+    "uv run python scripts/check_release_manifest.py",
     "uv run python scripts/run_full_chain.py",
     "uv run pytest tests/ --cov=src --cov-fail-under=90",
     "uv run python scripts/check_documentation_contract.py --check",

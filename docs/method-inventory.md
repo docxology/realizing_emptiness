@@ -95,10 +95,12 @@
 | src/formalism/review_response_quantum.py | 56 | function | `independent_polytope_matrix` | No docstring. |
 | src/formalism/review_response_quantum.py | 72 | function | `independent_polytope_fit` | No docstring. |
 | src/formalism/review_response_quantum.py | 108 | function | `build_quantum_independent_crosscheck_audit` | No docstring. |
-| src/formalism/review_response_release.py | 47 | function | `manifest_paths` | No docstring. |
-| src/formalism/review_response_release.py | 52 | function | `release_support_paths` | No docstring. |
-| src/formalism/review_response_release.py | 67 | function | `build_artifact_release_manifest` | No docstring. |
-| src/formalism/review_response_release.py | 155 | function | `write_artifact_release_manifest` | No docstring. |
+| src/formalism/review_response_release.py | 51 | function | `manifest_paths` | No docstring. |
+| src/formalism/review_response_release.py | 56 | function | `release_support_paths` | No docstring. |
+| src/formalism/review_response_release.py | 71 | function | `build_artifact_release_manifest` | No docstring. |
+| src/formalism/review_response_release.py | 160 | function | `write_artifact_release_manifest` | No docstring. |
+| src/formalism/review_response_release.py | 164 | function | `_same_json_value` | Compare JSON structures with exact types and object keys. |
+| src/formalism/review_response_release.py | 180 | function | `release_manifest_drift` | Describe how the recorded release manifest differs from one built now. |
 | src/formalism/review_response_writers.py | 14 | function | `initialize_artifact_release_manifest` | No docstring. |
 | src/formalism/review_response_writers.py | 26 | function | `write_review_response_artifacts` | No docstring. |
 | src/formalism/scholarship.py | 58 | function | `load_scholarship_manifest` | Load the scholarship manifest. |

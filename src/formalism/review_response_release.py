@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import json
 from pathlib import Path
 from typing import Any
 
@@ -44,6 +45,9 @@ RELEASE_SUPPORT_DIR_SUFFIXES = {
 }
 
 
+RELEASE_MANIFEST_PATH = "output/data/artifact_release_manifest.json"
+
+
 def manifest_paths(project_root: Path) -> list[dict[str, Any]]:
     manifest = load_yaml(project_root / "artifact_manifest.yaml")
     return list(manifest.get("artifacts", []))
@@ -67,7 +71,7 @@ def release_support_paths(project_root: Path) -> list[str]:
 def build_artifact_release_manifest(project_root: Path) -> dict[str, Any]:
     manifest_artifacts = manifest_paths(project_root)
     support_paths = release_support_paths(project_root)
-    self_path = "output/data/artifact_release_manifest.json"
+    self_path = RELEASE_MANIFEST_PATH
     rows: list[dict[str, Any]] = []
     excluded = []
 
@@ -97,6 +101,7 @@ def build_artifact_release_manifest(project_root: Path) -> dict[str, Any]:
     missing_paths = sorted(row["path"] for row in rows if not row.get("exists"))
     duplicate_paths = sorted(path for path in {row["path"] for row in rows} if [row["path"] for row in rows].count(path) > 1)
     required_commands = [
+        "uv run python scripts/check_release_manifest.py",
         "uv run python scripts/run_full_chain.py",
         "uv run pytest tests/ --cov=src --cov-fail-under=90",
         "uv run python scripts/check_documentation_contract.py --check",
@@ -154,3 +159,63 @@ def build_artifact_release_manifest(project_root: Path) -> dict[str, Any]:
 
 def write_artifact_release_manifest(project_root: Path) -> Path:
     return json_write(project_root / "output" / "data" / "artifact_release_manifest.json", build_artifact_release_manifest(project_root))
+
+
+def _same_json_value(recorded: Any, current: Any) -> bool:
+    """Compare JSON structures with exact types and object keys."""
+    if type(recorded) is not type(current):
+        return False
+    if isinstance(current, dict):
+        return recorded.keys() == current.keys() and all(
+            _same_json_value(recorded[key], value) for key, value in current.items()
+        )
+    if isinstance(current, list):
+        return len(recorded) == len(current) and all(
+            _same_json_value(recorded_item, current_item)
+            for recorded_item, current_item in zip(recorded, current)
+        )
+    return recorded == current
+
+
+def release_manifest_drift(project_root: Path) -> list[str]:
+    """Describe how the recorded release manifest differs from one built now.
+
+    Read-only. Run before anything regenerates outputs, an empty result shows
+    that the recorded manifest describes the files on disk.
+    """
+    path = project_root / RELEASE_MANIFEST_PATH
+    if not path.is_file():
+        return [f"{RELEASE_MANIFEST_PATH} is missing"]
+    try:
+        recorded = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, UnicodeDecodeError, ValueError) as error:
+        return [f"{RELEASE_MANIFEST_PATH} is unreadable: {error}"]
+    if not isinstance(recorded, dict):
+        return [f"{RELEASE_MANIFEST_PATH} is not a JSON object"]
+    current = build_artifact_release_manifest(project_root)
+    drift = [
+        f"field {key!r} differs"
+        for key in sorted(set(recorded) | set(current))
+        if key != "files"
+        and (key not in recorded or key not in current or not _same_json_value(recorded[key], current[key]))
+    ]
+    recorded_files = recorded.get("files")
+    if not isinstance(recorded_files, list) or not all(isinstance(row, dict) for row in recorded_files):
+        return [*drift, "field 'files' is not a list of rows"]
+    recorded_rows = {str(row.get("path")): row for row in recorded_files}
+    if len(recorded_rows) != len(recorded_files):
+        drift.append("field 'files' repeats a path")
+    current_rows = {row["path"]: row for row in current["files"]}
+    for relative in sorted(set(recorded_rows) | set(current_rows)):
+        if relative not in current_rows:
+            drift.append(f"{relative}: recorded but not part of the release")
+        elif relative not in recorded_rows:
+            drift.append(f"{relative}: part of the release but not recorded")
+        elif not _same_json_value(recorded_rows[relative], current_rows[relative]):
+            recorded_hash = recorded_rows[relative].get("sha256")
+            current_hash = current_rows[relative].get("sha256")
+            if _same_json_value(recorded_hash, current_hash):
+                drift.append(f"{relative}: recorded row metadata differs")
+            else:
+                drift.append(f"{relative}: recorded sha256 {recorded_hash}, on disk {current_hash}")
+    return drift

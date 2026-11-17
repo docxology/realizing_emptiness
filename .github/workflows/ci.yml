@@ -26,13 +26,21 @@ jobs:
       UV_PYTHON: ${{ matrix.python }}
       UV_LINK_MODE: copy
       MPLBACKEND: Agg
+      BOOTSTRAP_TEST: tests/test_release_contracts.py::test_chain_bootstraps_without_existing_outputs
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # actions/checkout@v7.0.1
       - uses: astral-sh/setup-uv@68559e99cc807c1eb7e9238fd43a15bba460eec2 # astral-sh/setup-uv@v10.3.3
         with:
           enable-cache: true
       - run: uv sync --frozen --extra dev
-      - run: uv run --frozen pytest tests/ --cov=src --cov-fail-under=90
+      # The tests regenerate outputs in place, so check the committed release
+      # manifest against the committed files before they run.
+      - run: uv run --frozen python scripts/check_release_manifest.py
+      # On 3.14 the full serial suite was faster than the split.
+      - if: matrix.python == '3.14'
+        run: uv run --frozen pytest tests/ --cov=src --cov-fail-under=90
+      - if: matrix.python != '3.14'
+        run: uv run --frozen pytest tests/ --deselect "$BOOTSTRAP_TEST" --cov=src --cov-fail-under=90
       - run: uv run --frozen python scripts/check_documentation_contract.py --check
       - run: uv run --frozen python scripts/generate_method_inventory.py --check
       - run: uv run --frozen python scripts/generate_equation_crosswalk.py --check
@@ -40,3 +48,25 @@ jobs:
       - run: uv run --frozen python scripts/validate_outputs.py
       - if: matrix.python == '3.14'
         run: uv build
+
+  # Rebuilds the whole chain from a source-only copy in a temporary directory,
+  # in a subprocess, so it shares no files with `validate` and adds no coverage
+  # there. Running it on its own runner takes it off validate's critical path.
+  bootstrap:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ['3.11', '3.12']
+    env:
+      UV_PYTHON: ${{ matrix.python }}
+      UV_LINK_MODE: copy
+      MPLBACKEND: Agg
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # actions/checkout@v7.0.1
+      - uses: astral-sh/setup-uv@68559e99cc807c1eb7e9238fd43a15bba460eec2 # astral-sh/setup-uv@v10.3.3
+        with:
+          enable-cache: true
+      - run: uv sync --frozen --extra dev
+      - run: uv run --frozen pytest tests/test_release_contracts.py::test_chain_bootstraps_without_existing_outputs
