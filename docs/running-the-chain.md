@@ -124,6 +124,10 @@ Run after the full chain (or after a targeted regeneration):
 
 Use the canonical verification commands in [AGENTS.md](../AGENTS.md).
 
+- `check_release_manifest.py` — read-only; fails if the committed
+  `output/data/artifact_release_manifest.json` no longer matches the files on
+  disk. Run it before anything regenerates outputs, because the chain and the
+  tests rewrite the manifest in place.
 - `pytest tests/ --cov=src --cov-fail-under=90` — re-runs the real chain against
   real artifacts (no mocks) and enforces the 90% source-coverage floor.
 - `check_documentation_contract.py --check` — fails on documentation-contract

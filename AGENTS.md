@@ -80,6 +80,7 @@ exist from this standalone checkout.
 ## Commands (canonical command list — other docs link here, they do not copy it)
 
 ```bash
+uv run python scripts/check_release_manifest.py  # before anything regenerates outputs
 uv run python scripts/run_full_chain.py
 uv run pytest tests/ --cov=src --cov-fail-under=90
 uv run python scripts/check_documentation_contract.py --check

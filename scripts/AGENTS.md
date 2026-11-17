@@ -28,6 +28,7 @@
 | `generate_review_response_artifacts.py` | `formalism.claim_redteam`, `formalism.review_response`, `visualizations.dashboard` | review-response + release-manifest artifacts |
 | `validate_outputs.py` | `gates.validation` | `output/reports/validation_report.json` |
 | `check_documentation_contract.py` | `gates.validation` | documentation-contract check |
+| `check_release_manifest.py` | `formalism.review_response_release` | read-only check that `output/data/artifact_release_manifest.json` matches the files on disk |
 
 ## Chain order (run_full_chain.py)
 

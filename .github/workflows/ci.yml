@@ -33,6 +33,9 @@ jobs:
         with:
           enable-cache: true
       - run: uv sync --frozen --extra dev
+      # The tests regenerate outputs in place, so check the committed release
+      # manifest against the committed files before they run.
+      - run: uv run --frozen python scripts/check_release_manifest.py
       # The source-only chain bootstrap runs in the `bootstrap` job below.
       - run: uv run --frozen pytest tests/ --deselect "$BOOTSTRAP_TEST" --cov=src --cov-fail-under=90
       - run: uv run --frozen python scripts/check_documentation_contract.py --check
