@@ -1222,7 +1222,7 @@
       "exists": true,
       "kind": "release_support",
       "path": ".github/workflows/ci.yml",
-      "sha256": "cb2aa17b8889be0dba1111eae3785b9a80028932094f3ec2e454990f05b75ff8"
+      "sha256": "3eb6ccccafd2536432fc94587dad5692d06d9310945dab17feeeb50dd7bfb9cf"
     },
     {
       "bytes": 5,
