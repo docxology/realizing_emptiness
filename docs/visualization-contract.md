@@ -40,7 +40,7 @@ source map, surfaced in the dashboard Visual QA block, and rejected by
 validation when any count is nonzero. The shared palette fixes role semantics
 across the manuscript: pass/fail, keep/prune, finite/blocked, stochastic/null,
 quantum, QRF, source, and boundary colors cannot drift by figure.
-Root `DESIGN.md` is the reader-facing visual contract for those tokens; the
+`docs/DESIGN.md` is the reader-facing visual contract for those tokens; the
 source of truth remains `src/visualizations/style.py`, and the generated visual
 audits verify that figures follow it.
 

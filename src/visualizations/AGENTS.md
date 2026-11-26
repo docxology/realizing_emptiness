@@ -1,7 +1,7 @@
 # AGENTS.md - src/visualizations
 
 Deterministic figures and visual-governance audits. Read the root
-[`AGENTS.md`](../../AGENTS.md) Source Contract and root [`DESIGN.md`](../../DESIGN.md)
+[`AGENTS.md`](../../AGENTS.md) Source Contract and [`DESIGN.md`](../../docs/DESIGN.md)
 first.
 
 ## Adding a figure (touch every call site)
@@ -12,7 +12,7 @@ first.
 2. `style.py`: add a `FIGURE_RENDER_CONTRACTS` entry (roles drawn from
    `SEMANTIC_COLORS`, `panel_count >= 1`, at least one of legend/colorbar,
    `min_font_pt` at or above the shared readable floor). If the semantic role
-   or visual pattern is new, update root `DESIGN.md` in the same change.
+   or visual pattern is new, update `docs/DESIGN.md` in the same change.
 3. `figures.yaml`: add `filename`, `caption`, `visual_encoding`, `alt_text`.
    Caption must be >=120 chars and contain a boundary term (`not empirical`,
    `surrogate`, `proxy`, `source`, `claim`, `boundary`, `finite`) and an encoding

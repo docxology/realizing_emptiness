@@ -35,7 +35,7 @@ exist from this standalone checkout.
 - Figure integrity is audited through `output/data/figure_integrity_audit.json`;
   do not add or modify figures without regenerating the source map and integrity
   audit.
-- Visual design is governed by root `DESIGN.md` and
+- Visual design is governed by `docs/DESIGN.md` and
   `src/visualizations/style.py`; do not introduce colors, tiny labels, figure
   layouts, or dashboard patterns that bypass the semantic palette, render
   contracts, visual-style audit, and legibility audit.
@@ -90,10 +90,5 @@ uv run python scripts/compose_manuscript.py --validate-only --strict
 uv run python scripts/validate_outputs.py
 ```
 
-Render from the sibling template checkout:
-
-```bash
-cd <template-checkout>
-uv run python scripts/pipeline/stage_03_render.py --project <verified-qualifier>
-# Resolve the actual sidecar qualifier per docs/running-the-chain.md first.
-```
+Render and validate the canonical manuscript with the
+[pinned Template workflow](docs/running-the-chain.md#render-and-manual-qa).

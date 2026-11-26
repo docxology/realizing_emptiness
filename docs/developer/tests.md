@@ -28,5 +28,5 @@ negative controls (flipping a control flips the headline verdict).
 ## Running
 
 Run the canonical coverage command from the project root using `uv`, as listed
-in [AGENTS.md](../AGENTS.md). Tests use the selected runtime's dependencies;
+in [AGENTS.md](../../AGENTS.md). Tests use the selected runtime's dependencies;
 the pytest configuration must not prepend another environment's site-packages.

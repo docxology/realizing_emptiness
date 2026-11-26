@@ -79,7 +79,7 @@
     {
       "boundary": "future public archive and blinded or independent reproduction require explicit publication approval; not empirical and not completed locally",
       "evidence_paths": [
-        "TODO.md",
+        "docs/TODO.md",
         "tasks.yaml"
       ],
       "gate": "future_public_archive_and_independent_reproduction_blocked",

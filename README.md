@@ -9,7 +9,7 @@
 
 | | |
 | --- | --- |
-| **Version** | v3.0.0; [changes](CHANGELOG.md) and [release validation](docs/release-validation.md) |
+| **Version** | v3.0.0; [changes](docs/CHANGELOG.md) and [release validation](docs/release-validation.md) |
 | **Archived v1.0.0 (Zenodo)** | [10.5281/zenodo.20834847](https://doi.org/10.5281/zenodo.20834847); [concept DOI](https://doi.org/10.5281/zenodo.20834846). A new version DOI is not yet recorded. |
 | **Manuscript PDF** | [`realizing_emptiness_combined.pdf`](output/pdf/realizing_emptiness_combined.pdf) · [latest release](https://github.com/docxology/realizing_emptiness/releases/latest) |
 | 📚 **Source preprint** | [osf.io/preprints/psyarxiv/m78z2_v1](https://osf.io/preprints/psyarxiv/m78z2_v1) |
@@ -30,7 +30,7 @@
 - **Measured status:** use the [release validation record](docs/release-validation.md),
   the CI run for the commit, and `output/reports/validation_report.json`.
   Test counts and coverage are measured at validation time.
-- **Next actions / backlog:** [TODO.md](TODO.md) is the single canonical backlog — including the five blocked-external-evidence classes and any local, unblocked work.
+- **Next actions / backlog:** [TODO.md](docs/TODO.md) is the single canonical backlog — including the five blocked-external-evidence classes and any local, unblocked work.
 - **Commands:** the canonical command list lives in [AGENTS.md](AGENTS.md) (Commands section).
 
 ## What this is

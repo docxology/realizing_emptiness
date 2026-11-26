@@ -33,7 +33,7 @@ surrogate. Keep claim-bounding language in the prose, not just in gates.
 
 ## Figures
 
-- Fragments use `![short](../output/figures/<id>.png){#fig:<id>}` as a
+- Fragments use `../output/figures/<id>.png` with a `fig:<id>` identifier as a
   composition token; these paths are not resolved from the fragment directory.
   The composer writes `../../output/figures/` paths valid from `docs/manuscript/`,
   and hydration rebases them to `../figures/` in `output/manuscript/`. The short caption

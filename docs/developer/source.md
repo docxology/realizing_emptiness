@@ -12,11 +12,11 @@ controls and a `claim_boundary`.
 
 | Package | Role |
 | --- | --- |
-| [`formalism/`](formalism/README.md) | Paper-source registry, equation 1-14 surrogates, QRF/BMR/free-energy data models, scholarship matrix, claim ledgers, evidence-ceiling stress, source-argument coverage |
-| [`simulation/`](simulation/README.md) | Boundary-channel environment, BMR sweeps, sensitivity grid, finite quantum surrogates, `pymdp` profiles with explicit `A/B/C/D` arrays and runtime dependency diagnostics, seeded stochastic ensembles, criticality/compassion/emergence surrogates, statistical robustness |
-| [`visualizations/`](visualizations/README.md) | Deterministic figure generation, figure source map, semantic-style/caption/legibility/accessibility audits, figure-integrity hashing, static dashboard, rendered-caption sync |
-| [`gates/`](gates/README.md) | Fail-closed output/manuscript/source/documentation validators, artifact-contract registry, roadmap-TODO and validation-dependency-graph audits |
-| [`practice/`](practice/README.md) | Practice protocol specs mapped to model interventions, with `allow_user_facing_claims=false` |
+| [`formalism/`](formalism.md) | Paper-source registry, equation 1-14 surrogates, QRF/BMR/free-energy data models, scholarship matrix, claim ledgers, evidence-ceiling stress, source-argument coverage |
+| [`simulation/`](simulation.md) | Boundary-channel environment, BMR sweeps, sensitivity grid, finite quantum surrogates, `pymdp` profiles with explicit `A/B/C/D` arrays and runtime dependency diagnostics, seeded stochastic ensembles, criticality/compassion/emergence surrogates, statistical robustness |
+| [`visualizations/`](visualizations.md) | Deterministic figure generation, figure source map, semantic-style/caption/legibility/accessibility audits, figure-integrity hashing, static dashboard, rendered-caption sync |
+| [`gates/`](gates.md) | Fail-closed output/manuscript/source/documentation validators, artifact-contract registry, roadmap-TODO and validation-dependency-graph audits |
+| [`practice/`](practice.md) | Practice protocol specs mapped to model interventions, with `allow_user_facing_claims=false` |
 
 `__init__.py` exports the five subpackages as `__all__`.
 

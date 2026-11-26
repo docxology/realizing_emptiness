@@ -6,6 +6,6 @@ external GNN implementation. `registry.py` admits sources through the upstream
 parser, semantic checks, and categorical tensor contract. `audit.py` records
 source and implementation hashes plus real upstream categorical execution.
 
-See the [modeling guide](../../docs/gnn-modeling.md) for authoring, backend scope,
+See the [modeling guide](../gnn-modeling.md) for authoring, backend scope,
 controlled overrides, package resources, and validation. The root
 [source contract](../../AGENTS.md) governs scientific claims and regeneration.
