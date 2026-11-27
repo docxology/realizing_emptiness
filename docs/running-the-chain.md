@@ -154,7 +154,7 @@ chain first when generating fresh research inputs. It composes the canonical
 `docs/manuscript/` sources and writes the data, figures, and hydrated render
 copies under `output/`.
 
-Use a dedicated checkout for reproduction so it can overwrite the generated
+Use a dedicated checkout in a physical directory named `realizing_emptiness` to regenerate
 outputs without changing the archived copies in your primary checkout. From
 that checkout, register it once and verify the resolved path:
 
