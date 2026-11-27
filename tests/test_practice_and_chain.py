@@ -327,7 +327,7 @@ def test_layout_oracle_rejects_legend_axis_collision() -> None:
 
 def test_root_design_contract_tracks_visual_semantics(pytestconfig) -> None:
     root: Path = pytestconfig.realizing_emptiness_root
-    design_path = root / "DESIGN.md"
+    design_path = root / "docs/DESIGN.md"
     assert design_path.exists()
     design = design_path.read_text(encoding="utf-8")
     assert "Realizing Emptiness Design Contract" in design
@@ -741,7 +741,8 @@ def test_roadmap_blocked_class_coverage_control_has_teeth(pytestconfig, tmp_path
     root: Path = pytestconfig.realizing_emptiness_root
     # Real no-mocks fixture: mirror the three files the audit reads into a temp project.
     (tmp_path / "output" / "data").mkdir(parents=True)
-    (tmp_path / "TODO.md").write_text((root / "TODO.md").read_text(encoding="utf-8"), encoding="utf-8")
+    (tmp_path / "docs").mkdir(exist_ok=True)
+    (tmp_path / "docs/TODO.md").write_text((root / "docs/TODO.md").read_text(encoding="utf-8"), encoding="utf-8")
     (tmp_path / "output" / "data" / "quantum_extension_roadmap.json").write_text(
         (root / "output" / "data" / "quantum_extension_roadmap.json").read_text(encoding="utf-8"), encoding="utf-8"
     )
@@ -754,12 +755,13 @@ def test_roadmap_blocked_class_coverage_control_has_teeth(pytestconfig, tmp_path
     assert pruned_audit["controls"]["all_blocked_external_task_ids_present_and_blocked"] is False
     assert "re-13" in pruned_audit["missing_blocked_task_ids"]
     assert pruned_audit["all_controls_pass"] is False
-    historical_todo = (root / "TODO.md").read_text(encoding="utf-8").replace(
+    historical_todo = (root / "docs/TODO.md").read_text(encoding="utf-8").replace(
         "### Blocked external-evidence classes",
         "Built since the review: historical backlog row.\\n\\n### Blocked external-evidence classes",
         1,
     )
-    (tmp_path / "TODO.md").write_text(historical_todo, encoding="utf-8")
+    (tmp_path / "docs").mkdir(exist_ok=True)
+    (tmp_path / "docs/TODO.md").write_text(historical_todo, encoding="utf-8")
     (tmp_path / "tasks.yaml").write_text(yaml.safe_dump(tasks), encoding="utf-8")
     historical_audit = build_roadmap_todo_audit(tmp_path)
     assert historical_audit["controls"]["todo_backlog_has_no_historical_completion_rows"] is False

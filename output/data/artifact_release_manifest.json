@@ -24,7 +24,7 @@
   "excluded_self_from_hashes": [
     "output/data/artifact_release_manifest.json"
   ],
-  "file_count": 522,
+  "file_count": 525,
   "files": [
     {
       "artifact_id": "artifact_dashboard",
@@ -204,11 +204,11 @@
     },
     {
       "artifact_id": "external_review_response_audit",
-      "bytes": 5214,
+      "bytes": 5219,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/data/external_review_response_audit.json",
-      "sha256": "055253f4a4e1d61e44507f646b12c3ebd292f86671d5d1d14b17a12bdcaee882"
+      "sha256": "ecfb900543f6eef21f0ee06990436aadc83af77aad93c3248ecf669227cedba2"
     },
     {
       "artifact_id": "figure_integrity_audit",
@@ -1239,18 +1239,11 @@
       "sha256": "02b2d929426ee081b29f2777bd03ead98dfef30991182ad0e542021effc6c88a"
     },
     {
-      "bytes": 5519,
+      "bytes": 5413,
       "exists": true,
       "kind": "release_support",
       "path": "AGENTS.md",
-      "sha256": "395df4feb0ce13b5ae5d0305729079b4a4eaef5bc034d3e0ca11271ffd8c86bb"
-    },
-    {
-      "bytes": 5636,
-      "exists": true,
-      "kind": "release_support",
-      "path": "CHANGELOG.md",
-      "sha256": "bb8f20d67ed5b0bae7c11d05d4980544ecf1b1fc946afebd4f83a20c7d84d0ef"
+      "sha256": "b177163d700ca5d214d86ee8005e655c1e892139add4420c4e67c830c7d9815d"
     },
     {
       "bytes": 715,
@@ -1260,20 +1253,6 @@
       "sha256": "045bd196eb13e6f5accde889c670444a49008c9bc4eb3a6aec6bffc1455b9606"
     },
     {
-      "bytes": 5336,
-      "exists": true,
-      "kind": "release_support",
-      "path": "DESIGN.md",
-      "sha256": "5bad7f416dc86bb3e377cd4188aaee8c1a713f372b9c5daa71bd346a8cd55de5"
-    },
-    {
-      "bytes": 1149,
-      "exists": true,
-      "kind": "release_support",
-      "path": "ISA.md",
-      "sha256": "875799779cb124ddf1f21470cbe4a3ad70fd75ad1d7dac1c2b029183d2010f07"
-    },
-    {
       "bytes": 1227,
       "exists": true,
       "kind": "release_support",
@@ -1281,25 +1260,18 @@
       "sha256": "918c8648b9931f8e8a874339bd7c8a4f5376b49baa52c8ab212314e0049ebcd1"
     },
     {
-      "bytes": 549,
+      "bytes": 517,
       "exists": true,
       "kind": "release_support",
       "path": "MANIFEST.in",
-      "sha256": "7c54e31f5b5af0e71835b3bcdda6abb8461701cc8231084ac5187b6cf893dac4"
+      "sha256": "1d14f393390381e7debdd59fcd69852803127acbf519950c73ddfc1dc5b17efa"
     },
     {
-      "bytes": 8981,
+      "bytes": 8991,
       "exists": true,
       "kind": "release_support",
       "path": "README.md",
-      "sha256": "41b7f58f07a7ac9e095af699a23945e6a6127c901b5f0fb3581e95459efebcba"
-    },
-    {
-      "bytes": 7985,
-      "exists": true,
-      "kind": "release_support",
-      "path": "TODO.md",
-      "sha256": "d6d1ba8973bf24d3ed3e80e1b93b8491b629aaada755a2297bf427fc2ba2c1f4"
+      "sha256": "698aa1a68ae92037a9b791bea414534922e6364760c2c6c6705d086dff788aad"
     },
     {
       "bytes": 21868,
@@ -1330,25 +1302,11 @@
       "sha256": "45b8c29b7dd2fac2235ff859f0daa53198dcba25233de71ffef3bc32b294b24c"
     },
     {
-      "bytes": 969,
-      "exists": true,
-      "kind": "release_support",
-      "path": "data/README.md",
-      "sha256": "aed26839bc007032b0889a0863d7f350af709b17a0847369fb6de88619540fc4"
-    },
-    {
       "bytes": 1133,
       "exists": true,
       "kind": "release_support",
       "path": "data/sources/AGENTS.md",
       "sha256": "195a3efbfc582e1ab03fc304fd8c11b757c2513b74960925264f55436781b58c"
-    },
-    {
-      "bytes": 1241,
-      "exists": true,
-      "kind": "release_support",
-      "path": "data/sources/README.md",
-      "sha256": "3eb0a6c4ff81280ef2dcbea12abad1114c0da2655a5833b16c75aaeed6899bab"
     },
     {
       "bytes": 57284,
@@ -1372,11 +1330,39 @@
       "sha256": "eb396d1b0053da6141fd0fd1493ebf9e1660c5584e71f8d6f02c752970eee8d9"
     },
     {
-      "bytes": 6060,
+      "bytes": 5636,
+      "exists": true,
+      "kind": "release_support",
+      "path": "docs/CHANGELOG.md",
+      "sha256": "bb8f20d67ed5b0bae7c11d05d4980544ecf1b1fc946afebd4f83a20c7d84d0ef"
+    },
+    {
+      "bytes": 5336,
+      "exists": true,
+      "kind": "release_support",
+      "path": "docs/DESIGN.md",
+      "sha256": "5bad7f416dc86bb3e377cd4188aaee8c1a713f372b9c5daa71bd346a8cd55de5"
+    },
+    {
+      "bytes": 1149,
+      "exists": true,
+      "kind": "release_support",
+      "path": "docs/ISA.md",
+      "sha256": "875799779cb124ddf1f21470cbe4a3ad70fd75ad1d7dac1c2b029183d2010f07"
+    },
+    {
+      "bytes": 6399,
       "exists": true,
       "kind": "release_support",
       "path": "docs/README.md",
-      "sha256": "1d0a63eec496eb397516899f3dec6844031854e1afa0f30b96e634f3c54746c8"
+      "sha256": "199f4c3cdee46b19ec45ed7b1d112d2640bafb5c88819192eb2ad03736272e43"
+    },
+    {
+      "bytes": 7923,
+      "exists": true,
+      "kind": "release_support",
+      "path": "docs/TODO.md",
+      "sha256": "e2264878510ae8726cad7d30043cb1e3ebc4e72c943593cbf5f839efe5f7934f"
     },
     {
       "bytes": 534361,
@@ -1400,11 +1386,116 @@
       "sha256": "4a018c4c794527291acb7f321195bf9f9cfb3e0997a1f987a9681469860cdb3b"
     },
     {
+      "bytes": 17912,
+      "exists": true,
+      "kind": "release_support",
+      "path": "docs/assets/architecture-overview.svg",
+      "sha256": "4544e8bdb4433e88f73be127d75d8c990393f0c766d9bcebf8d809105883e281"
+    },
+    {
+      "bytes": 433,
+      "exists": true,
+      "kind": "release_support",
+      "path": "docs/developer/README.md",
+      "sha256": "324dea9866b4b254ae1eeb8f621dac447532fe7f0ee3e8aec6e5d50e12d3dce3"
+    },
+    {
+      "bytes": 979,
+      "exists": true,
+      "kind": "release_support",
+      "path": "docs/developer/data.md",
+      "sha256": "b17434bf2a2f819741d599f785108fef936779a7becf2874f516c59dd955939c"
+    },
+    {
+      "bytes": 2742,
+      "exists": true,
+      "kind": "release_support",
+      "path": "docs/developer/formalism.md",
+      "sha256": "04d06a3025289a1669377f6c395ed6bf826f28121c6800d6e499fabb69ea59b8"
+    },
+    {
+      "bytes": 2024,
+      "exists": true,
+      "kind": "release_support",
+      "path": "docs/developer/gates.md",
+      "sha256": "8e698cdac47cd6c48e96b14ef5bfd737dc9abe782598cdfdc25ef0c8eb7ee4e8"
+    },
+    {
+      "bytes": 634,
+      "exists": true,
+      "kind": "release_support",
+      "path": "docs/developer/modeling.md",
+      "sha256": "288517649dcbe8ac9e4f09e5c554d27f2f4aaca424ba54fdbf7de71d208c31f1"
+    },
+    {
+      "bytes": 1166,
+      "exists": true,
+      "kind": "release_support",
+      "path": "docs/developer/practice.md",
+      "sha256": "fa03b943caae2e09aa89ad9af1f4d0fbae1871c4238d107488f600d73de1a247"
+    },
+    {
+      "bytes": 1517,
+      "exists": true,
+      "kind": "release_support",
+      "path": "docs/developer/schemas.md",
+      "sha256": "991f1e31e9abd160e2398e90a633a5af60bd5ad86f3afeb86076336ddd4b5b42"
+    },
+    {
+      "bytes": 4887,
+      "exists": true,
+      "kind": "release_support",
+      "path": "docs/developer/scripts.md",
+      "sha256": "ecf7c4aa7a7899e628a6b2a0906fd6d6934dc2165eeaece7cf293e7ad024af73"
+    },
+    {
+      "bytes": 4999,
+      "exists": true,
+      "kind": "release_support",
+      "path": "docs/developer/simulation.md",
+      "sha256": "c83a2bd6d95098298b6ebedf523d6cc14943497e831413988e6c788ab3045e38"
+    },
+    {
+      "bytes": 2127,
+      "exists": true,
+      "kind": "release_support",
+      "path": "docs/developer/source.md",
+      "sha256": "fc54c5e150a9888940ffc0d8a56817462e6605c2adf9227b8af3252bac9ad233"
+    },
+    {
+      "bytes": 1241,
+      "exists": true,
+      "kind": "release_support",
+      "path": "docs/developer/sources.md",
+      "sha256": "3eb0a6c4ff81280ef2dcbea12abad1114c0da2655a5833b16c75aaeed6899bab"
+    },
+    {
+      "bytes": 2110,
+      "exists": true,
+      "kind": "release_support",
+      "path": "docs/developer/tests.md",
+      "sha256": "bf75c9335b8a21a289349e24d67f3cd63913c1d1e3b138d75e306220babdcaee"
+    },
+    {
+      "bytes": 2295,
+      "exists": true,
+      "kind": "release_support",
+      "path": "docs/developer/visualizations.md",
+      "sha256": "461c98af2452ec5e570723531b033b8dcd1deb331a256d8f52558a5100a7bbc1"
+    },
+    {
       "bytes": 5862,
       "exists": true,
       "kind": "release_support",
       "path": "docs/equation-crosswalk.md",
       "sha256": "0a80148037219e3cdd739ec8be83d0ae1259a222842860146cafd9723d05f5eb"
+    },
+    {
+      "bytes": 2387,
+      "exists": true,
+      "kind": "release_support",
+      "path": "docs/experiment-plan.yaml",
+      "sha256": "d055cd14cb46eb5a4a9ca4029f955cc35666d261346f3c13aae981e6a8f8037b"
     },
     {
       "bytes": 7628,
@@ -1435,18 +1526,18 @@
       "sha256": "b6b09db8e5009c6bfbf4665356112dff3f587ce96d482904f46600d83a5613b4"
     },
     {
-      "bytes": 26134,
+      "bytes": 26151,
       "exists": true,
       "kind": "release_support",
       "path": "docs/manuscript/02_methods.md",
-      "sha256": "9f6aa7700597a3c48eae79780e5a1f4d0131973ab97e81f3885b4b20662d390c"
+      "sha256": "ccdf914b0c9a27cba642123be0624de94fc56e83f97c3989130dd873ca735712"
     },
     {
-      "bytes": 15889,
+      "bytes": 15923,
       "exists": true,
       "kind": "release_support",
       "path": "docs/manuscript/03_results.md",
-      "sha256": "541179709a3a7311a5910b3cbe88056e1ec637de649ddbdec5c972b18e213888"
+      "sha256": "1275e6793a1a45dc35711bda498a4617c84fd5f25aaeb8b3f4562f150aa9c377"
     },
     {
       "bytes": 29462,
@@ -1463,11 +1554,11 @@
       "sha256": "51262e555b15eeac344a2e9c6c0caed850ef2819a8cd45896b01161127d1139e"
     },
     {
-      "bytes": 89074,
+      "bytes": 89100,
       "exists": true,
       "kind": "release_support",
       "path": "docs/manuscript/06_supplement.md",
-      "sha256": "675a807d43be3406602952583d3924f55a641646964ac3f4a949a8465b65024d"
+      "sha256": "2081b5913d4fd47f9a588d90e32d3705f85a8631aa107f01b04bb6bfe2730e7f"
     },
     {
       "bytes": 32,
@@ -1477,11 +1568,11 @@
       "sha256": "be5b6ee9a9353fa6631b8e563254b883c490a9d0550667ecc50e3ecc8b1da8be"
     },
     {
-      "bytes": 2667,
+      "bytes": 2675,
       "exists": true,
       "kind": "release_support",
       "path": "docs/manuscript/AGENTS.md",
-      "sha256": "b578280d5b61993cc3718faec539d701c475f6a75fadb379e38e7884af05a4d1"
+      "sha256": "6248b04defa2279f2ba1b5c887bd77727622a9cd05f1c18288184b2dc03deb73"
     },
     {
       "bytes": 351,
@@ -1491,11 +1582,11 @@
       "sha256": "d7934120cd4561103f96d7f9eeee828c7421f3d01e13bf267afff96a72ce1109"
     },
     {
-      "bytes": 4311,
+      "bytes": 4259,
       "exists": true,
       "kind": "release_support",
       "path": "docs/manuscript/README.md",
-      "sha256": "e6d46e29d37a101ed4e60e01200ad73daa4e4452c5366086d8372aa06a34479b"
+      "sha256": "8a37ad4fea662ef2f78cbab800a74f4315d7412ebc89a9e4d0756d3ca869155f"
     },
     {
       "bytes": 1048,
@@ -1757,11 +1848,11 @@
       "sha256": "eab7f296e473c7e740954f5a4c2b1c348834d254b68c962581713e7660bedb1a"
     },
     {
-      "bytes": 7486,
+      "bytes": 7503,
       "exists": true,
       "kind": "release_support",
       "path": "docs/manuscript/sections/methods/qfep.md",
-      "sha256": "a0a4ecbe6b62173de73ffeb70f0531a2acead1736809d70443b84cfab8ac9985"
+      "sha256": "8bb5cf1f811688189c9dcb4880bcfe3f2cefb0afbfedf9936f28b95beea96add"
     },
     {
       "bytes": 5085,
@@ -1820,11 +1911,11 @@
       "sha256": "15852ab54b94a6149eb51717cd244ce438725c51647e84ec2ce9881c907745a7"
     },
     {
-      "bytes": 3125,
+      "bytes": 3159,
       "exists": true,
       "kind": "release_support",
       "path": "docs/manuscript/sections/results/qrf.md",
-      "sha256": "9c5f5904530789d65301b71059d3848ea50e1d960ab5f26037bb0ed0aaed11cd"
+      "sha256": "3a67bdbcca1663bc2df2c67f5a30e765479f28d8f749cfce49eb7ee7b66e2f11"
     },
     {
       "bytes": 1102,
@@ -1855,11 +1946,11 @@
       "sha256": "5233274bee1be7514e46de7d680a0d934da3aa9825dce8f1085d881b740a73bd"
     },
     {
-      "bytes": 7534,
+      "bytes": 7560,
       "exists": true,
       "kind": "release_support",
       "path": "docs/manuscript/sections/supplement/contemplative_inquiry.md",
-      "sha256": "82efeeda885e926d2cfd0f91efef99bf4bddc9674ce15873ee61ccd23707ece4"
+      "sha256": "20ca07a591cf46b4d7a21c85248d0e8361998e726e8c3ed9fa24b062d062da6b"
     },
     {
       "bytes": 7222,
@@ -1939,11 +2030,11 @@
       "sha256": "5e037b291eea2f1cbf5223e66346bc94254f69a9b8effe5e9b12260d1176de29"
     },
     {
-      "bytes": 66060,
+      "bytes": 66222,
       "exists": true,
       "kind": "release_support",
       "path": "docs/method-inventory.md",
-      "sha256": "ca79540a9ab9cf07997df4d466e3eacdc3726380aee0ed95211e757be2478ce9"
+      "sha256": "1699108139bfc57766d656a2a2a88225303f841b504e9158ca190cb2c9b1df89"
     },
     {
       "bytes": 13063,
@@ -1981,11 +2072,11 @@
       "sha256": "439e4efb06450ca0ca23f3ed5deb87b3abd8e981a5bda4e5450b31409e3f9ee8"
     },
     {
-      "bytes": 12431,
+      "bytes": 13838,
       "exists": true,
       "kind": "release_support",
       "path": "docs/running-the-chain.md",
-      "sha256": "1a0e150ee26b66472575be90c3d83306a205f5d98403e7284b1c5e92ed288ad9"
+      "sha256": "e22e461556651ef38802d87e99032702b39990d7351aa323d9fe56dc612515b6"
     },
     {
       "bytes": 14270,
@@ -2027,7 +2118,7 @@
       "exists": true,
       "kind": "release_support",
       "path": "docs/visualization-contract.md",
-      "sha256": "90a85b5db7cd7d8085db813f83c25d3a052cdab546804eb7b2205eda46afd3cd"
+      "sha256": "654392eca1d4df3577e4c69ef1f6b573612291d6bcce0c660f67b2d525bc9173"
     },
     {
       "bytes": 1168,
@@ -2044,11 +2135,11 @@
       "sha256": "fc45c119d26b2fd14b313c8f03df978e528fc4d1d04457d0381450d642896b3f"
     },
     {
-      "bytes": 2400,
+      "bytes": 961,
       "exists": true,
       "kind": "release_support",
       "path": "experiment_plan.yaml",
-      "sha256": "36b6e836a838ffaa9b9bc0951936c9dc79f1d30dc731914ef12a31f387bb9fcb"
+      "sha256": "7861280024a28f6b09601b618e99d93aa7a7f72605e3ebb5246e2559e947fa16"
     },
     {
       "bytes": 58319,
@@ -2077,13 +2168,6 @@
       "kind": "release_support",
       "path": "schemas/AGENTS.md",
       "sha256": "2752e13b30b062db994c99a16201308d915ac7d44576fb69e7e8687a99d5dd03"
-    },
-    {
-      "bytes": 1517,
-      "exists": true,
-      "kind": "release_support",
-      "path": "schemas/README.md",
-      "sha256": "991f1e31e9abd160e2398e90a633a5af60bd5ad86f3afeb86076336ddd4b5b42"
     },
     {
       "bytes": 1873,
@@ -2716,13 +2800,6 @@
       "sha256": "464b76cd6c39bc1aec0500abadf4d9f98458c471f6f6f49a9045a3b2fc1fa699"
     },
     {
-      "bytes": 4887,
-      "exists": true,
-      "kind": "release_support",
-      "path": "scripts/README.md",
-      "sha256": "ecf7c4aa7a7899e628a6b2a0906fd6d6934dc2165eeaece7cf293e7ad024af73"
-    },
-    {
       "bytes": 246,
       "exists": true,
       "kind": "release_support",
@@ -2856,11 +2933,11 @@
       "sha256": "6c20b7b00f27ffb07f3be6f4bca50d9fe61d4c273cb1738ee57753ca8b9a1087"
     },
     {
-      "bytes": 691,
+      "bytes": 1253,
       "exists": true,
       "kind": "release_support",
       "path": "scripts/z_generate_manuscript_variables.py",
-      "sha256": "f620649a09bbcee2332b885c106b2a6fae983548a882486287e152358e9ff65e"
+      "sha256": "c0da43b72182a71ac28d708fc77fb2d63b61bcc2dcf48ad7b9f47284087ca89a"
     },
     {
       "bytes": 1527,
@@ -2868,13 +2945,6 @@
       "kind": "release_support",
       "path": "src/AGENTS.md",
       "sha256": "91f890be3131ed03e1a433e62beaa75c268461e400aefd95b7b52f1c254e0ca2"
-    },
-    {
-      "bytes": 2162,
-      "exists": true,
-      "kind": "release_support",
-      "path": "src/README.md",
-      "sha256": "fcd7687a33e54fddeb4022e63d17a842734be1fb77e7df97708bafdff3d2d49b"
     },
     {
       "bytes": 126,
@@ -2889,13 +2959,6 @@
       "kind": "release_support",
       "path": "src/formalism/AGENTS.md",
       "sha256": "8ffdb3fd742c6e48e892b94aea8e52ad8320ca88c9a765a3f38c128bc885c564"
-    },
-    {
-      "bytes": 2742,
-      "exists": true,
-      "kind": "release_support",
-      "path": "src/formalism/README.md",
-      "sha256": "04d06a3025289a1669377f6c395ed6bf826f28121c6800d6e499fabb69ea59b8"
     },
     {
       "bytes": 1269,
@@ -2982,11 +3045,11 @@
       "sha256": "ecdbf0f99ebed022b00a2b8ab2a6f8593cd4ffe03ddf9bc78a9f94d214aaa61a"
     },
     {
-      "bytes": 5312,
+      "bytes": 5317,
       "exists": true,
       "kind": "release_support",
       "path": "src/formalism/review_response_external.py",
-      "sha256": "9dd2a89fc823ae8a8638e535edc76957c5781750c8d05baa9679b288e2ed66c1"
+      "sha256": "a0e6633811b49b77d517eba8810f46add87a0f6415f934748c285d095640ded4"
     },
     {
       "bytes": 5716,
@@ -3010,11 +3073,11 @@
       "sha256": "e5a10a121b4c428c2bd6cb022eaad8ce3ed1bd1fbc278f60700b4233c274d8a5"
     },
     {
-      "bytes": 9517,
+      "bytes": 9407,
       "exists": true,
       "kind": "release_support",
       "path": "src/formalism/review_response_release.py",
-      "sha256": "1624ae9ece6871d4786e35a2cc0e17e0dc8dd38b804712e35411b84dc1012e73"
+      "sha256": "0eeaa9353456392cb515a42f1250cc67e85af73057f5f61563dff18a12825f61"
     },
     {
       "bytes": 2336,
@@ -3059,13 +3122,6 @@
       "sha256": "dc1521298e3a41a1094c8f7c484dfe18883eeff5d9663d7a0a8acf7165ee8277"
     },
     {
-      "bytes": 2024,
-      "exists": true,
-      "kind": "release_support",
-      "path": "src/gates/README.md",
-      "sha256": "8e698cdac47cd6c48e96b14ef5bfd737dc9abe782598cdfdc25ef0c8eb7ee4e8"
-    },
-    {
       "bytes": 161,
       "exists": true,
       "kind": "release_support",
@@ -3087,11 +3143,11 @@
       "sha256": "666f141c0570ec7ee934b3f1289a317a0461b4d92be602592e30232c47048a0a"
     },
     {
-      "bytes": 2993,
+      "bytes": 3776,
       "exists": true,
       "kind": "release_support",
       "path": "src/gates/manuscript_variables.py",
-      "sha256": "14e0bacf87cd07b01efb9746d0be09dab1e538f53cb3769b4d8e5900209d5485"
+      "sha256": "492b6a689f9c3e0cb09b23a3157da736b1b7dc23d2d699f7d4d9142a2a449011"
     },
     {
       "bytes": 1437,
@@ -3101,18 +3157,18 @@
       "sha256": "bd1f32a011097728f252665b6b69505fed9d64381546bee9d0bdd5273d194757"
     },
     {
-      "bytes": 26643,
+      "bytes": 26648,
       "exists": true,
       "kind": "release_support",
       "path": "src/gates/roadmap.py",
-      "sha256": "731456b7abfb96171f8a8baa90b21cb893059f3dc0f4b6e7b70729f7d08a0cfa"
+      "sha256": "27829201a6e925297ebdc1f16dc260c868480e63bcf02e6180e45f1842eb76b2"
     },
     {
-      "bytes": 139188,
+      "bytes": 139239,
       "exists": true,
       "kind": "release_support",
       "path": "src/gates/validation.py",
-      "sha256": "8b0c4a15223e4f0da4945f43dbf60249963b2b879f0444b0a28f0831079ca0ac"
+      "sha256": "22dcdc4ff382e13ffbf9c73c9cd79ea16be97dd3d568adbb65b83d05ecbde9f5"
     },
     {
       "bytes": 872,
@@ -3120,13 +3176,6 @@
       "kind": "release_support",
       "path": "src/modeling/AGENTS.md",
       "sha256": "25e8e95432e43664c997fd2360d64c11043c26e26e45526f59366f938229b56c"
-    },
-    {
-      "bytes": 642,
-      "exists": true,
-      "kind": "release_support",
-      "path": "src/modeling/README.md",
-      "sha256": "2348890ac5866ba77557ca2909403932de0d932dfd802ff6abc7de631d444838"
     },
     {
       "bytes": 229,
@@ -3479,13 +3528,6 @@
       "sha256": "f7c360e416679105af0e2e2ee6e1fd199b349580d7a66cae31d36f588f65dc12"
     },
     {
-      "bytes": 1166,
-      "exists": true,
-      "kind": "release_support",
-      "path": "src/practice/README.md",
-      "sha256": "fa03b943caae2e09aa89ad9af1f4d0fbae1871c4238d107488f600d73de1a247"
-    },
-    {
       "bytes": 118,
       "exists": true,
       "kind": "release_support",
@@ -3505,13 +3547,6 @@
       "kind": "release_support",
       "path": "src/simulation/AGENTS.md",
       "sha256": "1cc14a3ebc8487b1da5e0300029d4c2d81671448314d612baa2b3aa45dcfba13"
-    },
-    {
-      "bytes": 5007,
-      "exists": true,
-      "kind": "release_support",
-      "path": "src/simulation/README.md",
-      "sha256": "0fa2ee13d228391e6e197fbb313e90ddd7da0900fe89bfc9e3ba16594f2c7faf"
     },
     {
       "bytes": 669,
@@ -3637,14 +3672,7 @@
       "exists": true,
       "kind": "release_support",
       "path": "src/visualizations/AGENTS.md",
-      "sha256": "77a16a5b7dab1fb414b3cb35c891baf6caf69aed079288ff07eb5d733f096a3f"
-    },
-    {
-      "bytes": 2295,
-      "exists": true,
-      "kind": "release_support",
-      "path": "src/visualizations/README.md",
-      "sha256": "461c98af2452ec5e570723531b033b8dcd1deb331a256d8f52558a5100a7bbc1"
+      "sha256": "a0c61187cb995bc01e5a2582dcaf363afbc5a5ffef68943eea9dac238de7a61c"
     },
     {
       "bytes": 310,
@@ -3710,13 +3738,6 @@
       "sha256": "3fd3042d533eb11ec3c3b8acfd2ede2ad33393bc7af926ba7fe6287094fd2f92"
     },
     {
-      "bytes": 2107,
-      "exists": true,
-      "kind": "release_support",
-      "path": "tests/README.md",
-      "sha256": "de4ea2c23eb4ad41c59457ca08bcf7d30d4de0e235e9f3dd9049e35120c86045"
-    },
-    {
       "bytes": 474,
       "exists": true,
       "kind": "release_support",
@@ -3780,18 +3801,18 @@
       "sha256": "049ba3dafab06cb362b51402cc87aa69795d292251ce4d1106fdc7d888a0a7cc"
     },
     {
-      "bytes": 53373,
+      "bytes": 53488,
       "exists": true,
       "kind": "release_support",
       "path": "tests/test_practice_and_chain.py",
-      "sha256": "6c05e3318466af22f452e0a40ec5416fa010cc0843c341a582886b4b579d1acb"
+      "sha256": "a39938e36345788b589e752bf3fec0a0a4f849072be0eebcf823d9284dc95354"
     },
     {
-      "bytes": 17105,
+      "bytes": 17222,
       "exists": true,
       "kind": "release_support",
       "path": "tests/test_release_contracts.py",
-      "sha256": "1e04e88efeddd08f3aa364dc5570173fcbbc7d6972ab5778dcfde9ec76358b80"
+      "sha256": "870ef6c25353201784bdcfef91d58f4e86037018b1b08562efbfd5335ac06ee3"
     },
     {
       "bytes": 5713,

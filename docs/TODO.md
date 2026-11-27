@@ -21,28 +21,28 @@ manuscript fragments, and validation reports.
 
 | ID | Status | Scope | Scope detail and docs |
 | --- | --- | --- | --- |
-| re-3 | blocked_external_evidence | Physical qFEP realization remains blocked until reviewed Hamiltonians, thermodynamic accounting, and independent quantum-information replication exist. | Finite Lindblad, trajectory, channel-cost, and boundary-screen artifacts remain software surrogates, not physical qFEP evidence. Docs: [quantum roadmap](docs/quantum-simulation-roadmap.md), [validation contract](docs/validation-contract.md), [surrogate methodology](docs/surrogate-methodology.md). |
-| re-4 | blocked_external_evidence | Human-subject validation remains blocked until ethics review, preregistered outcomes, sourced data, preprocessing provenance, null models, and safety review exist. | Synthetic fixtures and provenance adapters cannot stand in for ethics-reviewed data, preregistration, source identity, preprocessing records, nulls, or safety review. Docs: [validation contract](docs/validation-contract.md), [surrogate methodology](docs/surrogate-methodology.md). |
-| re-13 | blocked_external_evidence | Clinical, awakening, compassion-efficacy, and neural-measurement claims remain blocked and must not be inferred from finite software simulations. | Compassion, criticality, and practice-protocol outputs are proxy or boundary audits only; they do not measure clinical outcomes, awakening, compassion efficacy, or neural signals. Docs: [validation contract](docs/validation-contract.md), [surrogate methodology](docs/surrogate-methodology.md), [adversarial audit](docs/redteam-audit.md). |
-| re-14 | blocked_external_evidence | User-facing practice applications require human review, safety wording, and explicit non-efficacy language before release. | Practice maps are model protocols, not user guidance; release requires human safety review, non-efficacy wording, and practice-facing governance. Docs: [validation contract](docs/validation-contract.md), [surrogate methodology](docs/surrogate-methodology.md). |
-| re-15 | blocked_external_release | Public archive release and independent or blinded reproduction remain blocked until explicit publication approval, public deposition, and external reproduction of the artifact bundle exist. | Local hashes, manifests, and render gates support private readiness only; they do not certify public deposition or independent reproduction. Docs: [running the chain](docs/running-the-chain.md), [validation contract](docs/validation-contract.md). |
+| re-3 | blocked_external_evidence | Physical qFEP realization remains blocked until reviewed Hamiltonians, thermodynamic accounting, and independent quantum-information replication exist. | Finite Lindblad, trajectory, channel-cost, and boundary-screen artifacts remain software surrogates, not physical qFEP evidence. Docs: [quantum roadmap](quantum-simulation-roadmap.md), [validation contract](validation-contract.md), [surrogate methodology](surrogate-methodology.md). |
+| re-4 | blocked_external_evidence | Human-subject validation remains blocked until ethics review, preregistered outcomes, sourced data, preprocessing provenance, null models, and safety review exist. | Synthetic fixtures and provenance adapters cannot stand in for ethics-reviewed data, preregistration, source identity, preprocessing records, nulls, or safety review. Docs: [validation contract](validation-contract.md), [surrogate methodology](surrogate-methodology.md). |
+| re-13 | blocked_external_evidence | Clinical, awakening, compassion-efficacy, and neural-measurement claims remain blocked and must not be inferred from finite software simulations. | Compassion, criticality, and practice-protocol outputs are proxy or boundary audits only; they do not measure clinical outcomes, awakening, compassion efficacy, or neural signals. Docs: [validation contract](validation-contract.md), [surrogate methodology](surrogate-methodology.md), [adversarial audit](redteam-audit.md). |
+| re-14 | blocked_external_evidence | User-facing practice applications require human review, safety wording, and explicit non-efficacy language before release. | Practice maps are model protocols, not user guidance; release requires human safety review, non-efficacy wording, and practice-facing governance. Docs: [validation contract](validation-contract.md), [surrogate methodology](surrogate-methodology.md). |
+| re-15 | blocked_external_release | Public archive release and independent or blinded reproduction remain blocked until explicit publication approval, public deposition, and external reproduction of the artifact bundle exist. | Local hashes, manifests, and render gates support private readiness only; they do not certify public deposition or independent reproduction. Docs: [running the chain](running-the-chain.md), [validation contract](validation-contract.md). |
 
 ## Agent orientation (local, unblocked)
 
-A cold agent should: (1) read [README.md](README.md) top-to-bottom, (2) confirm
+A cold agent should: (1) read [README.md](../README.md) top-to-bottom, (2) confirm
 status from the "State right now" section, (3) come here for next actions, (4)
-verify with the canonical commands in [AGENTS.md](AGENTS.md).
+verify with the canonical commands in [AGENTS.md](../AGENTS.md).
 
 ### Local documentation and environment maintenance
 
 | ID | Priority | Scope | Scope detail and docs |
 | --- | --- | --- | --- |
-| re-doc-1 | Done (v1.1.0) | Composer now emits resolving figure paths and hydration rebases them for rendering; strict validation checks image files. | Docs: [manuscript guide](docs/manuscript/README.md), [release validation](docs/release-validation.md). |
-| re-doc-2 | Done (v1.1.0) | Python support is bounded to 3.10-3.14 with a frozen dependency lock and CI matrix. A separate GitVault environment preserves the original local environment. | Docs: [running the chain](docs/running-the-chain.md), `pyproject.toml`. |
-| re-doc-3 | Done (2026-08-31) | Render `--project` qualifier conflicted across README/AGENTS/running-the-chain; one canonical statement now lives in docs/running-the-chain.md. | Docs: [docs/running-the-chain.md](docs/running-the-chain.md). |
-| re-doc-4 | Done (2026-08-31) | README lacked an orientation ladder (state / next actions / canonical pointers) and never linked TODO.md; added "State right now" section and canonical-command pointer to AGENTS.md. | Docs: [README.md](README.md), [AGENTS.md](AGENTS.md). |
-| re-doc-5 | Done (2026-08-31) | AGENTS.md pointed to nonexistent ../projects/AGENTS.md from the standalone checkout; fixed to name the template-mirror location conditionally. | Docs: [AGENTS.md](AGENTS.md). |
-| re-doc-6 | Done (2026-08-31) | Badge/quick-start counts lacked provenance; README now stamps them "as of 2026-08-31" with re-verification commands. | Docs: [README.md](README.md). |
+| re-doc-1 | Done (v1.1.0) | Composer now emits resolving figure paths and hydration rebases them for rendering; strict validation checks image files. | Docs: [manuscript guide](manuscript/README.md), [release validation](release-validation.md). |
+| re-doc-2 | Done (v1.1.0) | Python support is bounded to 3.10-3.14 with a frozen dependency lock and CI matrix. A separate GitVault environment preserves the original local environment. | Docs: [running the chain](running-the-chain.md), `pyproject.toml`. |
+| re-doc-3 | Done (2026-08-31) | Render `--project` qualifier conflicted across README/AGENTS/running-the-chain; one canonical statement now lives in docs/running-the-chain.md. | Docs: [docs/running-the-chain.md](running-the-chain.md). |
+| re-doc-4 | Done (2026-08-31) | README lacked an orientation ladder (state / next actions / canonical pointers) and never linked TODO.md; added "State right now" section and canonical-command pointer to AGENTS.md. | Docs: [README.md](../README.md), [AGENTS.md](../AGENTS.md). |
+| re-doc-5 | Done (2026-08-31) | AGENTS.md pointed to nonexistent ../projects/AGENTS.md from the standalone checkout; fixed to name the template-mirror location conditionally. | Docs: [AGENTS.md](../AGENTS.md). |
+| re-doc-6 | Done (2026-08-31) | Badge/quick-start counts lacked provenance; README now stamps them "as of 2026-08-31" with re-verification commands. | Docs: [README.md](../README.md). |
 
 ### Re-verify before publishing any updated claim
 

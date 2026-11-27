@@ -164,7 +164,7 @@ def _historical_backlog_rows(text: str) -> list[dict[str, Any]]:
 
 def build_roadmap_todo_audit(project_root: Path) -> dict[str, Any]:
     """Build a fail-closed audit linking TODO rows to machine roadmap state."""
-    todo_text = (project_root / "TODO.md").read_text(encoding="utf-8")
+    todo_text = (project_root / "docs/TODO.md").read_text(encoding="utf-8")
     roadmap = _load_json(project_root, "output/data/quantum_extension_roadmap.json")
     records = _todo_records(todo_text)
     historical_backlog_rows = _historical_backlog_rows(todo_text)

@@ -64,7 +64,7 @@ def review_response_rows() -> list[dict[str, Any]]:
             "recommendation_id": "public_independent_reproduction",
             "reviewer_concern": "Do not represent local private readiness as public independent reproduction.",
             "response_status": "blocked_external_publication",
-            "evidence_paths": ["TODO.md", "tasks.yaml"],
+            "evidence_paths": ["docs/TODO.md", "tasks.yaml"],
             "gate": "future_public_archive_and_independent_reproduction_blocked",
             "boundary": "future public archive and blinded or independent reproduction require explicit publication approval; not empirical and not completed locally",
         },

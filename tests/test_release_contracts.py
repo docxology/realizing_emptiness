@@ -248,6 +248,8 @@ def _release_project(tmp_path: Path) -> Path:
 
     (tmp_path / "artifact_manifest.yaml").write_text("artifacts: []\n", encoding="utf-8")
     (tmp_path / "README.md").write_text("release\n", encoding="utf-8")
+    (tmp_path / "docs").mkdir()
+    (tmp_path / "docs/README.md").write_text("guides\n", encoding="utf-8")
     (tmp_path / ".github" / "workflows").mkdir(parents=True)
     (tmp_path / ".github" / "workflows" / "ci.yml").write_text("on: push\n", encoding="utf-8")
     write_artifact_release_manifest(tmp_path)
@@ -267,13 +269,13 @@ def test_release_manifest_drift_names_changed_added_and_removed_files(tmp_path: 
     recorded = hashlib.sha256(b"on: push\n").hexdigest()
     current = hashlib.sha256(b"on: pull_request\n").hexdigest()
     (root / ".github" / "workflows" / "ci.yml").write_text("on: pull_request\n", encoding="utf-8")
-    (root / "TODO.md").write_text("new\n", encoding="utf-8")
+    (root / "docs/TODO.md").write_text("new\n", encoding="utf-8")
     (root / "README.md").unlink()
 
     assert release_manifest_drift(root) == [
         f".github/workflows/ci.yml: recorded sha256 {recorded}, on disk {current}",
         "README.md: recorded but not part of the release",
-        "TODO.md: part of the release but not recorded",
+        "docs/TODO.md: part of the release but not recorded",
     ]
 
 

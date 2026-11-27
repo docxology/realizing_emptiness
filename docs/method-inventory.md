@@ -95,12 +95,12 @@
 | src/formalism/review_response_quantum.py | 56 | function | `independent_polytope_matrix` | No docstring. |
 | src/formalism/review_response_quantum.py | 72 | function | `independent_polytope_fit` | No docstring. |
 | src/formalism/review_response_quantum.py | 108 | function | `build_quantum_independent_crosscheck_audit` | No docstring. |
-| src/formalism/review_response_release.py | 51 | function | `manifest_paths` | No docstring. |
-| src/formalism/review_response_release.py | 56 | function | `release_support_paths` | No docstring. |
-| src/formalism/review_response_release.py | 71 | function | `build_artifact_release_manifest` | No docstring. |
-| src/formalism/review_response_release.py | 160 | function | `write_artifact_release_manifest` | No docstring. |
-| src/formalism/review_response_release.py | 164 | function | `_same_json_value` | Compare JSON structures with exact types and object keys. |
-| src/formalism/review_response_release.py | 180 | function | `release_manifest_drift` | Describe how the recorded release manifest differs from one built now. |
+| src/formalism/review_response_release.py | 46 | function | `manifest_paths` | No docstring. |
+| src/formalism/review_response_release.py | 51 | function | `release_support_paths` | No docstring. |
+| src/formalism/review_response_release.py | 66 | function | `build_artifact_release_manifest` | No docstring. |
+| src/formalism/review_response_release.py | 155 | function | `write_artifact_release_manifest` | No docstring. |
+| src/formalism/review_response_release.py | 159 | function | `_same_json_value` | Compare JSON structures with exact types and object keys. |
+| src/formalism/review_response_release.py | 175 | function | `release_manifest_drift` | Describe how the recorded release manifest differs from one built now. |
 | src/formalism/review_response_writers.py | 14 | function | `initialize_artifact_release_manifest` | No docstring. |
 | src/formalism/review_response_writers.py | 26 | function | `write_review_response_artifacts` | No docstring. |
 | src/formalism/scholarship.py | 58 | function | `load_scholarship_manifest` | Load the scholarship manifest. |
@@ -134,10 +134,11 @@
 | src/gates/manuscript.py | 188 | function | `build_figure_placement_audit` | Audit balanced main/supplement placement for technical and governance figures. |
 | src/gates/manuscript.py | 243 | function | `build_cover_graphical_abstract_audit` | Audit the unnumbered graphical abstract cover image. |
 | src/gates/manuscript.py | 298 | function | `write_manuscript_structure_audits` | Write manuscript reference, figure reuse, figure-placement, and cover graphic audits. |
-| src/gates/manuscript_variables.py | 15 | function | `_load_json` | No docstring. |
-| src/gates/manuscript_variables.py | 19 | function | `compute_variables` | No docstring. |
-| src/gates/manuscript_variables.py | 47 | function | `hydrate_manuscript` | No docstring. |
-| src/gates/manuscript_variables.py | 55 | function | `replace` | No docstring. |
+| src/gates/manuscript_variables.py | 16 | function | `_load_json` | No docstring. |
+| src/gates/manuscript_variables.py | 20 | function | `compute_variables` | No docstring. |
+| src/gates/manuscript_variables.py | 48 | function | `hydrate_manuscript` | No docstring. |
+| src/gates/manuscript_variables.py | 56 | function | `replace` | No docstring. |
+| src/gates/manuscript_variables.py | 69 | function | `write_template_figure_registry` | Write Template's registry from the project's existing figure contract. |
 | src/gates/method_inventory.py | 9 | function | `collect_entries` | No docstring. |
 | src/gates/method_inventory.py | 29 | function | `render` | No docstring. |
 | src/gates/roadmap.py | 92 | function | `_load_json` | No docstring. |
@@ -163,9 +164,9 @@
 | src/gates/validation.py | 642 | function | `_subsection_anchor_audit` | No docstring. |
 | src/gates/validation.py | 695 | function | `_permutation_metadata_matches` | No docstring. |
 | src/gates/validation.py | 728 | function | `validate_outputs` | Return named output checks. |
-| src/gates/validation.py | 2033 | function | `write_validation_report` | Write validation report to output/reports. |
-| src/gates/validation.py | 2049 | function | `_tracked_doc_paths` | Return the documentation files governed by the contract. |
-| src/gates/validation.py | 2056 | function | `check_documentation_contract` | Check project docs for stale identity, machine paths, orphans, and broken links. |
+| src/gates/validation.py | 2034 | function | `write_validation_report` | Write validation report to output/reports. |
+| src/gates/validation.py | 2050 | function | `_tracked_doc_paths` | Return the documentation files governed by the contract. |
+| src/gates/validation.py | 2057 | function | `check_documentation_contract` | Check project docs for stale identity, machine paths, orphans, and broken links. |
 | src/modeling/audit.py | 28 | function | `_digest` | No docstring. |
 | src/modeling/audit.py | 32 | function | `_file_hash` | No docstring. |
 | src/modeling/audit.py | 36 | function | `_upstream` | No docstring. |

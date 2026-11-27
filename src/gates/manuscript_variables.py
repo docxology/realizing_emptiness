@@ -6,6 +6,7 @@ import json
 import re
 import shutil
 from pathlib import Path
+import yaml
 
 from gates.validation import validate_outputs
 
@@ -63,3 +64,21 @@ def hydrate_manuscript(project_root: Path, variables: dict) -> None:
         src = source / aux
         if src.exists():
             shutil.copy2(src, target / aux)
+
+
+def write_template_figure_registry(project_root: Path) -> None:
+    """Write Template's registry from the project's existing figure contract."""
+    with (project_root / "figures.yaml").open(encoding="utf-8") as stream:
+        figures = yaml.safe_load(stream)["figures"]
+    registry = {
+        f"fig:{figure_id}": {
+            "filename": details["filename"],
+            "caption": details["caption"],
+            "alt_text": details["alt_text"],
+        }
+        for figure_id, details in figures.items()
+        if figure_id != "graphical_abstract_cover"
+    }
+    path = project_root / "output" / "figures" / "figure_registry.json"
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(registry, indent=2) + "\n", encoding="utf-8")

@@ -16,7 +16,16 @@ this folder; the project recapitulates it as finite deterministic software
 surrogates and never claims empirical, clinical, neural, ontological, or
 physical-qFEP evidence.
 
-## Start here (conceptual)
+## Start here
+
+- [Manuscript source and composition](manuscript/README.md)
+- [Developer guides](developer/README.md)
+- [Visual design contract](DESIGN.md)
+- [Project ISA](ISA.md)
+- [Maintenance backlog](TODO.md)
+- [Release changelog](CHANGELOG.md)
+
+## Concepts
 
 | Document | Purpose |
 | --- | --- |
@@ -29,10 +38,11 @@ physical-qFEP evidence.
 | --- | --- |
 | [Project architecture](architecture.md) | How manuscript, `src`, `scripts`, `tests`, and artifacts connect, with recipes for adding a figure or a claim. |
 | [GNN modeling](gnn-modeling.md) | Canonical model specifications, upstream provenance, parser and validation contracts, numerical backends, authoring, packaging, and limits. |
+| [Experiment commands and outputs](experiment-plan.yaml) | Full local plan behind the finite surrogate chain. |
 | [Running the chain](running-the-chain.md) | Setup, the full-chain run with a per-stage walkthrough, output layout, verification gates, single-result reproduction, and gate-failure troubleshooting. |
 | [Release validation](release-validation.md) | Audit findings, verification receipts, packaging, rendering, and version-publication boundaries. |
 | [Current API and data contracts](api-contracts.md) | GNN model APIs, public runtime entry points, versioned artifact fields, measured-branching acceptance, and regeneration requirements for v3.0.0. |
-| [`src/simulation` module contract](../src/simulation/README.md) | Source-level map for the finite simulation modules, including the modular `pymdp` profile stack, its `A/B/C/D` arrays, deterministic traces, runtime diagnostics, and validation gates. |
+| [`src/simulation` module contract](developer/simulation.md) | Source-level map for the finite simulation modules, including the modular `pymdp` profile stack, its `A/B/C/D` arrays, deterministic traces, runtime diagnostics, and validation gates. |
 
 ## Formal mapping (paper to software)
 
@@ -71,7 +81,7 @@ read the [visualization contract](visualization-contract.md) before judging or
 editing figures, and the [project architecture](architecture.md) plus
 [running the chain](running-the-chain.md) when you are ready to extend,
 regenerate, render, or reproduce the project. For the `pymdp` simulation in
-particular, read the [`src/simulation` module contract](../src/simulation/README.md)
+particular, read the [`src/simulation` module contract](developer/simulation.md)
 alongside the methods section: the code keeps the QRF environment, generative
 model arrays, deterministic trace, seeded ensemble, runtime diagnostics, and
 validation gates as separate audit surfaces.

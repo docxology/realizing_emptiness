@@ -9,7 +9,7 @@ self-evidence" paper without reproducing it.
 ## Contents
 
 - `sources/` - source provenance manifests (primary-source hash pin + scholarship
-  matrix). See `sources/README.md`.
+  matrix). See [source registry](sources.md).
 
 ## Pipeline fit
 

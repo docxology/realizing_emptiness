@@ -758,6 +758,7 @@ def validate_outputs(project_root: Path) -> dict[str, bool]:
     generated_paths.discard("output/reports/output_statistics.json")
     generated_paths.discard("output/reports/output_statistics.txt")
     generated_paths.discard("output/reports/manuscript_composition.json")
+    generated_paths.discard("output/figures/figure_registry.json")
     checks["generated_outputs_manifested"] = generated_paths <= manifest_paths
     for schema_relative, target_relative, kind in SCHEMA_TARGETS:
         checks[f"schema_valid:{target_relative}"] = _schema_check(project_root, schema_relative, target_relative, kind)
@@ -2048,7 +2049,7 @@ def write_validation_report(project_root: Path) -> Path:
 
 def _tracked_doc_paths(project_root: Path) -> list[Path]:
     """Return the documentation files governed by the contract."""
-    docs = [project_root / name for name in ("README.md", "AGENTS.md", "ISA.md", "TODO.md")]
+    docs = [project_root / name for name in ("README.md", "AGENTS.md")]
     docs.extend(sorted((project_root / "docs").rglob("*.md")))
     return [path for path in docs if path.exists()]
 
@@ -2056,7 +2057,7 @@ def _tracked_doc_paths(project_root: Path) -> list[Path]:
 def check_documentation_contract(project_root: Path) -> list[str]:
     """Check project docs for stale identity, machine paths, orphans, and broken links."""
     issues: list[str] = []
-    for relative in ("README.md", "AGENTS.md", "TODO.md"):
+    for relative in ("README.md", "AGENTS.md", "docs/TODO.md"):
         text = (project_root / relative).read_text(encoding="utf-8")
         if "template_active_inference" in text:
             issues.append(f"{relative} contains stale template_active_inference text")

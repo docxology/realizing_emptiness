@@ -42,6 +42,8 @@ fresh source tree; only the final populated manifest and gates can establish
 readiness. It then runs thin orchestrators in this order; each imports computation from
 `src/` and writes only into `output/` (or the composed `docs/manuscript/`):
 
+0. `scripts/generate_gnn_models.py` admits the checked-in model declarations
+   with the pinned parser and writes `output/data/gnn_model_audit.json`.
 1. `scripts/generate_formalisms.py` — writes the equation registry, claim
    ledgers, source-hash check, and artifact contract registry to
    `output/data/*.json` (including `formalism_registry.json`, `equation_audit.json`).
@@ -144,26 +146,43 @@ Use the canonical verification commands in [AGENTS.md](../AGENTS.md).
 
 ## Render and manual QA
 
-The project renders through the sibling template checkout, not by hand-editing
-`output/` files. **This section is the canonical render instruction** — README
-and AGENTS.md link here rather than restating the qualifier.
+Render a clean project checkout with [docxology/template at the pinned
+revision](https://github.com/docxology/template/tree/87704feae0a4490ef7dad9c931d268e8c30273c2).
+Install the template environment using its locked setup and put Pandoc,
+a matching pandoc-crossref, and XeLaTeX on PATH. Run the native analysis
+chain first when generating fresh research inputs. It composes the canonical
+`docs/manuscript/` sources and writes the data, figures, and hydrated render
+copies under `output/`.
 
-Determine the correct `--project` qualifier from the template checkout. It may
-include a lifecycle and an owner folder. The current integration uses
-`ongoing/docxology/realizing_emptiness`. Verify the resolved source before rendering:
-
-```bash
-uv run python -c 'from pathlib import Path; from infrastructure.core.project_paths import resolve_project_root; print(resolve_project_root(Path.cwd(), "ongoing/docxology/realizing_emptiness"))'
-```
-
-The printed path must be the intended checkout. If no mirror exists, configure
-the template's supported sidecar links first; never create a replacement source
-directory. Render with the verified qualifier:
+Use a dedicated checkout for reproduction so it can overwrite the generated
+outputs without changing the archived copies in your primary checkout. From
+that checkout, register it once and verify the resolved path:
 
 ```bash
-cd <template-checkout>
-uv run python scripts/pipeline/stage_03_render.py --project <verified-qualifier>
+export PROJECT_ROOT="$(pwd -P)"
+export TEMPLATE_ROOT=/path/to/template
+git -C "$TEMPLATE_ROOT" rev-parse HEAD
+mkdir -p "$TEMPLATE_ROOT/projects/working"
+ln -s "$PROJECT_ROOT" "$TEMPLATE_ROOT/projects/working/realizing_emptiness"
+
+cd "$TEMPLATE_ROOT"
+uv run --no-sync python -c 'from pathlib import Path; from infrastructure.core.project_paths import resolve_project_root; print(resolve_project_root(Path.cwd(), "working/realizing_emptiness"))'
+uv run --no-sync python scripts/pipeline/stage_03_render.py --project working/realizing_emptiness
+uv run --no-sync python scripts/pipeline/stage_04_validate.py --project working/realizing_emptiness
 ```
+
+The template revision and resolved project path should match the pin and the
+dedicated checkout above. This checkout should have its own locked project
+environment from the setup step so Template can run the project hydrator.
+To render from the checked-in release inputs, first verify their manifest
+with `scripts/check_release_manifest.py`. Then run
+`uv run python scripts/z_generate_manuscript_variables.py --retained-variables`
+from the project root. It refreshes `output/manuscript/` using saved values and
+writes the Template figure registry from `figures.yaml`. Pass
+`--skip-manuscript-hydration` to Stage 03 for that route. Stage 04 writes `output/reports/validation_report.json`
+and `output/reports/rendered_provenance.json` in that checkout. The native
+validator writes its own report at the same validation-report path, so retain
+the native receipt before running Template.
 
 After rendering, inspect the actual surfaces that readers see:
 

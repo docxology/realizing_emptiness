@@ -11,6 +11,7 @@ output/pdf/_combined_manuscript.md
 output/pdf/_combined_manuscript.pdf
 output/web/_combined_manuscript.md
 output/reports/manuscript_composition.json
+output/figures/figure_registry.json
 .DS_Store
 .omo/
 .codegraph
