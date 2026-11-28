@@ -1,6 +1,6 @@
 {
   "all_controls_pass": true,
-  "audit_sha256": "30a601f6518d8c9874e8c1065e0d505890e7f59a2efe308cc559032722978825",
+  "audit_sha256": "6a321f7fea57173e4e66337940daa9f09e6b6448646c77e8f02137c29bcb2d23",
   "catalog_sha256": "676fe75ad8c4fae60f07d7622261c919fae3e6a79a8be9b8b500efbc39dd953a",
   "claim_boundary": "GNN specifications and finite software execution only; not empirical, clinical, neural, practice-efficacy, or physical qFEP evidence",
   "controls": {
@@ -144,7 +144,7 @@
     {
       "backend": "pymdp",
       "consumer": "simulation.pymdp_profiles:build_profile_generative_model",
-      "consumer_sha256": "4fd3a3a926e58f0aab9d28e7f93b31155ea4af4bd6901f79e98d1364f520e91c",
+      "consumer_sha256": "514f097682e825cecd8746f5891a29714ba9362cba74bfc77381c7e5abfd45d9",
       "consumer_source": "src/simulation/pymdp_profiles.py",
       "family": "categorical_qrf",
       "model_id": "opacified",
@@ -156,7 +156,7 @@
     {
       "backend": "pymdp",
       "consumer": "simulation.pymdp_profiles:build_profile_generative_model",
-      "consumer_sha256": "4fd3a3a926e58f0aab9d28e7f93b31155ea4af4bd6901f79e98d1364f520e91c",
+      "consumer_sha256": "514f097682e825cecd8746f5891a29714ba9362cba74bfc77381c7e5abfd45d9",
       "consumer_source": "src/simulation/pymdp_profiles.py",
       "family": "categorical_qrf",
       "model_id": "post_dual",
@@ -456,7 +456,7 @@
     {
       "backend": "pymdp",
       "consumer": "simulation.pymdp_profiles:build_profile_generative_model",
-      "consumer_sha256": "4fd3a3a926e58f0aab9d28e7f93b31155ea4af4bd6901f79e98d1364f520e91c",
+      "consumer_sha256": "514f097682e825cecd8746f5891a29714ba9362cba74bfc77381c7e5abfd45d9",
       "consumer_source": "src/simulation/pymdp_profiles.py",
       "family": "categorical_qrf",
       "model_id": "separation_constrained",
@@ -934,7 +934,7 @@
         [
           0.2983188331127167,
           0.6896860599517822,
-          0.01199513953179121
+          0.011995140463113785
         ],
         [
           0.9185762405395508,
@@ -1004,19 +1004,19 @@
       "tensors_sha256": "1f3f1ed2dde0ec7ebe2f5fa7f43560698626c2766403d5140a2bf880eb7a56fc"
     }
   ],
-  "registry_sha256": "77bc40113fb2aa2fdbc6365d386bd9d3c863c3f7ce9ab190fdba04dac707d990",
+  "registry_sha256": "091fbdebe30b3294c41b88d2aeb0fe14536239c3c851f30e523205b4291d18e4",
   "schema": "realizing_emptiness.gnn_model_audit.v1",
   "upstream": {
-    "commit": "46459949944e3217f8a6a804d4ff8c52829ef275",
-    "direct_url_sha256": "7f8baf6c85b8ace3bd897db4b0f809db0d1b5d30c39f8f68ade22652e6e8773e",
+    "commit": "4a7cccce6d4d7cb483f00323ec5cdd79300f3464",
+    "direct_url_sha256": "5c042a20562a3230fc0b2b4feb229139594c69ff29eb157fb331e668ac59d1ae",
     "module_sha256": {
-      "gnn.execute.pymdp.simulation": "5a9ce849731778ce87c4a411d4985a8231fed3e399253523b0e10c496307ab3b",
-      "gnn.parsers.markdown_parser": "24a30ea7e67d597e891fe16e521e13be5f2013af90eeb282cfe257940b281e82",
-      "gnn.render.pomdp_contract": "7361599879c471a4e3af7df91ed6ce95087662796c050bf29beeb3c10b32674d",
-      "gnn.validation.semantic_validator": "575dda02acf01989a1bbc217923748dc180741dacb97e682e30e4323670aedfb"
+      "gnn.execute.pymdp.simulation": "e529f615a63c7978698546781c7ffc968b639ec7cb1927355e9ed92ee92adab6",
+      "gnn.parsers.markdown_parser": "ebb93339e4164db882bc6a0d4184ba4de53180d9dadada694be3924858dca496",
+      "gnn.render.pomdp_contract": "d136a4b2557a00406504820f7ee74780c004c9cd34a599939164cf208595f4c8",
+      "gnn.validation.semantic_validator": "b3a47ea049ccbb2d04b4c86eae0c7ef18c0835b718157a89ef2929a521992d05"
     },
-    "pin_sha256": "ca481b780e898dc878ac60ecd2bf4c23fe9d3d3051bb74ecffcf6ddb5c42e7d6",
+    "pin_sha256": "917f84872dc27adfcd116794ac1159cb3cf1cfe7385cc22a6dba28e0c367c00d",
     "repository": "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation",
-    "version": "4.1.0"
+    "version": "5.2.0"
   }
 }

@@ -17,8 +17,8 @@ artifacts, read
 
 Python 3.11-3.14 is supported; dependencies are managed with `uv`.
 The default development version is 3.14. The frozen lock includes GNN at its
-pinned upstream revision and Python-specific `pymdp` versions: 1.0.4 on 3.11,
-1.0.3 on 3.12 and later. See [GNN modeling](gnn-modeling.md) for provenance,
+pinned upstream revision and Python-specific `pymdp` versions. Python 3.11 uses
+PyMDP 1.0.4 and Python 3.12 through 3.14 uses PyMDP 1.0.5. See [GNN modeling](gnn-modeling.md) for provenance,
 packaged resources, and model-authoring instructions.
 
 ```bash

@@ -7,7 +7,7 @@ from simulation.pymdp_profiles import runtime_warnings_match_version
 
 @pytest.mark.parametrize("version,messages,expected", [
     ("1.0.3", ["static JAX array"], True),
-    ("1.0.4", [], True),
+    ("1.0.4", [], True), ("1.0.5", [], True),
     ("1.0.3", [], False),
     ("1.0.4", ["unexpected warning"], False),
     ("1.0.4", None, False),
@@ -24,7 +24,7 @@ def test_missing_runtime_warning_record_fails():
 
 @pytest.mark.parametrize("schema_name", ["pymdp_profile_comparison", "pymdp_runtime_diagnostics_log"])
 @pytest.mark.parametrize("version,messages,expected", [
-    ("1.0.3", ["static JAX array"], True), ("1.0.4", [], True),
+    ("1.0.3", ["static JAX array"], True), ("1.0.4", [], True), ("1.0.5", [], True),
     ("1.0.3", [], False), ("1.0.4", ["unexpected warning"], False),
 ])
 def test_schema_preserves_version_specific_warning_contract(pytestconfig, schema_name, version, messages, expected):

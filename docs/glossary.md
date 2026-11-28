@@ -68,8 +68,7 @@ physical-qFEP evidence.
   used for packaged tensors and finite-model inputs; upstream parsing and
   strict validation precede numerical execution. See [GNN modeling](gnn-modeling.md).
 - **pymdp profile** — a discrete active-inference agent (pinned
-  `inferactively-pymdp` 1.0.4 on Python 3.11 and 1.0.3 on later supported
-  versions) with GNN-declared `A`, `B`, `C`, `D` arrays
+  `inferactively-pymdp` 1.0.4 on Python 3.11 and 1.0.5 on Python 3.12 through 3.14) with GNN-declared `A`, `B`, `C`, `D` arrays
   and the action vocabulary `stabilize_dual`, `inspect_boundary`,
   `release_prior`. (`src/simulation/pymdp_profiles.py`)
 - **pymdp runtime dependency check** — the limited package-surface check that

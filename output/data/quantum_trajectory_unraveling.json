@@ -24932,7 +24932,7 @@
     {
       "decoherence_rate": 0.0,
       "ensemble_global_entropy_bits": 0.0,
-      "ensemble_min_eigenvalue": 0.0,
+      "ensemble_min_eigenvalue": -0.0,
       "ensemble_mutual_information_bits": 1.998095939,
       "ensemble_trace_imag_abs": 0.0,
       "ensemble_trace_real": 1.0,
@@ -24944,7 +24944,7 @@
     {
       "decoherence_rate": 0.0,
       "ensemble_global_entropy_bits": 0.0,
-      "ensemble_min_eigenvalue": -0.0,
+      "ensemble_min_eigenvalue": 0.0,
       "ensemble_mutual_information_bits": 1.9979467624,
       "ensemble_trace_imag_abs": 0.0,
       "ensemble_trace_real": 1.0,
@@ -25064,7 +25064,7 @@
     {
       "decoherence_rate": 0.12,
       "ensemble_global_entropy_bits": 0.4735419768,
-      "ensemble_min_eigenvalue": -0.0,
+      "ensemble_min_eigenvalue": 0.0,
       "ensemble_mutual_information_bits": 1.5263554633,
       "ensemble_trace_imag_abs": 0.0,
       "ensemble_trace_real": 1.0,
@@ -25196,7 +25196,7 @@
     {
       "decoherence_rate": 0.12,
       "ensemble_global_entropy_bits": 0.8428529975,
-      "ensemble_min_eigenvalue": -0.0,
+      "ensemble_min_eigenvalue": 0.0,
       "ensemble_mutual_information_bits": 1.1563295541,
       "ensemble_trace_imag_abs": 0.0,
       "ensemble_trace_real": 1.0,
@@ -25328,7 +25328,7 @@
     {
       "decoherence_rate": 0.12,
       "ensemble_global_entropy_bits": 0.9281891978,
-      "ensemble_min_eigenvalue": 0.0,
+      "ensemble_min_eigenvalue": -0.0,
       "ensemble_mutual_information_bits": 1.0695996441,
       "ensemble_trace_imag_abs": 0.0,
       "ensemble_trace_real": 1.0,
@@ -25664,7 +25664,7 @@
     {
       "decoherence_rate": 0.3,
       "ensemble_global_entropy_bits": 0.9960089617,
-      "ensemble_min_eigenvalue": -0.0,
+      "ensemble_min_eigenvalue": 0.0,
       "ensemble_mutual_information_bits": 1.0022354396,
       "ensemble_trace_imag_abs": 0.0,
       "ensemble_trace_real": 1.0,
@@ -25784,7 +25784,7 @@
     {
       "decoherence_rate": 0.6,
       "ensemble_global_entropy_bits": 0.9147291562,
-      "ensemble_min_eigenvalue": -0.0,
+      "ensemble_min_eigenvalue": 0.0,
       "ensemble_mutual_information_bits": 1.0852261956,
       "ensemble_trace_imag_abs": 0.0,
       "ensemble_trace_real": 1.0,
@@ -25820,7 +25820,7 @@
     {
       "decoherence_rate": 0.6,
       "ensemble_global_entropy_bits": 0.9821026181,
-      "ensemble_min_eigenvalue": 0.0,
+      "ensemble_min_eigenvalue": -0.0,
       "ensemble_mutual_information_bits": 1.0177604561,
       "ensemble_trace_imag_abs": 0.0,
       "ensemble_trace_real": 1.0,
@@ -25832,7 +25832,7 @@
     {
       "decoherence_rate": 0.6,
       "ensemble_global_entropy_bits": 0.9867190207,
-      "ensemble_min_eigenvalue": -0.0,
+      "ensemble_min_eigenvalue": 0.0,
       "ensemble_mutual_information_bits": 1.0131022464,
       "ensemble_trace_imag_abs": 0.0,
       "ensemble_trace_real": 1.0,
@@ -25856,7 +25856,7 @@
     {
       "decoherence_rate": 0.6,
       "ensemble_global_entropy_bits": 0.9980436931,
-      "ensemble_min_eigenvalue": 0.0,
+      "ensemble_min_eigenvalue": -0.0,
       "ensemble_mutual_information_bits": 1.0016774032,
       "ensemble_trace_imag_abs": 0.0,
       "ensemble_trace_real": 1.0,
@@ -26096,7 +26096,7 @@
     {
       "decoherence_rate": 0.6,
       "ensemble_global_entropy_bits": 0.9971887071,
-      "ensemble_min_eigenvalue": 0.0,
+      "ensemble_min_eigenvalue": -0.0,
       "ensemble_mutual_information_bits": 1.0003081343,
       "ensemble_trace_imag_abs": 0.0,
       "ensemble_trace_real": 1.0,

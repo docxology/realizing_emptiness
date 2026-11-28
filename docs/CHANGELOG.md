@@ -1,5 +1,11 @@
 # Changelog
 
+## 3.0.1 - 2026-11-28
+
+- Use GNN 5.2.0 and PyMDP 1.0.5 on Python 3.12 through 3.14.
+- Retain the existing GNN 4.1.0 and PyMDP 1.0.4 runtime on Python 3.11.
+- Resolve and verify each installed GNN source identity before recording model evidence.
+
 ## 3.0.0 - 2026-10-14
 
 - Make packaged Generalized Notation Notation (GNN) declarations the authority

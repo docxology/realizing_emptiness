@@ -32,7 +32,7 @@
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/dashboard/index.html",
-      "sha256": "f2ba99dafeac32b9c40184156c06d5cfc3dd72d44b247f07ba7b22ee6d29b0b4"
+      "sha256": "cebd9dd85ae4de5e825b76118020a8aa44c0ca0feb89fde997945510cdd30cbb"
     },
     {
       "artifact_id": "arbitrary_two_qubit_entanglement_audit",
@@ -52,11 +52,11 @@
     },
     {
       "artifact_id": "artifact_dashboard_payload",
-      "bytes": 18070,
+      "bytes": 18119,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/data/artifact_dashboard_payload.json",
-      "sha256": "4d1d907c809abcff3156b409988fdd4b8226ade7832f5ff957f8ca914d9aaafe"
+      "sha256": "cc996e056c167148a811fcb04d59c695d2cce6aee81f13e1febd73f71ea8419a"
     },
     {
       "artifact_id": "blackwell_bayes_risk_audit",
@@ -68,11 +68,11 @@
     },
     {
       "artifact_id": "bmr_alternative_prior_audit",
-      "bytes": 38660,
+      "bytes": 38663,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/data/bmr_alternative_prior_audit.json",
-      "sha256": "880ac1eaaecc96572466d8b35f85ddc2717630a2d82a3422ca638e79f4250335"
+      "sha256": "0326ad52e0aea33c7604e19457ec8ca5d42c691d1d11d66f07bdf924949d33fe"
     },
     {
       "artifact_id": "bmr_robustness_resampling_audit",
@@ -152,15 +152,15 @@
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/data/cover_graphical_abstract_audit.json",
-      "sha256": "767110b953d35eedf07119284dd5e558eb8bdc7341394cc063d9d45ba8918225"
+      "sha256": "337548908f25121c8777b5414f2537a4dba3ec954472fbc34f816df1df775fb0"
     },
     {
       "artifact_id": "criticality_stochastic_ensemble",
-      "bytes": 349430,
+      "bytes": 349421,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/data/criticality_stochastic_ensemble.json",
-      "sha256": "15b2b91c238679f6d99094f94f827bdcff8f4ae078f078be1da8ed57c674784a"
+      "sha256": "6ab7e2652aa77b82b967742ae6a761e898fe90a54831afc95cef0dbe6e5d9cbd"
     },
     {
       "artifact_id": "data_processing_monotonicity_audit",
@@ -212,19 +212,19 @@
     },
     {
       "artifact_id": "figure_integrity_audit",
-      "bytes": 83833,
+      "bytes": 83836,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/data/figure_integrity_audit.json",
-      "sha256": "08ead80de35c92006491ba5752c30850d77957c1fb406352fbd7305a7eb7e561"
+      "sha256": "e43ff79beeb6349abeda6fb5db40d1943a1019a2402d9be7eb08941381483d84"
     },
     {
       "artifact_id": "figure_legibility_audit",
-      "bytes": 28438,
+      "bytes": 28441,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/data/figure_legibility_audit.json",
-      "sha256": "95548ed3985406089e1748bf773e362a06b41980ba30edf63db51e1c8bfbf7b1"
+      "sha256": "5717e2103ac98c05d7cf7c511eb28d2584b308d547e8897aa5b3f33154f19a85"
     },
     {
       "artifact_id": "figure_parameter_ledger",
@@ -252,11 +252,11 @@
     },
     {
       "artifact_id": "formalism_registry",
-      "bytes": 11182,
+      "bytes": 11167,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/data/formalism_registry.json",
-      "sha256": "5d02529ce9062894b3cd4bb2924865a39ee70fffe20c8cf5cc56a6f761f893ab"
+      "sha256": "67a8a967b9cdb3ab276326ccb1ce0b9a14408067d4a32839fee90d04f1d02f9a"
     },
     {
       "artifact_id": "general_measurement_cover_polytope_audit",
@@ -268,11 +268,11 @@
     },
     {
       "artifact_id": "gnn_model_audit",
-      "bytes": 44435,
+      "bytes": 44436,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/data/gnn_model_audit.json",
-      "sha256": "2e113c1d2dd728a05f7cd5f3c7edcf68f9d94eb2136bd81df7fbbcab09050a75"
+      "sha256": "64a00fb2a5e8360c665b922413b5357de1af7ee0276d16ee2009da6a4831bbcd"
     },
     {
       "artifact_id": "interaction_information_boundary_audit",
@@ -300,11 +300,11 @@
     },
     {
       "artifact_id": "manuscript_claim_intensity_audit",
-      "bytes": 82156,
+      "bytes": 82127,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/data/manuscript_claim_intensity_audit.json",
-      "sha256": "ba16da647e9f073b3afab0d82ca13a0c56599f0b0cdb1432cd0e34a9ab991f05"
+      "sha256": "1eac20a93e38b82cbb83819fed90a44e8870a465dcc985a14ba6104b1725e953"
     },
     {
       "artifact_id": "manuscript_figure_placement_audit",
@@ -328,7 +328,7 @@
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/data/manuscript_variables.json",
-      "sha256": "4ab1db128c759f006e0df5e59f4497bede77c045c5cbd629e35645f5a3dea9c1"
+      "sha256": "b84bc9d719240a46f1d01cb75731b27bc8398c99c81ef684d93b6d10ca9f9419"
     },
     {
       "artifact_id": "many_body_boundary_screen_sweep",
@@ -412,35 +412,35 @@
     },
     {
       "artifact_id": "pymdp_policy_trace",
-      "bytes": 110897,
+      "bytes": 110890,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/data/pymdp_policy_trace.json",
-      "sha256": "a17c624226deed1f3c7b2a6b5567a202ba4ea4a9e5aa1f67233b0f828a0b5a50"
+      "sha256": "9c438353ee5763a2d86a7acda447be658a35ffd8b100cccf9bc77c0f7fc6f0a7"
     },
     {
       "artifact_id": "pymdp_profile_comparison",
-      "bytes": 13855,
+      "bytes": 13737,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/data/pymdp_profile_comparison.json",
-      "sha256": "41af984185a71873f19c784075ed92aed3f26b7b5b33fead7e02801b554a4b7b"
+      "sha256": "9fff641b3db05cab94ff09349c72b704fa0a4aedd92c671e9909d8186e80da67"
     },
     {
       "artifact_id": "pymdp_runtime_diagnostics_log",
-      "bytes": 84672,
+      "bytes": 84553,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/data/pymdp_runtime_diagnostics_log.json",
-      "sha256": "14d425585d1558eb150ebed8d8cd8c5b9ce2a06f2d2e16e70d5c6212cd386c10"
+      "sha256": "9e6dc9bffa7aed077447286013b9f95753017838093c3d557685ddf2df2e6faa"
     },
     {
       "artifact_id": "qfep_boundary_hamiltonian_dynamics",
-      "bytes": 41096,
+      "bytes": 41101,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/data/qfep_boundary_hamiltonian_dynamics.json",
-      "sha256": "3a5b14956c83209f8b16f418ad1a6cfd6ffbd041fb88800b7653300c510d2975"
+      "sha256": "818e099a8a04b7fecf72b2f130e568238c5e6ce573f514f388b32350c6e9761a"
     },
     {
       "artifact_id": "qrf_boundary_channel_ledger",
@@ -484,11 +484,11 @@
     },
     {
       "artifact_id": "quantum_boundary_entropy",
-      "bytes": 189686,
+      "bytes": 189684,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/data/quantum_boundary_entropy.json",
-      "sha256": "7957b420446b1e629bad8be30899bf37d68e5f2b6c598a79227c37c92dd68b3c"
+      "sha256": "eda0544e0af0b20d69dc6c35785667e6e7ab443bb078bae8a3afdf8f1e4e5841"
     },
     {
       "artifact_id": "quantum_cramer_rao_estimation_audit",
@@ -544,15 +544,15 @@
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/data/quantum_trajectory_convergence_audit.json",
-      "sha256": "1627d3b3159a5994d564c938e6b871039fbfaf494fc636c749d56c237b590a0f"
+      "sha256": "142053e713bd6df1c60bbf598946fe9a82995e0c2d63e3d5deb06e4eb0e1b701"
     },
     {
       "artifact_id": "quantum_trajectory_unraveling",
-      "bytes": 533307,
+      "bytes": 533306,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/data/quantum_trajectory_unraveling.json",
-      "sha256": "2c5e6b1ffb1bcd1e74fab9b8faf3c7fafac1904c8c7efbd5d40ddb9fe0cb03bb"
+      "sha256": "159270d06c436f68b8fdb56fc58cfa28b28da07dfb8be8cd0be4540c6e36be3f"
     },
     {
       "artifact_id": "rendered_figure_caption_audit",
@@ -644,11 +644,11 @@
     },
     {
       "artifact_id": "sparse_boundary_screen_scaling_audit",
-      "bytes": 11798,
+      "bytes": 11799,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/data/sparse_boundary_screen_scaling_audit.json",
-      "sha256": "8818c9cc4556433d9bacffeec9205332ec3e8225076db296185f5f258f155915"
+      "sha256": "c519227bd23e8cec96f6685f0148481dc0b27079b58b55e599551efca610c092"
     },
     {
       "artifact_id": "statistical_robustness_audit",
@@ -660,19 +660,19 @@
     },
     {
       "artifact_id": "stochastic_effect_size_audit",
-      "bytes": 22634,
+      "bytes": 22630,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/data/stochastic_effect_size_audit.json",
-      "sha256": "8109dcbf4d1313d3fa922d61c26c4d168f559576ea0869397ba506ce1aa48151"
+      "sha256": "d896d712dbb2ce656a807f4c3ee9738f865db7be29ba4a17aa1dfc3a78a49ee6"
     },
     {
       "artifact_id": "stochastic_policy_ensemble",
-      "bytes": 25768787,
+      "bytes": 25770062,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/data/stochastic_policy_ensemble.json",
-      "sha256": "b17bb5c9884e6c73122247161a9f99bd7cfe18e8b339b6d187d0115a50a41865"
+      "sha256": "dfb91f97fd5bd3ab9fab5bd0d10d8b7576d9fd691ed6748d084f90977c085cf2"
     },
     {
       "artifact_id": "tensor_network_benchmark_audit",
@@ -724,483 +724,483 @@
     },
     {
       "artifact_id": "arbitrary_two_qubit_entanglement_audit_figure",
-      "bytes": 199744,
+      "bytes": 227892,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/figures/arbitrary_two_qubit_entanglement_audit.png",
-      "sha256": "77003e2747ef950b4595a6beca0f97fb953d23cf3bd4fd3e353e0103f4cf9a10"
+      "sha256": "117397c3aef8f538385df4062ff538e932b9432e62ead0dca2e2c3bc2e2ee714"
     },
     {
       "artifact_id": "bmr_free_energy_decomposition",
-      "bytes": 151048,
+      "bytes": 170515,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/figures/bmr_free_energy_decomposition.png",
-      "sha256": "2f8ee6dcb8dbc5ada5d7f63ec09c9fabcaabc0541970321a59675774d7472fb8"
+      "sha256": "637548d841751c7be544b95bd33d3ba2827304babbbf026de71fdc66a31d0856"
     },
     {
       "artifact_id": "bmr_pruning_phase_diagram",
-      "bytes": 303508,
+      "bytes": 332397,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/figures/bmr_pruning_phase_diagram.png",
-      "sha256": "88786dc3999e1f6e3cf5a574267bad24d547483cbb3619ccea8754d9389b4648"
+      "sha256": "ab3f812fe2d261ca6ea1dc5a227a7438f4ff43485f7acd49f68c425b2fbcbf0a"
     },
     {
       "artifact_id": "bmr_robustness_resampling",
-      "bytes": 305457,
+      "bytes": 334825,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/figures/bmr_robustness_resampling.png",
-      "sha256": "ea6bce38d6215a67430b89141796dd18d2f11c92695e1ace9f48524255de1103"
+      "sha256": "ea118291ffd3f09910e92d8025325967ecce5881e3c0bdcb6349b587b9536f99"
     },
     {
       "artifact_id": "boundary_indistinguishability",
-      "bytes": 85923,
+      "bytes": 96497,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/figures/boundary_indistinguishability.png",
-      "sha256": "bb5016f1e77b98ee70ea8be1f2bcb302f6045a7abbebd1c1956fe2d5d341f5ff"
+      "sha256": "fd971ac77d21e10fecec27148d6b425d378b74ff2520a826aa19fe9f4dc68a4b"
     },
     {
       "artifact_id": "boundary_use_vs_ontology",
-      "bytes": 357427,
+      "bytes": 401991,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/figures/boundary_use_vs_ontology.png",
-      "sha256": "00a586dd29a4c6e3cc52949b5a788092dddda6df0e4f3a8d7fec6eb980ad4917"
+      "sha256": "76dcddf03e0e06136ceb0e35a9f41f55429724adaf4a52dea040b016a11b6f9d"
     },
     {
       "artifact_id": "claim_context_evidence_ladder",
-      "bytes": 320771,
+      "bytes": 376011,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/figures/claim_context_evidence_ladder.png",
-      "sha256": "12ca98a6b0218b9ba128aff1b5c497d289dafd21399fe1212bbfb539ca228e93"
+      "sha256": "096cb223a6acdb06c531d84380c9e4b3c6acf307ff1c7dbcc9deb7092ea6547e"
     },
     {
       "artifact_id": "claim_source_validation_graph",
-      "bytes": 348688,
+      "bytes": 407980,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/figures/claim_source_validation_graph.png",
-      "sha256": "60cd7059efe6144e15ef35aef76db1437499853de7ba373e9f714945ee58707d"
+      "sha256": "cb2ebe5ae585f97b100d358681172a5aa84217f762e0cfae3f7c67c0aa0d82b8"
     },
     {
       "artifact_id": "claim_support_matrix",
-      "bytes": 386724,
+      "bytes": 457055,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/figures/claim_support_matrix.png",
-      "sha256": "4e5fa49dc7fd6523e3ed4556fdfbbc32a98048a351a467de2e0c136166913d21"
+      "sha256": "c7fbec7838382143c678d64807ab91b19f9626d9c974bb365c1ac3dd93177e00"
     },
     {
       "artifact_id": "collision_model_relaxation",
-      "bytes": 160625,
+      "bytes": 184864,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/figures/collision_model_relaxation.png",
-      "sha256": "6857dd48a34eb1b8a6b58e40c4f3a39165a4442f422d4a13fdb1c2b351ec0f4a"
+      "sha256": "e8e9906b42d48886bab109cbfa404555e0908ec27eefe062bb176b065bb82065"
     },
     {
       "artifact_id": "compassion_scope_widening",
-      "bytes": 217285,
+      "bytes": 245091,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/figures/compassion_scope_widening.png",
-      "sha256": "88ba9cdb4e2ff145d86f56cbcd463a5022cf8d7efaf9eee824e596ad3d6148d3"
+      "sha256": "41647541f5822d9a2661e2ff44836e3f88df35df70fcfbed4ace5e57621ada7c"
     },
     {
       "artifact_id": "criticality_paired_contrasts",
-      "bytes": 83517,
+      "bytes": 98430,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/figures/criticality_paired_contrasts.png",
-      "sha256": "40fe30c6c53cc89bb5ea92f2c36c24d4616d9bb33402b97f3c7fcc14bfa796b3"
+      "sha256": "1db89aa9343b0d256e01f6e95773d896023c6d8cee62ce4e7d9c4c80aecd01f5"
     },
     {
       "artifact_id": "criticality_signatures",
-      "bytes": 177345,
+      "bytes": 207841,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/figures/criticality_signatures.png",
-      "sha256": "842aedae15f8c7353ae06628b38fff63cd871ba4a00bd7659278f69b31ce994f"
+      "sha256": "e533c0ad6f3b78b5edb440fb3aee265c2dcdb5e1781115fbd34f744fb205605b"
     },
     {
       "artifact_id": "criticality_stochastic_ensemble_figure",
-      "bytes": 193811,
+      "bytes": 224932,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/figures/criticality_stochastic_ensemble.png",
-      "sha256": "82504d537696ea38f9cfe7ab703412905106887d770ebf787b671a9aafd2db75"
+      "sha256": "91e9c2bde200f89e7f71e9fc0b72df6539a60b128c8b65c77215e25e9dcd9694"
     },
     {
       "artifact_id": "data_processing_monotonicity",
-      "bytes": 365795,
+      "bytes": 421960,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/figures/data_processing_monotonicity.png",
-      "sha256": "ae877f5cdd4ea134a95602e282436b5af688e4ce8e98e8fc6e78f85cd669f649"
+      "sha256": "9d78c4fda130d144cd1d2221f727471d8cac03c0ade75f2bff9f452a083b7a9c"
     },
     {
       "artifact_id": "empirical_adapter_provenance_audit_figure",
-      "bytes": 197668,
+      "bytes": 232144,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/figures/empirical_adapter_provenance_audit.png",
-      "sha256": "7a755c0a105ff246557489146f7c321e7a1407e00f236f09e581f907f0fb7e7d"
+      "sha256": "790106f23c25c73bf4453dfa7592280e72b2ad5315ca3903b245cadb3e482cd4"
     },
     {
       "artifact_id": "evidence_ceiling_stress_matrix",
-      "bytes": 377196,
+      "bytes": 458251,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/figures/evidence_ceiling_stress_matrix.png",
-      "sha256": "fbca6c89aa39e587c42616b9d55084ed8aa7b38bf805c5d7a514ac5156b2a825"
+      "sha256": "18eeacb5c54ac60b6ffc8dd52884f077c0c00d42fe0b06f9f3396d3baa15061c"
     },
     {
       "artifact_id": "finite_quantum_scope_summary",
-      "bytes": 310739,
+      "bytes": 348374,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/figures/finite_quantum_scope_summary.png",
-      "sha256": "f9f3571d2289091de895ec4c7386448554daf707aca326f974fefcd2d989b078"
+      "sha256": "7faf56b994fe4df9c62ce02ae05b4700e946103e2f10a8704bc0aa8d6602f4ca"
     },
     {
       "artifact_id": "formalism_operation_map",
-      "bytes": 201486,
+      "bytes": 245987,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/figures/formalism_operation_map.png",
-      "sha256": "d1b9d23df06c140e1c9c57a53bff239620b1fdc9d23d77251d90371eaf9d05af"
+      "sha256": "af1cd12f6dc0d42a006e608747d9839255ae777b9801d442118bca02d435b917"
     },
     {
       "artifact_id": "general_measurement_cover_polytope_audit_figure",
-      "bytes": 196513,
+      "bytes": 225813,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/figures/general_measurement_cover_polytope_audit.png",
-      "sha256": "ceaae4226c573a176f0566047226ef7e8abce68f2639a9d8b88f9350424779ea"
+      "sha256": "ab3402053317feb5c29d8f7ba68b3fd45d5e6b3ea3b571a4ffa94bb6ba2409fb"
     },
     {
       "artifact_id": "graphical_abstract_cover",
-      "bytes": 380445,
+      "bytes": 413663,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/figures/graphical_abstract_cover.png",
-      "sha256": "61b0f917e2119959376c878e297216db5b93e9e667a6fbf51c9e7d3e1df1db68"
+      "sha256": "af12c89208846554002d386d483b349ed9cec7dbc8cc1300d0e7bc92de53d45e"
     },
     {
       "artifact_id": "internal_cut_unmeasurability",
-      "bytes": 171002,
+      "bytes": 197831,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/figures/internal_cut_unmeasurability.png",
-      "sha256": "8aa1e883c18080c5dc722a1df4b0175cb285c11f0eab77f748e03df245dab26f"
+      "sha256": "41d78e2b91d3c0dfe0da6009eb3e3dbfb8e4224079763b9a955c1c71711e3342"
     },
     {
       "artifact_id": "manuscript_claim_audit_figure",
-      "bytes": 100316,
+      "bytes": 119496,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/figures/manuscript_claim_audit.png",
-      "sha256": "fcbbd9dd890e8e3996dfd5fb880f2448246c07ca1481e7c0792a76fb83e79c43"
+      "sha256": "42cfaa33033900a2ab53b7ebc00b1f02a605d594c298de4e40e8b44105751941"
     },
     {
       "artifact_id": "many_body_boundary_screen_sweep_figure",
-      "bytes": 177748,
+      "bytes": 198781,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/figures/many_body_boundary_screen_sweep.png",
-      "sha256": "251cf696c4f0b9a21d95cf0b0bb38c8250465e152ed8c357c4bf3dbbb195a080"
+      "sha256": "5ec9ac5c67dcc83f6309361a29e4e652387cdb34a9c8d19c58da2ae4acf3e44b"
     },
     {
       "artifact_id": "markov_blanket_discovery",
-      "bytes": 213081,
+      "bytes": 242911,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/figures/markov_blanket_discovery.png",
-      "sha256": "74d95933d0561cfa2cd6b2add12ed7364fe339f66e700a14ed79c61e8b03a867"
+      "sha256": "d6cddf531d042c0202d2216f5c4408871c6950348cd100a33b2e26c3c786947c"
     },
     {
       "artifact_id": "method_assumption_failure_map",
-      "bytes": 184738,
+      "bytes": 213134,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/figures/method_assumption_failure_map.png",
-      "sha256": "089288bf5c6345c00885ce3b18090f278c8bad7887be903e4ef27ca6cd550445"
+      "sha256": "ed7fc889aa24078fe108a8ac740f386fd244a6ca61c4f70cc35753003f913e7f"
     },
     {
       "artifact_id": "multipartite_witness_negativity",
-      "bytes": 168433,
+      "bytes": 191208,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/figures/multipartite_witness_negativity.png",
-      "sha256": "1bb90c7d922895179a58b9c3e6d8d207eaa5d5ceb826e486ee99a0473c558650"
+      "sha256": "a8bc834fc6d9236fbd843326008452da9656cb6e5ce2aca5fe55ece4760eb69f"
     },
     {
       "artifact_id": "n_cycle_contextuality_panel",
-      "bytes": 245797,
+      "bytes": 281599,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/figures/n_cycle_contextuality_panel.png",
-      "sha256": "174d2164fa9b6b553597869538488221b644adccec99bcfb886c203b30ff8455"
+      "sha256": "ceaa98dd838451e69e4be52066a1b0b65689a931ede8b028059c1fa2ba6692f2"
     },
     {
       "artifact_id": "posterior_trajectory",
-      "bytes": 207849,
+      "bytes": 230458,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/figures/posterior_trajectory.png",
-      "sha256": "11d2d1b3defea23f5629d75bce051cb9881bd5647a8fc602d656992276a89bc7"
+      "sha256": "370124dc256541fdd91cf11a2c657fc593993fa315d7162a0b9726e75791402c"
     },
     {
       "artifact_id": "practice_policy_scope_map",
-      "bytes": 217730,
+      "bytes": 264866,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/figures/practice_policy_scope_map.png",
-      "sha256": "0a3c890f2c081a8c72cc70d94ce1c966a743c8727aaa6087a5ab223ca2f8c154"
+      "sha256": "5e424ab27be82b7f7018b0fdd88f1cc4fa9e5787b51362e4bab53e4e0540027f"
     },
     {
       "artifact_id": "pymdp_profile_comparison_figure",
-      "bytes": 182823,
+      "bytes": 207349,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/figures/pymdp_profile_comparison.png",
-      "sha256": "10a71687fbd3a9cdd3e5bd0cda117b3718ac20ef5fdd9825f82f1f9b83a438f4"
+      "sha256": "5e94371cd4c03aa8aabd7febae602052f2c5310f7f2561c1df7dcc30a33ea39b"
     },
     {
       "artifact_id": "pymdp_runtime_validation_dashboard",
-      "bytes": 325423,
+      "bytes": 371749,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/figures/pymdp_runtime_validation_dashboard.png",
-      "sha256": "812d539fa85aa7b5bcac15006803131b34225152546c0622f971a664ffce3d8b"
+      "sha256": "6a2b5015f614d1dae45086d651b4514c63325c2ecf8c6b729fb54dc0ab2d8a7a"
     },
     {
       "artifact_id": "qfep_boundary_hamiltonian_dynamics_figure",
-      "bytes": 258605,
+      "bytes": 291689,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/figures/qfep_boundary_hamiltonian_dynamics.png",
-      "sha256": "96949bc2c23d0896a04e62792b6e21fea9348e3f5034662b2e35060ee96a31b2"
+      "sha256": "190448772ebe5e8038ec84ef6ee5fdae7995ee49f8b777130909ce2f3f38cbf8"
     },
     {
       "artifact_id": "qrf_boundary_screen_geometry",
-      "bytes": 267493,
+      "bytes": 292108,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/figures/qrf_boundary_screen_geometry.png",
-      "sha256": "fa8a95d2c8aa357a3e19097fb5f6872f66da8dea3f258d3f341c58f25b2b2ba0"
+      "sha256": "d8f40f5415baf7d90f1f009c2879a68f4d3e86d50bbcecd54beed103b21f3184"
     },
     {
       "artifact_id": "qrf_channel_relabeling_ledger",
-      "bytes": 204973,
+      "bytes": 227861,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/figures/qrf_channel_relabeling_ledger.png",
-      "sha256": "a0207bdd9fe113551520bdd9a7ec66b522c7283b2c583880dcfb547ec89eab1d"
+      "sha256": "bdf428ba5d0c2fcfc6e8f4391127e546d028937f7e05e1d67dfd2ce71f866791"
     },
     {
       "artifact_id": "qrf_frame_covariance_toy_audit_figure",
-      "bytes": 213148,
+      "bytes": 246108,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/figures/qrf_frame_covariance_toy_audit.png",
-      "sha256": "82f340b29e9898f51d1fd148825eb9bd3a99073459d62426d9502131aad122fa"
+      "sha256": "3773837d9f3e521884aa284ef25bab5d3b25fb9f259e33ee2d6c2330abaf6163"
     },
     {
       "artifact_id": "qrf_invariance_policy_flow",
-      "bytes": 214533,
+      "bytes": 242104,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/figures/qrf_invariance_policy_flow.png",
-      "sha256": "2a33e106163784d8e7131e00e8c3381d35dbe3162c62b1eefa72bd1baf4d37cb"
+      "sha256": "0444f3924da2de27fefbfde19bdbfe16bfa0c60fc1e595236c43d60ae9e68258"
     },
     {
       "artifact_id": "qrf_reference_frame_geometry",
-      "bytes": 306036,
+      "bytes": 336042,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/figures/qrf_reference_frame_geometry.png",
-      "sha256": "ece1fbfa4c52948334111bdcbb18d32af202fad7e4ffdc92b9a40a8546752d0d"
+      "sha256": "c71c31129b8979907b026d7076c03cd167fd7a8534b749ed768fe22c3b3356f1"
     },
     {
       "artifact_id": "qrf_sector_situation",
-      "bytes": 221347,
+      "bytes": 245014,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/figures/qrf_sector_situation.png",
-      "sha256": "4fea0154440fda5d18144d88a85ae0fb477352c7a76e2a53a81d03768322be75"
+      "sha256": "419852cb6feee53fffc6e1b9e19713645ee31c8bb9398789f0a7bf27b88556a1"
     },
     {
       "artifact_id": "qrf_sectorisation_map",
-      "bytes": 76781,
+      "bytes": 90783,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/figures/qrf_sectorisation_map.png",
-      "sha256": "08622255b0e8d3bf203a130af362d74f4e120892ab7768838f867c79ac05c140"
+      "sha256": "3b337fa03b67c7f3ea07dfff979a969a52563195545e240f943f38f625e8909d"
     },
     {
       "artifact_id": "qrf_transformation_covariance_audit_figure",
-      "bytes": 183694,
+      "bytes": 210094,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/figures/qrf_transformation_covariance_audit.png",
-      "sha256": "61f37e6088d88bc39cd1bc68dddd0b5e41488e71209197ac4efbbb54e7c41350"
+      "sha256": "823d85660f890ef0204d03209c06e8aae59d0938152f0c4d793c5e2c607f18e5"
     },
     {
       "artifact_id": "quantum_boundary_entropy_landscape",
-      "bytes": 298440,
+      "bytes": 339128,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/figures/quantum_boundary_entropy_landscape.png",
-      "sha256": "55098302149c4529d76d100173440ebed43736b8a72d0322908c9999ab02d647"
+      "sha256": "528c564244f7ebc2aa99339e41b4c73635c1555aeb6fddec4f8b278ed62543cb"
     },
     {
       "artifact_id": "quantum_contextuality_witness",
-      "bytes": 241698,
+      "bytes": 273073,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/figures/quantum_contextuality_witness.png",
-      "sha256": "c44beb670462bcaee7a8166b81fad9df6ca91cfe75caede5ec33ab5e260f65d3"
+      "sha256": "5c6676bc055586975ecb0144cee62b49bcd86f6a7cd66edc112d0c450565d008"
     },
     {
       "artifact_id": "quantum_local_polytope_audit",
-      "bytes": 213977,
+      "bytes": 251869,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/figures/quantum_local_polytope_audit.png",
-      "sha256": "3ac05b3f05bae6bb6714aa5310223da4a41fcea7afb1a3a220fd6165d4ed7942"
+      "sha256": "827ed532118697661862672c8d723257d767df265629b9a1c80d42031406d14a"
     },
     {
       "artifact_id": "quantum_measurement_contextuality_table",
-      "bytes": 205138,
+      "bytes": 230874,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/figures/quantum_measurement_contextuality_table.png",
-      "sha256": "51be9d9a624e1003389550061c3be673158fcf4a9d57f4ce451c9d6f25c208c0"
+      "sha256": "da8f0bc4d4af48cbbe8ed44152817b680eec5083ca75ed140f0418c8c15d4e8b"
     },
     {
       "artifact_id": "quantum_open_system_dynamics_figure",
-      "bytes": 260802,
+      "bytes": 285348,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/figures/quantum_open_system_dynamics.png",
-      "sha256": "927cc3276c8b3cd4c72531a42ad19d601eb4c0f854568252269bf1084f5336c5"
+      "sha256": "08b96d3c51de6ccd85a91024ae9aaddf7b81895b9f735f96fbb48038d1462a47"
     },
     {
       "artifact_id": "quantum_roadmap_readiness_matrix_figure",
-      "bytes": 394412,
+      "bytes": 454094,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/figures/quantum_roadmap_readiness_matrix.png",
-      "sha256": "517f021178e446539dfa19a2a72703b35fcc0b67eb68730239170d1c45517a70"
+      "sha256": "eb1e2366cf5480d1c9bbd402cf3464ef55df50a21aaab5d054573e71b80824d4"
     },
     {
       "artifact_id": "quantum_trajectory_convergence_figure",
-      "bytes": 204231,
+      "bytes": 231805,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/figures/quantum_trajectory_convergence.png",
-      "sha256": "e68286c3a7e1167acd5a98fd87cd0a17e58a42a244670ba2a2d93daf1ed8106d"
+      "sha256": "4eedd279876566cca424a2dd006c707cd6c88d3251ae3cacd7e41a99ae49aecf"
     },
     {
       "artifact_id": "quantum_trajectory_unraveling_figure",
-      "bytes": 278064,
+      "bytes": 317533,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/figures/quantum_trajectory_unraveling.png",
-      "sha256": "bdaebd5c6a528f317fe805c7f73a9d915f6cfda8879ffa57b96564191e0e22c2"
+      "sha256": "f13da80922d962500dad5f3e03bcf28b2fe8d9293e68ecece5be997a1eb63fa1"
     },
     {
       "artifact_id": "resampling_calibration",
-      "bytes": 127519,
+      "bytes": 144080,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/figures/resampling_calibration.png",
-      "sha256": "8ed18aebd8de70250d12cd1e4cfb328a870e7f2224286ec5d53fb1807267f347"
+      "sha256": "f239dc65b739b5580c0c4af8b9aa806b7557fe08e9dcdfc4de56de3902f914f8"
     },
     {
       "artifact_id": "scholarship_coverage_matrix",
-      "bytes": 364455,
+      "bytes": 424942,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/figures/scholarship_coverage_matrix.png",
-      "sha256": "17e9e1cafbb9165476c860a91a4437f79698974470acb735d2d81cb29ece4e10"
+      "sha256": "969459f4679360bfba4ce3451abf94214cc5bd9c4103efab8271043cdd7f4494"
     },
     {
       "artifact_id": "separation_prior_emergence",
-      "bytes": 183354,
+      "bytes": 207032,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/figures/separation_prior_emergence.png",
-      "sha256": "50f5dbe1671f31d3e61c0d610ca1e96632c5027a1e8f8e2f57466a2556e0e2ec"
+      "sha256": "e1601b36845db8a8dc45ab6dabe969d7ba24f5d2e24833cf6586c972f1ed5eb7"
     },
     {
       "artifact_id": "separation_prior_net_value",
-      "bytes": 262142,
+      "bytes": 292507,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/figures/separation_prior_net_value.png",
-      "sha256": "7cf13fe34238c63592effc0bc2ae3f5a7f2253f982de1d79a368437c57f68e15"
+      "sha256": "ea944933efee925ccaf5b918e1a51917aa58b6635ec1a43b7c29912b6a3edabc"
     },
     {
       "artifact_id": "sheaf_contextuality_obstruction_audit_figure",
-      "bytes": 161895,
+      "bytes": 186801,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/figures/sheaf_contextuality_obstruction_audit.png",
-      "sha256": "0d22f1b8bf4c426ca84261586bf296ae586c02ff8488762155efc249c276fc4d"
+      "sha256": "9f31214eedaf5516d72391b313d13169b9bf172eb21c642e26c4fc3054a6e968"
     },
     {
       "artifact_id": "simulation_sensitivity_heatmap",
-      "bytes": 201759,
+      "bytes": 223035,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/figures/simulation_sensitivity_heatmap.png",
-      "sha256": "bf97b5160e582c3b2aa2a5ec63854c48f66fca798f1852274cc4545e15fdfcc4"
+      "sha256": "7e08af5c12728754693e954abb290c642e925770a9cc6d8bb2fe87fd6145c756"
     },
     {
       "artifact_id": "sparse_boundary_screen_scaling_audit_figure",
-      "bytes": 247285,
+      "bytes": 274529,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/figures/sparse_boundary_screen_scaling_audit.png",
-      "sha256": "6fe01fac078f3627d42758cd9843755195a1f5ce29e65bd76e28ea003120892d"
+      "sha256": "232920dbf2d8500f0c7b4705ad41bb9d8d9a4950f010c2896e6bc409b901e2e9"
     },
     {
       "artifact_id": "stochastic_effect_size_forest",
-      "bytes": 299740,
+      "bytes": 353284,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/figures/stochastic_effect_size_forest.png",
-      "sha256": "d2626d8ec76d0acf7515b1b584f9f9c9112ad97b78476a6c53dee6e6da4a1d82"
+      "sha256": "838aaf8027cd4c0e61ec80f1aed3eb149683889712e24fe92c2e4c6e06a64060"
     },
     {
       "artifact_id": "tensor_network_scaling",
-      "bytes": 178391,
+      "bytes": 203498,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/figures/tensor_network_scaling.png",
-      "sha256": "d8afc93b05965779af74de518822b4fad347b2f1cc398a6f82033ea1dd0d9337"
+      "sha256": "df8ab2f1a2c49b492440b71e4e3e3b5db2b282611059679774904bbdbc143bb0"
     },
     {
       "artifact_id": "thermodynamic_channel_cost_audit_figure",
-      "bytes": 202011,
+      "bytes": 226299,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/figures/thermodynamic_channel_cost_audit.png",
-      "sha256": "7d7bef52b7dd0e919eeb08371bec9d94652228bfc987b48c72b7b699637f8b9c"
+      "sha256": "b143db916190ec8b740b9c97291f7f74cffabdc8de6696f99e726132ac7b9689"
     },
     {
       "artifact_id": "visual_semantic_palette_ledger",
-      "bytes": 282819,
+      "bytes": 326953,
       "exists": true,
       "kind": "manifest_artifact",
       "path": "output/figures/visual_semantic_palette_ledger.png",
-      "sha256": "a53987b60ed8656f88807dd2ccfb2e25939a10f08caeb30f1f3ed8750ba5e603"
+      "sha256": "e239b57a8c63ea2459c9950ea350b8fc4969a79234444b9428a3ab8ec7624b90"
     },
     {
       "artifact_id": "criticality_proxy_report",
@@ -1229,14 +1229,14 @@
       "exists": true,
       "kind": "release_support",
       "path": ".python-version",
-      "sha256": "1253c91eccb2aac1c6ff2ac03fd69c1aaa0b221abd3d1bf5b563c12602452b4e"
+      "sha256": "a876e0b10411037a012498b9fe18d9bc1df32ed8b722a13564dc944ddcfd9135"
     },
     {
       "bytes": 1261,
       "exists": true,
       "kind": "release_support",
       "path": ".zenodo.json",
-      "sha256": "02b2d929426ee081b29f2777bd03ead98dfef30991182ad0e542021effc6c88a"
+      "sha256": "f0154b82f5f4960c59d30d14405d0e723238b7fd0cd106fc4930c77533dd8643"
     },
     {
       "bytes": 5413,
@@ -1250,7 +1250,7 @@
       "exists": true,
       "kind": "release_support",
       "path": "CITATION.cff",
-      "sha256": "045bd196eb13e6f5accde889c670444a49008c9bc4eb3a6aec6bffc1455b9606"
+      "sha256": "93e6c7ea38c481d4a2067a169ff55cda9b5d140f7eea711790bf705ddb266fde"
     },
     {
       "bytes": 1227,
@@ -1267,11 +1267,11 @@
       "sha256": "1d14f393390381e7debdd59fcd69852803127acbf519950c73ddfc1dc5b17efa"
     },
     {
-      "bytes": 8991,
+      "bytes": 8960,
       "exists": true,
       "kind": "release_support",
       "path": "README.md",
-      "sha256": "698aa1a68ae92037a9b791bea414534922e6364760c2c6c6705d086dff788aad"
+      "sha256": "e289e5449e3f056518400ff811af7cec26865f5f70300eff0088c89baaf49b69"
     },
     {
       "bytes": 21868,
@@ -1285,7 +1285,7 @@
       "exists": true,
       "kind": "release_support",
       "path": "codemeta.json",
-      "sha256": "469accc034d5a986459154231f2b81655d12327c92e80a31cb884c2d002c0b07"
+      "sha256": "d3e9ebcb97f142914081ac81f2e3b9785bbb91e60ae54f7b9a7e9e63b3c44804"
     },
     {
       "bytes": 432,
@@ -1330,11 +1330,11 @@
       "sha256": "eb396d1b0053da6141fd0fd1493ebf9e1660c5584e71f8d6f02c752970eee8d9"
     },
     {
-      "bytes": 5636,
+      "bytes": 5882,
       "exists": true,
       "kind": "release_support",
       "path": "docs/CHANGELOG.md",
-      "sha256": "bb8f20d67ed5b0bae7c11d05d4980544ecf1b1fc946afebd4f83a20c7d84d0ef"
+      "sha256": "2fc664821a307da339488d75a02d7e743811841c30052704e02352d432187843"
     },
     {
       "bytes": 5336,
@@ -1344,18 +1344,18 @@
       "sha256": "5bad7f416dc86bb3e377cd4188aaee8c1a713f372b9c5daa71bd346a8cd55de5"
     },
     {
-      "bytes": 1149,
+      "bytes": 1228,
       "exists": true,
       "kind": "release_support",
       "path": "docs/ISA.md",
-      "sha256": "875799779cb124ddf1f21470cbe4a3ad70fd75ad1d7dac1c2b029183d2010f07"
+      "sha256": "b01a05541fc4ab5190b4903d102f0dde670af267693cef216cb828e9cd146660"
     },
     {
       "bytes": 6399,
       "exists": true,
       "kind": "release_support",
       "path": "docs/README.md",
-      "sha256": "199f4c3cdee46b19ec45ed7b1d112d2640bafb5c88819192eb2ad03736272e43"
+      "sha256": "b1623d7c894f46debe4f77d157c575537625c0a8b4184dbb29ea450297bfbf24"
     },
     {
       "bytes": 7923,
@@ -1372,11 +1372,11 @@
       "sha256": "94e2335c3a4a37b8d49039b11b45ccda25bad65d4b80aa15428b84abfba699ac"
     },
     {
-      "bytes": 5184,
+      "bytes": 5047,
       "exists": true,
       "kind": "release_support",
       "path": "docs/api-contracts.md",
-      "sha256": "b30236a5bc41c0da653d6c17d8ebc60648da7f4500c99026542dbc168aea7154"
+      "sha256": "0b6a62bd1b5fbfd6bd8ae8f348dd20903875595ca513aaf493a84202e5286db7"
     },
     {
       "bytes": 7190,
@@ -1498,18 +1498,18 @@
       "sha256": "d055cd14cb46eb5a4a9ca4029f955cc35666d261346f3c13aae981e6a8f8037b"
     },
     {
-      "bytes": 7628,
+      "bytes": 7626,
       "exists": true,
       "kind": "release_support",
       "path": "docs/glossary.md",
-      "sha256": "fd1951217154c018cfdc7b3e2e7f93cb2a11c9844cf93b2e18d3e9bea63ef733"
+      "sha256": "8d667f2491baa441f7663562d2a3026b1358958255cddc73f095a91ba6885bae"
     },
     {
-      "bytes": 7614,
+      "bytes": 7333,
       "exists": true,
       "kind": "release_support",
       "path": "docs/gnn-modeling.md",
-      "sha256": "90ecbb825c4be88a85971cf5b4ade3623b72525c8669b2ea19cadb077a8daa13"
+      "sha256": "dcc706451276f1a3aaebb7928ecc2687bad4bbec28e6d206852b0a30ace1f5d5"
     },
     {
       "bytes": 3372,
@@ -1526,11 +1526,11 @@
       "sha256": "b6b09db8e5009c6bfbf4665356112dff3f587ce96d482904f46600d83a5613b4"
     },
     {
-      "bytes": 26151,
+      "bytes": 26138,
       "exists": true,
       "kind": "release_support",
       "path": "docs/manuscript/02_methods.md",
-      "sha256": "ccdf914b0c9a27cba642123be0624de94fc56e83f97c3989130dd873ca735712"
+      "sha256": "e3913e71a5dde93ac13d8e6f452f37b3cd9a308e9a263981e8254de7d37f147e"
     },
     {
       "bytes": 15923,
@@ -1554,11 +1554,11 @@
       "sha256": "51262e555b15eeac344a2e9c6c0caed850ef2819a8cd45896b01161127d1139e"
     },
     {
-      "bytes": 89100,
+      "bytes": 89197,
       "exists": true,
       "kind": "release_support",
       "path": "docs/manuscript/06_supplement.md",
-      "sha256": "2081b5913d4fd47f9a588d90e32d3705f85a8631aa107f01b04bb6bfe2730e7f"
+      "sha256": "7602ecc8f13472150ce2e3dc64a4887c5cf3c6775374b93f8e495ad56f636f9e"
     },
     {
       "bytes": 32,
@@ -1593,7 +1593,7 @@
       "exists": true,
       "kind": "release_support",
       "path": "docs/manuscript/config.yaml",
-      "sha256": "7ccedf6c5688ac240441362a6c11a56827f6fb3e2e01ea5425215a5817f308e3"
+      "sha256": "0b6f50cd1ddb6fe961d2ef295c1b754a155c573b99cd404566739abe67b469c5"
     },
     {
       "bytes": 430,
@@ -1841,11 +1841,11 @@
       "sha256": "152f06858411acc5edfac2282219f9eaf7190c9a128773c3dbd65114d5dcc4bf"
     },
     {
-      "bytes": 6086,
+      "bytes": 6073,
       "exists": true,
       "kind": "release_support",
       "path": "docs/manuscript/sections/methods/pymdp.md",
-      "sha256": "eab7f296e473c7e740954f5a4c2b1c348834d254b68c962581713e7660bedb1a"
+      "sha256": "07438046f864e6abb061b7b4fcbbc0d75acf34ccd75ba84a78a2329a0dd38925"
     },
     {
       "bytes": 7503,
@@ -1988,11 +1988,11 @@
       "sha256": "2b209e1c23a25e26c25ddab664b6469f964e5c958457431fc5cb4424cf961ea2"
     },
     {
-      "bytes": 18183,
+      "bytes": 18280,
       "exists": true,
       "kind": "release_support",
       "path": "docs/manuscript/sections/supplement/validation.md",
-      "sha256": "9be321543907070b056cb9553b5814e87403ade77124e4ba31a054c8048277bf"
+      "sha256": "fd0f6cb3d7947ece962229d599a9c1852099b8973494851d8ffe2591a2cb306d"
     },
     {
       "bytes": 1208,
@@ -2030,11 +2030,11 @@
       "sha256": "5e037b291eea2f1cbf5223e66346bc94254f69a9b8effe5e9b12260d1176de29"
     },
     {
-      "bytes": 66222,
+      "bytes": 66271,
       "exists": true,
       "kind": "release_support",
       "path": "docs/method-inventory.md",
-      "sha256": "1699108139bfc57766d656a2a2a88225303f841b504e9158ca190cb2c9b1df89"
+      "sha256": "50e7a6695a875824a0fe6f4d5ba8ba122f5c26d4ee64e8e1b100de4f4d5d8502"
     },
     {
       "bytes": 13063,
@@ -2065,18 +2065,18 @@
       "sha256": "9735a024e3aba42d3336972e1f674464df6a09832ff10a6dddcb7fa9dab3dfd6"
     },
     {
-      "bytes": 6872,
+      "bytes": 6827,
       "exists": true,
       "kind": "release_support",
       "path": "docs/release-validation.md",
-      "sha256": "439e4efb06450ca0ca23f3ed5deb87b3abd8e981a5bda4e5450b31409e3f9ee8"
+      "sha256": "adf536dce63923148cf9751ff6d40a4a143bcf0768f2a32b77cf4d8fb0c5f176"
     },
     {
-      "bytes": 13838,
+      "bytes": 13889,
       "exists": true,
       "kind": "release_support",
       "path": "docs/running-the-chain.md",
-      "sha256": "e22e461556651ef38802d87e99032702b39990d7351aa323d9fe56dc612515b6"
+      "sha256": "581b4a4ced12464934b558e17745729f79cb4e91faa00a0738d4556ca4c9d0fc"
     },
     {
       "bytes": 14270,
@@ -2156,11 +2156,11 @@
       "sha256": "de1662ce6172cfaa1b2955bbedd6197e4bcd68d6b0f74d360a9ac962f2e3c8a9"
     },
     {
-      "bytes": 1963,
+      "bytes": 2184,
       "exists": true,
       "kind": "release_support",
       "path": "pyproject.toml",
-      "sha256": "d50e7ee44a72a7681c7486335e74a52f132884eda1bc141ae7ca28f1027a4063"
+      "sha256": "7142179c49e9cafd049f308d80ce21f2b615059b66037861edaf9cf8b72689ca"
     },
     {
       "bytes": 1430,
@@ -2387,11 +2387,11 @@
       "sha256": "082686459e19c111ccbd3f114198f76f0bccec14edf1d419b22e14beaee02b86"
     },
     {
-      "bytes": 13793,
+      "bytes": 14099,
       "exists": true,
       "kind": "release_support",
       "path": "schemas/gnn_model_audit.schema.json",
-      "sha256": "d249ff79b4742a19f2d1c8858add62080e6ee9d8ed3c93dbf88737e13b4c4aeb"
+      "sha256": "a6838269a9050e29b8708be6936a0348878d156dd31ee2cc6634d0baf9cf2249"
     },
     {
       "bytes": 730,
@@ -2520,18 +2520,18 @@
       "sha256": "4fa758ba1fb5dfb94112476481eb3f769a993b891955fdbd70f5285c6cc21210"
     },
     {
-      "bytes": 2311,
+      "bytes": 2329,
       "exists": true,
       "kind": "release_support",
       "path": "schemas/pymdp_profile_comparison.schema.json",
-      "sha256": "e40b66903b02a74fa351ca9e2474285181a8096463ca173041a068439804d0b0"
+      "sha256": "f494955ac119dbe90ce1129b2893cce31900ae5ffb969c4121d27dbed383e9ef"
     },
     {
-      "bytes": 7975,
+      "bytes": 8002,
       "exists": true,
       "kind": "release_support",
       "path": "schemas/pymdp_runtime_diagnostics_log.schema.json",
-      "sha256": "ae032d32c9851dcb15bcb699a5213473bf1fedf312d72772df1f77b68b5d2894"
+      "sha256": "47bc5efbda180ce426c557352972fe2ed7dc1ca35b076f5daf5bd78090a19d94"
     },
     {
       "bytes": 2242,
@@ -3164,11 +3164,11 @@
       "sha256": "27829201a6e925297ebdc1f16dc260c868480e63bcf02e6180e45f1842eb76b2"
     },
     {
-      "bytes": 139239,
+      "bytes": 139381,
       "exists": true,
       "kind": "release_support",
       "path": "src/gates/validation.py",
-      "sha256": "22dcdc4ff382e13ffbf9c73c9cd79ea16be97dd3d568adbb65b83d05ecbde9f5"
+      "sha256": "722a7ae178af9cff2aeecd874f0663e34b50ebb1fc15d4c00a570f7adc825f05"
     },
     {
       "bytes": 872,
@@ -3185,11 +3185,11 @@
       "sha256": "9154ef0877af34ed4c5d640bffbe171caedfba0da4a4fb397c22eb41ae96e161"
     },
     {
-      "bytes": 14464,
+      "bytes": 14465,
       "exists": true,
       "kind": "release_support",
       "path": "src/modeling/audit.py",
-      "sha256": "30a601f6518d8c9874e8c1065e0d505890e7f59a2efe308cc559032722978825"
+      "sha256": "6a321f7fea57173e4e66337940daa9f09e6b6448646c77e8f02137c29bcb2d23"
     },
     {
       "bytes": 6630,
@@ -3199,11 +3199,11 @@
       "sha256": "676fe75ad8c4fae60f07d7622261c919fae3e6a79a8be9b8b500efbc39dd953a"
     },
     {
-      "bytes": 9625,
+      "bytes": 9899,
       "exists": true,
       "kind": "release_support",
       "path": "src/modeling/registry.py",
-      "sha256": "77bc40113fb2aa2fdbc6365d386bd9d3c863c3f7ce9ab190fdba04dac707d990"
+      "sha256": "091fbdebe30b3294c41b88d2aeb0fe14536239c3c851f30e523205b4291d18e4"
     },
     {
       "bytes": 657,
@@ -3514,11 +3514,11 @@
       "sha256": "9b8e892b57be33b6433b9229a583943793596ab7defe284a0b48ac2c18a5e7a7"
     },
     {
-      "bytes": 478,
+      "bytes": 583,
       "exists": true,
       "kind": "release_support",
       "path": "src/modeling/upstream.json",
-      "sha256": "ca481b780e898dc878ac60ecd2bf4c23fe9d3d3051bb74ecffcf6ddb5c42e7d6"
+      "sha256": "917f84872dc27adfcd116794ac1159cb3cf1cfe7385cc22a6dba28e0c367c00d"
     },
     {
       "bytes": 1123,
@@ -3612,11 +3612,11 @@
       "sha256": "a974fbe09aa16af334fe83bdcf6b7c8c34d42d453c46e6a5f7136cca5bbf048b"
     },
     {
-      "bytes": 28061,
+      "bytes": 28050,
       "exists": true,
       "kind": "release_support",
       "path": "src/simulation/pymdp_profiles.py",
-      "sha256": "4fd3a3a926e58f0aab9d28e7f93b31155ea4af4bd6901f79e98d1364f520e91c"
+      "sha256": "514f097682e825cecd8746f5891a29714ba9362cba74bfc77381c7e5abfd45d9"
     },
     {
       "bytes": 10143,
@@ -3759,11 +3759,11 @@
       "sha256": "df2efdda03e09ef6b66f0ac767a35a3fe5ab5c1e4c77b5be28af68d8df8e0a61"
     },
     {
-      "bytes": 11408,
+      "bytes": 11661,
       "exists": true,
       "kind": "release_support",
       "path": "tests/test_gnn_contract.py",
-      "sha256": "542228ec19967601db8ba926fa2adc8b768569e416ba7f892abc8bdecb94eb67"
+      "sha256": "74aea9d9e4e56358bf33f595f4a89e02de41d2815f0c1696e2362ccc6d2753fc"
     },
     {
       "bytes": 7202,
@@ -3780,11 +3780,11 @@
       "sha256": "5544a7ad19868e7f0cc3f0ffc6e438fd65bdba7977badfaba366f341dc9befac"
     },
     {
-      "bytes": 1713,
+      "bytes": 1755,
       "exists": true,
       "kind": "release_support",
       "path": "tests/test_gnn_runtime_versions.py",
-      "sha256": "3353f3674c0b1447cc0d8fbd7b96639f2be8cc7bf5e07ee5cd09b01324b1f4b4"
+      "sha256": "120351e832b41ac21e15831a49b789f35fa70bd48efc26e7b6e8a8d47b5fa8bb"
     },
     {
       "bytes": 7938,
@@ -3829,11 +3829,11 @@
       "sha256": "9e21f86d0f28aad613e6465911344544161250c31e04eaba4aa003e9ae4eb310"
     },
     {
-      "bytes": 58187,
+      "bytes": 58373,
       "exists": true,
       "kind": "release_support",
       "path": "tests/test_simulation.py",
-      "sha256": "a572f56173d1e89c7172b28a02e4c9b131773ff6cf5aa897a2f8aa676742b8bc"
+      "sha256": "e97aedaf7ec2296d34636de9e070546e1f0657e41397d19467e6c67b409f62e1"
     },
     {
       "bytes": 1963,
@@ -3843,11 +3843,11 @@
       "sha256": "4310116e6a9543adec0d685ea47cfffb774a0a2081c87864ff9abf405e383715"
     },
     {
-      "bytes": 743853,
+      "bytes": 649638,
       "exists": true,
       "kind": "release_support",
       "path": "uv.lock",
-      "sha256": "2c9248c0994c0faccd22ebff8ceaf36740676c0c073519533b6eda68c5c84e72"
+      "sha256": "d6600f3562ba041f66e24f5971f566f34f152b279a96b86406caf5538ecebc83"
     }
   ],
   "missing_paths": [],

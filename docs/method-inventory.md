@@ -159,36 +159,36 @@
 | src/gates/validation.py | 514 | function | `_model_from_audit_row` | No docstring. |
 | src/gates/validation.py | 521 | function | `_pymdp_trace_math_ok` | No docstring. |
 | src/gates/validation.py | 584 | function | `_pymdp_runtime_log_ok` | No docstring. |
-| src/gates/validation.py | 617 | function | `_valid_schema` | No docstring. |
-| src/gates/validation.py | 627 | function | `_schema_check` | No docstring. |
-| src/gates/validation.py | 642 | function | `_subsection_anchor_audit` | No docstring. |
-| src/gates/validation.py | 695 | function | `_permutation_metadata_matches` | No docstring. |
-| src/gates/validation.py | 728 | function | `validate_outputs` | Return named output checks. |
-| src/gates/validation.py | 2034 | function | `write_validation_report` | Write validation report to output/reports. |
-| src/gates/validation.py | 2050 | function | `_tracked_doc_paths` | Return the documentation files governed by the contract. |
-| src/gates/validation.py | 2057 | function | `check_documentation_contract` | Check project docs for stale identity, machine paths, orphans, and broken links. |
+| src/gates/validation.py | 620 | function | `_valid_schema` | No docstring. |
+| src/gates/validation.py | 630 | function | `_schema_check` | No docstring. |
+| src/gates/validation.py | 645 | function | `_subsection_anchor_audit` | No docstring. |
+| src/gates/validation.py | 698 | function | `_permutation_metadata_matches` | No docstring. |
+| src/gates/validation.py | 731 | function | `validate_outputs` | Return named output checks. |
+| src/gates/validation.py | 2037 | function | `write_validation_report` | Write validation report to output/reports. |
+| src/gates/validation.py | 2053 | function | `_tracked_doc_paths` | Return the documentation files governed by the contract. |
+| src/gates/validation.py | 2060 | function | `check_documentation_contract` | Check project docs for stale identity, machine paths, orphans, and broken links. |
 | src/modeling/audit.py | 28 | function | `_digest` | No docstring. |
 | src/modeling/audit.py | 32 | function | `_file_hash` | No docstring. |
 | src/modeling/audit.py | 36 | function | `_upstream` | No docstring. |
-| src/modeling/audit.py | 56 | function | `_consumer_binding` | No docstring. |
-| src/modeling/audit.py | 86 | function | `_native_probe` | No docstring. |
-| src/modeling/audit.py | 129 | function | `_replace_parameter` | No docstring. |
-| src/modeling/audit.py | 133 | function | `_admission_controls` | No docstring. |
-| src/modeling/audit.py | 154 | function | `build_gnn_model_audit` | Recompute model admission, implementation provenance, and native execution evidence. |
-| src/modeling/audit.py | 219 | function | `_equivalent` | No docstring. |
-| src/modeling/audit.py | 229 | function | `gnn_model_audit_matches` | Reject missing, forged, stale, or non-reproducible receipts by independent reconstruction. |
-| src/modeling/registry.py | 30 | class | `ModelSpecification` | A source-bound declaration admitted by upstream and project contracts. |
-| src/modeling/registry.py | 42 | function | `upstream_identity` | No docstring. |
-| src/modeling/registry.py | 47 | function | `specification_root` | Select real alternate specification files for controlled experiments and tests. |
-| src/modeling/registry.py | 56 | function | `specification_paths` | No docstring. |
-| src/modeling/registry.py | 64 | function | `_finite_tree` | No docstring. |
-| src/modeling/registry.py | 74 | function | `_validate_blackwell_parameters` | No docstring. |
-| src/modeling/registry.py | 78 | function | `probability` | No docstring. |
-| src/modeling/registry.py | 81 | function | `distribution` | No docstring. |
-| src/modeling/registry.py | 103 | function | `parse_model` | Reject lossy parser recovery, then consume the actual upstream typed IR. |
-| src/modeling/registry.py | 167 | function | `_parse_cached` | No docstring. |
-| src/modeling/registry.py | 171 | function | `load_model` | No docstring. |
-| src/modeling/registry.py | 179 | function | `model_parameters` | No docstring. |
+| src/modeling/audit.py | 57 | function | `_consumer_binding` | No docstring. |
+| src/modeling/audit.py | 87 | function | `_native_probe` | No docstring. |
+| src/modeling/audit.py | 130 | function | `_replace_parameter` | No docstring. |
+| src/modeling/audit.py | 134 | function | `_admission_controls` | No docstring. |
+| src/modeling/audit.py | 155 | function | `build_gnn_model_audit` | Recompute model admission, implementation provenance, and native execution evidence. |
+| src/modeling/audit.py | 220 | function | `_equivalent` | No docstring. |
+| src/modeling/audit.py | 230 | function | `gnn_model_audit_matches` | Reject missing, forged, stale, or non-reproducible receipts by independent reconstruction. |
+| src/modeling/registry.py | 31 | class | `ModelSpecification` | A source-bound declaration admitted by upstream and project contracts. |
+| src/modeling/registry.py | 43 | function | `upstream_identity` | Resolve the exact installed GNN identity for this interpreter. |
+| src/modeling/registry.py | 52 | function | `specification_root` | Select real alternate specification files for controlled experiments and tests. |
+| src/modeling/registry.py | 61 | function | `specification_paths` | No docstring. |
+| src/modeling/registry.py | 69 | function | `_finite_tree` | No docstring. |
+| src/modeling/registry.py | 79 | function | `_validate_blackwell_parameters` | No docstring. |
+| src/modeling/registry.py | 83 | function | `probability` | No docstring. |
+| src/modeling/registry.py | 86 | function | `distribution` | No docstring. |
+| src/modeling/registry.py | 108 | function | `parse_model` | Reject lossy parser recovery, then consume the actual upstream typed IR. |
+| src/modeling/registry.py | 172 | function | `_parse_cached` | No docstring. |
+| src/modeling/registry.py | 176 | function | `load_model` | No docstring. |
+| src/modeling/registry.py | 184 | function | `model_parameters` | No docstring. |
 | src/practice/protocols.py | 9 | function | `practice_protocol_map` | Return bounded practice protocol mappings for software interfaces. |
 | src/simulation/blackwell_ordering.py | 37 | function | `_bayes_error` | Bayes risk of the optimal decision rule under 0-1 loss: 1 - sum_o max_state p(state) p(o|state). |
 | src/simulation/blackwell_ordering.py | 43 | function | `_relabel` | Invertible relabeling: permute the outcome columns (a reversible post-processing). |

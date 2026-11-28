@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc 3.12.1" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>02_methods.md.web</title>
+  <meta name="author" content="Daniel Ari Friedman" />
+  <meta name="description" content="Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction" />
+  <title>Realizing Emptiness</title>
   <style>
     /* Default styles provided by pandoc.
     ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -179,7 +181,26 @@
       margin: 0 0.8em 0.2em -1.6em;
       vertical-align: middle;
     }
-  </style>
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
   <script data-template-mathjax-config>
 window.MathJax = window.MathJax || {};
 window.MathJax.chtml = Object.assign({}, window.MathJax.chtml, {
@@ -188,11 +209,74 @@ window.MathJax.chtml = Object.assign({}, window.MathJax.chtml, {
 });
 var templateMathOutput = window.MathJax.output || {};
 window.MathJax.output = Object.assign({}, templateMathOutput, {
-  displayOverflow: "linebreak",
+  displayOverflow: "scroll",
   linebreaks: Object.assign({}, templateMathOutput.linebreaks, {
-    inline: true,
+    inline: false,
     width: "100%",
     lineleading: 0.5
+  })
+});
+var templateMathOptions = window.MathJax.options || {};
+window.MathJax.options = Object.assign({}, templateMathOptions, {
+  renderActions: Object.assign({}, templateMathOptions.renderActions, {
+    // Use the documented find action/MathItem extension point. MathJax 4.0.0's
+    // default finder spreads every DOM text run into push() arguments, exceeding
+    // the browser argument stack on large books even with very little math.
+    find: [10, function (doc) {
+      if (doc.processed.isSet("findMath")) return;
+      var adaptor = doc.adaptor;
+      adaptor.document = doc.document;
+      var containers = adaptor.getElements(
+        doc.options.elements || [adaptor.body(doc.document)], doc.document
+      );
+      // Retain the pinned HTMLDocument.findPosition source offsets/order
+      // (MathJax-src 4.0.0, ts/handlers/html/HTMLDocument.ts, Apache-2.0).
+      function position(nodes, item, location, delim) {
+        var parts = nodes[item.n];
+        var index = location.n;
+        var order = item.n;
+        var increment = 1 / (parts.length || 1);
+        for (var part of parts) {
+          if (index <= part[1] && adaptor.kind(part[0]) === "#text") {
+            return {i: order, node: part[0], n: Math.max(index, 0), delim: delim};
+          }
+          index -= part[1];
+          order += increment;
+        }
+        return {node: null, n: 0, delim: delim};
+      }
+      for (var jax of doc.inputJax) {
+        var list = new doc.options.MathList();
+        if (jax.processStrings) {
+          var strings = [];
+          var nodes = [];
+          for (var container of containers) {
+            var found = doc.domStrings.find(container);
+            // Append individually: neither DOM size nor expression count becomes
+            // a function argument count. Keep the scanner's complete run mapping.
+            for (var string of found[0]) strings.push(string);
+            for (var nodeList of found[1]) nodes.push(nodeList);
+          }
+          for (var item of jax.findMath(strings)) {
+            list.push(new doc.options.MathItem(
+              item.math, jax, item.display,
+              position(nodes, item, item.start, item.open),
+              position(nodes, item, item.end, item.close)
+            ));
+          }
+        } else {
+          for (var container of containers) {
+            for (var item of jax.findMath(container)) {
+              list.push(new doc.options.MathItem(
+                item.math, jax, item.display, item.start, item.end
+              ));
+            }
+          }
+        }
+        doc.math.merge(list);
+      }
+      doc.processed.set("findMath");
+    }, "", false]
   })
 });
 window.normalizeTemplateMathJaxAria = function () {
@@ -219,8 +303,8 @@ window.MathJax.startup = Object.assign({}, window.MathJax.startup, {
         .then(async function () {
           var width = document.documentElement.clientWidth;
           try {
-            // MathJax 4 MathItem.STATE.METRICS = 110. The default RERENDER
-            // state retains old container metrics and cannot reflow on zoom.
+            // MathJax 4 MathItem.STATE.METRICS = 110. Restart from metrics
+            // after a viewport change rather than retaining old container widths.
             await window.MathJax.startup.document.rerenderPromise(110);
             window.normalizeTemplateMathJaxAria();
             window.templateMathJaxReflowError = null;
@@ -305,7 +389,14 @@ pre > code.sourceCode > span {
   white-space: pre-wrap;
   word-break: break-word;
 }
-mjx-container[display="true"] { max-width: 100%; overflow: visible; }
+.math.inline {
+  display: inline-block;
+  max-width: 100%;
+  margin: 0;
+  overflow-x: auto;
+  vertical-align: middle;
+}
+mjx-container[display="true"] { max-width: 100%; overflow-x: auto; }
 .table-scroll {
   max-width: 100%;
   overflow-x: auto;
@@ -316,15 +407,13 @@ mjx-container[display="true"] { max-width: 100%; overflow: visible; }
   outline: 3px solid var(--brand-1);
   outline-offset: 3px;
 }
-.table-scroll > table { margin-block: 0; min-width: 100%; width: max-content; }
+.table-scroll > table { margin-block: 0; display: table; min-width: 100%; width: 100%; }
 *, *::before, *::after {
   box-sizing: border-box;
 }
 
 html {
   max-width: 100%;
-  overflow-x: hidden;
-  overflow-x: clip;
 }
 
 body {
@@ -337,8 +426,6 @@ body {
   background-color: #f8f8f8;
   color: #1a1a1a;
   overflow-wrap: break-word;
-  overflow-x: hidden;
-  overflow-x: clip;
 }
 
 main,
@@ -422,6 +509,9 @@ pre {
 }
 
 pre code {
+  background-color: transparent;
+  padding: 0;
+  border-radius: 0;
   overflow-wrap: inherit;
   white-space: inherit;
   word-break: inherit;
@@ -474,8 +564,9 @@ table {
 
 .table-scroll > table {
   margin-block: 0;
+  display: table;
   min-width: 100%;
-  width: max-content;
+  width: 100%;
 }
 
 figure {
@@ -492,6 +583,15 @@ th, td {
 th {
   background-color: #1f6f8b;
   color: white;
+}
+
+/* Preserve a complete inline-code header within the table's scroll region. */
+th code {
+  color: inherit;
+  background-color: transparent;
+  white-space: nowrap;
+  overflow-wrap: normal;
+  word-break: normal;
 }
 
 img {
@@ -553,10 +653,18 @@ a:focus-visible {
   font-size: 1.1em;
 }
 
+.math.inline {
+  display: inline-block;
+  max-width: 100%;
+  margin: 0;
+  overflow-x: auto;
+  vertical-align: middle;
+}
+
 mjx-container[display="true"] {
   display: block;
   max-width: 100%;
-  overflow: visible;
+  overflow-x: auto;
   padding-bottom: 0.25rem;
 }
 
@@ -607,10 +715,6 @@ mjx-container[display="true"] {
 @media (min-width: 1000px) {
   /* Wide figure links stay within the viewport but extend beyond the prose
      column. Do not clip their labels at the narrower body boundary. */
-  body {
-    overflow-x: visible;
-  }
-
   .figure-full-size-link {
     left: 50%;
     max-width: none;
@@ -634,11 +738,13 @@ mjx-container[display="true"] {
 }
 
 </style>
+<script data-template-source-font-loader src="assets/source-web-fonts.js"></script>
 </head>
 <body>
 <a class="skip-link" href="#main-content">Skip to main content</a>
 <main id="main-content" tabindex="-1">
-<h1 id="sec:methods">Methods</h1>
+<h1 data-number="3" id="sec:methods"><span
+class="header-section-number">3</span> Methods</h1>
 <p>The methods build the finite chain in dependency order: an equation
 registry and implemented finite quantum extension engines fix the formal
 layer and its claim ceilings, the finite QRF boundary screen and its
@@ -661,17 +767,17 @@ claim-evidence ceilings, seeded criticality and compassion-scope
 proxies, and bounded practice protocols that govern and extend this
 chain are collected in the supplement so the main methods stay on the
 no-self-evidence spine.</p>
-<h2 id="sec:methods-roadmap-quantum-engines">Equation Registry and
-Finite qFEP Engines</h2>
+<h2 data-number="3.1" id="sec:methods-roadmap-quantum-engines"><span
+class="header-section-number">3.1</span> Equation Registry and Finite
+qFEP Engines</h2>
 <p>Every symbol introduced in this subsection — the sectorisation map,
 the boundary screen, the separation prior, the free-energy terms, and
 the finite quantum quantities — is defined, with its natural-language
-name and a short description, in the symbol and variable glossary (<span
-class="citation"
-data-cites="sec:supplement-symbol-glossary">@sec:supplement-symbol-glossary</span>).
-Readers meeting a symbol for the first time should treat that glossary
-as the canonical reference; the prose here introduces each symbol only
-where it is first used.</p>
+name and a short description, in the symbol and variable glossary
+(sec. <a href="manuscript__06_supplement.html#sec:supplement-symbol-glossary">7.1</a>). Readers
+meeting a symbol for the first time should treat that glossary as the
+canonical reference; the prose here introduces each symbol only where it
+is first used.</p>
 <p>The equation registry covers paper equations 1-14. Each row records
 the paper section, formal expression, computability status, operational
 status, paper-to-software bridge, validation artifact, and interpretive
@@ -697,23 +803,23 @@ repeatedly by the boundary-channel argument. The sectorisation map <span
 class="math inline">\(Q\)</span> sends boundary states <span
 class="math inline">\(B\)</span> to sector labels <span
 class="math inline">\(S_Q\)</span>:</p>
-<p><span class="math display">\[Q: B \rightarrow S_Q\]</span>
-{#eq:7}</p>
+<p><span id="eq:7"><span class="math display">\[Q: B \rightarrow
+S_Q\qquad{(1)}\]</span></span></p>
 <p>The frame-restricted model <span class="math inline">\(M_Q\)</span>
 reproduces the coarse-grained observation likelihood of the full model
 under that sectorisation:</p>
-<p><span class="math display">\[P(\bar{o} \mid M_Q) = P(\bar{o} \mid Q,
-M)\]</span> {#eq:8}</p>
+<p><span id="eq:8"><span class="math display">\[P(\bar{o} \mid M_Q) =
+P(\bar{o} \mid Q, M)\qquad{(2)}\]</span></span></p>
 <p>Two sectors <span class="math inline">\(Q_i\)</span> and <span
 class="math inline">\(Q_j\)</span> are indistinguishable when they
 induce the same observation distribution:</p>
-<p><span class="math display">\[P(o \mid Q_i) = P(o \mid Q_j)\]</span>
-{#eq:9}</p>
+<p><span id="eq:9"><span class="math display">\[P(o \mid Q_i) = P(o \mid
+Q_j)\qquad{(3)}\]</span></span></p>
 <p>The separation prior <span class="math inline">\(\sigma\)</span>
 restricts admissible sectorisations to a subspace <span
 class="math inline">\(Q_{\sigma}\)</span>:</p>
-<p><span class="math display">\[\sigma: Q \rightarrow Q_{\sigma} \subset
-Q\]</span> {#eq:10}</p>
+<p><span id="eq:10"><span class="math display">\[\sigma: Q \rightarrow
+Q_{\sigma} \subset Q\qquad{(4)}\]</span></span></p>
 <p>These anchors are manuscript reference targets for the finite
 registry, not a replacement for the source paper’s formal
 derivations.</p>
@@ -729,68 +835,109 @@ discriminating negative control is a strict-superset witness.</p>
 in a small Hilbert space are simulated directly as finite controls. Each
 engine records a primary quantity together with a positive control and a
 discriminating negative control; the full per-engine construction,
-controls, and claim boundary live in <span class="citation"
-data-cites="sec:supplement-finite-quantum-contextuality-audits">@sec:supplement-finite-quantum-contextuality-audits</span>,
-and the entries below name each engine and forward to that audit:</p>
+controls, and claim boundary live in sec. <a
+href="manuscript__06_supplement.html#sec:supplement-finite-quantum-contextuality-audits">7.2</a>, and
+the entries below name each engine and forward to that audit:</p>
 <ul>
 <li>a Schmidt-family two-qubit sweep recording reduced von Neumann
 entropy, mutual information, Clauser-Horne-Shimony-Holt (CHSH) witness
 strength, contextual-fraction scaling, local-basis entropy invariance,
 and a Landauer-scaled erasure lower bound;</li>
 <li>a mixed-state audit adding positive-partial-transpose (PPT) and
-negativity controls for separable, Bell, and Werner-family cases
-[peres1996separability; horodecki1996separability; werner1989quantum],
-extended by a multipartite witness suite over three-party cuts
-[greenberger1989going];</li>
+negativity controls for separable, Bell, and Werner-family cases <span
+class="citation"
+data-cites="peres1996separability horodecki1996separability werner1989quantum">(<a
+href="index.html#ref-peres1996separability" role="doc-biblioref">Peres 1996</a>;
+<a href="index.html#ref-horodecki1996separability" role="doc-biblioref">Horodecki
+et al. 1996</a>; <a href="index.html#ref-werner1989quantum"
+role="doc-biblioref">Werner 1989</a>)</span>, extended by a multipartite
+witness suite over three-party cuts <span class="citation"
+data-cites="greenberger1989going">(<a href="index.html#ref-greenberger1989going"
+role="doc-biblioref">Greenberger et al. 1989</a>)</span>;</li>
 <li>a CHSH measurement-cover table recording context-by-outcome joint
 probabilities, no-signaling marginals, product-control locality,
-Tsirelson-bound saturation [cirelson1980quantum], and
+Tsirelson-bound saturation <span class="citation"
+data-cites="cirelson1980quantum">(<a href="index.html#ref-cirelson1980quantum"
+role="doc-biblioref">Cirel’son 1980</a>)</span>, and
 local-hidden-variable polytope feasibility over the sixteen
 deterministic assignments following the joint-probability/local-polytope
-reading of Bell inequalities [fine1982hidden], with a general
+reading of Bell inequalities <span class="citation"
+data-cites="fine1982hidden">(<a href="index.html#ref-fine1982hidden"
+role="doc-biblioref">Fine 1982</a>)</span>, with a general
 measurement-cover parser and a no-signaling scenario library repeating
 the linear-program (LP) test for triangle, parity, CHSH-product,
-CHSH-Bell, and n-cycle scenarios [araujo2013ncycle];</li>
+CHSH-Bell, and n-cycle scenarios <span class="citation"
+data-cites="araujo2013ncycle">(<a href="index.html#ref-araujo2013ncycle"
+role="doc-biblioref">Araújo et al. 2013</a>)</span>;</li>
 <li>finite completely-positive trace-preserving (CPTP) channels
-recording entropy-change and Landauer lower-bound summaries
-[kraus1983states; nielsen2010quantum], a finite dephasing channel
-recording trace preservation, positivity, entropy production,
-mutual-information contraction, and CHSH decay, and a collision-model
-thermalisation engine recording relaxation toward a fixed point.</li>
+recording entropy-change and Landauer lower-bound summaries <span
+class="citation" data-cites="kraus1983states nielsen2010quantum">(<a
+href="index.html#ref-kraus1983states" role="doc-biblioref">Kraus 1983</a>; <a
+href="index.html#ref-nielsen2010quantum" role="doc-biblioref">Nielsen and Chuang
+2010</a>)</span>, a finite dephasing channel recording trace
+preservation, positivity, entropy production, mutual-information
+contraction, and CHSH decay, and a collision-model thermalisation engine
+recording relaxation toward a fixed point.</li>
 </ul>
 <p>Third, the implemented extension methods are finite software engines,
-again with their full construction and controls in <span
-class="citation"
-data-cites="sec:supplement-finite-quantum-contextuality-audits">@sec:supplement-finite-quantum-contextuality-audits</span>:</p>
+again with their full construction and controls in the supplement
+(sec. <a
+href="manuscript__06_supplement.html#sec:supplement-finite-quantum-contextuality-audits">7.2</a>).</p>
 <ul>
 <li>a two-qubit boundary-Hamiltonian Lindblad audit following
 Gorini-Kossakowski-Sudarshan-Lindblad (GKSL) trace and positivity
-constraints [gorini1976completelypositive; lindblad1976generators;
-manzano2020lindblad];</li>
+constraints <span class="citation"
+data-cites="gorini1976completelypositive lindblad1976generators manzano2020lindblad">(<a
+href="index.html#ref-gorini1976completelypositive" role="doc-biblioref">Gorini et
+al. 1976</a>; <a href="index.html#ref-lindblad1976generators"
+role="doc-biblioref">Lindblad 1976</a>; <a
+href="index.html#ref-manzano2020lindblad" role="doc-biblioref">Manzano
+2020</a>)</span>;</li>
 <li>seeded quantum-trajectory unraveling that samples jump and no-jump
 Monte Carlo wave functions and compares the ensemble density with exact
 Lindblad evolution using the Monte Carlo wave-function literature as the
-methodological anchor [dalibard1992wavefunction; molmer1993montecarlo;
-plenio1998quantumjump; wiseman2010quantum];</li>
+methodological anchor <span class="citation"
+data-cites="dalibard1992wavefunction molmer1993montecarlo plenio1998quantumjump wiseman2010quantum">(<a
+href="index.html#ref-dalibard1992wavefunction" role="doc-biblioref">Dalibard et
+al. 1992</a>; <a href="index.html#ref-molmer1993montecarlo"
+role="doc-biblioref">Mølmer et al. 1993</a>; <a
+href="index.html#ref-plenio1998quantumjump" role="doc-biblioref">Plenio and Knight
+1998</a>; <a href="index.html#ref-wiseman2010quantum" role="doc-biblioref">Wiseman
+and Milburn 2010</a>)</span>;</li>
 <li>exact and sparse boundary-screen sweeps that test cut sensitivity as
 many-body precursors to tensor-network scaling, with a
 matrix-product-state tensor-network benchmark recording
-entanglement-bounded compression error [eisert2010area;
-orus2014tensor];</li>
+entanglement-bounded compression error <span class="citation"
+data-cites="eisert2010area orus2014tensor">(<a
+href="index.html#ref-eisert2010area" role="doc-biblioref">Eisert et al. 2010</a>;
+<a href="index.html#ref-orus2014tensor" role="doc-biblioref">Orus
+2014</a>)</span>;</li>
 <li>an internal-cut unmeasurability audit and a
 contextuality-suppression audit that operationalise the source paper’s
 internal-boundary and contextuality-suppression sections;</li>
 <li>sheaf and measurement-cover LP audits that distinguish noncontextual
-global sections from obstruction cases [kochen1967problem;
-abramsky2011sheaf];</li>
+global sections from obstruction cases <span class="citation"
+data-cites="kochen1967problem abramsky2011sheaf">(<a
+href="index.html#ref-kochen1967problem" role="doc-biblioref">Kochen and Specker
+1967</a>; <a href="index.html#ref-abramsky2011sheaf" role="doc-biblioref">Abramsky
+and Brandenburger 2011</a>)</span>;</li>
 <li>QRF covariance audits that test probability-preserving relabelings
-and finite unitary and permutation frame transforms [giacomini2019qrf;
-vanrietvelde2020perspective; hoehn2021trinity;
-bartlett2007reference];</li>
+and finite unitary and permutation frame transforms <span
+class="citation"
+data-cites="giacomini2019qrf vanrietvelde2020perspective hoehn2021trinity bartlett2007reference">(<a
+href="index.html#ref-giacomini2019qrf" role="doc-biblioref">Giacomini et al.
+2019</a>; <a href="index.html#ref-vanrietvelde2020perspective"
+role="doc-biblioref">Vanrietvelde et al. 2020</a>; <a
+href="index.html#ref-hoehn2021trinity" role="doc-biblioref">Höhn et al. 2021</a>;
+<a href="index.html#ref-bartlett2007reference" role="doc-biblioref">Bartlett et
+al. 2007</a>)</span>;</li>
 <li>an empirical adapter provenance audit that requires source identity,
 preprocessing, null models, and preregistration-oriented governance
-before any human claim [wilkinson2016fair;
-nosek2018preregistration].</li>
+before any human claim <span class="citation"
+data-cites="wilkinson2016fair nosek2018preregistration">(<a
+href="index.html#ref-wilkinson2016fair" role="doc-biblioref">Wilkinson et al.
+2016</a>; <a href="index.html#ref-nosek2018preregistration"
+role="doc-biblioref">Nosek et al. 2018</a>)</span>.</li>
 </ul>
 <p>This structure makes <code>qfep_surrogate_scope</code> narrower and
 more useful. The claims <code>quantum_separability_entropy</code>,
@@ -803,8 +950,9 @@ validation and more adversarial failure cases, but the prohibited
 inference remains explicit: none of these finite engines is physical
 qFEP realization, empirical practice evidence, neural measurement, or
 evidence for contemplative attainment.</p>
-<h2 id="sec:methods-finite-qrf-boundary-screen">Finite QRF Boundary
-Screen and Relabeling Rules</h2>
+<h2 data-number="3.2" id="sec:methods-finite-qrf-boundary-screen"><span
+class="header-section-number">3.2</span> Finite QRF Boundary Screen and
+Relabeling Rules</h2>
 <p>QRF deployments are represented as assignments from boundary channels
 to semantic sectors. A deployment contains a sector label per boundary
 bit, a metacognitive-access parameter, and a separation-prior precision.
@@ -883,28 +1031,34 @@ distal-world cue, b3 a contextual-world cue, b4 an other-agent cue, and
 b5 a care-salience cue. These roles make the simulation readable, but
 the evidenced object remains the same bit b_i across all QRF
 deployments.</p>
-<p>Equations <span class="citation" data-cites="eq:7">@eq:7</span>,
-<span class="citation" data-cites="eq:8">@eq:8</span>, <span
-class="citation" data-cites="eq:9">@eq:9</span>, and <span
-class="citation" data-cites="eq:10">@eq:10</span> are therefore
-implemented as an explicit distinction between channel and label. <span
-class="citation" data-cites="eq:7">@eq:7</span> maps the boundary
-channels into a sectorisation; <span class="citation"
-data-cites="eq:8">@eq:8</span> keeps model evidence conditional on the
-chosen QRF; <span class="citation" data-cites="eq:9">@eq:9</span> blocks
-the inference from observed bitstream to ontological sector; <span
-class="citation" data-cites="eq:10">@eq:10</span> represents sigma as
-the prior that restricts admissible QRF deployments to Q_sigma. The
-b0-b5 ledger records the sector label assigned to every channel under
-the separation-constrained, opacified, and post-dual profiles, while
-also recording that the evidence object is invariant. This draws on QRF,
-perspective-neutral frame, and Markov-blanket boundary scholarship while
-keeping the software object distinct from either a full quantum
-reference-frame transformation or an empirical biological boundary; the
-FEP critique and response literature is cited here precisely to keep
-that distinction visible [giacomini2019qrf; vanrietvelde2020perspective;
-kirchhoff2018blankets; hipolito2021markov; aguilera2021particular;
-biehl2021technical_fep; heins2022sparse_coupling].</p>
+<p>Equations eq. <a href="#eq:7">1</a>, eq. <a href="#eq:8">2</a>,
+eq. <a href="#eq:9">3</a>, and eq. <a href="#eq:10">4</a> are therefore
+implemented as an explicit distinction between channel and label. eq. <a
+href="#eq:7">1</a> maps the boundary channels into a sectorisation;
+eq. <a href="#eq:8">2</a> keeps model evidence conditional on the chosen
+QRF; eq. <a href="#eq:9">3</a> blocks the inference from observed
+bitstream to ontological sector; eq. <a href="#eq:10">4</a> represents
+sigma as the prior that restricts admissible QRF deployments to Q_sigma.
+The b0-b5 ledger records the sector label assigned to every channel
+under the separation-constrained, opacified, and post-dual profiles,
+while also recording that the evidence object is invariant. This draws
+on QRF, perspective-neutral frame, and Markov-blanket boundary
+scholarship while keeping the software object distinct from either a
+full quantum reference-frame transformation or an empirical biological
+boundary; the FEP critique and response literature is cited here
+precisely to keep that distinction visible <span class="citation"
+data-cites="giacomini2019qrf vanrietvelde2020perspective kirchhoff2018blankets hipolito2021markov aguilera2021particular biehl2021technical_fep heins2022sparse_coupling">(<a
+href="index.html#ref-giacomini2019qrf" role="doc-biblioref">Giacomini et al.
+2019</a>; <a href="index.html#ref-vanrietvelde2020perspective"
+role="doc-biblioref">Vanrietvelde et al. 2020</a>; <a
+href="index.html#ref-kirchhoff2018blankets" role="doc-biblioref">Kirchhoff et al.
+2018</a>; <a href="index.html#ref-hipolito2021markov"
+role="doc-biblioref">Hipolito et al. 2021</a>; <a
+href="index.html#ref-aguilera2021particular" role="doc-biblioref">Aguilera et al.
+2022</a>; <a href="index.html#ref-biehl2021technical_fep"
+role="doc-biblioref">Biehl et al. 2021</a>; <a
+href="index.html#ref-heins2022sparse_coupling" role="doc-biblioref">Heins and Da
+Costa 2022</a>)</span>.</p>
 <p>The key QRF test is not whether one label vocabulary sounds
 philosophically preferable. It is whether admissible relabelings alter
 the finite boundary bitstream distribution. The
@@ -915,30 +1069,25 @@ paper’s claim that boundary use and boundary ontology are not the same
 evidential object.</p>
 <p>The lead QRF figures are generated from the same artifacts rather
 than drawn as free-standing schematics. The boundary-screen geometry in
-<span class="citation"
-data-cites="fig:qrf_boundary_screen_geometry">@fig:qrf_boundary_screen_geometry</span>
-maps nodes, action edges, observation edges, and channel-role labels to
+fig. <a href="manuscript__01_introduction.html#fig:qrf_boundary_screen_geometry">2</a> maps nodes,
+action edges, observation edges, and channel-role labels to
 <code>qrf_boundary_channel_ledger.json</code>; the relabeling ledger in
-<span class="citation"
-data-cites="fig:qrf_channel_relabeling_ledger">@fig:qrf_channel_relabeling_ledger</span>
-maps b0-b5 channel rows and profile-specific sector colors to the same
-ledger and equations <span class="citation"
-data-cites="eq:7">@eq:7</span>, <span class="citation"
-data-cites="eq:8">@eq:8</span>, <span class="citation"
-data-cites="eq:9">@eq:9</span>, and <span class="citation"
-data-cites="eq:10">@eq:10</span>; the invariance and policy-flow audit
-in <span class="citation"
-data-cites="fig:qrf_invariance_policy_flow">@fig:qrf_invariance_policy_flow</span>
-maps admissible probability bars, the failing perturbation control, and
-selected action counts to
+fig. <a href="manuscript__03_results.html#fig:qrf_channel_relabeling_ledger">4</a> maps b0-b5
+channel rows and profile-specific sector colors to the same ledger and
+equations eq. <a href="#eq:7">1</a>, eq. <a href="#eq:8">2</a>, eq. <a
+href="#eq:9">3</a>, and eq. <a href="#eq:10">4</a>; the invariance and
+policy-flow audit in fig. <a
+href="manuscript__03_results.html#fig:qrf_invariance_policy_flow">5</a> maps admissible probability
+bars, the failing perturbation control, and selected action counts to
 <code>qrf_boundary_indistinguishability.json</code> and the
 profile-specific active-inference comparison. The
-transformation-covariance audits reported in <span class="citation"
-data-cites="sec:supplement-finite-quantum-contextuality-audits">@sec:supplement-finite-quantum-contextuality-audits</span>
+transformation-covariance audits reported in sec. <a
+href="manuscript__06_supplement.html#sec:supplement-finite-quantum-contextuality-audits">7.2</a>
 extend this same discipline to finite probability-preserving
 relabelings: admissible maps must preserve mass and expectation under
 relabeling, while mass-gain and negative-entry controls must fail.</p>
-<h2 id="sec:methods-separation-prior-subspace">Separation Prior as a
+<h2 data-number="3.3" id="sec:methods-separation-prior-subspace"><span
+class="header-section-number">3.3</span> Separation Prior as a
 Restricted QRF Subspace</h2>
 <p>The separation prior is represented as a structural precision over
 the admissible QRF subspace. A high-precision prior restricts
@@ -974,9 +1123,9 @@ the advantage stays at zero when no channel is action-contingent and
 tracks the number of action-contingent channels, which would break only
 if the predictors were mis-specified; it is not an adversarial null
 against the separation-prior mechanism. The measured emergence and
-life-cycle figures are reported in <span class="citation"
-data-cites="sec:results-bmr-sensitivity">@sec:results-bmr-sensitivity</span>,
-where they can be read as results rather than as method definitions.</p>
+life-cycle figures are reported in sec. <a
+href="manuscript__03_results.html#sec:results-bmr-sensitivity">4.3</a>, where they can be read as
+results rather than as method definitions.</p>
 <p>The dispensable end of the life-cycle is operationalized by a
 separate ongoing-revision audit, following Sections 5.2 and 5.3 of the
 source. It constructs a non-stationary boundary stream whose useful
@@ -989,12 +1138,11 @@ with identical machinery: the revising agent’s advantage jumps at the
 regime change on the non-stationary stream but records no such jump when
 the stream does not change, which attributes the gain to revision under
 change rather than to generic adaptive overfitting. The measured
-revision dynamics are reported in <span class="citation"
-data-cites="sec:results-bmr-sensitivity">@sec:results-bmr-sensitivity</span>
-and interpreted in <span class="citation"
-data-cites="sec:discussion-no-self-evidence-boundary">@sec:discussion-no-self-evidence-boundary</span>;
-this is a finite toy non-stationary stream and not a claim of realized
-awakening, impermanence insight, or a zero-person perspective.</p>
+revision dynamics are reported in sec. <a
+href="manuscript__03_results.html#sec:results-bmr-sensitivity">4.3</a> and interpreted in sec. <a
+href="manuscript__04_discussion.html#sec:discussion-no-self-evidence-boundary">5.1</a>; this is a
+finite toy non-stationary stream and not a claim of realized awakening,
+impermanence insight, or a zero-person perspective.</p>
 <p>Emergence and pruning together trace the source paper’s full account
 of the separation prior as useful when agency is present, habitually
 reinforced, and later dispensable. Reading the Bayesian model reduction
@@ -1005,13 +1153,16 @@ over-commit and are pruned throughout, so the life-cycle finding must be
 reported as an in-model result rather than as a guaranteed monotone
 story, and it carries no developmental, neural, contemplative, or
 clinical reading.</p>
-<h2 id="sec:methods-bmr-separation-prior">Bayesian Model Reduction over
+<h2 data-number="3.4" id="sec:methods-bmr-separation-prior"><span
+class="header-section-number">3.4</span> Bayesian Model Reduction over
 the Separation Prior</h2>
 <p>The Bayesian model reduction (BMR) sweep implements the paper’s
 free-energy comparison as Delta free energy equals Delta complexity
-minus Delta accuracy [friston2018bmr]. Removal is favored when
-metacognitive access makes the separation prior’s accuracy contribution
-dispensable while the complexity cost remains.</p>
+minus Delta accuracy <span class="citation"
+data-cites="friston2018bmr">(<a href="index.html#ref-friston2018bmr"
+role="doc-biblioref">Friston et al. 2018</a>)</span>. Removal is favored
+when metacognitive access makes the separation prior’s accuracy
+contribution dispensable while the complexity cost remains.</p>
 <p>The baseline comparison inputs and sensitivity-grid settings are
 declared in Generalized Notation Notation (GNN) specifications and read
 through the same validated finite-software model registry as the
@@ -1025,12 +1176,17 @@ asks whether the qualitative reduction result survives a broader
 deterministic parameter surface. A companion alternative-prior audit
 follows Bayesian workflow and simulation-checking practice by comparing
 the baseline prior family with a log-compressed sigma-complexity penalty
-and a convex access-dependent sigma-accuracy bonus [talts2018sbc;
-gelman2020bayesianworkflow]. It does not transform the surrogate into
-empirical evidence; it makes the model’s local assumptions inspectable
-and gives future work a place to attach richer agents, empirical
-adapters, or externally reviewed priors.</p>
-<h2 id="sec:methods-pymdp-generative-models">Profile-Specific pymdp
+and a convex access-dependent sigma-accuracy bonus <span
+class="citation"
+data-cites="talts2018sbc gelman2020bayesianworkflow">(<a
+href="index.html#ref-talts2018sbc" role="doc-biblioref">Talts et al. 2018</a>; <a
+href="index.html#ref-gelman2020bayesianworkflow" role="doc-biblioref">Gelman et
+al. 2020</a>)</span>. It does not transform the surrogate into empirical
+evidence; it makes the model’s local assumptions inspectable and gives
+future work a place to attach richer agents, empirical adapters, or
+externally reviewed priors.</p>
+<h2 data-number="3.5" id="sec:methods-pymdp-generative-models"><span
+class="header-section-number">3.5</span> Profile-Specific pymdp
 Generative Models</h2>
 <p>Generalized Notation Notation (GNN) supplies the declarative model
 layer for the active-inference simulation. Each QRF profile has a
@@ -1047,30 +1203,33 @@ the specification’s source hash binds the model to the input text.
 Grammar validity, numerical execution, and the interpretation of that
 execution remain separate checks.</p>
 <p>The <code>pymdp</code> simulation is then checked in four linked
-layers [heins2022pymdp; dacosta2020discrete]. First, a pinned-runtime
-dependency check verifies the interpreter-specific
-<code>inferactively-pymdp</code> version (1.0.4 on Python 3.11; 1.0.3 on
-Python 3.12 and later supported versions), imports the JAX-first
-<code>Agent</code> surface, constructs a small agent, runs state
-inference, and confirms policy-posterior normalization. Second, the
-generative-model audit records each profile’s admitted <code>A</code>,
-<code>B</code>, <code>C</code>, and <code>D</code> arrays, with
-<code>A</code> mapping hidden QRF state to boundary cue, <code>B</code>
-encoding action-conditioned transitions, <code>C</code> encoding
-preference scores, and <code>D</code> encoding the initial prior. Third,
-the deterministic policy trace and runtime diagnostics log record
-posterior state beliefs, policy posteriors, expected-free-energy terms,
-per-step variational free energy, belief and policy-posterior entropies,
-selected action labels, perturbation flags, model hashes, normalization
-residuals, replay metadata, and row-level recomputation checks against
-the saved arrays; the log additionally binds its manual temporal-prior
-step to the library’s own <code>update_empirical_prior</code> so the
-numpy-transparent shortcut cannot diverge from the <code>pymdp</code>
-convention, and every diagnostic control is pinned by an explicit
-required-key contract so a narrowed control set fails closed rather than
-passing vacuously. Fourth, the seeded stochastic ensemble samples from
-the same normalized profile models and compares profile behavior with
-null controls.</p>
+layers <span class="citation"
+data-cites="heins2022pymdp dacosta2020discrete">(<a
+href="index.html#ref-heins2022pymdp" role="doc-biblioref">Heins et al. 2022</a>;
+<a href="index.html#ref-dacosta2020discrete" role="doc-biblioref">Da Costa et al.
+2020</a>)</span>. First, a pinned-runtime dependency check verifies the
+interpreter-specific <code>inferactively-pymdp</code> version (1.0.4 on
+Python 3.11 and 1.0.5 on Python 3.12 through 3.14), imports the
+JAX-first <code>Agent</code> surface, constructs a small agent, runs
+state inference, and confirms policy-posterior normalization. Second,
+the generative-model audit records each profile’s admitted
+<code>A</code>, <code>B</code>, <code>C</code>, and <code>D</code>
+arrays, with <code>A</code> mapping hidden QRF state to boundary cue,
+<code>B</code> encoding action-conditioned transitions, <code>C</code>
+encoding preference scores, and <code>D</code> encoding the initial
+prior. Third, the deterministic policy trace and runtime diagnostics log
+record posterior state beliefs, policy posteriors, expected-free-energy
+terms, per-step variational free energy, belief and policy-posterior
+entropies, selected action labels, perturbation flags, model hashes,
+normalization residuals, replay metadata, and row-level recomputation
+checks against the saved arrays; the log additionally binds its manual
+temporal-prior step to the library’s own
+<code>update_empirical_prior</code> so the numpy-transparent shortcut
+cannot diverge from the <code>pymdp</code> convention, and every
+diagnostic control is pinned by an explicit required-key contract so a
+narrowed control set fails closed rather than passing vacuously. Fourth,
+the seeded stochastic ensemble samples from the same normalized profile
+models and compares profile behavior with null controls.</p>
 <p>The policy loop then runs multi-step state inference, policy
 inference, action selection, observation perturbation,
 expected-free-energy proxy decomposition, and posterior normalization
@@ -1098,11 +1257,14 @@ across profiles because their priors, preferences, and transitions make
 different policies cheap or costly under expected free energy. This
 makes expected-free-energy policy selection inspectable in the same
 register as the BMR comparison, while preserving the fact that the loop
-ranks finite software deployments rather than ontologies
-[friston2015epistemic; parr2022active]. The loop is a single-step
-perception-action cycle (policy length one) iterated over time steps
-with a fixed generative model; multi-step policy planning and parameter
-learning are outside this finite surrogate.</p>
+ranks finite software deployments rather than ontologies <span
+class="citation" data-cites="friston2015epistemic parr2022active">(<a
+href="index.html#ref-friston2015epistemic" role="doc-biblioref">Friston et al.
+2015</a>; <a href="index.html#ref-parr2022active" role="doc-biblioref">Parr et al.
+2022</a>)</span>. The loop is a single-step perception-action cycle
+(policy length one) iterated over time steps with a fixed generative
+model; multi-step policy planning and parameter learning are outside
+this finite surrogate.</p>
 <p>The runtime dependency check is intentionally limited. It verifies
 that the expected package version, backend imports, agent construction,
 state inference, and policy posterior normalization are live in the
@@ -1123,13 +1285,18 @@ robustness checks. Replayable seeds make the ensemble stochastic rather
 than arbitrary: a fixed seed reproduces run rows exactly, a changed seed
 changes sampled paths, and posterior normalization is checked at every
 sampled step. The robustness layer then compares profile rows with null
-rows using bootstrap intervals [efron1979bootstrap], permutation
-contrasts with Holm correction for multiple profile-metric comparisons
-[holm1979sequential], and Cliff’s-delta dominance effect sizes
-[cliff1993dominance]. These statistics quantify finite simulation
-separation and uncertainty; they do not convert the simulation into
-human, neural, clinical, practice-efficacy, or physical qFEP
-evidence.</p>
+rows using bootstrap intervals <span class="citation"
+data-cites="efron1979bootstrap">(<a href="index.html#ref-efron1979bootstrap"
+role="doc-biblioref">Efron 1979</a>)</span>, permutation contrasts with
+Holm correction for multiple profile-metric comparisons <span
+class="citation" data-cites="holm1979sequential">(<a
+href="index.html#ref-holm1979sequential" role="doc-biblioref">Holm
+1979</a>)</span>, and Cliff’s-delta dominance effect sizes <span
+class="citation" data-cites="cliff1993dominance">(<a
+href="index.html#ref-cliff1993dominance" role="doc-biblioref">Cliff
+1993</a>)</span>. These statistics quantify finite simulation separation
+and uncertainty; they do not convert the simulation into human, neural,
+clinical, practice-efficacy, or physical qFEP evidence.</p>
 </main>
 </body>
 </html>

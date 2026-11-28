@@ -95,7 +95,7 @@
     },
     {
       "entropy_drift_bits": 0.0,
-      "reduced_entropy_bits": -0.0,
+      "reduced_entropy_bits": 0.0,
       "rotated_measurement_entropy_bits": 1.6461276841,
       "rotation_angle": 0.85084801,
       "theta": 0.0
@@ -158,7 +158,7 @@
     },
     {
       "entropy_drift_bits": 0.0,
-      "reduced_entropy_bits": -0.0,
+      "reduced_entropy_bits": 0.0,
       "rotated_measurement_entropy_bits": 1.112139854,
       "rotation_angle": 1.43989663,
       "theta": 0.0

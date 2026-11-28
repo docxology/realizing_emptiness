@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc 3.12.1" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>01_introduction.md.web</title>
+  <meta name="author" content="Daniel Ari Friedman" />
+  <meta name="description" content="Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction" />
+  <title>Realizing Emptiness</title>
   <style>
     /* Default styles provided by pandoc.
     ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -179,7 +181,154 @@
       margin: 0 0.8em 0.2em -1.6em;
       vertical-align: middle;
     }
-  </style>
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
+  <script data-template-mathjax-config>
+window.MathJax = window.MathJax || {};
+window.MathJax.chtml = Object.assign({}, window.MathJax.chtml, {
+  fontURL: "https://cdn.jsdelivr.net/npm/@mathjax/mathjax-newcm-font@4.0.0/chtml/woff2",
+  dynamicPrefix: "https://cdn.jsdelivr.net/npm/@mathjax/mathjax-newcm-font@4.0.0/chtml/dynamic"
+});
+var templateMathOutput = window.MathJax.output || {};
+window.MathJax.output = Object.assign({}, templateMathOutput, {
+  displayOverflow: "scroll",
+  linebreaks: Object.assign({}, templateMathOutput.linebreaks, {
+    inline: false,
+    width: "100%",
+    lineleading: 0.5
+  })
+});
+var templateMathOptions = window.MathJax.options || {};
+window.MathJax.options = Object.assign({}, templateMathOptions, {
+  renderActions: Object.assign({}, templateMathOptions.renderActions, {
+    // Use the documented find action/MathItem extension point. MathJax 4.0.0's
+    // default finder spreads every DOM text run into push() arguments, exceeding
+    // the browser argument stack on large books even with very little math.
+    find: [10, function (doc) {
+      if (doc.processed.isSet("findMath")) return;
+      var adaptor = doc.adaptor;
+      adaptor.document = doc.document;
+      var containers = adaptor.getElements(
+        doc.options.elements || [adaptor.body(doc.document)], doc.document
+      );
+      // Retain the pinned HTMLDocument.findPosition source offsets/order
+      // (MathJax-src 4.0.0, ts/handlers/html/HTMLDocument.ts, Apache-2.0).
+      function position(nodes, item, location, delim) {
+        var parts = nodes[item.n];
+        var index = location.n;
+        var order = item.n;
+        var increment = 1 / (parts.length || 1);
+        for (var part of parts) {
+          if (index <= part[1] && adaptor.kind(part[0]) === "#text") {
+            return {i: order, node: part[0], n: Math.max(index, 0), delim: delim};
+          }
+          index -= part[1];
+          order += increment;
+        }
+        return {node: null, n: 0, delim: delim};
+      }
+      for (var jax of doc.inputJax) {
+        var list = new doc.options.MathList();
+        if (jax.processStrings) {
+          var strings = [];
+          var nodes = [];
+          for (var container of containers) {
+            var found = doc.domStrings.find(container);
+            // Append individually: neither DOM size nor expression count becomes
+            // a function argument count. Keep the scanner's complete run mapping.
+            for (var string of found[0]) strings.push(string);
+            for (var nodeList of found[1]) nodes.push(nodeList);
+          }
+          for (var item of jax.findMath(strings)) {
+            list.push(new doc.options.MathItem(
+              item.math, jax, item.display,
+              position(nodes, item, item.start, item.open),
+              position(nodes, item, item.end, item.close)
+            ));
+          }
+        } else {
+          for (var container of containers) {
+            for (var item of jax.findMath(container)) {
+              list.push(new doc.options.MathItem(
+                item.math, jax, item.display, item.start, item.end
+              ));
+            }
+          }
+        }
+        doc.math.merge(list);
+      }
+      doc.processed.set("findMath");
+    }, "", false]
+  })
+});
+window.normalizeTemplateMathJaxAria = function () {
+  document.querySelectorAll("mjx-speech[aria-roledescription]").forEach(function (node) {
+    var roleDescription = node.getAttribute("aria-roledescription") || "";
+    if (/[-]/.test(roleDescription)) {
+      node.setAttribute("aria-roledescription", "mathematical expression");
+    }
+  });
+};
+window.MathJax.startup = Object.assign({}, window.MathJax.startup, {
+  ready: function () {
+    var measuredWidth = document.documentElement.clientWidth;
+    var reflowQueued = false;
+    window.MathJax.startup.defaultReady();
+    window.templateMathJaxReflowPromise = window.MathJax.startup.promise.then(
+      window.normalizeTemplateMathJaxAria
+    );
+    function reflowDisplayMath() {
+      if (reflowQueued || document.documentElement.clientWidth === measuredWidth) return;
+      reflowQueued = true;
+      window.templateMathJaxReflowPromise = window.templateMathJaxReflowPromise
+        .catch(function () { /* A later resize may retry a failed render. */ })
+        .then(async function () {
+          var width = document.documentElement.clientWidth;
+          try {
+            // MathJax 4 MathItem.STATE.METRICS = 110. Restart from metrics
+            // after a viewport change rather than retaining old container widths.
+            await window.MathJax.startup.document.rerenderPromise(110);
+            window.normalizeTemplateMathJaxAria();
+            window.templateMathJaxReflowError = null;
+          } catch (error) {
+            window.templateMathJaxReflowError = String(error);
+            console.error("MathJax viewport reflow failed", error);
+            throw error;
+          } finally {
+            measuredWidth = width;
+            reflowQueued = false;
+          }
+        })
+        .then(reflowDisplayMath);
+      // Keep failure observable to callers without an unhandled rejection.
+      window.templateMathJaxReflowPromise.catch(function () {});
+    }
+    window.addEventListener("resize", reflowDisplayMath);
+    // Also cover a resize that happened during the initial asynchronous render.
+    window.templateMathJaxReflowPromise.then(reflowDisplayMath);
+  }
+});
+</script>
+<script defer=""
+  type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@4.0.0/tex-chtml.js" integrity="sha384-2BWc4dVaHADUocwKrUrK9u3iDwHxVMKXWEcoRmUkXYSFKhAsgVAYClu9ydNuo5Oz" crossorigin="anonymous"></script>
 
 <link data-template-favicon rel="icon" href="favicon.ico">
 
@@ -240,7 +389,14 @@ pre > code.sourceCode > span {
   white-space: pre-wrap;
   word-break: break-word;
 }
-mjx-container[display="true"] { max-width: 100%; overflow: visible; }
+.math.inline {
+  display: inline-block;
+  max-width: 100%;
+  margin: 0;
+  overflow-x: auto;
+  vertical-align: middle;
+}
+mjx-container[display="true"] { max-width: 100%; overflow-x: auto; }
 .table-scroll {
   max-width: 100%;
   overflow-x: auto;
@@ -251,15 +407,13 @@ mjx-container[display="true"] { max-width: 100%; overflow: visible; }
   outline: 3px solid var(--brand-1);
   outline-offset: 3px;
 }
-.table-scroll > table { margin-block: 0; min-width: 100%; width: max-content; }
+.table-scroll > table { margin-block: 0; display: table; min-width: 100%; width: 100%; }
 *, *::before, *::after {
   box-sizing: border-box;
 }
 
 html {
   max-width: 100%;
-  overflow-x: hidden;
-  overflow-x: clip;
 }
 
 body {
@@ -272,8 +426,6 @@ body {
   background-color: #f8f8f8;
   color: #1a1a1a;
   overflow-wrap: break-word;
-  overflow-x: hidden;
-  overflow-x: clip;
 }
 
 main,
@@ -357,6 +509,9 @@ pre {
 }
 
 pre code {
+  background-color: transparent;
+  padding: 0;
+  border-radius: 0;
   overflow-wrap: inherit;
   white-space: inherit;
   word-break: inherit;
@@ -409,8 +564,9 @@ table {
 
 .table-scroll > table {
   margin-block: 0;
+  display: table;
   min-width: 100%;
-  width: max-content;
+  width: 100%;
 }
 
 figure {
@@ -427,6 +583,15 @@ th, td {
 th {
   background-color: #1f6f8b;
   color: white;
+}
+
+/* Preserve a complete inline-code header within the table's scroll region. */
+th code {
+  color: inherit;
+  background-color: transparent;
+  white-space: nowrap;
+  overflow-wrap: normal;
+  word-break: normal;
 }
 
 img {
@@ -488,10 +653,18 @@ a:focus-visible {
   font-size: 1.1em;
 }
 
+.math.inline {
+  display: inline-block;
+  max-width: 100%;
+  margin: 0;
+  overflow-x: auto;
+  vertical-align: middle;
+}
+
 mjx-container[display="true"] {
   display: block;
   max-width: 100%;
-  overflow: visible;
+  overflow-x: auto;
   padding-bottom: 0.25rem;
 }
 
@@ -542,10 +715,6 @@ mjx-container[display="true"] {
 @media (min-width: 1000px) {
   /* Wide figure links stay within the viewport but extend beyond the prose
      column. Do not clip their labels at the narrower body boundary. */
-  body {
-    overflow-x: visible;
-  }
-
   .figure-full-size-link {
     left: 50%;
     max-width: none;
@@ -569,24 +738,29 @@ mjx-container[display="true"] {
 }
 
 </style>
+<script data-template-source-font-loader src="assets/source-web-fonts.js"></script>
 </head>
 <body>
 <a class="skip-link" href="#main-content">Skip to main content</a>
 <main id="main-content" tabindex="-1">
-<h1 id="sec:introduction">Introduction</h1>
-<h2 id="sec:introduction-paper-source">No-Self-Evidence as a Finite
+<h1 data-number="2" id="sec:introduction"><span
+class="header-section-number">2</span> Introduction</h1>
+<h2 data-number="2.1" id="sec:introduction-paper-source"><span
+class="header-section-number">2.1</span> No-Self-Evidence as a Finite
 Boundary-Screen Problem</h2>
-<p>Sandved-Smith et al. [sandvedsmith2026noself] argue that a finite
-agent can self-evidence through its generative model while never
-obtaining evidence for the ontological reality of its own boundary. This
-no-self-evidence problem is the formal target operationalized here. The
-software turns the argument into an executable boundary discipline by
-holding three operations apart that prose usually runs together: using a
-boundary channel for prediction, labeling that channel with a quantum
-reference frame (QRF) sector, and treating the label as though it had
-ontological support. The first operation is licensed, the second is a
-model-indexing choice, and the third is the move the bitstream cannot
-underwrite.</p>
+<p>Sandved-Smith et al. <span class="citation"
+data-cites="sandvedsmith2026noself">(<a
+href="index.html#ref-sandvedsmith2026noself" role="doc-biblioref">Sandved-Smith et
+al. 2026</a>)</span> argue that a finite agent can self-evidence through
+its generative model while never obtaining evidence for the ontological
+reality of its own boundary. This no-self-evidence problem is the formal
+target operationalized here. The software turns the argument into an
+executable boundary discipline by holding three operations apart that
+prose usually runs together: using a boundary channel for prediction,
+labeling that channel with a quantum reference frame (QRF) sector, and
+treating the label as though it had ontological support. The first
+operation is licensed, the second is a model-indexing choice, and the
+third is the move the bitstream cannot underwrite.</p>
 <p>A quantum reference frame (QRF), as used here, is a frame-dependent
 sector labeling over the same finite boundary bitstream. It is a
 bookkeeping choice that says how a model reads the screen, not a claim
@@ -594,12 +768,17 @@ that the software has implemented a physical quantum reference frame or
 discovered a physical observer boundary. Physical QRF work concerns
 transformations between quantum reference systems; this manuscript uses
 that literature only as a boundary for what the finite relabeling
-surrogate is not claiming [giacomini2019qrf;
-vanrietvelde2020perspective; bartlett2007reference]. The finite boundary
-screen is written as <code>B = {b0, b1, b2, b3, b4, b5}</code>. Each
-<code>b_i</code> is a software observation channel that can carry a
-bitstream, not a discovered biological sensor, physical boundary qubit,
-or ontological sector.</p>
+surrogate is not claiming <span class="citation"
+data-cites="giacomini2019qrf vanrietvelde2020perspective bartlett2007reference">(<a
+href="index.html#ref-giacomini2019qrf" role="doc-biblioref">Giacomini et al.
+2019</a>; <a href="index.html#ref-vanrietvelde2020perspective"
+role="doc-biblioref">Vanrietvelde et al. 2020</a>; <a
+href="index.html#ref-bartlett2007reference" role="doc-biblioref">Bartlett et al.
+2007</a>)</span>. The finite boundary screen is written as
+<code>B = {b0, b1, b2, b3, b4, b5}</code>. Each <code>b_i</code> is a
+software observation channel that can carry a bitstream, not a
+discovered biological sensor, physical boundary qubit, or ontological
+sector.</p>
 <p>Three terms therefore need to be read in the narrow model-theoretic
 sense used throughout the manuscript. Agency means action-contingency
 inside the finite model: selected actions make some boundary channels
@@ -649,26 +828,26 @@ governance/practice boundary artifact audits claims, sources, protocols,
 or validation without adding outcome evidence. These roles are method
 labels, not evidence-class upgrades.</p>
 <p>The central QRF move is to partition the same six channels in more
-than one way. As laid out in <span class="citation"
-data-cites="fig:qrf_sector_situation">@fig:qrf_sector_situation</span>,
-the separation-constrained profile sends
-<code>b0,b1,b5 -&gt; self</code> and <code>b2,b3,b4 -&gt; env</code>, so
-sigma imposes a dual self/environment reading on the screen. The
-opacified profile sends <code>b0 -&gt; self</code>,
-<code>b1 -&gt; action</code>, <code>b2,b3 -&gt; env</code>,
-<code>b4 -&gt; other</code>, and <code>b5 -&gt; care</code>, so some
-channels stay dual while others become inspectable as action, other, and
-care labels. The post-dual profile sends <code>b0 -&gt; body</code>,
-<code>b1 -&gt; action</code>, <code>b2,b3 -&gt; world</code>,
-<code>b4 -&gt; other</code>, and <code>b5 -&gt; care</code>, organizing
-the same bitstream with no privileged self/environment cut. These are
-three carvings of one interface, not three competing measurements of
-what the interface ultimately is.</p>
+than one way. As laid out in fig. <a
+href="#fig:qrf_sector_situation">1</a>, the separation-constrained
+profile sends <code>b0,b1,b5 -&gt; self</code> and
+<code>b2,b3,b4 -&gt; env</code>, so sigma imposes a dual
+self/environment reading on the screen. The opacified profile sends
+<code>b0 -&gt; self</code>, <code>b1 -&gt; action</code>,
+<code>b2,b3 -&gt; env</code>, <code>b4 -&gt; other</code>, and
+<code>b5 -&gt; care</code>, so some channels stay dual while others
+become inspectable as action, other, and care labels. The post-dual
+profile sends <code>b0 -&gt; body</code>, <code>b1 -&gt; action</code>,
+<code>b2,b3 -&gt; world</code>, <code>b4 -&gt; other</code>, and
+<code>b5 -&gt; care</code>, organizing the same bitstream with no
+privileged self/environment cut. These are three carvings of one
+interface, not three competing measurements of what the interface
+ultimately is.</p>
 <figure id="fig:qrf_sector_situation">
-<a class="figure-full-size-link" href="../figures/qrf_sector_situation.png" target="_blank" rel="noopener" aria-label="Open full-size figure, The QRF sector situation for early reading, showing one shared boundary screen of channels…"><img src="../figures/qrf_sector_situation.png" style="width:98.0%"
-alt="The QRF sector situation for early reading, showing one shared boundary screen of channels b0-b5 read through three sector lenses. A top row of cells carries the evidenced observation symbols, dotted vertical lines tie each bit to the separation-constrained, opacified, and post-dual lens rows below, a legend maps each lens color to a sector label, and a per-lens sector count records how finely each lens carves the screen, so the figure shows that the partitioning changes while the evidenced bitstream and its claim boundary stay finite software surrogates rather than empirical, neural, ontological, or physical qFEP evidence." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
-<figcaption>The QRF sector situation for early
-reading, showing one shared boundary screen of channels b0-b5 read
+<a class="figure-full-size-link" href="../figures/qrf_sector_situation.png" target="_blank" rel="noopener" aria-label="Open full-size Figure 1, The QRF sector situation for early reading, showing one shared boundary screen of channels…"><img src="../figures/qrf_sector_situation.png" style="width:98.0%"
+alt="Layered diagram with a top row of six boundary channel cells labeled b0 through b5 and their observation symbols, dotted vertical lines tying each channel down to three sector lens rows that assign different sector labels to the same channels, with a sector count beside each lens." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
+<figcaption>Figure 1: The QRF sector situation for
+early reading, showing one shared boundary screen of channels b0-b5 read
 through three sector lenses. A top row of cells carries the evidenced
 observation symbols, dotted vertical lines tie each bit to the
 separation-constrained, opacified, and post-dual lens rows below, a
@@ -678,51 +857,50 @@ shows that the partitioning changes while the evidenced bitstream and
 its claim boundary stay finite software surrogates rather than
 empirical, neural, ontological, or physical qFEP evidence.</figcaption>
 </figure>
-<p>The same six channels are shown geometrically in <span
-class="citation"
-data-cites="fig:qrf_boundary_screen_geometry">@fig:qrf_boundary_screen_geometry</span>
-before the results section audits their behavior. The figure should be
-read as the object the rest of the manuscript manipulates: action enters
-a finite boundary screen, observations leave it as b0-b5 bits, and the
-surrounding role labels make the software channels legible without
-turning them into empirical sensors or ontological parts.</p>
+<p>The same six channels are shown geometrically in fig. <a
+href="#fig:qrf_boundary_screen_geometry">2</a> before the results
+section audits their behavior. The figure should be read as the object
+the rest of the manuscript manipulates: action enters a finite boundary
+screen, observations leave it as b0-b5 bits, and the surrounding role
+labels make the software channels legible without turning them into
+empirical sensors or ontological parts.</p>
 <figure id="fig:qrf_boundary_screen_geometry">
-<a class="figure-full-size-link" href="../figures/qrf_boundary_screen_geometry.png" target="_blank" rel="noopener" aria-label="Open full-size figure, Finite QRF boundary-screen geometry for the lead boundary result."><img src="../figures/qrf_boundary_screen_geometry.png"
+<a class="figure-full-size-link" href="../figures/qrf_boundary_screen_geometry.png" target="_blank" rel="noopener" aria-label="Open full-size Figure 2, Finite QRF boundary-screen geometry for the lead boundary result."><img src="../figures/qrf_boundary_screen_geometry.png"
 style="width:98.0%"
-alt="Finite QRF boundary-screen geometry for the lead boundary result. Dashed screen, node labels, action edge, observation edge, and channel-role text show how b0-b5 function as software observation channels while preserving the boundary claim that no node or edge is empirical, biological, ontological self/world, or physical qFEP evidence." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
-<figcaption>Finite QRF boundary-screen geometry for
-the lead boundary result. Dashed screen, node labels, action edge,
-observation edge, and channel-role text show how b0-b5 function as
-software observation channels while preserving the boundary claim that
-no node or edge is empirical, biological, ontological self/world, or
-physical qFEP evidence.</figcaption>
+alt="Schematic of six labeled boundary channels arranged around a dashed finite screen, with an orange action arrow entering the screen and a blue observation arrow leaving it; role labels identify the software channel semantics without treating them as empirical boundary evidence." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
+<figcaption>Figure 2: Finite QRF boundary-screen
+geometry for the lead boundary result. Dashed screen, node labels,
+action edge, observation edge, and channel-role text show how b0-b5
+function as software observation channels while preserving the boundary
+claim that no node or edge is empirical, biological, ontological
+self/world, or physical qFEP evidence.</figcaption>
 </figure>
-<p>That distinction is the whole argument, and <span class="citation"
-data-cites="fig:boundary_use_vs_ontology">@fig:boundary_use_vs_ontology</span>
-states it as a permission rule. A partition changes the model’s
-organization: which priors are admissible, which transitions count as
-action-contingent, which observations are preferred, and which policies
-become cheap or costly under expected free energy. So a frame is
-unambiguously useful. But if two admissible partitions are defined over
-the same bitstream, the bitstream cannot by itself certify an
-ontological self/world boundary or decide which partition is real.
-Boundary use and boundary ontology are different evidential objects: the
-project therefore treats QRF sector labels as model-indexing variables
-and treats Bayesian model reduction as a comparison over useful priors,
-not as a metaphysical removal of a self.</p>
+<p>That distinction is the whole argument, and fig. <a
+href="#fig:boundary_use_vs_ontology">3</a> states it as a permission
+rule. A partition changes the model’s organization: which priors are
+admissible, which transitions count as action-contingent, which
+observations are preferred, and which policies become cheap or costly
+under expected free energy. So a frame is unambiguously useful. But if
+two admissible partitions are defined over the same bitstream, the
+bitstream cannot by itself certify an ontological self/world boundary or
+decide which partition is real. Boundary use and boundary ontology are
+different evidential objects: the project therefore treats QRF sector
+labels as model-indexing variables and treats Bayesian model reduction
+as a comparison over useful priors, not as a metaphysical removal of a
+self.</p>
 <figure id="fig:boundary_use_vs_ontology">
-<a class="figure-full-size-link" href="../figures/boundary_use_vs_ontology.png" target="_blank" rel="noopener" aria-label="Open full-size figure, Boundary use versus boundary ontology rendered as a stepwise permission diagram"><img src="../figures/boundary_use_vs_ontology.png" style="width:98.0%"
-alt="Boundary use versus boundary ontology rendered as a stepwise permission diagram for the no-self-evidence claim. Step 1 shows the shared finite b0-b5 bitstream as the only evidenced object; Step 2 licenses reading those same bits through admissible QRF sector labels for prediction, policy selection, and model comparison when the equal-distribution audit passes; Step 3 blocks treating any chosen sector frame as a real self/world boundary because the perturbation control fails. Color encodes the licensed and blocked lanes, while the legend names the two verdicts, keeping the figure a finite software audit and not empirical, neural, clinical, practice-efficacy, or physical qFEP evidence." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
-<figcaption>Boundary use versus boundary ontology
-rendered as a stepwise permission diagram for the no-self-evidence
-claim. Step 1 shows the shared finite b0-b5 bitstream as the only
-evidenced object; Step 2 licenses reading those same bits through
-admissible QRF sector labels for prediction, policy selection, and model
-comparison when the equal-distribution audit passes; Step 3 blocks
-treating any chosen sector frame as a real self/world boundary because
-the perturbation control fails. Color encodes the licensed and blocked
-lanes, while the legend names the two verdicts, keeping the figure a
-finite software audit and not empirical, neural, clinical,
+<a class="figure-full-size-link" href="../figures/boundary_use_vs_ontology.png" target="_blank" rel="noopener" aria-label="Open full-size Figure 3, Boundary use versus boundary ontology rendered as a stepwise permission diagram"><img src="../figures/boundary_use_vs_ontology.png" style="width:98.0%"
+alt="Stepwise permission diagram with a top shared finite boundary screen of b0 through b5 bits feeding a left licensed-use lane and a right blocked-ontology lane, each labeled with the audit control that supports or blocks the reading." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
+<figcaption>Figure 3: Boundary use versus boundary
+ontology rendered as a stepwise permission diagram for the
+no-self-evidence claim. Step 1 shows the shared finite b0-b5 bitstream
+as the only evidenced object; Step 2 licenses reading those same bits
+through admissible QRF sector labels for prediction, policy selection,
+and model comparison when the equal-distribution audit passes; Step 3
+blocks treating any chosen sector frame as a real self/world boundary
+because the perturbation control fails. Color encodes the licensed and
+blocked lanes, while the legend names the two verdicts, keeping the
+figure a finite software audit and not empirical, neural, clinical,
 practice-efficacy, or physical qFEP evidence.</figcaption>
 </figure>
 <p>The manuscript therefore reads the paper as a formal specification
@@ -732,28 +910,31 @@ records which expressions are computable surrogates, and the simulation
 layer asks how separation priors, QRF relabelings, Bayesian model
 reduction, replayed active-inference traces, seeded stochastic
 ensembles, and finite open-system quantum surrogates behave under
-explicit arrays. The finite QRF boundary screen is defined in <span
-class="citation"
-data-cites="sec:methods-finite-qrf-boundary-screen">@sec:methods-finite-qrf-boundary-screen</span>,
-its lead audits appear in <span class="citation"
-data-cites="sec:results-qrf-boundary-geometry">@sec:results-qrf-boundary-geometry</span>,
-and the implemented finite quantum extension engines that extend it
-without changing the evidence class are defined in <span
-class="citation"
-data-cites="sec:methods-roadmap-quantum-engines">@sec:methods-roadmap-quantum-engines</span>.</p>
+explicit arrays. The finite QRF boundary screen is defined in sec. <a
+href="manuscript__02_methods.html#sec:methods-finite-qrf-boundary-screen">3.2</a>, its lead audits
+appear in sec. <a href="manuscript__03_results.html#sec:results-qrf-boundary-geometry">4.1</a>, and
+the implemented finite quantum extension engines that extend it without
+changing the evidence class are defined in sec. <a
+href="manuscript__02_methods.html#sec:methods-roadmap-quantum-engines">3.1</a>.</p>
 <p>This framing also fixes the role of scholarship. Active-inference and
 Markov-blanket sources make the generative-model and boundary vocabulary
 precise, including the critique and response literature that warns
 against unqualified moves from sparse coupling or FEP formalisms to
-real-world boundary ontology [friston2023fep_simpler;
-aguilera2021particular; biehl2021technical_fep;
-heins2022sparse_coupling]. Quantum-information, QRF, contextuality, and
-quantum-trajectory sources make the finite simulations mathematically
-legible; contemplative and Buddhist sources constrain terminology at the
-interface to practice. None of those source roles is allowed to
-substitute for the missing evidence class that would be required to
-claim realization, clinical benefit, neural measurement, or physical
-quantum free-energy principle (qFEP) confirmation.</p>
+real-world boundary ontology <span class="citation"
+data-cites="friston2023fep_simpler aguilera2021particular biehl2021technical_fep heins2022sparse_coupling">(<a
+href="index.html#ref-friston2023fep_simpler" role="doc-biblioref">Friston et al.
+2023</a>; <a href="index.html#ref-aguilera2021particular"
+role="doc-biblioref">Aguilera et al. 2022</a>; <a
+href="index.html#ref-biehl2021technical_fep" role="doc-biblioref">Biehl et al.
+2021</a>; <a href="index.html#ref-heins2022sparse_coupling"
+role="doc-biblioref">Heins and Da Costa 2022</a>)</span>.
+Quantum-information, QRF, contextuality, and quantum-trajectory sources
+make the finite simulations mathematically legible; contemplative and
+Buddhist sources constrain terminology at the interface to practice.
+None of those source roles is allowed to substitute for the missing
+evidence class that would be required to claim realization, clinical
+benefit, neural measurement, or physical quantum free-energy principle
+(qFEP) confirmation.</p>
 <p>The mapping from the source paper to this software is a
 recapitulation scope rather than a reproduction of the physics. The
 paper’s qFEP section and its equations 1-6 map to the equation registry
@@ -770,7 +951,8 @@ software surrogate with a declared evidence ceiling, never a claim that
 the underlying physical or contemplative phenomenon has been realized. A
 generated row-by-row map from paper equations 1-14 to artifacts and
 gates is maintained in the equation crosswalk reference document.</p>
-<h2 id="sec:introduction-limitations">Finite Surrogates over Literal
+<h2 data-number="2.2" id="sec:introduction-limitations"><span
+class="header-section-number">2.2</span> Finite Surrogates over Literal
 Quantum Simulation</h2>
 <p>The implementation does not attempt a literal quantum simulation of
 the universe-agent boundary. Instead, it builds finite surrogates that

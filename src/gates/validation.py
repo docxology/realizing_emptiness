@@ -586,13 +586,16 @@ def _pymdp_runtime_log_ok(runtime_log: dict[str, Any], policy_trace: dict[str, A
     summary = runtime_log.get("summary", {})
     replay = runtime_log.get("replay", {})
     row_count = len(runtime_log.get("rows", []))
+    dependency = runtime_log.get("runtime_dependency_check", {})
     return (
         runtime_log.get("schema") == "realizing_emptiness.pymdp_runtime_diagnostics_log.v2"
         and runtime_log.get("all_controls_pass") is True
         and runtime_log.get("trace_row_count") == policy_trace.get("row_count") == row_count
         and runtime_log.get("runtime_versions", {}).get("inferactively_pymdp") == PYMDP_REQUIRED_VERSION
-        and runtime_log.get("runtime_dependency_check", {}).get("ok") is True
-        and runtime_warnings_match_version(runtime_log.get("runtime_dependency_check", {}))
+        and dependency.get("version") == dependency.get("required_version") == PYMDP_REQUIRED_VERSION
+        and dependency.get("ok") is True
+        and dependency.get("version_ok") is True
+        and runtime_warnings_match_version(dependency)
         and runtime_log.get("model_profile_count") == 3
         and len({row.get("sha256") for row in runtime_log.get("model_hashes", [])}) == 3
         and all(len(row.get("sha256", "")) == 64 for row in runtime_log.get("model_hashes", []))

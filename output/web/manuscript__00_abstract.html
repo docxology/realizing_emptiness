@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc 3.12.1" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>00_abstract.md.web</title>
+  <meta name="author" content="Daniel Ari Friedman" />
+  <meta name="description" content="Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction" />
+  <title>Realizing Emptiness</title>
   <style>
     /* Default styles provided by pandoc.
     ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -179,7 +181,154 @@
       margin: 0 0.8em 0.2em -1.6em;
       vertical-align: middle;
     }
-  </style>
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
+  <script data-template-mathjax-config>
+window.MathJax = window.MathJax || {};
+window.MathJax.chtml = Object.assign({}, window.MathJax.chtml, {
+  fontURL: "https://cdn.jsdelivr.net/npm/@mathjax/mathjax-newcm-font@4.0.0/chtml/woff2",
+  dynamicPrefix: "https://cdn.jsdelivr.net/npm/@mathjax/mathjax-newcm-font@4.0.0/chtml/dynamic"
+});
+var templateMathOutput = window.MathJax.output || {};
+window.MathJax.output = Object.assign({}, templateMathOutput, {
+  displayOverflow: "scroll",
+  linebreaks: Object.assign({}, templateMathOutput.linebreaks, {
+    inline: false,
+    width: "100%",
+    lineleading: 0.5
+  })
+});
+var templateMathOptions = window.MathJax.options || {};
+window.MathJax.options = Object.assign({}, templateMathOptions, {
+  renderActions: Object.assign({}, templateMathOptions.renderActions, {
+    // Use the documented find action/MathItem extension point. MathJax 4.0.0's
+    // default finder spreads every DOM text run into push() arguments, exceeding
+    // the browser argument stack on large books even with very little math.
+    find: [10, function (doc) {
+      if (doc.processed.isSet("findMath")) return;
+      var adaptor = doc.adaptor;
+      adaptor.document = doc.document;
+      var containers = adaptor.getElements(
+        doc.options.elements || [adaptor.body(doc.document)], doc.document
+      );
+      // Retain the pinned HTMLDocument.findPosition source offsets/order
+      // (MathJax-src 4.0.0, ts/handlers/html/HTMLDocument.ts, Apache-2.0).
+      function position(nodes, item, location, delim) {
+        var parts = nodes[item.n];
+        var index = location.n;
+        var order = item.n;
+        var increment = 1 / (parts.length || 1);
+        for (var part of parts) {
+          if (index <= part[1] && adaptor.kind(part[0]) === "#text") {
+            return {i: order, node: part[0], n: Math.max(index, 0), delim: delim};
+          }
+          index -= part[1];
+          order += increment;
+        }
+        return {node: null, n: 0, delim: delim};
+      }
+      for (var jax of doc.inputJax) {
+        var list = new doc.options.MathList();
+        if (jax.processStrings) {
+          var strings = [];
+          var nodes = [];
+          for (var container of containers) {
+            var found = doc.domStrings.find(container);
+            // Append individually: neither DOM size nor expression count becomes
+            // a function argument count. Keep the scanner's complete run mapping.
+            for (var string of found[0]) strings.push(string);
+            for (var nodeList of found[1]) nodes.push(nodeList);
+          }
+          for (var item of jax.findMath(strings)) {
+            list.push(new doc.options.MathItem(
+              item.math, jax, item.display,
+              position(nodes, item, item.start, item.open),
+              position(nodes, item, item.end, item.close)
+            ));
+          }
+        } else {
+          for (var container of containers) {
+            for (var item of jax.findMath(container)) {
+              list.push(new doc.options.MathItem(
+                item.math, jax, item.display, item.start, item.end
+              ));
+            }
+          }
+        }
+        doc.math.merge(list);
+      }
+      doc.processed.set("findMath");
+    }, "", false]
+  })
+});
+window.normalizeTemplateMathJaxAria = function () {
+  document.querySelectorAll("mjx-speech[aria-roledescription]").forEach(function (node) {
+    var roleDescription = node.getAttribute("aria-roledescription") || "";
+    if (/[-]/.test(roleDescription)) {
+      node.setAttribute("aria-roledescription", "mathematical expression");
+    }
+  });
+};
+window.MathJax.startup = Object.assign({}, window.MathJax.startup, {
+  ready: function () {
+    var measuredWidth = document.documentElement.clientWidth;
+    var reflowQueued = false;
+    window.MathJax.startup.defaultReady();
+    window.templateMathJaxReflowPromise = window.MathJax.startup.promise.then(
+      window.normalizeTemplateMathJaxAria
+    );
+    function reflowDisplayMath() {
+      if (reflowQueued || document.documentElement.clientWidth === measuredWidth) return;
+      reflowQueued = true;
+      window.templateMathJaxReflowPromise = window.templateMathJaxReflowPromise
+        .catch(function () { /* A later resize may retry a failed render. */ })
+        .then(async function () {
+          var width = document.documentElement.clientWidth;
+          try {
+            // MathJax 4 MathItem.STATE.METRICS = 110. Restart from metrics
+            // after a viewport change rather than retaining old container widths.
+            await window.MathJax.startup.document.rerenderPromise(110);
+            window.normalizeTemplateMathJaxAria();
+            window.templateMathJaxReflowError = null;
+          } catch (error) {
+            window.templateMathJaxReflowError = String(error);
+            console.error("MathJax viewport reflow failed", error);
+            throw error;
+          } finally {
+            measuredWidth = width;
+            reflowQueued = false;
+          }
+        })
+        .then(reflowDisplayMath);
+      // Keep failure observable to callers without an unhandled rejection.
+      window.templateMathJaxReflowPromise.catch(function () {});
+    }
+    window.addEventListener("resize", reflowDisplayMath);
+    // Also cover a resize that happened during the initial asynchronous render.
+    window.templateMathJaxReflowPromise.then(reflowDisplayMath);
+  }
+});
+</script>
+<script defer=""
+  type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@4.0.0/tex-chtml.js" integrity="sha384-2BWc4dVaHADUocwKrUrK9u3iDwHxVMKXWEcoRmUkXYSFKhAsgVAYClu9ydNuo5Oz" crossorigin="anonymous"></script>
 
 <link data-template-favicon rel="icon" href="favicon.ico">
 
@@ -240,7 +389,14 @@ pre > code.sourceCode > span {
   white-space: pre-wrap;
   word-break: break-word;
 }
-mjx-container[display="true"] { max-width: 100%; overflow: visible; }
+.math.inline {
+  display: inline-block;
+  max-width: 100%;
+  margin: 0;
+  overflow-x: auto;
+  vertical-align: middle;
+}
+mjx-container[display="true"] { max-width: 100%; overflow-x: auto; }
 .table-scroll {
   max-width: 100%;
   overflow-x: auto;
@@ -251,15 +407,13 @@ mjx-container[display="true"] { max-width: 100%; overflow: visible; }
   outline: 3px solid var(--brand-1);
   outline-offset: 3px;
 }
-.table-scroll > table { margin-block: 0; min-width: 100%; width: max-content; }
+.table-scroll > table { margin-block: 0; display: table; min-width: 100%; width: 100%; }
 *, *::before, *::after {
   box-sizing: border-box;
 }
 
 html {
   max-width: 100%;
-  overflow-x: hidden;
-  overflow-x: clip;
 }
 
 body {
@@ -272,8 +426,6 @@ body {
   background-color: #f8f8f8;
   color: #1a1a1a;
   overflow-wrap: break-word;
-  overflow-x: hidden;
-  overflow-x: clip;
 }
 
 main,
@@ -357,6 +509,9 @@ pre {
 }
 
 pre code {
+  background-color: transparent;
+  padding: 0;
+  border-radius: 0;
   overflow-wrap: inherit;
   white-space: inherit;
   word-break: inherit;
@@ -409,8 +564,9 @@ table {
 
 .table-scroll > table {
   margin-block: 0;
+  display: table;
   min-width: 100%;
-  width: max-content;
+  width: 100%;
 }
 
 figure {
@@ -427,6 +583,15 @@ th, td {
 th {
   background-color: #1f6f8b;
   color: white;
+}
+
+/* Preserve a complete inline-code header within the table's scroll region. */
+th code {
+  color: inherit;
+  background-color: transparent;
+  white-space: nowrap;
+  overflow-wrap: normal;
+  word-break: normal;
 }
 
 img {
@@ -488,10 +653,18 @@ a:focus-visible {
   font-size: 1.1em;
 }
 
+.math.inline {
+  display: inline-block;
+  max-width: 100%;
+  margin: 0;
+  overflow-x: auto;
+  vertical-align: middle;
+}
+
 mjx-container[display="true"] {
   display: block;
   max-width: 100%;
-  overflow: visible;
+  overflow-x: auto;
   padding-bottom: 0.25rem;
 }
 
@@ -542,10 +715,6 @@ mjx-container[display="true"] {
 @media (min-width: 1000px) {
   /* Wide figure links stay within the viewport but extend beyond the prose
      column. Do not clip their labels at the narrower body boundary. */
-  body {
-    overflow-x: visible;
-  }
-
   .figure-full-size-link {
     left: 50%;
     max-width: none;
@@ -569,54 +738,60 @@ mjx-container[display="true"] {
 }
 
 </style>
+<script data-template-source-font-loader src="assets/source-web-fonts.js"></script>
 </head>
 <body>
 <a class="skip-link" href="#main-content">Skip to main content</a>
 <main id="main-content" tabindex="-1">
-<h1 id="sec:abstract">Abstract</h1>
+<h1 data-number="1" id="sec:abstract"><span
+class="header-section-number">1</span> Abstract</h1>
 <figure class="graphical-abstract"><a class="figure-full-size-link" href="../figures/graphical_abstract_cover.png" target="_blank" rel="noopener" aria-label="Open full-size figure, Graphical abstract showing Sandved-Smith source formalism flowing through equation registry…"><img src="../figures/graphical_abstract_cover.png" alt="Graphical abstract showing Sandved-Smith source formalism flowing through equation registry, finite QRF boundary screen, stochastic active-inference and quantum engines, claim gates, evidence ceilings, manuscript, and dashboard outputs." style="max-width:100%;height:auto;"><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a></figure>
 <p>This project operationalizes the 2026 preprint <em>There is no
 self-evidence: A physics of emptiness realisation</em> as a
-source-anchored software artifact [sandvedsmith2026noself]. Its central
-claim is that a finite agent can use a boundary for prediction while
-never obtaining evidence that the boundary is ontologically real, and
-the software separates three local artifact roles: formal sanity checks
-for source equations, positive-control-style finite mechanism checks,
-and discriminating tests that reject stronger readings when a control is
-perturbed. The formal layer maps the paper’s quantum free-energy
-principle (qFEP) and quantum reference frame (QRF) equations into finite
-operational surrogates, bridging each paper equation to a specific
-software artifact. The computed artifacts are a suite of finite
-quantum-information and contextuality audits — spanning two-qubit
-separability and entanglement entropy, Bell and contextuality witnesses,
-thermodynamic and open-system dynamics, seeded quantum-trajectory
-sampling checked against exact solutions, and frame-covariance checks
-for the quantum reference frame relabelings — with explicit positive
-controls, negative controls, or boundary checks recorded where the
-corresponding artifact contract requires them. The software represents
-QRF deployments as policies over boundary-channel sectorisations, using
-the same finite bitstream under self/environment/contextual relabelings
-so that QRF labels can organize prediction, action selection, and
-transformation covariance while failing to become evidence for an
-ontological self/world boundary. Bayesian model reduction is implemented
-as a sweep over prior precision and metacognitive access, extended with
-a sensitivity grid over observation noise. The separation prior is
-pruned only when removing it lowers the model’s free energy, and kept
-when its remaining contribution to accuracy still offsets its complexity
-cost. The active-inference layer uses the inferactively-pymdp library
-[heins2022pymdp] with profile-specific likelihood, transition,
-preference, and prior arrays for the separation-constrained, opacified,
-and post-dual quantum reference frame deployments, then records
-posterior beliefs, policy posteriors, selected actions,
-expected-free-energy summaries, seeded stochastic ensembles with null
-controls and replay seeds, and confidence intervals, without treating
-those simulations as empirical subject data. Practice protocols,
-compassion-policy scope, criticality-style indicators, quantum-boundary
-dynamics, empirical adapters, and artifact-release readiness are
-therefore written as bounded model interfaces, simulated indicators,
-local private release-readiness records, or blocked evidence classes. A
-physical realization of the quantum free-energy principle, public
-independent reproduction, and any human practice efficacy, neural
+source-anchored software artifact <span class="citation"
+data-cites="sandvedsmith2026noself">(<a
+href="index.html#ref-sandvedsmith2026noself" role="doc-biblioref">Sandved-Smith et
+al. 2026</a>)</span>. Its central claim is that a finite agent can use a
+boundary for prediction while never obtaining evidence that the boundary
+is ontologically real, and the software separates three local artifact
+roles: formal sanity checks for source equations, positive-control-style
+finite mechanism checks, and discriminating tests that reject stronger
+readings when a control is perturbed. The formal layer maps the paper’s
+quantum free-energy principle (qFEP) and quantum reference frame (QRF)
+equations into finite operational surrogates, bridging each paper
+equation to a specific software artifact. The computed artifacts are a
+suite of finite quantum-information and contextuality audits — spanning
+two-qubit separability and entanglement entropy, Bell and contextuality
+witnesses, thermodynamic and open-system dynamics, seeded
+quantum-trajectory sampling checked against exact solutions, and
+frame-covariance checks for the quantum reference frame relabelings —
+with explicit positive controls, negative controls, or boundary checks
+recorded where the corresponding artifact contract requires them. The
+software represents QRF deployments as policies over boundary-channel
+sectorisations, using the same finite bitstream under
+self/environment/contextual relabelings so that QRF labels can organize
+prediction, action selection, and transformation covariance while
+failing to become evidence for an ontological self/world boundary.
+Bayesian model reduction is implemented as a sweep over prior precision
+and metacognitive access, extended with a sensitivity grid over
+observation noise. The separation prior is pruned only when removing it
+lowers the model’s free energy, and kept when its remaining contribution
+to accuracy still offsets its complexity cost. The active-inference
+layer uses the inferactively-pymdp library <span class="citation"
+data-cites="heins2022pymdp">(<a href="index.html#ref-heins2022pymdp"
+role="doc-biblioref">Heins et al. 2022</a>)</span> with profile-specific
+likelihood, transition, preference, and prior arrays for the
+separation-constrained, opacified, and post-dual quantum reference frame
+deployments, then records posterior beliefs, policy posteriors, selected
+actions, expected-free-energy summaries, seeded stochastic ensembles
+with null controls and replay seeds, and confidence intervals, without
+treating those simulations as empirical subject data. Practice
+protocols, compassion-policy scope, criticality-style indicators,
+quantum-boundary dynamics, empirical adapters, and artifact-release
+readiness are therefore written as bounded model interfaces, simulated
+indicators, local private release-readiness records, or blocked evidence
+classes. A physical realization of the quantum free-energy principle,
+public independent reproduction, and any human practice efficacy, neural
 measurement, or clinical outcome remain blocked future evidence
 classes.</p>
 </main>

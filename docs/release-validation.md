@@ -2,16 +2,16 @@
 
 ## Scope
 
-Version 3.0.0 covers source, finite numerical surrogates, source and claim
+Version 3.0.1 covers source, finite numerical surrogates, source and claim
 contracts, manuscript composition, visualization pipeline, documentation,
 distribution contents, and publication metadata. These checks establish
 software behavior only. The empirical and independent-reproduction boundaries
 in the [validation contract](validation-contract.md) remain in force.
 
-The current release moves model specification authority to packaged GNN files,
-pins the upstream parser, strict validator, and canonical categorical tensor
-contract, and connects those inputs to real categorical and finite numerical
-execution. Python support begins at 3.11. Model source hashes and consumption
+Packaged GNN declarations govern scientific model inputs. Python 3.12 through
+3.14 use the GNN v5.2.0 parser, strict validator, and canonical categorical tensor
+contract. Python 3.11 retains the GNN 4.1.0 and PyMDP 1.0.4 profile. Model
+source hashes and consumption
 checks supplement the existing numerical gates. The release retains the
 requirement that a strict majority of profiles separate on measured branching. Validation
 reconstructs the numerical acceptance from trajectory records. The 125-source
@@ -46,7 +46,7 @@ the original source digest and empirical evidence ceilings remain binding.
 
 ## Verification
 
-For v3.0.0, the GNN-specific checks must exercise malformed source declarations,
+For v3.0.1, the GNN-specific checks must exercise malformed source declarations,
 valid parameter and tensor mutations that reach their consumers, the upstream
 native categorical execution path, and installed package resources outside
 the checkout. Record the actual interpreter, upstream revision, source hashes,
@@ -60,7 +60,7 @@ The full chain regenerates analysis artifacts and figures. The separate
 and EPUB. The release checks also build and install a wheel, unpack and run
 the source distribution, replay generated artifacts, and inspect the rendered
 surfaces. Earlier release validation recorded 171 malformed JSON,
-nested-structure, and PNG rejections; that historical count is not a v3.0.0
+nested-structure, and PNG rejections; that historical count is not a v3.0.1
 verification receipt. Numeric regressions additionally
 exercise non-finite constants, exponent overflow, and finite extreme values.
 Versioned release notes record the final test totals, coverage, artifact checks,
@@ -71,7 +71,7 @@ prerequisite; an unpacked source archive intentionally omits generated analysis.
 
 The local artifact release manifest records reproducibility inputs; it is not
 a receipt for GitHub publication or Zenodo deposition. Version 1.0.0 retains
-its archived DOI. Version 3.0.0 uses its GitHub version URL until a new DOI is
+its archived DOI. Version 3.0.1 uses its GitHub version URL until a new DOI is
 actually assigned. A public repository or release does not establish independent
 or blinded reproduction, physical qFEP realization, neural measurement, clinical
 benefit, or contemplative attainment.

@@ -33,12 +33,12 @@
     },
     {
       "action_index": 2,
-      "manual_vs_library_prior_residual": 5.790142948436383e-08,
+      "manual_vs_library_prior_residual": 5.790142942885268e-08,
       "profile": "opacified"
     },
     {
       "action_index": 2,
-      "manual_vs_library_prior_residual": 2.7189834939100876e-08,
+      "manual_vs_library_prior_residual": 2.718983505012318e-08,
       "profile": "post_dual"
     }
   ],
@@ -123,13 +123,13 @@
   "rows": [
     {
       "efe_term_residuals": {
-        "ambiguity_proxy": 4.184220525615956e-09,
+        "ambiguity_proxy": 4.1842204145936535e-09,
         "efe_proxy": 2.2553719447593323e-09,
         "risk_proxy": 3.513548785250009e-09
       },
       "entropies_in_bounds": true,
       "expected_free_energy_finite": true,
-      "max_efe_term_residual": 4.184220525615956e-09,
+      "max_efe_term_residual": 4.1842204145936535e-09,
       "observation_label": "opacity_cue",
       "perturbed_observation": true,
       "policy_posterior_entropy": 1.0960609010137328,
@@ -146,8 +146,8 @@
       "true_state": "contracted_dual",
       "vfe": 1.6686573028564453,
       "vfe_finite": true,
-      "weighted_expected_free_energy_recomputed": -0.9455978545718136,
-      "weighted_expected_free_energy_residual": 9.607187934079775e-09
+      "weighted_expected_free_energy_recomputed": -0.9455978545718137,
+      "weighted_expected_free_energy_residual": 9.607187823057473e-09
     },
     {
       "efe_term_residuals": {
@@ -202,8 +202,8 @@
       "true_state": "contracted_dual",
       "vfe": 0.3381064534187317,
       "vfe_finite": true,
-      "weighted_expected_free_energy_recomputed": -1.1012277728680906,
-      "weighted_expected_free_energy_residual": 1.0079924894768055e-08
+      "weighted_expected_free_energy_recomputed": -1.1012277728680908,
+      "weighted_expected_free_energy_residual": 1.007992467272345e-08
     },
     {
       "efe_term_residuals": {
@@ -293,7 +293,7 @@
       "efe_term_residuals": {
         "ambiguity_proxy": 2.781637253868041e-09,
         "efe_proxy": 2.1030326369242403e-09,
-        "risk_proxy": 1.5051007107302894e-09
+        "risk_proxy": 1.505100599707987e-09
       },
       "entropies_in_bounds": true,
       "expected_free_energy_finite": true,
@@ -319,13 +319,13 @@
     },
     {
       "efe_term_residuals": {
-        "ambiguity_proxy": 3.740222020987005e-09,
-        "efe_proxy": 2.14131556930397e-09,
-        "risk_proxy": 5.8815374792686725e-09
+        "ambiguity_proxy": 3.740221909964703e-09,
+        "efe_proxy": 2.1413157913485747e-09,
+        "risk_proxy": 5.8815377013132775e-09
       },
       "entropies_in_bounds": true,
       "expected_free_energy_finite": true,
-      "max_efe_term_residual": 5.8815374792686725e-09,
+      "max_efe_term_residual": 5.8815377013132775e-09,
       "observation_label": "opacity_cue",
       "perturbed_observation": true,
       "policy_posterior_entropy": 1.0950174663298453,
@@ -342,13 +342,13 @@
       "true_state": "contracted_dual",
       "vfe": 1.1411482095718384,
       "vfe_finite": true,
-      "weighted_expected_free_energy_recomputed": -0.8594450723285683,
-      "weighted_expected_free_energy_residual": 8.793698880182887e-09
+      "weighted_expected_free_energy_recomputed": -0.8594450723285681,
+      "weighted_expected_free_energy_residual": 8.79369899120519e-09
     },
     {
       "efe_term_residuals": {
         "ambiguity_proxy": 4.675277498478181e-09,
-        "efe_proxy": 3.1649554088630794e-09,
+        "efe_proxy": 3.164955297840777e-09,
         "risk_proxy": 3.0997048261482973e-09
       },
       "entropies_in_bounds": true,
@@ -405,7 +405,7 @@
       "efe_term_residuals": {
         "ambiguity_proxy": 2.2384037956513225e-09,
         "efe_proxy": 1.3182349656304382e-09,
-        "risk_proxy": 1.7964625342870022e-09
+        "risk_proxy": 1.7964626453093047e-09
       },
       "entropies_in_bounds": true,
       "expected_free_energy_finite": true,
@@ -426,18 +426,18 @@
       "true_state": "contracted_dual",
       "vfe": 0.5936089754104614,
       "vfe_finite": true,
-      "weighted_expected_free_energy_recomputed": -1.1009783508802684,
-      "weighted_expected_free_energy_residual": 9.496243791318193e-09
+      "weighted_expected_free_energy_recomputed": -1.1009783508802686,
+      "weighted_expected_free_energy_residual": 9.496244013362798e-09
     },
     {
       "efe_term_residuals": {
         "ambiguity_proxy": 2.5831673466925054e-09,
         "efe_proxy": 1.694595241907848e-09,
-        "risk_proxy": 4.277762588600353e-09
+        "risk_proxy": 4.277762477578051e-09
       },
       "entropies_in_bounds": true,
       "expected_free_energy_finite": true,
-      "max_efe_term_residual": 4.277762588600353e-09,
+      "max_efe_term_residual": 4.277762477578051e-09,
       "observation_label": "self_env_cue",
       "perturbed_observation": false,
       "policy_posterior_entropy": 1.0986080311997508,
@@ -488,7 +488,7 @@
     {
       "efe_term_residuals": {
         "ambiguity_proxy": 3.4241056656725277e-09,
-        "efe_proxy": 2.455501468823229e-09,
+        "efe_proxy": 2.4555015798455315e-09,
         "risk_proxy": 2.0737441763785114e-09
       },
       "entropies_in_bounds": true,
@@ -516,12 +516,12 @@
     {
       "efe_term_residuals": {
         "ambiguity_proxy": 2.5074615717102233e-09,
-        "efe_proxy": 3.037312290565808e-09,
-        "risk_proxy": 5.544773862276031e-09
+        "efe_proxy": 3.0373124015881103e-09,
+        "risk_proxy": 5.544773973298334e-09
       },
       "entropies_in_bounds": true,
       "expected_free_energy_finite": true,
-      "max_efe_term_residual": 5.544773862276031e-09,
+      "max_efe_term_residual": 5.544773973298334e-09,
       "observation_label": "opacity_cue",
       "perturbed_observation": true,
       "policy_posterior_entropy": 1.0950174663298453,
@@ -538,18 +538,18 @@
       "true_state": "contracted_dual",
       "vfe": 1.141148328781128,
       "vfe_finite": true,
-      "weighted_expected_free_energy_recomputed": -0.8594450538826202,
-      "weighted_expected_free_energy_residual": 8.915243654428195e-09
+      "weighted_expected_free_energy_recomputed": -0.85944505388262,
+      "weighted_expected_free_energy_residual": 8.915243765450498e-09
     },
     {
       "efe_term_residuals": {
         "ambiguity_proxy": 1.922287440336845e-09,
-        "efe_proxy": 4.4592662895581725e-10,
-        "risk_proxy": 2.36821395827036e-09
+        "efe_proxy": 4.459268510004222e-10,
+        "risk_proxy": 2.3682141803149648e-09
       },
       "entropies_in_bounds": true,
       "expected_free_energy_finite": true,
-      "max_efe_term_residual": 2.36821395827036e-09,
+      "max_efe_term_residual": 2.3682141803149648e-09,
       "observation_label": "self_env_cue",
       "perturbed_observation": false,
       "policy_posterior_entropy": 1.0985632353444474,
@@ -601,7 +601,7 @@
       "efe_term_residuals": {
         "ambiguity_proxy": 2.2384037956513225e-09,
         "efe_proxy": 1.3182349656304382e-09,
-        "risk_proxy": 1.7964625342870022e-09
+        "risk_proxy": 1.7964626453093047e-09
       },
       "entropies_in_bounds": true,
       "expected_free_energy_finite": true,
@@ -622,18 +622,18 @@
       "true_state": "contracted_dual",
       "vfe": 0.5936089754104614,
       "vfe_finite": true,
-      "weighted_expected_free_energy_recomputed": -1.1009783508802684,
-      "weighted_expected_free_energy_residual": 9.496243791318193e-09
+      "weighted_expected_free_energy_recomputed": -1.1009783508802686,
+      "weighted_expected_free_energy_residual": 9.496244013362798e-09
     },
     {
       "efe_term_residuals": {
         "ambiguity_proxy": 2.5831673466925054e-09,
         "efe_proxy": 1.694595241907848e-09,
-        "risk_proxy": 4.277762588600353e-09
+        "risk_proxy": 4.277762477578051e-09
       },
       "entropies_in_bounds": true,
       "expected_free_energy_finite": true,
-      "max_efe_term_residual": 4.277762588600353e-09,
+      "max_efe_term_residual": 4.277762477578051e-09,
       "observation_label": "self_env_cue",
       "perturbed_observation": false,
       "policy_posterior_entropy": 1.0986080311997508,
@@ -684,7 +684,7 @@
     {
       "efe_term_residuals": {
         "ambiguity_proxy": 3.4241056656725277e-09,
-        "efe_proxy": 2.455501468823229e-09,
+        "efe_proxy": 2.4555015798455315e-09,
         "risk_proxy": 2.0737441763785114e-09
       },
       "entropies_in_bounds": true,
@@ -712,12 +712,12 @@
     {
       "efe_term_residuals": {
         "ambiguity_proxy": 2.5074615717102233e-09,
-        "efe_proxy": 3.037312290565808e-09,
-        "risk_proxy": 5.544773862276031e-09
+        "efe_proxy": 3.0373124015881103e-09,
+        "risk_proxy": 5.544773973298334e-09
       },
       "entropies_in_bounds": true,
       "expected_free_energy_finite": true,
-      "max_efe_term_residual": 5.544773862276031e-09,
+      "max_efe_term_residual": 5.544773973298334e-09,
       "observation_label": "opacity_cue",
       "perturbed_observation": true,
       "policy_posterior_entropy": 1.0950174663298453,
@@ -734,18 +734,18 @@
       "true_state": "contracted_dual",
       "vfe": 1.141148328781128,
       "vfe_finite": true,
-      "weighted_expected_free_energy_recomputed": -0.8594450538826202,
-      "weighted_expected_free_energy_residual": 8.915243654428195e-09
+      "weighted_expected_free_energy_recomputed": -0.85944505388262,
+      "weighted_expected_free_energy_residual": 8.915243765450498e-09
     },
     {
       "efe_term_residuals": {
         "ambiguity_proxy": 1.922287440336845e-09,
-        "efe_proxy": 4.4592662895581725e-10,
-        "risk_proxy": 2.36821395827036e-09
+        "efe_proxy": 4.459268510004222e-10,
+        "risk_proxy": 2.3682141803149648e-09
       },
       "entropies_in_bounds": true,
       "expected_free_energy_finite": true,
-      "max_efe_term_residual": 2.36821395827036e-09,
+      "max_efe_term_residual": 2.3682141803149648e-09,
       "observation_label": "self_env_cue",
       "perturbed_observation": false,
       "policy_posterior_entropy": 1.0985632353444474,
@@ -795,7 +795,7 @@
     },
     {
       "efe_term_residuals": {
-        "ambiguity_proxy": 4.4424675049725693e-10,
+        "ambiguity_proxy": 4.4424663947495446e-10,
         "efe_proxy": 1.031515206584288e-09,
         "risk_proxy": 5.908955547084815e-10
       },
@@ -852,12 +852,12 @@
     {
       "efe_term_residuals": {
         "ambiguity_proxy": 3.846705953769458e-09,
-        "efe_proxy": 1.6747847553233441e-10,
-        "risk_proxy": 3.90879517642162e-09
+        "efe_proxy": 1.6747858655463688e-10,
+        "risk_proxy": 3.9087950653993175e-09
       },
       "entropies_in_bounds": true,
       "expected_free_energy_finite": true,
-      "max_efe_term_residual": 3.90879517642162e-09,
+      "max_efe_term_residual": 3.9087950653993175e-09,
       "observation_label": "contextual_cue",
       "perturbed_observation": true,
       "policy_posterior_entropy": 1.0981405126825317,
@@ -902,14 +902,14 @@
       "true_state": "opacified_boundary",
       "vfe": 1.0054991245269775,
       "vfe_finite": true,
-      "weighted_expected_free_energy_recomputed": -0.963193043478328,
-      "weighted_expected_free_energy_residual": 5.0884629843039875e-11
+      "weighted_expected_free_energy_recomputed": -0.9631930434783281,
+      "weighted_expected_free_energy_residual": 5.088451882073741e-11
     },
     {
       "efe_term_residuals": {
         "ambiguity_proxy": 3.8524300416398205e-09,
-        "efe_proxy": 1.7781573991015875e-09,
-        "risk_proxy": 2.80854162149069e-09
+        "efe_proxy": 1.7781576211461925e-09,
+        "risk_proxy": 2.8085415104683875e-09
       },
       "entropies_in_bounds": true,
       "expected_free_energy_finite": true,
@@ -936,7 +936,7 @@
     {
       "efe_term_residuals": {
         "ambiguity_proxy": 8.837247600368414e-10,
-        "efe_proxy": 3.4206848464890527e-10,
+        "efe_proxy": 3.420683736266028e-10,
         "risk_proxy": 5.93662119463545e-10
       },
       "entropies_in_bounds": true,
@@ -958,18 +958,18 @@
       "true_state": "opacified_boundary",
       "vfe": 0.8005157709121704,
       "vfe_finite": true,
-      "weighted_expected_free_energy_recomputed": -0.9608361304111697,
-      "weighted_expected_free_energy_residual": 2.0961838931299326e-09
+      "weighted_expected_free_energy_recomputed": -0.9608361304111698,
+      "weighted_expected_free_energy_residual": 2.096184004152235e-09
     },
     {
       "efe_term_residuals": {
         "ambiguity_proxy": 8.809658558206479e-10,
-        "efe_proxy": 2.934215093119974e-10,
-        "risk_proxy": 1.1743873651326453e-09
+        "efe_proxy": 2.9342162033429986e-10,
+        "risk_proxy": 1.1743874761549478e-09
       },
       "entropies_in_bounds": true,
       "expected_free_energy_finite": true,
-      "max_efe_term_residual": 1.1743873651326453e-09,
+      "max_efe_term_residual": 1.1743874761549478e-09,
       "observation_label": "opacity_cue",
       "perturbed_observation": false,
       "policy_posterior_entropy": 1.0984240799344422,
@@ -992,7 +992,7 @@
     {
       "efe_term_residuals": {
         "ambiguity_proxy": 1.931975246449724e-09,
-        "efe_proxy": 1.1073865158195417e-09,
+        "efe_proxy": 1.1073867378641467e-09,
         "risk_proxy": 1.4006740212124669e-09
       },
       "entropies_in_bounds": true,
@@ -1019,13 +1019,13 @@
     },
     {
       "efe_term_residuals": {
-        "ambiguity_proxy": 7.842877347563615e-09,
-        "efe_proxy": 2.034532098349473e-09,
-        "risk_proxy": 6.47589626368017e-09
+        "ambiguity_proxy": 7.842877458585917e-09,
+        "efe_proxy": 2.034532320394078e-09,
+        "risk_proxy": 6.475896485724775e-09
       },
       "entropies_in_bounds": true,
       "expected_free_energy_finite": true,
-      "max_efe_term_residual": 7.842877347563615e-09,
+      "max_efe_term_residual": 7.842877458585917e-09,
       "observation_label": "opacity_cue",
       "perturbed_observation": false,
       "policy_posterior_entropy": 1.0984265210406159,
@@ -1047,13 +1047,13 @@
     },
     {
       "efe_term_residuals": {
-        "ambiguity_proxy": 1.7812882280310305e-09,
+        "ambiguity_proxy": 1.7812884500756354e-09,
         "efe_proxy": 5.783521439539641e-10,
-        "risk_proxy": 1.5159179467261197e-09
+        "risk_proxy": 1.5159180577484221e-09
       },
       "entropies_in_bounds": true,
       "expected_free_energy_finite": true,
-      "max_efe_term_residual": 1.7812882280310305e-09,
+      "max_efe_term_residual": 1.7812884500756354e-09,
       "observation_label": "contextual_cue",
       "perturbed_observation": true,
       "policy_posterior_entropy": 1.0981331063766175,
@@ -1070,18 +1070,18 @@
       "true_state": "opacified_boundary",
       "vfe": 1.0398494005203247,
       "vfe_finite": true,
-      "weighted_expected_free_energy_recomputed": -0.9137801274593729,
-      "weighted_expected_free_energy_residual": 1.3294909173566793e-08
+      "weighted_expected_free_energy_recomputed": -0.9137801274593728,
+      "weighted_expected_free_energy_residual": 1.3294909062544491e-08
     },
     {
       "efe_term_residuals": {
-        "ambiguity_proxy": 1.621449752242654e-09,
-        "efe_proxy": 4.895127636572738e-10,
-        "risk_proxy": 1.2302503460404068e-09
+        "ambiguity_proxy": 1.6214495301980492e-09,
+        "efe_proxy": 4.895126526349713e-10,
+        "risk_proxy": 1.2302502350181044e-09
       },
       "entropies_in_bounds": true,
       "expected_free_energy_finite": true,
-      "max_efe_term_residual": 1.621449752242654e-09,
+      "max_efe_term_residual": 1.6214495301980492e-09,
       "observation_label": "opacity_cue",
       "perturbed_observation": false,
       "policy_posterior_entropy": 1.098485849033672,
@@ -1104,8 +1104,8 @@
     {
       "efe_term_residuals": {
         "ambiguity_proxy": 7.1073000817989396e-09,
-        "efe_proxy": 2.478447336251577e-09,
-        "risk_proxy": 5.469258601564775e-09
+        "efe_proxy": 2.478447558296182e-09,
+        "risk_proxy": 5.46925837952017e-09
       },
       "entropies_in_bounds": true,
       "expected_free_energy_finite": true,
@@ -1132,12 +1132,12 @@
     {
       "efe_term_residuals": {
         "ambiguity_proxy": 1.637350255379033e-10,
-        "efe_proxy": 2.4360213846108536e-10,
-        "risk_proxy": 2.9026581138680285e-10
+        "efe_proxy": 2.436022494833878e-10,
+        "risk_proxy": 2.902657003645004e-10
       },
       "entropies_in_bounds": true,
       "expected_free_energy_finite": true,
-      "max_efe_term_residual": 2.9026581138680285e-10,
+      "max_efe_term_residual": 2.902657003645004e-10,
       "observation_label": "opacity_cue",
       "perturbed_observation": false,
       "policy_posterior_entropy": 1.098412095844481,
@@ -1154,22 +1154,22 @@
       "true_state": "opacified_boundary",
       "vfe": 0.8005603551864624,
       "vfe_finite": true,
-      "weighted_expected_free_energy_recomputed": -0.9608377514716746,
-      "weighted_expected_free_energy_residual": 2.2564639046152024e-10
+      "weighted_expected_free_energy_recomputed": -0.9608377514716747,
+      "weighted_expected_free_energy_residual": 2.2564627943921778e-10
     },
     {
       "efe_term_residuals": {
         "ambiguity_proxy": 1.0375100778503565e-09,
         "efe_proxy": 3.424244221506001e-10,
-        "risk_proxy": 8.255192085471208e-10
+        "risk_proxy": 8.255189865025159e-10
       },
       "entropies_in_bounds": true,
       "expected_free_energy_finite": true,
       "max_efe_term_residual": 1.0375100778503565e-09,
       "observation_label": "opacity_cue",
       "perturbed_observation": false,
-      "policy_posterior_entropy": 1.0984240829844205,
-      "policy_posterior_norm_residual": 2.9802322387695312e-08,
+      "policy_posterior_entropy": 1.098424080357245,
+      "policy_posterior_norm_residual": 5.960464477539063e-08,
       "posteriors_finite": true,
       "profile": "opacified",
       "selected_action": "release_prior",
@@ -1182,14 +1182,14 @@
       "true_state": "opacified_boundary",
       "vfe": 0.8175055980682373,
       "vfe_finite": true,
-      "weighted_expected_free_energy_recomputed": -0.9613508442242522,
-      "weighted_expected_free_energy_residual": 5.144653592026316e-10
+      "weighted_expected_free_energy_recomputed": -0.9613508150581779,
+      "weighted_expected_free_energy_residual": 7.066479623674127e-10
     },
     {
       "efe_term_residuals": {
         "ambiguity_proxy": 3.6913399004134817e-09,
         "efe_proxy": 1.971168006598134e-09,
-        "risk_proxy": 2.321761227719321e-09
+        "risk_proxy": 2.3217611166970187e-09
       },
       "entropies_in_bounds": true,
       "expected_free_energy_finite": true,
@@ -1215,13 +1215,13 @@
     },
     {
       "efe_term_residuals": {
-        "ambiguity_proxy": 2.8257919337804083e-09,
-        "efe_proxy": 1.408749006337473e-09,
-        "risk_proxy": 2.215555405804537e-09
+        "ambiguity_proxy": 2.825792377869618e-09,
+        "efe_proxy": 1.4087488953151706e-09,
+        "risk_proxy": 2.2155552947822343e-09
       },
       "entropies_in_bounds": true,
       "expected_free_energy_finite": true,
-      "max_efe_term_residual": 2.8257919337804083e-09,
+      "max_efe_term_residual": 2.825792377869618e-09,
       "observation_label": "opacity_cue",
       "perturbed_observation": false,
       "policy_posterior_entropy": 1.0984265172592937,
@@ -1238,14 +1238,14 @@
       "true_state": "opacified_boundary",
       "vfe": 0.8212120532989502,
       "vfe_finite": true,
-      "weighted_expected_free_energy_recomputed": -0.9614542205741641,
-      "weighted_expected_free_energy_residual": 7.555707171036374e-10
+      "weighted_expected_free_energy_recomputed": -0.961454220574164,
+      "weighted_expected_free_energy_residual": 7.55570606081335e-10
     },
     {
       "efe_term_residuals": {
         "ambiguity_proxy": 1.0314038512149182e-09,
         "efe_proxy": 8.87275808381105e-10,
-        "risk_proxy": 3.940162640603262e-10
+        "risk_proxy": 3.9401615303802373e-10
       },
       "entropies_in_bounds": true,
       "expected_free_energy_finite": true,
@@ -1266,18 +1266,18 @@
       "true_state": "opacified_boundary",
       "vfe": 1.0398492813110352,
       "vfe_finite": true,
-      "weighted_expected_free_energy_recomputed": -0.9137800630641386,
-      "weighted_expected_free_energy_residual": 1.287059236965149e-08
+      "weighted_expected_free_energy_recomputed": -0.9137800630641384,
+      "weighted_expected_free_energy_residual": 1.2870592147606885e-08
     },
     {
       "efe_term_residuals": {
         "ambiguity_proxy": 1.5408285758411466e-10,
-        "efe_proxy": 4.4395320752954603e-10,
+        "efe_proxy": 4.439533185518485e-10,
         "risk_proxy": 2.9193958361872774e-10
       },
       "entropies_in_bounds": true,
       "expected_free_energy_finite": true,
-      "max_efe_term_residual": 4.4395320752954603e-10,
+      "max_efe_term_residual": 4.439533185518485e-10,
       "observation_label": "opacity_cue",
       "perturbed_observation": false,
       "policy_posterior_entropy": 1.0984858553568435,
@@ -1300,8 +1300,8 @@
     {
       "efe_term_residuals": {
         "ambiguity_proxy": 7.1073000817989396e-09,
-        "efe_proxy": 2.478447336251577e-09,
-        "risk_proxy": 5.469258601564775e-09
+        "efe_proxy": 2.478447558296182e-09,
+        "risk_proxy": 5.46925837952017e-09
       },
       "entropies_in_bounds": true,
       "expected_free_energy_finite": true,
@@ -1328,12 +1328,12 @@
     {
       "efe_term_residuals": {
         "ambiguity_proxy": 1.637350255379033e-10,
-        "efe_proxy": 2.4360213846108536e-10,
-        "risk_proxy": 2.9026581138680285e-10
+        "efe_proxy": 2.436022494833878e-10,
+        "risk_proxy": 2.902657003645004e-10
       },
       "entropies_in_bounds": true,
       "expected_free_energy_finite": true,
-      "max_efe_term_residual": 2.9026581138680285e-10,
+      "max_efe_term_residual": 2.902657003645004e-10,
       "observation_label": "opacity_cue",
       "perturbed_observation": false,
       "policy_posterior_entropy": 1.098412095844481,
@@ -1350,22 +1350,22 @@
       "true_state": "opacified_boundary",
       "vfe": 0.8005603551864624,
       "vfe_finite": true,
-      "weighted_expected_free_energy_recomputed": -0.9608377514716746,
-      "weighted_expected_free_energy_residual": 2.2564639046152024e-10
+      "weighted_expected_free_energy_recomputed": -0.9608377514716747,
+      "weighted_expected_free_energy_residual": 2.2564627943921778e-10
     },
     {
       "efe_term_residuals": {
         "ambiguity_proxy": 1.0375100778503565e-09,
         "efe_proxy": 3.424244221506001e-10,
-        "risk_proxy": 8.255192085471208e-10
+        "risk_proxy": 8.255189865025159e-10
       },
       "entropies_in_bounds": true,
       "expected_free_energy_finite": true,
       "max_efe_term_residual": 1.0375100778503565e-09,
       "observation_label": "opacity_cue",
       "perturbed_observation": false,
-      "policy_posterior_entropy": 1.0984240829844205,
-      "policy_posterior_norm_residual": 2.9802322387695312e-08,
+      "policy_posterior_entropy": 1.098424080357245,
+      "policy_posterior_norm_residual": 5.960464477539063e-08,
       "posteriors_finite": true,
       "profile": "opacified",
       "selected_action": "release_prior",
@@ -1378,14 +1378,14 @@
       "true_state": "opacified_boundary",
       "vfe": 0.8175055980682373,
       "vfe_finite": true,
-      "weighted_expected_free_energy_recomputed": -0.9613508442242522,
-      "weighted_expected_free_energy_residual": 5.144653592026316e-10
+      "weighted_expected_free_energy_recomputed": -0.9613508150581779,
+      "weighted_expected_free_energy_residual": 7.066479623674127e-10
     },
     {
       "efe_term_residuals": {
         "ambiguity_proxy": 3.6913399004134817e-09,
         "efe_proxy": 1.971168006598134e-09,
-        "risk_proxy": 2.321761227719321e-09
+        "risk_proxy": 2.3217611166970187e-09
       },
       "entropies_in_bounds": true,
       "expected_free_energy_finite": true,
@@ -1411,13 +1411,13 @@
     },
     {
       "efe_term_residuals": {
-        "ambiguity_proxy": 2.8257919337804083e-09,
-        "efe_proxy": 1.408749006337473e-09,
-        "risk_proxy": 2.215555405804537e-09
+        "ambiguity_proxy": 2.825792377869618e-09,
+        "efe_proxy": 1.4087488953151706e-09,
+        "risk_proxy": 2.2155552947822343e-09
       },
       "entropies_in_bounds": true,
       "expected_free_energy_finite": true,
-      "max_efe_term_residual": 2.8257919337804083e-09,
+      "max_efe_term_residual": 2.825792377869618e-09,
       "observation_label": "opacity_cue",
       "perturbed_observation": false,
       "policy_posterior_entropy": 1.0984265172592937,
@@ -1434,14 +1434,14 @@
       "true_state": "opacified_boundary",
       "vfe": 0.8212120532989502,
       "vfe_finite": true,
-      "weighted_expected_free_energy_recomputed": -0.9614542205741641,
-      "weighted_expected_free_energy_residual": 7.555707171036374e-10
+      "weighted_expected_free_energy_recomputed": -0.961454220574164,
+      "weighted_expected_free_energy_residual": 7.55570606081335e-10
     },
     {
       "efe_term_residuals": {
         "ambiguity_proxy": 1.0314038512149182e-09,
         "efe_proxy": 8.87275808381105e-10,
-        "risk_proxy": 3.940162640603262e-10
+        "risk_proxy": 3.9401615303802373e-10
       },
       "entropies_in_bounds": true,
       "expected_free_energy_finite": true,
@@ -1462,14 +1462,14 @@
       "true_state": "opacified_boundary",
       "vfe": 1.0398492813110352,
       "vfe_finite": true,
-      "weighted_expected_free_energy_recomputed": -0.9137800630641386,
-      "weighted_expected_free_energy_residual": 1.287059236965149e-08
+      "weighted_expected_free_energy_recomputed": -0.9137800630641384,
+      "weighted_expected_free_energy_residual": 1.2870592147606885e-08
     },
     {
       "efe_term_residuals": {
         "ambiguity_proxy": 2.877253324484741e-09,
         "efe_proxy": 2.2358010998146938e-09,
-        "risk_proxy": 1.9934277561972635e-09
+        "risk_proxy": 1.9934275341526586e-09
       },
       "entropies_in_bounds": true,
       "expected_free_energy_finite": true,
@@ -1495,13 +1495,13 @@
     },
     {
       "efe_term_residuals": {
-        "ambiguity_proxy": 1.0671052930177893e-10,
-        "efe_proxy": 8.417663233117878e-10,
-        "risk_proxy": 9.484768526135667e-10
+        "ambiguity_proxy": 1.0671041827947647e-10,
+        "efe_proxy": 8.417661012671829e-10,
+        "risk_proxy": 9.484765195466593e-10
       },
       "entropies_in_bounds": true,
       "expected_free_energy_finite": true,
-      "max_efe_term_residual": 9.484768526135667e-10,
+      "max_efe_term_residual": 9.484765195466593e-10,
       "observation_label": "contextual_cue",
       "perturbed_observation": false,
       "policy_posterior_entropy": 1.098551013993721,
@@ -1523,13 +1523,13 @@
     },
     {
       "efe_term_residuals": {
-        "ambiguity_proxy": 4.430042999103989e-09,
+        "ambiguity_proxy": 4.430042777059384e-09,
         "efe_proxy": 1.6806487312948093e-09,
-        "risk_proxy": 4.42719594317964e-09
+        "risk_proxy": 4.427196054201943e-09
       },
       "entropies_in_bounds": true,
       "expected_free_energy_finite": true,
-      "max_efe_term_residual": 4.430042999103989e-09,
+      "max_efe_term_residual": 4.430042777059384e-09,
       "observation_label": "contextual_cue",
       "perturbed_observation": false,
       "policy_posterior_entropy": 1.098551746698286,
@@ -1551,7 +1551,7 @@
     },
     {
       "efe_term_residuals": {
-        "ambiguity_proxy": 1.4540146864305825e-09,
+        "ambiguity_proxy": 1.454014797452885e-09,
         "efe_proxy": 2.3523560876981264e-09,
         "risk_proxy": 9.032299352895734e-10
       },
@@ -1579,13 +1579,13 @@
     },
     {
       "efe_term_residuals": {
-        "ambiguity_proxy": 1.4066969811210583e-10,
-        "efe_proxy": 4.835933875568799e-10,
-        "risk_proxy": 6.134379670896806e-10
+        "ambiguity_proxy": 1.406698091344083e-10,
+        "efe_proxy": 4.835934985791823e-10,
+        "risk_proxy": 6.13438078111983e-10
       },
       "entropies_in_bounds": true,
       "expected_free_energy_finite": true,
-      "max_efe_term_residual": 6.134379670896806e-10,
+      "max_efe_term_residual": 6.13438078111983e-10,
       "observation_label": "self_env_cue",
       "perturbed_observation": true,
       "policy_posterior_entropy": 1.09617879422929,
@@ -1609,11 +1609,11 @@
       "efe_term_residuals": {
         "ambiguity_proxy": 2.1066947075709663e-09,
         "efe_proxy": 1.689312911778984e-09,
-        "risk_proxy": 3.7834343435960704e-09
+        "risk_proxy": 3.783434232573768e-09
       },
       "entropies_in_bounds": true,
       "expected_free_energy_finite": true,
-      "max_efe_term_residual": 3.7834343435960704e-09,
+      "max_efe_term_residual": 3.783434232573768e-09,
       "observation_label": "contextual_cue",
       "perturbed_observation": false,
       "policy_posterior_entropy": 1.0984840822907476,
@@ -1663,13 +1663,13 @@
     },
     {
       "efe_term_residuals": {
-        "ambiguity_proxy": 1.6239593003675168e-09,
+        "ambiguity_proxy": 1.6239591893452143e-09,
         "efe_proxy": 8.684184482632418e-10,
-        "risk_proxy": 1.4071841469842639e-09
+        "risk_proxy": 1.4071844800511712e-09
       },
       "entropies_in_bounds": true,
       "expected_free_energy_finite": true,
-      "max_efe_term_residual": 1.6239593003675168e-09,
+      "max_efe_term_residual": 1.6239591893452143e-09,
       "observation_label": "contextual_cue",
       "perturbed_observation": false,
       "policy_posterior_entropy": 1.098551411151498,
@@ -1686,18 +1686,18 @@
       "true_state": "contextual_post_dual",
       "vfe": 0.4544866979122162,
       "vfe_finite": true,
-      "weighted_expected_free_energy_recomputed": -1.12086944454343,
-      "weighted_expected_free_energy_residual": 1.0229475044809533e-09
+      "weighted_expected_free_energy_recomputed": -1.1208694445434302,
+      "weighted_expected_free_energy_residual": 1.0229472824363484e-09
     },
     {
       "efe_term_residuals": {
-        "ambiguity_proxy": 3.3681323285961184e-09,
-        "efe_proxy": 9.163177994153671e-10,
-        "risk_proxy": 4.2672270161858705e-09
+        "ambiguity_proxy": 3.368132439618421e-09,
+        "efe_proxy": 9.163174663484597e-10,
+        "risk_proxy": 4.267226683118963e-09
       },
       "entropies_in_bounds": true,
       "expected_free_energy_finite": true,
-      "max_efe_term_residual": 4.2672270161858705e-09,
+      "max_efe_term_residual": 4.267226683118963e-09,
       "observation_label": "contextual_cue",
       "perturbed_observation": false,
       "policy_posterior_entropy": 1.098551792364266,
@@ -1720,8 +1720,8 @@
     {
       "efe_term_residuals": {
         "ambiguity_proxy": 2.926077713460984e-09,
-        "efe_proxy": 1.1496208429662147e-09,
-        "risk_proxy": 2.870091497797489e-09
+        "efe_proxy": 1.1496207319439122e-09,
+        "risk_proxy": 2.8700913867751865e-09
       },
       "entropies_in_bounds": true,
       "expected_free_energy_finite": true,
@@ -1742,14 +1742,14 @@
       "true_state": "contextual_post_dual",
       "vfe": 0.4520232677459717,
       "vfe_finite": true,
-      "weighted_expected_free_energy_recomputed": -1.1209109865396885,
-      "weighted_expected_free_energy_residual": 8.250555794120373e-11
+      "weighted_expected_free_energy_recomputed": -1.1209109865396887,
+      "weighted_expected_free_energy_residual": 8.250577998580866e-11
     },
     {
       "efe_term_residuals": {
-        "ambiguity_proxy": 2.546159061367348e-09,
+        "ambiguity_proxy": 2.5461589503450455e-09,
         "efe_proxy": 3.053001296215996e-09,
-        "risk_proxy": 1.0190294164047486e-09
+        "risk_proxy": 1.0190295274270511e-09
       },
       "entropies_in_bounds": true,
       "expected_free_energy_finite": true,
@@ -1805,7 +1805,7 @@
       "efe_term_residuals": {
         "ambiguity_proxy": 2.21648654985529e-09,
         "efe_proxy": 1.0714323872562659e-09,
-        "risk_proxy": 1.991734110973198e-09
+        "risk_proxy": 1.9917339999508954e-09
       },
       "entropies_in_bounds": true,
       "expected_free_energy_finite": true,
@@ -1832,8 +1832,8 @@
     {
       "efe_term_residuals": {
         "ambiguity_proxy": 5.600115482451429e-09,
-        "efe_proxy": 3.2675830929917993e-09,
-        "risk_proxy": 4.811707254859243e-09
+        "efe_proxy": 3.2675832040141017e-09,
+        "risk_proxy": 4.811707365881546e-09
       },
       "entropies_in_bounds": true,
       "expected_free_energy_finite": true,
@@ -1859,13 +1859,13 @@
     },
     {
       "efe_term_residuals": {
-        "ambiguity_proxy": 2.493893203059372e-09,
+        "ambiguity_proxy": 2.4938930920370694e-09,
         "efe_proxy": 1.6453598483678888e-09,
         "risk_proxy": 2.053358150178042e-09
       },
       "entropies_in_bounds": true,
       "expected_free_energy_finite": true,
-      "max_efe_term_residual": 2.493893203059372e-09,
+      "max_efe_term_residual": 2.4938930920370694e-09,
       "observation_label": "contextual_cue",
       "perturbed_observation": false,
       "policy_posterior_entropy": 1.0985514125218736,
@@ -1887,13 +1887,13 @@
     },
     {
       "efe_term_residuals": {
-        "ambiguity_proxy": 3.3681323285961184e-09,
-        "efe_proxy": 9.163177994153671e-10,
-        "risk_proxy": 4.2672270161858705e-09
+        "ambiguity_proxy": 3.368132439618421e-09,
+        "efe_proxy": 9.163174663484597e-10,
+        "risk_proxy": 4.267226683118963e-09
       },
       "entropies_in_bounds": true,
       "expected_free_energy_finite": true,
-      "max_efe_term_residual": 4.2672270161858705e-09,
+      "max_efe_term_residual": 4.267226683118963e-09,
       "observation_label": "contextual_cue",
       "perturbed_observation": false,
       "policy_posterior_entropy": 1.098551792364266,
@@ -1916,8 +1916,8 @@
     {
       "efe_term_residuals": {
         "ambiguity_proxy": 2.926077713460984e-09,
-        "efe_proxy": 1.1496208429662147e-09,
-        "risk_proxy": 2.870091497797489e-09
+        "efe_proxy": 1.1496207319439122e-09,
+        "risk_proxy": 2.8700913867751865e-09
       },
       "entropies_in_bounds": true,
       "expected_free_energy_finite": true,
@@ -1938,14 +1938,14 @@
       "true_state": "contextual_post_dual",
       "vfe": 0.4520232677459717,
       "vfe_finite": true,
-      "weighted_expected_free_energy_recomputed": -1.1209109865396885,
-      "weighted_expected_free_energy_residual": 8.250555794120373e-11
+      "weighted_expected_free_energy_recomputed": -1.1209109865396887,
+      "weighted_expected_free_energy_residual": 8.250577998580866e-11
     },
     {
       "efe_term_residuals": {
-        "ambiguity_proxy": 2.546159061367348e-09,
+        "ambiguity_proxy": 2.5461589503450455e-09,
         "efe_proxy": 3.053001296215996e-09,
-        "risk_proxy": 1.0190294164047486e-09
+        "risk_proxy": 1.0190295274270511e-09
       },
       "entropies_in_bounds": true,
       "expected_free_energy_finite": true,
@@ -2001,7 +2001,7 @@
       "efe_term_residuals": {
         "ambiguity_proxy": 2.21648654985529e-09,
         "efe_proxy": 1.0714323872562659e-09,
-        "risk_proxy": 1.991734110973198e-09
+        "risk_proxy": 1.9917339999508954e-09
       },
       "entropies_in_bounds": true,
       "expected_free_energy_finite": true,
@@ -2028,8 +2028,8 @@
     {
       "efe_term_residuals": {
         "ambiguity_proxy": 5.600115482451429e-09,
-        "efe_proxy": 3.2675830929917993e-09,
-        "risk_proxy": 4.811707254859243e-09
+        "efe_proxy": 3.2675832040141017e-09,
+        "risk_proxy": 4.811707365881546e-09
       },
       "entropies_in_bounds": true,
       "expected_free_energy_finite": true,
@@ -2055,13 +2055,13 @@
     },
     {
       "efe_term_residuals": {
-        "ambiguity_proxy": 2.493893203059372e-09,
+        "ambiguity_proxy": 2.4938930920370694e-09,
         "efe_proxy": 1.6453598483678888e-09,
         "risk_proxy": 2.053358150178042e-09
       },
       "entropies_in_bounds": true,
       "expected_free_energy_finite": true,
-      "max_efe_term_residual": 2.493893203059372e-09,
+      "max_efe_term_residual": 2.4938930920370694e-09,
       "observation_label": "contextual_cue",
       "perturbed_observation": false,
       "policy_posterior_entropy": 1.0985514125218736,
@@ -2083,13 +2083,13 @@
     },
     {
       "efe_term_residuals": {
-        "ambiguity_proxy": 3.3681323285961184e-09,
-        "efe_proxy": 9.163177994153671e-10,
-        "risk_proxy": 4.2672270161858705e-09
+        "ambiguity_proxy": 3.368132439618421e-09,
+        "efe_proxy": 9.163174663484597e-10,
+        "risk_proxy": 4.267226683118963e-09
       },
       "entropies_in_bounds": true,
       "expected_free_energy_finite": true,
-      "max_efe_term_residual": 4.2672270161858705e-09,
+      "max_efe_term_residual": 4.267226683118963e-09,
       "observation_label": "contextual_cue",
       "perturbed_observation": false,
       "policy_posterior_entropy": 1.098551792364266,
@@ -2112,8 +2112,8 @@
     {
       "efe_term_residuals": {
         "ambiguity_proxy": 2.926077713460984e-09,
-        "efe_proxy": 1.1496208429662147e-09,
-        "risk_proxy": 2.870091497797489e-09
+        "efe_proxy": 1.1496207319439122e-09,
+        "risk_proxy": 2.8700913867751865e-09
       },
       "entropies_in_bounds": true,
       "expected_free_energy_finite": true,
@@ -2134,8 +2134,8 @@
       "true_state": "contextual_post_dual",
       "vfe": 0.4520232677459717,
       "vfe_finite": true,
-      "weighted_expected_free_energy_recomputed": -1.1209109865396885,
-      "weighted_expected_free_energy_residual": 8.250555794120373e-11
+      "weighted_expected_free_energy_recomputed": -1.1209109865396887,
+      "weighted_expected_free_energy_residual": 8.250577998580866e-11
     }
   ],
   "runtime_dependency_check": {
@@ -2147,22 +2147,20 @@
     "ok": true,
     "policy_posterior_normalized": true,
     "policy_posterior_sum": 1.0,
-    "required_version": "1.0.3",
+    "required_version": "1.0.5",
     "schema": "realizing_emptiness.pymdp_runtime_dependency_check.v1",
     "state_factor_count": 1,
-    "version": "1.0.3",
+    "version": "1.0.5",
     "version_ok": true,
     "vfe_available": true,
-    "warnings": [
-      "A JAX array is being set as static! This can result in unexpected behavior and is usually a mistake to do."
-    ]
+    "warnings": []
   },
   "runtime_versions": {
-    "inferactively_pymdp": "1.0.3",
+    "inferactively_pymdp": "1.0.5",
     "jax": "0.11.2",
     "jaxlib": "0.11.2",
     "numpy": "2.4.6",
-    "python": "3.14.7",
+    "python": "3.14.10",
     "scipy": "1.17.1"
   },
   "schema": "realizing_emptiness.pymdp_runtime_diagnostics_log.v2",
@@ -2174,14 +2172,14 @@
   ],
   "steps": 24,
   "summary": {
-    "max_efe_term_residual": 7.842877347563615e-09,
-    "max_empirical_prior_library_residual": 5.790142948436383e-08,
+    "max_efe_term_residual": 7.842877458585917e-09,
+    "max_empirical_prior_library_residual": 5.790142942885268e-08,
     "max_policy_posterior_entropy": 1.0986080555563218,
     "max_policy_posterior_norm_residual": 8.940696716308594e-08,
     "max_state_posterior_entropy": 0.9828616589135633,
     "max_state_posterior_norm_residual": 1.3317912817001343e-07,
     "max_vfe": 2.1037020683288574,
-    "max_weighted_expected_free_energy_residual": 1.3294909173566793e-08,
+    "max_weighted_expected_free_energy_residual": 1.3294909062544491e-08,
     "mean_vfe": 0.7635075363020102,
     "perturbed_step_count": 11
   },

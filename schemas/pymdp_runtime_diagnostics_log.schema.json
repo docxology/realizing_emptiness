@@ -34,7 +34,7 @@
       "required": ["python", "inferactively_pymdp", "jax", "jaxlib", "numpy", "scipy"],
       "properties": {
         "python": {"type": "string"},
-        "inferactively_pymdp": {"enum": ["1.0.3", "1.0.4"]},
+        "inferactively_pymdp": {"enum": ["1.0.3", "1.0.4", "1.0.5"]},
         "jax": {"type": "string"},
         "jaxlib": {"type": "string"},
         "numpy": {"type": "string"},
@@ -48,12 +48,12 @@
       "required": ["schema", "ok", "version", "required_version", "version_ok", "policy_posterior_normalized", "warnings"],
       "properties": {
         "schema": {"const": "realizing_emptiness.pymdp_runtime_dependency_check.v1"},
-        "required_version": {"enum": ["1.0.3", "1.0.4"]}, "version_ok": {"const": true},
+        "required_version": {"enum": ["1.0.3", "1.0.4", "1.0.5"]}, "version_ok": {"const": true},
         "agent_class": {"const": "Agent"}, "state_factor_count": {"type": "integer", "minimum": 1},
         "policy_posterior_sum": {"type": "number"}, "policy_posterior_normalized": {"const": true},
         "neg_efe_shape": {"type": "array", "items": {"type": "integer"}}, "vfe_available": {"type": "boolean"},
         "ok": {"const": true},
-        "version": {"enum": ["1.0.3", "1.0.4"]},
+        "version": {"enum": ["1.0.3", "1.0.4", "1.0.5"]},
         "warnings": {"type": "array", "items": {"type": "string"}}
       },
       "additionalProperties": false

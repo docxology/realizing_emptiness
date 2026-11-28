@@ -478,13 +478,13 @@
     },
     {
       "delta_accuracy": -0.30000000000000004,
-      "delta_complexity": -0.03232155679395465,
+      "delta_complexity": -0.0323215567939546,
       "delta_free_energy": 0.2676784432060454,
       "family": "log_compressed_sigma_complexity",
       "full_model": {
         "accuracy": 0.8500000000000001,
-        "complexity": 0.4323215567939547,
-        "free_energy": -0.3976784432060454,
+        "complexity": 0.4323215567939546,
+        "free_energy": -0.39767844320604545,
         "noise": 0.02
       },
       "metacognitive_access": 0.0,
@@ -522,13 +522,13 @@
     },
     {
       "delta_accuracy": -0.30000000000000004,
-      "delta_complexity": -0.9486122886681098,
-      "delta_free_energy": -0.6486122886681097,
+      "delta_complexity": -0.9486122886681095,
+      "delta_free_energy": -0.6486122886681095,
       "family": "log_compressed_sigma_complexity",
       "full_model": {
         "accuracy": 0.8500000000000001,
-        "complexity": 1.3486122886681098,
-        "free_energy": 0.5186122886681097,
+        "complexity": 1.3486122886681096,
+        "free_energy": 0.5186122886681095,
         "noise": 0.02
       },
       "metacognitive_access": 0.0,
@@ -566,13 +566,13 @@
     },
     {
       "delta_accuracy": -0.22499999999999998,
-      "delta_complexity": -0.06982155679395469,
-      "delta_free_energy": 0.1551784432060453,
+      "delta_complexity": -0.06982155679395463,
+      "delta_free_energy": 0.15517844320604535,
       "family": "log_compressed_sigma_complexity",
       "full_model": {
         "accuracy": 0.8625,
-        "complexity": 0.4323215567939547,
-        "free_energy": -0.41017844320604535,
+        "complexity": 0.4323215567939546,
+        "free_energy": -0.4101784432060454,
         "noise": 0.02
       },
       "metacognitive_access": 0.25,
@@ -610,13 +610,13 @@
     },
     {
       "delta_accuracy": -0.22499999999999998,
-      "delta_complexity": -0.9861122886681097,
-      "delta_free_energy": -0.7611122886681099,
+      "delta_complexity": -0.9861122886681095,
+      "delta_free_energy": -0.7611122886681096,
       "family": "log_compressed_sigma_complexity",
       "full_model": {
         "accuracy": 0.8625,
-        "complexity": 1.3486122886681098,
-        "free_energy": 0.5061122886681098,
+        "complexity": 1.3486122886681096,
+        "free_energy": 0.5061122886681095,
         "noise": 0.02
       },
       "metacognitive_access": 0.25,
@@ -654,13 +654,13 @@
     },
     {
       "delta_accuracy": -0.15000000000000002,
-      "delta_complexity": -0.10732155679395466,
-      "delta_free_energy": 0.04267844320604536,
+      "delta_complexity": -0.10732155679395461,
+      "delta_free_energy": 0.04267844320604541,
       "family": "log_compressed_sigma_complexity",
       "full_model": {
         "accuracy": 0.8750000000000001,
-        "complexity": 0.4323215567939547,
-        "free_energy": -0.4226784432060454,
+        "complexity": 0.4323215567939546,
+        "free_energy": -0.4226784432060455,
         "noise": 0.02
       },
       "metacognitive_access": 0.5,
@@ -698,13 +698,13 @@
     },
     {
       "delta_accuracy": -0.15000000000000002,
-      "delta_complexity": -1.0236122886681098,
-      "delta_free_energy": -0.8736122886681097,
+      "delta_complexity": -1.0236122886681096,
+      "delta_free_energy": -0.8736122886681095,
       "family": "log_compressed_sigma_complexity",
       "full_model": {
         "accuracy": 0.8750000000000001,
-        "complexity": 1.3486122886681098,
-        "free_energy": 0.4936122886681097,
+        "complexity": 1.3486122886681096,
+        "free_energy": 0.49361228866810947,
         "noise": 0.02
       },
       "metacognitive_access": 0.5,
@@ -742,13 +742,13 @@
     },
     {
       "delta_accuracy": -0.07499999999999996,
-      "delta_complexity": -0.1448215567939547,
-      "delta_free_energy": -0.06982155679395474,
+      "delta_complexity": -0.14482155679395464,
+      "delta_free_energy": -0.06982155679395469,
       "family": "log_compressed_sigma_complexity",
       "full_model": {
         "accuracy": 0.8875,
-        "complexity": 0.4323215567939547,
-        "free_energy": -0.43517844320604526,
+        "complexity": 0.4323215567939546,
+        "free_energy": -0.4351784432060453,
         "noise": 0.02
       },
       "metacognitive_access": 0.75,
@@ -786,13 +786,13 @@
     },
     {
       "delta_accuracy": -0.07499999999999996,
-      "delta_complexity": -1.06111228866811,
-      "delta_free_energy": -0.9861122886681098,
+      "delta_complexity": -1.0611122886681095,
+      "delta_free_energy": -0.9861122886681096,
       "family": "log_compressed_sigma_complexity",
       "full_model": {
         "accuracy": 0.8875,
-        "complexity": 1.3486122886681098,
-        "free_energy": 0.48111228866810984,
+        "complexity": 1.3486122886681096,
+        "free_energy": 0.4811122886681096,
         "noise": 0.02
       },
       "metacognitive_access": 0.75,
@@ -830,13 +830,13 @@
     },
     {
       "delta_accuracy": 0.0,
-      "delta_complexity": -0.18232155679395468,
-      "delta_free_energy": -0.18232155679395468,
+      "delta_complexity": -0.18232155679395462,
+      "delta_free_energy": -0.18232155679395462,
       "family": "log_compressed_sigma_complexity",
       "full_model": {
         "accuracy": 0.9,
-        "complexity": 0.4323215567939547,
-        "free_energy": -0.44767844320604533,
+        "complexity": 0.4323215567939546,
+        "free_energy": -0.4476784432060454,
         "noise": 0.02
       },
       "metacognitive_access": 1.0,
@@ -874,13 +874,13 @@
     },
     {
       "delta_accuracy": 0.0,
-      "delta_complexity": -1.0986122886681098,
-      "delta_free_energy": -1.0986122886681098,
+      "delta_complexity": -1.0986122886681096,
+      "delta_free_energy": -1.0986122886681096,
       "family": "log_compressed_sigma_complexity",
       "full_model": {
         "accuracy": 0.9,
-        "complexity": 1.3486122886681098,
-        "free_energy": 0.4686122886681098,
+        "complexity": 1.3486122886681096,
+        "free_energy": 0.46861228866810956,
         "noise": 0.02
       },
       "metacognitive_access": 1.0,
@@ -1362,6 +1362,6 @@
   "weakest_prior_crossings": {
     "baseline_linear_sigma_complexity": 0.5555555555555556,
     "convex_access_dependent_sigma_accuracy": 0.40476190476190466,
-    "log_compressed_sigma_complexity": 0.594840984902323
+    "log_compressed_sigma_complexity": 0.5948409849023231
   }
 }
