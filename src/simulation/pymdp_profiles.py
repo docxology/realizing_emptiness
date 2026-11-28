@@ -25,7 +25,7 @@ if TYPE_CHECKING:
 STATE_LABELS = tuple(model_parameters("qrf_boundary")["state_labels"])
 OBSERVATION_LABELS = tuple(model_parameters("qrf_boundary")["observation_labels"])
 ACTION_LABELS = tuple(model_parameters("qrf_boundary")["action_labels"])
-PYMDP_REQUIRED_VERSION = "1.0.4" if sys.version_info < (3, 12) else "1.0.3"
+PYMDP_REQUIRED_VERSION = "1.0.4" if sys.version_info < (3, 12) else "1.0.5"
 CLAIM_BOUNDARY = "pymdp discrete active-inference loop; deterministic surrogate, not empirical or quantum-dynamical evidence"
 LOG_CLAIM_BOUNDARY = (
     "structured pymdp runtime diagnostics over finite software traces; not empirical data, "
@@ -319,7 +319,7 @@ def run_policy_trace(*, seed: int | None = None, steps: int | None = None, chann
 
 def runtime_warnings_match_version(check: dict[str, Any]) -> bool:
     messages = check.get("warnings")
-    expected_count = {"1.0.3": 1, "1.0.4": 0}.get(check.get("version"))
+    expected_count = {"1.0.3": 1, "1.0.4": 0, "1.0.5": 0}.get(check.get("version"))
     return (isinstance(messages, list) and all(isinstance(message, str) for message in messages)
             and expected_count is not None and len(messages) == expected_count)
 
@@ -482,7 +482,7 @@ def build_pymdp_runtime_diagnostics_log(*, seed: int | None = None, steps: int |
 
     # Bind the manual temporal-prior step (B @ posterior) to the real library method, so the
     # numpy-transparent shortcut used in the trace cannot silently diverge from pymdp's own
-    # update_empirical_prior convention. This also exercises a real pymdp 1.0.3 method.
+    # Execute the installed PyMDP update_empirical_prior method.
     from jax import numpy as jnp
 
     empirical_prior_binding = []

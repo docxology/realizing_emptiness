@@ -523,8 +523,15 @@ def test_pymdp_runtime_diagnostics_log_replays_and_recomputes() -> None:
     # A NARROWED (nonempty) controls object must also fail: the fix requires the full key set,
     # so the hole is closed rather than merely shrunk to "len(controls) > 0".
     assert _pymdp_runtime_log_ok({**payload, "controls": {"runtime_dependency_ok": True}}, policy_trace) is False
-    invalid_warnings = [] if PYMDP_REQUIRED_VERSION == "1.0.3" else ["unexpected constructor warning"]
-    for replacement in ({"warnings": invalid_warnings}, {"ok": False}):
+    other_version = "1.0.5" if PYMDP_REQUIRED_VERSION == "1.0.4" else "1.0.4"
+    invalid_dependency_fields = (
+        {"warnings": ["unexpected constructor warning"]},
+        {"ok": False},
+        {"version_ok": False},
+        {"version": other_version},
+        {"required_version": other_version},
+    )
+    for replacement in invalid_dependency_fields:
         corrupted = {
             **payload,
             "runtime_dependency_check": {**payload["runtime_dependency_check"], **replacement},

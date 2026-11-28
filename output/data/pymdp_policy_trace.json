@@ -82,10 +82,10 @@
         0.76053661
       ],
       "mean_vfe": 0.8605627864599228,
-      "mean_weighted_expected_free_energy": -0.9528448840290973,
+      "mean_weighted_expected_free_energy": -0.9528448816146063,
       "posterior_normalized_all_steps": true,
       "profile": "opacified",
-      "profile_energy": -0.9406224262954753
+      "profile_energy": -0.9406224238809844
     },
     {
       "action_counts": {
@@ -137,8 +137,8 @@
         },
         {
           "action": "inspect_boundary",
-          "ambiguity_proxy": 0.5020040744463877,
-          "efe_proxy": 0.10292267332179117,
+          "ambiguity_proxy": 0.5020040744463876,
+          "efe_proxy": 0.10292267332179106,
           "risk_proxy": -0.39908140112459656
         },
         {
@@ -192,8 +192,8 @@
         {
           "action": "inspect_boundary",
           "ambiguity_proxy": 0.5020040819268314,
-          "efe_proxy": -0.12222456368666013,
-          "risk_proxy": -0.6242286456134916
+          "efe_proxy": -0.12222456368666001,
+          "risk_proxy": -0.6242286456134915
         },
         {
           "action": "release_prior",
@@ -402,8 +402,8 @@
         {
           "action": "stabilize_dual",
           "ambiguity_proxy": 0.5020040978227747,
-          "efe_proxy": -0.33583270045233826,
-          "risk_proxy": -0.8378367982751129
+          "efe_proxy": -0.3358327004523384,
+          "risk_proxy": -0.837836798275113
         },
         {
           "action": "inspect_boundary",
@@ -510,20 +510,20 @@
         {
           "action": "stabilize_dual",
           "ambiguity_proxy": 0.5020040940825528,
-          "efe_proxy": 0.035926904251415204,
-          "risk_proxy": -0.46607718983113755
+          "efe_proxy": 0.03592690425141509,
+          "risk_proxy": -0.46607718983113766
         },
         {
           "action": "inspect_boundary",
-          "ambiguity_proxy": 0.5020040940825529,
-          "efe_proxy": 0.1685312963478155,
-          "risk_proxy": -0.33347279773473737
+          "ambiguity_proxy": 0.5020040940825528,
+          "efe_proxy": 0.16853129634781544,
+          "risk_proxy": -0.3334727977347373
         },
         {
           "action": "release_prior",
           "ambiguity_proxy": 0.5020040940825528,
-          "efe_proxy": 0.2551529637804812,
-          "risk_proxy": -0.24685113030207156
+          "efe_proxy": 0.25515296378048125,
+          "risk_proxy": -0.24685113030207154
         }
       ],
       "expected_free_energy": [
@@ -576,8 +576,8 @@
         {
           "action": "release_prior",
           "ambiguity_proxy": 0.5020040950176082,
-          "efe_proxy": -0.052641051426217556,
-          "risk_proxy": -0.5546451464438258
+          "efe_proxy": -0.05264105142621767,
+          "risk_proxy": -0.5546451464438259
         }
       ],
       "expected_free_energy": [
@@ -725,9 +725,9 @@
       "efe_terms": [
         {
           "action": "stabilize_dual",
-          "ambiguity_proxy": 0.50200410296558,
+          "ambiguity_proxy": 0.5020041029655798,
           "efe_proxy": -0.3359772256437824,
-          "risk_proxy": -0.8379813286093624
+          "risk_proxy": -0.8379813286093623
         },
         {
           "action": "inspect_boundary",
@@ -846,8 +846,8 @@
         {
           "action": "release_prior",
           "ambiguity_proxy": 0.5020040234858638,
-          "efe_proxy": -0.0794295239884043,
-          "risk_proxy": -0.5814335474742681
+          "efe_proxy": -0.0794295239884042,
+          "risk_proxy": -0.581433547474268
         }
       ],
       "expected_free_energy": [
@@ -893,15 +893,15 @@
         },
         {
           "action": "inspect_boundary",
-          "ambiguity_proxy": 0.5020041380301605,
-          "efe_proxy": 0.16853132541750776,
-          "risk_proxy": -0.33347281261265277
+          "ambiguity_proxy": 0.5020041380301606,
+          "efe_proxy": 0.16853132541750793,
+          "risk_proxy": -0.3334728126126527
         },
         {
           "action": "release_prior",
           "ambiguity_proxy": 0.5020041380301605,
-          "efe_proxy": 0.2551530021523427,
-          "risk_proxy": -0.24685113587781782
+          "efe_proxy": 0.25515300215234266,
+          "risk_proxy": -0.24685113587781787
         }
       ],
       "expected_free_energy": [
@@ -942,14 +942,14 @@
         {
           "action": "stabilize_dual",
           "ambiguity_proxy": 0.5020040370441682,
-          "efe_proxy": -0.30555068958404574,
-          "risk_proxy": -0.8075547266282139
+          "efe_proxy": -0.30555068958404585,
+          "risk_proxy": -0.807554726628214
         },
         {
           "action": "inspect_boundary",
           "ambiguity_proxy": 0.5020040370441683,
-          "efe_proxy": -0.10844376658248833,
-          "risk_proxy": -0.6104478036266566
+          "efe_proxy": -0.10844376658248822,
+          "risk_proxy": -0.6104478036266565
         },
         {
           "action": "release_prior",
@@ -1103,9 +1103,9 @@
       "efe_terms": [
         {
           "action": "stabilize_dual",
-          "ambiguity_proxy": 0.50200410296558,
+          "ambiguity_proxy": 0.5020041029655798,
           "efe_proxy": -0.3359772256437824,
-          "risk_proxy": -0.8379813286093624
+          "risk_proxy": -0.8379813286093623
         },
         {
           "action": "inspect_boundary",
@@ -1224,8 +1224,8 @@
         {
           "action": "release_prior",
           "ambiguity_proxy": 0.5020040234858638,
-          "efe_proxy": -0.0794295239884043,
-          "risk_proxy": -0.5814335474742681
+          "efe_proxy": -0.0794295239884042,
+          "risk_proxy": -0.581433547474268
         }
       ],
       "expected_free_energy": [
@@ -1271,15 +1271,15 @@
         },
         {
           "action": "inspect_boundary",
-          "ambiguity_proxy": 0.5020041380301605,
-          "efe_proxy": 0.16853132541750776,
-          "risk_proxy": -0.33347281261265277
+          "ambiguity_proxy": 0.5020041380301606,
+          "efe_proxy": 0.16853132541750793,
+          "risk_proxy": -0.3334728126126527
         },
         {
           "action": "release_prior",
           "ambiguity_proxy": 0.5020041380301605,
-          "efe_proxy": 0.2551530021523427,
-          "risk_proxy": -0.24685113587781782
+          "efe_proxy": 0.25515300215234266,
+          "risk_proxy": -0.24685113587781787
         }
       ],
       "expected_free_energy": [
@@ -1320,14 +1320,14 @@
         {
           "action": "stabilize_dual",
           "ambiguity_proxy": 0.5020040370441682,
-          "efe_proxy": -0.30555068958404574,
-          "risk_proxy": -0.8075547266282139
+          "efe_proxy": -0.30555068958404585,
+          "risk_proxy": -0.807554726628214
         },
         {
           "action": "inspect_boundary",
           "ambiguity_proxy": 0.5020040370441683,
-          "efe_proxy": -0.10844376658248833,
-          "risk_proxy": -0.6104478036266566
+          "efe_proxy": -0.10844376658248822,
+          "risk_proxy": -0.6104478036266565
         },
         {
           "action": "release_prior",
@@ -1439,8 +1439,8 @@
         },
         {
           "action": "release_prior",
-          "ambiguity_proxy": 0.7546963666161145,
-          "efe_proxy": 0.07955388610905367,
+          "ambiguity_proxy": 0.7546963666161146,
+          "efe_proxy": 0.07955388610905378,
           "risk_proxy": -0.6751424805070608
         }
       ],
@@ -1542,14 +1542,14 @@
         {
           "action": "inspect_boundary",
           "ambiguity_proxy": 0.7535019789533988,
-          "efe_proxy": 0.11318079063038711,
-          "risk_proxy": -0.6403211883230117
+          "efe_proxy": 0.113180790630387,
+          "risk_proxy": -0.6403211883230118
         },
         {
           "action": "release_prior",
           "ambiguity_proxy": 0.7523529059500675,
-          "efe_proxy": 0.13404417092517162,
-          "risk_proxy": -0.6183087350248959
+          "efe_proxy": 0.1340441709251715,
+          "risk_proxy": -0.618308735024896
         }
       ],
       "expected_free_energy": [
@@ -1595,15 +1595,15 @@
         },
         {
           "action": "inspect_boundary",
-          "ambiguity_proxy": 0.7555274557406989,
-          "efe_proxy": 0.06642134037785608,
-          "risk_proxy": -0.6891061153628428
+          "ambiguity_proxy": 0.755527455740699,
+          "efe_proxy": 0.06642134037785596,
+          "risk_proxy": -0.689106115362843
         },
         {
           "action": "release_prior",
-          "ambiguity_proxy": 0.7543275141315814,
+          "ambiguity_proxy": 0.7543275141315813,
           "efe_proxy": 0.0843880254418895,
-          "risk_proxy": -0.6699394886896919
+          "risk_proxy": -0.6699394886896918
         }
       ],
       "expected_free_energy": [
@@ -1704,14 +1704,14 @@
         {
           "action": "inspect_boundary",
           "ambiguity_proxy": 0.7557910869270108,
-          "efe_proxy": 0.05934300866587239,
-          "risk_proxy": -0.6964480782611384
+          "efe_proxy": 0.05934300866587228,
+          "risk_proxy": -0.6964480782611385
         },
         {
           "action": "release_prior",
-          "ambiguity_proxy": 0.7545800830781786,
+          "ambiguity_proxy": 0.7545800830781785,
           "efe_proxy": 0.07717592865904299,
-          "risk_proxy": -0.6774041544191356
+          "risk_proxy": -0.6774041544191355
         }
       ],
       "expected_free_energy": [
@@ -1757,15 +1757,15 @@
         },
         {
           "action": "inspect_boundary",
-          "ambiguity_proxy": 0.7557682120287658,
-          "efe_proxy": 0.059598157298205945,
-          "risk_proxy": -0.6961700547305598
+          "ambiguity_proxy": 0.7557682120287659,
+          "efe_proxy": 0.059598157298205834,
+          "risk_proxy": -0.69617005473056
         },
         {
           "action": "release_prior",
           "ambiguity_proxy": 0.7545565599404094,
-          "efe_proxy": 0.07753079969734444,
-          "risk_proxy": -0.6770257602430649
+          "efe_proxy": 0.07753079969734455,
+          "risk_proxy": -0.6770257602430648
         }
       ],
       "expected_free_energy": [
@@ -1805,15 +1805,15 @@
       "efe_terms": [
         {
           "action": "stabilize_dual",
-          "ambiguity_proxy": 0.7554085515933833,
-          "efe_proxy": 0.12520119150598386,
+          "ambiguity_proxy": 0.7554085515933832,
+          "efe_proxy": 0.12520119150598374,
           "risk_proxy": -0.6302073600873994
         },
         {
           "action": "inspect_boundary",
           "ambiguity_proxy": 0.7557640040513931,
-          "efe_proxy": 0.059651408998289024,
-          "risk_proxy": -0.6961125950531041
+          "efe_proxy": 0.05965140899828891,
+          "risk_proxy": -0.6961125950531042
         },
         {
           "action": "release_prior",
@@ -1865,9 +1865,9 @@
         },
         {
           "action": "inspect_boundary",
-          "ambiguity_proxy": 0.7557631811506802,
+          "ambiguity_proxy": 0.7557631811506803,
           "efe_proxy": 0.059662015618145325,
-          "risk_proxy": -0.6961011655325349
+          "risk_proxy": -0.696101165532535
         },
         {
           "action": "release_prior",
@@ -1925,9 +1925,9 @@
         },
         {
           "action": "release_prior",
-          "ambiguity_proxy": 0.7523414173371898,
+          "ambiguity_proxy": 0.7523414173371897,
           "efe_proxy": 0.13410279079597265,
-          "risk_proxy": -0.6182386265412172
+          "risk_proxy": -0.6182386265412171
         }
       ],
       "expected_free_energy": [
@@ -1968,14 +1968,14 @@
         {
           "action": "stabilize_dual",
           "ambiguity_proxy": 0.755177777864732,
-          "efe_proxy": 0.1293201404577502,
-          "risk_proxy": -0.6258576374069817
+          "efe_proxy": 0.1293201404577501,
+          "risk_proxy": -0.6258576374069819
         },
         {
           "action": "inspect_boundary",
-          "ambiguity_proxy": 0.7555249927382932,
-          "efe_proxy": 0.06642399360591211,
-          "risk_proxy": -0.6891009991323811
+          "ambiguity_proxy": 0.755524992738293,
+          "efe_proxy": 0.066423993605912,
+          "risk_proxy": -0.689100999132381
         },
         {
           "action": "release_prior",
@@ -2022,8 +2022,8 @@
         {
           "action": "stabilize_dual",
           "ambiguity_proxy": 0.75555048037582,
-          "efe_proxy": 0.12654498356562327,
-          "risk_proxy": -0.6290054968101967
+          "efe_proxy": 0.12654498356562316,
+          "risk_proxy": -0.6290054968101968
         },
         {
           "action": "inspect_boundary",
@@ -2033,9 +2033,9 @@
         },
         {
           "action": "release_prior",
-          "ambiguity_proxy": 0.7547110103235969,
+          "ambiguity_proxy": 0.754711010323597,
           "efe_proxy": 0.07542320348780918,
-          "risk_proxy": -0.6792878068357877
+          "risk_proxy": -0.6792878068357878
         }
       ],
       "expected_free_energy": [
@@ -2075,9 +2075,9 @@
       "efe_terms": [
         {
           "action": "stabilize_dual",
-          "ambiguity_proxy": 0.7554336695668983,
+          "ambiguity_proxy": 0.7554336695668982,
           "efe_proxy": 0.1253655600806427,
-          "risk_proxy": -0.6300681094862556
+          "risk_proxy": -0.6300681094862555
         },
         {
           "action": "inspect_boundary",
@@ -2088,8 +2088,8 @@
         {
           "action": "release_prior",
           "ambiguity_proxy": 0.7545800010456047,
-          "efe_proxy": 0.0771765771879327,
-          "risk_proxy": -0.677403423857672
+          "efe_proxy": 0.0771765771879328,
+          "risk_proxy": -0.6774034238576719
         }
       ],
       "expected_free_energy": [
@@ -2136,14 +2136,14 @@
         {
           "action": "inspect_boundary",
           "ambiguity_proxy": 0.7557682057151967,
-          "efe_proxy": 0.059598245619045476,
-          "risk_proxy": -0.6961699600961512
+          "efe_proxy": 0.059598245619045365,
+          "risk_proxy": -0.6961699600961513
         },
         {
           "action": "release_prior",
           "ambiguity_proxy": 0.7545565530770728,
-          "efe_proxy": 0.07753095127553922,
-          "risk_proxy": -0.6770256018015336
+          "efe_proxy": 0.0775309512755391,
+          "risk_proxy": -0.6770256018015337
         }
       ],
       "expected_free_energy": [
@@ -2161,10 +2161,10 @@
       "perturbed_observation": false,
       "policy_posterior": [
         0.32425901,
-        0.33703366,
+        0.33703363,
         0.3387073
       ],
-      "policy_posterior_sum": 0.9999999701976776,
+      "policy_posterior_sum": 0.9999999403953552,
       "profile": "opacified",
       "selected_action": "release_prior",
       "selected_action_index": 2,
@@ -2177,15 +2177,15 @@
       "step": 13,
       "true_state": "opacified_boundary",
       "vfe": 0.8175055980682373,
-      "weighted_expected_free_energy": -0.9613508447387176
+      "weighted_expected_free_energy": -0.9613508157648258
     },
     {
       "efe_terms": [
         {
           "action": "stabilize_dual",
           "ambiguity_proxy": 0.7554085326333243,
-          "efe_proxy": 0.12520117212823678,
-          "risk_proxy": -0.6302073605050875
+          "efe_proxy": 0.12520117212823667,
+          "risk_proxy": -0.6302073605050876
         },
         {
           "action": "inspect_boundary",
@@ -2237,21 +2237,21 @@
       "efe_terms": [
         {
           "action": "stabilize_dual",
-          "ambiguity_proxy": 0.7554078262784348,
-          "efe_proxy": 0.12519898334895885,
+          "ambiguity_proxy": 0.7554078262784347,
+          "efe_proxy": 0.12519898334895874,
           "risk_proxy": -0.630208842929476
         },
         {
           "action": "inspect_boundary",
-          "ambiguity_proxy": 0.7557632285837742,
+          "ambiguity_proxy": 0.7557632285837744,
           "efe_proxy": 0.05966202505450535,
-          "risk_proxy": -0.6961012035292689
+          "risk_proxy": -0.6961012035292691
         },
         {
           "action": "release_prior",
-          "ambiguity_proxy": 0.7545514730810635,
-          "efe_proxy": 0.07761429649560025,
-          "risk_proxy": -0.6769371765854633
+          "ambiguity_proxy": 0.7545514730810636,
+          "efe_proxy": 0.07761429649560048,
+          "risk_proxy": -0.6769371765854632
         }
       ],
       "expected_free_energy": [
@@ -2298,14 +2298,14 @@
         {
           "action": "inspect_boundary",
           "ambiguity_proxy": 0.753491412518221,
-          "efe_proxy": 0.11315948160664746,
-          "risk_proxy": -0.6403319309115736
+          "efe_proxy": 0.11315948160664735,
+          "risk_proxy": -0.6403319309115737
         },
         {
           "action": "release_prior",
           "ambiguity_proxy": 0.7523414199459855,
-          "efe_proxy": 0.13410279671816783,
-          "risk_proxy": -0.6182386232278176
+          "efe_proxy": 0.13410279671816794,
+          "risk_proxy": -0.6182386232278175
         }
       ],
       "expected_free_energy": [
@@ -2400,8 +2400,8 @@
         {
           "action": "stabilize_dual",
           "ambiguity_proxy": 0.75555048037582,
-          "efe_proxy": 0.12654498356562327,
-          "risk_proxy": -0.6290054968101967
+          "efe_proxy": 0.12654498356562316,
+          "risk_proxy": -0.6290054968101968
         },
         {
           "action": "inspect_boundary",
@@ -2411,9 +2411,9 @@
         },
         {
           "action": "release_prior",
-          "ambiguity_proxy": 0.7547110103235969,
+          "ambiguity_proxy": 0.754711010323597,
           "efe_proxy": 0.07542320348780918,
-          "risk_proxy": -0.6792878068357877
+          "risk_proxy": -0.6792878068357878
         }
       ],
       "expected_free_energy": [
@@ -2453,9 +2453,9 @@
       "efe_terms": [
         {
           "action": "stabilize_dual",
-          "ambiguity_proxy": 0.7554336695668983,
+          "ambiguity_proxy": 0.7554336695668982,
           "efe_proxy": 0.1253655600806427,
-          "risk_proxy": -0.6300681094862556
+          "risk_proxy": -0.6300681094862555
         },
         {
           "action": "inspect_boundary",
@@ -2466,8 +2466,8 @@
         {
           "action": "release_prior",
           "ambiguity_proxy": 0.7545800010456047,
-          "efe_proxy": 0.0771765771879327,
-          "risk_proxy": -0.677403423857672
+          "efe_proxy": 0.0771765771879328,
+          "risk_proxy": -0.6774034238576719
         }
       ],
       "expected_free_energy": [
@@ -2514,14 +2514,14 @@
         {
           "action": "inspect_boundary",
           "ambiguity_proxy": 0.7557682057151967,
-          "efe_proxy": 0.059598245619045476,
-          "risk_proxy": -0.6961699600961512
+          "efe_proxy": 0.059598245619045365,
+          "risk_proxy": -0.6961699600961513
         },
         {
           "action": "release_prior",
           "ambiguity_proxy": 0.7545565530770728,
-          "efe_proxy": 0.07753095127553922,
-          "risk_proxy": -0.6770256018015336
+          "efe_proxy": 0.0775309512755391,
+          "risk_proxy": -0.6770256018015337
         }
       ],
       "expected_free_energy": [
@@ -2539,10 +2539,10 @@
       "perturbed_observation": false,
       "policy_posterior": [
         0.32425901,
-        0.33703366,
+        0.33703363,
         0.3387073
       ],
-      "policy_posterior_sum": 0.9999999701976776,
+      "policy_posterior_sum": 0.9999999403953552,
       "profile": "opacified",
       "selected_action": "release_prior",
       "selected_action_index": 2,
@@ -2555,15 +2555,15 @@
       "step": 20,
       "true_state": "opacified_boundary",
       "vfe": 0.8175055980682373,
-      "weighted_expected_free_energy": -0.9613508447387176
+      "weighted_expected_free_energy": -0.9613508157648258
     },
     {
       "efe_terms": [
         {
           "action": "stabilize_dual",
           "ambiguity_proxy": 0.7554085326333243,
-          "efe_proxy": 0.12520117212823678,
-          "risk_proxy": -0.6302073605050875
+          "efe_proxy": 0.12520117212823667,
+          "risk_proxy": -0.6302073605050876
         },
         {
           "action": "inspect_boundary",
@@ -2615,21 +2615,21 @@
       "efe_terms": [
         {
           "action": "stabilize_dual",
-          "ambiguity_proxy": 0.7554078262784348,
-          "efe_proxy": 0.12519898334895885,
+          "ambiguity_proxy": 0.7554078262784347,
+          "efe_proxy": 0.12519898334895874,
           "risk_proxy": -0.630208842929476
         },
         {
           "action": "inspect_boundary",
-          "ambiguity_proxy": 0.7557632285837742,
+          "ambiguity_proxy": 0.7557632285837744,
           "efe_proxy": 0.05966202505450535,
-          "risk_proxy": -0.6961012035292689
+          "risk_proxy": -0.6961012035292691
         },
         {
           "action": "release_prior",
-          "ambiguity_proxy": 0.7545514730810635,
-          "efe_proxy": 0.07761429649560025,
-          "risk_proxy": -0.6769371765854633
+          "ambiguity_proxy": 0.7545514730810636,
+          "efe_proxy": 0.07761429649560048,
+          "risk_proxy": -0.6769371765854632
         }
       ],
       "expected_free_energy": [
@@ -2676,14 +2676,14 @@
         {
           "action": "inspect_boundary",
           "ambiguity_proxy": 0.753491412518221,
-          "efe_proxy": 0.11315948160664746,
-          "risk_proxy": -0.6403319309115736
+          "efe_proxy": 0.11315948160664735,
+          "risk_proxy": -0.6403319309115737
         },
         {
           "action": "release_prior",
           "ambiguity_proxy": 0.7523414199459855,
-          "efe_proxy": 0.13410279671816783,
-          "risk_proxy": -0.6182386232278176
+          "efe_proxy": 0.13410279671816794,
+          "risk_proxy": -0.6182386232278175
         }
       ],
       "expected_free_energy": [
@@ -2724,8 +2724,8 @@
         {
           "action": "stabilize_dual",
           "ambiguity_proxy": 0.5965633029975416,
-          "efe_proxy": -0.09320635999595694,
-          "risk_proxy": -0.6897696629934985
+          "efe_proxy": -0.09320635999595706,
+          "risk_proxy": -0.6897696629934986
         },
         {
           "action": "inspect_boundary",
@@ -2735,9 +2735,9 @@
         },
         {
           "action": "release_prior",
-          "ambiguity_proxy": 0.5946628401523955,
-          "efe_proxy": -0.2447447707281013,
-          "risk_proxy": -0.8394076108804968
+          "ambiguity_proxy": 0.5946628401523953,
+          "efe_proxy": -0.24474477072810152,
+          "risk_proxy": -0.8394076108804969
         }
       ],
       "expected_free_energy": [
@@ -2778,8 +2778,8 @@
         {
           "action": "stabilize_dual",
           "ambiguity_proxy": 0.5965383712702306,
-          "efe_proxy": -0.09815986845109892,
-          "risk_proxy": -0.6946982397213295
+          "efe_proxy": -0.09815986845109903,
+          "risk_proxy": -0.6946982397213296
         },
         {
           "action": "inspect_boundary",
@@ -2790,8 +2790,8 @@
         {
           "action": "release_prior",
           "ambiguity_proxy": 0.5946235442729294,
-          "efe_proxy": -0.24844838740842656,
-          "risk_proxy": -0.843071931681356
+          "efe_proxy": -0.24844838740842679,
+          "risk_proxy": -0.8430719316813562
         }
       ],
       "expected_free_energy": [
@@ -2837,8 +2837,8 @@
         },
         {
           "action": "inspect_boundary",
-          "ambiguity_proxy": 0.597069832185527,
-          "efe_proxy": -0.12053037567173797,
+          "ambiguity_proxy": 0.5970698321855269,
+          "efe_proxy": -0.12053037567173808,
           "risk_proxy": -0.717600207857265
         },
         {
@@ -2891,15 +2891,15 @@
         },
         {
           "action": "inspect_boundary",
-          "ambiguity_proxy": 0.5970695469183728,
+          "ambiguity_proxy": 0.5970695469183729,
           "efe_proxy": -0.12056050209022351,
-          "risk_proxy": -0.7176300490085963
+          "risk_proxy": -0.7176300490085964
         },
         {
           "action": "release_prior",
           "ambiguity_proxy": 0.594619377833401,
-          "efe_proxy": -0.24879168529421836,
-          "risk_proxy": -0.8434110631276194
+          "efe_proxy": -0.24879168529421825,
+          "risk_proxy": -0.8434110631276193
         }
       ],
       "expected_free_energy": [
@@ -2940,8 +2940,8 @@
         {
           "action": "stabilize_dual",
           "ambiguity_proxy": 0.5977227321543149,
-          "efe_proxy": 0.1735577840746536,
-          "risk_proxy": -0.4241649480796613
+          "efe_proxy": 0.17355778407465355,
+          "risk_proxy": -0.4241649480796614
         },
         {
           "action": "inspect_boundary",
@@ -3000,14 +3000,14 @@
         {
           "action": "inspect_boundary",
           "ambiguity_proxy": 0.5973136055290575,
-          "efe_proxy": -0.09545053966900452,
-          "risk_proxy": -0.6927641451980621
+          "efe_proxy": -0.09545053966900441,
+          "risk_proxy": -0.692764145198062
         },
         {
           "action": "release_prior",
-          "ambiguity_proxy": 0.5948857572049521,
+          "ambiguity_proxy": 0.594885757204952,
           "efe_proxy": -0.22608984723224623,
-          "risk_proxy": -0.8209756044371983
+          "risk_proxy": -0.8209756044371982
         }
       ],
       "expected_free_energy": [
@@ -3108,14 +3108,14 @@
         {
           "action": "inspect_boundary",
           "ambiguity_proxy": 0.5970716106744514,
-          "efe_proxy": -0.12037236461246525,
-          "risk_proxy": -0.7174439752869166
+          "efe_proxy": -0.12037236461246537,
+          "risk_proxy": -0.7174439752869167
         },
         {
           "action": "release_prior",
-          "ambiguity_proxy": 0.5946215103560254,
-          "efe_proxy": -0.24862304386772627,
-          "risk_proxy": -0.8432445542237517
+          "ambiguity_proxy": 0.5946215103560255,
+          "efe_proxy": -0.2486230438677265,
+          "risk_proxy": -0.843244554223752
         }
       ],
       "expected_free_energy": [
@@ -3168,8 +3168,8 @@
         {
           "action": "release_prior",
           "ambiguity_proxy": 0.594619528655706,
-          "efe_proxy": -0.24877952381922108,
-          "risk_proxy": -0.8433990524749271
+          "efe_proxy": -0.24877952381922086,
+          "risk_proxy": -0.8433990524749269
         }
       ],
       "expected_free_energy": [
@@ -3209,21 +3209,21 @@
       "efe_terms": [
         {
           "action": "stabilize_dual",
-          "ambiguity_proxy": 0.5965352263657925,
-          "efe_proxy": -0.09862475377285562,
-          "risk_proxy": -0.6951599801386481
+          "ambiguity_proxy": 0.5965352263657924,
+          "efe_proxy": -0.09862475377285551,
+          "risk_proxy": -0.6951599801386479
         },
         {
           "action": "inspect_boundary",
           "ambiguity_proxy": 0.5970694970008118,
-          "efe_proxy": -0.12056190914920806,
-          "risk_proxy": -0.7176314061500199
+          "efe_proxy": -0.12056190914920795,
+          "risk_proxy": -0.7176314061500197
         },
         {
           "action": "release_prior",
           "ambiguity_proxy": 0.5946193274611348,
-          "efe_proxy": -0.24879293956817317,
-          "risk_proxy": -0.8434122670293079
+          "efe_proxy": -0.24879293956817305,
+          "risk_proxy": -0.8434122670293078
         }
       ],
       "expected_free_energy": [
@@ -3269,15 +3269,15 @@
         },
         {
           "action": "inspect_boundary",
-          "ambiguity_proxy": 0.597069505309781,
+          "ambiguity_proxy": 0.5970695053097809,
           "efe_proxy": -0.12056320586073077,
-          "risk_proxy": -0.7176327111705118
+          "risk_proxy": -0.7176327111705116
         },
         {
           "action": "release_prior",
-          "ambiguity_proxy": 0.5946193353590017,
+          "ambiguity_proxy": 0.5946193353590018,
           "efe_proxy": -0.2487941050054917,
-          "risk_proxy": -0.8434134403644934
+          "risk_proxy": -0.8434134403644935
         }
       ],
       "expected_free_energy": [
@@ -3318,8 +3318,8 @@
         {
           "action": "stabilize_dual",
           "ambiguity_proxy": 0.5977227525459735,
-          "efe_proxy": 0.1735530201578408,
-          "risk_proxy": -0.4241697323881327
+          "efe_proxy": 0.17355302015784085,
+          "risk_proxy": -0.42416973238813266
         },
         {
           "action": "inspect_boundary",
@@ -3330,8 +3330,8 @@
         {
           "action": "release_prior",
           "ambiguity_proxy": 0.5966629238077557,
-          "efe_proxy": -0.044562267654874366,
-          "risk_proxy": -0.64122519146263
+          "efe_proxy": -0.044562267654874255,
+          "risk_proxy": -0.6412251914626299
         }
       ],
       "expected_free_energy": [
@@ -3384,8 +3384,8 @@
         {
           "action": "release_prior",
           "ambiguity_proxy": 0.5948857295202016,
-          "efe_proxy": -0.2260903570585877,
-          "risk_proxy": -0.8209760865787893
+          "efe_proxy": -0.22609035705858782,
+          "risk_proxy": -0.8209760865787894
         }
       ],
       "expected_free_energy": [
@@ -3438,8 +3438,8 @@
         {
           "action": "release_prior",
           "ambiguity_proxy": 0.5946444068858436,
-          "efe_proxy": -0.2468012531325865,
-          "risk_proxy": -0.8414456600184301
+          "efe_proxy": -0.24680125313258672,
+          "risk_proxy": -0.8414456600184304
         }
       ],
       "expected_free_energy": [
@@ -3480,14 +3480,14 @@
         {
           "action": "stabilize_dual",
           "ambiguity_proxy": 0.5965370278106101,
-          "efe_proxy": -0.09839434225189181,
-          "risk_proxy": -0.6949313700625019
+          "efe_proxy": -0.09839434225189192,
+          "risk_proxy": -0.694931370062502
         },
         {
           "action": "inspect_boundary",
           "ambiguity_proxy": 0.5970716781753358,
-          "efe_proxy": -0.12037238270799366,
-          "risk_proxy": -0.7174440608833295
+          "efe_proxy": -0.12037238270799377,
+          "risk_proxy": -0.7174440608833296
         },
         {
           "action": "release_prior",
@@ -3546,8 +3546,8 @@
         {
           "action": "release_prior",
           "ambiguity_proxy": 0.594619528655706,
-          "efe_proxy": -0.24877952381922108,
-          "risk_proxy": -0.8433990524749271
+          "efe_proxy": -0.24877952381922086,
+          "risk_proxy": -0.8433990524749269
         }
       ],
       "expected_free_energy": [
@@ -3587,21 +3587,21 @@
       "efe_terms": [
         {
           "action": "stabilize_dual",
-          "ambiguity_proxy": 0.5965352263657925,
-          "efe_proxy": -0.09862475377285562,
-          "risk_proxy": -0.6951599801386481
+          "ambiguity_proxy": 0.5965352263657924,
+          "efe_proxy": -0.09862475377285551,
+          "risk_proxy": -0.6951599801386479
         },
         {
           "action": "inspect_boundary",
           "ambiguity_proxy": 0.5970694970008118,
-          "efe_proxy": -0.12056190914920806,
-          "risk_proxy": -0.7176314061500199
+          "efe_proxy": -0.12056190914920795,
+          "risk_proxy": -0.7176314061500197
         },
         {
           "action": "release_prior",
           "ambiguity_proxy": 0.5946193274611348,
-          "efe_proxy": -0.24879293956817317,
-          "risk_proxy": -0.8434122670293079
+          "efe_proxy": -0.24879293956817305,
+          "risk_proxy": -0.8434122670293078
         }
       ],
       "expected_free_energy": [
@@ -3647,15 +3647,15 @@
         },
         {
           "action": "inspect_boundary",
-          "ambiguity_proxy": 0.597069505309781,
+          "ambiguity_proxy": 0.5970695053097809,
           "efe_proxy": -0.12056320586073077,
-          "risk_proxy": -0.7176327111705118
+          "risk_proxy": -0.7176327111705116
         },
         {
           "action": "release_prior",
-          "ambiguity_proxy": 0.5946193353590017,
+          "ambiguity_proxy": 0.5946193353590018,
           "efe_proxy": -0.2487941050054917,
-          "risk_proxy": -0.8434134403644934
+          "risk_proxy": -0.8434134403644935
         }
       ],
       "expected_free_energy": [
@@ -3696,8 +3696,8 @@
         {
           "action": "stabilize_dual",
           "ambiguity_proxy": 0.5977227525459735,
-          "efe_proxy": 0.1735530201578408,
-          "risk_proxy": -0.4241697323881327
+          "efe_proxy": 0.17355302015784085,
+          "risk_proxy": -0.42416973238813266
         },
         {
           "action": "inspect_boundary",
@@ -3708,8 +3708,8 @@
         {
           "action": "release_prior",
           "ambiguity_proxy": 0.5966629238077557,
-          "efe_proxy": -0.044562267654874366,
-          "risk_proxy": -0.64122519146263
+          "efe_proxy": -0.044562267654874255,
+          "risk_proxy": -0.6412251914626299
         }
       ],
       "expected_free_energy": [
@@ -3762,8 +3762,8 @@
         {
           "action": "release_prior",
           "ambiguity_proxy": 0.5948857295202016,
-          "efe_proxy": -0.2260903570585877,
-          "risk_proxy": -0.8209760865787893
+          "efe_proxy": -0.22609035705858782,
+          "risk_proxy": -0.8209760865787894
         }
       ],
       "expected_free_energy": [
@@ -3816,8 +3816,8 @@
         {
           "action": "release_prior",
           "ambiguity_proxy": 0.5946444068858436,
-          "efe_proxy": -0.2468012531325865,
-          "risk_proxy": -0.8414456600184301
+          "efe_proxy": -0.24680125313258672,
+          "risk_proxy": -0.8414456600184304
         }
       ],
       "expected_free_energy": [
@@ -3858,14 +3858,14 @@
         {
           "action": "stabilize_dual",
           "ambiguity_proxy": 0.5965370278106101,
-          "efe_proxy": -0.09839434225189181,
-          "risk_proxy": -0.6949313700625019
+          "efe_proxy": -0.09839434225189192,
+          "risk_proxy": -0.694931370062502
         },
         {
           "action": "inspect_boundary",
           "ambiguity_proxy": 0.5970716781753358,
-          "efe_proxy": -0.12037238270799366,
-          "risk_proxy": -0.7174440608833295
+          "efe_proxy": -0.12037238270799377,
+          "risk_proxy": -0.7174440608833296
         },
         {
           "action": "release_prior",
@@ -3924,8 +3924,8 @@
         {
           "action": "release_prior",
           "ambiguity_proxy": 0.594619528655706,
-          "efe_proxy": -0.24877952381922108,
-          "risk_proxy": -0.8433990524749271
+          "efe_proxy": -0.24877952381922086,
+          "risk_proxy": -0.8433990524749269
         }
       ],
       "expected_free_energy": [
@@ -3965,21 +3965,21 @@
       "efe_terms": [
         {
           "action": "stabilize_dual",
-          "ambiguity_proxy": 0.5965352263657925,
-          "efe_proxy": -0.09862475377285562,
-          "risk_proxy": -0.6951599801386481
+          "ambiguity_proxy": 0.5965352263657924,
+          "efe_proxy": -0.09862475377285551,
+          "risk_proxy": -0.6951599801386479
         },
         {
           "action": "inspect_boundary",
           "ambiguity_proxy": 0.5970694970008118,
-          "efe_proxy": -0.12056190914920806,
-          "risk_proxy": -0.7176314061500199
+          "efe_proxy": -0.12056190914920795,
+          "risk_proxy": -0.7176314061500197
         },
         {
           "action": "release_prior",
           "ambiguity_proxy": 0.5946193274611348,
-          "efe_proxy": -0.24879293956817317,
-          "risk_proxy": -0.8434122670293079
+          "efe_proxy": -0.24879293956817305,
+          "risk_proxy": -0.8434122670293078
         }
       ],
       "expected_free_energy": [

@@ -43,13 +43,23 @@
         "direct_url_sha256",
         "module_sha256"
       ],
+      "oneOf": [
+        {
+          "properties": {
+            "version": {"const": "4.1.0"},
+            "commit": {"const": "46459949944e3217f8a6a804d4ff8c52829ef275"}
+          }
+        },
+        {
+          "properties": {
+            "version": {"const": "5.2.0"},
+            "commit": {"const": "4a7cccce6d4d7cb483f00323ec5cdd79300f3464"}
+          }
+        }
+      ],
       "properties": {
-        "version": {
-          "const": "4.1.0"
-        },
-        "commit": {
-          "const": "46459949944e3217f8a6a804d4ff8c52829ef275"
-        },
+        "version": {"type": "string"},
+        "commit": {"type": "string"},
         "repository": {
           "const": "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation"
         },

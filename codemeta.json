@@ -1,7 +1,7 @@
 {
   "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
   "@type": "SoftwareSourceCode",
-  "identifier": "https://github.com/docxology/realizing_emptiness/releases/tag/v3.0.0",
+  "identifier": "https://github.com/docxology/realizing_emptiness/releases/tag/v3.0.1",
   "author": [
     {
       "@id": "https://orcid.org/0000-0001-6232-9096",
@@ -15,7 +15,7 @@
     }
   ],
   "codeRepository": "https://github.com/docxology/realizing_emptiness",
-  "dateModified": "2026-10-14",
+  "dateModified": "2026-11-28",
   "keywords": [
     "active inference",
     "emptiness",
@@ -26,6 +26,6 @@
   ],
   "license": "https://spdx.org/licenses/MIT",
   "name": "Realizing Emptiness",
-  "version": "3.0.0"
+  "version": "3.0.1"
 }
 

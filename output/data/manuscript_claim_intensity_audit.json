@@ -894,7 +894,7 @@
       "has_boundary_scope": false,
       "has_negation": false,
       "no_self_risky": false,
-      "sentence": "12 and later supported versions), imports the JAX-first `Agent` surface, constructs a small agent, runs state inference, and confirms policy-posterior normalization.",
+      "sentence": "14), imports the JAX-first `Agent` surface, constructs a small agent, runs state inference, and confirms policy-posterior normalization.",
       "strong_verbs": [
         "confirms"
       ],
@@ -2331,6 +2331,6 @@
     }
   ],
   "schema": "realizing_emptiness.manuscript_claim_intensity_audit.v1",
-  "sentence_count": 1342,
+  "sentence_count": 1353,
   "strong_verb_count": 53
 }

@@ -389,10 +389,12 @@
     ]
   },
   "manifest_coverage": {
-    "generated_count": 148,
+    "generated_count": 149,
     "manifest_count": 149,
     "missing_manifest_paths": [],
-    "unmanifested_generated_paths": []
+    "unmanifested_generated_paths": [
+      "output/figures/figure_registry.json"
+    ]
   },
   "manuscript_audits": {
     "claim_intensity_ok": true,
@@ -424,10 +426,10 @@
     "all_controls_pass": true,
     "claim_boundary": "structured pymdp runtime diagnostics over finite software traces; not empirical data, not a neural measurement, not practice-efficacy evidence, and not quantum-dynamical evidence",
     "max_policy_posterior_norm_residual": 8.940696716308594e-08,
-    "max_weighted_expected_free_energy_residual": 1.3294909173566793e-08,
+    "max_weighted_expected_free_energy_residual": 1.3294909062544491e-08,
     "model_profile_count": 3,
     "replay_equal": true,
-    "runtime_warning_count": 1,
+    "runtime_warning_count": 0,
     "trace_row_count": 72
   },
   "readiness": {
@@ -453,7 +455,7 @@
     "public_reproduction_status": "blocked_external_publication",
     "qrf_label_ablation_ok": true,
     "quantum_crosscheck_ok": true,
-    "release_file_count": 522,
+    "release_file_count": 525,
     "release_scope": "local_private_artifact_bundle_not_public_release",
     "review_response_ok": true,
     "review_response_rows": 7

@@ -8,7 +8,7 @@
   "ok": true,
   "rows": [
     {
-      "byte_size": 380445,
+      "byte_size": 413663,
       "caption": "Graphical abstract for the source-bounded software chain. Labeled zones map the source paper, finite equation registry, QRF boundary screen, simulation engines, and claim gates; the central screen shows relabelings over one bitstream without turning them into empirical, clinical, neural, practice-efficacy, or physical qFEP evidence.",
       "channels": 4,
       "exists": true,
@@ -17,7 +17,7 @@
       "nonblank": true,
       "path": "output/figures/graphical_abstract_cover.png",
       "pixel_variance": 0.02375528997930658,
-      "sha256": "61b0f917e2119959376c878e297216db5b93e9e667a6fbf51c9e7d3e1df1db68",
+      "sha256": "af12c89208846554002d386d483b349ed9cec7dbc8cc1300d0e7bc92de53d45e",
       "source_artifacts": [
         {
           "byte_size": 14340,
@@ -38,28 +38,28 @@
           "sha256": "d3cb2c14d6756d0c16a928572cbcc3c85c968e0b8c691a0ccc9f17f5bbd0d168"
         },
         {
-          "byte_size": 25768787,
+          "byte_size": 25770062,
           "exists": true,
           "path": "output/data/stochastic_policy_ensemble.json",
-          "sha256": "b17bb5c9884e6c73122247161a9f99bd7cfe18e8b339b6d187d0115a50a41865"
+          "sha256": "dfb91f97fd5bd3ab9fab5bd0d10d8b7576d9fd691ed6748d084f90977c085cf2"
         },
         {
-          "byte_size": 533307,
+          "byte_size": 533306,
           "exists": true,
           "path": "output/data/quantum_trajectory_unraveling.json",
-          "sha256": "2c5e6b1ffb1bcd1e74fab9b8faf3c7fafac1904c8c7efbd5d40ddb9fe0cb03bb"
+          "sha256": "159270d06c436f68b8fdb56fc58cfa28b28da07dfb8be8cd0be4540c6e36be3f"
         },
         {
-          "byte_size": 44435,
+          "byte_size": 44436,
           "exists": true,
           "path": "output/data/gnn_model_audit.json",
-          "sha256": "2e113c1d2dd728a05f7cd5f3c7edcf68f9d94eb2136bd81df7fbbcab09050a75"
+          "sha256": "64a00fb2a5e8360c665b922413b5357de1af7ee0276d16ee2009da6a4831bbcd"
         }
       ],
       "width": 3024
     },
     {
-      "byte_size": 267493,
+      "byte_size": 292108,
       "caption": "Finite QRF boundary-screen geometry for the lead boundary result. Dashed screen, node labels, action edge, observation edge, and channel-role text show how b0-b5 function as software observation channels while preserving the boundary claim that no node or edge is empirical, biological, ontological self/world, or physical qFEP evidence.",
       "channels": 4,
       "exists": true,
@@ -68,13 +68,13 @@
       "nonblank": true,
       "path": "output/figures/qrf_boundary_screen_geometry.png",
       "pixel_variance": 0.018468481211983235,
-      "sha256": "fa8a95d2c8aa357a3e19097fb5f6872f66da8dea3f258d3f341c58f25b2b2ba0",
+      "sha256": "d8f40f5415baf7d90f1f009c2879a68f4d3e86d50bbcecd54beed103b21f3184",
       "source_artifacts": [
         {
-          "byte_size": 13855,
+          "byte_size": 13737,
           "exists": true,
           "path": "output/data/pymdp_profile_comparison.json",
-          "sha256": "41af984185a71873f19c784075ed92aed3f26b7b5b33fead7e02801b554a4b7b"
+          "sha256": "9fff641b3db05cab94ff09349c72b704fa0a4aedd92c671e9909d8186e80da67"
         },
         {
           "byte_size": 14183,
@@ -89,16 +89,16 @@
           "sha256": "891aba4a29743399f347c4f9df0257b59f4af218c92ff7bcb104174dc59dc29a"
         },
         {
-          "byte_size": 44435,
+          "byte_size": 44436,
           "exists": true,
           "path": "output/data/gnn_model_audit.json",
-          "sha256": "2e113c1d2dd728a05f7cd5f3c7edcf68f9d94eb2136bd81df7fbbcab09050a75"
+          "sha256": "64a00fb2a5e8360c665b922413b5357de1af7ee0276d16ee2009da6a4831bbcd"
         }
       ],
       "width": 2487
     },
     {
-      "byte_size": 204973,
+      "byte_size": 227861,
       "caption": "b0-b5 QRF channel relabeling ledger for equations 7-10. The invariant same-bit row marks each evidenced boundary bit, while profile rows relabel those unchanged channels as self, env, action, body, world, other, or care; colors and text encode software sectors only and are not evidence for an ontological self/world boundary.",
       "channels": 4,
       "exists": true,
@@ -107,7 +107,7 @@
       "nonblank": true,
       "path": "output/figures/qrf_channel_relabeling_ledger.png",
       "pixel_variance": 0.06898870831054703,
-      "sha256": "a0207bdd9fe113551520bdd9a7ec66b522c7283b2c583880dcfb547ec89eab1d",
+      "sha256": "bdf428ba5d0c2fcfc6e8f4391127e546d028937f7e05e1d67dfd2ce71f866791",
       "source_artifacts": [
         {
           "byte_size": 6724,
@@ -122,16 +122,16 @@
           "sha256": "d3cb2c14d6756d0c16a928572cbcc3c85c968e0b8c691a0ccc9f17f5bbd0d168"
         },
         {
-          "byte_size": 44435,
+          "byte_size": 44436,
           "exists": true,
           "path": "output/data/gnn_model_audit.json",
-          "sha256": "2e113c1d2dd728a05f7cd5f3c7edcf68f9d94eb2136bd81df7fbbcab09050a75"
+          "sha256": "64a00fb2a5e8360c665b922413b5357de1af7ee0276d16ee2009da6a4831bbcd"
         }
       ],
       "width": 3136
     },
     {
-      "byte_size": 214533,
+      "byte_size": 242104,
       "caption": "QRF invariance and policy-flow audit over the same finite screen. Panel A shows admissible deployments at normalized probability mass with a separate failing perturbation-control marker; Panel B shows profile-specific selected actions from the pymdp trace. The figure supports finite software validation only, not empirical, biological, ontological, or physical qFEP evidence.",
       "channels": 4,
       "exists": true,
@@ -140,13 +140,13 @@
       "nonblank": true,
       "path": "output/figures/qrf_invariance_policy_flow.png",
       "pixel_variance": 0.09054857496055435,
-      "sha256": "2a33e106163784d8e7131e00e8c3381d35dbe3162c62b1eefa72bd1baf4d37cb",
+      "sha256": "0444f3924da2de27fefbfde19bdbfe16bfa0c60fc1e595236c43d60ae9e68258",
       "source_artifacts": [
         {
-          "byte_size": 13855,
+          "byte_size": 13737,
           "exists": true,
           "path": "output/data/pymdp_profile_comparison.json",
-          "sha256": "41af984185a71873f19c784075ed92aed3f26b7b5b33fead7e02801b554a4b7b"
+          "sha256": "9fff641b3db05cab94ff09349c72b704fa0a4aedd92c671e9909d8186e80da67"
         },
         {
           "byte_size": 14183,
@@ -155,16 +155,16 @@
           "sha256": "d3cb2c14d6756d0c16a928572cbcc3c85c968e0b8c691a0ccc9f17f5bbd0d168"
         },
         {
-          "byte_size": 44435,
+          "byte_size": 44436,
           "exists": true,
           "path": "output/data/gnn_model_audit.json",
-          "sha256": "2e113c1d2dd728a05f7cd5f3c7edcf68f9d94eb2136bd81df7fbbcab09050a75"
+          "sha256": "64a00fb2a5e8360c665b922413b5357de1af7ee0276d16ee2009da6a4831bbcd"
         }
       ],
       "width": 3378
     },
     {
-      "byte_size": 76781,
+      "byte_size": 90783,
       "caption": "Boundary-channel sector labels for the separation-constrained, opacified, and post-dual QRF profiles. The color legend maps each sector label to a categorical color, making the finite relabeling surrogate visible without treating sector color as physical quantum-boundary evidence.",
       "channels": 4,
       "exists": true,
@@ -173,25 +173,25 @@
       "nonblank": true,
       "path": "output/figures/qrf_sectorisation_map.png",
       "pixel_variance": 0.05556055545495501,
-      "sha256": "08622255b0e8d3bf203a130af362d74f4e120892ab7768838f867c79ac05c140",
+      "sha256": "3b337fa03b67c7f3ea07dfff979a969a52563195545e240f943f38f625e8909d",
       "source_artifacts": [
         {
-          "byte_size": 13855,
+          "byte_size": 13737,
           "exists": true,
           "path": "output/data/pymdp_profile_comparison.json",
-          "sha256": "41af984185a71873f19c784075ed92aed3f26b7b5b33fead7e02801b554a4b7b"
+          "sha256": "9fff641b3db05cab94ff09349c72b704fa0a4aedd92c671e9909d8186e80da67"
         },
         {
-          "byte_size": 44435,
+          "byte_size": 44436,
           "exists": true,
           "path": "output/data/gnn_model_audit.json",
-          "sha256": "2e113c1d2dd728a05f7cd5f3c7edcf68f9d94eb2136bd81df7fbbcab09050a75"
+          "sha256": "64a00fb2a5e8360c665b922413b5357de1af7ee0276d16ee2009da6a4831bbcd"
         }
       ],
       "width": 1875
     },
     {
-      "byte_size": 85923,
+      "byte_size": 96497,
       "caption": "Probability mass remains normalized and label-invariant across admissible QRF sectorisations, while a deliberately perturbed negative control fails the audit. The bar color legend and dashed reference line support only the finite boundary-indistinguishability claim recorded in the source crosswalk.",
       "channels": 4,
       "exists": true,
@@ -200,7 +200,7 @@
       "nonblank": true,
       "path": "output/figures/boundary_indistinguishability.png",
       "pixel_variance": 0.09898457747763519,
-      "sha256": "bb5016f1e77b98ee70ea8be1f2bcb302f6045a7abbebd1c1956fe2d5d341f5ff",
+      "sha256": "fd971ac77d21e10fecec27148d6b425d378b74ff2520a826aa19fe9f4dc68a4b",
       "source_artifacts": [
         {
           "byte_size": 14183,
@@ -209,16 +209,16 @@
           "sha256": "d3cb2c14d6756d0c16a928572cbcc3c85c968e0b8c691a0ccc9f17f5bbd0d168"
         },
         {
-          "byte_size": 44435,
+          "byte_size": 44436,
           "exists": true,
           "path": "output/data/gnn_model_audit.json",
-          "sha256": "2e113c1d2dd728a05f7cd5f3c7edcf68f9d94eb2136bd81df7fbbcab09050a75"
+          "sha256": "64a00fb2a5e8360c665b922413b5357de1af7ee0276d16ee2009da6a4831bbcd"
         }
       ],
       "width": 1984
     },
     {
-      "byte_size": 306036,
+      "byte_size": 336042,
       "caption": "QRF reference-frame geometry over the finite boundary screen. Node colors identify sector labels, dashed circle marks the boundary screen, and action/observation edge colors show the active-inference loop; the figure is a finite surrogate map, not empirical or quantum-dynamical evidence.",
       "channels": 4,
       "exists": true,
@@ -227,13 +227,13 @@
       "nonblank": true,
       "path": "output/figures/qrf_reference_frame_geometry.png",
       "pixel_variance": 0.021147702891344995,
-      "sha256": "ece1fbfa4c52948334111bdcbb18d32af202fad7e4ffdc92b9a40a8546752d0d",
+      "sha256": "c71c31129b8979907b026d7076c03cd167fd7a8534b749ed768fe22c3b3356f1",
       "source_artifacts": [
         {
-          "byte_size": 13855,
+          "byte_size": 13737,
           "exists": true,
           "path": "output/data/pymdp_profile_comparison.json",
-          "sha256": "41af984185a71873f19c784075ed92aed3f26b7b5b33fead7e02801b554a4b7b"
+          "sha256": "9fff641b3db05cab94ff09349c72b704fa0a4aedd92c671e9909d8186e80da67"
         },
         {
           "byte_size": 14183,
@@ -242,16 +242,16 @@
           "sha256": "d3cb2c14d6756d0c16a928572cbcc3c85c968e0b8c691a0ccc9f17f5bbd0d168"
         },
         {
-          "byte_size": 44435,
+          "byte_size": 44436,
           "exists": true,
           "path": "output/data/gnn_model_audit.json",
-          "sha256": "2e113c1d2dd728a05f7cd5f3c7edcf68f9d94eb2136bd81df7fbbcab09050a75"
+          "sha256": "64a00fb2a5e8360c665b922413b5357de1af7ee0276d16ee2009da6a4831bbcd"
         }
       ],
       "width": 2663
     },
     {
-      "byte_size": 151048,
+      "byte_size": 170515,
       "caption": "BMR free-energy components at high separation-prior precision. The lines show reduced-minus-full Delta F, Delta complexity, and Delta accuracy over metacognitive access; the dashed zero line is the keep/prune boundary, so the panel explains the finite model-comparison sign convention without making a human self-model claim.",
       "channels": 4,
       "exists": true,
@@ -259,8 +259,8 @@
       "id": "bmr_free_energy_decomposition",
       "nonblank": true,
       "path": "output/figures/bmr_free_energy_decomposition.png",
-      "pixel_variance": 0.02471528015388619,
-      "sha256": "2f8ee6dcb8dbc5ada5d7f63ec09c9fabcaabc0541970321a59675774d7472fb8",
+      "pixel_variance": 0.024715429058938598,
+      "sha256": "637548d841751c7be544b95bd33d3ba2827304babbbf026de71fdc66a31d0856",
       "source_artifacts": [
         {
           "byte_size": 24401,
@@ -269,16 +269,16 @@
           "sha256": "940b1f040f06b6695468a5f24d527e368b75eee1959e56d538a28549bfe8adeb"
         },
         {
-          "byte_size": 44435,
+          "byte_size": 44436,
           "exists": true,
           "path": "output/data/gnn_model_audit.json",
-          "sha256": "2e113c1d2dd728a05f7cd5f3c7edcf68f9d94eb2136bd81df7fbbcab09050a75"
+          "sha256": "64a00fb2a5e8360c665b922413b5357de1af7ee0276d16ee2009da6a4831bbcd"
         }
       ],
       "width": 2224
     },
     {
-      "byte_size": 303508,
+      "byte_size": 332397,
       "caption": "BMR decision grid over prior precision and metacognitive access. KEEP prior means the full model's separation prior still pays for its complexity; PRUNE prior means the reduced model wins because removing that prior lowers free energy. Cell color encodes Delta F = F_reduced - F_full and cell text gives the decision plus numeric Delta F inside this finite model-comparison surrogate only.",
       "channels": 4,
       "exists": true,
@@ -287,7 +287,7 @@
       "nonblank": true,
       "path": "output/figures/bmr_pruning_phase_diagram.png",
       "pixel_variance": 0.0771437159668019,
-      "sha256": "88786dc3999e1f6e3cf5a574267bad24d547483cbb3619ccea8754d9389b4648",
+      "sha256": "ab3f812fe2d261ca6ea1dc5a227a7438f4ff43485f7acd49f68c425b2fbcbf0a",
       "source_artifacts": [
         {
           "byte_size": 24401,
@@ -296,16 +296,16 @@
           "sha256": "940b1f040f06b6695468a5f24d527e368b75eee1959e56d538a28549bfe8adeb"
         },
         {
-          "byte_size": 44435,
+          "byte_size": 44436,
           "exists": true,
           "path": "output/data/gnn_model_audit.json",
-          "sha256": "2e113c1d2dd728a05f7cd5f3c7edcf68f9d94eb2136bd81df7fbbcab09050a75"
+          "sha256": "64a00fb2a5e8360c665b922413b5357de1af7ee0276d16ee2009da6a4831bbcd"
         }
       ],
       "width": 2439
     },
     {
-      "byte_size": 201759,
+      "byte_size": 223035,
       "caption": "Sensitivity grid after averaging over observation-noise rows. Cell labels count how many noise rows favor PRUNE prior; PRUNE means the reduced model has lower free energy after removing the separation prior. Color encodes mean Delta F, and the denominator is a finite software robustness grid, not empirical sample size or practice-outcome evidence.",
       "channels": 4,
       "exists": true,
@@ -314,7 +314,7 @@
       "nonblank": true,
       "path": "output/figures/simulation_sensitivity_heatmap.png",
       "pixel_variance": 0.07164561560258391,
-      "sha256": "bf97b5160e582c3b2aa2a5ec63854c48f66fca798f1852274cc4545e15fdfcc4",
+      "sha256": "7e08af5c12728754693e954abb290c642e925770a9cc6d8bb2fe87fd6145c756",
       "source_artifacts": [
         {
           "byte_size": 281165,
@@ -323,16 +323,16 @@
           "sha256": "59a7bae83beb9e81bba02290bdc3f19f705f7550efdb49761e61ae66476a2cc9"
         },
         {
-          "byte_size": 44435,
+          "byte_size": 44436,
           "exists": true,
           "path": "output/data/gnn_model_audit.json",
-          "sha256": "2e113c1d2dd728a05f7cd5f3c7edcf68f9d94eb2136bd81df7fbbcab09050a75"
+          "sha256": "64a00fb2a5e8360c665b922413b5357de1af7ee0276d16ee2009da6a4831bbcd"
         }
       ],
       "width": 2310
     },
     {
-      "byte_size": 310739,
+      "byte_size": 348374,
       "caption": "Finite-quantum scope summary for the main Results. Matrix cell text lists validated finite engines and controls; the hatched blocked column names empirical, observer-boundary, all-QRF-context, and physical qFEP claims that remain outside the evidence boundary.",
       "channels": 4,
       "exists": true,
@@ -341,7 +341,7 @@
       "nonblank": true,
       "path": "output/figures/finite_quantum_scope_summary.png",
       "pixel_variance": 0.03184185095359896,
-      "sha256": "f9f3571d2289091de895ec4c7386448554daf707aca326f974fefcd2d989b078",
+      "sha256": "7faf56b994fe4df9c62ce02ae05b4700e946103e2f10a8704bc0aa8d6602f4ca",
       "source_artifacts": [
         {
           "byte_size": 22810,
@@ -350,16 +350,16 @@
           "sha256": "ace0a7c8d1ce637bcf0521de09b435b24affbf335eb82bfac55851b06455d1c6"
         },
         {
-          "byte_size": 44435,
+          "byte_size": 44436,
           "exists": true,
           "path": "output/data/gnn_model_audit.json",
-          "sha256": "2e113c1d2dd728a05f7cd5f3c7edcf68f9d94eb2136bd81df7fbbcab09050a75"
+          "sha256": "64a00fb2a5e8360c665b922413b5357de1af7ee0276d16ee2009da6a4831bbcd"
         }
       ],
       "width": 2463
     },
     {
-      "byte_size": 298440,
+      "byte_size": 339128,
       "caption": "Finite two-qubit boundary-entropy landscape for the direct quantum-information extension. Legends identify reduced entropy, mutual information, CHSH bounds, contextual-fraction proxy, and Landauer-scaled erasure lower bound; the panels support only a finite simulation claim, not empirical evidence or a full qFEP quantum-dynamical realization.",
       "channels": 4,
       "exists": true,
@@ -368,25 +368,25 @@
       "nonblank": true,
       "path": "output/figures/quantum_boundary_entropy_landscape.png",
       "pixel_variance": 0.035204778429504195,
-      "sha256": "55098302149c4529d76d100173440ebed43736b8a72d0322908c9999ab02d647",
+      "sha256": "528c564244f7ebc2aa99339e41b4c73635c1555aeb6fddec4f8b278ed62543cb",
       "source_artifacts": [
         {
-          "byte_size": 189686,
+          "byte_size": 189684,
           "exists": true,
           "path": "output/data/quantum_boundary_entropy.json",
-          "sha256": "7957b420446b1e629bad8be30899bf37d68e5f2b6c598a79227c37c92dd68b3c"
+          "sha256": "eda0544e0af0b20d69dc6c35785667e6e7ab443bb078bae8a3afdf8f1e4e5841"
         },
         {
-          "byte_size": 44435,
+          "byte_size": 44436,
           "exists": true,
           "path": "output/data/gnn_model_audit.json",
-          "sha256": "2e113c1d2dd728a05f7cd5f3c7edcf68f9d94eb2136bd81df7fbbcab09050a75"
+          "sha256": "64a00fb2a5e8360c665b922413b5357de1af7ee0276d16ee2009da6a4831bbcd"
         }
       ],
       "width": 2413
     },
     {
-      "byte_size": 241698,
+      "byte_size": 273073,
       "caption": "CHSH contextuality witness and basis-sweep audit for the same finite two-qubit family. The scatter colorbar encodes contextual fraction, bound lines mark local and Tsirelson thresholds, and the heatmap colorbar shows rotated measurement entropy while the contour marks reduced-entropy invariance; this does not claim empirical or full QRF dynamics.",
       "channels": 4,
       "exists": true,
@@ -395,25 +395,25 @@
       "nonblank": true,
       "path": "output/figures/quantum_contextuality_witness.png",
       "pixel_variance": 0.06822728042916834,
-      "sha256": "c44beb670462bcaee7a8166b81fad9df6ca91cfe75caede5ec33ab5e260f65d3",
+      "sha256": "5c6676bc055586975ecb0144cee62b49bcd86f6a7cd66edc112d0c450565d008",
       "source_artifacts": [
         {
-          "byte_size": 189686,
+          "byte_size": 189684,
           "exists": true,
           "path": "output/data/quantum_boundary_entropy.json",
-          "sha256": "7957b420446b1e629bad8be30899bf37d68e5f2b6c598a79227c37c92dd68b3c"
+          "sha256": "eda0544e0af0b20d69dc6c35785667e6e7ab443bb078bae8a3afdf8f1e4e5841"
         },
         {
-          "byte_size": 44435,
+          "byte_size": 44436,
           "exists": true,
           "path": "output/data/gnn_model_audit.json",
-          "sha256": "2e113c1d2dd728a05f7cd5f3c7edcf68f9d94eb2136bd81df7fbbcab09050a75"
+          "sha256": "64a00fb2a5e8360c665b922413b5357de1af7ee0276d16ee2009da6a4831bbcd"
         }
       ],
       "width": 2610
     },
     {
-      "byte_size": 205138,
+      "byte_size": 230874,
       "caption": "Finite CHSH measurement-cover empirical model for the Bell-state contextuality extension. The heatmap colorbar and printed cell values encode joint probabilities by context and outcome, while the hatched bar legend compares the product negative control with the Bell cover against local and Tsirelson bounds; the figure supports only a finite no-signaling CHSH table, not a full sheaf-obstruction proof or empirical QRF result.",
       "channels": 4,
       "exists": true,
@@ -422,7 +422,7 @@
       "nonblank": true,
       "path": "output/figures/quantum_measurement_contextuality_table.png",
       "pixel_variance": 0.09800884238046428,
-      "sha256": "51be9d9a624e1003389550061c3be673158fcf4a9d57f4ce451c9d6f25c208c0",
+      "sha256": "da8f0bc4d4af48cbbe8ed44152817b680eec5083ca75ed140f0418c8c15d4e8b",
       "source_artifacts": [
         {
           "byte_size": 17058,
@@ -431,16 +431,16 @@
           "sha256": "e0537676901b36f1f6047d0cc31811d140d863515dd94e2cb896ecf0563a5892"
         },
         {
-          "byte_size": 44435,
+          "byte_size": 44436,
           "exists": true,
           "path": "output/data/gnn_model_audit.json",
-          "sha256": "2e113c1d2dd728a05f7cd5f3c7edcf68f9d94eb2136bd81df7fbbcab09050a75"
+          "sha256": "64a00fb2a5e8360c665b922413b5357de1af7ee0276d16ee2009da6a4831bbcd"
         }
       ],
       "width": 2726
     },
     {
-      "byte_size": 213977,
+      "byte_size": 251869,
       "caption": "Local-polytope audit for the same CHSH measurement-cover artifact. The hatched residual bars show that the product control has an exact deterministic-assignment mixture while the Bell cover has a positive minimum L1 residual against the 16-assignment local polytope; the horizontal-bar legend lists the product-control mixture weights. This is a finite noncontextuality-polytope audit, not a general sheaf-obstruction engine or empirical quantum result.",
       "channels": 4,
       "exists": true,
@@ -449,7 +449,7 @@
       "nonblank": true,
       "path": "output/figures/quantum_local_polytope_audit.png",
       "pixel_variance": 0.07006006551986263,
-      "sha256": "3ac05b3f05bae6bb6714aa5310223da4a41fcea7afb1a3a220fd6165d4ed7942",
+      "sha256": "827ed532118697661862672c8d723257d767df265629b9a1c80d42031406d14a",
       "source_artifacts": [
         {
           "byte_size": 17058,
@@ -458,16 +458,16 @@
           "sha256": "e0537676901b36f1f6047d0cc31811d140d863515dd94e2cb896ecf0563a5892"
         },
         {
-          "byte_size": 44435,
+          "byte_size": 44436,
           "exists": true,
           "path": "output/data/gnn_model_audit.json",
-          "sha256": "2e113c1d2dd728a05f7cd5f3c7edcf68f9d94eb2136bd81df7fbbcab09050a75"
+          "sha256": "64a00fb2a5e8360c665b922413b5357de1af7ee0276d16ee2009da6a4831bbcd"
         }
       ],
       "width": 2610
     },
     {
-      "byte_size": 260802,
+      "byte_size": 285348,
       "caption": "Finite open-system dephasing controls for a two-qubit Bell state and product negative control. Line legends map dephasing rates across CHSH decay, global entropy increase, and mutual-information contraction; the figure supports only a trace-preserving finite dephasing-channel claim, not empirical evidence or full qFEP dynamics.",
       "channels": 4,
       "exists": true,
@@ -476,7 +476,7 @@
       "nonblank": true,
       "path": "output/figures/quantum_open_system_dynamics.png",
       "pixel_variance": 0.03822060365149551,
-      "sha256": "927cc3276c8b3cd4c72531a42ad19d601eb4c0f854568252269bf1084f5336c5",
+      "sha256": "08b96d3c51de6ccd85a91024ae9aaddf7b81895b9f735f96fbb48038d1462a47",
       "source_artifacts": [
         {
           "byte_size": 82514,
@@ -485,16 +485,16 @@
           "sha256": "eaddfd1bcd6efad87662b80f902e0f3f129653915b0d0782c9403d8aeae6e2dd"
         },
         {
-          "byte_size": 44435,
+          "byte_size": 44436,
           "exists": true,
           "path": "output/data/gnn_model_audit.json",
-          "sha256": "2e113c1d2dd728a05f7cd5f3c7edcf68f9d94eb2136bd81df7fbbcab09050a75"
+          "sha256": "64a00fb2a5e8360c665b922413b5357de1af7ee0276d16ee2009da6a4831bbcd"
         }
       ],
       "width": 2894
     },
     {
-      "byte_size": 258605,
+      "byte_size": 291689,
       "caption": "Boundary-Hamiltonian qFEP extension engine using finite two-qubit Lindblad dynamics. Line legends map Lindblad rates across entropy production, mutual-information contraction, and positivity residual panels; the figure validates a deterministic software surrogate with negative controls, not empirical evidence or a physical qFEP realization.",
       "channels": 4,
       "exists": true,
@@ -503,25 +503,25 @@
       "nonblank": true,
       "path": "output/figures/qfep_boundary_hamiltonian_dynamics.png",
       "pixel_variance": 0.03358610513299236,
-      "sha256": "96949bc2c23d0896a04e62792b6e21fea9348e3f5034662b2e35060ee96a31b2",
+      "sha256": "190448772ebe5e8038ec84ef6ee5fdae7995ee49f8b777130909ce2f3f38cbf8",
       "source_artifacts": [
         {
-          "byte_size": 41096,
+          "byte_size": 41101,
           "exists": true,
           "path": "output/data/qfep_boundary_hamiltonian_dynamics.json",
-          "sha256": "3a5b14956c83209f8b16f418ad1a6cfd6ffbd041fb88800b7653300c510d2975"
+          "sha256": "818e099a8a04b7fecf72b2f130e568238c5e6ce573f514f388b32350c6e9761a"
         },
         {
-          "byte_size": 44435,
+          "byte_size": 44436,
           "exists": true,
           "path": "output/data/gnn_model_audit.json",
-          "sha256": "2e113c1d2dd728a05f7cd5f3c7edcf68f9d94eb2136bd81df7fbbcab09050a75"
+          "sha256": "64a00fb2a5e8360c665b922413b5357de1af7ee0276d16ee2009da6a4831bbcd"
         }
       ],
       "width": 3356
     },
     {
-      "byte_size": 278064,
+      "byte_size": 317533,
       "caption": "Seeded quantum-trajectory unraveling of the finite two-qubit Lindblad surrogate. Line legends compare Monte Carlo ensemble entropy with the exact Lindblad density, rate-colored lines show trace-distance residuals, and jump-count bars with intervals expose the gamma-zero negative control; this validates a stochastic software surrogate, not physical qFEP realization or empirical quantum-boundary evidence.",
       "channels": 4,
       "exists": true,
@@ -530,25 +530,25 @@
       "nonblank": true,
       "path": "output/figures/quantum_trajectory_unraveling.png",
       "pixel_variance": 0.04026505157379063,
-      "sha256": "bdaebd5c6a528f317fe805c7f73a9d915f6cfda8879ffa57b96564191e0e22c2",
+      "sha256": "f13da80922d962500dad5f3e03bcf28b2fe8d9293e68ecece5be997a1eb63fa1",
       "source_artifacts": [
         {
-          "byte_size": 533307,
+          "byte_size": 533306,
           "exists": true,
           "path": "output/data/quantum_trajectory_unraveling.json",
-          "sha256": "2c5e6b1ffb1bcd1e74fab9b8faf3c7fafac1904c8c7efbd5d40ddb9fe0cb03bb"
+          "sha256": "159270d06c436f68b8fdb56fc58cfa28b28da07dfb8be8cd0be4540c6e36be3f"
         },
         {
-          "byte_size": 44435,
+          "byte_size": 44436,
           "exists": true,
           "path": "output/data/gnn_model_audit.json",
-          "sha256": "2e113c1d2dd728a05f7cd5f3c7edcf68f9d94eb2136bd81df7fbbcab09050a75"
+          "sha256": "64a00fb2a5e8360c665b922413b5357de1af7ee0276d16ee2009da6a4831bbcd"
         }
       ],
       "width": 3328
     },
     {
-      "byte_size": 177748,
+      "byte_size": 198781,
       "caption": "Many-body boundary-screen sweep over exact six-qubit state vectors and subsystem cuts. The entropy colorbar and cell text separate candidate observer-boundary cuts, structured controls, random-cut negative controls, and separable controls; the figure supports only finite cut-sensitivity validation, not empirical or many-body observer-boundary proof.",
       "channels": 4,
       "exists": true,
@@ -557,7 +557,7 @@
       "nonblank": true,
       "path": "output/figures/many_body_boundary_screen_sweep.png",
       "pixel_variance": 0.05645957434351208,
-      "sha256": "251cf696c4f0b9a21d95cf0b0bb38c8250465e152ed8c357c4bf3dbbb195a080",
+      "sha256": "5ec9ac5c67dcc83f6309361a29e4e652387cdb34a9c8d19c58da2ae4acf3e44b",
       "source_artifacts": [
         {
           "byte_size": 4083,
@@ -566,16 +566,16 @@
           "sha256": "ae54a6fd8c909d001d2cb35ae23308d62d8a330e36772e43e344224ad689e813"
         },
         {
-          "byte_size": 44435,
+          "byte_size": 44436,
           "exists": true,
           "path": "output/data/gnn_model_audit.json",
-          "sha256": "2e113c1d2dd728a05f7cd5f3c7edcf68f9d94eb2136bd81df7fbbcab09050a75"
+          "sha256": "64a00fb2a5e8360c665b922413b5357de1af7ee0276d16ee2009da6a4831bbcd"
         }
       ],
       "width": 2219
     },
     {
-      "byte_size": 161895,
+      "byte_size": 186801,
       "caption": "General measurement-cover sheaf obstruction audit beyond the CHSH-only table. Hatched residual bars distinguish the noncontextual triangle negative control from the parity obstruction, while the binary matrix colorbar reports global-section and no-disturbance checks; the figure is a finite LP audit, not empirical evidence or a full proof for the source paper.",
       "channels": 4,
       "exists": true,
@@ -584,7 +584,7 @@
       "nonblank": true,
       "path": "output/figures/sheaf_contextuality_obstruction_audit.png",
       "pixel_variance": 0.11673545198382435,
-      "sha256": "0d22f1b8bf4c426ca84261586bf296ae586c02ff8488762155efc249c276fc4d",
+      "sha256": "9f31214eedaf5516d72391b313d13169b9bf172eb21c642e26c4fc3054a6e968",
       "source_artifacts": [
         {
           "byte_size": 6805,
@@ -593,16 +593,16 @@
           "sha256": "4555823198a2032cad05028b0a0606d1afce9e417f4b039c2f0b9679ff4b4a93"
         },
         {
-          "byte_size": 44435,
+          "byte_size": 44436,
           "exists": true,
           "path": "output/data/gnn_model_audit.json",
-          "sha256": "2e113c1d2dd728a05f7cd5f3c7edcf68f9d94eb2136bd81df7fbbcab09050a75"
+          "sha256": "64a00fb2a5e8360c665b922413b5357de1af7ee0276d16ee2009da6a4831bbcd"
         }
       ],
       "width": 2658
     },
     {
-      "byte_size": 183694,
+      "byte_size": 210094,
       "caption": "QRF transformation covariance audit for finite probability-preserving relabelings. The binary matrix colorbar marks stochasticity, nonnegativity, and acceptance criteria, while grouped bars show probability-mass and expectation-covariance errors for admissible maps; the figure supports only finite relabeling covariance, not full quantum-reference-frame dynamics.",
       "channels": 4,
       "exists": true,
@@ -611,7 +611,7 @@
       "nonblank": true,
       "path": "output/figures/qrf_transformation_covariance_audit.png",
       "pixel_variance": 0.09997905666089815,
-      "sha256": "61f37e6088d88bc39cd1bc68dddd0b5e41488e71209197ac4efbbb54e7c41350",
+      "sha256": "823d85660f890ef0204d03209c06e8aae59d0938152f0c4d793c5e2c607f18e5",
       "source_artifacts": [
         {
           "byte_size": 2084,
@@ -620,16 +620,16 @@
           "sha256": "a86c4893afe383b7808dd16a41520ed2884620398d70454607839ce51344c293"
         },
         {
-          "byte_size": 44435,
+          "byte_size": 44436,
           "exists": true,
           "path": "output/data/gnn_model_audit.json",
-          "sha256": "2e113c1d2dd728a05f7cd5f3c7edcf68f9d94eb2136bd81df7fbbcab09050a75"
+          "sha256": "64a00fb2a5e8360c665b922413b5357de1af7ee0276d16ee2009da6a4831bbcd"
         }
       ],
       "width": 3002
     },
     {
-      "byte_size": 197668,
+      "byte_size": 232144,
       "caption": "Empirical adapter provenance audit showing that the human-evidence interface remains fail-closed. The colorbar and Y/N cell text encode source identity, ethics basis, preprocessing hash, null model, and empirical-claim permission; synthetic fixtures can be demos only, and unsourced human or practice data remain blocked rather than becoming evidence.",
       "channels": 4,
       "exists": true,
@@ -638,7 +638,7 @@
       "nonblank": true,
       "path": "output/figures/empirical_adapter_provenance_audit.png",
       "pixel_variance": 0.10348499107313923,
-      "sha256": "7a755c0a105ff246557489146f7c321e7a1407e00f236f09e581f907f0fb7e7d",
+      "sha256": "790106f23c25c73bf4453dfa7592280e72b2ad5315ca3903b245cadb3e482cd4",
       "source_artifacts": [
         {
           "byte_size": 2656,
@@ -647,16 +647,16 @@
           "sha256": "57f7401b6e92b4e3ecba0b494db50aba9577f5461d15ceb4b15dbcba3354f51a"
         },
         {
-          "byte_size": 44435,
+          "byte_size": 44436,
           "exists": true,
           "path": "output/data/gnn_model_audit.json",
-          "sha256": "2e113c1d2dd728a05f7cd5f3c7edcf68f9d94eb2136bd81df7fbbcab09050a75"
+          "sha256": "64a00fb2a5e8360c665b922413b5357de1af7ee0276d16ee2009da6a4831bbcd"
         }
       ],
       "width": 2552
     },
     {
-      "byte_size": 199744,
+      "byte_size": 227892,
       "caption": "Mixed-state two-qubit entanglement audit for Bell, separable, and Werner-family cases. The line legend maps negativity, PPT minimum eigenvalue, and the Werner threshold, while the bar legend separates separable controls from the Bell control and notes invalid-density rejections; the figure validates a finite PPT/negativity software surrogate, not empirical or many-body boundary evidence.",
       "channels": 4,
       "exists": true,
@@ -664,8 +664,8 @@
       "id": "arbitrary_two_qubit_entanglement_audit",
       "nonblank": true,
       "path": "output/figures/arbitrary_two_qubit_entanglement_audit.png",
-      "pixel_variance": 0.050023008108629224,
-      "sha256": "77003e2747ef950b4595a6beca0f97fb953d23cf3bd4fd3e353e0103f4cf9a10",
+      "pixel_variance": 0.05002304402725025,
+      "sha256": "117397c3aef8f538385df4062ff538e932b9432e62ead0dca2e2c3bc2e2ee714",
       "source_artifacts": [
         {
           "byte_size": 6221,
@@ -674,16 +674,16 @@
           "sha256": "381b7339cff41f385fd1dd7e88edf01478b0797040b6cb9f94d489bf0a3e621b"
         },
         {
-          "byte_size": 44435,
+          "byte_size": 44436,
           "exists": true,
           "path": "output/data/gnn_model_audit.json",
-          "sha256": "2e113c1d2dd728a05f7cd5f3c7edcf68f9d94eb2136bd81df7fbbcab09050a75"
+          "sha256": "64a00fb2a5e8360c665b922413b5357de1af7ee0276d16ee2009da6a4831bbcd"
         }
       ],
       "width": 2656
     },
     {
-      "byte_size": 196513,
+      "byte_size": 225813,
       "caption": "General measurement-cover polytope audit for triangle, parity, CHSH-product, and CHSH-Bell scenarios. Hatched residual bars distinguish feasible controls from obstruction cases, and the binary colorbar reports parser, feasibility, and no-disturbance checks; the figure is a finite deterministic-assignment LP audit, not empirical contextuality evidence or a full source-paper proof.",
       "channels": 4,
       "exists": true,
@@ -692,7 +692,7 @@
       "nonblank": true,
       "path": "output/figures/general_measurement_cover_polytope_audit.png",
       "pixel_variance": 0.11006632921141651,
-      "sha256": "ceaae4226c573a176f0566047226ef7e8abce68f2639a9d8b88f9350424779ea",
+      "sha256": "ab3402053317feb5c29d8f7ba68b3fd45d5e6b3ea3b571a4ffa94bb6ba2409fb",
       "source_artifacts": [
         {
           "byte_size": 15501,
@@ -701,16 +701,16 @@
           "sha256": "db7631042678d9afa56e0083e131215f8a2a71daf4106ae55a84ef619d2054a3"
         },
         {
-          "byte_size": 44435,
+          "byte_size": 44436,
           "exists": true,
           "path": "output/data/gnn_model_audit.json",
-          "sha256": "2e113c1d2dd728a05f7cd5f3c7edcf68f9d94eb2136bd81df7fbbcab09050a75"
+          "sha256": "64a00fb2a5e8360c665b922413b5357de1af7ee0276d16ee2009da6a4831bbcd"
         }
       ],
       "width": 2730
     },
     {
-      "byte_size": 202011,
+      "byte_size": 226299,
       "caption": "Thermodynamic channel-cost audit over finite CPTP maps and input states. The heatmap colorbar encodes Landauer lower bounds in kBT units, cell text gives numeric costs, and the hatched log-scale bars show non-CPTP controls rejected; the figure is finite entropy accounting, not measured heat or physical qFEP thermodynamics.",
       "channels": 4,
       "exists": true,
@@ -719,7 +719,7 @@
       "nonblank": true,
       "path": "output/figures/thermodynamic_channel_cost_audit.png",
       "pixel_variance": 0.08243381479097808,
-      "sha256": "7d7bef52b7dd0e919eeb08371bec9d94652228bfc987b48c72b7b699637f8b9c",
+      "sha256": "b143db916190ec8b740b9c97291f7f74cffabdc8de6696f99e726132ac7b9689",
       "source_artifacts": [
         {
           "byte_size": 5216,
@@ -728,16 +728,16 @@
           "sha256": "69eca5fd090135d14e88667f5fa870e445c612ccee703129ed806039284b561d"
         },
         {
-          "byte_size": 44435,
+          "byte_size": 44436,
           "exists": true,
           "path": "output/data/gnn_model_audit.json",
-          "sha256": "2e113c1d2dd728a05f7cd5f3c7edcf68f9d94eb2136bd81df7fbbcab09050a75"
+          "sha256": "64a00fb2a5e8360c665b922413b5357de1af7ee0276d16ee2009da6a4831bbcd"
         }
       ],
       "width": 2702
     },
     {
-      "byte_size": 247285,
+      "byte_size": 274529,
       "caption": "Sparse exact boundary-screen scaling audit across six, eight, and ten qubits. The entropy colorbar and cell text encode reduced entropy and observer/control labels, while the line legend contrasts observer-cut entropy with nonzero amplitude density; this validates finite sparse software scaling only, not empirical or full many-body QRF evidence.",
       "channels": 4,
       "exists": true,
@@ -745,26 +745,26 @@
       "id": "sparse_boundary_screen_scaling_audit",
       "nonblank": true,
       "path": "output/figures/sparse_boundary_screen_scaling_audit.png",
-      "pixel_variance": 0.06935715798773529,
-      "sha256": "6fe01fac078f3627d42758cd9843755195a1f5ce29e65bd76e28ea003120892d",
+      "pixel_variance": 0.06936396805076435,
+      "sha256": "232920dbf2d8500f0c7b4705ad41bb9d8d9a4950f010c2896e6bc409b901e2e9",
       "source_artifacts": [
         {
-          "byte_size": 11798,
+          "byte_size": 11799,
           "exists": true,
           "path": "output/data/sparse_boundary_screen_scaling_audit.json",
-          "sha256": "8818c9cc4556433d9bacffeec9205332ec3e8225076db296185f5f258f155915"
+          "sha256": "c519227bd23e8cec96f6685f0148481dc0b27079b58b55e599551efca610c092"
         },
         {
-          "byte_size": 44435,
+          "byte_size": 44436,
           "exists": true,
           "path": "output/data/gnn_model_audit.json",
-          "sha256": "2e113c1d2dd728a05f7cd5f3c7edcf68f9d94eb2136bd81df7fbbcab09050a75"
+          "sha256": "64a00fb2a5e8360c665b922413b5357de1af7ee0276d16ee2009da6a4831bbcd"
         }
       ],
       "width": 2804
     },
     {
-      "byte_size": 213148,
+      "byte_size": 246108,
       "caption": "QRF frame-covariance toy audit over finite density matrices and probability vectors. The binary colorbar marks transform acceptance and drift flags, while the grouped-bar legend separates spectrum, reduced-entropy, and probability residuals for admissible unitary/permutation maps with a disclosed display floor for exact-zero residuals; the figure supports only finite covariance checks, not full quantum-reference-frame physics.",
       "channels": 4,
       "exists": true,
@@ -773,7 +773,7 @@
       "nonblank": true,
       "path": "output/figures/qrf_frame_covariance_toy_audit.png",
       "pixel_variance": 0.07563220516264081,
-      "sha256": "82f340b29e9898f51d1fd148825eb9bd3a99073459d62426d9502131aad122fa",
+      "sha256": "3773837d9f3e521884aa284ef25bab5d3b25fb9f259e33ee2d6c2330abaf6163",
       "source_artifacts": [
         {
           "byte_size": 2595,
@@ -782,16 +782,16 @@
           "sha256": "26f80bde903e04bd4a447a17d254f5fd3f33e1ecd01ded0f90e38aedb263a9b4"
         },
         {
-          "byte_size": 44435,
+          "byte_size": 44436,
           "exists": true,
           "path": "output/data/gnn_model_audit.json",
-          "sha256": "2e113c1d2dd728a05f7cd5f3c7edcf68f9d94eb2136bd81df7fbbcab09050a75"
+          "sha256": "64a00fb2a5e8360c665b922413b5357de1af7ee0276d16ee2009da6a4831bbcd"
         }
       ],
       "width": 2749
     },
     {
-      "byte_size": 394412,
+      "byte_size": 454094,
       "caption": "Quantum roadmap readiness matrix separating validated finite simulations from blocked future evidence classes. The binary colorbar and Y/N cell text encode whether each roadmap item has an artifact, schema, validator, negative control, and allowed manuscript claim; future rows remain blocked, so the figure is a roadmap governance audit, not evidence that the full qFEP or empirical adapters are implemented.",
       "channels": 4,
       "exists": true,
@@ -800,7 +800,7 @@
       "nonblank": true,
       "path": "output/figures/quantum_roadmap_readiness_matrix.png",
       "pixel_variance": 0.1414565555488371,
-      "sha256": "517f021178e446539dfa19a2a72703b35fcc0b67eb68730239170d1c45517a70",
+      "sha256": "eb1e2366cf5480d1c9bbd402cf3464ef55df50a21aaab5d054573e71b80824d4",
       "source_artifacts": [
         {
           "byte_size": 22810,
@@ -809,16 +809,16 @@
           "sha256": "ace0a7c8d1ce637bcf0521de09b435b24affbf335eb82bfac55851b06455d1c6"
         },
         {
-          "byte_size": 44435,
+          "byte_size": 44436,
           "exists": true,
           "path": "output/data/gnn_model_audit.json",
-          "sha256": "2e113c1d2dd728a05f7cd5f3c7edcf68f9d94eb2136bd81df7fbbcab09050a75"
+          "sha256": "64a00fb2a5e8360c665b922413b5357de1af7ee0276d16ee2009da6a4831bbcd"
         }
       ],
       "width": 2848
     },
     {
-      "byte_size": 182823,
+      "byte_size": 207349,
       "caption": "Active-inference profile comparison for separation-constrained, opacified, and post-dual QRF deployments. Short labels are resolved in the profile legend, colored bars encode profile free energy and posterior mass, the sign annotation states that lower free energy ranks higher under the finite software posterior, and the external action legend maps stacked counts to explicit actions from profile-specific A, B, C, and D arrays; this is not empirical evidence for any ontology or practice outcome.",
       "channels": 4,
       "exists": true,
@@ -827,37 +827,37 @@
       "nonblank": true,
       "path": "output/figures/pymdp_profile_comparison.png",
       "pixel_variance": 0.09316281630159198,
-      "sha256": "10a71687fbd3a9cdd3e5bd0cda117b3718ac20ef5fdd9825f82f1f9b83a438f4",
+      "sha256": "5e94371cd4c03aa8aabd7febae602052f2c5310f7f2561c1df7dcc30a33ea39b",
       "source_artifacts": [
         {
-          "byte_size": 13855,
+          "byte_size": 13737,
           "exists": true,
           "path": "output/data/pymdp_profile_comparison.json",
-          "sha256": "41af984185a71873f19c784075ed92aed3f26b7b5b33fead7e02801b554a4b7b"
+          "sha256": "9fff641b3db05cab94ff09349c72b704fa0a4aedd92c671e9909d8186e80da67"
         },
         {
-          "byte_size": 110897,
+          "byte_size": 110890,
           "exists": true,
           "path": "output/data/pymdp_policy_trace.json",
-          "sha256": "a17c624226deed1f3c7b2a6b5567a202ba4ea4a9e5aa1f67233b0f828a0b5a50"
+          "sha256": "9c438353ee5763a2d86a7acda447be658a35ffd8b100cccf9bc77c0f7fc6f0a7"
         },
         {
-          "byte_size": 84672,
+          "byte_size": 84553,
           "exists": true,
           "path": "output/data/pymdp_runtime_diagnostics_log.json",
-          "sha256": "14d425585d1558eb150ebed8d8cd8c5b9ce2a06f2d2e16e70d5c6212cd386c10"
+          "sha256": "9e6dc9bffa7aed077447286013b9f95753017838093c3d557685ddf2df2e6faa"
         },
         {
-          "byte_size": 44435,
+          "byte_size": 44436,
           "exists": true,
           "path": "output/data/gnn_model_audit.json",
-          "sha256": "2e113c1d2dd728a05f7cd5f3c7edcf68f9d94eb2136bd81df7fbbcab09050a75"
+          "sha256": "64a00fb2a5e8360c665b922413b5357de1af7ee0276d16ee2009da6a4831bbcd"
         }
       ],
       "width": 3043
     },
     {
-      "byte_size": 207849,
+      "byte_size": 230458,
       "caption": "Deterministic pymdp posterior trajectory over P(contextual_post_dual state) for each QRF profile. The external line legend maps short profile labels to full deployment names, hollow square markers identify perturbation steps, and the axes show a replayed finite trace rather than an empirical time series or evidence for an ontological sector.",
       "channels": 4,
       "exists": true,
@@ -866,37 +866,37 @@
       "nonblank": true,
       "path": "output/figures/posterior_trajectory.png",
       "pixel_variance": 0.02449752224656879,
-      "sha256": "11d2d1b3defea23f5629d75bce051cb9881bd5647a8fc602d656992276a89bc7",
+      "sha256": "370124dc256541fdd91cf11a2c657fc593993fa315d7162a0b9726e75791402c",
       "source_artifacts": [
         {
-          "byte_size": 13855,
+          "byte_size": 13737,
           "exists": true,
           "path": "output/data/pymdp_profile_comparison.json",
-          "sha256": "41af984185a71873f19c784075ed92aed3f26b7b5b33fead7e02801b554a4b7b"
+          "sha256": "9fff641b3db05cab94ff09349c72b704fa0a4aedd92c671e9909d8186e80da67"
         },
         {
-          "byte_size": 110897,
+          "byte_size": 110890,
           "exists": true,
           "path": "output/data/pymdp_policy_trace.json",
-          "sha256": "a17c624226deed1f3c7b2a6b5567a202ba4ea4a9e5aa1f67233b0f828a0b5a50"
+          "sha256": "9c438353ee5763a2d86a7acda447be658a35ffd8b100cccf9bc77c0f7fc6f0a7"
         },
         {
-          "byte_size": 84672,
+          "byte_size": 84553,
           "exists": true,
           "path": "output/data/pymdp_runtime_diagnostics_log.json",
-          "sha256": "14d425585d1558eb150ebed8d8cd8c5b9ce2a06f2d2e16e70d5c6212cd386c10"
+          "sha256": "9e6dc9bffa7aed077447286013b9f95753017838093c3d557685ddf2df2e6faa"
         },
         {
-          "byte_size": 44435,
+          "byte_size": 44436,
           "exists": true,
           "path": "output/data/gnn_model_audit.json",
-          "sha256": "2e113c1d2dd728a05f7cd5f3c7edcf68f9d94eb2136bd81df7fbbcab09050a75"
+          "sha256": "64a00fb2a5e8360c665b922413b5357de1af7ee0276d16ee2009da6a4831bbcd"
         }
       ],
       "width": 2650
     },
     {
-      "byte_size": 325423,
+      "byte_size": 371749,
       "caption": "Supplemental pymdp runtime validation dashboard for the structured event log. Panels report model normalization, runtime recomputation residuals, replay controls, and the largest seeded profile-null contrasts; colors, legends, and tolerance lines mark QA status only, not empirical, clinical, neural, practice-efficacy, awakening, or physical qFEP evidence.",
       "channels": 4,
       "exists": true,
@@ -905,13 +905,13 @@
       "nonblank": true,
       "path": "output/figures/pymdp_runtime_validation_dashboard.png",
       "pixel_variance": 0.0794441894275906,
-      "sha256": "812d539fa85aa7b5bcac15006803131b34225152546c0622f971a664ffce3d8b",
+      "sha256": "6a2b5015f614d1dae45086d651b4514c63325c2ecf8c6b729fb54dc0ab2d8a7a",
       "source_artifacts": [
         {
-          "byte_size": 84672,
+          "byte_size": 84553,
           "exists": true,
           "path": "output/data/pymdp_runtime_diagnostics_log.json",
-          "sha256": "14d425585d1558eb150ebed8d8cd8c5b9ce2a06f2d2e16e70d5c6212cd386c10"
+          "sha256": "9e6dc9bffa7aed077447286013b9f95753017838093c3d557685ddf2df2e6faa"
         },
         {
           "byte_size": 7838,
@@ -920,28 +920,28 @@
           "sha256": "f7f9f162e32abc85beef137e727fa832c3063ad2f7f40ecd2a9634bc3b6d436f"
         },
         {
-          "byte_size": 110897,
+          "byte_size": 110890,
           "exists": true,
           "path": "output/data/pymdp_policy_trace.json",
-          "sha256": "a17c624226deed1f3c7b2a6b5567a202ba4ea4a9e5aa1f67233b0f828a0b5a50"
+          "sha256": "9c438353ee5763a2d86a7acda447be658a35ffd8b100cccf9bc77c0f7fc6f0a7"
         },
         {
-          "byte_size": 22634,
+          "byte_size": 22630,
           "exists": true,
           "path": "output/data/stochastic_effect_size_audit.json",
-          "sha256": "8109dcbf4d1313d3fa922d61c26c4d168f559576ea0869397ba506ce1aa48151"
+          "sha256": "d896d712dbb2ce656a807f4c3ee9738f865db7be29ba4a17aa1dfc3a78a49ee6"
         },
         {
-          "byte_size": 44435,
+          "byte_size": 44436,
           "exists": true,
           "path": "output/data/gnn_model_audit.json",
-          "sha256": "2e113c1d2dd728a05f7cd5f3c7edcf68f9d94eb2136bd81df7fbbcab09050a75"
+          "sha256": "64a00fb2a5e8360c665b922413b5357de1af7ee0276d16ee2009da6a4831bbcd"
         }
       ],
       "width": 3037
     },
     {
-      "byte_size": 193811,
+      "byte_size": 224932,
       "caption": "Seeded observation entropy and switch-rate summaries under independently sampled uniform observation/action controls. Shared short profile labels, a single external legend, violet profile bars, hatched gray control bars, direction annotations, and pointwise normal-approximation 95 percent intervals across complete runs show finite software variability; these controls do not preserve the original observation histogram, and the figure is not empirical evidence for neural criticality or practice efficacy.",
       "channels": 4,
       "exists": true,
@@ -950,25 +950,25 @@
       "nonblank": true,
       "path": "output/figures/criticality_stochastic_ensemble.png",
       "pixel_variance": 0.0726937966238291,
-      "sha256": "82504d537696ea38f9cfe7ab703412905106887d770ebf787b671a9aafd2db75",
+      "sha256": "91e9c2bde200f89e7f71e9fc0b72df6539a60b128c8b65c77215e25e9dcd9694",
       "source_artifacts": [
         {
-          "byte_size": 349430,
+          "byte_size": 349421,
           "exists": true,
           "path": "output/data/criticality_stochastic_ensemble.json",
-          "sha256": "15b2b91c238679f6d99094f94f827bdcff8f4ae078f078be1da8ed57c674784a"
+          "sha256": "6ab7e2652aa77b82b967742ae6a761e898fe90a54831afc95cef0dbe6e5d9cbd"
         },
         {
-          "byte_size": 44435,
+          "byte_size": 44436,
           "exists": true,
           "path": "output/data/gnn_model_audit.json",
-          "sha256": "2e113c1d2dd728a05f7cd5f3c7edcf68f9d94eb2136bd81df7fbbcab09050a75"
+          "sha256": "64a00fb2a5e8360c665b922413b5357de1af7ee0276d16ee2009da6a4831bbcd"
         }
       ],
       "width": 2896
     },
     {
-      "byte_size": 177345,
+      "byte_size": 207841,
       "caption": "Measured criticality signatures for the seeded boundary-channel trajectories. Panel A bars encode the measured branching ratio per profile against hatched null controls with a dashed sigma-equals-one balance line, and Panel B is a histogram of single-trace avalanche sizes; the colored bars and dashed reference line are seeded software trajectory diagnostics only, and the figure is not evidence of neural avalanches, branching, or empirical criticality.",
       "channels": 4,
       "exists": true,
@@ -977,13 +977,13 @@
       "nonblank": true,
       "path": "output/figures/criticality_signatures.png",
       "pixel_variance": 0.05255651669039652,
-      "sha256": "842aedae15f8c7353ae06628b38fff63cd871ba4a00bd7659278f69b31ce994f",
+      "sha256": "e533c0ad6f3b78b5edb440fb3aee265c2dcdb5e1781115fbd34f744fb205605b",
       "source_artifacts": [
         {
-          "byte_size": 349430,
+          "byte_size": 349421,
           "exists": true,
           "path": "output/data/criticality_stochastic_ensemble.json",
-          "sha256": "15b2b91c238679f6d99094f94f827bdcff8f4ae078f078be1da8ed57c674784a"
+          "sha256": "6ab7e2652aa77b82b967742ae6a761e898fe90a54831afc95cef0dbe6e5d9cbd"
         },
         {
           "byte_size": 622,
@@ -992,16 +992,16 @@
           "sha256": "564c26946842a1a3bb5573397e82ef4aa21cca35eb93e46228aa35ec70b49f7f"
         },
         {
-          "byte_size": 44435,
+          "byte_size": 44436,
           "exists": true,
           "path": "output/data/gnn_model_audit.json",
-          "sha256": "2e113c1d2dd728a05f7cd5f3c7edcf68f9d94eb2136bd81df7fbbcab09050a75"
+          "sha256": "64a00fb2a5e8360c665b922413b5357de1af7ee0276d16ee2009da6a4831bbcd"
         }
       ],
       "width": 2918
     },
     {
-      "byte_size": 217285,
+      "byte_size": 245091,
       "caption": "Finite scope-of-concern surrogate across QRF profiles. Panel C compares active separation-prior asymmetry with a hatched precision-ablation control; Panel D shows per-channel action influence against an action-shuffled mean. The figure is a finite policy-scope surrogate only, not a measure of compassion, well-being, practice efficacy, or affective outcome.",
       "channels": 4,
       "exists": true,
@@ -1010,7 +1010,7 @@
       "nonblank": true,
       "path": "output/figures/compassion_scope_widening.png",
       "pixel_variance": 0.046646297831089006,
-      "sha256": "88ba9cdb4e2ff145d86f56cbcd463a5022cf8d7efaf9eee824e596ad3d6148d3",
+      "sha256": "41647541f5822d9a2661e2ff44836e3f88df35df70fcfbed4ace5e57621ada7c",
       "source_artifacts": [
         {
           "byte_size": 4715,
@@ -1019,16 +1019,16 @@
           "sha256": "235b4b481005008720ce6da7eaeefec2bbded2bfe18a26b0307bf41e3ae00463"
         },
         {
-          "byte_size": 44435,
+          "byte_size": 44436,
           "exists": true,
           "path": "output/data/gnn_model_audit.json",
-          "sha256": "2e113c1d2dd728a05f7cd5f3c7edcf68f9d94eb2136bd81df7fbbcab09050a75"
+          "sha256": "64a00fb2a5e8360c665b922413b5357de1af7ee0276d16ee2009da6a4831bbcd"
         }
       ],
       "width": 3035
     },
     {
-      "byte_size": 183354,
+      "byte_size": 207032,
       "caption": "Separation-prior emergence across the empowerment grid. Lines encode the measured factored (self/env) and unfactored model prediction error and their dashed advantage curve as the fraction of action-contingent channels rises; the factored model buys accuracy only when agency is present, and the advantage's rise with empowerment is expected by construction, making this a correctness check rather than a discriminating null. It is a finite deterministic predictor comparison and not a developmental, neural, or empirical empowerment claim.",
       "channels": 4,
       "exists": true,
@@ -1036,8 +1036,8 @@
       "id": "separation_prior_emergence",
       "nonblank": true,
       "path": "output/figures/separation_prior_emergence.png",
-      "pixel_variance": 0.02628455417582457,
-      "sha256": "50f5dbe1671f31d3e61c0d610ca1e96632c5027a1e8f8e2f57466a2556e0e2ec",
+      "pixel_variance": 0.026284556344342697,
+      "sha256": "e1601b36845db8a8dc45ab6dabe969d7ba24f5d2e24833cf6586c972f1ed5eb7",
       "source_artifacts": [
         {
           "byte_size": 1813,
@@ -1046,16 +1046,16 @@
           "sha256": "b4faba4e08929e4d1c912a9b16f6c4a7c868a9828688f81309d3950d7be1b5d2"
         },
         {
-          "byte_size": 44435,
+          "byte_size": 44436,
           "exists": true,
           "path": "output/data/gnn_model_audit.json",
-          "sha256": "2e113c1d2dd728a05f7cd5f3c7edcf68f9d94eb2136bd81df7fbbcab09050a75"
+          "sha256": "64a00fb2a5e8360c665b922413b5357de1af7ee0276d16ee2009da6a4831bbcd"
         }
       ],
       "width": 2027
     },
     {
-      "byte_size": 171002,
+      "byte_size": 197831,
       "caption": "Generalisation of no-self-evidence to arbitrary internal boundaries. Grouped bars encode the god's-eye entanglement entropy across each environment internal bipartition for a separable versus an entangled environment, while the overlaid markers encode the agent's accessible marginal drift, which stays near zero; the agent cannot adjudicate the internal cut from its marginal, and this is a finite pure-state linear-algebra audit, not a physical or observer-boundary measurement.",
       "channels": 4,
       "exists": true,
@@ -1064,7 +1064,7 @@
       "nonblank": true,
       "path": "output/figures/internal_cut_unmeasurability.png",
       "pixel_variance": 0.051228121581435984,
-      "sha256": "8aa1e883c18080c5dc722a1df4b0175cb285c11f0eab77f748e03df245dab26f",
+      "sha256": "41d78e2b91d3c0dfe0da6009eb3e3dbfb8e4224079763b9a955c1c71711e3342",
       "source_artifacts": [
         {
           "byte_size": 2622,
@@ -1073,16 +1073,16 @@
           "sha256": "43db8b772213d24ee2e7303468467db56ff91b0e905c5091f91484bcc5c07743"
         },
         {
-          "byte_size": 44435,
+          "byte_size": 44436,
           "exists": true,
           "path": "output/data/gnn_model_audit.json",
-          "sha256": "2e113c1d2dd728a05f7cd5f3c7edcf68f9d94eb2136bd81df7fbbcab09050a75"
+          "sha256": "64a00fb2a5e8360c665b922413b5357de1af7ee0276d16ee2009da6a4831bbcd"
         }
       ],
       "width": 2411
     },
     {
-      "byte_size": 217730,
+      "byte_size": 264866,
       "caption": "Practice protocols rendered as bounded model-intervention deltas. Horizontal bars encode each protocol's metacognitive-access, prior-precision, sector-revisability, compassion-scope, and self-privilege deltas, color encodes increase versus decrease, a dashed line marks no intervention, and each protocol's safety boundary is printed on the figure; these are finite software-interface specifications only and are not therapeutic advice, a claim of realization, a moral prescription, or a clinical protocol.",
       "channels": 4,
       "exists": true,
@@ -1091,7 +1091,7 @@
       "nonblank": true,
       "path": "output/figures/practice_policy_scope_map.png",
       "pixel_variance": 0.05047293890892793,
-      "sha256": "0a3c890f2c081a8c72cc70d94ce1c966a743c8727aaa6087a5ab223ca2f8c154",
+      "sha256": "5e424ab27be82b7f7018b0fdd88f1cc4fa9e5787b51362e4bab53e4e0540027f",
       "source_artifacts": [
         {
           "byte_size": 1307,
@@ -1100,16 +1100,16 @@
           "sha256": "7831f2e3de6323cbc90010eb6bca1f4ecef7f176a5601d132303d0a6295d12d7"
         },
         {
-          "byte_size": 44435,
+          "byte_size": 44436,
           "exists": true,
           "path": "output/data/gnn_model_audit.json",
-          "sha256": "2e113c1d2dd728a05f7cd5f3c7edcf68f9d94eb2136bd81df7fbbcab09050a75"
+          "sha256": "64a00fb2a5e8360c665b922413b5357de1af7ee0276d16ee2009da6a4831bbcd"
         }
       ],
       "width": 2611
     },
     {
-      "byte_size": 299740,
+      "byte_size": 353284,
       "caption": "Run-level profile versus independent random-null contrasts. Panel A shows Cliff's delta and its own percentile bootstrap interval; Panel B shows the mean difference and its own interval in row-specific units (switch fraction or nats). The shared legend identifies hollow Holm-nonrejection markers and diamonds where finite permutation Monte Carlo uncertainty leaves the decision unresolved; dashed lines mark zero. These pointwise intervals are finite software diagnostics, not empirical, neural, clinical, or practice-efficacy evidence.",
       "channels": 4,
       "exists": true,
@@ -1118,25 +1118,25 @@
       "nonblank": true,
       "path": "output/figures/stochastic_effect_size_forest.png",
       "pixel_variance": 0.01945541489526853,
-      "sha256": "d2626d8ec76d0acf7515b1b584f9f9c9112ad97b78476a6c53dee6e6da4a1d82",
+      "sha256": "838aaf8027cd4c0e61ec80f1aed3eb149683889712e24fe92c2e4c6e06a64060",
       "source_artifacts": [
         {
-          "byte_size": 22634,
+          "byte_size": 22630,
           "exists": true,
           "path": "output/data/stochastic_effect_size_audit.json",
-          "sha256": "8109dcbf4d1313d3fa922d61c26c4d168f559576ea0869397ba506ce1aa48151"
+          "sha256": "d896d712dbb2ce656a807f4c3ee9738f865db7be29ba4a17aa1dfc3a78a49ee6"
         },
         {
-          "byte_size": 44435,
+          "byte_size": 44436,
           "exists": true,
           "path": "output/data/gnn_model_audit.json",
-          "sha256": "2e113c1d2dd728a05f7cd5f3c7edcf68f9d94eb2136bd81df7fbbcab09050a75"
+          "sha256": "64a00fb2a5e8360c665b922413b5357de1af7ee0276d16ee2009da6a4831bbcd"
         }
       ],
       "width": 2077
     },
     {
-      "byte_size": 83517,
+      "byte_size": 98430,
       "caption": "Paired branching contrasts for finite software trajectories. Colored points encode the mean original-minus-shuffled branching difference for each profile; horizontal lines and the legend identify 95 percent percentile intervals from resampling original/shuffled run pairs together. The dashed zero line is a reference, and each run has one fixed histogram-preserving shuffle. This conditional software comparison is not empirical evidence, neural measurement, or proof of criticality.",
       "channels": 4,
       "exists": true,
@@ -1145,25 +1145,25 @@
       "nonblank": true,
       "path": "output/figures/criticality_paired_contrasts.png",
       "pixel_variance": 0.02378370616999245,
-      "sha256": "40fe30c6c53cc89bb5ea92f2c36c24d4616d9bb33402b97f3c7fcc14bfa796b3",
+      "sha256": "1db89aa9343b0d256e01f6e95773d896023c6d8cee62ce4e7d9c4c80aecd01f5",
       "source_artifacts": [
         {
-          "byte_size": 349430,
+          "byte_size": 349421,
           "exists": true,
           "path": "output/data/criticality_stochastic_ensemble.json",
-          "sha256": "15b2b91c238679f6d99094f94f827bdcff8f4ae078f078be1da8ed57c674784a"
+          "sha256": "6ab7e2652aa77b82b967742ae6a761e898fe90a54831afc95cef0dbe6e5d9cbd"
         },
         {
-          "byte_size": 44435,
+          "byte_size": 44436,
           "exists": true,
           "path": "output/data/gnn_model_audit.json",
-          "sha256": "2e113c1d2dd728a05f7cd5f3c7edcf68f9d94eb2136bd81df7fbbcab09050a75"
+          "sha256": "64a00fb2a5e8360c665b922413b5357de1af7ee0276d16ee2009da6a4831bbcd"
         }
       ],
       "width": 2077
     },
     {
-      "byte_size": 127519,
+      "byte_size": 144080,
       "caption": "Synthetic seed-bank calibration for the finite resampling machinery. Panel A bars show rejection percentages for zero and injected normal shifts; Panel B bars show mean-difference interval coverage. Whiskers encode exact binomial intervals over independent seed sets, counts identify hits and repetitions, and dashed reference lines with legends mark nominal alpha and coverage. This limited generator check is not empirical statistical power or universal error-rate certification.",
       "channels": 4,
       "exists": true,
@@ -1172,7 +1172,7 @@
       "nonblank": true,
       "path": "output/figures/resampling_calibration.png",
       "pixel_variance": 0.06008439867656197,
-      "sha256": "8ed18aebd8de70250d12cd1e4cfb328a870e7f2224286ec5d53fb1807267f347",
+      "sha256": "f239dc65b739b5580c0c4af8b9aa806b7557fe08e9dcdfc4de56de3902f914f8",
       "source_artifacts": [
         {
           "byte_size": 71696,
@@ -1181,16 +1181,16 @@
           "sha256": "a95eec768b7169e11e5d14de91b2eb540657d2abeaade49cf1615ea8b79958ac"
         },
         {
-          "byte_size": 44435,
+          "byte_size": 44436,
           "exists": true,
           "path": "output/data/gnn_model_audit.json",
-          "sha256": "2e113c1d2dd728a05f7cd5f3c7edcf68f9d94eb2136bd81df7fbbcab09050a75"
+          "sha256": "64a00fb2a5e8360c665b922413b5357de1af7ee0276d16ee2009da6a4831bbcd"
         }
       ],
       "width": 2465
     },
     {
-      "byte_size": 305457,
+      "byte_size": 334825,
       "caption": "BMR robustness resampling over the finite prior-precision/access grid. The upper panel shows conditional bootstrap pruning rates over the listed noise rows; the lower panel marks whether the conditional grid-mean Delta-F interval excludes zero, with compact interval and P/K labels. This does not establish stability at every noise value or under an unknown population of noise settings. Exact grid extrema and all-row sign agreement are recorded separately in the artifact. Both panels report finite software robustness only.",
       "channels": 4,
       "exists": true,
@@ -1199,7 +1199,7 @@
       "nonblank": true,
       "path": "output/figures/bmr_robustness_resampling.png",
       "pixel_variance": 0.14034887756295925,
-      "sha256": "ea6bce38d6215a67430b89141796dd18d2f11c92695e1ace9f48524255de1103",
+      "sha256": "ea118291ffd3f09910e92d8025325967ecce5881e3c0bdcb6349b587b9536f99",
       "source_artifacts": [
         {
           "byte_size": 24994,
@@ -1208,16 +1208,16 @@
           "sha256": "0a6f42b7659546dc2270b9e2523286d409b2f19be891c42cd06b1ffccd2af343"
         },
         {
-          "byte_size": 44435,
+          "byte_size": 44436,
           "exists": true,
           "path": "output/data/gnn_model_audit.json",
-          "sha256": "2e113c1d2dd728a05f7cd5f3c7edcf68f9d94eb2136bd81df7fbbcab09050a75"
+          "sha256": "64a00fb2a5e8360c665b922413b5357de1af7ee0276d16ee2009da6a4831bbcd"
         }
       ],
       "width": 2558
     },
     {
-      "byte_size": 204231,
+      "byte_size": 231805,
       "caption": "Quantum-trajectory convergence audit for the finite Lindblad surrogate. The line plot shows max trace-distance residual across trajectory counts on a log-scaled axis, while the bar panel contrasts a too-few-trajectories negative control with the largest ensemble against the validation threshold; this checks stochastic software convergence, not physical qFEP realization or empirical quantum evidence.",
       "channels": 4,
       "exists": true,
@@ -1226,25 +1226,25 @@
       "nonblank": true,
       "path": "output/figures/quantum_trajectory_convergence.png",
       "pixel_variance": 0.06819752587891974,
-      "sha256": "e68286c3a7e1167acd5a98fd87cd0a17e58a42a244670ba2a2d93daf1ed8106d",
+      "sha256": "4eedd279876566cca424a2dd006c707cd6c88d3251ae3cacd7e41a99ae49aecf",
       "source_artifacts": [
         {
           "byte_size": 2184,
           "exists": true,
           "path": "output/data/quantum_trajectory_convergence_audit.json",
-          "sha256": "1627d3b3159a5994d564c938e6b871039fbfaf494fc636c749d56c237b590a0f"
+          "sha256": "142053e713bd6df1c60bbf598946fe9a82995e0c2d63e3d5deb06e4eb0e1b701"
         },
         {
-          "byte_size": 44435,
+          "byte_size": 44436,
           "exists": true,
           "path": "output/data/gnn_model_audit.json",
-          "sha256": "2e113c1d2dd728a05f7cd5f3c7edcf68f9d94eb2136bd81df7fbbcab09050a75"
+          "sha256": "64a00fb2a5e8360c665b922413b5357de1af7ee0276d16ee2009da6a4831bbcd"
         }
       ],
       "width": 2636
     },
     {
-      "byte_size": 282819,
+      "byte_size": 326953,
       "caption": "Shared visual semantic palette ledger for the publication figures. Color swatches and hatch marks bind pass, fail, keep, prune, finite, blocked, stochastic, null-control, quantum, and boundary roles to stable encodings so figure colors cannot silently change meaning; this is a visualization QA artifact, not a source of empirical evidence.",
       "channels": 4,
       "exists": true,
@@ -1253,7 +1253,7 @@
       "nonblank": true,
       "path": "output/figures/visual_semantic_palette_ledger.png",
       "pixel_variance": 0.03217970370155851,
-      "sha256": "a53987b60ed8656f88807dd2ccfb2e25939a10f08caeb30f1f3ed8750ba5e603",
+      "sha256": "e239b57a8c63ea2459c9950ea350b8fc4969a79234444b9428a3ab8ec7624b90",
       "source_artifacts": [
         {
           "byte_size": 58319,
@@ -1262,16 +1262,16 @@
           "sha256": "0bb4f2273adef85f3a8e11e9622f463159a22a1d28d0f5d7df3bd788135a5a27"
         },
         {
-          "byte_size": 44435,
+          "byte_size": 44436,
           "exists": true,
           "path": "output/data/gnn_model_audit.json",
-          "sha256": "2e113c1d2dd728a05f7cd5f3c7edcf68f9d94eb2136bd81df7fbbcab09050a75"
+          "sha256": "64a00fb2a5e8360c665b922413b5357de1af7ee0276d16ee2009da6a4831bbcd"
         }
       ],
       "width": 2441
     },
     {
-      "byte_size": 184738,
+      "byte_size": 213134,
       "caption": "Method assumption and falsification map for the finite software chain. The binary colorbar and cell text show whether each method declares hard constraints, modeling choices, assumptions, evidence ceilings, and negative controls, making verifier-first governance visible without treating the method ledger as empirical or physical qFEP evidence.",
       "channels": 4,
       "exists": true,
@@ -1280,7 +1280,7 @@
       "nonblank": true,
       "path": "output/figures/method_assumption_failure_map.png",
       "pixel_variance": 0.1724395597775856,
-      "sha256": "089288bf5c6345c00885ce3b18090f278c8bad7887be903e4ef27ca6cd550445",
+      "sha256": "ed7fc889aa24078fe108a8ac740f386fd244a6ca61c4f70cc35753003f913e7f",
       "source_artifacts": [
         {
           "byte_size": 6624,
@@ -1295,16 +1295,16 @@
           "sha256": "a56a0dae7a7fd482d0721df3462c46356b09e59d04c93b198fec58f2d33fc222"
         },
         {
-          "byte_size": 44435,
+          "byte_size": 44436,
           "exists": true,
           "path": "output/data/gnn_model_audit.json",
-          "sha256": "2e113c1d2dd728a05f7cd5f3c7edcf68f9d94eb2136bd81df7fbbcab09050a75"
+          "sha256": "64a00fb2a5e8360c665b922413b5357de1af7ee0276d16ee2009da6a4831bbcd"
         }
       ],
       "width": 2898
     },
     {
-      "byte_size": 348688,
+      "byte_size": 407980,
       "caption": "Claim-source-validation graph linking each public claim to its source role and validation gate. The node and edge legend identifies claim, source, gate, and binding colors so the figure remains an audit map for claim governance, not an additional evidence source.",
       "channels": 4,
       "exists": true,
@@ -1313,7 +1313,7 @@
       "nonblank": true,
       "path": "output/figures/claim_source_validation_graph.png",
       "pixel_variance": 0.028765629709545076,
-      "sha256": "60cd7059efe6144e15ef35aef76db1437499853de7ba373e9f714945ee58707d",
+      "sha256": "cb2ebe5ae585f97b100d358681172a5aa84217f762e0cfae3f7c67c0aa0d82b8",
       "source_artifacts": [
         {
           "byte_size": 14340,
@@ -1322,16 +1322,16 @@
           "sha256": "3476f2c1aef5f5148ac5bfdc5878db8d928197ad531be6a5552f42447ca73d44"
         },
         {
-          "byte_size": 44435,
+          "byte_size": 44436,
           "exists": true,
           "path": "output/data/gnn_model_audit.json",
-          "sha256": "2e113c1d2dd728a05f7cd5f3c7edcf68f9d94eb2136bd81df7fbbcab09050a75"
+          "sha256": "64a00fb2a5e8360c665b922413b5357de1af7ee0276d16ee2009da6a4831bbcd"
         }
       ],
       "width": 2522
     },
     {
-      "byte_size": 364455,
+      "byte_size": 424942,
       "caption": "Scholarship coverage summarized by declared source status and manuscript track. The heatmap colorbar and numbered cells count citations assigned to each status-track pair; individual citation keys and bindings remain in scholarship_source_matrix.json. Counts describe contextual coverage, not evidence strength, empirical support, or physical qFEP confirmation.",
       "channels": 4,
       "exists": true,
@@ -1340,7 +1340,7 @@
       "nonblank": true,
       "path": "output/figures/scholarship_coverage_matrix.png",
       "pixel_variance": 0.031493352373178574,
-      "sha256": "17e9e1cafbb9165476c860a91a4437f79698974470acb735d2d81cb29ece4e10",
+      "sha256": "969459f4679360bfba4ce3451abf94214cc5bd9c4103efab8271043cdd7f4494",
       "source_artifacts": [
         {
           "byte_size": 102990,
@@ -1349,16 +1349,16 @@
           "sha256": "8c09ec238c3e5ba38c39309d3698304bf5e7bce733ea2d082514bb526b662e03"
         },
         {
-          "byte_size": 44435,
+          "byte_size": 44436,
           "exists": true,
           "path": "output/data/gnn_model_audit.json",
-          "sha256": "2e113c1d2dd728a05f7cd5f3c7edcf68f9d94eb2136bd81df7fbbcab09050a75"
+          "sha256": "64a00fb2a5e8360c665b922413b5357de1af7ee0276d16ee2009da6a4831bbcd"
         }
       ],
       "width": 3043
     },
     {
-      "byte_size": 386724,
+      "byte_size": 457055,
       "caption": "Scoped public-claim support summarized by declared source status. The heatmap colorbar and numbered cells show distinct citation counts for each claim and status; individual claim-citation bindings remain in claim_support_audit.json. Source density is a coverage diagnostic, not evidence strength or empirical, neural, clinical, practice-efficacy, awakening, or physical qFEP confirmation.",
       "channels": 4,
       "exists": true,
@@ -1367,7 +1367,7 @@
       "nonblank": true,
       "path": "output/figures/claim_support_matrix.png",
       "pixel_variance": 0.03206610926748936,
-      "sha256": "4e5fa49dc7fd6523e3ed4556fdfbbc32a98048a351a467de2e0c136166913d21",
+      "sha256": "c7fbec7838382143c678d64807ab91b19f9626d9c974bb365c1ac3dd93177e00",
       "source_artifacts": [
         {
           "byte_size": 77436,
@@ -1376,16 +1376,16 @@
           "sha256": "a97a127abb02934a148ed3538cc94bb23c154fd57d68c737b85cb683763f0b95"
         },
         {
-          "byte_size": 44435,
+          "byte_size": 44436,
           "exists": true,
           "path": "output/data/gnn_model_audit.json",
-          "sha256": "2e113c1d2dd728a05f7cd5f3c7edcf68f9d94eb2136bd81df7fbbcab09050a75"
+          "sha256": "64a00fb2a5e8360c665b922413b5357de1af7ee0276d16ee2009da6a4831bbcd"
         }
       ],
       "width": 2659
     },
     {
-      "byte_size": 100316,
+      "byte_size": 119496,
       "caption": "Manuscript claim audit for citation resolution, public claim-ID visibility, and forbidden positive-efficacy language. The pass/fail color legend makes the local language gate visible while preserving the boundary that passing bars do not certify empirical truth.",
       "channels": 4,
       "exists": true,
@@ -1394,7 +1394,7 @@
       "nonblank": true,
       "path": "output/figures/manuscript_claim_audit.png",
       "pixel_variance": 0.10640032463913336,
-      "sha256": "fcbbd9dd890e8e3996dfd5fb880f2448246c07ca1481e7c0792a76fb83e79c43",
+      "sha256": "42cfaa33033900a2ab53b7ebc00b1f02a605d594c298de4e40e8b44105751941",
       "source_artifacts": [
         {
           "byte_size": 4590,
@@ -1403,16 +1403,16 @@
           "sha256": "b739be587771bdb134e337ec42cab5aba5e62bba0923753a3804a61b56deef45"
         },
         {
-          "byte_size": 44435,
+          "byte_size": 44436,
           "exists": true,
           "path": "output/data/gnn_model_audit.json",
-          "sha256": "2e113c1d2dd728a05f7cd5f3c7edcf68f9d94eb2136bd81df7fbbcab09050a75"
+          "sha256": "64a00fb2a5e8360c665b922413b5357de1af7ee0276d16ee2009da6a4831bbcd"
         }
       ],
       "width": 1796
     },
     {
-      "byte_size": 377196,
+      "byte_size": 458251,
       "caption": "Evidence-ceiling stress matrix showing which public claims are bounded by surrogate, empirical, practice, source-role, runtime, quantum, neural, or normative constraints. Rows are grouped by claim class and the binary colorbar marks active stressors, making clear that support, simulation, and validation gates keep prohibited inferences explicit rather than converting finite software checks into empirical, neural, clinical, practice-efficacy, awakening, or physical qFEP evidence.",
       "channels": 4,
       "exists": true,
@@ -1421,7 +1421,7 @@
       "nonblank": true,
       "path": "output/figures/evidence_ceiling_stress_matrix.png",
       "pixel_variance": 0.05256784401758186,
-      "sha256": "fbca6c89aa39e587c42616b9d55084ed8aa7b38bf805c5d7a514ac5156b2a825",
+      "sha256": "18eeacb5c54ac60b6ffc8dd52884f077c0c00d42fe0b06f9f3396d3baa15061c",
       "source_artifacts": [
         {
           "byte_size": 15984,
@@ -1430,16 +1430,16 @@
           "sha256": "32d8694f7981b7c2ad08e428be332e6772d06646f284f9ea725d2e299be8bbd9"
         },
         {
-          "byte_size": 44435,
+          "byte_size": 44436,
           "exists": true,
           "path": "output/data/gnn_model_audit.json",
-          "sha256": "2e113c1d2dd728a05f7cd5f3c7edcf68f9d94eb2136bd81df7fbbcab09050a75"
+          "sha256": "64a00fb2a5e8360c665b922413b5357de1af7ee0276d16ee2009da6a4831bbcd"
         }
       ],
       "width": 2769
     },
     {
-      "byte_size": 320771,
+      "byte_size": 376011,
       "caption": "Claim-context evidence ladder grouping every public claim by evidence class, scoped source-role count, resolved validation gate, and blocked stronger reading. Horizontal bars encode source-role count, circular markers encode gate presence, and hatched amber blocks encode prohibited empirical, neural, clinical, practice-efficacy, awakening, or physical qFEP inferences, so the figure explains how to read claims without adding evidence beyond the ledger.",
       "channels": 4,
       "exists": true,
@@ -1448,7 +1448,7 @@
       "nonblank": true,
       "path": "output/figures/claim_context_evidence_ladder.png",
       "pixel_variance": 0.04857467886782718,
-      "sha256": "12ca98a6b0218b9ba128aff1b5c497d289dafd21399fe1212bbfb539ca228e93",
+      "sha256": "096cb223a6acdb06c531d84380c9e4b3c6acf307ff1c7dbcc9deb7092ea6547e",
       "source_artifacts": [
         {
           "byte_size": 80395,
@@ -1469,16 +1469,16 @@
           "sha256": "32d8694f7981b7c2ad08e428be332e6772d06646f284f9ea725d2e299be8bbd9"
         },
         {
-          "byte_size": 44435,
+          "byte_size": 44436,
           "exists": true,
           "path": "output/data/gnn_model_audit.json",
-          "sha256": "2e113c1d2dd728a05f7cd5f3c7edcf68f9d94eb2136bd81df7fbbcab09050a75"
+          "sha256": "64a00fb2a5e8360c665b922413b5357de1af7ee0276d16ee2009da6a4831bbcd"
         }
       ],
       "width": 2645
     },
     {
-      "byte_size": 201486,
+      "byte_size": 245987,
       "caption": "Operational status map for paper equations 1-14, distinguishing source mapping, finite computation, surrogate boundaries, and validation value bindings. The binary colorbar shows which statuses apply, including finite two-qubit quantum controls where implemented and roadmap boundaries where open-system qFEP claims are not yet simulated.",
       "channels": 4,
       "exists": true,
@@ -1487,7 +1487,7 @@
       "nonblank": true,
       "path": "output/figures/formalism_operation_map.png",
       "pixel_variance": 0.1086743074473018,
-      "sha256": "d1b9d23df06c140e1c9c57a53bff239620b1fdc9d23d77251d90371eaf9d05af",
+      "sha256": "af1cd12f6dc0d42a006e608747d9839255ae777b9801d442118bca02d435b917",
       "source_artifacts": [
         {
           "byte_size": 13204,
@@ -1496,16 +1496,16 @@
           "sha256": "665094ab25441cdb03c0eeb6ac51e3f1a6c495772e7336f634491f6a30eb5332"
         },
         {
-          "byte_size": 44435,
+          "byte_size": 44436,
           "exists": true,
           "path": "output/data/gnn_model_audit.json",
-          "sha256": "2e113c1d2dd728a05f7cd5f3c7edcf68f9d94eb2136bd81df7fbbcab09050a75"
+          "sha256": "64a00fb2a5e8360c665b922413b5357de1af7ee0276d16ee2009da6a4831bbcd"
         }
       ],
       "width": 1895
     },
     {
-      "byte_size": 221347,
+      "byte_size": 245014,
       "caption": "The QRF sector situation for early reading, showing one shared boundary screen of channels b0-b5 read through three sector lenses. A top row of cells carries the evidenced observation symbols, dotted vertical lines tie each bit to the separation-constrained, opacified, and post-dual lens rows below, a legend maps each lens color to a sector label, and a per-lens sector count records how finely each lens carves the screen, so the figure shows that the partitioning changes while the evidenced bitstream and its claim boundary stay finite software surrogates rather than empirical, neural, ontological, or physical qFEP evidence.",
       "channels": 4,
       "exists": true,
@@ -1514,7 +1514,7 @@
       "nonblank": true,
       "path": "output/figures/qrf_sector_situation.png",
       "pixel_variance": 0.05337377525529727,
-      "sha256": "4fea0154440fda5d18144d88a85ae0fb477352c7a76e2a53a81d03768322be75",
+      "sha256": "419852cb6feee53fffc6e1b9e19713645ee31c8bb9398789f0a7bf27b88556a1",
       "source_artifacts": [
         {
           "byte_size": 6724,
@@ -1529,16 +1529,16 @@
           "sha256": "d3cb2c14d6756d0c16a928572cbcc3c85c968e0b8c691a0ccc9f17f5bbd0d168"
         },
         {
-          "byte_size": 44435,
+          "byte_size": 44436,
           "exists": true,
           "path": "output/data/gnn_model_audit.json",
-          "sha256": "2e113c1d2dd728a05f7cd5f3c7edcf68f9d94eb2136bd81df7fbbcab09050a75"
+          "sha256": "64a00fb2a5e8360c665b922413b5357de1af7ee0276d16ee2009da6a4831bbcd"
         }
       ],
       "width": 2991
     },
     {
-      "byte_size": 357427,
+      "byte_size": 401991,
       "caption": "Boundary use versus boundary ontology rendered as a stepwise permission diagram for the no-self-evidence claim. Step 1 shows the shared finite b0-b5 bitstream as the only evidenced object; Step 2 licenses reading those same bits through admissible QRF sector labels for prediction, policy selection, and model comparison when the equal-distribution audit passes; Step 3 blocks treating any chosen sector frame as a real self/world boundary because the perturbation control fails. Color encodes the licensed and blocked lanes, while the legend names the two verdicts, keeping the figure a finite software audit and not empirical, neural, clinical, practice-efficacy, or physical qFEP evidence.",
       "channels": 4,
       "exists": true,
@@ -1546,8 +1546,8 @@
       "id": "boundary_use_vs_ontology",
       "nonblank": true,
       "path": "output/figures/boundary_use_vs_ontology.png",
-      "pixel_variance": 0.02386268612910147,
-      "sha256": "00a586dd29a4c6e3cc52949b5a788092dddda6df0e4f3a8d7fec6eb980ad4917",
+      "pixel_variance": 0.023862620046661825,
+      "sha256": "76dcddf03e0e06136ceb0e35a9f41f55429724adaf4a52dea040b016a11b6f9d",
       "source_artifacts": [
         {
           "byte_size": 14183,
@@ -1556,16 +1556,16 @@
           "sha256": "d3cb2c14d6756d0c16a928572cbcc3c85c968e0b8c691a0ccc9f17f5bbd0d168"
         },
         {
-          "byte_size": 44435,
+          "byte_size": 44436,
           "exists": true,
           "path": "output/data/gnn_model_audit.json",
-          "sha256": "2e113c1d2dd728a05f7cd5f3c7edcf68f9d94eb2136bd81df7fbbcab09050a75"
+          "sha256": "64a00fb2a5e8360c665b922413b5357de1af7ee0276d16ee2009da6a4831bbcd"
         }
       ],
       "width": 3523
     },
     {
-      "byte_size": 262142,
+      "byte_size": 292507,
       "caption": "Life-cycle of the separation prior's net value, the change in free energy when the prior is removed, against metacognitive access, drawn as one line per prior precision rather than a mean. The bolded arc is the precision whose net value actually crosses keep to prune (the weakest admissible precision for the current sweep); it starts positive in the shaded keep region and falls into the shaded prune region as access rises, while the fainter stronger-precision lines stay in the prune region throughout. The dashed marker locates the useful-to-dispensable crossing, and the figure is a finite software sweep, not a developmental, neural, contemplative, or clinical claim.",
       "channels": 4,
       "exists": true,
@@ -1573,8 +1573,8 @@
       "id": "separation_prior_net_value",
       "nonblank": true,
       "path": "output/figures/separation_prior_net_value.png",
-      "pixel_variance": 0.02471752742696666,
-      "sha256": "7cf13fe34238c63592effc0bc2ae3f5a7f2253f982de1d79a368437c57f68e15",
+      "pixel_variance": 0.024717697805543615,
+      "sha256": "ea944933efee925ccaf5b918e1a51917aa58b6635ec1a43b7c29912b6a3edabc",
       "source_artifacts": [
         {
           "byte_size": 24401,
@@ -1589,16 +1589,16 @@
           "sha256": "b4faba4e08929e4d1c912a9b16f6c4a7c868a9828688f81309d3950d7be1b5d2"
         },
         {
-          "byte_size": 44435,
+          "byte_size": 44436,
           "exists": true,
           "path": "output/data/gnn_model_audit.json",
-          "sha256": "2e113c1d2dd728a05f7cd5f3c7edcf68f9d94eb2136bd81df7fbbcab09050a75"
+          "sha256": "64a00fb2a5e8360c665b922413b5357de1af7ee0276d16ee2009da6a4831bbcd"
         }
       ],
       "width": 2410
     },
     {
-      "byte_size": 168433,
+      "byte_size": 191208,
       "caption": "Minimum bipartition negativity per fixture for the multipartite and higher-dimensional entanglement witness suite. Bars encode the smallest single-subsystem-versus-rest negativity for each GHZ, W, and qutrit fixture, colored to separate entangled fixtures that are detected on every cut from the separable product false-positive controls that must stay at zero negativity; the legend maps the two colors and the figure is a finite PPT/negativity witness over fixed states, not a genuine-multipartite-entanglement certificate and not empirical, neural, or physical qFEP evidence.",
       "channels": 4,
       "exists": true,
@@ -1607,7 +1607,7 @@
       "nonblank": true,
       "path": "output/figures/multipartite_witness_negativity.png",
       "pixel_variance": 0.05354116333865253,
-      "sha256": "1bb90c7d922895179a58b9c3e6d8d207eaa5d5ceb826e486ee99a0473c558650",
+      "sha256": "a8bc834fc6d9236fbd843326008452da9656cb6e5ce2aca5fe55ece4760eb69f",
       "source_artifacts": [
         {
           "byte_size": 9568,
@@ -1616,16 +1616,16 @@
           "sha256": "50d6693b0dd1577bfff72038489b3771453fa63799bf6ece907d0ebb3e32f02d"
         },
         {
-          "byte_size": 44435,
+          "byte_size": 44436,
           "exists": true,
           "path": "output/data/gnn_model_audit.json",
-          "sha256": "2e113c1d2dd728a05f7cd5f3c7edcf68f9d94eb2136bd81df7fbbcab09050a75"
+          "sha256": "64a00fb2a5e8360c665b922413b5357de1af7ee0276d16ee2009da6a4831bbcd"
         }
       ],
       "width": 2939
     },
     {
-      "byte_size": 178391,
+      "byte_size": 203498,
       "caption": "Tensor-network matrix-product-state benchmark shown as two panels. Panel A bars encode the maximum bond dimension per fixture, with entangled GHZ and W states staying at bond two and product states at bond one as the screen grows, demonstrating tractability beyond exact state-vector enumeration; Panel B bars encode the bond-one truncation error, which is positive on entangled fixtures and zero on products, the discriminating control. The figure is a finite exact-MPS benchmark over toy states, not a large-scale many-body simulation and not empirical evidence.",
       "channels": 4,
       "exists": true,
@@ -1634,7 +1634,7 @@
       "nonblank": true,
       "path": "output/figures/tensor_network_scaling.png",
       "pixel_variance": 0.09714899854950206,
-      "sha256": "d8afc93b05965779af74de518822b4fad347b2f1cc398a6f82033ea1dd0d9337",
+      "sha256": "df8ab2f1a2c49b492440b71e4e3e3b5db2b282611059679774904bbdbc143bb0",
       "source_artifacts": [
         {
           "byte_size": 2627,
@@ -1643,16 +1643,16 @@
           "sha256": "1252f79354b3166564d3cdfcbe3e128e155c95354c057c1022202f5d15b99293"
         },
         {
-          "byte_size": 44435,
+          "byte_size": 44436,
           "exists": true,
           "path": "output/data/gnn_model_audit.json",
-          "sha256": "2e113c1d2dd728a05f7cd5f3c7edcf68f9d94eb2136bd81df7fbbcab09050a75"
+          "sha256": "64a00fb2a5e8360c665b922413b5357de1af7ee0276d16ee2009da6a4831bbcd"
         }
       ],
       "width": 2959
     },
     {
-      "byte_size": 160625,
+      "byte_size": 184864,
       "caption": "Collision-model thermalization surrogate shown as grouped bars of the trace distance from the system qubit to the fixed ancilla, initial versus final, for each coupling strength. The weak and strong partial-SWAP couplings collapse the final distance toward zero while the zero-coupling control leaves the final distance equal to the initial value, the discriminating control; the legend maps the initial and final bars. The figure is a finite deterministic collision surrogate, not a physical heat bath or thermodynamic measurement and not empirical evidence.",
       "channels": 4,
       "exists": true,
@@ -1661,7 +1661,7 @@
       "nonblank": true,
       "path": "output/figures/collision_model_relaxation.png",
       "pixel_variance": 0.06949762956077907,
-      "sha256": "6857dd48a34eb1b8a6b58e40c4f3a39165a4442f422d4a13fdb1c2b351ec0f4a",
+      "sha256": "e8e9906b42d48886bab109cbfa404555e0908ec27eefe062bb176b065bb82065",
       "source_artifacts": [
         {
           "byte_size": 1421,
@@ -1670,16 +1670,16 @@
           "sha256": "0960cfe31dbaa3fda7ae103dd60720d2c17071b95f294fe5458c03d76dd3aec6"
         },
         {
-          "byte_size": 44435,
+          "byte_size": 44436,
           "exists": true,
           "path": "output/data/gnn_model_audit.json",
-          "sha256": "2e113c1d2dd728a05f7cd5f3c7edcf68f9d94eb2136bd81df7fbbcab09050a75"
+          "sha256": "64a00fb2a5e8360c665b922413b5357de1af7ee0276d16ee2009da6a4831bbcd"
         }
       ],
       "width": 2459
     },
     {
-      "byte_size": 245797,
+      "byte_size": 281599,
       "caption": "n-cycle contextuality scenario library shown as a feasibility matrix. Rows are cycle lengths labeled odd or even and two-colorable or frustrated, columns are the perfect anti-correlation, quantum, and uncorrelated behaviors, and each colored cell encodes whether the noncontextual-polytope linear program is feasible (a noncontextual model exists) or infeasible (contextual). Odd cycles including the five-cycle pentagon are contextual while even cycles are not, cross-checked against graph two-colorability; the matrix records measured LP feasibility, not an asserted optimal violation, and is not empirical evidence.",
       "channels": 4,
       "exists": true,
@@ -1688,7 +1688,7 @@
       "nonblank": true,
       "path": "output/figures/n_cycle_contextuality_panel.png",
       "pixel_variance": 0.09630144050003765,
-      "sha256": "174d2164fa9b6b553597869538488221b644adccec99bcfb886c203b30ff8455",
+      "sha256": "ceaa98dd838451e69e4be52066a1b0b65689a931ede8b028059c1fa2ba6692f2",
       "source_artifacts": [
         {
           "byte_size": 2294,
@@ -1697,16 +1697,16 @@
           "sha256": "a39c8d798cc33db0f96a0350ab70f15c3168e4dbcf304bc5a98672f0c7f04b57"
         },
         {
-          "byte_size": 44435,
+          "byte_size": 44436,
           "exists": true,
           "path": "output/data/gnn_model_audit.json",
-          "sha256": "2e113c1d2dd728a05f7cd5f3c7edcf68f9d94eb2136bd81df7fbbcab09050a75"
+          "sha256": "64a00fb2a5e8360c665b922413b5357de1af7ee0276d16ee2009da6a4831bbcd"
         }
       ],
       "width": 2256
     },
     {
-      "byte_size": 365795,
+      "byte_size": 421960,
       "caption": "Data-processing monotonicity surrogate for opacification as forgetting. Panel A shows trace distance never rising after CPTP channels; Panel B shows the transpose control failing complete positivity; Panel C shows selective post-selection can raise distinguishability when the record is kept. The figure is a finite qubit-channel surrogate, not empirical evidence or a physical qFEP, neural, clinical, or contemplative claim.",
       "channels": 4,
       "exists": true,
@@ -1715,7 +1715,7 @@
       "nonblank": true,
       "path": "output/figures/data_processing_monotonicity.png",
       "pixel_variance": 0.05974191427120556,
-      "sha256": "ae877f5cdd4ea134a95602e282436b5af688e4ce8e98e8fc6e78f85cd669f649",
+      "sha256": "9d78c4fda130d144cd1d2221f727471d8cac03c0ade75f2bff9f452a083b7a9c",
       "source_artifacts": [
         {
           "byte_size": 12405,
@@ -1724,16 +1724,16 @@
           "sha256": "feb7a7a6ae9b34e14730a2a2897c2f09d587087bdb5ff754cd18991e645f5861"
         },
         {
-          "byte_size": 44435,
+          "byte_size": 44436,
           "exists": true,
           "path": "output/data/gnn_model_audit.json",
-          "sha256": "2e113c1d2dd728a05f7cd5f3c7edcf68f9d94eb2136bd81df7fbbcab09050a75"
+          "sha256": "64a00fb2a5e8360c665b922413b5357de1af7ee0276d16ee2009da6a4831bbcd"
         }
       ],
       "width": 3755
     },
     {
-      "byte_size": 213081,
+      "byte_size": 242911,
       "caption": "Markov-blanket discovery as a conditional-independence surrogate. Precision support reveals the planted internal/blanket/external split, marginal correlation hides it, and Panel C shows recovery succeeds from precision or partial correlation but not from the marginal threshold. The figure is finite linear algebra, not empirical, neural, developmental, clinical, or physical qFEP evidence.",
       "channels": 4,
       "exists": true,
@@ -1742,7 +1742,7 @@
       "nonblank": true,
       "path": "output/figures/markov_blanket_discovery.png",
       "pixel_variance": 0.06975659274967952,
-      "sha256": "74d95933d0561cfa2cd6b2add12ed7364fe339f66e700a14ed79c61e8b03a867",
+      "sha256": "d6cddf531d042c0202d2216f5c4408871c6950348cd100a33b2e26c3c786947c",
       "source_artifacts": [
         {
           "byte_size": 6268,
@@ -1751,10 +1751,10 @@
           "sha256": "f1a3f8bd4678b325b6d13d7a2d3b4684361cd3c395b81152623a2fc9587ed9e5"
         },
         {
-          "byte_size": 44435,
+          "byte_size": 44436,
           "exists": true,
           "path": "output/data/gnn_model_audit.json",
-          "sha256": "2e113c1d2dd728a05f7cd5f3c7edcf68f9d94eb2136bd81df7fbbcab09050a75"
+          "sha256": "64a00fb2a5e8360c665b922413b5357de1af7ee0276d16ee2009da6a4831bbcd"
         }
       ],
       "width": 3473

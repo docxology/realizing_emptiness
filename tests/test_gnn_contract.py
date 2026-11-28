@@ -6,6 +6,7 @@ from dataclasses import replace
 import json
 from pathlib import Path
 import shutil
+import sys
 
 import jsonschema
 import pytest
@@ -205,7 +206,13 @@ def test_registry_rejects_lossy_or_unbound_finite_declarations(pytestconfig, tmp
 
 
 def test_registry_inventory_identity_and_isolated_parameter_copies(tmp_path):
-    assert upstream_identity()["version"] == "4.1.0"
+    identity = upstream_identity()
+    expected = (
+        ("4.1.0", "46459949944e3217f8a6a804d4ff8c52829ef275")
+        if sys.version_info[:2] == (3, 11)
+        else ("5.2.0", "4a7cccce6d4d7cb483f00323ec5cdd79300f3464")
+    )
+    assert (identity["version"], identity["commit"]) == expected
     assert specification_paths()
     with specification_root(tmp_path), pytest.raises(ValueError, match="empty"):
         specification_paths()

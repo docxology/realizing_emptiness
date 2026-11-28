@@ -112,17 +112,13 @@ artifact gates; [API contracts](api-contracts.md) explain migration.
 ## Installation, packaging, and upstream provenance
 
 Python 3.11 through 3.14 is supported. Installation uses the frozen `uv.lock`
-through the [setup instructions](running-the-chain.md#setup). The dependency
-is `generalized-notation-notation` 4.1.0, pinned to upstream commit
-`46459949944e3217f8a6a804d4ff8c52829ef275`; the source is the
-[Generalized Notation Notation repository](https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation).
-`src/modeling/upstream.json` records the repository, revision, parser,
-validator, compiler, and dependency license. The upstream Python markers use
-`inferactively-pymdp` 1.0.4 on Python 3.11 and 1.0.3 on Python 3.12 and later.
-
-The pin was selected from the canonical GitVault checkout at
-`Username/ActiveInferenceInstitute/Public/Generalized_Notation_Notation`.
-Portable installations resolve that revision through the dependency lock.
+through the [setup instructions](running-the-chain.md#setup). Python 3.11 uses
+GNN 4.1.0 at `46459949944e3217f8a6a804d4ff8c52829ef275` and PyMDP 1.0.4.
+Python 3.12 through 3.14 uses GNN 5.2.0 at
+`4a7cccce6d4d7cb483f00323ec5cdd79300f3464` and PyMDP 1.0.5.
+`src/modeling/upstream.json` records both immutable source profiles and the
+parser, validator, compiler and license shared by both. Native receipts bind
+one profile to the installed VCS distribution and executing module bytes.
 
 The wheel includes the GNN specifications, `catalog.json`, and `upstream.json` as package
 resources. A built-wheel smoke check must load these resources outside the

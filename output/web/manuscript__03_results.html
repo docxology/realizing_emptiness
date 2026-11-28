@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc 3.12.1" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>03_results.md.web</title>
+  <meta name="author" content="Daniel Ari Friedman" />
+  <meta name="description" content="Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction" />
+  <title>Realizing Emptiness</title>
   <style>
     /* Default styles provided by pandoc.
     ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -179,7 +181,154 @@
       margin: 0 0.8em 0.2em -1.6em;
       vertical-align: middle;
     }
-  </style>
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
+  <script data-template-mathjax-config>
+window.MathJax = window.MathJax || {};
+window.MathJax.chtml = Object.assign({}, window.MathJax.chtml, {
+  fontURL: "https://cdn.jsdelivr.net/npm/@mathjax/mathjax-newcm-font@4.0.0/chtml/woff2",
+  dynamicPrefix: "https://cdn.jsdelivr.net/npm/@mathjax/mathjax-newcm-font@4.0.0/chtml/dynamic"
+});
+var templateMathOutput = window.MathJax.output || {};
+window.MathJax.output = Object.assign({}, templateMathOutput, {
+  displayOverflow: "scroll",
+  linebreaks: Object.assign({}, templateMathOutput.linebreaks, {
+    inline: false,
+    width: "100%",
+    lineleading: 0.5
+  })
+});
+var templateMathOptions = window.MathJax.options || {};
+window.MathJax.options = Object.assign({}, templateMathOptions, {
+  renderActions: Object.assign({}, templateMathOptions.renderActions, {
+    // Use the documented find action/MathItem extension point. MathJax 4.0.0's
+    // default finder spreads every DOM text run into push() arguments, exceeding
+    // the browser argument stack on large books even with very little math.
+    find: [10, function (doc) {
+      if (doc.processed.isSet("findMath")) return;
+      var adaptor = doc.adaptor;
+      adaptor.document = doc.document;
+      var containers = adaptor.getElements(
+        doc.options.elements || [adaptor.body(doc.document)], doc.document
+      );
+      // Retain the pinned HTMLDocument.findPosition source offsets/order
+      // (MathJax-src 4.0.0, ts/handlers/html/HTMLDocument.ts, Apache-2.0).
+      function position(nodes, item, location, delim) {
+        var parts = nodes[item.n];
+        var index = location.n;
+        var order = item.n;
+        var increment = 1 / (parts.length || 1);
+        for (var part of parts) {
+          if (index <= part[1] && adaptor.kind(part[0]) === "#text") {
+            return {i: order, node: part[0], n: Math.max(index, 0), delim: delim};
+          }
+          index -= part[1];
+          order += increment;
+        }
+        return {node: null, n: 0, delim: delim};
+      }
+      for (var jax of doc.inputJax) {
+        var list = new doc.options.MathList();
+        if (jax.processStrings) {
+          var strings = [];
+          var nodes = [];
+          for (var container of containers) {
+            var found = doc.domStrings.find(container);
+            // Append individually: neither DOM size nor expression count becomes
+            // a function argument count. Keep the scanner's complete run mapping.
+            for (var string of found[0]) strings.push(string);
+            for (var nodeList of found[1]) nodes.push(nodeList);
+          }
+          for (var item of jax.findMath(strings)) {
+            list.push(new doc.options.MathItem(
+              item.math, jax, item.display,
+              position(nodes, item, item.start, item.open),
+              position(nodes, item, item.end, item.close)
+            ));
+          }
+        } else {
+          for (var container of containers) {
+            for (var item of jax.findMath(container)) {
+              list.push(new doc.options.MathItem(
+                item.math, jax, item.display, item.start, item.end
+              ));
+            }
+          }
+        }
+        doc.math.merge(list);
+      }
+      doc.processed.set("findMath");
+    }, "", false]
+  })
+});
+window.normalizeTemplateMathJaxAria = function () {
+  document.querySelectorAll("mjx-speech[aria-roledescription]").forEach(function (node) {
+    var roleDescription = node.getAttribute("aria-roledescription") || "";
+    if (/[-]/.test(roleDescription)) {
+      node.setAttribute("aria-roledescription", "mathematical expression");
+    }
+  });
+};
+window.MathJax.startup = Object.assign({}, window.MathJax.startup, {
+  ready: function () {
+    var measuredWidth = document.documentElement.clientWidth;
+    var reflowQueued = false;
+    window.MathJax.startup.defaultReady();
+    window.templateMathJaxReflowPromise = window.MathJax.startup.promise.then(
+      window.normalizeTemplateMathJaxAria
+    );
+    function reflowDisplayMath() {
+      if (reflowQueued || document.documentElement.clientWidth === measuredWidth) return;
+      reflowQueued = true;
+      window.templateMathJaxReflowPromise = window.templateMathJaxReflowPromise
+        .catch(function () { /* A later resize may retry a failed render. */ })
+        .then(async function () {
+          var width = document.documentElement.clientWidth;
+          try {
+            // MathJax 4 MathItem.STATE.METRICS = 110. Restart from metrics
+            // after a viewport change rather than retaining old container widths.
+            await window.MathJax.startup.document.rerenderPromise(110);
+            window.normalizeTemplateMathJaxAria();
+            window.templateMathJaxReflowError = null;
+          } catch (error) {
+            window.templateMathJaxReflowError = String(error);
+            console.error("MathJax viewport reflow failed", error);
+            throw error;
+          } finally {
+            measuredWidth = width;
+            reflowQueued = false;
+          }
+        })
+        .then(reflowDisplayMath);
+      // Keep failure observable to callers without an unhandled rejection.
+      window.templateMathJaxReflowPromise.catch(function () {});
+    }
+    window.addEventListener("resize", reflowDisplayMath);
+    // Also cover a resize that happened during the initial asynchronous render.
+    window.templateMathJaxReflowPromise.then(reflowDisplayMath);
+  }
+});
+</script>
+<script defer=""
+  type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@4.0.0/tex-chtml.js" integrity="sha384-2BWc4dVaHADUocwKrUrK9u3iDwHxVMKXWEcoRmUkXYSFKhAsgVAYClu9ydNuo5Oz" crossorigin="anonymous"></script>
 
 <link data-template-favicon rel="icon" href="favicon.ico">
 
@@ -240,7 +389,14 @@ pre > code.sourceCode > span {
   white-space: pre-wrap;
   word-break: break-word;
 }
-mjx-container[display="true"] { max-width: 100%; overflow: visible; }
+.math.inline {
+  display: inline-block;
+  max-width: 100%;
+  margin: 0;
+  overflow-x: auto;
+  vertical-align: middle;
+}
+mjx-container[display="true"] { max-width: 100%; overflow-x: auto; }
 .table-scroll {
   max-width: 100%;
   overflow-x: auto;
@@ -251,15 +407,13 @@ mjx-container[display="true"] { max-width: 100%; overflow: visible; }
   outline: 3px solid var(--brand-1);
   outline-offset: 3px;
 }
-.table-scroll > table { margin-block: 0; min-width: 100%; width: max-content; }
+.table-scroll > table { margin-block: 0; display: table; min-width: 100%; width: 100%; }
 *, *::before, *::after {
   box-sizing: border-box;
 }
 
 html {
   max-width: 100%;
-  overflow-x: hidden;
-  overflow-x: clip;
 }
 
 body {
@@ -272,8 +426,6 @@ body {
   background-color: #f8f8f8;
   color: #1a1a1a;
   overflow-wrap: break-word;
-  overflow-x: hidden;
-  overflow-x: clip;
 }
 
 main,
@@ -357,6 +509,9 @@ pre {
 }
 
 pre code {
+  background-color: transparent;
+  padding: 0;
+  border-radius: 0;
   overflow-wrap: inherit;
   white-space: inherit;
   word-break: inherit;
@@ -409,8 +564,9 @@ table {
 
 .table-scroll > table {
   margin-block: 0;
+  display: table;
   min-width: 100%;
-  width: max-content;
+  width: 100%;
 }
 
 figure {
@@ -427,6 +583,15 @@ th, td {
 th {
   background-color: #1f6f8b;
   color: white;
+}
+
+/* Preserve a complete inline-code header within the table's scroll region. */
+th code {
+  color: inherit;
+  background-color: transparent;
+  white-space: nowrap;
+  overflow-wrap: normal;
+  word-break: normal;
 }
 
 img {
@@ -488,10 +653,18 @@ a:focus-visible {
   font-size: 1.1em;
 }
 
+.math.inline {
+  display: inline-block;
+  max-width: 100%;
+  margin: 0;
+  overflow-x: auto;
+  vertical-align: middle;
+}
+
 mjx-container[display="true"] {
   display: block;
   max-width: 100%;
-  overflow: visible;
+  overflow-x: auto;
   padding-bottom: 0.25rem;
 }
 
@@ -542,10 +715,6 @@ mjx-container[display="true"] {
 @media (min-width: 1000px) {
   /* Wide figure links stay within the viewport but extend beyond the prose
      column. Do not clip their labels at the narrower body boundary. */
-  body {
-    overflow-x: visible;
-  }
-
   .figure-full-size-link {
     left: 50%;
     max-width: none;
@@ -569,11 +738,13 @@ mjx-container[display="true"] {
 }
 
 </style>
+<script data-template-source-font-loader src="assets/source-web-fonts.js"></script>
 </head>
 <body>
 <a class="skip-link" href="#main-content">Skip to main content</a>
 <main id="main-content" tabindex="-1">
-<h1 id="sec:results">Results</h1>
+<h1 data-number="4" id="sec:results"><span
+class="header-section-number">4</span> Results</h1>
 <p>The results follow the no-self-evidence chain: the QRF boundary
 geometry and indistinguishability audit show, within the finite ledger,
 that the same bitstream supports several admissible sector frames; a
@@ -585,118 +756,116 @@ claim-context, criticality, compassion, scholarship, and visualization
 governance surfaces that keep every finite output below its evidence
 ceiling are reported in the supplement rather than in the main result
 sequence.</p>
-<h2 id="sec:results-qrf-boundary-geometry">Boundary Geometry and QRF
+<h2 data-number="4.1" id="sec:results-qrf-boundary-geometry"><span
+class="header-section-number">4.1</span> Boundary Geometry and QRF
 Indistinguishability</h2>
 <p>The boundary result is now separated into a reader-facing screen
 definition and two linked result figures so that the same object is not
-compressed into one panel. The geometric object is introduced in <span
-class="citation"
-data-cites="fig:qrf_boundary_screen_geometry">@fig:qrf_boundary_screen_geometry</span>:
-b0-b5 are software observation channels on a finite boundary screen,
-action enters the screen, and observation leaves it. The result here is
-what that screen permits after it has been defined: the relabeling
-ledger and policy-flow audit show how QRF sector labels organize the
-same bits without turning nodes, labels, or edges into biological
-sensors, physical quantum-reference-frame systems, or discovered
-ontological sectors [giacomini2019qrf; vanrietvelde2020perspective].</p>
+compressed into one panel. The geometric object is introduced in the
+screen diagram (fig. <a href="manuscript__01_introduction.html#fig:qrf_boundary_screen_geometry">2</a>).
+The b0-b5 channels are software observation channels on a finite
+boundary screen, action enters the screen, and observation leaves it.
+The result here is what that screen permits after it has been defined:
+the relabeling ledger and policy-flow audit show how QRF sector labels
+organize the same bits without turning nodes, labels, or edges into
+biological sensors, physical quantum-reference-frame systems, or
+discovered ontological sectors <span class="citation"
+data-cites="giacomini2019qrf vanrietvelde2020perspective">(<a
+href="index.html#ref-giacomini2019qrf" role="doc-biblioref">Giacomini et al.
+2019</a>; <a href="index.html#ref-vanrietvelde2020perspective"
+role="doc-biblioref">Vanrietvelde et al. 2020</a>)</span>.</p>
 <p>The second step is the paper’s no-self-evidence point in ledger form.
-<span class="citation"
-data-cites="fig:qrf_channel_relabeling_ledger">@fig:qrf_channel_relabeling_ledger</span>
-keeps the evidenced row fixed as <code>b_i same bit</code>, then
-displays how the separation-constrained, opacified, and post-dual
-profiles relabel those same channels into self, env, action, body,
-world, other, and care sectors. The matrix is intentionally text-labeled
-as well as colored: the same bitstream can support different QRF
-partitions, so the partition organizes the model without becoming
-evidence for the partition’s ontology.</p>
+fig. <a href="#fig:qrf_channel_relabeling_ledger">4</a> keeps the
+evidenced row fixed as <code>b_i same bit</code>, then displays how the
+separation-constrained, opacified, and post-dual profiles relabel those
+same channels into self, env, action, body, world, other, and care
+sectors. The matrix is intentionally text-labeled as well as colored:
+the same bitstream can support different QRF partitions, so the
+partition organizes the model without becoming evidence for the
+partition’s ontology.</p>
 <figure id="fig:qrf_channel_relabeling_ledger">
-<a class="figure-full-size-link" href="../figures/qrf_channel_relabeling_ledger.png" target="_blank" rel="noopener" aria-label="Open full-size figure, b0-b5 QRF channel relabeling ledger for equations 7-10."><img src="../figures/qrf_channel_relabeling_ledger.png"
+<a class="figure-full-size-link" href="../figures/qrf_channel_relabeling_ledger.png" target="_blank" rel="noopener" aria-label="Open full-size Figure 4, b0-b5 QRF channel relabeling ledger for equations 7-10."><img src="../figures/qrf_channel_relabeling_ledger.png"
 style="width:90.0%"
-alt="b0-b5 QRF channel relabeling ledger for equations 7-10. The invariant same-bit row marks each evidenced boundary bit, while profile rows relabel those unchanged channels as self, env, action, body, world, other, or care; colors and text encode software sectors only and are not evidence for an ontological self/world boundary." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
-<figcaption>b0-b5 QRF channel relabeling ledger for
-equations 7-10. The invariant same-bit row marks each evidenced boundary
-bit, while profile rows relabel those unchanged channels as self, env,
-action, body, world, other, or care; colors and text encode software
-sectors only and are not evidence for an ontological self/world
-boundary.</figcaption>
+alt="Matrix with b0 through b5 columns showing the same evidenced bit in each column, followed by separation-constrained, opacified, and post-dual rows that assign different QRF sector labels to the unchanged channels." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
+<figcaption>Figure 4: b0-b5 QRF channel relabeling
+ledger for equations 7-10. The invariant same-bit row marks each
+evidenced boundary bit, while profile rows relabel those unchanged
+channels as self, env, action, body, world, other, or care; colors and
+text encode software sectors only and are not evidence for an
+ontological self/world boundary.</figcaption>
 </figure>
 <p>The third step checks that the relabeling discipline is operational
-rather than merely diagrammatic. <span class="citation"
-data-cites="fig:qrf_invariance_policy_flow">@fig:qrf_invariance_policy_flow</span>
-shows that all admissible deployments preserve normalized boundary
-probability mass while the perturbation control fails, then shows that
-profile-specific policy selection still acts through the same audited
-screen. The right panel therefore reports model organization and action
-selection under different QRF profiles; it does not upgrade the sector
-labels into empirical entities.</p>
+rather than merely diagrammatic. fig. <a
+href="#fig:qrf_invariance_policy_flow">5</a> shows that all admissible
+deployments preserve normalized boundary probability mass while the
+perturbation control fails, then shows that profile-specific policy
+selection still acts through the same audited screen. The right panel
+therefore reports model organization and action selection under
+different QRF profiles; it does not upgrade the sector labels into
+empirical entities.</p>
 <figure id="fig:qrf_invariance_policy_flow">
-<a class="figure-full-size-link" href="../figures/qrf_invariance_policy_flow.png" target="_blank" rel="noopener" aria-label="Open full-size figure, QRF invariance and policy-flow audit over the same finite screen."><img src="../figures/qrf_invariance_policy_flow.png" style="width:90.0%"
-alt="QRF invariance and policy-flow audit over the same finite screen. Panel A shows admissible deployments at normalized probability mass with a separate failing perturbation-control marker; Panel B shows profile-specific selected actions from the pymdp trace. The figure supports finite software validation only, not empirical, biological, ontological, or physical qFEP evidence." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
-<figcaption>QRF invariance and policy-flow audit over
-the same finite screen. Panel A shows admissible deployments at
-normalized probability mass with a separate failing perturbation-control
-marker; Panel B shows profile-specific selected actions from the pymdp
-trace. The figure supports finite software validation only, not
-empirical, biological, ontological, or physical qFEP
-evidence.</figcaption>
+<a class="figure-full-size-link" href="../figures/qrf_invariance_policy_flow.png" target="_blank" rel="noopener" aria-label="Open full-size Figure 5, QRF invariance and policy-flow audit over the same finite screen."><img src="../figures/qrf_invariance_policy_flow.png" style="width:90.0%"
+alt="Two-panel QRF audit figure where the left panel shows all admissible QRF deployments at probability mass one plus a failing negative-control marker, and the right panel shows selected action counts by profile through horizontal stacked bars." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
+<figcaption>Figure 5: QRF invariance and policy-flow
+audit over the same finite screen. Panel A shows admissible deployments
+at normalized probability mass with a separate failing
+perturbation-control marker; Panel B shows profile-specific selected
+actions from the pymdp trace. The figure supports finite software
+validation only, not empirical, biological, ontological, or physical
+qFEP evidence.</figcaption>
 </figure>
 <p>The same indistinguishability shown here is what licenses frame use
-without an ontological verdict (<span class="citation"
-data-cites="fig:boundary_use_vs_ontology">@fig:boundary_use_vs_ontology</span>),
-and that license is precisely what lets the separation prior be judged
-on agency rather than on truth in <span class="citation"
-data-cites="sec:methods-separation-prior-subspace">@sec:methods-separation-prior-subspace</span>.</p>
-<h2 id="sec:results-finite-quantum-scope">Finite Quantum Scope and
+without an ontological verdict (fig. <a
+href="manuscript__01_introduction.html#fig:boundary_use_vs_ontology">3</a>), and that license is
+precisely what lets the separation prior be judged on agency rather than
+on truth in sec. <a
+href="manuscript__02_methods.html#sec:methods-separation-prior-subspace">3.3</a>.</p>
+<h2 data-number="4.2" id="sec:results-finite-quantum-scope"><span
+class="header-section-number">4.2</span> Finite Quantum Scope and
 Blocked Claims</h2>
-<p>The finite quantum layer defined in <span class="citation"
-data-cites="sec:methods-roadmap-quantum-engines">@sec:methods-roadmap-quantum-engines</span>
-appears in the main Results only as a scope summary. The source paper’s
-central software target remains the no-self-evidence chain: b0-b5 carry
-observations, QRF deployments relabel the same channels, sigma restricts
-admissible deployments, and BMR compares the cost of keeping that
-restriction. <span class="citation"
-data-cites="fig:finite_quantum_scope_summary">@fig:finite_quantum_scope_summary</span>
-shows which quantum and contextuality engines support that chain and
-which stronger readings stay blocked as physical qFEP realization,
-empirical observer-boundary measurement, neural evidence, clinical
-evidence, or practice-efficacy evidence.</p>
+<p>The finite quantum layer defined in sec. <a
+href="manuscript__02_methods.html#sec:methods-roadmap-quantum-engines">3.1</a> appears in the main
+Results only as a scope summary. The source paper’s central software
+target remains the no-self-evidence chain: b0-b5 carry observations, QRF
+deployments relabel the same channels, sigma restricts admissible
+deployments, and BMR compares the cost of keeping that restriction.
+fig. <a href="#fig:finite_quantum_scope_summary">6</a> shows which
+quantum and contextuality engines support that chain and which stronger
+readings stay blocked as physical qFEP realization, empirical
+observer-boundary measurement, neural evidence, clinical evidence, or
+practice-efficacy evidence.</p>
 <figure id="fig:finite_quantum_scope_summary">
-<a class="figure-full-size-link" href="../figures/finite_quantum_scope_summary.png" target="_blank" rel="noopener" aria-label="Open full-size figure, Finite-quantum scope summary for the main Results."><img src="../figures/finite_quantum_scope_summary.png"
+<a class="figure-full-size-link" href="../figures/finite_quantum_scope_summary.png" target="_blank" rel="noopener" aria-label="Open full-size Figure 6, Finite-quantum scope summary for the main Results."><img src="../figures/finite_quantum_scope_summary.png"
 style="width:90.0%"
-alt="Finite-quantum scope summary for the main Results. Matrix cell text lists validated finite engines and controls; the hatched blocked column names empirical, observer-boundary, all-QRF-context, and physical qFEP claims that remain outside the evidence boundary." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
-<figcaption>Finite-quantum scope summary for the main
-Results. Matrix cell text lists validated finite engines and controls;
-the hatched blocked column names empirical, observer-boundary,
-all-QRF-context, and physical qFEP claims that remain outside the
-evidence boundary.</figcaption>
+alt="Matrix summarizing finite quantum engine families, their negative controls, the limited finite-surrogate main claim, and stronger empirical or physical qFEP claims that remain blocked and moved to supplement details." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
+<figcaption>Figure 6: Finite-quantum scope summary
+for the main Results. Matrix cell text lists validated finite engines
+and controls; the hatched blocked column names empirical,
+observer-boundary, all-QRF-context, and physical qFEP claims that remain
+outside the evidence boundary.</figcaption>
 </figure>
-<p>The detailed witnesses and controls are therefore reported in <span
-class="citation"
-data-cites="sec:supplement-finite-quantum-contextuality-audits">@sec:supplement-finite-quantum-contextuality-audits</span>
+<p>The detailed witnesses and controls are therefore reported in sec. <a
+href="manuscript__06_supplement.html#sec:supplement-finite-quantum-contextuality-audits">7.2</a>
 rather than printed as the main result sequence. This placement is
 substantive rather than cosmetic: it keeps the main paper aligned with
-<span class="citation"
-data-cites="sec:methods-finite-qrf-boundary-screen">@sec:methods-finite-qrf-boundary-screen</span>,
-<span class="citation"
-data-cites="sec:results-qrf-boundary-geometry">@sec:results-qrf-boundary-geometry</span>,
-and <span class="citation"
-data-cites="sec:results-bmr-sensitivity">@sec:results-bmr-sensitivity</span>,
-while preserving the quantum artifacts as inspectable software support
-for <code>qfep_surrogate_scope</code>.</p>
-<h2 id="sec:results-bmr-sensitivity">BMR Pruning and Sensitivity
+sec. <a href="manuscript__02_methods.html#sec:methods-finite-qrf-boundary-screen">3.2</a>, sec. <a
+href="#sec:results-qrf-boundary-geometry">4.1</a>, and sec. <a
+href="#sec:results-bmr-sensitivity">4.3</a>, while preserving the
+quantum artifacts as inspectable software support for
+<code>qfep_surrogate_scope</code>.</p>
+<h2 data-number="4.3" id="sec:results-bmr-sensitivity"><span
+class="header-section-number">4.3</span> BMR Pruning and Sensitivity
 Behavior</h2>
 <p>The BMR sweep records that pruning is not asserted globally. It
 appears when metacognitive access is high enough that the separation
 prior no longer pays for its complexity with additional accuracy. The
 decomposition panel makes this visible as a changing relation among
-Delta complexity, Delta accuracy, and Delta free energy, while <span
-class="citation"
-data-cites="fig:bmr_pruning_phase_diagram">@fig:bmr_pruning_phase_diagram</span>
-exposes the sign convention across the parameter grid: the free-energy
-change is the reduced model’s free energy minus the full model’s, so
-prune means the reduced model has lower free energy and keep means the
-separation prior’s accuracy contribution still offsets its complexity
-cost.</p>
+Delta complexity, Delta accuracy, and Delta free energy, while fig. <a
+href="#fig:bmr_pruning_phase_diagram">10</a> exposes the sign convention
+across the parameter grid: the free-energy change is the reduced model’s
+free energy minus the full model’s, so prune means the reduced model has
+lower free energy and keep means the separation prior’s accuracy
+contribution still offsets its complexity cost.</p>
 <p>The sensitivity grid extends the result over observation noise. The
 current generated run reports <code>45</code> BMR cells and
 <code>315</code> sensitivity cells, expanding the finite denominator for
@@ -710,48 +879,49 @@ local free-energy decomposition.</p>
 <p>Read as the separation prior’s life-cycle, these sweeps yield
 concrete measured values. Across the emergence grid the factored-model
 advantage rises from 0.0 at zero empowerment, where empowerment is used
-as a bounded information-theoretic control surrogate
-[klyubin2005empowerment], to 0.453 at full empowerment (<span
-class="citation"
-data-cites="fig:separation_prior_emergence">@fig:separation_prior_emergence</span>),
-and the weakest admissible prior (precision 0.2) crosses from keep to
-prune at a metacognitive-access value of approximately 0.56, linearly
-interpolated between sweep grid points (<span class="citation"
-data-cites="fig:separation_prior_net_value">@fig:separation_prior_net_value</span>),
-while the stronger priors prune throughout. At the dispensable end, the
-ongoing-revision audit measures a post-regime advantage jump of +0.21 on
-the non-stationary stream against -0.02 on a stationary control run with
-identical machinery, which attributes the gain to revision under change
-rather than to generic adaptive overfitting. These are single fixed-seed
+as a bounded information-theoretic control surrogate <span
+class="citation" data-cites="klyubin2005empowerment">(<a
+href="index.html#ref-klyubin2005empowerment" role="doc-biblioref">Klyubin et al.
+2005</a>)</span>, to 0.453 at full empowerment (fig. <a
+href="#fig:separation_prior_emergence">7</a>), and the weakest
+admissible prior (precision 0.2) crosses from keep to prune at a
+metacognitive-access value of approximately 0.56, linearly interpolated
+between sweep grid points (fig. <a
+href="#fig:separation_prior_net_value">8</a>), while the stronger priors
+prune throughout. At the dispensable end, the ongoing-revision audit
+measures a post-regime advantage jump of +0.21 on the non-stationary
+stream against -0.02 on a stationary control run with identical
+machinery, which attributes the gain to revision under change rather
+than to generic adaptive overfitting. These are single fixed-seed
 deterministic surrogate values, not developmental, neural,
 contemplative, or clinical measurements.</p>
 <figure id="fig:separation_prior_emergence">
-<a class="figure-full-size-link" href="../figures/separation_prior_emergence.png" target="_blank" rel="noopener" aria-label="Open full-size figure, Separation-prior emergence across the empowerment grid."><img src="../figures/separation_prior_emergence.png" style="width:90.0%"
-alt="Separation-prior emergence across the empowerment grid. Lines encode the measured factored (self/env) and unfactored model prediction error and their dashed advantage curve as the fraction of action-contingent channels rises; the factored model buys accuracy only when agency is present, and the advantage’s rise with empowerment is expected by construction, making this a correctness check rather than a discriminating null. It is a finite deterministic predictor comparison and not a developmental, neural, or empirical empowerment claim." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
-<figcaption>Separation-prior emergence across the
-empowerment grid. Lines encode the measured factored (self/env) and
-unfactored model prediction error and their dashed advantage curve as
-the fraction of action-contingent channels rises; the factored model
-buys accuracy only when agency is present, and the advantage’s rise with
-empowerment is expected by construction, making this a correctness check
-rather than a discriminating null. It is a finite deterministic
-predictor comparison and not a developmental, neural, or empirical
-empowerment claim.</figcaption>
+<a class="figure-full-size-link" href="../figures/separation_prior_emergence.png" target="_blank" rel="noopener" aria-label="Open full-size Figure 7, Separation-prior emergence across the empowerment grid."><img src="../figures/separation_prior_emergence.png" style="width:90.0%"
+alt="A line panel showing unfactored model error roughly flat while factored model error falls and the factored advantage rises from zero as the empowerment fraction increases, with a zero reference line and a legend." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
+<figcaption>Figure 7: Separation-prior emergence
+across the empowerment grid. Lines encode the measured factored
+(self/env) and unfactored model prediction error and their dashed
+advantage curve as the fraction of action-contingent channels rises; the
+factored model buys accuracy only when agency is present, and the
+advantage’s rise with empowerment is expected by construction, making
+this a correctness check rather than a discriminating null. It is a
+finite deterministic predictor comparison and not a developmental,
+neural, or empirical empowerment claim.</figcaption>
 </figure>
 <figure id="fig:separation_prior_net_value">
-<a class="figure-full-size-link" href="../figures/separation_prior_net_value.png" target="_blank" rel="noopener" aria-label="Open full-size figure, Life-cycle of the separation prior’s net value, the change in free energy when the prior is…"><img src="../figures/separation_prior_net_value.png" style="width:90.0%"
-alt="Life-cycle of the separation prior’s net value, the change in free energy when the prior is removed, against metacognitive access, drawn as one line per prior precision rather than a mean. The bolded arc is the precision whose net value actually crosses keep to prune (the weakest admissible precision for the current sweep); it starts positive in the shaded keep region and falls into the shaded prune region as access rises, while the fainter stronger-precision lines stay in the prune region throughout. The dashed marker locates the useful-to-dispensable crossing, and the figure is a finite software sweep, not a developmental, neural, contemplative, or clinical claim." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
-<figcaption>Life-cycle of the separation prior’s net
-value, the change in free energy when the prior is removed, against
-metacognitive access, drawn as one line per prior precision rather than
-a mean. The bolded arc is the precision whose net value actually crosses
-keep to prune (the weakest admissible precision for the current sweep);
-it starts positive in the shaded keep region and falls into the shaded
-prune region as access rises, while the fainter stronger-precision lines
-stay in the prune region throughout. The dashed marker locates the
-useful-to-dispensable crossing, and the figure is a finite software
-sweep, not a developmental, neural, contemplative, or clinical
-claim.</figcaption>
+<a class="figure-full-size-link" href="../figures/separation_prior_net_value.png" target="_blank" rel="noopener" aria-label="Open full-size Figure 8, Life-cycle of the separation prior’s net value, the change in free energy when the prior is…"><img src="../figures/separation_prior_net_value.png" style="width:90.0%"
+alt="Line chart with metacognitive access on the horizontal axis and the separation prior&#x27;s net value as delta free energy on the vertical axis; one line is drawn per prior precision, the bolded weakest-precision line begins in the keep band and falls into the prune band at a dashed crossing marker, and the stronger precision lines stay in the prune band throughout." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
+<figcaption>Figure 8: Life-cycle of the separation
+prior’s net value, the change in free energy when the prior is removed,
+against metacognitive access, drawn as one line per prior precision
+rather than a mean. The bolded arc is the precision whose net value
+actually crosses keep to prune (the weakest admissible precision for the
+current sweep); it starts positive in the shaded keep region and falls
+into the shaded prune region as access rises, while the fainter
+stronger-precision lines stay in the prune region throughout. The dashed
+marker locates the useful-to-dispensable crossing, and the figure is a
+finite software sweep, not a developmental, neural, contemplative, or
+clinical claim.</figcaption>
 </figure>
 <p>The robustness resampling audit asks the same question cell by cell
 after aggregating over observation-noise rows. Bootstrap intervals
@@ -768,64 +938,68 @@ verdicts and the weakest-prior crossing for each family. At least one
 crossing shifts relative to baseline while high-access rows remain
 numerically bounded, so the result is traceable to explicit prior-family
 assumptions rather than a single hidden parametrization. This is
-Bayesian workflow accounting over deterministic software rows
-[talts2018sbc; gelman2020bayesianworkflow], not an empirical power or
-subject-level inference.</p>
+Bayesian workflow accounting over deterministic software rows <span
+class="citation"
+data-cites="talts2018sbc gelman2020bayesianworkflow">(<a
+href="index.html#ref-talts2018sbc" role="doc-biblioref">Talts et al. 2018</a>; <a
+href="index.html#ref-gelman2020bayesianworkflow" role="doc-biblioref">Gelman et
+al. 2020</a>)</span>, not an empirical power or subject-level
+inference.</p>
 <figure id="fig:bmr_free_energy_decomposition">
-<a class="figure-full-size-link" href="../figures/bmr_free_energy_decomposition.png" target="_blank" rel="noopener" aria-label="Open full-size figure, BMR free-energy components at high separation-prior precision."><img src="../figures/bmr_free_energy_decomposition.png"
+<a class="figure-full-size-link" href="../figures/bmr_free_energy_decomposition.png" target="_blank" rel="noopener" aria-label="Open full-size Figure 9, BMR free-energy components at high separation-prior precision."><img src="../figures/bmr_free_energy_decomposition.png"
 style="width:90.0%"
-alt="BMR free-energy components at high separation-prior precision. The lines show reduced-minus-full Delta F, Delta complexity, and Delta accuracy over metacognitive access; the dashed zero line is the keep/prune boundary, so the panel explains the finite model-comparison sign convention without making a human self-model claim." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
-<figcaption>BMR free-energy components at high
-separation-prior precision. The lines show reduced-minus-full Delta F,
-Delta complexity, and Delta accuracy over metacognitive access; the
+alt="Three-line BMR plot where Delta F, Delta complexity, and Delta accuracy vary with metacognitive access; a dashed zero line marks the keep/prune decision boundary." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
+<figcaption>Figure 9: BMR free-energy components at
+high separation-prior precision. The lines show reduced-minus-full Delta
+F, Delta complexity, and Delta accuracy over metacognitive access; the
 dashed zero line is the keep/prune boundary, so the panel explains the
 finite model-comparison sign convention without making a human
 self-model claim.</figcaption>
 </figure>
 <figure id="fig:bmr_pruning_phase_diagram">
-<a class="figure-full-size-link" href="../figures/bmr_pruning_phase_diagram.png" target="_blank" rel="noopener" aria-label="Open full-size figure, BMR decision grid over prior precision and metacognitive access."><img src="../figures/bmr_pruning_phase_diagram.png" style="width:90.0%"
-alt="BMR decision grid over prior precision and metacognitive access. KEEP prior means the full model’s separation prior still pays for its complexity; PRUNE prior means the reduced model wins because removing that prior lowers free energy. Cell color encodes Delta F = F_reduced - F_full and cell text gives the decision plus numeric Delta F inside this finite model-comparison surrogate only." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
-<figcaption>BMR decision grid over prior precision
-and metacognitive access. KEEP prior means the full model’s separation
-prior still pays for its complexity; PRUNE prior means the reduced model
-wins because removing that prior lowers free energy. Cell color encodes
-Delta F = F_reduced - F_full and cell text gives the decision plus
-numeric Delta F inside this finite model-comparison surrogate
-only.</figcaption>
+<a class="figure-full-size-link" href="../figures/bmr_pruning_phase_diagram.png" target="_blank" rel="noopener" aria-label="Open full-size Figure 10, BMR decision grid over prior precision and metacognitive access."><img src="../figures/bmr_pruning_phase_diagram.png" style="width:90.0%"
+alt="Heatmap of BMR Delta F values across prior precision and metacognitive access, with each cell labeled KEEP prior or PRUNE prior and the colorbar centered on the zero decision boundary." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
+<figcaption>Figure 10: BMR decision grid over prior
+precision and metacognitive access. KEEP prior means the full model’s
+separation prior still pays for its complexity; PRUNE prior means the
+reduced model wins because removing that prior lowers free energy. Cell
+color encodes Delta F = F_reduced - F_full and cell text gives the
+decision plus numeric Delta F inside this finite model-comparison
+surrogate only.</figcaption>
 </figure>
 <figure id="fig:simulation_sensitivity_heatmap">
-<a class="figure-full-size-link" href="../figures/simulation_sensitivity_heatmap.png" target="_blank" rel="noopener" aria-label="Open full-size figure, Sensitivity grid after averaging over observation-noise rows."><img src="../figures/simulation_sensitivity_heatmap.png"
+<a class="figure-full-size-link" href="../figures/simulation_sensitivity_heatmap.png" target="_blank" rel="noopener" aria-label="Open full-size Figure 11, Sensitivity grid after averaging over observation-noise rows."><img src="../figures/simulation_sensitivity_heatmap.png"
 style="width:90.0%"
-alt="Sensitivity grid after averaging over observation-noise rows. Cell labels count how many noise rows favor PRUNE prior; PRUNE means the reduced model has lower free energy after removing the separation prior. Color encodes mean Delta F, and the denominator is a finite software robustness grid, not empirical sample size or practice-outcome evidence." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
-<figcaption>Sensitivity grid after averaging over
-observation-noise rows. Cell labels count how many noise rows favor
-PRUNE prior; PRUNE means the reduced model has lower free energy after
-removing the separation prior. Color encodes mean Delta F, and the
-denominator is a finite software robustness grid, not empirical sample
-size or practice-outcome evidence.</figcaption>
+alt="Sensitivity heatmap showing mean Delta F by prior precision and metacognitive access, with each cell labeled by how many observation-noise rows favor pruning the separation prior." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
+<figcaption>Figure 11: Sensitivity grid after
+averaging over observation-noise rows. Cell labels count how many noise
+rows favor PRUNE prior; PRUNE means the reduced model has lower free
+energy after removing the separation prior. Color encodes mean Delta F,
+and the denominator is a finite software robustness grid, not empirical
+sample size or practice-outcome evidence.</figcaption>
 </figure>
 <figure id="fig:bmr_robustness_resampling">
-<a class="figure-full-size-link" href="../figures/bmr_robustness_resampling.png" target="_blank" rel="noopener" aria-label="Open full-size figure, BMR robustness resampling over the finite prior-precision/access grid."><img src="../figures/bmr_robustness_resampling.png" style="width:90.0%"
-alt="BMR robustness resampling over the finite prior-precision/access grid. The upper panel shows conditional bootstrap pruning rates over the listed noise rows; the lower panel marks whether the conditional grid-mean Delta-F interval excludes zero, with compact interval and P/K labels. This does not establish stability at every noise value or under an unknown population of noise settings. Exact grid extrema and all-row sign agreement are recorded separately in the artifact. Both panels report finite software robustness only." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
-<figcaption>BMR robustness resampling over the finite
-prior-precision/access grid. The upper panel shows conditional bootstrap
-pruning rates over the listed noise rows; the lower panel marks whether
-the conditional grid-mean Delta-F interval excludes zero, with compact
-interval and P/K labels. This does not establish stability at every
-noise value or under an unknown population of noise settings. Exact grid
-extrema and all-row sign agreement are recorded separately in the
-artifact. Both panels report finite software robustness
-only.</figcaption>
+<a class="figure-full-size-link" href="../figures/bmr_robustness_resampling.png" target="_blank" rel="noopener" aria-label="Open full-size Figure 12, BMR robustness resampling over the finite prior-precision/access grid."><img src="../figures/bmr_robustness_resampling.png" style="width:90.0%"
+alt="Two-panel BMR robustness figure showing pruning-rate percentages and Delta-F sign stability across prior precision and metacognitive access after resampling observation-noise rows." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
+<figcaption>Figure 12: BMR robustness resampling over
+the finite prior-precision/access grid. The upper panel shows
+conditional bootstrap pruning rates over the listed noise rows; the
+lower panel marks whether the conditional grid-mean Delta-F interval
+excludes zero, with compact interval and P/K labels. This does not
+establish stability at every noise value or under an unknown population
+of noise settings. Exact grid extrema and all-row sign agreement are
+recorded separately in the artifact. Both panels report finite software
+robustness only.</figcaption>
 </figure>
-<p>This prune-at-high-access lifecycle (<span class="citation"
-data-cites="fig:bmr_pruning_phase_diagram">@fig:bmr_pruning_phase_diagram</span>)
-restates the emergence result (<span class="citation"
-data-cites="fig:separation_prior_emergence">@fig:separation_prior_emergence</span>)
-as a full life-cycle, useful under restricted access and then reducible
-with no residual ontological commitment, and is the behavior the
-active-inference profiles must instantiate in <span class="citation"
-data-cites="sec:methods-pymdp-generative-models">@sec:methods-pymdp-generative-models</span>.</p>
-<h2 id="sec:results-pymdp-policy-trace">pymdp Profiles and Policy
+<p>This prune-at-high-access lifecycle (fig. <a
+href="#fig:bmr_pruning_phase_diagram">10</a>) restates the emergence
+result (fig. <a href="#fig:separation_prior_emergence">7</a>) as a full
+life-cycle, useful under restricted access and then reducible with no
+residual ontological commitment, and is the behavior the
+active-inference profiles must instantiate in sec. <a
+href="manuscript__02_methods.html#sec:methods-pymdp-generative-models">3.5</a>.</p>
+<h2 data-number="4.4" id="sec:results-pymdp-policy-trace"><span
+class="header-section-number">4.4</span> pymdp Profiles and Policy
 Trace</h2>
 <p>The active-inference simulation uses profile-specific <code>A</code>,
 <code>B</code>, <code>C</code>, and <code>D</code> arrays for
@@ -845,49 +1019,48 @@ variational free energy at -1.34, below the opacified profile at -0.94
 and the separation-constrained profile at -0.80, so it ranks highest
 under the finite software posterior; this ranking is over finite
 deployments and is not a claim about which ontology is true.</p>
-<p>In <span class="citation"
-data-cites="fig:pymdp_profile_comparison">@fig:pymdp_profile_comparison</span>,
-free energy, posterior mass, and selected actions are plotted side by
-side with short profile labels, a full-name legend, an explicit
-lower-free-energy sign annotation, and an external action legend. The
-plotted posterior mass is a software ranking over finite deployments,
-not a claim about which ontology is true. The posterior trajectory
-traces how <code>P(contextual_post_dual state)</code> evolves under
-replayed observations and marked perturbation steps; every step is
-renormalized before it enters <span class="citation"
-data-cites="fig:posterior_trajectory">@fig:posterior_trajectory</span>.
-The supplemental runtime dashboard in <span class="citation"
-data-cites="fig:pymdp_runtime_validation_dashboard">@fig:pymdp_runtime_validation_dashboard</span>
-reports the corresponding residuals and replay controls as validation
-checks for the software surface, not as empirical evidence.</p>
+<p>In fig. <a href="#fig:pymdp_profile_comparison">13</a>, free energy,
+posterior mass, and selected actions are plotted side by side with short
+profile labels, a full-name legend, an explicit lower-free-energy sign
+annotation, and an external action legend. The plotted posterior mass is
+a software ranking over finite deployments, not a claim about which
+ontology is true. The posterior trajectory traces how
+<code>P(contextual_post_dual state)</code> evolves under replayed
+observations and marked perturbation steps; every step is renormalized
+before it enters fig. <a href="#fig:posterior_trajectory">14</a>. The
+supplemental runtime dashboard in fig. <a
+href="manuscript__06_supplement.html#fig:pymdp_runtime_validation_dashboard">50</a> reports the
+corresponding residuals and replay controls as validation checks for the
+software surface, not as empirical evidence.</p>
 <figure id="fig:pymdp_profile_comparison">
-<a class="figure-full-size-link" href="../figures/pymdp_profile_comparison.png" target="_blank" rel="noopener" aria-label="Open full-size figure, Active-inference profile comparison for separation-constrained, opacified"><img src="../figures/pymdp_profile_comparison.png" style="width:90.0%"
-alt="Active-inference profile comparison for separation-constrained, opacified, and post-dual QRF deployments. Short labels are resolved in the profile legend, colored bars encode profile free energy and posterior mass, the sign annotation states that lower free energy ranks higher under the finite software posterior, and the external action legend maps stacked counts to explicit actions from profile-specific A, B, C, and D arrays; this is not empirical evidence for any ontology or practice outcome." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
-<figcaption>Active-inference profile comparison for
-separation-constrained, opacified, and post-dual QRF deployments. Short
-labels are resolved in the profile legend, colored bars encode profile
-free energy and posterior mass, the sign annotation states that lower
-free energy ranks higher under the finite software posterior, and the
-external action legend maps stacked counts to explicit actions from
-profile-specific A, B, C, and D arrays; this is not empirical evidence
-for any ontology or practice outcome.</figcaption>
+<a class="figure-full-size-link" href="../figures/pymdp_profile_comparison.png" target="_blank" rel="noopener" aria-label="Open full-size Figure 13, Active-inference profile comparison for separation-constrained, opacified"><img src="../figures/pymdp_profile_comparison.png" style="width:90.0%"
+alt="Three-panel profile comparison with short profile labels and legends, showing free energy, posterior mass, and selected action counts for separation-constrained, opacified, and post-dual pymdp profiles." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
+<figcaption>Figure 13: Active-inference profile
+comparison for separation-constrained, opacified, and post-dual QRF
+deployments. Short labels are resolved in the profile legend, colored
+bars encode profile free energy and posterior mass, the sign annotation
+states that lower free energy ranks higher under the finite software
+posterior, and the external action legend maps stacked counts to
+explicit actions from profile-specific A, B, C, and D arrays; this is
+not empirical evidence for any ontology or practice
+outcome.</figcaption>
 </figure>
 <figure id="fig:posterior_trajectory">
-<a class="figure-full-size-link" href="../figures/posterior_trajectory.png" target="_blank" rel="noopener" aria-label="Open full-size figure, Deterministic pymdp posterior trajectory over P(contextual_post_dual state)"><img src="../figures/posterior_trajectory.png" style="width:90.0%"
-alt="Deterministic pymdp posterior trajectory over P(contextual_post_dual state) for each QRF profile. The external line legend maps short profile labels to full deployment names, hollow square markers identify perturbation steps, and the axes show a replayed finite trace rather than an empirical time series or evidence for an ontological sector." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
-<figcaption>Deterministic pymdp posterior trajectory
-over P(contextual_post_dual state) for each QRF profile. The external
-line legend maps short profile labels to full deployment names, hollow
-square markers identify perturbation steps, and the axes show a replayed
-finite trace rather than an empirical time series or evidence for an
-ontological sector.</figcaption>
+<a class="figure-full-size-link" href="../figures/posterior_trajectory.png" target="_blank" rel="noopener" aria-label="Open full-size Figure 14, Deterministic pymdp posterior trajectory over P(contextual_post_dual state)"><img src="../figures/posterior_trajectory.png" style="width:90.0%"
+alt="Line chart showing P(contextual post-dual state) over simulation steps for three QRF profiles, with profile colors and hollow square markers where observations were perturbed." /><span class="figure-full-size-label" aria-hidden="true">Open full-size figure</span></a>
+<figcaption>Figure 14: Deterministic pymdp posterior
+trajectory over P(contextual_post_dual state) for each QRF profile. The
+external line legend maps short profile labels to full deployment names,
+hollow square markers identify perturbation steps, and the axes show a
+replayed finite trace rather than an empirical time series or evidence
+for an ontological sector.</figcaption>
 </figure>
-<p>These profile comparisons (<span class="citation"
-data-cites="fig:pymdp_profile_comparison">@fig:pymdp_profile_comparison</span>)
-close the arc opened by the boundary screen (<span class="citation"
-data-cites="sec:methods-finite-qrf-boundary-screen">@sec:methods-finite-qrf-boundary-screen</span>),
-implementing each licensed sector frame as a distinct finite generative
-model rather than an asserted interpretation.</p>
+<p>These profile comparisons (fig. <a
+href="#fig:pymdp_profile_comparison">13</a>) close the arc opened by the
+boundary screen (sec. <a
+href="manuscript__02_methods.html#sec:methods-finite-qrf-boundary-screen">3.2</a>), implementing
+each licensed sector frame as a distinct finite generative model rather
+than an asserted interpretation.</p>
 </main>
 </body>
 </html>

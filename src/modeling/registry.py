@@ -13,6 +13,7 @@ import json
 import math
 from pathlib import Path
 import re
+import sys
 from typing import Any, Iterator
 
 from gnn.parsers.markdown_parser import MarkdownGNNParser
@@ -39,8 +40,12 @@ class ModelSpecification:
     tensors: dict[str, Any]
 
 
-def upstream_identity() -> dict[str, str]:
-    return json.loads(files("modeling").joinpath("upstream.json").read_text(encoding="utf-8"))
+def upstream_identity(pin_path: Path | None = None) -> dict[str, str]:
+    """Resolve the exact installed GNN identity for this interpreter."""
+    path = pin_path if pin_path is not None else files("modeling").joinpath("upstream.json")
+    pin = json.loads(path.read_text(encoding="utf-8"))
+    legacy = pin.pop("python_3_11")
+    return {**pin, **legacy} if sys.version_info[:2] == (3, 11) else pin
 
 
 @contextmanager

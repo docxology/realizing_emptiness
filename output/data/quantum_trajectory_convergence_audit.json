@@ -8,7 +8,7 @@
     "residuals_finite": true,
     "too_few_trajectory_control_fails": true
   },
-  "log_log_residual_slope": -0.37294123261875695,
+  "log_log_residual_slope": -0.37294123261875706,
   "row_count": 7,
   "rows": [
     {

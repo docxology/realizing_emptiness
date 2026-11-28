@@ -14,7 +14,7 @@ from typing import Any
 
 import numpy as np
 
-from modeling.registry import CLAIM_BOUNDARY, ModelSpecification, load_model, parse_model, specification_root
+from modeling.registry import CLAIM_BOUNDARY, ModelSpecification, load_model, parse_model, specification_root, upstream_identity
 
 
 _PROFILES = {"separation_constrained", "opacified", "post_dual"}
@@ -34,7 +34,8 @@ def _file_hash(path: Path) -> str:
 
 
 def _upstream(project_root: Path) -> dict[str, Any]:
-    pin = json.loads((project_root / "src/modeling/upstream.json").read_text())
+    pin_path = project_root / "src/modeling/upstream.json"
+    pin = upstream_identity(pin_path)
     distribution = metadata.distribution("generalized-notation-notation")
     direct = json.loads(distribution.read_text("direct_url.json") or "{}")
     if (distribution.version != pin["version"] or direct.get("vcs_info", {}).get("commit_id") != pin["commit"]
@@ -47,7 +48,7 @@ def _upstream(project_root: Path) -> dict[str, Any]:
             raise ValueError("executing GNN module is not provided by the pinned distribution")
     return {
         "version": distribution.version, "commit": pin["commit"], "repository": pin["repository"],
-        "pin_sha256": _file_hash(project_root / "src/modeling/upstream.json"),
+        "pin_sha256": _file_hash(pin_path),
         "direct_url_sha256": _digest(direct),
         "module_sha256": {name: _file_hash(Path(inspect.getfile(import_module(name)))) for name in _UPSTREAM_MODULES},
     }

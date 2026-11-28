@@ -206,7 +206,7 @@
         4,
         6
       ],
-      "reduced_entropy_bits": 0.0,
+      "reduced_entropy_bits": -0.0,
       "state_label": "sparse_cross_boundary_bell_pairs",
       "subsystem_size": 4
     },

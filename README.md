@@ -4,12 +4,12 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20834847.svg)](https://doi.org/10.5281/zenodo.20834847)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-blue.svg)](https://www.python.org/)
+[![Python 3.11–3.14](https://img.shields.io/badge/python-3.11%E2%80%933.14-blue.svg)](https://www.python.org/)
 [![Validation](https://github.com/docxology/realizing_emptiness/actions/workflows/ci.yml/badge.svg)](https://github.com/docxology/realizing_emptiness/actions/workflows/ci.yml)
 
 | | |
 | --- | --- |
-| **Version** | v3.0.0; [changes](docs/CHANGELOG.md) and [release validation](docs/release-validation.md) |
+| **Version** | v3.0.1; [changes](docs/CHANGELOG.md) and [release validation](docs/release-validation.md) |
 | **Archived v1.0.0 (Zenodo)** | [10.5281/zenodo.20834847](https://doi.org/10.5281/zenodo.20834847); [concept DOI](https://doi.org/10.5281/zenodo.20834846). A new version DOI is not yet recorded. |
 | **Manuscript PDF** | [`realizing_emptiness_combined.pdf`](output/pdf/realizing_emptiness_combined.pdf) · [latest release](https://github.com/docxology/realizing_emptiness/releases/latest) |
 | 📚 **Source preprint** | [osf.io/preprints/psyarxiv/m78z2_v1](https://osf.io/preprints/psyarxiv/m78z2_v1) |
@@ -21,10 +21,9 @@
 
 ## State right now (orientation for a cold agent)
 
-- **Project status:** v3.0.0 makes Generalized Notation Notation (GNN) the
-  specification authority for model inputs and connects validated declarations
-  to categorical inference and finite numerical engines. Python 3.11-3.14 is
-  supported. The scholarship ledger has 125 sources.
+- **Project status:** GNN declarations drive categorical inference and finite
+  numerical engines. Version 3.0.1 uses GNN v5.2.0 on Python 3.12 through 3.14
+  and retains GNN 4.1.0 on Python 3.11. The scholarship ledger has 125 sources.
   The v1.0.0 DOI identifies the earlier archive; it does
   not identify this version.
 - **Measured status:** use the [release validation record](docs/release-validation.md),
@@ -105,8 +104,8 @@ verified qualifier in [running the chain](docs/running-the-chain.md#render-and-m
 
 ## Citation
 
-> Friedman, Daniel Ari (2026). *Realizing Emptiness* (v3.0.0). Active Inference
-> Institute. https://github.com/docxology/realizing_emptiness/releases/tag/v3.0.0
+> Friedman, Daniel Ari (2026). *Realizing Emptiness* (v3.0.1). Active Inference
+> Institute. https://github.com/docxology/realizing_emptiness/releases/tag/v3.0.1
 
 The archived v1.0.0 version DOI remains available above. The concept DOI
 [10.5281/zenodo.20834846](https://doi.org/10.5281/zenodo.20834846) tracks the
