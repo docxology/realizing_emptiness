@@ -1372,11 +1372,11 @@
       "sha256": "94e2335c3a4a37b8d49039b11b45ccda25bad65d4b80aa15428b84abfba699ac"
     },
     {
-      "bytes": 5047,
+      "bytes": 5080,
       "exists": true,
       "kind": "release_support",
       "path": "docs/api-contracts.md",
-      "sha256": "0b6a62bd1b5fbfd6bd8ae8f348dd20903875595ca513aaf493a84202e5286db7"
+      "sha256": "0f4139002985853fbafc6c874fbf12f5cf0e3d07c236f6d766a1963c73e6cdf4"
     },
     {
       "bytes": 7190,
