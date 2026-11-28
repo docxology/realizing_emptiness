@@ -1,9 +1,9 @@
 # Current API and data contracts
 
-GNN declarations govern scientific model inputs. Consumers
-must regenerate artifacts with the installed package and update their field
-lookups to the contracts below. Reusing an artifact from an earlier release
-fails schema validation. The canonical commands are in [AGENTS.md](../AGENTS.md).
+GNN declarations govern scientific model inputs. Regenerate scientific receipts
+with the selected runtime before running the current validation gates. The
+schemas accept the v3.0.0 GNN and PyMDP receipts. Native validation verifies the
+installed dependency versions and exact source identities. See [AGENTS.md](../AGENTS.md).
 
 ## GNN model interface and migration
 
