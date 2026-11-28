@@ -1,0 +1,95 @@
+{
+  "consumed_manuscript": [
+    {
+      "rendered_path": "output/manuscript/00_abstract.md",
+      "rendered_sha256": "f0cf252825e4895fcaada31af752ca44ceb1ecef514232469cfcda5e25f77740",
+      "source_path": "docs/manuscript/00_abstract.md",
+      "source_sha256": "d0b66b07b3ba11a6b78d0b47ac4a2d9d943c72d5776324525a43926b3f70d3bf"
+    },
+    {
+      "rendered_path": "output/manuscript/01_introduction.md",
+      "rendered_sha256": "eb5c8914cf1d8fb07a19fcf8ffbbaa7b2e1ed9faf9fa6a797842fb5e2e1c1aa8",
+      "source_path": "docs/manuscript/01_introduction.md",
+      "source_sha256": "b6b09db8e5009c6bfbf4665356112dff3f587ce96d482904f46600d83a5613b4"
+    },
+    {
+      "rendered_path": "output/manuscript/02_methods.md",
+      "rendered_sha256": "7bbd03096195212f26dc8adff0b0aefcf679f57c88eea59f793de8bafcf2e210",
+      "source_path": "docs/manuscript/02_methods.md",
+      "source_sha256": "e3913e71a5dde93ac13d8e6f452f37b3cd9a308e9a263981e8254de7d37f147e"
+    },
+    {
+      "rendered_path": "output/manuscript/03_results.md",
+      "rendered_sha256": "d582de98db1a35c4e64ac99993a50ff0f7fda57c3c147c889d2b73590f009fc3",
+      "source_path": "docs/manuscript/03_results.md",
+      "source_sha256": "1275e6793a1a45dc35711bda498a4617c84fd5f25aaeb8b3f4562f150aa9c377"
+    },
+    {
+      "rendered_path": "output/manuscript/04_discussion.md",
+      "rendered_sha256": "20e864a28ca60343c0a49c0d9d31ee0102a20ac1be1164300549600a56c97d22",
+      "source_path": "docs/manuscript/04_discussion.md",
+      "source_sha256": "f9a0df855b7a35e2811bf0281e0f38a112da84c6eff4219ee192449199f74941"
+    },
+    {
+      "rendered_path": "output/manuscript/05_conclusion.md",
+      "rendered_sha256": "51262e555b15eeac344a2e9c6c0caed850ef2819a8cd45896b01161127d1139e",
+      "source_path": "docs/manuscript/05_conclusion.md",
+      "source_sha256": "51262e555b15eeac344a2e9c6c0caed850ef2819a8cd45896b01161127d1139e"
+    },
+    {
+      "rendered_path": "output/manuscript/06_supplement.md",
+      "rendered_sha256": "dc0e825aeb15e954c7b8f62259eafede48e379f76126c7b4bc8c4a10b8fab732",
+      "source_path": "docs/manuscript/06_supplement.md",
+      "source_sha256": "7602ecc8f13472150ce2e3dc64a4887c5cf3c6775374b93f8e495ad56f636f9e"
+    },
+    {
+      "rendered_path": "output/manuscript/99_references.md",
+      "rendered_sha256": "be5b6ee9a9353fa6631b8e563254b883c490a9d0550667ecc50e3ecc8b1da8be",
+      "source_path": "docs/manuscript/99_references.md",
+      "source_sha256": "be5b6ee9a9353fa6631b8e563254b883c490a9d0550667ecc50e3ecc8b1da8be"
+    }
+  ],
+  "evidence_files": {
+    "artifact_manifest": {
+      "path": "output/reports/artifact_manifest.json",
+      "sha256": "20d8111457aec6e9a5fed4f1b0b38e4efc32f6a870283bfe9d5aed053a2a71e0",
+      "size_bytes": 53032
+    },
+    "combined_manuscript": {
+      "path": "output/web/_combined_manuscript.md",
+      "sha256": "0594a35813d640f174c7e94ef6048ca413db3659dbb0e53bc9ddeeff00e6fe13",
+      "size_bytes": 180875
+    },
+    "composition_manifest": {
+      "path": "output/reports/manuscript_composition.json",
+      "sha256": "4af911a10ab15e7d823ed4ba7cbe511fade5d4122d4355eb6edf763fd7ede924",
+      "size_bytes": 2121
+    },
+    "validation_report": {
+      "path": "output/reports/validation_report.json",
+      "sha256": "5ed341f1ec9d2840ee5ecd1c9300e89f869f00a420c7e933185d9dbc95ba68db",
+      "size_bytes": 11497
+    }
+  },
+  "evidence_mode": "validated-co-snapshot-fingerprint-bridge",
+  "fingerprints": {
+    "config": {
+      "file_count": 26,
+      "sha256": "c176c9065ca5857a7047eb4156afd38c4b9052747c9ac7d66a65bc900e09dc46"
+    },
+    "output": {
+      "file_count": 173,
+      "sha256": "cddb6849d295e155cbbb7022eee79ac442fb2969d5c4c775cae7c3a639a95883"
+    },
+    "source": {
+      "file_count": 268,
+      "sha256": "06516d32fd2c2497ee929c69b4c9129d042e90335590ce6c7a7b242176d2690e"
+    },
+    "stage": {
+      "file_count": 1650,
+      "sha256": "2e22fab62669520517a9bf112b9dc5bc1d801787aebf51c9bcf4135813fb2feb"
+    }
+  },
+  "project": "working/realizing_emptiness",
+  "schema_version": "template-rendered-provenance-v2"
+}

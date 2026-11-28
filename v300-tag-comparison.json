@@ -1,0 +1,8 @@
+{
+  "released_baseline": "bd91fa1c230551180ed741d1951840e3628da35d",
+  "baseline_gnn": "46459949944e3217f8a6a804d4ff8c52829ef275",
+  "candidate_gnn": "4a7cccce6d4d7cb483f00323ec5cdd79300f3464",
+  "matching_model_hashes": 44,
+  "matched_policy_trace_rows": 72,
+  "policy_trace_max_abs_delta": 3.0000000039720476e-08
+}
